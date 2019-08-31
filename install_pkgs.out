@@ -38531,3 +38531,19 @@ Installing CSV
   [336ed68f] + CSV v0.5.11
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master a8c1128ec] added package CSV
+ 3 files changed, 18 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   8a5c2ac03..a8c1128ec  master -> master
+Progress:  10%|████▏                                    |  ETA: 3 days, 10:56:53[K
+Installing CSVFiles
+ Resolving package versions...
+ Installed CSVFiles ── v0.16.0
+ Installed TextParse ─ v0.9.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [5d742f6a] + CSVFiles v0.16.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [5d742f6a] + CSVFiles v0.16.0
+  [e0df1984] + TextParse v0.9.1
+  Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+  Building MbedTLS ──→ `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`

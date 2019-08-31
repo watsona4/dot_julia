@@ -1,0 +1,8 @@
+.*~
+.*.sw?
+*.mem
+docs/build/
+docs/site/
+benchmark/tune.json
+docs/Manifest.toml
+.vscode
