@@ -29288,3 +29288,123 @@ Installing Batched
   [587475ba] ↓ Flux v0.9.0 ⇒ v0.8.3
   Building Batched → `~/.julia/packages/Batched/yUbIZ/deps/build.log`
   Building Batched → `~/.julia/packages/Batched/yUbIZ/deps/build.log`
+[master fca956f57] added package Batched
+ 110 files changed, 8502 insertions(+), 6 deletions(-)
+ rewrite compiled/v1.2/CUDAapi/c7oFM.ji (76%)
+ create mode 100644 packages/Batched/yUbIZ/.gitignore
+ create mode 100644 packages/Batched/yUbIZ/.travis.yml
+ create mode 100644 packages/Batched/yUbIZ/LICENSE
+ create mode 100644 packages/Batched/yUbIZ/README.md
+ create mode 100644 packages/Batched/yUbIZ/REQUIRE
+ create mode 100644 packages/Batched/yUbIZ/benchmark/benchmark.jl
+ create mode 100644 packages/Batched/yUbIZ/deps/build.jl
+ create mode 100644 packages/Batched/yUbIZ/src/Batched.jl
+ create mode 100644 packages/Batched/yUbIZ/src/BatchedArray.jl
+ create mode 100644 packages/Batched/yUbIZ/src/BatchedScale.jl
+ create mode 100644 packages/Batched/yUbIZ/src/adjtrans.jl
+ create mode 100644 packages/Batched/yUbIZ/src/cuda/cuda.jl
+ create mode 100644 packages/Batched/yUbIZ/src/cuda/matmul.jl
+ create mode 100644 packages/Batched/yUbIZ/src/cuda/routines/blas.jl
+ create mode 100644 packages/Batched/yUbIZ/src/matmul.jl
+ create mode 100644 packages/Batched/yUbIZ/src/routines/blas.jl
+ create mode 100644 packages/Batched/yUbIZ/src/routines/linalg.jl
+ create mode 100644 packages/Batched/yUbIZ/test/routines/gemm.jl
+ create mode 100644 packages/Batched/yUbIZ/test/routines/tr.jl
+ create mode 100644 packages/Batched/yUbIZ/test/runtests.jl
+ create mode 100644 packages/CUDAapi/0Ozyy/.appveyor.ps1
+ create mode 100644 packages/CUDAapi/0Ozyy/.appveyor.yml
+ create mode 100644 packages/CUDAapi/0Ozyy/.gitignore
+ create mode 100644 packages/CUDAapi/0Ozyy/.gitlab-ci.yml
+ create mode 100755 packages/CUDAapi/0Ozyy/.travis.linux
+ create mode 100755 packages/CUDAapi/0Ozyy/.travis.osx
+ create mode 100644 packages/CUDAapi/0Ozyy/.travis.yml
+ create mode 100644 packages/CUDAapi/0Ozyy/LICENSE.md
+ create mode 100644 packages/CUDAapi/0Ozyy/Project.toml
+ create mode 100644 packages/CUDAapi/0Ozyy/README.md
+ create mode 100644 packages/CUDAapi/0Ozyy/REQUIRE
+ create mode 100644 packages/CUDAapi/0Ozyy/bors.toml
+ create mode 100644 packages/CUDAapi/0Ozyy/codecov.yml
+ create mode 100644 packages/CUDAapi/0Ozyy/src/CUDAapi.jl
+ create mode 100644 packages/CUDAapi/0Ozyy/src/compatibility.jl
+ create mode 100644 packages/CUDAapi/0Ozyy/src/discovery.jl
+ create mode 100644 packages/CUDAapi/0Ozyy/src/library_types.jl
+ create mode 100644 packages/CUDAapi/0Ozyy/src/util.jl
+ create mode 100644 packages/CUDAapi/0Ozyy/test/runtests.jl
+ create mode 100644 packages/Flux/qXNjB/.gitattributes
+ create mode 100644 packages/Flux/qXNjB/.gitignore
+ create mode 100644 packages/Flux/qXNjB/.gitlab-ci.yml
+ create mode 100644 packages/Flux/qXNjB/.travis.yml
+ create mode 100644 packages/Flux/qXNjB/LICENSE.md
+ create mode 100644 packages/Flux/qXNjB/Manifest.toml
+ create mode 100644 packages/Flux/qXNjB/NEWS.md
+ create mode 100644 packages/Flux/qXNjB/Project.toml
+ create mode 100644 packages/Flux/qXNjB/README.md
+ create mode 100644 packages/Flux/qXNjB/REQUIRE
+ create mode 100644 packages/Flux/qXNjB/bors.toml
+ create mode 100644 packages/Flux/qXNjB/docs/Manifest.toml
+ create mode 100644 packages/Flux/qXNjB/docs/Project.toml
+ create mode 100644 packages/Flux/qXNjB/docs/make.jl
+ create mode 100644 packages/Flux/qXNjB/docs/src/assets/flux.css
+ create mode 100644 packages/Flux/qXNjB/docs/src/community.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/data/onehot.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/gpu.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/index.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/internals/tracker.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/models/basics.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/models/layers.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/models/recurrence.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/models/regularisation.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/performance.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/saving.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/training/optimisers.md
+ create mode 100644 packages/Flux/qXNjB/docs/src/training/training.md
+ create mode 100644 packages/Flux/qXNjB/paper/paper.bib
+ create mode 100644 packages/Flux/qXNjB/paper/paper.md
+ create mode 100644 packages/Flux/qXNjB/src/Flux.jl
+ create mode 100644 packages/Flux/qXNjB/src/cuda/cuda.jl
+ create mode 100644 packages/Flux/qXNjB/src/cuda/cudnn.jl
+ create mode 100644 packages/Flux/qXNjB/src/cuda/curnn.jl
+ create mode 100644 packages/Flux/qXNjB/src/data/Data.jl
+ create mode 100644 packages/Flux/qXNjB/src/data/cmudict.jl
+ create mode 100644 packages/Flux/qXNjB/src/data/fashion-mnist.jl
+ create mode 100644 packages/Flux/qXNjB/src/data/iris.jl
+ create mode 100644 packages/Flux/qXNjB/src/data/mnist.jl
+ create mode 100644 packages/Flux/qXNjB/src/data/sentiment.jl
+ create mode 100644 packages/Flux/qXNjB/src/data/tree.jl
+ create mode 100644 packages/Flux/qXNjB/src/layers/basic.jl
+ create mode 100644 packages/Flux/qXNjB/src/layers/conv.jl
+ create mode 100644 packages/Flux/qXNjB/src/layers/normalise.jl
+ create mode 100644 packages/Flux/qXNjB/src/layers/recurrent.jl
+ create mode 100644 packages/Flux/qXNjB/src/layers/stateless.jl
+ create mode 100644 packages/Flux/qXNjB/src/onehot.jl
+ create mode 100644 packages/Flux/qXNjB/src/optimise/Optimise.jl
+ create mode 100644 packages/Flux/qXNjB/src/optimise/deprecations.jl
+ create mode 100644 packages/Flux/qXNjB/src/optimise/optimisers.jl
+ create mode 100644 packages/Flux/qXNjB/src/optimise/train.jl
+ create mode 100644 packages/Flux/qXNjB/src/treelike.jl
+ create mode 100644 packages/Flux/qXNjB/src/utils.jl
+ create mode 100644 packages/Flux/qXNjB/test/cuda/cuda.jl
+ create mode 100644 packages/Flux/qXNjB/test/cuda/cudnn.jl
+ create mode 100644 packages/Flux/qXNjB/test/cuda/curnn.jl
+ create mode 100644 packages/Flux/qXNjB/test/data.jl
+ create mode 100644 packages/Flux/qXNjB/test/layers/basic.jl
+ create mode 100644 packages/Flux/qXNjB/test/layers/conv.jl
+ create mode 100644 packages/Flux/qXNjB/test/layers/normalisation.jl
+ create mode 100644 packages/Flux/qXNjB/test/layers/stateless.jl
+ create mode 100644 packages/Flux/qXNjB/test/onehot.jl
+ create mode 100644 packages/Flux/qXNjB/test/optimise.jl
+ create mode 100644 packages/Flux/qXNjB/test/runtests.jl
+ create mode 100644 packages/Flux/qXNjB/test/tracker.jl
+ create mode 100644 packages/Flux/qXNjB/test/utils.jl
+To https://github.com/watsona4/dot_julia.git
+   a6625b11a..fca956f57  master -> master
+Progress:   6%|██▎                                      |  ETA: 4 days, 15:02:21[K
+Installing BatchedRoutines
+ Resolving package versions...
+ Installed BatchedRoutines ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [a9ab73d0] + BatchedRoutines v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [a9ab73d0] + BatchedRoutines v0.1.0
+  Building BatchedRoutines → `~/.julia/packages/BatchedRoutines/5YXRI/deps/build.log`
+  Building BatchedRoutines → `~/.julia/packages/BatchedRoutines/5YXRI/deps/build.log`

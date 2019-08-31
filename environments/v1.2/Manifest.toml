@@ -737,6 +737,12 @@ git-tree-sha1 = "65927ef98b6764f1eee73494c2f4296de1a44ca8"
 uuid = "1629540a-9a93-50e9-aec3-2a5ae159dca9"
 version = "0.1.0"
 
+[[BatchedRoutines]]
+deps = ["CUDAapi", "LinearAlgebra", "Pkg", "Test"]
+git-tree-sha1 = "0a5c56df32beb8d411c9a8e599b0608a715e9426"
+uuid = "a9ab73d0-e05c-5df1-8fde-d6a4645b8d8e"
+version = "0.1.0"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
