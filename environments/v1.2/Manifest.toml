@@ -1160,6 +1160,12 @@ git-tree-sha1 = "e2c20dc7581d8fb1a7939e68972bb6dbfa9d9571"
 uuid = "d3bc4f2e-91e6-11e9-365e-cd067da536ce"
 version = "0.1.0"
 
+[[Bridge]]
+deps = ["Colors", "DelimitedFiles", "Distributions", "LinearAlgebra", "Polynomials", "Random", "RecipesBase", "SparseArrays", "StaticArrays", "Statistics", "SuiteSparse", "Trajectories"]
+git-tree-sha1 = "6c98db6041340b32d883d8bea9900e862f9f56ac"
+uuid = "2d3116d5-4b8f-5680-861c-71f149790274"
+version = "0.10.0"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
@@ -3285,6 +3291,12 @@ deps = ["Adapt", "DiffRules", "ForwardDiff", "LinearAlgebra", "MacroTools", "NNl
 git-tree-sha1 = "1aa443d3b4bfa91a8aec32f169a479cb87309910"
 uuid = "9f7883ad-71c0-57eb-9f7f-b5c9e6d3789c"
 version = "0.2.3"
+
+[[Trajectories]]
+deps = ["RecipesBase", "Tables", "Test"]
+git-tree-sha1 = "12e44c9a3517570935b14f9e3969fe2134cafff2"
+uuid = "2c80a279-213e-54d7-a557-e9a14725db56"
+version = "0.1.0"
 
 [[TranscodingStreams]]
 deps = ["Random", "Test"]

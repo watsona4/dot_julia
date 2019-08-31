@@ -1,0 +1,10 @@
+cholupper(a) = cholesky(a).U
+cholupper(a::Number) = sqrt(a)
+chollower(a) = cholesky(a).L
+chollower(a::Number) = sqrt(a)
+export cholupper, chollower
+cholupper!(a) = cholesky!(a).U
+cholupper!(a::Number) = sqrt(a)
+chollower!(a) = cholesky!(a).L
+chollower!(a::Number) = sqrt(a)
+export cholupper!, chollower!

@@ -34401,3 +34401,31 @@ Installing BranchAndPrune
   [d3bc4f2e] + BranchAndPrune v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [d3bc4f2e] + BranchAndPrune v0.1.0
+[master 5fe10cacd] added package BranchAndPrune
+ 15 files changed, 817 insertions(+)
+ create mode 100644 packages/BranchAndPrune/I3MSf/LICENSE.txt
+ create mode 100644 packages/BranchAndPrune/I3MSf/Project.toml
+ create mode 100644 packages/BranchAndPrune/I3MSf/README.md
+ create mode 100644 packages/BranchAndPrune/I3MSf/example/monotonic_zero.jl
+ create mode 100644 packages/BranchAndPrune/I3MSf/src/BranchAndPrune.jl
+ create mode 100644 packages/BranchAndPrune/I3MSf/src/forced_definitions.jl
+ create mode 100644 packages/BranchAndPrune/I3MSf/src/search.jl
+ create mode 100644 packages/BranchAndPrune/I3MSf/src/tree.jl
+ create mode 100644 packages/BranchAndPrune/I3MSf/test/interface.jl
+ create mode 100644 packages/BranchAndPrune/I3MSf/test/runtests.jl
+ create mode 100644 packages/BranchAndPrune/I3MSf/test/tree.jl
+To https://github.com/watsona4/dot_julia.git
+   271a4072e..5fe10cacd  master -> master
+Progress:   8%|███▌                                     |  ETA: 3 days, 17:58:16[K
+Installing Bridge
+ Resolving package versions...
+ Installed Trajectories ─ v0.1.0
+ Installed Bridge ─────── v0.10.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [2d3116d5] + Bridge v0.10.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [2d3116d5] + Bridge v0.10.0
+  [2c80a279] + Trajectories v0.1.0
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
