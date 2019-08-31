@@ -264,6 +264,12 @@ git-tree-sha1 = "0c1e68affc6d9af740248aaf79d993d75788d939"
 uuid = "c42f9944-9a8f-11e9-2851-1930a3e1c813"
 version = "0.1.0"
 
+[[AmplNLReader]]
+deps = ["BinDeps", "Libdl", "LinearAlgebra", "NLPModels", "SparseArrays"]
+git-tree-sha1 = "c1147a1f8702d183b0a87f2ff9692b14d69451fe"
+uuid = "77dd3d4c-cb1d-5e09-9340-85030ff7ba66"
+version = "0.5.0"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -598,6 +604,11 @@ git-tree-sha1 = "e1a479d3c972f20c9a70563eec740bbfc786f515"
 uuid = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
 version = "0.3.0"
 
+[[FastClosures]]
+git-tree-sha1 = "b451807e68d0056fab1d094eab27e3b5fd424f1b"
+uuid = "9aa1b823-49e4-5ca5-8b0f-3971ec8bab6a"
+version = "0.3.1"
+
 [[FastRounding]]
 deps = ["ErrorfreeArithmetic", "Test"]
 git-tree-sha1 = "224175e213fd4fe112db3eea05d66b308dc2bf6b"
@@ -930,6 +941,12 @@ version = "7.0.1"
 deps = ["Libdl"]
 uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 
+[[LinearOperators]]
+deps = ["FastClosures", "LinearAlgebra", "Printf", "SparseArrays", "Test"]
+git-tree-sha1 = "316d05c6b0df402efc110a3cfb0c0a365171fb51"
+uuid = "5c8ed15e-5a4c-59e4-a42b-c7e8811fb125"
+version = "0.5.4"
+
 [[Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
@@ -987,6 +1004,12 @@ deps = ["MacroTools", "Test"]
 git-tree-sha1 = "41e6e7c4b448afeaddaac7f496b414854f83b848"
 uuid = "46d2c3a1-f734-5fdb-9937-b9b9aeba4221"
 version = "0.2.1"
+
+[[NLPModels]]
+deps = ["FastClosures", "ForwardDiff", "LinearAlgebra", "LinearOperators", "Printf", "SparseArrays", "Test"]
+git-tree-sha1 = "8eedfa85d4b3b641b4e5153c175b11bddb12f775"
+uuid = "a4795742-8479-5a88-8948-cc11e1c8c1a6"
+version = "0.8.3"
 
 [[NLSolversBase]]
 deps = ["Calculus", "DiffEqDiffTools", "DiffResults", "Distributed", "ForwardDiff"]

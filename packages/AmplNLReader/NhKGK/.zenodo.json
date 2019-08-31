@@ -1,0 +1,31 @@
+{
+  "description": "A Julia interface to AMPL",
+  "title": "AmplNLReader.jl",
+  "upload_type": "software",
+  "publication_date": "2019-02-07",
+  "creators": [
+    {
+      "affiliation": "École Polytechnique/GERAD - Montréal",
+      "name": "Dominique Orban"
+    },
+    {
+      "affiliation": "Federal University of Paraná - UFPR",
+      "name": "Abel Soares Siqueira"
+    }
+  ],
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/JuliaSmoothOptimizers/AmplNLReader.jl/releases/latest",
+      "relation": "isSupplementTo"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Miles Lubin",
+      "type": "Researcher"
+    }
+  ],
+  "license": "MPL-2.0"
+}

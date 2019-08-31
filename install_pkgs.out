@@ -9301,3 +9301,86 @@ Installing Amb
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [c42f9944] + Amb v0.1.0
   [7057c7e9] + Cassette v0.2.6
+[master b872590aa] added package Amb
+ 40 files changed, 4605 insertions(+)
+ create mode 100644 packages/Amb/YXWVk/.travis.yml
+ create mode 100644 packages/Amb/YXWVk/LICENSE
+ create mode 100644 packages/Amb/YXWVk/Project.toml
+ create mode 100644 packages/Amb/YXWVk/README.md
+ create mode 100644 packages/Amb/YXWVk/src/Amb.jl
+ create mode 100644 packages/Amb/YXWVk/test/runtests.jl
+ create mode 100644 packages/Cassette/YCOeN/.gitignore
+ create mode 100644 packages/Cassette/YCOeN/.travis.yml
+ create mode 100644 packages/Cassette/YCOeN/LICENSE.md
+ create mode 100644 packages/Cassette/YCOeN/Project.toml
+ create mode 100644 packages/Cassette/YCOeN/README.md
+ create mode 100644 packages/Cassette/YCOeN/appveyor.yml
+ create mode 100644 packages/Cassette/YCOeN/docs/img/cassette-logo.png
+ create mode 100644 packages/Cassette/YCOeN/docs/img/cassette-logo.svg
+ create mode 100644 packages/Cassette/YCOeN/docs/img/compile-cycle-new.png
+ create mode 100644 packages/Cassette/YCOeN/docs/img/compile-cycle-new.svg
+ create mode 100644 packages/Cassette/YCOeN/docs/make.jl
+ create mode 100644 packages/Cassette/YCOeN/docs/src/api.md
+ create mode 100644 packages/Cassette/YCOeN/docs/src/contextualdispatch.md
+ create mode 100644 packages/Cassette/YCOeN/docs/src/contextualpass.md
+ create mode 100644 packages/Cassette/YCOeN/docs/src/contextualtagging.md
+ create mode 100644 packages/Cassette/YCOeN/docs/src/disclaimers.md
+ create mode 100644 packages/Cassette/YCOeN/docs/src/index.md
+ create mode 100644 packages/Cassette/YCOeN/docs/src/overdub.md
+ create mode 100644 packages/Cassette/YCOeN/docs/src/relatedwork.md
+ create mode 100644 packages/Cassette/YCOeN/docs/src/whycassette.md
+ create mode 100644 packages/Cassette/YCOeN/src/Cassette.jl
+ create mode 100644 packages/Cassette/YCOeN/src/context.jl
+ create mode 100644 packages/Cassette/YCOeN/src/deprecations.jl
+ create mode 100644 packages/Cassette/YCOeN/src/overdub.jl
+ create mode 100644 packages/Cassette/YCOeN/src/pass.jl
+ create mode 100644 packages/Cassette/YCOeN/src/tagging.jl
+ create mode 100644 packages/Cassette/YCOeN/test/misctaggingtests.jl
+ create mode 100644 packages/Cassette/YCOeN/test/misctests.jl
+ create mode 100644 packages/Cassette/YCOeN/test/runtests.jl
+ create mode 100644 packages/Cassette/YCOeN/test/unittests.jl
+To https://github.com/watsona4/dot_julia.git
+   f43138434..b872590aa  master -> master
+Progress:   2%|▉                                        |  ETA: 2 days, 4:59:59[K
+Installing AmplNLReader
+ Resolving package versions...
+ Installed FastClosures ──── v0.3.1
+ Installed AmplNLReader ──── v0.5.0
+ Installed NLPModels ─────── v0.8.3
+ Installed LinearOperators ─ v0.5.4
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [77dd3d4c] + AmplNLReader v0.5.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [77dd3d4c] + AmplNLReader v0.5.0
+  [9aa1b823] + FastClosures v0.3.1
+  [5c8ed15e] + LinearOperators v0.5.4
+  [a4795742] + NLPModels v0.8.3
+  Building AmplNLReader → `~/.julia/packages/AmplNLReader/NhKGK/deps/build.log`
+┌ Error: Error building `AmplNLReader`: 
+│ ERROR: LoadError: ArgumentError: Package Compat not found in current path:
+│ - Run `import Pkg; Pkg.add("Compat")` to install the Compat package.
+│ 
+│ Stacktrace:
+│  [1] require(::Module, ::Symbol) at ./loading.jl:876
+│  [2] include at ./boot.jl:328 [inlined]
+│  [3] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [4] include(::Module, ::String) at ./Base.jl:31
+│  [5] include(::String) at ./client.jl:431
+│  [6] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/AmplNLReader/NhKGK/deps/build.jl:2
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building AmplNLReader ────→ `~/.julia/packages/AmplNLReader/NhKGK/deps/build.log`
+┌ Error: Error building `AmplNLReader`: 
+│ ERROR: LoadError: ArgumentError: Package Compat not found in current path:
+│ - Run `import Pkg; Pkg.add("Compat")` to install the Compat package.
+│ 
+│ Stacktrace:
+│  [1] require(::Module, ::Symbol) at ./loading.jl:876
+│  [2] include at ./boot.jl:328 [inlined]
+│  [3] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [4] include(::Module, ::String) at ./Base.jl:31
+│  [5] include(::String) at ./client.jl:431
+│  [6] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/AmplNLReader/NhKGK/deps/build.jl:2
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
