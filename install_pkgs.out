@@ -29698,3 +29698,58 @@ Installing BayesianLinearRegressors
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master aa2d6a7d0] added package BayesianLinearRegressors
+ 32 files changed, 1517 insertions(+)
+ create mode 100644 packages/BayesianLinearRegressors/IqZkp/.gitignore
+ create mode 100644 packages/BayesianLinearRegressors/IqZkp/Project.toml
+ create mode 100644 packages/BayesianLinearRegressors/IqZkp/README.md
+ create mode 100644 packages/BayesianLinearRegressors/IqZkp/REQUIRE
+ create mode 100644 packages/BayesianLinearRegressors/IqZkp/src/BayesianLinearRegressors.jl
+ create mode 100644 packages/BayesianLinearRegressors/IqZkp/src/bayesian_linear_regression.jl
+ create mode 100644 packages/BayesianLinearRegressors/IqZkp/test/bayesian_linear_regression.jl
+ create mode 100644 packages/BayesianLinearRegressors/IqZkp/test/runtests.jl
+ create mode 100644 packages/FDM/01oCp/.codecov.yml
+ create mode 100644 packages/FDM/01oCp/.gitignore
+ create mode 100644 packages/FDM/01oCp/.travis.yml
+ create mode 100644 packages/FDM/01oCp/LICENSE
+ create mode 100644 packages/FDM/01oCp/Project.toml
+ create mode 100644 packages/FDM/01oCp/README.md
+ create mode 100644 packages/FDM/01oCp/appveyor.yml
+ create mode 100644 packages/FDM/01oCp/docs/Project.toml
+ create mode 100644 packages/FDM/01oCp/docs/make.jl
+ create mode 100644 packages/FDM/01oCp/docs/src/assets/invenia.css
+ create mode 100644 packages/FDM/01oCp/docs/src/index.md
+ create mode 100644 packages/FDM/01oCp/docs/src/pages/api.md
+ create mode 100644 packages/FDM/01oCp/src/FDM.jl
+ create mode 100644 packages/FDM/01oCp/src/grad.jl
+ create mode 100644 packages/FDM/01oCp/src/methods.jl
+ create mode 100644 packages/FDM/01oCp/src/numerics.jl
+ create mode 100644 packages/FDM/01oCp/test/grad.jl
+ create mode 100644 packages/FDM/01oCp/test/methods.jl
+ create mode 100644 packages/FDM/01oCp/test/numerics.jl
+ create mode 100644 packages/FDM/01oCp/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   9b278a517..aa2d6a7d0  master -> master
+Progress:   6%|██▍                                      |  ETA: 4 days, 13:43:41[K
+Installing BayesianNonparametrics
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package ProgressMeter [92933f4c]:\n ProgressMeter [92933f4c] log:\n ├─possible versions are: [0.0.1-0.0.2, 0.1.0-0.1.3, 0.2.0-0.2.3, 0.3.0-0.3.4, 0.4.0, 0.5.0-0.5.6, 0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0, 1.0.0] or uninstalled\n ├─restricted to versions 1.0.0 by an explicit requirement, leaving only versions 1.0.0\n └─restricted by compatibility requirements with BayesianNonparametrics [7e49bc5d] to versions: [0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0] — no versions left\n   └─BayesianNonparametrics [7e49bc5d] log:\n     ├─possible versions are: [0.0.1, 0.1.0] or uninstalled\n     ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0]\n     └─restricted by julia compatibility requirements to versions: 0.1.0 or uninstalled, leaving only versions: 0.1.0", nothing)
+Progress:   6%|██▍                                      |  ETA: 4 days, 13:06:52[K
+Installing BayesianOptimization
+ Resolving package versions...
+ Installed BayesianOptimization ─ v0.2.1
+ Installed ScikitLearnBase ────── v0.5.0
+ Installed ElasticPDMats ──────── v0.2.1
+ Installed GaussianProcesses ──── v0.9.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [4c6ed407] + BayesianOptimization v0.2.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [4c6ed407] + BayesianOptimization v0.2.1
+  [2904ab23] + ElasticPDMats v0.2.1
+  [891a1506] + GaussianProcesses v0.9.0
+  [6e75b9c4] + ScikitLearnBase v0.5.0
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building CMake ───────────→ `~/.julia/packages/CMake/nSK2r/deps/build.log`
+  Building NLopt ───────────→ `~/.julia/packages/NLopt/eqN9a/deps/build.log`

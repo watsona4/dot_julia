@@ -767,6 +767,12 @@ git-tree-sha1 = "1c0f2f2ce6203ce4bcf0609d5f53697dbe0f6d24"
 uuid = "f579363c-4606-5e5c-a623-c4549f609c4b"
 version = "0.1.0"
 
+[[BayesianOptimization]]
+deps = ["Dates", "DiffResults", "ElasticPDMats", "ForwardDiff", "GaussianProcesses", "NLopt", "Random", "Sobol", "SpecialFunctions", "TimerOutputs"]
+git-tree-sha1 = "316239ff4f10eea74ff83992fddd1d4e6a10a088"
+uuid = "4c6ed407-134f-591c-93fa-e0f7c164a0ec"
+version = "0.2.1"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
@@ -1229,6 +1235,12 @@ git-tree-sha1 = "d9c079b747b9e9985d83e806bb77e41d149c959a"
 uuid = "fdbdab4c-e67f-52f5-8c3f-e7b388dad3d4"
 version = "0.4.0"
 
+[[ElasticPDMats]]
+deps = ["LinearAlgebra", "MacroTools", "PDMats", "Test"]
+git-tree-sha1 = "c6ac4406d9b4a549f7316fc746f7ccd5f1bcd2cd"
+uuid = "2904ab23-551e-5aed-883f-487f97af5226"
+version = "0.2.1"
+
 [[Electron]]
 deps = ["Base64", "JSON", "Sockets", "URIParser"]
 git-tree-sha1 = "7731daad05c67a98995152990630555ec0c0b4ee"
@@ -1442,6 +1454,12 @@ deps = ["Libdl", "Test"]
 git-tree-sha1 = "ee443ef166b29282301468d8af403e1ed8f5412e"
 uuid = "92fee26a-97fe-5a0c-ad85-20a5f3185b63"
 version = "0.5.0"
+
+[[GaussianProcesses]]
+deps = ["Distances", "Distributions", "ElasticArrays", "ElasticPDMats", "FastGaussQuadrature", "ForwardDiff", "LinearAlgebra", "Optim", "PDMats", "Printf", "Random", "RecipesBase", "ScikitLearnBase", "SpecialFunctions", "StaticArrays", "Statistics", "StatsFuns", "Test"]
+git-tree-sha1 = "d27b78ff418d683df83ea7ae74f4eb545a8504ae"
+uuid = "891a1506-143c-57d2-908e-e1f8e92e6de9"
+version = "0.9.0"
 
 [[GenericSVD]]
 deps = ["LinearAlgebra", "Random", "Test"]
@@ -2423,6 +2441,12 @@ deps = ["CompScienceMeshes", "FastGaussQuadrature", "LinearAlgebra", "StaticArra
 git-tree-sha1 = "04613230d106781615014703c3bee8bb62e934d0"
 uuid = "535c7bfe-2023-5c1d-b712-654ef9d93a38"
 version = "2.1.0"
+
+[[ScikitLearnBase]]
+deps = ["LinearAlgebra", "Random", "Statistics"]
+git-tree-sha1 = "7877e55c1523a4b336b433da39c8e8c08d2f221f"
+uuid = "6e75b9c4-186b-50bd-896f-2d2496a4843e"
+version = "0.5.0"
 
 [[Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
