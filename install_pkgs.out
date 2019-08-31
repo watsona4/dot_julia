@@ -28411,3 +28411,260 @@ Installing BHAtp
   Building GR ────→ `~/.julia/packages/GR/ZI5OE/deps/build.log`
   Building FFMPEG → `~/.julia/packages/FFMPEG/9JQpZ/deps/build.log`
   Building Plots ─→ `~/.julia/packages/Plots/Ih71u/deps/build.log`
+[master a670f758a] added package BHAtp
+ 245 files changed, 25289 insertions(+)
+ create mode 100644 packages/BHAtp/0EAZi/.codecov.yml
+ create mode 100644 packages/BHAtp/0EAZi/.gitignore
+ create mode 100644 packages/BHAtp/0EAZi/.travis.yml
+ create mode 100644 packages/BHAtp/0EAZi/LICENSE.md
+ create mode 100644 packages/BHAtp/0EAZi/Project.toml
+ create mode 100644 packages/BHAtp/0EAZi/README.md
+ create mode 100644 packages/BHAtp/0EAZi/REQUIRE
+ create mode 100644 packages/BHAtp/0EAZi/appveyor.yml
+ create mode 100644 packages/BHAtp/0EAZi/examples/ex01.jl
+ create mode 100644 packages/BHAtp/0EAZi/examples/ex02.jl
+ create mode 100644 packages/BHAtp/0EAZi/examples/ex03.jl
+ create mode 100644 packages/BHAtp/0EAZi/examples/ex04.jl
+ create mode 100644 packages/BHAtp/0EAZi/examples/figure-01.png
+ create mode 100644 packages/BHAtp/0EAZi/examples/figure-02.png
+ create mode 100644 packages/BHAtp/0EAZi/examples/figure-03.png
+ create mode 100644 packages/BHAtp/0EAZi/examples/figure-04.png
+ create mode 100644 packages/BHAtp/0EAZi/src/BHAtp.jl
+ create mode 100644 packages/BHAtp/0EAZi/src/p44_1.jl
+ create mode 100644 packages/BHAtp/0EAZi/test/runtests.jl
+ create mode 100644 packages/BHAtp/0EAZi/test/test_ex01.jl
+ create mode 100644 packages/PtFEM/qq8cm/.gitattributes
+ create mode 100644 packages/PtFEM/qq8cm/.gitignore
+ create mode 100644 packages/PtFEM/qq8cm/.travis.yml
+ create mode 100644 packages/PtFEM/qq8cm/LICENSE.md
+ create mode 100644 packages/PtFEM/qq8cm/Project.toml
+ create mode 100644 packages/PtFEM/qq8cm/README.md
+ create mode 100644 packages/PtFEM/qq8cm/REQUIRE
+ create mode 100644 packages/PtFEM/qq8cm/appveyor.yml
+ create mode 100644 packages/PtFEM/qq8cm/docs/make.jl
+ create mode 100644 packages/PtFEM/qq8cm/docs/other/BeamFormulas.pdf
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/CHANGES.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/Ex41.1.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/Ex44.1.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/Ex45.1.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/Ex46.1.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/Ex47.1.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/Ex51.1.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/Ex62.1.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/GETTINGSTARTED.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/INTRO.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/REFERENCES.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/TODO.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/VERSIONS.md
+ create mode 100644 packages/PtFEM/qq8cm/docs/src/index.md
+ create mode 100644 packages/PtFEM/qq8cm/examples/Nodal Formulas/figure-23.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/Nodal Formulas/figure-23.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/Nodal Formulas/figure-23b.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/Nodal Formulas/figure-23b.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/Nodal Formulas/figure-24.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/Nodal Formulas/figure-24.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/Nodal Formulas/update_equivalent_m_and_f.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex41.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex41.1.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex41.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex41.2.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex41.3.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex42.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex42.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex43.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex43.1a.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex43.1b.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex43.1b.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex43.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex43.3.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex44.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex44.1.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex44.1a.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex44.1a.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex44.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex44.3.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex45.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex45.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex46.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex46.1a.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex46.1a.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex46.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex46.2a.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex46.2a.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex47.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/4 Static Equilibrium/Ex47.1_2D.vtr
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex51.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex51.1_skyline.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex51.1b.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex51.1c.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex51.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex51.2b.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex51.3.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex51.4.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex51.5.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex52.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex53.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex54.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex54.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex54.2b.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex54.2c.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex54.3.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex55.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex56.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex56.1_skyline.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex57.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex57.1.loads.dat
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex57.1.nf.dat
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/5 Elastic Solids/Ex57.1b.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/6 Material Nonlinearity/Ex61.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/6 Material Nonlinearity/Ex61.1.jl_dis.png
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/6 Material Nonlinearity/Ex62.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/6 Material Nonlinearity/Ex62.1a.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/6 Material Nonlinearity/Ex63.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/6 Material Nonlinearity/Ex63.1.profile.txt
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/6 Material Nonlinearity/Ex63.1_skyline.jl
+ create mode 100644 packages/PtFEM/qq8cm/examples/PtFEM/6 Material Nonlinearity/fig6.11.png
+ create mode 100644 packages/PtFEM/qq8cm/src/4 Static Equilibrium/p41.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/4 Static Equilibrium/p42.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/4 Static Equilibrium/p43.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/4 Static Equilibrium/p44.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/4 Static Equilibrium/p45.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/4 Static Equilibrium/p46.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/4 Static Equilibrium/p47.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/5 Elastic Solids/p51.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/5 Elastic Solids/p51_skyline.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/5 Elastic Solids/p52.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/5 Elastic Solids/p53.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/5 Elastic Solids/p54.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/5 Elastic Solids/p55.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/5 Elastic Solids/p56.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/5 Elastic Solids/p56_skyline.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/6 Material Nonlinearity/p61.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/6 Material Nonlinearity/p62.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/6 Material Nonlinearity/p62a.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/6 Material Nonlinearity/p63.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/6 Material Nonlinearity/p63_skyline.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/Notebooks/Yeoh_large_deformations.ipynb
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/Notebooks/cantilever.ipynb
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/Notebooks/cass2_mesh_data.mat
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/Notebooks/cooks_membrane_mixed_up.ipynb
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/Notebooks/heat_square.ipynb
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/Notebooks/helmholtz.ipynb
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/Notebooks/hyperelasticity.ipynb
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/Notebooks/stiffness_example.ipynb
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/basicusage.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/cantilever.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/cl.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/heat_square.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/hyperelasticity.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/JuaFEM/stiffness_example.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Deprecated/fkdiag.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Deprecated/fromSkyline.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Deprecated/fsparv.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Deprecated/linmul_sky.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Deprecated/skyline2sparse.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Deprecated/spabac.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Deprecated/sparin.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Geom/bc_rect.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Geom/geom_rect.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Geom/hexahedron_xz.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Geom/mesh_size.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/beam_gm.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/beam_km.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/beam_mm.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/beemat.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/bmat_nonaxi.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/checon.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/deemat.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/fmplat.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/formm.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/formnf.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/fsparm.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/global_to_axial.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/global_to_local.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/hinge.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/invar.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/local_to_global.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/mocouf.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/mocouq.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/num_to_g.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/pin_jointed.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/read_generated_data.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/rigid_jointed.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/rod_km.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/rod_mm.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/sample_hexahedron.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/sample_line.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/sample_quadrilateral.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/sample_tetrahedron.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/sample_triangle.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/shape_der.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/shape_fun.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Main/stability.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Types/FEM.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Types/finite_elements.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Types/structural_elements.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/PtFEM/Utilities/useplots.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/deprecated.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/plotrecipes/mesh.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/vtkrecipes/exportVTK_XML.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/vtkrecipes/vtk.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/REQUIRE
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/array.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/checksums.sha1
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/imagedata.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/multiblock.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/pvdCollection.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/rectilinear.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/rl.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/rl_2D.vtr
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/runtests.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/structured.jl
+ create mode 100644 packages/PtFEM/qq8cm/src/graphics/writevtk/unstructured.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/example-01a.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/example-01b.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/example-01c.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/matrix.o
+ create mode 100644 packages/PtFEM/qq8cm/test/runexamples.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/runtests.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/sparse01.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/sparse02.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/sparse03.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/sparse04.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p41.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p41.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p42.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p43.1b.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p44.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p45.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p46.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p47.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p51.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p51.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p51.3.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p51.4.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p51.5.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p52.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p53.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p54.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p54.2.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p55.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p56.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p61.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p62.1.jl
+ create mode 100644 packages/PtFEM/qq8cm/test/test_p63.1.jl
+To https://github.com/watsona4/dot_julia.git
+   5a44c50b8..a670f758a  master -> master
+Progress:   5%|██                                       |  ETA: 5 days, 2:59:53[K
+Installing BIGUQ
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BIGUQ [7f9c7709]:\n BIGUQ [7f9c7709] log:\n ├─possible versions are: [0.1.0-0.1.10, 0.2.0-0.2.2, 0.3.0-0.3.3, 0.4.0, 0.5.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.10, 0.2.0-0.2.2, 0.3.0-0.3.3, 0.4.0, 0.5.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   5%|██                                       |  ETA: 5 days, 2:11:04[K
+Installing BKTrees
+ Resolving package versions...
+ Installed BKTrees ─ v0.0.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [63f0b19f] + BKTrees v0.0.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [63f0b19f] + BKTrees v0.0.1

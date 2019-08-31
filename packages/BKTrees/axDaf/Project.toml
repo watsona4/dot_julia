@@ -1,0 +1,8 @@
+name = "BKTrees"
+uuid = "ee198288-c0a6-11e8-2b13-b1a3efb02dae"
+authors = ["Corneliu Cofaru <cornel@oxoaresearch.com>"]
+version = "0.0.1"
+
+[deps]
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
