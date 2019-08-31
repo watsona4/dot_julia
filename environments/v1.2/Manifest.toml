@@ -803,6 +803,12 @@ git-tree-sha1 = "84c5b891253926aa32dfae3f79622f9528c73293"
 uuid = "85eb9095-274b-55ce-be28-9e90f41ac741"
 version = "2.1.2"
 
+[[BeliefUpdaters]]
+deps = ["POMDPModelTools", "POMDPs", "Random", "Statistics", "StatsBase"]
+git-tree-sha1 = "65bda62fef51da730e4bbba14aad7ae3abb38862"
+uuid = "8bb6e9a1-7d73-552c-a44a-e5dc5634aac4"
+version = "0.1.2"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
@@ -2186,6 +2192,18 @@ deps = ["Arpack", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "9d6a9b3e19634612fb1edcafc4b1d75242b24bde"
 uuid = "90014a1f-27ba-587c-ab20-58faa44d9150"
 version = "0.9.9"
+
+[[POMDPModelTools]]
+deps = ["Distributions", "LinearAlgebra", "POMDPs", "Random", "SparseArrays", "Statistics", "UnicodePlots"]
+git-tree-sha1 = "80033d767af45a28bc16161059551eef13e94a66"
+uuid = "08074719-1b2a-587c-a292-00f91cc44415"
+version = "0.1.7"
+
+[[POMDPs]]
+deps = ["Distributions", "LibGit2", "Pkg", "Random", "Statistics", "Test"]
+git-tree-sha1 = "4214e0a48a4c746ecde390eed7bc0e2205dc40a0"
+uuid = "a93abf59-7444-517b-a68a-c42f96afdd7d"
+version = "0.7.2"
 
 [[PackageCompiler]]
 deps = ["Libdl", "Pkg", "REPL", "Serialization", "UUIDs", "WinRPM"]

@@ -1,0 +1,5 @@
+# Nothing
+
+```@docs
+NothingUpdater
+```

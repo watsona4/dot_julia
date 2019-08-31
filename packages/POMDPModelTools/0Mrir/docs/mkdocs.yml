@@ -1,0 +1,23 @@
+site_name:        POMDPModelTools.jl
+repo_url:         https://github.com/JuliaPOMDP/POMDPModelTools.jl 
+site_description: Interface extensions and tools for POMDPs.jl models and solvers.
+site_authors:     JuliaPOMDP
+
+theme: readthedocs
+
+extra_css:
+  - assets/Documenter.css
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+  #- mdx_math
+
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+  - assets/mathjaxhelper.js
+
+docs_dir: 'build'
+
+# do NOT include pages - it will automatically discover them

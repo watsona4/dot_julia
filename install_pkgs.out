@@ -30067,3 +30067,46 @@ Installing BedgraphFiles
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [85eb9095] + BedgraphFiles v2.1.2
   [5e66a065] + TableShowUtils v0.2.5
+[master 7dcc6480d] added package BedgraphFiles
+ 28 files changed, 1376 insertions(+)
+ create mode 100644 packages/BedgraphFiles/QdaQa/.codecov.yml
+ create mode 100644 packages/BedgraphFiles/QdaQa/.gitignore
+ create mode 100644 packages/BedgraphFiles/QdaQa/.travis.yml
+ create mode 100644 packages/BedgraphFiles/QdaQa/LICENSE.md
+ create mode 100644 packages/BedgraphFiles/QdaQa/Manifest.toml
+ create mode 100644 packages/BedgraphFiles/QdaQa/Project.toml
+ create mode 100644 packages/BedgraphFiles/QdaQa/README.md
+ create mode 100644 packages/BedgraphFiles/QdaQa/appveyor.yml
+ create mode 100644 packages/BedgraphFiles/QdaQa/src/BedgraphFiles.jl
+ create mode 100644 packages/BedgraphFiles/QdaQa/src/integrations/DataFrames.jl
+ create mode 100644 packages/BedgraphFiles/QdaQa/test/data-headerless.bedgraph
+ create mode 100644 packages/BedgraphFiles/QdaQa/test/data.bedgraph
+ create mode 100644 packages/BedgraphFiles/QdaQa/test/integrations/test-DataFrames.jl
+ create mode 100644 packages/BedgraphFiles/QdaQa/test/runtests.jl
+ create mode 100644 packages/TableShowUtils/ImkA9/.codecov.yml
+ create mode 100644 packages/TableShowUtils/ImkA9/.gitignore
+ create mode 100644 packages/TableShowUtils/ImkA9/.travis.yml
+ create mode 100644 packages/TableShowUtils/ImkA9/LICENSE.md
+ create mode 100644 packages/TableShowUtils/ImkA9/NEWS.md
+ create mode 100644 packages/TableShowUtils/ImkA9/README.md
+ create mode 100644 packages/TableShowUtils/ImkA9/REQUIRE
+ create mode 100644 packages/TableShowUtils/ImkA9/appveyor.yml
+ create mode 100644 packages/TableShowUtils/ImkA9/src/TableShowUtils.jl
+ create mode 100644 packages/TableShowUtils/ImkA9/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   253983f55..7dcc6480d  master -> master
+Progress:   6%|██▌                                      |  ETA: 4 days, 10:55:44[K
+Installing BeliefUpdaters
+ Resolving package versions...
+ Installed POMDPModelTools ─ v0.1.7
+ Installed BeliefUpdaters ── v0.1.2
+ Installed POMDPs ────────── v0.7.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [8bb6e9a1] + BeliefUpdaters v0.1.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [8bb6e9a1] + BeliefUpdaters v0.1.2
+  [08074719] + POMDPModelTools v0.1.7
+  [a93abf59] + POMDPs v0.7.2
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
