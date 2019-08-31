@@ -1,0 +1,2 @@
+## experiments with variational Bayes
+

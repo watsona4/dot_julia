@@ -1,0 +1,19 @@
+site_name:           ScikitLearn.jl
+repo_url:            https://github.com/cstjean/ScikitLearn.jl
+site_description:    Julia implementation of the scikit-learn API
+site_author:         Cedric St-Jean
+theme:               readthedocs
+markdown_extensions: [tables, fenced_code]
+pages:
+- Introduction: index.md
+- Quick start guide: quickstart.md
+- Model API: api.md
+- Reading the scikit-learn documentation: python.md
+- Example gallery: examples_refer.md
+- Models: models.md
+- Cross-validation: cross_validation.md
+- Model selection: model_selection.md
+- Pipelines and FeatureUnion: pipelines.md
+- DataFrames: dataframes.md
+- Saving models to disk: jld.md
+- Getting help: help.md

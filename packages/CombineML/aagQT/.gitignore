@@ -1,0 +1,7 @@
+*.cov
+Gemfile
+Gemfile.lock
+Guardfile
+.ipynb_checkpoints
+build.log
+Manifest.toml
