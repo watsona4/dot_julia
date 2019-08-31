@@ -33424,3 +33424,24 @@ Installing BlockDiagonalFactors
   [4354e1ec] + BlockDiagonalFactors v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [4354e1ec] + BlockDiagonalFactors v0.1.0
+[master b71a70ae1] added package BlockDiagonalFactors
+ 13 files changed, 506 insertions(+)
+ create mode 100644 packages/BlockDiagonalFactors/HdQFi/.appveyor.yml
+ create mode 100644 packages/BlockDiagonalFactors/HdQFi/.gitignore
+ create mode 100644 packages/BlockDiagonalFactors/HdQFi/.travis.yml
+ create mode 100644 packages/BlockDiagonalFactors/HdQFi/CITATION.bib
+ create mode 100644 packages/BlockDiagonalFactors/HdQFi/LICENSE
+ create mode 100644 packages/BlockDiagonalFactors/HdQFi/Project.toml
+ create mode 100644 packages/BlockDiagonalFactors/HdQFi/README.md
+ create mode 100644 packages/BlockDiagonalFactors/HdQFi/src/BlockDiagonalFactors.jl
+ create mode 100644 packages/BlockDiagonalFactors/HdQFi/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   a6c4f2071..b71a70ae1  master -> master
+Progress:   8%|███▎                                     |  ETA: 3 days, 21:33:41[K
+Installing BlockDiagonals
+ Resolving package versions...
+ Installed BlockDiagonals ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [0a1fb500] + BlockDiagonals v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [0a1fb500] + BlockDiagonals v0.1.0

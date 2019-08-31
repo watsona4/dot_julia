@@ -1077,6 +1077,12 @@ git-tree-sha1 = "4590bac1cedef93c6e59095f6c42dfe0d8e5b5d8"
 uuid = "4354e1ec-8290-11e9-2b91-b56df8a56508"
 version = "0.1.0"
 
+[[BlockDiagonals]]
+deps = ["FillArrays", "LinearAlgebra"]
+git-tree-sha1 = "040bbe596df2dffc40fb969e1d09e58d22182d2b"
+uuid = "0a1fb500-61f7-11e9-3c65-f5ef3456f9f0"
+version = "0.1.0"
+
 [[Blosc]]
 deps = ["BinaryProvider", "CMakeWrapper", "Compat", "Libdl"]
 git-tree-sha1 = "71fb23581e1f0b0ae7be8ccf0ebfb3600e23ca41"
