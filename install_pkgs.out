@@ -48272,3 +48272,53 @@ Installing CharSetEncodings
   [cb9422de] + CharSetEncodings v1.0.0
   [5cb8414e] + ModuleInterfaceTools v1.0.1
   [69e7dfc3] + StrAPI v1.0.0
+[master 3886776a1] added package CharSetEncodings
+ 42 files changed, 2282 insertions(+)
+ create mode 100644 packages/CharSetEncodings/B0gIZ/.codecov.yml
+ create mode 100644 packages/CharSetEncodings/B0gIZ/.gitignore
+ create mode 100644 packages/CharSetEncodings/B0gIZ/.travis.yml
+ create mode 100644 packages/CharSetEncodings/B0gIZ/LICENSE
+ create mode 100644 packages/CharSetEncodings/B0gIZ/LICENSE.md
+ create mode 100644 packages/CharSetEncodings/B0gIZ/Project.toml
+ create mode 100644 packages/CharSetEncodings/B0gIZ/README.md
+ create mode 100644 packages/CharSetEncodings/B0gIZ/appveyor.yml
+ create mode 100644 packages/CharSetEncodings/B0gIZ/src/CharSetEncodings.jl
+ create mode 100644 packages/CharSetEncodings/B0gIZ/src/charsets.jl
+ create mode 100644 packages/CharSetEncodings/B0gIZ/src/cses.jl
+ create mode 100644 packages/CharSetEncodings/B0gIZ/src/encodings.jl
+ create mode 100644 packages/CharSetEncodings/B0gIZ/src/traits.jl
+ create mode 100644 packages/CharSetEncodings/B0gIZ/test/runtests.jl
+ create mode 100644 packages/ModuleInterfaceTools/txQ5f/.gitignore
+ create mode 100644 packages/ModuleInterfaceTools/txQ5f/.travis.yml
+ create mode 100644 packages/ModuleInterfaceTools/txQ5f/LICENSE
+ create mode 100644 packages/ModuleInterfaceTools/txQ5f/LICENSE.md
+ create mode 100644 packages/ModuleInterfaceTools/txQ5f/Project.toml
+ create mode 100644 packages/ModuleInterfaceTools/txQ5f/README.md
+ create mode 100644 packages/ModuleInterfaceTools/txQ5f/appveyor.yml
+ create mode 100644 packages/ModuleInterfaceTools/txQ5f/src/ModuleInterfaceTools.jl
+ create mode 100644 packages/ModuleInterfaceTools/txQ5f/test/REQUIRE
+ create mode 100644 packages/ModuleInterfaceTools/txQ5f/test/runtests.jl
+ create mode 100644 packages/StrAPI/cTUfD/.gitignore
+ create mode 100644 packages/StrAPI/cTUfD/.travis.yml
+ create mode 100644 packages/StrAPI/cTUfD/LICENSE
+ create mode 100644 packages/StrAPI/cTUfD/LICENSE.md
+ create mode 100644 packages/StrAPI/cTUfD/Project.toml
+ create mode 100644 packages/StrAPI/cTUfD/README.md
+ create mode 100644 packages/StrAPI/cTUfD/appveyor.yml
+ create mode 100644 packages/StrAPI/cTUfD/src/StrAPI.jl
+ create mode 100644 packages/StrAPI/cTUfD/src/codepoints.jl
+ create mode 100644 packages/StrAPI/cTUfD/src/compat.jl
+ create mode 100644 packages/StrAPI/cTUfD/src/errors.jl
+ create mode 100644 packages/StrAPI/cTUfD/src/traits.jl
+ create mode 100644 packages/StrAPI/cTUfD/src/uni.jl
+ create mode 100644 packages/StrAPI/cTUfD/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   8a6cb74c0..3886776a1  master -> master
+Progress:  12%|█████                                    |  ETA: 3 days, 11:21:13[K
+Installing ChartParsers
+ Resolving package versions...
+ Installed ChartParsers ─ v0.0.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [de988000] + ChartParsers v0.0.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [de988000] + ChartParsers v0.0.1
