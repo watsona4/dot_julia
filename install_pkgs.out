@@ -34585,3 +34585,95 @@ Installing BridgeSDEInference
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master d92e1c6b4] added package BridgeSDEInference
+ 74 files changed, 24754 insertions(+)
+ create mode 100644 packages/BridgeSDEInference/cgoWe/.gitignore
+ create mode 100644 packages/BridgeSDEInference/cgoWe/LICENSE
+ create mode 100644 packages/BridgeSDEInference/cgoWe/Manifest.toml
+ create mode 100644 packages/BridgeSDEInference/cgoWe/Project.toml
+ create mode 100644 packages/BridgeSDEInference/cgoWe/README.md
+ create mode 100644 packages/BridgeSDEInference/cgoWe/assets/param1.js.svg
+ create mode 100644 packages/BridgeSDEInference/cgoWe/assets/param2.js.svg
+ create mode 100644 packages/BridgeSDEInference/cgoWe/assets/param3.js.svg
+ create mode 100644 packages/BridgeSDEInference/cgoWe/assets/param5.js.svg
+ create mode 100644 packages/BridgeSDEInference/cgoWe/assets/paths.js.svg
+ create mode 100644 packages/BridgeSDEInference/cgoWe/docs/.Rhistory
+ create mode 100644 packages/BridgeSDEInference/cgoWe/docs/blocking.md
+ create mode 100644 packages/BridgeSDEInference/cgoWe/docs/generate_data.md
+ create mode 100644 packages/BridgeSDEInference/cgoWe/docs/parametrisations.md
+ create mode 100644 packages/BridgeSDEInference/cgoWe/docs/priors.md
+ create mode 100644 packages/BridgeSDEInference/cgoWe/docs/starting_pt.md
+ create mode 100644 packages/BridgeSDEInference/cgoWe/output/.gitignore
+ create mode 100644 packages/BridgeSDEInference/cgoWe/output/fitzhugh.mp4
+ create mode 100644 packages/BridgeSDEInference/cgoWe/output/path_fpt_simpleConjug.csv
+ create mode 100644 packages/BridgeSDEInference/cgoWe/output/path_part_obs_conj.csv
+ create mode 100644 packages/BridgeSDEInference/cgoWe/output/path_part_obs_regular.csv
+ create mode 100644 packages/BridgeSDEInference/cgoWe/output/path_part_obs_simpleConjug.csv
+ create mode 100644 packages/BridgeSDEInference/cgoWe/output/sparse_path_part_obs_simpleConjug.csv
+ create mode 100644 packages/BridgeSDEInference/cgoWe/output/up_crossing_times_exmple_simpleConjug.csv
+ create mode 100644 packages/BridgeSDEInference/cgoWe/scripts/inference_fpt_with_blocking.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/scripts/inference_fpt_without_blocking.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/scripts/inference_with_blocking.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/scripts/inference_without_blocking.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/scripts/particles.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/scripts/particles_and_sliders.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/scripts/simulate_fpt_save_to_csv.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/scripts/simulate_part_obs_save_to_csv.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/scripts/slider.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/BridgeSDEInference.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/auxiliary/data_simulation_fns.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/auxiliary/import_template_for_dev.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/auxiliary/plotting_fns.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/auxiliary/read_and_write_data.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/auxiliary/transforms.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/blocking_schedule.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/fitzHughNagumo.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/fitzHughNagumo_conjugateUpdt.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/guid_prop_bridge.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/mcmc.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/path_to_wiener.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/priors.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/ralston3.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/random_walk.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/rk4.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/sin_diffusion.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/starting_pt.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/tsit5.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/types.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/src/vern7.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/test/runtests.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/test/test_ODE_solver_change_pt.jl
+ create mode 100644 packages/BridgeSDEInference/cgoWe/test/test_blocking.jl
+ create mode 100644 packages/GaussianDistributions/kPVCl/.codecov.yml
+ create mode 100644 packages/GaussianDistributions/kPVCl/.gitignore
+ create mode 100644 packages/GaussianDistributions/kPVCl/.travis.yml
+ create mode 100644 packages/GaussianDistributions/kPVCl/LICENSE.md
+ create mode 100644 packages/GaussianDistributions/kPVCl/README.md
+ create mode 100644 packages/GaussianDistributions/kPVCl/REQUIRE
+ create mode 100644 packages/GaussianDistributions/kPVCl/appveyor.yml
+ create mode 100644 packages/GaussianDistributions/kPVCl/src/GaussianDistributions.jl
+ create mode 100644 packages/GaussianDistributions/kPVCl/src/bivariate.jl
+ create mode 100644 packages/GaussianDistributions/kPVCl/test/REQUIRE
+ create mode 100644 packages/GaussianDistributions/kPVCl/test/bivariate.jl
+ create mode 100644 packages/GaussianDistributions/kPVCl/test/gaussian.jl
+ create mode 100644 packages/GaussianDistributions/kPVCl/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   d74442a12..d92e1c6b4  master -> master
+Progress:   9%|███▌                                     |  ETA: 3 days, 18:04:03[K
+Installing Brim
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Brim [05c142c7]:\n Brim [05c142c7] log:\n ├─possible versions are: [1.0.0, 1.1.0, 1.2.1-1.2.2] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [1.0.0, 1.1.0, 1.2.1-1.2.2]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   9%|███▌                                     |  ETA: 3 days, 17:44:00[K
+Installing BritishNationalGrid
+ Resolving package versions...
+ Installed Formatting ────────── v0.4.0
+ Installed BritishNationalGrid ─ v0.3.1
+ Installed Proj4 ─────────────── v0.5.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [07503c7f] + BritishNationalGrid v0.3.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [07503c7f] + BritishNationalGrid v0.3.1
+  [59287772] + Formatting v0.4.0
+  [9a7e659c] + Proj4 v0.5.0
+  Building Proj4 → `~/.julia/packages/Proj4/UxvhB/deps/build.log`
+  Building Proj4 → `~/.julia/packages/Proj4/UxvhB/deps/build.log`

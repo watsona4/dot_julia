@@ -1172,6 +1172,12 @@ git-tree-sha1 = "362581ffdfc21b1249c5c399d5fd093e510de5af"
 uuid = "46d747a0-b9e1-11e9-14b5-615c73e45078"
 version = "0.1.0"
 
+[[BritishNationalGrid]]
+deps = ["Formatting", "Proj4", "Test"]
+git-tree-sha1 = "72b2e5fb84eb64fb19db8158b131d06a1b5e88dd"
+uuid = "07503c7f-9676-5157-a8e2-6c0d0a9caee7"
+version = "0.3.1"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
@@ -1823,6 +1829,12 @@ deps = ["Compat"]
 git-tree-sha1 = "c6fff9afa5d716fefc883d449dfc954b859718b9"
 uuid = "1fa38f19-a742-5d3f-a2b9-30dd87b9d5f8"
 version = "1.0.0"
+
+[[Formatting]]
+deps = ["Printf"]
+git-tree-sha1 = "aef8983c0f77c84ae77ced1bb3ecf5ab7d687700"
+uuid = "59287772-0a20-5a39-b81b-1366585eb4c0"
+version = "0.4.0"
 
 [[ForwardDiff]]
 deps = ["CommonSubexpressions", "DiffResults", "DiffRules", "InteractiveUtils", "LinearAlgebra", "NaNMath", "Random", "SparseArrays", "SpecialFunctions", "StaticArrays", "Test"]
@@ -2858,6 +2870,12 @@ deps = ["Distributed", "Printf"]
 git-tree-sha1 = "0f08e0e74e5b160ca20d3962a2620038b75881c7"
 uuid = "92933f4c-e287-5a05-a399-4b506db050ca"
 version = "1.0.0"
+
+[[Proj4]]
+deps = ["BinaryProvider", "Dates", "Libdl", "Printf", "Test"]
+git-tree-sha1 = "2073c3ce97519a500feb3cd91812e02ef4404d14"
+uuid = "9a7e659c-8ee8-5706-894e-f68f43bc57ea"
+version = "0.5.0"
 
 [[PtFEM]]
 deps = ["Compat", "CustomUnitRanges", "DataFrames", "Documenter", "GR", "Interpolations", "LinearAlgebra", "OffsetArrays", "Plots", "Printf", "QuadGK", "SHA", "SparseArrays", "Statistics", "SuiteSparse", "Test"]
