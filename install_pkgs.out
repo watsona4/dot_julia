@@ -29909,3 +29909,30 @@ Installing BayesianTools
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master aabdd3b6f] added package BayesianTools
+ 18 files changed, 3678 insertions(+)
+ create mode 100644 packages/BayesianTools/hvjMs/.gitignore
+ create mode 100644 packages/BayesianTools/hvjMs/.travis.yml
+ create mode 100644 packages/BayesianTools/hvjMs/LICENSE.md
+ create mode 100644 packages/BayesianTools/hvjMs/README.md
+ create mode 100644 packages/BayesianTools/hvjMs/REQUIRE
+ create mode 100644 packages/BayesianTools/hvjMs/appveyor.yml
+ create mode 100644 packages/BayesianTools/hvjMs/docs/images/sampler.png
+ create mode 100644 packages/BayesianTools/hvjMs/docs/images/sampler.svg
+ create mode 100644 packages/BayesianTools/hvjMs/src/BayesianTools.jl
+ create mode 100644 packages/BayesianTools/hvjMs/src/Links/Links.jl
+ create mode 100644 packages/BayesianTools/hvjMs/src/ProductDistributions/ProductDistributions.jl
+ create mode 100644 packages/BayesianTools/hvjMs/src/crossmethods.jl
+ create mode 100644 packages/BayesianTools/hvjMs/src/improperdist.jl
+ create mode 100644 packages/BayesianTools/hvjMs/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   f74a4aad7..aabdd3b6f  master -> master
+Progress:   6%|██▍                                      |  ETA: 4 days, 13:19:23[K
+Installing BeaData
+ Resolving package versions...
+ Installed BeaData ─ v0.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [acefaad2] + BeaData v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [acefaad2] + BeaData v0.3.0
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`

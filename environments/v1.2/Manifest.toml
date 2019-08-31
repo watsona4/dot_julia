@@ -779,6 +779,12 @@ git-tree-sha1 = "4b3153effe9c809b3eb39f142e954555ffa76118"
 uuid = "196d93e9-2b0a-59bc-85dd-07b4a30d24dc"
 version = "0.0.1"
 
+[[BeaData]]
+deps = ["DataFrames", "DataStructures", "Dates", "DocStringExtensions", "HTTP", "JSON", "Test"]
+git-tree-sha1 = "7eb855263f673e6b37770dd9342492dfbdb039fd"
+uuid = "acefaad2-17a4-5d8b-aa08-e18ef75dd0cf"
+version = "0.3.0"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
