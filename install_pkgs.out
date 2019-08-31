@@ -34289,3 +34289,40 @@ Installing BoundaryValueDiffEq
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [764a87c0] + BoundaryValueDiffEq v2.3.0
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+[master 594a0a3b4] added package BoundaryValueDiffEq
+ 25 files changed, 804 insertions(+)
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/.codecov.yml
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/.gitignore
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/.travis.yml
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/CITATION.bib
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/LICENSE.md
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/Project.toml
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/README.md
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/appveyor.yml
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/src/BoundaryValueDiffEq.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/src/alg_utils.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/src/algorithms.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/src/cache.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/src/collocation.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/src/jacobian.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/src/mirk_tableaus.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/src/solve.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/src/vector_auxiliary.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/test/mirk_convergence_tests.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/test/orbital.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/test/runtests.jl
+ create mode 100644 packages/BoundaryValueDiffEq/XvS8h/test/shooting_tests.jl
+To https://github.com/watsona4/dot_julia.git
+   2707a2cc1..594a0a3b4  master -> master
+Progress:   8%|███▍                                     |  ETA: 3 days, 19:37:04[K
+Installing BoundingBoxes
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BoundingBoxes [e33dfbef]:\n BoundingBoxes [e33dfbef] log:\n ├─possible versions are: [0.0.1, 0.1.0, 0.2.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0, 0.2.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   8%|███▍                                     |  ETA: 3 days, 19:15:59[K
+Installing BoundingSphere
+ Resolving package versions...
+ Installed BoundingSphere ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [747eb165] + BoundingSphere v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [747eb165] + BoundingSphere v0.1.0

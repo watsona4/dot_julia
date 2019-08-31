@@ -1143,6 +1143,12 @@ git-tree-sha1 = "a8f90377cbed43aa583c19471d34d9653853c52d"
 uuid = "764a87c0-6b3e-53db-9096-fe964310641d"
 version = "2.3.0"
 
+[[BoundingSphere]]
+deps = ["InteractiveUtils", "LinearAlgebra", "Random", "Statistics", "Test"]
+git-tree-sha1 = "81a9ad8c30507e213b03ed2882b72db82dcce0b3"
+uuid = "747eb165-47b8-53f2-ad32-9704a7dfc50a"
+version = "0.1.0"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
