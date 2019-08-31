@@ -29581,3 +29581,55 @@ Installing BayesOpt
   [8b8fa57b] + BayesOpt v0.1.0
   Building BayesOpt → `~/.julia/packages/BayesOpt/lYhDm/deps/build.log`
   Building BayesOpt → `~/.julia/packages/BayesOpt/lYhDm/deps/build.log`
+[master 891aa364e] added package BayesOpt
+ 33 files changed, 2839 insertions(+)
+ create mode 100644 packages/BayesOpt/lYhDm/.travis.yml
+ create mode 100644 packages/BayesOpt/lYhDm/LICENSE.md
+ create mode 100644 packages/BayesOpt/lYhDm/Project.toml
+ create mode 100644 packages/BayesOpt/lYhDm/README.md
+ create mode 100644 packages/BayesOpt/lYhDm/REQUIRE
+ create mode 100644 packages/BayesOpt/lYhDm/deps/build.jl
+ create mode 100644 packages/BayesOpt/lYhDm/deps/build.log
+ create mode 100644 packages/BayesOpt/lYhDm/deps/deps.jl
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/downloads/BayesOptBuilder.v0.1.0.x86_64-linux-gnu.tar.gz
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/downloads/BayesOptBuilder.v0.1.0.x86_64-linux-gnu.tar.gz.sha256
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/include/bayesopt/bayesopt.h
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/include/bayesopt/bayesopt.hpp
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/include/bayesopt/bayesoptbase.hpp
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/include/bayesopt/parameters.h
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/include/bayesopt/parameters.hpp
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/include/nlopt.f
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/include/nlopt.h
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/include/nlopt.hpp
+ create mode 100755 packages/BayesOpt/lYhDm/deps/usr/lib/libbayesopt.so
+ create mode 100755 packages/BayesOpt/lYhDm/deps/usr/lib/libnlopt.so
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/logs/BayesOptBuilder.log
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/logs/update_linkage_libbayesopt.so_libnlopt.so.log
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/logs/update_rpath_libnlopt.so.log
+ create mode 100644 packages/BayesOpt/lYhDm/deps/usr/manifests/BayesOptBuilder.v0.1.0.x86_64-linux-gnu.list
+ create mode 100644 packages/BayesOpt/lYhDm/src/BayesOpt.jl
+ create mode 100644 packages/BayesOpt/lYhDm/test/branin.jl
+ create mode 100644 packages/BayesOpt/lYhDm/test/coverage/Project.toml
+ create mode 100644 packages/BayesOpt/lYhDm/test/coverage/coverage.jl
+ create mode 100644 packages/BayesOpt/lYhDm/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   75b7cb89a..891aa364e  master -> master
+Progress:   6%|██▎                                      |  ETA: 4 days, 14:16:57[K
+Installing BayesianDataFusion
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BayesianDataFusion [ddc32c18]:\n BayesianDataFusion [ddc32c18] log:\n ├─possible versions are: [0.1.0, 0.2.0, 0.3.0-0.3.5, 1.0.0, 1.1.0, 1.2.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0, 0.3.0-0.3.5, 1.0.0, 1.1.0, 1.2.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   6%|██▍                                      |  ETA: 4 days, 13:39:20[K
+Installing BayesianIntegral
+ Resolving package versions...
+ Installed BayesianIntegral ─ v0.1.0
+ Installed HCubature ──────── v1.4.0
+ Installed Sobol ──────────── v1.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [170c7662] + BayesianIntegral v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [170c7662] + BayesianIntegral v0.1.0
+  [19dc6840] + HCubature v1.4.0
+  [ed01d8cd] + Sobol v1.2.0
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`

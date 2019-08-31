@@ -755,6 +755,12 @@ git-tree-sha1 = "4905322569e79e9dda8b45a3420fe22fd10d7ef1"
 uuid = "8b8fa57b-2f72-5ccd-8d28-750de228707b"
 version = "0.1.0"
 
+[[BayesianIntegral]]
+deps = ["Distributions", "HCubature", "LinearAlgebra", "Pkg", "Random", "Sobol", "Statistics", "Test"]
+git-tree-sha1 = "95815ec07b7a81c1d6d9e2a319906c7ea214375a"
+uuid = "170c7662-660e-5658-93f2-9369b3e86d75"
+version = "0.1.0"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
@@ -1472,6 +1478,12 @@ deps = ["Colors", "Compat", "NaNMath"]
 git-tree-sha1 = "e3ead4211073d4117a0d2ef7d1efc5c8092c8412"
 uuid = "a2bd30eb-e257-5431-a919-1863eab51364"
 version = "0.4.0"
+
+[[HCubature]]
+deps = ["Combinatorics", "DataStructures", "LinearAlgebra", "QuadGK", "StaticArrays"]
+git-tree-sha1 = "fc4adde0a029bf69c0da3f7c25ca24b5e0e389ed"
+uuid = "19dc6840-f33b-545b-b366-655c7e3ffd49"
+version = "1.4.0"
 
 [[HDF5]]
 deps = ["BinaryProvider", "Blosc", "CMakeWrapper", "Libdl", "Mmap"]
@@ -2442,6 +2454,12 @@ deps = ["DelimitedFiles", "Printf", "StaticArrays", "Statistics", "Test"]
 git-tree-sha1 = "30d1fc4bf2dde3b90edf76c8e0f275e24290918a"
 uuid = "fc659fc5-75a3-5475-a2ea-3da92c065361"
 version = "0.3.0"
+
+[[Sobol]]
+deps = ["Random"]
+git-tree-sha1 = "5573a7dfa088be45601a4d6a3e9841d1ac9a755e"
+uuid = "ed01d8cd-4d21-5b2a-85b4-cc3bdc58bad4"
+version = "1.2.0"
 
 [[Sockets]]
 uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
