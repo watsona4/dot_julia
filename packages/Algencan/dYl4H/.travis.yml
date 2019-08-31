@@ -1,0 +1,37 @@
+language: julia
+
+# TODO: Check if OSX steps are all necessary
+
+matrix:
+  include:
+    - os: linux
+      dist: xenial
+      julia: 1.0
+    - os: osx
+      julia: 1.0
+
+addons:
+  apt_packages:
+    - gfortran
+    - liblapack3
+    - liblapack-dev
+    - libopenblas-base
+    - libopenblas-dev
+
+branches:
+  only:
+    - master
+
+before_install:
+  - if [ `uname` == "Linux" ]; then unset DY_LIBRARY_PATH; fi
+  - if [ `uname` == "Darwin" ]; then brew update && brew install gcc openblas; fi
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+
+install:
+  - julia -E 'using Pkg; Pkg.clone(pwd()); Pkg.build("Algencan");'
+
+script:
+  - julia --check-bounds=yes -E 'using Pkg; Pkg.test("Algencan"; coverage=true)'
+
+after_success:
+  - julia -e 'using Pkg; cd(Pkg.dir("Algencan")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'

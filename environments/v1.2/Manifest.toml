@@ -234,6 +234,12 @@ git-tree-sha1 = "a26560b0f8cb9104d96715c32f7c272504631ea9"
 uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
 version = "0.2.2"
 
+[[Algencan]]
+deps = ["BinDeps", "Libdl", "LinearAlgebra", "MathProgBase", "Printf", "Test"]
+git-tree-sha1 = "d6865368ab5312dadf8e6aaa37072b384ffff2f4"
+uuid = "016819b2-f4c4-559b-a82b-d92a82b855ff"
+version = "0.3.3"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"

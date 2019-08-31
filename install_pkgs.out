@@ -8940,3 +8940,43 @@ Installing AlgebraicMultigrid
   [2169fc97] + AlgebraicMultigrid v0.2.2
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 157e849e0] added package AlgebraicMultigrid
+ 3 files changed, 37 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   1d439aa2f..157e849e0  master -> master
+Progress:   2%|▉                                        |  ETA: 2 days, 6:55:17[K
+Installing Algencan
+ Resolving package versions...
+ Installed Algencan ─ v0.3.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [016819b2] + Algencan v0.3.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [016819b2] + Algencan v0.3.3
+  Building Algencan → `~/.julia/packages/Algencan/dYl4H/deps/build.log`
+┌ Error: Error building `Algencan`: 
+│ ERROR: LoadError: ArgumentError: Package Compat not found in current path:
+│ - Run `import Pkg; Pkg.add("Compat")` to install the Compat package.
+│ 
+│ Stacktrace:
+│  [1] require(::Module, ::Symbol) at ./loading.jl:876
+│  [2] include at ./boot.jl:328 [inlined]
+│  [3] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [4] include(::Module, ::String) at ./Base.jl:31
+│  [5] include(::String) at ./client.jl:431
+│  [6] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/Algencan/dYl4H/deps/build.jl:2
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building Algencan → `~/.julia/packages/Algencan/dYl4H/deps/build.log`
+┌ Error: Error building `Algencan`: 
+│ ERROR: LoadError: ArgumentError: Package Compat not found in current path:
+│ - Run `import Pkg; Pkg.add("Compat")` to install the Compat package.
+│ 
+│ Stacktrace:
+│  [1] require(::Module, ::Symbol) at ./loading.jl:876
+│  [2] include at ./boot.jl:328 [inlined]
+│  [3] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [4] include(::Module, ::String) at ./Base.jl:31
+│  [5] include(::String) at ./client.jl:431
+│  [6] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/Algencan/dYl4H/deps/build.jl:2
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
