@@ -30293,3 +30293,17 @@ Installing BenchmarkTools
   [6e4b80f9] + BenchmarkTools v0.4.2
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master dec510c42] added package BenchmarkTools
+ 3 files changed, 34 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   50785fa1f..dec510c42  master -> master
+Progress:   6%|██▌                                      |  ETA: 4 days, 9:09:53[K
+Installing BernoulliFactory
+ Resolving package versions...
+ Installed NonUniformRandomVariateGeneration ─ v1.0.0
+ Installed BernoulliFactory ────────────────── v0.0.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [6db8a038] + BernoulliFactory v0.0.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [6db8a038] + BernoulliFactory v0.0.1
+  [cd27a545] + NonUniformRandomVariateGeneration v1.0.0
