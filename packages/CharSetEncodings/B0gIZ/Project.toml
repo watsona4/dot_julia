@@ -1,0 +1,21 @@
+name = "CharSetEncodings"
+uuid = "cb9422de-a9d8-5b68-86db-ff05833ab307"
+keywords = ["Strings", "Characters", "Character Sets", "Encodings"]
+license = "MIT"
+desc = "Types, Traits and support for Character Sets, Encodings, and CSEs (Character Set Encodings)"
+version = "1.0.0"
+
+[deps]
+ModuleInterfaceTools = "5cb8414e-7aab-5a03-a681-351269c074bf"
+StrAPI = "69e7dfc3-c4d0-5e14-8d95-d6042a05b383"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "^1.0.0"
+ModuleInterfaceTools = "≥ 1.0.0"
+StrAPI = "≥ 1.0.0"

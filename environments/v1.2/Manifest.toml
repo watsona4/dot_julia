@@ -1600,6 +1600,12 @@ git-tree-sha1 = "a76653daa84ba7153a4498d614e4eef9526e5334"
 uuid = "608a59af-f2a3-5ad4-90b4-758bdf3122a7"
 version = "1.7.0"
 
+[[CharSetEncodings]]
+deps = ["ModuleInterfaceTools", "StrAPI"]
+git-tree-sha1 = "596e5adf3856e082d37f4a8ae8de8f56a3a3ce22"
+uuid = "cb9422de-a9d8-5b68-86db-ff05833ab307"
+version = "1.0.0"
+
 [[Clang]]
 deps = ["BinaryProvider", "CEnum", "DataStructures", "Libdl"]
 git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"
@@ -3124,6 +3130,11 @@ git-tree-sha1 = "f4f8fa8d04d3c1e7294f07fc37586c819466ad38"
 uuid = "66fc600b-dfda-50eb-8b99-91cfa97b1301"
 version = "1.0.0"
 
+[[ModuleInterfaceTools]]
+git-tree-sha1 = "137fe5b646de73455486043ba766490722f0546c"
+uuid = "5cb8414e-7aab-5a03-a681-351269c074bf"
+version = "1.0.1"
+
 [[Mongoc]]
 deps = ["BinaryProvider", "Dates", "Libdl", "Test"]
 git-tree-sha1 = "c028ec2dfad92d9a3718ccc94800fe0d634b9985"
@@ -3857,6 +3868,12 @@ deps = ["ArrayInterface", "DataStructures", "DiffEqBase", "DiffEqDiffTools", "Di
 git-tree-sha1 = "e288a36e42eb122b070de59190a0632065b19ebe"
 uuid = "789caeaf-c7a9-5a7d-9973-96adeb23e2a0"
 version = "6.8.0"
+
+[[StrAPI]]
+deps = ["ModuleInterfaceTools", "Unicode"]
+git-tree-sha1 = "4b70830583e9dd88f1220f8139ee967084428c21"
+uuid = "69e7dfc3-c4d0-5e14-8d95-d6042a05b383"
+version = "1.0.0"
 
 [[StrTables]]
 deps = ["Dates"]

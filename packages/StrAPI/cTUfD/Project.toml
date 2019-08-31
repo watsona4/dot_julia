@@ -1,0 +1,22 @@
+name = "StrAPI"
+uuid = "69e7dfc3-c4d0-5e14-8d95-d6042a05b383"
+keywords = ["Strings", "Characters", "Encodings"]
+license = "MIT"
+desc = "Basic API for string encodings, character sets, etc."
+authors = ["ScottPJones <scottjones@alum.mit.edu>"]
+version = "1.0.0"
+
+[deps]
+Unicode = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
+
+ModuleInterfaceTools = "5cb8414e-7aab-5a03-a681-351269c074bf"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "^1.0.0"
+ModuleInterfaceTools = "≥ 1.0.0"
