@@ -1,0 +1,5 @@
+*.cu
+*.obj
+*.o
+libknet8*
+.__afs*

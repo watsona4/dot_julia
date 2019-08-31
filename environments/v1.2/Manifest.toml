@@ -638,6 +638,12 @@ git-tree-sha1 = "20d3da2b579e488292f552582cab481b4130cbf9"
 uuid = "bb4162c7-ba94-5a20-af32-d8ec4428bdd1"
 version = "1.1.0"
 
+[[BERT]]
+deps = ["Knet", "LinearAlgebra", "SpecialFunctions"]
+git-tree-sha1 = "5dd50891df13013c7551fd92b1f37f4cdac9976b"
+uuid = "615b485c-77d9-11e9-182a-fb54b95fd2b6"
+version = "0.1.0"
+
 [[BSON]]
 deps = ["Profile", "Test"]
 git-tree-sha1 = "6453cef4f9cb8ded8e28e4d6d12e11e20eb692ea"
@@ -1660,6 +1666,12 @@ deps = ["DelimitedFiles", "Distributions", "DocStringExtensions", "LinearAlgebra
 git-tree-sha1 = "574b8ee047879ee249bf9d290c4af83722ce8ea7"
 uuid = "2472808a-b354-52ea-a80e-1658a3c6056d"
 version = "0.5.0"
+
+[[Knet]]
+deps = ["AutoGrad", "CUDAapi", "CuArrays", "FileIO", "JLD2", "Libdl", "LinearAlgebra", "Pkg", "Printf", "Random", "SpecialFunctions", "Statistics", "TimerOutputs"]
+git-tree-sha1 = "8f0bf7d74e758790c7e51f3e4c0d69c7297828ae"
+uuid = "1902f260-5fb4-5aff-8c31-6271790ab950"
+version = "1.2.4"
 
 [[Knockout]]
 deps = ["JSExpr", "JSON", "Observables", "Test", "WebIO"]
