@@ -1732,6 +1732,12 @@ git-tree-sha1 = "60a1c6dc3278910716fcf87eb602968fdf72e44d"
 uuid = "34f1f09b-3a8b-5176-ab39-66d58a4d544e"
 version = "0.3.2"
 
+[[ClusterTrees]]
+deps = ["DelimitedFiles", "Test"]
+git-tree-sha1 = "191211442c7b6835dc1917847c7bf692867fec64"
+uuid = "5100927d-02aa-593a-b4f9-7235df19f0db"
+version = "0.1.0"
+
 [[Clustering]]
 deps = ["Distances", "LinearAlgebra", "NearestNeighbors", "Printf", "SparseArrays", "Statistics", "StatsBase"]
 git-tree-sha1 = "f387d5937d0c9d0191c711d7d204bce15bd23b45"
