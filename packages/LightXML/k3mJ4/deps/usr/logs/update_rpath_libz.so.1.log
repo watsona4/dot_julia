@@ -1,0 +1,1 @@
+`/usr/local/bin/patchelf --set-rpath '$ORIGIN' lib/libxml2.so.2.9.7`

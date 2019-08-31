@@ -1,0 +1,888 @@
+`/bin/bash -c 'save_history() {
+    if [[ "false" == "true" ]]; then
+        echo " ---> $BASH_COMMAND" >&2
+    fi
+     history -s "$BASH_COMMAND"
+    history -a
+}
+
+save_env() {
+    set +x
+    set > /meta/.env
+    # Ignore read-only variables
+    for l in BASHOPTS BASH_VERSINFO UID EUID PPID SHELLOPTS; do
+        grep -v "^$l=" /meta/.env > /meta/.env2
+        mv /meta/.env2 /meta/.env
+    done
+    echo "cd $(pwd)" >> /meta/.env
+}
+
+# If /meta is mounted, then we want to save history and environment
+if [[ -d /meta ]]; then
+    trap save_history DEBUG
+    trap save_env INT TERM EXIT ERR
+fi
+
+# Stop if we hit any errors.
+set -e
+
+cd ${WORKSPACE}/srcdir/libxml2-*
+./autogen.sh
+./configure --prefix=${prefix} --host=${target} --without-python --with-zlib=${prefix}
+make -j${nproc} install
+
+'`
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+configure.ac:53: warning: AM_INIT_AUTOMAKE: two- and three-arguments forms are deprecated.
+aclocal.m4:9810: AM_INIT_AUTOMAKE is expanded from...
+configure.ac:53: the top level
+configure.ac:1528: warning: The macro `AC_TRY_LINK' is obsolete.
+configure.ac:1528: You should run autoupdate.
+../../lib/autoconf/general.m4:2687: AC_TRY_LINK is expanded from...
+configure.ac:1528: the top level
+configure.ac:1528: warning: The macro `AC_TRY_LINK' is obsolete.
+configure.ac:1528: You should run autoupdate.
+../../lib/autoconf/general.m4:2687: AC_TRY_LINK is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2687: AC_TRY_LINK is expanded from...
+configure.ac:1528: the top level
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+configure.ac:53: warning: AM_INIT_AUTOMAKE: two- and three-arguments forms are deprecated.
+aclocal.m4:781: AM_INIT_AUTOMAKE is expanded from...
+configure.ac:53: the top level
+configure.ac:1528: warning: The macro `AC_TRY_LINK' is obsolete.
+configure.ac:1528: You should run autoupdate.
+../../lib/autoconf/general.m4:2687: AC_TRY_LINK is expanded from...
+configure.ac:1528: the top level
+configure.ac:1528: warning: The macro `AC_TRY_LINK' is obsolete.
+configure.ac:1528: You should run autoupdate.
+../../lib/autoconf/general.m4:2687: AC_TRY_LINK is expanded from...
+../../lib/m4sugar/m4sh.m4:639: AS_IF is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2687: AC_TRY_LINK is expanded from...
+configure.ac:1528: the top level
+configure.ac:53: warning: AM_INIT_AUTOMAKE: two- and three-arguments forms are deprecated.  For more info, see:
+configure.ac:53: http://www.gnu.org/software/automake/manual/automake.html#Modernize-AM_005fINIT_005fAUTOMAKE-invocation
+configure.ac:61: installing './compile'
+configure.ac:8: installing './config.guess'
+configure.ac:8: installing './config.sub'
+configure.ac:53: installing './install-sh'
+configure.ac:53: installing './missing'
+Makefile.am: installing './INSTALL'
+Makefile.am: installing './COPYING' using GNU General Public License v3 file
+Makefile.am:     Consider adding the COPYING file to the version control system
+Makefile.am:     for your code, to avoid questions about which license your project uses
+/usr/share/automake-1.15/am/ltlibrary.am: warning: 'libxml2.la': linking libtool libraries using a non-POSIX
+/usr/share/automake-1.15/am/ltlibrary.am: archiver requires 'AM_PROG_AR' in 'configure.ac'
+Makefile.am:22:   while processing Libtool library 'libxml2.la'
+/usr/share/automake-1.15/am/ltlibrary.am: warning: 'testdso.la': linking libtool libraries using a non-POSIX
+/usr/share/automake-1.15/am/ltlibrary.am: archiver requires 'AM_PROG_AR' in 'configure.ac'
+Makefile.am:173:   while processing Libtool library 'testdso.la'
+Makefile.am: installing './depcomp'
+doc/Makefile.am:21: warning: wildcard tutorial/*.html: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard tutorial/*.c: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard tutorial/*.pdf: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard tutorial/images/*.png: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard tutorial/images/callouts/*.png: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard API*.html: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard *.1: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard *.xsl: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard *.html: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard *.gif: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard html/*.html: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:21: warning: wildcard html/*.png: non-POSIX variable name
+doc/Makefile.am:21: (probably a GNU make extension)
+doc/Makefile.am:301: warning: filter-out %/xmlversion.h, $(wildcard $(top_srcdir: non-POSIX variable name
+doc/Makefile.am:301: (probably a GNU make extension)
+doc/Makefile.am:301: warning: wildcard $(top_srcdir: non-POSIX variable name
+doc/Makefile.am:301: (probably a GNU make extension)
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for gcc... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc accepts -g... yes
+checking for /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc... gcc3
+checking whether ln -s works... yes
+checking how to run the C preprocessor... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -E
+checking for mv... /bin/mv
+checking for tar... /usr/local/bin/tar
+checking for perl... /usr/bin/perl
+checking for wget... /usr/bin/wget
+checking for xmllint... /usr/bin/xmllint
+checking for xsltproc... /usr/bin/xsltproc
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld
+checking if the linker (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-nm
+checking the name lister (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-nm) interface... BSD nm
+checking the maximum length of command line arguments... 98304
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-strip
+checking for ranlib... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ranlib
+checking command to parse /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-nm output from /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc static flag -static works... yes
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc supports -c -o file.o... yes
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc linker (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+Checking zlib
+checking for Z... yes
+checking zlib.h usability... no
+checking zlib.h presence... no
+checking for zlib.h... no
+Checking lzma
+checking for LZMA... no
+checking lzma.h usability... no
+checking lzma.h presence... no
+checking for lzma.h... no
+Checking headers
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for unistd.h... (cached) yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking ansidecl.h usability... no
+checking ansidecl.h presence... no
+checking for ansidecl.h... no
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking nan.h usability... no
+checking nan.h presence... no
+checking for nan.h... no
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking fp_class.h usability... no
+checking fp_class.h presence... no
+checking for fp_class.h... no
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for stdlib.h... (cached) yes
+checking for sys/socket.h... yes
+checking for netinet/in.h... yes
+checking for arpa/inet.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/timeb.h usability... yes
+checking sys/timeb.h presence... yes
+checking for sys/timeb.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for arpa/nameser.h... yes
+checking for resolv.h... yes
+checking dl.h usability... no
+checking dl.h presence... no
+checking for dl.h... no
+checking for dlfcn.h... (cached) yes
+Checking types
+checking for uint32_t... yes
+Checking libraries
+checking for strftime... yes
+checking for strdup... yes
+checking for strndup... yes
+checking for strerror... yes
+checking for finite... yes
+checking for isnand... no
+checking for fp_class... no
+checking for class... no
+checking for fpclass... no
+checking for strftime... (cached) yes
+checking for localtime... yes
+checking for gettimeofday... yes
+checking for ftime... yes
+checking for stat... yes
+checking for _stat... no
+checking for signal... yes
+checking for rand... yes
+checking for rand_r... yes
+checking for srand... yes
+checking for time... yes
+checking for isascii... yes
+checking for mmap... yes
+checking for munmap... yes
+checking for putenv... yes
+checking for va_copy... yes
+checking whether va_list is an array type... yes
+checking for library containing gethostent... none required
+checking for library containing setsockopt... none required
+checking for library containing connect... none required
+checking for type of socket length (socklen_t)... socklen_t *
+checking for const gethostbyname() argument... yes
+checking for const send() second argument... yes
+checking whether to enable IPv6... yes
+checking struct sockaddr::ss_family... yes
+checking for getaddrinfo... yes
+checking for isnan... yes
+checking for isinf... yes
+checking for python... /usr/bin/python
+Found Python version 2.7
+./configure: line 15269: python2.7-config: command not found
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+Checking configuration requirements
+Enabling multithreaded support
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_join in -lpthread... yes
+Enabled Schematron support
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking for iconv... yes
+checking for iconv declaration... 
+	extern size_t iconv (iconv_t cd,  char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+Disabling ICU support
+Enabled Schemas/Relax-NG support
+checking for printf... yes
+checking for sprintf... yes
+checking for fprintf... yes
+checking for snprintf... yes
+checking for vfprintf... yes
+checking for vsprintf... yes
+checking for vsnprintf... yes
+checking for sscanf... yes
+Disabling code coverage for GCC
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating libxml2.spec
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating include/libxml/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/examples/Makefile
+config.status: creating doc/devhelp/Makefile
+config.status: creating example/Makefile
+config.status: creating python/Makefile
+config.status: creating python/tests/Makefile
+config.status: creating xstc/Makefile
+config.status: creating include/libxml/xmlversion.h
+config.status: creating libxml-2.0.pc
+config.status: creating libxml-2.0-uninstalled.pc
+config.status: creating libxml2-config.cmake
+config.status: creating python/setup.py
+config.status: creating xml2-config
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Done configuring
+
+Now type 'make' to compile libxml2.
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for x86_64-linux-gnu-strip... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-strip
+checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-linux-gnu-gcc... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc accepts -g... yes
+checking for /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc... gcc3
+checking whether ln -s works... yes
+checking how to run the C preprocessor... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -E
+checking for mv... /bin/mv
+checking for tar... /usr/local/bin/tar
+checking for perl... /usr/bin/perl
+checking for wget... /usr/bin/wget
+checking for xmllint... /usr/bin/xmllint
+checking for xsltproc... /usr/bin/xsltproc
+checking for x86_64-linux-gnu-pkg-config... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld
+checking if the linker (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-nm
+checking the name lister (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-nm) interface... BSD nm
+checking the maximum length of command line arguments... 98304
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld option to reload object files... -r
+checking for x86_64-linux-gnu-objdump... x86_64-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-linux-gnu-dlltool... no
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-linux-gnu-ar... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-linux-gnu-strip... (cached) /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-strip
+checking for x86_64-linux-gnu-ranlib... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ranlib
+checking command to parse /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-nm output from /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc static flag -static works... yes
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc supports -c -o file.o... yes
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc linker (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+Checking zlib
+checking for Z... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+Checking lzma
+checking for LZMA... no
+checking lzma.h usability... no
+checking lzma.h presence... no
+checking for lzma.h... no
+Checking headers
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for unistd.h... (cached) yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking ansidecl.h usability... no
+checking ansidecl.h presence... no
+checking for ansidecl.h... no
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking nan.h usability... no
+checking nan.h presence... no
+checking for nan.h... no
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking fp_class.h usability... no
+checking fp_class.h presence... no
+checking for fp_class.h... no
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for stdlib.h... (cached) yes
+checking for sys/socket.h... yes
+checking for netinet/in.h... yes
+checking for arpa/inet.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/timeb.h usability... yes
+checking sys/timeb.h presence... yes
+checking for sys/timeb.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for arpa/nameser.h... yes
+checking for resolv.h... yes
+checking dl.h usability... no
+checking dl.h presence... no
+checking for dl.h... no
+checking for dlfcn.h... (cached) yes
+Checking types
+checking for uint32_t... yes
+Checking libraries
+checking for strftime... yes
+checking for strdup... yes
+checking for strndup... yes
+checking for strerror... yes
+checking for finite... yes
+checking for isnand... no
+checking for fp_class... no
+checking for class... no
+checking for fpclass... no
+checking for strftime... (cached) yes
+checking for localtime... yes
+checking for gettimeofday... yes
+checking for ftime... yes
+checking for stat... yes
+checking for _stat... no
+checking for signal... yes
+checking for rand... yes
+checking for rand_r... yes
+checking for srand... yes
+checking for time... yes
+checking for isascii... yes
+checking for mmap... yes
+checking for munmap... yes
+checking for putenv... yes
+checking for va_copy... yes
+checking whether va_list is an array type... yes
+checking for library containing gethostent... none required
+checking for library containing setsockopt... none required
+checking for library containing connect... none required
+checking for type of socket length (socklen_t)... socklen_t *
+checking for const gethostbyname() argument... yes
+checking for const send() second argument... yes
+checking whether to enable IPv6... yes
+checking struct sockaddr::ss_family... yes
+checking for getaddrinfo... yes
+checking for isnan... yes
+checking for isinf... yes
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+Checking configuration requirements
+Enabling multithreaded support
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_join in -lpthread... yes
+Enabled Schematron support
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking for iconv... yes
+checking for iconv declaration... 
+	extern size_t iconv (iconv_t cd,  char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+Disabling ICU support
+Enabled Schemas/Relax-NG support
+checking for printf... yes
+checking for sprintf... yes
+checking for fprintf... yes
+checking for snprintf... yes
+checking for vfprintf... yes
+checking for vsprintf... yes
+checking for vsnprintf... yes
+checking for sscanf... yes
+Disabling code coverage for GCC
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating libxml2.spec
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating include/libxml/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/examples/Makefile
+config.status: creating doc/devhelp/Makefile
+config.status: creating example/Makefile
+config.status: creating python/Makefile
+config.status: creating python/tests/Makefile
+config.status: creating xstc/Makefile
+config.status: creating include/libxml/xmlversion.h
+config.status: creating libxml-2.0.pc
+config.status: creating libxml-2.0-uninstalled.pc
+config.status: creating libxml2-config.cmake
+config.status: creating python/setup.py
+config.status: creating xml2-config
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Done configuring
+make  install-recursive
+make[1]: Entering directory '/workspace/srcdir/libxml2-2.9.7'
+Making install in include
+make[2]: Entering directory '/workspace/srcdir/libxml2-2.9.7/include'
+Making install in libxml
+make[3]: Entering directory '/workspace/srcdir/libxml2-2.9.7/include/libxml'
+make[4]: Entering directory '/workspace/srcdir/libxml2-2.9.7/include/libxml'
+make[4]: Nothing to be done for 'install-exec-am'.
+ ../.././install-sh -c -d '/workspace/destdir/include/libxml2/libxml'
+ /usr/bin/install -c -m 644 SAX.h entities.h encoding.h parser.h parserInternals.h xmlerror.h HTMLparser.h HTMLtree.h debugXML.h tree.h list.h hash.h xpath.h xpathInternals.h xpointer.h xinclude.h xmlIO.h xmlmemory.h nanohttp.h nanoftp.h uri.h valid.h xlink.h xmlversion.h DOCBparser.h catalog.h threads.h globals.h c14n.h xmlautomata.h xmlregexp.h xmlmodule.h xmlschemas.h schemasInternals.h xmlschemastypes.h xmlstring.h xmlunicode.h xmlreader.h relaxng.h dict.h '/workspace/destdir/include/libxml2/libxml'
+ /usr/bin/install -c -m 644 SAX2.h xmlexports.h xmlwriter.h chvalid.h pattern.h xmlsave.h schematron.h '/workspace/destdir/include/libxml2/libxml'
+make[4]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/include/libxml'
+make[3]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/include/libxml'
+make[3]: Entering directory '/workspace/srcdir/libxml2-2.9.7/include'
+make[4]: Entering directory '/workspace/srcdir/libxml2-2.9.7/include'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/include'
+make[3]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/include'
+make[2]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/include'
+Making install in .
+make[2]: Entering directory '/workspace/srcdir/libxml2-2.9.7'
+  CC       SAX.lo
+  CC       entities.lo
+  CC       encoding.lo
+  CC       error.lo
+  CC       parserInternals.lo
+  CC       parser.lo
+  CC       tree.lo
+  CC       hash.lo
+  CC       list.lo
+  CC       xmlIO.lo
+  CC       xmlmemory.lo
+  CC       uri.lo
+  CC       valid.lo
+  CC       xlink.lo
+  CC       HTMLparser.lo
+  CC       HTMLtree.lo
+  CC       debugXML.lo
+  CC       xpath.lo
+In file included from ./include/libxml/parser.h:18:0,
+                 from ./include/libxml/globals.h:18,
+                 from ./include/libxml/threads.h:35,
+                 from ./include/libxml/xmlmemory.h:218,
+                 from ./include/libxml/tree.h:1307,
+                 from ./include/libxml/c14n.h:27,
+                 from elfgcchack.h:17,
+                 from libxml.h:106,
+                 from xpath.c:23:
+xpath.c: In function ‘xmlXPathRegisterFuncNS__internal_alias’:
+xpath.c:4897:73: warning: ISO C forbids passing argument 4 of ‘xmlHashAddEntry2__internal_alias’ between function pointer and ‘void *’ [-Wpedantic]
+     return(xmlHashAddEntry2(ctxt->funcHash, name, ns_uri, XML_CAST_FPTR(f)));
+                                                                         ^
+./include/libxml/hash.h:56:29: note: in definition of macro ‘XML_CAST_FPTR’
+ #define XML_CAST_FPTR(fptr) fptr
+                             ^~~~
+In file included from libxml.h:106:0,
+                 from xpath.c:23:
+elfgcchack.h:4269:36: note: expected ‘void *’ but argument is of type ‘xmlXPathFunction {aka void (*)(struct _xmlXPathParserContext *, int)}’
+ extern __typeof (xmlHashAddEntry2) xmlHashAddEntry2__internal_alias __attribute((visibility("hidden")));
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xpath.c: In function ‘xmlXPathFunctionLookupNS__internal_alias’:
+xpath.c:4978:24: warning: ISO C forbids assignment between function pointer and ‘void *’ [-Wpedantic]
+     XML_CAST_FPTR(ret) = xmlHashLookup2(ctxt->funcHash, name, ns_uri);
+                        ^
+  CC       xpointer.lo
+In file included from xpath.c:483:0:
+At top level:
+trionan.c:218:1: warning: ‘trio_is_negative’ defined but not used [-Wunused-function]
+ trio_is_negative
+ ^~~~~~~~~~~~~~~~
+trionan.c:194:1: warning: ‘trio_is_special_quantity’ defined but not used [-Wunused-function]
+ trio_is_special_quantity
+ ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       xinclude.lo
+  CC       nanohttp.lo
+  CC       nanoftp.lo
+  CC       catalog.lo
+  CC       globals.lo
+  CC       threads.lo
+  CC       c14n.lo
+  CC       xmlstring.lo
+  CC       buf.lo
+  CC       xmlregexp.lo
+  CC       xmlschemas.lo
+  CC       xmlschemastypes.lo
+  CC       xmlunicode.lo
+  CC       xmlreader.lo
+  CC       relaxng.lo
+  CC       dict.lo
+  CC       SAX2.lo
+  CC       xmlwriter.lo
+  CC       legacy.lo
+  CC       chvalid.lo
+  CC       pattern.lo
+  CC       xmlsave.lo
+  CC       xmlmodule.lo
+  CC       schematron.lo
+  CC       xzlib.lo
+  CC       testdso.lo
+  CC       xmllint.o
+  CC       xmlcatalog.o
+sed -e 's?\@XML_LIBDIR\@?-L/workspace/destdir/lib?g' \
+    -e 's?\@XML_INCLUDEDIR\@?-I/workspace/destdir/include/libxml2?g' \
+    -e 's?\@VERSION\@?2.9.7?g' \
+    -e 's?\@XML_LIBS\@?-lxml2 -L/workspace/destdir/lib -lz      -lm ?g' \
+       < ./xml2Conf.sh.in > xml2Conf.tmp \
+&& mv xml2Conf.tmp xml2Conf.sh
+  CCLD     libxml2.la
+  CCLD     testdso.la
+  CCLD     xmllint
+  CCLD     xmlcatalog
+make[3]: Entering directory '/workspace/srcdir/libxml2-2.9.7'
+ ./install-sh -c -d '/workspace/destdir/bin'
+ ./install-sh -c -d '/workspace/destdir/lib'
+ /usr/bin/install -c -m 644 xml2Conf.sh '/workspace/destdir/lib'
+ ./install-sh -c -d '/workspace/destdir/lib/cmake/libxml2'
+ /usr/bin/install -c xml2-config '/workspace/destdir/bin'
+./install-sh -c -d /workspace/destdir/share/doc/libxml2-2.9.7
+ /usr/bin/install -c -m 644 libxml2-config.cmake '/workspace/destdir/lib/cmake/libxml2'
+/usr/bin/install -c -m 0644 ./Copyright /workspace/destdir/share/doc/libxml2-2.9.7
+./install-sh -c -d /workspace/destdir/share/doc/libxml2-2.9.7/examples
+ ./install-sh -c -d '/workspace/destdir/share/aclocal'
+ /usr/bin/install -c -m 644 libxml.m4 '/workspace/destdir/share/aclocal'
+/usr/bin/install -c -m 0644 ./xmllint.c /workspace/destdir/share/doc/libxml2-2.9.7/examples
+ ./install-sh -c -d '/workspace/destdir/share/man/man1'
+/usr/bin/install -c -m 0644 ./testSAX.c /workspace/destdir/share/doc/libxml2-2.9.7/examples
+/usr/bin/install -c -m 0644 ./testHTML.c /workspace/destdir/share/doc/libxml2-2.9.7/examples
+/usr/bin/install -c -m 0644 ./testXPath.c /workspace/destdir/share/doc/libxml2-2.9.7/examples
+ ./install-sh -c -d '/workspace/destdir/share/man/man3'
+ /usr/bin/install -c -m 644 xml2-config.1 '/workspace/destdir/share/man/man1'
+ /usr/bin/install -c -m 644 libxml.3 '/workspace/destdir/share/man/man3'
+ ./install-sh -c -d '/workspace/destdir/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libxml-2.0.pc '/workspace/destdir/lib/pkgconfig'
+ ./install-sh -c -d '/workspace/destdir/lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libxml2.la '/workspace/destdir/lib'
+libtool: install: /usr/bin/install -c .libs/libxml2.so.2.9.7 /workspace/destdir/lib/libxml2.so.2.9.7
+libtool: install: (cd /workspace/destdir/lib && { ln -s -f libxml2.so.2.9.7 libxml2.so.2 || { rm -f libxml2.so.2 && ln -s libxml2.so.2.9.7 libxml2.so.2; }; })
+libtool: install: (cd /workspace/destdir/lib && { ln -s -f libxml2.so.2.9.7 libxml2.so || { rm -f libxml2.so && ln -s libxml2.so.2.9.7 libxml2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxml2.lai /workspace/destdir/lib/libxml2.la
+libtool: install: /usr/bin/install -c .libs/libxml2.a /workspace/destdir/lib/libxml2.a
+libtool: install: chmod 644 /workspace/destdir/lib/libxml2.a
+libtool: install: /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ranlib /workspace/destdir/lib/libxml2.a
+libtool: finish: PATH="/opt/super_binutils/bin:/opt/x86_64-linux-gnu/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/sbin" ldconfig -n /workspace/destdir/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /workspace/destdir/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ ./install-sh -c -d '/workspace/destdir/bin'
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c xmllint xmlcatalog '/workspace/destdir/bin'
+libtool: install: /usr/bin/install -c .libs/xmllint /workspace/destdir/bin/xmllint
+libtool: install: /usr/bin/install -c .libs/xmlcatalog /workspace/destdir/bin/xmlcatalog
+make[3]: Leaving directory '/workspace/srcdir/libxml2-2.9.7'
+make[2]: Leaving directory '/workspace/srcdir/libxml2-2.9.7'
+Making install in doc
+make[2]: Entering directory '/workspace/srcdir/libxml2-2.9.7/doc'
+Making install in .
+make[3]: Entering directory '/workspace/srcdir/libxml2-2.9.7/doc'
+make[4]: Entering directory '/workspace/srcdir/libxml2-2.9.7/doc'
+make[4]: Nothing to be done for 'install-exec-am'.
+.././install-sh -c -d /workspace/destdir/share/doc/libxml2-2.9.7/html
+ .././install-sh -c -d '/workspace/destdir/share/man/man1'
+ /usr/bin/install -c -m 644 xmllint.1 xmlcatalog.1 '/workspace/destdir/share/man/man1'
+/usr/bin/install -c -m 0644 ./xml.html ./encoding.html ./FAQ.html ./structure.gif ./DOM.gif ./smallfootonly.gif ./redhat.gif ./libxml.gif ./w3c.png ./Libxml2-Logo-180x168.gif ./Libxml2-Logo-90x34.gif /workspace/destdir/share/doc/libxml2-2.9.7/html
+.././install-sh -c -d /workspace/destdir/share/doc/libxml2-2.9.7/html/html
+/usr/bin/install -c -m 0644 ./html/*.html /workspace/destdir/share/doc/libxml2-2.9.7/html/html
+/usr/bin/install -c -m 0644 ./html/*.png /workspace/destdir/share/doc/libxml2-2.9.7/html/html
+.././install-sh -c -d /workspace/destdir/share/doc/libxml2-2.9.7/html/tutorial
+/usr/bin/install -c -m 0644 ./tutorial/*.* \
+	/workspace/destdir/share/doc/libxml2-2.9.7/html/tutorial
+.././install-sh -c -d /workspace/destdir/share/doc/libxml2-2.9.7/html/tutorial/images
+/usr/bin/install -c -m 0644 ./tutorial/images/*.* \
+	/workspace/destdir/share/doc/libxml2-2.9.7/html/tutorial/images
+.././install-sh -c -d /workspace/destdir/share/doc/libxml2-2.9.7/html/tutorial/images/callouts
+/usr/bin/install -c -m 0644 ./tutorial/images/callouts/*.* \
+	/workspace/destdir/share/doc/libxml2-2.9.7/html/tutorial/images/callouts
+make[4]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/doc'
+make[3]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/doc'
+Making install in devhelp
+make[3]: Entering directory '/workspace/srcdir/libxml2-2.9.7/doc/devhelp'
+make[4]: Entering directory '/workspace/srcdir/libxml2-2.9.7/doc/devhelp'
+make[4]: Nothing to be done for 'install-exec-am'.
+ ../.././install-sh -c -d '/workspace/destdir/share/gtk-doc/html/libxml2'
+ /usr/bin/install -c -m 644 libxml2.devhelp general.html index.html libxml2-c14n.html libxml2-catalog.html libxml2-chvalid.html libxml2-debugXML.html libxml2-dict.html libxml2-DOCBparser.html libxml2-encoding.html libxml2-entities.html libxml2-globals.html libxml2-hash.html libxml2-HTMLparser.html libxml2-HTMLtree.html libxml2-list.html libxml2-nanoftp.html libxml2-nanohttp.html libxml2-parser.html libxml2-parserInternals.html libxml2-pattern.html libxml2-relaxng.html libxml2-SAX2.html libxml2-SAX.html libxml2-schemasInternals.html libxml2-schematron.html libxml2-threads.html libxml2-tree.html libxml2-uri.html libxml2-valid.html libxml2-xinclude.html libxml2-xlink.html libxml2-xmlautomata.html libxml2-xmlerror.html libxml2-xmlexports.html libxml2-xmlIO.html libxml2-xmlmemory.html libxml2-xmlmodule.html libxml2-xmlreader.html libxml2-xmlregexp.html '/workspace/destdir/share/gtk-doc/html/libxml2'
+ /usr/bin/install -c -m 644 libxml2-xmlsave.html libxml2-xmlschemas.html libxml2-xmlschemastypes.html libxml2-xmlstring.html libxml2-xmlunicode.html libxml2-xmlversion.html libxml2-xmlwriter.html libxml2-xpath.html libxml2-xpathInternals.html libxml2-xpointer.html home.png left.png right.png up.png style.css '/workspace/destdir/share/gtk-doc/html/libxml2'
+make[4]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/doc/devhelp'
+make[3]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/doc/devhelp'
+Making install in examples
+make[3]: Entering directory '/workspace/srcdir/libxml2-2.9.7/doc/examples'
+make[4]: Entering directory '/workspace/srcdir/libxml2-2.9.7/doc/examples'
+make[4]: Nothing to be done for 'install-exec-am'.
+../.././install-sh -c -d /workspace/destdir/share/doc/libxml2-2.9.7/html
+/usr/bin/install -c -m 0644 ./*.html ./*.c ./*.xml ./*.xsl ./*.res /workspace/destdir/share/doc/libxml2-2.9.7/html
+make[4]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/doc/examples'
+make[3]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/doc/examples'
+make[2]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/doc'
+Making install in example
+make[2]: Entering directory '/workspace/srcdir/libxml2-2.9.7/example'
+make[3]: Entering directory '/workspace/srcdir/libxml2-2.9.7/example'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/example'
+make[2]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/example'
+Making install in xstc
+make[2]: Entering directory '/workspace/srcdir/libxml2-2.9.7/xstc'
+make[3]: Entering directory '/workspace/srcdir/libxml2-2.9.7/xstc'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/xstc'
+make[2]: Leaving directory '/workspace/srcdir/libxml2-2.9.7/xstc'
+make[1]: Leaving directory '/workspace/srcdir/libxml2-2.9.7'

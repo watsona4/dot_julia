@@ -1,0 +1,1 @@
+`/usr/local/bin/patchelf --replace-needed libxml2.so.2 ../lib/libxml2.so.2 bin/xmllint`

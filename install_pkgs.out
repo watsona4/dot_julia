@@ -24923,3 +24923,88 @@ Installing AtariAlgos
   Building SpecialFunctions ─────────→ `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ────────────────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
   Building AtariAlgos ───────────────→ `~/.julia/packages/AtariAlgos/iocOn/deps/build.log`
+[master 82843918a] added package AtariAlgos
+ 63 files changed, 5173 insertions(+)
+ create mode 100644 packages/AtariAlgos/iocOn/.gitignore
+ create mode 100644 packages/AtariAlgos/iocOn/.travis.yml
+ create mode 100644 packages/AtariAlgos/iocOn/LICENSE.md
+ create mode 100644 packages/AtariAlgos/iocOn/Project.toml
+ create mode 100644 packages/AtariAlgos/iocOn/README.md
+ create mode 100644 packages/AtariAlgos/iocOn/appveyor.yml
+ create mode 100644 packages/AtariAlgos/iocOn/deps/build.jl
+ create mode 100644 packages/AtariAlgos/iocOn/src/AtariAlgos.jl
+ create mode 100644 packages/AtariAlgos/iocOn/test/runtests.jl
+ create mode 100644 packages/LearnBase/tDtOu/.gitignore
+ create mode 100644 packages/LearnBase/tDtOu/.travis.yml
+ create mode 100644 packages/LearnBase/tDtOu/LICENSE.md
+ create mode 100644 packages/LearnBase/tDtOu/NEWS.md
+ create mode 100644 packages/LearnBase/tDtOu/README.md
+ create mode 100644 packages/LearnBase/tDtOu/REQUIRE
+ create mode 100644 packages/LearnBase/tDtOu/appveyor.yml
+ create mode 100644 packages/LearnBase/tDtOu/src/LearnBase.jl
+ create mode 100644 packages/LearnBase/tDtOu/test/runtests.jl
+ create mode 100644 packages/LearningStrategies/HcQtL/.codecov.yml
+ create mode 100644 packages/LearningStrategies/HcQtL/.gitignore
+ create mode 100644 packages/LearningStrategies/HcQtL/.travis.yml
+ create mode 100644 packages/LearningStrategies/HcQtL/LICENSE.md
+ create mode 100644 packages/LearningStrategies/HcQtL/README.md
+ create mode 100644 packages/LearningStrategies/HcQtL/REQUIRE
+ create mode 100644 packages/LearningStrategies/HcQtL/appveyor.yml
+ create mode 100644 packages/LearningStrategies/HcQtL/examples/dftracer.jl
+ create mode 100644 packages/LearningStrategies/HcQtL/src/LearningStrategies.jl
+ create mode 100644 packages/LearningStrategies/HcQtL/test/runtests.jl
+ create mode 100644 packages/Reinforce/6gCTl/.gitattributes
+ create mode 100644 packages/Reinforce/6gCTl/.gitignore
+ create mode 100644 packages/Reinforce/6gCTl/.travis.yml
+ create mode 100644 packages/Reinforce/6gCTl/LICENSE.md
+ create mode 100644 packages/Reinforce/6gCTl/NEWS.md
+ create mode 100644 packages/Reinforce/6gCTl/README.md
+ create mode 100644 packages/Reinforce/6gCTl/REQUIRE
+ create mode 100644 packages/Reinforce/6gCTl/appveyor.yml
+ create mode 100644 packages/Reinforce/6gCTl/examples/mountain_car.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/Reinforce.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/envs/cartpole.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/envs/mountain_car.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/envs/multi-armed-bandit.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/envs/pendulum.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/episodes/iterators.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/policies/actor_critic.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/policies/online_gae.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/policies/policies.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/solvers.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/solvers/cem.jl
+ create mode 100644 packages/Reinforce/6gCTl/src/states.jl
+ create mode 100644 packages/Reinforce/6gCTl/test/actor_critic.jl
+ create mode 100644 packages/Reinforce/6gCTl/test/cem_gym.jl
+ create mode 100644 packages/Reinforce/6gCTl/test/cem_soccer.jl
+ create mode 100644 packages/Reinforce/6gCTl/test/ddpg_universe.jl
+ create mode 100644 packages/Reinforce/6gCTl/test/env/mountain_car.jl
+ create mode 100644 packages/Reinforce/6gCTl/test/env/multi-armed-bandit.jl
+ create mode 100644 packages/Reinforce/6gCTl/test/foo.jl
+ create mode 100644 packages/Reinforce/6gCTl/test/interface.jl
+ create mode 100644 packages/Reinforce/6gCTl/test/policy_grad.jl
+ create mode 100644 packages/Reinforce/6gCTl/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   289532811..82843918a  master -> master
+Progress:   4%|█▋                                       |  ETA: 5 days, 23:10:29[K
+Installing AtlasRobot
+ Resolving package versions...
+ Installed AtlasRobot ──────────── v0.4.0
+ Installed LoopThrottle ────────── v0.1.0
+ Installed LightXML ────────────── v0.8.0
+ Installed TypeSortedCollections ─ v1.1.0
+ Installed RigidBodyDynamics ───── v2.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [436ed74b] + AtlasRobot v0.4.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [436ed74b] + AtlasRobot v0.4.0
+  [9c8b4983] + LightXML v0.8.0
+  [39f5be34] + LoopThrottle v0.1.0
+  [366cf18f] + RigidBodyDynamics v2.1.0
+  [94a5cd58] + TypeSortedCollections v1.1.0
+  Building LightXML ─────────→ `~/.julia/packages/LightXML/k3mJ4/deps/build.log`
+  Building RigidBodyDynamics → `~/.julia/packages/RigidBodyDynamics/Oe3ru/deps/build.log`
+  Building AtlasRobot ───────→ `~/.julia/packages/AtlasRobot/iQG8w/deps/build.log`
+  Building LightXML ─────────→ `~/.julia/packages/LightXML/k3mJ4/deps/build.log`
+  Building RigidBodyDynamics → `~/.julia/packages/RigidBodyDynamics/Oe3ru/deps/build.log`
+  Building AtlasRobot ───────→ `~/.julia/packages/AtlasRobot/iQG8w/deps/build.log`
