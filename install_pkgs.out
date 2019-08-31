@@ -35005,3 +35005,111 @@ Installing BytePairEncoding
   [796a5d58] + WordTokenizers v0.5.3
   Building HTML_Entities → `~/.julia/packages/HTML_Entities/g4t7p/deps/build.log`
   Building HTML_Entities → `~/.julia/packages/HTML_Entities/g4t7p/deps/build.log`
+[master 99c130709] added package BytePairEncoding
+ 94 files changed, 235979 insertions(+)
+ create mode 100644 compiled/v1.2/StrTables/AAeFP.ji
+ create mode 100644 packages/BytePairEncoding/O0W3I/LICENSE
+ create mode 100644 packages/BytePairEncoding/O0W3I/Manifest.toml
+ create mode 100644 packages/BytePairEncoding/O0W3I/Project.toml
+ create mode 100644 packages/BytePairEncoding/O0W3I/README.md
+ create mode 100644 packages/BytePairEncoding/O0W3I/README.org
+ create mode 100644 packages/BytePairEncoding/O0W3I/REQUIRE
+ create mode 100644 packages/BytePairEncoding/O0W3I/src/BytePairEncoding.jl
+ create mode 100644 packages/BytePairEncoding/O0W3I/src/bpe.jl
+ create mode 100644 packages/BytePairEncoding/O0W3I/src/glossary.jl
+ create mode 100644 packages/BytePairEncoding/O0W3I/src/learn.jl
+ create mode 100644 packages/BytePairEncoding/O0W3I/src/stats.jl
+ create mode 100644 packages/BytePairEncoding/O0W3I/src/utfnorm.jl
+ create mode 100644 packages/BytePairEncoding/O0W3I/test/data/.gitignore
+ create mode 100644 packages/BytePairEncoding/O0W3I/test/data/bpe.ref
+ create mode 100644 packages/BytePairEncoding/O0W3I/test/data/corpus.bpe.ref.en
+ create mode 100644 packages/BytePairEncoding/O0W3I/test/data/corpus.en
+ create mode 100644 packages/BytePairEncoding/O0W3I/test/data/nfkc.tsv
+ create mode 100644 packages/BytePairEncoding/O0W3I/test/runtests.jl
+ create mode 100644 packages/BytePairEncoding/O0W3I/test/test_bpe.jl
+ create mode 100644 packages/BytePairEncoding/O0W3I/test/test_glossary.jl
+ create mode 100644 packages/BytePairEncoding/O0W3I/test/test_learn.jl
+ create mode 100644 packages/BytePairEncoding/O0W3I/test/test_utfnorm.jl
+ create mode 100644 packages/HTML_Entities/g4t7p/.codecov.yml
+ create mode 100644 packages/HTML_Entities/g4t7p/.gitignore
+ create mode 100644 packages/HTML_Entities/g4t7p/.travis.yml
+ create mode 100644 packages/HTML_Entities/g4t7p/LICENSE.md
+ create mode 100644 packages/HTML_Entities/g4t7p/Project.toml
+ create mode 100644 packages/HTML_Entities/g4t7p/README.md
+ create mode 100644 packages/HTML_Entities/g4t7p/appveyor.yml
+ create mode 100644 packages/HTML_Entities/g4t7p/data/README.md
+ create mode 100644 packages/HTML_Entities/g4t7p/data/html.dat
+ create mode 100644 packages/HTML_Entities/g4t7p/deps/build.jl
+ create mode 100644 packages/HTML_Entities/g4t7p/deps/build.log
+ create mode 100644 packages/HTML_Entities/g4t7p/deps/htmlnames.jl
+ create mode 100644 packages/HTML_Entities/g4t7p/src/HTML_Entities.jl
+ create mode 100644 packages/HTML_Entities/g4t7p/test/runtests.jl
+ create mode 100644 packages/InternedStrings/JTzem/.codecov.yml
+ create mode 100644 packages/InternedStrings/JTzem/.gitignore
+ create mode 100644 packages/InternedStrings/JTzem/.travis.yml
+ create mode 100644 packages/InternedStrings/JTzem/LICENSE.md
+ create mode 100644 packages/InternedStrings/JTzem/News.md
+ create mode 100644 packages/InternedStrings/JTzem/README.md
+ create mode 100644 packages/InternedStrings/JTzem/REQUIRE
+ create mode 100644 packages/InternedStrings/JTzem/appveyor.yml
+ create mode 100644 packages/InternedStrings/JTzem/src/InternedStrings.jl
+ create mode 100644 packages/InternedStrings/JTzem/test/REQUIRE
+ create mode 100644 packages/InternedStrings/JTzem/test/all_kinds_of_types.jl
+ create mode 100644 packages/InternedStrings/JTzem/test/corefunctionality.jl
+ create mode 100644 packages/InternedStrings/JTzem/test/runtests.jl
+ create mode 100644 packages/InternedStrings/JTzem/test/string_macro.jl
+ create mode 100644 packages/StrTables/RV7P3/.codecov.yml
+ create mode 100644 packages/StrTables/RV7P3/.gitignore
+ create mode 100644 packages/StrTables/RV7P3/.travis.yml
+ create mode 100644 packages/StrTables/RV7P3/LICENSE.md
+ create mode 100644 packages/StrTables/RV7P3/Project.toml
+ create mode 100644 packages/StrTables/RV7P3/README.md
+ create mode 100644 packages/StrTables/RV7P3/appveyor.yml
+ create mode 100644 packages/StrTables/RV7P3/src/StrTables.jl
+ create mode 100644 packages/StrTables/RV7P3/test/runtests.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/.codecov.yml
+ create mode 100644 packages/WordTokenizers/aNL0L/.gitignore
+ create mode 100644 packages/WordTokenizers/aNL0L/.travis.yml
+ create mode 100644 packages/WordTokenizers/aNL0L/LICENSE.md
+ create mode 100644 packages/WordTokenizers/aNL0L/Project.toml
+ create mode 100644 packages/WordTokenizers/aNL0L/README.md
+ create mode 100644 packages/WordTokenizers/aNL0L/REQUIRE
+ create mode 100644 packages/WordTokenizers/aNL0L/appveyor.yml
+ create mode 100644 packages/WordTokenizers/aNL0L/src/WordTokenizers.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/src/sentences/sentence_splitting.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/src/set_method_api.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/src/split_api.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/src/words/TokTok.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/src/words/fast.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/src/words/improved_penn.sed
+ create mode 100644 packages/WordTokenizers/aNL0L/src/words/nltk_word.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/src/words/penn.sed
+ create mode 100644 packages/WordTokenizers/aNL0L/src/words/reversible_tokenize.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/src/words/sedbased.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/src/words/simple.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/src/words/tweet_tokenizer.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/test/reversible_tok.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/test/runtests.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/test/sedbased.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/test/sentence_splitting.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/test/set_method_api.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/test/simple.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/test/split_api.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/test/toktok.jl
+ create mode 100644 packages/WordTokenizers/aNL0L/test/tweet_tokenize.jl
+To https://github.com/watsona4/dot_julia.git
+   99c46be16..99c130709  master -> master
+Progress:   9%|███▋                                     |  ETA: 3 days, 15:40:40[K
+Installing Bzip2_jll
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Bzip2_jll [6e34b625]:\n Bzip2_jll [6e34b625] log:\n ├─possible versions are: 1.0.6 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 1.0.6\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   9%|███▋                                     |  ETA: 3 days, 15:22:03[K
+Installing C3D
+ Resolving package versions...
+ Installed VaxData ─ v0.5.1
+ Installed C3D ───── v0.5.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [de436766] + C3D v0.5.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [de436766] + C3D v0.5.2
+  [a6f58a78] + VaxData v0.5.1

@@ -1214,6 +1214,12 @@ git-tree-sha1 = "25c3f66339f307c36af4b63c4dc36809cc6d1ad5"
 uuid = "a4280ba5-8788-555a-8ca8-4a8c3d966a71"
 version = "0.1.1"
 
+[[C3D]]
+deps = ["VaxData"]
+git-tree-sha1 = "52190ed73079c6aecaace3a166b09a1cd451e210"
+uuid = "de436766-0b2a-5f82-bc5b-1ccc5f599b83"
+version = "0.5.2"
+
 [[CEnum]]
 git-tree-sha1 = "62847acab40e6855a9b5905ccb99c2b5cf6b3ebb"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"
@@ -3474,6 +3480,12 @@ version = "0.4.0"
 deps = ["DataStructures", "Random", "RecipesBase", "Test"]
 git-tree-sha1 = "37f692be32132346b7e867ac7565a01b7a1592be"
 uuid = "98cad3c8-aec3-5f06-8e41-884608649ab7"
+version = "0.5.1"
+
+[[VaxData]]
+deps = ["InteractiveUtils", "Test"]
+git-tree-sha1 = "47644248c723bf1b730f66d89f30835bcd5f6e00"
+uuid = "a6f58a78-e649-57e2-81bc-1d865c7b74f7"
 version = "0.5.1"
 
 [[VegaLite]]
