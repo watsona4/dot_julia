@@ -4611,3 +4611,68 @@ Installing ASDF
 │  [8] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/ASDF/0SzlD/deps/build.jl:6
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master 6e417dd71] added package ASDF
+ 42 files changed, 1990 insertions(+)
+ create mode 100644 packages/ASDF/0SzlD/.gitignore
+ create mode 100644 packages/ASDF/0SzlD/.travis.yml
+ create mode 100644 packages/ASDF/0SzlD/.zenodo.json
+ create mode 100644 packages/ASDF/0SzlD/LICENSE.md
+ create mode 100644 packages/ASDF/0SzlD/Manifest.toml
+ create mode 100644 packages/ASDF/0SzlD/Project.toml
+ create mode 100644 packages/ASDF/0SzlD/README.md
+ create mode 100644 packages/ASDF/0SzlD/REQUIRE
+ create mode 100644 packages/ASDF/0SzlD/appveyor.yml
+ create mode 100644 packages/ASDF/0SzlD/deps/build.jl
+ create mode 100644 packages/ASDF/0SzlD/examples/README.rst
+ create mode 100644 packages/ASDF/0SzlD/examples/array.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/ascii.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/ascii.yaml
+ create mode 100644 packages/ASDF/0SzlD/examples/basic.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/basic.yaml
+ create mode 100644 packages/ASDF/0SzlD/examples/complex.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/complex.yaml
+ create mode 100644 packages/ASDF/0SzlD/examples/compressed.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/compressed.yaml
+ create mode 100644 packages/ASDF/0SzlD/examples/exploded.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/exploded.yaml
+ create mode 100644 packages/ASDF/0SzlD/examples/exploded0000.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/float.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/float.yaml
+ create mode 100644 packages/ASDF/0SzlD/examples/int.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/int.yaml
+ create mode 100644 packages/ASDF/0SzlD/examples/shared.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/shared.yaml
+ create mode 100644 packages/ASDF/0SzlD/examples/stream.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/stream.yaml
+ create mode 100644 packages/ASDF/0SzlD/examples/unicode_bmp.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/unicode_bmp.yaml
+ create mode 100644 packages/ASDF/0SzlD/examples/unicode_spp.asdf
+ create mode 100644 packages/ASDF/0SzlD/examples/unicode_spp.yaml
+ create mode 100644 packages/ASDF/0SzlD/src/ASDF.jl
+ create mode 100644 packages/ASDF/0SzlD/test/runtests.jl
+ create mode 100644 packages/ASDF/0SzlD/test/strides.py
+To https://github.com/watsona4/dot_julia.git
+   f334972b4..6e417dd71  master -> master
+Progress:   0%|▏                                        |  ETA: 3 days, 23:52:59[K
+Installing ASE
+ Resolving package versions...
+ Installed Dierckx ──────────── v0.4.1
+ Installed NeighbourLists ───── v0.5.0
+ Installed AlgebraicMultigrid ─ v0.2.2
+ Installed ASE ──────────────── v0.5.1
+ Installed JuLIP ────────────── v0.8.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [51974c44] + ASE v0.5.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [51974c44] + ASE v0.5.1
+  [2169fc97] + AlgebraicMultigrid v0.2.2
+  [39dd38d3] + Dierckx v0.4.1
+  [945c410c] + JuLIP v0.8.2
+  [2fcf5ba9] + NeighbourLists v0.5.0
+  Building Dierckx → `~/.julia/packages/Dierckx/9SY4A/deps/build.log`
+  Building ASE ────→ `~/.julia/packages/ASE/GfCjR/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Dierckx ─────────→ `~/.julia/packages/Dierckx/9SY4A/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building PyCall ──────────→ `~/.julia/packages/PyCall/ttONZ/deps/build.log`
+  Building ASE ─────────────→ `~/.julia/packages/ASE/GfCjR/deps/build.log`

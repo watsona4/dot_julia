@@ -1,0 +1,14 @@
+# compiled files
+*.o
+*.so
+
+# test coverage
+*.cov
+
+# emacs
+*~
+
+# deps build products
+deps/build.log
+deps/deps.jl
+deps/usr
