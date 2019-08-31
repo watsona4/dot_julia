@@ -45982,3 +45982,27 @@ Installing Cascadia
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [54eefc05] + Cascadia v0.4.0
   Building Gumbo → `~/.julia/packages/Gumbo/G7Qbw/deps/build.log`
+[master 0e563e34d] added package Cascadia
+ 17 files changed, 2144 insertions(+)
+ create mode 100644 packages/Cascadia/EkbcF/.gitignore
+ create mode 100644 packages/Cascadia/EkbcF/.travis.yml
+ create mode 100644 packages/Cascadia/EkbcF/LICENSE.md
+ create mode 100644 packages/Cascadia/EkbcF/README.md
+ create mode 100644 packages/Cascadia/EkbcF/REQUIRE
+ create mode 100644 packages/Cascadia/EkbcF/appveyor.yml
+ create mode 100644 packages/Cascadia/EkbcF/src/Cascadia.jl
+ create mode 100644 packages/Cascadia/EkbcF/src/parser.jl
+ create mode 100644 packages/Cascadia/EkbcF/src/selector.jl
+ create mode 100644 packages/Cascadia/EkbcF/test/REQUIRE
+ create mode 100644 packages/Cascadia/EkbcF/test/example.jl
+ create mode 100644 packages/Cascadia/EkbcF/test/runtests.jl
+ create mode 100644 packages/Cascadia/EkbcF/test/selectorTests.json
+To https://github.com/watsona4/dot_julia.git
+   5cc753b62..0e563e34d  master -> master
+Progress:  11%|████▋                                    |  ETA: 3 days, 13:41:25[K
+Installing Cassette
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [7057c7e9] + Cassette v0.2.6
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
