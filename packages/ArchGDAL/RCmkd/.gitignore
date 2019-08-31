@@ -1,0 +1,14 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+*.xml
+
+docs/build/
+docs/site/
+
+test/data/
+test/gdalworkshop/
+test/ospy/
+test/pyrasterio/
+test/spatialite/

@@ -22625,3 +22625,33 @@ Installing ArcadeLearningEnvironment
 │  [17] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/ArcadeLearningEnvironment/YJh2g/deps/build.jl:31
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master f7845adce] added package ArcadeLearningEnvironment
+ 14 files changed, 1955 insertions(+)
+ create mode 100644 packages/ArcadeLearningEnvironment/YJh2g/.gitignore
+ create mode 100644 packages/ArcadeLearningEnvironment/YJh2g/.travis.yml
+ create mode 100644 packages/ArcadeLearningEnvironment/YJh2g/LICENSE.md
+ create mode 100644 packages/ArcadeLearningEnvironment/YJh2g/Project.toml
+ create mode 100644 packages/ArcadeLearningEnvironment/YJh2g/README.md
+ create mode 100644 packages/ArcadeLearningEnvironment/YJh2g/appveyor.yml
+ create mode 100644 packages/ArcadeLearningEnvironment/YJh2g/deps/build.jl
+ create mode 100644 packages/ArcadeLearningEnvironment/YJh2g/src/ArcadeLearningEnvironment.jl
+ create mode 100644 packages/ArcadeLearningEnvironment/YJh2g/src/aleinterface.jl
+ create mode 100644 packages/ArcadeLearningEnvironment/YJh2g/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   4561c33fd..f7845adce  master -> master
+Progress:   3%|█▎                                       |  ETA: 6 days, 21:11:35[K
+Installing ArchGDAL
+ Resolving package versions...
+ Installed DataStreams ── v0.4.2
+ Installed GeoInterface ─ v0.4.1
+ Installed ArchGDAL ───── v0.2.1
+ Installed GDAL ───────── v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [c9ce4bd3] + ArchGDAL v0.2.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [c9ce4bd3] + ArchGDAL v0.2.1
+  [9a8bc11e] + DataStreams v0.4.2
+  [add2ef01] + GDAL v0.2.0
+  [cf35fbd7] + GeoInterface v0.4.1
+  Building GDAL → `~/.julia/packages/GDAL/vec6Y/deps/build.log`
+  Building GDAL → `~/.julia/packages/GDAL/vec6Y/deps/build.log`

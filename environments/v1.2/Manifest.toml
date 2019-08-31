@@ -406,6 +406,12 @@ git-tree-sha1 = "b5ceb6d84ce6f7bed13bd0560c420cec4520b5a3"
 uuid = "b7f77d8d-088d-5e02-8ac0-89aab2acc977"
 version = "0.2.1"
 
+[[ArchGDAL]]
+deps = ["DataStreams", "Dates", "GDAL", "GeoInterface"]
+git-tree-sha1 = "dbe057fd9b23a5c9e796417c47622e0592f65109"
+uuid = "c9ce4bd3-c3d5-55b8-8973-c0e20141b8c3"
+version = "0.2.1"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -688,6 +694,12 @@ git-tree-sha1 = "934b75a90b6cb315f9ea0df961768a02c1da1612"
 uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 version = "0.19.3"
 
+[[DataStreams]]
+deps = ["Missings", "WeakRefStrings"]
+git-tree-sha1 = "19cccd7f86ade39d81ca088b932974e97df7f1f6"
+uuid = "9a8bc11e-79be-5b39-94d7-1ccc349a1a85"
+version = "0.4.2"
+
 [[DataStructures]]
 deps = ["InteractiveUtils", "OrderedCollections"]
 git-tree-sha1 = "0809951a1774dc724da22d26e4289bbaab77809a"
@@ -945,6 +957,12 @@ version = "1.0.0"
 deps = ["Random"]
 uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
 
+[[GDAL]]
+deps = ["BinaryProvider", "Libdl", "Test"]
+git-tree-sha1 = "100429098b7ec9930f7db9ba68aee3495365be24"
+uuid = "add2ef01-049f-52c4-9ee2-e494f65e021a"
+version = "0.2.0"
+
 [[GLM]]
 deps = ["Distributions", "LinearAlgebra", "Printf", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns", "StatsModels"]
 git-tree-sha1 = "b68052e0ddae57af3c5198c0dcf3f06ffaa11d39"
@@ -980,6 +998,12 @@ deps = ["LinearAlgebra", "Printf"]
 git-tree-sha1 = "25992e6d023b72860348553f976599184c85d914"
 uuid = "c145ed77-6b09-5dd9-b285-bf645a82121e"
 version = "0.2.3"
+
+[[GeoInterface]]
+deps = ["RecipesBase", "Test"]
+git-tree-sha1 = "0c0c0bf9c79b10e48aa089e78ac504ebc43db3a0"
+uuid = "cf35fbd7-0cd7-5166-be24-54bfbe79505f"
+version = "0.4.1"
 
 [[GeometryTypes]]
 deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays"]
