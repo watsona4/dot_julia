@@ -1993,6 +1993,12 @@ git-tree-sha1 = "7b1829acd00ab82ed00e932850ab2978a3b7bb5b"
 uuid = "952205b0-75a0-561c-bf54-4eaf7b36f838"
 version = "0.2.1"
 
+[[ConjGrad]]
+deps = ["LinearAlgebra", "MPI"]
+git-tree-sha1 = "f208756f36282e2a6acdd7d3bdf384a6c574d007"
+uuid = "c16e2fb6-b1e3-11e9-21be-0f591a3b69ea"
+version = "0.1.0"
+
 [[Contour]]
 deps = ["LinearAlgebra", "StaticArrays", "Test"]
 git-tree-sha1 = "b974e164358fea753ef853ce7bad97afec15bb80"
@@ -3371,6 +3377,12 @@ deps = ["IterTools", "Random", "Reexport", "StatsBase", "Test"]
 git-tree-sha1 = "f63a8d37429568b8c4384d76c4a96fc2897d6ddf"
 uuid = "f0e99cf1-93fa-52ec-9ecc-5026115318e0"
 version = "0.8.0"
+
+[[MPI]]
+deps = ["Distributed", "Libdl", "Random", "Requires", "Serialization", "Sockets"]
+git-tree-sha1 = "1493102ae15bdbb2f98a5c27fb659528865ec1ba"
+uuid = "da04e1cc-30fd-572f-bb4f-1f8673147195"
+version = "0.10.0"
 
 [[MacroTools]]
 deps = ["CSTParser", "Compat", "DataStructures", "Test", "Tokenize"]
