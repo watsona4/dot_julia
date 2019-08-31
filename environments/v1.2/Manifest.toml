@@ -549,6 +549,12 @@ git-tree-sha1 = "9eec470c0110755967eb67b03eb96b841171cacf"
 uuid = "2b6db37a-05bd-5fbd-94f7-97a8281041e3"
 version = "0.1.0"
 
+[[AugmentedGaussianProcesses]]
+deps = ["Clustering", "Colors", "DataFrames", "Dates", "Distances", "Distributions", "Expectations", "FastGaussQuadrature", "FileIO", "GradDescent", "JLD2", "LaTeXStrings", "LinearAlgebra", "ProgressMeter", "Random", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns", "ValueHistories"]
+git-tree-sha1 = "d41eff20b0f58e8e27c48c3d293a28f0c1a4a291"
+uuid = "38eea1fd-7d7d-5162-9d08-f89d0f2e271e"
+version = "0.5.0"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
@@ -705,6 +711,12 @@ deps = ["Compat", "DataAPI", "Future", "JSON", "Missings", "Printf", "Reexport"]
 git-tree-sha1 = "13240cfcc884837fc1aa89b60d500a652bcc3f10"
 uuid = "324d7699-5711-5eae-9e2f-1d82baa6b597"
 version = "0.5.5"
+
+[[Clustering]]
+deps = ["Distances", "LinearAlgebra", "NearestNeighbors", "Printf", "SparseArrays", "Statistics", "StatsBase"]
+git-tree-sha1 = "f387d5937d0c9d0191c711d7d204bce15bd23b45"
+uuid = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
+version = "0.13.3"
 
 [[CodeTools]]
 deps = ["LNR", "Lazy", "Markdown", "Pkg", "Test", "Tokenize"]
@@ -996,6 +1008,12 @@ git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
 version = "0.4.0"
 
+[[Expectations]]
+deps = ["Compat", "Distributions", "FastGaussQuadrature", "SpecialFunctions"]
+git-tree-sha1 = "5b50b515886773484a28f19d9c103dffc7702702"
+uuid = "2fe49d83-0758-5602-8f54-1f90ad0d522b"
+version = "1.1.1"
+
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "aed48d722e528bc634bd36a7d0e090fa2952a3c0"
@@ -1216,6 +1234,12 @@ deps = ["Compat", "Test"]
 git-tree-sha1 = "c72f1fcb7d17426de1e8af2e948dfb3de1116eed"
 uuid = "c27321d9-0574-5035-807b-f59d2c89b15c"
 version = "1.2.0"
+
+[[GradDescent]]
+deps = ["Distributions", "ForwardDiff", "LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "2180f700605eb0ad851f54577855c6a8f13b9a20"
+uuid = "e1397348-e965-55d8-8fb3-3dd9faf6e4f1"
+version = "0.3.1"
 
 [[GraphPlot]]
 deps = ["ArnoldiMethod", "ColorTypes", "Colors", "Compose", "DelimitedFiles", "LightGraphs", "LinearAlgebra", "Random", "SparseArrays", "Test"]
@@ -1548,6 +1572,12 @@ git-tree-sha1 = "6505b43dbdb449462a52e8e45feb0706f8b36dab"
 uuid = "8ac3fa9e-de4c-5943-b1dc-09c6b5f20637"
 version = "1.0.2"
 
+[[LaTeXStrings]]
+deps = ["Compat"]
+git-tree-sha1 = "7ab9b8788cfab2bdde22adf9004bda7ad9954b6c"
+uuid = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+version = "1.0.3"
+
 [[Lazy]]
 deps = ["Compat", "MacroTools", "Test"]
 git-tree-sha1 = "aec38c7e7f255a678af22651c74100e3cd39ea20"
@@ -1776,6 +1806,12 @@ deps = ["Compat"]
 git-tree-sha1 = "ce3b85e484a5d4c71dd5316215069311135fa9f2"
 uuid = "77ba4419-2d1f-58cd-9bb1-8ffee604a2e3"
 version = "0.3.2"
+
+[[NearestNeighbors]]
+deps = ["Distances", "LinearAlgebra", "Mmap", "StaticArrays", "Test"]
+git-tree-sha1 = "f47c5d97cf9a8caefa47e9fa9d99d8fda1a65154"
+uuid = "b8a86587-4115-5ab1-83bc-aa920d37bbce"
+version = "0.4.3"
 
 [[NeighbourLists]]
 deps = ["LinearAlgebra", "StaticArrays"]
@@ -2332,6 +2368,12 @@ version = "0.3.0"
 git-tree-sha1 = "417100df8567333bff1b851008b1441a2be08da0"
 uuid = "c4a57d5a-5b31-53a6-b365-19f8c011fbd6"
 version = "0.4.0"
+
+[[ValueHistories]]
+deps = ["DataStructures", "Random", "RecipesBase", "Test"]
+git-tree-sha1 = "37f692be32132346b7e867ac7565a01b7a1592be"
+uuid = "98cad3c8-aec3-5f06-8e41-884608649ab7"
+version = "0.5.1"
 
 [[VegaLite]]
 deps = ["DataValues", "Dates", "FileIO", "FilePaths", "IterableTables", "IteratorInterfaceExtensions", "JSON", "JSONSchema", "MacroTools", "NodeJS", "REPL", "Random", "TableTraits", "URIParser"]

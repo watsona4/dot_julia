@@ -1,0 +1,15 @@
+*.result
+*.json
+*.jld2
+*.cov
+*.info
+Manifest.toml
+
+#Do not save checkpoints and testpoints
+examples/.ipynb_checkpoints/*
+test/main_testing.jl
+
+#Docs
+docs/build/
+docs/site/
+data/*

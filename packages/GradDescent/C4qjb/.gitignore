@@ -1,0 +1,13 @@
+# vim files
+*.swp
+*.swo
+*.swn
+
+# julia files
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+# documentation files
+docs/build/
+docs/site/

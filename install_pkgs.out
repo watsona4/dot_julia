@@ -25812,3 +25812,54 @@ Installing AuditoryFilters
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
   Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+[master 3f4181843] added package AuditoryFilters
+ 27 files changed, 1272 insertions(+)
+ create mode 100644 packages/AuditoryFilters/utfIR/.travis.yml
+ create mode 100644 packages/AuditoryFilters/utfIR/LICENSE.md
+ create mode 100644 packages/AuditoryFilters/utfIR/README.md
+ create mode 100644 packages/AuditoryFilters/utfIR/REQUIRE
+ create mode 100644 packages/AuditoryFilters/utfIR/src/AuditoryFilters.jl
+ create mode 100644 packages/AuditoryFilters/utfIR/src/ERBFilterbank.jl
+ create mode 100644 packages/AuditoryFilters/utfIR/src/Gammatonegram.jl
+ create mode 100644 packages/AuditoryFilters/utfIR/src/ModulationFilterbank.jl
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/ERB_filter_coeffs.csv
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/ERB_filter_response.csv
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/F_matlab.csv
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/G_matlab.csv
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/S_matlab.csv
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/S_matlab_im.csv
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/S_matlab_re.csv
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/W_matlab.csv
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/modfilters_freqs.csv
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/modfilters_response.csv
+ create mode 100644 packages/AuditoryFilters/utfIR/test/data/sa2.raw
+ create mode 100644 packages/AuditoryFilters/utfIR/test/runtests.jl
+ create mode 100644 packages/AuditoryFilters/utfIR/test/test_erb_fb.jl
+ create mode 100644 packages/AuditoryFilters/utfIR/test/test_gammatonegram.jl
+ create mode 100644 packages/AuditoryFilters/utfIR/test/test_modulation_fb.jl
+To https://github.com/watsona4/dot_julia.git
+   44311c5a0..3f4181843  master -> master
+Progress:   4%|█▋                                       |  ETA: 5 days, 19:57:53[K
+Installing AugmentedGaussianProcesses
+ Resolving package versions...
+ Installed Expectations ─────────────── v1.1.1
+ Installed LaTeXStrings ─────────────── v1.0.3
+ Installed ValueHistories ───────────── v0.5.1
+ Installed NearestNeighbors ─────────── v0.4.3
+ Installed GradDescent ──────────────── v0.3.1
+ Installed Clustering ───────────────── v0.13.3
+ Installed AugmentedGaussianProcesses ─ v0.5.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [38eea1fd] + AugmentedGaussianProcesses v0.5.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [38eea1fd] + AugmentedGaussianProcesses v0.5.0
+  [aaaa29a8] + Clustering v0.13.3
+  [2fe49d83] + Expectations v1.1.1
+  [e1397348] + GradDescent v0.3.1
+  [b964fa9f] + LaTeXStrings v1.0.3
+  [b8a86587] + NearestNeighbors v0.4.3
+  [98cad3c8] + ValueHistories v0.5.1
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building CodecZlib ───────→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
