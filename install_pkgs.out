@@ -30658,3 +30658,30 @@ Installing BilevelOptimization
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [98803d92] + BilevelOptimization v0.2.1
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+[master 9d2cd550b] added package BilevelOptimization
+ 20 files changed, 1454 insertions(+)
+ create mode 100644 packages/BilevelOptimization/linUW/.gitignore
+ create mode 100644 packages/BilevelOptimization/linUW/.travis.yml
+ create mode 100644 packages/BilevelOptimization/linUW/CONTRIBUTING.md
+ create mode 100644 packages/BilevelOptimization/linUW/LICENSE
+ create mode 100644 packages/BilevelOptimization/linUW/Project.toml
+ create mode 100644 packages/BilevelOptimization/linUW/README.md
+ create mode 100644 packages/BilevelOptimization/linUW/REQUIRE
+ create mode 100644 packages/BilevelOptimization/linUW/paper/paper.bib
+ create mode 100644 packages/BilevelOptimization/linUW/paper/paper.md
+ create mode 100644 packages/BilevelOptimization/linUW/src/BilevelOptimization.jl
+ create mode 100644 packages/BilevelOptimization/linUW/src/bilevel_flows.jl
+ create mode 100644 packages/BilevelOptimization/linUW/src/build_model.jl
+ create mode 100644 packages/BilevelOptimization/linUW/src/complementarity.jl
+ create mode 100644 packages/BilevelOptimization/linUW/src/types.jl
+ create mode 100644 packages/BilevelOptimization/linUW/test/REQUIRE
+ create mode 100644 packages/BilevelOptimization/linUW/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   4cb5a7364..9d2cd550b  master -> master
+Progress:   6%|██▋                                      |  ETA: 4 days, 7:08:43[K
+Installing BinDeps
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9e28174c] + BinDeps v0.8.10
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
