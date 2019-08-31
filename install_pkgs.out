@@ -22850,3 +22850,52 @@ Installing ArnoldiMethodTransformations
   [46dd5b70] + Pardiso v0.4.2
   Building Pardiso → `~/.julia/packages/Pardiso/66TFF/deps/build.log`
   Building Pardiso → `~/.julia/packages/Pardiso/66TFF/deps/build.log`
+[master c5227bcdd] added package ArnoldiMethodTransformations
+ 41 files changed, 3782 insertions(+)
+ create mode 100644 packages/ArnoldiMethodTransformations/qMcmy/.gitignore
+ create mode 100644 packages/ArnoldiMethodTransformations/qMcmy/LICENSE
+ create mode 100644 packages/ArnoldiMethodTransformations/qMcmy/Manifest.toml
+ create mode 100644 packages/ArnoldiMethodTransformations/qMcmy/Project.toml
+ create mode 100644 packages/ArnoldiMethodTransformations/qMcmy/README.md
+ create mode 100644 packages/ArnoldiMethodTransformations/qMcmy/src/ArnoldiMethodTransformations.jl
+ create mode 100644 packages/ArnoldiMethodTransformations/qMcmy/test/generalized_eigenvalue_problem.jl
+ create mode 100644 packages/ArnoldiMethodTransformations/qMcmy/test/ordinary_eigenvalue_problem.jl
+ create mode 100644 packages/ArnoldiMethodTransformations/qMcmy/test/runtests.jl
+ create mode 100644 packages/LinearMaps/cvUFm/.travis.yml
+ create mode 100644 packages/LinearMaps/cvUFm/LICENSE.md
+ create mode 100644 packages/LinearMaps/cvUFm/Project.toml
+ create mode 100644 packages/LinearMaps/cvUFm/README.md
+ create mode 100644 packages/LinearMaps/cvUFm/src/LinearMaps.jl
+ create mode 100644 packages/LinearMaps/cvUFm/src/blockmap.jl
+ create mode 100644 packages/LinearMaps/cvUFm/src/composition.jl
+ create mode 100644 packages/LinearMaps/cvUFm/src/functionmap.jl
+ create mode 100644 packages/LinearMaps/cvUFm/src/linearcombination.jl
+ create mode 100644 packages/LinearMaps/cvUFm/src/transpose.jl
+ create mode 100644 packages/LinearMaps/cvUFm/src/uniformscalingmap.jl
+ create mode 100644 packages/LinearMaps/cvUFm/src/wrappedmap.jl
+ create mode 100644 packages/LinearMaps/cvUFm/test/runtests.jl
+ create mode 100644 packages/Pardiso/66TFF/.gitignore
+ create mode 100644 packages/Pardiso/66TFF/.travis.yml
+ create mode 100644 packages/Pardiso/66TFF/LICENSE.md
+ create mode 100644 packages/Pardiso/66TFF/README.md
+ create mode 100644 packages/Pardiso/66TFF/REQUIRE
+ create mode 100644 packages/Pardiso/66TFF/deps/build.jl
+ create mode 100644 packages/Pardiso/66TFF/examples/README.md
+ create mode 100644 packages/Pardiso/66TFF/examples/exampleherm.jl
+ create mode 100644 packages/Pardiso/66TFF/examples/examplesym.jl
+ create mode 100644 packages/Pardiso/66TFF/examples/exampleunsym.jl
+ create mode 100644 packages/Pardiso/66TFF/src/Pardiso.jl
+ create mode 100644 packages/Pardiso/66TFF/src/enums.jl
+ create mode 100644 packages/Pardiso/66TFF/src/mkl_pardiso.jl
+ create mode 100644 packages/Pardiso/66TFF/src/project_pardiso.jl
+ create mode 100644 packages/Pardiso/66TFF/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   1f2cdc35f..c5227bcdd  master -> master
+Progress:   3%|█▍                                       |  ETA: 6 days, 14:41:22[K
+Installing Arpack
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [7d9fca2a] + Arpack v0.3.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
+  Building Arpack → `~/.julia/packages/Arpack/cu5By/deps/build.log`
