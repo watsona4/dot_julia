@@ -1244,6 +1244,12 @@ git-tree-sha1 = "db1e824c16056407ed7df4dbf52e9bb8ae62854c"
 uuid = "308a6e0c-0495-45e1-b1ab-67fb455a0d77"
 version = "0.1.0"
 
+[[CDCS]]
+deps = ["LinearAlgebra", "MATLAB", "MathOptInterface", "SparseArrays"]
+git-tree-sha1 = "2f8290ab53725d9d405532cd95399169f9bfa643"
+uuid = "4fe2ecd4-b952-581a-b4b6-a532675a646e"
+version = "0.1.0"
+
 [[CEnum]]
 git-tree-sha1 = "62847acab40e6855a9b5905ccb99c2b5cf6b3ebb"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"
@@ -2608,6 +2614,12 @@ deps = ["BufferedStreams", "HDF5", "Libz", "LinearAlgebra", "SparseArrays", "Tes
 git-tree-sha1 = "e7c19d868d482cf62ba33afd2087ccc00de4f7f5"
 uuid = "23992714-dd62-5051-b70f-ba57cb901cac"
 version = "0.5.0"
+
+[[MATLAB]]
+deps = ["Libdl", "SparseArrays", "Test"]
+git-tree-sha1 = "89ab46e322f9216728961119f7131038f5e4d22b"
+uuid = "10e44e05-a98a-55b3-a45b-ba969058deb6"
+version = "0.7.3"
 
 [[MacroTools]]
 deps = ["CSTParser", "Compat", "DataStructures", "Test", "Tokenize"]

@@ -36311,3 +36311,85 @@ Installing CBindingGen
   [40e3b903] + Clang v0.9.1
   Building Clang → `~/.julia/packages/Clang/CiPzM/deps/build.log`
   Building Clang → `~/.julia/packages/Clang/CiPzM/deps/build.log`
+[master 14b6d775d] added package CBindingGen
+ 72 files changed, 8669 insertions(+)
+ create mode 100644 packages/CBindingGen/flXcj/LICENSE
+ create mode 100644 packages/CBindingGen/flXcj/Project.toml
+ create mode 100644 packages/CBindingGen/flXcj/README.md
+ create mode 100644 packages/CBindingGen/flXcj/src/CBindingGen.jl
+ create mode 100644 packages/CBindingGen/flXcj/src/code.jl
+ create mode 100644 packages/CBindingGen/flXcj/src/functions.jl
+ create mode 100644 packages/CBindingGen/flXcj/src/macros.jl
+ create mode 100644 packages/CBindingGen/flXcj/src/types.jl
+ create mode 100644 packages/CBindingGen/flXcj/src/variables.jl
+ create mode 100644 packages/CBindingGen/flXcj/test/runtests.jl
+ create mode 100644 packages/CBindingGen/flXcj/test/test.h
+ create mode 100644 packages/Clang/CiPzM/.appveyor.yml
+ create mode 100644 packages/Clang/CiPzM/.github/FUNDING.yml
+ create mode 100644 packages/Clang/CiPzM/.gitignore
+ create mode 100644 packages/Clang/CiPzM/.travis.yml
+ create mode 100644 packages/Clang/CiPzM/LICENSE
+ create mode 100644 packages/Clang/CiPzM/Project.toml
+ create mode 100644 packages/Clang/CiPzM/README.md
+ create mode 100644 packages/Clang/CiPzM/codecov.yml
+ create mode 100644 packages/Clang/CiPzM/deps/build.jl
+ create mode 100644 packages/Clang/CiPzM/docs/.gitignore
+ create mode 100644 packages/Clang/CiPzM/docs/Project.toml
+ create mode 100644 packages/Clang/CiPzM/docs/make.jl
+ create mode 100644 packages/Clang/CiPzM/docs/src/api.md
+ create mode 100644 packages/Clang/CiPzM/docs/src/example.h
+ create mode 100644 packages/Clang/CiPzM/docs/src/index.md
+ create mode 100644 packages/Clang/CiPzM/docs/src/tutorial.md
+ create mode 100644 packages/Clang/CiPzM/gen/generator.jl
+ create mode 100644 packages/Clang/CiPzM/gen/libclang_api.jl
+ create mode 100644 packages/Clang/CiPzM/gen/libclang_common.jl
+ create mode 100644 packages/Clang/CiPzM/src/Clang.jl
+ create mode 100644 packages/Clang/CiPzM/src/LibClang.jl
+ create mode 100644 packages/Clang/CiPzM/src/clang2julia.jl
+ create mode 100644 packages/Clang/CiPzM/src/cltypes.jl
+ create mode 100644 packages/Clang/CiPzM/src/compat.jl
+ create mode 100644 packages/Clang/CiPzM/src/context.jl
+ create mode 100644 packages/Clang/CiPzM/src/ctypes.jl
+ create mode 100644 packages/Clang/CiPzM/src/cursor.jl
+ create mode 100644 packages/Clang/CiPzM/src/expr_unit.jl
+ create mode 100644 packages/Clang/CiPzM/src/index.jl
+ create mode 100644 packages/Clang/CiPzM/src/show.jl
+ create mode 100644 packages/Clang/CiPzM/src/token.jl
+ create mode 100644 packages/Clang/CiPzM/src/trans_unit.jl
+ create mode 100644 packages/Clang/CiPzM/src/type.jl
+ create mode 100644 packages/Clang/CiPzM/src/utils.jl
+ create mode 100644 packages/Clang/CiPzM/src/wrap_c.jl
+ create mode 100644 packages/Clang/CiPzM/test/c/cbasic.h
+ create mode 100644 packages/Clang/CiPzM/test/c/enum.h
+ create mode 100644 packages/Clang/CiPzM/test/c/macro.h
+ create mode 100644 packages/Clang/CiPzM/test/c/struct_enum_field.h
+ create mode 100644 packages/Clang/CiPzM/test/c/struct_nested.h
+ create mode 100644 packages/Clang/CiPzM/test/c/typedef.h
+ create mode 100644 packages/Clang/CiPzM/test/c/typedef_anon.h
+ create mode 100644 packages/Clang/CiPzM/test/c/typedef_pointer.h
+ create mode 100644 packages/Clang/CiPzM/test/c/union.h
+ create mode 100644 packages/Clang/CiPzM/test/cbasic.jl
+ create mode 100644 packages/Clang/CiPzM/test/cxx/classparents.h
+ create mode 100644 packages/Clang/CiPzM/test/cxx/cxxbasic.h
+ create mode 100644 packages/Clang/CiPzM/test/cxx/functions.jl
+ create mode 100644 packages/Clang/CiPzM/test/cxx/test_classparents.jl
+ create mode 100644 packages/Clang/CiPzM/test/enum.jl
+ create mode 100644 packages/Clang/CiPzM/test/generator.jl
+ create mode 100644 packages/Clang/CiPzM/test/macro.jl
+ create mode 100644 packages/Clang/CiPzM/test/runtests.jl
+ create mode 100644 packages/Clang/CiPzM/test/struct.jl
+ create mode 100644 packages/Clang/CiPzM/test/typedef.jl
+ create mode 100644 packages/Clang/CiPzM/test/union.jl
+ create mode 100644 packages/Clang/CiPzM/test/wrap_c.jl
+To https://github.com/watsona4/dot_julia.git
+   5d74a7ec8..14b6d775d  master -> master
+Progress:   9%|███▊                                     |  ETA: 3 days, 15:21:16[K
+Installing CDCS
+ Resolving package versions...
+ Installed MATLAB ─ v0.7.3
+ Installed CDCS ─── v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [4fe2ecd4] + CDCS v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [4fe2ecd4] + CDCS v0.1.0
+  [10e44e05] + MATLAB v0.7.3
