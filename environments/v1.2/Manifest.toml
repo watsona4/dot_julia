@@ -953,6 +953,12 @@ git-tree-sha1 = "d81eabca1fa04b08ae4d9d043fd8eaf60bcacb83"
 uuid = "fa5322f5-bd84-5069-834a-abf3230fb8f8"
 version = "0.1.0"
 
+[[Bioinformatics]]
+deps = ["Plots", "Test"]
+git-tree-sha1 = "6f4646f277261658185f474e6e826cad14301b2a"
+uuid = "c429c406-9079-5a14-8339-dedc8835de90"
+version = "0.1.1"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"
