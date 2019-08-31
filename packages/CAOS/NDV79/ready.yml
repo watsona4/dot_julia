@@ -1,0 +1,11 @@
+repo:             CAOS.jl
+site_name:        CAOS.jl
+maintainers:
+  - name: Jason Katz
+    github_user: jasonk33
+  - name: Fernando Gelin
+    github_user: fernandogelin
+repo_url:         https://github.com/bcbi/CAOS.jl # not required if repo is part of compbiocore organization.
+site_description: This package provides an interface to use the CAOS algorithm for sequence classification.
+docs_url:  https://bcbi.github.io/CAOS.jl/latest/ # if it's a software and has documantion
+type:             software # choose from [web_app, software]

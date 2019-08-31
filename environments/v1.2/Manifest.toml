@@ -1226,6 +1226,12 @@ git-tree-sha1 = "2e45cbee4ec96d2522e3085bad3de89db2d14e14"
 uuid = "1537fe66-4725-5aba-80f4-3a74792cecc1"
 version = "1.0.3"
 
+[[CAOS]]
+deps = ["BioSequences", "BioTools", "FastaIO", "JSON", "Test", "Tokenize"]
+git-tree-sha1 = "7c5efa9145b29d86de7b996fd4b0c394f997342a"
+uuid = "84b91ece-59cc-50c4-8800-6f827c67b7cb"
+version = "0.1.1"
+
 [[CEnum]]
 git-tree-sha1 = "62847acab40e6855a9b5905ccb99c2b5cf6b3ebb"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"
@@ -1814,6 +1820,12 @@ version = "0.2.0"
 deps = ["AbstractFFTs", "Compat", "DSP", "FFTW", "HierarchicalMatrices", "LinearAlgebra", "LowRankApprox", "ProgressMeter", "SpecialFunctions", "ToeplitzMatrices"]
 git-tree-sha1 = "f7f912b0f00cdf5b4632c840aa7954be0de4b965"
 uuid = "057dd010-8810-581a-b7be-e3fc3b93f78c"
+version = "0.5.0"
+
+[[FastaIO]]
+deps = ["GZip", "Test"]
+git-tree-sha1 = "af091e7129d38d85d611c209f2d83f5b4b450e20"
+uuid = "a0c94c4b-ebed-5953-b5fc-82fe598ac79f"
 version = "0.5.0"
 
 [[FieldMetadata]]

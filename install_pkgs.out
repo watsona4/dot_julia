@@ -35220,3 +35220,64 @@ Installing CALCEPH
   [1537fe66] + CALCEPH v1.0.3
   Building CALCEPH → `~/.julia/packages/CALCEPH/1eofX/deps/build.log`
   Building CALCEPH → `~/.julia/packages/CALCEPH/1eofX/deps/build.log`
+[master 9b78f30fb] added package CALCEPH
+ 49 files changed, 6230 insertions(+)
+ create mode 100644 packages/CALCEPH/1eofX/.codecov.yml
+ create mode 100644 packages/CALCEPH/1eofX/.gitignore
+ create mode 100644 packages/CALCEPH/1eofX/.travis.yml
+ create mode 100644 packages/CALCEPH/1eofX/LICENSE.md
+ create mode 100644 packages/CALCEPH/1eofX/Project.toml
+ create mode 100644 packages/CALCEPH/1eofX/README.md
+ create mode 100644 packages/CALCEPH/1eofX/appveyor.yml
+ create mode 100644 packages/CALCEPH/1eofX/data/NaifIds.txt
+ create mode 100644 packages/CALCEPH/1eofX/deps/.gitignore
+ create mode 100644 packages/CALCEPH/1eofX/deps/build.jl
+ create mode 100644 packages/CALCEPH/1eofX/docs/.gitignore
+ create mode 100644 packages/CALCEPH/1eofX/docs/Project.toml
+ create mode 100644 packages/CALCEPH/1eofX/docs/make.jl
+ create mode 100644 packages/CALCEPH/1eofX/docs/src/api.md
+ create mode 100644 packages/CALCEPH/1eofX/docs/src/assets/logo.png
+ create mode 100644 packages/CALCEPH/1eofX/docs/src/index.md
+ create mode 100644 packages/CALCEPH/1eofX/docs/src/tutorial.md
+ create mode 100644 packages/CALCEPH/1eofX/src/CALCEPH.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/bodyId.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/compute.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/constants.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/ephem.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/errorHandling.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/fivePointStencil.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/introspection.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/orient.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/rotAngMom.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/timespan.jl
+ create mode 100644 packages/CALCEPH/1eofX/src/units.jl
+ create mode 100644 packages/CALCEPH/1eofX/test/badIds.txt
+ create mode 100644 packages/CALCEPH/1eofX/test/checktpc_11627.tpc
+ create mode 100644 packages/CALCEPH/1eofX/test/checktpc_str.tpc
+ create mode 100644 packages/CALCEPH/1eofX/test/coverage/Project.toml
+ create mode 100644 packages/CALCEPH/1eofX/test/example1.bpc
+ create mode 100644 packages/CALCEPH/1eofX/test/example1.bsp
+ create mode 100644 packages/CALCEPH/1eofX/test/example1.dat
+ create mode 100644 packages/CALCEPH/1eofX/test/example1.tf
+ create mode 100644 packages/CALCEPH/1eofX/test/example1.tpc
+ create mode 100644 packages/CALCEPH/1eofX/test/example1_tests.dat
+ create mode 100644 packages/CALCEPH/1eofX/test/example1_tests_naifid.dat
+ create mode 100644 packages/CALCEPH/1eofX/test/example1spk_time.bsp
+ create mode 100644 packages/CALCEPH/1eofX/test/example2_rotangmom.dat
+ create mode 100644 packages/CALCEPH/1eofX/test/runtests.jl
+ create mode 100644 packages/CALCEPH/1eofX/test/testfunction1.jl
+ create mode 100644 packages/CALCEPH/1eofX/test/testfunction2.jl
+To https://github.com/watsona4/dot_julia.git
+   64ee5747c..9b78f30fb  master -> master
+Progress:   9%|███▋                                     |  ETA: 3 days, 15:11:33[K
+Installing CAOS
+ Resolving package versions...
+ Installed FastaIO ─ v0.5.0
+ Installed CAOS ──── v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [84b91ece] + CAOS v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [84b91ece] + CAOS v0.1.1
+  [a0c94c4b] + FastaIO v0.5.0
+  Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+  Building EzXML ────→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
