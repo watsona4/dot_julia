@@ -9746,3 +9746,49 @@ Installing Anasol
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master 2f01f2c8a] added package Anasol
+ 38 files changed, 4102 insertions(+)
+ create mode 100644 packages/Anasol/JKMLE/.gitignore
+ create mode 100644 packages/Anasol/JKMLE/.travis.yml
+ create mode 100644 packages/Anasol/JKMLE/COPYING.md
+ create mode 100644 packages/Anasol/JKMLE/LICENSE
+ create mode 100644 packages/Anasol/JKMLE/Project.toml
+ create mode 100644 packages/Anasol/JKMLE/README.md
+ create mode 100644 packages/Anasol/JKMLE/REQUIRE
+ create mode 100644 packages/Anasol/JKMLE/src/Anasol.jl
+ create mode 100644 packages/Anasol/JKMLE/src/gencode.jl
+ create mode 100644 packages/Anasol/JKMLE/src/newanasol.jl
+ create mode 100644 packages/Anasol/JKMLE/test/goodresults/long_bbb_bbb_iir_c.dat
+ create mode 100644 packages/Anasol/JKMLE/test/goodresults/long_bbb_ddd_iir_c.dat
+ create mode 100644 packages/Anasol/JKMLE/test/newtest.jl
+ create mode 100644 packages/Anasol/JKMLE/test/runtests.jl
+ create mode 100644 packages/Anasol/JKMLE/test/speedtest.jl
+ create mode 100644 packages/DocumentFunction/KH8kb/.gitignore
+ create mode 100644 packages/DocumentFunction/KH8kb/.travis.yml
+ create mode 100644 packages/DocumentFunction/KH8kb/ACKNOWLEDGMENTS.md
+ create mode 100644 packages/DocumentFunction/KH8kb/COPYING.md
+ create mode 100644 packages/DocumentFunction/KH8kb/LICENSE
+ create mode 100644 packages/DocumentFunction/KH8kb/MADS.md
+ create mode 100644 packages/DocumentFunction/KH8kb/Project.toml
+ create mode 100644 packages/DocumentFunction/KH8kb/README.md
+ create mode 100644 packages/DocumentFunction/KH8kb/REQUIRE
+ create mode 100644 packages/DocumentFunction/KH8kb/src/DocumentFunction.jl
+ create mode 100644 packages/DocumentFunction/KH8kb/test/runtests.jl
+ create mode 100644 packages/MetaProgTools/J8rTF/.travis.yml
+ create mode 100644 packages/MetaProgTools/J8rTF/COPYING.md
+ create mode 100644 packages/MetaProgTools/J8rTF/LICENSE
+ create mode 100644 packages/MetaProgTools/J8rTF/Project.toml
+ create mode 100644 packages/MetaProgTools/J8rTF/REQUIRE
+ create mode 100644 packages/MetaProgTools/J8rTF/Readme.md
+ create mode 100644 packages/MetaProgTools/J8rTF/src/MetaProgTools.jl
+ create mode 100644 packages/MetaProgTools/J8rTF/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   049994441..2f01f2c8a  master -> master
+Progress:   2%|▉                                        |  ETA: 2 days, 5:16:41[K
+Installing AndersonMoore
+ Resolving package versions...
+ Installed AndersonMoore ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [cbbd4180] + AndersonMoore v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [cbbd4180] + AndersonMoore v0.1.0

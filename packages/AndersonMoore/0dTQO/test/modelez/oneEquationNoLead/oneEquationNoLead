@@ -1,0 +1,12 @@
+MODEL> oneEquationNoLead
+
+ENDOG>                                    
+                    xx  
+
+
+EQUATION> onlyOne
+EQ>     0.0*LEAD(xx,1) = -3.0*xx - 2.0*LAG(xx,1)
+
+
+END
+

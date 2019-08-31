@@ -1,0 +1,12 @@
+% Helpful tips for running tests
+
+Need to add non registered packages in julia before you can use them.
+Do this by git cloning, in julia we use the command Pkg.clone("url").
+Get the "url" from "Clone or download" tab on your github remote repository.
+
+Once cloned we can now add specific packages to working julia environment.
+To do this use Pkg.add("registered name of package").
+
+include("<filename>") === loads and runs a file in the environment
+use("<filename>")     === loads a file in the environment 	
+import("<filename>")  === similar to use

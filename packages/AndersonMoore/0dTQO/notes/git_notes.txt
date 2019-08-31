@@ -1,0 +1,27 @@
+% Useful commands for interaction with git repository
+
+	Commands														Description
+
+git clone "<url>"										Use "Clone or download" tab on github.com to 
+															to copy-paste the url into this command. This will
+															allow you to copy the repository into your directory
+															enabling you to make changes
+
+git add <filename>									Adds a new file to the repository. Need to use this once 
+															any new file created that you want in repository.
+
+git commit -am "Message"							Saves a log of your current work. Does not upload this 
+															to the github repository but allows for easy reverting. 
+															Use this to save backups.
+																-a <==> commits any files you used to git add.
+																-m <==> ***** add description ******
+
+git pull													Update your working files from the remote repository so 
+															they are the most current version.
+
+git push													Send changes to the remote repository. Should now see 
+															changes on github.
+
+git log													Prints out all commits made. Used for reverting.
+
+git grep "foo()"										Search your working directory for item in double quotes

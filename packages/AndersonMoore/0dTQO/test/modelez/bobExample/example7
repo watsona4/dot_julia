@@ -1,0 +1,24 @@
+MODEL > EXAMPLE7
+
+ENDOG> 
+
+          y   
+        inf   
+         dr   
+         rs   
+  
+
+EQUATION >  is
+EQ >        y = LEAD(y,1) - (1/sigma)*(rs-LEAD(inf,1)) 
+
+
+EQUATION >  phillips
+EQ >        inf = delta*LEAD(inf,1) + lambda*y
+
+EQUATION >  dr
+EQ >        dr = rs - LAG(rs,1)
+
+EQUATION >  policy
+EQ >        rs  =  rho*LAG(rs,1) + gampi*inf
+
+END

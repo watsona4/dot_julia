@@ -1,0 +1,44 @@
+environment:
+  MINGW_DIR: C:\mingw-w64\x86_64-7.2.0-posix-seh-rt_v5-rev1\mingw64\bin
+  CYGWIN_DIR: C:\cygwin
+
+  matrix:
+  - JULIAVERSION: "julialang/bin/winnt/x86/0.6/julia-0.6-latest-win32.exe"
+    COMPILER: C:\MinGW
+  - JULIAVERSION: "julialang/bin/winnt/x64/0.6/julia-0.6-latest-win64.exe"
+    COMPILER: C:\MinGW
+matrix:
+  allow_failures:
+    - JULIAVERSION: "julianightlies/bin/winnt/x86/julia-latest-win32.exe"
+    - JULIAVERSION: "julianightlies/bin/winnt/x64/julia-latest-win64.exe"
+branches:
+  only:
+    - develop
+    - /release-.*/
+
+notifications:
+  - provider: Email
+    on_build_success: false
+    on_build_failure: false
+    on_build_status_changed: false
+
+init:
+  - set PATH=%CYGWIN_DIR%;%PATH%
+
+install: 
+  # Download most recent Julia Windows binary
+  - ps: (new-object net.webclient).DownloadFile(
+        $("http://s3.amazonaws.com/"+$env:JULIAVERSION),
+        "C:\projects\julia-binary.exe")
+  - set PATH=C:\Miniconda3;C:\Miniconda3\Scripts;%PATH%
+  # Run installer silently, output to C:\projects\julia
+  - C:\projects\julia-binary.exe /S /D=C:\projects\julia
+ 
+build_script:
+# Need to convert from shallow to complete for Pkg.clone to work
+  - IF EXIST .git\shallow (git fetch --unshallow)
+  - C:\projects\julia\bin\julia -e "versioninfo();
+      Pkg.clone(pwd(), \"AndersonMoore\"); Pkg.build(\"AndersonMoore\")"
+ 
+test_script:
+  - C:\projects\julia\bin\julia --check-bounds=yes -e "Pkg.test(\"AndersonMoore\")"

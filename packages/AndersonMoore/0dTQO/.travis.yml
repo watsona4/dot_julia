@@ -1,0 +1,58 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+
+sudo: required
+
+os:
+  - linux
+  - osx
+
+julia:
+  - 0.6
+  - 0.7
+  - 1.0
+  - nightly
+
+notifications:
+  email: false
+
+git:
+  depth: 50
+
+## uncomment the following lines to allow failures on nightly julia
+## (tests will run but not make your overall status red)
+# matrix:
+#  allow_failures:
+#    - julia: nightly
+
+## uncomment and modify the following lines to manually install system packages
+addons:
+  apt: # apt-get for linux
+     update: true
+     packages:
+     - gfortran
+     - liblapack-dev	
+
+## to install latest gcc as travis is outdated
+before_install:
+- if [ "${TRAVIS_OS_NAME}" = "osx" ]; then
+    brew install gcc;
+    brew link --overwrite gcc;
+  fi
+
+## uncomment the following lines to override the default test script
+#script:
+#- if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#- julia -e 'Pkg.clone(pwd()); Pkg.build("AndersonMoore"); Pkg.test("AndersonMoore"; coverage=true)'
+
+after_success:
+  - |
+    julia -e '
+        if VERSION >= v"0.7.0-DEV.3656"
+            import Pkg
+        else
+            cd(Pkg.dir("AndersonMoore"))
+        end
+        Pkg.add("Coverage")
+        using Coverage
+        Codecov.submit(process_folder()); Coveralls.submit(process_folder())'

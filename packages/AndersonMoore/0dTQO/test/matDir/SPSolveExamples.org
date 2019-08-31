@@ -1,0 +1,146 @@
+#+OPTIONS: toc:nil
+
+\section{No Errors}
+#+BEGIN_SRC matlab :results value table :exports both :session 
+addpath('../../../SPSolve')
+load('amaAlgTestMatsfirmvalueFalse.mat')
+ans=hh
+#+END_SRC
+#+RESULTS:
+| 0 |    0 | 0 |  0 | -1.1 | 0 |  0 | 0 | 1 | 1 | 0 | 0 |
+| 0 | -0.4 | 0 |  0 |    0 | 1 | -1 | 0 | 0 | 0 | 0 | 0 |
+| 0 |    0 | 0 |  0 |    0 | 0 |  1 | 0 | 0 | 0 | 0 | 0 |
+| 0 |    0 | 0 | -1 |    0 | 0 |  0 | 1 | 0 | 0 | 0 | 0 |
+
+
+
+#+BEGIN_SRC matlab :results value table :exports both :session
+[bnow,rtsnow,ia,nexact,nnumeric,lgroots,AMAcode] = ...
+                        SPAmalg(hh,4,1,1,1.0e-8,1.0+1.0e-8);
+ans=bnow
+#+END_SRC
+
+#+RESULTS:
+| 0 | 0.22857 | 0 | 0 |
+| 0 |     0.4 | 0 | 0 |
+| 0 |       0 | 0 | 0 |
+| 0 |       0 | 0 | 1 |
+
+#+BEGIN_SRC matlab :results value table :exports both :session
+SPAMAerr(AMAcode)
+#+END_SRC
+
+#+RESULTS:
+| AMA: unique solution. |
+
+
+
+\section{Too Many Big Roots}
+#+BEGIN_SRC matlab :results value table :exports both :session 
+hhE3=hh;hhE3(2,2)=4;
+ans=hhE3
+#+END_SRC
+#+RESULTS:
+| 0 | 0 | 0 |  0 | -1.1 | 0 |  0 | 0 | 1 | 1 | 0 | 0 |
+| 0 | 4 | 0 |  0 |    0 | 1 | -1 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 |  0 |    0 | 0 |  1 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 0 | -1 |    0 | 0 |  0 | 1 | 0 | 0 | 0 | 0 |
+
+
+
+#+BEGIN_SRC matlab :results value table :exports both :session
+[bnow,rtsnow,ia,nexact,nnumeric,lgroots,AMAcode] = ...
+                        SPAmalg(hhE3,4,1,1,1.0e-8,1.0+1.0e-8);
+SPAMAerr(AMAcode)
+#+END_SRC
+
+#+RESULTS:
+| AMA: too many big roots. |
+
+
+
+
+
+\section{Too Few Big Roots}
+#+BEGIN_SRC matlab :results value table :exports both :session 
+hhE4=hh;hhE4(1,5)=-.9;
+ans=hhE4
+#+END_SRC
+#+RESULTS:
+| 0 |    0 | 0 |  0 | -0.9 | 0 |  0 | 0 | 1 | 1 | 0 | 0 |
+| 0 | -0.4 | 0 |  0 |    0 | 1 | -1 | 0 | 0 | 0 | 0 | 0 |
+| 0 |    0 | 0 |  0 |    0 | 0 |  1 | 0 | 0 | 0 | 0 | 0 |
+| 0 |    0 | 0 | -1 |    0 | 0 |  0 | 1 | 0 | 0 | 0 | 0 |
+
+
+
+#+BEGIN_SRC matlab :results value table :exports both :session
+[bnow,rtsnow,ia,nexact,nnumeric,lgroots,AMAcode] = ...
+                        SPAmalg(hhE4,4,1,1,1.0e-8,1.0+1.0e-8);
+SPAMAerr(AMAcode)
+#+END_SRC
+
+#+RESULTS:
+| AMA: too few big roots. |
+
+
+\section{Too Many Exact Shift Rights}
+#+BEGIN_SRC matlab :results value table :exports both :session 
+hhE61=hh;hhE61(1,[5,9,10])=0;
+ans=hhE61
+#+END_SRC
+#+RESULTS:
+| 0 |    0 | 0 |  0 | 0 | 0 |  0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | -0.4 | 0 |  0 | 0 | 1 | -1 | 0 | 0 | 0 | 0 | 0 |
+| 0 |    0 | 0 |  0 | 0 | 0 |  1 | 0 | 0 | 0 | 0 | 0 |
+| 0 |    0 | 0 | -1 | 0 | 0 |  0 | 1 | 0 | 0 | 0 | 0 |
+
+
+
+#+BEGIN_SRC matlab :results value table :exports both :session
+[bnow,rtsnow,ia,nexact,nnumeric,lgroots,AMAcode] = ...
+                        SPAmalg(hhE61,4,1,1,1.0e-8,1.0+1.0e-8);
+SPAMAerr(AMAcode)
+#+END_SRC
+
+#+RESULTS:
+| AMA: too many exact shiftrights. |
+
+
+
+
+\section{Too Many Numeric Shift Rights}
+#+BEGIN_SRC matlab :results value table :exports both :session 
+load('firmValueTooManyNumeric.mat')
+ans=Expression1
+#+END_SRC
+#+RESULTS:
+| 0 | 0 | 0 |  0 | -2.2 | 0 | 0 | 0 | 2 | 2 | 0 | 0 |
+| 0 | 0 | 0 |  0 | -1.1 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 0 | 0 | 0 |  0 | -1.1 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
+| 0 | 0 | 0 | -1 | -1.1 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
+
+
+
+#+BEGIN_SRC matlab :results value table :exports both :session
+[bnow,rtsnow,ia,nexact,nnumeric,lgroots,AMAcode] = ...
+                        SPAmalg(Expression1,4,1,1,1.0e-8,1.0+1.0e-8);
+SPAMAerr(AMAcode)
+#+END_SRC
+
+#+RESULTS:
+| AMA: too many numeric shiftrights. |
+
+
+
+
+
+\section{Spurious AMAcode}
+
+
+#+BEGIN_SRC matlab :results value table :exports both :session
+SPAMAerr(975)
+#+END_SRC
+
+#+RESULTS:
+| AMAerr: return code not properly specified |

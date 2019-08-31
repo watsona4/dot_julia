@@ -1,0 +1,28 @@
+MODEL> FIRMVALUE
+
+ENDOG>                                    
+                    v     _NOTD
+                    div   _DATA
+                    e_    _NOTD
+                    one   _DTRM
+
+
+EQUATION> VALUE
+EQTYPE> IMPOSED
+EQ>     LEAD(v,1) = (1+r)*v - LEAD(div,1)
+
+EQUATION> DIVIDEND
+EQTYPE> IMPOSED
+EQ>     div = (1-delta)*LAG(div,1) + e_
+
+
+EQUATION >  E_
+EQTYPE >    STOCH
+EQ >        e_ = 0 * one
+
+EQUATION >  ONE
+EQTYPE >    IMPOSED
+EQ >        one = LAG(one,1)
+
+END
+

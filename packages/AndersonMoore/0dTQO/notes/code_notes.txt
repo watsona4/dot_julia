@@ -1,0 +1,32 @@
+% Here we show relation between variables used in the code to their 
+% mathematical equivalent. Additional notes about code and maths.
+
+Variables:
+
+variable neq === L
+variable cof === H
+variable ultq === z
+
+Functions:
+
+function buildA: builds transition matrix
+
+
+Maths:
+
+sparse = 
+	collapse a big matrix 
+
+full = 
+	explode a collapsed matrix
+
+q =
+	matrix used to keep track of the constraints already processed
+
+A = 
+	transition matrix
+
+
+
+
+

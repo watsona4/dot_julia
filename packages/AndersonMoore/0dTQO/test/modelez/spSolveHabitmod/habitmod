@@ -1,0 +1,108 @@
+MODEL> habitrot
+
+ENDOG>   
+
+	  cnsndt
+	  c_    
+	  yddt 	
+	  rff   
+	  pdotcp
+	  rreal 
+	  z     
+	  P     
+	  pvdy  
+	  pvdP  
+	  pvdz  
+      one   
+
+EQUATION> cnsndt
+EQ>   cnsndt - yddt = c0*one + (1-lambda)*pvdy + (1-lambda)*((gam*(1-sig)*(1-rho))/sig)*pvdP +
+		(1-lambda)*(((1-sig)*gam)/sig)*pvdz - (1-lambda)*(delt/sig)*rreal + c_
+
+EQUATION> c_
+EQ> c_ = acc*LAG(c_,1)
+
+EQUATION> yddt       
+EQ> yddt       =  
+ 0.42308              * LAG(cnsndt  ,1) 
+-0.22215              * LAG(cnsndt  ,2) 
++0.71526              * LAG(cnsndt  ,3) 
+-0.52802              * LAG(cnsndt  ,4) 
++0.61076              * LAG(yddt    ,1) 
++0.14172              * LAG(yddt    ,2) 
+-0.042076             * LAG(yddt    ,3) 
+-0.11279              * LAG(yddt    ,4) 
++0.10946              * LAG(rff     ,1) 
+-0.26679              * LAG(rff     ,2) 
++0.22829              * LAG(rff     ,3) 
+-0.031833             * LAG(rff     ,4) 
+-0.17172              * LAG(pdotcp,1) 
++0.11959              * LAG(pdotcp,2) 
++0.012267             * LAG(pdotcp,3) 
+-0.024734             * LAG(pdotcp,4) 
++0.00011277           *     one 
+  
+EQUATION> rff      
+EQ> rff      =  
+ 0.46672               * LAG(cnsndt  ,1) 
+-1.06382               * LAG(cnsndt  ,2) 
++1.34250               * LAG(cnsndt  ,3) 
+-0.46436               * LAG(cnsndt  ,4) 
++0.11369               * LAG(yddt    ,1) 
++0.02255               * LAG(yddt    ,2) 
+-0.16794               * LAG(yddt    ,3) 
+-0.16131               * LAG(yddt    ,4) 
++1.10657               * LAG(rff     ,1) 
+-0.51594               * LAG(rff     ,2) 
++0.35818               * LAG(rff     ,3) 
+-0.02744               * LAG(rff     ,4) 
++0.26021               * LAG(pdotcp,1) 
+-0.08949               * LAG(pdotcp,2) 
++0.09837               * LAG(pdotcp,3) 
+-0.17087               * LAG(pdotcp,4) 
++0.00141               *     one 
+  
+EQUATION> pdotcp 
+EQ> pdotcp =  
+ 0.56316               * LAG(cnsndt  ,1) 
+-0.70552               * LAG(cnsndt  ,2) 
+-0.03313               * LAG(cnsndt  ,3) 
++0.23292               * LAG(cnsndt  ,4) 
++0.08268               * LAG(yddt    ,1) 
++0.24697               * LAG(yddt    ,2) 
+-0.15223               * LAG(yddt    ,3) 
+-0.08512               * LAG(yddt    ,4) 
++0.16054               * LAG(rff     ,1) 
+-0.21888               * LAG(rff     ,2) 
+-0.01572               * LAG(rff     ,3) 
++0.04213               * LAG(rff     ,4) 
++0.68637               * LAG(pdotcp,1) 
++0.07805               * LAG(pdotcp,2) 
++0.34762               * LAG(pdotcp,3) 
+-0.14149               * LAG(pdotcp,4) 
++0.00348               *     one 
+  
+EQUATION> rreal
+EQ> rff - LEAD(pdotcp,1) = rreal - 40.0*(LEAD(rreal,1) - rreal) 
+
+EQUATION> z
+EQ> z = rhoz*LAG(z,1) + (1-rhoz)*LAG(cnsndt,1)
+
+EQUATION> P
+EQ> P = bet*rhoz*LEAD(P,1) + (((rho-sig)/(1-sig))*cnsndt - ((gam*(1-sig)-1)*(1-sig))*z)
+
+EQUATION> pvdy
+EQ> pvdy = rho*LEAD(pvdy,1) + (LEAD(yddt,1) - yddt)
+
+EQUATION> pvdP
+EQ> pvdP = rho*LEAD(pvdP,1) + (LEAD(P,1) - P)
+
+EQUATION> pvdz
+EQ> pvdz = rho*LEAD(pvdz,1) + (LEAD(z,1) - z)
+
+EQUATION> one
+EQ>       one = LAG(one,1)
+
+END
+
+

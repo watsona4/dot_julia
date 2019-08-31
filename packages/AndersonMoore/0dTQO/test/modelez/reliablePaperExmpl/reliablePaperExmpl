@@ -1,0 +1,25 @@
+MODEL> reliablePaperExmpl
+
+ENDOG> epsilon vv uu WW ww
+
+
+
+
+
+EQUATION> first
+EQ>		ww=(1/2)*(WW+LAG(WW,1)) -alpha*uu+vv
+
+EQUATION> second
+EQ>		WW= (1/2)*(ww+LEAD(ww,1))
+
+EQUATION> third
+EQ>		uu= varupsilon*LEAD(uu,1)+gamma*WW +epsilon
+
+EQUATION> fourth
+EQ>     epsilon=0*LAG(epsilon,1)
+
+EQUATION> fifth
+EQ>		vv=0*LAG(vv,1)
+
+
+END

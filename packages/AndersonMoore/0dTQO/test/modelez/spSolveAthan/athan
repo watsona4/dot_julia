@@ -1,0 +1,44 @@
+MODEL> athanasios
+
+ENDOG>                                    
+p 
+y
+f
+z
+e
+u
+x
+v
+one
+
+EQUATION> price
+EQ>   p  = phi*LEAD(p,1) + (1-phi)*LAG(p,1) + alpha*y      +  e
+
+EQUATION> aggDemand
+EQ>  y  = rho*LAG(y,1) - xi*LAG(f,1) + xi*LAG(p,1)           + u
+
+EQUATION> reaction
+EQ>  f  = (1+gamma)*p   + delta*y  - delta*z - (1+gamma)*x
+
+
+EQUATION> arShock
+EQ>  z  = beta*LAG(z,1) + v
+
+EQUATION> eShock
+EQ>   e = 0*one
+
+EQUATION> uShock
+EQ>   u = 0*one
+
+EQUATION> xShock
+EQ>   x = 0*one
+
+EQUATION> vShock
+EQ>   v = 0*one
+
+EQUATION > one
+EQ >       one = LAG(one,1)
+     
+
+
+END
