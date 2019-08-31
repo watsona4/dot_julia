@@ -23041,3 +23041,21 @@ Installing ArrayInterface
   [4fba245c] + ArrayInterface v1.2.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 24948c294] added package ArrayInterface
+ 3 files changed, 50 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   07ccfe288..24948c294  master -> master
+Progress:   3%|█▍                                       |  ETA: 6 days, 9:48:17[K
+Installing ArrayViews
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package ArrayViews [a5c3d3bf]:\n ArrayViews [a5c3d3bf] log:\n ├─possible versions are: [0.1.0-0.1.1, 0.2.0-0.2.5, 0.3.0, 0.4.0-0.4.12, 0.5.0, 0.6.0-0.6.4, 0.7.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.1, 0.2.0-0.2.5, 0.3.0, 0.4.0-0.4.12, 0.5.0, 0.6.0-0.6.4, 0.7.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   3%|█▍                                       |  ETA: 6 days, 8:21:28[K
+Installing ArraysOfArrays
+ Resolving package versions...
+ Installed UnsafeArrays ─── v0.4.0
+ Installed ArraysOfArrays ─ v0.4.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [65a8f2f4] + ArraysOfArrays v0.4.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [65a8f2f4] + ArraysOfArrays v0.4.1
+  [c4a57d5a] + UnsafeArrays v0.4.0

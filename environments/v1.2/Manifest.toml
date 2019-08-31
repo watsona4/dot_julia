@@ -460,6 +460,12 @@ git-tree-sha1 = "981354dab938901c2b607a213e62d9defa50b698"
 uuid = "4fba245c-0d91-5ea0-9b3e-6abc04ee57a9"
 version = "1.2.1"
 
+[[ArraysOfArrays]]
+deps = ["Requires", "Statistics", "UnsafeArrays"]
+git-tree-sha1 = "f999f98569521895b7a6d7a62bf8ff76297a4664"
+uuid = "65a8f2f4-9b39-5baf-92e2-a9cc46fdf018"
+version = "0.4.1"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
@@ -1930,6 +1936,11 @@ deps = ["Unitful", "UnitfulAngles"]
 git-tree-sha1 = "69927c150d1347d438cb9440ac1044f7d11ea9c9"
 uuid = "6112ee07-acf9-5e0f-b108-d242c714bf9f"
 version = "0.3.0"
+
+[[UnsafeArrays]]
+git-tree-sha1 = "417100df8567333bff1b851008b1441a2be08da0"
+uuid = "c4a57d5a-5b31-53a6-b365-19f8c011fbd6"
+version = "0.4.0"
 
 [[VegaLite]]
 deps = ["DataValues", "Dates", "FileIO", "FilePaths", "IterableTables", "IteratorInterfaceExtensions", "JSON", "JSONSchema", "MacroTools", "NodeJS", "REPL", "Random", "TableTraits", "URIParser"]
