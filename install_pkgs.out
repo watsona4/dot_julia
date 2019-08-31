@@ -8980,3 +8980,36 @@ Installing Algencan
 │  [6] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/Algencan/dYl4H/deps/build.jl:2
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master 78004026c] added package Algencan
+ 25 files changed, 1626 insertions(+)
+ create mode 100644 packages/Algencan/dYl4H/.gitignore
+ create mode 100644 packages/Algencan/dYl4H/.travis.yml
+ create mode 100644 packages/Algencan/dYl4H/LICENSE.md
+ create mode 100644 packages/Algencan/dYl4H/README.md
+ create mode 100644 packages/Algencan/dYl4H/REQUIRE
+ create mode 100644 packages/Algencan/dYl4H/appveyor.yml
+ create mode 100644 packages/Algencan/dYl4H/deps/.gitignore
+ create mode 100644 packages/Algencan/dYl4H/deps/build.jl
+ create mode 100644 packages/Algencan/dYl4H/deps/patches/patch_algencan.txt
+ create mode 100644 packages/Algencan/dYl4H/deps/patches/patch_ma57.txt
+ create mode 100644 packages/Algencan/dYl4H/example/algencan.dat
+ create mode 100644 packages/Algencan/dYl4H/example/bug_libdl.jl
+ create mode 100644 packages/Algencan/dYl4H/example/cutest_test.jl
+ create mode 100644 packages/Algencan/dYl4H/example/first_tests.jl
+ create mode 100644 packages/Algencan/dYl4H/example/optcontrol.jl
+ create mode 100644 packages/Algencan/dYl4H/example/select_cutest.jl
+ create mode 100644 packages/Algencan/dYl4H/example/single_cutest.jl
+ create mode 100644 packages/Algencan/dYl4H/src/Algencan.jl
+ create mode 100644 packages/Algencan/dYl4H/src/precompile_Algencan.jl
+ create mode 100644 packages/Algencan/dYl4H/test/REQUIRE
+ create mode 100644 packages/Algencan/dYl4H/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   157e849e0..78004026c  master -> master
+Progress:   2%|▉                                        |  ETA: 2 days, 6:44:53[K
+Installing AllanDeviations
+ Resolving package versions...
+ Installed AllanDeviations ─ v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [7e732cdd] + AllanDeviations v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [7e732cdd] + AllanDeviations v0.2.0
