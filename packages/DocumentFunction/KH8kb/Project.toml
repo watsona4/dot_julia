@@ -1,0 +1,13 @@
+name = "DocumentFunction"
+uuid = "e1f3b4f0-2dc4-57d3-83f7-d4b7faf3b05b"
+authors = ["Velimir V Vesselinov (monty) <velimir.vesselinov@gmail.com>"]
+version = "0.5.1"
+
+[compat]
+julia = "≥ 0.7.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

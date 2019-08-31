@@ -1,0 +1,6 @@
+name = "MetaProgTools"
+uuid = "b1909ce5-9a67-5ea4-ba1b-9d85528f5779"
+version = "0.5.0"
+
+[compat]
+julia = "≥ 1.1.0"
