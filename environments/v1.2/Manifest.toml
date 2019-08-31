@@ -2058,6 +2058,12 @@ git-tree-sha1 = "667d06e03b07219727f87ee0c4cfab9cefe7b586"
 uuid = "e9983d58-8b29-5530-8046-db49618142f9"
 version = "0.1.2"
 
+[[Cookbook]]
+deps = ["Distributed", "LightGraphs", "MacroTools", "Test"]
+git-tree-sha1 = "705e2f980ab077fe7a7806b0f3d6d0fa5a46bc5e"
+uuid = "5c1ef01f-39c8-5834-b1a0-1a342f75f4df"
+version = "0.3.0"
+
 [[CoordinateTransformations]]
 deps = ["Compat", "Rotations", "StaticArrays"]
 git-tree-sha1 = "47f05d0b7f4999609f92e657147df000818c1f24"
