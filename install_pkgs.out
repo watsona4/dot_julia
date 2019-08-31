@@ -6923,3 +6923,25 @@ Installing Adapt
   [79e6a3ab] + Adapt v1.0.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 71a1482c2] added package Adapt
+ 3 files changed, 32 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   dba439354..71a1482c2  master -> master
+Progress:   2%|▋                                        |  ETA: 2 days, 1:09:57[K
+Installing AdaptiveDistanceFields
+ Resolving package versions...
+ Installed WoodburyMatrices ─────── v0.4.1
+ Installed Ratios ───────────────── v0.3.1
+ Installed AxisAlgorithms ───────── v1.0.0
+ Installed AdaptiveDistanceFields ─ v0.1.0
+ Installed RegionTrees ──────────── v0.3.0
+ Installed Interpolations ───────── v0.12.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [a1957575] + AdaptiveDistanceFields v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [a1957575] + AdaptiveDistanceFields v0.1.0
+  [13072b0f] + AxisAlgorithms v1.0.0
+  [a98d9a8b] + Interpolations v0.12.2
+  [c84ed2f1] + Ratios v0.3.1
+  [dee08c22] + RegionTrees v0.3.0
+  [efce3f68] + WoodburyMatrices v0.4.1
