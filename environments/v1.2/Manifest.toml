@@ -875,6 +875,12 @@ git-tree-sha1 = "c7361ce8a2129f20b0e05a89f7070820cfed6648"
 uuid = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
 version = "0.5.6"
 
+[[BinningAnalysis]]
+deps = ["Lazy", "Random", "RecursiveArrayTools", "Reexport", "Statistics"]
+git-tree-sha1 = "6a87bbfbcf4749350779d3e667244117ea036406"
+uuid = "b7192094-8e58-5052-a244-180a858778ee"
+version = "0.3.0"
+
 [[BioCore]]
 deps = ["Automa", "BufferedStreams", "YAML"]
 git-tree-sha1 = "476edbf4ef94594fff430a84ca96f86cb2327a71"

@@ -30700,3 +30700,15 @@ Installing BinaryProvider
   [b99e7846] + BinaryProvider v0.5.6
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 2519eb1d5] added package BinaryProvider
+ 3 files changed, 24 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   07ca6ecd0..2519eb1d5  master -> master
+Progress:   7%|██▋                                      |  ETA: 4 days, 5:48:27[K
+Installing BinningAnalysis
+ Resolving package versions...
+ Installed BinningAnalysis ─ v0.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [b7192094] + BinningAnalysis v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [b7192094] + BinningAnalysis v0.3.0
