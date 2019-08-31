@@ -33359,3 +33359,45 @@ Installing BlochSim
   Building CMake → `~/.julia/packages/CMake/nSK2r/deps/build.log`
   Building Blosc → `~/.julia/packages/Blosc/lzFr0/deps/build.log`
   Building HDF5 ─→ `~/.julia/packages/HDF5/DktP4/deps/build.log`
+[master 80c83566b] added package BlochSim
+ 36 files changed, 2651 insertions(+)
+ rewrite compiled/v1.2/CMake/TDh52.ji (95%)
+ create mode 100644 packages/BlochSim/PPwi6/.gitignore
+ create mode 100644 packages/BlochSim/PPwi6/.travis.yml
+ create mode 100644 packages/BlochSim/PPwi6/LICENSE
+ create mode 100644 packages/BlochSim/PPwi6/Manifest.toml
+ create mode 100644 packages/BlochSim/PPwi6/Project.toml
+ create mode 100644 packages/BlochSim/PPwi6/README.md
+ create mode 100644 packages/BlochSim/PPwi6/src/BlochSim.jl
+ create mode 100644 packages/BlochSim/PPwi6/src/Spin.jl
+ create mode 100644 packages/BlochSim/PPwi6/src/helpers.jl
+ create mode 100644 packages/BlochSim/PPwi6/src/sequences.jl
+ create mode 100644 packages/BlochSim/PPwi6/test/Spin.jl
+ create mode 100644 packages/BlochSim/PPwi6/test/genmatlabtests.m
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testA5b.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testB2c.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testB2d.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testB3a.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testB3b.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testB3c.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testB5a.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testB5b.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testF1a.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testF1b.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testF1c.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testF2c.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testF3a.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testF3c.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testF3d.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/matlabtestdata/testF3f.mat
+ create mode 100644 packages/BlochSim/PPwi6/test/runtests.jl
+ create mode 100644 packages/BlochSim/PPwi6/test/sequences.jl
+To https://github.com/watsona4/dot_julia.git
+   c8c89c41e..80c83566b  master -> master
+Progress:   8%|███▏                                     |  ETA: 3 days, 22:27:03[K
+Installing BlockArrays
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [8e7c35d0] + BlockArrays v0.9.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
