@@ -34737,3 +34737,45 @@ Installing BrowseTables
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [5f4fecfd] + BrowseTables v0.3.0
   [3f0dd361] + DefaultApplication v0.1.3
+[master ac783b173] added package BrowseTables
+ 35 files changed, 1795 insertions(+)
+ create mode 100644 packages/BrowseTables/eRWCX/.codecov.yml
+ create mode 100644 packages/BrowseTables/eRWCX/.gitignore
+ create mode 100644 packages/BrowseTables/eRWCX/.travis.yml
+ create mode 100644 packages/BrowseTables/eRWCX/LICENSE.md
+ create mode 100644 packages/BrowseTables/eRWCX/Project.toml
+ create mode 100644 packages/BrowseTables/eRWCX/README.md
+ create mode 100644 packages/BrowseTables/eRWCX/appveyor.yml
+ create mode 100644 packages/BrowseTables/eRWCX/assets/BrowseTables.css
+ create mode 100644 packages/BrowseTables/eRWCX/assets/Makefile
+ create mode 100644 packages/BrowseTables/eRWCX/assets/example.html
+ create mode 100644 packages/BrowseTables/eRWCX/assets/readme_example.jl
+ create mode 100644 packages/BrowseTables/eRWCX/assets/readme_example.svg
+ create mode 100644 packages/BrowseTables/eRWCX/assets/tweakcss.jl
+ create mode 100644 packages/BrowseTables/eRWCX/docs/Manifest.toml
+ create mode 100644 packages/BrowseTables/eRWCX/docs/Project.toml
+ create mode 100644 packages/BrowseTables/eRWCX/docs/make.jl
+ create mode 100644 packages/BrowseTables/eRWCX/docs/src/index.md
+ create mode 100644 packages/BrowseTables/eRWCX/src/BrowseTables.jl
+ create mode 100644 packages/BrowseTables/eRWCX/test/coverage/Project.toml
+ create mode 100644 packages/BrowseTables/eRWCX/test/coverage/coverage.jl
+ create mode 100644 packages/BrowseTables/eRWCX/test/runtests.jl
+ create mode 100644 packages/DefaultApplication/18gv5/.codecov.yml
+ create mode 100644 packages/DefaultApplication/18gv5/.travis.yml
+ create mode 100644 packages/DefaultApplication/18gv5/LICENSE.md
+ create mode 100644 packages/DefaultApplication/18gv5/Project.toml
+ create mode 100644 packages/DefaultApplication/18gv5/README.md
+ create mode 100644 packages/DefaultApplication/18gv5/REQUIRE
+ create mode 100644 packages/DefaultApplication/18gv5/src/DefaultApplication.jl
+ create mode 100644 packages/DefaultApplication/18gv5/test/coverage/Project.toml
+ create mode 100644 packages/DefaultApplication/18gv5/test/coverage/coverage.jl
+ create mode 100644 packages/DefaultApplication/18gv5/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   8cf674572..ac783b173  master -> master
+Progress:   9%|███▌                                     |  ETA: 3 days, 17:11:03[K
+Installing BufferedStreams
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [e1450e63] + BufferedStreams v1.0.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
