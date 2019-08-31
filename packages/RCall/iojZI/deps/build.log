@@ -1,0 +1,10 @@
+ERROR: LoadError: R_HOME is not a directory.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/ec2-user/.julia/packages/RCall/iojZI/deps/build.jl:44
+ [3] include at ./boot.jl:328 [inlined]
+ [4] include_relative(::Module, ::String) at ./loading.jl:1094
+ [5] include(::Module, ::String) at ./Base.jl:31
+ [6] include(::String) at ./client.jl:431
+ [7] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/RCall/iojZI/deps/build.jl:10

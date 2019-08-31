@@ -1,0 +1,44 @@
+# Project information
+site_name: BiobakeryUtils.jl
+site_description: Utilities for working with the bioBakery
+site_author: Kevin Bonham PhD, The BioJulia Organisation and other contributors.
+site_url: https://biojulia.github.io/BiobakeryUtils.jl/
+
+# Repository
+repo_url:  https://github.com/BioJulia/BiobakeryUtils.jl
+
+# Copyright
+copyright: Copyright (c) 2017 The BioJulia Organisation
+
+# Documentation and theme
+theme: material
+docs_dir: 'build'
+
+# Options
+extra:
+  author:
+    github: BioJulia
+
+extra_css:
+  - assets/Documenter.css
+
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+  - assets/mathjaxhelper.js
+
+# Extensions
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+  - codehilite
+  - def_list
+
+# Page tree
+pages:
+- BiobakeryUtils: index.md
+- HUMAnN2: humann2.md
+- MetaPhlAn2: metaphlan2.md
+- General Utilities: general.md
+- Contributing: contributing.md
+- Licence: license.md

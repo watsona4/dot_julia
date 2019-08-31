@@ -31999,3 +31999,56 @@ Installing BioTools
  [no changes]
   Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
   Building EzXML ────→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
+[master eee15af1b] added package BioTools
+ 3 files changed, 28 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   aa35c6402..eee15af1b  master -> master
+Progress:   7%|██▉                                      |  ETA: 4 days, 3:30:57[K
+Installing BiobakeryUtils
+ Resolving package versions...
+ Installed RandomBooleanMatrices ─ v0.1.1
+ Installed SpatialEcology ──────── v0.7.0
+ Installed Microbiome ──────────── v0.4.0
+ Installed BiobakeryUtils ──────── v0.1.0
+ Installed WinReg ──────────────── v0.3.1
+ Installed EcoBase ─────────────── v0.0.7
+ Installed DataFramesMeta ──────── v0.5.0
+ Installed RCall ───────────────── v0.13.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [fa5322f5] + BiobakeryUtils v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [fa5322f5] + BiobakeryUtils v0.1.0
+  [1313f7d8] + DataFramesMeta v0.5.0
+  [a58aae7d] + EcoBase v0.0.7
+  [3bd8f0ae] + Microbiome v0.4.0
+  [6f49c342] + RCall v0.13.3
+  [9ae346a0] + RandomBooleanMatrices v0.1.1
+  [348f2d5d] + SpatialEcology v0.7.0
+  [1b915085] + WinReg v0.3.1
+  Building RCall → `~/.julia/packages/RCall/iojZI/deps/build.log`
+┌ Error: Error building `RCall`: 
+│ ERROR: LoadError: R_HOME is not a directory.
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] top-level scope at /home/ec2-user/.julia/packages/RCall/iojZI/deps/build.jl:44
+│  [3] include at ./boot.jl:328 [inlined]
+│  [4] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [5] include(::Module, ::String) at ./Base.jl:31
+│  [6] include(::String) at ./client.jl:431
+│  [7] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/RCall/iojZI/deps/build.jl:10
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building Conda → `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building RCall → `~/.julia/packages/RCall/iojZI/deps/build.log`
+┌ Error: Error building `RCall`: 
+│ ERROR: LoadError: R_HOME is not a directory.
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] top-level scope at /home/ec2-user/.julia/packages/RCall/iojZI/deps/build.jl:44
+│  [3] include at ./boot.jl:328 [inlined]
+│  [4] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [5] include(::Module, ::String) at ./Base.jl:31
+│  [6] include(::String) at ./client.jl:431
+│  [7] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/RCall/iojZI/deps/build.jl:10
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647

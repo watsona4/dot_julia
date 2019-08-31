@@ -947,6 +947,12 @@ git-tree-sha1 = "dd2c86bc9c00f40353cdb71f2f414b3ed83b41fd"
 uuid = "fa51a905-6db9-5d43-b62f-5461347a870a"
 version = "1.0.0"
 
+[[BiobakeryUtils]]
+deps = ["CSV", "DataFrames", "Microbiome", "RCall", "Random", "Statistics", "Test"]
+git-tree-sha1 = "d81eabca1fa04b08ae4d9d043fd8eaf60bcacb83"
+uuid = "fa5322f5-bd84-5069-834a-abf3230fb8f8"
+version = "0.1.0"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"
@@ -1232,6 +1238,12 @@ git-tree-sha1 = "934b75a90b6cb315f9ea0df961768a02c1da1612"
 uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 version = "0.19.3"
 
+[[DataFramesMeta]]
+deps = ["DataFrames", "Tables"]
+git-tree-sha1 = "8a6dd4f640dd6b729f5d1f0d80d475fbf60b32af"
+uuid = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
+version = "0.5.0"
+
 [[DataStreams]]
 deps = ["Missings", "WeakRefStrings"]
 git-tree-sha1 = "19cccd7f86ade39d81ca088b932974e97df7f1f6"
@@ -1403,6 +1415,12 @@ deps = ["Dates", "DelimitedFiles", "LeapSeconds", "OptionalData", "RemoteFiles",
 git-tree-sha1 = "7ceae02eea4ffa57be45c47b237aca093926badc"
 uuid = "732a3c5d-d6c0-58bc-adb1-1b51709a25e2"
 version = "0.4.1"
+
+[[EcoBase]]
+deps = ["Compat", "RecipesBase"]
+git-tree-sha1 = "927e8aea9c9856b88fda40791e3872de07d05751"
+uuid = "a58aae7d-b440-5a11-b283-399458f99aac"
+version = "0.0.7"
 
 [[ElasticArrays]]
 git-tree-sha1 = "d9c079b747b9e9985d83e806bb77e41d149c959a"
@@ -2287,6 +2305,12 @@ git-tree-sha1 = "cc8b2b47177f096abf5fc8e39786250655feeb03"
 uuid = "b1909ce5-9a67-5ea4-ba1b-9d85528f5779"
 version = "0.5.0"
 
+[[Microbiome]]
+deps = ["Clustering", "DataFrames", "Distances", "LinearAlgebra", "Random", "Reexport", "SpatialEcology", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "2596f1cf9228fb65621b28989ab7dd1307f0a28e"
+uuid = "3bd8f0ae-a0f2-5238-a5af-e1b399a4940c"
+version = "0.4.0"
+
 [[Missings]]
 deps = ["SparseArrays", "Test"]
 git-tree-sha1 = "f0719736664b4358aa9ec173077d4285775f8007"
@@ -2582,6 +2606,12 @@ git-tree-sha1 = "63f16ae8a4c67adc6fe30b0aaf654686e174f25a"
 uuid = "fcd29c91-0bd7-5a09-975d-7ac3f643a60c"
 version = "0.16.1"
 
+[[RCall]]
+deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "Libdl", "Missings", "REPL", "Random", "Requires", "StatsModels", "WinReg"]
+git-tree-sha1 = "828332205a09377da6a8ebd1e615b11a22f8def6"
+uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+version = "0.13.3"
+
 [[REPL]]
 deps = ["InteractiveUtils", "Markdown", "Sockets"]
 uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
@@ -2595,6 +2625,12 @@ deps = ["Libdl", "Random", "RandomNumbers", "Test"]
 git-tree-sha1 = "efa7c17c4b9150a3f7083228d73fa77557ce0edc"
 uuid = "74087812-796a-5b5d-8853-05524746bad3"
 version = "1.2.0"
+
+[[RandomBooleanMatrices]]
+deps = ["Random", "RandomNumbers", "SparseArrays", "StatsBase", "Test"]
+git-tree-sha1 = "c13963a90c579b3bc241d858e4d063d778deeef5"
+uuid = "9ae346a0-3d16-5633-ad70-ddb60ab77eac"
+version = "0.1.1"
 
 [[RandomNumbers]]
 deps = ["Random", "Requires"]
@@ -2815,6 +2851,12 @@ deps = ["Adapt", "ArrayInterface", "BandedMatrices", "BlockBandedMatrices", "Dif
 git-tree-sha1 = "c1ecded2bd37b1ce7db8e55a814c8aa63efa80fe"
 uuid = "47a9eef4-7e08-11e9-0b38-333d64bd3804"
 version = "0.9.0"
+
+[[SpatialEcology]]
+deps = ["DataFrames", "DataFramesMeta", "EcoBase", "Random", "RandomBooleanMatrices", "RandomNumbers", "RecipesBase", "SparseArrays", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "7e4ae3dd9cd98ac6127a28fc5bc46bdf5e28d86b"
+uuid = "348f2d5d-71a3-5ad4-b565-8af070f99681"
+version = "0.7.0"
 
 [[SpecialFunctions]]
 deps = ["BinDeps", "BinaryProvider", "Libdl", "Test"]
@@ -3114,6 +3156,12 @@ deps = ["BinDeps", "Compat", "HTTPClient", "LibExpat", "Libdl", "Libz", "URIPars
 git-tree-sha1 = "2a889d320f3b77d17c037f295859fe570133cfbf"
 uuid = "c17dfb99-b4f7-5aad-8812-456da1ad7187"
 version = "0.4.2"
+
+[[WinReg]]
+deps = ["Test"]
+git-tree-sha1 = "808380e0a0483e134081cc54150be4177959b5f4"
+uuid = "1b915085-20d7-51cf-bf83-8f477d6f5128"
+version = "0.3.1"
 
 [[WoodburyMatrices]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "Test"]
