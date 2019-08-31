@@ -39387,3 +39387,46 @@ Installing CUDAdrv
 │  [8] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/CUDAdrv/LC5XS/deps/build.jl:116
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master f00ac2673] added package CUDAdrv
+ 3 files changed, 671 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   dd9a1a768..f00ac2673  master -> master
+Progress:  10%|████▎                                    |  ETA: 3 days, 10:04:41[K
+Installing CUDAnative
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [be33ccc6] + CUDAnative v0.9.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
+  Building CUDAdrv ───→ `~/.julia/packages/CUDAdrv/LC5XS/deps/build.log`
+┌ Error: Error building `CUDAdrv`: 
+│ ERROR: LoadError: Could not find CUDA driver library
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] main() at /home/ec2-user/.julia/packages/CUDAdrv/LC5XS/deps/build.jl:73
+│  [3] top-level scope at /home/ec2-user/.julia/packages/CUDAdrv/LC5XS/deps/build.jl:116
+│  [4] include at ./boot.jl:328 [inlined]
+│  [5] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [6] include(::Module, ::String) at ./Base.jl:31
+│  [7] include(::String) at ./client.jl:431
+│  [8] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CUDAdrv/LC5XS/deps/build.jl:116
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CUDAnative → `~/.julia/packages/CUDAnative/AGfq2/deps/build.log`
+┌ Error: Error building `CUDAnative`: 
+│ ┌ Warning: CUDAdrv.jl has not been successfully built, and will not work properly.
+│ │ Please run Pkg.build("CUDAdrv") and restart Julia.
+│ └ @ CUDAdrv ~/.julia/packages/CUDAdrv/LC5XS/src/init.jl:15
+│ ERROR: LoadError: CUDA toolkit at  doesn't contain nvcc
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] find_toolkit_version(::Array{String,1}) at /home/ec2-user/.julia/packages/CUDAapi/0Ozyy/src/discovery.jl:279
+│  [3] main() at /home/ec2-user/.julia/packages/CUDAnative/AGfq2/deps/build.jl:114
+│  [4] top-level scope at /home/ec2-user/.julia/packages/CUDAnative/AGfq2/deps/build.jl:156
+│  [5] include at ./boot.jl:328 [inlined]
+│  [6] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [7] include(::Module, ::String) at ./Base.jl:31
+│  [8] include(::String) at ./client.jl:431
+│  [9] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CUDAnative/AGfq2/deps/build.jl:156
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
