@@ -30307,3 +30307,77 @@ Installing BernoulliFactory
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [6db8a038] + BernoulliFactory v0.0.1
   [cd27a545] + NonUniformRandomVariateGeneration v1.0.0
+[master 20fd3505a] added package BernoulliFactory
+ 61 files changed, 1977 insertions(+)
+ create mode 100644 packages/BernoulliFactory/Ww5wX/.codecov.yml
+ create mode 100644 packages/BernoulliFactory/Ww5wX/.gitignore
+ create mode 100644 packages/BernoulliFactory/Ww5wX/.travis.yml
+ create mode 100644 packages/BernoulliFactory/Ww5wX/LICENSE.md
+ create mode 100644 packages/BernoulliFactory/Ww5wX/README.md
+ create mode 100644 packages/BernoulliFactory/Ww5wX/REQUIRE
+ create mode 100644 packages/BernoulliFactory/Ww5wX/appveyor.yml
+ create mode 100644 packages/BernoulliFactory/Ww5wX/demo/bfDemo.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/demo/signedEstimateDemo.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/src/BernoulliFactory.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/src/algorithms.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/src/huber2016.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/src/huber2017.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/src/mendoPower.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/src/signedEstimate.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/src/wastlundSqrt.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/test/expminus_test.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/test/huber2017_test.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/test/inverse_test.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/test/linear_test.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/test/logistic_test.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/test/power_test.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/test/runtests.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/test/signedEstimate_test.jl
+ create mode 100644 packages/BernoulliFactory/Ww5wX/test/twocoin_test.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/.codecov.yml
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/.gitignore
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/.travis.yml
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/LICENSE.md
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/README.md
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/REQUIRE
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/appveyor.yml
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/bench/beta_bench.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/bench/binomial_bench.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/bench/categorical_bench.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/bench/gamma_bench.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/bench/multinomial_bench.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/bench/poisson_bench.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/src/NonUniformRandomVariateGeneration.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/src/beta.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/src/binomial.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/src/categorical.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/src/gamma.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/src/multinomial.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/src/poisson.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/src/uniform.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/REQUIRE
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/beta_test.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/binomial_test.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/categorical_test.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/gamma_test.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/getCoverage.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/goodness_of_fit.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/multinomial_test.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/poisson_test.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/runtests.jl
+ create mode 100644 packages/NonUniformRandomVariateGeneration/Kgy2Y/test/uniform_test.jl
+To https://github.com/watsona4/dot_julia.git
+   dec510c42..20fd3505a  master -> master
+Progress:   6%|██▌                                      |  ETA: 4 days, 8:35:41[K
+Installing BetweenFlags
+ Resolving package versions...
+ Installed Literate ──────── v2.0.3
+ Installed DocumenterTools ─ v0.1.0
+ Installed BetweenFlags ──── v1.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [0601b4d0] + BetweenFlags v1.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [0601b4d0] + BetweenFlags v1.1.0
+  [35a29f4d] + DocumenterTools v0.1.0
+  [98b081ad] + Literate v2.0.3
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`

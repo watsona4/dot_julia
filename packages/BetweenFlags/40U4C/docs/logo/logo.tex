@@ -1,0 +1,48 @@
+\documentclass[tikz,border=5pt]{standalone}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{textwidth=7cm}
+\usepackage{graphicx}
+
+\usepackage{tgbonum}
+
+\newlength{\mysize}
+\newcommand{\mycfs}[1]{\setlength{\mysize}{#1pt}%
+  \fontsize{\mysize}{1.2\mysize}\selectfont}
+
+\newcommand{\BracketSize}{200}
+\newcommand{\VSpace}{-4cm}
+
+\newcommand{\StartFlagFig}[1]{
+\minipage{#1\textwidth}
+  \figure[!ht] \centering
+    \vspace{\VSpace}
+    \includegraphics[width=\textwidth]{FlagStart.png}
+  \endfigure
+\endminipage
+}
+\newcommand{\StopFlagFig}[1]{
+\minipage{#1\textwidth}
+  \figure[!ht] \centering
+    \vspace{\VSpace}
+    \includegraphics[width=\textwidth]{FlagStop.png}
+  \endfigure
+\endminipage
+}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\noindent
+\minipage{2\textwidth}
+  {\mycfs{\BracketSize}[}
+  \StartFlagFig{0.2}
+  \hspace{-1em}
+  {\mycfs{\BracketSize},}
+  \StopFlagFig{0.2}
+  {\mycfs{\BracketSize}]}
+\endminipage
+
+\end{document}

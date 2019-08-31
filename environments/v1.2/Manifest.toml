@@ -827,6 +827,12 @@ git-tree-sha1 = "6e7dea7ba8995fb1754d91cba391e3e5a81b8438"
 uuid = "6db8a038-4f45-54dc-ba78-3bf46db9883d"
 version = "0.0.1"
 
+[[BetweenFlags]]
+deps = ["Compat", "Coverage", "Documenter", "DocumenterTools", "Literate", "Pkg", "Test"]
+git-tree-sha1 = "28ac049a3d9666925d23bd0eb9ec2ba03f1c31bf"
+uuid = "0601b4d0-0592-11e9-1558-ab091b5e7996"
+version = "1.1.0"
+
 [[BinDeps]]
 deps = ["Compat", "Libdl", "SHA", "URIParser"]
 git-tree-sha1 = "12093ca6cdd0ee547c39b1870e0c9c3f154d9ca9"
@@ -1247,6 +1253,12 @@ deps = ["Base64", "DocStringExtensions", "InteractiveUtils", "JSON", "LibGit2", 
 git-tree-sha1 = "1b6ae3796f60311e39cd1770566140d2c056e87f"
 uuid = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 version = "0.23.3"
+
+[[DocumenterTools]]
+deps = ["Base64", "DocStringExtensions", "LibGit2", "Pkg", "Test"]
+git-tree-sha1 = "f5803a9c2c23ff226e8eab2df7ac4c75e77a0d53"
+uuid = "35a29f4d-8980-5a13-9543-d66fff28ecb8"
+version = "0.1.0"
 
 [[DomainSets]]
 deps = ["IntervalSets", "LinearAlgebra", "StaticArrays", "Statistics", "Test"]
@@ -1998,6 +2010,12 @@ deps = ["FastClosures", "LinearAlgebra", "Printf", "SparseArrays", "Test"]
 git-tree-sha1 = "316d05c6b0df402efc110a3cfb0c0a365171fb51"
 uuid = "5c8ed15e-5a4c-59e4-a42b-c7e8811fb125"
 version = "0.5.4"
+
+[[Literate]]
+deps = ["Base64", "JSON", "REPL"]
+git-tree-sha1 = "04913ce466978fad4eb666c9f5fafc718fcc4366"
+uuid = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
+version = "2.0.3"
 
 [[Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
