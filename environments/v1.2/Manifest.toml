@@ -144,6 +144,12 @@ git-tree-sha1 = "22ad02199c28b736546a7b7fce3072f5750f9125"
 uuid = "a8e43f4a-99b7-5565-8bf1-0165161caaea"
 version = "0.2.1"
 
+[[AbstractTrees]]
+deps = ["Markdown", "Test"]
+git-tree-sha1 = "6621d9645702c1c4e6970cc6a3eae440c768000b"
+uuid = "1520ce14-60c1-5f80-bbc7-55ef81b5835c"
+version = "0.2.1"
+
 [[Adapt]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "82dab828020b872fa9efd3abec1152b075bc7cbf"

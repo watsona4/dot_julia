@@ -6710,3 +6710,35 @@ Installing AbstractTensors
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [a8e43f4a] + AbstractTensors v0.2.1
   [22fd7b30] + DirectSum v0.3.0
+[master e56edfe48] added package AbstractTensors
+ 24 files changed, 2424 insertions(+)
+ create mode 100644 packages/AbstractTensors/n4mX4/.codecov.yml
+ create mode 100644 packages/AbstractTensors/n4mX4/.gitignore
+ create mode 100644 packages/AbstractTensors/n4mX4/.travis.yml
+ create mode 100644 packages/AbstractTensors/n4mX4/LICENSE
+ create mode 100644 packages/AbstractTensors/n4mX4/Project.toml
+ create mode 100644 packages/AbstractTensors/n4mX4/README.md
+ create mode 100644 packages/AbstractTensors/n4mX4/appveyor.yml
+ create mode 100644 packages/AbstractTensors/n4mX4/src/AbstractTensors.jl
+ create mode 100644 packages/AbstractTensors/n4mX4/test/runtests.jl
+ create mode 100644 packages/DirectSum/gycAo/.codecov.yml
+ create mode 100644 packages/DirectSum/gycAo/.gitignore
+ create mode 100644 packages/DirectSum/gycAo/.travis.yml
+ create mode 100644 packages/DirectSum/gycAo/LICENSE
+ create mode 100644 packages/DirectSum/gycAo/Project.toml
+ create mode 100644 packages/DirectSum/gycAo/README.md
+ create mode 100644 packages/DirectSum/gycAo/appveyor.yml
+ create mode 100644 packages/DirectSum/gycAo/src/DirectSum.jl
+ create mode 100644 packages/DirectSum/gycAo/src/indices.jl
+ create mode 100644 packages/DirectSum/gycAo/src/operations.jl
+ create mode 100644 packages/DirectSum/gycAo/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   75279fb15..e56edfe48  master -> master
+Progress:   1%|▌                                        |  ETA: 2 days, 8:43:22[K
+Installing AbstractTrees
+ Resolving package versions...
+ Installed AbstractTrees ─ v0.2.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [1520ce14] + AbstractTrees v0.2.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [1520ce14] + AbstractTrees v0.2.1
