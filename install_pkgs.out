@@ -38285,3 +38285,35 @@ Installing CRC
   [44b605c4] + CRC v3.0.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [44b605c4] + CRC v3.0.0
+[master affe54720] added package CRC
+ 16 files changed, 1060 insertions(+)
+ create mode 100644 packages/CRC/MWEU8/.gitignore
+ create mode 100644 packages/CRC/MWEU8/.travis.yml
+ create mode 100644 packages/CRC/MWEU8/LICENSE.md
+ create mode 100644 packages/CRC/MWEU8/README.md
+ create mode 100644 packages/CRC/MWEU8/REQUIRE
+ create mode 100644 packages/CRC/MWEU8/src/CRC.jl
+ create mode 100644 packages/CRC/MWEU8/src/crc_calc.jl
+ create mode 100644 packages/CRC/MWEU8/src/crc_cmdline.jl
+ create mode 100644 packages/CRC/MWEU8/test/REQUIRE
+ create mode 100644 packages/CRC/MWEU8/test/runtests.jl
+ create mode 100644 packages/CRC/MWEU8/test/speed-bug.jl
+ create mode 100644 packages/CRC/MWEU8/test/speed.jl
+To https://github.com/watsona4/dot_julia.git
+   37bd14edc..affe54720  master -> master
+Progress:  10%|████                                     |  ETA: 3 days, 12:06:20[K
+Installing CRC32
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CRC32 [6bad288e]:\n CRC32 [6bad288e] log:\n ├─possible versions are: 0.0.1-0.0.2 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.2\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  10%|████                                     |  ETA: 3 days, 11:49:57[K
+Installing CRF
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CRF [efbd00a7]:\n CRF [efbd00a7] log:\n ├─possible versions are: 0.1.0-0.1.1 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.1.0-0.1.1\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  10%|████▏                                    |  ETA: 3 days, 11:33:40[K
+Installing CRlibm
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [96374032] + CRlibm v0.7.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
+  Building CRlibm → `~/.julia/packages/CRlibm/2S9DB/deps/build.log`
