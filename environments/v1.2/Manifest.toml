@@ -72,6 +72,12 @@ git-tree-sha1 = "d9b2ada3bf289c504f765fec863cacea5aeb0541"
 uuid = "4f1ea46c-232b-54a6-9b17-cc2d0f3e6598"
 version = "0.6.0"
 
+[[AWSS3]]
+deps = ["AWSCore", "Base64", "DataStructures", "Dates", "EzXML", "FilePathsBase", "HTTP", "MbedTLS", "Retry", "SymDict", "UUIDs", "XMLDict"]
+git-tree-sha1 = "4f15352e3b6afc6c1a53371995b765c3ecf2db52"
+uuid = "1c724243-ef5b-51ab-93f4-b0a88ac62a95"
+version = "0.6.1"
+
 [[AbstractFFTs]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "380e36c66edfa099cd90116b24c1ce8cafccac40"
@@ -328,6 +334,12 @@ deps = ["Pkg"]
 git-tree-sha1 = "351f001a78aa1b7ad2696e386e110b5abd071c71"
 uuid = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
 version = "1.0.7"
+
+[[FilePathsBase]]
+deps = ["Dates", "LinearAlgebra", "Printf", "Test", "UUIDs"]
+git-tree-sha1 = "2ee1d999c462425e2f848524f732ed51bc1ab63a"
+uuid = "48062228-2e41-5def-b9a4-89aafe57970f"
+version = "0.6.2"
 
 [[FillArrays]]
 deps = ["LinearAlgebra", "Random", "SparseArrays"]
