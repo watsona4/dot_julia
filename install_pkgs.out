@@ -7161,3 +7161,34 @@ Installing AdobeGlyphList
   [715cd884] + AdobeGlyphList v0.1.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [715cd884] + AdobeGlyphList v0.1.1
+[master 480ff3e3d] added package AdobeGlyphList
+ 17 files changed, 5505 insertions(+)
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/.codecov.yml
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/.gitignore
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/.travis.yml
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/LICENSE.txt
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/Project.toml
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/README.md
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/REQUIRE
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/aglfn.txt
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/appveyor.yml
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/glyphlist.txt
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/src/AdobeGlyphList.jl
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/test/runtests.jl
+ create mode 100644 packages/AdobeGlyphList/lYcYZ/zapfdingbats.txt
+To https://github.com/watsona4/dot_julia.git
+   946bb9fa2..480ff3e3d  master -> master
+Progress:   2%|▊                                        |  ETA: 1 days, 22:45:55[K
+Installing AdvancedHMC
+ Resolving package versions...
+ Installed InplaceOps ── v0.3.0
+ Installed LazyArrays ── v0.10.0
+ Installed AdvancedHMC ─ v0.2.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [0bf59076] + AdvancedHMC v0.2.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [0bf59076] + AdvancedHMC v0.2.3
+  [505f98c9] + InplaceOps v0.3.0
+  [5078a376] + LazyArrays v0.10.0
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
