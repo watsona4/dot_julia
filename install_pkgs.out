@@ -6898,3 +6898,28 @@ Installing ActuarialScience
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master dba439354] added package ActuarialScience
+ 18 files changed, 1006 insertions(+)
+ create mode 100644 packages/ActuarialScience/Muq4g/.codecov.yml
+ create mode 100644 packages/ActuarialScience/Muq4g/.gitignore
+ create mode 100644 packages/ActuarialScience/Muq4g/.travis.yml
+ create mode 100644 packages/ActuarialScience/Muq4g/LICENSE.md
+ create mode 100644 packages/ActuarialScience/Muq4g/Manifest.toml
+ create mode 100644 packages/ActuarialScience/Muq4g/Project.toml
+ create mode 100644 packages/ActuarialScience/Muq4g/README.md
+ create mode 100644 packages/ActuarialScience/Muq4g/REQUIRE
+ create mode 100644 packages/ActuarialScience/Muq4g/appveyor.yml
+ create mode 100644 packages/ActuarialScience/Muq4g/src/ActuarialScience.jl
+ create mode 100644 packages/ActuarialScience/Muq4g/src/decrement.jl
+ create mode 100644 packages/ActuarialScience/Muq4g/src/interest.jl
+ create mode 100644 packages/ActuarialScience/Muq4g/src/mortality.jl
+ create mode 100644 packages/ActuarialScience/Muq4g/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   edf9143fe..dba439354  master -> master
+Progress:   2%|▋                                        |  ETA: 2 days, 1:59:41[K
+Installing Adapt
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [79e6a3ab] + Adapt v1.0.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
