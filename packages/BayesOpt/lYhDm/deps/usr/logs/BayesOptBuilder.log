@@ -1,0 +1,310 @@
+`/bin/bash -c "alias ll='ls -la'
+
+vecho() {
+    if [[ \"false\" == \"true\" ]]; then
+        echo \"\$@\"
+    fi
+}
+vecho_red() {
+    (vecho \"\$@\" >&2)
+}
+
+# Save bash history (and optionally echo it out as it happens)
+save_history() {
+    vecho_red \" ---> \$BASH_COMMAND\"
+    history -s \"\$BASH_COMMAND\"
+    history -a
+}
+
+# Save our environment into \`/meta/.env\`, eliminating read-only variables
+# so that this file can be sourced upon entering a debug shell.
+save_env() {
+    set +x
+    set > /meta/.env
+    # Ignore read-only variables
+    for l in BASHOPTS BASH_VERSINFO UID EUID PPID SHELLOPTS; do
+        grep -v \"^\$l=\" /meta/.env > /meta/.env2
+        mv /meta/.env2 /meta/.env
+    done
+    echo \"cd \$(pwd)\" >> /meta/.env
+}
+
+# We do a little sleight-of-hand here; we want to build inside of a tmpfs
+# because \`srcdir\` might be mapped in through a networked filesystem, which
+# totally wrecks our I/O performance.  So what we do instead is bind-mount
+# \`srcdir\` to another location so that we can always get at it, copy its
+# contents to a new tmpfs we mount at the location of \`srcdir\`, then when
+# we exit on an error, we copy everything back over again
+tmpify_srcdir() {
+    vecho \"Copying srcdir to tmpfs...\"
+    mkdir -p \$WORKSPACE/.true_srcdir
+    mount --bind \$WORKSPACE/srcdir \$WORKSPACE/.true_srcdir
+    mount -t tmpfs tmpfs \$WORKSPACE/srcdir
+    rsync -rlptD \$WORKSPACE/.true_srcdir/ \$WORKSPACE/srcdir
+
+    # We may have changed what pwd() means out from underneath ourselves
+    cd \$(pwd)
+}
+
+# Copy our tmpfs version of \`srcdir\` back onto disk.
+save_srcdir() {
+    vecho_red \"Saving srcdir due to previous error...\"
+    rsync -rlptD \$WORKSPACE/srcdir/ \$WORKSPACE/.true_srcdir --delete
+}
+
+# If /meta is mounted, then we want to save history and environment
+if [[ -d /meta ]]; then
+    trap save_history DEBUG
+    trap \"save_env\" EXIT
+    trap \"save_env; save_srcdir\" INT TERM ERR
+fi
+
+# Stop if we hit any errors.
+set -e
+
+# Swap out srcdir from underneath our feet
+tmpify_srcdir
+
+cd \$WORKSPACE/srcdir
+cmake -DCMAKE_INSTALL_PREFIX=\$prefix -DCMAKE_TOOLCHAIN_FILE=/opt/\$target/\$target.toolchain -DBAYESOPT_BUILD_EXAMPLES=OFF -DBAYESOPT_BUILD_SHARED=ON -DNLOPT_BUILD_SHARED=ON bayesopt/ -DBOOST_ROOT=../boost_1_68_0
+make -j\$nprocs
+make install
+
+
+"`
+-- The CXX compiler identification is GNU 4.8.5
+-- Check for working CXX compiler: /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++
+-- Check for working CXX compiler: /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Boost version: 1.68.0
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- The C compiler identification is GNU 4.8.5
+-- Check for working C compiler: /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc
+-- Check for working C compiler: /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file string.h
+-- Looking for include file string.h - found
+-- Looking for include file strings.h
+-- Looking for include file strings.h - found
+-- Looking for include file sys/stat.h
+-- Looking for include file sys/stat.h - found
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Looking for include file memory.h
+-- Looking for include file memory.h - found
+-- Looking for include file stdlib.h
+-- Looking for include file stdlib.h - found
+-- Looking for include file stdint.h
+-- Looking for include file stdint.h - found
+-- Looking for include file sys/types.h
+-- Looking for include file sys/types.h - found
+-- Looking for isinf
+-- Looking for isinf - found
+-- Looking for isinf
+-- Looking for isinf - found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for qsort_r
+-- Looking for qsort_r - found
+-- Looking for time
+-- Looking for time - found
+-- Looking for copysign
+-- Looking for copysign - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of uint32_t
+-- Check size of uint32_t - done
+-- NLOPT: Version number 2.4.1 found in configure.ac
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/srcdir
+Scanning dependencies of target nlopt
+[  1%] Building C object nlopt2/CMakeFiles/nlopt.dir/direct/DIRect.c.o
+[  2%] Building C object nlopt2/CMakeFiles/nlopt.dir/direct/direct_wrap.c.o
+[  3%] Building C object nlopt2/CMakeFiles/nlopt.dir/direct/DIRserial.c.o
+[  5%] Building C object nlopt2/CMakeFiles/nlopt.dir/direct/DIRsubrout.c.o
+[  6%] Building C object nlopt2/CMakeFiles/nlopt.dir/cdirect/cdirect.c.o
+[  7%] Building C object nlopt2/CMakeFiles/nlopt.dir/cdirect/hybrid.c.o
+[  8%] Building C object nlopt2/CMakeFiles/nlopt.dir/luksan/plis.c.o
+[ 10%] Building C object nlopt2/CMakeFiles/nlopt.dir/praxis/praxis.c.o
+[ 11%] Building C object nlopt2/CMakeFiles/nlopt.dir/luksan/plip.c.o
+[ 12%] Building C object nlopt2/CMakeFiles/nlopt.dir/luksan/pnet.c.o
+[ 13%] Building C object nlopt2/CMakeFiles/nlopt.dir/luksan/mssubs.c.o
+[ 15%] Building C object nlopt2/CMakeFiles/nlopt.dir/luksan/pssubs.c.o
+[ 16%] Building C object nlopt2/CMakeFiles/nlopt.dir/crs/crs.c.o
+[ 17%] Building C object nlopt2/CMakeFiles/nlopt.dir/mlsl/mlsl.c.o
+[ 18%] Building C object nlopt2/CMakeFiles/nlopt.dir/mma/mma.c.o
+[ 20%] Building C object nlopt2/CMakeFiles/nlopt.dir/mma/ccsa_quadratic.c.o
+[ 21%] Building C object nlopt2/CMakeFiles/nlopt.dir/cobyla/cobyla.c.o
+[ 22%] Building C object nlopt2/CMakeFiles/nlopt.dir/newuoa/newuoa.c.o
+/workspace/srcdir/bayesopt/nlopt2/cdirect/hybrid.c: In function 'optimize_rect':
+/workspace/srcdir/bayesopt/nlopt2/cdirect/hybrid.c:91:6: warning: 'nlopt_minimize' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:329) [-Wdeprecated-declarations]
+      ret = nlopt_minimize(p->local_alg, n, fcount, p, 
+      ^
+[ 24%] Building C object nlopt2/CMakeFiles/nlopt.dir/neldermead/nldrmd.c.o
+[ 25%] Building C object nlopt2/CMakeFiles/nlopt.dir/neldermead/sbplx.c.o
+[ 26%] Building C object nlopt2/CMakeFiles/nlopt.dir/auglag/auglag.c.o
+[ 27%] Building C object nlopt2/CMakeFiles/nlopt.dir/bobyqa/bobyqa.c.o
+[ 29%] Building C object nlopt2/CMakeFiles/nlopt.dir/isres/isres.c.o
+[ 30%] Building C object nlopt2/CMakeFiles/nlopt.dir/slsqp/slsqp.c.o
+[ 31%] Building C object nlopt2/CMakeFiles/nlopt.dir/esch/esch.c.o
+[ 32%] Building C object nlopt2/CMakeFiles/nlopt.dir/api/general.c.o
+[ 34%] Building C object nlopt2/CMakeFiles/nlopt.dir/api/options.c.o
+[ 35%] Building C object nlopt2/CMakeFiles/nlopt.dir/api/optimize.c.o
+[ 36%] Building C object nlopt2/CMakeFiles/nlopt.dir/api/deprecated.c.o
+[ 37%] Building C object nlopt2/CMakeFiles/nlopt.dir/api/f77api.c.o
+[ 39%] Building C object nlopt2/CMakeFiles/nlopt.dir/util/mt19937ar.c.o
+[ 40%] Building C object nlopt2/CMakeFiles/nlopt.dir/util/sobolseq.c.o
+/workspace/srcdir/bayesopt/nlopt2/newuoa/newuoa.c: In function 'trsapp_':
+/workspace/srcdir/bayesopt/nlopt2/newuoa/newuoa.c:184:3: warning: 'nlopt_minimize_constrained' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:339) [-Wdeprecated-declarations]
+   ret = nlopt_minimize_constrained(NLOPT_LD_MMA, *n, quad_model, &qmd,
+   ^
+[ 41%] Building C object nlopt2/CMakeFiles/nlopt.dir/util/timer.c.o
+[ 43%] Building C object nlopt2/CMakeFiles/nlopt.dir/util/stop.c.o
+/workspace/srcdir/bayesopt/nlopt2/api/deprecated.c: In function 'nlopt_minimize_constrained':
+/workspace/srcdir/bayesopt/nlopt2/api/deprecated.c:149:6: warning: 'nlopt_minimize_econstrained' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/deprecated.c:65) [-Wdeprecated-declarations]
+      return nlopt_minimize_econstrained(
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/deprecated.c: In function 'nlopt_minimize':
+/workspace/srcdir/bayesopt/nlopt2/api/deprecated.c:167:6: warning: 'nlopt_minimize_constrained' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/deprecated.c:138) [-Wdeprecated-declarations]
+      return nlopt_minimize_constrained(
+      ^
+/workspace/srcdir/bayesopt/nlopt2/newuoa/newuoa.c: In function 'biglag_':
+/workspace/srcdir/bayesopt/nlopt2/newuoa/newuoa.c:1241:3: warning: 'nlopt_minimize_constrained' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:339) [-Wdeprecated-declarations]
+   return nlopt_minimize_constrained(NLOPT_LD_MMA, *n, lag, &ld,
+   ^
+[ 44%] Building C object nlopt2/CMakeFiles/nlopt.dir/util/redblack.c.o
+[ 45%] Building C object nlopt2/CMakeFiles/nlopt.dir/util/qsort_r.c.o
+[ 46%] Building C object nlopt2/CMakeFiles/nlopt.dir/util/rescale.c.o
+[ 48%] Building CXX object nlopt2/CMakeFiles/nlopt.dir/stogo/global.cc.o
+[ 49%] Building CXX object nlopt2/CMakeFiles/nlopt.dir/stogo/linalg.cc.o
+In file included from /workspace/srcdir/bayesopt/nlopt2/api/f77api.c:103:0:
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'nloptc_':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:57:6: warning: 'nlopt_minimize_constrained' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:339) [-Wdeprecated-declarations]
+      *info = nlopt_minimize_constrained((nlopt_algorithm) *algorithm, 
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'nlogls_':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:96:6: warning: 'nlopt_get_local_search_algorithm' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:363) [-Wdeprecated-declarations]
+      nlopt_get_local_search_algorithm(&deriv, &nonderiv, maxeval);
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'nlosls_':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:104:6: warning: 'nlopt_set_local_search_algorithm' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:366) [-Wdeprecated-declarations]
+      nlopt_set_local_search_algorithm(deriv, nonderiv, *maxeval);
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'nlogsp_':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:109:6: warning: 'nlopt_get_stochastic_population' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:370) [-Wdeprecated-declarations]
+      *pop = nlopt_get_stochastic_population();
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'nlossp_':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:113:6: warning: 'nlopt_set_stochastic_population' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:371) [-Wdeprecated-declarations]
+      nlopt_set_stochastic_population(*pop);
+      ^
+[ 50%] Building CXX object nlopt2/CMakeFiles/nlopt.dir/stogo/local.cc.o
+[ 51%] Building CXX object nlopt2/CMakeFiles/nlopt.dir/stogo/stogo.cc.o
+In file included from /workspace/srcdir/bayesopt/nlopt2/api/f77api.c:114:0:
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'nloptc':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:57:6: warning: 'nlopt_minimize_constrained' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:339) [-Wdeprecated-declarations]
+      *info = nlopt_minimize_constrained((nlopt_algorithm) *algorithm, 
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'nlogls':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:96:6: warning: 'nlopt_get_local_search_algorithm' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:363) [-Wdeprecated-declarations]
+      nlopt_get_local_search_algorithm(&deriv, &nonderiv, maxeval);
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'nlosls':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:104:6: warning: 'nlopt_set_local_search_algorithm' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:366) [-Wdeprecated-declarations]
+      nlopt_set_local_search_algorithm(deriv, nonderiv, *maxeval);
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'nlogsp':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:109:6: warning: 'nlopt_get_stochastic_population' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:370) [-Wdeprecated-declarations]
+      *pop = nlopt_get_stochastic_population();
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'nlossp':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:113:6: warning: 'nlopt_set_stochastic_population' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:371) [-Wdeprecated-declarations]
+      nlopt_set_stochastic_population(*pop);
+      ^
+In file included from /workspace/srcdir/bayesopt/nlopt2/api/f77api.c:129:0:
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'NLOPTC':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:57:6: warning: 'nlopt_minimize_constrained' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:339) [-Wdeprecated-declarations]
+      *info = nlopt_minimize_constrained((nlopt_algorithm) *algorithm, 
+      ^
+[ 53%] Building CXX object nlopt2/CMakeFiles/nlopt.dir/stogo/tools.cc.o
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'NLOGLS':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:96:6: warning: 'nlopt_get_local_search_algorithm' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:363) [-Wdeprecated-declarations]
+      nlopt_get_local_search_algorithm(&deriv, &nonderiv, maxeval);
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'NLOSLS':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:104:6: warning: 'nlopt_set_local_search_algorithm' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:366) [-Wdeprecated-declarations]
+      nlopt_set_local_search_algorithm(deriv, nonderiv, *maxeval);
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'NLOGSP':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:109:6: warning: 'nlopt_get_stochastic_population' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:370) [-Wdeprecated-declarations]
+      *pop = nlopt_get_stochastic_population();
+      ^
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h: In function 'NLOSSP':
+/workspace/srcdir/bayesopt/nlopt2/api/f77funcs.h:113:6: warning: 'nlopt_set_stochastic_population' is deprecated (declared at /workspace/srcdir/bayesopt/nlopt2/api/nlopt.h:371) [-Wdeprecated-declarations]
+      nlopt_set_stochastic_population(*pop);
+      ^
+[ 54%] Linking CXX shared library ../lib/libnlopt.so
+[ 54%] Built target nlopt
+Scanning dependencies of target bayesopt
+[ 55%] Building CXX object CMakeFiles/bayesopt.dir/src/bayesoptcont.cpp.o
+[ 56%] Building CXX object CMakeFiles/bayesopt.dir/src/bayesoptdisc.cpp.o
+[ 58%] Building CXX object CMakeFiles/bayesopt.dir/src/bayesoptbase.cpp.o
+[ 59%] Building CXX object CMakeFiles/bayesopt.dir/src/bopt_state.cpp.o
+[ 60%] Building CXX object CMakeFiles/bayesopt.dir/src/posteriormodel.cpp.o
+[ 62%] Building CXX object CMakeFiles/bayesopt.dir/src/posterior_fixed.cpp.o
+[ 63%] Building CXX object CMakeFiles/bayesopt.dir/src/posterior_empirical.cpp.o
+[ 64%] Building CXX object CMakeFiles/bayesopt.dir/src/posterior_mcmc.cpp.o
+[ 65%] Building CXX object CMakeFiles/bayesopt.dir/src/mcmc_sampler.cpp.o
+[ 67%] Building CXX object CMakeFiles/bayesopt.dir/src/dataset.cpp.o
+[ 68%] Building CXX object CMakeFiles/bayesopt.dir/src/inneroptimization.cpp.o
+[ 69%] Building CXX object CMakeFiles/bayesopt.dir/src/nonparametricprocess.cpp.o
+[ 70%] Building CXX object CMakeFiles/bayesopt.dir/src/kernelregressor.cpp.o
+[ 72%] Building CXX object CMakeFiles/bayesopt.dir/src/conditionalbayesprocess.cpp.o
+[ 73%] Building CXX object CMakeFiles/bayesopt.dir/src/gaussian_process.cpp.o
+[ 74%] Building CXX object CMakeFiles/bayesopt.dir/src/gaussian_process_ml.cpp.o
+[ 75%] Building CXX object CMakeFiles/bayesopt.dir/src/gaussian_process_normal.cpp.o
+[ 77%] Building CXX object CMakeFiles/bayesopt.dir/src/gaussian_process_hierarchical.cpp.o
+[ 78%] Building CXX object CMakeFiles/bayesopt.dir/src/student_t_process_jef.cpp.o
+[ 79%] Building CXX object CMakeFiles/bayesopt.dir/src/parameters.cpp.o
+[ 81%] Building CXX object CMakeFiles/bayesopt.dir/src/student_t_process_nig.cpp.o
+[ 82%] Building CXX object CMakeFiles/bayesopt.dir/src/kernel_functors.cpp.o
+[ 83%] Building CXX object CMakeFiles/bayesopt.dir/src/criteria_functors.cpp.o
+[ 84%] Building CXX object CMakeFiles/bayesopt.dir/src/criteria_hedge.cpp.o
+[ 86%] Building CXX object CMakeFiles/bayesopt.dir/src/mean_functors.cpp.o
+[ 87%] Building CXX object CMakeFiles/bayesopt.dir/src/gauss_distribution.cpp.o
+[ 88%] Building CXX object CMakeFiles/bayesopt.dir/src/student_t_distribution.cpp.o
+[ 89%] Building CXX object CMakeFiles/bayesopt.dir/src/wrappers/bayesoptwpr.cpp.o
+[ 91%] Building CXX object CMakeFiles/bayesopt.dir/utils/fileparser.cpp.o
+[ 92%] Building CXX object CMakeFiles/bayesopt.dir/utils/param_loader.cpp.o
+[ 93%] Building CXX object CMakeFiles/bayesopt.dir/utils/parser.cpp.o
+[ 94%] Building CXX object CMakeFiles/bayesopt.dir/utils/ublas_extra.cpp.o
+[ 96%] Building CXX object CMakeFiles/bayesopt.dir/sobol/sobol.cpp.o
+[ 97%] Building CXX object CMakeFiles/bayesopt.dir/sobol/sobol_i4.cpp.o
+[ 98%] Building CXX object CMakeFiles/bayesopt.dir/sobol/sobol_i8.cpp.o
+[100%] Linking CXX shared library lib/libbayesopt.so
+[100%] Built target bayesopt
+[ 54%] Built target nlopt
+[100%] Built target bayesopt
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /workspace/destdir/lib/libbayesopt.so
+-- Set runtime path of "/workspace/destdir/lib/libbayesopt.so" to ""
+-- Installing: /workspace/destdir/include/bayesopt
+-- Installing: /workspace/destdir/include/bayesopt/parameters.hpp
+-- Installing: /workspace/destdir/include/bayesopt/parameters.h
+-- Installing: /workspace/destdir/include/bayesopt/bayesoptbase.hpp
+-- Installing: /workspace/destdir/include/bayesopt/bayesopt.hpp
+-- Installing: /workspace/destdir/include/bayesopt/bayesopt.h
+-- Installing: /workspace/destdir/include/nlopt.hpp
+-- Installing: /workspace/destdir/include/nlopt.f
+-- Installing: /workspace/destdir/include/nlopt.h
+-- Installing: /workspace/destdir/lib/libnlopt.so

@@ -749,6 +749,12 @@ git-tree-sha1 = "9bf1dc67359ceedd9e206eecc27081bad2db22a6"
 uuid = "ba4760a4-c768-5bed-964b-cf806dc591cb"
 version = "3.1.0"
 
+[[BayesOpt]]
+deps = ["BinaryProvider", "Libdl", "Test"]
+git-tree-sha1 = "4905322569e79e9dda8b45a3420fe22fd10d7ef1"
+uuid = "8b8fa57b-2f72-5ccd-8d28-750de228707b"
+version = "0.1.0"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"

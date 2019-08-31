@@ -1,0 +1,13 @@
+include/nlopt.hpp
+include/nlopt.h
+include/bayesopt/parameters.hpp
+include/bayesopt/parameters.h
+include/bayesopt/bayesopt.hpp
+include/bayesopt/bayesopt.h
+include/bayesopt/bayesoptbase.hpp
+include/nlopt.f
+logs/BayesOptBuilder.log
+logs/update_rpath_libnlopt.so.log
+logs/update_linkage_libbayesopt.so_libnlopt.so.log
+lib/libnlopt.so
+lib/libbayesopt.so
