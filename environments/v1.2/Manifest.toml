@@ -1464,6 +1464,12 @@ git-tree-sha1 = "e577cb41e7e2641f4b97f1b6dbcb9a69c9288330"
 uuid = "159f3aea-2a34-519c-b102-8c37f9878175"
 version = "0.6.0"
 
+[[CairoMakie]]
+deps = ["AbstractPlotting", "Cairo", "Colors", "FileIO", "GeometryTypes", "ImageCore", "ImageMagick", "LinearAlgebra", "MeshIO", "StaticArrays"]
+git-tree-sha1 = "c0a21acdcb5d3f12aada2ff8f188cf79470d1626"
+uuid = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+version = "0.1.1"
+
 [[Calculus]]
 deps = ["Compat"]
 git-tree-sha1 = "bd8bbd105ba583a42385bd6dc4a20dad8ab3dc11"
@@ -2882,6 +2888,12 @@ deps = ["SHA"]
 git-tree-sha1 = "2d24c0988d8908bf9e352aa0f5bf8cf61722c2c0"
 uuid = "06dfef30-8e85-11e9-0a8e-cb6ed32fdbef"
 version = "0.1.0"
+
+[[MeshIO]]
+deps = ["ColorTypes", "FileIO", "GeometryTypes", "Printf", "Test"]
+git-tree-sha1 = "3e01e12c4c626578a9d47fac0d15c9fe8dad5139"
+uuid = "7269a6da-0436-5bbc-96c2-40638cbb6118"
+version = "0.3.1"
 
 [[MetaGraphs]]
 deps = ["JLD2", "LightGraphs", "Random"]

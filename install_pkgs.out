@@ -45660,3 +45660,27 @@ Installing Cairo
   Building WinRPM ──→ `~/.julia/packages/WinRPM/Y9QdZ/deps/build.log`
   Building Homebrew → `~/.julia/packages/Homebrew/s09IX/deps/build.log`
   Building Cairo ───→ `~/.julia/packages/Cairo/p68X8/deps/build.log`
+[master 2db5a49ed] added package Cairo
+ 3 files changed, 781 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   e8b35a3b6..2db5a49ed  master -> master
+Progress:  11%|████▌                                    |  ETA: 3 days, 15:09:21[K
+Installing CairoMakie
+ Resolving package versions...
+ Installed CairoMakie ─ v0.1.1
+ Installed MeshIO ───── v0.3.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [13f3f980] + CairoMakie v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [13f3f980] + CairoMakie v0.1.1
+  [7269a6da] + MeshIO v0.3.1
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+  Building LibCURL ─────────→ `~/.julia/packages/LibCURL/lWJxD/deps/build.log`
+  Building WinRPM ──────────→ `~/.julia/packages/WinRPM/Y9QdZ/deps/build.log`
+  Building Homebrew ────────→ `~/.julia/packages/Homebrew/s09IX/deps/build.log`
+  Building Cairo ───────────→ `~/.julia/packages/Cairo/p68X8/deps/build.log`
+  Building FreeType ────────→ `~/.julia/packages/FreeType/2dE5w/deps/build.log`
+  Building ImageMagick ─────→ `~/.julia/packages/ImageMagick/vMfoS/deps/build.log`
+  Building FFMPEG ──────────→ `~/.julia/packages/FFMPEG/9JQpZ/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
