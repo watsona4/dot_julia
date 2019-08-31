@@ -50122,3 +50122,22 @@ Installing Clang
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
   Building Clang → `~/.julia/packages/Clang/CiPzM/deps/build.log`
+[master dc2bb8766] added package Clang
+ 3 files changed, 41 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   3a6c22198..dc2bb8766  master -> master
+Progress:  13%|█████▎                                   |  ETA: 3 days, 8:48:57[K
+Installing Clarus
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Requests [df88083b]:\n Requests [df88083b] log:\n ├─possible versions are: [0.0.1-0.0.8, 0.1.0-0.1.1, 0.2.0-0.2.4, 0.3.0-0.3.13, 0.4.0-0.4.1, 0.5.0-0.5.1] or uninstalled\n ├─restricted by compatibility requirements with Clarus [fca6b79a] to versions: 0.5.0-0.5.1\n │ └─Clarus [fca6b79a] log:\n │   ├─possible versions are: [0.0.4-0.0.7, 0.1.1-0.1.7, 0.1.9] or uninstalled\n │   └─restricted to versions * by an explicit requirement, leaving only versions [0.0.4-0.0.7, 0.1.1-0.1.7, 0.1.9]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  13%|█████▎                                   |  ETA: 3 days, 8:36:31[K
+Installing ClassImbalance
+ Resolving package versions...
+ Installed ClassImbalance ─ v0.7.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [04a18a73] + ClassImbalance v0.7.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [04a18a73] + ClassImbalance v0.7.0
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`

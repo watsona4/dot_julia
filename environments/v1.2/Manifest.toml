@@ -1666,6 +1666,12 @@ git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"
 uuid = "40e3b903-d033-50b4-a0cc-940c62c95e31"
 version = "0.9.1"
 
+[[ClassImbalance]]
+deps = ["DataFrames", "Distributions", "LinearAlgebra", "Random", "Statistics", "StatsBase"]
+git-tree-sha1 = "e3e799a63349a10f17ab3ba9e6a2e02d3ea675bf"
+uuid = "04a18a73-7590-580c-b363-eeca0919eb2a"
+version = "0.7.0"
+
 [[CloudGraphs]]
 deps = ["Dates", "DocStringExtensions", "Graphs", "JSON", "Mongoc", "Neo4j", "ProtoBuf", "Test", "UUIDs"]
 git-tree-sha1 = "41129bf1af018b49855a846b1b3955cee980bf8a"
