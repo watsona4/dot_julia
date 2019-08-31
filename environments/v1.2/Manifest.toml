@@ -1690,6 +1690,12 @@ git-tree-sha1 = "90afaf04e7694514802cc21d93d2d2a2c891161d"
 uuid = "4f4ee721-4970-5af2-8560-6c1d960e3231"
 version = "0.14.4"
 
+[[ClinicalTrialUtilities]]
+deps = ["DataFrames", "Distributions", "QuadGK", "Random", "Roots", "SpecialFunctions", "Statistics", "StatsBase"]
+git-tree-sha1 = "f4c903e109e8871649b4767bf4acbce5b779b232"
+uuid = "535c2557-d7d0-564d-8ff9-4ae146c18cfe"
+version = "0.1.16"
+
 [[CloudGraphs]]
 deps = ["Dates", "DocStringExtensions", "Graphs", "JSON", "Mongoc", "Neo4j", "ProtoBuf", "Test", "UUIDs"]
 git-tree-sha1 = "41129bf1af018b49855a846b1b3955cee980bf8a"
@@ -1888,16 +1894,16 @@ uuid = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
 version = "0.6.5"
 
 [[DataFrames]]
-deps = ["CategoricalArrays", "Compat", "DataAPI", "InvertedIndices", "IteratorInterfaceExtensions", "Missings", "PooledArrays", "Printf", "REPL", "Reexport", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
-git-tree-sha1 = "934b75a90b6cb315f9ea0df961768a02c1da1612"
+deps = ["CategoricalArrays", "Compat", "IteratorInterfaceExtensions", "Missings", "PooledArrays", "Printf", "REPL", "Reexport", "SortingAlgorithms", "Statistics", "StatsBase", "TableTraits", "Tables", "Unicode"]
+git-tree-sha1 = "7c0f86a01be0f77cc7f3f9096ed875f1217487e1"
 uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
-version = "0.19.3"
+version = "0.18.4"
 
 [[DataFramesMeta]]
-deps = ["DataFrames", "Tables"]
-git-tree-sha1 = "8a6dd4f640dd6b729f5d1f0d80d475fbf60b32af"
+deps = ["DataFrames", "Random", "Statistics", "Tables", "Test"]
+git-tree-sha1 = "853109fcd1ac1a31c4fb757401a25f260e827aa1"
 uuid = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
-version = "0.5.0"
+version = "0.4.1"
 
 [[DataStreams]]
 deps = ["Missings", "WeakRefStrings"]
@@ -2824,12 +2830,6 @@ deps = ["Distances", "GeoStatsBase", "GeoStatsDevTools", "NearestNeighbors", "Re
 git-tree-sha1 = "2cd0e12ae1703e59173c62f71aa154929f87a95c"
 uuid = "6a8e3230-34bb-5a86-b9da-9f7447a06da5"
 version = "0.2.2"
-
-[[InvertedIndices]]
-deps = ["Test"]
-git-tree-sha1 = "15732c475062348b0165684ffe28e85ea8396afc"
-uuid = "41ab1584-1d38-5bbf-9106-f11c6c58b48f"
-version = "1.0.0"
 
 [[IterTools]]
 git-tree-sha1 = "2ebe60d7343962966d1779a74a760f13217a6901"

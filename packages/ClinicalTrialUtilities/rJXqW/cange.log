@@ -1,0 +1,129 @@
+v0.1.16
+
+  - Split PK/PD
+  - New PD param
+  - Column dictionary
+
+v0.1.15
+
+  - Add RR CI Katz Test
+  - Julian function names (part)
+  - Rename descriptives -> descriptive
+  - export freque, contab
+  - minor changes, bugfix, code cleaning
+
+
+v0.1.14
+  - Add compat to Project.toml
+  - Julian function names (part)
+  - descriptive_!() -> descriptive_()
+  - randomtable() included and add test
+
+v0.1.13
+  - MN DIFF CI optimization
+  - Index for ConfInt
+  - Change test tolerance
+  - Check alpha for CI
+  - descriptives() -  type fix
+  - freque() - add test
+  - contab() - initial commit + test
+  - Randomization - initial commit (alpha)
+  - Pharmacodinamic for nca() -  baseline & threshold AUC, Time
+  - Add test data
+  - Minor changes
+
+v0.1.12
+  - add MOVER OR CI
+  - add MN RR CI
+  - MN OR - change algo, for old algo use :mn2
+  - MN Diff - code optimization
+  - Mee|FM Diff- code optimization
+  - Code cleaning and cosmetics
+  - add tests and testdata
+  - HTML Export function
+  - Frequency initial commit - alpha
+
+v0.1.11
+
+  - nca hotfix
+  - add test
+
+  - descriptives()
+  - html export - initial, not final
+  - StatsBase, Statistics in deps
+  - change documenting
+  - add test
+  - code cosmetics and fix
+
+
+v0.1.10
+
+- add Cochran–Mantel–Haenszel confidence intervals
+- add documentation and comments
+- improve coverage
+- add tests
+- code cosmetics
+
+
+v0.1.9
+
+- add PK module
+- pooledCV
+- add DataFrames to dependencies
+- Simulation unification
+- logdiff set false by default in ctSampleN, ctPower
+- README.md update and fix
+
+
+v0.1.8
+
+  - bugfix (meanNormCI, text output)
+  - wald ci include
+  - add test
+  - move ConfInt to main module
+  - ci2cv
+  - new designs in designProp
+
+
+v1.0.7
+
+Add sub-module CI for confidence interval computation as part of simulation functions SIM.
+  - add Roots in dependencies for mee/fm score ci calc
+  - add Random in dependencies for simulations
+  - remove struct with sampleSize wrapper
+  - change name sampleSize -> ctSampleN
+  - change name powerTOST -> bePower
+  - change all tokens from string to symol
+  - add sd2cv function
+  - add cv2sd function
+  - add ms2cv function
+  - add cv2ms function
+  - add SIM submodule
+    - add bePower function
+    - add ctBinPower function
+  - add CI submodule
+    - oneProp
+    - twoProp
+    - oneMean
+    - twoMeans
+  - PowerTOST optimizations
+  - add test procedure
+  - ClinicalTrialUtilities.jl reconfigure
+  - add documentation
+
+v1.0.6
+
+Robust functions: sampleSize, ctPower, powerTOST, beSampleN
+Canges:
+- SampleSize add McNM test;
+- SampleSize add text output;
+- ctPower add McNM test;
+- ctPower add text output;
+- powerTOST add designs: parallel, 2x2x4, 2x4x4, 2x2x3, 2x3x3
+- beSampleN add designs: parallel, 2x2x4, 2x4x4, 2x2x3, 2x3x3
+- beSampleN add text output
+- owensQ add solution for a!=0
+- optimizations
+- bugfix, code cosmetics and minor changes
+- Add documentation
+- Add tests
