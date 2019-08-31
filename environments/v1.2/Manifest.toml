@@ -1350,6 +1350,12 @@ git-tree-sha1 = "70f666f2c69102c53636dfe2139762d277a10102"
 uuid = "0a46da34-8e4b-519e-b418-48813639ff34"
 version = "0.5.1"
 
+[[CSFML]]
+deps = ["BinaryProvider", "CEnum", "Libdl"]
+git-tree-sha1 = "151d7b4f240e320df2305150187c4f04c2c784e5"
+uuid = "538df835-4bef-5bfa-b281-4025a4f7e8ff"
+version = "0.1.1"
+
 [[CSSUtil]]
 deps = ["Colors", "Compat", "JSON", "Measures", "Pkg", "WebIO"]
 git-tree-sha1 = "ff13fd99e4dd54f56eb064815f843bc992a871a2"

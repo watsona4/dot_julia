@@ -38365,3 +38365,103 @@ Installing CSDP
 │  [9] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/CSDP/LdybZ/deps/build.jl:49
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master c55e76aab] added package CSDP
+ 60 files changed, 3402 insertions(+)
+ create mode 100644 compiled/v1.2/Glob/3FzEV.ji
+ create mode 100644 packages/CSDP/LdybZ/.gitignore
+ create mode 100644 packages/CSDP/LdybZ/.travis.yml
+ create mode 100644 packages/CSDP/LdybZ/LICENSE.md
+ create mode 100644 packages/CSDP/LdybZ/Project.toml
+ create mode 100644 packages/CSDP/LdybZ/README.md
+ create mode 100644 packages/CSDP/LdybZ/appveyor.yml
+ create mode 100644 packages/CSDP/LdybZ/deps/.deps.jl
+ create mode 100644 packages/CSDP/LdybZ/deps/.gitignore
+ create mode 100644 packages/CSDP/LdybZ/deps/.unittest.sh
+ create mode 100644 packages/CSDP/LdybZ/deps/build.jl
+ create mode 100644 packages/CSDP/LdybZ/deps/clang.jl
+ create mode 100644 packages/CSDP/LdybZ/deps/compile.jl
+ create mode 100644 packages/CSDP/LdybZ/deps/constants.jl
+ create mode 100644 packages/CSDP/LdybZ/docs/notes.md
+ create mode 100644 packages/CSDP/LdybZ/examples/.gitignore
+ create mode 100644 packages/CSDP/LdybZ/examples/example.jl
+ create mode 100644 packages/CSDP/LdybZ/examples/prob-expected.dat-s
+ create mode 100644 packages/CSDP/LdybZ/examples/prob-expected.sol
+ create mode 100644 packages/CSDP/LdybZ/src/CSDP.jl
+ create mode 100644 packages/CSDP/LdybZ/src/MOI_wrapper.jl
+ create mode 100644 packages/CSDP/LdybZ/src/MPB_wrapper.jl
+ create mode 100644 packages/CSDP/LdybZ/src/blockdiag.jl
+ create mode 100644 packages/CSDP/LdybZ/src/blockmat.h.jl
+ create mode 100644 packages/CSDP/LdybZ/src/blockmat.jl
+ create mode 100644 packages/CSDP/LdybZ/src/debug-mat.jl
+ create mode 100644 packages/CSDP/LdybZ/src/declarations.h.jl
+ create mode 100644 packages/CSDP/LdybZ/src/declarations.jl
+ create mode 100644 packages/CSDP/LdybZ/src/options.jl
+ create mode 100644 packages/CSDP/LdybZ/test/.gitignore
+ create mode 100644 packages/CSDP/LdybZ/test/MOI_wrapper.jl
+ create mode 100644 packages/CSDP/LdybZ/test/MPB_wrapper.jl
+ create mode 100644 packages/CSDP/LdybZ/test/bug.jl
+ create mode 100644 packages/CSDP/LdybZ/test/check_blas.jl
+ create mode 100644 packages/CSDP/LdybZ/test/jl_ref.jl
+ create mode 100644 packages/CSDP/LdybZ/test/param.csdp
+ create mode 100644 packages/CSDP/LdybZ/test/rebuild.jl
+ create mode 100644 packages/CSDP/LdybZ/test/ref.c
+ create mode 100644 packages/CSDP/LdybZ/test/runtests.jl
+ create mode 100644 packages/CSDP/LdybZ/test/triu.jl
+ create mode 100644 packages/CSDP/LdybZ/test/writesol.jl
+ create mode 100644 packages/SemidefiniteModels/31KiO/.codecov.yml
+ create mode 100644 packages/SemidefiniteModels/31KiO/.gitignore
+ create mode 100644 packages/SemidefiniteModels/31KiO/.travis.yml
+ create mode 100644 packages/SemidefiniteModels/31KiO/LICENSE.md
+ create mode 100644 packages/SemidefiniteModels/31KiO/README.md
+ create mode 100644 packages/SemidefiniteModels/31KiO/REQUIRE
+ create mode 100644 packages/SemidefiniteModels/31KiO/appveyor.yml
+ create mode 100644 packages/SemidefiniteModels/31KiO/src/SD.jl
+ create mode 100644 packages/SemidefiniteModels/31KiO/src/SemidefiniteModels.jl
+ create mode 100644 packages/SemidefiniteModels/31KiO/src/conic_sdpa.jl
+ create mode 100644 packages/SemidefiniteModels/31KiO/src/sd_to_conic.jl
+ create mode 100644 packages/SemidefiniteModels/31KiO/test/REQUIRE
+ create mode 100644 packages/SemidefiniteModels/31KiO/test/prob.dat-s
+ create mode 100644 packages/SemidefiniteModels/31KiO/test/runtests.jl
+ create mode 100644 packages/SemidefiniteModels/31KiO/test/sdinterface.jl
+To https://github.com/watsona4/dot_julia.git
+   3041d71fc..c55e76aab  master -> master
+Progress:  10%|████▏                                    |  ETA: 3 days, 11:31:29[K
+Installing CSFML
+ Resolving package versions...
+ Installed CSFML ─ v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [538df835] + CSFML v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [538df835] + CSFML v0.1.1
+  Building CSFML → `~/.julia/packages/CSFML/KI9Y5/deps/build.log`
+┌ Error: Error building `CSFML`: 
+│ [ Info: Downloading https://github.com/Gnimuc/SFMLBuilder/releases/download/v2.5-4/SFML.v2.5.1.x86_64-linux-gnu-gcc7.tar.gz to /home/ec2-user/.julia/packages/CSFML/KI9Y5/deps/usr/downloads/SFML.v2.5.1.x86_64-linux-gnu-gcc7.tar.gz...
+│ ERROR: LoadError: LibraryProduct(nothing, ["libsfml-audio", "sfml-audio-2"], :libsfml_audio, "Prefix(/home/ec2-user/.julia/packages/CSFML/KI9Y5/deps/usr)") is not satisfied, cannot generate deps.jl!
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] #write_deps_file#152(::Bool, ::typeof(write_deps_file), ::String, ::Array{LibraryProduct,1}) at /home/ec2-user/.julia/packages/BinaryProvider/TcAwt/src/Products.jl:414
+│  [3] (::getfield(BinaryProvider, Symbol("#kw##write_deps_file")))(::NamedTuple{(:verbose,),Tuple{Bool}}, ::typeof(write_deps_file), ::String, ::Array{LibraryProduct,1}) at ./none:0
+│  [4] top-level scope at /home/ec2-user/.julia/packages/CSFML/KI9Y5/deps/build.jl:48
+│  [5] include at ./boot.jl:328 [inlined]
+│  [6] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [7] include(::Module, ::String) at ./Base.jl:31
+│  [8] include(::String) at ./client.jl:431
+│  [9] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CSFML/KI9Y5/deps/build.jl:48
+│ [19:02:51] #=#=#                                                                         [19:02:51] ##O#- #                                                                       [19:02:51] ##O=#  #                                                                      [19:02:51] #=#=-#  #                                                                     [19:02:51] [19:02:51] ####################                                                      28.2%[19:02:51] ######################################################################## 100.0%
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CSFML → `~/.julia/packages/CSFML/KI9Y5/deps/build.log`
+┌ Error: Error building `CSFML`: 
+│ ERROR: LoadError: LibraryProduct(nothing, ["libsfml-audio", "sfml-audio-2"], :libsfml_audio, "Prefix(/home/ec2-user/.julia/packages/CSFML/KI9Y5/deps/usr)") is not satisfied, cannot generate deps.jl!
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] #write_deps_file#152(::Bool, ::typeof(write_deps_file), ::String, ::Array{LibraryProduct,1}) at /home/ec2-user/.julia/packages/BinaryProvider/TcAwt/src/Products.jl:414
+│  [3] (::getfield(BinaryProvider, Symbol("#kw##write_deps_file")))(::NamedTuple{(:verbose,),Tuple{Bool}}, ::typeof(write_deps_file), ::String, ::Array{LibraryProduct,1}) at ./none:0
+│  [4] top-level scope at /home/ec2-user/.julia/packages/CSFML/KI9Y5/deps/build.jl:48
+│  [5] include at ./boot.jl:328 [inlined]
+│  [6] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [7] include(::Module, ::String) at ./Base.jl:31
+│  [8] include(::String) at ./client.jl:431
+│  [9] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CSFML/KI9Y5/deps/build.jl:48
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
