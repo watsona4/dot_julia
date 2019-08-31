@@ -644,6 +644,12 @@ git-tree-sha1 = "5dd50891df13013c7551fd92b1f37f4cdac9976b"
 uuid = "615b485c-77d9-11e9-182a-fb54b95fd2b6"
 version = "0.1.0"
 
+[[BGZFStreams]]
+deps = ["CodecZlib", "Test"]
+git-tree-sha1 = "b0e322aef9f1895a09a0c48a118111fd509f666a"
+uuid = "28d598bf-9b8f-59f1-b38c-5a06b4a0f5e6"
+version = "0.3.0"
+
 [[BSON]]
 deps = ["Profile", "Test"]
 git-tree-sha1 = "6453cef4f9cb8ded8e28e4d6d12e11e20eb692ea"
