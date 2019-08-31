@@ -48169,3 +48169,28 @@ Installing ChangePrecision
   [3cb15238] + ChangePrecision v1.0.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [3cb15238] + ChangePrecision v1.0.0
+[master f331dea6a] added package ChangePrecision
+ 14 files changed, 501 insertions(+)
+ create mode 100644 packages/ChangePrecision/LRSfr/.codecov.yml
+ create mode 100644 packages/ChangePrecision/LRSfr/.gitignore
+ create mode 100644 packages/ChangePrecision/LRSfr/.travis.yml
+ create mode 100644 packages/ChangePrecision/LRSfr/LICENSE.md
+ create mode 100644 packages/ChangePrecision/LRSfr/README.md
+ create mode 100644 packages/ChangePrecision/LRSfr/REQUIRE
+ create mode 100644 packages/ChangePrecision/LRSfr/appveyor.yml
+ create mode 100644 packages/ChangePrecision/LRSfr/src/ChangePrecision.jl
+ create mode 100644 packages/ChangePrecision/LRSfr/test/foo.jl
+ create mode 100644 packages/ChangePrecision/LRSfr/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   532ba5fc3..f331dea6a  master -> master
+Progress:  12%|████▉                                    |  ETA: 3 days, 11:32:57[K
+Installing Changepoints
+ Resolving package versions...
+ Installed Changepoints ─ v0.3.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [98700a41] + Changepoints v0.3.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [98700a41] + Changepoints v0.3.1
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`

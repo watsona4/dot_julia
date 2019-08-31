@@ -1,0 +1,12 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.7
+  - 1.0
+  - nightly
+notifications:
+  email: false
+#script:
+#  - julia -e 'Pkg.init(); Pkg.clone(pwd()); Pkg.test("Changepoint")'
