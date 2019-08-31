@@ -1309,6 +1309,12 @@ git-tree-sha1 = "baf8790d4796845b7a2633bf8664eca7056ef2ea"
 uuid = "19bfd68b-3085-5123-a7aa-2ec83b867ca4"
 version = "1.0.1"
 
+[[COSMO]]
+deps = ["LinearAlgebra", "MathOptInterface", "Pkg", "Printf", "QDLDL", "Random", "SparseArrays", "Statistics", "SuiteSparse", "Test", "UnsafeArrays"]
+git-tree-sha1 = "b756234774b87bc97d3b8626f29b7f9119eda5df"
+uuid = "1e616198-aa4e-51ec-90a2-23f7fbd31d8d"
+version = "0.5.0"
+
 [[CPUTime]]
 git-tree-sha1 = "2dcc50ea6a0a1ef6440d6eecd0fe3813e5671f45"
 uuid = "a9c8d775-2e2e-55fc-8582-045d282d599e"
@@ -3069,6 +3075,12 @@ git-tree-sha1 = "6e5bac1b1faf3575731a6a5b76f638f2389561d3"
 uuid = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 version = "1.91.2"
 
+[[QDLDL]]
+deps = ["AMD", "LinearAlgebra", "Random", "SparseArrays", "Test"]
+git-tree-sha1 = "bdd19e6df448f46d994c7db6c6e7d0dae8b587e8"
+uuid = "bfc457fd-c171-5ab7-bd9e-d5dbfc242d63"
+version = "0.1.3"
+
 [[QuadGK]]
 deps = ["DataStructures", "LinearAlgebra", "Test"]
 git-tree-sha1 = "3ce467a8e76c6030d4c3786e7d3a73442017cdc0"
@@ -3598,9 +3610,10 @@ uuid = "6112ee07-acf9-5e0f-b108-d242c714bf9f"
 version = "0.3.0"
 
 [[UnsafeArrays]]
-git-tree-sha1 = "417100df8567333bff1b851008b1441a2be08da0"
+deps = ["Compat"]
+git-tree-sha1 = "460f4f7bab69dd47512ac8ec4b2c14b28c6cb4a0"
 uuid = "c4a57d5a-5b31-53a6-b365-19f8c011fbd6"
-version = "0.4.0"
+version = "0.3.0"
 
 [[ValueHistories]]
 deps = ["DataStructures", "Random", "RecipesBase", "Test"]
