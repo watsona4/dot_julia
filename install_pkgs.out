@@ -32474,3 +32474,39 @@ Installing BitConverter
   [3a3ce9e8] + BitConverter v0.1.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [3a3ce9e8] + BitConverter v0.1.1
+[master 44cf274a3] added package BitConverter
+ 28 files changed, 506 insertions(+)
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/FETCH_HEAD
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/HEAD
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/config
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/description
+ create mode 100755 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/hooks/README.sample
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/index
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/info/exclude
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/objects/pack/pack-16a516139ba0af4b6eb9b9a13e9c489a6414c3bb.idx
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/objects/pack/pack-16a516139ba0af4b6eb9b9a13e9c489a6414c3bb.pack
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/refs/heads/master
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/refs/remotes/origin/master
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/refs/tags/v0.1.0
+ create mode 100644 clones/3a3ce9e8-98e7-11e9-0fa0-055639f146d3/refs/tags/v0.1.1
+ create mode 100644 packages/BitConverter/DrTl5/.gitignore
+ create mode 100644 packages/BitConverter/DrTl5/.gitlab-ci.yml
+ create mode 100644 packages/BitConverter/DrTl5/LICENSE
+ create mode 100644 packages/BitConverter/DrTl5/Project.toml
+ create mode 100644 packages/BitConverter/DrTl5/README.md
+ create mode 100644 packages/BitConverter/DrTl5/docs/make.jl
+ create mode 100644 packages/BitConverter/DrTl5/docs/src/index.md
+ create mode 100644 packages/BitConverter/DrTl5/src/BitConverter.jl
+ create mode 100644 packages/BitConverter/DrTl5/src/alt.jl
+ create mode 100644 packages/BitConverter/DrTl5/test/runtests.jl
+ create mode 100644 packages/BitConverter/DrTl5/test/test_Integer.jl
+To https://github.com/watsona4/dot_julia.git
+   8b64c5453..44cf274a3  master -> master
+Progress:   7%|███                                      |  ETA: 4 days, 1:25:52[K
+Installing BitFlags
+ Resolving package versions...
+ Installed BitFlags ─ v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [d1d4a3ce] + BitFlags v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [d1d4a3ce] + BitFlags v0.1.1
