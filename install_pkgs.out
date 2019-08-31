@@ -30610,3 +30610,27 @@ Installing BigCombinatorics
   [7b33fef7] + BigCombinatorics v0.1.4
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [7b33fef7] + BigCombinatorics v0.1.4
+[master 631cc3ad4] added package BigCombinatorics
+ 13 files changed, 916 insertions(+)
+ create mode 100644 packages/BigCombinatorics/39mB6/.codecov.yml
+ create mode 100644 packages/BigCombinatorics/39mB6/.travis.yml
+ create mode 100644 packages/BigCombinatorics/39mB6/LICENSE
+ create mode 100644 packages/BigCombinatorics/39mB6/README.md
+ create mode 100644 packages/BigCombinatorics/39mB6/REQUIRE
+ create mode 100644 packages/BigCombinatorics/39mB6/src/BigCombinatorics.jl
+ create mode 100644 packages/BigCombinatorics/39mB6/src/StirlingTest.jl
+ create mode 100644 packages/BigCombinatorics/39mB6/src/eulerian.jl
+ create mode 100644 packages/BigCombinatorics/39mB6/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   febb547a6..631cc3ad4  master -> master
+Progress:   6%|██▋                                      |  ETA: 4 days, 7:50:26[K
+Installing Bijectors
+ Resolving package versions...
+ Installed Bijectors ─ v0.3.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [76274a88] + Bijectors v0.3.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [76274a88] + Bijectors v0.3.2
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
