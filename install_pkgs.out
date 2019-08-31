@@ -29408,3 +29408,46 @@ Installing BatchedRoutines
   [a9ab73d0] + BatchedRoutines v0.1.0
   Building BatchedRoutines → `~/.julia/packages/BatchedRoutines/5YXRI/deps/build.log`
   Building BatchedRoutines → `~/.julia/packages/BatchedRoutines/5YXRI/deps/build.log`
+[master fc2d70d04] added package BatchedRoutines
+ 23 files changed, 639 insertions(+)
+ create mode 100644 packages/BatchedRoutines/5YXRI/.gitignore
+ create mode 100644 packages/BatchedRoutines/5YXRI/.travis.yml
+ create mode 100644 packages/BatchedRoutines/5YXRI/LICENSE
+ create mode 100644 packages/BatchedRoutines/5YXRI/README.md
+ create mode 100644 packages/BatchedRoutines/5YXRI/REQUIRE
+ create mode 100644 packages/BatchedRoutines/5YXRI/deps/README.md
+ create mode 100644 packages/BatchedRoutines/5YXRI/deps/build.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/src/BatchedRoutines.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/src/blas.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/src/cuda/blas.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/src/cuda/cuda.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/src/cuda/error.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/src/cuda/linalg.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/src/lapack.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/src/linalg.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/test/blas.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/test/cuda/blas.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/test/cuda/cuda.jl
+ create mode 100644 packages/BatchedRoutines/5YXRI/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   fca956f57..fc2d70d04  master -> master
+Progress:   6%|██▎                                      |  ETA: 4 days, 14:41:42[K
+Installing BayesNets
+ Resolving package versions...
+ Installed TikzGraphs ─── v1.0.1
+ Installed Discretizers ─ v3.1.0
+ Installed BayesNets ──── v3.1.0
+ Installed TikzPictures ─ v3.0.5
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [ba4760a4] + BayesNets v3.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [ba4760a4] + BayesNets v3.1.0
+  [6e83dbb3] + Discretizers v3.1.0
+  [b4f28e30] + TikzGraphs v1.0.1
+  [37f6aa50] + TikzPictures v3.0.5
+  Building BayesNets → `~/.julia/packages/BayesNets/S7a4X/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building LightXML ────────→ `~/.julia/packages/LightXML/k3mJ4/deps/build.log`
+  Building BayesNets ───────→ `~/.julia/packages/BayesNets/S7a4X/deps/build.log`

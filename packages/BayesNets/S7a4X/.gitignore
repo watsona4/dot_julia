@@ -1,0 +1,11 @@
+# memory analysis
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+# swap files from vim
+*.swp
+*.swo
+
+.DS_Store
+
