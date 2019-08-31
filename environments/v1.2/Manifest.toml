@@ -971,6 +971,12 @@ git-tree-sha1 = "acb6bec911644c4292635cbda125594304f452ad"
 uuid = "e91bece4-a713-11e8-30d4-f1bdfdaa459e"
 version = "0.1.0"
 
+[[BitBasis]]
+deps = ["LinearAlgebra", "LuxurySparse", "StaticArrays"]
+git-tree-sha1 = "166e82590004c34afcc985ea9b633ebd6ec0292c"
+uuid = "50ba71b6-fa0f-514d-ae9a-0916efc90dcf"
+version = "0.6.0"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"
@@ -2247,6 +2253,12 @@ deps = ["FFTW", "FillArrays", "LinearAlgebra", "Nullables", "Random", "SparseArr
 git-tree-sha1 = "4079dfefba2cf541e0770e6426f7756ee90efbe8"
 uuid = "898213cb-b102-5a47-900c-97e73b919f73"
 version = "0.2.3"
+
+[[LuxurySparse]]
+deps = ["FillArrays", "LinearAlgebra", "Random", "SparseArrays", "StaticArrays"]
+git-tree-sha1 = "bf4fe79cdbcadaa6114faaf5189521337e6e24ea"
+uuid = "d05aeea4-b7d4-55ac-b691-9e7fabb07ba2"
+version = "0.4.1"
 
 [[MAT]]
 deps = ["BufferedStreams", "HDF5", "Libz", "LinearAlgebra", "SparseArrays", "Test"]

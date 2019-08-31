@@ -32355,3 +32355,35 @@ Installing BisectPy
   [e91bece4] + BisectPy v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [e91bece4] + BisectPy v0.1.0
+[master 11f119e01] added package BisectPy
+ 22 files changed, 765 insertions(+)
+ create mode 100644 packages/BisectPy/BIytf/.appveyor.yml
+ create mode 100644 packages/BisectPy/BIytf/.gitignore
+ create mode 100644 packages/BisectPy/BIytf/.travis.yml
+ create mode 100644 packages/BisectPy/BIytf/LICENSE
+ create mode 100644 packages/BisectPy/BIytf/Project.toml
+ create mode 100644 packages/BisectPy/BIytf/README.md
+ create mode 100644 packages/BisectPy/BIytf/docs/Project.toml
+ create mode 100644 packages/BisectPy/BIytf/docs/make.jl
+ create mode 100644 packages/BisectPy/BIytf/docs/src/Bisect.md
+ create mode 100644 packages/BisectPy/BIytf/docs/src/Insort.md
+ create mode 100644 packages/BisectPy/BIytf/docs/src/index.md
+ create mode 100644 packages/BisectPy/BIytf/src/Bisect.jl
+ create mode 100644 packages/BisectPy/BIytf/src/BisectPy.jl
+ create mode 100644 packages/BisectPy/BIytf/src/Find.jl
+ create mode 100644 packages/BisectPy/BIytf/src/Insort.jl
+ create mode 100644 packages/BisectPy/BIytf/test/bisect_left.jl
+ create mode 100644 packages/BisectPy/BIytf/test/bisect_right.jl
+ create mode 100644 packages/BisectPy/BIytf/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   170a4ca18..11f119e01  master -> master
+Progress:   7%|███                                      |  ETA: 4 days, 2:06:09[K
+Installing BitBasis
+ Resolving package versions...
+ Installed BitBasis ───── v0.6.0
+ Installed LuxurySparse ─ v0.4.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [50ba71b6] + BitBasis v0.6.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [50ba71b6] + BitBasis v0.6.0
+  [d05aeea4] + LuxurySparse v0.4.1
