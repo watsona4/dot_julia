@@ -2052,6 +2052,12 @@ git-tree-sha1 = "ae07311d4b849473a9e3a67121a922f9b9efeb6d"
 uuid = "f65535da-76fb-5f13-bab9-19810c17039a"
 version = "0.12.4"
 
+[[ConvexBodyProximityQueries]]
+deps = ["LinearAlgebra", "Random", "RecipesBase", "StaticArrays"]
+git-tree-sha1 = "667d06e03b07219727f87ee0c4cfab9cefe7b586"
+uuid = "e9983d58-8b29-5530-8046-db49618142f9"
+version = "0.1.2"
+
 [[CoordinateTransformations]]
 deps = ["Compat", "Rotations", "StaticArrays"]
 git-tree-sha1 = "47f05d0b7f4999609f92e657147df000818c1f24"
