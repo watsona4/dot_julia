@@ -400,6 +400,12 @@ git-tree-sha1 = "63ad68e7593899ef072f9eabf9f65f25c90a89f5"
 uuid = "07bf71a7-21be-5f6a-a6d1-44595bb4f960"
 version = "0.2.2"
 
+[[ArcadeLearningEnvironment]]
+deps = ["BinDeps", "Compat", "Libdl"]
+git-tree-sha1 = "b5ceb6d84ce6f7bed13bd0560c420cec4520b5a3"
+uuid = "b7f77d8d-088d-5e02-8ac0-89aab2acc977"
+version = "0.2.1"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
