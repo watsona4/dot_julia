@@ -1559,6 +1559,12 @@ git-tree-sha1 = "b429a0eefe416343d0e8bfcee70fd378f6db2706"
 uuid = "b1f25513-c649-51ee-8a1c-0e98d01ae897"
 version = "0.4.1"
 
+[[Cbc]]
+deps = ["BinaryProvider", "Libdl", "MathOptInterface", "MathProgBase", "SparseArrays", "Test"]
+git-tree-sha1 = "323f67d761515264966140f673fff0f7368bc3ec"
+uuid = "9961bab8-2fa3-5c5a-9d89-47fab24efd76"
+version = "0.6.4"
+
 [[ChaosTools]]
 deps = ["Combinatorics", "DSP", "DiffEqBase", "Distances", "Distributions", "DynamicalSystemsBase", "ForwardDiff", "LinearAlgebra", "LombScargle", "NearestNeighbors", "Random", "Reexport", "Roots", "StaticArrays", "Statistics", "StatsBase"]
 git-tree-sha1 = "a76653daa84ba7153a4498d614e4eef9526e5334"

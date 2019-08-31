@@ -47746,3 +47746,48 @@ Installing CausalityToolsBase
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
   Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
   Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+[master 586bc7a18] added package CausalityToolsBase
+ 31 files changed, 3542 insertions(+)
+ create mode 100755 packages/CausalityToolsBase/ZBsl5/.travis.yml
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/CHANGELOG.md
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/Manifest.toml
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/Project.toml
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/README.md
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/REQUIRE
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/CausalityToolsBase.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/dimension_estimation.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/discretization/bin_encode.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/discretization/binning_schemes.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/discretization/discretization.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/discretization/generate_gridpoints.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/discretization/histograms_and_binvisits.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/discretization/minima_edgelengths.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/kerneldensity/kerneldensity.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/mutual_information/mutualinformation.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/reconstruction/custom_reconstruction.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/src/simplex_intersections.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/test/runtests.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/test/test_bin_encode.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/test/test_binnings.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/test/test_custom_reconstruction.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/test/test_generate_gridpoints.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/test/test_histograms.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/test/test_kerneldensity.jl
+ create mode 100644 packages/CausalityToolsBase/ZBsl5/test/test_mutualinfo.jl
+ create mode 100755 packages/CausalityToolsBase/ZBsl5/test/test_optimal_embedding_params.jl
+To https://github.com/watsona4/dot_julia.git
+   d2b021a5f..586bc7a18  master -> master
+Progress:  12%|████▉                                    |  ETA: 3 days, 12:39:04[K
+Installing CauseMap
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CauseMap [0dca132f]:\n CauseMap [0dca132f] log:\n ├─possible versions are: 0.0.1-0.0.3 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.3\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  12%|████▉                                    |  ETA: 3 days, 12:24:56[K
+Installing Cbc
+ Resolving package versions...
+ Installed Cbc ─ v0.6.4
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9961bab8] + Cbc v0.6.4
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9961bab8] + Cbc v0.6.4
+  Building Cbc → `~/.julia/packages/Cbc/8nwnT/deps/build.log`
+  Building Cbc → `~/.julia/packages/Cbc/8nwnT/deps/build.log`
