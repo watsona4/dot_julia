@@ -44484,3 +44484,48 @@ Installing CUTEst
 │ 
 │ Full log at /home/ec2-user/.julia/packages/CUTEst/QF6SY/deps/build.log
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master 95e839288] added package CUTEst
+ 35 files changed, 45777 insertions(+)
+ create mode 100644 packages/CUTEst/QF6SY/.gitignore
+ create mode 100644 packages/CUTEst/QF6SY/.travis.yml
+ create mode 100644 packages/CUTEst/QF6SY/.zenodo.json
+ create mode 100644 packages/CUTEst/QF6SY/LICENSE.md
+ create mode 100644 packages/CUTEst/QF6SY/Project.toml
+ create mode 100644 packages/CUTEst/QF6SY/README.md
+ create mode 100644 packages/CUTEst/QF6SY/deps/build.jl
+ create mode 100644 packages/CUTEst/QF6SY/docs/Project.toml
+ create mode 100644 packages/CUTEst/QF6SY/docs/make.jl
+ create mode 100644 packages/CUTEst/QF6SY/docs/src/api.md
+ create mode 100644 packages/CUTEst/QF6SY/docs/src/assets/logo.png
+ create mode 100644 packages/CUTEst/QF6SY/docs/src/assets/style.css
+ create mode 100644 packages/CUTEst/QF6SY/docs/src/core.md
+ create mode 100644 packages/CUTEst/QF6SY/docs/src/index.md
+ create mode 100644 packages/CUTEst/QF6SY/docs/src/reference.md
+ create mode 100644 packages/CUTEst/QF6SY/docs/src/tutorial.md
+ create mode 100644 packages/CUTEst/QF6SY/src/CUTEst.jl
+ create mode 100644 packages/CUTEst/QF6SY/src/classf.json
+ create mode 100644 packages/CUTEst/QF6SY/src/classification.jl
+ create mode 100644 packages/CUTEst/QF6SY/src/core_interface.jl
+ create mode 100644 packages/CUTEst/QF6SY/src/create_class.jl
+ create mode 100644 packages/CUTEst/QF6SY/src/julia_interface.jl
+ create mode 100644 packages/CUTEst/QF6SY/test/consistency.jl
+ create mode 100644 packages/CUTEst/QF6SY/test/coverage.jl
+ create mode 100644 packages/CUTEst/QF6SY/test/runtests.jl
+ create mode 100644 packages/CUTEst/QF6SY/test/test_core.jl
+ create mode 100644 packages/CUTEst/QF6SY/test/test_ipopt.jl
+ create mode 100644 packages/CUTEst/QF6SY/test/test_julia.jl
+ create mode 100644 packages/CUTEst/QF6SY/test/test_memory_of_coord.jl
+ create mode 100644 packages/CUTEst/QF6SY/test/test_select.jl
+ create mode 100644 packages/CUTEst/QF6SY/test/test_view_subarray.jl
+To https://github.com/watsona4/dot_julia.git
+   b52a0150f..95e839288  master -> master
+Progress:  11%|████▍                                    |  ETA: 3 days, 16:01:23[K
+Installing CVXOPT
+ Resolving package versions...
+ Installed CVXOPT ─ v0.3.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [1a0d837d] + CVXOPT v0.3.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [1a0d837d] + CVXOPT v0.3.1
+  Building Conda ─→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building PyCall → `~/.julia/packages/PyCall/ttONZ/deps/build.log`
