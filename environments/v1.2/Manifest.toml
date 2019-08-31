@@ -1999,6 +1999,12 @@ git-tree-sha1 = "f208756f36282e2a6acdd7d3bdf384a6c574d007"
 uuid = "c16e2fb6-b1e3-11e9-21be-0f591a3b69ea"
 version = "0.1.0"
 
+[[ConjugatePriors]]
+deps = ["Distributions", "LinearAlgebra", "PDMats", "SpecialFunctions", "Statistics", "StatsFuns"]
+git-tree-sha1 = "bcfc470f3aca36a78c1736fbfe669406e2327ea6"
+uuid = "1624bea9-42b1-5fc1-afd3-e96f729c8d6c"
+version = "0.4.0"
+
 [[Contour]]
 deps = ["LinearAlgebra", "StaticArrays", "Test"]
 git-tree-sha1 = "b974e164358fea753ef853ce7bad97afec15bb80"
