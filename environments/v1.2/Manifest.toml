@@ -138,6 +138,12 @@ git-tree-sha1 = "1b1151051b2cb5085f021f8a0bf37205acd83e67"
 uuid = "537997a7-5e4e-5d89-9595-2241ea00577e"
 version = "0.9.9"
 
+[[AbstractTensors]]
+deps = ["DirectSum", "LinearAlgebra"]
+git-tree-sha1 = "22ad02199c28b736546a7b7fce3072f5750f9125"
+uuid = "a8e43f4a-99b7-5565-8bf1-0165161caaea"
+version = "0.2.1"
+
 [[Adapt]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "82dab828020b872fa9efd3abec1152b075bc7cbf"
@@ -373,6 +379,12 @@ deps = ["Random", "Test"]
 git-tree-sha1 = "dc0869fb2f5b23466b32ea799bd82c76480167f7"
 uuid = "b552c78f-8df3-52c6-915a-8e097449b14b"
 version = "0.0.10"
+
+[[DirectSum]]
+deps = ["LinearAlgebra", "StaticArrays"]
+git-tree-sha1 = "641f8b5d15185c29b0a409adb9f59c01b48ee0e4"
+uuid = "22fd7b30-a8c0-5bf2-aabe-97783860d07c"
+version = "0.3.0"
 
 [[Distributed]]
 deps = ["Random", "Serialization", "Sockets"]
