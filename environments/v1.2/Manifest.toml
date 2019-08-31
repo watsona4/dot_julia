@@ -1416,6 +1416,12 @@ git-tree-sha1 = "debfe5af100e335b5df7109184e2e450f616dd1f"
 uuid = "be33ccc6-a3ff-5ff2-a52e-74243cff1e17"
 version = "0.9.1"
 
+[[CUTEst]]
+deps = ["BinDeps", "DataStructures", "Homebrew", "JSON", "Libdl", "LinearAlgebra", "NLPModels", "SparseArrays"]
+git-tree-sha1 = "0fcf178bf14829a917fa39c40bd8d64a8e57e3ae"
+uuid = "1b53aba6-35b6-5f92-a507-53c67d53f819"
+version = "0.6.2"
+
 [[Cairo]]
 deps = ["BinDeps", "Colors", "Compat", "Graphics", "Homebrew", "Libdl", "Pkg", "WinRPM"]
 git-tree-sha1 = "e577cb41e7e2641f4b97f1b6dbcb9a69c9288330"
