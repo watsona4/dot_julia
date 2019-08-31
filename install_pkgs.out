@@ -32555,3 +32555,15 @@ Installing BitIntegers
   [c3b6d118] + BitIntegers v0.2.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 29ed3c59c] added package BitIntegers
+ 3 files changed, 30 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   0f830d9c4..29ed3c59c  master -> master
+Progress:   7%|███                                      |  ETA: 4 days, 0:12:46[K
+Installing BitOperations
+ Resolving package versions...
+ Installed BitOperations ─ v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [e1e0eea2] + BitOperations v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [e1e0eea2] + BitOperations v0.2.0
