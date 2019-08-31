@@ -38623,3 +38623,22 @@ Installing CSyntax
   [ea656a56] + CSyntax v0.3.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 19e085009] added package CSyntax
+ 3 files changed, 29 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   85e9b56fb..19e085009  master -> master
+Progress:  10%|████▎                                    |  ETA: 3 days, 10:32:49[K
+Installing CUBLAS
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CUBLAS [534900ff]:\n CUBLAS [534900ff] log:\n ├─possible versions are: [0.0.1-0.0.2, 0.1.0, 0.2.0-0.2.2] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.2, 0.1.0, 0.2.0-0.2.2]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  10%|████▎                                    |  ETA: 3 days, 10:17:07[K
+Installing CUDA
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CUDA [052768ef]:\n CUDA [052768ef] log:\n ├─possible versions are: [0.1.0, 0.2.0-0.2.2, 0.3.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0-0.2.2, 0.3.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  10%|████▎                                    |  ETA: 3 days, 10:01:39[K
+Installing CUDAapi
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [3895d2a7] + CUDAapi v0.6.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
