@@ -44771,3 +44771,28 @@ Installing CacheVariables
   [9a355d7c] + CacheVariables v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [9a355d7c] + CacheVariables v0.1.0
+[master 17cf56dbd] added package CacheVariables
+ 12 files changed, 364 insertions(+)
+ create mode 100644 packages/CacheVariables/fTHJM/.appveyor.yml
+ create mode 100644 packages/CacheVariables/fTHJM/.gitignore
+ create mode 100644 packages/CacheVariables/fTHJM/.travis.yml
+ create mode 100644 packages/CacheVariables/fTHJM/LICENSE
+ create mode 100644 packages/CacheVariables/fTHJM/Project.toml
+ create mode 100644 packages/CacheVariables/fTHJM/README.md
+ create mode 100755 packages/CacheVariables/fTHJM/src/CacheVariables.jl
+ create mode 100644 packages/CacheVariables/fTHJM/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   348f34fdb..17cf56dbd  master -> master
+Progress:  11%|████▌                                    |  ETA: 3 days, 14:55:23[K
+Installing Caching
+ Resolving package versions...
+ Installed Caching ──── v0.1.1
+ Installed CodecBzip2 ─ v0.6.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [68ad905a] + Caching v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [68ad905a] + Caching v0.1.1
+  [523fee87] + CodecBzip2 v0.6.0
+  Building CodecBzip2 → `~/.julia/packages/CodecBzip2/T5yr7/deps/build.log`
+  Building CodecZlib ─→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+  Building CodecBzip2 → `~/.julia/packages/CodecBzip2/T5yr7/deps/build.log`
