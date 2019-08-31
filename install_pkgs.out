@@ -3956,3 +3956,101 @@ Installing ANOVA
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master bb6cc2b4d] added package ANOVA
+ 73 files changed, 7303 insertions(+)
+ create mode 100644 packages/ANOVA/pmopS/.codecov.yml
+ create mode 100644 packages/ANOVA/pmopS/.gitignore
+ create mode 100644 packages/ANOVA/pmopS/.travis.yml
+ create mode 100644 packages/ANOVA/pmopS/LICENSE.md
+ create mode 100644 packages/ANOVA/pmopS/README.md
+ create mode 100644 packages/ANOVA/pmopS/REQUIRE
+ create mode 100644 packages/ANOVA/pmopS/appveyor.yml
+ create mode 100644 packages/ANOVA/pmopS/src/ANOVA.jl
+ create mode 100644 packages/ANOVA/pmopS/test/runtests.jl
+ create mode 100644 packages/ArgCheck/xX4DA/.codecov.yml
+ create mode 100644 packages/ArgCheck/xX4DA/.gitignore
+ create mode 100644 packages/ArgCheck/xX4DA/.travis.yml
+ create mode 100644 packages/ArgCheck/xX4DA/LICENSE.md
+ create mode 100644 packages/ArgCheck/xX4DA/Project.toml
+ create mode 100644 packages/ArgCheck/xX4DA/README.md
+ create mode 100644 packages/ArgCheck/xX4DA/appveyor.yml
+ create mode 100644 packages/ArgCheck/xX4DA/src/ArgCheck.jl
+ create mode 100644 packages/ArgCheck/xX4DA/src/checks.jl
+ create mode 100644 packages/ArgCheck/xX4DA/test/checks.jl
+ create mode 100644 packages/ArgCheck/xX4DA/test/perf.jl
+ create mode 100644 packages/ArgCheck/xX4DA/test/runtests.jl
+ create mode 100644 packages/GLM/YjBzj/.gitignore
+ create mode 100644 packages/GLM/YjBzj/.travis.yml
+ create mode 100644 packages/GLM/YjBzj/LICENSE.md
+ create mode 100644 packages/GLM/YjBzj/README.md
+ create mode 100644 packages/GLM/YjBzj/REQUIRE
+ create mode 100644 packages/GLM/YjBzj/data/admit.csv
+ create mode 100644 packages/GLM/YjBzj/data/anorexia.csv
+ create mode 100644 packages/GLM/YjBzj/docs/Project.toml
+ create mode 100644 packages/GLM/YjBzj/docs/make.jl
+ create mode 100644 packages/GLM/YjBzj/docs/src/api.md
+ create mode 100644 packages/GLM/YjBzj/docs/src/examples.md
+ create mode 100644 packages/GLM/YjBzj/docs/src/index.md
+ create mode 100644 packages/GLM/YjBzj/docs/src/manual.md
+ create mode 100644 packages/GLM/YjBzj/perf/glm.jl
+ create mode 100644 packages/GLM/YjBzj/src/GLM.jl
+ create mode 100644 packages/GLM/YjBzj/src/deprecated.jl
+ create mode 100644 packages/GLM/YjBzj/src/ftest.jl
+ create mode 100644 packages/GLM/YjBzj/src/glmfit.jl
+ create mode 100644 packages/GLM/YjBzj/src/glmtools.jl
+ create mode 100644 packages/GLM/YjBzj/src/linpred.jl
+ create mode 100644 packages/GLM/YjBzj/src/lm.jl
+ create mode 100644 packages/GLM/YjBzj/src/negbinfit.jl
+ create mode 100644 packages/GLM/YjBzj/test/REQUIRE
+ create mode 100644 packages/GLM/YjBzj/test/runtests.jl
+ create mode 100644 packages/StatsModels/pBxdt/.codecov.yml
+ create mode 100644 packages/StatsModels/pBxdt/.gitignore
+ create mode 100644 packages/StatsModels/pBxdt/.travis.yml
+ create mode 100644 packages/StatsModels/pBxdt/LICENSE.md
+ create mode 100644 packages/StatsModels/pBxdt/README.md
+ create mode 100644 packages/StatsModels/pBxdt/REQUIRE
+ create mode 100644 packages/StatsModels/pBxdt/appveyor.yml
+ create mode 100644 packages/StatsModels/pBxdt/docs/make.jl
+ create mode 100644 packages/StatsModels/pBxdt/docs/src/contrasts.md
+ create mode 100644 packages/StatsModels/pBxdt/docs/src/formula.md
+ create mode 100644 packages/StatsModels/pBxdt/docs/src/index.md
+ create mode 100644 packages/StatsModels/pBxdt/src/StatsModels.jl
+ create mode 100644 packages/StatsModels/pBxdt/src/contrasts.jl
+ create mode 100644 packages/StatsModels/pBxdt/src/deprecated.jl
+ create mode 100644 packages/StatsModels/pBxdt/src/formula.jl
+ create mode 100644 packages/StatsModels/pBxdt/src/modelframe.jl
+ create mode 100644 packages/StatsModels/pBxdt/src/modelmatrix.jl
+ create mode 100644 packages/StatsModels/pBxdt/src/statsmodel.jl
+ create mode 100644 packages/StatsModels/pBxdt/test/contrasts.jl
+ create mode 100644 packages/StatsModels/pBxdt/test/deprecated.jl
+ create mode 100644 packages/StatsModels/pBxdt/test/formula.jl
+ create mode 100644 packages/StatsModels/pBxdt/test/modelmatrix.jl
+ create mode 100644 packages/StatsModels/pBxdt/test/runtests.jl
+ create mode 100644 packages/StatsModels/pBxdt/test/statsmodel.jl
+To https://github.com/watsona4/dot_julia.git
+   cccf8ef8d..bb6cc2b4d  master -> master
+Progress:   0%|▏                                        |  ETA: 4 days, 20:45:43[K
+Installing ARCHModels
+ Resolving package versions...
+ Installed Combinatorics ─── v0.7.0
+ Installed Polynomials ───── v0.5.2
+ Installed HypothesisTests ─ v0.8.0
+ Installed GLM ───────────── v1.2.0
+ Installed Distributions ─── v0.19.2
+ Installed ARCHModels ────── v0.4.0
+ Installed StatsBase ─────── v0.30.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [6d3278bc] + ARCHModels v0.4.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [6d3278bc] + ARCHModels v0.4.0
+  [861a8166] + Combinatorics v0.7.0
+  [31c24e10] ↓ Distributions v0.21.1 ⇒ v0.19.2
+  [38e38edf] ↑ GLM v1.1.1 ⇒ v1.2.0
+  [09f84164] + HypothesisTests v0.8.0
+  [f27b6e38] + Polynomials v0.5.2
+  [2913bbd2] ↓ StatsBase v0.32.0 ⇒ v0.30.0
+  Building ARCHModels → `~/.julia/packages/ARCHModels/vEGyF/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building ARCHModels ──────→ `~/.julia/packages/ARCHModels/vEGyF/deps/build.log`
