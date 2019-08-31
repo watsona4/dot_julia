@@ -29096,3 +29096,56 @@ Installing BasisFunctionExpansions
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
   Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+[master a0c74dde2] added package BasisFunctionExpansions
+ 36 files changed, 1596 insertions(+)
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/.codecov.yml
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/.gitignore
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/.travis.yml
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/LICENSE.md
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/README.md
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/REQUIRE
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/appveyor.yml
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/make.jl
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/mkdocs.yml
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/src/figs/arx.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/src/figs/bfe.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/src/figs/lcurve.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/src/figs/lpvss.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/src/figs/multibase.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/src/figs/multidim.gif
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/src/figs/multidim.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/src/figs/onedim.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/src/figs/singlebase.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/docs/src/index.md
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/figs/arx.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/figs/bfe.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/figs/lcurve.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/figs/multibase.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/figs/multidim.gif
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/figs/multidim.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/figs/onedim.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/figs/singlebase.png
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/src/BasisFunctionExpansions.jl
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/src/dynamics.jl
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/src/plotting.jl
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/test/runtests.jl
+ create mode 100644 packages/BasisFunctionExpansions/tggwO/test/test_LPVSS.jl
+To https://github.com/watsona4/dot_julia.git
+   606a3dd1b..a0c74dde2  master -> master
+Progress:   5%|██▎                                      |  ETA: 4 days, 14:45:16[K
+Installing BasisMatrices
+ Resolving package versions...
+ Installed BasisMatrices ─ v0.6.0
+ Installed QuantEcon ───── v0.16.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [08854c51] + BasisMatrices v0.6.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [08854c51] + BasisMatrices v0.6.0
+  [fcd29c91] + QuantEcon v0.16.1
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+  Building CMake ───────────→ `~/.julia/packages/CMake/nSK2r/deps/build.log`
+  Building NLopt ───────────→ `~/.julia/packages/NLopt/eqN9a/deps/build.log`

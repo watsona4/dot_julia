@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+site/
+*.DS_Store
+*.cov
+*.juliahistory
+*.tags*
+
+docs/build
+docs/serve
