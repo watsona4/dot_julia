@@ -1267,6 +1267,12 @@ git-tree-sha1 = "90eddf050a4d4b35520f87b9ba82302643706a1e"
 uuid = "179af706-886a-5703-950a-314cd64e0468"
 version = "0.0.3"
 
+[[CImGui]]
+deps = ["BinaryProvider", "CSyntax", "GLFW", "Libdl", "ModernGL"]
+git-tree-sha1 = "1844ea7b7f4d457290fe71a90822971871729a4a"
+uuid = "5d785b6c-b76f-510e-a07c-3070796c7e87"
+version = "1.69.3"
+
 [[CMake]]
 deps = ["BinDeps"]
 git-tree-sha1 = "c67a8689dc5444adc5eb2be7d837100340ecba11"
@@ -1307,6 +1313,12 @@ deps = ["CategoricalArrays", "DataFrames", "Dates", "Mmap", "Parsers", "PooledAr
 git-tree-sha1 = "35205137ee2f5a9c1f358407e9ed0f1a17878919"
 uuid = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 version = "0.5.11"
+
+[[CSyntax]]
+deps = ["CEnum"]
+git-tree-sha1 = "369820f1403e8d0b2164427c9fc63d4b713e584b"
+uuid = "ea656a56-6ca6-5dda-bba5-7b6963a5f74c"
+version = "0.3.0"
 
 [[CUDAapi]]
 deps = ["Libdl", "Logging", "Test"]
@@ -1971,6 +1983,12 @@ deps = ["BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "100429098b7ec9930f7db9ba68aee3495365be24"
 uuid = "add2ef01-049f-52c4-9ee2-e494f65e021a"
 version = "0.2.0"
+
+[[GLFW]]
+deps = ["BinaryProvider", "CMake", "Libdl"]
+git-tree-sha1 = "c1dd609f16d3d791a5caf9064b4fa3e1478d03e5"
+uuid = "f7f18e0c-5ee9-5ccd-a5bf-e8befd85ed98"
+version = "3.1.0"
 
 [[GLM]]
 deps = ["Distributions", "LinearAlgebra", "Printf", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns", "StatsModels"]
@@ -2722,6 +2740,12 @@ version = "0.4.1"
 
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
+
+[[ModernGL]]
+deps = ["Libdl"]
+git-tree-sha1 = "f4f8fa8d04d3c1e7294f07fc37586c819466ad38"
+uuid = "66fc600b-dfda-50eb-8b99-91cfa97b1301"
+version = "1.0.0"
 
 [[MsgPack]]
 deps = ["Compat", "Random", "Test"]

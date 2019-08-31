@@ -37317,3 +37317,148 @@ Installing CFTime
   [179af706] + CFTime v0.0.3
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [179af706] + CFTime v0.0.3
+[master 2d7f4ac48] added package CFTime
+ 18 files changed, 1665 insertions(+)
+ create mode 100644 packages/CFTime/XqWs2/.github/ISSUE_TEMPLATE.md
+ create mode 100644 packages/CFTime/XqWs2/.gitignore
+ create mode 100644 packages/CFTime/XqWs2/.travis.yml
+ create mode 100644 packages/CFTime/XqWs2/LICENSE
+ create mode 100644 packages/CFTime/XqWs2/Project.toml
+ create mode 100644 packages/CFTime/XqWs2/README.md
+ create mode 100644 packages/CFTime/XqWs2/REQUIRE
+ create mode 100644 packages/CFTime/XqWs2/appveyor.yml
+ create mode 100644 packages/CFTime/XqWs2/docs/Project.toml
+ create mode 100644 packages/CFTime/XqWs2/docs/make.jl
+ create mode 100644 packages/CFTime/XqWs2/docs/src/index.md
+ create mode 100644 packages/CFTime/XqWs2/src/CFTime.jl
+ create mode 100644 packages/CFTime/XqWs2/test/runtests.jl
+ create mode 100644 packages/CFTime/XqWs2/test/test_time.jl
+To https://github.com/watsona4/dot_julia.git
+   770097a45..2d7f4ac48  master -> master
+Progress:   9%|███▊                                     |  ETA: 3 days, 15:27:29[K
+Installing CImGui
+ Resolving package versions...
+ Installed CSyntax ── v0.3.0
+ Installed GLFW ───── v3.1.0
+ Installed ModernGL ─ v1.0.0
+ Installed CImGui ─── v1.69.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [5d785b6c] + CImGui v1.69.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [5d785b6c] + CImGui v1.69.3
+  [ea656a56] + CSyntax v0.3.0
+  [f7f18e0c] + GLFW v3.1.0
+  [66fc600b] + ModernGL v1.0.0
+  Building GLFW ──→ `~/.julia/packages/GLFW/e257h/deps/build.log`
+┌ Error: Error building `GLFW`: 
+│ -- The C compiler identification is GNU 7.3.1
+│ -- Check for working C compiler: /usr/bin/cc
+│ -- Check for working C compiler: /usr/bin/cc -- works
+│ -- Detecting C compiler ABI info
+│ -- Detecting C compiler ABI info - done
+│ -- Detecting C compile features
+│ -- Detecting C compile features - done
+│ -- Looking for pthread.h
+│ -- Looking for pthread.h - found
+│ -- Looking for pthread_create
+│ -- Looking for pthread_create - not found
+│ -- Looking for pthread_create in pthreads
+│ -- Looking for pthread_create in pthreads - not found
+│ -- Looking for pthread_create in pthread
+│ -- Looking for pthread_create in pthread - found
+│ -- Found Threads: TRUE  
+│ -- Using X11 for window creation
+│ CMake Error at /home/ec2-user/.julia/packages/CMake/nSK2r/deps/downloads/cmake-3.12.3-Linux-x86_64/share/cmake-3.12/Modules/FindX11.cmake:429 (message):
+│   Could not find X11
+│ Call Stack (most recent call first):
+│   CMakeLists.txt:205 (find_package)
+│ 
+│ 
+│ -- Configuring incomplete, errors occurred!
+│ See also "/home/ec2-user/.julia/packages/GLFW/e257h/deps/usr/downloads/src/build/CMakeFiles/CMakeOutput.log".
+│ See also "/home/ec2-user/.julia/packages/GLFW/e257h/deps/usr/downloads/src/build/CMakeFiles/CMakeError.log".
+│ [ Info: Downloading https://github.com/glfw/glfw/archive/3.3.tar.gz to /home/ec2-user/.julia/packages/GLFW/e257h/deps/usr/downloads/src.tar.gz...
+│ [ Info: Unpacking /home/ec2-user/.julia/packages/GLFW/e257h/deps/usr/downloads/src.tar.gz into /home/ec2-user/.julia/packages/GLFW/e257h/deps/usr/downloads/src
+│ ┌ Warning: 
+│ │ ================================================================
+│ │ ================================================================
+│ │ === Building GLFW has failed. Most common problem is,        ===
+│ │ === that you don't have x-org installed.                     ===
+│ │ === You can install it via: `sudo apt-get install xorg-dev`  ===
+│ │ ================================================================
+│ │ ================================================================
+│ └ @ Main ~/.julia/packages/GLFW/e257h/deps/build.jl:56
+│ ERROR: LoadError: failed process: Process(`/home/ec2-user/.julia/packages/CMake/nSK2r/deps/usr/bin/cmake -DBUILD_SHARED_LIBS=on -DGLFW_BUILD_DOCS=OFF -DGLFW_BUILD_EXAMPLES=OFF -DGLFW_BUILD_TESTS=OFF ..`, ProcessExited(1)) [1]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:813 [inlined]
+│  [2] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:728
+│  [3] run at ./process.jl:726 [inlined]
+│  [4] (::getfield(Main, Symbol("##9#10")))() at /home/ec2-user/.julia/packages/GLFW/e257h/deps/build.jl:51
+│  [5] cd(::getfield(Main, Symbol("##9#10")), ::String) at ./file.jl:96
+│  [6] top-level scope at /home/ec2-user/.julia/packages/GLFW/e257h/deps/build.jl:43
+│  [7] include at ./boot.jl:328 [inlined]
+│  [8] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [9] include(::Module, ::String) at ./Base.jl:31
+│  [10] include(::String) at ./client.jl:431
+│  [11] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/GLFW/e257h/deps/build.jl:21
+│ [18:40:23] #=#=#                                                                         [18:40:24] ##O#- #                                                                       [18:40:24] ##O=#  #                                                                      [18:40:24] #=#=-#  #                                                                     [18:40:24] -#O#- #   #                                                                   [18:40:24] -=#=#   #   #                                                                 [18:40:24]  -=#=-#  #    #                                                               [18:40:24] 
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CImGui → `~/.julia/packages/CImGui/yMlSC/deps/build.log`
+  Building CMake ─→ `~/.julia/packages/CMake/nSK2r/deps/build.log`
+  Building GLFW ──→ `~/.julia/packages/GLFW/e257h/deps/build.log`
+┌ Error: Error building `GLFW`: 
+│ -- The C compiler identification is GNU 7.3.1
+│ -- Check for working C compiler: /usr/bin/cc
+│ -- Check for working C compiler: /usr/bin/cc -- works
+│ -- Detecting C compiler ABI info
+│ -- Detecting C compiler ABI info - done
+│ -- Detecting C compile features
+│ -- Detecting C compile features - done
+│ -- Looking for pthread.h
+│ -- Looking for pthread.h - found
+│ -- Looking for pthread_create
+│ -- Looking for pthread_create - not found
+│ -- Looking for pthread_create in pthreads
+│ -- Looking for pthread_create in pthreads - not found
+│ -- Looking for pthread_create in pthread
+│ -- Looking for pthread_create in pthread - found
+│ -- Found Threads: TRUE  
+│ -- Using X11 for window creation
+│ CMake Error at /home/ec2-user/.julia/packages/CMake/nSK2r/deps/downloads/cmake-3.12.3-Linux-x86_64/share/cmake-3.12/Modules/FindX11.cmake:429 (message):
+│   Could not find X11
+│ Call Stack (most recent call first):
+│   CMakeLists.txt:205 (find_package)
+│ 
+│ 
+│ -- Configuring incomplete, errors occurred!
+│ See also "/home/ec2-user/.julia/packages/GLFW/e257h/deps/usr/downloads/src/build/CMakeFiles/CMakeOutput.log".
+│ See also "/home/ec2-user/.julia/packages/GLFW/e257h/deps/usr/downloads/src/build/CMakeFiles/CMakeError.log".
+│ [ Info: Unpacking /home/ec2-user/.julia/packages/GLFW/e257h/deps/usr/downloads/src.tar.gz into /home/ec2-user/.julia/packages/GLFW/e257h/deps/usr/downloads/src
+│ ┌ Warning: 
+│ │ ================================================================
+│ │ ================================================================
+│ │ === Building GLFW has failed. Most common problem is,        ===
+│ │ === that you don't have x-org installed.                     ===
+│ │ === You can install it via: `sudo apt-get install xorg-dev`  ===
+│ │ ================================================================
+│ │ ================================================================
+│ └ @ Main ~/.julia/packages/GLFW/e257h/deps/build.jl:56
+│ ERROR: LoadError: failed process: Process(`/home/ec2-user/.julia/packages/CMake/nSK2r/deps/usr/bin/cmake -DBUILD_SHARED_LIBS=on -DGLFW_BUILD_DOCS=OFF -DGLFW_BUILD_EXAMPLES=OFF -DGLFW_BUILD_TESTS=OFF ..`, ProcessExited(1)) [1]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:813 [inlined]
+│  [2] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:728
+│  [3] run at ./process.jl:726 [inlined]
+│  [4] (::getfield(Main, Symbol("##9#10")))() at /home/ec2-user/.julia/packages/GLFW/e257h/deps/build.jl:51
+│  [5] cd(::getfield(Main, Symbol("##9#10")), ::String) at ./file.jl:96
+│  [6] top-level scope at /home/ec2-user/.julia/packages/GLFW/e257h/deps/build.jl:43
+│  [7] include at ./boot.jl:328 [inlined]
+│  [8] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [9] include(::Module, ::String) at ./Base.jl:31
+│  [10] include(::String) at ./client.jl:431
+│  [11] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/GLFW/e257h/deps/build.jl:21
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CImGui → `~/.julia/packages/CImGui/yMlSC/deps/build.log`
