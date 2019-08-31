@@ -3910,3 +3910,49 @@ Installing AMQPClient
   [79c8b4cd] + AMQPClient v0.2.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [79c8b4cd] + AMQPClient v0.2.0
+[master cccf8ef8d] added package AMQPClient
+ 29 files changed, 9609 insertions(+)
+ create mode 100644 packages/AMQPClient/6dbrN/.gitignore
+ create mode 100644 packages/AMQPClient/6dbrN/.juliarun_ci.sh
+ create mode 100644 packages/AMQPClient/6dbrN/.travis.yml
+ create mode 100644 packages/AMQPClient/6dbrN/CONNECTIONS.md
+ create mode 100644 packages/AMQPClient/6dbrN/LICENSE.md
+ create mode 100644 packages/AMQPClient/6dbrN/QUEUES.md
+ create mode 100644 packages/AMQPClient/6dbrN/README.md
+ create mode 100644 packages/AMQPClient/6dbrN/REQUIRE
+ create mode 100644 packages/AMQPClient/6dbrN/SENDRECV.md
+ create mode 100644 packages/AMQPClient/6dbrN/appveyor.yml
+ create mode 100644 packages/AMQPClient/6dbrN/spec/amqp0-9-1.extended.xml
+ create mode 100644 packages/AMQPClient/6dbrN/spec/amqp0-9-1.xml
+ create mode 100644 packages/AMQPClient/6dbrN/spec/gen.jl
+ create mode 100644 packages/AMQPClient/6dbrN/src/AMQPClient.jl
+ create mode 100644 packages/AMQPClient/6dbrN/src/auth.jl
+ create mode 100644 packages/AMQPClient/6dbrN/src/convert.jl
+ create mode 100644 packages/AMQPClient/6dbrN/src/message.jl
+ create mode 100644 packages/AMQPClient/6dbrN/src/protocol.jl
+ create mode 100644 packages/AMQPClient/6dbrN/src/show.jl
+ create mode 100644 packages/AMQPClient/6dbrN/src/spec.jl
+ create mode 100644 packages/AMQPClient/6dbrN/src/types.jl
+ create mode 100644 packages/AMQPClient/6dbrN/test/runtests.jl
+ create mode 100644 packages/AMQPClient/6dbrN/test/test_coverage.jl
+ create mode 100644 packages/AMQPClient/6dbrN/test/test_rpc.jl
+ create mode 100644 packages/AMQPClient/6dbrN/test/test_throughput.jl
+To https://github.com/watsona4/dot_julia.git
+   cfa39b436..cccf8ef8d  master -> master
+Progress:   0%|▏                                        |  ETA: 5 days, 0:08:39[K
+Installing ANOVA
+ Resolving package versions...
+ Installed GLM ───────── v1.1.1
+ Installed ANOVA ─────── v0.1.0
+ Installed ArgCheck ──── v1.0.1
+ Installed StatsModels ─ v0.5.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [0825541b] + ANOVA v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [0825541b] + ANOVA v0.1.0
+  [dce04be8] + ArgCheck v1.0.1
+  [38e38edf] + GLM v1.1.1
+  [3eaba693] + StatsModels v0.5.0
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
