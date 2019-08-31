@@ -33131,3 +33131,104 @@ Installing BlackBoxOptimizationBenchmarking
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master 4ac1f3e12] added package BlackBoxOptimizationBenchmarking
+ 85 files changed, 48691 insertions(+)
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/.codecov.yml
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/.gitignore
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/.travis.yml
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/LICENSE.md
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/README.md
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/REQUIRE
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/appveyor.yml
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/mean_dist.txt
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/mean_fmin.txt
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/mean_succ.txt
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F1.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F10.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F11.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F12.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F13.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F14.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F15.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F16.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F17.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F18.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F19.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F19.svg
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F2.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F20.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F20.svg
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F3.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F4.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F5.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F6.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F7.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F8.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/1D/F9.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F1.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F10.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F11.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F12.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F13.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F14.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F15.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F16.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F17.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F18.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F19.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F19.svg
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F2.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F20.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F20.svg
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F3.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F4.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F5.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F6.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F7.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F8.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/functions/F9.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/mean_fmin.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/mean_fmin.png
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/mean_succ.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/mean_succ.png
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_fmin_16.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_fmin_16.png
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_fmin_3.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_fmin_3.png
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_fmin_6.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_fmin_6.png
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_succ_16.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_succ_16.png
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_succ_3.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_succ_3.png
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_succ_6.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/per_dimension/mean_succ_6.png
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/runtime.pdf
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/plots/runtime.png
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/data/runtime.txt
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/scripts/cmaes.jl
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/scripts/optimizers_interface.jl
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/scripts/plot_functions.jl
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/scripts/run_benchmark.jl
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/src/BlackBoxOptimizationBenchmarking.jl
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/src/benchmark.jl
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/src/plot_functions.jl
+ create mode 100644 packages/BlackBoxOptimizationBenchmarking/OrMk9/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   81a183c32..4ac1f3e12  master -> master
+Progress:   8%|███▏                                     |  ETA: 3 days, 22:48:32[K
+Installing Blink
+ Resolving package versions...
+ Installed Mux ────── v0.7.0
+ Installed Mustache ─ v0.5.13
+ Installed Blink ──── v0.12.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [ad839575] + Blink v0.12.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [ad839575] + Blink v0.12.0
+  [ffc61752] + Mustache v0.5.13
+  [a975b10e] + Mux v0.7.0
+  Building Blink → `~/.julia/packages/Blink/AO8uN/deps/build.log`
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+  Building WebIO ──→ `~/.julia/packages/WebIO/2mZPb/deps/build.log`
+  Building Blink ──→ `~/.julia/packages/Blink/AO8uN/deps/build.log`

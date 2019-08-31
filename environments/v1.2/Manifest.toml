@@ -1041,6 +1041,12 @@ git-tree-sha1 = "6da0f9ab983ae5186df861b3478e37fe44fcf8ca"
 uuid = "4552ee2b-11da-5aef-8e78-0d48532001f1"
 version = "0.1.0"
 
+[[Blink]]
+deps = ["Base64", "BinDeps", "Distributed", "JSExpr", "JSON", "Lazy", "Logging", "MacroTools", "Mustache", "Mux", "Reexport", "Sockets", "WebIO", "WebSockets"]
+git-tree-sha1 = "cbce79ce8bfa1a576bb0a166ce75e7b92a575098"
+uuid = "ad839575-38b3-5650-b840-f874b8c74a25"
+version = "0.12.0"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"
@@ -2442,6 +2448,18 @@ deps = ["Arpack", "LinearAlgebra", "Printf", "Random", "SparseArrays", "Statisti
 git-tree-sha1 = "cf1c990020bc4a52ff34ba2ee058b7cb677141f2"
 uuid = "6f286f6a-111f-5878-ab1e-185364afe411"
 version = "0.6.0"
+
+[[Mustache]]
+deps = ["Printf", "Tables"]
+git-tree-sha1 = "f39de3a12232eb47bd0629b3a661054287780276"
+uuid = "ffc61752-8dc7-55ee-8c37-f3e9cdd09e70"
+version = "0.5.13"
+
+[[Mux]]
+deps = ["AssetRegistry", "Base64", "HTTP", "Hiccup", "Lazy", "Pkg", "Sockets", "Test", "WebSockets"]
+git-tree-sha1 = "5b41f03d63400c290bab4e1a49fb9ac36de1084a"
+uuid = "a975b10e-0019-58db-a62f-e48ff68538c9"
+version = "0.7.0"
 
 [[MySQL]]
 deps = ["BinaryProvider", "Dates", "DecFP", "Libdl", "Tables", "Test"]
