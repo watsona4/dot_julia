@@ -1,0 +1,36 @@
+language: julia
+
+os:
+  - linux
+  - osx
+
+dist: trusty
+
+julia:
+  - 1.0
+  - nightly
+
+matrix:
+  allow_failures:
+    - julia: nightly
+
+branches:
+  only:
+    - master
+    - staging
+    - trying
+
+notifications:
+  email: false
+
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.0
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd()));
+                                               Pkg.build();
+                                               Pkg.instantiate()'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip

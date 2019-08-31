@@ -9998,3 +9998,62 @@ Installing AngleBetweenVectors
   [ec570357] + AngleBetweenVectors v0.3.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [ec570357] + AngleBetweenVectors v0.3.0
+[master 94e70776f] added package AngleBetweenVectors
+ 15 files changed, 462 insertions(+)
+ create mode 100644 packages/AngleBetweenVectors/qUIho/.codecov.yml
+ create mode 100644 packages/AngleBetweenVectors/qUIho/.gitignore
+ create mode 100644 packages/AngleBetweenVectors/qUIho/.travis.yml
+ create mode 100644 packages/AngleBetweenVectors/qUIho/LICENSE
+ create mode 100644 packages/AngleBetweenVectors/qUIho/Manifest.toml
+ create mode 100644 packages/AngleBetweenVectors/qUIho/Project.toml
+ create mode 100644 packages/AngleBetweenVectors/qUIho/README.md
+ create mode 100644 packages/AngleBetweenVectors/qUIho/REQUIRE
+ create mode 100644 packages/AngleBetweenVectors/qUIho/appveyor.yml
+ create mode 100644 packages/AngleBetweenVectors/qUIho/src/AngleBetweenVectors.jl
+ create mode 100644 packages/AngleBetweenVectors/qUIho/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   e22241587..94e70776f  master -> master
+Progress:   2%|█                                        |  ETA: 2 days, 3:36:00[K
+Installing AnsiColor
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AnsiColor [17c455ec]:\n AnsiColor [17c455ec] log:\n ├─possible versions are: 0.0.1-0.0.2 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.2\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   2%|█                                        |  ETA: 2 days, 2:58:29[K
+Installing Ant
+ Resolving package versions...
+ Installed Media ──────── v0.5.0
+ Installed Flux ───────── v0.9.0
+ Installed GPUArrays ──── v1.0.1
+ Installed NNlib ──────── v0.6.0
+ Installed Tracker ────── v0.2.3
+ Installed Juno ───────── v0.7.2
+ Installed Crayons ────── v4.0.0
+ Installed Ant ────────── v0.1.0
+ Installed TimerOutputs ─ v0.5.0
+ Installed ZipFile ────── v0.8.3
+ Installed CUDAapi ────── v1.1.0
+ Installed CUDAdrv ────── v3.1.0
+ Installed CUDAnative ─── v2.3.0
+ Installed CuArrays ───── v1.2.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [fc2879f5] + Ant v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [fc2879f5] + Ant v0.1.0
+  [3895d2a7] + CUDAapi v1.1.0
+  [c5f51814] + CUDAdrv v3.1.0
+  [be33ccc6] + CUDAnative v2.3.0
+  [a8cc5b0e] + Crayons v4.0.0
+  [3a865a2d] + CuArrays v1.2.1
+  [587475ba] + Flux v0.9.0
+  [0c68f7d7] + GPUArrays v1.0.1
+  [e5e0dc1b] + Juno v0.7.2
+  [e89f7d12] + Media v0.5.0
+  [872c559c] + NNlib v0.6.0
+  [a759f4b9] + TimerOutputs v0.5.0
+  [9f7883ad] + Tracker v0.2.3
+  [a5390f91] + ZipFile v0.8.3
+  Building ZipFile → `~/.julia/packages/ZipFile/oD4uG/deps/build.log`
+  Building ZipFile ─────────→ `~/.julia/packages/ZipFile/oD4uG/deps/build.log`
+  Building CodecZlib ───────→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`

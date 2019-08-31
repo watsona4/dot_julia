@@ -1,0 +1,12 @@
+name = "Ant"
+uuid = "fc2879f5-75d7-582e-8603-c64deb99b744"
+authors = ["del2z <delta.z@aliyun.com>"]
+version = "0.1.0"
+
+[deps]
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+
+[compat]
+julia = "1"
+Flux = ">= 0.7"
+

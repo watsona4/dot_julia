@@ -1,0 +1,14 @@
+{
+    "method": "cbow",
+    "io": {
+        "output_h5": "cbow.h5",
+        "output_flat": "cbow.txt"
+    },
+    "model": {
+        "window": 5,
+        "epochs": 20,
+        "neg_scale": 5,
+        "embed_size": 50,
+        "batch_size": 128
+    }
+}

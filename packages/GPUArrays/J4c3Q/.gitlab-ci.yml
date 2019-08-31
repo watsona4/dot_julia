@@ -1,0 +1,29 @@
+variables:
+  CI_IMAGE_TAG: 'plain'
+
+include:
+  - 'https://raw.githubusercontent.com/JuliaGPU/gitlab-ci/master/templates/v4/common.yml'
+  - 'https://raw.githubusercontent.com/JuliaGPU/gitlab-ci/master/templates/v4/test_v1.0.yml'
+  - 'https://raw.githubusercontent.com/JuliaGPU/gitlab-ci/master/templates/v4/test_v1.1.yml'
+  - 'https://raw.githubusercontent.com/JuliaGPU/gitlab-ci/master/templates/v4/test_dev.yml'
+  - 'https://raw.githubusercontent.com/JuliaGPU/gitlab-ci/master/templates/v4/coverage_v1.1.yml'
+
+test:dev:
+  allow_failure: true
+
+coverage:
+  allow_failure: true
+  only:
+    - master
+
+cuarrays:
+  stage: test
+  image: "juliagpu/julia:v1.1-cuda"
+  script:
+    - mkdir $JULIA_DEPOT_PATH # Pkg3.jl#325
+    - julia -e 'using Pkg;
+                Pkg.develop(PackageSpec(path=pwd()));
+                Pkg.build();
+                Pkg.add(PackageSpec(name="CuArrays", rev="master"));
+                Pkg.test("CuArrays");'
+  allow_failure: true

@@ -1,0 +1,7 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/ext.jl
+Manifest.toml
+tutorials/build/
+docs/build/
