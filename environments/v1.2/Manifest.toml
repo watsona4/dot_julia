@@ -590,6 +590,12 @@ git-tree-sha1 = "2915b506cae7f33efe3dbd302588190b3bf06c66"
 uuid = "70b36510-7dee-11e9-28d4-77afe9445f67"
 version = "0.1.1"
 
+[[AverageShiftedHistograms]]
+deps = ["LinearAlgebra", "RecipesBase", "Statistics", "StatsBase", "UnicodePlots"]
+git-tree-sha1 = "d29f2f8861bd1be91a54c234718d79686effe0c5"
+uuid = "77b51b56-6f8f-5c3a-9cb4-d71f9594ea6e"
+version = "0.8.1"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
@@ -2380,6 +2386,12 @@ deps = ["Test"]
 git-tree-sha1 = "63cbbd00217fc9aafedf055b60459c1ae7e01ecc"
 uuid = "1cfade01-22cf-5700-b092-accc4b62d6e1"
 version = "0.4.0"
+
+[[UnicodePlots]]
+deps = ["Dates", "Random", "SparseArrays", "StatsBase", "Test"]
+git-tree-sha1 = "b8e58d4390ccebfa4f3bf502a45e08066eec3bf9"
+uuid = "b8865327-cd53-5732-bb35-84acbb429228"
+version = "1.1.0"
 
 [[Unitful]]
 deps = ["LinearAlgebra", "Random"]

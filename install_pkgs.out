@@ -26384,3 +26384,26 @@ Installing AutomaticDocstrings
   [70b36510] + AutomaticDocstrings v0.1.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [70b36510] + AutomaticDocstrings v0.1.1
+[master e1b35196d] added package AutomaticDocstrings
+ 9 files changed, 517 insertions(+)
+ create mode 100644 packages/AutomaticDocstrings/TGHjE/.travis.yml
+ create mode 100644 packages/AutomaticDocstrings/TGHjE/Project.toml
+ create mode 100644 packages/AutomaticDocstrings/TGHjE/README.md
+ create mode 100644 packages/AutomaticDocstrings/TGHjE/src/AutomaticDocstrings.jl
+ create mode 100644 packages/AutomaticDocstrings/TGHjE/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   6adaf33d3..e1b35196d  master -> master
+Progress:   4%|█▊                                       |  ETA: 5 days, 10:47:28[K
+Installing Autoreload
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Autoreload [e43a630a]:\n Autoreload [e43a630a] log:\n ├─possible versions are: [0.0.1, 0.1.0, 0.2.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0, 0.2.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   4%|█▊                                       |  ETA: 5 days, 9:49:57[K
+Installing AverageShiftedHistograms
+ Resolving package versions...
+ Installed AverageShiftedHistograms ─ v0.8.1
+ Installed UnicodePlots ───────────── v1.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [77b51b56] + AverageShiftedHistograms v0.8.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [77b51b56] + AverageShiftedHistograms v0.8.1
+  [b8865327] + UnicodePlots v1.1.0
