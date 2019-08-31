@@ -28809,3 +28809,35 @@ Installing BackedUpImmutable
   [ce7fb557] + BackedUpImmutable v0.0.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [ce7fb557] + BackedUpImmutable v0.0.1
+[master 4bef479b5] added package BackedUpImmutable
+ 13 files changed, 301 insertions(+)
+ create mode 100644 packages/BackedUpImmutable/acmJE/.travis.yml
+ create mode 100644 packages/BackedUpImmutable/acmJE/Project.toml
+ create mode 100644 packages/BackedUpImmutable/acmJE/README.md
+ create mode 100644 packages/BackedUpImmutable/acmJE/appveyor.yml
+ create mode 100644 packages/BackedUpImmutable/acmJE/docs/make.jl
+ create mode 100644 packages/BackedUpImmutable/acmJE/docs/project.toml
+ create mode 100644 packages/BackedUpImmutable/acmJE/docs/src/contents.md
+ create mode 100644 packages/BackedUpImmutable/acmJE/src/BackedUpImmutable.jl
+ create mode 100644 packages/BackedUpImmutable/acmJE/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   5128e1b97..4bef479b5  master -> master
+Progress:   5%|██▏                                      |  ETA: 4 days, 21:22:41[K
+Installing BackpropNeuralNet
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BackpropNeuralNet [1e750ffe]:\n BackpropNeuralNet [1e750ffe] log:\n ├─possible versions are: [0.0.1-0.0.3, 0.1.0, 0.2.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.3, 0.1.0, 0.2.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   5%|██▏                                      |  ETA: 4 days, 20:38:24[K
+Installing BackwardsLinalg
+ Resolving package versions...
+ Installed IRTools ───────── v0.2.3
+ Installed Zygote ────────── v0.3.4
+ Installed BackwardsLinalg ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [442b4e1a] + BackwardsLinalg v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [442b4e1a] + BackwardsLinalg v0.1.0
+  [7869d1d1] + IRTools v0.2.3
+  [e88e6eb3] + Zygote v0.3.4
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
