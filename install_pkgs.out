@@ -10749,3 +10749,26 @@ Installing ApplicationBuilderAppUtils
   [96374992] + ApplicationBuilderAppUtils v0.1.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [96374992] + ApplicationBuilderAppUtils v0.1.1
+[master 0e92e021e] added package ApplicationBuilderAppUtils
+ 10 files changed, 303 insertions(+)
+ create mode 100644 packages/ApplicationBuilderAppUtils/zOCaF/.travis.yml
+ create mode 100644 packages/ApplicationBuilderAppUtils/zOCaF/Project.toml
+ create mode 100644 packages/ApplicationBuilderAppUtils/zOCaF/README.md
+ create mode 100644 packages/ApplicationBuilderAppUtils/zOCaF/src/ApplicationBuilderAppUtils.jl
+ create mode 100644 packages/ApplicationBuilderAppUtils/zOCaF/test/ApplicationBuilderAppUtils.jl
+ create mode 100644 packages/ApplicationBuilderAppUtils/zOCaF/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   0e07bff41..0e92e021e  master -> master
+Progress:   3%|█                                        |  ETA: 2 days, 2:25:11[K
+Installing ApproxBayes
+ Resolving package versions...
+ Installed ApproxBayes ─ v0.3.1
+ Installed Distances ─── v0.8.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [f5f396d3] + ApproxBayes v0.3.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [f5f396d3] + ApproxBayes v0.3.1
+  [b4f34e82] + Distances v0.8.2
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`

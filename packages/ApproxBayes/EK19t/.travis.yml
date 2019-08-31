@@ -1,0 +1,16 @@
+language: julia
+os:
+  - osx
+  - linux
+julia:
+  - 0.7
+  - 1.0
+  - nightly
+matrix:
+  allow_failures:
+   - julia: nightly
+notifications:
+  email: false
+after_success:
+    - julia -e 'using Pkg; cd(Pkg.dir("ApproxBayes")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+    - julia -e 'using Pkg; cd(Pkg.dir("ApproxBayes")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(process_folder())'

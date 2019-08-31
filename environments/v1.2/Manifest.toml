@@ -316,6 +316,12 @@ git-tree-sha1 = "4b6604ca950ec7c1c96341349f552376f3541092"
 uuid = "96374992-6a10-11e9-2fa0-73472aac04df"
 version = "0.1.1"
 
+[[ApproxBayes]]
+deps = ["DelimitedFiles", "Distances", "Distributions", "Printf", "ProgressMeter", "Random", "RecipesBase", "Statistics", "StatsBase"]
+git-tree-sha1 = "19488693ecfcfcc32f4139f368124368848648a3"
+uuid = "f5f396d3-230c-5e07-80e6-9fadf06146cc"
+version = "0.3.1"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -634,6 +640,12 @@ deps = ["LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "641f8b5d15185c29b0a409adb9f59c01b48ee0e4"
 uuid = "22fd7b30-a8c0-5bf2-aabe-97783860d07c"
 version = "0.3.0"
+
+[[Distances]]
+deps = ["LinearAlgebra", "Statistics"]
+git-tree-sha1 = "23717536c81b63e250f682b0e0933769eecd1411"
+uuid = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
+version = "0.8.2"
 
 [[Distributed]]
 deps = ["Random", "Serialization", "Sockets"]
