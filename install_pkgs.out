@@ -48977,3 +48977,34 @@ Installing ChrBase
   [c13fa7b1] + ChrBase v1.0.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [c13fa7b1] + ChrBase v1.0.0
+[master d805b1a56] added package ChrBase
+ 21 files changed, 1396 insertions(+)
+ create mode 100644 packages/ChrBase/Ug6bk/.gitignore
+ create mode 100644 packages/ChrBase/Ug6bk/.travis.yml
+ create mode 100644 packages/ChrBase/Ug6bk/LICENSE
+ create mode 100644 packages/ChrBase/Ug6bk/LICENSE.md
+ create mode 100644 packages/ChrBase/Ug6bk/Project.toml
+ create mode 100644 packages/ChrBase/Ug6bk/README.md
+ create mode 100644 packages/ChrBase/Ug6bk/appveyor.yml
+ create mode 100644 packages/ChrBase/Ug6bk/src/CaseTables.jl
+ create mode 100644 packages/ChrBase/Ug6bk/src/ChrBase.jl
+ create mode 100644 packages/ChrBase/Ug6bk/src/casefold.jl
+ create mode 100644 packages/ChrBase/Ug6bk/src/compat.jl
+ create mode 100644 packages/ChrBase/Ug6bk/src/core.jl
+ create mode 100644 packages/ChrBase/Ug6bk/src/io.jl
+ create mode 100644 packages/ChrBase/Ug6bk/src/traits.jl
+ create mode 100644 packages/ChrBase/Ug6bk/src/unicode.jl
+ create mode 100644 packages/ChrBase/Ug6bk/src/utf8proc.jl
+ create mode 100644 packages/ChrBase/Ug6bk/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   853434d48..d805b1a56  master -> master
+Progress:  12%|█████▏                                   |  ETA: 3 days, 9:58:49[K
+Installing ChunkedArrays
+ Resolving package versions...
+ Installed ChunkedArrays ──── v0.1.1
+ Installed EllipsisNotation ─ v0.4.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [8bab3169] + ChunkedArrays v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [8bab3169] + ChunkedArrays v0.1.1
+  [da5c29d0] + EllipsisNotation v0.4.0
