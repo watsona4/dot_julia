@@ -28841,3 +28841,124 @@ Installing BackwardsLinalg
   Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
   Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+[master 3b5b01d6d] added package BackwardsLinalg
+ 114 files changed, 9285 insertions(+)
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/.gitignore
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/.travis.yml
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/LICENSE.md
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/Project.toml
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/README.md
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/_old/autograd.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/_old/flux.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/docs/Project.toml
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/docs/make.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/docs/references/1710.08717.pdf
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/docs/references/README.md
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/docs/references/bcba4cf1b5d44c74bafd1657d4cf483b2aed.pdf
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/docs/src/index.md
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/examples/trg.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/src/BackwardsLinalg.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/src/eigen.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/src/lanczos.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/src/powermethod.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/src/qr.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/src/rsvd.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/src/svd.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/src/zygote.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/test/eigen.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/test/qr.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/test/runtests.jl
+ create mode 100644 packages/BackwardsLinalg/6V8Pa/test/svd.jl
+ create mode 100644 packages/IRTools/pgYVw/.gitignore
+ create mode 100644 packages/IRTools/pgYVw/.travis.yml
+ create mode 100644 packages/IRTools/pgYVw/LICENSE
+ create mode 100644 packages/IRTools/pgYVw/Manifest.toml
+ create mode 100644 packages/IRTools/pgYVw/Project.toml
+ create mode 100644 packages/IRTools/pgYVw/README.md
+ create mode 100644 packages/IRTools/pgYVw/docs/Manifest.toml
+ create mode 100644 packages/IRTools/pgYVw/docs/Project.toml
+ create mode 100644 packages/IRTools/pgYVw/docs/make.jl
+ create mode 100644 packages/IRTools/pgYVw/docs/src/dynamo.md
+ create mode 100644 packages/IRTools/pgYVw/docs/src/index.md
+ create mode 100644 packages/IRTools/pgYVw/docs/src/reference.md
+ create mode 100644 packages/IRTools/pgYVw/examples/logcalls.jl
+ create mode 100644 packages/IRTools/pgYVw/examples/reverse.jl
+ create mode 100644 packages/IRTools/pgYVw/src/IRTools.jl
+ create mode 100644 packages/IRTools/pgYVw/src/eval.jl
+ create mode 100644 packages/IRTools/pgYVw/src/interpret.jl
+ create mode 100644 packages/IRTools/pgYVw/src/ir/ir.jl
+ create mode 100644 packages/IRTools/pgYVw/src/ir/parse.jl
+ create mode 100644 packages/IRTools/pgYVw/src/ir/print.jl
+ create mode 100644 packages/IRTools/pgYVw/src/ir/utils.jl
+ create mode 100644 packages/IRTools/pgYVw/src/ir/wrap.jl
+ create mode 100644 packages/IRTools/pgYVw/src/passes/passes.jl
+ create mode 100644 packages/IRTools/pgYVw/src/reflection/dynamo.jl
+ create mode 100644 packages/IRTools/pgYVw/src/reflection/reflection.jl
+ create mode 100644 packages/IRTools/pgYVw/src/reflection/utils.jl
+ create mode 100644 packages/IRTools/pgYVw/test/compiler.jl
+ create mode 100644 packages/IRTools/pgYVw/test/reflection.jl
+ create mode 100644 packages/IRTools/pgYVw/test/runtests.jl
+ create mode 100644 packages/Zygote/bdE6T/.codecov.yml
+ create mode 100644 packages/Zygote/bdE6T/.github/FUNDING.yml
+ create mode 100644 packages/Zygote/bdE6T/.gitignore
+ create mode 100644 packages/Zygote/bdE6T/.travis.yml
+ create mode 100644 packages/Zygote/bdE6T/CITATION.bib
+ create mode 100644 packages/Zygote/bdE6T/LICENSE.md
+ create mode 100644 packages/Zygote/bdE6T/Manifest.toml
+ create mode 100644 packages/Zygote/bdE6T/Project.toml
+ create mode 100644 packages/Zygote/bdE6T/README.md
+ create mode 100644 packages/Zygote/bdE6T/appveyor.yml
+ create mode 100644 packages/Zygote/bdE6T/docs/Manifest.toml
+ create mode 100644 packages/Zygote/bdE6T/docs/Project.toml
+ create mode 100644 packages/Zygote/bdE6T/docs/make.jl
+ create mode 100644 packages/Zygote/bdE6T/docs/src/adjoints.md
+ create mode 100644 packages/Zygote/bdE6T/docs/src/complex.md
+ create mode 100644 packages/Zygote/bdE6T/docs/src/flux.md
+ create mode 100644 packages/Zygote/bdE6T/docs/src/glossary.md
+ create mode 100644 packages/Zygote/bdE6T/docs/src/index.md
+ create mode 100644 packages/Zygote/bdE6T/docs/src/internals.md
+ create mode 100644 packages/Zygote/bdE6T/docs/src/profiling.md
+ create mode 100644 packages/Zygote/bdE6T/docs/src/utils.md
+ create mode 100644 packages/Zygote/bdE6T/examples/Manifest.toml
+ create mode 100644 packages/Zygote/bdE6T/examples/Project.toml
+ create mode 100644 packages/Zygote/bdE6T/examples/linear_regression.jl
+ create mode 100644 packages/Zygote/bdE6T/examples/mnist_mlp.jl
+ create mode 100644 packages/Zygote/bdE6T/examples/profiler.jl
+ create mode 100644 packages/Zygote/bdE6T/src/Zygote.jl
+ create mode 100644 packages/Zygote/bdE6T/src/compiler/emit.jl
+ create mode 100644 packages/Zygote/bdE6T/src/compiler/interface.jl
+ create mode 100644 packages/Zygote/bdE6T/src/compiler/interface2.jl
+ create mode 100644 packages/Zygote/bdE6T/src/compiler/reverse.jl
+ create mode 100644 packages/Zygote/bdE6T/src/compiler/show.jl
+ create mode 100644 packages/Zygote/bdE6T/src/flux.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/array.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/base.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/broadcast.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/buffer.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/distances.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/forward.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/grad.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/lib.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/nnlib.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/number.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/statsfuns.jl
+ create mode 100644 packages/Zygote/bdE6T/src/lib/utils.jl
+ create mode 100644 packages/Zygote/bdE6T/src/precompile.jl
+ create mode 100644 packages/Zygote/bdE6T/src/profiler/Profile.jl
+ create mode 100644 packages/Zygote/bdE6T/src/tools/idset.jl
+ create mode 100644 packages/Zygote/bdE6T/test/compiler.jl
+ create mode 100644 packages/Zygote/bdE6T/test/complex.jl
+ create mode 100644 packages/Zygote/bdE6T/test/features.jl
+ create mode 100644 packages/Zygote/bdE6T/test/gradcheck.jl
+ create mode 100644 packages/Zygote/bdE6T/test/runtests.jl
+ create mode 100644 packages/Zygote/bdE6T/test/structures.jl
+ create mode 100644 packages/Zygote/bdE6T/test/typed.jl
+To https://github.com/watsona4/dot_julia.git
+   4bef479b5..3b5b01d6d  master -> master
+Progress:   5%|██▏                                      |  ETA: 4 days, 20:24:07[K
+Installing BandedMatrices
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [aae01518] + BandedMatrices v0.10.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
