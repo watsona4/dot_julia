@@ -30,6 +30,12 @@ git-tree-sha1 = "3c2d1b869b9036d4743a282dfa8e56b43f475356"
 uuid = "12f4821f-d7ee-5ba6-b76b-566925c5fcc5"
 version = "0.1.0"
 
+[[AMQPClient]]
+deps = ["Logging", "Random", "Sockets", "Test"]
+git-tree-sha1 = "a407e5e38bc05c6c7a1edf8011c4245e70569d90"
+uuid = "79c8b4cd-a41a-55fa-907c-fab5288e1383"
+version = "0.2.0"
+
 [[AbstractFFTs]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "380e36c66edfa099cd90116b24c1ce8cafccac40"
