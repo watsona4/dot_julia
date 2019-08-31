@@ -1928,6 +1928,12 @@ git-tree-sha1 = "884ec27009f200f92268b37a9bfc1d5fb95c8973"
 uuid = "a81c6b42-2e10-5240-aca2-a61377ecd94b"
 version = "0.7.4"
 
+[[CompoundPeriods]]
+deps = ["Dates"]
+git-tree-sha1 = "70dbfe907cc8a54831be8d0719a144f468bbb52c"
+uuid = "a216cea6-0a8c-5945-ab87-5ade47210022"
+version = "0.4.0"
+
 [[ComputationalResources]]
 deps = ["Test"]
 git-tree-sha1 = "89e7e7ed20af73d9f78877d2b8d1194e7b6ff13d"
