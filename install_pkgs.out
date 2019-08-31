@@ -5439,3 +5439,175 @@ Installing AWSSDK
   [0d499d91] + AWSSDK v0.4.0
   Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
   Building EzXML ──→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
+[master adfefa23c] added package AWSSDK
+ 154 files changed, 284897 insertions(+)
+ create mode 100644 packages/AWSSDK/dAby7/LICENSE.md
+ create mode 100644 packages/AWSSDK/dAby7/README.md
+ create mode 100644 packages/AWSSDK/dAby7/REQUIRE
+ create mode 100644 packages/AWSSDK/dAby7/src/ACM.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ACMPCA.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/APIGateway.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/AWSSDK.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/AlexaForBusiness.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/AppStream.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/AppSync.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ApplicationAutoScaling.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Athena.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/AutoScaling.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/AutoScalingPlans.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Batch.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Budgets.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CUR.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Cloud9.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudDirectory.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudFormation.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudFront.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudHSM.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudHSMV2.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudSearch.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudSearchDomain.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudTrail.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudWatch.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudWatchEvents.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CloudWatchLogs.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CodeBuild.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CodeCommit.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CodeDeploy.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CodePipeline.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CodeStar.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CognitoIdentity.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CognitoIdentityServiceProvider.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CognitoSync.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Comprehend.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ConfigService.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Connect.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/CostExplorer.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/DAX.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/DLM.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/DMS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/DataPipeline.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/DeviceFarm.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/DirectConnect.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/DirectoryService.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Discovery.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/DynamoDB.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/DynamoDBStreams.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/EC2.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ECR.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ECS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/EFS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/EKS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ELB.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ELBv2.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/EMR.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ES.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ElastiCache.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ElasticBeanstalk.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ElasticTranscoder.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/FMS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Firehose.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/GameLift.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Glacier.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Glue.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Greengrass.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/GuardDuty.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Health.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/IAM.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ImportExport.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Inspector.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/IoT1ClickDevicesService.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/IoT1ClickProjects.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/IoTAnalytics.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/IoTJobsDataPlane.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Iot.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/IotData.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/KMS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Kinesis.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/KinesisAnalytics.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/KinesisVideo.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/KinesisVideoArchivedMedia.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/KinesisVideoMedia.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Lambda.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/LexModelBuildingService.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/LexRuntime.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Lightsail.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MQ.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MTurk.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MachineLearning.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Macie.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MarketplaceCommerceAnalytics.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MarketplaceEntitlementService.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MarketplaceMetering.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MediaConvert.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MediaLive.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MediaPackage.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MediaStore.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MediaStoreData.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MediaTailor.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MigrationHub.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Mobile.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/MobileAnalytics.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Neptune.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/OpsWorks.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/OpsWorksCM.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Organizations.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/PI.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Pinpoint.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Polly.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Pricing.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/RDS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Redshift.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Rekognition.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ResourceGroups.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ResourceGroupsTaggingAPI.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Route53.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Route53Domains.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/S3.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/SES.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/SMS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/SNS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/SQS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/SSM.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/STS.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/SWF.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/SageMaker.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/SageMakerRuntime.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/SecretsManager.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ServerlessApplicationRepository.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ServiceCatalog.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/ServiceDiscovery.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Shield.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/SimpleDB.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Snowball.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/StepFunctions.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/StorageGateway.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Support.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/TranscribeService.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/Translate.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/WAF.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/WAFRegional.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/WorkDocs.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/WorkMail.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/WorkSpaces.jl
+ create mode 100644 packages/AWSSDK/dAby7/src/XRay.jl
+ create mode 100755 packages/AWSSDK/dAby7/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   5d73cc966..adfefa23c  master -> master
+Progress:   1%|▍                                        |  ETA: 2 days, 19:59:27[K
+Installing AWSSES
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AWSSES [255f4518]:\n AWSSES [255f4518] log:\n ├─possible versions are: [0.0.1, 0.1.1, 0.2.0-0.2.1, 0.3.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.1, 0.2.0-0.2.1, 0.3.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   1%|▍                                        |  ETA: 2 days, 17:22:44[K
+Installing AWSSNS
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AWSLambda [c6d66e27]:\n AWSLambda [c6d66e27] log:\n ├─possible versions are: [0.0.1-0.0.17, 0.1.2-0.1.3, 0.2.0] or uninstalled\n ├─restricted by julia compatibility requirements to versions: uninstalled\n └─restricted by compatibility requirements with AWSSNS [c322f5cd] to versions: [0.0.1-0.0.17, 0.1.2-0.1.3, 0.2.0] — no versions left\n   └─AWSSNS [c322f5cd] log:\n     ├─possible versions are: [0.0.1-0.0.7, 0.1.1, 0.1.3-0.1.4, 0.2.0-0.2.1, 0.3.0-0.3.2, 0.4.0] or uninstalled\n     ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.7, 0.1.1, 0.1.3-0.1.4, 0.2.0-0.2.1, 0.3.0-0.3.2, 0.4.0]\n     └─restricted by julia compatibility requirements to versions: 0.4.0 or uninstalled, leaving only versions: 0.4.0", nothing)
+Progress:   1%|▍                                        |  ETA: 2 days, 14:58:48[K
+Installing AWSSQS
+ Resolving package versions...
+ Installed AWSSQS ─ v0.5.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [6e80b5ca] + AWSSQS v0.5.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [6e80b5ca] + AWSSQS v0.5.0
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+  Building EzXML ──→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
