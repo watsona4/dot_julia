@@ -1,0 +1,32 @@
+language: julia
+os:
+  - linux
+julia:
+  - nightly
+  - 1.0
+matrix:
+allow_failures:
+- julia: nightly
+
+env:
+  matrix:
+    - JULIA_SPECIALFUNCTIONS_BUILD_SOURCE=true
+addons:
+  apt_packages:
+    - gfortran
+
+
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.0
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg;
+                                    Pkg.develop(PackageSpec(path=pwd()));
+                                    Pkg.instantiate();
+                                    ENV["PYTHON"] = "";
+                                    Pkg.build("PyCall");
+                                    using Conda; Conda.add("scipy")'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip

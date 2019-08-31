@@ -1,0 +1,21 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.7
+  - 1.0
+  - nightly
+git:
+  depth: 999999
+notifications:
+  email: false
+script:
+ - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+ - julia -e 'using Pkg; Pkg.clone(pwd()); Pkg.build("LombScargle"); Pkg.test("LombScargle"; coverage=true)'
+ - JULIA_NUM_THREADS=4 julia -e 'using Pkg; Pkg.test("LombScargle")'
+ - julia -e 'using Pkg; cd(Pkg.dir("LombScargle")); Pkg.add("PyCall"); Pkg.add("Conda"); using Conda; Conda.add("astropy"); include(joinpath("test", "astropy.jl"))'
+after_success:
+ - julia -e 'using Pkg; cd(Pkg.dir("LombScargle")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(process_folder()); Codecov.submit(process_folder())'
+ - julia -e 'using Pkg; cd(Pkg.dir("LombScargle")); Pkg.add("Documenter"); include(joinpath("docs", "make.jl"))'

@@ -46273,3 +46273,107 @@ Installing CausalInference
   [8e462317] + CausalInference v0.4.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [8e462317] + CausalInference v0.4.0
+[master c9a78406e] added package CausalInference
+ 28 files changed, 1280 insertions(+)
+ create mode 100644 packages/CausalInference/xiGCD/.codecov.yml
+ create mode 100644 packages/CausalInference/xiGCD/.gitignore
+ create mode 100644 packages/CausalInference/xiGCD/.travis.yml
+ create mode 100644 packages/CausalInference/xiGCD/LICENSE.md
+ create mode 100644 packages/CausalInference/xiGCD/README.md
+ create mode 100644 packages/CausalInference/xiGCD/REQUIRE
+ create mode 100644 packages/CausalInference/xiGCD/appveyor.yml
+ create mode 100644 packages/CausalInference/xiGCD/docs/.gitignore
+ create mode 100644 packages/CausalInference/xiGCD/docs/make.jl
+ create mode 100644 packages/CausalInference/xiGCD/docs/src/index.md
+ create mode 100644 packages/CausalInference/xiGCD/docs/src/library.md
+ create mode 100644 packages/CausalInference/xiGCD/src/CausalInference.jl
+ create mode 100644 packages/CausalInference/xiGCD/src/cpdag.jl
+ create mode 100644 packages/CausalInference/xiGCD/src/dsep.jl
+ create mode 100644 packages/CausalInference/xiGCD/src/misc.jl
+ create mode 100644 packages/CausalInference/xiGCD/src/pc.jl
+ create mode 100644 packages/CausalInference/xiGCD/src/skeleton.jl
+ create mode 100644 packages/CausalInference/xiGCD/test/REQUIRE
+ create mode 100644 packages/CausalInference/xiGCD/test/cpdag.jl
+ create mode 100644 packages/CausalInference/xiGCD/test/dsep.jl
+ create mode 100644 packages/CausalInference/xiGCD/test/pc.jl
+ create mode 100644 packages/CausalInference/xiGCD/test/perf.jl
+ create mode 100644 packages/CausalInference/xiGCD/test/runtests.jl
+ create mode 100644 packages/CausalInference/xiGCD/test/skeleton.jl
+To https://github.com/watsona4/dot_julia.git
+   4c5da9578..c9a78406e  master -> master
+Progress:  12%|████▊                                    |  ETA: 3 days, 12:03:57[K
+Installing CausalityTools
+ Resolving package versions...
+ Installed CrossMappings ──────────── v0.2.3
+ Installed DiffEqNoiseProcess ─────── v3.3.1
+ Installed DynamicalSystems ───────── v1.3.0
+ Installed DynamicalSystemsBase ───── v1.3.0
+ Installed LombScargle ────────────── v0.4.0
+ Installed CausalityTools ─────────── v0.2.6
+ Installed DiffEqJump ─────────────── v6.2.0
+ Installed ChaosTools ─────────────── v1.7.0
+ Installed ResettableStacks ───────── v0.6.0
+ Installed DiffEqFinancial ────────── v2.1.0
+ Installed Wavelets ───────────────── v0.8.0
+ Installed StateSpaceReconstruction ─ v0.3.1
+ Installed MultiScaleArrays ───────── v1.5.0
+ Installed Simplices ──────────────── v0.4.1
+ Installed SimpleDiffEq ───────────── v0.4.0
+ Installed SteadyStateDiffEq ──────── v1.5.0
+ Installed PoissonRandom ──────────── v0.4.0
+ Installed DimensionalPlotRecipes ─── v0.2.0
+ Installed DiffEqPhysics ──────────── v3.2.0
+ Installed Sundials ───────────────── v3.6.2
+ Installed PerronFrobenius ────────── v0.2.3
+ Installed DelayEmbeddings ────────── v1.1.0
+ Installed DifferentialEquations ──── v6.6.0
+ Installed UncertainData ──────────── v0.2.3
+ Installed RecurrenceAnalysis ─────── v1.0.3
+ Installed TransferEntropy ────────── v0.3.3
+ Installed DelayDiffEq ────────────── v5.14.0
+ Installed StochasticDiffEq ───────── v6.8.0
+ Installed TimeseriesSurrogates ───── v0.3.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [5520caf5] + CausalityTools v0.2.6
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [5520caf5] + CausalityTools v0.2.6
+  [608a59af] + ChaosTools v1.7.0
+  [7011085d] + CrossMappings v0.2.3
+  [bcd4f6db] + DelayDiffEq v5.14.0
+  [5732040d] + DelayEmbeddings v1.1.0
+  [5a0ffddc] + DiffEqFinancial v2.1.0
+  [c894b116] + DiffEqJump v6.2.0
+  [77a26b50] + DiffEqNoiseProcess v3.3.1
+  [055956cb] + DiffEqPhysics v3.2.0
+  [0c46a032] + DifferentialEquations v6.6.0
+  [c619ae07] + DimensionalPlotRecipes v0.2.0
+  [61744808] + DynamicalSystems v1.3.0
+  [6e36e845] + DynamicalSystemsBase v1.3.0
+  [fc60dff9] + LombScargle v0.4.0
+  [f9640e96] + MultiScaleArrays v1.5.0
+  [260eed61] + PerronFrobenius v0.2.3
+  [e409e4f3] + PoissonRandom v0.4.0
+  [639c3291] + RecurrenceAnalysis v1.0.3
+  [ae5879a3] + ResettableStacks v0.6.0
+  [05bca326] + SimpleDiffEq v0.4.0
+  [d5428e67] + Simplices v0.4.1
+  [1441a9f6] + StateSpaceReconstruction v0.3.1
+  [9672c7b4] + SteadyStateDiffEq v1.5.0
+  [789caeaf] + StochasticDiffEq v6.8.0
+  [c3572dad] + Sundials v3.6.2
+  [c804724b] + TimeseriesSurrogates v0.3.1
+  [ea221983] + TransferEntropy v0.3.3
+  [dcd9ba68] + UncertainData v0.2.3
+  [29a6e085] + Wavelets v0.8.0
+  Building Sundials → `~/.julia/packages/Sundials/DBg3Z/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+  Building PyCall ──────────→ `~/.julia/packages/PyCall/ttONZ/deps/build.log`
+  Building CRlibm ──────────→ `~/.julia/packages/CRlibm/2S9DB/deps/build.log`
+  Building GR ──────────────→ `~/.julia/packages/GR/ZI5OE/deps/build.log`
+  Building FFMPEG ──────────→ `~/.julia/packages/FFMPEG/9JQpZ/deps/build.log`
+  Building Plots ───────────→ `~/.julia/packages/Plots/Ih71u/deps/build.log`
+  Building Sundials ────────→ `~/.julia/packages/Sundials/DBg3Z/deps/build.log`

@@ -1,0 +1,34 @@
+
+site_name:        Simplices.jl
+repo_url:         https://github.com/kahaaga/Simplices.jl
+site_description: Computing exact intersection volumes between ND simplices.
+site_author:      kahaaga
+
+theme:
+  name: 'material'
+
+extra_css:
+  - assets/documenter.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML
+  - assets/mathjaxhelper.js
+  - assets/documenter.js
+  - assets/search.js
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+  - mdx_math
+
+docs_dir: 'build'
+
+pages:
+  - Overview: index.md
+  - Properties of simplices: simplexproperties.md
+  - Simplex intersection:
+    - How to calculate intersections?: simplexintersection.md
+    - Generate intersecting simplices: generatesimplices.md
+    - Examples: examples.md
+  - Function reference: funcs.md
