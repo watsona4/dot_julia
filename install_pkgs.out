@@ -28695,3 +28695,15 @@ Installing BSON
   [fbb218c0] + BSON v0.2.3
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master b47aae5c4] added package BSON
+ 3 files changed, 36 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   570766fdc..b47aae5c4  master -> master
+Progress:   5%|██                                       |  ETA: 5 days, 0:03:49[K
+Installing BSONqs
+ Resolving package versions...
+ Installed BSONqs ─ v0.6.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [d4e7598c] + BSONqs v0.6.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [d4e7598c] + BSONqs v0.6.0

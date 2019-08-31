@@ -1,0 +1,18 @@
+name = "BSONqs"
+uuid = "d4e7598c-6ff7-5b24-8fdc-8d1c0c33c9cf"
+keywords = ["BSON", "serialization"]
+license = "MIT"
+desc = "Mostly compatible Fork of BSON package with focus on composite type performance"
+version = "0.6.0"
+
+[deps]
+Mmap = "a63ad114-7e13-5084-954f-fe012c677804"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
