@@ -47791,3 +47791,37 @@ Installing Cbc
   [9961bab8] + Cbc v0.6.4
   Building Cbc → `~/.julia/packages/Cbc/8nwnT/deps/build.log`
   Building Cbc → `~/.julia/packages/Cbc/8nwnT/deps/build.log`
+[master bd1fae4c9] added package Cbc
+ 20 files changed, 1691 insertions(+)
+ create mode 100644 packages/Cbc/8nwnT/.gitignore
+ create mode 100644 packages/Cbc/8nwnT/.travis.yml
+ create mode 100644 packages/Cbc/8nwnT/LICENSE.md
+ create mode 100644 packages/Cbc/8nwnT/Project.toml
+ create mode 100644 packages/Cbc/8nwnT/README.md
+ create mode 100644 packages/Cbc/8nwnT/appveyor.yml
+ create mode 100644 packages/Cbc/8nwnT/deps/.gitignore
+ create mode 100644 packages/Cbc/8nwnT/deps/build.jl
+ create mode 100644 packages/Cbc/8nwnT/examples/knapsack.jl
+ create mode 100644 packages/Cbc/8nwnT/src/Cbc.jl
+ create mode 100644 packages/Cbc/8nwnT/src/CbcCInterface.jl
+ create mode 100644 packages/Cbc/8nwnT/src/MOI_wrapper.jl
+ create mode 100644 packages/Cbc/8nwnT/src/MPB_wrapper.jl
+ create mode 100644 packages/Cbc/8nwnT/test/MOI_wrapper.jl
+ create mode 100644 packages/Cbc/8nwnT/test/MPB_wrapper.jl
+ create mode 100644 packages/Cbc/8nwnT/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   586bc7a18..bd1fae4c9  master -> master
+Progress:  12%|████▉                                    |  ETA: 3 days, 12:26:37[K
+Installing Ccluster
+ Resolving package versions...
+ Installed Nemo ───── v0.14.3
+ Installed Ccluster ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [8fd415a7] + Ccluster v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [8fd415a7] + Ccluster v0.1.0
+  [2edaba10] + Nemo v0.14.3
+  Building Nemo ────→ `~/.julia/packages/Nemo/h2OyU/deps/build.log`
+  Building Ccluster → `~/.julia/packages/Ccluster/i80C5/deps/build.log`
+  Building Nemo ────→ `~/.julia/packages/Nemo/h2OyU/deps/build.log`
+  Building Ccluster → `~/.julia/packages/Ccluster/i80C5/deps/build.log`

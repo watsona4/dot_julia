@@ -1565,6 +1565,12 @@ git-tree-sha1 = "323f67d761515264966140f673fff0f7368bc3ec"
 uuid = "9961bab8-2fa3-5c5a-9d89-47fab24efd76"
 version = "0.6.4"
 
+[[Ccluster]]
+deps = ["AbstractAlgebra", "Libdl", "Nemo", "Printf"]
+git-tree-sha1 = "d4797c786daecfd50416cca7812352fabf5f6e71"
+uuid = "8fd415a7-295e-5ecb-bee7-308748477f8f"
+version = "0.1.0"
+
 [[ChaosTools]]
 deps = ["Combinatorics", "DSP", "DiffEqBase", "Distances", "Distributions", "DynamicalSystemsBase", "ForwardDiff", "LinearAlgebra", "LombScargle", "NearestNeighbors", "Random", "Reexport", "Roots", "StaticArrays", "Statistics", "StatsBase"]
 git-tree-sha1 = "a76653daa84ba7153a4498d614e4eef9526e5334"
@@ -3190,6 +3196,12 @@ deps = ["LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "c807689feb2127a011d8e174541c79e5a3a8acab"
 uuid = "2fcf5ba9-9ed4-57cf-b73f-ff513e316b9c"
 version = "0.5.0"
+
+[[Nemo]]
+deps = ["AbstractAlgebra", "BinaryProvider", "InteractiveUtils", "Libdl", "LinearAlgebra", "Markdown", "Test"]
+git-tree-sha1 = "d32235cd547a9825d9e8113d5bc52040c09c7fda"
+uuid = "2edaba10-b0f1-5616-af89-8c11ac63239a"
+version = "0.14.3"
 
 [[Neo4j]]
 deps = ["Base64", "DataFrames", "DocStringExtensions", "HTTP", "JSON", "Missings", "Test"]

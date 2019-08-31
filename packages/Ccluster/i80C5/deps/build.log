@@ -1,0 +1,31 @@
+fatal: destination path 'Ccluster' already exists and is not an empty directory.
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+FLINT_LIB_DIR set to /home/ec2-user/.julia/packages/Nemo/h2OyU/deps/usr/lib
+FLINT_INC_DIR set to /home/ec2-user/.julia/packages/Nemo/h2OyU/deps/usr/include
+ARB_LIB_DIR set to /home/ec2-user/.julia/packages/Nemo/h2OyU/deps/usr/lib
+ARB_INC_DIR set to /home/ec2-user/.julia/packages/Ccluster/i80C5/deps/Ccluster/build/include
+Configuring...x86_64-Linux
+Testing __builtin_popcountl...yes
+Testing native popcount...yes
+CCLUSTER was successfully configured.
+make[1]: Entering directory `/home/ec2-user/.julia/packages/Ccluster/i80C5/deps/Ccluster'
+make[1]: Nothing to be done for `shared'.
+make[1]: Leaving directory `/home/ec2-user/.julia/packages/Ccluster/i80C5/deps/Ccluster'
+make[1]: Entering directory `/home/ec2-user/.julia/packages/Ccluster/i80C5/deps/Ccluster'
+make[1]: Nothing to be done for `shared'.
+make[1]: Leaving directory `/home/ec2-user/.julia/packages/Ccluster/i80C5/deps/Ccluster'
+mkdir -p /home/ec2-user/.julia/packages/Ccluster/i80C5/local/lib
+mkdir -p /home/ec2-user/.julia/packages/Ccluster/i80C5/local/include
+mkdir -p include
+cp -r src/* include
+rm -f include/*/*.o include/*/*.lo include/*/*.c
+mkdir -p /home/ec2-user/.julia/packages/Ccluster/i80C5/local/include/ccluster
+cp -r include/* /home/ec2-user/.julia/packages/Ccluster/i80C5/local/include/ccluster/
+rm -r include
+CCLUSTER_VERSION = "master" = "master"
+Deleting old /home/ec2-user/.julia/packages/Ccluster/i80C5/local
+Cloning Ccluster ... 
+DONE
+Building Ccluster ... 
+DONE

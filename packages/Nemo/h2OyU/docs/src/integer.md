@@ -1,0 +1,449 @@
+```@meta
+CurrentModule = Nemo
+```
+
+# Integers
+
+The default integer type in Nemo is provided by Flint. The associated ring of
+integers is represented by the constant parent object called `FlintZZ`.
+
+For convenience we define
+
+```
+ZZ = FlintZZ
+```
+
+so that integers can be constructed using `ZZ` instead of `FlintZZ`. Note that
+this is the name of a specific parent object, not the name of its type.
+
+The types of the integer ring parent objects and elements of the associated
+rings of integers are given in the following table according to the library
+provding them.
+
+ Library        | Element type  | Parent type
+----------------|---------------|--------------------
+Flint           | `fmpz`        | `FlintIntegerRing`
+
+All integer element types belong directly to the abstract type `RingElem` and
+all the integer ring parent object types belong to the abstract type `Ring`.
+
+## Integer functionality
+
+Nemo integers implement the whole of the ring and Euclidean ring interfaces of
+AbstractAlgebra.jl.
+
+[https://nemocas.github.io/AbstractAlgebra.jl/rings.html](https://nemocas.github.io/AbstractAlgebra.jl/rings.html)
+
+[https://nemocas.github.io/AbstractAlgebra.jl/euclidean.html](https://nemocas.github.io/AbstractAlgebra.jl/euclidean.html)
+
+Below, we describe the functionality that is specific to the Nemo/Flint integer ring.
+
+### Constructors
+
+```julia
+ZZ(n::Integer)
+```
+
+Coerce a Julia integer value into the integer ring.
+
+```julia
+ZZ(n::String)
+```
+
+Parse the given string as an integer.
+
+```julia
+ZZ(n::Float64)
+ZZ(n::Float32)
+ZZ(n::Float16)
+ZZ(n::BigFloat)
+```
+
+Coerce the given floating point number into the integer ring, assuming that it
+can be exactly represented as an integer.
+
+### Basic manipulation
+
+```@docs
+isunit(::fmpz)
+```
+
+```@docs
+sign(::fmpz)
+```
+
+```@docs
+size(::fmpz)
+```
+
+```@docs
+fits(::Type{UInt}, ::fmpz)
+fits(::Type{Int}, ::fmpz)
+```
+
+```@docs
+denominator(::fmpz)
+```
+
+```@docs
+numerator(::fmpz)
+```
+
+**Examples**
+
+```
+a = ZZ(12)
+
+isunit(a)
+sign(a)
+s = size(a)
+fits(Int, a)
+n = numerator(a)
+d = denominator(a)
+```
+
+### Euclidean division
+
+Nemo also provides a large number of Euclidean division operations. Recall that
+for a dividend $a$ and divisor $b$, we can write $a = bq + r$ with
+$0 \leq |r| < |b|$. We call $q$ the quotient and $r$ the remainder.
+
+We distinguish three cases. If $q$ is rounded towards zero, $r$ will have the
+same sign as $a$. If $q$ is rounded towards plus infinity, $r$ will have the
+opposite sign to $b$. Finally, if $q$ is rounded towards minus infinity, $r$
+will have the same sign as $b$.
+
+In the following table we list the division functions and their rounding
+behaviour. We also give the return value of the function, with $q$ representing
+return of the quotient and $r$ representing return of the remainder.
+
+Function                    | Return | Rounding
+----------------------------|--------|------------------------
+`divrem(a::fmpz, b::fmpz)`  | q, r   | towards zero 
+`tdivrem(a::fmpz, b::fmpz)` | q, r   | towards zero
+`fdivrem(a::fmpz, b::fmpz)` | q, r   | towards minus infinity 
+
+Nemo also offers the following ad hoc division operators. The notation and
+description is as for the other Euclidean division functions.
+
+Function                    | Return | Rounding
+----------------------------|--------|------------------------
+`rem(a::fmpz, b::Int)`      | r      | towards zero
+`div(a::fmpz, b::Int)`      | q      | towards zero
+`tdiv(a::fmpz, b::Int)`     | q      | towards zero
+`fdiv(a::fmpz, b::Int)`     | q      | towards minus infinity
+`cdiv(a::fmpz, b::Int)`     | q      | towards plus infinity
+
+The following functions are also available, for the case where one is dividing
+by a power of $2$. In other words, for Euclidean division of the form
+$a = b2^{d} + r$. These are useful for bit twiddling.
+
+Function                    | Return | Rounding
+----------------------------|--------|------------------------
+`tdivpow2(a::fmpz, d::Int)` | q      | towards zero
+`fdivpow2(a::fmpz, d::Int)` | q      | towards minus infinity
+`fmodpow2(a::fmpz, d::Int)` | r      | towards minus infinity
+`cdivpow2(a::fmpz, d::Int)` | q      | towards plus infinity
+
+**Examples**
+
+```julia
+a = fmpz(12)
+b = fmpz(5)
+
+q, r = divrem(a, b)
+c = cdiv(a, b)
+d = fdiv(a, b)
+f = tdivpow2(a, 2)
+g = fmodpow2(a, 3)
+```
+
+### Comparison
+
+Instead of `isless` we implement a function `cmp(a, b)` which returns a
+positive value if $a > b$, zero if $a == b$ and a negative value if $a < b$.
+We then implement all the other operators, including `==` in terms of `cmp`.
+
+For convenience we also implement a `cmpabs(a, b)` function which returns
+a positive value if $|a| > |b|$, zero if $|a| == |b|$ and a negative value if
+$|a| < |b|$. This can be slightly faster than a call to `cmp` or one of the
+comparison operators when comparing nonnegative values for example.
+
+Here is a list of the comparison functions implemented, with the understanding
+that `cmp` provides all of the comparison operators listed above.
+
+Function                   |
+---------------------------|
+`cmp(a::fmpz, b::fmpz)`    |
+`cmpabs(a::fmpz, b::fmpz)` |
+
+We also provide the following ad hoc comparisons which again provide all of the
+comparison operators mentioned above.
+
+Function                   |
+---------------------------|
+`cmp(a::fmpz, b::Int)`     |
+`cmp(a::Int, b::fmpz)`     |
+`cmp(a::fmpz, b::UInt)`    |
+`cmp(a::UInt, b::fmpz)`    |
+
+**Examples**
+
+```julia
+a = ZZ(12)
+b = ZZ(3)
+
+a < b
+a != b
+a > 4
+5 <= b
+cmpabs(a, b)
+```
+
+### Shifting
+
+```@docs
+<<(::fmpz, ::Int)
+```
+
+```@docs
+>>(::fmpz, ::Int)
+```
+
+**Examples**
+
+```julia
+a = fmpz(12)
+
+a << 3
+a >> 5
+```
+
+### Modular arithmetic
+
+```@docs
+sqrtmod(::fmpz, ::fmpz)
+```
+
+```@docs
+crt(::fmpz, ::fmpz, ::fmpz, m::fmpz, ::Bool)
+crt(::fmpz, ::fmpz, ::Int, ::Int, ::Bool)
+```
+
+**Examples**
+
+```julia
+c = sqrtmod(ZZ(12), ZZ(13))
+d = crt(ZZ(5), ZZ(13), ZZ(7), ZZ(37), true)
+```
+
+### Integer logarithm
+
+```@docs
+flog(::fmpz, ::fmpz)
+flog(::fmpz, ::Int)
+```
+
+```@docs
+clog(::fmpz, ::fmpz)
+clog(::fmpz, ::Int)
+```
+
+**Examples**
+
+```julia
+a = fmpz(12)
+b = fmpz(2)
+
+c = flog(a, b)
+d = clog(a, 3)
+```
+
+### Integer roots
+
+```@docs
+isqrt(::fmpz)
+```
+
+```@docs
+isqrtrem(::fmpz)
+```
+
+```@docs
+root(::fmpz, ::Int)
+```
+
+**Examples**
+
+```julia
+a = ZZ(13)
+
+b = sqrt(a)
+s, r = sqrtrem(a)
+c = root(a, 3)
+```
+
+### Number theoretic functionality
+
+```@docs
+divisible(::fmpz, ::Int)
+divisible(::fmpz, ::fmpz)
+```
+
+```@docs
+issquare(::fmpz)
+```
+
+```@docs
+isprime(::fmpz)
+```
+
+```@docs
+isprobabprime(::fmpz)
+```
+
+```@docs
+factor(::fmpz)
+```
+
+```@docs
+divisor_lenstra(::fmpz, ::fmpz, ::fmpz)
+```
+
+```@docs
+fac(::Int)
+```
+
+```@docs
+risingfac(::fmpz, ::Int)
+risingfac(::Int, ::Int)
+```
+
+```@docs
+primorial(::Int)
+```
+
+```@docs
+fib(::Int)
+```
+
+```@docs
+bell(::Int)
+```
+
+```@docs
+binom(::Int, ::Int)
+```
+
+```@docs
+moebiusmu(::fmpz)
+```
+
+```@docs
+jacobi(::fmpz, ::fmpz)
+```
+
+```@docs
+sigma(::fmpz, ::Int)
+```
+
+```@docs
+eulerphi(::fmpz)
+```
+
+```@docs
+numpart(::Int)
+numpart(::fmpz) 
+```
+
+**Examples**
+
+```julia
+isprime(ZZ(13))
+n = fac(100)
+s = sigma(ZZ(128), 10)
+a = eulerphi(ZZ(12480))
+p = numpart(1000)
+f = factor(ZZ(12))
+```
+
+### Digits and bases
+
+```@docs
+bin(::fmpz)
+```
+
+```@docs
+oct(::fmpz)
+```
+
+```@docs
+dec(::fmpz)
+```
+
+```@docs
+hex(::fmpz)
+```
+
+```@docs
+base(::fmpz, ::Integer)
+```
+
+```@docs
+ndigits(::fmpz, ::Integer)
+```
+
+```@docs
+nbits(::fmpz)
+```
+
+**Examples**
+
+```julia
+a = fmpz(12)
+
+s1 = bin(a)
+s2 = base(a, 13)
+n1 = nbits(a)
+n2 = ndigits(a, 3)
+```
+
+### Bit twiddling
+
+```@docs
+popcount(::fmpz)
+```
+
+```@docs
+prevpow2(::fmpz)
+```
+
+```@docs
+nextpow2(::fmpz)
+```
+
+```@docs
+trailing_zeros(::fmpz)
+```
+
+```@docs
+clrbit!(::fmpz, ::Int)
+```
+
+```@docs
+setbit!(::fmpz, ::Int)
+```
+
+```@docs
+combit!(::fmpz, ::Int)
+```
+
+**Examples**
+
+```julia
+a = fmpz(12)
+
+p = popcount(a)
+b = nextpow2(a)
+combit!(a, 2)
+```
