@@ -50075,3 +50075,22 @@ Installing CircularArrays
   [7a955b69] + CircularArrays v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [7a955b69] + CircularArrays v0.1.0
+[master 8d0e565db] added package CircularArrays
+ 11 files changed, 1186 insertions(+)
+ create mode 100644 packages/CircularArrays/ol6bO/.gitignore
+ create mode 100644 packages/CircularArrays/ol6bO/LICENSE.md
+ create mode 100644 packages/CircularArrays/ol6bO/Project.toml
+ create mode 100644 packages/CircularArrays/ol6bO/README.md
+ create mode 100644 packages/CircularArrays/ol6bO/REQUIRE
+ create mode 100644 packages/CircularArrays/ol6bO/src/CircularArrays.jl
+ create mode 100644 packages/CircularArrays/ol6bO/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   27d485559..8d0e565db  master -> master
+Progress:  13%|█████▏                                   |  ETA: 3 days, 9:15:22[K
+Installing CircularList
+ Resolving package versions...
+ Installed CircularList ─ v1.0.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [e1d4a2be] + CircularList v1.0.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [e1d4a2be] + CircularList v1.0.0
