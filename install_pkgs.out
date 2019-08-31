@@ -45936,3 +45936,49 @@ Installing Cameras
   [6410b9bd] + Cameras v0.3.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [6410b9bd] + Cameras v0.3.0
+[master 5cc753b62] added package Cameras
+ 21 files changed, 579 insertions(+)
+ create mode 100644 packages/Cameras/xTkel/.appveyor.yml
+ create mode 100644 packages/Cameras/xTkel/.gitignore
+ create mode 100644 packages/Cameras/xTkel/.travis.yml
+ create mode 100644 packages/Cameras/xTkel/LICENSE
+ create mode 100644 packages/Cameras/xTkel/Manifest.toml
+ create mode 100644 packages/Cameras/xTkel/Project.toml
+ create mode 100644 packages/Cameras/xTkel/README.md
+ create mode 100644 packages/Cameras/xTkel/REQUIRE
+ create mode 100644 packages/Cameras/xTkel/src/Cameras.jl
+ create mode 100644 packages/Cameras/xTkel/src/acquired_image.jl
+ create mode 100644 packages/Cameras/xTkel/src/camera.jl
+ create mode 100644 packages/Cameras/xTkel/src/iteration.jl
+ create mode 100644 packages/Cameras/xTkel/src/simulated_camera.jl
+ create mode 100644 packages/Cameras/xTkel/test/acquired_image.jl
+ create mode 100644 packages/Cameras/xTkel/test/acquisition.jl
+ create mode 100644 packages/Cameras/xTkel/test/iteration.jl
+ create mode 100644 packages/Cameras/xTkel/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   8fd9e0905..5cc753b62  master -> master
+Progress:  11%|████▋                                    |  ETA: 3 days, 14:48:46[K
+Installing CancerSeqSim
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CancerSeqSim [c7b3ebfe]:\n CancerSeqSim [c7b3ebfe] log:\n ├─possible versions are: 0.2.0 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.2.0\n └─restricted by compatibility requirements with ProgressMeter [92933f4c] to versions: uninstalled — no versions left\n   └─ProgressMeter [92933f4c] log:\n     ├─possible versions are: [0.0.1-0.0.2, 0.1.0-0.1.3, 0.2.0-0.2.3, 0.3.0-0.3.4, 0.4.0, 0.5.0-0.5.6, 0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0, 1.0.0] or uninstalled\n     └─restricted to versions 1.0.0 by an explicit requirement, leaving only versions 1.0.0", nothing)
+Progress:  11%|████▋                                    |  ETA: 3 days, 14:33:36[K
+Installing CapacityExpansion
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package JuMP [4076af6c]:\n JuMP [4076af6c] log:\n ├─possible versions are: [0.1.1-0.1.2, 0.2.0, 0.3.0-0.3.2, 0.4.0-0.4.1, 0.5.0-0.5.8, 0.6.0-0.6.3, 0.7.0-0.7.4, 0.8.0, 0.9.0-0.9.3, 0.10.0-0.10.3, 0.11.0-0.11.3, 0.12.0-0.12.2, 0.13.0-0.13.2, 0.14.0-0.14.2, 0.15.0-0.15.1, 0.16.0-0.16.2, 0.17.0-0.17.1, 0.18.0-0.18.6, 0.19.0-0.19.2, 0.20.0] or uninstalled\n ├─restricted by compatibility requirements with CapacityExpansion [c5f7ca31] to versions: [0.19.0-0.19.2, 0.20.0]\n │ └─CapacityExpansion [c5f7ca31] log:\n │   ├─possible versions are: 0.1.1-0.1.5 or uninstalled\n │   └─restricted to versions * by an explicit requirement, leaving only versions 0.1.1-0.1.5\n └─restricted by compatibility requirements with Alpine [07493b3f] to versions: [0.1.1-0.1.2, 0.2.0, 0.3.0-0.3.2, 0.4.0-0.4.1, 0.5.0-0.5.8, 0.6.0-0.6.3, 0.7.0-0.7.4, 0.8.0, 0.9.0-0.9.3, 0.10.0-0.10.3, 0.11.0-0.11.3, 0.12.0-0.12.2, 0.13.0-0.13.2, 0.14.0-0.14.2, 0.15.0-0.15.1, 0.16.0-0.16.2, 0.17.0-0.17.1, 0.18.0-0.18.6] — no versions left\n   └─Alpine [07493b3f] log:\n     ├─possible versions are: [0.1.0-0.1.3, 0.1.5, 0.1.7, 0.1.9] or uninstalled\n     └─restricted to versions 0.1.9 by an explicit requirement, leaving only versions 0.1.9", nothing)
+Progress:  11%|████▋                                    |  ETA: 3 days, 14:18:46[K
+Installing Cartesian
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Cartesian [cc78a3dd]:\n Cartesian [cc78a3dd] log:\n ├─possible versions are: [0.1.0-0.1.5, 0.2.0-0.2.3, 0.3.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.5, 0.2.0-0.2.3, 0.3.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  11%|████▋                                    |  ETA: 3 days, 14:03:52[K
+Installing CasaCore
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CasaCore [ace4b8d5]:\n CasaCore [ace4b8d5] log:\n ├─possible versions are: [0.0.1-0.0.5, 0.1.0, 0.2.0-0.2.2] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.5, 0.1.0, 0.2.0-0.2.2]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  11%|████▋                                    |  ETA: 3 days, 13:48:50[K
+Installing Cascadia
+ Resolving package versions...
+ Installed Cascadia ─ v0.4.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [54eefc05] + Cascadia v0.4.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [54eefc05] + Cascadia v0.4.0
+  Building Gumbo → `~/.julia/packages/Gumbo/G7Qbw/deps/build.log`
