@@ -495,6 +495,12 @@ git-tree-sha1 = "440b658ec21266a709dba74b5488226f44b738d6"
 uuid = "9477f2fd-3d51-5b6a-a127-ca3a070ddf94"
 version = "0.0.3"
 
+[[AsterReader]]
+deps = ["FEMBase", "HDF5", "LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "9bab044113c0eedc16b6550500d98605ecf1f129"
+uuid = "cb1a753d-6b7b-52e3-9bfe-57d99d445c39"
+version = "0.2.2"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
@@ -893,6 +899,24 @@ deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "aed48d722e528bc634bd36a7d0e090fa2952a3c0"
 uuid = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
 version = "0.9.4"
+
+[[FEMBase]]
+deps = ["FEMBasis", "FEMQuad", "LinearAlgebra", "SparseArrays", "Statistics", "Test", "TimerOutputs"]
+git-tree-sha1 = "ecfefd15a301e0beddaf6a477587f96311df6276"
+uuid = "fbcbbc08-f1bf-5204-9233-b69f5d396135"
+version = "0.2.2"
+
+[[FEMBasis]]
+deps = ["Calculus", "LinearAlgebra", "Test"]
+git-tree-sha1 = "aa935fc1c3daeca832945d5282c8dbcad8b1c252"
+uuid = "353fb843-c566-51e6-ba49-78b3e3d5ebb5"
+version = "0.2.0"
+
+[[FEMQuad]]
+deps = ["Test"]
+git-tree-sha1 = "324592bf6e933b089f82f44355f051adfa0c82aa"
+uuid = "be8e8821-3f6f-54c2-987c-d2773c3a52cb"
+version = "0.3.0"
 
 [[FFMPEG]]
 deps = ["BinaryProvider", "Libdl"]

@@ -23226,3 +23226,37 @@ Installing AssociativeArrays
   [9477f2fd] + AssociativeArrays v0.0.3
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [9477f2fd] + AssociativeArrays v0.0.3
+[master 916b302f5] added package AssociativeArrays
+ 17 files changed, 1868 insertions(+)
+ create mode 100644 packages/AssociativeArrays/0dRHQ/.gitignore
+ create mode 100644 packages/AssociativeArrays/0dRHQ/LICENSE
+ create mode 100644 packages/AssociativeArrays/0dRHQ/Manifest.toml
+ create mode 100644 packages/AssociativeArrays/0dRHQ/Project.toml
+ create mode 100644 packages/AssociativeArrays/0dRHQ/README.md
+ create mode 100644 packages/AssociativeArrays/0dRHQ/REQUIRE
+ create mode 100644 packages/AssociativeArrays/0dRHQ/src/AssociativeArrays.jl
+ create mode 100644 packages/AssociativeArrays/0dRHQ/src/_broadcast.jl
+ create mode 100644 packages/AssociativeArrays/0dRHQ/src/_num.jl
+ create mode 100644 packages/AssociativeArrays/0dRHQ/src/namedarray.jl
+ create mode 100644 packages/AssociativeArrays/0dRHQ/src/namedaxis.jl
+ create mode 100644 packages/AssociativeArrays/0dRHQ/src/tools.jl
+ create mode 100644 packages/AssociativeArrays/0dRHQ/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   fb495f162..916b302f5  master -> master
+Progress:   4%|█▌                                       |  ETA: 6 days, 1:00:22[K
+Installing AsterReader
+ Resolving package versions...
+ Installed FEMBase ───── v0.2.2
+ Installed AsterReader ─ v0.2.2
+ Installed FEMQuad ───── v0.3.0
+ Installed FEMBasis ──── v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [cb1a753d] + AsterReader v0.2.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [cb1a753d] + AsterReader v0.2.2
+  [fbcbbc08] + FEMBase v0.2.2
+  [353fb843] + FEMBasis v0.2.0
+  [be8e8821] + FEMQuad v0.3.0
+  Building CMake → `~/.julia/packages/CMake/nSK2r/deps/build.log`
+  Building Blosc → `~/.julia/packages/Blosc/lzFr0/deps/build.log`
+  Building HDF5 ─→ `~/.julia/packages/HDF5/DktP4/deps/build.log`
