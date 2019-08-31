@@ -1,0 +1,13 @@
+*.png
+*.gif
+
+# coveralls files
+*.cov
+
+*.ipynb
+*Manifest.toml
+
+test/experiment.jl
+
+*site/
+docs/build
