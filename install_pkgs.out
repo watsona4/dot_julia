@@ -38520,3 +38520,14 @@ Installing CSTParser
   [00ebfdb7] + CSTParser v0.6.2
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 8a5c2ac03] added package CSTParser
+ 3 files changed, 18 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   fa7ed8ab2..8a5c2ac03  master -> master
+Progress:  10%|████▏                                    |  ETA: 3 days, 11:08:20[K
+Installing CSV
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [336ed68f] + CSV v0.5.11
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
