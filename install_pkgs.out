@@ -34924,3 +34924,29 @@ Installing BulkSMS
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [5fa4ca3b] + BulkSMS v0.0.1
   Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+[master 36cae361b] added package BulkSMS
+ 18 files changed, 489 insertions(+)
+ create mode 100644 packages/BulkSMS/bbxWv/.gitignore
+ create mode 100644 packages/BulkSMS/bbxWv/.travis.yml
+ create mode 100644 packages/BulkSMS/bbxWv/LICENSE.md
+ create mode 100644 packages/BulkSMS/bbxWv/README.md
+ create mode 100644 packages/BulkSMS/bbxWv/REQUIRE
+ create mode 100644 packages/BulkSMS/bbxWv/appveyor.yml
+ create mode 100644 packages/BulkSMS/bbxWv/docs/Makefile
+ create mode 100644 packages/BulkSMS/bbxWv/docs/Project.toml
+ create mode 100644 packages/BulkSMS/bbxWv/docs/make.jl
+ create mode 100644 packages/BulkSMS/bbxWv/docs/src/index.md
+ create mode 100644 packages/BulkSMS/bbxWv/sample/config.default.jl
+ create mode 100644 packages/BulkSMS/bbxWv/sample/send_message.jl
+ create mode 100644 packages/BulkSMS/bbxWv/src/BulkSMS.jl
+ create mode 100644 packages/BulkSMS/bbxWv/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   49b0a37a4..36cae361b  master -> master
+Progress:   9%|███▋                                     |  ETA: 3 days, 16:04:25[K
+Installing BusinessDays
+ Resolving package versions...
+ Installed BusinessDays ─ v0.9.4
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [4f18b42c] + BusinessDays v0.9.4
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [4f18b42c] + BusinessDays v0.9.4
