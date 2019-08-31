@@ -31791,3 +31791,161 @@ Installing BioMedQuery
   Building DecFP ───────────→ `~/.julia/packages/DecFP/3jJW7/deps/build.log`
   Building MySQL ───────────→ `~/.julia/packages/MySQL/owtkt/deps/build.log`
   Building LightXML ────────→ `~/.julia/packages/LightXML/k3mJ4/deps/build.log`
+[master 8abd07bfa] added package BioMedQuery
+ 147 files changed, 58980 insertions(+)
+ create mode 100644 packages/BioMedQuery/K4kwC/.gitignore
+ create mode 100644 packages/BioMedQuery/K4kwC/.travis.yml
+ create mode 100644 packages/BioMedQuery/K4kwC/LICENSE
+ create mode 100644 packages/BioMedQuery/K4kwC/Project.toml
+ create mode 100644 packages/BioMedQuery/K4kwC/README.md
+ create mode 100644 packages/BioMedQuery/K4kwC/REQUIRE
+ create mode 100644 packages/BioMedQuery/K4kwC/ci/travis/README.md
+ create mode 100644 packages/BioMedQuery/K4kwC/ci/travis/before_install-osx.sh
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/Project.toml
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/make.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/ct.md
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/dbutils.md
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/examples.md
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/examples/1_pubmed_search_and_save.md
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/examples/2_umls_map_and_filter.md
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/examples/4_pubmed_export_citations.md
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/examples/5_load_medline.md
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/images/bcbi_logo.jpeg
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/images/pubmed_schema.jpg
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/images/save_efetch_schema.jpeg
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/images/umls_sn_schema.png
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/index.md
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/library.md
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/11748933.bib
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/11748933.enw
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/1_pubmed_search_and_save.ipynb
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/2_umls_map_and_filter.ipynb
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/4_pubmed_export_citations.ipynb
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/5_load_medline.ipynb
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/medline/parsed_files/pubmedsample18n0001_abstract_full.csv
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/medline/parsed_files/pubmedsample18n0001_abstract_structured.csv
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/medline/parsed_files/pubmedsample18n0001_author_ref.csv
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/medline/parsed_files/pubmedsample18n0001_basic.csv
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/medline/parsed_files/pubmedsample18n0001_mesh_desc.csv
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/medline/parsed_files/pubmedsample18n0001_mesh_heading.csv
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/medline/parsed_files/pubmedsample18n0001_mesh_qual.csv
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/medline/parsed_files/pubmedsample18n0001_pub_type.csv
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/medline/raw_files/pubmedsample18n0001.xml.gz
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/pmid_list.bib
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/pmid_list.enw
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/pubmed_obesity_2010_2012.db
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/notebooks/pubmed_obesity_2010_2012.enw
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/processes.md
+ create mode 100644 packages/BioMedQuery/K4kwC/docs/src/pubmed.md
+ create mode 100644 packages/BioMedQuery/K4kwC/examples/literate_src/1_pubmed_search_and_save.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/examples/literate_src/2_umls_map_and_filter.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/examples/literate_src/4_pubmed_export_citations.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/examples/literate_src/5_load_medline.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/examples/runexamples.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/ready.yml
+ create mode 100644 packages/BioMedQuery/K4kwC/setup.cfg
+ create mode 100644 packages/BioMedQuery/K4kwC/src/BioMedQuery.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/CT/CT.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/DBUtils/DBUtils.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/DBUtils/mysql_db_utils.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/DBUtils/sqlite_db_utils.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/Processes/medline_load.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/Processes/pubmed_export_citations.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/Processes/pubmed_mesh_to_umls_map.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/Processes/pubmed_occurrance_filtering.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/Processes/pubmed_search_and_save.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/PubMed/citation_manager.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/PubMed/eutils_sql_save.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/PubMed/pubmed_sql_utils.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/src/PubMed/pubmed_to_csv.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/test/ct.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/test/dbutils_mysql.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/test/dbutils_sqlite.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/test/efetch_sample.xml
+ create mode 100644 packages/BioMedQuery/K4kwC/test/export_citations.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/test/processes_df.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/test/processes_mysql.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/test/processes_sqlite.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/test/pubmed.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/test/pubmed_parse.jl
+ create mode 100644 packages/BioMedQuery/K4kwC/test/pubmedsample19n0001.xml.gz
+ create mode 100755 packages/BioMedQuery/K4kwC/test/runtests.jl
+ create mode 100644 packages/DecFP/3jJW7/.gitignore
+ create mode 100644 packages/DecFP/3jJW7/.travis.yml
+ create mode 100644 packages/DecFP/3jJW7/LICENSE.md
+ create mode 100644 packages/DecFP/3jJW7/README.md
+ create mode 100644 packages/DecFP/3jJW7/REQUIRE
+ create mode 100644 packages/DecFP/3jJW7/appveyor.yml
+ create mode 100644 packages/DecFP/3jJW7/deps/build.jl
+ create mode 100644 packages/DecFP/3jJW7/src/DecFP.jl
+ create mode 100644 packages/DecFP/3jJW7/test/runtests.jl
+ create mode 100644 packages/FTPClient/5MZUK/.appveyor.yml
+ create mode 100644 packages/FTPClient/5MZUK/.gitignore
+ create mode 100644 packages/FTPClient/5MZUK/.travis.yml
+ create mode 100644 packages/FTPClient/5MZUK/LICENSE.md
+ create mode 100644 packages/FTPClient/5MZUK/Project.toml
+ create mode 100644 packages/FTPClient/5MZUK/README.md
+ create mode 100644 packages/FTPClient/5MZUK/src/FTPC.jl
+ create mode 100644 packages/FTPClient/5MZUK/src/FTPClient.jl
+ create mode 100644 packages/FTPClient/5MZUK/src/FTPObject.jl
+ create mode 100644 packages/FTPClient/5MZUK/src/conn_context.jl
+ create mode 100644 packages/FTPClient/5MZUK/src/request_options.jl
+ create mode 100644 packages/FTPClient/5MZUK/src/response.jl
+ create mode 100644 packages/FTPClient/5MZUK/src/utils.jl
+ create mode 100644 packages/FTPClient/5MZUK/test/example
+ create mode 100644 packages/FTPClient/5MZUK/test/ftp_object.jl
+ create mode 100644 packages/FTPClient/5MZUK/test/non_ssl.jl
+ create mode 100644 packages/FTPClient/5MZUK/test/runtests.jl
+ create mode 100644 packages/FTPClient/5MZUK/test/ssl.jl
+ create mode 100644 packages/FTPClient/5MZUK/test/utils.jl
+ create mode 100644 packages/MySQL/owtkt/.appveyor.yml
+ create mode 100644 packages/MySQL/owtkt/.gitignore
+ create mode 100644 packages/MySQL/owtkt/.travis.yml
+ create mode 100644 packages/MySQL/owtkt/LICENSE
+ create mode 100644 packages/MySQL/owtkt/README.md
+ create mode 100644 packages/MySQL/owtkt/REQUIRE
+ create mode 100644 packages/MySQL/owtkt/deps/build.jl
+ create mode 100644 packages/MySQL/owtkt/src/MySQL.jl
+ create mode 100644 packages/MySQL/owtkt/src/api.jl
+ create mode 100644 packages/MySQL/owtkt/src/consts.jl
+ create mode 100644 packages/MySQL/owtkt/src/prepared.jl
+ create mode 100644 packages/MySQL/owtkt/src/types.jl
+ create mode 100644 packages/MySQL/owtkt/test/Benchmarks/benchmark.jl
+ create mode 100644 packages/MySQL/owtkt/test/Benchmarks/create_datasets.jl
+ create mode 100644 packages/MySQL/owtkt/test/runtests.jl
+ create mode 100644 packages/SQLite/yKARA/.gitignore
+ create mode 100644 packages/SQLite/yKARA/.travis.yml
+ create mode 100644 packages/SQLite/yKARA/LICENSE.md
+ create mode 100644 packages/SQLite/yKARA/Project.toml
+ create mode 100644 packages/SQLite/yKARA/README.md
+ create mode 100644 packages/SQLite/yKARA/appveyor.yml
+ create mode 100644 packages/SQLite/yKARA/deps/build.jl
+ create mode 100644 packages/SQLite/yKARA/docs/.documenter.enc
+ create mode 100644 packages/SQLite/yKARA/docs/Project.toml
+ create mode 100644 packages/SQLite/yKARA/docs/build/assets/Documenter.css
+ create mode 100644 packages/SQLite/yKARA/docs/build/assets/mathjaxhelper.js
+ create mode 100644 packages/SQLite/yKARA/docs/build/index.md
+ create mode 100644 packages/SQLite/yKARA/docs/make.jl
+ create mode 100644 packages/SQLite/yKARA/docs/mkdocs.yml
+ create mode 100644 packages/SQLite/yKARA/docs/src/index.md
+ create mode 100644 packages/SQLite/yKARA/src/SQLite.jl
+ create mode 100644 packages/SQLite/yKARA/src/UDF.jl
+ create mode 100644 packages/SQLite/yKARA/src/api.jl
+ create mode 100644 packages/SQLite/yKARA/src/consts.jl
+ create mode 100644 packages/SQLite/yKARA/src/tables.jl
+ create mode 100644 packages/SQLite/yKARA/test/Chinook_Sqlite.sqlite
+ create mode 100644 packages/SQLite/yKARA/test/randoms.sqlite
+ create mode 100644 packages/SQLite/yKARA/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   1712ae769..8abd07bfa  master -> master
+Progress:   7%|██▊                                      |  ETA: 4 days, 5:20:50[K
+Installing BioSeq
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BioSeq [a7ad6987]:\n BioSeq [a7ad6987] log:\n ├─possible versions are: [0.1.0, 0.2.0-0.2.1, 0.3.0, 0.4.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0-0.2.1, 0.3.0, 0.4.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   7%|██▉                                      |  ETA: 4 days, 4:52:28[K
+Installing BioSequences
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [7e6ae17a] + BioSequences v1.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
