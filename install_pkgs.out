@@ -47825,3 +47825,270 @@ Installing Ccluster
   Building Ccluster → `~/.julia/packages/Ccluster/i80C5/deps/build.log`
   Building Nemo ────→ `~/.julia/packages/Nemo/h2OyU/deps/build.log`
   Building Ccluster → `~/.julia/packages/Ccluster/i80C5/deps/build.log`
+warning: adding embedded git repository: packages/Ccluster/i80C5/deps/Ccluster
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> packages/Ccluster/i80C5/deps/Ccluster
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached packages/Ccluster/i80C5/deps/Ccluster
+hint: 
+hint: See "git help submodule" for more information.
+[master 00cc2e413] added package Ccluster
+ 231 files changed, 84173 insertions(+)
+ create mode 100644 packages/Ccluster/i80C5/LICENSE.md
+ create mode 100644 packages/Ccluster/i80C5/Manifest.toml
+ create mode 100644 packages/Ccluster/i80C5/Project.toml
+ create mode 100644 packages/Ccluster/i80C5/README.md
+ create mode 100644 packages/Ccluster/i80C5/REQUIRE
+ create mode 160000 packages/Ccluster/i80C5/deps/Ccluster
+ create mode 100644 packages/Ccluster/i80C5/deps/build.jl
+ create mode 100644 packages/Ccluster/i80C5/deps/build.log
+ create mode 100644 packages/Ccluster/i80C5/examples/coeffsBernoulli.jl
+ create mode 100644 packages/Ccluster/i80C5/examples/mignComp.jl
+ create mode 100644 packages/Ccluster/i80C5/examples/mignotte.jl
+ create mode 100644 packages/Ccluster/i80C5/examples/spiral.jl
+ create mode 100644 packages/Ccluster/i80C5/examples/triangularSys.jl
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/base/base.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/caches/cacheApp.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/ccluster/ccluster.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/ccluster/cclusterDAC.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/ccluster/parallel_discard.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/doubApp/doubCompApp.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/doubApp/doubCompApp_poly.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/doubApp/doubRealApp.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/geometry/box_dsk.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/geometry/compBox.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/geometry/compDsk.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/geometry/connCmp.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/geometry/connCmp_dsk.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/geometry/connCmp_union_find.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/geometry/subdBox.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/lists/compBox_list.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/lists/connCmp_list.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/lists/gen_list.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/metadatas/chronos.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/metadatas/counters.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/metadatas/metadatas.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/metadatas/strategies.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/newton/newton.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/numbers/app_rat.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/numbers/compApp.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/numbers/compRat.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/numbers/realApp.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/numbers/realRat.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/polynomials/app_rat_poly.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/polynomials/compApp_poly.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/polynomials/compRat_poly.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/polynomials/realRat_poly.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/powerSums/powerSums.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/tstar/pelletTest.h
+ create mode 100644 packages/Ccluster/i80C5/local/include/ccluster/tstar/tstar.h
+ create mode 120000 packages/Ccluster/i80C5/local/lib/libccluster.so
+ create mode 120000 packages/Ccluster/i80C5/local/lib/libccluster.so.0
+ create mode 100755 packages/Ccluster/i80C5/local/lib/libccluster.so.0.0.0
+ create mode 100644 packages/Ccluster/i80C5/src/Ccluster.jl
+ create mode 100644 packages/Ccluster/i80C5/src/Tcluster.jl
+ create mode 100644 packages/Ccluster/i80C5/src/algClus.jl
+ create mode 100644 packages/Ccluster/i80C5/src/box.jl
+ create mode 100644 packages/Ccluster/i80C5/src/connComp.jl
+ create mode 100644 packages/Ccluster/i80C5/src/disk.jl
+ create mode 100644 packages/Ccluster/i80C5/src/listBox.jl
+ create mode 100644 packages/Ccluster/i80C5/src/listConnComp.jl
+ create mode 100644 packages/Ccluster/i80C5/src/plotCcluster.jl
+ create mode 100644 packages/Ccluster/i80C5/src/triangularSys.jl
+ create mode 100644 packages/Nemo/h2OyU/.gitignore
+ create mode 100644 packages/Nemo/h2OyU/.travis.yml
+ create mode 100644 packages/Nemo/h2OyU/CITATION.bib
+ create mode 100644 packages/Nemo/h2OyU/LICENSE.md
+ create mode 100644 packages/Nemo/h2OyU/Project.toml
+ create mode 100644 packages/Nemo/h2OyU/README.md
+ create mode 100644 packages/Nemo/h2OyU/appveyor.yml
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/bernoulli_polynomials.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/charpoly_integers.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/det_commutative_ring.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/det_field.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/det_polynomials.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/fateman.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/minpoly_finite_field.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/minpoly_gcd_domain.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/minpoly_integers.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/pearce.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/polynomials_number_field.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/resultant.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/runbenchmarks.jl
+ create mode 100644 packages/Nemo/h2OyU/benchmarks/solve_polynomials.jl
+ create mode 100644 packages/Nemo/h2OyU/deps-PIE-ftbfs.patch
+ create mode 100644 packages/Nemo/h2OyU/docs/.gitignore
+ create mode 100644 packages/Nemo/h2OyU/docs/Project.toml
+ create mode 100644 packages/Nemo/h2OyU/docs/make.jl
+ create mode 100644 packages/Nemo/h2OyU/docs/mkdocs.yml
+ create mode 100644 packages/Nemo/h2OyU/docs/src/about.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/acb.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/arb.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/constructors.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/factor.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/finitefield.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/fraction.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/gfp.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/img/types.dia
+ create mode 100644 packages/Nemo/h2OyU/docs/src/img/types.png
+ create mode 100644 packages/Nemo/h2OyU/docs/src/index.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/integer.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/mathjaxhelper.js
+ create mode 100644 packages/Nemo/h2OyU/docs/src/matrix.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/mpolynomial.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/numberfield.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/padic.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/polynomial.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/puiseux.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/qadic.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/rational.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/residue.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/series.md
+ create mode 100644 packages/Nemo/h2OyU/docs/src/types.md
+ create mode 100644 packages/Nemo/h2OyU/src/Factor.jl
+ create mode 100644 packages/Nemo/h2OyU/src/Fields.jl
+ create mode 100644 packages/Nemo/h2OyU/src/Nemo.jl
+ create mode 100644 packages/Nemo/h2OyU/src/Rings.jl
+ create mode 100644 packages/Nemo/h2OyU/src/ambiguities.jl
+ create mode 100644 packages/Nemo/h2OyU/src/antic/AnticTypes.jl
+ create mode 100644 packages/Nemo/h2OyU/src/antic/nf_elem.jl
+ create mode 100644 packages/Nemo/h2OyU/src/arb/ArbTypes.jl
+ create mode 100644 packages/Nemo/h2OyU/src/arb/acb.jl
+ create mode 100644 packages/Nemo/h2OyU/src/arb/acb_calc.jl
+ create mode 100644 packages/Nemo/h2OyU/src/arb/acb_mat.jl
+ create mode 100644 packages/Nemo/h2OyU/src/arb/acb_poly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/arb/arb.jl
+ create mode 100644 packages/Nemo/h2OyU/src/arb/arb_mat.jl
+ create mode 100644 packages/Nemo/h2OyU/src/arb/arb_poly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/error.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/FlintTypes.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/adhoc.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/flint_puiseux_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpq.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpq_abs_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpq_mat.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpq_mpoly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpq_poly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpq_rel_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_abs_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_laurent_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_mat.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_mod.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_mod_abs_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_mod_poly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_mod_rel_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_mpoly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_poly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_puiseux_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fmpz_rel_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fq.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fq_abs_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fq_mat.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fq_nmod.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fq_nmod_abs_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fq_nmod_mat.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fq_nmod_poly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fq_nmod_rel_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fq_poly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/fq_rel_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/gfp_elem.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/gfp_fmpz_poly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/gfp_mat.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/gfp_poly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/nmod.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/nmod_mat.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/nmod_mpoly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/nmod_poly.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/nmod_rel_series.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/padic.jl
+ create mode 100644 packages/Nemo/h2OyU/src/flint/qadic.jl
+ create mode 100644 packages/Nemo/h2OyU/src/polysubst.jl
+ create mode 100644 packages/Nemo/h2OyU/test/Benchmark-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/Fields-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/Generic-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/Nemo-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/Rings-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/antic/nf_elem-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/arb/acb-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/arb/acb_mat-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/arb/acb_poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/arb/arb-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/arb/arb_mat-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/arb/arb_poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpq-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpq_abs_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpq_mat-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpq_mpoly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpq_poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpq_rel_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_abs_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_laurent_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_mat-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_mod-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_mod_abs_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_mod_poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_mod_rel_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_mpoly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_puiseux_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fmpz_rel_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fq-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fq_abs_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fq_mat-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fq_nmod-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fq_nmod_abs_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fq_nmod_mat-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fq_nmod_poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fq_nmod_rel_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fq_poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/fq_rel_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/gfp-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/gfp_fmpz_poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/gfp_mat-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/gfp_poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/nmod-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/nmod_mat-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/nmod_mpoly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/nmod_poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/nmod_rel_series-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/padic-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/flint/qadic-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/generic/MPoly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/generic/Matrix-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/generic/Poly-test.jl
+ create mode 100644 packages/Nemo/h2OyU/test/runtests.jl
+ create mode 100644 packages/Nemo/h2OyU/todo.txt
+ create mode 100644 packages/Nemo/h2OyU/windows_build.txt
+To https://github.com/watsona4/dot_julia.git
+   bd1fae4c9..00cc2e413  master -> master
+Progress:  12%|████▉                                    |  ETA: 3 days, 12:51:39[K
+Installing Celeste
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Celeste [92f6eab1]:\n Celeste [92f6eab1] log:\n ├─possible versions are: [0.1.0, 0.2.0-0.2.1, 0.3.0, 0.4.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0-0.2.1, 0.3.0, 0.4.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  12%|████▉                                    |  ETA: 3 days, 12:37:49[K
+Installing CellularAutomata
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CellularAutomata [33729d6b]:\n CellularAutomata [33729d6b] log:\n ├─possible versions are: 0.1.0-0.1.2 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.1.0-0.1.2\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  12%|████▉                                    |  ETA: 3 days, 12:24:02[K
+Installing ChainRecursive
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package ChainRecursive [f09f1ae0]:\n ChainRecursive [f09f1ae0] log:\n ├─possible versions are: 0.1.0-0.1.1 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.1.0-0.1.1\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  12%|████▉                                    |  ETA: 3 days, 12:10:07[K
+Installing ChainRules
+ Resolving package versions...
+ Installed ChainRules ───── v0.1.1
+ Installed ChainRulesCore ─ v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [082447d4] + ChainRules v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [082447d4] + ChainRules v0.1.1
+  [d360d2e6] + ChainRulesCore v0.2.0

@@ -1571,6 +1571,17 @@ git-tree-sha1 = "d4797c786daecfd50416cca7812352fabf5f6e71"
 uuid = "8fd415a7-295e-5ecb-bee7-308748477f8f"
 version = "0.1.0"
 
+[[ChainRules]]
+deps = ["ChainRulesCore", "LinearAlgebra", "Reexport", "Requires", "Statistics"]
+git-tree-sha1 = "f0babca90a4f8108077e67355abc3e9250349f86"
+uuid = "082447d4-558c-5d27-93f4-14fc19e9eca2"
+version = "0.1.1"
+
+[[ChainRulesCore]]
+git-tree-sha1 = "0ceceb18db7c8f410938298333662a34c72e54f6"
+uuid = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
+version = "0.2.0"
+
 [[ChaosTools]]
 deps = ["Combinatorics", "DSP", "DiffEqBase", "Distances", "Distributions", "DynamicalSystemsBase", "ForwardDiff", "LinearAlgebra", "LombScargle", "NearestNeighbors", "Random", "Reexport", "Roots", "StaticArrays", "Statistics", "StatsBase"]
 git-tree-sha1 = "a76653daa84ba7153a4498d614e4eef9526e5334"
