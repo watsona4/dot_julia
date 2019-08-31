@@ -1131,6 +1131,12 @@ git-tree-sha1 = "8a9e26290c77755cf71890bcdbd300981554b570"
 uuid = "e28b5b4c-05e8-5b66-bc03-6f0c0a0a06e0"
 version = "2.1.0"
 
+[[BotCoreLCMTypes]]
+deps = ["LCMCore", "StaticArrays"]
+git-tree-sha1 = "e612548510e780e412662e3cfd288911f7bdefa5"
+uuid = "fce17d29-6d86-5006-bee5-0f8b6f52dd81"
+version = "0.3.0"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
@@ -1697,6 +1703,11 @@ deps = ["Compat", "LinearAlgebra", "SpecialFunctions"]
 git-tree-sha1 = "769ac4057ed875f433372e9a571a2cb86347d1be"
 uuid = "442a2c76-b920-505d-bb47-c5924d526838"
 version = "0.3.3"
+
+[[FastIOBuffers]]
+git-tree-sha1 = "c4f9ea47b13b8d21852beba0dadf69ee259aebaa"
+uuid = "6ccb8d0d-f5f8-5ae0-a392-f5aa62729a81"
+version = "0.3.1"
 
 [[FastRounding]]
 deps = ["ErrorfreeArithmetic", "Test"]
@@ -2274,6 +2285,12 @@ deps = ["JSExpr", "JSON", "Observables", "Test", "WebIO"]
 git-tree-sha1 = "53533b51d4b6964eca3065b0834e9f61ed2f7515"
 uuid = "bcebb21b-c2e3-54f8-a781-646b90f6d2cc"
 version = "0.2.3"
+
+[[LCMCore]]
+deps = ["Dates", "FastIOBuffers", "FileWatching", "Libdl", "StaticArrays", "UnsafeArrays"]
+git-tree-sha1 = "2030bf616c051559ed01ef605755169bdf9f1362"
+uuid = "0ea44823-1ff1-5b9a-8293-5fd55a38e746"
+version = "0.6.1"
 
 [[LLVM]]
 deps = ["CEnum", "Libdl", "Printf", "Unicode"]

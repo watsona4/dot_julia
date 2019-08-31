@@ -1,0 +1,23 @@
+language: julia
+sudo: required
+dist: trusty
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+notifications:
+  email: false
+branches:
+  only:
+    - master
+    - /^release-.*$/
+matrix:
+  allow_failures:
+  - julia: nightly
+after_success:
+  - if [[ $TRAVIS_JULIA_VERSION = 1.1 ]]; then
+      julia --project -e 'using Pkg; pkg"add Coverage"; using Coverage; Codecov.submit(Codecov.process_folder())';
+    fi

@@ -34072,3 +34072,110 @@ Installing Bootstrap
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master f649ff6f5] added package Bootstrap
+ 36 files changed, 2656 insertions(+)
+ create mode 100644 packages/Bootstrap/pUtit/.gitignore
+ create mode 100644 packages/Bootstrap/pUtit/.travis.yml
+ create mode 100644 packages/Bootstrap/pUtit/LICENSE.md
+ create mode 100644 packages/Bootstrap/pUtit/Manifest.toml
+ create mode 100644 packages/Bootstrap/pUtit/NEWS.md
+ create mode 100644 packages/Bootstrap/pUtit/Project.toml
+ create mode 100644 packages/Bootstrap/pUtit/README.md
+ create mode 100644 packages/Bootstrap/pUtit/docs/Project.toml
+ create mode 100644 packages/Bootstrap/pUtit/docs/make.jl
+ create mode 120000 packages/Bootstrap/pUtit/docs/src/LICENSE.md
+ create mode 120000 packages/Bootstrap/pUtit/docs/src/NEWS.md
+ create mode 100644 packages/Bootstrap/pUtit/docs/src/assets/logo.png
+ create mode 100644 packages/Bootstrap/pUtit/docs/src/index.md
+ create mode 100644 packages/Bootstrap/pUtit/docs/src/library.md
+ create mode 100644 packages/Bootstrap/pUtit/docs/src/references.md
+ create mode 100644 packages/Bootstrap/pUtit/src/Bootstrap.jl
+ create mode 100644 packages/Bootstrap/pUtit/src/bootsampling.jl
+ create mode 100644 packages/Bootstrap/pUtit/src/confint.jl
+ create mode 100644 packages/Bootstrap/pUtit/src/datasets/Datasets.jl
+ create mode 100644 packages/Bootstrap/pUtit/src/deprecates.jl
+ create mode 100644 packages/Bootstrap/pUtit/src/draw.jl
+ create mode 100644 packages/Bootstrap/pUtit/src/get.jl
+ create mode 100644 packages/Bootstrap/pUtit/src/nobs.jl
+ create mode 100644 packages/Bootstrap/pUtit/src/show.jl
+ create mode 100644 packages/Bootstrap/pUtit/src/stats.jl
+ create mode 100644 packages/Bootstrap/pUtit/status.md
+ create mode 100644 packages/Bootstrap/pUtit/test/REQUIRE
+ create mode 100644 packages/Bootstrap/pUtit/test/runtests.jl
+ create mode 100644 packages/Bootstrap/pUtit/test/test-bootsample-non-parametric.jl
+ create mode 100644 packages/Bootstrap/pUtit/test/test-bootsample-parametric.jl
+ create mode 100644 packages/Bootstrap/pUtit/test/test-dependencies.jl
+ create mode 100644 packages/Bootstrap/pUtit/test/test-utils.jl
+To https://github.com/watsona4/dot_julia.git
+   8ae545065..f649ff6f5  master -> master
+Progress:   8%|███▍                                     |  ETA: 3 days, 19:22:02[K
+Installing BotCoreLCMTypes
+ Resolving package versions...
+ Installed LCMCore ───────── v0.6.1
+ Installed FastIOBuffers ─── v0.3.1
+ Installed BotCoreLCMTypes ─ v0.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [fce17d29] + BotCoreLCMTypes v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [fce17d29] + BotCoreLCMTypes v0.3.0
+  [6ccb8d0d] + FastIOBuffers v0.3.1
+  [0ea44823] + LCMCore v0.6.1
+  Building LCMCore → `~/.julia/packages/LCMCore/cPbOB/deps/build.log`
+┌ Error: Error building `LCMCore`: 
+│ Package glib-2.0 was not found in the pkg-config search path.
+│ Perhaps you should add the directory containing `glib-2.0.pc'
+│ to the PKG_CONFIG_PATH environment variable
+│ No package 'glib-2.0' found
+│ Package glib-2.0 was not found in the pkg-config search path.
+│ Perhaps you should add the directory containing `glib-2.0.pc'
+│ to the PKG_CONFIG_PATH environment variable
+│ No package 'glib-2.0' found
+│ ERROR: LoadError: None of the selected providers can install dependency glib.
+│ Use BinDeps.debug(package_name) to see available providers
+│ 
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:949
+│  [3] satisfy!(::BinDeps.LibraryDependency) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [4] top-level scope at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [5] include at ./boot.jl:328 [inlined]
+│  [6] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [7] include(::Module, ::String) at ./Base.jl:31
+│  [8] include(::String) at ./client.jl:431
+│  [9] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/LCMCore/cPbOB/deps/build.jl:75
+│ Activating environment at `~/.julia/packages/LCMCore/cPbOB/deps/Project.toml`
+│   Updating registry at `~/.julia/registries/General`
+│   Updating git-repo `https://github.com/JuliaRegistries/General.git`
+│ [?25l[2K[?25h Installed CMake ─ v1.1.1
+│   Building CMake → `~/.julia/packages/CMake/ZGawK/deps/build.log`
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building LCMCore → `~/.julia/packages/LCMCore/cPbOB/deps/build.log`
+┌ Error: Error building `LCMCore`: 
+│ Package glib-2.0 was not found in the pkg-config search path.
+│ Perhaps you should add the directory containing `glib-2.0.pc'
+│ to the PKG_CONFIG_PATH environment variable
+│ No package 'glib-2.0' found
+│ Package glib-2.0 was not found in the pkg-config search path.
+│ Perhaps you should add the directory containing `glib-2.0.pc'
+│ to the PKG_CONFIG_PATH environment variable
+│ No package 'glib-2.0' found
+│ ERROR: LoadError: None of the selected providers can install dependency glib.
+│ Use BinDeps.debug(package_name) to see available providers
+│ 
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:949
+│  [3] satisfy!(::BinDeps.LibraryDependency) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [4] top-level scope at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [5] include at ./boot.jl:328 [inlined]
+│  [6] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [7] include(::Module, ::String) at ./Base.jl:31
+│  [8] include(::String) at ./client.jl:431
+│  [9] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/LCMCore/cPbOB/deps/build.jl:75
+│ Activating environment at `~/.julia/packages/LCMCore/cPbOB/deps/Project.toml`
+│   Updating registry at `~/.julia/registries/General`
+│   Updating git-repo `https://github.com/JuliaRegistries/General.git`
+│ [?25l[2K[?25h
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
