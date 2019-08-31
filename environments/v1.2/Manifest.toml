@@ -1714,6 +1714,12 @@ git-tree-sha1 = "41129bf1af018b49855a846b1b3955cee980bf8a"
 uuid = "39d38320-a18c-5735-a4f5-135970cd79b8"
 version = "0.1.2"
 
+[[CloudWatchLogs]]
+deps = ["AWSCore", "Dates", "MbedTLS", "Memento", "Mocking", "TimeZones", "UUIDs"]
+git-tree-sha1 = "165cd93d57145c6c4c4fa30fdab41043126f1cd4"
+uuid = "c4c1e6a2-6bdd-52e0-b56d-1d4734724d2d"
+version = "1.1.1"
+
 [[Clustering]]
 deps = ["Distances", "LinearAlgebra", "NearestNeighbors", "Printf", "SparseArrays", "Statistics", "StatsBase"]
 git-tree-sha1 = "f387d5937d0c9d0191c711d7d204bce15bd23b45"
@@ -3247,6 +3253,12 @@ git-tree-sha1 = "d52799152697059353a8eac1000d32ba8d92aa25"
 uuid = "f9f48841-c794-520a-933b-121f7ba6ed94"
 version = "0.2.0"
 
+[[Memento]]
+deps = ["Dates", "Distributed", "JSON", "Serialization", "Sockets", "Syslogs", "Test", "TimeZones", "UUIDs"]
+git-tree-sha1 = "090463b13da88689e5eae6468a6f531a21392175"
+uuid = "f28f55f0-a522-5efc-85c2-fe41dfb9b2d9"
+version = "0.12.1"
+
 [[Memoize]]
 deps = ["Test"]
 git-tree-sha1 = "d9683969337ad20dc957122038bd2c0ead4b5209"
@@ -3290,6 +3302,11 @@ version = "0.4.1"
 
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
+
+[[Mocking]]
+git-tree-sha1 = "7f42a32a8cef08f45d43c35663e73bd4e3b35f6d"
+uuid = "78c3b35d-d492-501b-9361-3d52fe80e533"
+version = "0.6.0"
 
 [[ModernGL]]
 deps = ["Libdl"]
@@ -4148,6 +4165,12 @@ git-tree-sha1 = "0bca6c3dc6543d8049ba3e693311201a393c687e"
 uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 version = "1.0.5"
 
+[[Syslogs]]
+deps = ["Printf", "Sockets"]
+git-tree-sha1 = "46badfcc7c6e74535cc7d833a91f4ac4f805f86d"
+uuid = "cea106d9-e007-5e6c-ad93-58fe2094e9c4"
+version = "0.3.0"
+
 [[TOML]]
 deps = ["Dates"]
 git-tree-sha1 = "70c12a7129b147aa9e43325c86f32f7fbb88245a"
@@ -4213,6 +4236,12 @@ deps = ["OffsetArrays", "Test"]
 git-tree-sha1 = "58f6f07d3b54a363ec283a8f5fc9fb4ecebde656"
 uuid = "06e1c1a7-607b-532d-9fad-de7d9aa2abac"
 version = "0.2.3"
+
+[[TimeZones]]
+deps = ["Dates", "EzXML", "Mocking", "Printf", "Serialization", "Unicode"]
+git-tree-sha1 = "0271dc890dd1447da1568510937bd5b3a6b51b58"
+uuid = "f269a46b-ccf7-5d73-abea-4c690281aa53"
+version = "0.9.2"
 
 [[TimerOutputs]]
 deps = ["Crayons", "Printf", "Test", "Unicode"]

@@ -1,0 +1,6 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Syslogs = "cea106d9-e007-5e6c-ad93-58fe2094e9c4"
+
+[compat]
+Documenter = "~0.21"

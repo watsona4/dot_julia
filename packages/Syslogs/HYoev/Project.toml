@@ -1,0 +1,19 @@
+name = "Syslogs"
+uuid = "cea106d9-e007-5e6c-ad93-58fe2094e9c4"
+authors = ["Invenia Technical Computing Corporation"]
+version = "0.3.0"
+
+[deps]
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Sockets = "6462fe0b-24de-5631-8697-dd941f90decc"
+
+[compat]
+julia = "1"
+
+[extras]
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Distributed", "Libdl", "Test"]

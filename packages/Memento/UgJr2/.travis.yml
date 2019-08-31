@@ -1,0 +1,41 @@
+language: julia
+os:
+  - linux
+julia:
+  - 0.7  # Replace Memento.x(...) with x(...) where x is `info` or `warn` when dropping 0.7
+  - 1.0
+  - 1.1
+  - nightly
+env:
+  - TEST_TYPE=basic
+  # - TEST_TYPE=bench
+  - TEST_TYPE=userimage
+matrix:
+  fast_finish: true
+  allow_failures:
+    - julia: nightly
+    - env: TEST_TYPE=bench
+  include:
+    - if: branch = master
+      julia: 1.0
+      os: osx
+      env: TEST_TYPE=basic
+  exclude:
+    - julia: nightly
+      env: TEST_TYPE=userimage
+
+notifications:
+  email: false
+script:
+  - ./.travis/test.sh
+after_success:
+  - julia -e 'using Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.0
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip
