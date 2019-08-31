@@ -1398,17 +1398,23 @@ git-tree-sha1 = "125122309a4387e0d18787cef0f03800fa57702a"
 uuid = "3895d2a7-ec45-59b8-82bb-cfc6a382f9b3"
 version = "0.6.3"
 
+[[CUDAatomics]]
+deps = ["CUDAdrv", "CUDAnative", "LLVM", "Test"]
+git-tree-sha1 = "167d82482843bf68b0a0f8b728af640faa531183"
+uuid = "7ef05209-3a99-504a-91f2-5551118e1dbe"
+version = "0.1.0"
+
 [[CUDAdrv]]
-deps = ["CUDAapi", "Libdl", "Printf"]
-git-tree-sha1 = "9ce99b5732c70e06ed97c042187baed876fb1698"
+deps = ["CUDAapi", "Libdl", "Printf", "Test"]
+git-tree-sha1 = "94a3b9afb137e8d08136b334e51a25375557ca24"
 uuid = "c5f51814-7f29-56b8-a69c-e4d8f6be1fde"
-version = "3.1.0"
+version = "0.8.6"
 
 [[CUDAnative]]
-deps = ["Adapt", "CUDAapi", "CUDAdrv", "DataStructures", "InteractiveUtils", "LLVM", "Libdl", "Logging", "Printf", "TimerOutputs"]
-git-tree-sha1 = "0a00bef482b7c9127495c7f4a2a85e73b13b5af8"
+deps = ["CUDAapi", "CUDAdrv", "InteractiveUtils", "LLVM", "Libdl", "Logging", "Pkg", "Printf", "Statistics", "Test"]
+git-tree-sha1 = "debfe5af100e335b5df7109184e2e450f616dd1f"
 uuid = "be33ccc6-a3ff-5ff2-a52e-74243cff1e17"
-version = "2.3.0"
+version = "0.9.1"
 
 [[Cairo]]
 deps = ["BinDeps", "Colors", "Compat", "Graphics", "Homebrew", "Libdl", "Pkg", "WinRPM"]
@@ -1582,12 +1588,6 @@ deps = ["Test"]
 git-tree-sha1 = "f621b8ef51fd2004c7cf157ea47f027fdeac5523"
 uuid = "a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f"
 version = "4.0.0"
-
-[[CuArrays]]
-deps = ["AbstractFFTs", "Adapt", "CUDAapi", "CUDAdrv", "CUDAnative", "GPUArrays", "LinearAlgebra", "MacroTools", "NNlib", "Printf", "Random", "Requires", "SparseArrays", "TimerOutputs"]
-git-tree-sha1 = "46b48742a84bb839e74215b7e468a4a1c6ba30f9"
-uuid = "3a865a2d-5b23-5a0f-bc46-62713ec82fae"
-version = "1.2.1"
 
 [[Cuba]]
 deps = ["BinaryProvider", "Distributed", "Libdl", "LinearAlgebra", "Printf", "Test"]
@@ -2068,12 +2068,6 @@ git-tree-sha1 = "b68052e0ddae57af3c5198c0dcf3f06ffaa11d39"
 uuid = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
 version = "1.2.0"
 
-[[GPUArrays]]
-deps = ["Adapt", "FFTW", "FillArrays", "LinearAlgebra", "Printf", "Random", "Serialization", "StaticArrays", "Test"]
-git-tree-sha1 = "dd169c636d1d3656a9faca772f5bd7c226a61254"
-uuid = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
-version = "1.0.1"
-
 [[GR]]
 deps = ["Base64", "DelimitedFiles", "LinearAlgebra", "Pkg", "Printf", "Random", "Serialization", "Sockets", "Test"]
 git-tree-sha1 = "b4c31b6377b6d51b6c69a3a9737d10c34d43974e"
@@ -2538,10 +2532,10 @@ uuid = "2472808a-b354-52ea-a80e-1658a3c6056d"
 version = "0.5.0"
 
 [[Knet]]
-deps = ["AutoGrad", "CUDAapi", "CuArrays", "FileIO", "JLD2", "Libdl", "LinearAlgebra", "Pkg", "Printf", "Random", "SpecialFunctions", "Statistics", "TimerOutputs"]
-git-tree-sha1 = "8f0bf7d74e758790c7e51f3e4c0d69c7297828ae"
+deps = ["AutoGrad", "CUDAapi", "FileIO", "JLD2", "Libdl", "LinearAlgebra", "Pkg", "Printf", "Random", "SpecialFunctions", "Statistics", "TimerOutputs"]
+git-tree-sha1 = "7a45f9ef563ef796433463cf6998c46d0a3de9c9"
 uuid = "1902f260-5fb4-5aff-8c31-6271790ab950"
-version = "1.2.4"
+version = "1.2.3"
 
 [[Knockout]]
 deps = ["JSExpr", "JSON", "Observables", "Test", "WebIO"]

@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+*.data
+*.prof
+*.gz
+*.txt
+*-dbg.jl
+*-Copy*.ipynb

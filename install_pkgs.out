@@ -38642,3 +38642,88 @@ Installing CUDAapi
   [3895d2a7] + CUDAapi v0.6.3
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 8183425c7] added package CUDAapi
+ 3 files changed, 30 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   19e085009..8183425c7  master -> master
+Progress:  10%|████▎                                    |  ETA: 3 days, 9:50:35[K
+Installing CUDAatomics
+ Resolving package versions...
+ Installed CUDAatomics ─ v0.1.0
+ Installed CUDAdrv ───── v0.8.6
+ Installed CUDAnative ── v0.9.1
+ Installed Knet ──────── v1.2.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [7ef05209] + CUDAatomics v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [7ef05209] + CUDAatomics v0.1.0
+  [c5f51814] ↓ CUDAdrv v3.1.0 ⇒ v0.8.6
+  [be33ccc6] ↓ CUDAnative v2.3.0 ⇒ v0.9.1
+  [3a865a2d] - CuArrays v1.2.1
+  [0c68f7d7] - GPUArrays v1.0.1
+  [1902f260] ↓ Knet v1.2.4 ⇒ v1.2.3
+  Building Knet ──────→ `~/.julia/packages/Knet/SCDja/deps/build.log`
+  Building CUDAdrv ───→ `~/.julia/packages/CUDAdrv/LC5XS/deps/build.log`
+┌ Error: Error building `CUDAdrv`: 
+│ ERROR: LoadError: Could not find CUDA driver library
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] main() at /home/ec2-user/.julia/packages/CUDAdrv/LC5XS/deps/build.jl:73
+│  [3] top-level scope at /home/ec2-user/.julia/packages/CUDAdrv/LC5XS/deps/build.jl:116
+│  [4] include at ./boot.jl:328 [inlined]
+│  [5] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [6] include(::Module, ::String) at ./Base.jl:31
+│  [7] include(::String) at ./client.jl:431
+│  [8] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CUDAdrv/LC5XS/deps/build.jl:116
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CUDAnative → `~/.julia/packages/CUDAnative/AGfq2/deps/build.log`
+┌ Error: Error building `CUDAnative`: 
+│ ┌ Warning: CUDAdrv.jl has not been successfully built, and will not work properly.
+│ │ Please run Pkg.build("CUDAdrv") and restart Julia.
+│ └ @ CUDAdrv ~/.julia/packages/CUDAdrv/LC5XS/src/init.jl:15
+│ ERROR: LoadError: CUDA toolkit at  doesn't contain nvcc
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] find_toolkit_version(::Array{String,1}) at /home/ec2-user/.julia/packages/CUDAapi/0Ozyy/src/discovery.jl:279
+│  [3] main() at /home/ec2-user/.julia/packages/CUDAnative/AGfq2/deps/build.jl:114
+│  [4] top-level scope at /home/ec2-user/.julia/packages/CUDAnative/AGfq2/deps/build.jl:156
+│  [5] include at ./boot.jl:328 [inlined]
+│  [6] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [7] include(::Module, ::String) at ./Base.jl:31
+│  [8] include(::String) at ./client.jl:431
+│  [9] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CUDAnative/AGfq2/deps/build.jl:156
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CUDAdrv ───→ `~/.julia/packages/CUDAdrv/LC5XS/deps/build.log`
+┌ Error: Error building `CUDAdrv`: 
+│ ERROR: LoadError: Could not find CUDA driver library
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] main() at /home/ec2-user/.julia/packages/CUDAdrv/LC5XS/deps/build.jl:73
+│  [3] top-level scope at /home/ec2-user/.julia/packages/CUDAdrv/LC5XS/deps/build.jl:116
+│  [4] include at ./boot.jl:328 [inlined]
+│  [5] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [6] include(::Module, ::String) at ./Base.jl:31
+│  [7] include(::String) at ./client.jl:431
+│  [8] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CUDAdrv/LC5XS/deps/build.jl:116
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CUDAnative → `~/.julia/packages/CUDAnative/AGfq2/deps/build.log`
+┌ Error: Error building `CUDAnative`: 
+│ ┌ Warning: CUDAdrv.jl has not been successfully built, and will not work properly.
+│ │ Please run Pkg.build("CUDAdrv") and restart Julia.
+│ └ @ CUDAdrv ~/.julia/packages/CUDAdrv/LC5XS/src/init.jl:15
+│ ERROR: LoadError: CUDA toolkit at  doesn't contain nvcc
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] find_toolkit_version(::Array{String,1}) at /home/ec2-user/.julia/packages/CUDAapi/0Ozyy/src/discovery.jl:279
+│  [3] main() at /home/ec2-user/.julia/packages/CUDAnative/AGfq2/deps/build.jl:114
+│  [4] top-level scope at /home/ec2-user/.julia/packages/CUDAnative/AGfq2/deps/build.jl:156
+│  [5] include at ./boot.jl:328 [inlined]
+│  [6] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [7] include(::Module, ::String) at ./Base.jl:31
+│  [8] include(::String) at ./client.jl:431
+│  [9] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CUDAnative/AGfq2/deps/build.jl:156
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
