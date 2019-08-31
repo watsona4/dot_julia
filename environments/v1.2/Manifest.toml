@@ -561,6 +561,12 @@ git-tree-sha1 = "e78620f3ae6e8dc5770fd56bb791481fb2dd2022"
 uuid = "b5147960-3063-5349-a9c3-a0b314d6952d"
 version = "0.1.0"
 
+[[AutoGrad]]
+deps = ["Libdl", "LinearAlgebra", "SpecialFunctions", "Statistics", "TimerOutputs"]
+git-tree-sha1 = "27512db681db1faa4e0694d74b6112fb375410f8"
+uuid = "6710c13c-97f1-543f-91c5-74e8f7d95b35"
+version = "1.1.4"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"

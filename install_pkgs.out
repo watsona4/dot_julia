@@ -26150,3 +26150,26 @@ Installing Authorization
   [b5147960] + Authorization v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [b5147960] + Authorization v0.1.0
+[master 2f3973491] added package Authorization
+ 10 files changed, 639 insertions(+)
+ create mode 100644 packages/Authorization/XSMdn/Manifest.toml
+ create mode 100644 packages/Authorization/XSMdn/Project.toml
+ create mode 100644 packages/Authorization/XSMdn/README.md
+ create mode 100644 packages/Authorization/XSMdn/REQUIRE
+ create mode 100644 packages/Authorization/XSMdn/src/Authorization.jl
+ create mode 100644 packages/Authorization/XSMdn/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   6b653bbf0..2f3973491  master -> master
+Progress:   4%|█▊                                       |  ETA: 5 days, 16:25:51[K
+Installing AutoDiffSource
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AutoDiffSource [7e4cc7a5]:\n AutoDiffSource [7e4cc7a5] log:\n ├─possible versions are: [0.0.1-0.0.4, 0.1.0, 0.2.0-0.2.1, 0.2.3] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.4, 0.1.0, 0.2.0-0.2.1, 0.2.3]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   4%|█▊                                       |  ETA: 5 days, 15:22:29[K
+Installing AutoGrad
+ Resolving package versions...
+ Installed AutoGrad ─ v1.1.4
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [6710c13c] + AutoGrad v1.1.4
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [6710c13c] + AutoGrad v1.1.4
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`

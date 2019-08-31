@@ -1,0 +1,14 @@
+Manifest.toml
+AutoGrad
+foo*
+data/**
+!data/README
+*~
+setup.sh
+.julia
+.juliahistory
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+Untitled.ipynb
+.ipynb_checkpoints
