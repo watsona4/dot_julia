@@ -6768,3 +6768,87 @@ Installing AcceleratedArrays
   [44e12807] + AcceleratedArrays v0.2.1
   [313cdc1a] + Indexing v1.1.0
   [03a91e81] + SplitApplyCombine v0.4.1
+[master 67bbe1c43] added package AcceleratedArrays
+ 72 files changed, 4626 insertions(+)
+ create mode 100644 packages/AcceleratedArrays/vPA4c/.codecov.yml
+ create mode 100644 packages/AcceleratedArrays/vPA4c/.travis.yml
+ create mode 100644 packages/AcceleratedArrays/vPA4c/LICENSE.md
+ create mode 100644 packages/AcceleratedArrays/vPA4c/Project.toml
+ create mode 100644 packages/AcceleratedArrays/vPA4c/README.md
+ create mode 100644 packages/AcceleratedArrays/vPA4c/REQUIRE
+ create mode 100644 packages/AcceleratedArrays/vPA4c/appveyor.yml
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/AbstractIndex.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/AcceleratedArray.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/AcceleratedArrays.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/HashIndex.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/Interval.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/MaybeVector.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/SingleVector.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/SortIndex.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/UniqueHashIndex.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/UniqueIndex.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/UniqueSortIndex.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/src/predicates.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/test/HashIndex.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/test/Interval.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/test/MaybeVector.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/test/SingleVector.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/test/SortIndex.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/test/UniqueHashIndex.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/test/UniqueSortIndex.jl
+ create mode 100644 packages/AcceleratedArrays/vPA4c/test/runtests.jl
+ create mode 100644 packages/Indexing/K7k8i/.codecov.yml
+ create mode 100644 packages/Indexing/K7k8i/.gitignore
+ create mode 100644 packages/Indexing/K7k8i/.travis.yml
+ create mode 100644 packages/Indexing/K7k8i/LICENSE.md
+ create mode 100644 packages/Indexing/K7k8i/README.md
+ create mode 100644 packages/Indexing/K7k8i/REQUIRE
+ create mode 100644 "packages/Indexing/K7k8i/\\"
+ create mode 100644 packages/Indexing/K7k8i/appveyor.yml
+ create mode 100644 packages/Indexing/K7k8i/src/Indexing.jl
+ create mode 100644 packages/Indexing/K7k8i/src/getindices.jl
+ create mode 100644 packages/Indexing/K7k8i/src/setindices.jl
+ create mode 100644 packages/Indexing/K7k8i/src/view.jl
+ create mode 100644 packages/Indexing/K7k8i/test/runtests.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/.codecov.yml
+ create mode 100644 packages/SplitApplyCombine/nrESG/.gitignore
+ create mode 100644 packages/SplitApplyCombine/nrESG/.travis.yml
+ create mode 100644 packages/SplitApplyCombine/nrESG/LICENSE.md
+ create mode 100644 packages/SplitApplyCombine/nrESG/Project.toml
+ create mode 100644 packages/SplitApplyCombine/nrESG/README.md
+ create mode 100644 packages/SplitApplyCombine/nrESG/REQUIRE
+ create mode 100644 packages/SplitApplyCombine/nrESG/appveyor.yml
+ create mode 100644 packages/SplitApplyCombine/nrESG/src/SplitApplyCombine.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/src/combinedims.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/src/group.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/src/innerjoin.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/src/invert.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/src/leftgroupjoin.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/src/map.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/src/product.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/src/single.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/src/splitdims.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/test/combinedims.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/test/group.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/test/innerjoin.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/test/invert.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/test/leftgroupjoin.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/test/map.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/test/product.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/test/runtests.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/test/single.jl
+ create mode 100644 packages/SplitApplyCombine/nrESG/test/splitdims.jl
+To https://github.com/watsona4/dot_julia.git
+   c5df7748f..67bbe1c43  master -> master
+Progress:   1%|▌                                        |  ETA: 2 days, 6:22:51[K
+Installing Accumulo
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Accumulo [bc77054a]:\n Accumulo [bc77054a] log:\n ├─possible versions are: [0.0.1, 0.1.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   1%|▋                                        |  ETA: 2 days, 5:04:45[K
+Installing AccurateArithmetic
+ Resolving package versions...
+ Installed AccurateArithmetic ─ v0.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [22286c92] + AccurateArithmetic v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [22286c92] + AccurateArithmetic v0.3.0

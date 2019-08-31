@@ -156,6 +156,12 @@ git-tree-sha1 = "1407ccb2f68a8216880cba8d612f84638fea55b7"
 uuid = "44e12807-9a19-5591-91cf-c1b4fb89ce64"
 version = "0.2.1"
 
+[[AccurateArithmetic]]
+deps = ["Random", "Test"]
+git-tree-sha1 = "47acddd710276cfa0184d84ebca07a92b324c263"
+uuid = "22286c92-06ac-501d-9306-4abd417d9753"
+version = "0.3.0"
+
 [[Adapt]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "82dab828020b872fa9efd3abec1152b075bc7cbf"
