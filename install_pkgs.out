@@ -33412,3 +33412,15 @@ Installing BlockBandedMatrices
   [ffab5731] + BlockBandedMatrices v0.4.6
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master a6c4f2071] added package BlockBandedMatrices
+ 3 files changed, 18 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   75a8db21a..a6c4f2071  master -> master
+Progress:   8%|███▎                                     |  ETA: 3 days, 21:51:19[K
+Installing BlockDiagonalFactors
+ Resolving package versions...
+ Installed BlockDiagonalFactors ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [4354e1ec] + BlockDiagonalFactors v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [4354e1ec] + BlockDiagonalFactors v0.1.0
