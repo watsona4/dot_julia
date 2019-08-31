@@ -38168,3 +38168,59 @@ Installing CPLEX
 │  [6] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/CPLEX/FUtHu/deps/build.jl:18
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master ceac46343] added package CPLEX
+ 49 files changed, 9612 insertions(+)
+ create mode 100644 packages/CPLEX/FUtHu/.gitignore
+ create mode 100644 packages/CPLEX/FUtHu/LICENSE
+ create mode 100644 packages/CPLEX/FUtHu/README.md
+ create mode 100644 packages/CPLEX/FUtHu/REQUIRE
+ create mode 100644 packages/CPLEX/FUtHu/deps/.gitignore
+ create mode 100644 packages/CPLEX/FUtHu/deps/build.jl
+ create mode 100644 packages/CPLEX/FUtHu/examples/branch_jump.jl
+ create mode 100644 packages/CPLEX/FUtHu/examples/tsp.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/CPLEX.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/CplexSolverInterface.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/JuMPfunctions.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_callbacks.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_common.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_constrs.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_env.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_highlevel.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_model.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_params.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_params_126.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_params_127.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_params_1271.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_params_1280.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_quad.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_solve.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/cpx_vars.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/full_defines_126.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/full_defines_127.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/full_defines_1271.jl
+ create mode 100644 packages/CPLEX/FUtHu/src/full_defines_1280.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/constants.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/env.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/low_level_api.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/lp_01.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/lp_02.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/lp_03.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/mathprog.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/mip_01.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/miqcp.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/problemtype.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/qcqp_01.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/qp_01.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/qp_02.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/runtests.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/solvetime_01.jl
+ create mode 100644 packages/CPLEX/FUtHu/test/sos.jl
+To https://github.com/watsona4/dot_julia.git
+   00cc31cf9..ceac46343  master -> master
+Progress:  10%|████                                     |  ETA: 3 days, 13:00:45[K
+Installing CPUTime
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [a9c8d775] + CPUTime v1.0.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
