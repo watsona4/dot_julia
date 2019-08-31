@@ -1,0 +1,9 @@
+*.jl.cov
+*.jl.mem
+/deps/deps.jl
+/deps/*.so
+/deps/*.dll
+/deps/*.exp
+/deps/*.lib
+/deps/*.dylib
+/deps/build.log

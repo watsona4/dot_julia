@@ -1,0 +1,26 @@
+name = "ArnoldiMethodTransformations"
+uuid = "fede57cc-428a-11e9-3e5c-c149a0a4072d"
+authors = ["William R Sweeney <wrsweeney2@gmail.com>"]
+repo = "https://github.com/wrs28/ArnoldiMethodTransformations.jl.git"
+version = "0.1.0"
+
+[deps]
+ArnoldiMethod = "ec485272-7323-5ecc-a04f-4719b315124d"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+LinearMaps = "7a12625a-238d-50fd-b39a-03d52299707e"
+Pardiso = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+ArnoldiMethod = "0"
+LinearMaps = "2"
+Pardiso = "0"
+Requires = "0"
+julia = "1"

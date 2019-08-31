@@ -430,6 +430,12 @@ git-tree-sha1 = "2b6845cea546604fb4dca4e31414a6a59d39ddcd"
 uuid = "ec485272-7323-5ecc-a04f-4719b315124d"
 version = "0.0.4"
 
+[[ArnoldiMethodTransformations]]
+deps = ["ArnoldiMethod", "LinearAlgebra", "LinearMaps", "Pardiso", "Requires", "SparseArrays"]
+git-tree-sha1 = "7d3a5d3da136e01f36cc16df1bbe3c0595fc1fc3"
+uuid = "fede57cc-428a-11e9-3e5c-c149a0a4072d"
+version = "0.1.0"
+
 [[Arpack]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra"]
 git-tree-sha1 = "07a2c077bdd4b6d23a40342a8a108e2ee5e58ab6"
@@ -1287,6 +1293,12 @@ version = "7.0.1"
 deps = ["Libdl"]
 uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 
+[[LinearMaps]]
+deps = ["LinearAlgebra", "SparseArrays"]
+git-tree-sha1 = "b32e88a3a99685a38780f5b31fc1e0af28f01477"
+uuid = "7a12625a-238d-50fd-b39a-03d52299707e"
+version = "2.5.1"
+
 [[LinearOperators]]
 deps = ["FastClosures", "LinearAlgebra", "Printf", "SparseArrays", "Test"]
 git-tree-sha1 = "316d05c6b0df402efc110a3cfb0c0a365171fb51"
@@ -1498,6 +1510,12 @@ deps = ["Markdown", "OrderedCollections", "REPL", "Test"]
 git-tree-sha1 = "70bdbfb2bceabb15345c0b54be4544813b3444e4"
 uuid = "d96e819e-fc66-5662-9728-84c9c7592b0a"
 version = "0.10.3"
+
+[[Pardiso]]
+deps = ["Libdl", "LinearAlgebra", "Random", "SparseArrays", "Test"]
+git-tree-sha1 = "140777e634428407903907a39f2187edf983550b"
+uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
+version = "0.4.2"
 
 [[Parsers]]
 deps = ["Dates", "Test"]

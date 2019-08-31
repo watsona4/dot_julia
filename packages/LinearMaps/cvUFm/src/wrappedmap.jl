@@ -1,0 +1,43 @@
+struct WrappedMap{T, A<:Union{AbstractMatrix, LinearMap}} <: LinearMap{T}
+    lmap::A
+    _issymmetric::Bool
+    _ishermitian::Bool
+    _isposdef::Bool
+end
+function WrappedMap(lmap::Union{AbstractMatrix{T}, LinearMap{T}};
+    issymmetric::Bool = issymmetric(lmap),
+    ishermitian::Bool = ishermitian(lmap),
+    isposdef::Bool = isposdef(lmap)) where {T}
+    WrappedMap{T, typeof(lmap)}(lmap, issymmetric, ishermitian, isposdef)
+end
+function WrappedMap{T}(lmap::Union{AbstractMatrix, LinearMap};
+    issymmetric::Bool = issymmetric(lmap),
+    ishermitian::Bool = ishermitian(lmap),
+    isposdef::Bool = isposdef(lmap)) where {T}
+    WrappedMap{T, typeof(lmap)}(lmap, issymmetric, ishermitian, isposdef)
+end
+
+# properties
+Base.size(A::WrappedMap) = size(A.lmap)
+LinearAlgebra.issymmetric(A::WrappedMap) = A._issymmetric
+LinearAlgebra.ishermitian(A::WrappedMap) = A._ishermitian
+LinearAlgebra.isposdef(A::WrappedMap) = A._isposdef
+
+# multiplication with vector
+A_mul_B!(y::AbstractVector, A::WrappedMap, x::AbstractVector) = A_mul_B!(y, A.lmap, x)
+Base.:(*)(A::WrappedMap, x::AbstractVector) = *(A.lmap, x)
+
+At_mul_B!(y::AbstractVector, A::WrappedMap, x::AbstractVector) =
+    (issymmetric(A) || (isreal(A) && ishermitian(A))) ? A_mul_B!(y, A.lmap, x) : At_mul_B!(y, A.lmap, x)
+
+Ac_mul_B!(y::AbstractVector, A::WrappedMap, x::AbstractVector) =
+    ishermitian(A) ? A_mul_B!(y, A.lmap, x) : Ac_mul_B!(y, A.lmap, x)
+
+# combine LinearMap and Matrix objects: linear combinations and map composition
+Base.:(+)(A₁::LinearMap, A₂::AbstractMatrix) = +(A₁, WrappedMap(A₂))
+Base.:(+)(A₁::AbstractMatrix, A₂::LinearMap) = +(WrappedMap(A₁), A₂)
+Base.:(-)(A₁::LinearMap, A₂::AbstractMatrix) = -(A₁, WrappedMap(A₂))
+Base.:(-)(A₁::AbstractMatrix, A₂::LinearMap) = -(WrappedMap(A₁), A₂)
+
+Base.:(*)(A₁::LinearMap, A₂::AbstractMatrix) = *(A₁, WrappedMap(A₂))
+Base.:(*)(A₁::AbstractMatrix, A₂::LinearMap) = *(WrappedMap(A₁), A₂)

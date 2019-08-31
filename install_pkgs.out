@@ -22832,3 +22832,21 @@ Installing ArnoldiMethod
   [ec485272] + ArnoldiMethod v0.0.4
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 1f2cdc35f] added package ArnoldiMethod
+ 3 files changed, 18 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   e5b0c7c93..1f2cdc35f  master -> master
+Progress:   3%|█▍                                       |  ETA: 6 days, 16:06:50[K
+Installing ArnoldiMethodTransformations
+ Resolving package versions...
+ Installed LinearMaps ─────────────────── v2.5.1
+ Installed ArnoldiMethodTransformations ─ v0.1.0
+ Installed Pardiso ────────────────────── v0.4.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [fede57cc] + ArnoldiMethodTransformations v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [fede57cc] + ArnoldiMethodTransformations v0.1.0
+  [7a12625a] + LinearMaps v2.5.1
+  [46dd5b70] + Pardiso v0.4.2
+  Building Pardiso → `~/.julia/packages/Pardiso/66TFF/deps/build.log`
+  Building Pardiso → `~/.julia/packages/Pardiso/66TFF/deps/build.log`
