@@ -472,6 +472,12 @@ git-tree-sha1 = "d3c36842140057276f6f8348afa08f0f7dae2d1e"
 uuid = "69666777-d1a9-59fb-9406-91d4454c9d45"
 version = "0.2.3"
 
+[[Arrowhead]]
+deps = ["LinearAlgebra", "Polynomials", "Random"]
+git-tree-sha1 = "5efdf68cc2fa9bde38546aa302ebbf41f70bea5c"
+uuid = "1a029416-38b0-5245-b7ed-67249edcb994"
+version = "1.0.0"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"

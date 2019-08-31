@@ -23110,3 +23110,36 @@ Installing Arrow
   [69666777] + Arrow v0.2.3
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [69666777] + Arrow v0.2.3
+[master 84acaa3af] added package Arrow
+ 25 files changed, 3183 insertions(+)
+ create mode 100644 packages/Arrow/b4oSO/.codecov.yml
+ create mode 100644 packages/Arrow/b4oSO/.gitignore
+ create mode 100644 packages/Arrow/b4oSO/.travis.yml
+ create mode 100644 packages/Arrow/b4oSO/LICENSE.md
+ create mode 100644 packages/Arrow/b4oSO/README.md
+ create mode 100644 packages/Arrow/b4oSO/REQUIRE
+ create mode 100644 packages/Arrow/b4oSO/appveyor.yml
+ create mode 100644 packages/Arrow/b4oSO/src/Arrow.jl
+ create mode 100644 packages/Arrow/b4oSO/src/arrowvectors.jl
+ create mode 100644 packages/Arrow/b4oSO/src/bitprimitives.jl
+ create mode 100644 packages/Arrow/b4oSO/src/datetime.jl
+ create mode 100644 packages/Arrow/b4oSO/src/dictencoding.jl
+ create mode 100644 packages/Arrow/b4oSO/src/lists.jl
+ create mode 100644 packages/Arrow/b4oSO/src/locate.jl
+ create mode 100644 packages/Arrow/b4oSO/src/primitives.jl
+ create mode 100644 packages/Arrow/b4oSO/src/utils.jl
+ create mode 100644 packages/Arrow/b4oSO/test/benchmarks.jl
+ create mode 100644 packages/Arrow/b4oSO/test/indexing.jl
+ create mode 100644 packages/Arrow/b4oSO/test/runtests.jl
+ create mode 100644 packages/Arrow/b4oSO/test/testutils.jl
+ create mode 100644 packages/Arrow/b4oSO/test/writing.jl
+To https://github.com/watsona4/dot_julia.git
+   f92c28a64..84acaa3af  master -> master
+Progress:   4%|█▌                                       |  ETA: 6 days, 5:48:55[K
+Installing Arrowhead
+ Resolving package versions...
+ Installed Arrowhead ─ v1.0.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [1a029416] + Arrowhead v1.0.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [1a029416] + Arrowhead v1.0.0
