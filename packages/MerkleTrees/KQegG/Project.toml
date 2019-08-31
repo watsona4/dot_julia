@@ -1,0 +1,17 @@
+name = "MerkleTrees"
+uuid = "06dfef30-8e85-11e9-0a8e-cb6ed32fdbef"
+license = "MIT"
+authors = ["Simon Castano <simon@brane.cc>"]
+version = "0.1.0"
+
+[deps]
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+
+[compat]
+julia = "1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

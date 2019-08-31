@@ -1,0 +1,21 @@
+name = "Secp256k1"
+uuid = "bfa37bea-997f-11e9-0e02-2d50932a0e04"
+keywords = ["cryptography"]
+license = "MIT"
+authors = ["Simon Castano <simon@brane.cc>"]
+description = "EC operations on curve secp256k1"
+repository = "https://gitlab.com/braneproject/secp256k1.jl.git"
+version = "0.1.0"
+
+[deps]
+BitConverter = "3a3ce9e8-98e7-11e9-0fa0-055639f146d3"
+
+[compat]
+julia = "1"
+BitConverter = "0.1.1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

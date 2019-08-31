@@ -1,0 +1,27 @@
+name = "Bitcoin"
+uuid = "785d7830-48c5-59de-ae5e-7712913079e9"
+keywords = ["blockchain"]
+license = "MIT"
+authors = ["Simon Castano <simon@brane.cc>"]
+description = "Bitcoin Library"
+repository = "https://gitlab.com/braneproject/Bitcoin.jl.git"
+version = "0.1.12"
+
+[deps]
+Base58 = "a832ea1e-0ca7-55ca-a41a-6462721bb861"
+BitConverter = "3a3ce9e8-98e7-11e9-0fa0-055639f146d3"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+MerkleTrees = "06dfef30-8e85-11e9-0a8e-cb6ed32fdbef"
+Ripemd = "92ef3814-971d-54d3-b0c1-59b1d13fee15"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+Secp256k1 = "bfa37bea-997f-11e9-0e02-2d50932a0e04"
+Sockets = "6462fe0b-24de-5631-8697-dd941f90decc"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+BitConverter = "0.1.1"
+julia = "1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

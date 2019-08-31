@@ -32567,3 +32567,43 @@ Installing BitOperations
   [e1e0eea2] + BitOperations v0.2.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [e1e0eea2] + BitOperations v0.2.0
+[master dd084426c] added package BitOperations
+ 24 files changed, 665 insertions(+)
+ create mode 100644 packages/BitOperations/19Xeh/.appveyor.yml
+ create mode 100644 packages/BitOperations/19Xeh/.codecov.yml
+ create mode 100644 packages/BitOperations/19Xeh/.gitignore
+ create mode 100644 packages/BitOperations/19Xeh/.travis.yml
+ create mode 100644 packages/BitOperations/19Xeh/LICENSE.md
+ create mode 100644 packages/BitOperations/19Xeh/Project.toml
+ create mode 100644 packages/BitOperations/19Xeh/README.md
+ create mode 100644 packages/BitOperations/19Xeh/docs/.gitignore
+ create mode 100644 packages/BitOperations/19Xeh/docs/Project.toml
+ create mode 100644 packages/BitOperations/19Xeh/docs/make.jl
+ create mode 100644 packages/BitOperations/19Xeh/docs/src/LICENSE.md
+ create mode 100644 packages/BitOperations/19Xeh/docs/src/api.md
+ create mode 100644 packages/BitOperations/19Xeh/docs/src/index.md
+ create mode 100644 packages/BitOperations/19Xeh/src/BitOperations.jl
+ create mode 100644 packages/BitOperations/19Xeh/src/bitops.jl
+ create mode 100644 packages/BitOperations/19Xeh/src/endianess.jl
+ create mode 100644 packages/BitOperations/19Xeh/src/zigzagzenc.jl
+ create mode 100644 packages/BitOperations/19Xeh/test/runtests.jl
+ create mode 100644 packages/BitOperations/19Xeh/test/test_bitops.jl
+ create mode 100644 packages/BitOperations/19Xeh/test/test_zigzagenc.jl
+To https://github.com/watsona4/dot_julia.git
+   29ed3c59c..dd084426c  master -> master
+Progress:   7%|███                                      |  ETA: 3 days, 23:53:44[K
+Installing Bitcoin
+ Resolving package versions...
+   Cloning [785d7830-48c5-59de-ae5e-7712913079e9] Bitcoin from https://gitlab.com/braneproject/Bitcoin.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h Installed Bitcoin ───── v0.1.12
+   Cloning [bfa37bea-997f-11e9-0e02-2d50932a0e04] Secp256k1 from https://gitlab.com/braneproject/Secp256k1.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h Installed Secp256k1 ─── v0.1.0
+   Cloning [06dfef30-8e85-11e9-0a8e-cb6ed32fdbef] MerkleTrees from https://gitlab.com/braneproject/MerkleTrees.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h Installed MerkleTrees ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [785d7830] + Bitcoin v0.1.12
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [785d7830] + Bitcoin v0.1.12
+  [06dfef30] + MerkleTrees v0.1.0
+  [bfa37bea] + Secp256k1 v0.1.0
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`

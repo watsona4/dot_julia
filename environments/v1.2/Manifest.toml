@@ -1005,6 +1005,12 @@ git-tree-sha1 = "220221a0f4ce38df748d602d5937cc93f4f8eb7e"
 uuid = "e1e0eea2-bc69-5bf6-8574-13634873a17c"
 version = "0.2.0"
 
+[[Bitcoin]]
+deps = ["Base58", "BitConverter", "Dates", "HTTP", "MerkleTrees", "Ripemd", "SHA", "Secp256k1", "Sockets", "Test"]
+git-tree-sha1 = "c35bec3433b68a300c5d24f5b31e382e825bf4d2"
+uuid = "785d7830-48c5-59de-ae5e-7712913079e9"
+version = "0.1.12"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"
@@ -2358,6 +2364,12 @@ git-tree-sha1 = "d9683969337ad20dc957122038bd2c0ead4b5209"
 uuid = "c03570c3-d221-55d1-a50c-7939bbd78826"
 version = "0.3.0"
 
+[[MerkleTrees]]
+deps = ["SHA"]
+git-tree-sha1 = "2d24c0988d8908bf9e352aa0f5bf8cf61722c2c0"
+uuid = "06dfef30-8e85-11e9-0a8e-cb6ed32fdbef"
+version = "0.1.0"
+
 [[MetaProgTools]]
 git-tree-sha1 = "cc8b2b47177f096abf5fc8e39786250655feeb03"
 uuid = "b1909ce5-9a67-5ea4-ba1b-9d85528f5779"
@@ -2841,6 +2853,12 @@ deps = ["LinearAlgebra", "Random", "Statistics"]
 git-tree-sha1 = "7877e55c1523a4b336b433da39c8e8c08d2f221f"
 uuid = "6e75b9c4-186b-50bd-896f-2d2496a4843e"
 version = "0.5.0"
+
+[[Secp256k1]]
+deps = ["BitConverter"]
+git-tree-sha1 = "626e6e5c739e9ad323daf69e672c3c3680f2ba35"
+uuid = "bfa37bea-997f-11e9-0e02-2d50932a0e04"
+version = "0.1.0"
 
 [[Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
