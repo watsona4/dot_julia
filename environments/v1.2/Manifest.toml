@@ -608,6 +608,12 @@ git-tree-sha1 = "be6cf33b1484fcd0a9a7a3f6e3fd4a6b236941f0"
 uuid = "39de3d68-74b9-583c-8d2d-e117c070f3a9"
 version = "0.3.2"
 
+[[BARON]]
+deps = ["Compat", "MathProgBase"]
+git-tree-sha1 = "bda0f3ddd79f2bba264783f705a0c59157f0f36f"
+uuid = "2e2ca445-9e14-5b13-8677-4410f177f82b"
+version = "0.4.4"
+
 [[BSON]]
 deps = ["Profile", "Test"]
 git-tree-sha1 = "6453cef4f9cb8ded8e28e4d6d12e11e20eb692ea"
