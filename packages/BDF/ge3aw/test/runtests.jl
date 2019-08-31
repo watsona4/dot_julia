@@ -1,0 +1,7 @@
+include("test_read_write.jl")
+include("test_split_trigger.jl")
+include("test_split_time1.jl")
+include("test_split_time2.jl")
+include("test_eq.jl")
+include("test_channel_select.jl")
+include("test_decode_status_channel.jl")

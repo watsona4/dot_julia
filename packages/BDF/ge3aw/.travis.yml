@@ -1,0 +1,26 @@
+language: julia
+os:
+    - linux
+    - osx
+julia:
+    - 0.7
+    - 1.0
+    - nightly
+notifications:
+    email: false
+addons:
+  apt:
+    packages:
+    - hdf5-tools
+  homebrew:
+    packages:
+    - hdf5
+matrix:
+  allow_failures:
+    - julia: nightly
+
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia --check-bounds=yes -e 'using Pkg; Pkg.clone(pwd()); Pkg.build("BDF"); Pkg.test("BDF"; coverage=true)'
+after_success:
+- julia -e 'using Pkg; cd(Pkg.dir("BDF")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'

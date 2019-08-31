@@ -626,6 +626,12 @@ git-tree-sha1 = "705dff394c5fb61cdd01e0c0241c6ac280f5d240"
 uuid = "19670fab-07f0-5a41-99c5-c090d774ee27"
 version = "0.1.0"
 
+[[BDF]]
+deps = ["Compat", "DocStringExtensions", "HDF5"]
+git-tree-sha1 = "711d47315ce61ffd49377f25414a1042674dbda2"
+uuid = "0f5c7595-fa0c-55c8-9031-265ea63f34cf"
+version = "0.4.1"
+
 [[BSON]]
 deps = ["Profile", "Test"]
 git-tree-sha1 = "6453cef4f9cb8ded8e28e4d6d12e11e20eb692ea"
