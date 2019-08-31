@@ -37305,3 +37305,15 @@ Installing CEnum
   [fa961155] + CEnum v0.2.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 770097a45] added package CEnum
+ 3 files changed, 151 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   ab17208dc..770097a45  master -> master
+Progress:   9%|███▊                                     |  ETA: 3 days, 15:41:00[K
+Installing CFTime
+ Resolving package versions...
+ Installed CFTime ─ v0.0.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [179af706] + CFTime v0.0.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [179af706] + CFTime v0.0.3
