@@ -6742,3 +6742,29 @@ Installing AbstractTrees
   [1520ce14] + AbstractTrees v0.2.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [1520ce14] + AbstractTrees v0.2.1
+[master c5df7748f] added package AbstractTrees
+ 14 files changed, 986 insertions(+)
+ create mode 100644 packages/AbstractTrees/z1wBY/.gitignore
+ create mode 100644 packages/AbstractTrees/z1wBY/.travis.yml
+ create mode 100644 packages/AbstractTrees/z1wBY/LICENSE.md
+ create mode 100644 packages/AbstractTrees/z1wBY/README.md
+ create mode 100644 packages/AbstractTrees/z1wBY/REQUIRE
+ create mode 100644 packages/AbstractTrees/z1wBY/examples/fstree.jl
+ create mode 100644 packages/AbstractTrees/z1wBY/src/AbstractTrees.jl
+ create mode 100644 packages/AbstractTrees/z1wBY/src/implicitstacks.jl
+ create mode 100644 packages/AbstractTrees/z1wBY/src/traits.jl
+ create mode 100644 packages/AbstractTrees/z1wBY/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   e56edfe48..c5df7748f  master -> master
+Progress:   1%|▌                                        |  ETA: 2 days, 7:37:31[K
+Installing AcceleratedArrays
+ Resolving package versions...
+ Installed AcceleratedArrays ─ v0.2.1
+ Installed Indexing ────────── v1.1.0
+ Installed SplitApplyCombine ─ v0.4.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [44e12807] + AcceleratedArrays v0.2.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [44e12807] + AcceleratedArrays v0.2.1
+  [313cdc1a] + Indexing v1.1.0
+  [03a91e81] + SplitApplyCombine v0.4.1
