@@ -1035,6 +1035,12 @@ git-tree-sha1 = "da5cfcc08d24a43fa4e3ad67f565f17838e26fca"
 uuid = "a134a8b2-14d6-55f6-9291-3336d3ab0209"
 version = "0.5.0"
 
+[[BlackBoxOptimizationBenchmarking]]
+deps = ["Compat", "Distributed", "Distributions", "LinearAlgebra", "Memoize", "Optim", "Test"]
+git-tree-sha1 = "6da0f9ab983ae5186df861b3478e37fe44fcf8ca"
+uuid = "4552ee2b-11da-5aef-8e78-0d48532001f1"
+version = "0.1.0"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"
