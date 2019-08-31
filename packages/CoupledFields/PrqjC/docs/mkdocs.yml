@@ -1,0 +1,29 @@
+site_name:        CoupledFields.jl
+repo_url:         https://github.com/Mattriks/CoupledFields.jl
+site_description: Package for working with coupled fields
+site_author:      Mattriks
+
+theme: readthedocs
+
+extra_css:
+  - assets/Documenter.css
+
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - assets/mathjaxhelper.js
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+  - mdx_math
+
+docs_dir: 'build'
+
+pages:
+  - Home: 'index.md'
+  - Guide:
+    - Example 1: 'man/Example1.md'
+    - Example 2: 'man/Example2.md'
+    - Tropical Pacific SSTs: 'man/tpSST.md'
+  - Library: 'lib/library.md'

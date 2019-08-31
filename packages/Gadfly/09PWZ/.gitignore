@@ -1,0 +1,9 @@
+#ignore files output from runtests.jl
+test/devel-output.html
+test/master-output.html
+test/devel-output
+test/master-output
+test/diffed-output
+
+docs/Manifest.toml
+docs/build

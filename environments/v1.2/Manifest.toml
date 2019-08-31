@@ -1119,6 +1119,12 @@ git-tree-sha1 = "c253640f44d6c6694220e595c8aa253ad8b6b494"
 uuid = "4f8fbe5d-35a6-506b-99b3-b5866748635b"
 version = "1.2.0"
 
+[[BoltzmannMachinesPlots]]
+deps = ["BoltzmannMachines", "Compose", "DataFrames", "Gadfly", "Statistics"]
+git-tree-sha1 = "b8ad7132af8b2549bf7f94ee9ae8de10f7f2ace0"
+uuid = "e853e177-4ae5-507f-af00-4766098699e4"
+version = "1.0.0"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
@@ -1337,6 +1343,12 @@ deps = ["Compat", "Rotations", "StaticArrays"]
 git-tree-sha1 = "47f05d0b7f4999609f92e657147df000818c1f24"
 uuid = "150eb455-5306-5404-9cee-2592286d6298"
 version = "0.5.0"
+
+[[CoupledFields]]
+deps = ["Compat", "StatsBase"]
+git-tree-sha1 = "d56f26542bb7af9c0ec16e098a0a33352f3c9d8e"
+uuid = "7ad07ef1-bdf2-5661-9d2b-286fd4296dac"
+version = "0.1.0"
 
 [[Coverage]]
 deps = ["HTTP", "JSON", "LibGit2", "MbedTLS"]
@@ -1818,6 +1830,12 @@ git-tree-sha1 = "ee443ef166b29282301468d8af403e1ed8f5412e"
 uuid = "92fee26a-97fe-5a0c-ad85-20a5f3185b63"
 version = "0.5.0"
 
+[[Gadfly]]
+deps = ["Base64", "CategoricalArrays", "Colors", "Compat", "Compose", "Contour", "CoupledFields", "DataStructures", "Dates", "Distributions", "DocStringExtensions", "Hexagons", "IndirectArrays", "IterTools", "JSON", "Juno", "KernelDensity", "LibGit2", "LinearAlgebra", "Loess", "Measures", "Printf", "Random", "Requires", "Showoff", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "ee709588c71eb62ce53cecf5a594bdefd6f2a9be"
+uuid = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
+version = "1.0.1"
+
 [[GaussianProcesses]]
 deps = ["Distances", "Distributions", "ElasticArrays", "ElasticPDMats", "FastGaussQuadrature", "ForwardDiff", "LinearAlgebra", "Optim", "PDMats", "Printf", "Random", "RecipesBase", "ScikitLearnBase", "SpecialFunctions", "StaticArrays", "Statistics", "StatsFuns", "Test"]
 git-tree-sha1 = "d27b78ff418d683df83ea7ae74f4eb545a8504ae"
@@ -1925,6 +1943,12 @@ deps = ["Compat", "LibCURL"]
 git-tree-sha1 = "161d5776ae8e585ac0b8c20fb81f17ab755b3671"
 uuid = "0862f596-cf2d-50af-8ef4-f2be67dfa83f"
 version = "0.2.1"
+
+[[Hexagons]]
+deps = ["Test"]
+git-tree-sha1 = "de4a6f9e7c4710ced6838ca906f81905f7385fd6"
+uuid = "a1b4810d-1bce-5fbd-ac56-80944d57a21f"
+version = "0.2.0"
 
 [[Hiccup]]
 deps = ["MacroTools", "Test"]
@@ -2221,6 +2245,12 @@ git-tree-sha1 = "30d94657a422d09cb97b6f86f04f750fa9c50df8"
 uuid = "e5e0dc1b-0480-54bc-9374-aad01c23163d"
 version = "0.7.2"
 
+[[KernelDensity]]
+deps = ["Distributions", "FFTW", "Interpolations", "Optim", "StatsBase", "Test"]
+git-tree-sha1 = "c1048817fe5711f699abc8fabd47b1ac6ba4db04"
+uuid = "5ab0869b-81aa-558d-bb23-cbf5423bbe9b"
+version = "0.5.1"
+
 [[KernelDensityEstimate]]
 deps = ["DelimitedFiles", "Distributions", "DocStringExtensions", "LinearAlgebra", "Profile", "Statistics", "Test"]
 git-tree-sha1 = "574b8ee047879ee249bf9d290c4af83722ce8ea7"
@@ -2367,6 +2397,12 @@ deps = ["Base64", "JSON", "REPL"]
 git-tree-sha1 = "04913ce466978fad4eb666c9f5fafc718fcc4366"
 uuid = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
 version = "2.0.3"
+
+[[Loess]]
+deps = ["Distances", "Random", "Statistics", "Test"]
+git-tree-sha1 = "0ee46caf683a422b595be4dfaed6cda28f541e25"
+uuid = "4345ca2d-374a-55d4-8d30-97f9976e7612"
+version = "0.5.0"
 
 [[Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
