@@ -32732,3 +32732,52 @@ Installing BitcoinPrimitives
   [9d766032] + BitcoinPrimitives v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [9d766032] + BitcoinPrimitives v0.1.0
+[master e59f4b3fc] added package BitcoinPrimitives
+ 41 files changed, 3147 insertions(+)
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/FETCH_HEAD
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/HEAD
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/config
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/description
+ create mode 100755 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/hooks/README.sample
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/index
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/info/exclude
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/objects/pack/pack-5949e1b8b8fa7264cdd04fbd76e975a876e72abd.idx
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/objects/pack/pack-5949e1b8b8fa7264cdd04fbd76e975a876e72abd.pack
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/refs/heads/master
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/refs/remotes/origin/master
+ create mode 100644 clones/9d766032-97e2-11e9-15bd-efb533ad7bdc/refs/tags/v0.1.0
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/.gitignore
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/.gitlab-ci.yml
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/LICENSE
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/Project.toml
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/README.md
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/docs/make.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/docs/src/index.md
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/BitcoinPrimitives.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/block/Block.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/block/Header.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/lib/CompactSizeUInt.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/lib/hash.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/script/Script.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/script/Witness.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/script/op-codes.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/transaction/Outpoint.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/transaction/Tx.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/transaction/TxIn.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/src/transaction/TxOut.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/test/runtests.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/test/test_Block.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/test/test_CompactSizeUInt.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/test/test_Script.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/test/test_Transaction.jl
+ create mode 100644 packages/BitcoinPrimitives/kQJpz/test/test_op-codes.jl
+To https://github.com/watsona4/dot_julia.git
+   2288657fa..e59f4b3fc  master -> master
+Progress:   7%|███▏                                     |  ETA: 3 days, 23:22:04[K
+Installing Bits
+ Resolving package versions...
+ Installed Bits ─ v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [1654ce90] + Bits v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [1654ce90] + Bits v0.2.0
