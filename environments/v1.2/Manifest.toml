@@ -2070,6 +2070,12 @@ git-tree-sha1 = "47f05d0b7f4999609f92e657147df000818c1f24"
 uuid = "150eb455-5306-5404-9cee-2592286d6298"
 version = "0.5.0"
 
+[[CornerPlot]]
+deps = ["Compat", "Gadfly"]
+git-tree-sha1 = "ab0c9c00562c11ce272f836582fb4272cae39887"
+uuid = "b8d669dd-3d88-55df-ae05-b65fc3f9fff9"
+version = "0.0.1"
+
 [[CoupledFields]]
 deps = ["Compat", "StatsBase"]
 git-tree-sha1 = "d56f26542bb7af9c0ec16e098a0a33352f3c9d8e"
