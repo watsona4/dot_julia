@@ -1756,6 +1756,12 @@ git-tree-sha1 = "b625f2b1962f475b7f00527161445fe2f2dc6127"
 uuid = "593b3428-ca2f-500c-ae53-031589ec8ddd"
 version = "5.1.1"
 
+[[CoDa]]
+deps = ["LinearAlgebra", "StaticArrays", "StatsBase", "UnicodePlots"]
+git-tree-sha1 = "034a6b2224b18888bd6abd7e66d70cf1ac254cb2"
+uuid = "5900dafe-f573-5c72-b367-76665857777b"
+version = "0.1.1"
+
 [[CodeTools]]
 deps = ["LNR", "Lazy", "Markdown", "Pkg", "Test", "Tokenize"]
 git-tree-sha1 = "b50b63d30896e1e969e9e7767d44c4d34878b416"
