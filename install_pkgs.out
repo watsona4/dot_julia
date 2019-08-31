@@ -22810,3 +22810,14 @@ Installing ArgCheck
   [dce04be8] + ArgCheck v1.0.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 39e8fba91] added package ArgCheck
+ 3 files changed, 164 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   5ab0aab90..39e8fba91  master -> master
+Progress:   3%|█▎                                       |  ETA: 6 days, 19:04:39[K
+Installing ArgParse
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [c7e460c6] + ArgParse v0.6.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
