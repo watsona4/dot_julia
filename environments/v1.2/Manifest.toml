@@ -483,6 +483,12 @@ git-tree-sha1 = "a3bd92d3cd222cd5cf9aa602ffe842faa909773a"
 uuid = "f617cd02-e7fb-5dad-8d07-aa96542e7fbb"
 version = "0.1.0"
 
+[[AssetRegistry]]
+deps = ["Distributed", "JSON", "Pidfile", "SHA", "Test"]
+git-tree-sha1 = "b25e88db7944f98789130d7b503276bc34bc098e"
+uuid = "bf4720bc-e11a-5d0c-854e-bdca1663c893"
+version = "0.1.0"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
@@ -939,6 +945,9 @@ deps = ["Dates", "LinearAlgebra", "Printf", "Test", "UUIDs"]
 git-tree-sha1 = "2ee1d999c462425e2f848524f732ed51bc1ab63a"
 uuid = "48062228-2e41-5def-b9a4-89aafe57970f"
 version = "0.6.2"
+
+[[FileWatching]]
+uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
 
 [[FillArrays]]
 deps = ["LinearAlgebra", "Random", "SparseArrays"]
@@ -1562,6 +1571,12 @@ deps = ["Dates", "Test"]
 git-tree-sha1 = "db2b35dedab3c0e46dc15996d170af07a5ab91c9"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
 version = "0.3.6"
+
+[[Pidfile]]
+deps = ["FileWatching", "Test"]
+git-tree-sha1 = "1ffd82728498b5071cde851bbb7abd780d4445f3"
+uuid = "fa939f87-e72e-5be4-a000-7fc836dbe307"
+version = "1.1.0"
 
 [[Pkg]]
 deps = ["Dates", "LibGit2", "Markdown", "Printf", "REPL", "Random", "SHA", "UUIDs"]
