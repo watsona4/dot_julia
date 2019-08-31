@@ -1,0 +1,18 @@
+language: julia
+os:
+    - osx
+    - linux
+julia:
+    - 0.7
+    - 1.0
+    - nightly
+env:
+    - CONDA_JL_VERSION="2"
+    - CONDA_JL_VERSION="3"
+
+notifications:
+    email: false
+
+# Workaround for https://github.com/travis-ci/travis-ci/issues/4942
+git:
+  depth: 99999

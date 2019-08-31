@@ -1,0 +1,22 @@
+sudo: required
+language: julia
+dist: xenial
+python:
+  - "3.6"
+git:
+  depth: 3
+  quiet: true
+julia:
+  - 1.1
+os:
+  - osx
+  - linux
+  - windows
+notifications:
+  email: false
+coveralls: true
+after_success:
+  - julia -e 'using Pkg; Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())';
+
+
+  

@@ -1,0 +1,14 @@
+language: julia
+os:
+    - linux
+    - osx
+julia:
+    - 0.6
+    - 0.7
+    - nightly
+env:
+  matrix:
+    - FORCE_COMPILE_BLOSC=yes
+    - FORCE_COMPILE_BLOSC=no
+notifications:
+  email: false

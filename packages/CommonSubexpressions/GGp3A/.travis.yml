@@ -1,0 +1,16 @@
+language: julia
+sudo: required
+dist: trusty
+os:
+  - linux
+julia:
+  - 0.7
+  - nightly
+notifications:
+  email: false
+branches:
+  only:
+    - master
+
+after_success:
+  - julia -e 'cd(Pkg.dir("CommonSubexpressions")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'

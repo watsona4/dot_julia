@@ -1,0 +1,4 @@
+*.cov
+*.mem
+data/*.json
+Manifest.toml
