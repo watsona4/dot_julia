@@ -252,6 +252,12 @@ git-tree-sha1 = "af79e0b0b6d59819ae3d0ed61e6dae9110045c49"
 uuid = "07493b3f-dabb-5b16-a503-4139292d7dd4"
 version = "0.1.9"
 
+[[AltDistributions]]
+deps = ["ArgCheck", "Distributions", "DocStringExtensions", "ForwardDiff", "LinearAlgebra", "Parameters", "Random", "Test"]
+git-tree-sha1 = "8cadd0ac25dabf7c17b3154edf15f417ec02b7e7"
+uuid = "875e7ca2-ab9d-5828-93ae-a098eac53262"
+version = "0.2.0"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
