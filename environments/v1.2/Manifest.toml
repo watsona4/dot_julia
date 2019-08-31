@@ -1582,6 +1582,12 @@ git-tree-sha1 = "0ceceb18db7c8f410938298333662a34c72e54f6"
 uuid = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
 version = "0.2.0"
 
+[[ChangePrecision]]
+deps = ["LinearAlgebra", "Random", "Statistics", "Test"]
+git-tree-sha1 = "34b5f8c65ae773d3d3baa6c11833252edd15f476"
+uuid = "3cb15238-376d-56a3-8042-d33272777c9a"
+version = "1.0.0"
+
 [[ChaosTools]]
 deps = ["Combinatorics", "DSP", "DiffEqBase", "Distances", "Distributions", "DynamicalSystemsBase", "ForwardDiff", "LinearAlgebra", "LombScargle", "NearestNeighbors", "Random", "Reexport", "Roots", "StaticArrays", "Statistics", "StatsBase"]
 git-tree-sha1 = "a76653daa84ba7153a4498d614e4eef9526e5334"
