@@ -1744,6 +1744,12 @@ git-tree-sha1 = "f387d5937d0c9d0191c711d7d204bce15bd23b45"
 uuid = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
 version = "0.13.3"
 
+[[ClusteringGA]]
+deps = ["Clustering", "LinearAlgebra", "Random", "Statistics", "Test"]
+git-tree-sha1 = "ab7587420dc5fd01af0baa0b8eed344b65d0c4bd"
+uuid = "b3b3bba2-52bb-554f-a0d0-ab888ab50378"
+version = "0.0.1"
+
 [[CodeTools]]
 deps = ["LNR", "Lazy", "Markdown", "Pkg", "Test", "Tokenize"]
 git-tree-sha1 = "b50b63d30896e1e969e9e7767d44c4d34878b416"
