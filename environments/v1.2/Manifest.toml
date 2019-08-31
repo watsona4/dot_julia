@@ -1946,6 +1946,12 @@ git-tree-sha1 = "c77875b634a10dee1b3701c92f993bf8dc1dee02"
 uuid = "459fdd68-db75-56b8-8c15-d717a790f88e"
 version = "0.1.0"
 
+[[ConcaveHull]]
+deps = ["LinearAlgebra", "NearestNeighbors", "RecipesBase", "Test"]
+git-tree-sha1 = "2d576efc31a37bb8818a8a96abcdf0e3944cb8a0"
+uuid = "7d11a335-8259-52c9-8750-e30c45c66484"
+version = "0.1.0"
+
 [[Conda]]
 deps = ["JSON", "VersionParsing"]
 git-tree-sha1 = "9a11d428dcdc425072af4aea19ab1e8c3e01c032"
