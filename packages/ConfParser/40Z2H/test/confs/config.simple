@@ -1,0 +1,7 @@
+# this is a comment
+protocol kreberos
+port 6643
+user                root
+
+# this is another comment
+foobar barfoo
