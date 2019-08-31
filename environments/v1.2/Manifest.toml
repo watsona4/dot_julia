@@ -965,6 +965,12 @@ git-tree-sha1 = "04b1596f7b67f0eaafd3e727e675610a9f6e3b2e"
 uuid = "9f4c04fe-aef9-11e9-18a8-b5ce91034548"
 version = "0.1.0"
 
+[[BisectPy]]
+deps = ["Reexport"]
+git-tree-sha1 = "acb6bec911644c4292635cbda125594304f452ad"
+uuid = "e91bece4-a713-11e8-30d4-f1bdfdaa459e"
+version = "0.1.0"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"

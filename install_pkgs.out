@@ -32310,3 +32310,48 @@ Installing Biomodelling
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master 170a4ca18] added package Biomodelling
+ 29 files changed, 1703 insertions(+)
+ create mode 100644 packages/Biomodelling/HHlhD/Manifest.toml
+ create mode 100644 packages/Biomodelling/HHlhD/Project.toml
+ create mode 100644 packages/Biomodelling/HHlhD/README.md
+ create mode 100644 packages/Biomodelling/HHlhD/src/Biomodelling.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/Donne.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/HO_reaction.jl
+ create mode 100755 packages/Biomodelling/HHlhD/src/adaptive_tauleap.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/binomial_tauleap.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/comp_g.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/comp_hist_1d.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/comp_non_tau.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/comp_tau.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/compute_L.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/non_negative_Poisson_tauleap.jl
+ create mode 100755 packages/Biomodelling/HHlhD/src/rates.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/ssa.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/ssa_switch.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/ssa_switch2.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/ssa_switch3.jl
+ create mode 100755 packages/Biomodelling/HHlhD/src/tauleap.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/tauleaping_adaptive.jl
+ create mode 100644 packages/Biomodelling/HHlhD/src/tauleapswitch.jl
+ create mode 100755 packages/Biomodelling/HHlhD/src/update_rates.jl
+ create mode 100644 packages/Biomodelling/HHlhD/test/runtests.jl
+ create mode 100644 packages/Biomodelling/HHlhD/test/test.jl
+To https://github.com/watsona4/dot_julia.git
+   c58ea93e9..170a4ca18  master -> master
+Progress:   7%|██▉                                      |  ETA: 4 days, 3:19:15[K
+Installing BiomolecularStructures
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BiomolecularStructures [8710203e]:\n BiomolecularStructures [8710203e] log:\n ├─possible versions are: [0.0.1, 0.1.0, 0.2.0-0.2.3] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0, 0.2.0-0.2.3]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   7%|██▉                                      |  ETA: 4 days, 2:52:36[K
+Installing Biryani
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Biryani [c53a927b]:\n Biryani [c53a927b] log:\n ├─possible versions are: [0.1.0, 0.2.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   7%|███                                      |  ETA: 4 days, 2:26:19[K
+Installing BisectPy
+ Resolving package versions...
+ Installed BisectPy ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [e91bece4] + BisectPy v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [e91bece4] + BisectPy v0.1.0
