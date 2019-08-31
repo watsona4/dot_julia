@@ -578,6 +578,12 @@ git-tree-sha1 = "11b8b39419ebdb4c6674dbac24ff7e0ca7c5b00e"
 uuid = "4d03fd4d-39a1-545a-9bf0-a2e993faffdf"
 version = "0.4.0"
 
+[[Automa]]
+deps = ["DataStructures", "Printf", "Random", "Test", "TranscodingStreams"]
+git-tree-sha1 = "c81526bf5f6fb4616b4e22a3cd62ac20e255fd3c"
+uuid = "67c07d97-cdcb-5c2c-af73-a7f9c32a568b"
+version = "0.8.0"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"

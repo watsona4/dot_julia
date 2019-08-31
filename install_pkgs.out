@@ -26264,3 +26264,53 @@ Installing Autologistic
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master c44d00fae] added package Autologistic
+ 42 files changed, 8993 insertions(+)
+ create mode 100644 packages/Autologistic/5QX7K/.gitignore
+ create mode 100644 packages/Autologistic/5QX7K/.travis.yml
+ create mode 100644 packages/Autologistic/5QX7K/LICENSE.md
+ create mode 100644 packages/Autologistic/5QX7K/Manifest.toml
+ create mode 100644 packages/Autologistic/5QX7K/Project.toml
+ create mode 100644 packages/Autologistic/5QX7K/README.md
+ create mode 100644 packages/Autologistic/5QX7K/REQUIRE
+ create mode 100644 packages/Autologistic/5QX7K/TODO.txt
+ create mode 100644 packages/Autologistic/5QX7K/assets/hydrocotyle.csv
+ create mode 100644 packages/Autologistic/5QX7K/assets/pigmentosa.csv
+ create mode 100644 packages/Autologistic/5QX7K/coverage/Project.toml
+ create mode 100644 packages/Autologistic/5QX7K/coverage/coverage.jl
+ create mode 100644 packages/Autologistic/5QX7K/docs/Project.toml
+ create mode 100644 packages/Autologistic/5QX7K/docs/make.jl
+ create mode 100644 packages/Autologistic/5QX7K/docs/src/Background.md
+ create mode 100644 packages/Autologistic/5QX7K/docs/src/BasicUsage.md
+ create mode 100644 packages/Autologistic/5QX7K/docs/src/Design.md
+ create mode 100644 packages/Autologistic/5QX7K/docs/src/Examples.md
+ create mode 100644 packages/Autologistic/5QX7K/docs/src/api.md
+ create mode 100644 packages/Autologistic/5QX7K/docs/src/assets/ising_gif.gif
+ create mode 100644 packages/Autologistic/5QX7K/docs/src/assets/marginal-probs.png
+ create mode 100644 packages/Autologistic/5QX7K/docs/src/assets/noassociation.png
+ create mode 100644 packages/Autologistic/5QX7K/docs/src/index.md
+ create mode 100644 packages/Autologistic/5QX7K/src/ALRsimple_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/ALfit_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/ALfull_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/ALsimple_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/Autologistic.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/abstractautologisticmodel_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/abstractpairwiseparameter_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/abstractunaryparameter_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/common.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/fullpairwise_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/fullunary_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/linpredunary_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/samplers.jl
+ create mode 100644 packages/Autologistic/5QX7K/src/simplepairwise_type.jl
+ create mode 100644 packages/Autologistic/5QX7K/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   7d163ce67..c44d00fae  master -> master
+Progress:   4%|█▊                                       |  ETA: 5 days, 12:29:05[K
+Installing Automa
+ Resolving package versions...
+ Installed Automa ─ v0.8.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [67c07d97] + Automa v0.8.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [67c07d97] + Automa v0.8.0
