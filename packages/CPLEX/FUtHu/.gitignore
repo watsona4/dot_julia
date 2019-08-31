@@ -1,0 +1,6 @@
+*.lp
+*.mps
+*.swp
+*.sublime*
+*.log
+*.cov

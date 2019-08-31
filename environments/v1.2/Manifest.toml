@@ -1315,6 +1315,12 @@ git-tree-sha1 = "b756234774b87bc97d3b8626f29b7f9119eda5df"
 uuid = "1e616198-aa4e-51ec-90a2-23f7fbd31d8d"
 version = "0.5.0"
 
+[[CPLEX]]
+deps = ["Compat", "Libdl", "MathProgBase"]
+git-tree-sha1 = "bc18c6a1c71c19df4e3f5c5da4f0907eb1022c46"
+uuid = "a076750e-1247-5638-91d2-ce28b192dca0"
+version = "0.3.3"
+
 [[CPUTime]]
 git-tree-sha1 = "2dcc50ea6a0a1ef6440d6eecd0fe3813e5671f45"
 uuid = "a9c8d775-2e2e-55fc-8582-045d282d599e"

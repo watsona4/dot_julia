@@ -38013,3 +38013,158 @@ Installing COSMO
   [1e616198] + COSMO v0.5.0
   [bfc457fd] + QDLDL v0.1.3
   [c4a57d5a] ↓ UnsafeArrays v0.4.0 ⇒ v0.3.0
+[master 00cc31cf9] added package COSMO
+ 123 files changed, 12206 insertions(+), 2 deletions(-)
+ create mode 100644 packages/COSMO/Paq9I/.bumpversion.cfg
+ create mode 100644 packages/COSMO/Paq9I/.codecov.yml
+ create mode 100644 packages/COSMO/Paq9I/.gitignore
+ create mode 100644 packages/COSMO/Paq9I/.travis.yml
+ create mode 100644 packages/COSMO/Paq9I/LICENSE.md
+ create mode 100644 packages/COSMO/Paq9I/NEWS.md
+ create mode 100644 packages/COSMO/Paq9I/Project.toml
+ create mode 100644 packages/COSMO/Paq9I/README.md
+ create mode 100644 packages/COSMO/Paq9I/appveyor.yml
+ create mode 100644 packages/COSMO/Paq9I/docs/Project.toml
+ create mode 100644 packages/COSMO/Paq9I/docs/make.jl
+ create mode 100644 packages/COSMO/Paq9I/docs/src/api.md
+ create mode 100644 packages/COSMO/Paq9I/docs/src/assets/favicon.ico
+ create mode 100644 packages/COSMO/Paq9I/docs/src/assets/github_buttons.js
+ create mode 100644 packages/COSMO/Paq9I/docs/src/assets/logo.png
+ create mode 100644 packages/COSMO/Paq9I/docs/src/citing.md
+ create mode 100644 packages/COSMO/Paq9I/docs/src/contributing.md
+ create mode 100644 packages/COSMO/Paq9I/docs/src/decomposition.md
+ create mode 100644 packages/COSMO/Paq9I/docs/src/examples.md
+ create mode 100644 packages/COSMO/Paq9I/docs/src/getting_started.md
+ create mode 100644 packages/COSMO/Paq9I/docs/src/index.md
+ create mode 100644 packages/COSMO/Paq9I/docs/src/jump.md
+ create mode 100644 packages/COSMO/Paq9I/docs/src/lin_solver.md
+ create mode 100644 packages/COSMO/Paq9I/docs/src/method.md
+ create mode 100644 packages/COSMO/Paq9I/examples/chip_data.txt
+ create mode 100644 packages/COSMO/Paq9I/examples/closest_correlation_matrix.jl
+ create mode 100644 packages/COSMO/Paq9I/examples/logistic_regression_regularization.ipynb
+ create mode 100644 packages/COSMO/Paq9I/examples/lp.jl
+ create mode 100644 packages/COSMO/Paq9I/examples/maxEigenvalue.jl
+ create mode 100644 packages/COSMO/Paq9I/examples/qp.jl
+ create mode 100644 packages/COSMO/Paq9I/src/COSMO.jl
+ create mode 100644 packages/COSMO/Paq9I/src/MOIWrapper.jl
+ create mode 100644 packages/COSMO/Paq9I/src/algebra.jl
+ create mode 100644 packages/COSMO/Paq9I/src/chordal_decomposition.jl
+ create mode 100644 packages/COSMO/Paq9I/src/constraint.jl
+ create mode 100644 packages/COSMO/Paq9I/src/convexset.jl
+ create mode 100644 packages/COSMO/Paq9I/src/infeasibility.jl
+ create mode 100644 packages/COSMO/Paq9I/src/interface.jl
+ create mode 100644 packages/COSMO/Paq9I/src/kkt.jl
+ create mode 100644 packages/COSMO/Paq9I/src/kktsolver.jl
+ create mode 100644 packages/COSMO/Paq9I/src/kktsolver_pardiso.jl
+ create mode 100644 packages/COSMO/Paq9I/src/parameters.jl
+ create mode 100644 packages/COSMO/Paq9I/src/printing.jl
+ create mode 100644 packages/COSMO/Paq9I/src/projections.jl
+ create mode 100644 packages/COSMO/Paq9I/src/residuals.jl
+ create mode 100644 packages/COSMO/Paq9I/src/scaling.jl
+ create mode 100644 packages/COSMO/Paq9I/src/settings.jl
+ create mode 100644 packages/COSMO/Paq9I/src/setup.jl
+ create mode 100644 packages/COSMO/Paq9I/src/solver.jl
+ create mode 100644 packages/COSMO/Paq9I/src/splitvector.jl
+ create mode 100644 packages/COSMO/Paq9I/src/trees.jl
+ create mode 100644 packages/COSMO/Paq9I/src/types.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/COSMOTestUtils.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/Graphs/chordalExtension.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/Graphs/compare.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/Graphs/etree.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/Graphs/postOrder.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/InfeasibilityTests/OSQP_infeasible_problem.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/InfeasibilityTests/dual_infeasible_1.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/InfeasibilityTests/dual_infeasible_2.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/InfeasibilityTests/infeasible_SDPLib.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/InfeasibilityTests/primal_infeasible_1.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/InfeasibilityTests/primal_infeasible_2.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/InfeasibilityTests/primal_infeasible_3.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/InfeasibilityTests/runTests.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/ScalingTests/cdcs_sdp_TestProblems.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/ScalingTests/qpTestProblems.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/ScalingTests/qp_postProcessing.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/ScalingTests/runTests.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/ScalingTests/sdpTestProblems.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/ScalingTests/socpTestProblems.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/algebra.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/chordal_decomposition.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/chordal_decomposition_triangle.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/closestcorr.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/constraints.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/exp_cone.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/interface.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/jump.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/kktsolver.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/model.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/moi_wrapper.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/options_factory.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/pow_cone.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/print.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/projections.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/psd_completion.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/qp-box.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/sets.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/simple.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/socp-lasso.jl
+ create mode 100644 packages/COSMO/Paq9I/test/UnitTests/splitvector.jl
+ create mode 100644 packages/COSMO/Paq9I/test/runtests.jl
+ create mode 100644 packages/QDLDL/X5yXF/.gitignore
+ create mode 100644 packages/QDLDL/X5yXF/.travis.yml
+ create mode 100644 packages/QDLDL/X5yXF/LICENSE
+ create mode 100644 packages/QDLDL/X5yXF/README.md
+ create mode 100644 packages/QDLDL/X5yXF/REQUIRE
+ create mode 100644 packages/QDLDL/X5yXF/src/QDLDL.jl
+ create mode 100644 packages/QDLDL/X5yXF/test/UnitTests/basic.jl
+ create mode 100644 packages/QDLDL/X5yXF/test/UnitTests/inertia.jl
+ create mode 100644 packages/QDLDL/X5yXF/test/UnitTests/non-quasidef.jl
+ create mode 100644 packages/QDLDL/X5yXF/test/UnitTests/refactoring.jl
+ create mode 100644 packages/QDLDL/X5yXF/test/runtests.jl
+ create mode 100644 packages/UnsafeArrays/N4A9A/.codecov.yml
+ create mode 100644 packages/UnsafeArrays/N4A9A/.gitignore
+ create mode 100644 packages/UnsafeArrays/N4A9A/.travis.yml
+ create mode 100644 packages/UnsafeArrays/N4A9A/LICENSE.md
+ create mode 100644 packages/UnsafeArrays/N4A9A/README.md
+ create mode 100644 packages/UnsafeArrays/N4A9A/REQUIRE
+ create mode 100644 packages/UnsafeArrays/N4A9A/appveyor.yml
+ create mode 100644 packages/UnsafeArrays/N4A9A/src/UnsafeArrays.jl
+ create mode 100644 packages/UnsafeArrays/N4A9A/src/unsafe_array.jl
+ create mode 100644 packages/UnsafeArrays/N4A9A/src/util.jl
+ create mode 100644 packages/UnsafeArrays/N4A9A/src/uview.jl
+ create mode 100644 packages/UnsafeArrays/N4A9A/test/runtests.jl
+ create mode 100644 packages/UnsafeArrays/N4A9A/test/unsafe_array.jl
+ create mode 100644 packages/UnsafeArrays/N4A9A/test/util.jl
+ create mode 100644 packages/UnsafeArrays/N4A9A/test/uview.jl
+To https://github.com/watsona4/dot_julia.git
+   c0bb6b7cc..00cc31cf9  master -> master
+Progress:  10%|████                                     |  ETA: 3 days, 13:11:19[K
+Installing CPLEX
+ Resolving package versions...
+ Installed CPLEX ─ v0.3.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [a076750e] + CPLEX v0.3.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [a076750e] + CPLEX v0.3.3
+  Building CPLEX → `~/.julia/packages/CPLEX/FUtHu/deps/build.log`
+┌ Error: Error building `CPLEX`: 
+│ ERROR: LoadError: UndefVarError: is_apple not defined
+│ Stacktrace:
+│  [1] top-level scope at /home/ec2-user/.julia/packages/CPLEX/FUtHu/deps/build.jl:18
+│  [2] include at ./boot.jl:328 [inlined]
+│  [3] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [4] include(::Module, ::String) at ./Base.jl:31
+│  [5] include(::String) at ./client.jl:431
+│  [6] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CPLEX/FUtHu/deps/build.jl:18
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CPLEX → `~/.julia/packages/CPLEX/FUtHu/deps/build.log`
+┌ Error: Error building `CPLEX`: 
+│ ERROR: LoadError: UndefVarError: is_apple not defined
+│ Stacktrace:
+│  [1] top-level scope at /home/ec2-user/.julia/packages/CPLEX/FUtHu/deps/build.jl:18
+│  [2] include at ./boot.jl:328 [inlined]
+│  [3] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [4] include(::Module, ::String) at ./Base.jl:31
+│  [5] include(::String) at ./client.jl:431
+│  [6] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CPLEX/FUtHu/deps/build.jl:18
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
