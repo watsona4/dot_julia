@@ -46184,3 +46184,74 @@ Installing CatmullRom
   [5b5b35a2] + CatmullRom v0.3.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [5b5b35a2] + CatmullRom v0.3.0
+[master 1320320c6] added package CatmullRom
+ 63 files changed, 1611 insertions(+)
+ create mode 100644 packages/CatmullRom/tD6mX/.gitignore
+ create mode 100644 packages/CatmullRom/tD6mX/.travis.yml
+ create mode 100644 packages/CatmullRom/tD6mX/LICENSE
+ create mode 100644 packages/CatmullRom/tD6mX/Project.toml
+ create mode 100644 packages/CatmullRom/tD6mX/README.md
+ create mode 100644 packages/CatmullRom/tD6mX/docs/Project.toml
+ create mode 100644 packages/CatmullRom/tD6mX/docs/make.jl
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/Examples.md
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/README.md
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/CR_Centripetal.png
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/CR_Centripetal2.png
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/CR_Centripetal_larger.png
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/Catmull-Rom_Spline.png
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/CatmullRom_circle_dpihalf.png
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/CatmullRom_sectionofcircle.png
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/OneCurve123.png
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/README.md
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/hair.PNG
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/sphericalspiral.png
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/sphericalspiral_locus.png
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/teardrop_byarc.png
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/assets/teardrop_section.PNG
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/hints.md
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/index.md
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/perspective.md
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/pointsalongapath.md
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/references.md
+ create mode 100644 packages/CatmullRom/tD6mX/docs/src/threefunctions.md
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/CR_Centripetal.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/Catmull-Rom_Spline.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/CatmullRom_circle_dpi.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/CatmullRom_circle_dpihalf.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/CatmullRom_qrtrcircle.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/CatmullRom_sectionofcircle.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/README.md
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/hair.PNG
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/parameterize_in_colors_small.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/piriform22.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/piriform42.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/piriform_open.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/sphericalspiral.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/sphericalspiral_locus.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/teardrop_byarc.png
+ create mode 100644 packages/CatmullRom/tD6mX/examples/assets/teardrop_section.PNG
+ create mode 100644 packages/CatmullRom/tD6mX/examples/circle.jl
+ create mode 100644 packages/CatmullRom/tD6mX/examples/heart.jl
+ create mode 100644 packages/CatmullRom/tD6mX/examples/piriform.jl
+ create mode 100644 packages/CatmullRom/tD6mX/examples/sphericalspiral.jl
+ create mode 100644 packages/CatmullRom/tD6mX/examples/teardrop.jl
+ create mode 100644 packages/CatmullRom/tD6mX/src/CatmullRom.jl
+ create mode 100644 packages/CatmullRom/tD6mX/src/centripetal/arcbased.jl
+ create mode 100644 packages/CatmullRom/tD6mX/src/centripetal/catmullrom.jl
+ create mode 100644 packages/CatmullRom/tD6mX/src/fewpoints/fourpoints.jl
+ create mode 100644 packages/CatmullRom/tD6mX/src/fewpoints/outside.jl
+ create mode 100644 packages/CatmullRom/tD6mX/src/fewpoints/threepoints.jl
+ create mode 100644 packages/CatmullRom/tD6mX/src/fewpoints/twopoints.jl
+ create mode 100644 packages/CatmullRom/tD6mX/src/presence/pointsequences.jl
+ create mode 100644 packages/CatmullRom/tD6mX/src/presence/support.jl
+ create mode 100644 packages/CatmullRom/tD6mX/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   a8a8cfc97..1320320c6  master -> master
+Progress:  12%|████▊                                    |  ETA: 3 days, 12:23:41[K
+Installing Catsay
+ Resolving package versions...
+ Installed Catsay ─ v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [5193907d] + Catsay v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [5193907d] + Catsay v0.1.1

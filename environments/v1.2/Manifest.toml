@@ -1535,6 +1535,12 @@ git-tree-sha1 = "585233b4570c29501a0d43b03e75dd969de959ef"
 uuid = "5b5b35a2-003c-5b99-bc04-a964994dd816"
 version = "0.3.0"
 
+[[Catsay]]
+deps = ["Test"]
+git-tree-sha1 = "ccdf0e62af8b2af6ba328f9ace060cdbc5868304"
+uuid = "5193907d-d586-5f94-a3e6-8b6fe67f210a"
+version = "0.1.1"
+
 [[Clang]]
 deps = ["BinaryProvider", "CEnum", "DataStructures", "Libdl"]
 git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"
