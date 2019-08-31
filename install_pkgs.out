@@ -38317,3 +38317,51 @@ Installing CRlibm
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
   Building CRlibm → `~/.julia/packages/CRlibm/2S9DB/deps/build.log`
+[master 3041d71fc] added package CRlibm
+ 4 files changed, 48 insertions(+), 1 deletion(-)
+To https://github.com/watsona4/dot_julia.git
+   affe54720..3041d71fc  master -> master
+Progress:  10%|████▏                                    |  ETA: 3 days, 11:25:22[K
+Installing CSDP
+ Resolving package versions...
+ Installed CSDP ─────────────── v0.5.1
+ Installed SemidefiniteModels ─ v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [0a46da34] + CSDP v0.5.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [0a46da34] + CSDP v0.5.1
+  [169818f4] + SemidefiniteModels v0.1.1
+  Building CSDP → `~/.julia/packages/CSDP/LdybZ/deps/build.log`
+┌ Error: Error building `CSDP`: 
+│ ERROR: LoadError: None of the selected providers can install dependency libblas.
+│ Use BinDeps.debug(package_name) to see available providers
+│ 
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:949
+│  [3] satisfy!(::BinDeps.LibraryDependency) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [4] top-level scope at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [5] include at ./boot.jl:328 [inlined]
+│  [6] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [7] include(::Module, ::String) at ./Base.jl:31
+│  [8] include(::String) at ./client.jl:431
+│  [9] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CSDP/LdybZ/deps/build.jl:49
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CSDP → `~/.julia/packages/CSDP/LdybZ/deps/build.log`
+┌ Error: Error building `CSDP`: 
+│ ERROR: LoadError: None of the selected providers can install dependency libblas.
+│ Use BinDeps.debug(package_name) to see available providers
+│ 
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:949
+│  [3] satisfy!(::BinDeps.LibraryDependency) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [4] top-level scope at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [5] include at ./boot.jl:328 [inlined]
+│  [6] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [7] include(::Module, ::String) at ./Base.jl:31
+│  [8] include(::String) at ./client.jl:431
+│  [9] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CSDP/LdybZ/deps/build.jl:49
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
