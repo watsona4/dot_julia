@@ -1,0 +1,14 @@
+name = "BBI"
+uuid = "efc81776-cb68-11e8-2836-933446d5e9b4"
+authors = ["Ciarán O’Mara <CiaranOMara@utas.edu.au>"]
+version = "0.1.0"
+
+[deps]
+BioCore = "37cfa864-2cd6-5c12-ad9e-b6597d696c81"
+Libz = "2ec943e9-cfe8-584d-b93d-64dcb6d567b7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

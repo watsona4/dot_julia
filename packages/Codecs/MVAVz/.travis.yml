@@ -1,0 +1,13 @@
+language: julia
+os:
+  - linux
+  - osx
+notifications:
+  email: false
+julia:
+  - 0.7
+  - nightly
+before_install:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+after_success:
+  - julia -e 'cd(Pkg.dir("Codecs")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
