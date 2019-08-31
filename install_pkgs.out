@@ -28962,3 +28962,25 @@ Installing BandedMatrices
   [aae01518] + BandedMatrices v0.10.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 97f0abe12] added package BandedMatrices
+ 3 files changed, 128 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   3b5b01d6d..97f0abe12  master -> master
+Progress:   5%|██▏                                      |  ETA: 4 days, 19:47:32[K
+Installing BanditOpt
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BanditOpt [a317b65b]:\n BanditOpt [a317b65b] log:\n ├─possible versions are: 0.0.2 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.2\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   5%|██▏                                      |  ETA: 4 days, 19:05:05[K
+Installing Bandits
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Bandits [4278c8f4]:\n Bandits [4278c8f4] log:\n ├─possible versions are: [0.0.1, 0.1.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   5%|██▏                                      |  ETA: 4 days, 18:22:46[K
+Installing BangBang
+ Resolving package versions...
+ Installed InitialValues ─ v0.2.0
+ Installed BangBang ────── v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [198e06fe] + BangBang v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [198e06fe] + BangBang v0.2.0
+  [22cec73e] + InitialValues v0.2.0
