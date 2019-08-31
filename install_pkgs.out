@@ -46006,3 +46006,14 @@ Installing Cassette
   [7057c7e9] + Cassette v0.2.6
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 24c2ba9fb] added package Cassette
+ 3 files changed, 31 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   0e563e34d..24c2ba9fb  master -> master
+Progress:  11%|████▋                                    |  ETA: 3 days, 13:30:47[K
+Installing CatIndices
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [aafaddc9] + CatIndices v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
