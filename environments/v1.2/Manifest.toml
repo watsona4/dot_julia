@@ -887,6 +887,12 @@ git-tree-sha1 = "ee03f0b2a0c18cb8bbd56af95cddd6a3dcca8727"
 uuid = "3637df68-df41-5d16-b00c-95ac8c2142c5"
 version = "1.0.0"
 
+[[Bio3DView]]
+deps = ["Requires", "Test"]
+git-tree-sha1 = "99f053922f34f61e94340f4d7b7f37468b58aab0"
+uuid = "99c8bb3a-9d13-5280-9740-b4880ed9c598"
+version = "0.1.0"
+
 [[BioAlignments]]
 deps = ["Automa", "BGZFStreams", "BioCore", "BioSequences", "BioSymbols", "BufferedStreams", "GenomicFeatures", "IntervalTrees", "LinearAlgebra", "Printf", "Test"]
 git-tree-sha1 = "b6f2fc06b7c20d7c0538ddb99bd593cd8b4bd6dc"
