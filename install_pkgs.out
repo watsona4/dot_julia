@@ -31975,3 +31975,14 @@ Installing BioStructures
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
   Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+[master 810d7f530] added package BioStructures
+ 3 files changed, 23 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   3fdbf92f8..810d7f530  master -> master
+Progress:   7%|██▉                                      |  ETA: 4 days, 4:12:45[K
+Installing BioSymbols
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [3c28c6f8] + BioSymbols v3.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
