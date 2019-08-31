@@ -1,0 +1,20 @@
+name = "HTML_Entities"
+desc = "Entities from HTML data tables"
+authors = ["ScottPJones <scottjones@alum.mit.edu>"]
+keywords = ["Entities", "HTML"]
+license = "MIT"
+uuid = "7693890a-d069-55fe-a829-b4a6d304f0ee"
+version = "1.0.0"
+
+[deps]
+StrTables = "9700d1a9-a7c8-5760-9816-a99fda30bb8f"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "^1.0.0"
+StrTables = "≥ 1.0.0"

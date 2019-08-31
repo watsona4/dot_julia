@@ -1208,6 +1208,12 @@ git-tree-sha1 = "a13cd54a439a9b4b8463442e98270faaab1c16f7"
 uuid = "4f18b42c-503e-5345-9536-bb0f25fc7038"
 version = "0.9.4"
 
+[[BytePairEncoding]]
+deps = ["DelimitedFiles", "InternedStrings", "Test", "WordTokenizers"]
+git-tree-sha1 = "25c3f66339f307c36af4b63c4dc36809cc6d1ad5"
+uuid = "a4280ba5-8788-555a-8ca8-4a8c3d966a71"
+version = "0.1.1"
+
 [[CEnum]]
 git-tree-sha1 = "62847acab40e6855a9b5905ccb99c2b5cf6b3ebb"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"
@@ -2038,6 +2044,12 @@ git-tree-sha1 = "ea40d80684b6f986599f19b1840abc00af4a399b"
 uuid = "2c364e2c-59fb-59c3-96f3-194112e690e0"
 version = "0.2.5"
 
+[[HTML_Entities]]
+deps = ["StrTables"]
+git-tree-sha1 = "aa19515d6ebe7f91a39cfc1dc6341f38fcac1282"
+uuid = "7693890a-d069-55fe-a829-b4a6d304f0ee"
+version = "1.0.0"
+
 [[HTTP]]
 deps = ["Base64", "Dates", "IniFile", "MbedTLS", "Sockets"]
 git-tree-sha1 = "c4a527dba1d26add0e85946e1a53f42a1b343acc"
@@ -2238,6 +2250,12 @@ version = "0.10.3"
 [[InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+
+[[InternedStrings]]
+deps = ["Random", "Test"]
+git-tree-sha1 = "eb05b5625bc5d821b8075a77e4c421933e20c76b"
+uuid = "7d512f48-7fb1-5a58-b986-67e6dc259f01"
+version = "0.7.0"
 
 [[Interpolations]]
 deps = ["AxisAlgorithms", "LinearAlgebra", "OffsetArrays", "Random", "Ratios", "SharedArrays", "SparseArrays", "StaticArrays", "WoodburyMatrices"]
@@ -3247,6 +3265,12 @@ git-tree-sha1 = "b5a735dcd2be05f0af86709750d4d5f62ca4a25d"
 uuid = "3eaba693-59b7-5ba5-a881-562e759f1c8d"
 version = "0.5.0"
 
+[[StrTables]]
+deps = ["Dates"]
+git-tree-sha1 = "5998faae8c6308acc25c25896562a1e66a3bb038"
+uuid = "9700d1a9-a7c8-5760-9816-a99fda30bb8f"
+version = "1.0.1"
+
 [[StringDistances]]
 deps = ["DataStructures", "Distances", "Random", "Test"]
 git-tree-sha1 = "f9d2e623061009441ab27eb961e3307e492b30d6"
@@ -3523,6 +3547,12 @@ deps = ["LinearAlgebra", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "21772c33b447757ec7d3e61fcdfb9ea5c47eedcf"
 uuid = "efce3f68-66dc-5838-9240-27a6d6f5f9b6"
 version = "0.4.1"
+
+[[WordTokenizers]]
+deps = ["HTML_Entities", "StrTables", "Unicode"]
+git-tree-sha1 = "983ca717c4ec786d0458ebcbe395a1a50b3a1897"
+uuid = "796a5d58-b03d-544a-977e-18100b691f6e"
+version = "0.5.3"
 
 [[XMLDict]]
 deps = ["DataStructures", "EzXML", "IterTools", "Test"]

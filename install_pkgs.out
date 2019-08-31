@@ -34950,3 +34950,58 @@ Installing BusinessDays
   [4f18b42c] + BusinessDays v0.9.4
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [4f18b42c] + BusinessDays v0.9.4
+[master 99c46be16] added package BusinessDays
+ 37 files changed, 3677 insertions(+)
+ create mode 100644 packages/BusinessDays/4z9a4/.gitignore
+ create mode 100644 packages/BusinessDays/4z9a4/.travis.yml
+ create mode 100644 packages/BusinessDays/4z9a4/LICENSE
+ create mode 100644 packages/BusinessDays/4z9a4/Manifest.toml
+ create mode 100644 packages/BusinessDays/4z9a4/Project.toml
+ create mode 100644 packages/BusinessDays/4z9a4/README.md
+ create mode 100644 packages/BusinessDays/4z9a4/contrib/gen_userimg.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/BusinessDays.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/bdays.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/bdayscache.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/bdaysvecfun.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/calendars/australia.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/calendars/brazil.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/calendars/calendars.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/calendars/canada.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/calendars/target.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/calendars/uk.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/calendars/us.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/composite.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/dateutils.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/generic.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/holidaycalendar.jl
+ create mode 100644 packages/BusinessDays/4z9a4/src/query.jl
+ create mode 100644 packages/BusinessDays/4z9a4/test/RQuantLib_Benchmarks.r
+ create mode 100644 packages/BusinessDays/4z9a4/test/calendar_tests.jl
+ create mode 100644 packages/BusinessDays/4z9a4/test/customcalendar-example.jl
+ create mode 100644 packages/BusinessDays/4z9a4/test/easter-min-max.jl
+ create mode 100644 packages/BusinessDays/4z9a4/test/easter_dates.jl
+ create mode 100644 packages/BusinessDays/4z9a4/test/example_code.jl
+ create mode 100644 packages/BusinessDays/4z9a4/test/perftests.jl
+ create mode 100644 packages/BusinessDays/4z9a4/test/quantlib_comparison/generate-bdays-vec.jl
+ create mode 100644 packages/BusinessDays/4z9a4/test/quantlib_comparison/generate-bdays-vec.r
+ create mode 100644 packages/BusinessDays/4z9a4/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   36cae361b..99c46be16  master -> master
+Progress:   9%|███▋                                     |  ETA: 3 days, 15:50:12[K
+Installing BytePairEncoding
+ Resolving package versions...
+ Installed HTML_Entities ──── v1.0.0
+ Installed InternedStrings ── v0.7.0
+ Installed StrTables ──────── v1.0.1
+ Installed WordTokenizers ─── v0.5.3
+ Installed BytePairEncoding ─ v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [a4280ba5] + BytePairEncoding v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [a4280ba5] + BytePairEncoding v0.1.1
+  [7693890a] + HTML_Entities v1.0.0
+  [7d512f48] + InternedStrings v0.7.0
+  [9700d1a9] + StrTables v1.0.1
+  [796a5d58] + WordTokenizers v0.5.3
+  Building HTML_Entities → `~/.julia/packages/HTML_Entities/g4t7p/deps/build.log`
+  Building HTML_Entities → `~/.julia/packages/HTML_Entities/g4t7p/deps/build.log`
