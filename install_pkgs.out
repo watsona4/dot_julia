@@ -32387,3 +32387,90 @@ Installing BitBasis
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [50ba71b6] + BitBasis v0.6.0
   [d05aeea4] + LuxurySparse v0.4.1
+[master 8b64c5453] added package BitBasis
+ 78 files changed, 4453 insertions(+)
+ create mode 100644 packages/BitBasis/N6DrM/.gitignore
+ create mode 100644 packages/BitBasis/N6DrM/.travis.yml
+ create mode 100644 packages/BitBasis/N6DrM/LICENSE
+ create mode 100644 packages/BitBasis/N6DrM/Project.toml
+ create mode 100644 packages/BitBasis/N6DrM/README.md
+ create mode 100644 packages/BitBasis/N6DrM/docs/Project.toml
+ create mode 100644 packages/BitBasis/N6DrM/docs/draw.jl
+ create mode 100644 packages/BitBasis/N6DrM/docs/make.jl
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/010101.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/1011_1101.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/11100.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/bitbasic.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/breflect.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/btruncate.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/favicon.ico
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/flip.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/ismatch.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/logo.svg
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/neg.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/setbit.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/assets/swapbits.png
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/index.md
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/man.md
+ create mode 100644 packages/BitBasis/N6DrM/docs/src/tutorial.md
+ create mode 100644 packages/BitBasis/N6DrM/src/BitBasis.jl
+ create mode 100644 packages/BitBasis/N6DrM/src/bit_str.jl
+ create mode 100644 packages/BitBasis/N6DrM/src/deprecations.jl
+ create mode 100644 packages/BitBasis/N6DrM/src/iterate_control.jl
+ create mode 100644 packages/BitBasis/N6DrM/src/operations.jl
+ create mode 100644 packages/BitBasis/N6DrM/src/reorder.jl
+ create mode 100644 packages/BitBasis/N6DrM/src/utils.jl
+ create mode 100644 packages/BitBasis/N6DrM/test/bit_str.jl
+ create mode 100644 packages/BitBasis/N6DrM/test/iterate_control.jl
+ create mode 100644 packages/BitBasis/N6DrM/test/operations.jl
+ create mode 100644 packages/BitBasis/N6DrM/test/reorder.jl
+ create mode 100644 packages/BitBasis/N6DrM/test/runtests.jl
+ create mode 100644 packages/BitBasis/N6DrM/test/utils.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/.codecov.yml
+ create mode 100644 packages/LuxurySparse/4fZ6O/.gitignore
+ create mode 100644 packages/LuxurySparse/4fZ6O/.travis.yml
+ create mode 100644 packages/LuxurySparse/4fZ6O/LICENSE.md
+ create mode 100644 packages/LuxurySparse/4fZ6O/Project.toml
+ create mode 100644 packages/LuxurySparse/4fZ6O/README.md
+ create mode 100644 packages/LuxurySparse/4fZ6O/appveyor.yml
+ create mode 100644 packages/LuxurySparse/4fZ6O/benchmarks/README.md
+ create mode 100644 packages/LuxurySparse/4fZ6O/benchmarks/benchmark_gates.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/benchmarks/kron.dat
+ create mode 100644 packages/LuxurySparse/4fZ6O/benchmarks/kron.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/benchmarks/multiply.dat
+ create mode 100644 packages/LuxurySparse/4fZ6O/benchmarks/multiply.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/docs/README.md
+ create mode 100644 packages/LuxurySparse/4fZ6O/docs/make.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/docs/src/index.md
+ create mode 100644 packages/LuxurySparse/4fZ6O/docs/src/luxurysparse.md
+ create mode 100644 packages/LuxurySparse/4fZ6O/docs/src/tutorial.md
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/Core.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/IMatrix.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/LuxurySparse.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/PermMatrix.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/SSparseMatrixCSC.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/SparseMatrixCOO.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/arraymath.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/conversions.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/kronecker.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/linalg.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/promotions.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/src/staticize.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/test/IMatrix.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/test/PermMatrix.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/test/SparseMatrixCOO.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/test/kronecker.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/test/linalg.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/test/runtests.jl
+ create mode 100644 packages/LuxurySparse/4fZ6O/test/staticize.jl
+To https://github.com/watsona4/dot_julia.git
+   11f119e01..8b64c5453  master -> master
+Progress:   7%|███                                      |  ETA: 4 days, 1:45:57[K
+Installing BitConverter
+ Resolving package versions...
+   Cloning [3a3ce9e8-98e7-11e9-0fa0-055639f146d3] BitConverter from https://gitlab.com/braneproject/BitConverter.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h Installed BitConverter ─ v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [3a3ce9e8] + BitConverter v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [3a3ce9e8] + BitConverter v0.1.1
