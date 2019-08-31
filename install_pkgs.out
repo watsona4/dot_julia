@@ -44740,3 +44740,34 @@ Installing CacheServers
   [a921213e] + CacheServers v0.2.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [a921213e] + CacheServers v0.2.0
+[master 348f34fdb] added package CacheServers
+ 23 files changed, 793 insertions(+)
+ create mode 100644 packages/CacheServers/CUxYB/.codecov.yml
+ create mode 100644 packages/CacheServers/CUxYB/.gitignore
+ create mode 100644 packages/CacheServers/CUxYB/.travis.yml
+ create mode 100644 packages/CacheServers/CUxYB/LICENSE
+ create mode 100644 packages/CacheServers/CUxYB/Project.toml
+ create mode 100644 packages/CacheServers/CUxYB/README.md
+ create mode 100644 packages/CacheServers/CUxYB/REQUIRE
+ create mode 100644 packages/CacheServers/CUxYB/appveyor.yml
+ create mode 100644 packages/CacheServers/CUxYB/docs/Project.toml
+ create mode 100644 packages/CacheServers/CUxYB/docs/make.jl
+ create mode 100644 packages/CacheServers/CUxYB/docs/src/index.md
+ create mode 100644 packages/CacheServers/CUxYB/docs/src/man.md
+ create mode 100644 packages/CacheServers/CUxYB/src/CacheServers.jl
+ create mode 100644 packages/CacheServers/CUxYB/src/Core.jl
+ create mode 100644 packages/CacheServers/CUxYB/src/Default.jl
+ create mode 100644 packages/CacheServers/CUxYB/test/Core.jl
+ create mode 100644 packages/CacheServers/CUxYB/test/Default.jl
+ create mode 100644 packages/CacheServers/CUxYB/test/TestFragment.jl
+ create mode 100644 packages/CacheServers/CUxYB/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   978f6daff..348f34fdb  master -> master
+Progress:  11%|████▍                                    |  ETA: 3 days, 15:12:03[K
+Installing CacheVariables
+ Resolving package versions...
+ Installed CacheVariables ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9a355d7c] + CacheVariables v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9a355d7c] + CacheVariables v0.1.0

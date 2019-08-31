@@ -1,0 +1,12 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - nightly
+
+## From: https://github.com/JuliaLang/Example.jl/blob/master/.travis.yml#L27
+after_success:
+- julia -e 'if VERSION >= v"0.7.0-" using Pkg end; cd(Pkg.dir("CacheVariables")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())';
