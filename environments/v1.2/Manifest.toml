@@ -1529,6 +1529,12 @@ git-tree-sha1 = "fddfe03b029b68e17a362131f8afaa6a2c9f4bcf"
 uuid = "134e5e36-593f-5add-ad60-77f754baafbe"
 version = "0.2.3"
 
+[[CatmullRom]]
+deps = ["LinearAlgebra", "MacroTools", "Polynomials"]
+git-tree-sha1 = "585233b4570c29501a0d43b03e75dd969de959ef"
+uuid = "5b5b35a2-003c-5b99-bc04-a964994dd816"
+version = "0.3.0"
+
 [[Clang]]
 deps = ["BinaryProvider", "CEnum", "DataStructures", "Libdl"]
 git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"

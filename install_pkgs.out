@@ -46076,3 +46076,111 @@ Installing Catlab
   [99c6138d] + UnionFind v0.1.0
   Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
   Building LightXML ─→ `~/.julia/packages/LightXML/k3mJ4/deps/build.log`
+[master a8a8cfc97] added package Catlab
+ 100 files changed, 16007 insertions(+)
+ create mode 100644 packages/Catlab/g25se/.gitignore
+ create mode 100644 packages/Catlab/g25se/.travis.yml
+ create mode 100644 packages/Catlab/g25se/LICENSE.md
+ create mode 100644 packages/Catlab/g25se/Manifest.toml
+ create mode 100644 packages/Catlab/g25se/Project.toml
+ create mode 100644 packages/Catlab/g25se/README.md
+ create mode 100644 packages/Catlab/g25se/REQUIRE
+ create mode 100644 packages/Catlab/g25se/examples/.gitignore
+ create mode 100644 packages/Catlab/g25se/examples/algebra/algebraic_nets.ipynb
+ create mode 100644 packages/Catlab/g25se/examples/graphics/graphviz_wiring_diagrams.ipynb
+ create mode 100644 packages/Catlab/g25se/examples/graphics/tikz_wiring_diagrams.ipynb
+ create mode 100644 packages/Catlab/g25se/examples/wiring_diagrams/wiring_basics.ipynb
+ create mode 100644 packages/Catlab/g25se/src/Catlab.jl
+ create mode 100644 packages/Catlab/g25se/src/algebra/Algebra.jl
+ create mode 100644 packages/Catlab/g25se/src/algebra/Network.jl
+ create mode 100644 packages/Catlab/g25se/src/algebra/Tree.jl
+ create mode 100644 packages/Catlab/g25se/src/core/Core.jl
+ create mode 100644 packages/Catlab/g25se/src/core/GAT.jl
+ create mode 100644 packages/Catlab/g25se/src/core/Meta.jl
+ create mode 100644 packages/Catlab/g25se/src/core/Present.jl
+ create mode 100644 packages/Catlab/g25se/src/core/Rewrite.jl
+ create mode 100644 packages/Catlab/g25se/src/core/Syntax.jl
+ create mode 100644 packages/Catlab/g25se/src/doctrines/Category.jl
+ create mode 100644 packages/Catlab/g25se/src/doctrines/Doctrines.jl
+ create mode 100644 packages/Catlab/g25se/src/doctrines/Monoidal.jl
+ create mode 100644 packages/Catlab/g25se/src/doctrines/Relations.jl
+ create mode 100644 packages/Catlab/g25se/src/graphics/Graphics.jl
+ create mode 100644 packages/Catlab/g25se/src/graphics/Graphviz.jl
+ create mode 100644 packages/Catlab/g25se/src/graphics/GraphvizWiringDiagrams.jl
+ create mode 100644 packages/Catlab/g25se/src/graphics/TikZ.jl
+ create mode 100644 packages/Catlab/g25se/src/graphics/TikZExternal.jl
+ create mode 100644 packages/Catlab/g25se/src/graphics/TikZWiringDiagrams.jl
+ create mode 100644 packages/Catlab/g25se/src/wiring_diagrams/Algorithms.jl
+ create mode 100644 packages/Catlab/g25se/src/wiring_diagrams/Core.jl
+ create mode 100644 packages/Catlab/g25se/src/wiring_diagrams/GraphML.jl
+ create mode 100644 packages/Catlab/g25se/src/wiring_diagrams/JSON.jl
+ create mode 100644 packages/Catlab/g25se/src/wiring_diagrams/Layers.jl
+ create mode 100644 packages/Catlab/g25se/src/wiring_diagrams/Serialization.jl
+ create mode 100644 packages/Catlab/g25se/src/wiring_diagrams/WiringDiagrams.jl
+ create mode 100644 packages/Catlab/g25se/src/wiring_diagrams/YFiles.jl
+ create mode 100644 packages/Catlab/g25se/test/Doctrines.jl
+ create mode 100644 packages/Catlab/g25se/test/algebra/Algebra.jl
+ create mode 100644 packages/Catlab/g25se/test/algebra/Network.jl
+ create mode 100644 packages/Catlab/g25se/test/algebra/Tree.jl
+ create mode 100644 packages/Catlab/g25se/test/core/Core.jl
+ create mode 100644 packages/Catlab/g25se/test/core/GAT.jl
+ create mode 100644 packages/Catlab/g25se/test/core/Meta.jl
+ create mode 100644 packages/Catlab/g25se/test/core/Present.jl
+ create mode 100644 packages/Catlab/g25se/test/core/Syntax.jl
+ create mode 100644 packages/Catlab/g25se/test/graphics/Graphics.jl
+ create mode 100644 packages/Catlab/g25se/test/graphics/Graphviz.jl
+ create mode 100644 packages/Catlab/g25se/test/graphics/GraphvizWiringDiagrams.jl
+ create mode 100644 packages/Catlab/g25se/test/graphics/TikZ.jl
+ create mode 100644 packages/Catlab/g25se/test/graphics/TikZWiringDiagrams.jl
+ create mode 100644 packages/Catlab/g25se/test/runtests.jl
+ create mode 100644 packages/Catlab/g25se/test/wiring_diagrams/Algorithms.jl
+ create mode 100644 packages/Catlab/g25se/test/wiring_diagrams/Core.jl
+ create mode 100644 packages/Catlab/g25se/test/wiring_diagrams/GraphML.jl
+ create mode 100644 packages/Catlab/g25se/test/wiring_diagrams/JSON.jl
+ create mode 100644 packages/Catlab/g25se/test/wiring_diagrams/Layers.jl
+ create mode 100644 packages/Catlab/g25se/test/wiring_diagrams/WiringDiagrams.jl
+ create mode 100644 packages/Catlab/g25se/test/wiring_diagrams/YFiles.jl
+ create mode 100644 packages/Catlab/g25se/test/wiring_diagrams/data/yed_horizontal.graphml
+ create mode 100644 packages/Catlab/g25se/test/wiring_diagrams/data/yed_vertical.graphml
+ create mode 100644 packages/Match/cMtMj/.codecov.yml
+ create mode 100644 packages/Match/cMtMj/.gitignore
+ create mode 100644 packages/Match/cMtMj/.travis.yml
+ create mode 100644 packages/Match/cMtMj/CHANGES.md
+ create mode 100644 packages/Match/cMtMj/LICENSE.md
+ create mode 100644 packages/Match/cMtMj/README.md
+ create mode 100644 packages/Match/cMtMj/REQUIRE
+ create mode 100644 packages/Match/cMtMj/appveyor.yml
+ create mode 100644 packages/Match/cMtMj/docs/make.jl
+ create mode 100644 packages/Match/cMtMj/docs/src/index.md
+ create mode 100644 packages/Match/cMtMj/src/Match.jl
+ create mode 100644 packages/Match/cMtMj/src/matchmacro.jl
+ create mode 100644 packages/Match/cMtMj/src/matchutils.jl
+ create mode 100644 packages/Match/cMtMj/test/matchtests.jl
+ create mode 100644 packages/Match/cMtMj/test/runtests.jl
+ create mode 100644 packages/Match/cMtMj/test/testtypes.jl
+ create mode 100644 packages/UnionFind/LW6hx/.travis.yml
+ create mode 100644 packages/UnionFind/LW6hx/LICENSE.md
+ create mode 100644 packages/UnionFind/LW6hx/Manifest.toml
+ create mode 100644 packages/UnionFind/LW6hx/Project.toml
+ create mode 100644 packages/UnionFind/LW6hx/README.md
+ create mode 100644 packages/UnionFind/LW6hx/REQUIRE
+ create mode 100644 packages/UnionFind/LW6hx/examples/floodfill.jl
+ create mode 100644 packages/UnionFind/LW6hx/examples/kruskal.jl
+ create mode 100644 packages/UnionFind/LW6hx/src/CompressedFinder.jl
+ create mode 100644 packages/UnionFind/LW6hx/src/UnionFind.jl
+ create mode 100644 packages/UnionFind/LW6hx/src/UnionFinder.jl
+ create mode 100644 packages/UnionFind/LW6hx/test/benchmark.jl
+ create mode 100644 packages/UnionFind/LW6hx/test/errors.jl
+ create mode 100644 packages/UnionFind/LW6hx/test/polymorphism.jl
+ create mode 100644 packages/UnionFind/LW6hx/test/runtests.jl
+ create mode 100644 packages/UnionFind/LW6hx/test/table.jl
+To https://github.com/watsona4/dot_julia.git
+   0661c9c8e..a8a8cfc97  master -> master
+Progress:  12%|████▊                                    |  ETA: 3 days, 12:37:58[K
+Installing CatmullRom
+ Resolving package versions...
+ Installed CatmullRom ─ v0.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [5b5b35a2] + CatmullRom v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [5b5b35a2] + CatmullRom v0.3.0
