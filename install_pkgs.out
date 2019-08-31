@@ -45880,3 +45880,59 @@ Installing Callbacks
   [db1e321a] + Callbacks v0.1.0
   [496038af] + Lens v0.1.1
   [b8ccf107] + Spec v0.2.0
+[master 8fd9e0905] added package Callbacks
+ 48 files changed, 1640 insertions(+)
+ create mode 100644 packages/Callbacks/LUsgP/.travis.yml
+ create mode 100644 packages/Callbacks/LUsgP/Manifest.toml
+ create mode 100644 packages/Callbacks/LUsgP/Project.toml
+ create mode 100644 packages/Callbacks/LUsgP/REQUIRE
+ create mode 100644 packages/Callbacks/LUsgP/docs/.gitignore
+ create mode 100644 packages/Callbacks/LUsgP/docs/Project.toml
+ create mode 100644 packages/Callbacks/LUsgP/docs/make.jl
+ create mode 100644 packages/Callbacks/LUsgP/docs/src/cbnode.md
+ create mode 100644 packages/Callbacks/LUsgP/docs/src/index.md
+ create mode 100644 packages/Callbacks/LUsgP/docs/src/library.md
+ create mode 100644 packages/Callbacks/LUsgP/readme.md
+ create mode 100644 packages/Callbacks/LUsgP/src/Callbacks.jl
+ create mode 100644 packages/Callbacks/LUsgP/src/cbnode.jl
+ create mode 100644 packages/Callbacks/LUsgP/src/error.jl
+ create mode 100644 packages/Callbacks/LUsgP/src/mmap.jl
+ create mode 100644 packages/Callbacks/LUsgP/src/plot.jl
+ create mode 100644 packages/Callbacks/LUsgP/src/signal.jl
+ create mode 100644 packages/Callbacks/LUsgP/src/std.jl
+ create mode 100644 packages/Callbacks/LUsgP/test/runtests.jl
+ create mode 100644 packages/Lens/r5kXc/.gitignore
+ create mode 100644 packages/Lens/r5kXc/.travis.yml
+ create mode 100644 packages/Lens/r5kXc/LICENSE.md
+ create mode 100644 packages/Lens/r5kXc/Manifest.toml
+ create mode 100644 packages/Lens/r5kXc/Project.toml
+ create mode 100644 packages/Lens/r5kXc/README.md
+ create mode 100644 packages/Lens/r5kXc/REQUIRE
+ create mode 100644 packages/Lens/r5kXc/src/Lens.jl
+ create mode 100644 packages/Lens/r5kXc/src/capture.jl
+ create mode 100644 packages/Lens/r5kXc/src/cassette.jl
+ create mode 100644 packages/Lens/r5kXc/src/global.jl
+ create mode 100644 packages/Lens/r5kXc/src/julia.jl
+ create mode 100644 packages/Lens/r5kXc/test/examples/bubblesort.jl
+ create mode 100644 packages/Lens/r5kXc/test/runtests.jl
+ create mode 100644 packages/Spec/rApey/.travis.yml
+ create mode 100644 packages/Spec/rApey/Manifest.toml
+ create mode 100644 packages/Spec/rApey/Project.toml
+ create mode 100644 packages/Spec/rApey/README.md
+ create mode 100644 packages/Spec/rApey/REQUIRE
+ create mode 100644 packages/Spec/rApey/src/Spec.jl
+ create mode 100644 packages/Spec/rApey/src/check.jl
+ create mode 100644 packages/Spec/rApey/src/pre.jl
+ create mode 100644 packages/Spec/rApey/src/specs.jl
+ create mode 100644 packages/Spec/rApey/src/testing.jl
+ create mode 100644 packages/Spec/rApey/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   fc5b0d13e..8fd9e0905  master -> master
+Progress:  11%|████▋                                    |  ETA: 3 days, 14:59:42[K
+Installing Cameras
+ Resolving package versions...
+ Installed Cameras ─ v0.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [6410b9bd] + Cameras v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [6410b9bd] + Cameras v0.3.0
