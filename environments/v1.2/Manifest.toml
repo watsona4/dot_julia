@@ -1149,6 +1149,12 @@ git-tree-sha1 = "81a9ad8c30507e213b03ed2882b72db82dcce0b3"
 uuid = "747eb165-47b8-53f2-ad32-9704a7dfc50a"
 version = "0.1.0"
 
+[[BracedErrors]]
+deps = ["Decimals", "Test"]
+git-tree-sha1 = "2195ade963a004bab5ff264724cc7bdf021c9dc1"
+uuid = "22c333fb-6c73-5509-a736-78cf55b615ef"
+version = "0.6.0"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
@@ -1471,6 +1477,12 @@ deps = ["BinaryProvider", "Compat", "Libdl", "SpecialFunctions"]
 git-tree-sha1 = "26512f6d65cab2892bec756cd7c0efff3481113d"
 uuid = "55939f99-70c6-5e9b-8bb0-5071ed7d61fd"
 version = "0.4.8"
+
+[[Decimals]]
+deps = ["Test"]
+git-tree-sha1 = "b374d464d64470e743c5f9172c57352e1a9404ac"
+uuid = "abce61dc-4473-55a0-ba07-351d65e31d42"
+version = "0.4.0"
 
 [[DelimitedFiles]]
 deps = ["Mmap"]

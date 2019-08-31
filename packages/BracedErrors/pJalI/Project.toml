@@ -1,0 +1,8 @@
+name = "BracedErrors"
+uuid = "9ed09ac8-9d7d-11e8-2b43-c32252b07030"
+authors = ["Stanislav Kazmin <stas.kazmin@gmail.com>"]
+version = "0.6.0"
+
+[deps]
+Decimals = "abce61dc-4473-55a0-ba07-351d65e31d42"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
