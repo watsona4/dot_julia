@@ -29073,3 +29073,26 @@ Installing Base58
   [a832ea1e] + Base58 v0.2.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 606a3dd1b] added package Base58
+ 3 files changed, 27 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   b67f58284..606a3dd1b  master -> master
+Progress:   5%|██▎                                      |  ETA: 4 days, 16:38:54[K
+Installing BaseTestDeprecated
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BaseTestDeprecated [7ffbfc9d]:\n BaseTestDeprecated [7ffbfc9d] log:\n ├─possible versions are: 0.1.0 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.1.0\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   5%|██▎                                      |  ETA: 4 days, 15:58:41[K
+Installing BaseTestNext
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BaseTestNext [cde1d518]:\n BaseTestNext [cde1d518] log:\n ├─possible versions are: [0.1.0, 0.2.0-0.2.2] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0-0.2.2]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   5%|██▎                                      |  ETA: 4 days, 15:18:46[K
+Installing BasisFunctionExpansions
+ Resolving package versions...
+ Installed BasisFunctionExpansions ─ v1.0.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [07f847a3] + BasisFunctionExpansions v1.0.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [07f847a3] + BasisFunctionExpansions v1.0.1
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
