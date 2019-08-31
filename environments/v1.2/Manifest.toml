@@ -1023,6 +1023,12 @@ git-tree-sha1 = "525d055f0c6b9476e6dcf032286383ea941a395c"
 uuid = "1654ce90-6ed3-553a-957f-9452c3a40996"
 version = "0.2.0"
 
+[[BitsFields]]
+deps = ["Test"]
+git-tree-sha1 = "bb666298665f818d7303894db9aecb88233c69e1"
+uuid = "f44e861a-3f8a-5c62-b78f-266521f8af5d"
+version = "0.2.1"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"

@@ -1,0 +1,11 @@
+name = "BitsFields"
+authors = ["Jeffrey Sarnoff <jeffrey.sarnoff@gmail.com>"]
+uuid = "f44e861a-3f8a-5c62-b78f-266521f8af5d"
+license = "MIT"
+version = "0.2.1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
