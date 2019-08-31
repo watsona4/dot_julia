@@ -32607,3 +32607,128 @@ Installing Bitcoin
   [06dfef30] + MerkleTrees v0.1.0
   [bfa37bea] + Secp256k1 v0.1.0
   Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+[master 2288657fa] added package Bitcoin
+ 116 files changed, 6177 insertions(+)
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/FETCH_HEAD
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/HEAD
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/config
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/description
+ create mode 100755 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/hooks/README.sample
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/index
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/info/exclude
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/objects/pack/pack-f2fcc7b54889d793db1ef8d1f44ecb21b9b37f53.idx
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/objects/pack/pack-f2fcc7b54889d793db1ef8d1f44ecb21b9b37f53.pack
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/refs/heads/master
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/refs/remotes/origin/master
+ create mode 100644 clones/06dfef30-8e85-11e9-0a8e-cb6ed32fdbef/refs/tags/v0.1.0
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/FETCH_HEAD
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/HEAD
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/config
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/description
+ create mode 100755 clones/785d7830-48c5-59de-ae5e-7712913079e9/hooks/README.sample
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/index
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/info/exclude
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/objects/pack/pack-9b6a7cd4f08cd9c85baf9b64a518681d0e91640a.idx
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/objects/pack/pack-9b6a7cd4f08cd9c85baf9b64a518681d0e91640a.pack
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/heads/master
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/remotes/origin/http_rest
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/remotes/origin/master
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.0
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.1
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.10
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.11
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.12
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.3
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.4
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.5
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.6
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.7
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.8
+ create mode 100644 clones/785d7830-48c5-59de-ae5e-7712913079e9/refs/tags/v0.1.9
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/FETCH_HEAD
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/HEAD
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/config
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/description
+ create mode 100755 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/hooks/README.sample
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/index
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/info/exclude
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/objects/pack/pack-f47016571e8a92b22d2f6e7ea7ee182ed65db56a.idx
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/objects/pack/pack-f47016571e8a92b22d2f6e7ea7ee182ed65db56a.pack
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/refs/heads/master
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/refs/remotes/origin/master
+ create mode 100644 clones/bfa37bea-997f-11e9-0e02-2d50932a0e04/refs/tags/v0.1.0
+ create mode 100644 packages/Bitcoin/wnpii/.gitignore
+ create mode 100644 packages/Bitcoin/wnpii/.gitlab-ci.yml
+ create mode 100644 packages/Bitcoin/wnpii/LICENSE
+ create mode 100644 packages/Bitcoin/wnpii/Project.toml
+ create mode 100644 packages/Bitcoin/wnpii/README.md
+ create mode 100644 packages/Bitcoin/wnpii/docs/make.jl
+ create mode 100644 packages/Bitcoin/wnpii/docs/src/index.md
+ create mode 100644 packages/Bitcoin/wnpii/src/Bitcoin.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/Block.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/BloomFilter.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/CompactSizeUInt.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/Node.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/address.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/constants.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/helper.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/murmur3.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/network.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/op.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/rpc/rest.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/script.jl
+ create mode 100644 packages/Bitcoin/wnpii/src/tx.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/CompactSizeUInttest.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/addresstest.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/blocktest.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/bloomfiltertest.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/helpertest.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/murmur3test.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/networktest.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/nodetest.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/optest.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/rpctest.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/runtests.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/scripttest.jl
+ create mode 100644 packages/Bitcoin/wnpii/test/txtest.jl
+ create mode 100644 packages/MerkleTrees/KQegG/.gitignore
+ create mode 100644 packages/MerkleTrees/KQegG/.gitlab-ci.yml
+ create mode 100644 packages/MerkleTrees/KQegG/LICENSE
+ create mode 100644 packages/MerkleTrees/KQegG/Project.toml
+ create mode 100644 packages/MerkleTrees/KQegG/README.md
+ create mode 100644 packages/MerkleTrees/KQegG/docs/make.jl
+ create mode 100644 packages/MerkleTrees/KQegG/docs/src/index.md
+ create mode 100644 packages/MerkleTrees/KQegG/src/MerkleTrees.jl
+ create mode 100644 packages/MerkleTrees/KQegG/src/hash.jl
+ create mode 100644 packages/MerkleTrees/KQegG/test/runtests.jl
+ create mode 100644 packages/Secp256k1/BxyCS/.gitignore
+ create mode 100644 packages/Secp256k1/BxyCS/.gitlab-ci.yml
+ create mode 100644 packages/Secp256k1/BxyCS/LICENSE
+ create mode 100644 packages/Secp256k1/BxyCS/Project.toml
+ create mode 100644 packages/Secp256k1/BxyCS/README.md
+ create mode 100644 packages/Secp256k1/BxyCS/docs/make.jl
+ create mode 100644 packages/Secp256k1/BxyCS/docs/src/index.md
+ create mode 100644 packages/Secp256k1/BxyCS/src/Secp256k1.jl
+ create mode 100644 packages/Secp256k1/BxyCS/src/lib/ECDSA.jl
+ create mode 100644 packages/Secp256k1/BxyCS/src/lib/FieldElement.jl
+ create mode 100644 packages/Secp256k1/BxyCS/src/lib/Infinity.jl
+ create mode 100644 packages/Secp256k1/BxyCS/src/lib/Point.jl
+ create mode 100644 packages/Secp256k1/BxyCS/src/lib/errors.jl
+ create mode 100644 packages/Secp256k1/BxyCS/src/lib/scheme-types.jl
+ create mode 100644 packages/Secp256k1/BxyCS/test/ECDSA_tests.jl
+ create mode 100644 packages/Secp256k1/BxyCS/test/FieldElement_tests.jl
+ create mode 100644 packages/Secp256k1/BxyCS/test/Infinity_tests.jl
+ create mode 100644 packages/Secp256k1/BxyCS/test/Point_tests.jl
+ create mode 100644 packages/Secp256k1/BxyCS/test/runtests.jl
+ create mode 100644 packages/Secp256k1/BxyCS/test/scheme-types_tests.jl
+To https://github.com/watsona4/dot_julia.git
+   dd084426c..2288657fa  master -> master
+Progress:   7%|███                                      |  ETA: 3 days, 23:40:46[K
+Installing BitcoinPrimitives
+ Resolving package versions...
+   Cloning [9d766032-97e2-11e9-15bd-efb533ad7bdc] BitcoinPrimitives from https://gitlab.com/braneproject/BitcoinPrimitives.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h Installed BitcoinPrimitives ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9d766032] + BitcoinPrimitives v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9d766032] + BitcoinPrimitives v0.1.0

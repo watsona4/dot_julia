@@ -1011,6 +1011,12 @@ git-tree-sha1 = "c35bec3433b68a300c5d24f5b31e382e825bf4d2"
 uuid = "785d7830-48c5-59de-ae5e-7712913079e9"
 version = "0.1.12"
 
+[[BitcoinPrimitives]]
+deps = ["BitConverter", "Ripemd", "SHA", "Secp256k1"]
+git-tree-sha1 = "bc99bbc3160f9713dfdaa4d8fcc55974dbef5236"
+uuid = "9d766032-97e2-11e9-15bd-efb533ad7bdc"
+version = "0.1.0"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"
