@@ -1833,6 +1833,18 @@ git-tree-sha1 = "61c5334f33d91e570e1d0c3eb5465835242582c4"
 uuid = "a2cac450-b92f-5266-8821-25eda20663c8"
 version = "0.4.0"
 
+[[ColorSchemeTools]]
+deps = ["Clustering", "ColorSchemes", "Colors", "Dates", "FileIO", "ImageMagick", "Images", "QuartzImageIO"]
+git-tree-sha1 = "4f4c2e0be7f4492396226da9db93a50941f0f5e5"
+uuid = "d3e213a1-5e82-5c18-bb32-2a58a99f8c46"
+version = "0.2.0"
+
+[[ColorSchemes]]
+deps = ["Colors", "Random", "Test"]
+git-tree-sha1 = "cec817e8be9e896266fee4976447c5ced7dc7255"
+uuid = "35d6a980-a343-548e-a6ea-1d62b119f2f4"
+version = "3.4.0"
+
 [[ColorTypes]]
 deps = ["FixedPointNumbers", "Random"]
 git-tree-sha1 = "10050a24b09e8e41b951e9976b109871ce98d965"
@@ -3795,6 +3807,12 @@ deps = ["DSP", "DataStructures", "Distributions", "FFTW", "LightGraphs", "Linear
 git-tree-sha1 = "63f16ae8a4c67adc6fe30b0aaf654686e174f25a"
 uuid = "fcd29c91-0bd7-5a09-975d-7ac3f643a60c"
 version = "0.16.1"
+
+[[QuartzImageIO]]
+deps = ["ColorTypes", "ColorVectorSpace", "FileIO", "FixedPointNumbers", "ImageCore", "Libdl"]
+git-tree-sha1 = "813432448a8f06a1316943c3456dcf043afacd96"
+uuid = "dca85d43-d64c-5e67-8c65-017450d5d020"
+version = "0.6.0"
 
 [[RCall]]
 deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "Libdl", "Missings", "REPL", "Random", "Requires", "StatsModels", "WinReg"]
