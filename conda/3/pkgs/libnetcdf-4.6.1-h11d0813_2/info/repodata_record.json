@@ -1,0 +1,31 @@
+{
+  "arch": "x86_64",
+  "build": "h11d0813_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "bzip2 >=1.0.6,<2.0a0",
+    "curl",
+    "hdf4 >=4.2.13,<4.2.14.0a0",
+    "hdf5 >=1.10.4,<1.10.5.0a0",
+    "jpeg >=9b,<10a",
+    "libcurl >=7.63.0,<8.0a0",
+    "libgcc-ng >=7.3.0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "features": "",
+  "fn": "libnetcdf-4.6.1-h11d0813_2.conda",
+  "legacy_bz2_md5": "ec2c16d46f789863c64709343226877d",
+  "license": "MIT",
+  "md5": "81ad970989dc5f95b51ea8f6d83a35a0",
+  "name": "libnetcdf",
+  "platform": "linux",
+  "sha256": "8549506f3af88d26636966fdd5b4d2ac4376592710f9438969c259840a797495",
+  "size": 852706,
+  "subdir": "linux-64",
+  "timestamp": 1545349808889,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libnetcdf-4.6.1-h11d0813_2.conda",
+  "version": "4.6.1"
+}

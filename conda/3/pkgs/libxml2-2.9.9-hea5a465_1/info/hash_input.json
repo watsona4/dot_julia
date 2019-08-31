@@ -1,0 +1,7 @@
+{
+  "c_compiler": "gcc",
+  "VERBOSE_AT": "V=1",
+  "xz": "5",
+  "c_compiler_version": "7.3.0",
+  "zlib": "1.2"
+}

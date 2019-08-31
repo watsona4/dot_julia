@@ -1,0 +1,38 @@
+# NetCDF C Configuration Summary
+==============================
+
+# General
+-------
+NetCDF Version:		4.6.1
+Configured On:		Thu Dec 20 23:47:18 UTC 2018
+Host System:		x86_64-Linux-4.4.0-62-generic
+Build Directory: 	/tmp/build/80754af9/libnetcdf_1545349563001/work
+Install Prefix:         /opt/anaconda1anaconda2anaconda3
+
+# Compiling Options
+-----------------
+C Compiler:		/tmp/build/80754af9/libnetcdf_1545349563001/_build_env/bin/x86_64-conda_cos6-linux-gnu-cc
+CFLAGS:			-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -pipe -I/opt/anaconda1anaconda2anaconda3/include -fdebug-prefix-map=${SRC_DIR}=/usr/local/src/conda/${PKG_NAME}-${PKG_VERSION} -fdebug-prefix-map=${PREFIX}=/usr/local/src/conda-prefix -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -march=nocona
+CPPFLAGS:		 
+LDFLAGS:		-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,-rpath,/opt/anaconda1anaconda2anaconda3/lib -L/opt/anaconda1anaconda2anaconda3/lib 
+AM_CFLAGS:		
+AM_CPPFLAGS:		
+AM_LDFLAGS:		
+Shared Library:		yes
+Static Library:		no
+Extra libraries:	-lmfhdf -ldf -lhdf5_hl -lhdf5 -lrt -lpthread -lz -ldl -lm -lcurl
+
+# Features
+--------
+NetCDF-2 API:		yes
+HDF4 Support:		yes
+NetCDF-4 API:		yes
+NC-4 Parallel Support:	no
+PNetCDF Support:	no
+DAP2 Support:		yes
+DAP4 Support:		yes
+Diskless Support:	yes
+MMap Support:		yes
+JNA Support:		no
+CDF5 Support:		yes
+ERANGE fill Support:	no

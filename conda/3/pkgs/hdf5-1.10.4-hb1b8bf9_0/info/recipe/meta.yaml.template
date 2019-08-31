@@ -1,0 +1,136 @@
+{% set version = "1.10.4" %}
+{% set maj_min_ver = ".".join(version.split(".")[:2]) %}
+
+package:
+  name: hdf5
+  version: {{ version }}
+
+source:
+  url: https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-{{ maj_min_ver }}/hdf5-{{ version }}/src/hdf5-{{ version }}.tar.gz
+  sha256: 8f60dc4dd6ab5fcd23c750d1dc5bca3d0453bdce5c8cdaf0a4a61a9d1122adb2
+  patches:
+    # Patches the test suite to skip the cache, cache_image, and fheap tests
+    # This test has been found to rather resource intensive.
+    # In particular, it caused Travis CI's Mac builds to hang.
+    # Given that we simply skip the test on all platforms.
+    - test_Makefile.in.patch
+    # Disable shared Fortran API building on OSX
+    - osx_configure.patch  # [osx]
+    # https://bugzilla.redhat.com/show_bug.cgi?id=1078173
+    # http://pkgs.fedoraproject.org/cgit/rpms/hdf5.git/tree/hdf5-ldouble-ppc64le.patch?h=epel7
+    # updated patch for 1.10.1
+    - 0001-ppc64le-uses-special-algorithm-for-long-double.patch  # [ppc64le]
+    - 0002-long-double-conversion-tests-on-ppc64le.patch         # [ppc64le]
+
+build:
+  number: 0
+  run_exports:
+    # hdf5 has historically broken API between bugfix revisions.  Pin it to be safe.
+    #    This pinning is using the implicitly defined output for the top-level recipe.
+    #    We use pin_subpackage here so that we have more control over the pinning.
+    - {{ pin_subpackage('hdf5', min_pin='x.x.x', max_pin='x.x.x') }}
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - {{ compiler('fortran') }}
+    - libtool        # [not win]
+    - make           # [not win]
+    - cmake >=3.1    # [win]
+    - jom            # [win]
+  host:
+    - zlib
+
+# no explicit run deps.  zlib is one, and C/C++/Fortran runtimes are others, but these are taken care of
+#   with conda-build 3's run_exports in those packages.  They will be run reqs in the final package.  See
+#   for yourself by running conda render on this recipe.
+
+test:
+  requires:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - {{ compiler('fortran') }}
+
+  files:
+    - h5_cmprss.c
+    - h5tutr_cmprss.cpp
+    - h5_cmprss.f90
+    - compound_fortran2003.f90
+
+  commands:
+    # Verify UNIX CLI tools.
+    {% set hdf5_unix_cmds = [
+        "h5c++",
+        "h5cc",
+        "h5perf_serial",
+        "h5redeploy",
+        "h5fc"
+    ] %}
+    {% for each_hdf5_unix_cmd in hdf5_unix_cmds %}
+    - command -v {{ each_hdf5_unix_cmd }}   # [unix]
+    {% endfor %}
+
+    # Verify CLI tools.
+    {% set hdf5_cmds = [
+        "gif2h5",
+        "h52gif",
+        "h5copy",
+        "h5debug",
+        "h5diff",
+        "h5dump",
+        "h5import",
+        "h5jam",
+        "h5ls",
+        "h5mkgrp",
+        "h5repack",
+        "h5repart",
+        "h5stat",
+        "h5unjam"
+    ] %}
+    {% for each_hdf5_cmd in hdf5_cmds %}
+    - command -v {{ each_hdf5_cmd }}        # [unix]
+    - where {{ each_hdf5_cmd }}             # [win]
+    {% endfor %}
+
+    # Verify libraries.
+    {% set hdf5_libs = [
+        "hdf5",
+        "hdf5_cpp",
+        "hdf5_hl",
+        "hdf5_hl_cpp"
+    ] %}
+    {% for each_hdf5_lib in hdf5_libs %}
+    - test -f $PREFIX/lib/lib{{ each_hdf5_lib }}.a                           # [unix]
+    - test -f $PREFIX/lib/lib{{ each_hdf5_lib }}.dylib                       # [osx]
+    - test -f $PREFIX/lib/lib{{ each_hdf5_lib }}.so                          # [linux]
+    - if not exist %PREFIX%\\Library\\lib\\{{ each_hdf5_lib }}.lib exit 1    # [win]
+    - if not exist %PREFIX%\\Library\\bin\\{{ each_hdf5_lib }}.dll exit 1    # [win]
+    {% endfor %}
+
+    # Inspect linkages of HDF5.
+    {% for each_hdf5_lib in hdf5_libs %}
+    - otool -L $PREFIX/lib/lib{{ each_hdf5_lib }}.dylib                      # [osx]
+    {% endfor %}
+
+about:
+  home: http://www.hdfgroup.org/HDF5/
+  license: HDF5
+  license_family: BSD
+  license_file: COPYING
+  summary: HDF5 is a data model, library, and file format for storing and managing data
+  description: |
+    HDF5 supports an unlimited variety of datatypes, and is designed for
+    flexible and efficient I/O and for high volume and complex data.
+  doc_url: https://www.hdfgroup.org/HDF5/doc/
+  dev_url: https://www.hdfgroup.org/HDF5/release/obtain5.html
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - gillins
+    - groutr
+    - ocefpaf
+    - astrofrog
+    - marqh
+    - msarahan

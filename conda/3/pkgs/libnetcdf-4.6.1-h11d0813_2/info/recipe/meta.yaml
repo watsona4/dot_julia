@@ -1,0 +1,102 @@
+# This file created by conda-build 3.17.6
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/libnetcdf-4.6.1-on-linux_64, last modified Thu Dec 20 23:15:12 2018
+# ------------------------------------------------
+
+package:
+    name: libnetcdf
+    version: 4.6.1
+source:
+    patches:
+        - 0001-Fix-bug-Index-exceeds-dimension-bound.patch
+        - 0002-run_get_hdf4_files.sh-Use-curl-if-wget-fails-macOS-d.patch
+        - 0003-Add-find_package-Threads-REQUIRED-to-CMakeLists.txt.patch
+        - 0004-Prefer-getenv-TOPSRCDIR-over-STRINGIFY-TOPSRCDIR.patch
+        - 0005-Convert-some-c99-to-c89-by-hand.patch
+        - 0006-Fix-tests-for-Windows-VS2008-define-__func__-as-__FU.patch
+        - 0007-Fix-broken-test.patch
+        - 0008-Finish-the-missing-code-to-handle-VS-in-test_common..patch
+        - higher_timeout.patch
+    sha256: a2fabf27c72a5ee746e3843e1debbaad37cd035767eaede2045371322211eebb
+    url: https://github.com/Unidata/netcdf-c/archive/v4.6.1.tar.gz
+build:
+    number: '2'
+    run_exports:
+        - libnetcdf >=4.6.1,<5.0a0
+    string: h11d0813_2
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - bzip2 1.0.6 h14c3975_5
+        - ca-certificates 2018.03.07 0
+        - cmake 3.12.2 h52cb24c_0
+        - expat 2.2.6 he6710b0_0
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - git 2.19.1 pl526hacde149_0
+        - krb5 1.16.1 h173b8e3_7
+        - libcurl 7.63.0 h20c2e04_1000
+        - libedit 3.1.20170329 h6b74fdf_2
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libssh2 1.8.0 h1ba5d50_4
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - make 4.2.1 h1bed415_1
+        - ncurses 6.1 he6710b0_1
+        - openssl 1.1.1a h7b6447c_0
+        - perl 5.26.2 h14c3975_0
+        - pkg-config 0.29.2 h1bed415_8
+        - rhash 1.3.6 h1ba5d50_0
+        - tk 8.6.8 hbc83047_0
+        - xz 5.2.4 h14c3975_4
+        - zlib 1.2.11 h7b6447c_3
+    host:
+        - bzip2 1.0.6 h14c3975_5
+        - ca-certificates 2018.03.07 0
+        - hdf4 4.2.13 h3ca952b_2
+        - hdf5 1.10.4 hb1b8bf9_0
+        - jpeg 9b h024ee3a_2
+        - krb5 1.16.1 h173b8e3_7
+        - libcurl 7.63.0 h20c2e04_1000
+        - libedit 3.1.20170329 h6b74fdf_2
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - libssh2 1.8.0 h1ba5d50_4
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - ncurses 6.1 he6710b0_1
+        - openssl 1.1.1a h7b6447c_0
+        - tk 8.6.8 hbc83047_0
+        - zlib 1.2.11 h7b6447c_3
+    run:
+        - bzip2 >=1.0.6,<2.0a0
+        - curl
+        - hdf4 >=4.2.13,<4.2.14.0a0
+        - hdf5 >=1.10.4,<1.10.5.0a0
+        - jpeg >=9b,<10a
+        - libcurl >=7.63.0,<8.0a0
+        - libgcc-ng >=7.3.0
+        - zlib >=1.2.11,<1.3.0a0
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libnetcdf.a
+        - test -f ${PREFIX}/lib/libnetcdf${SHLIB_EXT}
+        - nc-config --all
+        - ncdump -h "http://geoport-dev.whoi.edu/thredds/dodsC/estofs/atlantic"
+        - ncdump -h "https://data.nodc.noaa.gov/thredds/dodsC/ioos/sccoos/scripps_pier/scripps_pier-2016.nc"
+        - ncdump -h "http://oos.soest.hawaii.edu/thredds/dodsC/hioos/model/atm/ncep_pac/NCEP_Pacific_Atmospheric_Model_best.ncd"
+        - ncdump -h "http://oos.soest.hawaii.edu/thredds/dodsC/usgs_dem_10m_tinian"
+        - ncdump -h "https://www.ncei.noaa.gov/thredds/dodsC/namanl/201609/20160929/namanl_218_20160929_1800_006.grb"
+about:
+    home: http://www.unidata.ucar.edu/software/netcdf/
+    license: MIT
+    license_file: COPYRIGHT
+    summary: Libraries and data formats that support array-oriented scientific data.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - groutr
+        - kmuehlbauer
+        - mingwandroid
+        - msarahan
+        - ocefpaf

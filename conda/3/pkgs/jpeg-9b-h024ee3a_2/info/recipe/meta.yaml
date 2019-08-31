@@ -1,0 +1,41 @@
+# This file created by conda-build 3.0.28
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/jpeg-9b-on-linux_64, last modified Thu Nov  9 03:16:03 2017
+# ------------------------------------------------
+
+package:
+    name: jpeg
+    version: 9b
+source:
+    md5: 6a9996ce116ec5c52b4870dbcd6d3ddb
+    url: http://www.ijg.org/files/jpegsrc.v9b.tar.gz
+build:
+    number: '2'
+    run_exports:
+        - jpeg >=9b,<10a
+    string: h024ee3a_2
+requirements:
+    build:
+        - binutils_impl_linux-64 2.28.1 h04c84fa_2
+        - binutils_linux-64 7.2.0 hc67e822_9
+        - gcc_impl_linux-64 7.2.0 hc5ce805_2
+        - gcc_linux-64 7.2.0 h60973fd_9
+        - libstdcxx-ng 7.2.0 h7a57d05_2
+    run:
+        - libgcc-ng 7.2.0.*
+test:
+    commands:
+        - djpeg -dct int -ppm -outfile testout.ppm testorig.jpg
+    files:
+        - testorig.jpg
+about:
+    home: http://www.ijg.org/
+    license: Custom free software license
+    summary: read/write jpeg COM, EXIF, IPTC medata
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - gillins
+        - jakirkham
+        - msarahan

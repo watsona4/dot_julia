@@ -1,0 +1,62 @@
+{
+  "build": "had09818_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.2.0"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/yaml-0.1.7-had09818_2",
+  "features": "",
+  "files": [
+    "include/yaml.h",
+    "lib/libyaml-0.so.2",
+    "lib/libyaml-0.so.2.0.5",
+    "lib/libyaml.a",
+    "lib/libyaml.la",
+    "lib/libyaml.so",
+    "lib/pkgconfig/yaml-0.1.pc"
+  ],
+  "fn": "yaml-0.1.7-had09818_2.conda",
+  "legacy_bz2_md5": "8bc3d68df049640c74941c52156a2e7a",
+  "legacy_bz2_size": 87051,
+  "license": "MIT",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/yaml-0.1.7-had09818_2",
+    "type": 1
+  },
+  "md5": "e5f9ce5f2d1a8d17a4fade8a546b43aa",
+  "name": "yaml",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/yaml-0.1.7-had09818_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libyaml.la",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "0c57f663f584e0bac52a3681d65e8f0cd5e2cf457d6e3eea9fb2d408f821808d",
+        "sha256_in_prefix": "dde6e8604ad060f0f3379b99bfa56a403d359abc2f72aaf07708e5d71fb579d9",
+        "size_in_bytes": 969
+      },
+      {
+        "_path": "lib/pkgconfig/yaml-0.1.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "c3949fda489ec0b8056cd54a203e3355fa2dadd9c157c71ba9d24d4b509e8e52",
+        "sha256_in_prefix": "f1f4382c0a9347c4530fa5ff90f89a80243e993a484e7311a72a7f17a6f0a57a",
+        "size_in_bytes": 224
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "yaml==0.1.7=had09818_2",
+  "sha256": "3453139916ec0615675af07abd704883f28b97a9a84539d72bcc28d5aa5779e2",
+  "size": 74652,
+  "subdir": "linux-64",
+  "timestamp": 1510609996778,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/yaml-0.1.7-had09818_2.conda",
+  "version": "0.1.7"
+}

@@ -1,0 +1,38 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/ca-certificates-2019.5.15-on-linux_64, last modified Fri Aug  9 17:14:54 2019
+# ------------------------------------------------
+
+package:
+    name: ca-certificates
+    version: 2019.5.15
+source:
+    fn: cacert.pem
+    sha256: cb2eca3fbfa232c9e3874e3852d43b33589f27face98eef10242a853d83a437a
+    url: https://curl.haxx.se/ca/cacert-2019-05-15.pem
+build:
+    commands:
+        - /usr/bin/curl --cacert "${PREFIX}/ssl/cacert.pem" https://www.google.com
+        - /usr/bin/openssl -CAfile "${PREFIX}/ssl/cacert.pem" -CApath nosuchdir s_client
+            -showcerts -connect www.google.com:443
+        - test -f "${PREFIX}/ssl/cacert.pem"
+        - test -f "${PREFIX}/ssl/cert.pem"
+    number: '1'
+    string: '1'
+about:
+    home: https://github.com/conda-forge/ca-certificates-feedstock
+    license: MPL 2.0
+    license_file: LICENSE.txt
+    summary: Certificates for use with other packages.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - jjhelmus
+        - msarahan
+        - mwcraig
+        - ocefpaf
+        - patricksnape
+        - pelson
+        - scopatz

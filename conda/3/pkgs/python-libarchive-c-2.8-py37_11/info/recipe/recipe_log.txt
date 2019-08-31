@@ -1,0 +1,139 @@
+commit 0eb038a25c11fac69a69a944ef27a3788521e754
+Merge: 9be50cd eefef68
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Wed Jul 17 10:54:14 2019 -0500
+
+    Merge pull request #2 from jjhelmus/prefer_conda_pkg_path
+    
+    add patch to prefer conda pkg libarchive path
+
+commit eefef68d2e650de4d1de1d8bfc7f7305ad1aa1ad
+Author: Jonathan Helmus <jjhelmus@gmail.com>
+Date:   Wed Jul 17 10:48:55 2019 -0500
+
+    add patch to prefer conda pkg libarchive path
+
+commit 9be50cd0cae0291a07b9e6a0e187bd8a344009e1
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Mon Jul 8 20:48:54 2019 -0500
+
+    PATH patch needs to account for PATH not being defined
+
+commit 3f831cccb8222f3c739de781685f2547737ff157
+Author: distro-bot@anaconda.com <Distro Bot>
+Date:   Sat Jul 6 15:38:24 2019 -0500
+
+    fix PATH fallback patch
+
+commit 9d9ad93b6f1891c63f2dae147dfdea7e2f5c05c9
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Tue Jul 2 15:24:54 2019 -0500
+
+    a different way of ensuring that libarchive can be found
+
+commit f5295668cc265f703bcb06db36f0438d57d02065
+Merge: 3460cc0 7791d86
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Mon Jul 1 10:25:34 2019 -0500
+
+    Merge pull request #1 from AnacondaRecipes/patch_win_library_path
+    
+    fallback to sys.prefix/Library/bin for libarchive.dll finding
+
+commit 7791d86de615bb257d09b2660a60b7953f61ac36
+Author: Mike Sarahan <msarahan@gmail.com>
+Date:   Mon Jul 1 09:50:35 2019 -0500
+
+    fallback to sys.prefix/Library/bin for libarchive.dll finding
+
+commit 3460cc0ca3da08dc89ea48533971b091f543198e
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Oct 2 13:21:24 2018 +0100
+
+    Undo export ArchiveWrite, just use libarchive.write.ArchiveWrite instead
+
+commit d221740c0777f374f48b32708e2d1340278eafb3
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Sep 30 11:58:59 2018 +0100
+
+    Export ArchiveWrite
+
+commit 418d7dbf172b7fd158c3642c6ddfabcbf8f72ef9
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Sep 21 22:14:32 2018 +0100
+
+    Update build number due to macOS issue
+
+commit 2b58a1587bdbd5f0a9c5697a3c5a32e91039085d
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Sep 21 19:03:29 2018 +0100
+
+    Add zstd support
+
+commit 18a6f0051b4968faa9b19ebfab1eba429a859093
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Jun 10 22:26:48 2018 +0100
+
+    Update to 2.8
+
+commit 27f9fe2a203de3ec9c676e7990e786a1c74fbddb
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Jun 1 13:01:20 2018 +0100
+
+    Add missing security-related libarchive flags
+
+commit bdef6e91dd7338e0c051662f30f1ec4bf4a8bfc7
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Apr 25 02:05:08 2018 +0100
+
+    Add Windows Python 2 support
+
+commit effdc03434a160aad13ba816581f1abca527e00d
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Dec 15 07:57:50 2017 -0800
+
+    Oops
+
+commit ec4b6d4cd9f4df14dcae333280cdb7bfecb0b636
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Dec 15 12:47:17 2017 +0000
+
+    Add Windows Python 3 support
+
+commit 68ac87805f1c352e2ca6707c4b1262e3ba60fe7e
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Dec 6 13:20:12 2017 +0000
+
+    Get rid of activate and deactivate scripts
+    
+    Now that I have modified ctypes.util.find_library() to look in sys.prefix/lib
+
+commit e90258395fa9801cc5debe80903d12c6f0c20ffe
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu Nov 2 14:59:09 2017 +0000
+
+    Add cross-compilation support
+
+commit 8d3606c06f71e5ac17246ab255660d3d7b7c0c40
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 22:02:53 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit c19a9ab7448ed741a827067ea7adee5baedb3921
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Thu Jul 27 04:25:52 2017 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit c37ad7701c5b01e6c30ae934e9b87f300094b252
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Thu Jul 27 03:11:30 2017 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit d143c2aaa46e3a18d8096915d0efd8e05d0459c0
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Thu Jul 27 02:55:39 2017 +0000
+
+    Initial feedstock commit with conda-smithy 2.3.2.

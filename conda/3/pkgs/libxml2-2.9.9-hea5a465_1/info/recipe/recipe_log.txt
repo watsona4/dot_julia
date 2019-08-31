@@ -1,0 +1,477 @@
+commit f50b0be25fce1ef7a413c7c9783489d7f1690455
+Author: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date:   Mon Jan 28 05:08:26 2019 -0600
+
+    Bump version to 2.9.9
+
+commit bfd305b07a854090d1df3b6c4e614109dcd2a846
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Oct 29 16:17:18 2018 -0700
+
+    Delete unused patch
+
+commit f7f7886cc10972351dc93c7e0b36bed49c191adb
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed May 23 10:09:10 2018 +0100
+
+    Disable make check (sorry)
+
+commit d5554182686852cba6904442bc8412718e986671
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed May 23 04:04:07 2018 +0100
+
+    Fix CVE-2017-8872
+
+commit eb9a55381042e28c160f0258f36cec660705a87a
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Fri Apr 20 08:36:53 2018 -0500
+
+    add forgotten patch file for C89 on vs2008
+
+commit 661408034c568d15cb512d69a7a8868d8e0d5fc4
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Thu Apr 5 10:20:55 2018 -0500
+
+    update to 2.9.8; add make dep on unix
+
+commit a739c09884cea71a4b8ce4d37305c8093b65fb99
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Tue Feb 27 13:43:16 2018 -0600
+
+    update to 2.9.7
+
+commit b42df29c3496ba52372bb5f14ec9203fe4e001a4
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Tue Nov 21 13:31:30 2017 -0600
+
+    remove vc feature; rely on run_exports for libiconv dep
+
+commit c0ddc6c8399e29d6e405b89d40997600df36f12b
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu Sep 21 12:47:25 2017 -0700
+
+    Yes, libiconv for Windows is a-go
+
+commit 1f80245d6e21446552cf6731dc8bbfa02a8df588
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Aug 28 13:33:16 2017 +0100
+
+    Fix bad requirements
+
+commit 2c56a1530fe7478505a4edf75fea9b3158eea328
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Aug 27 01:36:44 2017 +0100
+
+    Generalize logging
+
+commit bceb62743bf36e7a121001b97ebc26bcdffdc369
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Aug 25 21:00:05 2017 +0100
+
+    Generalize pinning
+
+commit 33e6a8dcb09f0baf5fa74f13722db65496843c4d
+Merge: c799914 b54d9c4
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Aug 25 20:39:19 2017 +0100
+
+    Merge pull request #1 from msarahan/cb3
+    
+    simplify recipe for cb3
+
+commit c79991493b8c6f70f4977aa3da214a7a81fbe056
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Aug 23 12:13:36 2017 +0100
+
+    make in parallel
+
+commit b54d9c4cff6675e241ce5d8b450c667e62702c18
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Sun Aug 20 19:26:31 2017 -0500
+
+    simplify recipe for cb3
+
+commit e3937a1b8547c612dcdd6398ca2b757bd5de2f3a
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Aug 20 14:28:09 2017 +0100
+
+    libiconv is part of glibc
+
+commit c50b7f72694d2fa6db084ce0c3fedcadb9f9b616
+Author: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date:   Mon Jul 31 17:46:21 2017 +0000
+
+    Update about section
+
+commit a287054d7ff6d8c02986e6d051c7aba4a58f918e
+Author: Nehal J Wani <nehaljw.kkd1@gmail.com>
+Date:   Mon Jul 31 17:43:49 2017 +0000
+
+    Make recipe cross-compile capable
+
+commit 42a9b41ba2ba3e5564975f3534e509b9e181cfa0
+Merge: 63e2401 354eb69
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Fri Apr 21 09:00:01 2017 +0200
+
+    Merge pull request #27 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 354eb69d79f948e3e5abfd5f5ccc0ae4b9cdb9e4
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Apr 21 01:40:37 2017 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 2.3.0.
+
+commit 63e24017287150308d3beccea0c201023aeae222
+Merge: 8808dd9 002a95e
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Feb 3 10:41:42 2017 -0300
+
+    Merge pull request #26 from ocefpaf/rerender
+    
+    rerender with auto
+
+commit 002a95e01261ab048b007b14eccfbdae6956af96
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Feb 2 10:12:56 2017 -0300
+
+    rerender with auto
+
+commit 8808dd92a2e082a2f6f2e6a19eb44bcbf56fde5a
+Merge: 67821fc 192bbaa
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Feb 2 10:02:58 2017 -0300
+
+    Merge pull request #25 from ocefpaf/update_icu_pin
+    
+    Update ICU pin
+
+commit 192bbaa142a2316cd04d679b09bf345a5b6b2c24
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Feb 1 15:52:28 2017 -0300
+
+    Update ICU pin
+
+commit 67821fc5c2c0ca4991bfe3e6aab3dbb7a2e6ea26
+Merge: 7f454a7 0c7f418
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Nov 4 13:11:29 2016 -0300
+
+    Merge pull request #23 from jschueller/bug-766834
+    
+    Backport fix for #766834
+
+commit 0c7f4185acec6604ae6b5b817f5fb077df0d79c0
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Fri Nov 4 10:23:54 2016 +0100
+
+    Backport fix for #766834
+
+commit 7f454a75a8d50a6d96469ec505a2cc64e99b5151
+Merge: a56f1fc 74dae6d
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Nov 2 18:24:20 2016 -0300
+
+    Merge pull request #22 from ocefpaf/refresh
+    
+    Refresh
+
+commit 74dae6d078436e66db833af6fee090d9782f8507
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Nov 2 11:04:56 2016 -0300
+
+    Refresh feedstock
+
+commit 22f0f26cadd1c72b8962524c4353fe82894ee4a4
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Nov 2 11:04:37 2016 -0300
+
+    rerender
+
+commit a56f1fcbe3393a3a52e90a3f8c08a826f8757acd
+Merge: 176c0d0 fc93639
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Oct 7 07:24:59 2016 -0300
+
+    Merge pull request #21 from ocefpaf/refresh
+    
+    Refresh
+
+commit fc9363929f2cfde12a50fb261125a8422d4a0225
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Oct 6 09:51:21 2016 -0300
+
+    Refresh feedstock
+
+commit 0cb6a70ec10e3564a7e9de8c3fa6b5c682d65b57
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Oct 6 09:50:40 2016 -0300
+
+    rerender
+
+commit 176c0d0c34998366b3e7a79fffb491d0d209b438
+Merge: 18e59bc 0a2feb4
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Sep 5 12:40:07 2016 -0300
+
+    Merge pull request #19 from ocefpaf/fix_18
+    
+    Fixes #18
+
+commit 0a2feb443b5f83d42bb12d497992018a963a0aed
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Sep 5 11:49:35 2016 -0300
+
+    Fixes #18
+
+commit 65b96ca61b33be8f13ce1319e48ab6a15b5b449f
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Sep 5 11:49:24 2016 -0300
+
+    rerender
+
+commit 18e59bcd14ce6fec27d206cd5a12e86ca6842a33
+Merge: e439ead 5909bb3
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Thu Aug 11 01:50:28 2016 -0400
+
+    Merge pull request #17 from jschueller/294
+    
+    Update to 2.9.4
+
+commit 5909bb397d761d7273d9776f0b81a51621104bdc
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Wed Aug 10 16:49:31 2016 +0200
+
+    Backport pre-c99 compiler fix
+
+commit 2e8d3d65ba9e6eba2cc66bb606f862abf3f4a6dd
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Wed Aug 10 09:50:28 2016 +0200
+
+    Update to 2.9.4
+
+commit e439ead9ed39029d70e1c78b13cea9b5723616fe
+Merge: db5efb8 c08c452
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Sun Jul 17 03:56:25 2016 -0300
+
+    Merge pull request #15 from ccordoba12/patch-1
+    
+    Pin xz to 5.2 instead of 5.0
+
+commit c08c4523f89dc1dc3211ae085ab85b48a6da2c64
+Author: Carlos Cordoba <ccordoba12@gmail.com>
+Date:   Sat Jul 16 17:33:50 2016 -0500
+
+    Update build number
+
+commit 435eff200680a63aa4f14452b4dbd8919a7e3cf8
+Author: Carlos Cordoba <ccordoba12@gmail.com>
+Date:   Sat Jul 16 17:22:08 2016 -0500
+
+    Pin xz to 5.2 instead of 5.0
+
+commit db5efb8b7335f57fbf1feb5322c12c6e22f1c1fc
+Merge: 26c011b 2235c5a
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Jun 21 12:17:50 2016 -0300
+
+    Merge pull request #14 from ocefpaf/fix_spaces
+    
+    Fix blank spaces [ci skip]
+
+commit 2235c5a1289048e1fd0e0d0ed7642ccbba9ace6e
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Tue Jun 21 12:10:24 2016 -0300
+
+    [ci skip]
+
+commit 26c011b4a48e691a50972b8693310f2ddcd00e26
+Merge: 08a4a13 e3e1e38
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Jun 20 09:21:59 2016 -0300
+
+    Merge pull request #12 from gillins/master
+    
+    Add Windows support
+
+commit e3e1e38c386d59823ff6c99607cb1642ca21c918
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Mon Jun 20 21:49:30 2016 +1000
+
+    added gillins to maintainers
+
+commit 7b643fc0db7d199e2f00597749607e8044915d12
+Merge: 930a913 08a4a13
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Mon Jun 20 13:56:43 2016 +1000
+
+    merged with upstream
+
+commit 930a913128d702b9d7752483c77a6e620cf6231a
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Mon Jun 20 13:50:10 2016 +1000
+
+    embed manifest for VS2008
+
+commit 08a4a13a9098192b62d172c3abc65e1bf6db1c6c
+Merge: 3463897 1f1387f
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Fri Jun 10 17:33:48 2016 -0300
+
+    Merge pull request #13 from ocefpaf/pinning
+    
+    Yet Another Pinning PR
+
+commit 1f1387fe55b83dded91b18457fb9133bb301f610
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Fri Jun 10 16:42:28 2016 -0300
+
+    YAPPR
+
+commit 8d64bade13dc7c38a47d381239ffcb2f9a46eb7f
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Fri Jun 10 17:20:41 2016 +1000
+
+    change to use .tar.gz source file so it can be extracted by Python 2.7 on Windows
+
+commit 6625c9cdb7f5f5e6ef64a38bdc56d2332dc7348b
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Fri Jun 10 15:57:24 2016 +1000
+
+    regenerate
+
+commit 614ba203d39dc515c95539bd3fa939b44cd931e6
+Author: Sam Gillingham <gillingham.sam@gmail.com>
+Date:   Fri Jun 10 15:47:17 2016 +1000
+
+    add Windows support
+
+commit 3463897b21598d2ebabfaf5b1b31c2a38a8400e6
+Merge: 5fc9446 21ce2ea
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu May 12 15:26:00 2016 -0300
+
+    Merge pull request #8 from ocefpaf/pin
+    
+    Pin icu
+
+commit 21ce2ea85cfb80b6614a225d760dcd822e4a2e07
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu May 12 14:04:21 2016 -0300
+
+    proper pinnings
+
+commit 15e8c13f812006e680e0ffd2061846b496d91c87
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu May 12 14:04:11 2016 -0300
+
+    rerender
+
+commit 5fc94461466df431e779f9c26488377b4921b59b
+Merge: 318b4a6 b0f61c2
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Apr 25 10:01:26 2016 -0300
+
+    Merge pull request #6 from ocefpaf/pin_xz_5.0.5
+    
+    Pin xz 5.0.5
+
+commit b0f61c2b61f549738944c5ea46a65703661ee388
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Apr 25 09:49:45 2016 -0300
+
+    rerender
+
+commit b159fac3ef879310c3c844831a9c652fa40bdc7d
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Apr 25 09:49:41 2016 -0300
+
+    Pin xz to 5.0.5
+
+commit 318b4a667b2a3c5a0b2be4553fbe7d5e196ad7d6
+Merge: 6cd1a39 a103bf1
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Mon Apr 18 10:23:08 2016 -0300
+
+    Merge pull request #5 from ocefpaf/rebuild_with_new_libzma
+    
+    Re-build with new libzma
+
+commit a103bf1d3ea8926a614769e6f2ef65de834b4a35
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Mon Apr 18 10:12:29 2016 -0300
+
+    Re-build with new libzma
+
+commit 6cd1a397d4bf6ba9956986f01c237f5574d80152
+Merge: c247ce5 dec75ff
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Thu Apr 7 22:31:47 2016 -0300
+
+    Merge pull request #3 from ocefpaf/rerender
+    
+    re-render and add xz
+
+commit dec75ff17dddde501b3c87260afc49d11cd4bae2
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Thu Apr 7 22:31:17 2016 -0300
+
+    re-render and add xz
+
+commit c247ce58cc1d1c3d70cb0ddd8c17cfd49eddf919
+Merge: 3f4feb3 664ced0
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Wed Apr 6 16:53:56 2016 -0300
+
+    Merge pull request #2 from ocefpaf/without_lzma
+    
+    build without-lzma
+
+commit 664ced075f20934b2751bd2fa7d354d945b8daf1
+Author: ocefpaf <ocefpaf@gmail.com>
+Date:   Wed Apr 6 16:32:57 2016 -0300
+
+    build without-lzma
+
+commit 3f4feb384df1865b932c16b3f2933786db280003
+Merge: 22ad1d3 764c221
+Author: Filipe <ocefpaf@gmail.com>
+Date:   Tue Apr 5 21:29:29 2016 -0300
+
+    Merge pull request #1 from jakirkham/drop_lib_path_changes
+    
+    Drop library path change
+
+commit 764c22171ba22575ccacc69dfe25fcadfb76c27e
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Tue Apr 5 17:34:58 2016 -0400
+
+    recipe: Drop library path changes as icu has been corrected.
+
+commit 22ad1d35731ecd593023bc55b2de84f748ee3042
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue Apr 5 01:26:09 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit f11af815375b0049cfd0d29b20db2be4b4257371
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue Apr 5 01:20:55 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 0731bf6b60166c332c30ac87da82609a870adaaa
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue Apr 5 01:20:05 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit fbf20f2250a6c5415874e9addc0381e520ea848e
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue Apr 5 01:19:21 2016 +0000
+
+    Initial commit of the libxml2 feedstock.

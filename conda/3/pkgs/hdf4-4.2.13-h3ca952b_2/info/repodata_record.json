@@ -1,0 +1,28 @@
+{
+  "arch": "x86_64",
+  "build": "h3ca952b_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "jpeg >=9b,<10a",
+    "libgcc-ng >=7.2.0",
+    "libstdcxx-ng >=7.2.0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "features": "",
+  "fn": "hdf4-4.2.13-h3ca952b_2.conda",
+  "legacy_bz2_md5": "35da658876a3e2a62dda54dcd5a7e5c2",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "md5": "99f7b578c71893c6ffbe359499374048",
+  "name": "hdf4",
+  "platform": "linux",
+  "sha256": "735945fbe5e5f7c2c0558b7621f58224a9ead5016bfdc4c66696adba2f72609d",
+  "size": 731182,
+  "subdir": "linux-64",
+  "timestamp": 1510862959026,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/hdf4-4.2.13-h3ca952b_2.conda",
+  "version": "4.2.13"
+}

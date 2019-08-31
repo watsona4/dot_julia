@@ -1,0 +1,60 @@
+From 09193082759c2fb67bc4c11dc6e6672855f8dba0 Mon Sep 17 00:00:00 2001
+From: Ray Donnelly <mingw.android@gmail.com>
+Date: Thu, 18 Oct 2018 21:13:10 +0100
+Subject: [PATCH 5/5] CMake: Fix windres / .rc not including programs/windres
+
+---
+ build/cmake/lib/CMakeLists.txt | 17 +++++++++++++++--
+ 1 file changed, 15 insertions(+), 2 deletions(-)
+
+diff --git a/build/cmake/lib/CMakeLists.txt b/build/cmake/lib/CMakeLists.txt
+index ffc196dd..c69ef0f0 100644
+--- a/build/cmake/lib/CMakeLists.txt
++++ b/build/cmake/lib/CMakeLists.txt
+@@ -102,10 +102,13 @@ IF (ZSTD_LEGACY_SUPPORT)
+             ${LIBRARY_LEGACY_DIR}/zstd_v07.h)
+ ENDIF (ZSTD_LEGACY_SUPPORT)
+ 
+-IF (MSVC)
++IF (WIN32)
+     SET(MSVC_RESOURCE_DIR ${ZSTD_SOURCE_DIR}/build/VS2010/libzstd-dll)
+     SET(PlatformDependResources ${MSVC_RESOURCE_DIR}/libzstd-dll.rc)
+-ENDIF (MSVC)
++    SET_SOURCE_FILES_PROPERTIES(${ZSTD_SOURCE_DIR}/build/VS2010/libzstd-dll/libzstd-dll.rc PROPERTIES COMPILE_FLAGS -I${ZSTD_SOURCE_DIR}/programs/windres)
++    SET_SOURCE_FILES_PROPERTIES(${ZSTD_SOURCE_DIR}/build/VS2010/zstd/zstd.rc PROPERTIES COMPILE_FLAGS -I${ZSTD_SOURCE_DIR}/programs/windres)
++    SET_SOURCE_FILES_PROPERTIES(${PROGRAMS_DIR}/zstdcli.c PROPERTIES COMPILE_FLAGS -I${ZSTD_SOURCE_DIR}/programs/windres)
++ENDIF (WIN32)
+ 
+ # Split project to static and shared libraries build
+ IF (ZSTD_BUILD_SHARED)
+@@ -127,6 +129,16 @@ IF (ZSTD_BUILD_STATIC)
+     ENDIF ()
+ ENDIF (ZSTD_BUILD_STATIC)
+ 
++IF (WIN32)
++    IF (ZSTD_BUILD_SHARED)
++      TARGET_INCLUDE_DIRECTORIES(libzstd_shared PRIVATE ${ZSTD_SOURCE_DIR}/programs/windres)
++      SET_TARGET_PROPERTIES(libzstd_shared PROPERTIES PREFIX "lib")
++    ENDIF (ZSTD_BUILD_SHARED)
++    IF (ZSTD_BUILD_STATIC)
++       SET_TARGET_PROPERTIES(libzstd_static PROPERTIES PREFIX "lib")
++    ENDIF (ZSTD_BUILD_STATIC)
++ENDIF (WIN32)
++
+ # Add specific compile definitions for MSVC project
+ IF (MSVC)
+     IF (ZSTD_BUILD_SHARED)
+-- 
+2.19.1
+
+--- work/build/cmake/programs/CMakeLists.txt.orig	2018-11-03 18:57:13.884544600 -0500
++++ work/build/cmake/programs/CMakeLists.txt	2018-11-03 18:58:24.003348800 -0500
+@@ -27,6 +27,8 @@
+ ENDIF (MSVC)
+ 
+ ADD_EXECUTABLE(zstd ${PROGRAMS_DIR}/zstdcli.c ${PROGRAMS_DIR}/fileio.c ${PROGRAMS_DIR}/bench.c ${PROGRAMS_DIR}/datagen.c ${PROGRAMS_DIR}/dibio.c ${PlatformDependResources})
++SET_SOURCE_FILES_PROPERTIES(${ZSTD_SOURCE_DIR}/build/VS2010/libzstd-dll/libzstd-dll.rc PROPERTIES COMPILE_FLAGS -I${ZSTD_SOURCE_DIR}/programs/windres)
++SET_SOURCE_FILES_PROPERTIES(${ZSTD_SOURCE_DIR}/build/VS2010/zstd/zstd.rc PROPERTIES COMPILE_FLAGS -I${ZSTD_SOURCE_DIR}/programs/windres)
+ TARGET_LINK_LIBRARIES(zstd libzstd_static)
+ IF (CMAKE_SYSTEM_NAME MATCHES "(Solaris|SunOS)")
+     TARGET_LINK_LIBRARIES(zstd rt)

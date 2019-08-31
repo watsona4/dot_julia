@@ -1,0 +1,13 @@
+prefix=/home/ec2-user/.julia/conda/3
+exec_prefix=/home/ec2-user/.julia/conda/3
+libdir=/home/ec2-user/.julia/conda/3/lib
+includedir=/home/ec2-user/.julia/conda/3/include
+ccompiler=/tmp/build/80754af9/libnetcdf_1545349563001/_build_env/bin/x86_64-conda_cos6-linux-gnu-cc
+
+Name: netCDF
+Description: NetCDF Client Library for C
+URL: http://www.unidata.ucar.edu/netcdf
+Version: 4.6.1
+Libs: -L${libdir} -lnetcdf -lmfhdf -ldf -lhdf5_hl -lhdf5 -lrt -lpthread -lz -ldl -lm -lcurl
+Cflags: -I${includedir}
+

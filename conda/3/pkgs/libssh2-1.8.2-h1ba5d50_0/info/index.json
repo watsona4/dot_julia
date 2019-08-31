@@ -1,0 +1,16 @@
+{
+  "arch": "x86_64",
+  "build": "h1ba5d50_0",
+  "build_number": 0,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "openssl >=1.1.1b,<1.1.2a"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "libssh2",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1555957533473,
+  "version": "1.8.2"
+}

@@ -1,0 +1,241 @@
+commit e88a4c0344a11977faff66085e24c4db94f6879b
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Dec 12 12:02:32 2018 -0600
+
+    libarchive does not use OpenSSL on macOS
+
+commit b10f60e477b4f8ba12fa87728194bbdecb9352d4
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Nov 7 13:57:36 2018 -0600
+
+    Use ninja
+
+commit eeccef055e6f584cc8868ba5390a577ba13fa941
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Nov 5 22:07:54 2018 -0600
+
+    Add m2-patch and bump build to 4
+
+commit 234f85880a6cb86750cf8ffdb3939b3e76301bf3
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Nov 5 21:53:11 2018 -0600
+
+    Fix VC9 patch
+
+commit 02ded7bd13c7f4b69415cfb99a344625fbe5050a
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Sep 21 20:20:59 2018 +0100
+
+    Add zstd to libarchive
+
+commit 94033be5e82f84c046b069e421c72d973c6bb6f8
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Sep 4 13:58:35 2018 +0100
+
+    Windows fixes for 3.3.3
+
+commit 37cea47d8b03818445a64bace88c1ec12288d6b5
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Sep 4 11:03:54 2018 +0100
+
+    Update to 3.3.3
+
+commit 99d01d0f5a4c197e1c807e3e020168bc92f5c557
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Jun 20 05:48:47 2018 -0700
+
+    Support symlinks on Windows (WIP)
+
+commit 34c3075572b88fea40e9a22bb1d306ec4d3a448a
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed May 23 03:05:08 2018 +0100
+
+    Fix CVE-2017-14166 and CVE-2017-14502
+
+commit 015e8fe969b86ae0ec268b9580d169964f70a583
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Apr 25 01:26:48 2018 +0100
+
+    Add make dep for unix
+
+commit f7d0716d0d43170a87b45cf86cd20d328553ad88
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Apr 25 00:58:45 2018 +0100
+
+    CMake/VC: Use the right runtime DLL
+
+commit 753d9def3ca7e57af161393398ce94d2d9202317
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Apr 23 23:35:42 2018 +0100
+
+    Fix comments
+
+commit 4632ec252009c3f2fbf700759a4fcf293e3bc56c
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Apr 23 18:08:17 2018 +0100
+
+    More VC9 support
+
+commit 177a4e320c15480568a24407baf785d4e7bd516f
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Apr 23 10:45:59 2018 -0500
+
+    Add VC9 lz4 support
+
+commit 7a6daf2be74cb6a0132e557d4312358399d9e6e4
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Apr 22 15:36:38 2018 +0100
+
+    VC9 compat patches
+
+commit 46150edf78ce8f464b6f286290801c5ec6f3cbec
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sun Apr 22 15:04:29 2018 +0100
+
+    VS2008 support
+
+commit 30cb0a1dcb4aef808003c938a2cee8fce6c46a01
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Tue Mar 27 17:01:23 2018 +0100
+
+    Fix xar seek bug
+
+commit c09f73d83a90d38247b690a88b6ce2b1d90badc3
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu Dec 28 14:10:17 2017 +0000
+
+    Add xar tests for all builds
+
+commit bee6b3f3774e356813e8dcd377dc84a03f0f5210
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Dec 27 20:56:37 2017 +0000
+
+    Test that we can list a xar file on macOS
+
+commit 45b95083a23b17afbb49a7edffb80ad038e92abd
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sat Dec 16 18:20:13 2017 +0000
+
+    Hack around cmake bug in FindLZMA ..
+    
+    CMake looks for lzma.lib but xz creates liblzma.lib
+
+commit 16cdcbe9717b4f60afa8a107ca18ac7e5612c850
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Dec 15 12:43:11 2017 +0000
+
+    Add Windows VS2015 support
+
+commit e3c68542dd84cd01c34b4caab17754d5aa51e1f2
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sat Nov 4 21:41:05 2017 +0000
+
+    Rewrite, link to every compression library
+
+commit 8662abcca9c607dca98b6ac1ee91e38c54d2b346
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Nov 3 03:26:25 2017 -0700
+
+    Add xz and zlib dependencies
+
+commit 6e5a1e97c6b1edb4c93682b93edf811f3797d92c
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu Nov 2 11:08:48 2017 +0000
+
+    Update to 3.3.2, use cross-compilers, libiconv only needed for macOS
+
+commit f73c554d2a24f23d35912a461111543ee3fca8e5
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 19:49:31 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit 220e557009816657c64d97296018614412e97666
+Merge: a1f819a 928f24d
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Fri Dec 30 18:13:18 2016 -0500
+
+    Merge pull request #10 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit 928f24dfc0d0afc9f677773ad8cd6e0eccbd2717
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Tue Dec 20 01:38:53 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.7.0.
+
+commit a1f819a4af092edce98abfff9580da65072fb62a
+Merge: c81fa85 9aa11aa
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Mon Jul 18 10:22:50 2016 -0400
+
+    Merge pull request #8 from jakirkham/bump_xz_pinning
+    
+    Change the `xz` pinning to 5.2.x
+
+commit 9aa11aa97ec5924073028cf5d32855e5c84e2c2f
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Mon Jul 18 10:02:40 2016 -0400
+
+    recipe: Change the `xz` pinning to 5.2.x.
+
+commit c81fa856540a28f15167b3b90552a384480f6d60
+Merge: 7f0a6bb b67e2fd
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Thu Jun 23 01:43:07 2016 -0400
+
+    Merge pull request #7 from jakirkham/unpin_conda-build
+    
+    Unpin conda-build
+
+commit b67e2fd8fc05f47bd4228b2d14c221f700983f46
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Jun 23 00:12:02 2016 -0400
+
+    recipe: Bump build number.
+
+commit 7464f0b3c395df12e6e4bfe85d926fd0a6f9557b
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Jun 23 00:11:39 2016 -0400
+
+    travis: Unpin conda-build.
+
+commit 7f0a6bb193607b7a436412be6d727940d9a5f0dc
+Merge: 83a8513 8e692bb
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue Jun 21 15:32:38 2016 -0400
+
+    Merge pull request #5 from jakirkham/skip_make_check
+    
+    Skip `make check`
+
+commit 8e692bb9d10e31448d2a65c1c88c79c09f283e61
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue Jun 21 11:47:37 2016 -0400
+
+    recipe: Comment `make check`.
+
+commit 83a8513a72c42ef821f8eed89361a5cf1d6919b6
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Mon Jun 20 14:20:51 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit f5e184859f20c0574720365ebebb6a3f98ebb8b5
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Mon Jun 20 13:56:53 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 54ba03cd1fe7ee61cc2e852bed564da57e6afed4
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Mon Jun 20 13:38:58 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 78883f952b72c609dfc5c3d30247cc54dd6462c2
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Mon Jun 20 13:36:52 2016 +0000
+
+    Initial commit of the libarchive feedstock.

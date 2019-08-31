@@ -1,0 +1,59 @@
+{
+  "build": "h7b6447c_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/bzip2-1.0.8-h7b6447c_0",
+  "features": "",
+  "files": [
+    "bin/bunzip2",
+    "bin/bzcat",
+    "bin/bzcmp",
+    "bin/bzdiff",
+    "bin/bzegrep",
+    "bin/bzfgrep",
+    "bin/bzgrep",
+    "bin/bzip2",
+    "bin/bzip2recover",
+    "bin/bzless",
+    "bin/bzmore",
+    "include/bzlib.h",
+    "lib/libbz2.a",
+    "lib/libbz2.so",
+    "lib/libbz2.so.1.0",
+    "lib/libbz2.so.1.0.8",
+    "man/man1/bzcmp.1",
+    "man/man1/bzdiff.1",
+    "man/man1/bzegrep.1",
+    "man/man1/bzfgrep.1",
+    "man/man1/bzgrep.1",
+    "man/man1/bzip2.1",
+    "man/man1/bzless.1",
+    "man/man1/bzmore.1"
+  ],
+  "fn": "bzip2-1.0.8-h7b6447c_0.tar.bz2",
+  "license": "bzip2",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/bzip2-1.0.8-h7b6447c_0",
+    "type": 1
+  },
+  "md5": "f52e60deb7f4c82821be9a868e889348",
+  "name": "bzip2",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/bzip2-1.0.8-h7b6447c_0.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "bzip2==1.0.8=h7b6447c_0",
+  "sha256": "168c2fc4d5899ee70e85fadc998e00827e1b856a6fc4a402ed465cd7c320d19f",
+  "size": 107105,
+  "subdir": "linux-64",
+  "timestamp": 1563219611337,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/bzip2-1.0.8-h7b6447c_0.tar.bz2",
+  "version": "1.0.8"
+}

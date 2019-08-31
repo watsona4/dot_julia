@@ -1,0 +1,53 @@
+{% set name = "conda-package-handling" %}
+{% set version = "1.3.11" %}
+{% set sha256 = "92d3f1d68d0d084adcc9ed6b1a8ea04753bf273c206fe1eea0816f3c493611e9" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://github.com/conda/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  # ideally this would work, but this is a conda dep, so we need to be careful.
+  # noarch: python
+  entry_points:
+    - cph = conda_package_handling.cli:main
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - futures   # [py27]
+    - libarchive >=3.3.3
+    - python
+    - python-libarchive-c
+    - six
+    - tqdm
+
+test:
+  source_files:
+    - tests
+  requires:
+    - mock
+    - pytest
+    - pytest-cov
+    - pytest-mock
+  commands:
+    - pytest tests
+
+about:
+  home: https://github.com/conda/conda-package-handling
+  license: BSD-3-Clause
+  license_family: BSD
+  summary: Create and extract conda packages of various formats
+
+extra:
+  recipe-maintainers:
+    - msarahan

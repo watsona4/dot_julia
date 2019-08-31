@@ -1,0 +1,79 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0",
+    "setuptools"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/wheel-0.33.4-py37_0",
+  "features": "",
+  "files": [
+    "bin/wheel",
+    "lib/python3.7/site-packages/wheel-0.33.4-py3.7.egg-info/PKG-INFO",
+    "lib/python3.7/site-packages/wheel-0.33.4-py3.7.egg-info/SOURCES.txt",
+    "lib/python3.7/site-packages/wheel-0.33.4-py3.7.egg-info/dependency_links.txt",
+    "lib/python3.7/site-packages/wheel-0.33.4-py3.7.egg-info/entry_points.txt",
+    "lib/python3.7/site-packages/wheel-0.33.4-py3.7.egg-info/not-zip-safe",
+    "lib/python3.7/site-packages/wheel-0.33.4-py3.7.egg-info/requires.txt",
+    "lib/python3.7/site-packages/wheel-0.33.4-py3.7.egg-info/top_level.txt",
+    "lib/python3.7/site-packages/wheel/__init__.py",
+    "lib/python3.7/site-packages/wheel/__main__.py",
+    "lib/python3.7/site-packages/wheel/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/__pycache__/__main__.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/__pycache__/bdist_wheel.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/__pycache__/metadata.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/__pycache__/pep425tags.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/__pycache__/pkginfo.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/__pycache__/util.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/__pycache__/wheelfile.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/bdist_wheel.py",
+    "lib/python3.7/site-packages/wheel/cli/__init__.py",
+    "lib/python3.7/site-packages/wheel/cli/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/cli/__pycache__/convert.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/cli/__pycache__/pack.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/cli/__pycache__/unpack.cpython-37.pyc",
+    "lib/python3.7/site-packages/wheel/cli/convert.py",
+    "lib/python3.7/site-packages/wheel/cli/pack.py",
+    "lib/python3.7/site-packages/wheel/cli/unpack.py",
+    "lib/python3.7/site-packages/wheel/metadata.py",
+    "lib/python3.7/site-packages/wheel/pep425tags.py",
+    "lib/python3.7/site-packages/wheel/pkginfo.py",
+    "lib/python3.7/site-packages/wheel/util.py",
+    "lib/python3.7/site-packages/wheel/wheelfile.py"
+  ],
+  "fn": "wheel-0.33.4-py37_0.conda",
+  "legacy_bz2_md5": "0a70fdabbfa3ab275be133ee93f3a13d",
+  "legacy_bz2_size": 40429,
+  "license": "MIT",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/wheel-0.33.4-py37_0",
+    "type": 1
+  },
+  "md5": "0fad2e19b293ae02565bded1c2484a9e",
+  "name": "wheel",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/wheel-0.33.4-py37_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/wheel",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "a610b64038079c99d807d0accc36e2207fe932b8e1a89dddb752e787d556b2c6",
+        "sha256_in_prefix": "1f1e55613a7a2cf2d38a37e92f8731833f4538482fd7a66011302f1da944fbea",
+        "size_in_bytes": 239
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "wheel==0.33.4=py37_0",
+  "sha256": "a89e0ec9eca3af4f905d0e6a8e2ff18bf57fbad2f96407f58dcdc15ed06cbcbd",
+  "size": 42208,
+  "subdir": "linux-64",
+  "timestamp": 1557857035837,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/wheel-0.33.4-py37_0.conda",
+  "version": "0.33.4"
+}

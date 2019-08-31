@@ -1,0 +1,24 @@
+From c7af62e2712f62e51ebbf0007d1fd27226fa038d Mon Sep 17 00:00:00 2001
+From: Sophia Castellarin <scastellarin@anaconda.com>
+Date: Wed, 29 May 2019 10:39:14 -0500
+Subject: [PATCH] Don't use USE_BCRYPTGENRANDOM for VS < 2015
+
+---
+ crypto/rand/rand_win.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/crypto/rand/rand_win.c b/crypto/rand/rand_win.c
+index 17ab137118..bcd2bd46ab 100644
+--- a/crypto/rand/rand_win.c
++++ b/crypto/rand/rand_win.c
+@@ -19,7 +19,7 @@
+
+ # include <windows.h>
+ /* On Windows Vista or higher use BCrypt instead of the legacy CryptoAPI */
+-# if defined(_MSC_VER) && defined(_WIN32_WINNT) && _WIN32_WINNT >= 0x0600
++# if defined(_MSC_VER) && defined(_WIN32_WINNT) && _WIN32_WINNT >= 0x060 && _MSC_VER >= 19000
+ #  define USE_BCRYPTGENRANDOM
+ # endif
+
+--
+2.19.2

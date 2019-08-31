@@ -1,0 +1,221 @@
+commit aed4436e1ed4a60fd1db7345329369f49cfe26fc
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Nov 5 17:10:00 2018 -0600
+
+    Get rid of old patches, fix .pc install location
+
+commit 70b87bd9ee4b55c4a882e0141cd7927bc538e8d7
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Nov 5 13:46:24 2018 -0600
+
+    Remove unused patch
+
+commit eafda03fc8ab382cf50d012d7355ce4f2d1a837a
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Sat Nov 3 19:05:26 2018 -0500
+
+    Update to 1.3.7, fix Windows VS2008 build
+
+commit 30169375adc732393aef81c69971920b1dea1cc6
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Fri Oct 19 04:20:02 2018 +0100
+
+    Windows: Switch to using cmake instead
+
+commit 30299767226dbfc5af1e634a210159b190e0df5d
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Thu Oct 18 11:28:02 2018 +0100
+
+    Fix VS2008 issues with library name (was zstdlib.dll)
+    
+    We cannot simply rename zstdlib.dll and zstdlib.lib to
+    libzstd.dll and libzstd.lib respectively because the
+    .lib embeds the .dll name in it.
+    
+    Instead the library is renamed from the get-go.
+
+commit 1f7f49c158413763a1cb334fca9c328bddbe03e0
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Aug 15 01:43:02 2018 +0100
+
+    WIP: Fixing cmake build to emit pc files
+
+commit d1af459c1c462fe5cac6307109f43e8ee48248d6
+Author: Michael Sarahan <msarahan@gmail.com>
+Date:   Wed Apr 11 10:17:54 2018 -0500
+
+    cb3-ize
+
+commit c99c4a43a29fc5c13ca647cc70b3298d423ee619
+Merge: 0aedac1 899cfc7
+Author: Rolando (Max) Espinoza <rmax@users.noreply.github.com>
+Date:   Fri Mar 2 09:34:54 2018 -0300
+
+    Merge pull request #7 from dougalsutherland/1.3.3
+    
+    bump to 1.3.3
+
+commit 899cfc7e49ff3563cd280cf4ccaa3112730e40b3
+Author: Dougal J. Sutherland <dougal@gmail.com>
+Date:   Thu Mar 1 13:34:16 2018 +0000
+
+    bump to 1.3.3
+
+commit 0aedac1e912920ea5dbb78e66d3e821eefc0f7e3
+Merge: f728e40 9f78b33
+Author: Rolando (Max) Espinoza <rmax@users.noreply.github.com>
+Date:   Mon Jan 1 21:50:06 2018 -0400
+
+    Merge pull request #6 from Horta/master
+    
+    copy .dll to LIBRARY_BIN
+
+commit 9f78b33d25ec29809e48b8ad2450b933396dc7aa
+Author: Danilo Horta <danilo.horta@gmail.com>
+Date:   Mon Jan 1 23:47:41 2018 +0000
+
+    rename
+
+commit d0afda2e930eb22113c9d20cdad70e4f5edd3614
+Author: Danilo Horta <danilo.horta@gmail.com>
+Date:   Mon Jan 1 23:23:46 2018 +0000
+
+    copy libzstd
+
+commit b5174e6c14d7acce3d8f3ca26df8132f827719da
+Author: Danilo Horta <danilo.horta@gmail.com>
+Date:   Mon Jan 1 23:01:53 2018 +0000
+
+    prevent using zstdlib in .lib as to not confuse cmake
+
+commit 1635adcf9645a01f69e103c41848c902687d5eca
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Mon Jan 1 17:06:14 2018 +0000
+
+    MNT: Re-rendered with conda-smithy 2.4.5
+
+commit 64b38e6b5f7e4a6257542dc27703afe7c3a5bc6b
+Author: Danilo Horta <danilo.horta@gmail.com>
+Date:   Mon Jan 1 16:49:21 2018 +0000
+
+    build 1
+
+commit 391cbbc734cd8136ed3851c54f6c6a9506454aa6
+Author: Danilo Horta <danilo.horta@gmail.com>
+Date:   Mon Jan 1 16:10:35 2018 +0000
+
+    copy .dll to LIBRARY_BIN
+
+commit f728e40bc9042b9146d7bc9c6d6ecbb5918fb57c
+Merge: 9f19577 ad9da3b
+Author: Rolando (Max) Espinoza <rmax@users.noreply.github.com>
+Date:   Sun Nov 19 19:25:18 2017 +0200
+
+    Merge pull request #5 from keuv-grvl/master
+    
+    update to 1.3.2
+
+commit ad9da3b74454127720447d8b7a75ce88db0dd384
+Merge: 2428c36 470e3ec
+Author: Keuv Grvl <keuv-grvl@users.noreply.github.com>
+Date:   Fri Oct 20 19:07:42 2017 +0200
+
+    Merge pull request #1 from rmax-contrib/pr-5
+    
+    Add -lrt to fix undefined reference.
+
+commit 470e3ec885277df727576cbcdb94d30b5f5f2d15
+Author: Rolando (Max) Espinoza <me@rmax.io>
+Date:   Fri Oct 20 13:43:07 2017 -0300
+
+    MNT: Re-rendered with conda-smithy 2.4.2
+
+commit 28014900465dac3e6323e94f07be28572e9c79e1
+Author: Rolando (Max) Espinoza <me@rmax.io>
+Date:   Fri Oct 20 13:34:51 2017 -0300
+
+    Add -lrt to fix undefined reference.
+
+commit 2428c361a5183c362827f6316bb223a4dc330c1f
+Author: Kévin Gravouil <k.gravouil@gmail.com>
+Date:   Thu Oct 19 16:17:59 2017 +0200
+
+    update to 1.3.2
+
+commit 9f19577b690e26e5d24f16f803227e131dae3c45
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 26 21:42:48 2017 +0000
+
+    [ci skip] [skip ci] Update anaconda token
+
+commit 298db96ab62fc8e9a89e4d5cd92f1422af1b98c6
+Merge: ef28dd6 4ce2df8
+Author: Rolando (Max) Espinoza <rmax@users.noreply.github.com>
+Date:   Mon Jul 24 14:32:26 2017 -0400
+
+    Merge pull request #4 from rmax-contrib/update-maintainer-name
+    
+    Update maintainer username: rolando -> rmax [ci skip]
+
+commit 4ce2df8b3657becd38b031337f19d53fd5c96dfe
+Author: Rolando (Max) Espinoza <me@rmax.io>
+Date:   Mon Jul 24 11:23:02 2017 -0400
+
+    Update maintainer username: rolando -> rmax [ci skip]
+
+commit ef28dd65396ba47c831188bfcf5c996d9f0d0b7d
+Merge: 34d6e4b 9c918a9
+Author: Rolando (Max) Espinoza <rmax@users.noreply.github.com>
+Date:   Thu Jul 13 05:01:59 2017 -0300
+
+    Merge pull request #3 from MaxRis/master
+    
+    Remove Whole Program Optimization (/GL) flag disabled by default for …
+
+commit 9c918a9f2cdd95932efdaad6162ae74fce38865c
+Author: Max Risuhin <risuhin.max@gmail.com>
+Date:   Wed Jul 12 22:37:29 2017 +0000
+
+    Remove Whole Program Optimization (/GL) flag disabled by default for VS2015.
+
+commit 34d6e4b8ae2437ca55977bec2f72b582656de1f2
+Merge: b6c0092 7b92004
+Author: Rolando (Max) Espinoza <rolando@users.noreply.github.com>
+Date:   Mon May 15 00:47:27 2017 -0300
+
+    Merge pull request #1 from rolando-contrib/update-1-2-0
+    
+    Update recipe to version 1.2.0
+
+commit 7b92004411e9146a0556d7b275445bbd68fdde5c
+Author: Rolando (Max) Espinoza <me@rmax.io>
+Date:   Sun May 14 23:45:45 2017 -0300
+
+    Update recipe to version 1.2.0
+
+commit b6c009243c86d782a9d0c4c5ae0f41a41d468b39
+Merge: c8f37de 9af235b
+Author: Rolando (Max) Espinoza <rolando@users.noreply.github.com>
+Date:   Mon May 15 00:26:18 2017 -0300
+
+    Merge pull request #2 from rolando-contrib/update-1-1-4
+    
+    Update recipe to version 1.1.4
+
+commit 9af235b3d440b76e23bc5096d986438848bcf1b9
+Author: Rolando (Max) Espinoza <me@rmax.io>
+Date:   Sun May 14 23:50:04 2017 -0300
+
+    Update recipe to version 1.1.4
+
+commit c8f37de9c228b6fa3a1a278d93900b083cd93954
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Mar 31 02:49:07 2017 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 478e7dd32566f4bf4143ef2f8a2b2479afa84db5
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Mar 31 02:40:45 2017 +0000
+
+    Initial feedstock commit with conda-smithy 2.2.2.

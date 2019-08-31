@@ -1,0 +1,88 @@
+{% set version = "4.6.1" %}
+
+package:
+  name: libnetcdf
+  version: {{ version }}
+
+source:
+  url: https://github.com/Unidata/netcdf-c/archive/v{{ version }}.tar.gz
+  sha256: a2fabf27c72a5ee746e3843e1debbaad37cd035767eaede2045371322211eebb
+  #git_url: https://github.com/Unidata/netcdf-c
+  #git_tag: v{{ version }}
+  #sha256: f7d1cb2a82100b9bf9a1130a50bc5c7baf0de5b5022860ac3e09a0a32f83cf4a
+  patches:
+    # 0001-Fix-misdetection.. => 0008-Finish-the-missing.. should all be upstreamed:
+    # - 0001-Fix-misdetection-of-vlen-issues-when-size_t-is-32-bi.patch
+    - 0001-Fix-bug-Index-exceeds-dimension-bound.patch
+    - 0002-run_get_hdf4_files.sh-Use-curl-if-wget-fails-macOS-d.patch
+    - 0003-Add-find_package-Threads-REQUIRED-to-CMakeLists.txt.patch
+    - 0004-Prefer-getenv-TOPSRCDIR-over-STRINGIFY-TOPSRCDIR.patch
+    - 0005-Convert-some-c99-to-c89-by-hand.patch
+    - 0006-Fix-tests-for-Windows-VS2008-define-__func__-as-__FU.patch
+    - 0007-Fix-broken-test.patch
+    - 0008-Finish-the-missing-code-to-handle-VS-in-test_common..patch
+    # - 0009-Add-some-extra-debugging.patch
+    # https://github.com/Unidata/netcdf4-python/issues/836
+    - higher_timeout.patch
+
+build:
+  number: 2
+  run_exports:
+    # C has good backcompat, C++ has poor.  Since we only build C, go with good
+    #   https://abi-laboratory.pro/tracker/timeline/netcdf/
+    #   https://abi-laboratory.pro/tracker/timeline/netcdf-cxx/
+    - {{ pin_subpackage('libnetcdf') }}
+
+requirements:
+  build:
+    - cmake
+    - git
+    - make  # [unix]
+    - pkg-config  # [not win]
+    # Needed for tests: Bash shell not found; disabling shell script tests.
+    - posix  # [win]
+    - m2-m4  # [win]
+    - {{ compiler('c') }}
+    # not sure if we need cxx compiler here - seems to be presently disabled.
+    # - {{ compiler('cxx') }}
+    # not sure if we need fortran compiler here - seems to be presently disabled.
+    # - {{ compiler('fortran') }}
+  host:
+    - msinttypes  # [win and vc<14]
+    - bzip2
+    - libcurl
+    - zlib
+    - hdf4
+    - hdf5
+    - jpeg
+  run:
+    - curl
+
+test:
+  commands:
+    - test -f ${PREFIX}/lib/libnetcdf.a  # [not win]
+    - test -f ${PREFIX}/lib/libnetcdf${SHLIB_EXT}  # [not win]
+    - nc-config --all  # [not win]
+    # ncdump from a URL needs a writeable TEMP directory for storing cookies.
+    # Point TEMP to PREFIX on windows to make certain this is true
+    - set "TEMP=%PREFIX%"  # [win]
+    # All these endpotins failed at some point due to various reasons.
+    - ncdump -h "http://geoport-dev.whoi.edu/thredds/dodsC/estofs/atlantic"
+    - ncdump -h "https://data.nodc.noaa.gov/thredds/dodsC/ioos/sccoos/scripps_pier/scripps_pier-2016.nc"
+    - ncdump -h "http://oos.soest.hawaii.edu/thredds/dodsC/hioos/model/atm/ncep_pac/NCEP_Pacific_Atmospheric_Model_best.ncd"
+    - ncdump -h "http://oos.soest.hawaii.edu/thredds/dodsC/usgs_dem_10m_tinian"
+    - ncdump -h "https://www.ncei.noaa.gov/thredds/dodsC/namanl/201609/20160929/namanl_218_20160929_1800_006.grb"
+
+about:
+  home: http://www.unidata.ucar.edu/software/netcdf/
+  license: MIT
+  license_file: COPYRIGHT
+  summary: 'Libraries and data formats that support array-oriented scientific data.'
+
+extra:
+  recipe-maintainers:
+    - groutr
+    - kmuehlbauer
+    - ocefpaf
+    - mingwandroid
+    - msarahan

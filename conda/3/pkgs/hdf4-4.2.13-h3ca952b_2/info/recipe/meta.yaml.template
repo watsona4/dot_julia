@@ -1,0 +1,67 @@
+{% set version = "4.2.13" %}
+
+package:
+    name: hdf4
+    version: {{ version }}
+
+source:
+    fn: hdf-{{ version }}.tar.bz2
+    url: http://www.hdfgroup.org/ftp/HDF/HDF_Current/src/hdf-{{ version }}.tar.bz2
+    sha256: 55d3a42313bda0aba7b0463687caf819a970e0ba206f5ed2c23724f80d2ae0f3
+    patches:
+        - max_files.patch
+
+build:
+    number: 2
+    run_exports:
+        # change SONAMEs with bugfix rev.
+        #    https://abi-laboratory.pro/tracker/timeline/hdf5/
+        - {{ pin_subpackage('hdf4', max_pin='x.x.x') }}
+
+requirements:
+    build:
+        - cmake  # [win]
+        - bison  # [unix]
+        - flex  # [unix]
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+    host:
+        - msinttypes  # [win and vc<14]
+        - zlib
+        - jpeg
+    # run:
+        # zlib removed here because zlib package has run_exports for itself
+        #    https://github.com/AnacondaRecipes/hdf5-feedstock/pull/1/files#diff-e178b687b10a71a3348107ae3154e44cR31
+        # this req isn't actually necessary, as run_exports will add it.  Left here for reference.
+        # - zlib 1.2.*
+        # jpeg removed here because package has run_exports for itself
+        #    https://github.com/AnacondaRecipes/jpeg-feedstock/pull/1
+        # this req isn't actually necessary, as run_exports will add it.  Left here for reference.
+        #- jpeg 9*
+
+test:
+    commands:
+        - hdiff -V  # [unix]
+        - h4_ncgen -V  # [unix]
+        - h4_ncdump -V  # [unix]
+        - test -f ${PREFIX}/lib/libdf.a  # [unix]
+        - test -f ${PREFIX}/lib/libmfhdf.a  # [unix]
+        - test -f ${PREFIX}/lib/libdf.so  # [linux]
+        - test -f ${PREFIX}/lib/libdf.dylib  # [osx]
+        - test -f ${PREFIX}/lib/libmfhdf.so  # [linux]
+        - test -f ${PREFIX}/lib/libmfhdf.dylib  # [osx]
+        #- conda inspect linkages -p $PREFIX hdf4  # [not win]
+        #- conda inspect objects -p $PREFIX hdf4  # [osx]
+
+about:
+    home: http://www.hdfgroup.org/HDF4/
+    license: BSD 3-Clause
+    summary: 'Library and multi-object file format for storing and managing data between machines.'
+    license_family: BSD
+    license_file: COPYING
+
+extra:
+    recipe-maintainers:
+        - groutr
+        - msarahan
+        - ocefpaf

@@ -1,0 +1,23 @@
+{
+  "build": "h14c3975_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.2.0"
+  ],
+  "features": "",
+  "fn": "lz4-c-1.8.1.2-h14c3975_0.conda",
+  "legacy_bz2_md5": "b199291ab9eaee14cd04199c3f0ba246",
+  "legacy_bz2_size": 161619,
+  "license": "BSD 2-clause",
+  "md5": "19dfb87e3259ebded29f87e4b60ac2df",
+  "name": "lz4-c",
+  "sha256": "cbfbcdf77b6198ed3182d6eae5bc62abc519b3edb1fe6f374fcb65d00fa78779",
+  "size": 132801,
+  "subdir": "linux-64",
+  "timestamp": 1524590233890,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/lz4-c-1.8.1.2-h14c3975_0.conda",
+  "version": "1.8.1.2"
+}

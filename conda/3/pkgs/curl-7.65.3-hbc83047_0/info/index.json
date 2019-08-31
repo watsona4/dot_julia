@@ -1,0 +1,19 @@
+{
+  "arch": "x86_64",
+  "build": "hbc83047_0",
+  "build_number": 0,
+  "depends": [
+    "krb5 >=1.16.1,<1.17.0a0",
+    "libcurl 7.65.3 h20c2e04_0",
+    "libgcc-ng >=7.3.0",
+    "libssh2 >=1.8.2,<2.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "license": "MIT/X derivate (http://curl.haxx.se/docs/copyright.html)",
+  "license_family": "MIT",
+  "name": "curl",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1566828859652,
+  "version": "7.65.3"
+}

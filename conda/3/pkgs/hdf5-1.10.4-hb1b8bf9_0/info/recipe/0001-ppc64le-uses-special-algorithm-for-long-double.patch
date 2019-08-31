@@ -1,0 +1,44 @@
+From 97cc937382f7a8393c9b4862eb67c50b16f21190 Mon Sep 17 00:00:00 2001
+From: Jonathan Helmus <jjhelmus@gmail.com>
+Date: Tue, 6 Feb 2018 15:00:37 -0500
+Subject: [PATCH 1/2] ppc64le uses special algorithm for long double
+
+---
+ config/cmake/ConversionTests.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+diff --git a/config/cmake/ConversionTests.c b/config/cmake/ConversionTests.c
+index 082dbd4..c86caf7 100644
+--- a/config/cmake/ConversionTests.c
++++ b/config/cmake/ConversionTests.c
+@@ -23,6 +23,13 @@ int main(void)
+     unsigned char       s2[8];
+     int                 ret = 1;
+ 
++    #if defined __powerpc64__ && defined _LITTLE_ENDIAN
++        /* Don't bother checking on ppc64le, we know it'll work, and
++         * that what hdf5 calls 'special algorithm' simply is
++         * IBM ldouble 128 (i.e. two seperately scaled doubles).
++         * The check below assumes big endian.  */
++         ret = 0;
++    #endif
+     if(sizeof(long double) == 16 && sizeof(long) == 8) {
+ 	/*make sure the long double type has 16 bytes in size and
+ 	 * 11 bits of exponent.  If it is,
+@@ -83,6 +90,13 @@ int main(void)
+     unsigned char       s[16];
+     int                 flag=0, ret=1;
+ 
++    #if defined __powerpc64__ && defined _LITTLE_ENDIAN
++        /* Don't bother checking on ppc64le, we know it'll work, and
++         * that what hdf5 calls 'special algorithm' simply is
++         * IBM ldouble 128 (i.e. two seperately scaled doubles).
++         * The check below assumes big endian.  */
++         ret = 0;
++    #endif
+     /*Determine if long double has 16 byte in size, 11 bit exponent, and
+      *the bias is 0x3ff */
+     if(sizeof(long double) == 16) {
+-- 
+1.8.3.1
+

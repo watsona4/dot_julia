@@ -1,0 +1,56 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/libssh2-1.8.2-on-linux_canary, last modified Mon Apr 22 18:19:29 2019
+# ------------------------------------------------
+
+package:
+    name: libssh2
+    version: 1.8.2
+source:
+    sha256: 088307d9f6b6c4b8c13f34602e8ff65d21c2dc4d55284dfe15d502c4ee190d67
+    url: https://www.libssh2.org/download/libssh2-1.8.2.tar.gz
+build:
+    number: '0'
+    run_exports:
+        - libssh2 >=1.8.2,<2.0a0
+    string: h1ba5d50_0
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_6
+        - cmake-binary 3.9.1 h2f8e2a0_1
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_6
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - make 4.2.1 h1bed415_1
+    host:
+        - ca-certificates 2019.1.23 0
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - openssl 1.1.1b h7b6447c_1
+    run:
+        - libgcc-ng >=7.3.0
+        - openssl >=1.1.1b,<1.1.2a
+test:
+    commands:
+        - test -f $PREFIX/include/libssh2.h
+        - test -f $PREFIX/include/libssh2_publickey.h
+        - test -f $PREFIX/include/libssh2_sftp.h
+        - test -f $PREFIX/lib/libssh2.a
+        - test -f $PREFIX/lib/libssh2${SHLIB_EXT}
+about:
+    description: 'libssh2 is a library implementing the SSH2 protocol, available under
+        the revised BSD license.
+
+        '
+    dev_url: https://github.com/libssh2/libssh2
+    home: https://www.libssh2.org/
+    license: BSD-3-Clause
+    license_family: BSD
+    license_file: COPYING
+    summary: the SSH library
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - shadowwalkersb

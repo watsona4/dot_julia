@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "h49e0be7_2",
+  "build_number": 2,
+  "depends": [
+    "libgcc-ng 7.2.0.*"
+  ],
+  "license": "GPL v2+",
+  "license_family": "GPL2",
+  "name": "lzo",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1511294307364,
+  "version": "2.10"
+}

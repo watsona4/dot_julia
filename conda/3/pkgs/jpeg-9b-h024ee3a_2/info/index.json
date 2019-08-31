@@ -1,0 +1,14 @@
+{
+  "arch": "x86_64",
+  "build": "h024ee3a_2",
+  "build_number": 2,
+  "depends": [
+    "libgcc-ng 7.2.0.*"
+  ],
+  "license": "Custom free software license",
+  "name": "jpeg",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1510201951443,
+  "version": "9b"
+}

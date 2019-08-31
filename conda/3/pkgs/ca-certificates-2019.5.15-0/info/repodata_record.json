@@ -1,0 +1,21 @@
+{
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "ca-certificates-2019.5.15-0.conda",
+  "legacy_bz2_md5": "9917c4b947d0ab86ef21d1c12892c801",
+  "legacy_bz2_size": 136399,
+  "license": "ISC",
+  "md5": "d3b5e5a33d42fc8e1906dad3aa936c0e",
+  "name": "ca-certificates",
+  "sha256": "37efbe76380bd9297b47d96ad9aec45df28445c536ab69bcea7442c2cd4e8995",
+  "size": 128906,
+  "subdir": "linux-64",
+  "timestamp": 1559573053639,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/ca-certificates-2019.5.15-0.conda",
+  "version": "2019.5.15"
+}

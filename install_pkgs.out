@@ -50215,3 +50215,62 @@ Installing Cliffords
   [276b0191] + Cliffords v0.5.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [276b0191] + Cliffords v0.5.0
+[master 646f557ef] added package Cliffords
+ 17 files changed, 889 insertions(+)
+ create mode 100644 packages/Cliffords/AHnQD/.travis.yml
+ create mode 100644 packages/Cliffords/AHnQD/LICENSE.md
+ create mode 100644 packages/Cliffords/AHnQD/README.md
+ create mode 100644 packages/Cliffords/AHnQD/REQUIRE
+ create mode 100644 packages/Cliffords/AHnQD/src/C1.jl
+ create mode 100644 packages/Cliffords/AHnQD/src/C2.jl
+ create mode 100644 packages/Cliffords/AHnQD/src/Cliffords.jl
+ create mode 100644 packages/Cliffords/AHnQD/src/Paulis.jl
+ create mode 100644 packages/Cliffords/AHnQD/test/perf.jl
+ create mode 100644 packages/Cliffords/AHnQD/test/rb.jl
+ create mode 100644 packages/Cliffords/AHnQD/test/runtests.jl
+ create mode 100644 packages/Cliffords/AHnQD/test/testcliffords.jl
+ create mode 100644 packages/Cliffords/AHnQD/test/testpaulis.jl
+To https://github.com/watsona4/dot_julia.git
+   f3b1d4d37..646f557ef  master -> master
+Progress:  13%|█████▎                                   |  ETA: 3 days, 8:11:37[K
+Installing ClimateTools
+ Resolving package versions...
+ Installed Variography ────────────── v0.3.6
+ Installed KrigingEstimators ──────── v0.2.3
+ Installed NCDatasets ─────────────── v0.9.2
+ Installed NetCDF ─────────────────── v0.8.0
+ Installed CondaBinDeps ───────────── v0.1.0
+ Installed GeoStatsBase ───────────── v0.4.3
+ Installed PyPlot ─────────────────── v2.8.1
+ Installed Shapefile ──────────────── v0.5.0
+ Installed InverseDistanceWeighting ─ v0.2.2
+ Installed GeoStats ───────────────── v0.9.0
+ Installed GeoStatsDevTools ───────── v0.4.5
+ Installed ClimateTools ───────────── v0.14.4
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [4f4ee721] + ClimateTools v0.14.4
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [4f4ee721] + ClimateTools v0.14.4
+  [a9693cdc] + CondaBinDeps v0.1.0
+  [dcc97b0b] + GeoStats v0.9.0
+  [323cb8eb] + GeoStatsBase v0.4.3
+  [19e549d1] + GeoStatsDevTools v0.4.5
+  [6a8e3230] + InverseDistanceWeighting v0.2.2
+  [d293930c] + KrigingEstimators v0.2.3
+  [85f8d34a] + NCDatasets v0.9.2
+  [30363a11] + NetCDF v0.8.0
+  [d330b81b] + PyPlot v2.8.1
+  [8e980c4a] + Shapefile v0.5.0
+  [04a0146e] + Variography v0.3.6
+  Building NCDatasets ──→ `~/.julia/packages/NCDatasets/P5zq1/deps/build.log`
+  Building NetCDF ──────→ `~/.julia/packages/NetCDF/wnKH9/deps/build.log`
+  Building ClimateTools → `~/.julia/packages/ClimateTools/rbXMl/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building PyCall ──────────→ `~/.julia/packages/PyCall/ttONZ/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+  Building NCDatasets ──────→ `~/.julia/packages/NCDatasets/P5zq1/deps/build.log`
+  Building NetCDF ──────────→ `~/.julia/packages/NetCDF/wnKH9/deps/build.log`
+  Building ClimateTools ────→ `~/.julia/packages/ClimateTools/rbXMl/deps/build.log`

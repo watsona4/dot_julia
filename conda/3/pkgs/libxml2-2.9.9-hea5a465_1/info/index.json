@@ -1,0 +1,17 @@
+{
+  "arch": "x86_64",
+  "build": "hea5a465_1",
+  "build_number": 1,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "xz >=5.2.4,<6.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "libxml2",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1561393276600,
+  "version": "2.9.9"
+}

@@ -1,0 +1,168 @@
+{"_url": "file:///opt/conda/conda-bld/linux-64/", "_mod": "Mon, 22 Jul 2019 19:14:15 GMT", 
+  "info": {
+    "subdir": "linux-64"
+  },
+  "packages": {
+    "anaconda-navigator-1.9.7-py27_0.tar.bz2": {
+      "build": "py27_0",
+      "build_number": 0,
+      "depends": [
+        "anaconda-client >=1.6.14",
+        "chardet",
+        "pillow",
+        "psutil",
+        "pyqt >=5.6,<6.0a0",
+        "python >=2.7,<2.8.0a0",
+        "pyyaml",
+        "qtpy >=1.4.1",
+        "requests",
+        "setuptools"
+      ],
+      "license": "proprietary - Continuum Analytics, Inc.",
+      "license_family": "Proprietary",
+      "md5": "e1d6d7aa44186fe05ab8eb53e391d870",
+      "name": "anaconda-navigator",
+      "sha256": "399f44e6f44e966f077b8ecf371ae1cb98c3c517355ee067136f812ee54de7b0",
+      "size": 4994675,
+      "subdir": "linux-64",
+      "timestamp": 1553808090876,
+      "version": "1.9.7"
+    },
+    "anaconda-navigator-1.9.7-py36_0.tar.bz2": {
+      "build": "py36_0",
+      "build_number": 0,
+      "depends": [
+        "anaconda-client >=1.6.14",
+        "chardet",
+        "pillow",
+        "psutil",
+        "pyqt >=5.6,<6.0a0",
+        "python >=3.6,<3.7.0a0",
+        "pyyaml",
+        "qtpy >=1.4.1",
+        "requests",
+        "setuptools"
+      ],
+      "license": "proprietary - Continuum Analytics, Inc.",
+      "license_family": "Proprietary",
+      "md5": "c3bd7a2a50c5da7de9fcb6061c0817dd",
+      "name": "anaconda-navigator",
+      "sha256": "556c2c1a622006177218590f956319731b40be32d16798915c6c93517e5527e0",
+      "size": 4947152,
+      "subdir": "linux-64",
+      "timestamp": 1553807898596,
+      "version": "1.9.7"
+    },
+    "anaconda-navigator-1.9.7-py37_0.tar.bz2": {
+      "build": "py37_0",
+      "build_number": 0,
+      "depends": [
+        "anaconda-client >=1.6.14",
+        "chardet",
+        "pillow",
+        "psutil",
+        "pyqt >=5.6,<6.0a0",
+        "python >=3.7,<3.8.0a0",
+        "pyyaml",
+        "qtpy >=1.4.1",
+        "requests",
+        "setuptools"
+      ],
+      "license": "proprietary - Continuum Analytics, Inc.",
+      "license_family": "Proprietary",
+      "md5": "5926c777f5c22a31d8d339aced871cb8",
+      "name": "anaconda-navigator",
+      "sha256": "69f07e2c4205908569d5eb6eb27d3bf99c749ebc642d10f427aeb38b50dfbf95",
+      "size": 4991346,
+      "subdir": "linux-64",
+      "timestamp": 1553807946513,
+      "version": "1.9.7"
+    },
+    "conda-4.7.10-py27_0.tar.bz2": {
+      "build": "py27_0",
+      "build_number": 0,
+      "constrains": [
+        "conda-build >=3",
+        "conda-env >=2.6",
+        "cytoolz >=0.8.1",
+        "setuptools >=31.0.1"
+      ],
+      "depends": [
+        "conda-package-handling >=1.3.0",
+        "enum34",
+        "futures >=3.0.0",
+        "pycosat >=0.6.3",
+        "pyopenssl >=16.2.0",
+        "python >=2.7,<2.8.0a0",
+        "requests >=2.18.4,<3",
+        "ruamel_yaml >=0.11.14,<0.16",
+        "setuptools >=31.0.1"
+      ],
+      "license": "BSD 3-Clause",
+      "md5": "2ee1aee911d816b9886f634b290d1922",
+      "name": "conda",
+      "sha256": "d01a94f5d48761a45e153432c24fdf0da6f2d5c17862a35f2cbbfd0e7cc58551",
+      "size": 3141430,
+      "subdir": "linux-64",
+      "timestamp": 1563566243809,
+      "version": "4.7.10"
+    },
+    "conda-4.7.10-py36_0.tar.bz2": {
+      "build": "py36_0",
+      "build_number": 0,
+      "constrains": [
+        "conda-build >=3",
+        "conda-env >=2.6",
+        "cytoolz >=0.8.1",
+        "setuptools >=31.0.1"
+      ],
+      "depends": [
+        "conda-package-handling >=1.3.0",
+        "pycosat >=0.6.3",
+        "pyopenssl >=16.2.0",
+        "python >=3.6,<3.7.0a0",
+        "requests >=2.18.4,<3",
+        "ruamel_yaml >=0.11.14,<0.16",
+        "setuptools >=31.0.1"
+      ],
+      "license": "BSD 3-Clause",
+      "md5": "c95c0d75f8a2a3f27af77aaccc441ca1",
+      "name": "conda",
+      "sha256": "19380a5fa3012478c804926d8dc8a5698fc8057b3324645b85bd940966c7cca4",
+      "size": 3134561,
+      "subdir": "linux-64",
+      "timestamp": 1563566230627,
+      "version": "4.7.10"
+    },
+    "conda-4.7.10-py37_0.tar.bz2": {
+      "build": "py37_0",
+      "build_number": 0,
+      "constrains": [
+        "conda-build >=3",
+        "conda-env >=2.6",
+        "cytoolz >=0.8.1",
+        "setuptools >=31.0.1"
+      ],
+      "depends": [
+        "conda-package-handling >=1.3.0",
+        "pycosat >=0.6.3",
+        "pyopenssl >=16.2.0",
+        "python >=3.7,<3.8.0a0",
+        "requests >=2.18.4,<3",
+        "ruamel_yaml >=0.11.14,<0.16",
+        "setuptools >=31.0.1"
+      ],
+      "license": "BSD 3-Clause",
+      "md5": "72883237e75272727e18aa1e028c3491",
+      "name": "conda",
+      "sha256": "7d53b2b060b10c35c23895ec6fb630dc97acd843cb40f18d553024c2fe65efa0",
+      "size": 3148022,
+      "subdir": "linux-64",
+      "timestamp": 1563566210774,
+      "version": "4.7.10"
+    }
+  },
+  "packages.conda": {},
+  "removed": [],
+  "repodata_version": 1
+}

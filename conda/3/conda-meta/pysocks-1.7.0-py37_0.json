@@ -1,0 +1,47 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/pysocks-1.7.0-py37_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/PySocks-1.7.0.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/PySocks-1.7.0.dist-info/LICENSE",
+    "lib/python3.7/site-packages/PySocks-1.7.0.dist-info/METADATA",
+    "lib/python3.7/site-packages/PySocks-1.7.0.dist-info/RECORD",
+    "lib/python3.7/site-packages/PySocks-1.7.0.dist-info/WHEEL",
+    "lib/python3.7/site-packages/PySocks-1.7.0.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/__pycache__/socks.cpython-37.pyc",
+    "lib/python3.7/site-packages/__pycache__/sockshandler.cpython-37.pyc",
+    "lib/python3.7/site-packages/socks.py",
+    "lib/python3.7/site-packages/sockshandler.py"
+  ],
+  "fn": "pysocks-1.7.0-py37_0.conda",
+  "legacy_bz2_md5": "c5e46175a912cae8a17a2b21e7e46692",
+  "legacy_bz2_size": 30163,
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/pysocks-1.7.0-py37_0",
+    "type": 1
+  },
+  "md5": "8333fff58092305dbb90463e8d76a1c8",
+  "name": "pysocks",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/pysocks-1.7.0-py37_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "pysocks==1.7.0=py37_0",
+  "sha256": "934b72c2b4243f2eb903fa22f01f27eff0f1921697f3cc1f820e2c48a9b25f90",
+  "size": 31384,
+  "subdir": "linux-64",
+  "timestamp": 1557856209609,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/pysocks-1.7.0-py37_0.conda",
+  "version": "1.7.0"
+}

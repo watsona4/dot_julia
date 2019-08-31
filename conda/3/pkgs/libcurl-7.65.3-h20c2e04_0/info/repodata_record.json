@@ -1,0 +1,28 @@
+{
+  "arch": "x86_64",
+  "build": "h20c2e04_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "krb5 >=1.16.1,<1.17.0a0",
+    "libgcc-ng >=7.3.0",
+    "libssh2 >=1.8.2,<2.0a0",
+    "openssl >=1.1.1c,<1.1.2a",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "features": "",
+  "fn": "libcurl-7.65.3-h20c2e04_0.tar.bz2",
+  "license": "MIT/X derivate (http://curl.haxx.se/docs/copyright.html)",
+  "license_family": "MIT",
+  "md5": "bfff1068b78dcf8248e087cbeaddb620",
+  "name": "libcurl",
+  "platform": "linux",
+  "sha256": "4b5498e04d2a4d28a261807a0fc4421b21aee9236aa42e1fbeeb1360ff6be364",
+  "size": 602253,
+  "subdir": "linux-64",
+  "timestamp": 1566828842344,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libcurl-7.65.3-h20c2e04_0.tar.bz2",
+  "version": "7.65.3"
+}

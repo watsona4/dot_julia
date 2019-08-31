@@ -1,0 +1,4 @@
+*.jl.mem
+docs/build/
+/docs/Manifest.toml
+/test/coverage/Manifest.toml

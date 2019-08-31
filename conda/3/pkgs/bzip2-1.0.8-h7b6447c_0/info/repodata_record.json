@@ -1,0 +1,22 @@
+{
+  "build": "h7b6447c_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "bzip2-1.0.8-h7b6447c_0.tar.bz2",
+  "license": "bzip2",
+  "license_family": "BSD",
+  "md5": "f52e60deb7f4c82821be9a868e889348",
+  "name": "bzip2",
+  "sha256": "168c2fc4d5899ee70e85fadc998e00827e1b856a6fc4a402ed465cd7c320d19f",
+  "size": 107105,
+  "subdir": "linux-64",
+  "timestamp": 1563219611337,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/bzip2-1.0.8-h7b6447c_0.tar.bz2",
+  "version": "1.0.8"
+}

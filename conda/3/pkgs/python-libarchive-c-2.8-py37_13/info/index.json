@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "py37_13",
+  "build_number": 13,
+  "depends": [
+    "libarchive",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "license": "CC0-1.0",
+  "name": "python-libarchive-c",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1565112746113,
+  "version": "2.8"
+}

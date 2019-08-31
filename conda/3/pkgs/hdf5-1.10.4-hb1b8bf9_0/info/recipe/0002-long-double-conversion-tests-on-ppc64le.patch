@@ -1,0 +1,56 @@
+From c7ec51bf36f986d2ec98e7b2743724821cb3d220 Mon Sep 17 00:00:00 2001
+From: Jonathan Helmus <jjhelmus@gmail.com>
+Date: Tue, 6 Feb 2018 15:01:45 -0500
+Subject: [PATCH 2/2] long double conversion tests on ppc64le
+
+---
+ test/dt_arith.c | 26 ++++++++++++++++++++++++--
+ 1 file changed, 24 insertions(+), 2 deletions(-)
+
+diff --git a/test/dt_arith.c b/test/dt_arith.c
+index c7f2986..528d34f 100644
+--- a/test/dt_arith.c
++++ b/test/dt_arith.c
+@@ -3051,7 +3051,18 @@ test_conv_flt_1 (const char *name, int run_test, hid_t src, hid_t dst)
+                         buf, saved, nelmts);
+ #if H5_SIZEOF_LONG_DOUBLE!=H5_SIZEOF_DOUBLE && H5_SIZEOF_LONG_DOUBLE!=0
+             } else if(src_type == FLT_LDOUBLE) {
+-                 INIT_FP_SPECIAL(src_size, src_nbits, sendian, LDBL_MANT_DIG, dst_size,
++                size_t mant_dig = LDBL_MANT_DIG;
++                if (mant_dig >= src_nbits) {
++                    /* This happens for IBM long double in little endian.
++                       The macro LDBL_MANT_DIG says 106 mantissa bits, but the
++                       HDF5 detection code actually represents it as a normal 64bit
++                       double (52 bit mantissa) with the upper double being
++                       unspec bits (which is sort of okay as the testsuite
++                       wouldn't deal with that format correctly anyway).  So
++                       override the mantissa size.  */
++                    mant_dig = 52;
++                }
++                 INIT_FP_SPECIAL(src_size, src_nbits, sendian, mant_dig, dst_size,
+                         buf, saved, nelmts);
+ #endif
+             } else
+@@ -3711,7 +3722,18 @@ test_conv_int_fp(const char *name, int run_test, hid_t src, hid_t dst)
+             INIT_FP_DENORM(long double, LDBL_MANT_DIG, src_size, src_nbits, sendian, dst_size,
+                     buf, saved, nelmts);
+         } else {
+-            INIT_FP_SPECIAL(src_size, src_nbits, sendian, LDBL_MANT_DIG, dst_size, buf, saved, nelmts);
++           size_t mant_dig = LDBL_MANT_DIG;
++           if (mant_dig >= src_nbits) {
++               /* This happens for IBM long double in little endian.
++                  The macro LDBL_MANT_DIG says 106 mantissa bits, but the
++                  HDF5 detection code actually represents it as a normal 64bit
++                  double (52 bit mantissa) with the upper double being
++                  unspec bits (which is sort of okay as the testsuite
++                  wouldn't deal with that format correctly anyway).  So
++                  override the mantissa size.  */
++               mant_dig = 52;
++           }
++            INIT_FP_SPECIAL(src_size, src_nbits, sendian, mant_dig, dst_size, buf, saved, nelmts);
+         }
+ #endif
+     } else
+-- 
+1.8.3.1
+

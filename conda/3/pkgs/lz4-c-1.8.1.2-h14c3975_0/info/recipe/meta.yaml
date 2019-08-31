@@ -1,0 +1,79 @@
+# This file created by conda-build 3.8.0
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/lz4-c-1.8.1.2-on-linux_64, last modified Mon Apr 23 21:03:03 2018
+# ------------------------------------------------
+
+package:
+    name: lz4-c
+    version: 1.8.1.2
+source:
+    fn: lz4-1.8.1.2.tar.gz
+    patches:
+        - 0001-Do-not-build-tests-binaries-on-VS-project.patch
+        - 0002-CMake-include-xxhash.c-in-LZ4_CLI_SOURCES-it-is-buil.patch
+        - 0003-CMake-Add-LZ4_DLL_EXPORT-1-LZ4_DLL_IMPORT-1-to-compi.patch
+        - 0004-CMake-VC9-disable-various-warnings-that-trip-up-Wind.patch
+        - 0005-CMake-Add-datagen-executable.patch
+        - 0006-CMake-Set-SHARED-STATIC-IMPORT_LIBRARY_PREFIXes-for-.patch
+        - 0007-Makefile-LDFLAGS-must-appear-after-inputs-when-linking.patch
+        - 0008-CMake-link-the-CLI-programs-statically-to-the-lib-co.patch
+    sha256: 12f3a9e776a923275b2dc78ae138b4967ad6280863b77ff733028ce89b8123f9
+    url: https://github.com/lz4/lz4/archive/v1.8.1.2.tar.gz
+build:
+    number: '0'
+    run_exports:
+        - lz4-c >=1.8.1.2,<1.9.0a0
+    string: h14c3975_0
+requirements:
+    build:
+        - binutils_impl_linux-64 2.28.1 had2808c_3
+        - binutils_linux-64 7.2.0 26
+        - gcc_impl_linux-64 7.2.0 habb00fd_3
+        - gcc_linux-64 7.2.0 26
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - make 4.2.1 h1bed415_1
+        - patch 2.7.6 h1bed415_0
+    run:
+        - libgcc-ng >=7.2.0
+test:
+    commands:
+        - lz4 -h
+        - lz4c -h
+        - lz4cat -h
+        - unlz4 -h
+        - test -f ${PREFIX}/include/lz4.h
+        - test -f ${PREFIX}/include/lz4hc.h
+        - test -f ${PREFIX}/include/lz4frame.h
+        - test -f ${PREFIX}/lib/liblz4.a
+        - test -f ${PREFIX}/lib/liblz4.so
+        - test -f ${PREFIX}/lib/pkgconfig/liblz4.pc
+        - pkg-config --cflags --libs liblz4
+    requires:
+        - pkg-config
+about:
+    description: 'LZ4 is lossless compression algorithm, providing compression speed
+        at 400
+
+        MB/s per core (0.16 Bytes/cycle). It features an extremely fast decoder,
+
+        with speed in multiple GB/s per core (0.71 Bytes/cycle). A high compression
+
+        derivative, called LZ4_HC, is available, trading customizable CPU time for
+
+        compression ratio. LZ4 library is provided as open source software using a
+
+        BSD license.
+
+        '
+    home: https://www.lz4.org
+    license: BSD 2-clause
+    license_file: lib/LICENSE
+    summary: Extremely Fast Compression algorithm
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - mingwandroid
+        - rmax
+        - wesm

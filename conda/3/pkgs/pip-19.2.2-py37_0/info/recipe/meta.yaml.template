@@ -1,0 +1,49 @@
+{% set version = "19.2.2" %}
+
+package:
+  name: pip
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/p/pip/pip-{{ version }}.tar.gz
+  sha256: e05103825871e210d50a44c7e448587b0ed99dd775d3ef586304c58f40224a53
+
+build:
+  number: 0
+  disable_pip: True
+  entry_points:
+    - pip = pip._internal:main
+
+requirements:
+  host:
+    - python
+    - setuptools
+  run:
+    - python
+    - setuptools
+    - wheel
+
+test:
+  commands:
+    - pip -h
+    - pip list
+  imports:
+    - pip
+
+about:
+  home: https://pip.pypa.io/en/stable/
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: PyPA recommended tool for installing Python packages
+  doc_url: https://pip.pypa.io/en/stable/
+  dev_url: https://github.com/pypa/pip
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - jjhelmus
+    - msarahan
+    - pelson
+    - ocefpaf
+    - mingwandroid

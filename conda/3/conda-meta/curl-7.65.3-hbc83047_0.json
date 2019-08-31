@@ -1,0 +1,48 @@
+{
+  "build": "hbc83047_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "krb5 >=1.16.1,<1.17.0a0",
+    "libcurl 7.65.3 h20c2e04_0",
+    "libgcc-ng >=7.3.0",
+    "libssh2 >=1.8.2,<2.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/curl-7.65.3-hbc83047_0",
+  "features": "",
+  "files": [
+    "bin/curl"
+  ],
+  "fn": "curl-7.65.3-hbc83047_0.tar.bz2",
+  "license": "MIT/X derivate (http://curl.haxx.se/docs/copyright.html)",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/curl-7.65.3-hbc83047_0",
+    "type": 1
+  },
+  "md5": "2c1dbe7f877cddfe530107d613af8eee",
+  "name": "curl",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/curl-7.65.3-hbc83047_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/curl",
+        "path_type": "hardlink",
+        "sha256": "8633e71530e4f6608102b05909261fb496eb557150ed00f6257463237480bc02",
+        "sha256_in_prefix": "8633e71530e4f6608102b05909261fb496eb557150ed00f6257463237480bc02",
+        "size_in_bytes": 244768
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "e3f94d793db0f827aa5ba76c4ad1f15e77c70362e5ffee4f70a02436d9f7602a",
+  "size": 144717,
+  "subdir": "linux-64",
+  "timestamp": 1566828859652,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/curl-7.65.3-hbc83047_0.tar.bz2",
+  "version": "7.65.3"
+}

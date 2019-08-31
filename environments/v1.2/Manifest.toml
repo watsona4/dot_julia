@@ -1684,6 +1684,12 @@ git-tree-sha1 = "66c151790e6a47dc6277f40b893469829a19f42c"
 uuid = "276b0191-6968-5de0-98fd-2a81b0f3910d"
 version = "0.5.0"
 
+[[ClimateTools]]
+deps = ["ArgCheck", "AxisArrays", "BinDeps", "Conda", "CondaBinDeps", "Dates", "GeoStats", "Images", "Interpolations", "InverseDistanceWeighting", "IterTools", "Libdl", "NCDatasets", "NaNMath", "NetCDF", "Pkg", "Polynomials", "ProgressMeter", "PyCall", "PyPlot", "Random", "Reexport", "Shapefile", "Statistics", "Test"]
+git-tree-sha1 = "90afaf04e7694514802cc21d93d2d2a2c891161d"
+uuid = "4f4ee721-4970-5af2-8560-6c1d960e3231"
+version = "0.14.4"
+
 [[CloudGraphs]]
 deps = ["Dates", "DocStringExtensions", "Graphs", "JSON", "Mongoc", "Neo4j", "ProtoBuf", "Test", "UUIDs"]
 git-tree-sha1 = "41129bf1af018b49855a846b1b3955cee980bf8a"
@@ -1803,6 +1809,12 @@ deps = ["JSON", "VersionParsing"]
 git-tree-sha1 = "9a11d428dcdc425072af4aea19ab1e8c3e01c032"
 uuid = "8f4d0f93-b110-5947-807f-2305c1781a2d"
 version = "1.3.0"
+
+[[CondaBinDeps]]
+deps = ["BinDeps", "Compat", "Conda", "Libdl"]
+git-tree-sha1 = "3b868935adf4ce2115f5487e789553507739014c"
+uuid = "a9693cdc-2bc8-5703-a9cd-1da358117377"
+version = "0.1.0"
 
 [[Contour]]
 deps = ["LinearAlgebra", "StaticArrays", "Test"]
@@ -2462,6 +2474,24 @@ git-tree-sha1 = "0c0c0bf9c79b10e48aa089e78ac504ebc43db3a0"
 uuid = "cf35fbd7-0cd7-5166-be24-54bfbe79505f"
 version = "0.4.1"
 
+[[GeoStats]]
+deps = ["Distances", "Distributed", "GeoStatsBase", "GeoStatsDevTools", "KrigingEstimators", "LinearAlgebra", "Random", "RecipesBase", "Reexport", "StaticArrays", "Variography"]
+git-tree-sha1 = "2cc75044e88980a21ab95f9c8332988c98823acc"
+uuid = "dcc97b0b-8ce5-5539-9008-bb190f959ef6"
+version = "0.9.0"
+
+[[GeoStatsBase]]
+deps = ["Distributed", "LinearAlgebra", "Parameters", "StaticArrays"]
+git-tree-sha1 = "53831bfb4ed21be5d8caed2a24d3e60b0b44079c"
+uuid = "323cb8eb-fbf6-51c0-afd0-f8fba70507b2"
+version = "0.4.3"
+
+[[GeoStatsDevTools]]
+deps = ["CSV", "DataFrames", "Distances", "Distributions", "GeoStatsBase", "LinearAlgebra", "NearestNeighbors", "Random", "RecipesBase", "Reexport", "StaticArrays", "Statistics", "StatsBase"]
+git-tree-sha1 = "83edef15538ad73cf81a24019866467f71f3d477"
+uuid = "19e549d1-356f-5655-9f3d-c1d6136da705"
+version = "0.4.5"
+
 [[GeometryTypes]]
 deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "2b0bfb379a54bdfcd2942f388f7d045f8952373d"
@@ -2789,6 +2819,12 @@ git-tree-sha1 = "6c9fcd87677231ae293f6806fad928c216ab6658"
 uuid = "524e6230-43b7-53ae-be76-1e9e4d08d11b"
 version = "1.0.0"
 
+[[InverseDistanceWeighting]]
+deps = ["Distances", "GeoStatsBase", "GeoStatsDevTools", "NearestNeighbors", "Reexport", "StaticArrays"]
+git-tree-sha1 = "2cd0e12ae1703e59173c62f71aa154929f87a95c"
+uuid = "6a8e3230-34bb-5a86-b9da-9f7447a06da5"
+version = "0.2.2"
+
 [[InvertedIndices]]
 deps = ["Test"]
 git-tree-sha1 = "15732c475062348b0165684ffe28e85ea8396afc"
@@ -2911,6 +2947,12 @@ version = "1.2.3"
 deps = ["JSExpr", "JSON", "Observables", "Test", "WebIO"]
 git-tree-sha1 = "53533b51d4b6964eca3065b0834e9f61ed2f7515"
 uuid = "bcebb21b-c2e3-54f8-a781-646b90f6d2cc"
+version = "0.2.3"
+
+[[KrigingEstimators]]
+deps = ["Combinatorics", "LinearAlgebra", "Reexport", "Statistics", "Variography"]
+git-tree-sha1 = "9dc8dd8f25ca0dc41f689085bbd03c944f506aa0"
+uuid = "d293930c-a38c-56c5-8ebb-12008647b47a"
 version = "0.2.3"
 
 [[Krylov]]
@@ -3296,6 +3338,12 @@ git-tree-sha1 = "4b9828e56c9c70a04740f5fc369bd5c65efdbd0a"
 uuid = "39abe10b-433b-5dbd-92d4-e302a9df00cd"
 version = "0.7.0"
 
+[[NCDatasets]]
+deps = ["BinDeps", "Compat", "CondaBinDeps", "DataStructures", "Dates", "Libdl", "Missings", "Printf", "Random"]
+git-tree-sha1 = "7c92182f5d9094d8b46cf27648342954a630f8ec"
+uuid = "85f8d34a-cbdd-5861-8df4-14fed0d494ab"
+version = "0.9.2"
+
 [[NLPModels]]
 deps = ["FastClosures", "ForwardDiff", "LinearAlgebra", "LinearOperators", "Printf", "SparseArrays", "Test"]
 git-tree-sha1 = "8eedfa85d4b3b641b4e5153c175b11bddb12f775"
@@ -3355,6 +3403,12 @@ deps = ["Base64", "DataFrames", "DocStringExtensions", "HTTP", "JSON", "Missings
 git-tree-sha1 = "b8fe8321b0e17ac6f7b0b4f5df628610024acb11"
 uuid = "d2adbeaf-5838-5367-8a2f-e46d570981db"
 version = "2.0.0"
+
+[[NetCDF]]
+deps = ["BinDeps", "CondaBinDeps", "Formatting", "Libdl"]
+git-tree-sha1 = "fce0c7962fb14b8cf2f33ea77885f3b7c7e1485e"
+uuid = "30363a11-5582-574a-97bb-aa9a979735b9"
+version = "0.8.0"
 
 [[NodeJS]]
 deps = ["Test"]
@@ -3605,6 +3659,12 @@ deps = ["Conda", "Dates", "Libdl", "LinearAlgebra", "MacroTools", "Pkg", "Serial
 git-tree-sha1 = "6e5bac1b1faf3575731a6a5b76f638f2389561d3"
 uuid = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 version = "1.91.2"
+
+[[PyPlot]]
+deps = ["Colors", "LaTeXStrings", "PyCall", "Sockets", "Test", "VersionParsing"]
+git-tree-sha1 = "3ea391c3211f799df20396d256cee5c8bd755605"
+uuid = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+version = "2.8.1"
 
 [[QDLDL]]
 deps = ["AMD", "LinearAlgebra", "Random", "SparseArrays", "Test"]
@@ -3858,6 +3918,12 @@ deps = ["InteractiveUtils", "MacroTools", "Test"]
 git-tree-sha1 = "bef11bb6030131bafbcaaf8a3df16b7a72be8b9c"
 uuid = "efcf1570-3423-57d1-acb7-fd33fddbac46"
 version = "0.3.4"
+
+[[Shapefile]]
+deps = ["GeoInterface", "Test"]
+git-tree-sha1 = "b473290218a0087e1f2a8c62c0acc646fb4053d2"
+uuid = "8e980c4a-a4fe-5da2-b3a7-4b4b0353a2f4"
+version = "0.5.0"
 
 [[SharedArrays]]
 deps = ["Distributed", "Mmap", "Random", "Serialization"]
@@ -4295,6 +4361,12 @@ deps = ["DataStructures", "Random", "RecipesBase", "Test"]
 git-tree-sha1 = "37f692be32132346b7e867ac7565a01b7a1592be"
 uuid = "98cad3c8-aec3-5f06-8e41-884608649ab7"
 version = "0.5.1"
+
+[[Variography]]
+deps = ["Distances", "GeoStatsBase", "GeoStatsDevTools", "Optim", "Parameters", "Printf", "RecipesBase", "SpecialFunctions", "StaticArrays", "Statistics"]
+git-tree-sha1 = "fcb088fefaa47354b517004698b0db79a96ad592"
+uuid = "04a0146e-e6df-5636-8d7f-62fa9eb0b20c"
+version = "0.3.6"
 
 [[VaxData]]
 deps = ["InteractiveUtils", "Test"]

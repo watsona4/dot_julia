@@ -1,0 +1,24 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "features": "",
+  "fn": "pysocks-1.7.0-py37_0.conda",
+  "legacy_bz2_md5": "c5e46175a912cae8a17a2b21e7e46692",
+  "legacy_bz2_size": 30163,
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "md5": "8333fff58092305dbb90463e8d76a1c8",
+  "name": "pysocks",
+  "sha256": "934b72c2b4243f2eb903fa22f01f27eff0f1921697f3cc1f820e2c48a9b25f90",
+  "size": 31384,
+  "subdir": "linux-64",
+  "timestamp": 1557856209609,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/pysocks-1.7.0-py37_0.conda",
+  "version": "1.7.0"
+}

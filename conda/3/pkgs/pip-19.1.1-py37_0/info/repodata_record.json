@@ -1,0 +1,26 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0",
+    "setuptools",
+    "wheel"
+  ],
+  "features": "",
+  "fn": "pip-19.1.1-py37_0.conda",
+  "legacy_bz2_md5": "7d8801e8724e9bef2b874caef3971a92",
+  "legacy_bz2_size": 1872519,
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "4aa26ede23abe0ada3cc3769bb07e81c",
+  "name": "pip",
+  "sha256": "41f2ff279f08230be7dde7852d20dd110806baf2e0039bea7cb5360d249286a5",
+  "size": 1650040,
+  "subdir": "linux-64",
+  "timestamp": 1557501803017,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/pip-19.1.1-py37_0.conda",
+  "version": "19.1.1"
+}

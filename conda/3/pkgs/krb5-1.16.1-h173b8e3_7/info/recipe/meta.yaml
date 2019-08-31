@@ -1,0 +1,75 @@
+# This file created by conda-build 3.15.1
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/krb5-1.16.1-on-linux_64, last modified Fri Oct 26 21:22:04 2018
+# ------------------------------------------------
+
+package:
+    name: krb5
+    version: 1.16.1
+source:
+    patches:
+        - escape_curly_braces.patch
+    sha256: d46a676bd6cfe58b8684ffd881bc7ed2c9c90cb43ccfa45a9500530e84aa262b
+    url: https://github.com/krb5/krb5/archive/krb5-1.16.1-final.tar.gz
+build:
+    number: '7'
+    run_exports:
+        - krb5 >=1.16.1,<1.17.0a0
+    string: h173b8e3_7
+requirements:
+    build:
+        - autoconf 2.69 pl526hebd4dad_5
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - bison 3.1 he6710b0_0
+        - ca-certificates 2018.03.07 0
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_3
+        - libedit 3.1.20170329 h6b74fdf_2
+        - libffi 3.2.1 hd88cf55_4
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - m4 1.4.18 h4e445db_0
+        - make 4.2.1 h1bed415_1
+        - ncurses 6.1 hf484d3e_0
+        - openssl 1.1.1 h7b6447c_0
+        - perl 5.26.2 h14c3975_0
+        - pkg-config 0.29.2 h1bed415_8
+        - python 2.7.15 h9bab390_2
+        - readline 7.0 h7b6447c_5
+        - sqlite 3.25.2 h7b6447c_0
+        - tk 8.6.8 hbc83047_0
+        - zlib 1.2.11 ha838bed_2
+    host:
+        - ca-certificates 2018.03.07 0
+        - libedit 3.1.20170329 h6b74fdf_2
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - ncurses 6.1 hf484d3e_0
+        - openssl 1.1.1 h7b6447c_0
+        - tk 8.6.8 hbc83047_0
+        - zlib 1.2.11 ha838bed_2
+    run:
+        - libedit >=3.1.20170329,<3.2.0a0
+        - libedit >=3.1.20170329,<4.0a0
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+        - openssl >=1.1.1,<1.1.2.0a0
+        - tk >=8.6.8,<8.7.0a0
+test:
+    commands:
+        - conda inspect linkages -p $PREFIX krb5
+about:
+    home: http://web.mit.edu/kerberos/
+    license: MIT
+    license_file: doc/notice.rst
+    summary: A network authentication protocol.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - mingwandroid
+        - ocefpaf
+        - pelson

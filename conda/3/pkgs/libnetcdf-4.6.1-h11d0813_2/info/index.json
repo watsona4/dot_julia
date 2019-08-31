@@ -1,0 +1,21 @@
+{
+  "arch": "x86_64",
+  "build": "h11d0813_2",
+  "build_number": 2,
+  "depends": [
+    "bzip2 >=1.0.6,<2.0a0",
+    "curl",
+    "hdf4 >=4.2.13,<4.2.14.0a0",
+    "hdf5 >=1.10.4,<1.10.5.0a0",
+    "jpeg >=9b,<10a",
+    "libcurl >=7.63.0,<8.0a0",
+    "libgcc-ng >=7.3.0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "license": "MIT",
+  "name": "libnetcdf",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1545349808889,
+  "version": "4.6.1"
+}

@@ -1,0 +1,56 @@
+From d152694a8cf1975e18e24dcf6efd815a66d34ff4 Mon Sep 17 00:00:00 2001
+From: Jonathan Helmus <jjhelmus@gmail.com>
+Date: Wed, 17 Jul 2019 10:47:03 -0500
+Subject: [PATCH 2/2] prefer to load libarchive from conda pkg path
+
+Preferentially load libarchive from the platform depend path used in
+the libarchive conda packages. The LIBARCHIVE environment variable can
+be used to override this check by providing an alternative location.
+---
+ libarchive/ffi.py | 23 ++++++++++++++++++++++-
+ 1 file changed, 22 insertions(+), 1 deletion(-)
+
+diff --git a/libarchive/ffi.py b/libarchive/ffi.py
+index 698d6ba..004dc2a 100644
+--- a/libarchive/ffi.py
++++ b/libarchive/ffi.py
+@@ -15,6 +15,7 @@ from ctypes.util import find_library
+ import logging
+ import mmap
+ import os
++import sys
+ 
+ from .exception import ArchiveError
+ 
+@@ -23,7 +24,27 @@ logger = logging.getLogger('libarchive')
+ 
+ page_size = mmap.PAGESIZE
+ 
+-libarchive_path = os.environ.get('LIBARCHIVE') or find_library('archive')
++# libarchive path order:
++# * path specified by the LIBARCHIVE environment variable
++# * platform dependent location used in conda packages
++# * location determined by find_library
++libarchive_path = os.environ.get('LIBARCHIVE')
++if libarchive_path is None:
++    if sys.platform == 'win32':
++        test_path = os.path.join(sys.prefix, 'Library', 'bin', 'archive.dll')
++    elif sys.platform == 'darwin':
++        test_path = os.path.join(sys.prefix, 'lib', 'libarchive.dylib')
++    elif sys.platform.startswith('linux'):
++        test_path = os.path.join(sys.prefix, 'lib', 'libarchive.so')
++    else:
++        test_path = find_library('archive')
++    try:
++        ctypes.cdll.LoadLibrary(test_path)
++        libarchive_path = test_path
++    except:
++        libarchive_path = None
++if libarchive_path is None:
++    libarchive_path = find_library('archive')
+ libarchive = ctypes.cdll.LoadLibrary(libarchive_path)
+ 
+ 
+-- 
+2.17.1
+

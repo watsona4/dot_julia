@@ -1,0 +1,52 @@
+# This file created by conda-build 3.18.7
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/python-libarchive-c-2.8-python_3.7-on-linux_64, last modified Wed Jul 17 15:55:57 2019
+# ------------------------------------------------
+
+package:
+    name: python-libarchive-c
+    version: '2.8'
+source:
+    fn: python-libarchive-c-2.8.tar.gz
+    patches:
+        - 0001-Add-zstd-support.patch
+        - 0002-prefer-to-load-libarchive-from-conda-pkg-path.patch
+    sha256: 06d44d5b9520bdac93048c72b7ed66d11a6626da16d2086f9aad079674d8e061
+    url: https://pypi.io/packages/source/l/libarchive-c/libarchive-c-2.8.tar.gz
+build:
+    number: '11'
+    string: py37_11
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - ca-certificates 2019.5.15 0
+        - certifi 2019.6.16 py37_0
+        - libedit 3.1.20181209 hc058e9b_0
+        - libffi 3.2.1 hd88cf55_4
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 he6710b0_1
+        - openssl 1.1.1c h7b6447c_1
+        - python 3.7.3 h0371630_0
+        - readline 7.0 h7b6447c_5
+        - setuptools 41.0.1 py37_0
+        - sqlite 3.29.0 h7b6447c_0
+        - tk 8.6.8 hbc83047_0
+        - xz 5.2.4 h14c3975_4
+        - zlib 1.2.11 h7b6447c_3
+    run:
+        - libarchive
+        - python >=3.7,<3.8.0a0
+test:
+    imports:
+        - libarchive
+about:
+    home: https://github.com/Changaco/python-libarchive-c
+    license: CC0-1.0
+    summary: Python interface to libarchive
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - bollwyvl
+        - mingwandroid

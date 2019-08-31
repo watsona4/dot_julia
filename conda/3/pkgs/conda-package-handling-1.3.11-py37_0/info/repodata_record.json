@@ -1,0 +1,26 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libarchive >=3.3.3",
+    "python >=3.7,<3.8.0a0",
+    "python-libarchive-c",
+    "six",
+    "tqdm"
+  ],
+  "features": "",
+  "fn": "conda-package-handling-1.3.11-py37_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "7ed5219e2302371fabecf9cecd47bae3",
+  "name": "conda-package-handling",
+  "sha256": "9e16c923d70b78c5c5a0447929cbff1335d6c5ee7998def9178217cb421d2101",
+  "size": 266539,
+  "subdir": "linux-64",
+  "timestamp": 1562853266422,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/conda-package-handling-1.3.11-py37_0.tar.bz2",
+  "version": "1.3.11"
+}

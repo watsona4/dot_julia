@@ -1,0 +1,50 @@
+# This file created by conda-build 3.10.9+36.gd10dbde.dirty
+# meta.yaml template originally from:
+# /home/rdonnelly/conda/aggregate/asn1crypto-feedstock/recipe, last modified Fri Apr 13 21:49:08 2018
+# ------------------------------------------------
+
+package:
+    name: asn1crypto
+    version: 0.24.0
+source:
+    fn: asn1crypto-0.24.0.tar.gz
+    sha256: 9d5c20441baf0cb60a4ac34cc447c6c189024b6b4c6cd7877034f4965c464e49
+    url: https://pypi.io/packages/source/a/asn1crypto/asn1crypto-0.24.0.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    string: py37_0
+requirements:
+    host:
+        - ca-certificates 2018.03.07 0
+        - certifi 2018.4.16 py37_0
+        - libedit 3.1.20170329 h6b74fdf_2
+        - libffi 3.2.1 hd88cf55_4
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hf484d3e_0
+        - openssl 1.0.2o h20670df_0
+        - python 3.7.0 hc3d631a_0
+        - readline 7.0 ha6073c6_4
+        - setuptools 39.2.0 py37_0
+        - sqlite 3.24.0 h84994c4_0
+        - tk 8.6.7 hc745277_3
+        - xz 5.2.4 h14c3975_4
+        - zlib 1.2.11 ha838bed_2
+    run:
+        - python >=3.7,<3.8.0a0
+test:
+    imports:
+        - asn1crypto
+about:
+    dev_url: https://github.com/wbond/asn1crypto
+    doc_url: https://github.com/wbond/asn1crypto#documentation
+    home: https://github.com/wbond/asn1crypto
+    license: MIT
+    license_file: LICENSE
+    summary: Python ASN.1 library with a focus on performance and a pythonic API
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jschueller

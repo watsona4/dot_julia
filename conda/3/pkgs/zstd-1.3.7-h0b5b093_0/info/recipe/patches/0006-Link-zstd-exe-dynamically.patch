@@ -1,0 +1,11 @@
+--- build/cmake/programs/CMakeLists.txt.orig	2018-11-02 12:16:53.205835500 -0500
++++ build/cmake/programs/CMakeLists.txt	2018-11-02 12:17:09.111347600 -0500
+@@ -27,7 +27,7 @@
+ ENDIF (MSVC)
+ 
+ ADD_EXECUTABLE(zstd ${PROGRAMS_DIR}/zstdcli.c ${PROGRAMS_DIR}/fileio.c ${PROGRAMS_DIR}/bench.c ${PROGRAMS_DIR}/datagen.c ${PROGRAMS_DIR}/dibio.c ${PlatformDependResources})
+-TARGET_LINK_LIBRARIES(zstd libzstd_static)
++TARGET_LINK_LIBRARIES(zstd libzstd_shared)
+ IF (CMAKE_SYSTEM_NAME MATCHES "(Solaris|SunOS)")
+     TARGET_LINK_LIBRARIES(zstd rt)
+ ENDIF (CMAKE_SYSTEM_NAME MATCHES "(Solaris|SunOS)")

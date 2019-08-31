@@ -1,0 +1,76 @@
+{
+  "build": "h49e0be7_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.2.0"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/lzo-2.10-h49e0be7_2",
+  "features": "",
+  "files": [
+    "include/lzo/lzo1.h",
+    "include/lzo/lzo1a.h",
+    "include/lzo/lzo1b.h",
+    "include/lzo/lzo1c.h",
+    "include/lzo/lzo1f.h",
+    "include/lzo/lzo1x.h",
+    "include/lzo/lzo1y.h",
+    "include/lzo/lzo1z.h",
+    "include/lzo/lzo2a.h",
+    "include/lzo/lzo_asm.h",
+    "include/lzo/lzoconf.h",
+    "include/lzo/lzodefs.h",
+    "include/lzo/lzoutil.h",
+    "lib/liblzo2.a",
+    "lib/liblzo2.so",
+    "lib/liblzo2.so.2",
+    "lib/liblzo2.so.2.0.0",
+    "lib/pkgconfig/lzo2.pc",
+    "libexec/lzo/examples/lzopack",
+    "libexec/lzo/examples/lzotest",
+    "libexec/lzo/examples/simple",
+    "libexec/lzo/examples/testmini",
+    "share/doc/lzo/AUTHORS",
+    "share/doc/lzo/COPYING",
+    "share/doc/lzo/LZO.FAQ",
+    "share/doc/lzo/LZO.TXT",
+    "share/doc/lzo/LZOAPI.TXT",
+    "share/doc/lzo/NEWS",
+    "share/doc/lzo/THANKS"
+  ],
+  "fn": "lzo-2.10-h49e0be7_2.conda",
+  "legacy_bz2_md5": "2e4ca3890ae250e87e130af71dcbc288",
+  "legacy_bz2_size": 320789,
+  "license": "GPL v2+",
+  "license_family": "GPL2",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/lzo-2.10-h49e0be7_2",
+    "type": 1
+  },
+  "md5": "df80b5be9b08b552fb9a4daf9dc68e97",
+  "name": "lzo",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/lzo-2.10-h49e0be7_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/pkgconfig/lzo2.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "1e26097934e2a2e0193fd4b5ce0a6af5c7615d520630fc284d768b588ec1f81a",
+        "sha256_in_prefix": "0e974f5c5b5269cac77c251d107c7bd06f3e6f753f312c2315c6b6ee3e8e8483",
+        "size_in_bytes": 616
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "lzo==2.10=h49e0be7_2",
+  "sha256": "092e96b1b1325f60fbc90a39758f227f03d27da4f847519562efebdde0af4d6e",
+  "size": 186132,
+  "subdir": "linux-64",
+  "timestamp": 1511294307364,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/lzo-2.10-h49e0be7_2.conda",
+  "version": "2.10"
+}

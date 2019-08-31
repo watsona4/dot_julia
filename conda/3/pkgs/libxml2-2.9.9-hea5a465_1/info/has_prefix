@@ -1,0 +1,4 @@
+/opt/anaconda1anaconda2anaconda3 text bin/xml2-config
+/opt/anaconda1anaconda2anaconda3 text lib/cmake/libxml2/libxml2-config.cmake
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libxml-2.0.pc
+/opt/anaconda1anaconda2anaconda3 text lib/xml2Conf.sh

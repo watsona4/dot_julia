@@ -1,0 +1,63 @@
+{
+  "build": "h14c3975_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.2.0"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/lz4-c-1.8.1.2-h14c3975_0",
+  "features": "",
+  "files": [
+    "bin/lz4",
+    "bin/lz4c",
+    "bin/lz4cat",
+    "bin/unlz4",
+    "include/lz4.h",
+    "include/lz4frame.h",
+    "include/lz4frame_static.h",
+    "include/lz4hc.h",
+    "lib/liblz4.a",
+    "lib/liblz4.so",
+    "lib/liblz4.so.1",
+    "lib/liblz4.so.1.8.1",
+    "lib/pkgconfig/liblz4.pc",
+    "share/man/man1/lz4.1",
+    "share/man/man1/lz4c.1",
+    "share/man/man1/lz4cat.1",
+    "share/man/man1/unlz4.1"
+  ],
+  "fn": "lz4-c-1.8.1.2-h14c3975_0.conda",
+  "legacy_bz2_md5": "b199291ab9eaee14cd04199c3f0ba246",
+  "legacy_bz2_size": 161619,
+  "license": "BSD 2-clause",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/lz4-c-1.8.1.2-h14c3975_0",
+    "type": 1
+  },
+  "md5": "19dfb87e3259ebded29f87e4b60ac2df",
+  "name": "lz4-c",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/lz4-c-1.8.1.2-h14c3975_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/pkgconfig/liblz4.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "dbd2fc6dbc50878da9f6ce71f65799b5eeb60348d3b7ba1489518d6d071c3994",
+        "sha256_in_prefix": "a06fc17ab9f2d1c7ebb285b8666c9222a291950221d964c1f0a93a424dde60dc",
+        "size_in_bytes": 517
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "lz4-c==1.8.1.2=h14c3975_0",
+  "sha256": "cbfbcdf77b6198ed3182d6eae5bc62abc519b3edb1fe6f374fcb65d00fa78779",
+  "size": 132801,
+  "subdir": "linux-64",
+  "timestamp": 1524590233890,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/lz4-c-1.8.1.2-h14c3975_0.conda",
+  "version": "1.8.1.2"
+}

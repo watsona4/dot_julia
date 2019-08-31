@@ -1,0 +1,145 @@
+From f6936128f9bd0897269853cf1299fc0deac2125d Mon Sep 17 00:00:00 2001
+From: Ray Donnelly <mingw.android@gmail.com>
+Date: Sat, 12 May 2018 07:17:17 -0500
+Subject: [PATCH 9/9] Add some extra debugging
+
+---
+ libsrc/nc3internal.c |  2 +-
+ libsrc/putget.c      | 21 ++++++++++++++++++++-
+ libsrc/putget.m4     | 20 ++++++++++++++++++++
+ libsrc/var.c         |  7 +++++--
+ 4 files changed, 46 insertions(+), 4 deletions(-)
+
+diff --git a/libsrc/nc3internal.c b/libsrc/nc3internal.c
+index f9130f31..ea13c3d1 100644
+--- a/libsrc/nc3internal.c
++++ b/libsrc/nc3internal.c
+@@ -212,7 +212,7 @@ NC_begins(NC3_INFO* ncp,
+ 		}
+ 		if (first_var == NULL) first_var = *vpp;
+ 
+-#if 0
++#if 1
+ fprintf(stderr, "    VAR %d %s: %ld\n", ii, (*vpp)->name->cp, (long)index);
+ #endif
+                 if( sizeof_off_t == 4 && (index > X_OFF_MAX || index < 0) )
+diff --git a/libsrc/putget.c b/libsrc/putget.c
+index 0d5510ea..eb727808 100644
+--- a/libsrc/putget.c
++++ b/libsrc/putget.c
+@@ -27,6 +27,11 @@
+ #    include <stdio.h>
+ #  endif
+ #endif
++#ifdef _MSC_VER
++#  define PRId64       "I64d"
++#else
++#  define PRId64       "lld"
++#endif
+ 
+ 
+ #undef MIN  /* system may define MIN somewhere and complain */
+@@ -40,7 +45,7 @@ writeNCv(NC3_INFO* ncp, const NC_var* varp, const size_t* start,
+          const size_t nelems, const void* value, const nc_type memtype);
+ 
+ 
+-/* #define ODEBUG 1 */
++#define ODEBUG 1
+ 
+ #if ODEBUG
+ #include <stdio.h>
+@@ -56,6 +61,20 @@ arrayp(const char *label, size_t count, const size_t *array)
+ 		(void) fprintf(stderr," %lu", (unsigned long)*array);
+ 	(void) fputc('\n',stderr);
+ }
++
++/*
++ * Print the values of an array of off_t (assuming it is 64-bit).
++ */
++void
++arrayp2(const char *label, size_t count, const off_t *array)
++{
++	(void) fprintf(stderr, "%s", label);
++	(void) fputc('\t',stderr);
++	for(; count > 0; count--, array++)
++		(void) fprintf(stderr," %" PRId64, *array);
++	(void) fputc('\n',stderr);
++}
++
+ #endif /* ODEBUG */
+ 
+ 
+diff --git a/libsrc/putget.m4 b/libsrc/putget.m4
+index 192aeb3b..2c5dc172 100644
+--- a/libsrc/putget.m4
++++ b/libsrc/putget.m4
+@@ -34,6 +34,11 @@ dnl
+ #    include <stdio.h>
+ #  endif
+ #endif
++#ifdef _MSC_VER
++#  define PRId64       "I64d"
++#else
++#  define PRId64       "lld"
++#endif
+ 
+ 
+ #undef MIN  /* system may define MIN somewhere and complain */
+@@ -48,6 +53,7 @@ writeNCv(NC3_INFO* ncp, const NC_var* varp, const size_t* start,
+ 
+ 
+ /* #define ODEBUG 1 */
++#define ODEBUG 1
+ 
+ #if ODEBUG
+ #include <stdio.h>
+@@ -63,6 +69,20 @@ arrayp(const char *label, size_t count, const size_t *array)
+ 		(void) fprintf(stderr," %lu", (unsigned long)*array);
+ 	(void) fputc('\n',stderr);
+ }
++
++/*
++ * Print the values of an array of off_t (assuming it is 64-bit).
++ */
++void
++arrayp2(const char *label, size_t count, const off_t *array)
++{
++	(void) fprintf(stderr, "%s", label);
++	(void) fputc('\t',stderr);
++	for(; count > 0; count--, array++)
++		(void) fprintf(stderr," %" PRId64, *array);
++	(void) fputc('\n',stderr);
++}
++
+ #endif /* ODEBUG */
+ 
+ 
+diff --git a/libsrc/var.c b/libsrc/var.c
+index 54ee5dab..de1aa13c 100644
+--- a/libsrc/var.c
++++ b/libsrc/var.c
+@@ -428,6 +428,9 @@ ncx_szof(nc_type type)
+  *  Formerly
+ NC_var_shape(var, dims)
+  */
++extern void arrayp(const char *label, size_t count, const size_t *array);
++extern void arrayp2(const char *label, size_t count, const off_t *array);
++
+ int
+ NC_var_shape(NC_var *varp, const NC_dimarray *dims)
+ {
+@@ -500,9 +503,9 @@ out :
+     if (varp->len % 4 > 0)
+         varp->len += 4 - varp->len % 4; /* round up */
+ 
+-#if 0
++#if 1
+ 	arrayp("\tshape", varp->ndims, varp->shape);
+-	arrayp("\tdsizes", varp->ndims, varp->dsizes);
++	arrayp2("\tdsizes", varp->ndims, varp->dsizes);
+ #endif
+ 	return NC_NOERR;
+ }
+-- 
+2.15.0
+

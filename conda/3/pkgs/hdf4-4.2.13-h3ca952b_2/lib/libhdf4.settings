@@ -1,0 +1,38 @@
+	    SUMMARY OF THE HDF4 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF4 Version: 4.2.13
+		  Configured on: Thu Nov 16 20:03:06 UTC 2017
+		  Configured by: root@7ba53eb0-1e62-473f-7e80-b255a4dfce86
+		 Configure mode: production
+		    Host system: x86_64-conda_cos6-linux-gnu
+              Uname information: Linux 7ba53eb0-1e62-473f-7e80-b255a4dfce86 4.4.0-62-generic #83-Ubuntu SMP Wed Jan 18 14:10:15 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+		      Libraries: 
+	     Installation point: /opt/anaconda1anaconda2anaconda3
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C compiler: /opt/anaconda1anaconda2anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc
+                         CFLAGS:  -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -pipe -I/opt/anaconda1anaconda2anaconda3/include -I/opt/anaconda1anaconda2anaconda3/include -L/opt/anaconda1anaconda2anaconda3/lib -O
+                       CPPFLAGS: -D_FORTIFY_SOURCE=2 -O2 -DBIG_LONGS -DSWAP 
+               Shared Libraries: yes
+               Static Libraries: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-rpath,/opt/anaconda1anaconda2anaconda3/lib -L/opt/anaconda1anaconda2anaconda3/lib -L/opt/anaconda1anaconda2anaconda3/lib -Wl,-rpath,/opt/anaconda1anaconda2anaconda3/lib
+ 	 	Extra libraries: -ljpeg -lz 
+ 		       Archiver: /opt/anaconda1anaconda2anaconda3/bin/x86_64-conda_cos6-linux-gnu-ar
+ 		 	 Ranlib: /opt/anaconda1anaconda2anaconda3/bin/x86_64-conda_cos6-linux-gnu-ranlib
+
+Languages:
+----------
+                        Fortran: no
+
+                           Java: no
+
+Features:
+---------
+               SZIP compression: disabled
+   Support for netCDF API 2.3.2: no
