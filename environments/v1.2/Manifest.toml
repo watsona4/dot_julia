@@ -513,6 +513,12 @@ git-tree-sha1 = "2f5675eda6e16a5efeb60e1b387fbd7800706cd2"
 uuid = "c7932e45-9af1-51e7-9da9-f004cd3a462b"
 version = "0.4.0"
 
+[[AstroTime]]
+deps = ["Dates", "EarthOrientation", "LeapSeconds", "MacroTools", "MuladdMacro", "Reexport", "Test"]
+git-tree-sha1 = "0304d476735f75ab6f184f8392fea4615303fa63"
+uuid = "c61b5328-d09d-5e37-a9a8-0eb41c39009c"
+version = "0.1.2"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
@@ -924,6 +930,12 @@ deps = ["Calculus", "LinearAlgebra", "NaNMath", "SpecialFunctions", "Test"]
 git-tree-sha1 = "e178a6768dad879ff1abfc1c612406856bb06ce0"
 uuid = "fa6b7ba4-c1ee-5f82-b5fc-ecf0adba8f74"
 version = "0.6.2"
+
+[[EarthOrientation]]
+deps = ["Dates", "DelimitedFiles", "LeapSeconds", "OptionalData", "RemoteFiles", "Test"]
+git-tree-sha1 = "7ceae02eea4ffa57be45c47b237aca093926badc"
+uuid = "732a3c5d-d6c0-58bc-adb1-1b51709a25e2"
+version = "0.4.1"
 
 [[Electron]]
 deps = ["Base64", "JSON", "Sockets", "URIParser"]
@@ -1476,6 +1488,12 @@ git-tree-sha1 = "c02f54c69bf8d7ef39906608d1fc5011d1670e9c"
 uuid = "fc18253b-5e1b-504c-a4a2-9ece4944c004"
 version = "0.1.1"
 
+[[LeapSeconds]]
+deps = ["Dates", "Test"]
+git-tree-sha1 = "9bdb39dac01948ff24df817fd628422144b4e353"
+uuid = "2f5f767c-a11e-5269-a972-637d4b97c32d"
+version = "0.2.0"
+
 [[LibCURL]]
 deps = ["BinaryProvider", "Libdl"]
 git-tree-sha1 = "fd5fc15f2a04608fe1435a769dbbfc7959ff1daa"
@@ -1698,6 +1716,12 @@ git-tree-sha1 = "ca8f8917df469d607f8cf116784e58c9c084d0b4"
 uuid = "429524aa-4258-5aef-a3af-852621145aeb"
 version = "0.19.2"
 
+[[OptionalData]]
+deps = ["Test"]
+git-tree-sha1 = "4359fca64d21e25a6489d23dc16629dc83d47bde"
+uuid = "fbd9d27c-2d1c-5c1c-99f2-7497d746985d"
+version = "0.2.1"
+
 [[OrderedCollections]]
 deps = ["Random", "Serialization", "Test"]
 git-tree-sha1 = "c4c13474d23c60d20a67b217f1d7f22a40edf8f1"
@@ -1883,6 +1907,12 @@ deps = ["IterTools", "LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "763ea91022b03c1ff18d5c80d61f676419fb7505"
 uuid = "dee08c22-ab7f-5625-9660-a9af2021b33f"
 version = "0.3.0"
+
+[[RemoteFiles]]
+deps = ["Dates", "FileIO", "HTTP"]
+git-tree-sha1 = "fa573e218ee48b93b9c9f5f7b54f2162124b0451"
+uuid = "cbe49d4c-5af1-5b60-bb70-0a60aa018e1b"
+version = "0.3.1"
 
 [[Reproject]]
 deps = ["FITSIO", "Interpolations", "SkyCoords", "WCS"]

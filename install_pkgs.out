@@ -24172,3 +24172,124 @@ Installing AstroLib
   [c7932e45] + AstroLib v0.4.0
   Building AstroLib → `~/.julia/packages/AstroLib/Wmr2L/deps/build.log`
   Building AstroLib → `~/.julia/packages/AstroLib/Wmr2L/deps/build.log`
+[master 1ba7ac2bb] added package AstroLib
+ 104 files changed, 11061 insertions(+)
+ create mode 100644 packages/AstroLib/Wmr2L/.codecov.yml
+ create mode 100644 packages/AstroLib/Wmr2L/.gitignore
+ create mode 100644 packages/AstroLib/Wmr2L/.travis.yml
+ create mode 100644 packages/AstroLib/Wmr2L/LICENSE.md
+ create mode 100644 packages/AstroLib/Wmr2L/NEWS.md
+ create mode 100644 packages/AstroLib/Wmr2L/README.md
+ create mode 100644 packages/AstroLib/Wmr2L/REQUIRE
+ create mode 100644 packages/AstroLib/Wmr2L/TODO.md
+ create mode 100644 packages/AstroLib/Wmr2L/appveyor.yml
+ create mode 100644 packages/AstroLib/Wmr2L/deps/build.jl
+ create mode 100644 packages/AstroLib/Wmr2L/deps/build.log
+ create mode 100644 packages/AstroLib/Wmr2L/docs/make.jl
+ create mode 100644 packages/AstroLib/Wmr2L/docs/src/assets/draw-logo.jl
+ create mode 100644 packages/AstroLib/Wmr2L/docs/src/assets/logo.png
+ create mode 100644 packages/AstroLib/Wmr2L/docs/src/index.md
+ create mode 100644 packages/AstroLib/Wmr2L/docs/src/ref.md
+ create mode 100644 packages/AstroLib/Wmr2L/src/AstroLib.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/adstring.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/airtovac.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/aitoff.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/altaz2hadec.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/baryvel.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/bprecess.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/calz_unred.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/co_aberration.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/co_nutate.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/co_refract.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/common.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/ct2lst.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/daycnv.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/deredd.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/eci2geo.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/eq2hor.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/eqpole.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/euler.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/flux2mag.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/gal_uvw.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/gcirc.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/geo2eci.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/geo2geodetic.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/geo2mag.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/geodetic2geo.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/get_date.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/get_juldate.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/hadec2altaz.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/helio.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/helio_jd.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/helio_rv.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/hor2eq.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/imf.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/ismeuv.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/jdcnv.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/jprecess.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/juldate.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/kepler_solver.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/lsf_rotate.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/mag2flux.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/mag2geo.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/mean_obliquity.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/misc.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/month_cnv.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/moonpos.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/mphase.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/nutate.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/ordinal.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/paczynski.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/planck_freq.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/planck_wave.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/planet_coords.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/polrec.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/posang.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/precess.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/precess_cd.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/precess_xyz.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/premat.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/rad2sec.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/radec.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/recpol.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/rhotheta.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/sec2rad.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/sixty.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/sphdist.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/sunpos.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/ten.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/tic_one.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/ticpos.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/tics.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/true_obliquity.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/trueanom.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/types.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/utils.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/uvbybeta.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/vactoair.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/xyz.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/ydn2md.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/ymd2dn.jl
+ create mode 100644 packages/AstroLib/Wmr2L/src/zenpos.jl
+ create mode 100644 packages/AstroLib/Wmr2L/test/misc-tests.jl
+ create mode 100644 packages/AstroLib/Wmr2L/test/runtests.jl
+ create mode 100644 packages/AstroLib/Wmr2L/test/utils-tests.jl
+To https://github.com/watsona4/dot_julia.git
+   1bb3cf3a3..1ba7ac2bb  master -> master
+Progress:   4%|█▌                                       |  ETA: 6 days, 0:52:34[K
+Installing AstroTime
+ Resolving package versions...
+ Installed RemoteFiles ────── v0.3.1
+ Installed LeapSeconds ────── v0.2.0
+ Installed AstroTime ──────── v0.1.2
+ Installed OptionalData ───── v0.2.1
+ Installed EarthOrientation ─ v0.4.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [c61b5328] + AstroTime v0.1.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [c61b5328] + AstroTime v0.1.2
+  [732a3c5d] + EarthOrientation v0.4.1
+  [2f5f767c] + LeapSeconds v0.2.0
+  [fbd9d27c] + OptionalData v0.2.1
+  [cbe49d4c] + RemoteFiles v0.3.1
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
