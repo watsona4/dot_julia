@@ -45684,3 +45684,63 @@ Installing CairoMakie
   Building ImageMagick ─────→ `~/.julia/packages/ImageMagick/vMfoS/deps/build.log`
   Building FFMPEG ──────────→ `~/.julia/packages/FFMPEG/9JQpZ/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+[master f982eddfa] added package CairoMakie
+ 49 files changed, 49774 insertions(+)
+ create mode 100644 packages/CairoMakie/Nz85B/.codecov.yml
+ create mode 100644 packages/CairoMakie/Nz85B/.gitignore
+ create mode 100644 packages/CairoMakie/Nz85B/.travis.yml
+ create mode 100644 packages/CairoMakie/Nz85B/LICENSE.md
+ create mode 100644 packages/CairoMakie/Nz85B/Project.toml
+ create mode 100644 packages/CairoMakie/Nz85B/README.md
+ create mode 100644 packages/CairoMakie/Nz85B/appveyor.yml
+ create mode 100644 packages/CairoMakie/Nz85B/src/CairoMakie.jl
+ create mode 100644 packages/CairoMakie/Nz85B/test/.gitignore
+ create mode 100644 packages/CairoMakie/Nz85B/test/REQUIRE
+ create mode 100644 packages/CairoMakie/Nz85B/test/runtests.jl
+ create mode 100644 packages/MeshIO/fn90C/.gitignore
+ create mode 100644 packages/MeshIO/fn90C/.travis.yml
+ create mode 100644 packages/MeshIO/fn90C/LICENSE.md
+ create mode 100644 packages/MeshIO/fn90C/README.md
+ create mode 100644 packages/MeshIO/fn90C/REQUIRE
+ create mode 100644 packages/MeshIO/fn90C/appveyor.yml
+ create mode 100644 packages/MeshIO/fn90C/src/MeshIO.jl
+ create mode 100644 packages/MeshIO/fn90C/src/io/2dm.jl
+ create mode 100644 packages/MeshIO/fn90C/src/io/obj.jl
+ create mode 100644 packages/MeshIO/fn90C/src/io/off.jl
+ create mode 100644 packages/MeshIO/fn90C/src/io/ply.jl
+ create mode 100644 packages/MeshIO/fn90C/src/io/stl.jl
+ create mode 100644 packages/MeshIO/fn90C/test/not_supported/binary.ply
+ create mode 100644 packages/MeshIO/fn90C/test/not_supported/cube.3js.json
+ create mode 100644 packages/MeshIO/fn90C/test/not_supported/cube.mtl
+ create mode 100644 packages/MeshIO/fn90C/test/not_supported/pyramid.amf
+ create mode 100644 packages/MeshIO/fn90C/test/not_supported/pyramid_zip.amf
+ create mode 100644 packages/MeshIO/fn90C/test/runtests.jl
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/ascii.ply
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/ascii.stl
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/binary.stl
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/binary_stl_from_solidworks.STL
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/cube.obj
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/cube.off
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/cube.ply
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/cube.stl
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/cube_binary.stl
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/polygonal_face.obj
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/test.2dm
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/test.obj
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/test.off
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/test2.off
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/test_face_normal.obj
+ create mode 100644 packages/MeshIO/fn90C/test/testfiles/translated_cube.stl
+To https://github.com/watsona4/dot_julia.git
+   2db5a49ed..f982eddfa  master -> master
+Progress:  11%|████▌                                    |  ETA: 3 days, 15:54:25[K
+Installing Calc
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Calc [221dce02]:\n Calc [221dce02] log:\n ├─possible versions are: [0.0.1-0.0.2, 0.1.0-0.1.1] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.2, 0.1.0-0.1.1]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  11%|████▌                                    |  ETA: 3 days, 15:38:56[K
+Installing Calculus
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [49dc2e85] + Calculus v0.5.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
