@@ -1,0 +1,4 @@
+*.cov
+docs/build/
+docs/site/
+gh_deploy

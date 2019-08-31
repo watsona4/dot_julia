@@ -31379,3 +31379,35 @@ Installing BioCore
   [37cfa864] + BioCore v2.0.5
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 6efdb6106] added package BioCore
+ 3 files changed, 30 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   d9ba55b15..6efdb6106  master -> master
+Progress:   7%|██▊                                      |  ETA: 4 days, 3:43:21[K
+Installing BioEnergeticFoodWebs
+ Resolving package versions...
+ Installed JLD ────────────────── v0.9.1
+ Installed BioEnergeticFoodWebs ─ v1.0.0
+ Installed VertexSafeGraphs ───── v0.1.0
+ Installed DiffEqCallbacks ────── v2.8.0
+ Installed SparseDiffTools ────── v0.9.0
+ Installed LegacyStrings ──────── v0.4.1
+ Installed ExponentialUtilities ─ v1.5.1
+ Installed OrdinaryDiffEq ─────── v5.14.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9b49b652] + BioEnergeticFoodWebs v1.0.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9b49b652] + BioEnergeticFoodWebs v1.0.0
+  [459566f4] + DiffEqCallbacks v2.8.0
+  [d4d017d3] + ExponentialUtilities v1.5.1
+  [4138dd39] + JLD v0.9.1
+  [1b4a561d] + LegacyStrings v0.4.1
+  [1dea7af3] + OrdinaryDiffEq v5.14.0
+  [47a9eef4] + SparseDiffTools v0.9.0
+  [19fa3120] + VertexSafeGraphs v0.1.0
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building CMake ───────────→ `~/.julia/packages/CMake/nSK2r/deps/build.log`
+  Building Blosc ───────────→ `~/.julia/packages/Blosc/lzFr0/deps/build.log`
+  Building HDF5 ────────────→ `~/.julia/packages/HDF5/DktP4/deps/build.log`

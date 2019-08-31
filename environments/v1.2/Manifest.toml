@@ -905,6 +905,12 @@ git-tree-sha1 = "476edbf4ef94594fff430a84ca96f86cb2327a71"
 uuid = "37cfa864-2cd6-5c12-ad9e-b6597d696c81"
 version = "2.0.5"
 
+[[BioEnergeticFoodWebs]]
+deps = ["DiffEqCallbacks", "Distributions", "JLD", "JSON", "LinearAlgebra", "OrdinaryDiffEq", "Pkg", "Random", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "8f1d2b341feb4dfbfeae8d4fbb98e2bb9deee3df"
+uuid = "9b49b652-2545-5b88-a3af-87b516beb26f"
+version = "1.0.0"
+
 [[BioSequences]]
 deps = ["Automa", "BioCore", "BioSymbols", "BufferedStreams", "Combinatorics", "IndexableBitVectors", "IntervalTrees", "LinearAlgebra", "Printf", "Random", "Test", "Twiddle"]
 git-tree-sha1 = "29341326bfab7ebef261dab128874b9e3fece5c2"
@@ -1269,6 +1275,12 @@ git-tree-sha1 = "fa870131f32ae7b2fc2b6eee71cd0924200fa6db"
 uuid = "2b5f629d-d688-5b77-993f-72d75c75574e"
 version = "5.20.0"
 
+[[DiffEqCallbacks]]
+deps = ["DataStructures", "DiffEqBase", "ForwardDiff", "NLsolve", "OrdinaryDiffEq", "RecipesBase", "RecursiveArrayTools", "StaticArrays"]
+git-tree-sha1 = "307eda7b109cf1f236fbbb19976562146af386e1"
+uuid = "459566f4-90b8-5000-8ac3-15dfb0a30def"
+version = "2.8.0"
+
 [[DiffEqDiffTools]]
 deps = ["ArrayInterface", "LinearAlgebra", "Requires", "SparseArrays", "StaticArrays"]
 git-tree-sha1 = "21b855cb29ec4594f9651e0e9bdc0cdcfdcd52c1"
@@ -1407,6 +1419,12 @@ deps = ["Compat", "Distributions", "FastGaussQuadrature", "SpecialFunctions"]
 git-tree-sha1 = "5b50b515886773484a28f19d9c103dffc7702702"
 uuid = "2fe49d83-0758-5602-8f54-1f90ad0d522b"
 version = "1.1.1"
+
+[[ExponentialUtilities]]
+deps = ["LinearAlgebra", "Printf", "SparseArrays"]
+git-tree-sha1 = "85e1ce16aa9b98793df704e17e7a0ceadefe404f"
+uuid = "d4d017d3-3776-5f7e-afef-a10c40355c18"
+version = "1.5.1"
 
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf"]
@@ -1954,6 +1972,12 @@ git-tree-sha1 = "a3f24677c21f5bbe9d2a714f95dcd58337fb2856"
 uuid = "82899510-4779-5014-852e-03e436cf321d"
 version = "1.0.0"
 
+[[JLD]]
+deps = ["Compat", "FileIO", "HDF5", "LegacyStrings", "Profile", "Random"]
+git-tree-sha1 = "95fd5d7f129918a75d0535aaaf5b8e235e6e0b0b"
+uuid = "4138dd39-2aa7-5051-a626-17a0bb65d9c8"
+version = "0.9.1"
+
 [[JLD2]]
 deps = ["CodecZlib", "DataStructures", "FileIO", "LinearAlgebra", "Mmap", "Printf", "Random", "Test"]
 git-tree-sha1 = "3ba90ff93e1d5b9b2103588051c2d349fae54dac"
@@ -2084,6 +2108,12 @@ deps = ["LearnBase", "LinearAlgebra", "Statistics", "Test"]
 git-tree-sha1 = "16e2a9be7294ce4c73bee4e34c655614149dd879"
 uuid = "4e8a8231-0ba9-591b-8620-81c6740d7791"
 version = "0.4.0"
+
+[[LegacyStrings]]
+deps = ["Compat"]
+git-tree-sha1 = "d4b9bde2694c552fe579cc4462733f1ce08733fe"
+uuid = "1b4a561d-cfcb-5daf-8433-43fcf8b4bea3"
+version = "0.4.1"
 
 [[LibCURL]]
 deps = ["BinaryProvider", "Libdl"]
@@ -2366,6 +2396,12 @@ deps = ["Random", "Serialization", "Test"]
 git-tree-sha1 = "c4c13474d23c60d20a67b217f1d7f22a40edf8f1"
 uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
 version = "1.1.0"
+
+[[OrdinaryDiffEq]]
+deps = ["ArrayInterface", "DataStructures", "DiffEqBase", "DiffEqDiffTools", "ExponentialUtilities", "ForwardDiff", "GenericSVD", "LinearAlgebra", "Logging", "MuladdMacro", "NLsolve", "Parameters", "RecursiveArrayTools", "Reexport", "SparseArrays", "SparseDiffTools", "StaticArrays"]
+git-tree-sha1 = "b8cfde69ffb5f0638f13beaee4a85aeda6e1637e"
+uuid = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
+version = "5.14.0"
 
 [[PDMats]]
 deps = ["Arpack", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
@@ -2744,6 +2780,12 @@ version = "0.3.1"
 deps = ["LinearAlgebra", "Random"]
 uuid = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 
+[[SparseDiffTools]]
+deps = ["Adapt", "ArrayInterface", "BandedMatrices", "BlockBandedMatrices", "DiffEqDiffTools", "ForwardDiff", "LightGraphs", "LinearAlgebra", "Requires", "SparseArrays", "VertexSafeGraphs"]
+git-tree-sha1 = "c1ecded2bd37b1ce7db8e55a814c8aa63efa80fe"
+uuid = "47a9eef4-7e08-11e9-0b38-333d64bd3804"
+version = "0.9.0"
+
 [[SpecialFunctions]]
 deps = ["BinDeps", "BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "0b45dc2e45ed77f445617b99ff2adf0f5b0f23ea"
@@ -2994,6 +3036,12 @@ deps = ["Compat"]
 git-tree-sha1 = "c9d5aa108588b978bd859554660c8a5c4f2f7669"
 uuid = "81def892-9a0e-5fdd-b105-ffc91e053289"
 version = "1.1.3"
+
+[[VertexSafeGraphs]]
+deps = ["LightGraphs"]
+git-tree-sha1 = "08137053c117afb92f59497160ac2d12abec66d8"
+uuid = "19fa3120-7c27-5ec5-8db8-b0b0aa330d6f"
+version = "0.1.0"
 
 [[WCS]]
 deps = ["BinaryProvider", "Libdl", "Test"]
