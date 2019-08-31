@@ -28377,3 +28377,37 @@ Installing BGZFStreams
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [28d598bf] + BGZFStreams v0.3.0
   Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+[master 5a44c50b8] added package BGZFStreams
+ 21 files changed, 2490 insertions(+)
+ create mode 100644 packages/BGZFStreams/qApsr/.github/ISSUE_TEMPLATE.md
+ create mode 100644 packages/BGZFStreams/qApsr/.github/PULL_REQUEST_TEMPLATE.md
+ create mode 100644 packages/BGZFStreams/qApsr/.gitignore
+ create mode 100644 packages/BGZFStreams/qApsr/.travis.yml
+ create mode 100644 packages/BGZFStreams/qApsr/CHANGELOG.md
+ create mode 100644 packages/BGZFStreams/qApsr/CODE_OF_CONDUCT.md
+ create mode 100644 packages/BGZFStreams/qApsr/CONTRIBUTING.md
+ create mode 100644 packages/BGZFStreams/qApsr/HUMANS.md
+ create mode 100644 packages/BGZFStreams/qApsr/LICENSE.md
+ create mode 100644 packages/BGZFStreams/qApsr/README.md
+ create mode 100644 packages/BGZFStreams/qApsr/REQUIRE
+ create mode 100644 packages/BGZFStreams/qApsr/appveyor.yml
+ create mode 100644 packages/BGZFStreams/qApsr/src/BGZFStreams.jl
+ create mode 100644 packages/BGZFStreams/qApsr/src/bgzfstream.jl
+ create mode 100644 packages/BGZFStreams/qApsr/src/virtualoffset.jl
+ create mode 100644 packages/BGZFStreams/qApsr/test/bar.bgz
+ create mode 100644 packages/BGZFStreams/qApsr/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   c0bbfe331..5a44c50b8  master -> master
+Progress:   5%|██                                       |  ETA: 5 days, 3:28:16[K
+Installing BHAtp
+ Resolving package versions...
+ Installed BHAtp ─ v0.1.0
+ Installed PtFEM ─ v1.0.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [dfba38dd] + BHAtp v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [dfba38dd] + BHAtp v0.1.0
+  [9b64898b] + PtFEM v1.0.0
+  Building GR ────→ `~/.julia/packages/GR/ZI5OE/deps/build.log`
+  Building FFMPEG → `~/.julia/packages/FFMPEG/9JQpZ/deps/build.log`
+  Building Plots ─→ `~/.julia/packages/Plots/Ih71u/deps/build.log`

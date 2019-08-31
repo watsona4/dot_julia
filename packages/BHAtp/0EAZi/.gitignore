@@ -1,0 +1,11 @@
+Manifest.toml
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*.o *.so *.dylib
+*.svg
+*.vtu
+output/
+output/*
+docs/build/
+docs/site/
