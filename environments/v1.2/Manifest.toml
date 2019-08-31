@@ -300,6 +300,11 @@ git-tree-sha1 = "7c1b8e4dab1c3fd9ed5e439ebd13c0698470fb8b"
 uuid = "fc2879f5-75d7-582e-8603-c64deb99b744"
 version = "0.1.0"
 
+[[AppleAccelerate]]
+git-tree-sha1 = "b9a70ea27ab767fc52c3f1359aaa3dfff44fd810"
+uuid = "13e28ba4-7ad8-5781-acae-3021b1ed3924"
+version = "0.3.0"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
