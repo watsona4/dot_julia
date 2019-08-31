@@ -1511,6 +1511,12 @@ git-tree-sha1 = "254cf73ea369d2e39bfd6c5eb27a2296cfaed68c"
 uuid = "aafaddc9-749c-510e-ac4f-586e18779b91"
 version = "0.2.0"
 
+[[CatViews]]
+deps = ["Random", "Test"]
+git-tree-sha1 = "23d1f1e10d4e24374112fcf800ac981d14a54b24"
+uuid = "81a5f4ea-a946-549a-aa7e-2a7f63a27d31"
+version = "1.0.0"
+
 [[CategoricalArrays]]
 deps = ["Compat", "DataAPI", "Future", "JSON", "Missings", "Printf", "Reexport"]
 git-tree-sha1 = "13240cfcc884837fc1aa89b60d500a652bcc3f10"
