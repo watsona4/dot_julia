@@ -370,6 +370,12 @@ git-tree-sha1 = "977a8a45ad704b1b2d97c27a548f31fe397af934"
 uuid = "49d1aae2-ae6b-5d26-a063-7cf6630cf99c"
 version = "0.3.3"
 
+[[AprilTags]]
+deps = ["Colors", "Dates", "FixedPointNumbers", "ImageDraw", "Libdl", "LinearAlgebra", "Pkg", "Test"]
+git-tree-sha1 = "b914246a671af0f8595cc76b8db2e46c5a4fb79c"
+uuid = "f0fec3d5-a81e-5a6a-8c28-d2b34f3659de"
+version = "0.7.1"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -858,9 +864,10 @@ uuid = "1a297f60-69ca-5386-bcde-b61e274b549b"
 version = "0.6.4"
 
 [[FixedPointNumbers]]
-git-tree-sha1 = "d14a6fa5890ea3a7e5dcab6811114f132fec2b4b"
+deps = ["Test"]
+git-tree-sha1 = "b8045033701c3b10bf2324d7203404be7aef88ba"
 uuid = "53c48c17-4a7d-5ca2-90c5-79b7896eea93"
-version = "0.6.1"
+version = "0.5.3"
 
 [[Flatten]]
 deps = ["FieldMetadata", "Requires"]
@@ -1012,9 +1019,15 @@ version = "0.8.0"
 
 [[ImageCore]]
 deps = ["ColorTypes", "Colors", "FFTW", "FixedPointNumbers", "Graphics", "MappedArrays", "OffsetArrays", "PaddedViews", "Reexport"]
-git-tree-sha1 = "5ea0410ea092ca0e928a663bb581e0d059f6745c"
+git-tree-sha1 = "2fb7a0d80ab6bf0c5a8b0a189bca60311c73a605"
 uuid = "a09fc81d-aa75-5fe9-8630-4744c3626534"
-version = "0.8.5"
+version = "0.8.4"
+
+[[ImageDraw]]
+deps = ["Distances", "ImageCore", "LinearAlgebra"]
+git-tree-sha1 = "c40feeb5a9d6ac582683a2d850da0a2cc7078777"
+uuid = "4381153b-2b60-58ae-a1ba-fd683676385f"
+version = "0.2.2"
 
 [[ImageMagick]]
 deps = ["BinaryProvider", "ColorTypes", "FileIO", "FixedPointNumbers", "ImageCore", "InteractiveUtils", "Libdl", "Pkg", "Random"]
