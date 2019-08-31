@@ -1,0 +1,17 @@
+language: julia
+
+os:
+  - linux
+  - osx
+
+notifications:
+  email: false
+
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+
+matrix:
+  allow_failures:
+    - julia: nightly
