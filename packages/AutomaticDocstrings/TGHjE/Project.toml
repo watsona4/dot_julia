@@ -1,0 +1,16 @@
+name = "AutomaticDocstrings"
+uuid = "70b36510-7dee-11e9-28d4-77afe9445f67"
+authors = ["Fredrik Bagge Carlson <cont-frb@ulund.org>"]
+version = "0.1.1"
+
+[deps]
+CSTParser = "00ebfdb7-1f24-5e51-bd34-a7502290713f"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "1.0"
+
+[targets]
+test = ["Test"]

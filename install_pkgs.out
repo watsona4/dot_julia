@@ -26314,3 +26314,73 @@ Installing Automa
   [67c07d97] + Automa v0.8.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [67c07d97] + Automa v0.8.0
+[master 6adaf33d3] added package Automa
+ 62 files changed, 4882 insertions(+)
+ create mode 100644 packages/Automa/fyalL/.codecov.yml
+ create mode 100644 packages/Automa/fyalL/.envrc
+ create mode 100644 packages/Automa/fyalL/.gitignore
+ create mode 100644 packages/Automa/fyalL/.travis.yml
+ create mode 100644 packages/Automa/fyalL/LICENSE.md
+ create mode 100644 packages/Automa/fyalL/Project.toml
+ create mode 100644 packages/Automa/fyalL/README.md
+ create mode 100644 packages/Automa/fyalL/REQUIRE
+ create mode 100644 packages/Automa/fyalL/appveyor.yml
+ create mode 100644 packages/Automa/fyalL/benchmark/runbenchmarks.jl
+ create mode 100644 packages/Automa/fyalL/docs/actions.jl
+ create mode 100644 packages/Automa/fyalL/docs/make.jl
+ create mode 100644 packages/Automa/fyalL/docs/preconditions.jl
+ create mode 100644 packages/Automa/fyalL/docs/src/figure/Automa.png
+ create mode 100644 packages/Automa/fyalL/docs/src/figure/actions.png
+ create mode 100644 packages/Automa/fyalL/docs/src/figure/numbers.png
+ create mode 100644 packages/Automa/fyalL/docs/src/figure/preconditions.png
+ create mode 100644 packages/Automa/fyalL/docs/src/index.md
+ create mode 100644 packages/Automa/fyalL/docs/src/references.md
+ create mode 100644 packages/Automa/fyalL/example/fasta.jl
+ create mode 100644 packages/Automa/fyalL/example/numbers.jl
+ create mode 100644 packages/Automa/fyalL/example/tokenizer.jl
+ create mode 100644 packages/Automa/fyalL/src/Automa.jl
+ create mode 100644 packages/Automa/fyalL/src/Stream.jl
+ create mode 100644 packages/Automa/fyalL/src/action.jl
+ create mode 100644 packages/Automa/fyalL/src/byteset.jl
+ create mode 100644 packages/Automa/fyalL/src/codegen.jl
+ create mode 100644 packages/Automa/fyalL/src/dfa.jl
+ create mode 100644 packages/Automa/fyalL/src/dot.jl
+ create mode 100644 packages/Automa/fyalL/src/edge.jl
+ create mode 100644 packages/Automa/fyalL/src/machine.jl
+ create mode 100644 packages/Automa/fyalL/src/memory.jl
+ create mode 100644 packages/Automa/fyalL/src/nfa.jl
+ create mode 100644 packages/Automa/fyalL/src/precond.jl
+ create mode 100644 packages/Automa/fyalL/src/re.jl
+ create mode 100644 packages/Automa/fyalL/src/sdict.jl
+ create mode 100644 packages/Automa/fyalL/src/sset.jl
+ create mode 100644 packages/Automa/fyalL/src/tokenizer.jl
+ create mode 100644 packages/Automa/fyalL/src/traverser.jl
+ create mode 100644 packages/Automa/fyalL/test/runtests.jl
+ create mode 100644 packages/Automa/fyalL/test/test01.jl
+ create mode 100644 packages/Automa/fyalL/test/test02.jl
+ create mode 100644 packages/Automa/fyalL/test/test03.jl
+ create mode 100644 packages/Automa/fyalL/test/test04.jl
+ create mode 100644 packages/Automa/fyalL/test/test05.jl
+ create mode 100644 packages/Automa/fyalL/test/test06.jl
+ create mode 100644 packages/Automa/fyalL/test/test07.jl
+ create mode 100644 packages/Automa/fyalL/test/test08.jl
+ create mode 100644 packages/Automa/fyalL/test/test09.jl
+ create mode 100644 packages/Automa/fyalL/test/test10.jl
+ create mode 100644 packages/Automa/fyalL/test/test11.jl
+ create mode 100644 packages/Automa/fyalL/test/test12.jl
+ create mode 100644 packages/Automa/fyalL/test/test13.jl
+ create mode 100644 packages/Automa/fyalL/test/test14.jl
+ create mode 100644 packages/Automa/fyalL/test/test15.jl
+ create mode 100644 packages/Automa/fyalL/test/test16.jl
+ create mode 100644 packages/Automa/fyalL/test/test17.jl
+ create mode 100644 packages/Automa/fyalL/test/test18.jl
+To https://github.com/watsona4/dot_julia.git
+   c44d00fae..6adaf33d3  master -> master
+Progress:   4%|█▊                                       |  ETA: 5 days, 11:38:17[K
+Installing AutomaticDocstrings
+ Resolving package versions...
+ Installed AutomaticDocstrings ─ v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [70b36510] + AutomaticDocstrings v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [70b36510] + AutomaticDocstrings v0.1.1

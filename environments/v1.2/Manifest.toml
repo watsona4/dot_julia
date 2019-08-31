@@ -584,6 +584,12 @@ git-tree-sha1 = "c81526bf5f6fb4616b4e22a3cd62ac20e255fd3c"
 uuid = "67c07d97-cdcb-5c2c-af73-a7f9c32a568b"
 version = "0.8.0"
 
+[[AutomaticDocstrings]]
+deps = ["CSTParser"]
+git-tree-sha1 = "2915b506cae7f33efe3dbd302588190b3bf06c66"
+uuid = "70b36510-7dee-11e9-28d4-77afe9445f67"
+version = "0.1.1"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
