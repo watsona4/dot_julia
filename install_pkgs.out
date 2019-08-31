@@ -10772,3 +10772,94 @@ Installing ApproxBayes
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master 3bf01a460] added package ApproxBayes
+ 50 files changed, 5104 insertions(+)
+ create mode 100644 packages/ApproxBayes/EK19t/.codecov.yml
+ create mode 100644 packages/ApproxBayes/EK19t/.gitignore
+ create mode 100644 packages/ApproxBayes/EK19t/.travis.yml
+ create mode 100644 packages/ApproxBayes/EK19t/LICENSE.md
+ create mode 100644 packages/ApproxBayes/EK19t/Project.toml
+ create mode 100644 packages/ApproxBayes/EK19t/README.md
+ create mode 100644 packages/ApproxBayes/EK19t/REQUIRE
+ create mode 100644 packages/ApproxBayes/EK19t/appveyor.yml
+ create mode 100644 packages/ApproxBayes/EK19t/docs/make.jl
+ create mode 100644 packages/ApproxBayes/EK19t/examples/LV.jl
+ create mode 100644 packages/ApproxBayes/EK19t/examples/normaldist.jl
+ create mode 100644 packages/ApproxBayes/EK19t/src/ABCalgorithm.jl
+ create mode 100644 packages/ApproxBayes/EK19t/src/ApproxBayes.jl
+ create mode 100644 packages/ApproxBayes/EK19t/src/calculateweights.jl
+ create mode 100644 packages/ApproxBayes/EK19t/src/kernels.jl
+ create mode 100644 packages/ApproxBayes/EK19t/src/plots.jl
+ create mode 100644 packages/ApproxBayes/EK19t/src/sampling.jl
+ create mode 100644 packages/ApproxBayes/EK19t/src/types.jl
+ create mode 100644 packages/ApproxBayes/EK19t/src/util.jl
+ create mode 100644 packages/ApproxBayes/EK19t/test/REQUIRE
+ create mode 100644 packages/ApproxBayes/EK19t/test/runtests.jl
+ create mode 100644 packages/ApproxBayes/EK19t/test/test_bayesfactor.jl
+ create mode 100644 packages/ApproxBayes/EK19t/test/test_parameter.jl
+ create mode 100644 packages/ApproxBayes/EK19t/test/test_parameter_parallel.jl
+ create mode 100644 packages/ApproxBayes/EK19t/test/test_sampling.jl
+ create mode 100644 packages/ApproxBayes/EK19t/test/test_util.jl
+ create mode 100644 packages/Distances/jwhuc/.gitignore
+ create mode 100644 packages/Distances/jwhuc/.travis.yml
+ create mode 100644 packages/Distances/jwhuc/LICENSE.md
+ create mode 100644 packages/Distances/jwhuc/Project.toml
+ create mode 100644 packages/Distances/jwhuc/README.md
+ create mode 100644 packages/Distances/jwhuc/REQUIRE
+ create mode 100644 packages/Distances/jwhuc/benchmark/benchmarks.jl
+ create mode 100644 packages/Distances/jwhuc/benchmark/print_table.jl
+ create mode 100644 packages/Distances/jwhuc/src/Distances.jl
+ create mode 100644 packages/Distances/jwhuc/src/bhattacharyya.jl
+ create mode 100644 packages/Distances/jwhuc/src/bregman.jl
+ create mode 100644 packages/Distances/jwhuc/src/common.jl
+ create mode 100644 packages/Distances/jwhuc/src/generic.jl
+ create mode 100644 packages/Distances/jwhuc/src/haversine.jl
+ create mode 100644 packages/Distances/jwhuc/src/mahalanobis.jl
+ create mode 100644 packages/Distances/jwhuc/src/metrics.jl
+ create mode 100644 packages/Distances/jwhuc/src/wmetrics.jl
+ create mode 100644 packages/Distances/jwhuc/test/F64.jl
+ create mode 100644 packages/Distances/jwhuc/test/runtests.jl
+ create mode 100644 packages/Distances/jwhuc/test/test_dists.jl
+To https://github.com/watsona4/dot_julia.git
+   0e92e021e..3bf01a460  master -> master
+Progress:   3%|█▏                                       |  ETA: 2 days, 2:53:52[K
+Installing ApproxFun
+ Resolving package versions...
+ Installed InfiniteArrays ───────────────── v0.1.3
+ Installed DomainSets ───────────────────── v0.1.0
+ Installed ToeplitzMatrices ─────────────── v0.5.0
+ Installed BlockArrays ──────────────────── v0.9.1
+ Installed ApproxFunBase ────────────────── v0.1.4
+ Installed BandedMatrices ───────────────── v0.10.1
+ Installed ApproxFun ────────────────────── v0.11.4
+ Installed BlockBandedMatrices ──────────── v0.4.6
+ Installed HierarchicalMatrices ─────────── v0.1.4
+ Installed MatrixFactorizations ─────────── v0.1.0
+ Installed FastGaussQuadrature ──────────── v0.3.3
+ Installed ApproxFunSingularities ───────── v0.1.2
+ Installed ApproxFunFourier ─────────────── v0.1.3
+ Installed ApproxFunOrthogonalPolynomials ─ v0.2.1
+ Installed FastTransforms ───────────────── v0.5.0
+ Installed LowRankApprox ────────────────── v0.2.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [28f2ccd6] + ApproxFun v0.11.4
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [28f2ccd6] + ApproxFun v0.11.4
+  [fbd15aa5] + ApproxFunBase v0.1.4
+  [59844689] + ApproxFunFourier v0.1.3
+  [b70543e2] + ApproxFunOrthogonalPolynomials v0.2.1
+  [f8fcb915] + ApproxFunSingularities v0.1.2
+  [aae01518] + BandedMatrices v0.10.1
+  [8e7c35d0] + BlockArrays v0.9.1
+  [ffab5731] + BlockBandedMatrices v0.4.6
+  [5b8099bc] + DomainSets v0.1.0
+  [442a2c76] + FastGaussQuadrature v0.3.3
+  [057dd010] + FastTransforms v0.5.0
+  [7c893195] + HierarchicalMatrices v0.1.4
+  [4858937d] + InfiniteArrays v0.1.3
+  [898213cb] + LowRankApprox v0.2.3
+  [a3b82374] + MatrixFactorizations v0.1.0
+  [c751599d] + ToeplitzMatrices v0.5.0
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
