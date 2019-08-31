@@ -1101,6 +1101,12 @@ git-tree-sha1 = "91dfebc2b64342b766fc20505e2e5a95fae1184c"
 uuid = "6c721016-9dae-5d90-abf6-67daaccb2332"
 version = "0.4.2"
 
+[[Bobby]]
+deps = ["BenchmarkTools", "Crayons", "Printf", "Test"]
+git-tree-sha1 = "99534cfc24fa55317daf5728cdacbdcc895531fc"
+uuid = "bd34264e-e812-11e8-1ee8-bfb20fea2fb4"
+version = "0.9.0"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"

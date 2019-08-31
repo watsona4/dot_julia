@@ -33579,3 +33579,32 @@ Installing BlossomV
 │  [14] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/build.jl:72
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master 1e56ba7e3] added package BlossomV
+ 17 files changed, 630 insertions(+)
+ create mode 100644 packages/BlossomV/vKHKD/.gitignore
+ create mode 100644 packages/BlossomV/vKHKD/.travis.yml
+ create mode 100644 packages/BlossomV/vKHKD/LICENSE.md
+ create mode 100644 packages/BlossomV/vKHKD/README.md
+ create mode 100644 packages/BlossomV/vKHKD/REQUIRE
+ create mode 100644 packages/BlossomV/vKHKD/deps/build.jl
+ create mode 100644 packages/BlossomV/vKHKD/deps/float64.patch
+ create mode 100644 packages/BlossomV/vKHKD/deps/interface/interface.cpp
+ create mode 100644 packages/BlossomV/vKHKD/deps/interface/interface.h
+ create mode 100644 packages/BlossomV/vKHKD/deps/interface/visibility.h
+ create mode 100644 packages/BlossomV/vKHKD/deps/sharedlib.patch
+ create mode 100644 packages/BlossomV/vKHKD/src/BlossomV.jl
+ create mode 100644 packages/BlossomV/vKHKD/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   0521ab89e..1e56ba7e3  master -> master
+Progress:   8%|███▎                                     |  ETA: 3 days, 20:39:23[K
+Installing BlsData
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package DataFrames [a93c6f00]:\n DataFrames [a93c6f00] log:\n ├─possible versions are: [0.1.0, 0.2.0-0.2.5, 0.3.0-0.3.16, 0.4.0-0.4.3, 0.5.0-0.5.12, 0.6.0-0.6.11, 0.7.0-0.7.8, 0.8.0-0.8.5, 0.9.0-0.9.1, 0.10.0-0.10.1, 0.11.0-0.11.7, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.2, 0.16.0, 0.17.0-0.17.1, 0.18.0-0.18.4, 0.19.0-0.19.3] or uninstalled\n ├─restricted by compatibility requirements with ANOVA [0825541b] to versions: [0.1.0, 0.2.0-0.2.5, 0.3.0-0.3.16, 0.4.0-0.4.3, 0.5.0-0.5.12, 0.6.0-0.6.11, 0.7.0-0.7.8, 0.8.0-0.8.5, 0.9.0-0.9.1, 0.10.0-0.10.1, 0.11.0-0.11.7, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.2, 0.16.0, 0.17.0-0.17.1, 0.18.0-0.18.4, 0.19.0-0.19.3]\n │ └─ANOVA [0825541b] log:\n │   ├─possible versions are: [0.0.1, 0.1.0] or uninstalled\n │   └─restricted to versions 0.1.0 by an explicit requirement, leaving only versions 0.1.0\n ├─restricted by compatibility requirements with BlsData [bdc3b988] to versions: [0.1.0, 0.2.0-0.2.5, 0.3.0-0.3.16, 0.4.0-0.4.3, 0.5.0-0.5.12, 0.6.0-0.6.11, 0.7.0-0.7.8, 0.8.0-0.8.5, 0.9.0-0.9.1, 0.10.0-0.10.1]\n │ └─BlsData [bdc3b988] log:\n │   ├─possible versions are: 0.0.1-0.0.2 or uninstalled\n │   └─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.2\n └─restricted by julia compatibility requirements to versions: [0.11.7, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.2, 0.16.0, 0.17.0-0.17.1, 0.18.0-0.18.4, 0.19.0-0.19.3] or uninstalled — no versions left", nothing)
+Progress:   8%|███▎                                     |  ETA: 3 days, 20:17:14[K
+Installing Bobby
+ Resolving package versions...
+ Installed Bobby ─ v0.9.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [bd34264e] + Bobby v0.9.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [bd34264e] + Bobby v0.9.0
