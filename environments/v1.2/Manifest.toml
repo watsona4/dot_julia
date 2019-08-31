@@ -210,6 +210,12 @@ git-tree-sha1 = "21cb84e5172e56be7947a67cbb23e74357c1da8c"
 uuid = "2e89c364-fad6-56cb-99bd-ebadcd2cf8d2"
 version = "0.1.0"
 
+[[AffineInvariantMCMC]]
+deps = ["RobustPmap"]
+git-tree-sha1 = "964ecfcf43a428922a3acf36f5f251d2fb091282"
+uuid = "a0f608ac-68d0-5108-ad9a-0cdca73324f3"
+version = "0.5.0"
+
 [[AlgebraicMultigrid]]
 deps = ["Compat", "IterativeSolvers", "Random"]
 git-tree-sha1 = "a26560b0f8cb9104d96715c32f7c272504631ea9"
@@ -1022,6 +1028,12 @@ version = "0.4.0"
 deps = ["BinaryProvider", "Libdl", "Random", "Statistics", "Test"]
 git-tree-sha1 = "9a6c758cdf73036c3239b0afbea790def1dabff9"
 uuid = "79098fc4-a85e-5d69-aa6a-4863f24498fa"
+version = "0.5.0"
+
+[[RobustPmap]]
+deps = ["Compat", "Distributed", "FileIO", "JLD2"]
+git-tree-sha1 = "1db4d58e4d23e40d1d24760624ec38f4d52a0fbe"
+uuid = "27aeedcb-f738-516b-a0b8-3211cf1146e5"
 version = "0.5.0"
 
 [[Roots]]
