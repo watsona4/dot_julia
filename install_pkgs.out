@@ -33669,3 +33669,37 @@ Installing Boltzmann
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master bbeb434e9] added package Boltzmann
+ 27 files changed, 1936 insertions(+)
+ rewrite compiled/v1.2/CMake/TDh52.ji (95%)
+ create mode 100644 packages/Boltzmann/mUqSk/.gitignore
+ create mode 100644 packages/Boltzmann/mUqSk/.travis.yml
+ create mode 100644 packages/Boltzmann/mUqSk/LICENSE.md
+ create mode 100644 packages/Boltzmann/mUqSk/Project.toml
+ create mode 100644 packages/Boltzmann/mUqSk/README.md
+ create mode 100644 packages/Boltzmann/mUqSk/examples/mnistexample.jl
+ create mode 100644 packages/Boltzmann/mUqSk/examples/mocha_export_example.jl
+ create mode 100644 packages/Boltzmann/mUqSk/src/Boltzmann.jl
+ create mode 100644 packages/Boltzmann/mUqSk/src/conditional.jl
+ create mode 100644 packages/Boltzmann/mUqSk/src/core.jl
+ create mode 100644 packages/Boltzmann/mUqSk/src/io.jl
+ create mode 100644 packages/Boltzmann/mUqSk/src/nets.jl
+ create mode 100644 packages/Boltzmann/mUqSk/src/rbm.jl
+ create mode 100644 packages/Boltzmann/mUqSk/src/reporter.jl
+ create mode 100644 packages/Boltzmann/mUqSk/src/test.jl
+ create mode 100644 packages/Boltzmann/mUqSk/src/utils.jl
+ create mode 100644 packages/Boltzmann/mUqSk/test/runtests.jl
+ create mode 100644 packages/Boltzmann/mUqSk/test/testconditional.jl
+ create mode 100644 packages/Boltzmann/mUqSk/test/testnets.jl
+ create mode 100644 packages/Boltzmann/mUqSk/test/testrbm.jl
+ create mode 100644 packages/Boltzmann/mUqSk/test/testutils.jl
+To https://github.com/watsona4/dot_julia.git
+   6fa7d47b6..bbeb434e9  master -> master
+Progress:   8%|███▍                                     |  ETA: 3 days, 20:08:12[K
+Installing BoltzmannMachines
+ Resolving package versions...
+ Installed BoltzmannMachines ─ v1.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [4f8fbe5d] + BoltzmannMachines v1.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [4f8fbe5d] + BoltzmannMachines v1.2.0
