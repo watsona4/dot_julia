@@ -31949,3 +31949,17 @@ Installing BioSequences
   [7e6ae17a] + BioSequences v1.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 4f10079ae] added package BioSequences
+ 3 files changed, 167 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   8abd07bfa..4f10079ae  master -> master
+Progress:   7%|██▉                                      |  ETA: 4 days, 4:30:23[K
+Installing BioServices
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [a0d4ced5] + BioServices v0.3.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+  Building Gumbo ──→ `~/.julia/packages/Gumbo/G7Qbw/deps/build.log`
+  Building EzXML ──→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
