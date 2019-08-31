@@ -5688,3 +5688,150 @@ Installing AbstractAlgebra
   [c3fe647b] + AbstractAlgebra v0.5.3
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [c3fe647b] + AbstractAlgebra v0.5.3
+[master c36764be4] added package AbstractAlgebra
+ 136 files changed, 57238 insertions(+)
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/.gitignore
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/.travis.yml
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/CITATION.bib
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/LICENSE.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/Project.toml
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/README.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/appveyor.yml
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/.gitignore
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/Project.toml
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/make.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/mkdocs.yml
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/constructors.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/direct_sum.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/euclidean.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/fields.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/finfield.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/fraction.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/fraction_fields.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/free_module.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/functional_map.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/img/types.dia
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/img/types.png
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/index.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/integer.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/map.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/map_cache.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/map_with_inverse.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/mathjaxhelper.js
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/matrix.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/matrix_algebras.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/matrix_spaces.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/module.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/module_homomorphism.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/mpolynomial.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/mpolynomial_rings.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/ncpolynomial.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/ncrings.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/numberfield.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/perm.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/polynomial.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/polynomial_rings.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/puiseux.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/quotient_module.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/rational.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/real.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/residue.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/residue_rings.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/rings.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/series.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/series_rings.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/submodule.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/types.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/docs/src/ytabs.md
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/AbstractAlgebra.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/AbstractTypes.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/Factor.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/Fields.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/Generic.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/Groups.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/NCRings.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/Rings.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/error.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/AbsSeries.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/DirectSum.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/Fraction.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/FreeModule.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/GenericTypes.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/InvariantFactorDecomposition.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/LaurentSeries.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/MPoly.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/Map.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/MapCache.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/MapWithInverse.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/Matrix.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/MatrixAlgebra.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/Module.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/ModuleHomomorphism.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/NCPoly.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/PermGroups.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/Poly.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/PuiseuxSeries.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/QuotientModule.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/RelSeries.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/Residue.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/ResidueField.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/SparsePoly.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/Submodule.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/generic/YoungTabs.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/julia/Float.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/julia/GF.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/julia/Integer.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/julia/JuliaTypes.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/julia/Rational.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/src/polysubst.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/AbstractAlgebra-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/Benchmark-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/Fields-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/Groups-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/Maps-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/Modules-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/NCRings-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/Rings-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/AbsSeries-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/DirectSum-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/Fraction-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/FreeModule-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/InvariantFactorDecomposition-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/LaurentSeries-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/MPoly-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/Map-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/MapCache-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/MapWithInverse-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/Matrix-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/MatrixAlgebra-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/Module-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/ModuleHomomorphism-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/NCPoly-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/Perm-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/Poly-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/PuiseuxSeries-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/QuotientModule-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/RelSeries-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/Residue-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/ResidueField-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/Submodule-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/generic/YoungTabs-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/julia/Floats-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/julia/Integers-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/julia/Rationals-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/julia/gfelem-test.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/test/runtests.jl
+ create mode 100644 packages/AbstractAlgebra/cTmJ4/todo.txt
+To https://github.com/watsona4/dot_julia.git
+   ebe106b7b..c36764be4  master -> master
+Progress:   1%|▍                                        |  ETA: 2 days, 9:17:42[K
+Installing AbstractDomains
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AbstractDomains [87fe21bd]:\n AbstractDomains [87fe21bd] log:\n ├─possible versions are: [0.0.1-0.0.3, 0.1.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.3, 0.1.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   1%|▍                                        |  ETA: 2 days, 7:31:49[K
+Installing AbstractFFTs
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [621f4979] + AbstractFFTs v0.4.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
