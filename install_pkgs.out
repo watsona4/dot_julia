@@ -44529,3 +44529,40 @@ Installing CVXOPT
   [1a0d837d] + CVXOPT v0.3.1
   Building Conda ─→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
   Building PyCall → `~/.julia/packages/PyCall/ttONZ/deps/build.log`
+[master ee51ace50] added package CVXOPT
+ 18 files changed, 1095 insertions(+)
+ create mode 100644 packages/CVXOPT/fCCDr/.gitignore
+ create mode 100644 packages/CVXOPT/fCCDr/.travis.yml
+ create mode 100644 packages/CVXOPT/fCCDr/LICENSE.md
+ create mode 100644 packages/CVXOPT/fCCDr/README.md
+ create mode 100644 packages/CVXOPT/fCCDr/REQUIRE
+ create mode 100644 packages/CVXOPT/fCCDr/src/CVXOPT.jl
+ create mode 100644 packages/CVXOPT/fCCDr/test/runtests.jl
+ create mode 100644 packages/CVXOPT/fCCDr/test/test1.jl
+ create mode 100644 packages/CVXOPT/fCCDr/test/test2.jl
+ create mode 100644 packages/CVXOPT/fCCDr/test/test3.jl
+ create mode 100644 packages/CVXOPT/fCCDr/test/test4.jl
+ create mode 100644 packages/CVXOPT/fCCDr/test/test5.jl
+ create mode 100644 packages/CVXOPT/fCCDr/test/test6.jl
+ create mode 100644 packages/CVXOPT/fCCDr/test/test7.jl
+To https://github.com/watsona4/dot_julia.git
+   95e839288..ee51ace50  master -> master
+Progress:  11%|████▍                                    |  ETA: 3 days, 15:44:43[K
+Installing CaNNOLeS
+ Resolving package versions...
+ Installed LDLFactorizations ─ v0.3.0
+ Installed CaNNOLeS ────────── v0.1.0
+ Installed SolverTools ─────── v0.1.4
+ Installed HSL ─────────────── v0.1.0
+ Installed Krylov ──────────── v0.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [5a1c9e79] + CaNNOLeS v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [5a1c9e79] + CaNNOLeS v0.1.0
+  [34c5aeac] + HSL v0.1.0
+  [ba0b0d4f] + Krylov v0.3.0
+  [40e66cde] + LDLFactorizations v0.3.0
+  [b5612192] + SolverTools v0.1.4
+  Building HSL → `~/.julia/packages/HSL/pgq4A/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building HSL ─────────────→ `~/.julia/packages/HSL/pgq4A/deps/build.log`

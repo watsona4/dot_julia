@@ -1428,6 +1428,12 @@ git-tree-sha1 = "21c472bb0a9947bfb049260f75bab24f6a886c35"
 uuid = "1a0d837d-f7ba-5e72-a8f8-b8273492ab4e"
 version = "0.3.1"
 
+[[CaNNOLeS]]
+deps = ["HSL", "Krylov", "LDLFactorizations", "LinearAlgebra", "LinearOperators", "Logging", "NLPModels", "SolverTools", "SparseArrays", "Test"]
+git-tree-sha1 = "554dc01e4550ebd122405f3b06f79870f5963a56"
+uuid = "5a1c9e79-9c58-5ec0-afc4-3298fdea2875"
+version = "0.1.0"
+
 [[Cairo]]
 deps = ["BinDeps", "Colors", "Compat", "Graphics", "Homebrew", "Libdl", "Pkg", "WinRPM"]
 git-tree-sha1 = "e577cb41e7e2641f4b97f1b6dbcb9a69c9288330"
@@ -2200,6 +2206,12 @@ git-tree-sha1 = "ea40d80684b6f986599f19b1840abc00af4a399b"
 uuid = "2c364e2c-59fb-59c3-96f3-194112e690e0"
 version = "0.2.5"
 
+[[HSL]]
+deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "SHA", "SparseArrays", "Test"]
+git-tree-sha1 = "92e498d7a1a05c653d9aa2150e98df5ff62068ba"
+uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
+version = "0.1.0"
+
 [[HTML_Entities]]
 deps = ["StrTables"]
 git-tree-sha1 = "aa19515d6ebe7f91a39cfc1dc6341f38fcac1282"
@@ -2555,11 +2567,23 @@ git-tree-sha1 = "53533b51d4b6964eca3065b0834e9f61ed2f7515"
 uuid = "bcebb21b-c2e3-54f8-a781-646b90f6d2cc"
 version = "0.2.3"
 
+[[Krylov]]
+deps = ["LinearAlgebra", "LinearOperators", "Printf", "Random", "SparseArrays", "Test"]
+git-tree-sha1 = "df669d62794bdc55d57c4cc7c462ab737def89ad"
+uuid = "ba0b0d4f-ebba-5204-a429-3ac8c609bfb7"
+version = "0.3.0"
+
 [[LCMCore]]
 deps = ["Dates", "FastIOBuffers", "FileWatching", "Libdl", "StaticArrays", "UnsafeArrays"]
 git-tree-sha1 = "2030bf616c051559ed01ef605755169bdf9f1362"
 uuid = "0ea44823-1ff1-5b9a-8293-5fd55a38e746"
 version = "0.6.1"
+
+[[LDLFactorizations]]
+deps = ["AMD", "LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "fa3b5f5530bac7b972c2eb3a2e8edfab9e80b44a"
+uuid = "40e66cde-538c-5869-a4ad-c39174c6795b"
+version = "0.3.0"
 
 [[LLVM]]
 deps = ["CEnum", "Libdl", "Printf", "Unicode"]
@@ -3388,6 +3412,12 @@ version = "1.2.0"
 
 [[Sockets]]
 uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
+
+[[SolverTools]]
+deps = ["DataFrames", "LinearAlgebra", "LinearOperators", "Logging", "NLPModels", "Printf"]
+git-tree-sha1 = "3c047da6c1673a5b1b41df5999b33b011d15cb32"
+uuid = "b5612192-2639-5dc1-abfe-fbedd65fab29"
+version = "0.1.4"
 
 [[SortingAlgorithms]]
 deps = ["DataStructures", "Random", "Test"]
