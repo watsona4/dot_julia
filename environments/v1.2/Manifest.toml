@@ -1107,6 +1107,12 @@ git-tree-sha1 = "99534cfc24fa55317daf5728cdacbdcc895531fc"
 uuid = "bd34264e-e812-11e8-1ee8-bfb20fea2fb4"
 version = "0.9.0"
 
+[[Boltzmann]]
+deps = ["BenchmarkTools", "Distributions", "HDF5", "StatsBase"]
+git-tree-sha1 = "4483492174d3baa63c2a111e82cd0601bc8b13ae"
+uuid = "00bb91fb-75dd-5f5f-97ed-3cee78a05366"
+version = "0.7.0"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"

@@ -33608,3 +33608,64 @@ Installing Bobby
   [bd34264e] + Bobby v0.9.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [bd34264e] + Bobby v0.9.0
+[master 6fa7d47b6] added package Bobby
+ 43 files changed, 2864 insertions(+)
+ create mode 100644 packages/Bobby/5Roim/.gitignore
+ create mode 100644 packages/Bobby/5Roim/.travis.yml
+ create mode 100644 packages/Bobby/5Roim/LICENSE
+ create mode 100644 packages/Bobby/5Roim/Manifest.toml
+ create mode 100644 packages/Bobby/5Roim/Project.toml
+ create mode 100644 packages/Bobby/5Roim/README.md
+ create mode 100644 packages/Bobby/5Roim/benchmark/README.md
+ create mode 100644 packages/Bobby/5Roim/benchmark/benchmarks.jl
+ create mode 100644 packages/Bobby/5Roim/docs/make.jl
+ create mode 100644 packages/Bobby/5Roim/docs/src/board.md
+ create mode 100644 packages/Bobby/5Roim/docs/src/index.md
+ create mode 100644 packages/Bobby/5Roim/docs/src/moves.md
+ create mode 100644 packages/Bobby/5Roim/src/Bobby.jl
+ create mode 100644 packages/Bobby/5Roim/src/bishops.jl
+ create mode 100644 packages/Bobby/5Roim/src/bitboard.jl
+ create mode 100644 packages/Bobby/5Roim/src/check.jl
+ create mode 100644 packages/Bobby/5Roim/src/constants.jl
+ create mode 100644 packages/Bobby/5Roim/src/converters.jl
+ create mode 100644 packages/Bobby/5Roim/src/game.jl
+ create mode 100644 packages/Bobby/5Roim/src/king.jl
+ create mode 100644 packages/Bobby/5Roim/src/moves.jl
+ create mode 100644 packages/Bobby/5Roim/src/nights.jl
+ create mode 100644 packages/Bobby/5Roim/src/parser.jl
+ create mode 100644 packages/Bobby/5Roim/src/pawns.jl
+ create mode 100644 packages/Bobby/5Roim/src/perft.jl
+ create mode 100644 packages/Bobby/5Roim/src/print.jl
+ create mode 100644 packages/Bobby/5Roim/src/queen.jl
+ create mode 100644 packages/Bobby/5Roim/src/rooks.jl
+ create mode 100644 packages/Bobby/5Roim/test/runtests.jl
+ create mode 100644 packages/Bobby/5Roim/test/test_bishops.jl
+ create mode 100644 packages/Bobby/5Roim/test/test_check.jl
+ create mode 100644 packages/Bobby/5Roim/test/test_converters.jl
+ create mode 100644 packages/Bobby/5Roim/test/test_king.jl
+ create mode 100644 packages/Bobby/5Roim/test/test_nights.jl
+ create mode 100644 packages/Bobby/5Roim/test/test_parser.jl
+ create mode 100644 packages/Bobby/5Roim/test/test_pawns.jl
+ create mode 100644 packages/Bobby/5Roim/test/test_perft.jl
+ create mode 100644 packages/Bobby/5Roim/test/test_queen.jl
+ create mode 100644 packages/Bobby/5Roim/test/test_rooks.jl
+To https://github.com/watsona4/dot_julia.git
+   1e56ba7e3..6fa7d47b6  master -> master
+Progress:   8%|███▎                                     |  ETA: 3 days, 20:00:31[K
+Installing Bokeh
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Bokeh [4c8104a3]:\n Bokeh [4c8104a3] log:\n ├─possible versions are: [0.0.1, 0.1.0, 0.2.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0, 0.2.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   8%|███▍                                     |  ETA: 3 days, 19:38:33[K
+Installing Boltzmann
+ Resolving package versions...
+ Installed Boltzmann ─ v0.7.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [00bb91fb] + Boltzmann v0.7.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [00bb91fb] + Boltzmann v0.7.0
+  Building CMake ───────────→ `~/.julia/packages/CMake/nSK2r/deps/build.log`
+  Building Blosc ───────────→ `~/.julia/packages/Blosc/lzFr0/deps/build.log`
+  Building HDF5 ────────────→ `~/.julia/packages/HDF5/DktP4/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
