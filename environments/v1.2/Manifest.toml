@@ -48,6 +48,12 @@ git-tree-sha1 = "c8480eabd19fcf95d35f535853e8171c51d4a210"
 uuid = "6d3278bc-c23a-5105-85e5-0d57d2bf684f"
 version = "0.4.0"
 
+[[ARules]]
+deps = ["DataFrames", "StatsBase"]
+git-tree-sha1 = "fac81614fe2810bf9b3eed6d0cbf2cc8f62bc96b"
+uuid = "7cbe2057-1070-5a1a-9a20-8e476bfa53e1"
+version = "0.0.1"
+
 [[AbstractFFTs]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "380e36c66edfa099cd90116b24c1ce8cafccac40"
