@@ -1482,6 +1482,12 @@ git-tree-sha1 = "fb4a02ea530ee047a23072268ef33daa62bb60fe"
 uuid = "a2e0e22d-7d4c-5312-9169-8b992201a882"
 version = "0.0.1"
 
+[[Callbacks]]
+deps = ["Lens", "ProgressMeter", "UnicodePlots"]
+git-tree-sha1 = "22fc345f00cd8e13c0e12bdc2695553eda882d44"
+uuid = "db1e321a-d383-57b4-a664-0144fd54e973"
+version = "0.1.0"
+
 [[Cassette]]
 git-tree-sha1 = "da85d135b6048d3e78603e277cf9a4609f7e0673"
 uuid = "7057c7e9-c182-5462-911a-8362d720325c"
@@ -2728,6 +2734,12 @@ git-tree-sha1 = "d4b9bde2694c552fe579cc4462733f1ce08733fe"
 uuid = "1b4a561d-cfcb-5daf-8433-43fcf8b4bea3"
 version = "0.4.1"
 
+[[Lens]]
+deps = ["Cassette", "Spec", "Test"]
+git-tree-sha1 = "4d1f4bcefdbb4f2a8a2302098676b2047f9cc0f0"
+uuid = "496038af-b016-571c-b31e-8262695ac102"
+version = "0.1.1"
+
 [[LibCURL]]
 deps = ["BinaryProvider", "Libdl"]
 git-tree-sha1 = "fd5fc15f2a04608fe1435a769dbbfc7959ff1daa"
@@ -3560,6 +3572,12 @@ deps = ["Printf", "Random", "Test"]
 git-tree-sha1 = "7bc6fc5c363aae476ec2c8bc527aef104b90c779"
 uuid = "d4ead438-fe20-5cc5-a293-4fd39a41b74c"
 version = "0.1.2"
+
+[[Spec]]
+deps = ["Cassette", "Pkg", "Random", "Test"]
+git-tree-sha1 = "01317d4b40fe250c4cd07323584070c3d2d82811"
+uuid = "b8ccf107-3a88-5e0f-823b-b838c6a0f327"
+version = "0.2.0"
 
 [[SpecialFunctions]]
 deps = ["BinDeps", "BinaryProvider", "Libdl", "Test"]

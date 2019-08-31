@@ -45767,3 +45767,116 @@ Installing CalculusWithJulia
   Building FFMPEG ──────────→ `~/.julia/packages/FFMPEG/9JQpZ/deps/build.log`
   Building Plots ───────────→ `~/.julia/packages/Plots/Ih71u/deps/build.log`
   Building CRlibm ──────────→ `~/.julia/packages/CRlibm/2S9DB/deps/build.log`
+[master fc5b0d13e] added package CalculusWithJulia
+ 98 files changed, 23003 insertions(+), 1 deletion(-)
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/.gitignore
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/.travis.yml
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/LICENSE.md
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/Project.toml
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/README.md
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/appveyor.yml
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/src/CalculusWithJulia.jl
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/src/derivatives.jl
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/src/integration.jl
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/src/multidimensional.jl
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/src/plot-utils.jl
+ create mode 100644 packages/CalculusWithJulia/Z8IBs/test/runtests.jl
+ create mode 100644 packages/ImplicitEquations/H1dxT/.travis.yml
+ create mode 100644 packages/ImplicitEquations/H1dxT/LICENSE.md
+ create mode 100644 packages/ImplicitEquations/H1dxT/Project.toml
+ create mode 100644 packages/ImplicitEquations/H1dxT/README.md
+ create mode 100644 packages/ImplicitEquations/H1dxT/appveyor.yml
+ create mode 100644 packages/ImplicitEquations/H1dxT/docs/examples.ipynb
+ create mode 100644 packages/ImplicitEquations/H1dxT/docs/examples.md
+ create mode 100644 packages/ImplicitEquations/H1dxT/src/ImplicitEquations.jl
+ create mode 100644 packages/ImplicitEquations/H1dxT/src/asciigraphs.jl
+ create mode 100644 packages/ImplicitEquations/H1dxT/src/intervals.jl
+ create mode 100644 packages/ImplicitEquations/H1dxT/src/plot_recipe.jl
+ create mode 100644 packages/ImplicitEquations/H1dxT/src/predicates.jl
+ create mode 100644 packages/ImplicitEquations/H1dxT/src/tupper.jl
+ create mode 100644 packages/ImplicitEquations/H1dxT/test/runtests.jl
+ create mode 100644 packages/SymPy/wd4d9/.gitignore
+ create mode 100644 packages/SymPy/wd4d9/.travis.yml
+ create mode 100644 packages/SymPy/wd4d9/LICENSE.md
+ create mode 100644 packages/SymPy/wd4d9/Project.toml
+ create mode 100644 packages/SymPy/wd4d9/README.md
+ create mode 100644 packages/SymPy/wd4d9/REQUIRE
+ create mode 100644 packages/SymPy/wd4d9/appveyor.yml
+ create mode 100644 packages/SymPy/wd4d9/examples/LICENSE-orig.txt
+ create mode 100644 packages/SymPy/wd4d9/examples/basic_operations.html
+ create mode 100644 packages/SymPy/wd4d9/examples/basic_operations.ipynb
+ create mode 100644 packages/SymPy/wd4d9/examples/basic_operations.md
+ create mode 100644 packages/SymPy/wd4d9/examples/calculus.html
+ create mode 100644 packages/SymPy/wd4d9/examples/calculus.ipynb
+ create mode 100644 packages/SymPy/wd4d9/examples/calculus.md
+ create mode 100644 packages/SymPy/wd4d9/examples/gotchas.html
+ create mode 100644 packages/SymPy/wd4d9/examples/gotchas.ipynb
+ create mode 100644 packages/SymPy/wd4d9/examples/gotchas.md
+ create mode 100644 packages/SymPy/wd4d9/examples/index.html
+ create mode 100644 packages/SymPy/wd4d9/examples/index.ipynb
+ create mode 100644 packages/SymPy/wd4d9/examples/index.md
+ create mode 100644 packages/SymPy/wd4d9/examples/intro.html
+ create mode 100644 packages/SymPy/wd4d9/examples/intro.ipynb
+ create mode 100644 packages/SymPy/wd4d9/examples/intro.md
+ create mode 100644 packages/SymPy/wd4d9/examples/manipulation.html
+ create mode 100644 packages/SymPy/wd4d9/examples/manipulation.ipynb
+ create mode 100644 packages/SymPy/wd4d9/examples/manipulation.md
+ create mode 100644 packages/SymPy/wd4d9/examples/matrices.html
+ create mode 100644 packages/SymPy/wd4d9/examples/matrices.ipynb
+ create mode 100644 packages/SymPy/wd4d9/examples/matrices.md
+ create mode 100644 packages/SymPy/wd4d9/examples/simplification.html
+ create mode 100644 packages/SymPy/wd4d9/examples/simplification.ipynb
+ create mode 100644 packages/SymPy/wd4d9/examples/simplification.md
+ create mode 100644 packages/SymPy/wd4d9/examples/solvers.html
+ create mode 100644 packages/SymPy/wd4d9/examples/solvers.ipynb
+ create mode 100644 packages/SymPy/wd4d9/examples/solvers.md
+ create mode 100644 packages/SymPy/wd4d9/examples/tutorial.html
+ create mode 100644 packages/SymPy/wd4d9/examples/tutorial.ipynb
+ create mode 100644 packages/SymPy/wd4d9/examples/tutorial.md
+ create mode 100644 packages/SymPy/wd4d9/src/SymPy.jl
+ create mode 100644 packages/SymPy/wd4d9/src/assumptions.jl
+ create mode 100644 packages/SymPy/wd4d9/src/constructors.jl
+ create mode 100644 packages/SymPy/wd4d9/src/generic.jl
+ create mode 100644 packages/SymPy/wd4d9/src/importexport.jl
+ create mode 100644 packages/SymPy/wd4d9/src/lambdify.jl
+ create mode 100644 packages/SymPy/wd4d9/src/mathfuns.jl
+ create mode 100644 packages/SymPy/wd4d9/src/mathops.jl
+ create mode 100644 packages/SymPy/wd4d9/src/matrix.jl
+ create mode 100644 packages/SymPy/wd4d9/src/numbers.jl
+ create mode 100644 packages/SymPy/wd4d9/src/patternmatch.jl
+ create mode 100644 packages/SymPy/wd4d9/src/permutations.jl
+ create mode 100644 packages/SymPy/wd4d9/src/physics.jl
+ create mode 100644 packages/SymPy/wd4d9/src/plot_recipes.jl
+ create mode 100644 packages/SymPy/wd4d9/src/sets.jl
+ create mode 100644 packages/SymPy/wd4d9/src/symfunction.jl
+ create mode 100644 packages/SymPy/wd4d9/src/types.jl
+ create mode 100644 packages/SymPy/wd4d9/src/utils.jl
+ create mode 100644 packages/SymPy/wd4d9/test/install_dependencies.jl
+ create mode 100644 packages/SymPy/wd4d9/test/runtests.jl
+ create mode 100644 packages/SymPy/wd4d9/test/test-external-module.jl
+ create mode 100644 packages/SymPy/wd4d9/test/test-logical.jl
+ create mode 100644 packages/SymPy/wd4d9/test/test-math.jl
+ create mode 100644 packages/SymPy/wd4d9/test/test-matrix.jl
+ create mode 100644 packages/SymPy/wd4d9/test/test-ode.jl
+ create mode 100644 packages/SymPy/wd4d9/test/test-physics.jl
+ create mode 100644 packages/SymPy/wd4d9/test/test-plots.jl
+ create mode 100644 packages/SymPy/wd4d9/test/test-specialfuncs.jl
+ create mode 100644 packages/SymPy/wd4d9/test/tests.jl
+To https://github.com/watsona4/dot_julia.git
+   b99a69fc4..fc5b0d13e  master -> master
+Progress:  11%|████▌                                    |  ETA: 3 days, 15:25:48[K
+Installing Calendar
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Calendar [5eea6763]:\n Calendar [5eea6763] log:\n ├─possible versions are: [0.1.0, 0.2.0-0.2.2, 0.3.0-0.3.4, 0.4.0-0.4.3] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0-0.2.2, 0.3.0-0.3.4, 0.4.0-0.4.3]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  11%|████▋                                    |  ETA: 3 days, 15:10:34[K
+Installing Callbacks
+ Resolving package versions...
+ Installed Spec ────── v0.2.0
+ Installed Lens ────── v0.1.1
+ Installed Callbacks ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [db1e321a] + Callbacks v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [db1e321a] + Callbacks v0.1.0
+  [496038af] + Lens v0.1.1
+  [b8ccf107] + Spec v0.2.0

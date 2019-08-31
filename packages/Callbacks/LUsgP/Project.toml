@@ -1,0 +1,16 @@
+name = "Callbacks"
+uuid = "db1e321a-d383-57b4-a664-0144fd54e973"
+authors = ["Zenna Tavares <zennatavares@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Lens = "496038af-b016-571c-b31e-8262695ac102"
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+UnicodePlots = "b8865327-cd53-5732-bb35-84acbb429228"
+
+[compat]
+Lens = "0.1.1"
+
+[extras]
+Lens = "496038af-b016-571c-b31e-8262695ac102"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
