@@ -30266,3 +30266,30 @@ Installing BenchmarkProfiles
   Building GR ────→ `~/.julia/packages/GR/ZI5OE/deps/build.log`
   Building FFMPEG → `~/.julia/packages/FFMPEG/9JQpZ/deps/build.log`
   Building Plots ─→ `~/.julia/packages/Plots/Ih71u/deps/build.log`
+[master 50785fa1f] added package BenchmarkProfiles
+ 20 files changed, 993 insertions(+)
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/.gitignore
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/.travis.yml
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/LICENSE.md
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/README.md
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/REQUIRE
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/appveyor.yml
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/consent/RE_ Performance_data profile code.eml
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/consent/RE_ Performance_data profile code.txt
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/consent/Re_ Performance profiles.eml
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/consent/Re_ Performance profiles.txt
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/img/random_profile.png
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/src/BenchmarkProfiles.jl
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/src/data_profiles.jl
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/src/performance_profiles.jl
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/test/REQUIRE
+ create mode 100644 packages/BenchmarkProfiles/FBLNT/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   28d551467..50785fa1f  master -> master
+Progress:   6%|██▌                                      |  ETA: 4 days, 9:39:56[K
+Installing BenchmarkTools
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [6e4b80f9] + BenchmarkTools v0.4.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
