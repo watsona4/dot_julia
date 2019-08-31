@@ -1,0 +1,22 @@
+name = "DataDeps"
+uuid = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
+authors = ["Lyndon White <oxinabox@ucc.asn.au>"]
+version = "0.6.5"
+
+[deps]
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+
+[compat]
+ExpectationStubs = "0.2.0"
+HTTP = "0.8.5"
+julia = "0.7, 1"
+
+[extras]
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+ExpectationStubs = "cd0106a6-6d98-567f-99b2-156dd1635c57"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "ExpectationStubs", "DelimitedFiles"]

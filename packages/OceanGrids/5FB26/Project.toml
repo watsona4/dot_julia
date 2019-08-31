@@ -1,0 +1,16 @@
+name = "OceanGrids"
+uuid = "cfe838f4-859f-11e9-2ea1-df7d4e7c3537"
+authors = ["Benoit Pasquier <pasquieb@uci.edu>"]
+version = "0.1.2"
+
+[deps]
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+
+[compat]
+julia = "1.1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
