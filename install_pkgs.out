@@ -48092,3 +48092,68 @@ Installing ChainRules
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [082447d4] + ChainRules v0.1.1
   [d360d2e6] + ChainRulesCore v0.2.0
+[master d59fbfc9b] added package ChainRules
+ 58 files changed, 3514 insertions(+)
+ create mode 100644 packages/ChainRules/Wfa1I/.gitignore
+ create mode 100644 packages/ChainRules/Wfa1I/.travis.yml
+ create mode 100644 packages/ChainRules/Wfa1I/LICENSE.md
+ create mode 100644 packages/ChainRules/Wfa1I/Project.toml
+ create mode 100644 packages/ChainRules/Wfa1I/README.md
+ create mode 100644 packages/ChainRules/Wfa1I/docs/Project.toml
+ create mode 100644 packages/ChainRules/Wfa1I/docs/make.jl
+ create mode 100644 packages/ChainRules/Wfa1I/docs/src/api.md
+ create mode 100644 packages/ChainRules/Wfa1I/docs/src/getting_started.md
+ create mode 100644 packages/ChainRules/Wfa1I/docs/src/index.md
+ create mode 100644 packages/ChainRules/Wfa1I/src/ChainRules.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/helper_functions.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/Base/array.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/Base/base.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/Base/broadcast.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/Base/mapreduce.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/LinearAlgebra/blas.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/LinearAlgebra/dense.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/LinearAlgebra/factorization.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/LinearAlgebra/structured.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/LinearAlgebra/utils.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/Statistics/statistics.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/packages/NaNMath.jl
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/packages/README.md
+ create mode 100644 packages/ChainRules/Wfa1I/src/rulesets/packages/SpecialFunctions.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/helper_functions.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/Base/array.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/Base/base.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/Base/broadcast.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/Base/mapreduce.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/LinearAlgebra/blas.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/LinearAlgebra/dense.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/LinearAlgebra/factorization.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/LinearAlgebra/structured.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/Statistics/statistics.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/packages/NaNMath.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/rulesets/packages/SpecialFunctions.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/runtests.jl
+ create mode 100644 packages/ChainRules/Wfa1I/test/test_util.jl
+ create mode 100644 packages/ChainRulesCore/ZpveH/.gitignore
+ create mode 100644 packages/ChainRulesCore/ZpveH/.travis.yml
+ create mode 100644 packages/ChainRulesCore/ZpveH/LICENSE.md
+ create mode 100644 packages/ChainRulesCore/ZpveH/Project.toml
+ create mode 100644 packages/ChainRulesCore/ZpveH/README.md
+ create mode 100644 packages/ChainRulesCore/ZpveH/src/ChainRulesCore.jl
+ create mode 100644 packages/ChainRulesCore/ZpveH/src/differential_arithmetic.jl
+ create mode 100644 packages/ChainRulesCore/ZpveH/src/differentials.jl
+ create mode 100644 packages/ChainRulesCore/ZpveH/src/rule_definition_tools.jl
+ create mode 100644 packages/ChainRulesCore/ZpveH/src/rule_types.jl
+ create mode 100644 packages/ChainRulesCore/ZpveH/src/rules.jl
+ create mode 100644 packages/ChainRulesCore/ZpveH/test/differentials.jl
+ create mode 100644 packages/ChainRulesCore/ZpveH/test/rule_types.jl
+ create mode 100644 packages/ChainRulesCore/ZpveH/test/rules.jl
+ create mode 100644 packages/ChainRulesCore/ZpveH/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   00cc2e413..d59fbfc9b  master -> master
+Progress:  12%|████▉                                    |  ETA: 3 days, 11:55:16[K
+Installing ChainRulesCore
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [d360d2e6] + ChainRulesCore v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
