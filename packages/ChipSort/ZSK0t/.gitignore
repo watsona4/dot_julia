@@ -1,0 +1,6 @@
+*~
+\#*\#
+docs/build/
+src/*cov
+test/*cov
+benchmark/tune.json
