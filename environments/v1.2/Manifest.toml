@@ -507,6 +507,12 @@ git-tree-sha1 = "49f4b65257038cd3c35f72f5fbfa548df643c5b5"
 uuid = "fe3fc30c-9b16-11e9-1c73-17dabf39f4ad"
 version = "0.2.0"
 
+[[AstroLib]]
+deps = ["Dates", "DelimitedFiles", "LinearAlgebra", "Printf", "StaticArrays", "Test"]
+git-tree-sha1 = "2f5675eda6e16a5efeb60e1b387fbd7800706cd2"
+uuid = "c7932e45-9af1-51e7-9da9-f004cd3a462b"
+version = "0.4.0"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
