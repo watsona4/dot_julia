@@ -1642,6 +1642,12 @@ git-tree-sha1 = "4f2ed36578a061c2c765b280b143358589cd7bd0"
 uuid = "8bab3169-4815-5aad-9f88-5df82062e999"
 version = "0.1.1"
 
+[[Circuitscape]]
+deps = ["AlgebraicMultigrid", "Dates", "DelimitedFiles", "Distributed", "GZip", "IterativeSolvers", "LightGraphs", "LinearAlgebra", "Logging", "SharedArrays", "SimpleWeightedGraphs", "SparseArrays", "Test"]
+git-tree-sha1 = "a617bb2378aaf4557901bfe768999a2dd85171bb"
+uuid = "2b7a1792-8151-5239-925d-e2b8fdfa3201"
+version = "5.5.4"
+
 [[Clang]]
 deps = ["BinaryProvider", "CEnum", "DataStructures", "Libdl"]
 git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"
@@ -3850,6 +3856,12 @@ deps = ["InteractiveUtils", "MacroTools"]
 git-tree-sha1 = "05bbf4484b975782e5e54bb0750f21f7f2f66171"
 uuid = "699a6c99-e7fa-54fc-8d76-47d257e15c1d"
 version = "0.9.0"
+
+[[SimpleWeightedGraphs]]
+deps = ["LightGraphs", "LinearAlgebra", "Markdown", "SparseArrays", "Test"]
+git-tree-sha1 = "8e8a0c6b2193b0b96484a4bba6335d105108fcbc"
+uuid = "47aef6b3-ad0c-573a-a1e2-d07658019622"
+version = "1.1.0"
 
 [[Simplices]]
 deps = ["Conda", "Distributions", "LinearAlgebra", "Parameters", "Printf", "PyCall", "StaticArrays", "Test"]

@@ -49008,3 +49008,39 @@ Installing ChunkedArrays
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [8bab3169] + ChunkedArrays v0.1.1
   [da5c29d0] + EllipsisNotation v0.4.0
+[master e8a8b5fc8] added package ChunkedArrays
+ 22 files changed, 735 insertions(+)
+ create mode 100644 packages/ChunkedArrays/cNMKj/.gitignore
+ create mode 100644 packages/ChunkedArrays/cNMKj/.travis.yml
+ create mode 100644 packages/ChunkedArrays/cNMKj/LICENSE.md
+ create mode 100644 packages/ChunkedArrays/cNMKj/README.md
+ create mode 100644 packages/ChunkedArrays/cNMKj/REQUIRE
+ create mode 100644 packages/ChunkedArrays/cNMKj/appveyor.yml
+ create mode 100644 packages/ChunkedArrays/cNMKj/src/ChunkedArrays.jl
+ create mode 100644 packages/ChunkedArrays/cNMKj/test/runtests.jl
+ create mode 100644 packages/EllipsisNotation/jWHb3/.gitignore
+ create mode 100644 packages/EllipsisNotation/jWHb3/.travis.yml
+ create mode 100644 packages/EllipsisNotation/jWHb3/LICENSE.md
+ create mode 100644 packages/EllipsisNotation/jWHb3/README.md
+ create mode 100644 packages/EllipsisNotation/jWHb3/REQUIRE
+ create mode 100644 packages/EllipsisNotation/jWHb3/appveyor.yml
+ create mode 100644 packages/EllipsisNotation/jWHb3/src/EllipsisNotation.jl
+ create mode 100644 packages/EllipsisNotation/jWHb3/test/basic.jl
+ create mode 100644 packages/EllipsisNotation/jWHb3/test/more_generic.jl
+ create mode 100644 packages/EllipsisNotation/jWHb3/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   d805b1a56..e8a8b5fc8  master -> master
+Progress:  13%|█████▏                                   |  ETA: 3 days, 9:50:32[K
+Installing Church
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Church [bbf84614]:\n Church [bbf84614] log:\n ├─possible versions are: 0.0.1 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  13%|█████▏                                   |  ETA: 3 days, 9:37:49[K
+Installing Circuitscape
+ Resolving package versions...
+ Installed SimpleWeightedGraphs ─ v1.1.0
+ Installed Circuitscape ───────── v5.5.4
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [2b7a1792] + Circuitscape v5.5.4
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [2b7a1792] + Circuitscape v5.5.4
+  [47aef6b3] + SimpleWeightedGraphs v1.1.0
