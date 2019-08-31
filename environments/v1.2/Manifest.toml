@@ -1970,6 +1970,12 @@ git-tree-sha1 = "3b868935adf4ce2115f5487e789553507739014c"
 uuid = "a9693cdc-2bc8-5703-a9cd-1da358117377"
 version = "0.1.0"
 
+[[ConditionalJuMP]]
+deps = ["IntervalArithmetic", "JuMP", "LinearAlgebra", "Nullables", "Pkg", "Printf", "Random", "Test"]
+git-tree-sha1 = "04551f4fee73fe5571404ca2745847c8e5b322e4"
+uuid = "ae04f764-fc8b-5ee0-af1c-aa760b5c9409"
+version = "0.1.0"
+
 [[Contour]]
 deps = ["LinearAlgebra", "StaticArrays", "Test"]
 git-tree-sha1 = "b974e164358fea753ef853ce7bad97afec15bb80"
