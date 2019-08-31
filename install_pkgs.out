@@ -35281,3 +35281,88 @@ Installing CAOS
   [a0c94c4b] + FastaIO v0.5.0
   Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
   Building EzXML ────→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
+[master 68b7a6066] added package CAOS
+ 71 files changed, 5265 insertions(+)
+ create mode 100644 packages/CAOS/NDV79/.codecov.yml
+ create mode 100644 packages/CAOS/NDV79/.gitignore
+ create mode 100644 packages/CAOS/NDV79/.travis.yml
+ create mode 100644 packages/CAOS/NDV79/LICENSE.md
+ create mode 100644 packages/CAOS/NDV79/Project.toml
+ create mode 100644 packages/CAOS/NDV79/README.md
+ create mode 100644 packages/CAOS/NDV79/REQUIRE
+ create mode 100644 packages/CAOS/NDV79/docs/make.jl
+ create mode 100644 packages/CAOS/NDV79/docs/src/bcbi_logo.svg
+ create mode 100644 packages/CAOS/NDV79/docs/src/documentation.md
+ create mode 100644 packages/CAOS/NDV79/docs/src/index.md
+ create mode 100644 packages/CAOS/NDV79/docs/src/usage.md
+ create mode 100644 packages/CAOS/NDV79/ready.yml
+ create mode 100644 packages/CAOS/NDV79/setup.cfg
+ create mode 100644 packages/CAOS/NDV79/src/CAOS.jl
+ create mode 100644 packages/CAOS/NDV79/src/caos_functions.jl
+ create mode 100644 packages/CAOS/NDV79/src/classification.jl
+ create mode 100644 packages/CAOS/NDV79/src/gap_imputation.jl
+ create mode 100644 packages/CAOS/NDV79/src/tree_functions.jl
+ create mode 100644 packages/CAOS/NDV79/src/user_functions.jl
+ create mode 100644 packages/CAOS/NDV79/src/utils.jl
+ create mode 100644 packages/CAOS/NDV79/test/caos_functions.jl
+ create mode 100644 packages/CAOS/NDV79/test/classification.jl
+ create mode 100644 packages/CAOS/NDV79/test/data/E1E2L1.nex
+ create mode 100644 packages/CAOS/NDV79/test/data/S10593.nex
+ create mode 100644 packages/CAOS/NDV79/test/data/dna_seq.txt
+ create mode 100644 packages/CAOS/NDV79/test/data/protein_seq.txt
+ create mode 100644 packages/CAOS/NDV79/test/data/s105943.nwk
+ create mode 100644 packages/CAOS/NDV79/test/gap_imputation.jl
+ create mode 100644 packages/CAOS/NDV79/test/runtests.jl
+ create mode 100644 packages/CAOS/NDV79/test/tree_functions.jl
+ create mode 100644 packages/CAOS/NDV79/test/user_functions.jl
+ create mode 100644 packages/CAOS/NDV79/test/utils.jl
+ create mode 100644 packages/FastaIO/Y0tAf/.travis.yml
+ create mode 100644 packages/FastaIO/Y0tAf/LICENSE.md
+ create mode 100644 packages/FastaIO/Y0tAf/README.md
+ create mode 100644 packages/FastaIO/Y0tAf/REQUIRE
+ create mode 100644 packages/FastaIO/Y0tAf/appveyor.yml
+ create mode 100644 packages/FastaIO/Y0tAf/docs/.gitignore
+ create mode 100644 packages/FastaIO/Y0tAf/docs/make.jl
+ create mode 100644 packages/FastaIO/Y0tAf/docs/src/index.md
+ create mode 100644 packages/FastaIO/Y0tAf/examples/README.md
+ create mode 100644 packages/FastaIO/Y0tAf/examples/example.fasta.gz
+ create mode 100644 packages/FastaIO/Y0tAf/examples/example_1.jl
+ create mode 100644 packages/FastaIO/Y0tAf/examples/example_2.jl
+ create mode 100644 packages/FastaIO/Y0tAf/examples/example_3.jl
+ create mode 100644 packages/FastaIO/Y0tAf/examples/example_4.jl
+ create mode 100644 packages/FastaIO/Y0tAf/examples/example_5.jl
+ create mode 100644 packages/FastaIO/Y0tAf/examples/example_6.jl
+ create mode 100644 packages/FastaIO/Y0tAf/examples/example_7.jl
+ create mode 100644 packages/FastaIO/Y0tAf/examples/example_8.jl
+ create mode 100644 packages/FastaIO/Y0tAf/src/FastaIO.jl
+ create mode 100644 packages/FastaIO/Y0tAf/test/invalid_test_1.fasta.gz
+ create mode 100644 packages/FastaIO/Y0tAf/test/invalid_test_2.fasta.gz
+ create mode 100644 packages/FastaIO/Y0tAf/test/invalid_test_3.fasta.gz
+ create mode 100644 packages/FastaIO/Y0tAf/test/invalid_test_4.fasta.gz
+ create mode 100644 packages/FastaIO/Y0tAf/test/invalid_test_5.fasta.gz
+ create mode 100644 packages/FastaIO/Y0tAf/test/invalid_test_6.fasta.gz
+ create mode 100644 packages/FastaIO/Y0tAf/test/runtests.jl
+ create mode 100644 packages/FastaIO/Y0tAf/test/test.fasta
+ create mode 100644 packages/FastaIO/Y0tAf/test/test.fasta.blanklines
+ create mode 100644 packages/FastaIO/Y0tAf/test/test.fasta.blanklines.gz
+ create mode 100644 packages/FastaIO/Y0tAf/test/test.fasta.gz
+ create mode 100644 packages/FastaIO/Y0tAf/test/test.fasta.no_eof
+ create mode 100644 packages/FastaIO/Y0tAf/test/test.fasta.no_eof.gz
+ create mode 100644 packages/FastaIO/Y0tAf/test/test.fasta.win
+ create mode 100644 packages/FastaIO/Y0tAf/test/test.fasta.win.gz
+To https://github.com/watsona4/dot_julia.git
+   9b78f30fb..68b7a6066  master -> master
+Progress:   9%|███▊                                     |  ETA: 3 days, 15:09:30[K
+Installing CBOR
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CBOR [7f3e1038]:\n CBOR [7f3e1038] log:\n ├─possible versions are: 0.0.1-0.0.2 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.2\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   9%|███▊                                     |  ETA: 3 days, 14:51:00[K
+Installing CBinding
+ Resolving package versions...
+ Installed Todo ───── v0.1.0
+ Installed CBinding ─ v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [d43a6710] + CBinding v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [d43a6710] + CBinding v0.2.0
+  [b28a226c] + Todo v0.1.0

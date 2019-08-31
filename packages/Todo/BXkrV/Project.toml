@@ -1,0 +1,11 @@
+name = "Todo"
+uuid = "b28a226c-6cff-11e9-1336-699fd753ab00"
+authors = ["Keith Rutkowski <keith@analytech-solutions.com>"]
+version = "0.1.0"
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "^1.0"
