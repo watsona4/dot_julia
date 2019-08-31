@@ -11458,3 +11458,17 @@ Installing ApproxFunOrthogonalPolynomials
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
   Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+[master 767adb1d0] added package ApproxFunOrthogonalPolynomials
+ 3 files changed, 33 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   6a99cdccc..767adb1d0  master -> master
+Progress:   3%|█▏                                       |  ETA: 2 days, 4:12:06[K
+Installing ApproxFunSingularities
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [f8fcb915] + ApproxFunSingularities v0.1.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
