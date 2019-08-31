@@ -192,6 +192,12 @@ git-tree-sha1 = "0934728e53422c94232ed4f448eca627f70fb931"
 uuid = "6cc8125e-a04b-5e90-9cbf-894ba9b8047f"
 version = "0.1.0"
 
+[[AdobeGlyphList]]
+deps = ["DelimitedFiles", "Pkg", "Test"]
+git-tree-sha1 = "dce62e14d1eb385ef241a05094a7bc9511a276dc"
+uuid = "715cd884-8f22-55db-b077-449d1f7eef73"
+version = "0.1.1"
+
 [[AlgebraicMultigrid]]
 deps = ["Compat", "IterativeSolvers", "Random"]
 git-tree-sha1 = "a26560b0f8cb9104d96715c32f7c272504631ea9"

@@ -7139,3 +7139,25 @@ Installing AdjacentFloats
   [6cc8125e] + AdjacentFloats v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [6cc8125e] + AdjacentFloats v0.1.0
+[master 946bb9fa2] added package AdjacentFloats
+ 14 files changed, 276 insertions(+)
+ create mode 100644 packages/AdjacentFloats/rsp3o/.codecov.yml
+ create mode 100644 packages/AdjacentFloats/rsp3o/.gitignore
+ create mode 100644 packages/AdjacentFloats/rsp3o/.travis.yml
+ create mode 100644 packages/AdjacentFloats/rsp3o/LICENSE
+ create mode 100644 packages/AdjacentFloats/rsp3o/Project.toml
+ create mode 100644 packages/AdjacentFloats/rsp3o/README.md
+ create mode 100644 packages/AdjacentFloats/rsp3o/REQUIRE
+ create mode 100644 packages/AdjacentFloats/rsp3o/appveyor.yml
+ create mode 100644 packages/AdjacentFloats/rsp3o/src/AdjacentFloats.jl
+ create mode 100644 packages/AdjacentFloats/rsp3o/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   c6d79fb73..946bb9fa2  master -> master
+Progress:   2%|▋                                        |  ETA: 1 days, 23:27:14[K
+Installing AdobeGlyphList
+ Resolving package versions...
+ Installed AdobeGlyphList ─ v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [715cd884] + AdobeGlyphList v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [715cd884] + AdobeGlyphList v0.1.1
