@@ -34179,3 +34179,113 @@ Installing BotCoreLCMTypes
 │   Updating git-repo `https://github.com/JuliaRegistries/General.git`
 │ [?25l[2K[?25h
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master 2707a2cc1] added package BotCoreLCMTypes
+ 102 files changed, 3742 insertions(+)
+ rewrite compiled/v1.2/CMake/TDh52.ji (95%)
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/.gitignore
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/.travis.yml
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/LICENSE.md
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/Project.toml
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/README.md
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/BotCoreLCMTypes.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/atlas_command_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/force_torque_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/gps_data_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/gps_satellite_info_list_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/gps_satellite_info_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/image_metadata_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/image_sync_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/image_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/images_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/ins_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/joint_angles_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/joint_state_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/kvh_raw_imu_batch_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/kvh_raw_imu_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/planar_lidar_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/pointcloud2_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/pointcloud_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/pointfield_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/pose_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/position_3d_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/quaternion_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/raw_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/rigid_transform_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/robot_state_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/robot_urdf_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/sensor_status_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/six_axis_force_torque_array_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/six_axis_force_torque_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/system_status_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/twist_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/utime_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/vector_3d_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/viewer_command_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/viewer_draw_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/viewer_geometry_data_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/viewer_link_data_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/src/viewer_load_robot_t.jl
+ create mode 100644 packages/BotCoreLCMTypes/UG28B/test/runtests.jl
+ create mode 100755 packages/BotCoreLCMTypes/UG28B/utils/create_type.sh
+ create mode 100644 packages/CMake/ZGawK/.codecov.yml
+ create mode 100644 packages/CMake/ZGawK/.gitignore
+ create mode 100644 packages/CMake/ZGawK/.travis.yml
+ create mode 100644 packages/CMake/ZGawK/LICENSE.md
+ create mode 100644 packages/CMake/ZGawK/README.md
+ create mode 100644 packages/CMake/ZGawK/REQUIRE
+ create mode 100644 packages/CMake/ZGawK/appveyor.yml
+ create mode 100644 packages/CMake/ZGawK/deps/.gitignore
+ create mode 100644 packages/CMake/ZGawK/deps/build.jl
+ create mode 100644 packages/CMake/ZGawK/src/CMake.jl
+ create mode 100644 packages/CMake/ZGawK/test/runtests.jl
+ create mode 100644 packages/FastIOBuffers/lvoBC/.gitignore
+ create mode 100644 packages/FastIOBuffers/lvoBC/.travis.yml
+ create mode 100644 packages/FastIOBuffers/lvoBC/LICENSE.md
+ create mode 100644 packages/FastIOBuffers/lvoBC/Project.toml
+ create mode 100644 packages/FastIOBuffers/lvoBC/README.md
+ create mode 100644 packages/FastIOBuffers/lvoBC/perf/runbenchmarks.jl
+ create mode 100644 packages/FastIOBuffers/lvoBC/src/FastIOBuffers.jl
+ create mode 100644 packages/FastIOBuffers/lvoBC/src/fastreadbuffer.jl
+ create mode 100644 packages/FastIOBuffers/lvoBC/src/fastwritebuffer.jl
+ create mode 100644 packages/FastIOBuffers/lvoBC/test/REQUIRE
+ create mode 100644 packages/FastIOBuffers/lvoBC/test/runtests.jl
+ create mode 100644 packages/LCMCore/cPbOB/.gitignore
+ create mode 100644 packages/LCMCore/cPbOB/.travis.yml
+ create mode 100644 packages/LCMCore/cPbOB/LICENSE.md
+ create mode 100644 packages/LCMCore/cPbOB/Project.toml
+ create mode 100644 packages/LCMCore/cPbOB/Readme.md
+ create mode 100644 packages/LCMCore/cPbOB/deps/Manifest.toml
+ create mode 100644 packages/LCMCore/cPbOB/deps/Project.toml
+ create mode 100644 packages/LCMCore/cPbOB/deps/build.jl
+ create mode 100644 packages/LCMCore/cPbOB/src/LCMCore.jl
+ create mode 100644 packages/LCMCore/cPbOB/src/core.jl
+ create mode 100644 packages/LCMCore/cPbOB/src/lcmtype.jl
+ create mode 100644 packages/LCMCore/cPbOB/src/readlog.jl
+ create mode 100644 packages/LCMCore/cPbOB/src/util.jl
+ create mode 100644 packages/LCMCore/cPbOB/test/lcmtypes/image_metadata_t.jl
+ create mode 100644 packages/LCMCore/cPbOB/test/lcmtypes/lcm_test_type_1.lcm
+ create mode 100644 packages/LCMCore/cPbOB/test/lcmtypes/lcm_test_type_1_example_bytes
+ create mode 100644 packages/LCMCore/cPbOB/test/lcmtypes/lcm_test_type_2.lcm
+ create mode 100644 packages/LCMCore/cPbOB/test/lcmtypes/lcm_test_type_2_example_bytes
+ create mode 100644 packages/LCMCore/cPbOB/test/lcmtypes/lcm_test_type_3.lcm
+ create mode 100644 packages/LCMCore/cPbOB/test/lcmtypes/lcm_test_type_3_example_bytes
+ create mode 100644 packages/LCMCore/cPbOB/test/lcmtypes/lcmtesttypes.jl
+ create mode 100644 packages/LCMCore/cPbOB/test/lcmtypes/polynomial_matrix_t_example_bytes
+ create mode 100644 packages/LCMCore/cPbOB/test/lcmtypes/polynomial_t_example_bytes
+ create mode 100644 packages/LCMCore/cPbOB/test/mymessage.jl
+ create mode 100644 packages/LCMCore/cPbOB/test/runtests.jl
+ create mode 100644 packages/LCMCore/cPbOB/test/test_lcmtype.jl
+ create mode 100644 packages/LCMCore/cPbOB/test/test_readlog.jl
+ create mode 100644 packages/LCMCore/cPbOB/test/testdata/image_metadata_log.lcm
+ create mode 100644 packages/LCMCore/cPbOB/test/testdata/testlog.lcm
+To https://github.com/watsona4/dot_julia.git
+   f649ff6f5..2707a2cc1  master -> master
+Progress:   8%|███▍                                     |  ETA: 3 days, 19:47:26[K
+Installing BoundaryValueDiffEq
+ Resolving package versions...
+ Installed BoundaryValueDiffEq ─ v2.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [764a87c0] + BoundaryValueDiffEq v2.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [764a87c0] + BoundaryValueDiffEq v2.3.0
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
