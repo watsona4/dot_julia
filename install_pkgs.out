@@ -22821,3 +22821,14 @@ Installing ArgParse
   [c7e460c6] + ArgParse v0.6.2
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master e5b0c7c93] added package ArgParse
+ 3 files changed, 18 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   39e8fba91..e5b0c7c93  master -> master
+Progress:   3%|█▍                                       |  ETA: 6 days, 17:34:41[K
+Installing ArnoldiMethod
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [ec485272] + ArnoldiMethod v0.0.4
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
