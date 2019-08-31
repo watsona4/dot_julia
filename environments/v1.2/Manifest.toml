@@ -833,6 +833,12 @@ git-tree-sha1 = "28ac049a3d9666925d23bd0eb9ec2ba03f1c31bf"
 uuid = "0601b4d0-0592-11e9-1558-ab091b5e7996"
 version = "1.1.0"
 
+[[Bhaskara]]
+deps = ["Test"]
+git-tree-sha1 = "8269e5b6dc7fd4acc815f3250043c93bb2ce21e5"
+uuid = "0ff2d225-4740-5ba6-bff6-8e455aafa9c9"
+version = "0.1.1"
+
 [[BinDeps]]
 deps = ["Compat", "Libdl", "SHA", "URIParser"]
 git-tree-sha1 = "12093ca6cdd0ee547c39b1870e0c9c3f154d9ca9"

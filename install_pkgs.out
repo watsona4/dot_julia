@@ -30381,3 +30381,90 @@ Installing BetweenFlags
   [35a29f4d] + DocumenterTools v0.1.0
   [98b081ad] + Literate v2.0.3
   Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+[master 7e32bf762] added package BetweenFlags
+ 75 files changed, 5627 insertions(+)
+ create mode 100644 packages/BetweenFlags/40U4C/.appveyor.yml
+ create mode 100644 packages/BetweenFlags/40U4C/.codecov.yml
+ create mode 100644 packages/BetweenFlags/40U4C/.gitignore
+ create mode 100644 packages/BetweenFlags/40U4C/.travis.yml
+ create mode 100644 packages/BetweenFlags/40U4C/LICENSE
+ create mode 100644 packages/BetweenFlags/40U4C/Manifest.toml
+ create mode 100644 packages/BetweenFlags/40U4C/Project.toml
+ create mode 100644 packages/BetweenFlags/40U4C/README.md
+ create mode 100644 packages/BetweenFlags/40U4C/REQUIRE
+ create mode 100644 packages/BetweenFlags/40U4C/docs/Manifest.toml
+ create mode 100644 packages/BetweenFlags/40U4C/docs/Project.toml
+ create mode 100644 packages/BetweenFlags/40U4C/docs/logo/FlagStart.tex
+ create mode 100644 packages/BetweenFlags/40U4C/docs/logo/FlagStop.tex
+ create mode 100644 packages/BetweenFlags/40U4C/docs/logo/flag.tex
+ create mode 100644 packages/BetweenFlags/40U4C/docs/logo/logo.tex
+ create mode 100644 packages/BetweenFlags/40U4C/docs/make.jl
+ create mode 100644 packages/BetweenFlags/40U4C/docs/src/Functions/Greedy.md
+ create mode 100644 packages/BetweenFlags/40U4C/docs/src/Functions/LevelBased.md
+ create mode 100644 packages/BetweenFlags/40U4C/docs/src/Functions/index.md
+ create mode 100644 packages/BetweenFlags/40U4C/docs/src/api.md
+ create mode 100644 packages/BetweenFlags/40U4C/docs/src/assets/logo.png
+ create mode 100644 packages/BetweenFlags/40U4C/docs/src/index.md
+ create mode 100644 packages/BetweenFlags/40U4C/src/BetweenFlags.jl
+ create mode 100644 packages/BetweenFlags/40U4C/src/FeaturedFuncs.jl
+ create mode 100644 packages/BetweenFlags/40U4C/src/PerFlagFuncs.jl
+ create mode 100644 packages/BetweenFlags/40U4C/src/UtilityFuncs.jl
+ create mode 100644 packages/BetweenFlags/40U4C/test/FeaturedFuncs.jl
+ create mode 100644 packages/BetweenFlags/40U4C/test/PerFlagFuncs.jl
+ create mode 100644 packages/BetweenFlags/40U4C/test/runtests.jl
+ create mode 100644 packages/DocumenterTools/QEnZ4/.gitignore
+ create mode 100644 packages/DocumenterTools/QEnZ4/.travis.yml
+ create mode 100644 packages/DocumenterTools/QEnZ4/LICENSE.md
+ create mode 100644 packages/DocumenterTools/QEnZ4/Project.toml
+ create mode 100644 packages/DocumenterTools/QEnZ4/README.md
+ create mode 100644 packages/DocumenterTools/QEnZ4/REQUIRE
+ create mode 100644 packages/DocumenterTools/QEnZ4/appveyor.yml
+ create mode 100644 packages/DocumenterTools/QEnZ4/src/DocumenterTools.jl
+ create mode 100644 packages/DocumenterTools/QEnZ4/src/Generator.jl
+ create mode 100644 packages/DocumenterTools/QEnZ4/src/Travis.jl
+ create mode 100644 packages/DocumenterTools/QEnZ4/test/coverage/Project.toml
+ create mode 100644 packages/DocumenterTools/QEnZ4/test/coverage/coverage.jl
+ create mode 100644 packages/DocumenterTools/QEnZ4/test/generate.jl
+ create mode 100644 packages/DocumenterTools/QEnZ4/test/runtests.jl
+ create mode 100644 packages/Literate/1lTVT/.appveyor.yml
+ create mode 100644 packages/Literate/1lTVT/.codecov.yml
+ create mode 100644 packages/Literate/1lTVT/.gitignore
+ create mode 100644 packages/Literate/1lTVT/.travis.yml
+ create mode 100644 packages/Literate/1lTVT/CHANGELOG.md
+ create mode 100644 packages/Literate/1lTVT/LICENSE.md
+ create mode 100644 packages/Literate/1lTVT/Project.toml
+ create mode 100644 packages/Literate/1lTVT/README.md
+ create mode 100644 packages/Literate/1lTVT/docs/.gitignore
+ create mode 100644 packages/Literate/1lTVT/docs/Manifest.toml
+ create mode 100644 packages/Literate/1lTVT/docs/Project.toml
+ create mode 100644 packages/Literate/1lTVT/docs/make.jl
+ create mode 100644 packages/Literate/1lTVT/docs/src/assets/custom.css
+ create mode 100644 packages/Literate/1lTVT/docs/src/assets/logo.png
+ create mode 100644 packages/Literate/1lTVT/docs/src/customprocessing.md
+ create mode 100644 packages/Literate/1lTVT/docs/src/documenter.md
+ create mode 100644 packages/Literate/1lTVT/docs/src/fileformat.md
+ create mode 100644 packages/Literate/1lTVT/docs/src/index.md
+ create mode 100644 packages/Literate/1lTVT/docs/src/outputformats.jl
+ create mode 100644 packages/Literate/1lTVT/docs/src/outputformats.md
+ create mode 100644 packages/Literate/1lTVT/docs/src/pipeline.md
+ create mode 100644 packages/Literate/1lTVT/examples/README.jl
+ create mode 100644 packages/Literate/1lTVT/examples/example.jl
+ create mode 100644 packages/Literate/1lTVT/src/Documenter.jl
+ create mode 100644 packages/Literate/1lTVT/src/IJulia.jl
+ create mode 100644 packages/Literate/1lTVT/src/Literate.jl
+ create mode 100644 packages/Literate/1lTVT/test/coverage/Project.toml
+ create mode 100644 packages/Literate/1lTVT/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   20fd3505a..7e32bf762  master -> master
+Progress:   6%|██▌                                      |  ETA: 4 days, 8:12:00[K
+Installing Bezier
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Bezier [a4542142]:\n Bezier [a4542142] log:\n ├─possible versions are: 0.0.1 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   6%|██▋                                      |  ETA: 4 days, 7:39:54[K
+Installing Bhaskara
+ Resolving package versions...
+ Installed Bhaskara ─ v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [0ff2d225] + Bhaskara v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [0ff2d225] + Bhaskara v0.1.1
