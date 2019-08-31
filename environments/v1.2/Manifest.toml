@@ -1196,6 +1196,12 @@ git-tree-sha1 = "8e1e8692ef860f2cdb27baab66a5eae4ef9cf350"
 uuid = "3e78a19a-cc83-51d8-955b-515f39fd7955"
 version = "0.4.6"
 
+[[BulkSMS]]
+deps = ["HTTP", "Test"]
+git-tree-sha1 = "749ba8d6d6bcad08c8cb4636f63951e66a608938"
+uuid = "5fa4ca3b-1c55-51a6-87f0-d5811ecf545c"
+version = "0.0.1"
+
 [[CEnum]]
 git-tree-sha1 = "62847acab40e6855a9b5905ccb99c2b5cf6b3ebb"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"
