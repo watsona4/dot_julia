@@ -2016,6 +2016,12 @@ git-tree-sha1 = "ced6735a41560513d3dbea9d2d079849ef173e96"
 uuid = "35eb6272-8738-11e9-0051-6dceb7698eda"
 version = "0.1.1"
 
+[[ContinuousTimeMarkov]]
+deps = ["AlgebraResultTypes", "ArgCheck", "Distributions", "DocStringExtensions", "LinearAlgebra", "Parameters", "Random", "SparseArrays"]
+git-tree-sha1 = "d4439019ee5d7fabe0d4e47d817ec57116c27265"
+uuid = "eab40c8d-01e0-5a99-916a-641eeda4da29"
+version = "0.2.0"
+
 [[Contour]]
 deps = ["LinearAlgebra", "StaticArrays", "Test"]
 git-tree-sha1 = "b974e164358fea753ef853ce7bad97afec15bb80"
