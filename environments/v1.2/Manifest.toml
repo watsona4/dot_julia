@@ -1083,6 +1083,12 @@ git-tree-sha1 = "040bbe596df2dffc40fb969e1d09e58d22182d2b"
 uuid = "0a1fb500-61f7-11e9-3c65-f5ef3456f9f0"
 version = "0.1.0"
 
+[[BloomFilters]]
+deps = ["Compat", "Mmap", "Printf"]
+git-tree-sha1 = "74853bdd49edbaabdb45e085f5c5eea97453a193"
+uuid = "d3d7f49f-8593-5289-ba71-9c4f4848f489"
+version = "0.3.0"
+
 [[Blosc]]
 deps = ["BinaryProvider", "CMakeWrapper", "Compat", "Libdl"]
 git-tree-sha1 = "71fb23581e1f0b0ae7be8ccf0ebfb3600e23ca41"

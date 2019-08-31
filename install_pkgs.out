@@ -33445,3 +33445,36 @@ Installing BlockDiagonals
   [0a1fb500] + BlockDiagonals v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [0a1fb500] + BlockDiagonals v0.1.0
+[master 81639b1c3] added package BlockDiagonals
+ 21 files changed, 974 insertions(+)
+ create mode 100644 packages/BlockDiagonals/CkJOr/.gitignore
+ create mode 100644 packages/BlockDiagonals/CkJOr/.travis.yml
+ create mode 100644 packages/BlockDiagonals/CkJOr/LICENSE
+ create mode 100644 packages/BlockDiagonals/CkJOr/Project.toml
+ create mode 100644 packages/BlockDiagonals/CkJOr/README.md
+ create mode 100644 packages/BlockDiagonals/CkJOr/docs/Manifest.toml
+ create mode 100644 packages/BlockDiagonals/CkJOr/docs/Project.toml
+ create mode 100644 packages/BlockDiagonals/CkJOr/docs/make.jl
+ create mode 100644 packages/BlockDiagonals/CkJOr/docs/src/index.md
+ create mode 100644 packages/BlockDiagonals/CkJOr/src/BlockDiagonals.jl
+ create mode 100644 packages/BlockDiagonals/CkJOr/src/base_maths.jl
+ create mode 100644 packages/BlockDiagonals/CkJOr/src/blockdiagonal.jl
+ create mode 100644 packages/BlockDiagonals/CkJOr/src/linalg.jl
+ create mode 100644 packages/BlockDiagonals/CkJOr/test/base_maths.jl
+ create mode 100644 packages/BlockDiagonals/CkJOr/test/blockdiagonal.jl
+ create mode 100644 packages/BlockDiagonals/CkJOr/test/linalg.jl
+ create mode 100644 packages/BlockDiagonals/CkJOr/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   b71a70ae1..81639b1c3  master -> master
+Progress:   8%|███▎                                     |  ETA: 3 days, 21:16:15[K
+Installing Blocks
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Blocks [7cb6cbaf]:\n Blocks [7cb6cbaf] log:\n ├─possible versions are: [0.0.1-0.0.7, 0.1.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.7, 0.1.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   8%|███▎                                     |  ETA: 3 days, 20:53:41[K
+Installing BloomFilters
+ Resolving package versions...
+ Installed BloomFilters ─ v0.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [d3d7f49f] + BloomFilters v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [d3d7f49f] + BloomFilters v0.3.0
