@@ -1,0 +1,15 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.6
+  - 0.7
+  - 1.0
+notifications:
+  email: false
+addons:
+  apt_packages:
+    - gfortran
+after_success:
+- julia -e '(VERSION >= v"0.7" && using Pkg); cd(Pkg.dir("ConicNonlinearBridge")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
