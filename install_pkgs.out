@@ -37855,3 +37855,34 @@ Installing CMPFit
 │  [14] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/build.jl:42
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master 2071fed19] added package CMPFit
+ 23 files changed, 4764 insertions(+)
+ create mode 100644 packages/CMPFit/OTtF8/.gitignore
+ create mode 100644 packages/CMPFit/OTtF8/.travis.yml
+ create mode 100644 packages/CMPFit/OTtF8/LICENSE.md
+ create mode 100644 packages/CMPFit/OTtF8/README.md
+ create mode 100644 packages/CMPFit/OTtF8/REQUIRE
+ create mode 100644 packages/CMPFit/OTtF8/deps/build.jl
+ create mode 100644 packages/CMPFit/OTtF8/deps/build.log
+ create mode 100644 packages/CMPFit/OTtF8/deps/cmake.mpfit
+ create mode 100644 packages/CMPFit/OTtF8/deps/downloads/cmpfit-1.3a.tar.gz
+ create mode 100644 packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/CMakeLists.txt
+ create mode 100644 packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/DISCLAIMER
+ create mode 100644 packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/Makefile
+ create mode 100644 packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/README
+ create mode 100644 packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/mpfit.c
+ create mode 100644 packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/mpfit.h
+ create mode 100644 packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/testmpfit.c
+ create mode 100644 packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/testmpfit.log
+ create mode 100644 packages/CMPFit/OTtF8/src/CMPFit.jl
+ create mode 100644 packages/CMPFit/OTtF8/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   85a632bcc..2071fed19  master -> master
+Progress:   9%|███▉                                     |  ETA: 3 days, 14:49:42[K
+Installing CMake
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [631607c0] + CMake v1.1.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
+  Building CMake → `~/.julia/packages/CMake/nSK2r/deps/build.log`
