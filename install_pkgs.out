@@ -38465,3 +38465,47 @@ Installing CSFML
 │  [9] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/CSFML/KI9Y5/deps/build.jl:48
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master 2d7463c0f] added package CSFML
+ 35 files changed, 4933 insertions(+)
+ create mode 100644 packages/CSFML/KI9Y5/.appveyor.yml
+ create mode 100644 packages/CSFML/KI9Y5/.gitignore
+ create mode 100644 packages/CSFML/KI9Y5/.travis.yml
+ create mode 100644 packages/CSFML/KI9Y5/LICENSE
+ create mode 100644 packages/CSFML/KI9Y5/Project.toml
+ create mode 100644 packages/CSFML/KI9Y5/README.md
+ create mode 100644 packages/CSFML/KI9Y5/deps/build.jl
+ create mode 100644 packages/CSFML/KI9Y5/examples/Chrono_Trigger.ogg
+ create mode 100644 packages/CSFML/KI9Y5/examples/Roboto-Bold.ttf
+ create mode 100644 packages/CSFML/KI9Y5/examples/julia-tan.png
+ create mode 100644 packages/CSFML/KI9Y5/examples/short_example.jl
+ create mode 100644 packages/CSFML/KI9Y5/gen/gen_audio.jl
+ create mode 100644 packages/CSFML/KI9Y5/gen/gen_config.jl
+ create mode 100644 packages/CSFML/KI9Y5/gen/gen_graphics.jl
+ create mode 100644 packages/CSFML/KI9Y5/gen/gen_network.jl
+ create mode 100644 packages/CSFML/KI9Y5/gen/gen_system.jl
+ create mode 100644 packages/CSFML/KI9Y5/gen/gen_window.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/Audio/audio_api.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/Audio/audio_common.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/CSFML.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/Graphics/graphics_api.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/Graphics/graphics_common.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/LibCSFML.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/Network/network_api.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/Network/network_common.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/System/system_api.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/System/system_common.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/Window/window_api.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/Window/window_common.jl
+ create mode 100644 packages/CSFML/KI9Y5/src/config.jl
+ create mode 100644 packages/CSFML/KI9Y5/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   c55e76aab..2d7463c0f  master -> master
+Progress:  10%|████▏                                    |  ETA: 3 days, 11:36:14[K
+Installing CSSUtil
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [70588ee8] + CSSUtil v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+  Building WebIO ──→ `~/.julia/packages/WebIO/2mZPb/deps/build.log`
