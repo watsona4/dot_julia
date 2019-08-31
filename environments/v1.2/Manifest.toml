@@ -1630,6 +1630,12 @@ git-tree-sha1 = "50c0004b9056e495f1b601ed201202bdf8d55ae6"
 uuid = "06416c39-db7e-5258-b068-33480f0cdbbc"
 version = "0.1.0"
 
+[[ChrBase]]
+deps = ["CharSetEncodings", "ModuleInterfaceTools", "Random", "StrAPI", "Unicode"]
+git-tree-sha1 = "f80aba998c6b6050814530f9212289761cd60c7f"
+uuid = "c13fa7b1-fb91-5a40-8b3c-3aad7fd30002"
+version = "1.0.0"
+
 [[Clang]]
 deps = ["BinaryProvider", "CEnum", "DataStructures", "Libdl"]
 git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"

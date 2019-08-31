@@ -48910,3 +48910,70 @@ Installing ChipSort
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [06416c39] + ChipSort v0.1.0
   [fdea26ae] + SIMD v2.8.0
+[master 853434d48] added package ChipSort
+ 51 files changed, 5634 insertions(+)
+ create mode 100644 packages/ChipSort/ZSK0t/.gitignore
+ create mode 100644 packages/ChipSort/ZSK0t/.travis.yml
+ create mode 100644 packages/ChipSort/ZSK0t/LICENSE
+ create mode 100644 packages/ChipSort/ZSK0t/Project.toml
+ create mode 100644 packages/ChipSort/ZSK0t/README.md
+ create mode 100644 packages/ChipSort/ZSK0t/benchmark/benchmarks.jl
+ create mode 100644 packages/ChipSort/ZSK0t/docs/Project.toml
+ create mode 100644 packages/ChipSort/ZSK0t/docs/make.jl
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/algo-detail.md
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/api.md
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/assets/chipspeed-16k-8.png
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/assets/chipspeed-256-8.png
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/assets/chiptime-f32-16k-8x8.png
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/assets/chiptime-f32-256-8x8.png
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/assets/logo.png
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/assets/logo.svg
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/assets/sorting-network-4.svg
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/benchmark.md
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/index.md
+ create mode 100644 packages/ChipSort/ZSK0t/docs/src/theory.md
+ create mode 100644 packages/ChipSort/ZSK0t/src/ChipSort.jl
+ create mode 100644 packages/ChipSort/ZSK0t/src/bitonic-merge-network.jl
+ create mode 100644 packages/ChipSort/ZSK0t/src/comb-sort.jl
+ create mode 100644 packages/ChipSort/ZSK0t/src/data-buffers.jl
+ create mode 100644 packages/ChipSort/ZSK0t/src/k-way-merge.jl
+ create mode 100644 packages/ChipSort/ZSK0t/src/sort-array-medium.jl
+ create mode 100644 packages/ChipSort/ZSK0t/src/sort-array.jl
+ create mode 100644 packages/ChipSort/ZSK0t/src/sorting-network-parameters.jl
+ create mode 100644 packages/ChipSort/ZSK0t/src/sorting-networks.jl
+ create mode 100644 packages/ChipSort/ZSK0t/src/transpose-vecs.jl
+ create mode 100644 packages/ChipSort/ZSK0t/src/utils.jl
+ create mode 100644 packages/ChipSort/ZSK0t/test/runtests.jl
+ create mode 100644 packages/ChipSort/ZSK0t/test/test-bitonic-merge.jl
+ create mode 100644 packages/ChipSort/ZSK0t/test/test-chipsort.jl
+ create mode 100644 packages/ChipSort/ZSK0t/test/test-data-buffers.jl
+ create mode 100644 packages/ChipSort/ZSK0t/test/test-sorting-networks.jl
+ create mode 100644 packages/ChipSort/ZSK0t/test/test-transpose.jl
+ create mode 100644 packages/ChipSort/ZSK0t/test/testutils.jl
+ create mode 100644 packages/SIMD/Am38N/.gitignore
+ create mode 100644 packages/SIMD/Am38N/.travis.yml
+ create mode 100644 packages/SIMD/Am38N/LICENSE.md
+ create mode 100644 packages/SIMD/Am38N/Project.toml
+ create mode 100644 packages/SIMD/Am38N/README.md
+ create mode 100644 packages/SIMD/Am38N/REQUIRE
+ create mode 100644 packages/SIMD/Am38N/appveyor.yml
+ create mode 100644 packages/SIMD/Am38N/src/SIMD.jl
+ create mode 100644 packages/SIMD/Am38N/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   3198dfeca..853434d48  master -> master
+Progress:  12%|█████▏                                   |  ETA: 3 days, 10:33:04[K
+Installing Chipmunk
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Chipmunk [45d946b0]:\n Chipmunk [45d946b0] log:\n ├─possible versions are: 0.0.1-0.0.5 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.5\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  12%|█████▏                                   |  ETA: 3 days, 10:20:09[K
+Installing CholmodSolve2
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CholmodSolve2 [609d6d7d]:\n CholmodSolve2 [609d6d7d] log:\n ├─possible versions are: 0.1.0 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.1.0\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  12%|█████▏                                   |  ETA: 3 days, 10:07:12[K
+Installing ChrBase
+ Resolving package versions...
+ Installed ChrBase ─ v1.0.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [c13fa7b1] + ChrBase v1.0.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [c13fa7b1] + ChrBase v1.0.0
