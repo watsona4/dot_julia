@@ -1,0 +1,12 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.6
+  - 0.7
+  - 1.0
+notifications:
+  email: false
+after_success:
+  - julia -e '(VERSION >= v"0.7" && using Pkg); Pkg.add("Coverage"); cd(Pkg.dir("ConicBenchmarkUtilities")); using Coverage; Codecov.submit(process_folder())'
