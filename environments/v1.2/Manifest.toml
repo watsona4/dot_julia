@@ -1910,6 +1910,12 @@ git-tree-sha1 = "84aa74986c5b9b898b0d1acaf3258741ee64754f"
 uuid = "34da2185-b29b-5c13-b0c7-acf172513d20"
 version = "2.1.0"
 
+[[Complementarity]]
+deps = ["JuMP", "LinearAlgebra", "MathProgBase", "NLsolve", "PATHSolver", "Printf", "SparseArrays", "Test"]
+git-tree-sha1 = "23bcb9700cd0b8dac67126ce290b3b092e7a1de9"
+uuid = "a9b2a840-c9d5-5181-a245-8df664c2d6e7"
+version = "0.5.0"
+
 [[Compose]]
 deps = ["Base64", "Colors", "DataStructures", "Dates", "IterTools", "JSON", "LinearAlgebra", "Measures", "Printf", "Random", "Requires", "Test", "UUIDs"]
 git-tree-sha1 = "7d8fe0ad6f73c40ccc4e01f426a700c5a843a1d3"
@@ -3651,6 +3657,12 @@ deps = ["ArrayInterface", "DataStructures", "DiffEqBase", "DiffEqDiffTools", "Ex
 git-tree-sha1 = "b8cfde69ffb5f0638f13beaee4a85aeda6e1637e"
 uuid = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
 version = "5.14.0"
+
+[[PATHSolver]]
+deps = ["BinDeps", "ForwardDiff", "Libdl", "LinearAlgebra", "Random", "SparseArrays", "Test"]
+git-tree-sha1 = "bf83bde66b89f76349b64c3017f102309e6e9380"
+uuid = "f5f7c340-0bb3-5c69-969a-41884d311d1b"
+version = "0.5.2"
 
 [[PDMats]]
 deps = ["Arpack", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]

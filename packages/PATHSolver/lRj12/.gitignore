@@ -1,0 +1,11 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+path.opt
+
+pathlib/*
+pathlib-test/*
+tmp/*
+
+libgfortran*
