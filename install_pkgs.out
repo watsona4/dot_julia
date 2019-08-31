@@ -32265,3 +32265,48 @@ Installing Bioinformatics
   Building GR ────→ `~/.julia/packages/GR/ZI5OE/deps/build.log`
   Building FFMPEG → `~/.julia/packages/FFMPEG/9JQpZ/deps/build.log`
   Building Plots ─→ `~/.julia/packages/Plots/Ih71u/deps/build.log`
+[master c58ea93e9] added package Bioinformatics
+ 34 files changed, 3298 insertions(+)
+ create mode 100644 packages/Bioinformatics/cteUc/.gitignore
+ create mode 100644 packages/Bioinformatics/cteUc/.travis.yml
+ create mode 100644 packages/Bioinformatics/cteUc/LICENSE
+ create mode 100644 packages/Bioinformatics/cteUc/Project.toml
+ create mode 100644 packages/Bioinformatics/cteUc/README.md
+ create mode 100644 packages/Bioinformatics/cteUc/docs/Project.toml
+ create mode 100644 packages/Bioinformatics/cteUc/docs/make.jl
+ create mode 100644 packages/Bioinformatics/cteUc/docs/src/index.md
+ create mode 100644 packages/Bioinformatics/cteUc/example_data/NC_000017.fasta
+ create mode 100644 packages/Bioinformatics/cteUc/example_data/P35858.fasta
+ create mode 100644 packages/Bioinformatics/cteUc/examples/plot_dotmatrix.jl
+ create mode 100644 packages/Bioinformatics/cteUc/examples/plot_skew.jl
+ create mode 100644 packages/Bioinformatics/cteUc/src/Bioinformatics.jl
+ create mode 100644 packages/Bioinformatics/cteUc/src/alignments.jl
+ create mode 100644 packages/Bioinformatics/cteUc/src/data.jl
+ create mode 100644 packages/Bioinformatics/cteUc/src/data/BLOSUM100
+ create mode 100644 packages/Bioinformatics/cteUc/src/data/BLOSUM45
+ create mode 100644 packages/Bioinformatics/cteUc/src/data/BLOSUM50
+ create mode 100644 packages/Bioinformatics/cteUc/src/data/BLOSUM62
+ create mode 100644 packages/Bioinformatics/cteUc/src/data/BLOSUM80
+ create mode 100644 packages/Bioinformatics/cteUc/src/data/BLOSUM90
+ create mode 100644 packages/Bioinformatics/cteUc/src/data/PAM250
+ create mode 100644 packages/Bioinformatics/cteUc/src/data/PAM30
+ create mode 100644 packages/Bioinformatics/cteUc/src/data/PAM70
+ create mode 100644 packages/Bioinformatics/cteUc/src/distances.jl
+ create mode 100644 packages/Bioinformatics/cteUc/src/io.jl
+ create mode 100644 packages/Bioinformatics/cteUc/src/plots.jl
+ create mode 100644 packages/Bioinformatics/cteUc/src/sequence.jl
+ create mode 100644 packages/Bioinformatics/cteUc/src/stats.jl
+ create mode 100644 packages/Bioinformatics/cteUc/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   d70ec2cd7..c58ea93e9  master -> master
+Progress:   7%|██▉                                      |  ETA: 4 days, 3:19:20[K
+Installing Biomodelling
+ Resolving package versions...
+ Installed Biomodelling ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9f4c04fe] + Biomodelling v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9f4c04fe] + Biomodelling v0.1.0
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
