@@ -2005,6 +2005,12 @@ git-tree-sha1 = "bcfc470f3aca36a78c1736fbfe669406e2327ea6"
 uuid = "1624bea9-42b1-5fc1-afd3-e96f729c8d6c"
 version = "0.4.0"
 
+[[ConsistencyResampling]]
+deps = ["Bootstrap", "Random", "StatsBase"]
+git-tree-sha1 = "3fb20337d75d51661bdb6f58375fc0ecd5dc6fd3"
+uuid = "4937dc1f-c7a3-5772-9d42-4a8277f2eb51"
+version = "0.2.0"
+
 [[Contour]]
 deps = ["LinearAlgebra", "StaticArrays", "Test"]
 git-tree-sha1 = "b974e164358fea753ef853ce7bad97afec15bb80"
