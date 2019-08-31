@@ -1,0 +1,15 @@
+.DS_Store
+*.ipynb_checkpoints
+.ropeproject
+test/config
+*.jl.cov
+*.jl.mem
+*.gcode.new
+*.obj
+*.dll
+*.lib
+*.exp
+*.o
+*.so
+deps/usr
+deps/deps.jl

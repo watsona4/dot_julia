@@ -1696,6 +1696,12 @@ git-tree-sha1 = "f4c903e109e8871649b4767bf4acbce5b779b232"
 uuid = "535c2557-d7d0-564d-8ff9-4ae146c18cfe"
 version = "0.1.16"
 
+[[Clipper]]
+deps = ["BinaryProvider", "Libdl", "Test"]
+git-tree-sha1 = "aa7e547cf1da6b8399462cfa2ea207c1cc2b6521"
+uuid = "c8f6d549-b3ab-5508-a0d1-48fe138e8cc1"
+version = "0.5.0"
+
 [[CloudGraphs]]
 deps = ["Dates", "DocStringExtensions", "Graphs", "JSON", "Mongoc", "Neo4j", "ProtoBuf", "Test", "UUIDs"]
 git-tree-sha1 = "41129bf1af018b49855a846b1b3955cee980bf8a"
