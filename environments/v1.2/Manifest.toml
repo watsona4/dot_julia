@@ -1279,6 +1279,12 @@ git-tree-sha1 = "48e5cfba99403037e35a4ca9eb6c56aaea9c8a12"
 uuid = "a761db2c-effc-550d-a410-5f59553ed40d"
 version = "0.2.0"
 
+[[CMPFit]]
+deps = ["BinDeps", "Libdl", "Pkg", "Printf", "Test"]
+git-tree-sha1 = "6bc0d8b9ca590f536f1179ee7ebf294e250d2e67"
+uuid = "a5944310-3432-5d93-8bb2-e3b5eb62a58f"
+version = "0.2.1"
+
 [[CMake]]
 deps = ["BinDeps"]
 git-tree-sha1 = "c67a8689dc5444adc5eb2be7d837100340ecba11"

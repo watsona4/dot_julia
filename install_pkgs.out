@@ -37624,3 +37624,234 @@ Installing CLBlast
 │  [11] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/CLBlast/lZMpD/deps/build.jl:60
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master 85a632bcc] added package CLBlast
+ 144 files changed, 16302 insertions(+)
+ create mode 100644 packages/CLBlast/lZMpD/.codecov.yml
+ create mode 100644 packages/CLBlast/lZMpD/.gitignore
+ create mode 100644 packages/CLBlast/lZMpD/.gitlab-ci.yml
+ create mode 100644 packages/CLBlast/lZMpD/.travis.yml
+ create mode 100644 packages/CLBlast/lZMpD/.travis_install_pocl.sh
+ create mode 100644 packages/CLBlast/lZMpD/LICENSE.md
+ create mode 100644 packages/CLBlast/lZMpD/Project.toml
+ create mode 100644 packages/CLBlast/lZMpD/README.md
+ create mode 100644 packages/CLBlast/lZMpD/REQUIRE
+ create mode 100644 packages/CLBlast/lZMpD/appveyor.yml
+ create mode 100644 packages/CLBlast/lZMpD/deps/build.jl
+ create mode 100644 packages/CLBlast/lZMpD/examples/banded_matrix_vector_multiplication.jl
+ create mode 100644 packages/CLBlast/lZMpD/examples/dot_product.jl
+ create mode 100644 packages/CLBlast/lZMpD/examples/euclidean_norm.jl
+ create mode 100644 packages/CLBlast/lZMpD/examples/matrix_matrix_multiplication.jl
+ create mode 100644 packages/CLBlast/lZMpD/examples/matrix_vector_multiplication.jl
+ create mode 100644 packages/CLBlast/lZMpD/examples/vector_addition.jl
+ create mode 100644 packages/CLBlast/lZMpD/examples/vector_scaling.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/CLBlast.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/L1.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/asum.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/axpy.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/copy.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/dot.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/dotc.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/dotu.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/had.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/iamax.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/iamin.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/nrm2.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/scal.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/sum.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L1/swap.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/L2.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/gbmv.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/gemv.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/ger.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/hbmv.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/hemv.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/her.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/sbmv.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/symv.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/syr.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/trmv.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L2/trsv.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L3/L3.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L3/gemm.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L3/hemm.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L3/her2k.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L3/herk.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L3/symm.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L3/syr2k.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L3/syrk.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L3/trmm.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/L3/trsm.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/auxiliary_functions.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/constants.jl
+ create mode 100644 packages/CLBlast/lZMpD/src/error.jl
+ create mode 100644 packages/CLBlast/lZMpD/test/L1_test.jl
+ create mode 100644 packages/CLBlast/lZMpD/test/L2_test.jl
+ create mode 100644 packages/CLBlast/lZMpD/test/L3_test.jl
+ create mode 100644 packages/CLBlast/lZMpD/test/auxiliary_test.jl
+ create mode 100644 packages/CLBlast/lZMpD/test/runtests.jl
+ create mode 100644 packages/OpenCL/vsBez/.gitignore
+ create mode 100644 packages/OpenCL/vsBez/.gitlab-ci.yml
+ create mode 100644 packages/OpenCL/vsBez/.travis.yml
+ create mode 100644 packages/OpenCL/vsBez/.travis/amd_sdk.sh
+ create mode 100644 packages/OpenCL/vsBez/LICENSE.md
+ create mode 100644 packages/OpenCL/vsBez/NEWS.md
+ create mode 100644 packages/OpenCL/vsBez/Project.toml
+ create mode 100644 packages/OpenCL/vsBez/README.md
+ create mode 100644 packages/OpenCL/vsBez/REQUIRE
+ create mode 100644 packages/OpenCL/vsBez/appveyor.yml
+ create mode 100644 packages/OpenCL/vsBez/examples/demo.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/README.md
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex04/vadd_chain.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex05/vadd_abc.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex06/helper.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex06/matmul.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex07/C_elem.cl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex07/C_row.cl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex07/C_row_priv.cl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex07/helper.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex07/matmul.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex08/C_block_form.cl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex08/C_elem.cl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex08/C_row.cl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex08/C_row_priv.cl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex08/C_row_priv_block.cl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex08/helper.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex08/matmul.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex09/pi_ocl.cl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/ex09/pi_ocl.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/exA/pi_vocl.cl
+ create mode 100644 packages/OpenCL/vsBez/examples/hands_on_opencl/exA/pi_vocl.jl
+ create mode 100644 packages/OpenCL/vsBez/examples/notebooks/LowLevelAPI.ipynb
+ create mode 100644 packages/OpenCL/vsBez/examples/notebooks/Transpose.ipynb
+ create mode 100644 packages/OpenCL/vsBez/examples/notebooks/julia_set_fractal.ipynb
+ create mode 100644 packages/OpenCL/vsBez/examples/notebooks/mandelbrot_fractal.ipynb
+ create mode 100644 packages/OpenCL/vsBez/examples/performance.jl
+ create mode 100644 packages/OpenCL/vsBez/resources/cl.h
+ create mode 100755 packages/OpenCL/vsBez/run_examples.sh
+ create mode 100755 packages/OpenCL/vsBez/run_tests.sh
+ create mode 100644 packages/OpenCL/vsBez/src/OpenCL.jl
+ create mode 100644 packages/OpenCL/vsBez/src/api.jl
+ create mode 100644 packages/OpenCL/vsBez/src/api/opencl_1.0.0.jl
+ create mode 100644 packages/OpenCL/vsBez/src/api/opencl_1.1.0.jl
+ create mode 100644 packages/OpenCL/vsBez/src/api/opencl_1.2.0.jl
+ create mode 100644 packages/OpenCL/vsBez/src/api/opencl_2.0.0.jl
+ create mode 100644 packages/OpenCL/vsBez/src/array.jl
+ create mode 100644 packages/OpenCL/vsBez/src/buffer.jl
+ create mode 100644 packages/OpenCL/vsBez/src/constants.jl
+ create mode 100644 packages/OpenCL/vsBez/src/context.jl
+ create mode 100644 packages/OpenCL/vsBez/src/device.jl
+ create mode 100644 packages/OpenCL/vsBez/src/error.jl
+ create mode 100644 packages/OpenCL/vsBez/src/event.jl
+ create mode 100644 packages/OpenCL/vsBez/src/kernel.jl
+ create mode 100644 packages/OpenCL/vsBez/src/kernels/transpose.cl
+ create mode 100644 packages/OpenCL/vsBez/src/macros.jl
+ create mode 100644 packages/OpenCL/vsBez/src/memory.jl
+ create mode 100644 packages/OpenCL/vsBez/src/platform.jl
+ create mode 100644 packages/OpenCL/vsBez/src/program.jl
+ create mode 100644 packages/OpenCL/vsBez/src/queue.jl
+ create mode 100644 packages/OpenCL/vsBez/src/types.jl
+ create mode 100644 packages/OpenCL/vsBez/src/util.jl
+ create mode 100644 packages/OpenCL/vsBez/test/REQUIRE
+ create mode 100644 packages/OpenCL/vsBez/test/runtests.jl
+ create mode 100644 packages/OpenCL/vsBez/test/script.gdb
+ create mode 100644 packages/OpenCL/vsBez/test/test_array.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_behaviour.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_buffer.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_cmdqueue.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_context.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_device.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_event.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_kernel.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_memory.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_minver.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_platform.jl
+ create mode 100644 packages/OpenCL/vsBez/test/test_program.jl
+To https://github.com/watsona4/dot_julia.git
+   ad90b5f29..85a632bcc  master -> master
+Progress:   9%|███▉                                     |  ETA: 3 days, 15:03:54[K
+Installing CLFFT
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CLFFT [f2e7fd27]:\n CLFFT [f2e7fd27] log:\n ├─possible versions are: [0.0.1-0.0.3, 0.1.0, 0.2.0-0.2.1, 0.3.0, 0.4.0, 0.5.0-0.5.2] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.3, 0.1.0, 0.2.0-0.2.1, 0.3.0, 0.4.0, 0.5.0-0.5.2]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   9%|███▉                                     |  ETA: 3 days, 14:44:12[K
+Installing CMPFit
+ Resolving package versions...
+ Installed CMPFit ─ v0.2.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [a5944310] + CMPFit v0.2.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [a5944310] + CMPFit v0.2.1
+  Building CMPFit → `~/.julia/packages/CMPFit/OTtF8/deps/build.log`
+┌ Error: Error building `CMPFit`: 
+│   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+│                                  Dload  Upload   Total   Spent    Left  Speed
+│   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 30515    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 30515  100 30515    0     0   133k      0 --:--:-- --:--:-- --:--:--  133k
+│ /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/build
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/downloads
+│ [ Info: Downloading file https://www.physics.wisc.edu/~craigm/idl/down/cmpfit-1.3a.tar.gz
+│ [ Info: Done downloading file https://www.physics.wisc.edu/~craigm/idl/down/cmpfit-1.3a.tar.gz
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps
+│ [ Info: Directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps already exists
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/build
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/usr/lib
+│ [ Info: Changing directory to /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/build
+│ [ Info: Changing directory to /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/build
+│ [ Info: Changing directory to /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/build
+│ ERROR: LoadError: IOError: could not spawn `cmake ../`: no such file or directory (ENOENT)
+│ Stacktrace:
+│  [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:401
+│  [2] setup_stdios(::getfield(Base, Symbol("##526#527")){Cmd}, ::Array{Any,1}) at ./process.jl:414
+│  [3] _spawn at ./process.jl:413 [inlined]
+│  [4] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:727
+│  [5] run(::Cmd) at ./process.jl:726
+│  [6] run(::BinDeps.SynchronousStepCollection) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521 (repeats 2 times)
+│  [7] run(::FileRule) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:483
+│  [8] run(::BinDeps.SynchronousStepCollection) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521
+│  [9] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:944
+│  [10] satisfy!(::BinDeps.LibraryDependency) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [11] top-level scope at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [12] include at ./boot.jl:328 [inlined]
+│  [13] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [14] include(::Module, ::String) at ./Base.jl:31
+│  [15] include(::String) at ./client.jl:431
+│  [16] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/build.jl:42
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CMPFit → `~/.julia/packages/CMPFit/OTtF8/deps/build.log`
+┌ Error: Error building `CMPFit`: 
+│ /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/build
+│ cp: cannot create regular file ‘../CMakeLists.txt’: Permission denied
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/downloads
+│ [ Info: Directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/downloads already exists
+│ [ Info: Downloading file https://www.physics.wisc.edu/~craigm/idl/down/cmpfit-1.3a.tar.gz
+│ [ Info: Done downloading file https://www.physics.wisc.edu/~craigm/idl/down/cmpfit-1.3a.tar.gz
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src
+│ [ Info: Directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src already exists
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps
+│ [ Info: Directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps already exists
+│ [ Info: Path /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a already exists
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/build
+│ [ Info: Directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/build already exists
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/usr/lib
+│ [ Info: Directory /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/usr/lib already exists
+│ [ Info: Changing directory to /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/build
+│ [ Info: Changing directory to /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/src/cmpfit-1.3a/build
+│ ERROR: LoadError: failed process: Process(`cp ../../../cmake.mpfit ../CMakeLists.txt`, ProcessExited(1)) [1]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:813 [inlined]
+│  [2] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:728
+│  [3] run(::Cmd) at ./process.jl:726
+│  [4] run(::BinDeps.SynchronousStepCollection) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521 (repeats 2 times)
+│  [5] run(::FileRule) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:483
+│  [6] run(::BinDeps.SynchronousStepCollection) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521
+│  [7] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:944
+│  [8] satisfy!(::BinDeps.LibraryDependency) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [9] top-level scope at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [10] include at ./boot.jl:328 [inlined]
+│  [11] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [12] include(::Module, ::String) at ./Base.jl:31
+│  [13] include(::String) at ./client.jl:431
+│  [14] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CMPFit/OTtF8/deps/build.jl:42
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
