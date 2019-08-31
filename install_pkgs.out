@@ -25782,3 +25782,33 @@ Installing Attrs
   [a4224b96] + Attrs v0.0.3
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [a4224b96] + Attrs v0.0.3
+[master 44311c5a0] added package Attrs
+ 15 files changed, 772 insertions(+)
+ create mode 100644 packages/Attrs/OGE56/.codecov.yml
+ create mode 100644 packages/Attrs/OGE56/.gitignore
+ create mode 100644 packages/Attrs/OGE56/.travis.yml
+ create mode 100644 packages/Attrs/OGE56/LICENSE.md
+ create mode 100644 packages/Attrs/OGE56/README.md
+ create mode 100644 packages/Attrs/OGE56/REQUIRE
+ create mode 100644 packages/Attrs/OGE56/appveyor.yml
+ create mode 100644 packages/Attrs/OGE56/src/Attrs.jl
+ create mode 100644 packages/Attrs/OGE56/src/interface.jl
+ create mode 100644 packages/Attrs/OGE56/src/macros.jl
+ create mode 100644 packages/Attrs/OGE56/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   67a644d6d..44311c5a0  master -> master
+Progress:   4%|█▋                                       |  ETA: 5 days, 21:37:01[K
+Installing AudioIO
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AudioIO [67a87ac7]:\n AudioIO [67a87ac7] log:\n ├─possible versions are: [0.0.1-0.0.4, 0.1.0-0.1.1] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.4, 0.1.0-0.1.1]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   4%|█▋                                       |  ETA: 5 days, 20:27:50[K
+Installing AuditoryFilters
+ Resolving package versions...
+ Installed AuditoryFilters ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [2b6db37a] + AuditoryFilters v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [2b6db37a] + AuditoryFilters v0.1.0
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`

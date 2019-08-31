@@ -543,6 +543,12 @@ git-tree-sha1 = "b235278e44ad2c5d91efd780ba74b4e637f7a624"
 uuid = "a4224b96-20e5-5401-805b-05f03f927511"
 version = "0.0.3"
 
+[[AuditoryFilters]]
+deps = ["Compat", "DSP"]
+git-tree-sha1 = "9eec470c0110755967eb67b03eb96b841171cacf"
+uuid = "2b6db37a-05bd-5fbd-94f7-97a8281041e3"
+version = "0.1.0"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
