@@ -1,0 +1,12 @@
+name = "ComplexValues"
+uuid = "41a84b80-6cf2-11e9-379d-9df124847946"
+authors = ["Toby Driscoll <driscoll@udel.edu>"]
+version = "0.2.1"
+
+[deps]
+RecipesBase = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "1"
+
