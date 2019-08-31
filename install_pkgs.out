@@ -30685,3 +30685,18 @@ Installing BinDeps
   [9e28174c] + BinDeps v0.8.10
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 07ca6ecd0] added package BinDeps
+ 3 files changed, 34 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   9d2cd550b..07ca6ecd0  master -> master
+Progress:   6%|██▋                                      |  ETA: 4 days, 6:43:33[K
+Installing BinaryBuilder
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BinaryBuilder [12aac903]:\n BinaryBuilder [12aac903] log:\n ├─possible versions are: [0.0.1-0.0.4, 0.1.0-0.1.2, 0.1.4] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.4, 0.1.0-0.1.2, 0.1.4]\n ├─restricted by julia compatibility requirements to versions: [0.1.0-0.1.2, 0.1.4] or uninstalled, leaving only versions: [0.1.0-0.1.2, 0.1.4]\n └─restricted by compatibility requirements with ProgressMeter [92933f4c] to versions: uninstalled — no versions left\n   └─ProgressMeter [92933f4c] log:\n     ├─possible versions are: [0.0.1-0.0.2, 0.1.0-0.1.3, 0.2.0-0.2.3, 0.3.0-0.3.4, 0.4.0, 0.5.0-0.5.6, 0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0, 1.0.0] or uninstalled\n     └─restricted to versions 1.0.0 by an explicit requirement, leaving only versions 1.0.0", nothing)
+Progress:   6%|██▋                                      |  ETA: 4 days, 6:13:12[K
+Installing BinaryProvider
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [b99e7846] + BinaryProvider v0.5.6
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
