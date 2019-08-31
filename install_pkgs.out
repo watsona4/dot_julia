@@ -28747,3 +28747,65 @@ Installing BTCParser
   [27a35ec8] + BTCParser v0.1.0
   [a832ea1e] + Base58 v0.2.0
   [92ef3814] + Ripemd v0.2.0
+[master 5128e1b97] added package BTCParser
+ 54 files changed, 3092 insertions(+)
+ create mode 100644 packages/BTCParser/rLZZT/.gitignore
+ create mode 100644 packages/BTCParser/rLZZT/LICENSE
+ create mode 100644 packages/BTCParser/rLZZT/Project.toml
+ create mode 100644 packages/BTCParser/rLZZT/README.md
+ create mode 100644 packages/BTCParser/rLZZT/REQUIRE
+ create mode 100644 packages/BTCParser/rLZZT/src/BTCParser.jl
+ create mode 100644 packages/BTCParser/rLZZT/src/lib/block.jl
+ create mode 100644 packages/BTCParser/rLZZT/src/lib/chain.jl
+ create mode 100644 packages/BTCParser/rLZZT/src/lib/conversions.jl
+ create mode 100644 packages/BTCParser/rLZZT/src/lib/errors.jl
+ create mode 100644 packages/BTCParser/rLZZT/src/lib/file_ops.jl
+ create mode 100644 packages/BTCParser/rLZZT/src/lib/header.jl
+ create mode 100644 packages/BTCParser/rLZZT/src/lib/transaction.jl
+ create mode 100644 packages/BTCParser/rLZZT/src/lib/uint256.jl
+ create mode 100644 packages/BTCParser/rLZZT/src/lib/varint.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/runtests.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_bciterator.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_chain.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_conversions.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_dump.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_header_hash.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_make_chain.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_seek_magic_bytes.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_segwit.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_tx_hashing.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_uint256.jl
+ create mode 100644 packages/BTCParser/rLZZT/test/test_varint.jl
+ create mode 100644 packages/Base58/Mhkgj/.gitignore
+ create mode 100644 packages/Base58/Mhkgj/.travis.yml
+ create mode 100644 packages/Base58/Mhkgj/LICENSE.md
+ create mode 100644 packages/Base58/Mhkgj/Project.toml
+ create mode 100644 packages/Base58/Mhkgj/README.md
+ create mode 100644 packages/Base58/Mhkgj/REQUIRE
+ create mode 100644 packages/Base58/Mhkgj/src/Base58.jl
+ create mode 100644 packages/Base58/Mhkgj/test/perf.jl
+ create mode 100644 packages/Base58/Mhkgj/test/runtests.jl
+ create mode 100644 packages/Ripemd/yYXzl/.gitignore
+ create mode 100644 packages/Ripemd/yYXzl/.travis.yml
+ create mode 100644 packages/Ripemd/yYXzl/LICENSE.md
+ create mode 100644 packages/Ripemd/yYXzl/Project.toml
+ create mode 100644 packages/Ripemd/yYXzl/README.md
+ create mode 100644 packages/Ripemd/yYXzl/REQUIRE
+ create mode 100644 packages/Ripemd/yYXzl/perf/perf.jl
+ create mode 100644 packages/Ripemd/yYXzl/src/Ripemd.jl
+ create mode 100644 packages/Ripemd/yYXzl/src/consts.jl
+ create mode 100644 packages/Ripemd/yYXzl/src/interface.jl
+ create mode 100644 packages/Ripemd/yYXzl/src/transform.jl
+ create mode 100644 packages/Ripemd/yYXzl/src/types.jl
+ create mode 100644 packages/Ripemd/yYXzl/test/runtests.jl
+ create mode 100644 packages/Ripemd/yYXzl/test/test_results.jl
+To https://github.com/watsona4/dot_julia.git
+   275f25e6e..5128e1b97  master -> master
+Progress:   5%|██▏                                      |  ETA: 4 days, 22:00:40[K
+Installing BackedUpImmutable
+ Resolving package versions...
+ Installed BackedUpImmutable ─ v0.0.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [ce7fb557] + BackedUpImmutable v0.0.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [ce7fb557] + BackedUpImmutable v0.0.1

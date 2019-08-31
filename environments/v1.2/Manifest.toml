@@ -680,6 +680,12 @@ git-tree-sha1 = "764854abb3f3298b44acb872cb3e080cb3dcffed"
 uuid = "27a35ec8-0f55-11e9-2fe5-1b2fd0e5b6fd"
 version = "0.1.0"
 
+[[BackedUpImmutable]]
+deps = ["Test"]
+git-tree-sha1 = "86d7eff8246a52bab56e5ce5b5b1e1254239d7b6"
+uuid = "ce7fb557-0848-50b6-86d3-b63d1ee2efee"
+version = "0.0.1"
+
 [[BandedMatrices]]
 deps = ["FillArrays", "LazyArrays", "LinearAlgebra", "MatrixFactorizations", "Random", "SparseArrays"]
 git-tree-sha1 = "cdda54b29a1c52fa33defc0c61e3b8bb61f73d15"
