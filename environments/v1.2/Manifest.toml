@@ -1029,6 +1029,12 @@ git-tree-sha1 = "bb666298665f818d7303894db9aecb88233c69e1"
 uuid = "f44e861a-3f8a-5c62-b78f-266521f8af5d"
 version = "0.2.1"
 
+[[BlackBoxOptim]]
+deps = ["CPUTime", "Compat", "Distributed", "Distributions", "LinearAlgebra", "Printf", "Random", "SpatialIndexing", "StatsBase"]
+git-tree-sha1 = "da5cfcc08d24a43fa4e3ad67f565f17838e26fca"
+uuid = "a134a8b2-14d6-55f6-9291-3336d3ab0209"
+version = "0.5.0"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"
@@ -1069,6 +1075,11 @@ deps = ["BinDeps", "CMake", "Libdl", "Parameters", "Test"]
 git-tree-sha1 = "16d4acb3d37dc05b714977ffefa8890843dc8985"
 uuid = "d5fb7624-851a-54ee-a528-d3f3bac0b4a0"
 version = "0.2.3"
+
+[[CPUTime]]
+git-tree-sha1 = "2dcc50ea6a0a1ef6440d6eecd0fe3813e5671f45"
+uuid = "a9c8d775-2e2e-55fc-8582-045d282d599e"
+version = "1.0.0"
 
 [[CRlibm]]
 deps = ["Libdl", "Test"]
@@ -2951,6 +2962,12 @@ deps = ["DataFrames", "DataFramesMeta", "EcoBase", "Random", "RandomBooleanMatri
 git-tree-sha1 = "7e4ae3dd9cd98ac6127a28fc5bc46bdf5e28d86b"
 uuid = "348f2d5d-71a3-5ad4-b565-8af070f99681"
 version = "0.7.0"
+
+[[SpatialIndexing]]
+deps = ["Printf", "Random", "Test"]
+git-tree-sha1 = "7bc6fc5c363aae476ec2c8bc527aef104b90c779"
+uuid = "d4ead438-fe20-5cc5-a293-4fd39a41b74c"
+version = "0.1.2"
 
 [[SpecialFunctions]]
 deps = ["BinDeps", "BinaryProvider", "Libdl", "Test"]

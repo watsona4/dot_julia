@@ -32799,3 +32799,54 @@ Installing BitsFields
   [f44e861a] + BitsFields v0.2.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [f44e861a] + BitsFields v0.2.1
+[master 0e77c7ebe] added package BitsFields
+ 36 files changed, 928 insertions(+)
+ create mode 100644 packages/BitsFields/nH1l9/.appveyor.yml
+ create mode 100644 packages/BitsFields/nH1l9/.codecov.yml
+ create mode 100644 packages/BitsFields/nH1l9/.gitignore
+ create mode 100644 packages/BitsFields/nH1l9/.travis.yml
+ create mode 100644 packages/BitsFields/nH1l9/LICENSE
+ create mode 100644 packages/BitsFields/nH1l9/Project.toml
+ create mode 100644 packages/BitsFields/nH1l9/README.md
+ create mode 100644 packages/BitsFields/nH1l9/REQUIRE
+ create mode 100644 packages/BitsFields/nH1l9/docs/Project.toml
+ create mode 100644 packages/BitsFields/nH1l9/docs/assets/IEEE754/Float64_bitfields.png
+ create mode 100644 packages/BitsFields/nH1l9/docs/assets/IEEE754/IEEE754-2008_figure3.1.png
+ create mode 100644 packages/BitsFields/nH1l9/docs/assets/IEEE754/figure3_1.png
+ create mode 100644 packages/BitsFields/nH1l9/docs/assets/IEEE754/source.md
+ create mode 100644 packages/BitsFields/nH1l9/docs/assets/IEEE754/table3.2.png
+ create mode 100644 packages/BitsFields/nH1l9/docs/assets/IEEE754/table3_2.png
+ create mode 100644 packages/BitsFields/nH1l9/docs/make.jl
+ create mode 100644 packages/BitsFields/nH1l9/docs/src/documentindex.md
+ create mode 100644 packages/BitsFields/nH1l9/docs/src/ieeestandard754-2008.md
+ create mode 100644 packages/BitsFields/nH1l9/docs/src/index.md
+ create mode 100644 packages/BitsFields/nH1l9/docs/src/multifields.md
+ create mode 100644 packages/BitsFields/nH1l9/docs/src/multifieldsnamed.md
+ create mode 100644 packages/BitsFields/nH1l9/docs/src/references.md
+ create mode 100644 packages/BitsFields/nH1l9/docs/src/thebitfield.md
+ create mode 100644 packages/BitsFields/nH1l9/docs/src/thebitfieldnamed.md
+ create mode 100644 packages/BitsFields/nH1l9/docs/src/workeduse.md
+ create mode 100644 packages/BitsFields/nH1l9/example/README.md
+ create mode 100644 packages/BitsFields/nH1l9/example/ieeefields.jl
+ create mode 100644 packages/BitsFields/nH1l9/src/BitsFields.jl
+ create mode 100644 packages/BitsFields/nH1l9/src/bitfield.jl
+ create mode 100644 packages/BitsFields/nH1l9/src/bitfields.jl
+ create mode 100644 packages/BitsFields/nH1l9/src/byref.jl
+ create mode 100644 packages/BitsFields/nH1l9/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   fe83cac54..0e77c7ebe  master -> master
+Progress:   8%|███▏                                     |  ETA: 3 days, 22:44:30[K
+Installing BlackBoxOptim
+ Resolving package versions...
+ Installed CPUTime ───────── v1.0.0
+ Installed SpatialIndexing ─ v0.1.2
+ Installed BlackBoxOptim ─── v0.5.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [a134a8b2] + BlackBoxOptim v0.5.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [a134a8b2] + BlackBoxOptim v0.5.0
+  [a9c8d775] + CPUTime v1.0.0
+  [d4ead438] + SpatialIndexing v0.1.2
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
