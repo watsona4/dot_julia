@@ -11444,3 +11444,17 @@ Installing ApproxFunFourier
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
   Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+[master 6a99cdccc] added package ApproxFunFourier
+ 3 files changed, 33 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   6ed27479b..6a99cdccc  master -> master
+Progress:   3%|█▏                                       |  ETA: 2 days, 3:55:11[K
+Installing ApproxFunOrthogonalPolynomials
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [b70543e2] + ApproxFunOrthogonalPolynomials v0.2.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
