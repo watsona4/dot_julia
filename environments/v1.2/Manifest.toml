@@ -761,6 +761,12 @@ git-tree-sha1 = "95815ec07b7a81c1d6d9e2a319906c7ea214375a"
 uuid = "170c7662-660e-5658-93f2-9369b3e86d75"
 version = "0.1.0"
 
+[[BayesianLinearRegressors]]
+deps = ["Distributions", "FDM", "IRTools", "LinearAlgebra", "Random", "Statistics", "Test", "Zygote"]
+git-tree-sha1 = "1c0f2f2ce6203ce4bcf0609d5f53697dbe0f6d24"
+uuid = "f579363c-4606-5e5c-a623-c4549f609c4b"
+version = "0.1.0"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
@@ -1245,6 +1251,12 @@ deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "aed48d722e528bc634bd36a7d0e090fa2952a3c0"
 uuid = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
 version = "0.9.4"
+
+[[FDM]]
+deps = ["LinearAlgebra", "Printf"]
+git-tree-sha1 = "51f56372090c3af1ce784610c5cf3c4c224563e4"
+uuid = "e25cca7e-83ef-51fa-be6c-dfe2a3123128"
+version = "0.6.1"
 
 [[FEMBase]]
 deps = ["FEMBasis", "FEMQuad", "LinearAlgebra", "SparseArrays", "Statistics", "Test", "TimerOutputs"]

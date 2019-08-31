@@ -29633,3 +29633,68 @@ Installing BayesianIntegral
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master 9b278a517] added package BayesianIntegral
+ 50 files changed, 31598 insertions(+)
+ create mode 100644 packages/BayesianIntegral/U0zbq/.gitattributes
+ create mode 100644 packages/BayesianIntegral/U0zbq/.travis.yml
+ create mode 100644 packages/BayesianIntegral/U0zbq/LICENSE
+ create mode 100644 packages/BayesianIntegral/U0zbq/Manifest.toml
+ create mode 100644 packages/BayesianIntegral/U0zbq/Project.toml
+ create mode 100644 packages/BayesianIntegral/U0zbq/REQUIRE
+ create mode 100644 packages/BayesianIntegral/U0zbq/Readme.md
+ create mode 100644 packages/BayesianIntegral/U0zbq/docs/Project.toml
+ create mode 100644 packages/BayesianIntegral/U0zbq/docs/make.jl
+ create mode 100644 packages/BayesianIntegral/U0zbq/docs/src/1_bayesian_integration.md
+ create mode 100644 packages/BayesianIntegral/U0zbq/docs/src/2_training_hyperparameters.md
+ create mode 100644 packages/BayesianIntegral/U0zbq/docs/src/99_refs.md
+ create mode 100644 packages/BayesianIntegral/U0zbq/docs/src/index.md
+ create mode 100644 packages/BayesianIntegral/U0zbq/ext/make-require.jl
+ create mode 100644 packages/BayesianIntegral/U0zbq/src/BayesianIntegral.jl
+ create mode 100644 packages/BayesianIntegral/U0zbq/src/calibrate_weights.jl
+ create mode 100644 packages/BayesianIntegral/U0zbq/src/integrate_given_hyperparameters.jl
+ create mode 100644 packages/BayesianIntegral/U0zbq/test/runtests.jl
+ create mode 100644 packages/BayesianIntegral/U0zbq/test/test_Bayes.jl
+ create mode 100644 packages/HCubature/tBwgL/.codecov.yml
+ create mode 100644 packages/HCubature/tBwgL/.gitignore
+ create mode 100644 packages/HCubature/tBwgL/.travis.yml
+ create mode 100644 packages/HCubature/tBwgL/LICENSE.md
+ create mode 100644 packages/HCubature/tBwgL/Project.toml
+ create mode 100644 packages/HCubature/tBwgL/README.md
+ create mode 100644 packages/HCubature/tBwgL/appveyor.yml
+ create mode 100644 packages/HCubature/tBwgL/integral.png
+ create mode 100644 packages/HCubature/tBwgL/src/HCubature.jl
+ create mode 100644 packages/HCubature/tBwgL/src/gauss-kronrod.jl
+ create mode 100644 packages/HCubature/tBwgL/src/genz-malik.jl
+ create mode 100644 packages/HCubature/tBwgL/test/runtests.jl
+ create mode 100644 packages/Sobol/pP4J5/.travis.yml
+ create mode 100644 packages/Sobol/pP4J5/LICENSE.md
+ create mode 100644 packages/Sobol/pP4J5/Project.toml
+ create mode 100644 packages/Sobol/pP4J5/README.md
+ create mode 100644 packages/Sobol/pP4J5/sobol1024.png
+ create mode 100644 packages/Sobol/pP4J5/src/Sobol.jl
+ create mode 100644 packages/Sobol/pP4J5/src/soboldata.jl
+ create mode 100644 packages/Sobol/pP4J5/test/results/exp_results_10
+ create mode 100644 packages/Sobol/pP4J5/test/results/exp_results_100
+ create mode 100644 packages/Sobol/pP4J5/test/results/exp_results_20
+ create mode 100644 packages/Sobol/pP4J5/test/results/exp_results_21201
+ create mode 100644 packages/Sobol/pP4J5/test/results/exp_results_5
+ create mode 100644 packages/Sobol/pP4J5/test/results/exp_results_50
+ create mode 100644 packages/Sobol/pP4J5/test/results/exp_results_500
+ create mode 100644 packages/Sobol/pP4J5/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   891aa364e..9b278a517  master -> master
+Progress:   6%|██▍                                      |  ETA: 4 days, 13:36:41[K
+Installing BayesianLinearRegressors
+ Resolving package versions...
+ Installed FDM ────────────────────── v0.6.1
+ Installed BayesianLinearRegressors ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [f579363c] + BayesianLinearRegressors v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [f579363c] + BayesianLinearRegressors v0.1.0
+  [e25cca7e] + FDM v0.6.1
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
