@@ -180,6 +180,12 @@ git-tree-sha1 = "2faeefbe4717c8363f24c6ae2294cc8b38e6ff4e"
 uuid = "a1957575-6125-5dba-8f92-417d2d1f4a46"
 version = "0.1.0"
 
+[[AdaptiveRejectionSampling]]
+deps = ["ForwardDiff", "StatsBase", "Test"]
+git-tree-sha1 = "5bc7a1ef8fad92d49c1f61595eec767b294baa03"
+uuid = "c75e803d-635f-53bd-ab7d-544e482d8c75"
+version = "0.1.0"
+
 [[AlgebraicMultigrid]]
 deps = ["Compat", "IterativeSolvers", "Random"]
 git-tree-sha1 = "a26560b0f8cb9104d96715c32f7c272504631ea9"
