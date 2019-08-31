@@ -1750,6 +1750,12 @@ git-tree-sha1 = "ab7587420dc5fd01af0baa0b8eed344b65d0c4bd"
 uuid = "b3b3bba2-52bb-554f-a0d0-ab888ab50378"
 version = "0.0.1"
 
+[[CmdStan]]
+deps = ["BinDeps", "CSV", "DataFrames", "DelimitedFiles", "Documenter", "Homebrew", "MCMCChains", "Missings", "NamedArrays", "Pkg", "Reexport", "Statistics", "StatsPlots", "Test", "Unicode"]
+git-tree-sha1 = "b625f2b1962f475b7f00527161445fe2f2dc6127"
+uuid = "593b3428-ca2f-500c-ae53-031589ec8ddd"
+version = "5.1.1"
+
 [[CodeTools]]
 deps = ["LNR", "Lazy", "Markdown", "Pkg", "Test", "Tokenize"]
 git-tree-sha1 = "b50b63d30896e1e969e9e7767d44c4d34878b416"
@@ -2873,6 +2879,12 @@ git-tree-sha1 = "2cd0e12ae1703e59173c62f71aa154929f87a95c"
 uuid = "6a8e3230-34bb-5a86-b9da-9f7447a06da5"
 version = "0.2.2"
 
+[[InvertedIndices]]
+deps = ["Test"]
+git-tree-sha1 = "15732c475062348b0165684ffe28e85ea8396afc"
+uuid = "41ab1584-1d38-5bbf-9106-f11c6c58b48f"
+version = "1.0.0"
+
 [[IterTools]]
 git-tree-sha1 = "2ebe60d7343962966d1779a74a760f13217a6901"
 uuid = "c8e1da08-722c-5040-9ed9-7db0dc04731e"
@@ -3207,6 +3219,12 @@ git-tree-sha1 = "89ab46e322f9216728961119f7131038f5e4d22b"
 uuid = "10e44e05-a98a-55b3-a45b-ba969058deb6"
 version = "0.7.3"
 
+[[MCMCChains]]
+deps = ["AxisArrays", "DataFrames", "Distributions", "KernelDensity", "LinearAlgebra", "Plots", "Random", "RecipesBase", "Serialization", "Showoff", "SpecialFunctions", "Statistics", "StatsBase"]
+git-tree-sha1 = "69859d2c2f8747433817fcd313b79ca78ec527f0"
+uuid = "c7f686f2-ff18-58e9-bc7b-31028e88f75d"
+version = "0.3.13"
+
 [[MacroTools]]
 deps = ["CSTParser", "Compat", "DataStructures", "Test", "Tokenize"]
 git-tree-sha1 = "d6e9dedb8c92c3465575442da456aec15a89ff76"
@@ -3432,6 +3450,12 @@ deps = ["Compat"]
 git-tree-sha1 = "ce3b85e484a5d4c71dd5316215069311135fa9f2"
 uuid = "77ba4419-2d1f-58cd-9bb1-8ffee604a2e3"
 version = "0.3.2"
+
+[[NamedArrays]]
+deps = ["Combinatorics", "DataStructures", "DelimitedFiles", "InvertedIndices", "LinearAlgebra", "Random", "Requires", "SparseArrays", "Statistics"]
+git-tree-sha1 = "2681361e30e0ee97aad617f1a6a728e53179bd15"
+uuid = "86f7a689-2022-50b4-a561-43c23ac3c673"
+version = "0.9.3"
 
 [[NearestNeighbors]]
 deps = ["Distances", "LinearAlgebra", "Mmap", "StaticArrays", "Test"]
