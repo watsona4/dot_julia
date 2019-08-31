@@ -29753,3 +29753,159 @@ Installing BayesianOptimization
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
   Building CMake ───────────→ `~/.julia/packages/CMake/nSK2r/deps/build.log`
   Building NLopt ───────────→ `~/.julia/packages/NLopt/eqN9a/deps/build.log`
+[master f74a4aad7] added package BayesianOptimization
+ 146 files changed, 10930 insertions(+)
+ rewrite compiled/v1.2/CMake/TDh52.ji (95%)
+ create mode 100644 packages/BayesianOptimization/AxbaR/.travis.yml
+ create mode 100644 packages/BayesianOptimization/AxbaR/LICENSE.md
+ create mode 100644 packages/BayesianOptimization/AxbaR/Project.toml
+ create mode 100644 packages/BayesianOptimization/AxbaR/README.md
+ create mode 100644 packages/BayesianOptimization/AxbaR/examples/1dplot.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/examples/branin_hartmann.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/src/BayesianOptimization.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/src/acquisition.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/src/acquisitionfunctions.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/src/models/gp.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/src/utils.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/test/acquisitionfunctions.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/test/branin.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/test/coverage/Project.toml
+ create mode 100644 packages/BayesianOptimization/AxbaR/test/coverage/coverage.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/test/runtests.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/test/utils.jl
+ create mode 100644 packages/BayesianOptimization/AxbaR/test/warmstart.jl
+ create mode 100644 packages/ElasticPDMats/t0wsV/.travis.yml
+ create mode 100644 packages/ElasticPDMats/t0wsV/LICENSE.md
+ create mode 100644 packages/ElasticPDMats/t0wsV/Project.toml
+ create mode 100644 packages/ElasticPDMats/t0wsV/README.md
+ create mode 100644 packages/ElasticPDMats/t0wsV/REQUIRE
+ create mode 100644 packages/ElasticPDMats/t0wsV/src/ElasticPDMats.jl
+ create mode 100644 packages/ElasticPDMats/t0wsV/test/coverage/Manifest.toml
+ create mode 100644 packages/ElasticPDMats/t0wsV/test/coverage/Project.toml
+ create mode 100644 packages/ElasticPDMats/t0wsV/test/coverage/coverage.jl
+ create mode 100644 packages/ElasticPDMats/t0wsV/test/runtests.jl
+ create mode 100644 packages/GaussianProcesses/RFito/.codecov.yml
+ create mode 100644 packages/GaussianProcesses/RFito/.gitignore
+ create mode 100644 packages/GaussianProcesses/RFito/.travis.yml
+ create mode 100644 packages/GaussianProcesses/RFito/LICENSE.md
+ create mode 100644 packages/GaussianProcesses/RFito/NEWS.md
+ create mode 100644 packages/GaussianProcesses/RFito/README.md
+ create mode 100644 packages/GaussianProcesses/RFito/REQUIRE
+ create mode 100644 packages/GaussianProcesses/RFito/appveyor.yml
+ create mode 100644 packages/GaussianProcesses/RFito/docs/Manifest.toml
+ create mode 100644 packages/GaussianProcesses/RFito/docs/Project.toml
+ create mode 100644 packages/GaussianProcesses/RFito/docs/make.jl
+ create mode 100644 packages/GaussianProcesses/RFito/docs/src/gp.md
+ create mode 100644 packages/GaussianProcesses/RFito/docs/src/index.md
+ create mode 100644 packages/GaussianProcesses/RFito/docs/src/kernels.md
+ create mode 100644 packages/GaussianProcesses/RFito/docs/src/lik.md
+ create mode 100644 packages/GaussianProcesses/RFito/docs/src/mean.md
+ create mode 100644 packages/GaussianProcesses/RFito/docs/src/optimization.md
+ create mode 100644 packages/GaussianProcesses/RFito/docs/src/usage.md
+ create mode 100644 packages/GaussianProcesses/RFito/notebooks/Classification.ipynb
+ create mode 100644 packages/GaussianProcesses/RFito/notebooks/Mauna_Loa_time_series.ipynb
+ create mode 100644 packages/GaussianProcesses/RFito/notebooks/Plotting GPs.ipynb
+ create mode 100644 packages/GaussianProcesses/RFito/notebooks/Poisson regression.ipynb
+ create mode 100644 packages/GaussianProcesses/RFito/notebooks/Regression with outliers.ipynb
+ create mode 100644 packages/GaussianProcesses/RFito/notebooks/Regression.ipynb
+ create mode 100644 packages/GaussianProcesses/RFito/notebooks/data/CO2_data.csv
+ create mode 100644 packages/GaussianProcesses/RFito/perf/benchmarks/benchmark GPflow.ipynb
+ create mode 100644 packages/GaussianProcesses/RFito/perf/benchmarks/benchmark GPflow.py
+ create mode 100644 packages/GaussianProcesses/RFito/perf/benchmarks/benchmark python.ipynb
+ create mode 100644 packages/GaussianProcesses/RFito/perf/benchmarks/benchmark python.py
+ create mode 100644 packages/GaussianProcesses/RFito/perf/benchmarks/benchmark_gpml.m
+ create mode 100644 packages/GaussianProcesses/RFito/perf/benchmarks/benchmark_julia.ipynb
+ create mode 100644 packages/GaussianProcesses/RFito/perf/benchmarks/benchmark_julia.jl
+ create mode 100644 packages/GaussianProcesses/RFito/perf/kernels.jl
+ create mode 100644 packages/GaussianProcesses/RFito/perf/perf.jl
+ create mode 100644 packages/GaussianProcesses/RFito/perf/update_perf.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/GP.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/GPE.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/GPEelastic.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/GPMC.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/GaussianProcesses.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/ScikitLearn.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/chol_utils.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/common.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/autodiff.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/composite_kernel.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/const.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/distance.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/fixed_kernel.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/kernels.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/lin.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/lin_ard.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/lin_iso.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/masked_kernel.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/mat.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/mat12_ard.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/mat12_iso.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/mat32_ard.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/mat32_iso.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/mat52_ard.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/mat52_iso.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/noise.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/pair_kernel.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/periodic.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/poly.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/prod_kernel.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/rq.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/rq_ard.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/rq_iso.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/se.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/se_ard.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/se_iso.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/stationary.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/kernels/sum_kernel.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/likelihoods/bernoulli.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/likelihoods/binomial.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/likelihoods/exponential.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/likelihoods/gaussian.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/likelihoods/likelihoods.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/likelihoods/poisson.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/likelihoods/studentT.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/mcmc.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/means/composite_mean.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/means/mConst.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/means/mLin.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/means/mPoly.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/means/mZero.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/means/means.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/means/prod_mean.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/means/sum_mean.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/optimize.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/plot.jl
+ create mode 100644 packages/GaussianProcesses/RFito/src/utils.jl
+ create mode 100644 packages/GaussianProcesses/RFito/test/REQUIRE
+ create mode 100644 packages/GaussianProcesses/RFito/test/elastic.jl
+ create mode 100644 packages/GaussianProcesses/RFito/test/gp.jl
+ create mode 100644 packages/GaussianProcesses/RFito/test/gpmc.jl
+ create mode 100644 packages/GaussianProcesses/RFito/test/kernels.jl
+ create mode 100644 packages/GaussianProcesses/RFito/test/mcmc.jl
+ create mode 100644 packages/GaussianProcesses/RFito/test/means.jl
+ create mode 100644 packages/GaussianProcesses/RFito/test/memory.jl
+ create mode 100644 packages/GaussianProcesses/RFito/test/optim.jl
+ create mode 100644 packages/GaussianProcesses/RFito/test/runtests.jl
+ create mode 100644 packages/GaussianProcesses/RFito/test/utils.jl
+ create mode 100644 packages/ScikitLearnBase/QnTv8/.travis.yml
+ create mode 100644 packages/ScikitLearnBase/QnTv8/LICENSE
+ create mode 100644 packages/ScikitLearnBase/QnTv8/Project.toml
+ create mode 100644 packages/ScikitLearnBase/QnTv8/README.md
+ create mode 100644 packages/ScikitLearnBase/QnTv8/REQUIRE
+ create mode 100644 packages/ScikitLearnBase/QnTv8/docs/API.md
+ create mode 100644 packages/ScikitLearnBase/QnTv8/src/ScikitLearnBase.jl
+ create mode 100644 packages/ScikitLearnBase/QnTv8/test/Project.toml
+ create mode 100644 packages/ScikitLearnBase/QnTv8/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   aa2d6a7d0..f74a4aad7  master -> master
+Progress:   6%|██▍                                      |  ETA: 4 days, 13:29:19[K
+Installing BayesianTools
+ Resolving package versions...
+ Installed BayesianTools ─ v0.0.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [196d93e9] + BayesianTools v0.0.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [196d93e9] + BayesianTools v0.0.1
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
