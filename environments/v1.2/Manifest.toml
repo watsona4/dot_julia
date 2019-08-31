@@ -305,11 +305,23 @@ git-tree-sha1 = "b9a70ea27ab767fc52c3f1359aaa3dfff44fd810"
 uuid = "13e28ba4-7ad8-5781-acae-3021b1ed3924"
 version = "0.3.0"
 
+[[ApplicationBuilder]]
+deps = ["ArgParse", "Glob", "PackageCompiler", "Pkg", "REPL"]
+git-tree-sha1 = "866b34418eda1a2e4f3676e4b23ece997a717d18"
+uuid = "f9309374-59cc-5ff5-a120-e3e470a57b4a"
+version = "0.4.0"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
 uuid = "dce04be8-c92d-5529-be00-80e4d2c0e197"
 version = "1.0.1"
+
+[[ArgParse]]
+deps = ["Compat", "Test", "TextWrap"]
+git-tree-sha1 = "14d5789a99e6bea3e258d668ec09359a9feaf2d1"
+uuid = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
+version = "0.6.2"
 
 [[ArnoldiMethod]]
 deps = ["DelimitedFiles", "LinearAlgebra", "Random", "SparseArrays", "StaticArrays", "Test"]
@@ -795,6 +807,12 @@ git-tree-sha1 = "2b0bfb379a54bdfcd2942f388f7d045f8952373d"
 uuid = "4d00f742-c7ba-57c2-abde-4428a4b178cb"
 version = "0.7.5"
 
+[[Glob]]
+deps = ["Compat", "Test"]
+git-tree-sha1 = "c72f1fcb7d17426de1e8af2e948dfb3de1116eed"
+uuid = "c27321d9-0574-5035-807b-f59d2c89b15c"
+version = "1.2.0"
+
 [[GraphPlot]]
 deps = ["ArnoldiMethod", "ColorTypes", "Colors", "Compose", "DelimitedFiles", "LightGraphs", "LinearAlgebra", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "f4435ce0055d4da938f3bab0c0e523826735c96a"
@@ -1199,6 +1217,12 @@ git-tree-sha1 = "9d6a9b3e19634612fb1edcafc4b1d75242b24bde"
 uuid = "90014a1f-27ba-587c-ab20-58faa44d9150"
 version = "0.9.9"
 
+[[PackageCompiler]]
+deps = ["Libdl", "Pkg", "REPL", "Serialization", "UUIDs", "WinRPM"]
+git-tree-sha1 = "0b5dccd6520dd7072d1d2a7fb22501a98f42e691"
+uuid = "9b87118b-4619-50d2-8e1e-99f35a4d4d9d"
+version = "0.6.4"
+
 [[Packing]]
 deps = ["GeometryTypes", "Test"]
 git-tree-sha1 = "bc7c284233cf0518933bf9977e3e8234efcc1c30"
@@ -1493,6 +1517,12 @@ version = "0.2.11"
 [[Test]]
 deps = ["Distributed", "InteractiveUtils", "Logging", "Random"]
 uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[[TextWrap]]
+deps = ["Compat", "Test"]
+git-tree-sha1 = "8355cc559e85469cd4dbe927c375f61d3750e002"
+uuid = "b718987f-49a8-5099-9789-dcd902bef87d"
+version = "0.3.0"
 
 [[TimerOutputs]]
 deps = ["Crayons", "Printf", "Test", "Unicode"]

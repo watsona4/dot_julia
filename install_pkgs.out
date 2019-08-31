@@ -10589,3 +10589,36 @@ Installing AppleAccelerate
   [13e28ba4] + AppleAccelerate v0.3.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [13e28ba4] + AppleAccelerate v0.3.0
+[master dc817a190] added package AppleAccelerate
+ 13 files changed, 1604 insertions(+)
+ create mode 100644 packages/AppleAccelerate/lc8gu/.travis.yml
+ create mode 100644 packages/AppleAccelerate/lc8gu/LICENSE.md
+ create mode 100644 packages/AppleAccelerate/lc8gu/Project.toml
+ create mode 100644 packages/AppleAccelerate/lc8gu/README.md
+ create mode 100644 packages/AppleAccelerate/lc8gu/src/AppleAccelerate.jl
+ create mode 100644 packages/AppleAccelerate/lc8gu/src/Array.jl
+ create mode 100644 packages/AppleAccelerate/lc8gu/src/DSP.jl
+ create mode 100644 packages/AppleAccelerate/lc8gu/src/Util.jl
+ create mode 100644 packages/AppleAccelerate/lc8gu/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   f81cdc0ee..dc817a190  master -> master
+Progress:   3%|█                                        |  ETA: 2 days, 3:28:14[K
+Installing ApplicationBuilder
+ Resolving package versions...
+ Installed ArgParse ─────────── v0.6.2
+ Installed PackageCompiler ──── v0.6.4
+ Installed Glob ─────────────── v1.2.0
+ Installed TextWrap ─────────── v0.3.0
+ Installed ApplicationBuilder ─ v0.4.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [f9309374] + ApplicationBuilder v0.4.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [f9309374] + ApplicationBuilder v0.4.0
+  [c7e460c6] + ArgParse v0.6.2
+  [c27321d9] + Glob v1.2.0
+  [9b87118b] + PackageCompiler v0.6.4
+  [b718987f] + TextWrap v0.3.0
+  Building PackageCompiler → `~/.julia/packages/PackageCompiler/CJQcs/deps/build.log`
+  Building LibCURL ────────→ `~/.julia/packages/LibCURL/lWJxD/deps/build.log`
+  Building WinRPM ─────────→ `~/.julia/packages/WinRPM/Y9QdZ/deps/build.log`
+  Building PackageCompiler → `~/.julia/packages/PackageCompiler/CJQcs/deps/build.log`
