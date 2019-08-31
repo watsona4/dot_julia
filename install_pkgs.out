@@ -34677,3 +34677,63 @@ Installing BritishNationalGrid
   [9a7e659c] + Proj4 v0.5.0
   Building Proj4 → `~/.julia/packages/Proj4/UxvhB/deps/build.log`
   Building Proj4 → `~/.julia/packages/Proj4/UxvhB/deps/build.log`
+[master 8cf674572] added package BritishNationalGrid
+ 46 files changed, 12250 insertions(+)
+ create mode 100644 packages/BritishNationalGrid/2MYkt/.codecov.yml
+ create mode 100644 packages/BritishNationalGrid/2MYkt/.gitignore
+ create mode 100644 packages/BritishNationalGrid/2MYkt/.travis.yml
+ create mode 100644 packages/BritishNationalGrid/2MYkt/LICENSE.md
+ create mode 100644 packages/BritishNationalGrid/2MYkt/README.md
+ create mode 100644 packages/BritishNationalGrid/2MYkt/REQUIRE
+ create mode 100644 packages/BritishNationalGrid/2MYkt/appveyor.yml
+ create mode 100644 packages/BritishNationalGrid/2MYkt/src/BritishNationalGrid.jl
+ create mode 100644 packages/BritishNationalGrid/2MYkt/test/runtests.jl
+ create mode 100644 packages/Formatting/r8m21/.codecov.yml
+ create mode 100644 packages/Formatting/r8m21/.gitignore
+ create mode 100644 packages/Formatting/r8m21/.travis.yml
+ create mode 100644 packages/Formatting/r8m21/LICENSE.md
+ create mode 100644 packages/Formatting/r8m21/Project.toml
+ create mode 100644 packages/Formatting/r8m21/README.md
+ create mode 100644 packages/Formatting/r8m21/appveyor.yml
+ create mode 100644 packages/Formatting/r8m21/src/Formatting.jl
+ create mode 100644 packages/Formatting/r8m21/src/cformat.jl
+ create mode 100644 packages/Formatting/r8m21/src/fmtcore.jl
+ create mode 100644 packages/Formatting/r8m21/src/fmtspec.jl
+ create mode 100644 packages/Formatting/r8m21/src/formatexpr.jl
+ create mode 100644 packages/Formatting/r8m21/test/cformat.jl
+ create mode 100644 packages/Formatting/r8m21/test/fmtspec.jl
+ create mode 100644 packages/Formatting/r8m21/test/formatexpr.jl
+ create mode 100644 packages/Formatting/r8m21/test/perf1.jl
+ create mode 100644 packages/Formatting/r8m21/test/runtests.jl
+ create mode 100644 packages/Proj4/UxvhB/.gitignore
+ create mode 100644 packages/Proj4/UxvhB/.travis.yml
+ create mode 100644 packages/Proj4/UxvhB/LICENSE.md
+ create mode 100644 packages/Proj4/UxvhB/README.md
+ create mode 100644 packages/Proj4/UxvhB/REQUIRE
+ create mode 100644 packages/Proj4/UxvhB/appveyor.yml
+ create mode 100644 packages/Proj4/UxvhB/deps/build.jl
+ create mode 100644 packages/Proj4/UxvhB/gen/generate_projection_codes.jl
+ create mode 100644 packages/Proj4/UxvhB/src/Proj4.jl
+ create mode 100644 packages/Proj4/UxvhB/src/README.md
+ create mode 100644 packages/Proj4/UxvhB/src/proj_capi.jl
+ create mode 100644 packages/Proj4/UxvhB/src/proj_functions.jl
+ create mode 100644 packages/Proj4/UxvhB/src/proj_geodesic.jl
+ create mode 100644 packages/Proj4/UxvhB/src/proj_types.jl
+ create mode 100644 packages/Proj4/UxvhB/src/projection_codes.jl
+ create mode 100644 packages/Proj4/UxvhB/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   d92e1c6b4..8cf674572  master -> master
+Progress:   9%|███▌                                     |  ETA: 3 days, 17:45:30[K
+Installing Brownian
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Brownian [6dd6cc0c]:\n Brownian [6dd6cc0c] log:\n ├─possible versions are: [0.0.1, 0.1.0, 0.2.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0, 0.2.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   9%|███▌                                     |  ETA: 3 days, 17:25:28[K
+Installing BrowseTables
+ Resolving package versions...
+ Installed DefaultApplication ─ v0.1.3
+ Installed BrowseTables ─────── v0.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [5f4fecfd] + BrowseTables v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [5f4fecfd] + BrowseTables v0.3.0
+  [3f0dd361] + DefaultApplication v0.1.3

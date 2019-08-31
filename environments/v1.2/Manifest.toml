@@ -1178,6 +1178,12 @@ git-tree-sha1 = "72b2e5fb84eb64fb19db8158b131d06a1b5e88dd"
 uuid = "07503c7f-9676-5157-a8e2-6c0d0a9caee7"
 version = "0.3.1"
 
+[[BrowseTables]]
+deps = ["ArgCheck", "DefaultApplication", "DocStringExtensions", "Parameters", "Tables"]
+git-tree-sha1 = "2df4c05941860fd6149c349422d584174044718a"
+uuid = "5f4fecfd-7eb0-5078-b7f6-ad1f2563c22a"
+version = "0.3.0"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
@@ -1506,6 +1512,12 @@ deps = ["Test"]
 git-tree-sha1 = "b374d464d64470e743c5f9172c57352e1a9404ac"
 uuid = "abce61dc-4473-55a0-ba07-351d65e31d42"
 version = "0.4.0"
+
+[[DefaultApplication]]
+deps = ["Test"]
+git-tree-sha1 = "a51d16b075dc52e22cde13b4a6e0ba4ba86649ee"
+uuid = "3f0dd361-4fe0-5fc6-8523-80b14ec94d85"
+version = "0.1.3"
 
 [[DelimitedFiles]]
 deps = ["Mmap"]
