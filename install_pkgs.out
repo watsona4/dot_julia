@@ -30468,3 +30468,39 @@ Installing Bhaskara
   [0ff2d225] + Bhaskara v0.1.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [0ff2d225] + Bhaskara v0.1.1
+[master 55323fb07] added package Bhaskara
+ 10 files changed, 183 insertions(+)
+ create mode 100644 packages/Bhaskara/HpjUT/Project.toml
+ create mode 100644 packages/Bhaskara/HpjUT/README.md
+ create mode 100644 packages/Bhaskara/HpjUT/REQUIRE
+ create mode 100644 packages/Bhaskara/HpjUT/sin.png
+ create mode 100644 packages/Bhaskara/HpjUT/src/Bhaskara.jl
+ create mode 100644 packages/Bhaskara/HpjUT/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   7e32bf762..55323fb07  master -> master
+Progress:   6%|██▋                                      |  ETA: 4 days, 7:14:06[K
+Installing BigArrays
+ Resolving package versions...
+ Installed GoogleCloud ─ v0.8.0
+ Installed CodecZstd ─── v0.6.1
+ Installed MsgPack ───── v0.2.0
+ Installed Memoize ───── v0.3.0
+ Installed BigArrays ─── v0.8.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [c2a8506f] + BigArrays v0.8.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [c2a8506f] + BigArrays v0.8.0
+  [6b39b394] + CodecZstd v0.6.1
+  [55e21f81] + GoogleCloud v0.8.0
+  [c03570c3] + Memoize v0.3.0
+  [99f44e22] + MsgPack v0.2.0
+  Building CodecZstd → `~/.julia/packages/CodecZstd/zTSNC/deps/build.log`
+  Building MbedTLS ────→ `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+  Building CodecZlib ──→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+  Building CodecZstd ──→ `~/.julia/packages/CodecZstd/zTSNC/deps/build.log`
+  Building EzXML ──────→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
+  Building Conda ──────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ───────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+  Building ImageMagick → `~/.julia/packages/ImageMagick/vMfoS/deps/build.log`
+  Building CMake ──────→ `~/.julia/packages/CMake/nSK2r/deps/build.log`
+  Building Blosc ──────→ `~/.julia/packages/Blosc/lzFr0/deps/build.log`

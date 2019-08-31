@@ -1,0 +1,25 @@
+language: julia
+os:
+    - linux
+julia: 
+    - 1.0
+    - nightly
+
+sudo: required 
+
+notifications:
+    email: false
+
+before_install:
+    - sudo apt install -y libmagickwand-dev
+
+script:
+    - julia -e 'import Pkg; Pkg.clone(pwd()); Pkg.test("BigArrays", coverage=true)'
+
+matrix:
+    allow_failures:
+        - julia: nightly
+
+after_success:
+    # push coverage results to Coveralls
+    - julia -e 'import Pkg; cd(Pkg.dir("BigArrays")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'

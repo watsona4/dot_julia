@@ -839,6 +839,12 @@ git-tree-sha1 = "8269e5b6dc7fd4acc815f3250043c93bb2ce21e5"
 uuid = "0ff2d225-4740-5ba6-bff6-8e455aafa9c9"
 version = "0.1.1"
 
+[[BigArrays]]
+deps = ["AWSCore", "AWSS3", "Blosc", "CodecZlib", "CodecZstd", "Distributed", "GoogleCloud", "HTTP", "ImageMagick", "JSON", "Memoize", "OffsetArrays", "SharedArrays", "Test", "TranscodingStreams"]
+git-tree-sha1 = "6eba13bb02fbb400ad74f399c66ac5b6926da496"
+uuid = "c2a8506f-1b35-5b08-8aa1-bb4a7b47a05e"
+version = "0.8.0"
+
 [[BinDeps]]
 deps = ["Compat", "Libdl", "SHA", "URIParser"]
 git-tree-sha1 = "12093ca6cdd0ee547c39b1870e0c9c3f154d9ca9"
@@ -992,6 +998,12 @@ deps = ["BinaryProvider", "Libdl", "TranscodingStreams"]
 git-tree-sha1 = "05916673a2627dd91b4969ff8ba6941bc85a960e"
 uuid = "944b1d66-785c-5afd-91f1-9de20f533193"
 version = "0.6.0"
+
+[[CodecZstd]]
+deps = ["BinaryProvider", "Libdl", "TranscodingStreams"]
+git-tree-sha1 = "0e30dd198a113481b91a478f3b2078d33a24ce2c"
+uuid = "6b39b394-51ab-5f42-8807-6242bab2b4c2"
+version = "0.6.1"
 
 [[Codecs]]
 deps = ["Test"]
@@ -1557,6 +1569,12 @@ git-tree-sha1 = "c72f1fcb7d17426de1e8af2e948dfb3de1116eed"
 uuid = "c27321d9-0574-5035-807b-f59d2c89b15c"
 version = "1.2.0"
 
+[[GoogleCloud]]
+deps = ["Base64", "Dates", "HTTP", "JSON", "Libz", "Markdown", "MbedTLS", "MsgPack", "Printf", "Test"]
+git-tree-sha1 = "96a8c98805e3635f189c49903fffbad725e5de46"
+uuid = "55e21f81-8b0a-565e-b5ad-6816892a5ee7"
+version = "0.8.0"
+
 [[GradDescent]]
 deps = ["Distributions", "ForwardDiff", "LinearAlgebra", "Random", "Test"]
 git-tree-sha1 = "2180f700605eb0ad851f54577855c6a8f13b9a20"
@@ -2102,6 +2120,12 @@ git-tree-sha1 = "75a54abd10709c01f1b86b84ec225d26e840ed58"
 uuid = "e89f7d12-3494-54d1-8411-f7d8b9ae1f27"
 version = "0.5.0"
 
+[[Memoize]]
+deps = ["Test"]
+git-tree-sha1 = "d9683969337ad20dc957122038bd2c0ead4b5209"
+uuid = "c03570c3-d221-55d1-a50c-7939bbd78826"
+version = "0.3.0"
+
 [[MetaProgTools]]
 git-tree-sha1 = "cc8b2b47177f096abf5fc8e39786250655feeb03"
 uuid = "b1909ce5-9a67-5ea4-ba1b-9d85528f5779"
@@ -2115,6 +2139,12 @@ version = "0.4.1"
 
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
+
+[[MsgPack]]
+deps = ["Compat", "Random", "Test"]
+git-tree-sha1 = "c44b3470fa98705f9c12cb44ec9504de3af027ad"
+uuid = "99f44e22-a591-53d1-9472-aa23ef4bd671"
+version = "0.2.0"
 
 [[MuladdMacro]]
 deps = ["MacroTools", "Test"]
