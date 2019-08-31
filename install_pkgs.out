@@ -37161,3 +37161,147 @@ Installing CDDLib
 │ If the compilation fails, please install it as follows:
 │ $ sudo yum install libgmp-devel or gmp-devel
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master ab17208dc] added package CDDLib
+ 137 files changed, 13038 insertions(+)
+ create mode 100644 packages/CDDLib/bKo5p/.gitignore
+ create mode 100644 packages/CDDLib/bKo5p/.travis.yml
+ create mode 100644 packages/CDDLib/bKo5p/COPYING
+ create mode 100644 packages/CDDLib/bKo5p/LICENSE.md
+ create mode 100644 packages/CDDLib/bKo5p/README.md
+ create mode 100644 packages/CDDLib/bKo5p/REQUIRE
+ create mode 100644 packages/CDDLib/bKo5p/appveyor.yml
+ create mode 100644 packages/CDDLib/bKo5p/deps/.gitignore
+ create mode 100644 packages/CDDLib/bKo5p/deps/build.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/CDDLib.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/cddtypes.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/error.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/lp.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/mathprogbase.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/matrix.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/mytype.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/operations.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/polyhedra.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/polyhedron.jl
+ create mode 100644 packages/CDDLib/bKo5p/src/settype.jl
+ create mode 100644 packages/CDDLib/bKo5p/test/IDEAS
+ create mode 100644 packages/CDDLib/bKo5p/test/REQUIRE
+ create mode 100644 packages/CDDLib/bKo5p/test/board.jl
+ create mode 100644 packages/CDDLib/bKo5p/test/mathprogbase.jl
+ create mode 100644 packages/CDDLib/bKo5p/test/permutahedron.jl
+ create mode 100644 packages/CDDLib/bKo5p/test/polyhedron.jl
+ create mode 100644 packages/CDDLib/bKo5p/test/runtests.jl
+ create mode 100644 packages/CDDLib/bKo5p/test/simplex.jl
+ create mode 100644 packages/CDDLib/bKo5p/test/test.jl
+ create mode 100644 packages/CDDLib/bKo5p/test/utils.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/.gitignore
+ create mode 100644 packages/Polyhedra/Su6Kf/.travis.yml
+ create mode 100644 packages/Polyhedra/Su6Kf/LICENSE.md
+ create mode 100644 packages/Polyhedra/Su6Kf/README.md
+ create mode 100644 packages/Polyhedra/Su6Kf/REQUIRE
+ create mode 100644 packages/Polyhedra/Su6Kf/appveyor.yml
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/.gitignore
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/Project.toml
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/make.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/src/index.md
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/src/installation.md
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/src/optimization.md
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/src/polyhedron.md
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/src/projection.md
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/src/redundancy.md
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/src/representation.md
+ create mode 100644 packages/Polyhedra/Su6Kf/docs/src/utilities.md
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/.gitignore
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/3D Plotting a projection of the 4D permutahedron.ipynb
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/Computing controlled invariant sets.ipynb
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/axes.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/chebyshevcenter.ipynb
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/drakeperm.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/drakeperm.png
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/glvizperm.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/glvizperm.png
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/operations.ipynb
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/perm.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/examples/simple.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/perf/runbenchmarks.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/Polyhedra.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/aff.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/center.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/comp.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/decompose.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/default.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/defaultlibrary.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/dimension.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/doubledescription.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/elements.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/fulldim.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/incidence.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/indices.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/interval.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/iterators.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/jump.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/liftedrep.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/lphrep.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/lpqp_to_polyhedra.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/matrep.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/mixedrep.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/opt.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/polyhedra_to_lpqp.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/polyhedron.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/projection.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/recipe.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/redundancy.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/repelemop.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/repop.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/representation.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/show.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/vecrep.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/src/vrepsolver.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/REQUIRE
+ create mode 100644 packages/Polyhedra/Su6Kf/test/basic.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/board.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/comp.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/config.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/crosspolytope.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/decompose.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/default.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/docexample.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/doubledescription.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/elements.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/empty.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/ex1.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/hypercube.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/inconsistentvrep.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/infeasible.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/interval.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/issue48.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/jump.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/jumpsimplex.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/liftedrep.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/lphrep.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/matrep.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/misc.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/nonfulldimensional.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/permutahedron.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/polyhedra.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/polyhedra_to_lpqp.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/polyhedron.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/recipe.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/redundancy.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/representation.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/runtests.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/show.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/simplex.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/solvers.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/sparse.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/sparserect.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/utils.jl
+ create mode 100644 packages/Polyhedra/Su6Kf/test/vecrep.jl
+To https://github.com/watsona4/dot_julia.git
+   bc21ae154..ab17208dc  master -> master
+Progress:   9%|███▊                                     |  ETA: 3 days, 15:54:32[K
+Installing CEnum
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [fa961155] + CEnum v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
