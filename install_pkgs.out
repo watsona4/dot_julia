@@ -33330,3 +33330,32 @@ Installing Blobs
   [163b9779] + Blobs v0.3.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [163b9779] + Blobs v0.3.0
+[master c8c89c41e] added package Blobs
+ 18 files changed, 1404 insertions(+)
+ create mode 100644 packages/Blobs/F9A0k/.gitignore
+ create mode 100644 packages/Blobs/F9A0k/.travis.yml
+ create mode 100644 packages/Blobs/F9A0k/LICENSE.md
+ create mode 100644 packages/Blobs/F9A0k/Project.toml
+ create mode 100644 packages/Blobs/F9A0k/README.md
+ create mode 100644 packages/Blobs/F9A0k/REQUIRE
+ create mode 100644 packages/Blobs/F9A0k/appveyor.yml
+ create mode 100644 packages/Blobs/F9A0k/src/Blobs.jl
+ create mode 100644 packages/Blobs/F9A0k/src/bit_vector.jl
+ create mode 100644 packages/Blobs/F9A0k/src/blob.jl
+ create mode 100644 packages/Blobs/F9A0k/src/layout.jl
+ create mode 100644 packages/Blobs/F9A0k/src/string.jl
+ create mode 100644 packages/Blobs/F9A0k/src/vector.jl
+ create mode 100644 packages/Blobs/F9A0k/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   002199112..c8c89c41e  master -> master
+Progress:   8%|███▏                                     |  ETA: 3 days, 22:15:36[K
+Installing BlochSim
+ Resolving package versions...
+ Installed BlochSim ─ v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [5c0f8cbe] + BlochSim v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [5c0f8cbe] + BlochSim v0.2.0
+  Building CMake → `~/.julia/packages/CMake/nSK2r/deps/build.log`
+  Building Blosc → `~/.julia/packages/Blosc/lzFr0/deps/build.log`
+  Building HDF5 ─→ `~/.julia/packages/HDF5/DktP4/deps/build.log`

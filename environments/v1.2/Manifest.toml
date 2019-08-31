@@ -1053,6 +1053,12 @@ git-tree-sha1 = "13ae82f0eb9c1f5506d9f8c3b2711f0fba49db6a"
 uuid = "163b9779-6631-5f90-a265-3de947924de8"
 version = "0.3.0"
 
+[[BlochSim]]
+deps = ["LinearAlgebra", "MAT", "Test"]
+git-tree-sha1 = "a6c5a8c8fbc0e7ce039cc1896acc1b638652b9b6"
+uuid = "5c0f8cbe-99a4-11e9-108b-216da9629524"
+version = "0.2.0"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"
