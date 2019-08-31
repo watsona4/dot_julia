@@ -1303,6 +1303,12 @@ git-tree-sha1 = "7550a99c0ed94b07c43e685ad95c5563ed2628c2"
 uuid = "13e0c4e3-fd7a-51bf-9e22-ec7679f18909"
 version = "0.1.0"
 
+[[CORBITS]]
+deps = ["Libdl", "Pkg", "Test"]
+git-tree-sha1 = "baf8790d4796845b7a2633bf8664eca7056ef2ea"
+uuid = "19bfd68b-3085-5123-a7aa-2ec83b867ca4"
+version = "1.0.1"
+
 [[CPUTime]]
 git-tree-sha1 = "2dcc50ea6a0a1ef6440d6eecd0fe3813e5671f45"
 uuid = "a9c8d775-2e2e-55fc-8582-045d282d599e"

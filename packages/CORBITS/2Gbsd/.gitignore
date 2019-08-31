@@ -1,0 +1,30 @@
+BB# ignore edited files
+*~
+\#*\#
+
+# ignore R workspaces
+.RData
+.Rhistory
+
+# ignore output files (input files use .in)
+*.txt
+*.log
+*.csv
+*.pdf
+*.eps
+*.tex
+
+# ignore object files or exectutable code
+*.exe
+*.o
+*.so
+*.stackdump
+*.mem
+
+# ignore certain folders
+asy
+paper
+
+# arbitrary files to ignore
+lib/old_occultation_code.cpp
+examples/period-dist/KOI*.sh

@@ -37914,3 +37914,33 @@ Installing COESA
   [13e0c4e3] + COESA v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [13e0c4e3] + COESA v0.1.0
+[master 206cf4050] added package COESA
+ 12 files changed, 590 insertions(+)
+ create mode 100644 packages/COESA/zIFxf/.gitignore
+ create mode 100644 packages/COESA/zIFxf/.travis.yml
+ create mode 100644 packages/COESA/zIFxf/LICENSE.md
+ create mode 100644 packages/COESA/zIFxf/README.md
+ create mode 100644 packages/COESA/zIFxf/REQUIRE
+ create mode 100644 packages/COESA/zIFxf/appveyor.yml
+ create mode 100644 packages/COESA/zIFxf/src/COESA.jl
+ create mode 100644 packages/COESA/zIFxf/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   863aa1c4e..206cf4050  master -> master
+Progress:  10%|███▉                                     |  ETA: 3 days, 14:02:10[K
+Installing COFF
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package COFF [62b36e50]:\n COFF [62b36e50] log:\n ├─possible versions are: 0.0.1-0.0.2 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.2\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  10%|███▉                                     |  ETA: 3 days, 13:44:50[K
+Installing COMTRADE
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package COMTRADE [fbaffd56]:\n COMTRADE [fbaffd56] log:\n ├─possible versions are: 0.1.0 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.1.0\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  10%|████                                     |  ETA: 3 days, 13:27:45[K
+Installing CORBITS
+ Resolving package versions...
+ Installed CORBITS ─ v1.0.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [19bfd68b] + CORBITS v1.0.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [19bfd68b] + CORBITS v1.0.1
+  Building CORBITS → `~/.julia/packages/CORBITS/2Gbsd/deps/build.log`
+  Building CORBITS → `~/.julia/packages/CORBITS/2Gbsd/deps/build.log`
