@@ -204,6 +204,12 @@ git-tree-sha1 = "ec60448a50cfb94232fb4e245f034ea92a071bf3"
 uuid = "0bf59076-c3b1-5ca4-86bd-e02cd72cde3d"
 version = "0.2.3"
 
+[[AffineArithmetic]]
+deps = ["IntervalArithmetic", "LinearAlgebra", "Test"]
+git-tree-sha1 = "21cb84e5172e56be7947a67cbb23e74357c1da8c"
+uuid = "2e89c364-fad6-56cb-99bd-ebadcd2cf8d2"
+version = "0.1.0"
+
 [[AlgebraicMultigrid]]
 deps = ["Compat", "IterativeSolvers", "Random"]
 git-tree-sha1 = "a26560b0f8cb9104d96715c32f7c272504631ea9"
@@ -283,6 +289,12 @@ deps = ["BinDeps", "CMake", "Libdl", "Parameters", "Test"]
 git-tree-sha1 = "16d4acb3d37dc05b714977ffefa8890843dc8985"
 uuid = "d5fb7624-851a-54ee-a528-d3f3bac0b4a0"
 version = "0.2.3"
+
+[[CRlibm]]
+deps = ["Libdl", "Test"]
+git-tree-sha1 = "805164abcd31facf3a7e5b7d803a0d16b23329bc"
+uuid = "96374032-68de-5a5b-8d9e-752f78720389"
+version = "0.7.1"
 
 [[CSTParser]]
 deps = ["Tokenize"]
@@ -474,6 +486,11 @@ git-tree-sha1 = "e178a6768dad879ff1abfc1c612406856bb06ce0"
 uuid = "fa6b7ba4-c1ee-5f82-b5fc-ecf0adba8f74"
 version = "0.6.2"
 
+[[ErrorfreeArithmetic]]
+git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
+uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
+version = "0.4.0"
+
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "aed48d722e528bc634bd36a7d0e090fa2952a3c0"
@@ -491,6 +508,12 @@ deps = ["AbstractFFTs", "BinaryProvider", "Conda", "Libdl", "LinearAlgebra", "Re
 git-tree-sha1 = "e1a479d3c972f20c9a70563eec740bbfc786f515"
 uuid = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
 version = "0.3.0"
+
+[[FastRounding]]
+deps = ["ErrorfreeArithmetic", "Test"]
+git-tree-sha1 = "224175e213fd4fe112db3eea05d66b308dc2bf6b"
+uuid = "fa42c844-2597-5d31-933b-ebd51ab2693f"
+version = "0.2.0"
 
 [[FieldMetadata]]
 git-tree-sha1 = "632193bb313e5b7fb3e1864ad476a64b1ad37b1a"
@@ -653,6 +676,12 @@ deps = ["AxisAlgorithms", "LinearAlgebra", "OffsetArrays", "Random", "Ratios", "
 git-tree-sha1 = "e1bac96b5ef3ea23b50e801b4a988ec21861a47f"
 uuid = "a98d9a8b-a2ab-59e6-89dd-64a1c18fca59"
 version = "0.12.2"
+
+[[IntervalArithmetic]]
+deps = ["CRlibm", "FastRounding", "LinearAlgebra", "Markdown", "RecipesBase", "SetRounding", "StaticArrays"]
+git-tree-sha1 = "f97d8d63c3f849b0f545062de4634bc9f100d8ec"
+uuid = "d1acc4aa-44c8-5952-acd4-ba5d80a2a253"
+version = "0.16.1"
 
 [[IntervalSets]]
 deps = ["Dates", "Statistics"]
@@ -1006,6 +1035,12 @@ uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
 
 [[Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+
+[[SetRounding]]
+deps = ["Test"]
+git-tree-sha1 = "faca28c7937138d560ede5bfef2076d0cdf3584b"
+uuid = "3cc68bcd-71a2-5612-b932-767ffbe40ab0"
+version = "0.2.0"
 
 [[Setfield]]
 deps = ["InteractiveUtils", "MacroTools", "Test"]

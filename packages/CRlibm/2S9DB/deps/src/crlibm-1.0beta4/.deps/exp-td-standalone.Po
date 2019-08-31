@@ -1,0 +1,63 @@
+exp-td-standalone.o: exp-td-standalone.c /usr/include/stdc-predef.h \
+ crlibm.h crlibm_private.h scs_lib/scs.h scs_lib/../crlibm_config.h \
+ /usr/include/inttypes.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-redhat-linux/7/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/wchar.h /usr/include/bits/stdint-intn.h \
+ /usr/include/bits/stdint-uintn.h scs_lib/scs_private.h scs_lib/scs.h \
+ crlibm_config.h /usr/include/fpu_control.h triple-double.h exp-td.h
+
+/usr/include/stdc-predef.h:
+
+crlibm.h:
+
+crlibm_private.h:
+
+scs_lib/scs.h:
+
+scs_lib/../crlibm_config.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/7/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+scs_lib/scs_private.h:
+
+scs_lib/scs.h:
+
+crlibm_config.h:
+
+/usr/include/fpu_control.h:
+
+triple-double.h:
+
+exp-td.h:

@@ -7192,3 +7192,97 @@ Installing AdvancedHMC
   [5078a376] + LazyArrays v0.10.0
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master 08860ca32] added package AdvancedHMC
+ 74 files changed, 7920 insertions(+)
+ create mode 100644 packages/AdvancedHMC/hAEIX/.gitignore
+ create mode 100644 packages/AdvancedHMC/hAEIX/.travis.yml
+ create mode 100644 packages/AdvancedHMC/hAEIX/LICENSE
+ create mode 100644 packages/AdvancedHMC/hAEIX/Manifest.toml
+ create mode 100644 packages/AdvancedHMC/hAEIX/Project.toml
+ create mode 100644 packages/AdvancedHMC/hAEIX/README.md
+ create mode 100644 packages/AdvancedHMC/hAEIX/src/AdvancedHMC.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/src/adaptation/Adaptation.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/src/adaptation/precond.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/src/adaptation/stan_adaption.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/src/adaptation/stepsize.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/src/diagnosis.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/src/hamiltonian.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/src/integrator.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/src/sampler.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/src/trajectory.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/test/adaptation/precond.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/test/common.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/test/demo.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/test/hamiltonian.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/test/hmc.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/test/integrator.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/test/models.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/test/runtests.jl
+ create mode 100644 packages/AdvancedHMC/hAEIX/test/trajectory.jl
+ create mode 100644 packages/InplaceOps/TROyE/.travis.yml
+ create mode 100644 packages/InplaceOps/TROyE/LICENSE.md
+ create mode 100644 packages/InplaceOps/TROyE/README.md
+ create mode 100644 packages/InplaceOps/TROyE/REQUIRE
+ create mode 100644 packages/InplaceOps/TROyE/appveyor.yml
+ create mode 100644 packages/InplaceOps/TROyE/src/InplaceOps.jl
+ create mode 100644 packages/InplaceOps/TROyE/test/runtests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/.gitignore
+ create mode 100644 packages/LazyArrays/HSJVe/.travis.yml
+ create mode 100644 packages/LazyArrays/HSJVe/LICENSE
+ create mode 100644 packages/LazyArrays/HSJVe/Project.toml
+ create mode 100644 packages/LazyArrays/HSJVe/README.md
+ create mode 100644 packages/LazyArrays/HSJVe/appveyor.yml
+ create mode 100644 packages/LazyArrays/HSJVe/docs/.gitignore
+ create mode 100644 packages/LazyArrays/HSJVe/docs/Project.toml
+ create mode 100644 packages/LazyArrays/HSJVe/docs/make.jl
+ create mode 100644 packages/LazyArrays/HSJVe/docs/src/index.md
+ create mode 100644 packages/LazyArrays/HSJVe/docs/src/internals.md
+ create mode 100644 packages/LazyArrays/HSJVe/src/LazyArrays.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/cache.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/lazyapplying.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/lazybroadcasting.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/lazyconcat.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/lazymacro.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/lazyoperations.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/lazysetoperations.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/linalg/add.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/linalg/factorizations.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/linalg/inv.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/linalg/lazymul.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/linalg/linalg.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/linalg/mul.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/linalg/muladd.jl
+ create mode 100644 packages/LazyArrays/HSJVe/src/memorylayout.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/addtests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/applytests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/benchmarktests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/concattests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/lazymultests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/ldivtests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/macrotests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/memorylayouttests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/multests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/runtests.jl
+ create mode 100644 packages/LazyArrays/HSJVe/test/setoptests.jl
+To https://github.com/watsona4/dot_julia.git
+   480ff3e3d..08860ca32  master -> master
+Progress:   2%|▊                                        |  ETA: 1 days, 23:09:10[K
+Installing AffineArithmetic
+ Resolving package versions...
+ Installed AffineArithmetic ──── v0.1.0
+ Installed IntervalArithmetic ── v0.16.1
+ Installed SetRounding ───────── v0.2.0
+ Installed FastRounding ──────── v0.2.0
+ Installed ErrorfreeArithmetic ─ v0.4.0
+ Installed CRlibm ────────────── v0.7.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [2e89c364] + AffineArithmetic v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [2e89c364] + AffineArithmetic v0.1.0
+  [96374032] + CRlibm v0.7.1
+  [90fa49ef] + ErrorfreeArithmetic v0.4.0
+  [fa42c844] + FastRounding v0.2.0
+  [d1acc4aa] + IntervalArithmetic v0.16.1
+  [3cc68bcd] + SetRounding v0.2.0
+  Building CRlibm → `~/.julia/packages/CRlibm/2S9DB/deps/build.log`
+  Building CRlibm → `~/.julia/packages/CRlibm/2S9DB/deps/build.log`
