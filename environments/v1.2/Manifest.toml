@@ -1892,6 +1892,12 @@ git-tree-sha1 = "d9b74af57561ebcdf05898a18827ce8ad084baae"
 uuid = "d427f087-d71a-5a1b-ace0-b93392eea9ff"
 version = "0.1.0"
 
+[[CompEcon]]
+deps = ["BasisMatrices", "QuantEcon", "Reexport", "Test"]
+git-tree-sha1 = "da8bf6244a6ab868015e97d33a1195955a641115"
+uuid = "1375f997-1772-542d-b6fa-a8ee39124556"
+version = "0.4.0"
+
 [[CompScienceMeshes]]
 deps = ["CollisionDetection", "Combinatorics", "Compat", "DelimitedFiles", "FastGaussQuadrature", "LinearAlgebra", "Requires", "SparseArrays", "StaticArrays"]
 git-tree-sha1 = "06f0eb19e933e1bb23bed1fee774b3342e88b5f2"
