@@ -1434,6 +1434,12 @@ git-tree-sha1 = "554dc01e4550ebd122405f3b06f79870f5963a56"
 uuid = "5a1c9e79-9c58-5ec0-afc4-3298fdea2875"
 version = "0.1.0"
 
+[[CacheServers]]
+deps = ["Distributed", "Test"]
+git-tree-sha1 = "b584b04f236d3677b4334fab095796a128445bf8"
+uuid = "a921213e-d44a-5460-ac04-5d720a99ba71"
+version = "0.2.0"
+
 [[Cairo]]
 deps = ["BinDeps", "Colors", "Compat", "Graphics", "Homebrew", "Libdl", "Pkg", "WinRPM"]
 git-tree-sha1 = "e577cb41e7e2641f4b97f1b6dbcb9a69c9288330"

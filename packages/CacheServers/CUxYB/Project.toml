@@ -1,0 +1,11 @@
+name = "CacheServers"
+uuid = "a921213e-d44a-5460-ac04-5d720a99ba71"
+
+[deps]
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
