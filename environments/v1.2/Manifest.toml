@@ -90,6 +90,12 @@ git-tree-sha1 = "999aa21656007a37bd5ea45464b9aeb9089e2cd4"
 uuid = "6e80b5ca-5733-51f9-999e-c18680912812"
 version = "0.5.0"
 
+[[AbaqusReader]]
+deps = ["Nullables", "Test"]
+git-tree-sha1 = "0c6f5373eeb3f10f8f8405038c071b18d23907f0"
+uuid = "bc6b9049-e460-56d6-94b4-a597b2c0390d"
+version = "0.2.2"
+
 [[AbstractFFTs]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "380e36c66edfa099cd90116b24c1ce8cafccac40"
@@ -582,6 +588,12 @@ deps = ["LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "c807689feb2127a011d8e174541c79e5a3a8acab"
 uuid = "2fcf5ba9-9ed4-57cf-b73f-ff513e316b9c"
 version = "0.5.0"
+
+[[Nullables]]
+deps = ["Compat"]
+git-tree-sha1 = "ae1a63457e14554df2159b0b028f48536125092d"
+uuid = "4d1e1d77-625e-5b40-9113-a560ec7a8ecd"
+version = "0.0.8"
 
 [[OceanGrids]]
 deps = ["Unitful"]

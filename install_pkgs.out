@@ -5611,3 +5611,23 @@ Installing AWSSQS
   [6e80b5ca] + AWSSQS v0.5.0
   Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
   Building EzXML ──→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
+[master 61c1df57c] added package AWSSQS
+ 10 files changed, 670 insertions(+)
+ create mode 100644 packages/AWSSQS/NiUWq/.travis.yml
+ create mode 100644 packages/AWSSQS/NiUWq/LICENSE.md
+ create mode 100644 packages/AWSSQS/NiUWq/README.md
+ create mode 100644 packages/AWSSQS/NiUWq/REQUIRE
+ create mode 100644 packages/AWSSQS/NiUWq/src/AWSSQS.jl
+ create mode 100755 packages/AWSSQS/NiUWq/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   adfefa23c..61c1df57c  master -> master
+Progress:   1%|▍                                        |  ETA: 2 days, 14:47:37[K
+Installing AbaqusReader
+ Resolving package versions...
+ Installed Nullables ──── v0.0.8
+ Installed AbaqusReader ─ v0.2.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [bc6b9049] + AbaqusReader v0.2.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [bc6b9049] + AbaqusReader v0.2.2
+  [4d1e1d77] + Nullables v0.0.8
