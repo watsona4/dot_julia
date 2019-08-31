@@ -364,6 +364,12 @@ git-tree-sha1 = "e31d53c7a427a92d015ddd9aa967a3f215ef66d8"
 uuid = "2bb279fe-b7da-5b2b-8ce2-4088845e51bb"
 version = "0.0.2"
 
+[[ApproximateComputations]]
+deps = ["BenchmarkTools", "Coverage", "DataFrames", "ImportAll", "Plots", "Statistics", "Test"]
+git-tree-sha1 = "977a8a45ad704b1b2d97c27a548f31fe397af934"
+uuid = "49d1aae2-ae6b-5d26-a063-7cf6630cf99c"
+version = "0.3.3"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -604,6 +610,12 @@ deps = ["Compat", "Rotations", "StaticArrays"]
 git-tree-sha1 = "47f05d0b7f4999609f92e657147df000818c1f24"
 uuid = "150eb455-5306-5404-9cee-2592286d6298"
 version = "0.5.0"
+
+[[Coverage]]
+deps = ["HTTP", "JSON", "LibGit2", "MbedTLS"]
+git-tree-sha1 = "f9780daf3fea51ad2d7b7ed4f480ac34ab36587f"
+uuid = "a2441757-f6aa-5fb2-8edb-039e3f45d037"
+version = "0.9.2"
 
 [[Crayons]]
 deps = ["Test"]
@@ -908,6 +920,12 @@ git-tree-sha1 = "dd169c636d1d3656a9faca772f5bd7c226a61254"
 uuid = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
 version = "1.0.1"
 
+[[GR]]
+deps = ["Base64", "DelimitedFiles", "LinearAlgebra", "Pkg", "Printf", "Random", "Serialization", "Sockets", "Test"]
+git-tree-sha1 = "b4c31b6377b6d51b6c69a3a9737d10c34d43974e"
+uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
+version = "0.41.0"
+
 [[GZip]]
 deps = ["Libdl", "Test"]
 git-tree-sha1 = "ee443ef166b29282301468d8af403e1ed8f5412e"
@@ -1003,6 +1021,12 @@ deps = ["BinaryProvider", "ColorTypes", "FileIO", "FixedPointNumbers", "ImageCor
 git-tree-sha1 = "6e1efa8bd5123e18a082c5580c7b8d4a287e1af4"
 uuid = "6218d12a-5da1-5696-b52f-db25d2ecc6d1"
 version = "0.7.5"
+
+[[ImportAll]]
+deps = ["Test"]
+git-tree-sha1 = "cedbaf75814a31101cb9092115b2f0217d24c22d"
+uuid = "c65182e5-40f4-518f-8165-175b85689199"
+version = "1.0.3"
 
 [[Indexing]]
 deps = ["Test"]
@@ -1406,11 +1430,23 @@ version = "0.3.6"
 deps = ["Dates", "LibGit2", "Markdown", "Printf", "REPL", "Random", "SHA", "UUIDs"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 
+[[PlotThemes]]
+deps = ["PlotUtils", "Requires", "Test"]
+git-tree-sha1 = "f3afd2d58e1f6ac9be2cea46e4a9083ccc1d990b"
+uuid = "ccf2f8ad-2431-5c83-bf29-c5338b663b6a"
+version = "0.3.0"
+
 [[PlotUtils]]
 deps = ["Colors", "Dates", "Printf", "Random", "Reexport", "Test"]
 git-tree-sha1 = "8e87bbb778c26f575fbe47fd7a49c7b5ca37c0c6"
 uuid = "995b91a9-d308-5afd-9ec6-746e21dbc043"
 version = "0.5.8"
+
+[[Plots]]
+deps = ["Base64", "Contour", "Dates", "FFMPEG", "FixedPointNumbers", "GR", "GeometryTypes", "JSON", "LinearAlgebra", "Measures", "NaNMath", "Pkg", "PlotThemes", "PlotUtils", "Printf", "REPL", "Random", "RecipesBase", "Reexport", "Requires", "Showoff", "SparseArrays", "Statistics", "StatsBase", "UUIDs"]
+git-tree-sha1 = "f2aa8a7b5bc0ccec57a1237a97b6f59fc8d9ef57"
+uuid = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+version = "0.26.2"
 
 [[Polynomials]]
 deps = ["LinearAlgebra", "SparseArrays", "Test"]

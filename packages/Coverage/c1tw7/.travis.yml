@@ -1,0 +1,15 @@
+language: julia
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+
+notifications:
+    email: false
+
+script:
+  - julia --check-bounds=yes etc/travis-test.jl
+  # submit coverage data, and collect new coverage data on that
+  - julia --code-coverage=user etc/travis-coverage.jl
+  # submit coverage data *again*, this time without code coverage
+  - julia etc/travis-coverage.jl
