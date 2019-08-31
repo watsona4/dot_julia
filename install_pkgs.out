@@ -8912,3 +8912,31 @@ Installing AlgebraResultTypes
   [32e1273b] + AlgebraResultTypes v0.2.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [32e1273b] + AlgebraResultTypes v0.2.0
+[master 1d439aa2f] added package AlgebraResultTypes
+ 17 files changed, 1444 insertions(+)
+ create mode 100644 packages/AlgebraResultTypes/XgePI/.codecov.yml
+ create mode 100644 packages/AlgebraResultTypes/XgePI/.gitignore
+ create mode 100644 packages/AlgebraResultTypes/XgePI/.gitlab-ci.yml
+ create mode 100644 packages/AlgebraResultTypes/XgePI/.travis.yml
+ create mode 100644 packages/AlgebraResultTypes/XgePI/LICENSE.md
+ create mode 100644 packages/AlgebraResultTypes/XgePI/Project.toml
+ create mode 100644 packages/AlgebraResultTypes/XgePI/README.md
+ create mode 100644 packages/AlgebraResultTypes/XgePI/REQUIRE
+ create mode 100644 packages/AlgebraResultTypes/XgePI/src/AlgebraResultTypes.jl
+ create mode 100644 packages/AlgebraResultTypes/XgePI/test/coverage/Project.toml
+ create mode 100644 packages/AlgebraResultTypes/XgePI/test/coverage/coverage-summary.jl
+ create mode 100644 packages/AlgebraResultTypes/XgePI/test/coverage/coverage.jl
+ create mode 100644 packages/AlgebraResultTypes/XgePI/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   5ec022af3..1d439aa2f  master -> master
+Progress:   2%|▊                                        |  ETA: 2 days, 8:29:22[K
+Installing AlgebraicDiffEq
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AlgebraicDiffEq [b4275310]:\n AlgebraicDiffEq [b4275310] log:\n ├─possible versions are: [0.0.1-0.0.2, 0.1.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.2, 0.1.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   2%|▊                                        |  ETA: 2 days, 7:37:59[K
+Installing AlgebraicMultigrid
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [2169fc97] + AlgebraicMultigrid v0.2.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
