@@ -4488,3 +4488,126 @@ Installing ARules
   [7cbe2057] + ARules v0.0.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [7cbe2057] + ARules v0.0.1
+[master f334972b4] added package ARules
+ 25 files changed, 1543 insertions(+)
+ create mode 100644 packages/ARules/B1Ggb/.gitignore
+ create mode 100644 packages/ARules/B1Ggb/.travis.yml
+ create mode 100644 packages/ARules/B1Ggb/LICENSE.md
+ create mode 100644 packages/ARules/B1Ggb/Project.toml
+ create mode 100644 packages/ARules/B1Ggb/README.md
+ create mode 100644 packages/ARules/B1Ggb/REQUIRE
+ create mode 100644 packages/ARules/B1Ggb/docs/Project.toml
+ create mode 100644 packages/ARules/B1Ggb/docs/make.jl
+ create mode 100644 packages/ARules/B1Ggb/docs/src/documentation.md
+ create mode 100644 packages/ARules/B1Ggb/docs/src/index.md
+ create mode 100644 packages/ARules/B1Ggb/docs/src/usage.md
+ create mode 100644 packages/ARules/B1Ggb/src/ARules.jl
+ create mode 100644 packages/ARules/B1Ggb/src/frequent_itemset_tree.jl
+ create mode 100644 packages/ARules/B1Ggb/src/rule_generation.jl
+ create mode 100644 packages/ARules/B1Ggb/src/utils.jl
+ create mode 100644 packages/ARules/B1Ggb/test/benchmark_tnodes.jl
+ create mode 100644 packages/ARules/B1Ggb/test/benchmarking.jl
+ create mode 100644 packages/ARules/B1Ggb/test/more_pilot_testing.jl
+ create mode 100644 packages/ARules/B1Ggb/test/node_storage_comparison.jl
+ create mode 100644 packages/ARules/B1Ggb/test/pilot_testing.jl
+ create mode 100644 packages/ARules/B1Ggb/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   265d67433..f334972b4  master -> master
+Progress:   0%|▏                                        |  ETA: 4 days, 10:05:36[K
+Installing ASCIIPlots
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package ASCIIPlots [294b8cca]:\n ASCIIPlots [294b8cca] log:\n ├─possible versions are: 0.0.1-0.0.3 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.3\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   0%|▏                                        |  ETA: 4 days, 1:26:56[K
+Installing ASDF
+ Resolving package versions...
+ Installed ASDF ─ v1.1.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [686f71d1] + ASDF v1.1.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [686f71d1] + ASDF v1.1.3
+  Building ASDF → `~/.julia/packages/ASDF/0SzlD/deps/build.log`
+┌ Error: Error building `ASDF`: 
+│ ERROR: LoadError: PyError (PyImport_ImportModule
+│ 
+│ The Python package asdf could not be found by pyimport. Usually this means
+│ that you did not install asdf in the Python version being used by PyCall.
+│ 
+│ PyCall is currently configured to use the Python version at:
+│ 
+│ /usr/bin/python3
+│ 
+│ and you should use whatever mechanism you usually use (apt-get, pip, conda,
+│ etcetera) to install the Python package containing the asdf module.
+│ 
+│ One alternative is to re-configure PyCall to use a different Python
+│ version on your system: set ENV["PYTHON"] to the path/name of the python
+│ executable you want to use, run Pkg.build("PyCall"), and re-launch Julia.
+│ 
+│ Another alternative is to configure PyCall to use a Julia-specific Python
+│ distribution via the Conda.jl package (which installs a private Anaconda
+│ Python distribution), which has the advantage that packages can be installed
+│ and kept up-to-date via Julia.  As explained in the PyCall documentation,
+│ set ENV["PYTHON"]="", run Pkg.build("PyCall"), and re-launch Julia. Then,
+│ To install the asdf module, you can use `pyimport_conda("asdf", PKG)`,
+│ where PKG is the Anaconda package the contains the module asdf,
+│ or alternatively you can use the Conda package directly (via
+│ `using Conda` followed by `Conda.add` etcetera).
+│ 
+│ ) <class 'ModuleNotFoundError'>
+│ ModuleNotFoundError("No module named 'asdf'")
+│ 
+│ Stacktrace:
+│  [1] pyimport(::String) at /home/ec2-user/.julia/packages/PyCall/ttONZ/src/PyCall.jl:544
+│  [2] pyimport_conda(::String, ::String, ::String) at /home/ec2-user/.julia/packages/PyCall/ttONZ/src/PyCall.jl:702
+│  [3] top-level scope at /home/ec2-user/.julia/packages/ASDF/0SzlD/deps/build.jl:6
+│  [4] include at ./boot.jl:328 [inlined]
+│  [5] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [6] include(::Module, ::String) at ./Base.jl:31
+│  [7] include(::String) at ./client.jl:431
+│  [8] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/ASDF/0SzlD/deps/build.jl:6
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building Conda ─→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building PyCall → `~/.julia/packages/PyCall/ttONZ/deps/build.log`
+  Building ASDF ──→ `~/.julia/packages/ASDF/0SzlD/deps/build.log`
+┌ Error: Error building `ASDF`: 
+│ ERROR: LoadError: PyError (PyImport_ImportModule
+│ 
+│ The Python package asdf could not be found by pyimport. Usually this means
+│ that you did not install asdf in the Python version being used by PyCall.
+│ 
+│ PyCall is currently configured to use the Python version at:
+│ 
+│ /usr/bin/python3
+│ 
+│ and you should use whatever mechanism you usually use (apt-get, pip, conda,
+│ etcetera) to install the Python package containing the asdf module.
+│ 
+│ One alternative is to re-configure PyCall to use a different Python
+│ version on your system: set ENV["PYTHON"] to the path/name of the python
+│ executable you want to use, run Pkg.build("PyCall"), and re-launch Julia.
+│ 
+│ Another alternative is to configure PyCall to use a Julia-specific Python
+│ distribution via the Conda.jl package (which installs a private Anaconda
+│ Python distribution), which has the advantage that packages can be installed
+│ and kept up-to-date via Julia.  As explained in the PyCall documentation,
+│ set ENV["PYTHON"]="", run Pkg.build("PyCall"), and re-launch Julia. Then,
+│ To install the asdf module, you can use `pyimport_conda("asdf", PKG)`,
+│ where PKG is the Anaconda package the contains the module asdf,
+│ or alternatively you can use the Conda package directly (via
+│ `using Conda` followed by `Conda.add` etcetera).
+│ 
+│ ) <class 'ModuleNotFoundError'>
+│ ModuleNotFoundError("No module named 'asdf'")
+│ 
+│ Stacktrace:
+│  [1] pyimport(::String) at /home/ec2-user/.julia/packages/PyCall/ttONZ/src/PyCall.jl:544
+│  [2] pyimport_conda(::String, ::String, ::String) at /home/ec2-user/.julia/packages/PyCall/ttONZ/src/PyCall.jl:702
+│  [3] top-level scope at /home/ec2-user/.julia/packages/ASDF/0SzlD/deps/build.jl:6
+│  [4] include at ./boot.jl:328 [inlined]
+│  [5] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [6] include(::Module, ::String) at ./Base.jl:31
+│  [7] include(::String) at ./client.jl:431
+│  [8] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/ASDF/0SzlD/deps/build.jl:6
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
