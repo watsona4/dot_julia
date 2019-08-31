@@ -32510,3 +32510,25 @@ Installing BitFlags
   [d1d4a3ce] + BitFlags v0.1.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [d1d4a3ce] + BitFlags v0.1.1
+[master 0931f144c] added package BitFlags
+ 12 files changed, 627 insertions(+)
+ create mode 100644 packages/BitFlags/2ve6c/.gitignore
+ create mode 100644 packages/BitFlags/2ve6c/.travis.yml
+ create mode 100644 packages/BitFlags/2ve6c/LICENSE.md
+ create mode 100644 packages/BitFlags/2ve6c/Project.toml
+ create mode 100644 packages/BitFlags/2ve6c/README.md
+ create mode 100644 packages/BitFlags/2ve6c/REQUIRE
+ create mode 100644 packages/BitFlags/2ve6c/src/BitFlags.jl
+ create mode 100644 packages/BitFlags/2ve6c/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   44cf274a3..0931f144c  master -> master
+Progress:   7%|███                                      |  ETA: 4 days, 0:59:43[K
+Installing BitFloats
+ Resolving package versions...
+ Installed BitFloats ─── v0.0.2
+ Installed BitIntegers ─ v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [15425d4b] + BitFloats v0.0.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [15425d4b] + BitFloats v0.0.2
+  [c3b6d118] + BitIntegers v0.2.0
