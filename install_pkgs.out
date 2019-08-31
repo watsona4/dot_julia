@@ -37898,3 +37898,19 @@ Installing CMakeWrapper
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
   Building CMake → `~/.julia/packages/CMake/nSK2r/deps/build.log`
+[master 863aa1c4e] added package CMakeWrapper
+ 3 files changed, 23 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   202908784..863aa1c4e  master -> master
+Progress:   9%|███▉                                     |  ETA: 3 days, 14:32:13[K
+Installing COBRA
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package COBRA [58298e0b]:\n COBRA [58298e0b] log:\n ├─possible versions are: [0.0.1-0.0.6, 0.1.0-0.1.2, 0.2.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.6, 0.1.0-0.1.2, 0.2.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  10%|███▉                                     |  ETA: 3 days, 14:14:48[K
+Installing COESA
+ Resolving package versions...
+ Installed COESA ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [13e0c4e3] + COESA v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [13e0c4e3] + COESA v0.1.0
