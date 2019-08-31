@@ -1,0 +1,1 @@
+../mpn/x86_64/haswell/sublsh1_n.as

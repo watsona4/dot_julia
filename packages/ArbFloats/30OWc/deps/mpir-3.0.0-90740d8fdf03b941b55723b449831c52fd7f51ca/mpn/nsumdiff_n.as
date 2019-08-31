@@ -1,0 +1,1 @@
+../mpn/x86_64/haswell/nsumdiff_n.as

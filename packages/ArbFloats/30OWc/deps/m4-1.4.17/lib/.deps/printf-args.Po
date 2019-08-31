@@ -1,0 +1,61 @@
+printf-args.o: printf-args.c /usr/include/stdc-predef.h config.h \
+ printf-args.h /usr/lib/gcc/x86_64-redhat-linux/7/include/stddef.h \
+ wchar.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/floatn.h \
+ /usr/lib/gcc/x86_64-redhat-linux/7/include/stdarg.h \
+ /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h \
+ /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h /usr/include/bits/wchar2.h
+
+/usr/include/stdc-predef.h:
+
+config.h:
+
+printf-args.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/7/include/stddef.h:
+
+wchar.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/7/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/types/wint_t.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/bits/wchar2.h:

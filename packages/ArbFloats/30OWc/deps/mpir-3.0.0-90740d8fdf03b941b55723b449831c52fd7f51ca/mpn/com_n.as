@@ -1,0 +1,1 @@
+../mpn/x86_64/haswell/avx/com_n.as

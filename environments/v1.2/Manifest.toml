@@ -382,6 +382,12 @@ git-tree-sha1 = "6d697c372bd1a2b5a3c690113581f98e6b0e2ff5"
 uuid = "4c88cf16-eb10-579e-8560-4a9242c79595"
 version = "0.4.0"
 
+[[ArbFloats]]
+deps = ["BinDeps", "Compat", "Libdl", "ReadableNumbers", "Serialization", "SpecialFunctions", "Test"]
+git-tree-sha1 = "8d8928161cb7a4e3ca263334948c8acaa71392b7"
+uuid = "9689d877-bbb0-593d-8021-de8e3bedf7bf"
+version = "0.3.2"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -1529,6 +1535,12 @@ deps = ["Compat"]
 git-tree-sha1 = "cdbbe0f350581296f3a2e3e7a91b214121934407"
 uuid = "c84ed2f1-dad5-54f0-aa8e-dbefe2724439"
 version = "0.3.1"
+
+[[ReadableNumbers]]
+deps = ["Test"]
+git-tree-sha1 = "716e4d431a70c5b2a878a7b29dd22706be8eed2c"
+uuid = "7774933c-dd73-5de8-a8c3-ca082e6dff1c"
+version = "0.2.1"
 
 [[RecipesBase]]
 git-tree-sha1 = "7bdce29bc9b2f5660a6e5e64d64d91ec941f6aa2"

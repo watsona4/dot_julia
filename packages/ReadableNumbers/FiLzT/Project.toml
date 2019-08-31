@@ -1,0 +1,14 @@
+desc = "Extended precision floating point values, more easily read."
+keywords = ["floating-point", "extended precision"]
+name = "ReadableNumbers"
+uuid = "7774933c-dd73-5de8-a8c3-ca082e6dff1c"
+repo = "https://github.com/JuliaArbTypes/ReadableNumbers.jl.git"
+author = "Jeffrey Sarnoff"
+license = "MIT"
+version = "v0.2.1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

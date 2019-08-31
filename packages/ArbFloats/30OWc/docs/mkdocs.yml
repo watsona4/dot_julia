@@ -1,0 +1,43 @@
+site_name:           ArbFloats
+site_url:            https://github.com/JuliaArbTypes/ArbFloats.jl
+repo_url:            https://github.com/JuliaArbTypes/ArbFloats.jl
+site_description:    faster extended precision floating point math
+site_author:         Jeffrey Sarnoff
+copyright:           Jeffrey Sarnoff © 2016
+theme:               readthedocs
+
+markdown_extensions:
+  - codehilite
+  - tables
+  - fenced_code
+  - extra
+  - footnotes
+  - nl2br
+  - smart_strong
+  - attr_list
+  - def_list
+  - smarty
+
+extra_css:
+  - assets/Documenter.css
+
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+  - assets/mathjaxhelper.js
+
+docs_dir: 'build'
+
+pages:
+- Introduction: intro.md
+- Tutorial:
+  - Overview: tutorial/overview.md
+  - Getting Started: tutorial/gettingStarted.md
+  - Floating Point Math: tutorial/floatingPointMath.md
+  - Guidelines: tutorial/guidelines.md
+- Reference:
+  - Scope: reference/scope.md
+  - Precision: reference/onPrecision.md
+  - Types: reference/libraryTypes.md
+  - Basic Functions: reference/computationalFunctions.md
+  - Math Operators: reference/mathematicalOperators.md
+  - Supporting Operations: reference/supportingOperations.md

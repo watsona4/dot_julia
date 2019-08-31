@@ -12363,3 +12363,45 @@ Installing Aqua
   [4c88cf16] + Aqua v0.4.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [4c88cf16] + Aqua v0.4.0
+[master 965248f9b] added package Aqua
+ 29 files changed, 776 insertions(+)
+ create mode 100644 packages/Aqua/ZIThm/.gitignore
+ create mode 100644 packages/Aqua/ZIThm/.travis.yml
+ create mode 100644 packages/Aqua/ZIThm/LICENSE
+ create mode 100644 packages/Aqua/ZIThm/Project.toml
+ create mode 100644 packages/Aqua/ZIThm/README.md
+ create mode 100644 packages/Aqua/ZIThm/REQUIRE
+ create mode 100644 packages/Aqua/ZIThm/docs/Project.toml
+ create mode 100644 packages/Aqua/ZIThm/docs/make.jl
+ create mode 100644 packages/Aqua/ZIThm/docs/src/index.md
+ create mode 100644 packages/Aqua/ZIThm/docs/src/internals.md
+ create mode 100644 packages/Aqua/ZIThm/src/Aqua.jl
+ create mode 100644 packages/Aqua/ZIThm/src/ambiguities.jl
+ create mode 100644 packages/Aqua/ZIThm/src/exports.jl
+ create mode 100644 packages/Aqua/ZIThm/src/unbound_args.jl
+ create mode 100644 packages/Aqua/ZIThm/test/pkgs/AquaTesting.jl
+ create mode 100644 packages/Aqua/ZIThm/test/pkgs/PkgUnboundArgs.jl
+ create mode 100644 packages/Aqua/ZIThm/test/pkgs/PkgWithAmbiguities.jl
+ create mode 100644 packages/Aqua/ZIThm/test/pkgs/PkgWithUndefinedExports.jl
+ create mode 100644 packages/Aqua/ZIThm/test/preamble.jl
+ create mode 100644 packages/Aqua/ZIThm/test/runtests.jl
+ create mode 100644 packages/Aqua/ZIThm/test/test_ambiguities.jl
+ create mode 100644 packages/Aqua/ZIThm/test/test_exclude.jl
+ create mode 100644 packages/Aqua/ZIThm/test/test_smoke.jl
+ create mode 100644 packages/Aqua/ZIThm/test/test_unbound_args.jl
+ create mode 100644 packages/Aqua/ZIThm/test/test_undefined_exports.jl
+To https://github.com/watsona4/dot_julia.git
+   cb800934f..965248f9b  master -> master
+Progress:   3%|█▎                                       |  ETA: 2 days, 6:57:55[K
+Installing ArbFloats
+ Resolving package versions...
+ Installed ArbFloats ─────── v0.3.2
+ Installed ReadableNumbers ─ v0.2.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9689d877] + ArbFloats v0.3.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9689d877] + ArbFloats v0.3.2
+  [7774933c] + ReadableNumbers v0.2.1
+  Building ArbFloats → `~/.julia/packages/ArbFloats/30OWc/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building ArbFloats ───────→ `~/.julia/packages/ArbFloats/30OWc/deps/build.log`

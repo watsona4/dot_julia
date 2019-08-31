@@ -1,0 +1,1 @@
+../mpn/x86_64/haswell/avx/addmul_1.as
