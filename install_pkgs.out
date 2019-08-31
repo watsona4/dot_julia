@@ -29966,3 +29966,73 @@ Installing Beauty
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [e5fb2512] + Beauty v0.1.0
   [eff96d63] + Measurements v2.1.1
+[master 62dd70b46] added package Beauty
+ 58 files changed, 7678 insertions(+)
+ create mode 100644 packages/Beauty/bBrAV/.circleci/config.yml
+ create mode 100644 packages/Beauty/bBrAV/.gitignore
+ create mode 100644 packages/Beauty/bBrAV/LICENSE
+ create mode 100644 packages/Beauty/bBrAV/Manifest.toml
+ create mode 100644 packages/Beauty/bBrAV/Project.toml
+ create mode 100644 packages/Beauty/bBrAV/README.md
+ create mode 100644 packages/Beauty/bBrAV/docs/make.jl
+ create mode 100644 packages/Beauty/bBrAV/docs/src/index.md
+ create mode 100644 packages/Beauty/bBrAV/src/Beauty.jl
+ create mode 100644 packages/Beauty/bBrAV/src/dataframes.jl
+ create mode 100644 packages/Beauty/bBrAV/src/internal.jl
+ create mode 100644 packages/Beauty/bBrAV/src/measurements.jl
+ create mode 100644 packages/Beauty/bBrAV/src/show-floats.jl
+ create mode 100644 packages/Beauty/bBrAV/src/unitful.jl
+ create mode 100644 packages/Beauty/bBrAV/test/all.jl
+ create mode 100644 packages/Beauty/bBrAV/test/internals.jl
+ create mode 100644 packages/Beauty/bBrAV/test/runtests.jl
+ create mode 100644 packages/Beauty/bBrAV/test/show-dataframes.jl
+ create mode 100644 packages/Beauty/bBrAV/test/show-measurements.jl
+ create mode 100644 packages/Beauty/bBrAV/test/show-unitful.jl
+ create mode 100644 packages/Measurements/I2ugE/.gitignore
+ create mode 100644 packages/Measurements/I2ugE/.travis.yml
+ create mode 100644 packages/Measurements/I2ugE/CITATION.bib
+ create mode 100644 packages/Measurements/I2ugE/LICENSE.md
+ create mode 100644 packages/Measurements/I2ugE/NEWS.md
+ create mode 100644 packages/Measurements/I2ugE/Project.toml
+ create mode 100644 packages/Measurements/I2ugE/README.md
+ create mode 100644 packages/Measurements/I2ugE/appveyor.yml
+ create mode 100644 packages/Measurements/I2ugE/docs/Project.toml
+ create mode 100644 packages/Measurements/I2ugE/docs/make.jl
+ create mode 100644 packages/Measurements/I2ugE/docs/src/appendix.md
+ create mode 100644 packages/Measurements/I2ugE/docs/src/error_bars_2x.png
+ create mode 100644 packages/Measurements/I2ugE/docs/src/examples.md
+ create mode 100644 packages/Measurements/I2ugE/docs/src/index.md
+ create mode 100644 packages/Measurements/I2ugE/docs/src/installation.md
+ create mode 100644 packages/Measurements/I2ugE/docs/src/performance.md
+ create mode 100644 packages/Measurements/I2ugE/docs/src/plot-example.png
+ create mode 100644 packages/Measurements/I2ugE/docs/src/todo.md
+ create mode 100644 packages/Measurements/I2ugE/docs/src/usage.md
+ create mode 100644 packages/Measurements/I2ugE/src/Measurements.jl
+ create mode 100644 packages/Measurements/I2ugE/src/comparisons-tests.jl
+ create mode 100644 packages/Measurements/I2ugE/src/conversions.jl
+ create mode 100644 packages/Measurements/I2ugE/src/derivatives-type.jl
+ create mode 100644 packages/Measurements/I2ugE/src/math.jl
+ create mode 100644 packages/Measurements/I2ugE/src/parsing.jl
+ create mode 100644 packages/Measurements/I2ugE/src/plot-recipes.jl
+ create mode 100644 packages/Measurements/I2ugE/src/quadgk.jl
+ create mode 100644 packages/Measurements/I2ugE/src/show.jl
+ create mode 100644 packages/Measurements/I2ugE/src/special-functions.jl
+ create mode 100644 packages/Measurements/I2ugE/src/unitful.jl
+ create mode 100644 packages/Measurements/I2ugE/src/utils.jl
+ create mode 100644 packages/Measurements/I2ugE/test/complex.jl
+ create mode 100644 packages/Measurements/I2ugE/test/plots.jl
+ create mode 100644 packages/Measurements/I2ugE/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   1e97d2ef2..62dd70b46  master -> master
+Progress:   6%|██▍                                      |  ETA: 4 days, 12:27:50[K
+Installing Bebop
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Bebop [f69e2558]:\n Bebop [f69e2558] log:\n ├─possible versions are: 0.0.1 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   6%|██▍                                      |  ETA: 4 days, 11:52:44[K
+Installing Bedgraph
+ Resolving package versions...
+ Installed Bedgraph ─ v1.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [0bcc2ff6] + Bedgraph v1.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [0bcc2ff6] + Bedgraph v1.1.0
