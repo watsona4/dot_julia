@@ -31360,3 +31360,22 @@ Installing BioAlignments
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
   Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+[master d9ba55b15] added package BioAlignments
+ 3 files changed, 47 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   5bdb97e57..d9ba55b15  master -> master
+Progress:   7%|██▊                                      |  ETA: 4 days, 5:04:08[K
+Installing BioArgParse
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BioArgParse [242c1f41]:\n BioArgParse [242c1f41] log:\n ├─possible versions are: 0.0.1-0.0.2 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.2\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   7%|██▊                                      |  ETA: 4 days, 4:34:59[K
+Installing BioBridgeR
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BioBridgeR [54a738f6]:\n BioBridgeR [54a738f6] log:\n ├─possible versions are: 0.1.0-0.1.1 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.1.0-0.1.1\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   7%|██▊                                      |  ETA: 4 days, 4:06:22[K
+Installing BioCore
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [37cfa864] + BioCore v2.0.5
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
