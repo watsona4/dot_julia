@@ -34779,3 +34779,22 @@ Installing BufferedStreams
   [e1450e63] + BufferedStreams v1.0.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 738dc845f] added package BufferedStreams
+ 3 files changed, 49 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   ac783b173..738dc845f  master -> master
+Progress:   9%|███▋                                     |  ETA: 3 days, 16:56:10[K
+Installing BuildExecutable
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BuildExecutable [eaca7b4f]:\n BuildExecutable [eaca7b4f] log:\n ├─possible versions are: [0.0.1-0.0.3, 0.1.0-0.1.2] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.3, 0.1.0-0.1.2]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   9%|███▋                                     |  ETA: 3 days, 16:36:39[K
+Installing Bukdu
+ Resolving package versions...
+ Installed JSON2 ─ v0.3.1
+ Installed Bukdu ─ v0.4.6
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [3e78a19a] + Bukdu v0.4.6
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [3e78a19a] + Bukdu v0.4.6
+  [2535ab7d] + JSON2 v0.3.1
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`

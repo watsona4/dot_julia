@@ -1190,6 +1190,12 @@ git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
 uuid = "e1450e63-4bb3-523b-b2a4-4ffa8c0fd77d"
 version = "1.0.0"
 
+[[Bukdu]]
+deps = ["Dates", "Documenter", "HTTP", "InteractiveUtils", "JSON2", "Logging", "MbedTLS", "Sockets", "URIParser"]
+git-tree-sha1 = "8e1e8692ef860f2cdb27baab66a5eae4ef9cf350"
+uuid = "3e78a19a-cc83-51d8-955b-515f39fd7955"
+version = "0.4.6"
+
 [[CEnum]]
 git-tree-sha1 = "62847acab40e6855a9b5905ccb99c2b5cf6b3ebb"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"
@@ -2296,6 +2302,12 @@ deps = ["Dates", "Distributed", "Mmap", "Sockets", "Test", "Unicode"]
 git-tree-sha1 = "1f7a25b53ec67f5e9422f1f551ee216503f4a0fa"
 uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.20.0"
+
+[[JSON2]]
+deps = ["Dates", "Parsers", "Test"]
+git-tree-sha1 = "6cbbbab27d9411946725f5d5c91e8b8fb5f7d5db"
+uuid = "2535ab7d-5cd8-5a07-80ac-9b1792aadce3"
+version = "0.3.1"
 
 [[JSONSchema]]
 deps = ["HTTP", "JSON", "Test"]
