@@ -1,0 +1,17 @@
+language: julia
+
+sudo: false
+
+os:
+  - linux
+  - osx
+
+julia:
+  - 1.0
+  - nightly
+
+notifications:
+  email: false
+
+after_success:
+  - julia -e 'using Pkg; cd(Pkg.dir("Parsers")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
