@@ -29936,3 +29936,33 @@ Installing BeaData
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [acefaad2] + BeaData v0.3.0
   Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+[master 1e97d2ef2] added package BeaData
+ 20 files changed, 666 insertions(+)
+ create mode 100644 packages/BeaData/ANv0B/.codecov.yml
+ create mode 100644 packages/BeaData/ANv0B/.gitignore
+ create mode 100644 packages/BeaData/ANv0B/.travis.yml
+ create mode 100644 packages/BeaData/ANv0B/LICENSE.md
+ create mode 100644 packages/BeaData/ANv0B/README.md
+ create mode 100644 packages/BeaData/ANv0B/REQUIRE
+ create mode 100644 packages/BeaData/ANv0B/appveyor.yml
+ create mode 100644 packages/BeaData/ANv0B/docs/make.jl
+ create mode 100644 packages/BeaData/ANv0B/docs/src/index.md
+ create mode 100644 packages/BeaData/ANv0B/docs/src/lib/public.md
+ create mode 100644 packages/BeaData/ANv0B/docs/src/man/guide.md
+ create mode 100644 packages/BeaData/ANv0B/src/BeaData.jl
+ create mode 100644 packages/BeaData/ANv0B/src/get_bea_datasets.jl
+ create mode 100644 packages/BeaData/ANv0B/src/get_bea_parameterlist.jl
+ create mode 100644 packages/BeaData/ANv0B/src/get_nipa_table.jl
+ create mode 100644 packages/BeaData/ANv0B/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   aabdd3b6f..1e97d2ef2  master -> master
+Progress:   6%|██▍                                      |  ETA: 4 days, 12:57:02[K
+Installing Beauty
+ Resolving package versions...
+ Installed Measurements ─ v2.1.1
+ Installed Beauty ─────── v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [e5fb2512] + Beauty v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [e5fb2512] + Beauty v0.1.0
+  [eff96d63] + Measurements v2.1.1

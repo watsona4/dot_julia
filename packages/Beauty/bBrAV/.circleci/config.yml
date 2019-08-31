@@ -1,0 +1,56 @@
+# .circleci/config.yml
+version: 2.1
+
+orbs:
+  slack: circleci/slack@1.0.0
+  
+jobs:
+  build:
+    working_directory: ~/Beauty.jl
+
+    docker:
+      - image: quantumfactory/buildbot-julia:version1.0.test
+
+    steps:
+      - checkout
+      
+      - restore_cache:
+          key: julia
+
+      - run:
+          name: Test Package in Julia
+          command: julia --project=. -e "import Pkg; Pkg.test()"
+          
+      - run:
+          name: Build Documentation
+          command: julia --project=. docs/make.jl          
+
+      - save_cache:
+          key: julia
+          paths:
+            - "~/.julia"
+        
+      - store_artifacts:
+          path: docs/build
+          destination: docs
+
+      - add_ssh_keys:
+          fingerprints:
+            - "99:bb:ff:b0:d0:8c:0f:eb:fe:5f:37:c5:f6:d2:b3:f5"
+
+      - run:
+          name: Upload Documentation
+          command: |
+            echo '|1|imTtcFGHchGTPyU6F0W1aehT/ps=|sj739mUSGi6dKtfh2k6zJ7moSOs= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAGp1W0jQ217mdjE0OvggNr/wg9kHYYgmlTcA/ObLKN5bCtPpMJGDdm/vAYbSFaBtHHiOAQQmPg6LejJuOhk7Zo=' >> ~/.ssh/known_hosts
+            echo '|1|GWbsWgtMhH8cX4UEePPpu3WBhQw=|M1p60qf/++Bc/kgfZodB9bMCxU4= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAGp1W0jQ217mdjE0OvggNr/wg9kHYYgmlTcA/ObLKN5bCtPpMJGDdm/vAYbSFaBtHHiOAQQmPg6LejJuOhk7Zo=' >> ~/.ssh/known_hosts
+            mv docs/build docs/Beauty.jl && echo -e 'put -r docs/Beauty.jl' | sftp -P $SSH_PORT $SSH_USER@$SSH_HOST:docs/github.com/Quantum-Factory
+
+      - slack/status:
+          fail_only: "false"
+
+workflows:
+  version: 2
+  my-workflow:
+    jobs:
+      - build:
+          context: default

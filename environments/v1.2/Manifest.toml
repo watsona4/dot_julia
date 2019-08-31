@@ -785,6 +785,12 @@ git-tree-sha1 = "7eb855263f673e6b37770dd9342492dfbdb039fd"
 uuid = "acefaad2-17a4-5d8b-aa08-e18ef75dd0cf"
 version = "0.3.0"
 
+[[Beauty]]
+deps = ["DataFrames", "DocStringExtensions", "Documenter", "Measurements", "Printf", "Requires", "Unitful"]
+git-tree-sha1 = "c193729726fa720bf39d971b5f4677e4d0c10946"
+uuid = "e5fb2512-507e-11e9-3018-95af41067f06"
+version = "0.1.0"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
@@ -2023,6 +2029,12 @@ deps = ["BinaryProvider", "Dates", "Libdl", "Random", "Sockets"]
 git-tree-sha1 = "85f5947b53c8cfd53ccfa3f4abae31faa22c2181"
 uuid = "739be429-bea8-5141-9913-cc70e7f3736d"
 version = "0.7.0"
+
+[[Measurements]]
+deps = ["Calculus", "LinearAlgebra", "RecipesBase", "Requires"]
+git-tree-sha1 = "f65e8d655774a16e15938339a43ec47bcfc84cf2"
+uuid = "eff96d63-e80a-5855-80a2-b1b0885c5ab7"
+version = "2.1.1"
 
 [[Measures]]
 deps = ["Test"]
