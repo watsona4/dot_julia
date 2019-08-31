@@ -3638,3 +3638,47 @@ Installing AMD
   [14f7f29c] + AMD v0.3.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [14f7f29c] + AMD v0.3.1
+[master 0b66586a1] added package AMD
+ 14 files changed, 1451 insertions(+)
+ create mode 100644 packages/AMD/ZTvqI/.gitignore
+ create mode 100644 packages/AMD/ZTvqI/.travis.yml
+ create mode 100644 packages/AMD/ZTvqI/.zenodo.json
+ create mode 100644 packages/AMD/ZTvqI/LICENSE.md
+ create mode 100644 packages/AMD/ZTvqI/Project.toml
+ create mode 100644 packages/AMD/ZTvqI/README.md
+ create mode 100644 packages/AMD/ZTvqI/appveyor.yml
+ create mode 100644 packages/AMD/ZTvqI/src/AMD.jl
+ create mode 100644 packages/AMD/ZTvqI/src/amd_functions.jl
+ create mode 100644 packages/AMD/ZTvqI/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   2ac283f51..0b66586a1  master -> master
+Progress:   0%|▏                                        |  ETA: 7 days, 7:34:59[K
+Installing AMDGPUnative
+ Resolving package versions...
+ Installed Adapt ──────── v1.0.0
+ Installed AMDGPUnative ─ v0.1.0
+ Installed CEnum ──────── v0.2.0
+ Installed Setfield ───── v0.3.4
+ Installed HSARuntime ─── v0.2.5
+ Installed LLVM ───────── v1.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [12f4821f] + AMDGPUnative v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [12f4821f] + AMDGPUnative v0.1.0
+  [79e6a3ab] + Adapt v1.0.0
+  [fa961155] + CEnum v0.2.0
+  [2c364e2c] + HSARuntime v0.2.5
+  [929cbde3] + LLVM v1.2.0
+  [efcf1570] + Setfield v0.3.4
+  Building HSARuntime ──→ `~/.julia/packages/HSARuntime/b66kB/deps/build.log`
+┌ Error: Error building `HSARuntime`: 
+│ paths = String[]
+│ Could not find HSA runtime library..
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building AMDGPUnative → `~/.julia/packages/AMDGPUnative/fk4lb/deps/build.log`
+  Building HSARuntime ──→ `~/.julia/packages/HSARuntime/b66kB/deps/build.log`
+┌ Error: Error building `HSARuntime`: 
+│ paths = String[]
+│ Could not find HSA runtime library..
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building AMDGPUnative → `~/.julia/packages/AMDGPUnative/fk4lb/deps/build.log`

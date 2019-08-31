@@ -24,11 +24,23 @@ git-tree-sha1 = "7b8e22e91af4ccbfbcae87c36d141441defe6f0f"
 uuid = "14f7f29c-3bd6-536c-9a0b-7339e30b5a3e"
 version = "0.3.1"
 
+[[AMDGPUnative]]
+deps = ["Adapt", "BinaryProvider", "HSARuntime", "InteractiveUtils", "LLVM", "Libdl"]
+git-tree-sha1 = "3c2d1b869b9036d4743a282dfa8e56b43f475356"
+uuid = "12f4821f-d7ee-5ba6-b76b-566925c5fcc5"
+version = "0.1.0"
+
 [[AbstractFFTs]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "380e36c66edfa099cd90116b24c1ce8cafccac40"
 uuid = "621f4979-c628-5d54-868e-fcf4e3e8185c"
 version = "0.4.1"
+
+[[Adapt]]
+deps = ["LinearAlgebra"]
+git-tree-sha1 = "82dab828020b872fa9efd3abec1152b075bc7cbf"
+uuid = "79e6a3ab-5dfb-504d-930d-738a2a938a0e"
+version = "1.0.0"
 
 [[Arpack]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra"]
@@ -74,6 +86,11 @@ deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
 uuid = "e1450e63-4bb3-523b-b2a4-4ffa8c0fd77d"
 version = "1.0.0"
+
+[[CEnum]]
+git-tree-sha1 = "62847acab40e6855a9b5905ccb99c2b5cf6b3ebb"
+uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"
+version = "0.2.0"
 
 [[CMake]]
 deps = ["BinDeps"]
@@ -280,6 +297,12 @@ git-tree-sha1 = "9f7e7eebd3cd46e541928ef6f1d5b992abd8d384"
 uuid = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
 version = "0.12.3"
 
+[[HSARuntime]]
+deps = ["CEnum", "Libdl", "Setfield"]
+git-tree-sha1 = "ea40d80684b6f986599f19b1840abc00af4a399b"
+uuid = "2c364e2c-59fb-59c3-96f3-194112e690e0"
+version = "0.2.5"
+
 [[HTTP]]
 deps = ["Base64", "Dates", "IniFile", "MbedTLS", "Sockets"]
 git-tree-sha1 = "c4a527dba1d26add0e85946e1a53f42a1b343acc"
@@ -336,6 +359,12 @@ deps = ["Dates", "Mmap", "Parsers", "Unicode"]
 git-tree-sha1 = "b34d7cef7b337321e97d22242c3c2b91f476748e"
 uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.21.0"
+
+[[LLVM]]
+deps = ["CEnum", "Libdl", "Printf", "Unicode"]
+git-tree-sha1 = "52cfea426bd248a427aace7d88eb5d45b84ea297"
+uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
+version = "1.2.0"
 
 [[LibGit2]]
 uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
@@ -554,6 +583,12 @@ uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
 
 [[Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+
+[[Setfield]]
+deps = ["InteractiveUtils", "MacroTools", "Test"]
+git-tree-sha1 = "bef11bb6030131bafbcaaf8a3df16b7a72be8b9c"
+uuid = "efcf1570-3423-57d1-acb7-fd33fddbac46"
+version = "0.3.4"
 
 [[SharedArrays]]
 deps = ["Distributed", "Mmap", "Random", "Serialization"]
