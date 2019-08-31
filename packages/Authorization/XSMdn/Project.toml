@@ -1,0 +1,13 @@
+name = "Authorization"
+uuid = "edb23f2a-d586-11e8-2b8a-1bcdb9b1bfed"
+authors = ["Jock Lawrie <jock.lawrie@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
