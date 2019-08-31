@@ -1,0 +1,20 @@
+A list of ideas for future improvement of the package:
+
+[ ] Add one or more new pairwise types to handle locally-adaptive pairwise association.
+    Also create associated AL/ALR types (e.g. ALRadaptive).
+[ ] Add MCML inference as described in Hughes, Haran, and Caragea (2011)
+[ ] Add Bayesian inference as described in Hughes, Haran, and Caragea (2011)? 
+    (maybe not-it's impractically slow...)
+[ ] Think about how partially-observed graphs (missing responses) could be handled.
+[ ] Implement Swendsen-Wang (either as a MC sampler or bounding chain-type perfect
+    sampler) (see Huber, 2016 book).
+[ ] Consider re-implementing parameters as arrays <: Real, instead of Float64, to allow use 
+    of ForwardDiff.jl to get derivatives by automatic differentiation in optimization and Hessian
+    calculation. Does it actually help optimization performance/accuracy/reliability? Any speed 
+    trade-offs elsewhere due to use of generic type? Any numerical problems with existing 
+    implementation that would justify the trouble of making the change?
+[ ] Consider using StatsModels.DataFrameRegressionModel approach as in GLM for supplying predictors
+    and responses as a DataFrame.
+[ ] Consider changing FullPairwise to allow one parameter per edge *per observation*, for
+    consistency with how FullUnary is defined. (currently every observation gets the same 
+    Λ in FullPairwise)

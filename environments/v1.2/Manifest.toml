@@ -572,6 +572,12 @@ git-tree-sha1 = "45bb6705d93be619b81451bb2006b7ee5d4e4453"
 uuid = "15f4f7f2-30c1-5605-9d31-71845cf9641f"
 version = "0.2.0"
 
+[[Autologistic]]
+deps = ["BenchmarkTools", "CSV", "Compose", "Distributed", "Distributions", "LightGraphs", "LinearAlgebra", "Optim", "Random", "SharedArrays", "SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "11b8b39419ebdb4c6674dbac24ff7e0ca7c5b00e"
+uuid = "4d03fd4d-39a1-545a-9bf0-a2e993faffdf"
+version = "0.4.0"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"

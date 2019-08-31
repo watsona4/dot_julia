@@ -26237,3 +26237,30 @@ Installing AutoHashEquals
   [15f4f7f2] + AutoHashEquals v0.2.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [15f4f7f2] + AutoHashEquals v0.2.0
+[master 7d163ce67] added package AutoHashEquals
+ 12 files changed, 370 insertions(+)
+ create mode 100644 packages/AutoHashEquals/tDuUH/.gitignore
+ create mode 100644 packages/AutoHashEquals/tDuUH/.travis.yml
+ create mode 100644 packages/AutoHashEquals/tDuUH/LICENSE.md
+ create mode 100644 packages/AutoHashEquals/tDuUH/README.md
+ create mode 100644 packages/AutoHashEquals/tDuUH/REQUIRE
+ create mode 100644 packages/AutoHashEquals/tDuUH/src/AutoHashEquals.jl
+ create mode 100644 packages/AutoHashEquals/tDuUH/test/REQUIRE
+ create mode 100644 packages/AutoHashEquals/tDuUH/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   2f7d9315f..7d163ce67  master -> master
+Progress:   4%|█▊                                       |  ETA: 5 days, 13:46:03[K
+Installing AutoTypeParameters
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AutoTypeParameters [74e4bba8]:\n AutoTypeParameters [74e4bba8] log:\n ├─possible versions are: 0.0.1-0.0.3 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.3\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   4%|█▊                                       |  ETA: 5 days, 12:45:56[K
+Installing Autologistic
+ Resolving package versions...
+ Installed Autologistic ─ v0.4.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [4d03fd4d] + Autologistic v0.4.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [4d03fd4d] + Autologistic v0.4.0
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
