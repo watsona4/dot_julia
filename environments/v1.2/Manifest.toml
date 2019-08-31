@@ -1326,6 +1326,12 @@ git-tree-sha1 = "2dcc50ea6a0a1ef6440d6eecd0fe3813e5671f45"
 uuid = "a9c8d775-2e2e-55fc-8582-045d282d599e"
 version = "1.0.0"
 
+[[CQLdriver]]
+deps = ["DataFrames"]
+git-tree-sha1 = "cadddc85d845939634b159dc06992c7c700a618b"
+uuid = "9d1c9671-1ee4-5573-9bdf-56d4f028cf50"
+version = "0.9.5"
+
 [[CRlibm]]
 deps = ["Libdl", "Test"]
 git-tree-sha1 = "805164abcd31facf3a7e5b7d803a0d16b23329bc"

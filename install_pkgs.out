@@ -38224,3 +38224,43 @@ Installing CPUTime
   [a9c8d775] + CPUTime v1.0.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 91265e507] added package CPUTime
+ 3 files changed, 63 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   ceac46343..91265e507  master -> master
+Progress:  10%|████                                     |  ETA: 3 days, 12:42:55[K
+Installing CQL
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CQL [484db1fa]:\n CQL [484db1fa] log:\n ├─possible versions are: 0.0.1 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  10%|████                                     |  ETA: 3 days, 12:25:16[K
+Installing CQLdriver
+ Resolving package versions...
+ Installed CQLdriver ─ v0.9.5
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9d1c9671] + CQLdriver v0.9.5
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9d1c9671] + CQLdriver v0.9.5
+  Building CQLdriver → `~/.julia/packages/CQLdriver/QjN09/deps/build.log`
+┌ Error: Error building `CQLdriver`: 
+│ ERROR: LoadError: UndefVarError: is_linux not defined
+│ Stacktrace:
+│  [1] top-level scope at /home/ec2-user/.julia/packages/CQLdriver/QjN09/deps/build.jl:1
+│  [2] include at ./boot.jl:328 [inlined]
+│  [3] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [4] include(::Module, ::String) at ./Base.jl:31
+│  [5] include(::String) at ./client.jl:431
+│  [6] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CQLdriver/QjN09/deps/build.jl:1
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CQLdriver → `~/.julia/packages/CQLdriver/QjN09/deps/build.log`
+┌ Error: Error building `CQLdriver`: 
+│ ERROR: LoadError: UndefVarError: is_linux not defined
+│ Stacktrace:
+│  [1] top-level scope at /home/ec2-user/.julia/packages/CQLdriver/QjN09/deps/build.jl:1
+│  [2] include at ./boot.jl:328 [inlined]
+│  [3] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [4] include(::Module, ::String) at ./Base.jl:31
+│  [5] include(::String) at ./client.jl:431
+│  [6] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CQLdriver/QjN09/deps/build.jl:1
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
