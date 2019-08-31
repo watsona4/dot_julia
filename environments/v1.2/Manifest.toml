@@ -114,6 +114,12 @@ git-tree-sha1 = "786885ff8f6121a40388a3b6e81b8e112a328216"
 uuid = "9e5c662f-42d6-5b0b-aec1-6086ac242943"
 version = "0.1.0"
 
+[[AbstractLattices]]
+deps = ["Test"]
+git-tree-sha1 = "dde4b3469a2181aa2f6f62620177602542047624"
+uuid = "398f06c4-4d28-53ec-89ca-5b2656b7603d"
+version = "0.1.2"
+
 [[Adapt]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "82dab828020b872fa9efd3abec1152b075bc7cbf"

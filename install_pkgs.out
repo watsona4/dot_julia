@@ -5847,3 +5847,24 @@ Installing AbstractInstances
   [9e5c662f] + AbstractInstances v0.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [9e5c662f] + AbstractInstances v0.1.0
+[master 9ae506c5a] added package AbstractInstances
+ 13 files changed, 204 insertions(+)
+ create mode 100644 packages/AbstractInstances/jyYuN/.codecov.yml
+ create mode 100644 packages/AbstractInstances/jyYuN/.gitignore
+ create mode 100644 packages/AbstractInstances/jyYuN/.travis.yml
+ create mode 100644 packages/AbstractInstances/jyYuN/LICENSE
+ create mode 100644 packages/AbstractInstances/jyYuN/Project.toml
+ create mode 100644 packages/AbstractInstances/jyYuN/README.md
+ create mode 100644 packages/AbstractInstances/jyYuN/REQUIRE
+ create mode 100644 packages/AbstractInstances/jyYuN/src/AbstractInstances.jl
+ create mode 100644 packages/AbstractInstances/jyYuN/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   a05d5c566..9ae506c5a  master -> master
+Progress:   1%|▌                                        |  ETA: 2 days, 4:35:41[K
+Installing AbstractLattices
+ Resolving package versions...
+ Installed AbstractLattices ─ v0.1.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [398f06c4] + AbstractLattices v0.1.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [398f06c4] + AbstractLattices v0.1.2
