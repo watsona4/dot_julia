@@ -448,6 +448,12 @@ git-tree-sha1 = "8f9e06864b2d39125c65a061f3b1584ec48cb76a"
 uuid = "42ed035d-9ad9-5097-b4a3-321d9b0dde85"
 version = "0.0.4"
 
+[[ArrayFire]]
+deps = ["DSP", "FFTW", "Libdl", "LinearAlgebra", "Logging", "Printf", "Random", "SparseArrays", "SpecialFunctions", "Statistics", "Test"]
+git-tree-sha1 = "8997fc3411adbe0e3da80a2c549c98ff422dc685"
+uuid = "b19378d9-d87a-599a-927f-45f220a2c452"
+version = "1.0.1"
+
 [[ArrayInterface]]
 deps = ["LinearAlgebra", "Requires", "SparseArrays"]
 git-tree-sha1 = "981354dab938901c2b607a213e62d9defa50b698"

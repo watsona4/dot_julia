@@ -22915,3 +22915,86 @@ Installing ArrayAllez
   [42ed035d] + ArrayAllez v0.0.4
   [8ac3fa9e] + LRUCache v1.0.2
   [700de1a5] + ZygoteRules v0.1.0
+[master b0dacf741] added package ArrayAllez
+ 34 files changed, 2440 insertions(+)
+ create mode 100644 packages/ArrayAllez/oWoWU/.travis.yml
+ create mode 100644 packages/ArrayAllez/oWoWU/Project.toml
+ create mode 100644 packages/ArrayAllez/oWoWU/README.md
+ create mode 100644 packages/ArrayAllez/oWoWU/src/ArrayAllez.jl
+ create mode 100644 packages/ArrayAllez/oWoWU/src/broadsum.jl
+ create mode 100644 packages/ArrayAllez/oWoWU/src/cache.jl
+ create mode 100644 packages/ArrayAllez/oWoWU/src/dropdims.jl
+ create mode 100644 packages/ArrayAllez/oWoWU/src/inplace-flux.jl
+ create mode 100644 packages/ArrayAllez/oWoWU/src/inplace-zygote.jl
+ create mode 100644 packages/ArrayAllez/oWoWU/src/inplace.jl
+ create mode 100644 packages/ArrayAllez/oWoWU/src/odot.jl
+ create mode 100644 packages/ArrayAllez/oWoWU/src/prod+cumprod.jl
+ create mode 100644 packages/ArrayAllez/oWoWU/test/runtests.jl
+ create mode 100644 packages/LRUCache/W0fLr/.appveyor.yml
+ create mode 100644 packages/LRUCache/W0fLr/.gitignore
+ create mode 100644 packages/LRUCache/W0fLr/.travis.yml
+ create mode 100644 packages/LRUCache/W0fLr/LICENSE.md
+ create mode 100644 packages/LRUCache/W0fLr/Project.toml
+ create mode 100644 packages/LRUCache/W0fLr/README.md
+ create mode 100644 packages/LRUCache/W0fLr/src/LRUCache.jl
+ create mode 100644 packages/LRUCache/W0fLr/src/cyclicorderedset.jl
+ create mode 100644 packages/LRUCache/W0fLr/test/benchmark.jl
+ create mode 100644 packages/LRUCache/W0fLr/test/originaltests.jl
+ create mode 100644 packages/LRUCache/W0fLr/test/runtests.jl
+ create mode 100644 packages/ZygoteRules/Jn4LO/Manifest.toml
+ create mode 100644 packages/ZygoteRules/Jn4LO/Project.toml
+ create mode 100644 packages/ZygoteRules/Jn4LO/README.md
+ create mode 100644 packages/ZygoteRules/Jn4LO/src/ZygoteRules.jl
+ create mode 100644 packages/ZygoteRules/Jn4LO/src/adjoint.jl
+ create mode 100644 packages/ZygoteRules/Jn4LO/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   98b39e596..b0dacf741  master -> master
+Progress:   3%|█▍                                       |  ETA: 6 days, 11:39:51[K
+Installing ArrayFire
+ Resolving package versions...
+ Installed ArrayFire ─ v1.0.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [b19378d9] + ArrayFire v1.0.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [b19378d9] + ArrayFire v1.0.1
+  Building ArrayFire → `~/.julia/packages/ArrayFire/Tx4Iq/deps/build.log`
+┌ Error: Error building `ArrayFire`: 
+│ ┌ Warning: ArrayFire library not loaded:
+│ │     either download a binary from the official site http://arrayfire.com/download
+│ │     or you can build from source https://github.com/arrayfire/arrayfire
+│ └ @ Main ~/.julia/packages/ArrayFire/Tx4Iq/deps/build.jl:7
+│ ERROR: LoadError: could not load library "libaf"
+│ libaf.so: cannot open shared object file: No such file or directory
+│ Stacktrace:
+│  [1] #dlopen#3(::Bool, ::typeof(dlopen), ::String, ::UInt32) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Libdl/src/Libdl.jl:109
+│  [2] dlopen at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Libdl/src/Libdl.jl:109 [inlined] (repeats 2 times)
+│  [3] top-level scope at /home/ec2-user/.julia/packages/ArrayFire/Tx4Iq/deps/build.jl:5
+│  [4] include at ./boot.jl:328 [inlined]
+│  [5] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [6] include(::Module, ::String) at ./Base.jl:31
+│  [7] include(::String) at ./client.jl:431
+│  [8] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/ArrayFire/Tx4Iq/deps/build.jl:4
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+  Building ArrayFire ───────→ `~/.julia/packages/ArrayFire/Tx4Iq/deps/build.log`
+┌ Error: Error building `ArrayFire`: 
+│ ┌ Warning: ArrayFire library not loaded:
+│ │     either download a binary from the official site http://arrayfire.com/download
+│ │     or you can build from source https://github.com/arrayfire/arrayfire
+│ └ @ Main ~/.julia/packages/ArrayFire/Tx4Iq/deps/build.jl:7
+│ ERROR: LoadError: could not load library "libaf"
+│ libaf.so: cannot open shared object file: No such file or directory
+│ Stacktrace:
+│  [1] #dlopen#3(::Bool, ::typeof(dlopen), ::String, ::UInt32) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Libdl/src/Libdl.jl:109
+│  [2] dlopen at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Libdl/src/Libdl.jl:109 [inlined] (repeats 2 times)
+│  [3] top-level scope at /home/ec2-user/.julia/packages/ArrayFire/Tx4Iq/deps/build.jl:5
+│  [4] include at ./boot.jl:328 [inlined]
+│  [5] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [6] include(::Module, ::String) at ./Base.jl:31
+│  [7] include(::String) at ./client.jl:431
+│  [8] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/ArrayFire/Tx4Iq/deps/build.jl:4
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647

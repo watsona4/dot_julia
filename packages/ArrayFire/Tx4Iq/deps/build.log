@@ -1,0 +1,16 @@
+┌ Warning: ArrayFire library not loaded:
+│     either download a binary from the official site http://arrayfire.com/download
+│     or you can build from source https://github.com/arrayfire/arrayfire
+└ @ Main ~/.julia/packages/ArrayFire/Tx4Iq/deps/build.jl:7
+ERROR: LoadError: could not load library "libaf"
+libaf.so: cannot open shared object file: No such file or directory
+Stacktrace:
+ [1] #dlopen#3(::Bool, ::typeof(dlopen), ::String, ::UInt32) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Libdl/src/Libdl.jl:109
+ [2] dlopen at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Libdl/src/Libdl.jl:109 [inlined] (repeats 2 times)
+ [3] top-level scope at /home/ec2-user/.julia/packages/ArrayFire/Tx4Iq/deps/build.jl:5
+ [4] include at ./boot.jl:328 [inlined]
+ [5] include_relative(::Module, ::String) at ./loading.jl:1094
+ [6] include(::Module, ::String) at ./Base.jl:31
+ [7] include(::String) at ./client.jl:431
+ [8] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/ArrayFire/Tx4Iq/deps/build.jl:4
