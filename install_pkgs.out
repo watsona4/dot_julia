@@ -26658,3 +26658,14 @@ Installing AxisAlgorithms
   [13072b0f] + AxisAlgorithms v1.0.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master bd97a232f] added package AxisAlgorithms
+ 3 files changed, 260 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   9bbe7f1e9..bd97a232f  master -> master
+Progress:   5%|█▉                                       |  ETA: 5 days, 7:18:49[K
+Installing AxisArrays
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [39de3d68] + AxisArrays v0.3.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
