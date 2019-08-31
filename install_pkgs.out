@@ -5631,3 +5631,60 @@ Installing AbaqusReader
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [bc6b9049] + AbaqusReader v0.2.2
   [4d1e1d77] + Nullables v0.0.8
+[master ebe106b7b] added package AbaqusReader
+ 45 files changed, 3756 insertions(+)
+ create mode 100644 packages/AbaqusReader/sDEH0/.gitignore
+ create mode 100644 packages/AbaqusReader/sDEH0/.travis.yml
+ create mode 100644 packages/AbaqusReader/sDEH0/LICENSE
+ create mode 100644 packages/AbaqusReader/sDEH0/README.md
+ create mode 100644 packages/AbaqusReader/sDEH0/REQUIRE
+ create mode 100644 packages/AbaqusReader/sDEH0/docs/deploy.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/docs/make.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/docs/src/index.md
+ create mode 100644 packages/AbaqusReader/sDEH0/src/AbaqusReader.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/src/abaqus_download.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/src/create_surface_elements.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/src/keyword_register.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/src/parse_mesh.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/src/parse_model.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/test/REQUIRE
+ create mode 100644 packages/AbaqusReader/sDEH0/test/runtests.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_create_surface_elements.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_download.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_keyword_register.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_beams.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_beams/mesh.inp
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_mesh.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_mesh/beam.inp
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_mesh/cube_tet4.inp
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_mesh/hypermesh_model.inp
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_mesh/nx_export_problem.inp
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_mesh/tet4.inp
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_model.jl
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_model/cube_tet4.inp
+ create mode 100644 packages/AbaqusReader/sDEH0/test/test_parse_t2d2.jl
+ create mode 100644 packages/Nullables/Oyo3b/.codecov.yml
+ create mode 100644 packages/Nullables/Oyo3b/.gitignore
+ create mode 100644 packages/Nullables/Oyo3b/.travis.yml
+ create mode 100644 packages/Nullables/Oyo3b/LICENSE.md
+ create mode 100644 packages/Nullables/Oyo3b/README.md
+ create mode 100644 packages/Nullables/Oyo3b/REQUIRE
+ create mode 100644 packages/Nullables/Oyo3b/appveyor.yml
+ create mode 100644 packages/Nullables/Oyo3b/src/Nullables.jl
+ create mode 100644 packages/Nullables/Oyo3b/src/nullable.jl
+ create mode 100644 packages/Nullables/Oyo3b/test/runtests.jl
+ create mode 100644 packages/Nullables/Oyo3b/test/testenv.jl
+To https://github.com/watsona4/dot_julia.git
+   61c1df57c..ebe106b7b  master -> master
+Progress:   1%|▍                                        |  ETA: 2 days, 12:55:10[K
+Installing AbbrvKW
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AbbrvKW [90071601]:\n AbbrvKW [90071601] log:\n ├─possible versions are: [0.1.0, 0.2.0, 0.3.0-0.3.1] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0, 0.3.0-0.3.1]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   1%|▍                                        |  ETA: 2 days, 10:54:19[K
+Installing AbstractAlgebra
+ Resolving package versions...
+ Installed AbstractAlgebra ─ v0.5.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [c3fe647b] + AbstractAlgebra v0.5.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [c3fe647b] + AbstractAlgebra v0.5.3

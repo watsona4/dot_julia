@@ -96,6 +96,12 @@ git-tree-sha1 = "0c6f5373eeb3f10f8f8405038c071b18d23907f0"
 uuid = "bc6b9049-e460-56d6-94b4-a597b2c0390d"
 version = "0.2.2"
 
+[[AbstractAlgebra]]
+deps = ["InteractiveUtils", "LinearAlgebra", "Markdown", "Random", "SparseArrays", "Test"]
+git-tree-sha1 = "097bf123e45107cf3555d6b000c6a3c2e4104195"
+uuid = "c3fe647b-3220-5bb0-a1ea-a7954cac585d"
+version = "0.5.3"
+
 [[AbstractFFTs]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "380e36c66edfa099cd90116b24c1ce8cafccac40"
