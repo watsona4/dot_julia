@@ -1,0 +1,35 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+notifications:
+  email: false
+matrix:
+  include:
+    - os: linux
+      julia: 0.7
+      env: TESTCMD="xvfb-run julia"
+    - os: linux
+      julia: 1.0
+      env: TESTCMD="xvfb-run julia"
+    - os: linux
+      julia: nightly
+      env: TESTCMD="xvfb-run julia"
+    - os: osx
+      julia: 0.7
+      env: TESTCMD="julia"
+    - os: osx
+      julia: 1.0
+      env: TESTCMD="julia"
+    - os: osx
+      julia: nightly
+      env: TESTCMD="julia"
+  allow_failures:
+    - julia: nightly
+branches:
+  only:
+    - master
+    - /^v[0-9]+\.[0-9]+\.[0-9]+$/ # version tags
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - $TESTCMD -e 'using Pkg; Pkg.build(); Pkg.test("Knockout"; coverage=true)'
+after_success:
+  - julia -e coverage.jl

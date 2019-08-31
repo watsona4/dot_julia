@@ -1,0 +1,12 @@
+language: julia
+os:
+    - linux
+    - osx
+julia:
+    - 0.7
+    - 1.0
+sudo: false
+notifications:
+    email: false
+after_success:
+    - julia -e 'using Pkg;cd(Pkg.API.dir("WebSockets")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'

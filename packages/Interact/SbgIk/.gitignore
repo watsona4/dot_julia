@@ -1,0 +1,10 @@
+.*~
+.*sw?
+.ipynb_checkpoints
+widgets_version
+docs/build/
+docs/site/
+docs/src/tutorial.md
+assets/
+deps/build.log
+Manifest.toml

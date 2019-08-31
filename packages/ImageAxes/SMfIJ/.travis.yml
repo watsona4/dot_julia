@@ -1,0 +1,26 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+
+jobs:
+  include:
+    - stage: deploy
+      julia: 1.0
+      os: linux
+      script:
+        - julia -e 'import Pkg; Pkg.add(["Documenter", "Unitful"])'
+        - julia -e 'import ImageAxes; include("docs/make.jl")'
+
+after_success:
+  # push coverage results to Codecov
+  - julia -e 'import Pkg; cd(Pkg.dir("ImageAxes")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'

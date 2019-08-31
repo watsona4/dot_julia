@@ -1,0 +1,11 @@
+{
+  "packages": [
+    "blink-provider",
+    "generic-http-provider",
+    "jupyter-lab-provider",
+    "jupyter-notebook-provider",
+    "mux-provider",
+    "webio"
+  ],
+  "version": "0.8.11"
+}

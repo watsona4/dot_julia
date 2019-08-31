@@ -1,0 +1,8 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*play.jl
+assets/knockout.js
+assets/knockout_punches.js
+deps/build.log
+Manifest.toml

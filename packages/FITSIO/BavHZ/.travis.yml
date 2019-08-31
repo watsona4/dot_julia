@@ -1,0 +1,17 @@
+language: julia
+os:
+    - linux
+    - osx
+julia:
+    - 1.0
+    - 1.1
+    - nightly
+notifications:
+    email: false
+#script: # use the default script which is equivalent to the following
+#    - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#    - julia -e 'VERSION >= v"0.7.0-DEV.5183" && using Pkg; Pkg.clone(pwd()); Pkg.build("FITSIO"); Pkg.test("FITSIO"; coverage=true)';
+after_success:
+    - julia -e 'VERSION >= v"0.7.0-DEV.5183" && using Pkg; Pkg.add("Documenter")'
+    - julia -e 'VERSION >= v"0.7.0-DEV.5183" && using Pkg; cd(Pkg.dir("FITSIO")); include(joinpath("docs", "make.jl"))'
+    - julia -e 'VERSION >= v"0.7.0-DEV.5183" && using Pkg; cd(Pkg.dir("FITSIO")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())';
