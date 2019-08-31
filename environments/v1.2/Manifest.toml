@@ -1797,6 +1797,12 @@ git-tree-sha1 = "60ddd74660ffcd2db5e1df6a5d55659192fb6deb"
 uuid = "5ba52731-8f18-5e0d-9241-30f10d1ec561"
 version = "0.2.1"
 
+[[CodecXz]]
+deps = ["BinaryProvider", "Libdl", "TranscodingStreams"]
+git-tree-sha1 = "edea21198bceac51dde043819d206c527270578a"
+uuid = "ba30903b-d9e8-5048-a5ec-d1f5b0d4b47b"
+version = "0.6.0"
+
 [[CodecZlib]]
 deps = ["BinaryProvider", "Libdl", "TranscodingStreams"]
 git-tree-sha1 = "05916673a2627dd91b4969ff8ba6941bc85a960e"
