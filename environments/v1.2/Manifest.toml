@@ -388,6 +388,12 @@ git-tree-sha1 = "8d8928161cb7a4e3ca263334948c8acaa71392b7"
 uuid = "9689d877-bbb0-593d-8021-de8e3bedf7bf"
 version = "0.3.2"
 
+[[ArbNumerics]]
+deps = ["BinaryProvider", "GenericSVD", "GenericSchur", "Libdl", "LinearAlgebra", "Random", "Readables", "SpecialFunctions"]
+git-tree-sha1 = "71c85fc6ec5be2fe86a645660248f5820f25bab8"
+uuid = "7e558dbc-694d-5a72-987c-6f4ebed21442"
+version = "0.6.4"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -950,6 +956,18 @@ deps = ["Libdl", "Test"]
 git-tree-sha1 = "ee443ef166b29282301468d8af403e1ed8f5412e"
 uuid = "92fee26a-97fe-5a0c-ad85-20a5f3185b63"
 version = "0.5.0"
+
+[[GenericSVD]]
+deps = ["LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "8aa93c3f3d81562a8962047eafcc5712af0a0f59"
+uuid = "01680d73-4ee2-5a08-a1aa-533608c188bb"
+version = "0.2.1"
+
+[[GenericSchur]]
+deps = ["LinearAlgebra", "Printf"]
+git-tree-sha1 = "25992e6d023b72860348553f976599184c85d914"
+uuid = "c145ed77-6b09-5dd9-b285-bf645a82121e"
+version = "0.2.3"
 
 [[GeometryTypes]]
 deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays"]
@@ -1541,6 +1559,12 @@ deps = ["Test"]
 git-tree-sha1 = "716e4d431a70c5b2a878a7b29dd22706be8eed2c"
 uuid = "7774933c-dd73-5de8-a8c3-ca082e6dff1c"
 version = "0.2.1"
+
+[[Readables]]
+deps = ["Test"]
+git-tree-sha1 = "9dde360267e7f5e0c292bbe14b7d034f7e617031"
+uuid = "0d4725de-cd7c-5e44-8a85-a48caeef9fa5"
+version = "0.3.3"
 
 [[RecipesBase]]
 git-tree-sha1 = "7bdce29bc9b2f5660a6e5e64d64d91ec941f6aa2"

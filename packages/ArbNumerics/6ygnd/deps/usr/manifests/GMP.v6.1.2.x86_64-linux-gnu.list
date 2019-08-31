@@ -1,0 +1,16 @@
+share/info/gmp.info
+share/info/gmp.info-2
+share/info/gmp.info-1
+include/gmp.h
+include/gmpxx.h
+logs/GMP.log
+logs/update_linkage_libgmpxx.so.4.5.2_libgmp.so.10.log
+logs/update_rpath_libgmp.so.10.log
+lib/libgmp.so.10.3.2
+lib/libgmpxx.so.4.5.2
+lib/libgmpxx.so.4
+lib/libgmp.so.10
+lib/libgmp.so
+lib/libgmp.la
+lib/libgmpxx.la
+lib/libgmpxx.so

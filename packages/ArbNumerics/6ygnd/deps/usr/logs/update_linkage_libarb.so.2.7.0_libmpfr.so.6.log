@@ -1,0 +1,1 @@
+`/usr/local/bin/patchelf --replace-needed libmpfr.so.6 libmpfr.so.6 lib/libarb.so.2.7.0`

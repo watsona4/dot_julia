@@ -1,0 +1,1 @@
+`/usr/local/bin/patchelf --set-rpath '/workspace/destdir/lib:/opt/x86_64-linux-gnu/x86_64-linux-gnu/lib/../lib64:$ORIGIN' lib/libgmpxx.so.4.5.2`

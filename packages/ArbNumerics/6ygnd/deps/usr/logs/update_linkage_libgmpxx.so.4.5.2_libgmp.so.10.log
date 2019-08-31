@@ -1,0 +1,1 @@
+`/usr/local/bin/patchelf --replace-needed libgmp.so.10 libgmp.so.10 lib/libgmpxx.so.4.5.2`

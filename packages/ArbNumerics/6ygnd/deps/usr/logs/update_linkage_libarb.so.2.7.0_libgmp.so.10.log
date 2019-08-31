@@ -1,0 +1,1 @@
+`/usr/local/bin/patchelf --replace-needed libgmp.so.10 libgmp.so.10 lib/libarb.so.2.7.0`

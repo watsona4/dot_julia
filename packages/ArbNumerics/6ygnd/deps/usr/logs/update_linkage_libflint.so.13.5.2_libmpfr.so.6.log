@@ -1,0 +1,1 @@
+`/usr/local/bin/patchelf --replace-needed libmpfr.so.6 libmpfr.so.6 lib/libflint.so.13.5.2`

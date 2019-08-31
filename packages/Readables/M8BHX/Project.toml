@@ -1,0 +1,12 @@
+name = "Readables"
+uuid = "0d4725de-cd7c-5e44-8a85-a48caeef9fa5"
+repo = "https://github.com/JeffreySarnoff/Readables.jl.git"
+author = "Jeffrey Sarnoff"
+license = "MIT"
+version = "v0.3.3"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

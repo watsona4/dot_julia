@@ -1,0 +1,1 @@
+`/usr/local/bin/patchelf --replace-needed libflint.so.13 libflint.so.13 lib/libarb.so.2.7.0`
