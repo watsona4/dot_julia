@@ -1726,6 +1726,12 @@ git-tree-sha1 = "caebd9977aa59de84a5639d7e581000fcf5e0730"
 uuid = "f34a0dec-cdff-52ca-a698-8a683c311173"
 version = "0.4.2"
 
+[[ClusterManagers]]
+deps = ["Distributed", "Sockets"]
+git-tree-sha1 = "60a1c6dc3278910716fcf87eb602968fdf72e44d"
+uuid = "34f1f09b-3a8b-5176-ab39-66d58a4d544e"
+version = "0.3.2"
+
 [[Clustering]]
 deps = ["Distances", "LinearAlgebra", "NearestNeighbors", "Printf", "SparseArrays", "Statistics", "StatsBase"]
 git-tree-sha1 = "f387d5937d0c9d0191c711d7d204bce15bd23b45"
