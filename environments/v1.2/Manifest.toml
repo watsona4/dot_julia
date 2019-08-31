@@ -358,6 +358,12 @@ git-tree-sha1 = "4846afa79190dcb4bfa930d02409cd1214263167"
 uuid = "9bbbb610-88a1-53cd-9763-118ce10c1f89"
 version = "0.1.0"
 
+[[ApproximateBayesianComputing]]
+deps = ["Compat", "Distances", "Distributed", "DistributedArrays", "Distributions", "Documenter", "MultivariateStats", "PDMats", "Random", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "e31d53c7a427a92d015ddd9aa967a3f215ef66d8"
+uuid = "2bb279fe-b7da-5b2b-8ce2-4088845e51bb"
+version = "0.0.2"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -711,6 +717,12 @@ version = "0.8.2"
 deps = ["Random", "Serialization", "Sockets"]
 uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 
+[[DistributedArrays]]
+deps = ["Distributed", "LinearAlgebra", "Primes", "Random", "Serialization", "SparseArrays", "Statistics"]
+git-tree-sha1 = "b9cde03fd283e49ea09911297067b2f872f84c2d"
+uuid = "aaf54ef3-cdf8-58ed-94cc-d582ad619b94"
+version = "0.6.4"
+
 [[Distributions]]
 deps = ["LinearAlgebra", "PDMats", "Printf", "QuadGK", "Random", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns"]
 git-tree-sha1 = "56a158bc0abe4af5d4027af2275fde484261ca6d"
@@ -727,6 +739,12 @@ version = "0.8.0"
 git-tree-sha1 = "09cff257caddc49b0e1ddd79af3091b57cd757da"
 uuid = "e1f3b4f0-2dc4-57d3-83f7-d4b7faf3b05b"
 version = "0.5.1"
+
+[[Documenter]]
+deps = ["Base64", "DocStringExtensions", "InteractiveUtils", "JSON", "LibGit2", "Logging", "Markdown", "REPL", "Test", "Unicode"]
+git-tree-sha1 = "1b6ae3796f60311e39cd1770566140d2c056e87f"
+uuid = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+version = "0.23.3"
 
 [[DomainSets]]
 deps = ["IntervalSets", "LinearAlgebra", "StaticArrays", "Statistics", "Test"]
@@ -1259,6 +1277,12 @@ git-tree-sha1 = "41e6e7c4b448afeaddaac7f496b414854f83b848"
 uuid = "46d2c3a1-f734-5fdb-9937-b9b9aeba4221"
 version = "0.2.1"
 
+[[MultivariateStats]]
+deps = ["Arpack", "LinearAlgebra", "Printf", "Random", "SparseArrays", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "cf1c990020bc4a52ff34ba2ee058b7cb677141f2"
+uuid = "6f286f6a-111f-5878-ab1e-185364afe411"
+version = "0.6.0"
+
 [[NLPModels]]
 deps = ["FastClosures", "ForwardDiff", "LinearAlgebra", "LinearOperators", "Printf", "SparseArrays", "Test"]
 git-tree-sha1 = "8eedfa85d4b3b641b4e5153c175b11bddb12f775"
@@ -1404,6 +1428,12 @@ deps = ["LinearAlgebra", "Test"]
 git-tree-sha1 = "957c3dd7c33895469760ce873082fbb6b3620641"
 uuid = "85a6dd25-e78a-55b7-8502-1745935b8125"
 version = "0.2.2"
+
+[[Primes]]
+deps = ["Test"]
+git-tree-sha1 = "ff1a2323cb468ec5f201838fcbe3c232266b1f95"
+uuid = "27ebfcd6-29c5-5fa9-bf4b-fb8fc14df3ae"
+version = "0.4.0"
 
 [[Printf]]
 deps = ["Unicode"]
