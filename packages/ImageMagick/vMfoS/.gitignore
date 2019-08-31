@@ -1,0 +1,11 @@
+*.jl.cov
+*.jl.mem
+deps/deps*.jl
+deps/versioninfo.jl
+deps/downloads/*
+deps/usr/*
+deps/windows/*
+deps/build.log
+deps/build_*
+Manifest.toml
+.DS_Store
