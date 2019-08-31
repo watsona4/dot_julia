@@ -1380,6 +1380,12 @@ git-tree-sha1 = "f76fb6827964abff9364137ceb56eb9f7c065137"
 uuid = "5d742f6a-9f54-50ce-8119-2520741973ca"
 version = "0.16.0"
 
+[[CSVReader]]
+deps = ["DataFrames", "InternedStrings", "Parsers"]
+git-tree-sha1 = "a39eb005fe957283cef5b08b8aba456826a21456"
+uuid = "6320db66-f659-5b09-9a97-e9f7ce0d36e4"
+version = "1.0.2"
+
 [[CSyntax]]
 deps = ["CEnum"]
 git-tree-sha1 = "369820f1403e8d0b2164427c9fc63d4b713e584b"

@@ -38547,3 +38547,57 @@ Installing CSVFiles
   [e0df1984] + TextParse v0.9.1
   Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
   Building MbedTLS ──→ `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+[master 9e1c49e3c] added package CSVFiles
+ 46 files changed, 4923 insertions(+)
+ create mode 100644 packages/CSVFiles/0riyt/.codecov.yml
+ create mode 100644 packages/CSVFiles/0riyt/.gitignore
+ create mode 100644 packages/CSVFiles/0riyt/.travis.yml
+ create mode 100644 packages/CSVFiles/0riyt/LICENSE.md
+ create mode 100644 packages/CSVFiles/0riyt/NEWS.md
+ create mode 100644 packages/CSVFiles/0riyt/Project.toml
+ create mode 100644 packages/CSVFiles/0riyt/README.md
+ create mode 100644 packages/CSVFiles/0riyt/appveyor.yml
+ create mode 100644 packages/CSVFiles/0riyt/docs/Project.toml
+ create mode 100644 packages/CSVFiles/0riyt/docs/make.jl
+ create mode 100644 packages/CSVFiles/0riyt/docs/src/index.md
+ create mode 100644 packages/CSVFiles/0riyt/src/CSVFiles.jl
+ create mode 100644 packages/CSVFiles/0riyt/src/csv_writer.jl
+ create mode 100644 packages/CSVFiles/0riyt/test/data.csv
+ create mode 100644 packages/CSVFiles/0riyt/test/runtests.jl
+ create mode 100644 packages/TextParse/tFXtC/.codecov.yml
+ create mode 100644 packages/TextParse/tFXtC/.gitignore
+ create mode 100644 packages/TextParse/tFXtC/.juliarun_ci.sh
+ create mode 100644 packages/TextParse/tFXtC/.travis.yml
+ create mode 100644 packages/TextParse/tFXtC/LICENSE.md
+ create mode 100644 packages/TextParse/tFXtC/Project.toml
+ create mode 100644 packages/TextParse/tFXtC/README.md
+ create mode 100644 packages/TextParse/tFXtC/appveyor.yml
+ create mode 100644 packages/TextParse/tFXtC/benchmark/benchmarks.jl
+ create mode 100644 packages/TextParse/tFXtC/docs/Project.toml
+ create mode 100644 packages/TextParse/tFXtC/docs/make.jl
+ create mode 100644 packages/TextParse/tFXtC/docs/src/index.md
+ create mode 100644 packages/TextParse/tFXtC/src/TextParse.jl
+ create mode 100644 packages/TextParse/tFXtC/src/VectorBackedStrings.jl
+ create mode 100644 packages/TextParse/tFXtC/src/csv.jl
+ create mode 100644 packages/TextParse/tFXtC/src/field.jl
+ create mode 100644 packages/TextParse/tFXtC/src/guesstype.jl
+ create mode 100644 packages/TextParse/tFXtC/src/lib/compat.jl
+ create mode 100644 packages/TextParse/tFXtC/src/lib/date-tryparse-internal.jl
+ create mode 100644 packages/TextParse/tFXtC/src/lib/result.jl
+ create mode 100644 packages/TextParse/tFXtC/src/record.jl
+ create mode 100644 packages/TextParse/tFXtC/src/utf8optimizations.jl
+ create mode 100644 packages/TextParse/tFXtC/src/util.jl
+ create mode 100644 packages/TextParse/tFXtC/test/data/a.csv
+ create mode 100644 packages/TextParse/tFXtC/test/data/b.csv
+ create mode 100644 packages/TextParse/tFXtC/test/runtests.jl
+ create mode 100644 packages/TextParse/tFXtC/test/test_vectorbackedstrings.jl
+To https://github.com/watsona4/dot_julia.git
+   a8c1128ec..9e1c49e3c  master -> master
+Progress:  10%|████▏                                    |  ETA: 3 days, 10:55:26[K
+Installing CSVReader
+ Resolving package versions...
+ Installed CSVReader ─ v1.0.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [6320db66] + CSVReader v1.0.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [6320db66] + CSVReader v1.0.2
