@@ -288,6 +288,12 @@ git-tree-sha1 = "86638c65095ef1feca5449134e4c2f7015551755"
 uuid = "cbbd4180-e2e7-58a0-b2fb-29c9dbd95a4e"
 version = "0.1.0"
 
+[[AngleBetweenVectors]]
+deps = ["LinearAlgebra", "Test"]
+git-tree-sha1 = "7f45b5788f4800959a352b5e2c5fdebacf09627c"
+uuid = "ec570357-d46e-52ed-9726-18773498274d"
+version = "0.3.0"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
