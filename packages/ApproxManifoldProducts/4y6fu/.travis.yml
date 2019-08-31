@@ -1,0 +1,26 @@
+language: julia
+
+os:
+  - linux
+  - osx
+
+julia:
+  - 0.7
+  - 1.0
+  - 1.1
+  - nightly
+
+notifications:
+  email: false
+
+matrix:
+  allow_failures:
+    - julia: nightly
+    - os: osx
+
+script:
+  - julia --color=yes -e 'using Pkg; Pkg.build()'
+  - julia --check-bounds=yes --color=yes -e 'using Pkg; Pkg.test(coverage=true)'
+
+after_success:
+  - julia -e 'using Pkg; cd(Pkg.dir("ApproxManifoldProducts")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'

@@ -11472,3 +11472,28 @@ Installing ApproxFunSingularities
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
   Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+[master e4d19ede2] added package ApproxFunSingularities
+ 3 files changed, 33 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   767adb1d0..e4d19ede2  master -> master
+Progress:   3%|█▏                                       |  ETA: 2 days, 4:27:48[K
+Installing ApproxManifoldProducts
+ Resolving package versions...
+ Installed CoordinateTransformations ─ v0.5.0
+ Installed NLsolve ─────────────────── v4.1.0
+ Installed TransformUtils ──────────── v0.2.2
+ Installed Rotations ───────────────── v0.11.1
+ Installed ApproxManifoldProducts ──── v0.1.0
+ Installed KernelDensityEstimate ───── v0.5.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9bbbb610] + ApproxManifoldProducts v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9bbbb610] + ApproxManifoldProducts v0.1.0
+  [150eb455] + CoordinateTransformations v0.5.0
+  [2472808a] + KernelDensityEstimate v0.5.0
+  [2774e3e8] + NLsolve v4.1.0
+  [6038ab10] + Rotations v0.11.1
+  [9b8138ad] + TransformUtils v0.2.2
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
