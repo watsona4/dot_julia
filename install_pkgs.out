@@ -29149,3 +29149,142 @@ Installing BasisMatrices
   Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
   Building CMake ───────────→ `~/.julia/packages/CMake/nSK2r/deps/build.log`
   Building NLopt ───────────→ `~/.julia/packages/NLopt/eqN9a/deps/build.log`
+[master a6625b11a] added package BasisMatrices
+ 126 files changed, 25013 insertions(+)
+ rewrite compiled/v1.2/CMake/TDh52.ji (94%)
+ create mode 100644 packages/BasisMatrices/pfXD9/.gitignore
+ create mode 100644 packages/BasisMatrices/pfXD9/.travis.yml
+ create mode 100644 packages/BasisMatrices/pfXD9/LICENSE.md
+ create mode 100644 packages/BasisMatrices/pfXD9/README.md
+ create mode 100644 packages/BasisMatrices/pfXD9/REQUIRE
+ create mode 100644 packages/BasisMatrices/pfXD9/demo/basis_mat_formats.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/demo/demapp00.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/demo/demapp01.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/demo/dierckxcompare_1d.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/demo/dierckxcompare_2d.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/examples.ipynb
+ create mode 100644 packages/BasisMatrices/pfXD9/src/BasisMatrices.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/basis.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/basis_structure.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/cheb.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/complete.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/interp.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/lin.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/smol_util.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/smolyak.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/spline.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/spline_sparse.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/src/util.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/basis.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/basis_structure.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/cheb.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/complete.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/interp.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/lin.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/runtests.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/smol.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/spline.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/spline_sparse.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/types.jl
+ create mode 100644 packages/BasisMatrices/pfXD9/test/util.jl
+ create mode 100644 packages/QuantEcon/Iww9D/.coveralls.yml
+ create mode 100644 packages/QuantEcon/Iww9D/.gitignore
+ create mode 100644 packages/QuantEcon/Iww9D/.travis.yml
+ create mode 100644 packages/QuantEcon/Iww9D/CHANGELOG.md
+ create mode 100644 packages/QuantEcon/Iww9D/LICENSE.txt
+ create mode 100644 packages/QuantEcon/Iww9D/Manifest.toml
+ create mode 100644 packages/QuantEcon/Iww9D/Project.toml
+ create mode 100644 packages/QuantEcon/Iww9D/README.md
+ create mode 100644 packages/QuantEcon/Iww9D/data/gd.xls
+ create mode 100644 packages/QuantEcon/Iww9D/data/graph.dat
+ create mode 100644 packages/QuantEcon/Iww9D/data/graph.txt
+ create mode 100644 packages/QuantEcon/Iww9D/data/graph_out.txt
+ create mode 100644 packages/QuantEcon/Iww9D/data/test_pwt.csv
+ create mode 100644 packages/QuantEcon/Iww9D/data/test_table.csv
+ create mode 100644 packages/QuantEcon/Iww9D/data/us_cities.txt
+ create mode 100644 packages/QuantEcon/Iww9D/data/web_graph_data.txt
+ create mode 100644 packages/QuantEcon/Iww9D/docs/Project.toml
+ create mode 100644 packages/QuantEcon/Iww9D/docs/make.jl
+ create mode 100644 packages/QuantEcon/Iww9D/docs/serve.go
+ create mode 100644 packages/QuantEcon/Iww9D/docs/src/api/QuantEcon.md
+ create mode 100644 packages/QuantEcon/Iww9D/docs/src/index.md
+ create mode 100644 packages/QuantEcon/Iww9D/docs/src/man/contributing.md
+ create mode 100644 packages/QuantEcon/Iww9D/docs/src/man/guide.md
+ create mode 100644 packages/QuantEcon/Iww9D/examples/finite_dp_og_example.jl
+ create mode 100644 packages/QuantEcon/Iww9D/mkdocs.yml
+ create mode 100644 packages/QuantEcon/Iww9D/other/ddpsolve.jl
+ create mode 100644 packages/QuantEcon/Iww9D/other/quadrature.jl
+ create mode 100644 packages/QuantEcon/Iww9D/other/regression.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/QuantEcon.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/arma.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/compute_fp.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/discrete_rv.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/ecdf.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/estspec.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/filter.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/interp.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/kalman.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/lae.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/lqcontrol.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/lqnash.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/lss.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/markov/ddp.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/markov/markov_approx.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/markov/mc_tools.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/markov/random_mc.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/matrix_eqn.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/modeltools/types.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/modeltools/utility.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/optimization.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/quad.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/quadsums.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/robustlq.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/sampler.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/util.jl
+ create mode 100644 packages/QuantEcon/Iww9D/src/zeros.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/data/matlab_quad.mat
+ create mode 100644 packages/QuantEcon/Iww9D/test/mccall.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/runtests.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_arma.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_compute_fp.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_ddp.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_discrete_rv.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_ecdf.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_estspec.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_filter.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_interp.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_kalman.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_lae.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_lqcontrol.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_lqnash.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_lss.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_markov_approx.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_matrix_eqn.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_mc_tools.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_modeltool.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_optimization.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_quad.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_quadsum.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_random_mc.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_robustlq.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_sampler.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_util.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/test_zeros.jl
+ create mode 100644 packages/QuantEcon/Iww9D/test/util.jl
+ create mode 100644 packages/QuantEcon/Iww9D/todo.TODO
+To https://github.com/watsona4/dot_julia.git
+   a0c74dde2..a6625b11a  master -> master
+Progress:   6%|██▎                                      |  ETA: 4 days, 15:21:35[K
+Installing Batched
+ Resolving package versions...
+ Installed Batched ─ v0.1.0
+ Installed CUDAapi ─ v0.6.3
+ Installed Flux ──── v0.8.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [1629540a] + Batched v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [1629540a] + Batched v0.1.0
+  [3895d2a7] ↓ CUDAapi v1.1.0 ⇒ v0.6.3
+  [587475ba] ↓ Flux v0.9.0 ⇒ v0.8.3
+  Building Batched → `~/.julia/packages/Batched/yUbIZ/deps/build.log`
+  Building Batched → `~/.julia/packages/Batched/yUbIZ/deps/build.log`

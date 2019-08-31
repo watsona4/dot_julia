@@ -1,0 +1,52 @@
+environment:
+  matrix:
+  # Julia versions
+  - julia_version: 0.7
+    cuda_version: 8.0
+  - julia_version: 1.0
+    cuda_version: 8.0
+  - julia_version: latest
+    cuda_version: 8.0
+  # CUDA versions
+  - julia_version: 1.0
+    cuda_version: 9.0
+  - julia_version: 1.0
+    cuda_version: 9.1
+  - julia_version: 1.0
+    cuda_version: 9.2
+  - julia_version: 1.0
+    cuda_version: 10.0
+  - julia_version: 1.0
+    cuda_version: 10.1
+
+platform:
+  - x64
+
+matrix:
+ allow_failures:
+  - julia_version: latest
+    cuda_version: 8.0
+
+branches:
+  only:
+    - master
+    - staging
+    - trying
+
+notifications:
+  - provider: Email
+    on_build_success: false
+    on_build_failure: false
+    on_build_status_changed: false
+
+install:
+  - powershell .\.appveyor.ps1
+  - ps: iex ((new-object net.webclient).DownloadString("https://raw.githubusercontent.com/JuliaCI/Appveyor.jl/version-1/bin/install.ps1"))
+
+build_script:
+  - echo "%JL_BUILD_SCRIPT%"
+  - C:\julia\bin\julia -e "%JL_BUILD_SCRIPT%"
+
+test_script:
+  - echo "%JL_TEST_SCRIPT%"
+  - C:\julia\bin\julia -e "%JL_TEST_SCRIPT%"

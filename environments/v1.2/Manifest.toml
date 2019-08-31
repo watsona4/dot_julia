@@ -731,6 +731,12 @@ git-tree-sha1 = "f472e8faf48640daea2e0b446cb820252a4e2b06"
 uuid = "08854c51-b66b-5062-a90d-8e7ae4547a49"
 version = "0.6.0"
 
+[[Batched]]
+deps = ["CUDAapi", "LinearAlgebra", "Test"]
+git-tree-sha1 = "65927ef98b6764f1eee73494c2f4296de1a44ca8"
+uuid = "1629540a-9a93-50e9-aec3-2a5ae159dca9"
+version = "0.1.0"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
@@ -821,10 +827,10 @@ uuid = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 version = "0.5.11"
 
 [[CUDAapi]]
-deps = ["Libdl", "Logging"]
-git-tree-sha1 = "9b2b4b71d6b7f946c9689bb4dea03ff92e3c7091"
+deps = ["Libdl", "Logging", "Test"]
+git-tree-sha1 = "125122309a4387e0d18787cef0f03800fa57702a"
 uuid = "3895d2a7-ec45-59b8-82bb-cfc6a382f9b3"
-version = "1.1.0"
+version = "0.6.3"
 
 [[CUDAdrv]]
 deps = ["CUDAapi", "Libdl", "Printf"]
@@ -1320,10 +1326,10 @@ uuid = "4c728ea3-d9ee-5c9a-9642-b6f7d7dc04fa"
 version = "0.2.1"
 
 [[Flux]]
-deps = ["AbstractTrees", "Adapt", "CUDAapi", "CodecZlib", "Colors", "CuArrays", "DelimitedFiles", "Juno", "LinearAlgebra", "MacroTools", "NNlib", "Pkg", "Printf", "Random", "Reexport", "SHA", "Statistics", "StatsBase", "Tracker", "ZipFile"]
-git-tree-sha1 = "b5ebbd896dcd8ff19c6cb7297c4d323155b26bcf"
+deps = ["AbstractTrees", "Adapt", "CodecZlib", "Colors", "DelimitedFiles", "Juno", "LinearAlgebra", "MacroTools", "NNlib", "Pkg", "Printf", "Random", "Reexport", "Requires", "SHA", "Statistics", "StatsBase", "Tracker", "ZipFile"]
+git-tree-sha1 = "08212989c2856f95f90709ea5fd824bd27b34514"
 uuid = "587475ba-b771-5e3f-ad9e-33799f191a9c"
-version = "0.9.0"
+version = "0.8.3"
 
 [[Fontconfig]]
 deps = ["BinDeps", "Compat", "Homebrew", "Libdl", "WinRPM"]

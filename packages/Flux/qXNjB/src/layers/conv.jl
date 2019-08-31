@@ -1,0 +1,257 @@
+using NNlib: conv, ∇conv_data, depthwiseconv
+
+expand(N, i::Tuple) = i
+expand(N, i::Integer) = ntuple(_ -> i, N)
+"""
+    Conv(size, in=>out)
+    Conv(size, in=>out, relu)
+
+Standard convolutional layer. `size` should be a tuple like `(2, 2)`.
+`in` and `out` specify the number of input and output channels respectively.
+
+Example: Applying Conv layer to a 1-channel input using a 2x2 window size,
+         giving us a 16-channel output. Output is activated with ReLU.
+
+    size = (2,2)
+    in = 1
+    out = 16 
+    Conv((2, 2), 1=>16, relu)
+
+Data should be stored in WHCN order (width, height, # channels, # batches). 
+In other words, a 100×100 RGB image would be a `100×100×3×1` array, 
+and a batch of 50 would be a `100×100×3×50` array.
+
+Takes the keyword arguments `pad`, `stride` and `dilation`.
+"""
+struct Conv{N,M,F,A,V}
+  σ::F
+  weight::A
+  bias::V
+  stride::NTuple{N,Int}
+  pad::NTuple{M,Int}
+  dilation::NTuple{N,Int}
+end
+
+function Conv(w::AbstractArray{T,N}, b::AbstractVector{T}, σ = identity;
+              stride = 1, pad = 0, dilation = 1) where {T,N}
+  stride = expand(Val(N-2), stride)
+  pad = expand(Val(2*(N-2)), pad)
+  dilation = expand(Val(N-2), dilation)
+  return Conv(σ, w, b, stride, pad, dilation)
+end
+
+Conv(k::NTuple{N,Integer}, ch::Pair{<:Integer,<:Integer}, σ = identity;
+     init = glorot_uniform,  stride = 1, pad = 0, dilation = 1) where N =
+  Conv(param(init(k..., ch...)), param(zeros(ch[2])), σ,
+       stride = stride, pad = pad, dilation = dilation)
+
+@treelike Conv
+
+function (c::Conv)(x::AbstractArray)
+  # TODO: breaks gpu broadcast :(
+  # ndims(x) == ndims(c.weight)-1 && return squeezebatch(c(reshape(x, size(x)..., 1)))
+  σ, b = c.σ, reshape(c.bias, map(_->1, c.stride)..., :, 1)
+  cdims = DenseConvDims(x, c.weight; stride=c.stride, padding=c.pad, dilation=c.dilation)
+  σ.(conv(x, c.weight, cdims) .+ b)
+end
+
+function Base.show(io::IO, l::Conv)
+  print(io, "Conv(", size(l.weight)[1:ndims(l.weight)-2])
+  print(io, ", ", size(l.weight, ndims(l.weight)-1), "=>", size(l.weight, ndims(l.weight)))
+  l.σ == identity || print(io, ", ", l.σ)
+  print(io, ")")
+end
+
+(a::Conv{<:Any,<:Any,W})(x::AbstractArray{T}) where {T <: Union{Float32,Float64}, W <: AbstractArray{T}} =
+  invoke(a, Tuple{AbstractArray}, x)
+
+(a::Conv{<:Any,<:Any,W})(x::AbstractArray{<:Real}) where {T <: Union{Float32,Float64}, W <: AbstractArray{T}} =
+  a(T.(x))
+
+"""
+    ConvTranspose(size, in=>out)
+    ConvTranspose(size, in=>out, relu)
+
+Standard convolutional transpose layer. `size` should be a tuple like `(2, 2)`.
+`in` and `out` specify the number of input and output channels respectively.
+Data should be stored in WHCN order. In other words, a 100×100 RGB image would
+be a `100×100×3` array, and a batch of 50 would be a `100×100×3×50` array.
+Takes the keyword arguments `pad`, `stride` and `dilation`.
+"""
+struct ConvTranspose{N,M,F,A,V}
+  σ::F
+  weight::A
+  bias::V
+  stride::NTuple{N,Int}
+  pad::NTuple{M,Int}
+  dilation::NTuple{N,Int}
+end
+
+function ConvTranspose(w::AbstractArray{T,N}, b::AbstractVector{T}, σ = identity;
+              stride = 1, pad = 0, dilation = 1) where {T,N}
+  stride = expand(Val(N-2), stride)
+  pad = expand(Val(2*(N-2)), pad)
+  dilation = expand(Val(N-2), dilation)
+  return ConvTranspose(σ, w, b, stride, pad, dilation)
+end
+
+ConvTranspose(k::NTuple{N,Integer}, ch::Pair{<:Integer,<:Integer}, σ = identity;
+              init = glorot_uniform, stride = 1, pad = 0, dilation = 1) where N =
+ConvTranspose(param(init(k..., reverse(ch)...)), param(zeros(ch[2])), σ,
+              stride = stride, pad = pad, dilation = dilation)
+
+@treelike ConvTranspose
+
+function conv_transpose_dims(c::ConvTranspose, x::AbstractArray)
+    # Calculate size of "input", from ∇conv_data()'s perspective...
+    combined_pad = (c.pad[1:2:end] .+ c.pad[2:2:end])
+    I = (size(x)[1:end-2] .- 1).*c.stride .+ 1 .+ (size(c.weight)[1:end-2] .- 1).*c.dilation .- combined_pad
+    C_in = size(c.weight)[end-1]
+    batch_size = size(x)[end]
+    # Create DenseConvDims() that looks like the corresponding conv()
+    return DenseConvDims((I..., C_in, batch_size), size(c.weight);
+        stride=c.stride,
+        padding=c.pad,
+        dilation=c.dilation,
+    )
+end
+
+function (c::ConvTranspose)(x::AbstractArray)
+  # ndims(x) == ndims(c.weight)-1 && return squeezebatch(c(reshape(x, size(x)..., 1)))
+  σ, b = c.σ, reshape(c.bias, map(_->1, c.stride)..., :, 1)
+  cdims = conv_transpose_dims(c, x)
+  return σ.(∇conv_data(x, c.weight, cdims) .+ b)
+end
+
+function Base.show(io::IO, l::ConvTranspose)
+  print(io, "ConvTranspose(", size(l.weight)[1:ndims(l.weight)-2])
+  print(io, ", ", size(l.weight, ndims(l.weight)), "=>", size(l.weight, ndims(l.weight)-1))
+  l.σ == identity || print(io, ", ", l.σ)
+  print(io, ")")
+end
+
+(a::ConvTranspose{<:Any,<:Any,W})(x::AbstractArray{T}) where {T <: Union{Float32,Float64}, W <: AbstractArray{T}} =
+  invoke(a, Tuple{AbstractArray}, x)
+
+(a::ConvTranspose{<:Any,<:Any,W})(x::AbstractArray{<:Real}) where {T <: Union{Float32,Float64}, W <: AbstractArray{T}} =
+  a(T.(x))
+"""
+    DepthwiseConv(size, in)
+    DepthwiseConv(size, in=>mul)
+    DepthwiseConv(size, in=>mul, relu)
+
+Depthwise convolutional layer. `size` should be a tuple like `(2, 2)`.
+`in` and `mul` specify the number of input channels and channel multiplier respectively.
+In case the `mul` is not specified it is taken as 1.
+
+Data should be stored in WHCN order. In other words, a 100×100 RGB image would
+be a `100×100×3` array, and a batch of 50 would be a `100×100×3×50` array.
+
+Takes the keyword arguments `pad` and `stride`.
+"""
+struct DepthwiseConv{N,M,F,A,V}
+  σ::F
+  weight::A
+  bias::V
+  stride::NTuple{N,Int}
+  pad::NTuple{M,Int}
+  dilation::NTuple{N,Int}
+end
+
+function DepthwiseConv(w::AbstractArray{T,N}, b::AbstractVector{T}, σ = identity;
+                       stride = 1, pad = 0, dilation = 1) where {T,N}
+  stride = expand(Val(N-2), stride)
+  pad = expand(Val(2*(N-2)), pad)
+  dilation = expand(Val(N-2), dilation)
+  return DepthwiseConv(σ, w, b, stride, pad, dilation)
+end
+
+DepthwiseConv(k::NTuple{N,Integer}, ch::Integer, σ = identity; init = glorot_uniform,
+     stride = 1, pad = 0, dilation = 1) where N =
+  DepthwiseConv(param(init(k..., 1, ch)), param(zeros(ch)), σ,
+       stride = stride, pad = pad, dilation=dilation)
+
+DepthwiseConv(k::NTuple{N,Integer}, ch::Pair{<:Integer,<:Integer}, σ = identity; init = glorot_uniform,
+     stride::NTuple{N,Integer} = map(_->1,k),
+     pad::NTuple{N,Integer} = map(_->0,2 .* k),
+     dilation::NTuple{N,Integer} = map(_->1,k)) where N =
+  DepthwiseConv(param(init(k..., ch[2], ch[1])), param(zeros(ch[2]*ch[1])), σ,
+       stride = stride, pad = pad)
+
+@treelike DepthwiseConv
+
+function (c::DepthwiseConv)(x)
+  σ, b = c.σ, reshape(c.bias, map(_->1, c.stride)..., :, 1)
+  cdims = DepthwiseConvDims(x, c.weight; stride=c.stride, padding=c.pad, dilation=c.dilation)
+  σ.(depthwiseconv(x, c.weight, cdims) .+ b)
+end
+
+function Base.show(io::IO, l::DepthwiseConv)
+  print(io, "DepthwiseConv(", size(l.weight)[1:ndims(l.weight)-2])
+  print(io, ", ", size(l.weight, ndims(l.weight)), "=>", size(l.weight, ndims(l.weight)-1))
+  l.σ == identity || print(io, ", ", l.σ)
+  print(io, ")")
+end
+
+(a::DepthwiseConv{<:Any,<:Any,W})(x::AbstractArray{T}) where {T <: Union{Float32,Float64}, W <: AbstractArray{T}} =
+  invoke(a, Tuple{AbstractArray}, x)
+
+(a::DepthwiseConv{<:Any,<:Any,W})(x::AbstractArray{<:Real}) where {T <: Union{Float32,Float64}, W <: AbstractArray{T}} =
+  a(T.(x))
+
+"""
+    MaxPool(k)
+
+Max pooling layer. `k` stands for the size of the window for each dimension of the input.
+
+Takes the keyword arguments `pad` and `stride`.
+"""
+struct MaxPool{N,M}
+  k::NTuple{N,Int}
+  pad::NTuple{M,Int}
+  stride::NTuple{N,Int}
+end
+
+function MaxPool(k::NTuple{N,Integer}; pad = 0, stride = k) where N
+  stride = expand(Val(N), stride)
+  pad = expand(Val(2*N), pad)
+
+  return MaxPool(k, pad, stride)
+end
+
+function (m::MaxPool)(x)
+    pdims = PoolDims(x, m.k; padding=m.pad, stride=m.stride)
+    return maxpool(x, pdims)
+end
+
+function Base.show(io::IO, m::MaxPool)
+  print(io, "MaxPool(", m.k, ", pad = ", m.pad, ", stride = ", m.stride, ")")
+end
+
+"""
+    MeanPool(k)
+
+Mean pooling layer. `k` stands for the size of the window for each dimension of the input.
+
+Takes the keyword arguments `pad` and `stride`.
+"""
+struct MeanPool{N,M}
+    k::NTuple{N,Int}
+    pad::NTuple{M,Int}
+    stride::NTuple{N,Int}
+end
+
+function MeanPool(k::NTuple{N,Integer}; pad = 0, stride = k) where N
+  stride = expand(Val(N), stride)
+  pad = expand(Val(2*N), pad)
+  return MeanPool(k, pad, stride)
+end
+
+function (m::MeanPool)(x)
+    pdims = PoolDims(x, m.k; padding=m.pad, stride=m.stride)
+    return meanpool(x, pdims)
+end
+
+function Base.show(io::IO, m::MeanPool)
+  print(io, "MeanPool(", m.k, ", pad = ", m.pad, ", stride = ", m.stride, ")")
+end
