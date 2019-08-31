@@ -1,0 +1,31 @@
+language: julia
+
+sudo: false
+
+os:
+  - linux
+  - osx
+
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+
+env:
+  - JULIA_PROJECT="@."
+
+notifications:
+  email: false
+
+after_success:
+  - julia -e 'ENV["TRAVIS_JULIA_VERSION"] != "1.1" && ENV["TRAVIS_OS_NAME"] != "linux" && exit(); using Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.1
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate(); Pkg.build("SQLite")'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip

@@ -911,6 +911,12 @@ git-tree-sha1 = "8f1d2b341feb4dfbfeae8d4fbb98e2bb9deee3df"
 uuid = "9b49b652-2545-5b88-a3af-87b516beb26f"
 version = "1.0.0"
 
+[[BioMedQuery]]
+deps = ["BioServices", "CSV", "DataFrames", "DataStreams", "Dates", "Distributed", "FTPClient", "HTTP", "LightXML", "MySQL", "SQLite", "SparseArrays", "Test", "XMLDict", "ZipFile"]
+git-tree-sha1 = "2c661abe385d312f4c1f9f547ac2f2658deb4fc5"
+uuid = "e96904bf-1073-5077-9b57-b0ce0ff5555a"
+version = "0.6.4"
+
 [[BioSequences]]
 deps = ["Automa", "BioCore", "BioSymbols", "BufferedStreams", "Combinatorics", "IndexableBitVectors", "IntervalTrees", "LinearAlgebra", "Printf", "Random", "Test", "Twiddle"]
 git-tree-sha1 = "29341326bfab7ebef261dab128874b9e3fece5c2"
@@ -1259,6 +1265,12 @@ version = "0.3.1"
 deps = ["Printf"]
 uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
 
+[[DecFP]]
+deps = ["BinaryProvider", "Compat", "Libdl", "SpecialFunctions"]
+git-tree-sha1 = "26512f6d65cab2892bec756cd7c0efff3481113d"
+uuid = "55939f99-70c6-5e9b-8bb0-5071ed7d61fd"
+version = "0.4.8"
+
 [[DelimitedFiles]]
 deps = ["Mmap"]
 uuid = "8bb1440f-4735-579b-a4ab-409b98df4dab"
@@ -1479,6 +1491,12 @@ deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "6624bd0cdd03aa82df34d3eac56ab77ff696472e"
 uuid = "525bcba6-941b-5504-bd06-fd0dc1a4d2eb"
 version = "0.14.0"
+
+[[FTPClient]]
+deps = ["LibCURL", "URIParser"]
+git-tree-sha1 = "e0617188d5abfb9955663158c95e71ae215f8904"
+uuid = "01fcc997-4f28-56b8-8a06-30002c134abb"
+version = "1.0.1"
 
 [[FastClosures]]
 git-tree-sha1 = "b451807e68d0056fab1d094eab27e3b5fd424f1b"
@@ -2296,6 +2314,12 @@ git-tree-sha1 = "cf1c990020bc4a52ff34ba2ee058b7cb677141f2"
 uuid = "6f286f6a-111f-5878-ab1e-185364afe411"
 version = "0.6.0"
 
+[[MySQL]]
+deps = ["BinaryProvider", "Dates", "DecFP", "Libdl", "Tables", "Test"]
+git-tree-sha1 = "4b9828e56c9c70a04740f5fc369bd5c65efdbd0a"
+uuid = "39abe10b-433b-5dbd-92d4-e302a9df00cd"
+version = "0.7.0"
+
 [[NLPModels]]
 deps = ["FastClosures", "ForwardDiff", "LinearAlgebra", "LinearOperators", "Printf", "SparseArrays", "Test"]
 git-tree-sha1 = "8eedfa85d4b3b641b4e5153c175b11bddb12f775"
@@ -2705,6 +2729,12 @@ version = "0.11.1"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+
+[[SQLite]]
+deps = ["BinaryProvider", "DataFrames", "Dates", "Libdl", "Random", "Serialization", "Tables", "Test", "WeakRefStrings"]
+git-tree-sha1 = "70383f412eaa203ffbdd53a1bc5af089c2f8828e"
+uuid = "0aa819cd-b072-5ff4-a722-6bc24af294d9"
+version = "0.8.1"
 
 [[SauterSchwabQuadrature]]
 deps = ["CompScienceMeshes", "FastGaussQuadrature", "LinearAlgebra", "StaticArrays", "Test"]

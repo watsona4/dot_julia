@@ -1,0 +1,83 @@
+language: julia
+
+sudo: false
+
+notifications:
+  email: true
+
+sudo: false
+
+before_script:
+  - echo "[mysqld]" > $HOME/.my.cnf
+  - echo "secure_file_priv = \"\" ">> $HOME/.my.cnf
+  - echo "default_authentication_plugin = mysql_native_password" >> $HOME/.my.cnf
+  - echo "local_infile = 1" >> $HOME/.my.cnf
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then . ./ci/travis/before_install-osx.sh; fi
+  - export OLD_PATH=$LD_LIBRARY_PATH
+  - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`mariadb_config --libs | cut -d ' ' -f1 | sed 's/-L//'`
+after_script:
+  - export LD_LIBRARY_PATH=$OLD_PATH
+  - unset OLD_PATH
+after_success:
+  - julia -e 'import Pkg; Pkg.instantiate(); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+
+jobs:
+  include:
+    - stage: "Tests and Examples"
+      os: linux
+      julia: 1.1
+      env: GROUP=Test
+      script:
+        - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+        - julia --check-bounds=yes -e 'import Pkg;
+              Pkg.build();
+              Pkg.test("BioMedQuery"; coverage=true);'
+    - # continue
+      os: osx
+      julia: 1.1
+      env: GROUP=Test
+      script:
+        - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+        - julia --check-bounds=yes -e 'import Pkg;
+              Pkg.build();
+              Pkg.test("BioMedQuery"; coverage=false);'
+    - # continue
+      os: linux
+      julia: 1.0
+      env: GROUP=Test
+      script:
+        - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+        - julia --check-bounds=yes -e 'import Pkg;
+              Pkg.build();
+              Pkg.test("BioMedQuery"; coverage=true);'
+    - # continue
+      os: linux
+      julia: 1.1
+      env: GROUP=Examples
+      script:
+        - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+        - julia --check-bounds=yes -e 'import Pkg;
+            Pkg.instantiate();
+            include(joinpath(@__DIR__,"examples","runexamples.jl"))'
+    - stage: "Deploy Documentation"
+      julia: 1.1
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip
+    - stage: Semantic Release
+      if: branch = master AND type != pull_request
+      language: python
+      os: linux
+      python: 3.6
+      before_script: skip
+      install:
+        - pip install typing
+        - pip install python-semantic-release
+      script:
+        - git config --global user.name "semantic-release (via TravisCI)"
+        - git config --global user.email "semantic-release@travis"
+        - semantic-release publish
+      after_script: skip
+      after_success: skip
