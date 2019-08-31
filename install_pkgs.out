@@ -5868,3 +5868,22 @@ Installing AbstractLattices
   [398f06c4] + AbstractLattices v0.1.2
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [398f06c4] + AbstractLattices v0.1.2
+[master e0ac387d9] added package AbstractLattices
+ 10 files changed, 146 insertions(+)
+ create mode 100644 packages/AbstractLattices/ByRLS/.travis.yml
+ create mode 100644 packages/AbstractLattices/ByRLS/LICENSE
+ create mode 100644 packages/AbstractLattices/ByRLS/README.md
+ create mode 100644 packages/AbstractLattices/ByRLS/REQUIRE
+ create mode 100644 packages/AbstractLattices/ByRLS/src/AbstractLattices.jl
+ create mode 100644 packages/AbstractLattices/ByRLS/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   9ae506c5a..e0ac387d9  master -> master
+Progress:   1%|▌                                        |  ETA: 2 days, 3:06:49[K
+Installing AbstractNumbers
+ Resolving package versions...
+ Installed AbstractNumbers ─ v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [85c772de] + AbstractNumbers v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [85c772de] + AbstractNumbers v0.2.0
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
