@@ -478,6 +478,11 @@ git-tree-sha1 = "5efdf68cc2fa9bde38546aa302ebbf41f70bea5c"
 uuid = "1a029416-38b0-5245-b7ed-67249edcb994"
 version = "1.0.0"
 
+[[AsmMacro]]
+git-tree-sha1 = "a3bd92d3cd222cd5cf9aa602ffe842faa909773a"
+uuid = "f617cd02-e7fb-5dad-8d07-aa96542e7fbb"
+version = "0.1.0"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
