@@ -34364,3 +34364,40 @@ Installing BracedErrors
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [22c333fb] + BracedErrors v0.6.0
   [abce61dc] + Decimals v0.4.0
+[master 271a4072e] added package BracedErrors
+ 29 files changed, 1109 insertions(+)
+ create mode 100644 packages/BracedErrors/pJalI/.travis.yml
+ create mode 100644 packages/BracedErrors/pJalI/Manifest.toml
+ create mode 100644 packages/BracedErrors/pJalI/Project.toml
+ create mode 100644 packages/BracedErrors/pJalI/README.md
+ create mode 100644 packages/BracedErrors/pJalI/REQUIRE
+ create mode 100644 packages/BracedErrors/pJalI/src/BracedErrors.jl
+ create mode 100644 packages/BracedErrors/pJalI/test/runtests.jl
+ create mode 100644 packages/Decimals/Qfcas/.gitignore
+ create mode 100644 packages/Decimals/Qfcas/.travis.yml
+ create mode 100644 packages/Decimals/Qfcas/LICENSE
+ create mode 100644 packages/Decimals/Qfcas/README.md
+ create mode 100644 packages/Decimals/Qfcas/REQUIRE
+ create mode 100644 packages/Decimals/Qfcas/src/Decimals.jl
+ create mode 100644 packages/Decimals/Qfcas/src/arithmetic.jl
+ create mode 100644 packages/Decimals/Qfcas/src/decimal.jl
+ create mode 100644 packages/Decimals/Qfcas/src/equals.jl
+ create mode 100644 packages/Decimals/Qfcas/src/norm.jl
+ create mode 100644 packages/Decimals/Qfcas/src/round.jl
+ create mode 100644 packages/Decimals/Qfcas/test/runtests.jl
+ create mode 100644 packages/Decimals/Qfcas/test/test_arithmetic.jl
+ create mode 100644 packages/Decimals/Qfcas/test/test_constructor.jl
+ create mode 100644 packages/Decimals/Qfcas/test/test_decimal.jl
+ create mode 100644 packages/Decimals/Qfcas/test/test_equals.jl
+ create mode 100644 packages/Decimals/Qfcas/test/test_norm.jl
+ create mode 100644 packages/Decimals/Qfcas/test/test_round.jl
+To https://github.com/watsona4/dot_julia.git
+   3b17a2795..271a4072e  master -> master
+Progress:   8%|███▌                                     |  ETA: 3 days, 18:19:36[K
+Installing BranchAndPrune
+ Resolving package versions...
+ Installed BranchAndPrune ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [d3bc4f2e] + BranchAndPrune v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [d3bc4f2e] + BranchAndPrune v0.1.0

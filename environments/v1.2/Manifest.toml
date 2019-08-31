@@ -1155,6 +1155,11 @@ git-tree-sha1 = "2195ade963a004bab5ff264724cc7bdf021c9dc1"
 uuid = "22c333fb-6c73-5509-a736-78cf55b615ef"
 version = "0.6.0"
 
+[[BranchAndPrune]]
+git-tree-sha1 = "e2c20dc7581d8fb1a7939e68972bb6dbfa9d9571"
+uuid = "d3bc4f2e-91e6-11e9-365e-cd067da536ce"
+version = "0.1.0"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
