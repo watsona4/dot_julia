@@ -1220,6 +1220,12 @@ git-tree-sha1 = "52190ed73079c6aecaace3a166b09a1cd451e210"
 uuid = "de436766-0b2a-5f82-bc5b-1ccc5f599b83"
 version = "0.5.2"
 
+[[CALCEPH]]
+deps = ["BinDeps", "BinaryProvider", "Libdl"]
+git-tree-sha1 = "2e45cbee4ec96d2522e3085bad3de89db2d14e14"
+uuid = "1537fe66-4725-5aba-80f4-3a74792cecc1"
+version = "1.0.3"
+
 [[CEnum]]
 git-tree-sha1 = "62847acab40e6855a9b5905ccb99c2b5cf6b3ebb"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"

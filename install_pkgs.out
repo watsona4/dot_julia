@@ -35113,3 +35113,110 @@ Installing C3D
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [de436766] + C3D v0.5.2
   [a6f58a78] + VaxData v0.5.1
+[master 64ee5747c] added package C3D
+ 97 files changed, 2389 insertions(+)
+ create mode 100644 packages/C3D/7PQDU/.codecov.yml
+ create mode 100644 packages/C3D/7PQDU/.gitignore
+ create mode 100644 packages/C3D/7PQDU/.travis.yml
+ create mode 100644 packages/C3D/7PQDU/LICENSE.md
+ create mode 100644 packages/C3D/7PQDU/Project.toml
+ create mode 100644 packages/C3D/7PQDU/README.md
+ create mode 100644 packages/C3D/7PQDU/REQUIRE
+ create mode 100644 packages/C3D/7PQDU/appveyor.yml
+ create mode 100644 packages/C3D/7PQDU/data/sample01/Eb015pi.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample01/Eb015pr.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample01/Eb015si.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample01/Eb015sr.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample01/Eb015vi.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample01/Eb015vr.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample01/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample02/dec_int.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample02/dec_real.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample02/pc_int.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample02/pc_real.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample02/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample02/sgi_int.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample02/sgi_real.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample08/EB015PI.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample08/TESTAPI.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample08/TESTBPI.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample08/TESTCPI.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample08/TESTDPI.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample08/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample10/MATRIX.PDF
+ create mode 100644 packages/C3D/7PQDU/data/sample10/README.TXT
+ create mode 100644 packages/C3D/7PQDU/data/sample10/TYPE-2.C3D
+ create mode 100644 packages/C3D/7PQDU/data/sample10/TYPE-4.C3D
+ create mode 100644 packages/C3D/7PQDU/data/sample10/type-2a.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample10/type-4.xls
+ create mode 100644 packages/C3D/7PQDU/data/sample10/type-4a.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample15/FP1.C3D
+ create mode 100644 packages/C3D/7PQDU/data/sample15/FP2.C3D
+ create mode 100644 packages/C3D/7PQDU/data/sample15/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample16/basketball.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample16/giant.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample16/golf.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample16/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample17/128analogchannels.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample17/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample18/bad_parameter_section.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample18/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample19/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample19/sample19.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample24/MotionMonitorC3D.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample24/sample24.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample27/kyowadengyo.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample27/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample29/Facial-Sing.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample29/OptiTrack-IITSEC2007.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample29/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample33/bigparlove.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample33/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample34/AlbertoINT.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample34/AlbertoREAL.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample34/Basketball.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample34/readme.txt
+ create mode 100644 packages/C3D/7PQDU/data/sample35/Mega Electronics Isokinetic EMG Angle Torque Sample File.c3d
+ create mode 100644 packages/C3D/7PQDU/data/sample35/readme.txt
+ create mode 100644 packages/C3D/7PQDU/src/C3D.jl
+ create mode 100644 packages/C3D/7PQDU/src/groups.jl
+ create mode 100644 packages/C3D/7PQDU/src/header.jl
+ create mode 100644 packages/C3D/7PQDU/src/parameters.jl
+ create mode 100644 packages/C3D/7PQDU/src/validate.jl
+ create mode 100644 packages/C3D/7PQDU/test/badformats.jl
+ create mode 100644 packages/C3D/7PQDU/test/bigdata.jl
+ create mode 100644 packages/C3D/7PQDU/test/blanklabels.jl
+ create mode 100644 packages/C3D/7PQDU/test/identical.jl
+ create mode 100644 packages/C3D/7PQDU/test/invalid.jl
+ create mode 100644 packages/C3D/7PQDU/test/runtests.jl
+ create mode 100644 packages/C3D/7PQDU/test/singledata.jl
+ create mode 100644 packages/VaxData/IaPUT/.codecov.yml
+ create mode 100644 packages/VaxData/IaPUT/.gitignore
+ create mode 100644 packages/VaxData/IaPUT/.travis.yml
+ create mode 100644 packages/VaxData/IaPUT/LICENSE.md
+ create mode 100644 packages/VaxData/IaPUT/Project.toml
+ create mode 100644 packages/VaxData/IaPUT/README.md
+ create mode 100644 packages/VaxData/IaPUT/REQUIRE
+ create mode 100644 packages/VaxData/IaPUT/src/VaxData.jl
+ create mode 100644 packages/VaxData/IaPUT/src/constants.jl
+ create mode 100644 packages/VaxData/IaPUT/src/vaxfloatd.jl
+ create mode 100644 packages/VaxData/IaPUT/src/vaxfloatf.jl
+ create mode 100644 packages/VaxData/IaPUT/src/vaxfloatg.jl
+ create mode 100644 packages/VaxData/IaPUT/src/vaxints.jl
+ create mode 100644 packages/VaxData/IaPUT/test/runtests.jl
+ create mode 100644 packages/VaxData/IaPUT/test/vaxfloatd.jl
+ create mode 100644 packages/VaxData/IaPUT/test/vaxfloatf.jl
+ create mode 100644 packages/VaxData/IaPUT/test/vaxfloatg.jl
+ create mode 100644 packages/VaxData/IaPUT/test/vaxints.jl
+To https://github.com/watsona4/dot_julia.git
+   99c130709..64ee5747c  master -> master
+Progress:   9%|███▋                                     |  ETA: 3 days, 15:09:37[K
+Installing CALCEPH
+ Resolving package versions...
+ Installed CALCEPH ─ v1.0.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [1537fe66] + CALCEPH v1.0.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [1537fe66] + CALCEPH v1.0.3
+  Building CALCEPH → `~/.julia/packages/CALCEPH/1eofX/deps/build.log`
+  Building CALCEPH → `~/.julia/packages/CALCEPH/1eofX/deps/build.log`

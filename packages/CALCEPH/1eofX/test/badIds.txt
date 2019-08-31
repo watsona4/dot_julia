@@ -1,0 +1,1 @@
+      0.0           'SOLAR_SYSTEM_BARYCENTER'
