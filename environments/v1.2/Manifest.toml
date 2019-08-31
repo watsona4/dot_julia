@@ -1678,6 +1678,12 @@ git-tree-sha1 = "6e2c6d71c7e80204ffdf989acbcc169f05387162"
 uuid = "1a9c1350-211b-5766-99cd-4544d885a0d1"
 version = "0.1.1"
 
+[[Cliffords]]
+deps = ["LinearAlgebra", "StaticArrays", "Test"]
+git-tree-sha1 = "66c151790e6a47dc6277f40b893469829a19f42c"
+uuid = "276b0191-6968-5de0-98fd-2a81b0f3910d"
+version = "0.5.0"
+
 [[CloudGraphs]]
 deps = ["Dates", "DocStringExtensions", "Graphs", "JSON", "Mongoc", "Neo4j", "ProtoBuf", "Test", "UUIDs"]
 git-tree-sha1 = "41129bf1af018b49855a846b1b3955cee980bf8a"

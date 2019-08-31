@@ -50183,3 +50183,35 @@ Installing Classes
   [1a9c1350] + Classes v0.1.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [1a9c1350] + Classes v0.1.1
+[master f3b1d4d37] added package Classes
+ 20 files changed, 1022 insertions(+)
+ create mode 100644 packages/Classes/HBRwY/.appveyor.yml
+ create mode 100644 packages/Classes/HBRwY/.gitignore
+ create mode 100644 packages/Classes/HBRwY/.travis.yml
+ create mode 100644 packages/Classes/HBRwY/LICENSE
+ create mode 100644 packages/Classes/HBRwY/README.md
+ create mode 100644 packages/Classes/HBRwY/REQUIRE
+ create mode 100644 packages/Classes/HBRwY/codecov.yml
+ create mode 100644 packages/Classes/HBRwY/docs/Project.toml
+ create mode 100644 packages/Classes/HBRwY/docs/make.jl
+ create mode 100644 packages/Classes/HBRwY/docs/src/figs/Classes.png
+ create mode 100644 packages/Classes/HBRwY/docs/src/index.md
+ create mode 100644 packages/Classes/HBRwY/src/Classes.jl
+ create mode 100644 packages/Classes/HBRwY/test/REQUIRE
+ create mode 100644 packages/Classes/HBRwY/test/example.jl
+ create mode 100644 packages/Classes/HBRwY/test/runtests.jl
+ create mode 100644 packages/Classes/HBRwY/test/test_classes.jl
+To https://github.com/watsona4/dot_julia.git
+   a6a732350..f3b1d4d37  master -> master
+Progress:  13%|█████▎                                   |  ETA: 3 days, 8:31:47[K
+Installing ClassicalCiphers
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package ClassicalCiphers [ecf26e93]:\n ClassicalCiphers [ecf26e93] log:\n ├─possible versions are: [0.0.1, 0.2.0, 0.3.0-0.3.1] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.2.0, 0.3.0-0.3.1]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  13%|█████▎                                   |  ETA: 3 days, 8:19:30[K
+Installing Cliffords
+ Resolving package versions...
+ Installed Cliffords ─ v0.5.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [276b0191] + Cliffords v0.5.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [276b0191] + Cliffords v0.5.0
