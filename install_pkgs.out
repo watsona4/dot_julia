@@ -30504,3 +30504,109 @@ Installing BigArrays
   Building ImageMagick → `~/.julia/packages/ImageMagick/vMfoS/deps/build.log`
   Building CMake ──────→ `~/.julia/packages/CMake/nSK2r/deps/build.log`
   Building Blosc ──────→ `~/.julia/packages/Blosc/lzFr0/deps/build.log`
+[master febb547a6] added package BigArrays
+ 99 files changed, 6721 insertions(+)
+ rewrite compiled/v1.2/CMake/TDh52.ji (95%)
+ create mode 100644 packages/BigArrays/cbDmG/.gitignore
+ create mode 100644 packages/BigArrays/cbDmG/.travis.yml
+ create mode 100644 packages/BigArrays/cbDmG/Dockerfile
+ create mode 100644 packages/BigArrays/cbDmG/README.md
+ create mode 100644 packages/BigArrays/cbDmG/REQUIRE
+ create mode 100644 packages/BigArrays/cbDmG/asset/info
+ create mode 100644 packages/BigArrays/cbDmG/src/BackendBase.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/BigArrays.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/ChunkIterators.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/Codings.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/Indexes.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/Infos.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/backends/BinDicts.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/backends/GSDicts.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/backends/S3Dicts.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/backends/include.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/modes/include.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/modes/multiprocesses.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/modes/multithreads.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/modes/sequential.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/modes/sharedarray.jl
+ create mode 100644 packages/BigArrays/cbDmG/src/type.jl
+ create mode 100644 packages/BigArrays/cbDmG/test/BinDicts.jl
+ create mode 100644 packages/BigArrays/cbDmG/test/GSDicts.jl
+ create mode 100644 packages/BigArrays/cbDmG/test/Indexes.jl
+ create mode 100644 packages/BigArrays/cbDmG/test/Infos.jl
+ create mode 100644 packages/BigArrays/cbDmG/test/S3Dicts.jl
+ create mode 100644 packages/BigArrays/cbDmG/test/backends/GSDicts.jl
+ create mode 100644 packages/BigArrays/cbDmG/test/backends/S3Dicts.jl
+ create mode 100644 packages/BigArrays/cbDmG/test/runtests.jl
+ create mode 100644 packages/CodecZstd/zTSNC/.codecov.yml
+ create mode 100644 packages/CodecZstd/zTSNC/.gitignore
+ create mode 100644 packages/CodecZstd/zTSNC/.travis.yml
+ create mode 100644 packages/CodecZstd/zTSNC/LICENSE.md
+ create mode 100644 packages/CodecZstd/zTSNC/Project.toml
+ create mode 100644 packages/CodecZstd/zTSNC/README.md
+ create mode 100644 packages/CodecZstd/zTSNC/appveyor.yml
+ create mode 100644 packages/CodecZstd/zTSNC/deps/build.jl
+ create mode 100644 packages/CodecZstd/zTSNC/src/CodecZstd.jl
+ create mode 100644 packages/CodecZstd/zTSNC/src/compression.jl
+ create mode 100644 packages/CodecZstd/zTSNC/src/decompression.jl
+ create mode 100644 packages/CodecZstd/zTSNC/src/libzstd.jl
+ create mode 100644 packages/CodecZstd/zTSNC/test/runtests.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/.gitignore
+ create mode 100644 packages/GoogleCloud/iYFdL/.travis.yml
+ create mode 100644 packages/GoogleCloud/iYFdL/LICENSE.md
+ create mode 100644 packages/GoogleCloud/iYFdL/README.md
+ create mode 100644 packages/GoogleCloud/iYFdL/REQUIRE
+ create mode 100644 packages/GoogleCloud/iYFdL/appveyor.yml
+ create mode 100644 packages/GoogleCloud/iYFdL/docs/.documenter.enc
+ create mode 100755 packages/GoogleCloud/iYFdL/docs/make.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/docs/mkdocs.yml
+ create mode 100644 packages/GoogleCloud/iYFdL/docs/src/api/api.md
+ create mode 100644 packages/GoogleCloud/iYFdL/docs/src/api/credentials.md
+ create mode 100644 packages/GoogleCloud/iYFdL/docs/src/api/error.md
+ create mode 100644 packages/GoogleCloud/iYFdL/docs/src/api/root.md
+ create mode 100644 packages/GoogleCloud/iYFdL/docs/src/api/session.md
+ create mode 100644 packages/GoogleCloud/iYFdL/docs/src/custom_api/index.md
+ create mode 100644 packages/GoogleCloud/iYFdL/docs/src/custom_api/keystore.md
+ create mode 100644 packages/GoogleCloud/iYFdL/docs/src/index.md
+ create mode 100644 packages/GoogleCloud/iYFdL/src/GoogleCloud.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/api/api.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/api/compute.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/api/container.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/api/datastore.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/api/iam.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/api/logging.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/api/pubsub.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/api/storage.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/collection.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/credentials.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/error.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/root.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/src/session.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/test/api.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/test/runtests.jl
+ create mode 100644 packages/GoogleCloud/iYFdL/test/storage.jl
+ create mode 100644 packages/Memoize/FheHo/.travis.yml
+ create mode 100644 packages/Memoize/FheHo/LICENSE.md
+ create mode 100644 packages/Memoize/FheHo/Project.toml
+ create mode 100644 packages/Memoize/FheHo/README.md
+ create mode 100644 packages/Memoize/FheHo/REQUIRE
+ create mode 100644 packages/Memoize/FheHo/src/Memoize.jl
+ create mode 100644 packages/Memoize/FheHo/test/runtests.jl
+ create mode 100644 packages/MsgPack/uxELC/.travis.yml
+ create mode 100644 packages/MsgPack/uxELC/LICENSE.md
+ create mode 100644 packages/MsgPack/uxELC/Manifest.toml
+ create mode 100644 packages/MsgPack/uxELC/Project.toml
+ create mode 100644 packages/MsgPack/uxELC/README.md
+ create mode 100644 packages/MsgPack/uxELC/REQUIRE
+ create mode 100644 packages/MsgPack/uxELC/appveyor.yml
+ create mode 100644 packages/MsgPack/uxELC/src/MsgPack.jl
+ create mode 100644 packages/MsgPack/uxELC/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   55323fb07..febb547a6  master -> master
+Progress:   6%|██▋                                      |  ETA: 4 days, 8:15:45[K
+Installing BigCombinatorics
+ Resolving package versions...
+ Installed BigCombinatorics ─ v0.1.4
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [7b33fef7] + BigCombinatorics v0.1.4
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [7b33fef7] + BigCombinatorics v0.1.4
