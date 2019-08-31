@@ -46029,3 +46029,32 @@ Installing CatViews
   [81a5f4ea] + CatViews v1.0.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [81a5f4ea] + CatViews v1.0.0
+[master 75d054921] added package CatViews
+ 18 files changed, 642 insertions(+)
+ create mode 100644 packages/CatViews/8Zg6z/.gitignore
+ create mode 100644 packages/CatViews/8Zg6z/.travis.yml
+ create mode 100644 packages/CatViews/8Zg6z/LICENSE.md
+ create mode 100644 packages/CatViews/8Zg6z/README.md
+ create mode 100644 packages/CatViews/8Zg6z/REQUIRE
+ create mode 100644 packages/CatViews/8Zg6z/appveyor.jl
+ create mode 100644 packages/CatViews/8Zg6z/appveyor.yml
+ create mode 100644 packages/CatViews/8Zg6z/examples/pca.jl
+ create mode 100644 packages/CatViews/8Zg6z/perf/iteration.jl
+ create mode 100644 packages/CatViews/8Zg6z/perf/matmul.jl
+ create mode 100644 packages/CatViews/8Zg6z/src/CatViews.jl
+ create mode 100644 packages/CatViews/8Zg6z/src/catview.jl
+ create mode 100644 packages/CatViews/8Zg6z/src/splitview.jl
+ create mode 100644 packages/CatViews/8Zg6z/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   99b36186c..75d054921  master -> master
+Progress:  11%|████▊                                    |  ETA: 3 days, 13:09:48[K
+Installing Catalan
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Catalan [a10504cf]:\n Catalan [a10504cf] log:\n ├─possible versions are: 0.0.1-0.0.3 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.3\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  12%|████▊                                    |  ETA: 3 days, 12:55:14[K
+Installing CategoricalArrays
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [324d7699] + CategoricalArrays v0.5.5
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
