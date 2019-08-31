@@ -311,6 +311,11 @@ git-tree-sha1 = "866b34418eda1a2e4f3676e4b23ece997a717d18"
 uuid = "f9309374-59cc-5ff5-a120-e3e470a57b4a"
 version = "0.4.0"
 
+[[ApplicationBuilderAppUtils]]
+git-tree-sha1 = "4b6604ca950ec7c1c96341349f552376f3541092"
+uuid = "96374992-6a10-11e9-2fa0-73472aac04df"
+version = "0.1.1"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
