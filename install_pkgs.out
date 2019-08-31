@@ -46255,3 +46255,21 @@ Installing Catsay
   [5193907d] + Catsay v0.1.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [5193907d] + Catsay v0.1.1
+[master 4c5da9578] added package Catsay
+ 10 files changed, 167 insertions(+)
+ create mode 100644 packages/Catsay/z87iZ/.travis.yml
+ create mode 100644 packages/Catsay/z87iZ/README.md
+ create mode 100644 packages/Catsay/z87iZ/REQUIRE
+ create mode 100755 packages/Catsay/z87iZ/bin/catsay
+ create mode 100644 packages/Catsay/z87iZ/src/Catsay.jl
+ create mode 100644 packages/Catsay/z87iZ/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   1320320c6..4c5da9578  master -> master
+Progress:  12%|████▊                                    |  ETA: 3 days, 12:13:35[K
+Installing CausalInference
+ Resolving package versions...
+ Installed CausalInference ─ v0.4.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [8e462317] + CausalInference v0.4.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [8e462317] + CausalInference v0.4.0

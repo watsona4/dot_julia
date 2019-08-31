@@ -1,0 +1,205 @@
+using LightGraphs
+
+"""
+    insorted(a, x)
+
+Check if `x` is in the sorted collection `a`
+"""
+insorted(a, x) = !isempty(searchsorted(a, x))
+
+"""
+    disjoint_sorted(u, v)
+
+Check if the intersection of sorted collections is empty. The intersection
+of empty collectios is empty.
+"""
+function disjoint_sorted(u, v)
+    xa = iterate(u)
+    xa === nothing && return true
+    yb = iterate(v)
+    yb === nothing && return true
+
+    x, a = xa
+    y, b = yb
+
+    while true
+        x == y && return false
+        if x > y
+            yb = iterate(v, b)
+            yb === nothing && return true
+            y, b = yb
+        else
+            xa = iterate(u, a)
+            xa === nothing && return true
+            x, a = xa
+        end
+    end
+end
+#=
+Let e=(v, w).
+Note that each unshielded triple is of type `∨` or `╎` or `∧` of shape
+     v           v       v
+    / \          |        \   z
+   w   \         w         \ /
+        z        |          w
+                 z
+where higher nodes have smaller vertex number.
+=# 
+"""
+    unshielded(g, S)
+
+Find unshielded triples in the skeleton. Triples are connected vertices v-w-z where
+z is not a neighbour of v. Uses that `edges` iterates in lexicographical order.
+""" 
+function unshielded(g, S)
+    Z = Tuple{Int64,Int64,Int64}[]
+    for e in edges(g)
+        v, w = Tuple(e)
+        @assert(v < w)
+        for z in neighbors(g, w) # case `∨` or `╎`
+            z <= v && continue   # longer arm of `∨` is visited first
+            insorted(neighbors(g, z), v) && continue
+            w in S[Edge(v,z)] || push!(Z, (v, w, z))
+        end
+        for z in neighbors(g, v) # case `∧` 
+            (z <= w) && continue # shorter arm is visited first
+            insorted(neighbors(g, z), w) && continue
+            v in S[Edge(minmax(z, w)...)] || push!(Z, (z, v, w))
+        end
+    end
+    Z
+end
+
+isadjacent(dg::DiGraph, v, w) = has_edge(dg, v, w) || has_edge(dg, w, v)
+has_both(dg::DiGraph, v, w) = has_edge(dg, v, w) && has_edge(dg, w, v)
+
+remove!(dg::DiGraph, e::Pair) = rem_edge!(dg, Edge(e))
+remove!(dg::Graph, e::Tuple) = rem_edge!(dg, Edge(e))
+
+"""
+    vskel(g)
+
+Skeleton and `v`-structures. (Currently from the first step of the pc-Alg.)
+"""
+vskel(g) = _vskel(nv(g), dseporacle, g)
+
+function _vskel(n::V, I, par...) where {V}
+    # Step 1
+    g, S = skeleton(n, I, par...)
+
+    # Step 2: Apply Rule 0 once
+    Z = unshielded(g, S)
+    dg = DiGraph(g) # use g to keep track of unoriented edges
+
+    for (u, v, w) in Z
+        if has_edge(g, (u, v))
+            remove!(dg, v => u)
+            remove!(g, (v, u))
+        end
+        if has_edge(g, (v, w))
+            remove!(dg, v => w)
+            remove!(g, (v, w))
+        end
+    end
+    dg
+end
+
+"""
+    pcalg(n::V, I, par...)
+
+Perform the PC algorithm for a set of 1:n variables using the tests
+
+    I(u, v, [s1, ..., sn], par...)
+
+Returns the CPDAG as DiGraph.   
+"""
+function pcalg(n::V, I, par...) where {V}
+    VERBOSE = false
+
+    # Step 1
+    g, S = skeleton(n, I, par...)
+
+    # Step 2: Apply Rule 0 once
+    Z = unshielded(g, S)
+    dg = DiGraph(g) # use g to keep track of unoriented edges
+
+    for (u, v, w) in Z
+        if has_edge(g, (u, v))
+            remove!(dg, v => u)
+            remove!(g, (v, u))
+        end
+        if has_edge(g, (v, w))
+            remove!(dg, v => w)
+            remove!(g, (v, w))
+        end
+    end
+
+    # Step 3: Apply Rule 1-3 consecutively
+    removed = Tuple{Int64,Int64}[]
+    while true
+        for e in edges(g)
+            for e_ in (e, reverse(e))
+                v, w = Tuple(e_)
+                # Rule 1: Orient v-w into v->w whenever there is u->v
+                # such that u and w are not adjacent
+                for u in inneighbors(dg, v)
+                    has_edge(dg, v => u) && continue # not directed
+                    isadjacent(dg, u, w) && continue
+                    VERBOSE && println("rule 1: ", v => w) 
+                    remove!(dg, w => v)
+                    push!(removed, (w, v))
+                    @goto ende
+                end
+            
+
+                # Rule 2: Orient v-w into v->w whenever there is a chain
+                # v->k->w.
+                outs = Int[]
+                for k in outneighbors(dg, v)
+                    !has_edge(dg, k => v) && push!(outs, k)
+                end
+                ins = Int[]
+                for k in inneighbors(dg, w)
+                    !has_edge(dg, w => k) && push!(ins, k)
+                end
+                
+                if !disjoint_sorted(ins, outs)
+                    VERBOSE && println("rule 2: ", v => w) 
+                    remove!(dg, w => v)
+                    push!(removed, (w, v))
+                    @goto ende
+                end
+
+                # Rule 3: Orient v-w into v->w whenever there are two chains
+                # v-k->w and v-l->w such that k and l are nonadjacent
+                fulls = [] # Find nodes k where v-k
+                for k in outneighbors(dg, v)
+                    has_edge(dg, k => v) && push!(fulls, k)
+                end
+                for (k, l) in combinations(fulls, 2) # FIXME: 
+                    isadjacent(dg, k, l) && continue
+                    
+                    # Skip if not k->w or if not l->w
+                    if has_edge(dg, w => k) || !has_edge(dg, k => w)
+                        continue
+                    end
+                    if has_edge(dg, w => l) || !has_edge(dg, l => w)
+                        continue
+                    end
+                    VERBOSE && println("rule 3: ", v => w) 
+                    remove!(dg, w => v)
+                    push!(removed, (w, v))
+                    @goto ende
+                end
+            end
+        end
+        
+        @label ende
+        for e in removed
+            remove!(g, e)
+        end
+        isempty(removed) && break 
+        empty!(removed)
+    end
+    dg
+end

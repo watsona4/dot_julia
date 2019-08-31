@@ -1541,6 +1541,12 @@ git-tree-sha1 = "ccdf0e62af8b2af6ba328f9ace060cdbc5868304"
 uuid = "5193907d-d586-5f94-a3e6-8b6fe67f210a"
 version = "0.1.1"
 
+[[CausalInference]]
+deps = ["Combinatorics", "LightGraphs", "LinearAlgebra", "Random", "Statistics", "Test"]
+git-tree-sha1 = "c0d1e16cd421002bd4e16ec4c6da8229d0e0ed3b"
+uuid = "8e462317-f959-576b-b3c1-403f26cec956"
+version = "0.4.0"
+
 [[Clang]]
 deps = ["BinaryProvider", "CEnum", "DataStructures", "Libdl"]
 git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"
