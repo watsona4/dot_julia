@@ -466,6 +466,12 @@ git-tree-sha1 = "f999f98569521895b7a6d7a62bf8ff76297a4664"
 uuid = "65a8f2f4-9b39-5baf-92e2-a9cc46fdf018"
 version = "0.4.1"
 
+[[Arrow]]
+deps = ["CategoricalArrays", "Compat"]
+git-tree-sha1 = "d3c36842140057276f6f8348afa08f0f7dae2d1e"
+uuid = "69666777-d1a9-59fb-9406-91d4454c9d45"
+version = "0.2.3"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"

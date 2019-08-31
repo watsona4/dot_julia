@@ -23059,3 +23059,54 @@ Installing ArraysOfArrays
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [65a8f2f4] + ArraysOfArrays v0.4.1
   [c4a57d5a] + UnsafeArrays v0.4.0
+[master f92c28a64] added package ArraysOfArrays
+ 43 files changed, 3350 insertions(+)
+ create mode 100644 packages/ArraysOfArrays/6Aygn/.appveyor.yml
+ create mode 100644 packages/ArraysOfArrays/6Aygn/.codecov.yml
+ create mode 100644 packages/ArraysOfArrays/6Aygn/.gitignore
+ create mode 100644 packages/ArraysOfArrays/6Aygn/.travis.yml
+ create mode 100644 packages/ArraysOfArrays/6Aygn/LICENSE.md
+ create mode 100644 packages/ArraysOfArrays/6Aygn/Project.toml
+ create mode 100644 packages/ArraysOfArrays/6Aygn/README.md
+ create mode 100644 packages/ArraysOfArrays/6Aygn/docs/.gitignore
+ create mode 100644 packages/ArraysOfArrays/6Aygn/docs/Project.toml
+ create mode 100644 packages/ArraysOfArrays/6Aygn/docs/make.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/docs/src/LICENSE.md
+ create mode 100644 packages/ArraysOfArrays/6Aygn/docs/src/api.md
+ create mode 100644 packages/ArraysOfArrays/6Aygn/docs/src/index.md
+ create mode 100644 packages/ArraysOfArrays/6Aygn/src/ArraysOfArrays.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/src/array_of_similar_arrays.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/src/functions.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/src/staticarrays_support.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/src/statsbase_support.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/src/util.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/src/vector_of_arrays.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/test/array_of_similar_arrays.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/test/functions.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/test/runtests.jl
+ create mode 100644 packages/ArraysOfArrays/6Aygn/test/vector_of_arrays.jl
+ create mode 100644 packages/UnsafeArrays/GFsbs/.codecov.yml
+ create mode 100644 packages/UnsafeArrays/GFsbs/.gitignore
+ create mode 100644 packages/UnsafeArrays/GFsbs/.travis.yml
+ create mode 100644 packages/UnsafeArrays/GFsbs/LICENSE.md
+ create mode 100644 packages/UnsafeArrays/GFsbs/Project.toml
+ create mode 100644 packages/UnsafeArrays/GFsbs/README.md
+ create mode 100644 packages/UnsafeArrays/GFsbs/appveyor.yml
+ create mode 100644 packages/UnsafeArrays/GFsbs/src/UnsafeArrays.jl
+ create mode 100644 packages/UnsafeArrays/GFsbs/src/unsafe_array.jl
+ create mode 100644 packages/UnsafeArrays/GFsbs/src/util.jl
+ create mode 100644 packages/UnsafeArrays/GFsbs/src/uview.jl
+ create mode 100644 packages/UnsafeArrays/GFsbs/test/runtests.jl
+ create mode 100644 packages/UnsafeArrays/GFsbs/test/unsafe_array.jl
+ create mode 100644 packages/UnsafeArrays/GFsbs/test/util.jl
+ create mode 100644 packages/UnsafeArrays/GFsbs/test/uview.jl
+To https://github.com/watsona4/dot_julia.git
+   24948c294..f92c28a64  master -> master
+Progress:   3%|█▍                                       |  ETA: 6 days, 7:04:33[K
+Installing Arrow
+ Resolving package versions...
+ Installed Arrow ─ v0.2.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [69666777] + Arrow v0.2.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [69666777] + Arrow v0.2.3
