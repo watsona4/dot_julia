@@ -1238,6 +1238,12 @@ git-tree-sha1 = "55b4e52b36c89a296717edca14a10d85a20a93a8"
 uuid = "d43a6710-96b8-4a2d-833c-c424785e5374"
 version = "0.2.0"
 
+[[CBindingGen]]
+deps = ["CBinding", "Clang", "Test", "Todo"]
+git-tree-sha1 = "db1e824c16056407ed7df4dbf52e9bb8ae62854c"
+uuid = "308a6e0c-0495-45e1-b1ab-67fb455a0d77"
+version = "0.1.0"
+
 [[CEnum]]
 git-tree-sha1 = "62847acab40e6855a9b5905ccb99c2b5cf6b3ebb"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"
@@ -1330,6 +1336,12 @@ deps = ["Compat", "DataAPI", "Future", "JSON", "Missings", "Printf", "Reexport"]
 git-tree-sha1 = "13240cfcc884837fc1aa89b60d500a652bcc3f10"
 uuid = "324d7699-5711-5eae-9e2f-1d82baa6b597"
 version = "0.5.5"
+
+[[Clang]]
+deps = ["BinaryProvider", "CEnum", "DataStructures", "Libdl"]
+git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"
+uuid = "40e3b903-d033-50b4-a0cc-940c62c95e31"
+version = "0.9.1"
 
 [[Clustering]]
 deps = ["Distances", "LinearAlgebra", "NearestNeighbors", "Printf", "SparseArrays", "Statistics", "StatsBase"]
