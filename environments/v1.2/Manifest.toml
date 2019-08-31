@@ -78,6 +78,12 @@ git-tree-sha1 = "4f15352e3b6afc6c1a53371995b765c3ecf2db52"
 uuid = "1c724243-ef5b-51ab-93f4-b0a88ac62a95"
 version = "0.6.1"
 
+[[AWSSDK]]
+deps = ["AWSCore"]
+git-tree-sha1 = "89c95eab2bc1128fe247c31e9774d47eb7ef0d40"
+uuid = "0d499d91-6ae5-5d63-9313-12987b87d5ad"
+version = "0.4.0"
+
 [[AbstractFFTs]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "380e36c66edfa099cd90116b24c1ce8cafccac40"

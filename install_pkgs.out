@@ -5383,3 +5383,59 @@ Installing AWSS3
   [48062228] + FilePathsBase v0.6.2
   Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
   Building EzXML ──→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
+[master 5d73cc966] added package AWSS3
+ 42 files changed, 6200 insertions(+)
+ create mode 100644 packages/AWSS3/97OFZ/.travis.yml
+ create mode 100644 packages/AWSS3/97OFZ/LICENSE.md
+ create mode 100644 packages/AWSS3/97OFZ/Project.toml
+ create mode 100644 packages/AWSS3/97OFZ/README.md
+ create mode 100644 packages/AWSS3/97OFZ/src/AWSS3.jl
+ create mode 100644 packages/AWSS3/97OFZ/src/s3path.jl
+ create mode 100644 packages/AWSS3/97OFZ/test/REQUIRE
+ create mode 100755 packages/AWSS3/97OFZ/test/runtests.jl
+ create mode 100644 packages/AWSS3/97OFZ/test/s3path.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/.travis.yml
+ create mode 100644 packages/FilePathsBase/oi7XZ/LICENSE.md
+ create mode 100644 packages/FilePathsBase/oi7XZ/Project.toml
+ create mode 100644 packages/FilePathsBase/oi7XZ/README.md
+ create mode 100644 packages/FilePathsBase/oi7XZ/appveyor.yml
+ create mode 100644 packages/FilePathsBase/oi7XZ/docs/.DS_Store
+ create mode 100644 packages/FilePathsBase/oi7XZ/docs/Manifest.toml
+ create mode 100644 packages/FilePathsBase/oi7XZ/docs/Project.toml
+ create mode 100644 packages/FilePathsBase/oi7XZ/docs/make.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/docs/src/index.md
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/FilePathsBase.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/buffer.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/constants.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/deprecates.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/libc.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/mode.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/path.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/posix.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/status.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/system.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/test.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/utils.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/src/windows.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/test/buffer.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/test/mode.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/test/path.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/test/runtests.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/test/system.jl
+ create mode 100644 packages/FilePathsBase/oi7XZ/test/testpkg.jl
+To https://github.com/watsona4/dot_julia.git
+   38242fa20..5d73cc966  master -> master
+Progress:   1%|▎                                        |  ETA: 2 days, 23:15:22[K
+Installing AWSSDB
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AWSSDB [b7af77f4]:\n AWSSDB [b7af77f4] log:\n ├─possible versions are: [0.0.1-0.0.3, 0.1.2-0.1.3, 0.2.0, 0.3.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.3, 0.1.2-0.1.3, 0.2.0, 0.3.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   1%|▎                                        |  ETA: 2 days, 20:15:58[K
+Installing AWSSDK
+ Resolving package versions...
+ Installed AWSSDK ─ v0.4.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [0d499d91] + AWSSDK v0.4.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [0d499d91] + AWSSDK v0.4.0
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+  Building EzXML ──→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
