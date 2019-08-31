@@ -1553,6 +1553,12 @@ git-tree-sha1 = "30c31ac9e4d99dfd7591cde5e56eac4899be224e"
 uuid = "5520caf5-2dd7-5c5d-bfcb-a00e56ac49f7"
 version = "0.2.6"
 
+[[CausalityToolsBase]]
+deps = ["ChaosTools", "DelayEmbeddings", "Distances", "Distributions", "Interpolations", "NearestNeighbors", "StaticArrays", "Statistics", "Test"]
+git-tree-sha1 = "b429a0eefe416343d0e8bfcee70fd378f6db2706"
+uuid = "b1f25513-c649-51ee-8a1c-0e98d01ae897"
+version = "0.4.1"
+
 [[ChaosTools]]
 deps = ["Combinatorics", "DSP", "DiffEqBase", "Distances", "Distributions", "DynamicalSystemsBase", "ForwardDiff", "LinearAlgebra", "LombScargle", "NearestNeighbors", "Random", "Reexport", "Roots", "StaticArrays", "Statistics", "StatsBase"]
 git-tree-sha1 = "a76653daa84ba7153a4498d614e4eef9526e5334"
