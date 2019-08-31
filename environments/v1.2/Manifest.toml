@@ -162,6 +162,12 @@ git-tree-sha1 = "47acddd710276cfa0184d84ebca07a92b324c263"
 uuid = "22286c92-06ac-501d-9306-4abd417d9753"
 version = "0.3.0"
 
+[[ActuarialScience]]
+deps = ["Distributions", "Test"]
+git-tree-sha1 = "df88f0dfdca0bd30925de4f4c478d3c36f2846f9"
+uuid = "511708b7-8d90-5a63-9f8b-8993ab87fa77"
+version = "0.1.1"
+
 [[Adapt]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "82dab828020b872fa9efd3abec1152b075bc7cbf"

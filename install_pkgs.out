@@ -6852,3 +6852,49 @@ Installing AccurateArithmetic
   [22286c92] + AccurateArithmetic v0.3.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [22286c92] + AccurateArithmetic v0.3.0
+[master edf9143fe] added package AccurateArithmetic
+ 27 files changed, 1430 insertions(+)
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/.gitignore
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/.travis.yml
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/LICENSE
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/Package.toml
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/README.md
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/REQUIRE
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/appveyor.yml
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/docs/_config.yml
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/docs/make.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/docs/src/index.md
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/docs/src/references.md
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/src/AccurateArithmetic.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/src/compensated.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/src/constants.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/src/errorfree.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/src/faithful.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/src/nearfaithful.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/src/pairarith.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/src/renormalize.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/src/twoarith.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/test/bigfloats.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/test/randfloats.jl
+ create mode 100644 packages/AccurateArithmetic/Kw5C9/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   67bbe1c43..edf9143fe  master -> master
+Progress:   1%|▋                                        |  ETA: 2 days, 3:53:54[K
+Installing ActiveAppearanceModels
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package ActiveAppearanceModels [178780b6]:\n ActiveAppearanceModels [178780b6] log:\n ├─possible versions are: 0.1.0-0.1.2 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.1.0-0.1.2\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   1%|▋                                        |  ETA: 2 days, 2:43:03[K
+Installing Actors
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Actors [1c4bc1b3]:\n Actors [1c4bc1b3] log:\n ├─possible versions are: [0.0.1, 0.1.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   1%|▋                                        |  ETA: 2 days, 1:35:07[K
+Installing ActuarialScience
+ Resolving package versions...
+ Installed ActuarialScience ─ v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [511708b7] + ActuarialScience v0.1.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [511708b7] + ActuarialScience v0.1.1
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
