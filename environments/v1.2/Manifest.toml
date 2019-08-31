@@ -1702,6 +1702,12 @@ git-tree-sha1 = "aa7e547cf1da6b8399462cfa2ea207c1cc2b6521"
 uuid = "c8f6d549-b3ab-5508-a0d1-48fe138e8cc1"
 version = "0.5.0"
 
+[[ClosedIntervals]]
+deps = ["AbstractLattices", "Test"]
+git-tree-sha1 = "e58b3c2d5de62371be393f4019c27e02e7140d19"
+uuid = "059b0e18-018a-5deb-a5b2-c624ee85784b"
+version = "0.2.0"
+
 [[CloudGraphs]]
 deps = ["Dates", "DocStringExtensions", "Graphs", "JSON", "Mongoc", "Neo4j", "ProtoBuf", "Test", "UUIDs"]
 git-tree-sha1 = "41129bf1af018b49855a846b1b3955cee980bf8a"
