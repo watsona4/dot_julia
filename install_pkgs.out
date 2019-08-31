@@ -38264,3 +38264,24 @@ Installing CQLdriver
 │  [6] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/CQLdriver/QjN09/deps/build.jl:1
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master 37bd14edc] added package CQLdriver
+ 13 files changed, 1501 insertions(+)
+ create mode 100644 packages/CQLdriver/QjN09/LICENSE.md
+ create mode 100644 packages/CQLdriver/QjN09/README.md
+ create mode 100644 packages/CQLdriver/QjN09/REQUIRE
+ create mode 100644 packages/CQLdriver/QjN09/appveyor.yml
+ create mode 100644 packages/CQLdriver/QjN09/deps/build.jl
+ create mode 100644 packages/CQLdriver/QjN09/deps/build.log
+ create mode 100644 packages/CQLdriver/QjN09/src/CQLdriver.jl
+ create mode 100644 packages/CQLdriver/QjN09/src/cqlwrapper.jl
+ create mode 100644 packages/CQLdriver/QjN09/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   91265e507..37bd14edc  master -> master
+Progress:  10%|████                                     |  ETA: 3 days, 12:18:07[K
+Installing CRC
+ Resolving package versions...
+ Installed CRC ─ v3.0.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [44b605c4] + CRC v3.0.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [44b605c4] + CRC v3.0.0

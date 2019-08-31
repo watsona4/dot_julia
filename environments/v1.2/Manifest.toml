@@ -1332,6 +1332,12 @@ git-tree-sha1 = "cadddc85d845939634b159dc06992c7c700a618b"
 uuid = "9d1c9671-1ee4-5573-9bdf-56d4f028cf50"
 version = "0.9.5"
 
+[[CRC]]
+deps = ["ArgParse", "Printf", "Random", "Test"]
+git-tree-sha1 = "7d58d83e4b5a7eba68cc3c3c99a01761f4d0c3a3"
+uuid = "44b605c4-b955-5f2b-9b6d-d2bd01d3d205"
+version = "3.0.0"
+
 [[CRlibm]]
 deps = ["Libdl", "Test"]
 git-tree-sha1 = "805164abcd31facf3a7e5b7d803a0d16b23329bc"
