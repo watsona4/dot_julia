@@ -2046,6 +2046,12 @@ git-tree-sha1 = "e5c5452262ea9239fcd5d22fd67c43f811bf387c"
 uuid = "a6e380b2-a6ca-5380-bf3e-84a91bcd477e"
 version = "0.5.3"
 
+[[Convex]]
+deps = ["LinearAlgebra", "MathProgBase", "OrderedCollections", "SparseArrays"]
+git-tree-sha1 = "ae07311d4b849473a9e3a67121a922f9b9efeb6d"
+uuid = "f65535da-76fb-5f13-bab9-19810c17039a"
+version = "0.12.4"
+
 [[CoordinateTransformations]]
 deps = ["Compat", "Rotations", "StaticArrays"]
 git-tree-sha1 = "47f05d0b7f4999609f92e657147df000818c1f24"

@@ -1,0 +1,23 @@
+import LinearAlgebra.dot
+export dot
+
+ismatrix(x::AbstractExpr) = (s = size(x); length(s) == 2 && s[1] > 1 && s[2] > 1)
+ismatrix(::AbstractMatrix) = true
+ismatrix(::Any) = false
+
+# NOTE: Using asvec avoids broadcast-specific behaviors that we want to avoid, such
+# as extending singleton dimensions. We need to ensure that the inputs have the same
+# length, which broadcast will check for us if both inputs are vectors.
+asvec(x) = convert(AbstractExpr, ismatrix(x) ? vec(x) : x)
+_vecdot(x, y) = sum(broadcast(*, asvec(x), asvec(y)))
+
+dot(x::AbstractExpr, y::AbstractExpr) = _vecdot(x, y)
+dot(x::Value, y::AbstractExpr) = _vecdot(x, y)
+dot(x::AbstractExpr, y::Value) = _vecdot(x, y)
+
+if isdefined(LinearAlgebra, :vecdot) # defined but deprecated
+    import LinearAlgebra: vecdot
+end
+Base.@deprecate vecdot(x::AbstractExpr, y::AbstractExpr) dot(x, y)
+Base.@deprecate vecdot(x::Value, y::AbstractExpr) dot(x, y)
+Base.@deprecate vecdot(x::AbstractExpr, y::Value) dot(x, y)
