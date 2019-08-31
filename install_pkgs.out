@@ -29053,3 +29053,23 @@ Installing BarycentricInterpolation
   [9eb6a62d] + BarycentricInterpolation v0.1.2
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [9eb6a62d] + BarycentricInterpolation v0.1.2
+[master b67f58284] added package BarycentricInterpolation
+ 13 files changed, 575 insertions(+)
+ create mode 100644 packages/BarycentricInterpolation/rdL9k/.codecov.yml
+ create mode 100644 packages/BarycentricInterpolation/rdL9k/.gitignore
+ create mode 100644 packages/BarycentricInterpolation/rdL9k/.travis.yml
+ create mode 100644 packages/BarycentricInterpolation/rdL9k/LICENSE.md
+ create mode 100644 packages/BarycentricInterpolation/rdL9k/README.md
+ create mode 100644 packages/BarycentricInterpolation/rdL9k/REQUIRE
+ create mode 100644 packages/BarycentricInterpolation/rdL9k/appveyor.yml
+ create mode 100644 packages/BarycentricInterpolation/rdL9k/src/BarycentricInterpolation.jl
+ create mode 100644 packages/BarycentricInterpolation/rdL9k/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   67e403051..b67f58284  master -> master
+Progress:   5%|██▎                                      |  ETA: 4 days, 17:13:26[K
+Installing Base58
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [a832ea1e] + Base58 v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
