@@ -27411,3 +27411,57 @@ Installing BDF
   Building CMake → `~/.julia/packages/CMake/nSK2r/deps/build.log`
   Building Blosc → `~/.julia/packages/Blosc/lzFr0/deps/build.log`
   Building HDF5 ─→ `~/.julia/packages/HDF5/DktP4/deps/build.log`
+[master 9e3dab8a3] added package BDF
+ 36 files changed, 4416 insertions(+)
+ rewrite compiled/v1.2/CMake/TDh52.ji (95%)
+ create mode 100644 packages/BDF/ge3aw/.travis.yml
+ create mode 100755 packages/BDF/ge3aw/LICENSE.md
+ create mode 100755 packages/BDF/ge3aw/README.md
+ create mode 100755 packages/BDF/ge3aw/REQUIRE
+ create mode 100644 packages/BDF/ge3aw/docs/make.jl
+ create mode 100644 packages/BDF/ge3aw/docs/mkdocs.yml
+ create mode 100644 packages/BDF/ge3aw/docs/runWeave.jl
+ create mode 100644 packages/BDF/ge3aw/docs/src/API.md
+ create mode 100644 packages/BDF/ge3aw/docs/src/index.Rmd
+ create mode 100644 packages/BDF/ge3aw/prep-release/extract_docstrings.jl
+ create mode 100644 packages/BDF/ge3aw/prep-release/prepdoc.jl
+ create mode 100755 packages/BDF/ge3aw/src/BDF.jl
+ create mode 100755 packages/BDF/ge3aw/test/MK2_speedmode0_CMS_not_in_range_battery_charged.bdf
+ create mode 100644 packages/BDF/ge3aw/test/MK2_speedmode4_CMS_not_in_range_battery_charged.bdf
+ create mode 100755 packages/BDF/ge3aw/test/MK2_speedmode5_CMS_not_in_range_battery_charged.bdf
+ create mode 100755 packages/BDF/ge3aw/test/MK2_speedmode6_CMS_not_in_range_battery_charged.bdf
+ create mode 100755 packages/BDF/ge3aw/test/MK2_speedmode7_CMS_not_in_range_battery_charged.bdf
+ create mode 100755 packages/BDF/ge3aw/test/MK2_speedmode9_CMS_not_in_range_battery_charged.bdf
+ create mode 100755 packages/BDF/ge3aw/test/Newtest17-256.bdf
+ create mode 100644 packages/BDF/ge3aw/test/Newtest17-256_data.h5
+ create mode 100644 packages/BDF/ge3aw/test/prep_eq_test.jl
+ create mode 100644 packages/BDF/ge3aw/test/runtests.jl
+ create mode 100644 packages/BDF/ge3aw/test/test_channel_select.jl
+ create mode 100644 packages/BDF/ge3aw/test/test_data.jld
+ create mode 100644 packages/BDF/ge3aw/test/test_decode_status_channel.jl
+ create mode 100644 packages/BDF/ge3aw/test/test_eq.jl
+ create mode 100644 packages/BDF/ge3aw/test/test_read_write.jl
+ create mode 100644 packages/BDF/ge3aw/test/test_split_time1.jl
+ create mode 100644 packages/BDF/ge3aw/test/test_split_time2.jl
+ create mode 100644 packages/BDF/ge3aw/test/test_split_trigger.jl
+To https://github.com/watsona4/dot_julia.git
+   bd91ebbd3..9e3dab8a3  master -> master
+Progress:   5%|█▉                                       |  ETA: 5 days, 4:58:54[K
+Installing BEAST
+ Resolving package versions...
+ Installed WiltonInts84 ─────────── v0.2.1
+ Installed CollisionDetection ───── v0.1.2
+ Installed SauterSchwabQuadrature ─ v2.1.0
+ Installed BEAST ────────────────── v1.1.0
+ Installed CompScienceMeshes ────── v0.2.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [bb4162c7] + BEAST v1.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [bb4162c7] + BEAST v1.1.0
+  [2b5bf9a6] + CollisionDetection v0.1.2
+  [3e66a162] + CompScienceMeshes v0.2.3
+  [535c7bfe] + SauterSchwabQuadrature v2.1.0
+  [a3e2863e] + WiltonInts84 v0.2.1
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`

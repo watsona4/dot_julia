@@ -632,6 +632,12 @@ git-tree-sha1 = "711d47315ce61ffd49377f25414a1042674dbda2"
 uuid = "0f5c7595-fa0c-55c8-9031-265ea63f34cf"
 version = "0.4.1"
 
+[[BEAST]]
+deps = ["CollisionDetection", "Combinatorics", "CompScienceMeshes", "Compat", "DelimitedFiles", "Distributed", "FFTW", "FastGaussQuadrature", "IterativeSolvers", "LinearAlgebra", "Pkg", "SauterSchwabQuadrature", "SharedArrays", "SparseArrays", "SpecialFunctions", "StaticArrays", "Test", "WiltonInts84"]
+git-tree-sha1 = "20d3da2b579e488292f552582cab481b4130cbf9"
+uuid = "bb4162c7-ba94-5a20-af32-d8ec4428bdd1"
+version = "1.1.0"
+
 [[BSON]]
 deps = ["Profile", "Test"]
 git-tree-sha1 = "6453cef4f9cb8ded8e28e4d6d12e11e20eb692ea"
@@ -813,6 +819,12 @@ git-tree-sha1 = "70885e5e038cba1c4c17a84ad6c40756e10a4fb5"
 uuid = "19ecbf4d-ef7c-5e4b-b54a-0a0ff23c5aed"
 version = "0.5.0"
 
+[[CollisionDetection]]
+deps = ["Compat", "DelimitedFiles", "LinearAlgebra", "StaticArrays", "Test"]
+git-tree-sha1 = "52b0f2f704204177efada5475796eee529386ee5"
+uuid = "2b5bf9a6-f3f8-5352-af9c-82bb4af718d8"
+version = "0.1.2"
+
 [[ColorBrewer]]
 deps = ["Colors", "JSON", "Test"]
 git-tree-sha1 = "61c5334f33d91e570e1d0c3eb5465835242582c4"
@@ -848,6 +860,12 @@ deps = ["Test"]
 git-tree-sha1 = "efdaf19ab11c7889334ca247ff4c9f7c322817b0"
 uuid = "bbf7d656-a473-5ed7-a52c-81e309532950"
 version = "0.2.0"
+
+[[CompScienceMeshes]]
+deps = ["CollisionDetection", "Combinatorics", "Compat", "DelimitedFiles", "FastGaussQuadrature", "LinearAlgebra", "Requires", "SparseArrays", "StaticArrays"]
+git-tree-sha1 = "06f0eb19e933e1bb23bed1fee774b3342e88b5f2"
+uuid = "3e66a162-7b8c-5da0-b8f8-124ecd2c3ae1"
+version = "0.2.3"
 
 [[Compat]]
 deps = ["Base64", "Dates", "DelimitedFiles", "Distributed", "InteractiveUtils", "LibGit2", "Libdl", "LinearAlgebra", "Markdown", "Mmap", "Pkg", "Printf", "REPL", "Random", "Serialization", "SharedArrays", "Sockets", "SparseArrays", "Statistics", "Test", "UUIDs", "Unicode"]
@@ -2233,6 +2251,12 @@ version = "0.11.1"
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
 
+[[SauterSchwabQuadrature]]
+deps = ["CompScienceMeshes", "FastGaussQuadrature", "LinearAlgebra", "StaticArrays", "Test"]
+git-tree-sha1 = "04613230d106781615014703c3bee8bb62e934d0"
+uuid = "535c7bfe-2023-5c1d-b712-654ef9d93a38"
+version = "2.1.0"
+
 [[Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
 
@@ -2546,6 +2570,12 @@ deps = ["Colors", "Dates", "Observables", "OrderedCollections", "Test"]
 git-tree-sha1 = "c53befc70c6b91eaa2a9888c2f6ac2d92720a81b"
 uuid = "cc8bc4a8-27d6-5769-a93b-9d913e69aa62"
 version = "0.6.1"
+
+[[WiltonInts84]]
+deps = ["LinearAlgebra", "Test"]
+git-tree-sha1 = "1f5474dac833eaf554c40e7e1da331eb90d1bc84"
+uuid = "a3e2863e-c0ee-5ff6-a523-307a4cdc8724"
+version = "0.2.1"
 
 [[WinRPM]]
 deps = ["BinDeps", "Compat", "HTTPClient", "LibExpat", "Libdl", "Libz", "URIParser"]
