@@ -1,0 +1,13 @@
+name = "ConsoleInput"
+uuid = "35eb6272-8738-11e9-0051-6dceb7698eda"
+authors = ["mildc0ffee <uncxochtil@gmail.com>"]
+version = "0.1.1"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

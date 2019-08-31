@@ -1,0 +1,21 @@
+language: julia
+os:
+    - linux
+    - osx
+julia:
+    - 1.0
+    - 1.1
+    - nightly
+sudo: false
+git:
+    quiet: true
+cache:
+    directories:
+        - $HOME/.julia/registries
+matrix:
+    allow_failures:
+        - julia: nightly
+    fast_finish: true
+notifications:
+    email: false
+codecov: true

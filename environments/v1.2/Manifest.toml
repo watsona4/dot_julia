@@ -2011,6 +2011,11 @@ git-tree-sha1 = "3fb20337d75d51661bdb6f58375fc0ecd5dc6fd3"
 uuid = "4937dc1f-c7a3-5772-9d42-4a8277f2eb51"
 version = "0.2.0"
 
+[[ConsoleInput]]
+git-tree-sha1 = "ced6735a41560513d3dbea9d2d079849ef173e96"
+uuid = "35eb6272-8738-11e9-0051-6dceb7698eda"
+version = "0.1.1"
+
 [[Contour]]
 deps = ["LinearAlgebra", "StaticArrays", "Test"]
 git-tree-sha1 = "b974e164358fea753ef853ce7bad97afec15bb80"
