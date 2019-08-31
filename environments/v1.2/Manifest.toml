@@ -442,6 +442,12 @@ git-tree-sha1 = "07a2c077bdd4b6d23a40342a8a108e2ee5e58ab6"
 uuid = "7d9fca2a-8960-54d3-9f78-7d1dccf2cb97"
 version = "0.3.1"
 
+[[ArrayAllez]]
+deps = ["FillArrays", "LRUCache", "LazyArrays", "LinearAlgebra", "MacroTools", "Requires", "ZygoteRules"]
+git-tree-sha1 = "8f9e06864b2d39125c65a061f3b1584ec48cb76a"
+uuid = "42ed035d-9ad9-5097-b4a3-321d9b0dde85"
+version = "0.0.4"
+
 [[ArrayInterface]]
 deps = ["LinearAlgebra", "Requires", "SparseArrays"]
 git-tree-sha1 = "981354dab938901c2b607a213e62d9defa50b698"
@@ -1241,6 +1247,11 @@ git-tree-sha1 = "52cfea426bd248a427aace7d88eb5d45b84ea297"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
 version = "1.2.0"
 
+[[LRUCache]]
+git-tree-sha1 = "6505b43dbdb449462a52e8e45feb0706f8b36dab"
+uuid = "8ac3fa9e-de4c-5943-b1dc-09c6b5f20637"
+version = "1.0.2"
+
 [[LazyArrays]]
 deps = ["FillArrays", "LinearAlgebra", "MacroTools", "StaticArrays"]
 git-tree-sha1 = "e71f611fec1329f0fd6c82e9b5d7da3fc9822b0d"
@@ -1955,3 +1966,9 @@ deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "580ce62b6c14244916cc28ad54f8a2e2886f843d"
 uuid = "a5390f91-8eb1-5f08-bee0-b1d1ffed6cea"
 version = "0.8.3"
+
+[[ZygoteRules]]
+deps = ["MacroTools"]
+git-tree-sha1 = "def5f96ac2895fd9b48435f6b97020979ee0a4c6"
+uuid = "700de1a5-db45-46bc-99cf-38207098b444"
+version = "0.1.0"

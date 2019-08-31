@@ -1,0 +1,26 @@
+name = "ArrayAllez"
+uuid = "42ed035d-9ad9-5097-b4a3-321d9b0dde85"
+license = "MIT"
+version = "0.0.4"
+
+[deps]
+FillArrays = "1a297f60-69ca-5386-bcde-b61e274b549b"
+LRUCache = "8ac3fa9e-de4c-5943-b1dc-09c6b5f20637"
+LazyArrays = "5078a376-72f3-5289-bfd5-ec5146d43c02"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+ZygoteRules = "700de1a5-db45-46bc-99cf-38207098b444"
+
+[compat]
+julia = "1"
+
+[extras]
+AppleAccelerate = "13e28ba4-7ad8-5781-acae-3021b1ed3924"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Tracker = "9f7883ad-71c0-57eb-9f7f-b5c9e6d3789c"
+Yeppp = "6310b701-1812-5374-a82f-9f6f2d54a40a"
+
+[targets]
+test = ["Test", "AppleAccelerate", "Tracker", "ForwardDiff", "Yeppp"]

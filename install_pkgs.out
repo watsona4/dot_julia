@@ -22899,3 +22899,19 @@ Installing Arpack
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
   Building Arpack → `~/.julia/packages/Arpack/cu5By/deps/build.log`
+[master 98b39e596] added package Arpack
+ 3 files changed, 60 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   c5227bcdd..98b39e596  master -> master
+Progress:   3%|█▍                                       |  ETA: 6 days, 13:07:53[K
+Installing ArrayAllez
+ Resolving package versions...
+ Installed ArrayAllez ── v0.0.4
+ Installed LRUCache ──── v1.0.2
+ Installed ZygoteRules ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [42ed035d] + ArrayAllez v0.0.4
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [42ed035d] + ArrayAllez v0.0.4
+  [8ac3fa9e] + LRUCache v1.0.2
+  [700de1a5] + ZygoteRules v0.1.0
