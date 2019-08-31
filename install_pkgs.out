@@ -4676,3 +4676,204 @@ Installing ASE
   Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
   Building PyCall ──────────→ `~/.julia/packages/PyCall/ttONZ/deps/build.log`
   Building ASE ─────────────→ `~/.julia/packages/ASE/GfCjR/deps/build.log`
+[master 5c20a217d] added package ASE
+ 166 files changed, 46470 insertions(+)
+ create mode 100644 packages/ASE/GfCjR/.gitignore
+ create mode 100644 packages/ASE/GfCjR/.travis.yml
+ create mode 100644 packages/ASE/GfCjR/LICENSE.md
+ create mode 100644 packages/ASE/GfCjR/Project.toml
+ create mode 100644 packages/ASE/GfCjR/README.md
+ create mode 100644 packages/ASE/GfCjR/deps/build.jl
+ create mode 100644 packages/ASE/GfCjR/examples/BulkSilicon-Python.ipynb
+ create mode 100644 packages/ASE/GfCjR/examples/EnergyVolume.ipynb
+ create mode 100644 packages/ASE/GfCjR/src/ASE.jl
+ create mode 100644 packages/ASE/GfCjR/src/MatSciPy.jl
+ create mode 100644 packages/ASE/GfCjR/src/models.jl
+ create mode 100644 packages/ASE/GfCjR/src/nlist.jl
+ create mode 100644 packages/ASE/GfCjR/test/runtests.jl
+ create mode 100644 packages/ASE/GfCjR/test/test_asevsjulip.jl
+ create mode 100644 packages/ASE/GfCjR/test/test_calculators.jl
+ create mode 100644 packages/ASE/GfCjR/test/testase.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/.codecov.yml
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/.gitignore
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/.travis.yml
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/LICENSE.md
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/README.md
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/REQUIRE
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/appveyor.yml
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/AlgebraicMultigrid.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/aggregate.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/aggregation.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/classical.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/gallery.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/multilevel.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/preconditioner.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/smoother.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/splitting.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/strength.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/src/utils.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/REQUIRE
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/bug.jld2
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/gmg.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/onetoall.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/randlap.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/ref_R.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/ref_S_test.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/ref_split_test.txt
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/runtests.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/sa_tests.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/test.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/thing.jl
+ create mode 100644 packages/AlgebraicMultigrid/eCNmE/test/thing.txt
+ create mode 100644 packages/Dierckx/9SY4A/.gitignore
+ create mode 100644 packages/Dierckx/9SY4A/.travis.yml
+ create mode 100644 packages/Dierckx/9SY4A/LICENSE.md
+ create mode 100644 packages/Dierckx/9SY4A/NEWS.md
+ create mode 100644 packages/Dierckx/9SY4A/README.md
+ create mode 100644 packages/Dierckx/9SY4A/REQUIRE
+ create mode 100644 packages/Dierckx/9SY4A/appveyor.yml
+ create mode 100755 packages/Dierckx/9SY4A/benchmark.jl
+ create mode 100644 packages/Dierckx/9SY4A/deps/build.jl
+ create mode 100644 packages/Dierckx/9SY4A/src/Dierckx.jl
+ create mode 100755 packages/Dierckx/9SY4A/test/genanswers.py
+ create mode 100755 packages/Dierckx/9SY4A/test/runtests.jl
+ create mode 100644 packages/JuLIP/WO5HB/.gitignore
+ create mode 100644 packages/JuLIP/WO5HB/.travis.yml
+ create mode 100644 packages/JuLIP/WO5HB/LICENSE.md
+ create mode 100644 packages/JuLIP/WO5HB/Project.toml
+ create mode 100644 packages/JuLIP/WO5HB/README.md
+ create mode 100644 packages/JuLIP/WO5HB/data/F_cu.plt
+ create mode 100644 packages/JuLIP/WO5HB/data/F_fe.plt
+ create mode 100644 packages/JuLIP/WO5HB/data/W-e-dens-Wang-2014.plt
+ create mode 100644 packages/JuLIP/WO5HB/data/W-pair-Wang-2014.plt
+ create mode 100644 packages/JuLIP/WO5HB/data/ZrCu.lammps.eam
+ create mode 100644 packages/JuLIP/WO5HB/data/asedata.json
+ create mode 100644 packages/JuLIP/WO5HB/data/emt.json
+ create mode 100644 packages/JuLIP/WO5HB/data/fcu.plt
+ create mode 100644 packages/JuLIP/WO5HB/data/ffe.plt
+ create mode 100644 packages/JuLIP/WO5HB/data/import_asedata.jl
+ create mode 100644 packages/JuLIP/WO5HB/data/pcu.plt
+ create mode 100644 packages/JuLIP/WO5HB/data/pfe.plt
+ create mode 100644 packages/JuLIP/WO5HB/docs/make.jl
+ create mode 100644 packages/JuLIP/WO5HB/docs/src/ImplementationNotes.md
+ create mode 100644 packages/JuLIP/WO5HB/docs/src/expcell.tex
+ create mode 100644 packages/JuLIP/WO5HB/docs/src/index.md
+ create mode 100644 packages/JuLIP/WO5HB/docs/src/inplace.md
+ create mode 100644 packages/JuLIP/WO5HB/docs/src/tempnotes.md
+ create mode 100644 packages/JuLIP/WO5HB/examples/2DLJcluster.ipynb
+ create mode 100644 packages/JuLIP/WO5HB/examples/BulkSilicon.ipynb
+ create mode 100644 packages/JuLIP/WO5HB/examples/Dynamics.ipynb
+ create mode 100644 packages/JuLIP/WO5HB/examples/IFE_Si.ipynb
+ create mode 100644 packages/JuLIP/WO5HB/examples/VFE_Cu.ipynb
+ create mode 100644 packages/JuLIP/WO5HB/examples/ad_pot.jl
+ create mode 100644 packages/JuLIP/WO5HB/examples/ad_profile.jl
+ create mode 100644 packages/JuLIP/WO5HB/examples/multi_lj.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/Constraints.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/Experimental.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/FIO.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/JuLIP.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/Potentials.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/Solve.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/Testing.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/Visualise.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/abstractions.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/adsite.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/analyticeam.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/analyticpotential.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/arrayconversions.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/atoms.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/backup.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/build.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/chemistry.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/cutoffs.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/dofmanagement.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/eam.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/emt.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/expcell.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/hessians.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/mlips.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/multi.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/nbody.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/onebody.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/pairpotentials.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/potentials_base.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/preconditioners.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/splines.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/stillingerweber.jl
+ create mode 100644 packages/JuLIP/WO5HB/src/utils.jl
+ create mode 100644 packages/JuLIP/WO5HB/temp/ad_tests.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/performance.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/runtests.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/test_ad.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/test_asepots.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/test_atoms.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/test_build.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/test_fio.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/test_utils.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/testanalyticpotential.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/testaux.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/testexpvarcell.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/testhessian.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/testpotentials.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/testsolve.jl
+ create mode 100644 packages/JuLIP/WO5HB/test/testvarcell.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/.codecov.yml
+ create mode 100644 packages/NeighbourLists/mW4WV/.gitignore
+ create mode 100644 packages/NeighbourLists/mW4WV/.travis.yml
+ create mode 100644 packages/NeighbourLists/mW4WV/LICENSE.md
+ create mode 100644 packages/NeighbourLists/mW4WV/Project.toml
+ create mode 100644 packages/NeighbourLists/mW4WV/README.md
+ create mode 100644 packages/NeighbourLists/mW4WV/appveyor.yml
+ create mode 100644 packages/NeighbourLists/mW4WV/src/NeighbourLists.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/src/cell_list.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/src/iterators.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/src/mapreduce.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/src/types.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/nn_list.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/profile.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/profile_forces.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/profile_nbody.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/profile_pairlist.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/runtests.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/temp2.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/test_aux.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/test_celllist.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/test_julip.jl
+ create mode 100644 packages/NeighbourLists/mW4WV/test/test_nbody.jl
+To https://github.com/watsona4/dot_julia.git
+   6e417dd71..5c20a217d  master -> master
+Progress:   0%|▎                                        |  ETA: 4 days, 3:02:10[K
+Installing ASTInterpreter
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package ASTInterpreter [e6352adf]:\n ASTInterpreter [e6352adf] log:\n ├─possible versions are: 0.0.1-0.0.4 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.4\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   0%|▎                                        |  ETA: 3 days, 20:36:22[K
+Installing ASTInterpreter2
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package ASTInterpreter2 [e6d88f4b]:\n ASTInterpreter2 [e6d88f4b] log:\n ├─possible versions are: 0.1.0-0.1.1 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.1.0-0.1.1\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   1%|▎                                        |  ETA: 3 days, 14:58:38[K
+Installing AWS
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AWS [fbe9abb3]:\n AWS [fbe9abb3] log:\n ├─possible versions are: [0.1.0-0.1.13, 0.2.0, 0.3.0-0.3.1, 0.4.0, 0.5.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.13, 0.2.0, 0.3.0-0.3.1, 0.4.0, 0.5.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   1%|▎                                        |  ETA: 3 days, 10:01:40[K
+Installing AWSCore
+ Resolving package versions...
+ Installed AWSCore ─── v0.6.0
+ Installed EzXML ───── v0.9.4
+ Installed Retry ───── v0.4.0
+ Installed SymDict ─── v0.3.0
+ Installed XMLDict ─── v0.3.0
+ Installed IterTools ─ v1.2.0
+ Installed LazyJSON ── v0.1.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [4f1ea46c] + AWSCore v0.6.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [4f1ea46c] + AWSCore v0.6.0
+  [8f5d6c58] + EzXML v0.9.4
+  [c8e1da08] + IterTools v1.2.0
+  [fc18253b] + LazyJSON v0.1.1
+  [20febd7b] + Retry v0.4.0
+  [2da68c74] + SymDict v0.3.0
+  [228000da] + XMLDict v0.3.0
+  Building EzXML → `~/.julia/packages/EzXML/G0JeY/deps/build.log`
+  Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+  Building EzXML ──→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
