@@ -32532,3 +32532,26 @@ Installing BitFloats
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [15425d4b] + BitFloats v0.0.2
   [c3b6d118] + BitIntegers v0.2.0
+[master 0f830d9c4] added package BitFloats
+ 16 files changed, 2041 insertions(+)
+ create mode 100644 packages/BitFloats/Fjybc/.travis.yml
+ create mode 100644 packages/BitFloats/Fjybc/LICENSE.md
+ create mode 100644 packages/BitFloats/Fjybc/Project.toml
+ create mode 100644 packages/BitFloats/Fjybc/README.md
+ create mode 100644 packages/BitFloats/Fjybc/src/BitFloats.jl
+ create mode 100644 packages/BitFloats/Fjybc/test/runtests.jl
+ create mode 100644 packages/BitIntegers/xlTFo/.travis.yml
+ create mode 100644 packages/BitIntegers/xlTFo/LICENSE.md
+ create mode 100644 packages/BitIntegers/xlTFo/Project.toml
+ create mode 100644 packages/BitIntegers/xlTFo/README.md
+ create mode 100644 packages/BitIntegers/xlTFo/src/BitIntegers.jl
+ create mode 100644 packages/BitIntegers/xlTFo/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   0931f144c..0f830d9c4  master -> master
+Progress:   7%|███                                      |  ETA: 4 days, 0:33:13[K
+Installing BitIntegers
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [c3b6d118] + BitIntegers v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
