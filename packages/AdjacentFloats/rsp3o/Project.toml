@@ -1,0 +1,6 @@
+desc = "Alternative to nextfloat, prevfloat."
+name = "AdjacentFloats"
+author = "Jeffrey Sarnoff"
+license = "MIT"
+uuid = "fb0cf12a-83d2-11e8-336f-57179044bcc9"
+version = "v0.1.0"
