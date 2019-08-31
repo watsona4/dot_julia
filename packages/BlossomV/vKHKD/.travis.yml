@@ -1,0 +1,20 @@
+language: julia
+
+os:
+  - linux
+  - osx
+
+notifications:
+  email: false
+
+julia:
+  - 0.7
+  - 1.0
+  - nightly
+
+matrix:
+  allow_failures:
+    - julia: nightly
+#script:
+#  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#  - julia -e 'Pkg.init(); Pkg.clone(pwd()); Pkg.test("BlossomV")'

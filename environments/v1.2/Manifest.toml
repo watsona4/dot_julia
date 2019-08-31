@@ -1095,6 +1095,12 @@ git-tree-sha1 = "71fb23581e1f0b0ae7be8ccf0ebfb3600e23ca41"
 uuid = "a74b3585-a348-5f62-a45c-50e91977d574"
 version = "0.5.1"
 
+[[BlossomV]]
+deps = ["BinDeps", "Libdl", "Test"]
+git-tree-sha1 = "91dfebc2b64342b766fc20505e2e5a95fae1184c"
+uuid = "6c721016-9dae-5d90-abf6-67daaccb2332"
+version = "0.4.2"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"

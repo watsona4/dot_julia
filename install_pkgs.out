@@ -33500,3 +33500,82 @@ Installing Blosc
  [no changes]
   Building CMake → `~/.julia/packages/CMake/nSK2r/deps/build.log`
   Building Blosc → `~/.julia/packages/Blosc/lzFr0/deps/build.log`
+[master 0521ab89e] added package Blosc
+ 5 files changed, 37 insertions(+)
+ rewrite compiled/v1.2/CMake/TDh52.ji (96%)
+To https://github.com/watsona4/dot_julia.git
+   87066bc1b..0521ab89e  master -> master
+Progress:   8%|███▎                                     |  ETA: 3 days, 20:36:37[K
+Installing BlossomV
+ Resolving package versions...
+ Installed BlossomV ─ v0.4.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [6c721016] + BlossomV v0.4.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [6c721016] + BlossomV v0.4.2
+  Building BlossomV → `~/.julia/packages/BlossomV/vKHKD/deps/build.log`
+┌ Error: Error building `BlossomV`: 
+│   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+│                                  Dload  Upload   Total   Spent    Left  Speed
+│   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 47922  100 47922    0     0  33418      0  0:00:01  0:00:01 --:--:-- 33418
+│ sh: patch: command not found
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/downloads
+│ [ Info: Downloading file https://pub.ist.ac.at/~vnk/software/blossom5-v2.05.src.tar.gz
+│ [ Info: Done downloading file https://pub.ist.ac.at/~vnk/software/blossom5-v2.05.src.tar.gz
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/src
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps
+│ [ Info: Directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps already exists
+│ [ Info: Changing directory to /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/src/blossom5-v2.05.src
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/usr/lib
+│ ERROR: LoadError: failed process: Process(`sh -c 'patch < ../../sharedlib.patch'`, ProcessExited(127)) [127]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:813 [inlined]
+│  [2] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:728
+│  [3] run(::Cmd) at ./process.jl:726
+│  [4] run(::BinDeps.SynchronousStepCollection) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521
+│  [5] run(::FileRule) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:483
+│  [6] run(::BinDeps.SynchronousStepCollection) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521 (repeats 2 times)
+│  [7] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:944
+│  [8] satisfy!(::BinDeps.LibraryDependency) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [9] top-level scope at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [10] include at ./boot.jl:328 [inlined]
+│  [11] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [12] include(::Module, ::String) at ./Base.jl:31
+│  [13] include(::String) at ./client.jl:431
+│  [14] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/build.jl:72
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building BlossomV → `~/.julia/packages/BlossomV/vKHKD/deps/build.log`
+┌ Error: Error building `BlossomV`: 
+│ sh: patch: command not found
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/downloads
+│ [ Info: Directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/downloads already exists
+│ [ Info: Downloading file https://pub.ist.ac.at/~vnk/software/blossom5-v2.05.src.tar.gz
+│ [ Info: Done downloading file https://pub.ist.ac.at/~vnk/software/blossom5-v2.05.src.tar.gz
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/src
+│ [ Info: Directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/src already exists
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps
+│ [ Info: Directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps already exists
+│ [ Info: Changing directory to /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/src/blossom5-v2.05.src
+│ [ Info: Attempting to create directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/usr/lib
+│ [ Info: Directory /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/usr/lib already exists
+│ ERROR: LoadError: failed process: Process(`sh -c 'patch < ../../sharedlib.patch'`, ProcessExited(127)) [127]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:813 [inlined]
+│  [2] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:728
+│  [3] run(::Cmd) at ./process.jl:726
+│  [4] run(::BinDeps.SynchronousStepCollection) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521
+│  [5] run(::FileRule) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:483
+│  [6] run(::BinDeps.SynchronousStepCollection) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521 (repeats 2 times)
+│  [7] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:944
+│  [8] satisfy!(::BinDeps.LibraryDependency) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [9] top-level scope at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [10] include at ./boot.jl:328 [inlined]
+│  [11] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [12] include(::Module, ::String) at ./Base.jl:31
+│  [13] include(::String) at ./client.jl:431
+│  [14] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/BlossomV/vKHKD/deps/build.jl:72
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
