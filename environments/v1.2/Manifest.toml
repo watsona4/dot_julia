@@ -1047,6 +1047,12 @@ git-tree-sha1 = "cbce79ce8bfa1a576bb0a166ce75e7b92a575098"
 uuid = "ad839575-38b3-5650-b840-f874b8c74a25"
 version = "0.12.0"
 
+[[Blobs]]
+deps = ["MacroTools", "Test"]
+git-tree-sha1 = "13ae82f0eb9c1f5506d9f8c3b2711f0fba49db6a"
+uuid = "163b9779-6631-5f90-a265-3de947924de8"
+version = "0.3.0"
+
 [[BlockArrays]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "a36887ddaaf66b8f5bd017871f239247aa6f459f"

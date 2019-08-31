@@ -33232,3 +33232,101 @@ Installing Blink
   Building MbedTLS → `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
   Building WebIO ──→ `~/.julia/packages/WebIO/2mZPb/deps/build.log`
   Building Blink ──→ `~/.julia/packages/Blink/AO8uN/deps/build.log`
+[master 002199112] added package Blink
+ 90 files changed, 7266 insertions(+)
+ create mode 100644 packages/Blink/AO8uN/.github/FUNDING.yml
+ create mode 100644 packages/Blink/AO8uN/.gitignore
+ create mode 100644 packages/Blink/AO8uN/.travis.yml
+ create mode 100644 packages/Blink/AO8uN/LICENSE.md
+ create mode 100644 packages/Blink/AO8uN/Project.toml
+ create mode 100644 packages/Blink/AO8uN/README.md
+ create mode 100644 packages/Blink/AO8uN/appveyor.yml
+ create mode 100644 packages/Blink/AO8uN/docs/.gitignore
+ create mode 100644 packages/Blink/AO8uN/docs/Project.toml
+ create mode 100644 packages/Blink/AO8uN/docs/make.jl
+ create mode 100644 packages/Blink/AO8uN/docs/src/api.md
+ create mode 100644 packages/Blink/AO8uN/docs/src/communication.md
+ create mode 100644 packages/Blink/AO8uN/docs/src/guide.md
+ create mode 100644 packages/Blink/AO8uN/docs/src/index.md
+ create mode 100644 packages/Blink/AO8uN/res/blink.css
+ create mode 100644 packages/Blink/AO8uN/res/blink.js
+ create mode 100644 packages/Blink/AO8uN/res/julia-icns.icns
+ create mode 100644 packages/Blink/AO8uN/res/reset.css
+ create mode 100644 packages/Blink/AO8uN/res/spinner.css
+ create mode 100644 packages/Blink/AO8uN/src/AtomShell/AtomShell.jl
+ create mode 100644 packages/Blink/AO8uN/src/AtomShell/install.jl
+ create mode 100644 packages/Blink/AO8uN/src/AtomShell/main.js
+ create mode 100644 packages/Blink/AO8uN/src/AtomShell/process.jl
+ create mode 100644 packages/Blink/AO8uN/src/AtomShell/webio.jl
+ create mode 100644 packages/Blink/AO8uN/src/AtomShell/webio.js
+ create mode 100644 packages/Blink/AO8uN/src/AtomShell/window.jl
+ create mode 100644 packages/Blink/AO8uN/src/Blink.jl
+ create mode 100644 packages/Blink/AO8uN/src/content/api.jl
+ create mode 100644 packages/Blink/AO8uN/src/content/config.jl
+ create mode 100644 packages/Blink/AO8uN/src/content/content.jl
+ create mode 100644 packages/Blink/AO8uN/src/content/main.html
+ create mode 100644 packages/Blink/AO8uN/src/content/server.jl
+ create mode 100644 packages/Blink/AO8uN/src/rpc/callbacks.jl
+ create mode 100644 packages/Blink/AO8uN/src/rpc/rpc.jl
+ create mode 100644 packages/Blink/AO8uN/test/AtomShell/window.jl
+ create mode 100644 packages/Blink/AO8uN/test/content/api.jl
+ create mode 100644 packages/Blink/AO8uN/test/content/config.jl
+ create mode 100644 packages/Blink/AO8uN/test/runtests.jl
+ create mode 100644 packages/Blink/AO8uN/test/webio.jl
+ create mode 100644 packages/Mustache/7aKaB/.gitignore
+ create mode 100644 packages/Mustache/7aKaB/.travis.yml
+ create mode 100644 packages/Mustache/7aKaB/LICENSE.md
+ create mode 100644 packages/Mustache/7aKaB/Project.toml
+ create mode 100644 packages/Mustache/7aKaB/README.md
+ create mode 100644 packages/Mustache/7aKaB/REQUIRE
+ create mode 100644 packages/Mustache/7aKaB/appveyor.yml
+ create mode 100644 packages/Mustache/7aKaB/src/Mustache.jl
+ create mode 100644 packages/Mustache/7aKaB/src/context.jl
+ create mode 100644 packages/Mustache/7aKaB/src/parse.jl
+ create mode 100644 packages/Mustache/7aKaB/src/tokens.jl
+ create mode 100644 packages/Mustache/7aKaB/src/utils.jl
+ create mode 100644 packages/Mustache/7aKaB/src/writer.jl
+ create mode 100644 packages/Mustache/7aKaB/test/Mustache_test.jl
+ create mode 100644 packages/Mustache/7aKaB/test/data-frame-test.jl
+ create mode 100644 packages/Mustache/7aKaB/test/examples.jl
+ create mode 100644 packages/Mustache/7aKaB/test/multiple_nested_sections.jl
+ create mode 100644 packages/Mustache/7aKaB/test/mustache_specs.jl
+ create mode 100644 packages/Mustache/7aKaB/test/pm2.jl
+ create mode 100644 packages/Mustache/7aKaB/test/runtests.jl
+ create mode 100644 packages/Mustache/7aKaB/test/spec_comments.jl
+ create mode 100644 packages/Mustache/7aKaB/test/spec_delimiters.jl
+ create mode 100644 packages/Mustache/7aKaB/test/spec_interpolation.jl
+ create mode 100644 packages/Mustache/7aKaB/test/spec_inverted.jl
+ create mode 100644 packages/Mustache/7aKaB/test/spec_lambdas.jl
+ create mode 100644 packages/Mustache/7aKaB/test/spec_partials.jl
+ create mode 100644 packages/Mustache/7aKaB/test/spec_sections.jl
+ create mode 100644 packages/Mustache/7aKaB/test/test-sections-crlf.tpl
+ create mode 100644 packages/Mustache/7aKaB/test/test-sections-lf.tpl
+ create mode 100644 packages/Mustache/7aKaB/test/test.tpl
+ create mode 100644 packages/Mustache/7aKaB/test/test_index.jl
+ create mode 100644 packages/Mux/FeATY/.gitignore
+ create mode 100644 packages/Mux/FeATY/.travis.yml
+ create mode 100644 packages/Mux/FeATY/LICENSE.md
+ create mode 100644 packages/Mux/FeATY/README.md
+ create mode 100644 packages/Mux/FeATY/REQUIRE
+ create mode 100644 packages/Mux/FeATY/appveyor.yml
+ create mode 100644 packages/Mux/FeATY/src/Mux.jl
+ create mode 100644 packages/Mux/FeATY/src/basics.jl
+ create mode 100644 packages/Mux/FeATY/src/examples/basic.jl
+ create mode 100644 packages/Mux/FeATY/src/examples/files.jl
+ create mode 100644 packages/Mux/FeATY/src/examples/mimetypes.jl
+ create mode 100644 packages/Mux/FeATY/src/routing.jl
+ create mode 100644 packages/Mux/FeATY/src/server.jl
+ create mode 100644 packages/Mux/FeATY/src/websockets_integration.jl
+ create mode 100644 packages/Mux/FeATY/test/REQUIRE
+ create mode 100644 packages/Mux/FeATY/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   4ac1f3e12..002199112  master -> master
+Progress:   8%|███▏                                     |  ETA: 3 days, 22:33:11[K
+Installing Blobs
+ Resolving package versions...
+ Installed Blobs ─ v0.3.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [163b9779] + Blobs v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [163b9779] + Blobs v0.3.0
