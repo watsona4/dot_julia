@@ -1,0 +1,8 @@
+name = "Ripemd"
+uuid = "a8a98f30-61ac-11e8-3989-23a341195215"
+authors = ["Guido Kraemer <gdkrmr@users.noreply.github.com>"]
+version = "0.2.0"
+
+[deps]
+Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

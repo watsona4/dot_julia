@@ -28707,3 +28707,43 @@ Installing BSONqs
   [d4e7598c] + BSONqs v0.6.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [d4e7598c] + BSONqs v0.6.0
+[master 275f25e6e] added package BSONqs
+ 24 files changed, 2307 insertions(+)
+ create mode 100644 packages/BSONqs/pq4Nu/.codecov.yml
+ create mode 100644 packages/BSONqs/pq4Nu/.gitignore
+ create mode 100644 packages/BSONqs/pq4Nu/.travis.yml
+ create mode 100644 packages/BSONqs/pq4Nu/LICENSE.md
+ create mode 100644 packages/BSONqs/pq4Nu/Manifest.toml
+ create mode 100644 packages/BSONqs/pq4Nu/Project.toml
+ create mode 100644 packages/BSONqs/pq4Nu/README.md
+ create mode 100644 packages/BSONqs/pq4Nu/appveyor.yml
+ create mode 100644 packages/BSONqs/pq4Nu/src/BSONqs.jl
+ create mode 100644 packages/BSONqs/pq4Nu/src/anonymous.jl
+ create mode 100644 packages/BSONqs/pq4Nu/src/extensions.jl
+ create mode 100644 packages/BSONqs/pq4Nu/src/fileio_interface.jl
+ create mode 100644 packages/BSONqs/pq4Nu/src/intermediate.jl
+ create mode 100644 packages/BSONqs/pq4Nu/src/read.jl
+ create mode 100644 packages/BSONqs/pq4Nu/src/read_direct.jl
+ create mode 100644 packages/BSONqs/pq4Nu/src/write.jl
+ create mode 100644 packages/BSONqs/pq4Nu/test.bson
+ create mode 100644 packages/BSONqs/pq4Nu/test/benchmark.jl
+ create mode 100644 packages/BSONqs/pq4Nu/test/runtests.jl
+ create mode 100644 packages/BSONqs/pq4Nu/test/test.bson
+To https://github.com/watsona4/dot_julia.git
+   b47aae5c4..275f25e6e  master -> master
+Progress:   5%|██                                       |  ETA: 4 days, 23:24:38[K
+Installing BSplines
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BSplines [6267b19e]:\n BSplines [6267b19e] log:\n ├─possible versions are: 0.0.1-0.0.3 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.3\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   5%|██▏                                      |  ETA: 4 days, 22:38:39[K
+Installing BTCParser
+ Resolving package versions...
+ Installed Ripemd ──── v0.2.0
+ Installed BTCParser ─ v0.1.0
+ Installed Base58 ──── v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [27a35ec8] + BTCParser v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [27a35ec8] + BTCParser v0.1.0
+  [a832ea1e] + Base58 v0.2.0
+  [92ef3814] + Ripemd v0.2.0

@@ -674,11 +674,23 @@ git-tree-sha1 = "4394bfd7dd78a192adbc76bd234aafa5e96af5b8"
 uuid = "d4e7598c-6ff7-5b24-8fdc-8d1c0c33c9cf"
 version = "0.6.0"
 
+[[BTCParser]]
+deps = ["Base58", "Printf", "Ripemd", "SHA"]
+git-tree-sha1 = "764854abb3f3298b44acb872cb3e080cb3dcffed"
+uuid = "27a35ec8-0f55-11e9-2fe5-1b2fd0e5b6fd"
+version = "0.1.0"
+
 [[BandedMatrices]]
 deps = ["FillArrays", "LazyArrays", "LinearAlgebra", "MatrixFactorizations", "Random", "SparseArrays"]
 git-tree-sha1 = "cdda54b29a1c52fa33defc0c61e3b8bb61f73d15"
 uuid = "aae01518-5342-5314-be14-df237901396f"
 version = "0.10.1"
+
+[[Base58]]
+deps = ["Base64", "SHA", "Test"]
+git-tree-sha1 = "928c15a6a41d2f4eec8e8cf2b911e2b31b78d71f"
+uuid = "a832ea1e-0ca7-55ca-a41a-6462721bb861"
+version = "0.2.0"
 
 [[Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
@@ -2265,6 +2277,12 @@ deps = ["DocStringExtensions", "LightXML", "LinearAlgebra", "LoopThrottle", "Ran
 git-tree-sha1 = "8280c2e617f1872ab13bb9d077b83fa32b9659d4"
 uuid = "366cf18f-59d5-5db9-a4de-86a9f6786172"
 version = "2.1.0"
+
+[[Ripemd]]
+deps = ["Compat", "Test"]
+git-tree-sha1 = "40e40dc422f514192c56b50a7d2d6f4e08ad859e"
+uuid = "92ef3814-971d-54d3-b0c1-59b1d13fee15"
+version = "0.2.0"
 
 [[Rmath]]
 deps = ["BinaryProvider", "Libdl", "Random", "Statistics", "Test"]
