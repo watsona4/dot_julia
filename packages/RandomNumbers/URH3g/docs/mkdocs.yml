@@ -1,0 +1,45 @@
+site_name:        RandomNumbers.jl
+repo_url:         https://github.com/sunoru/RandomNumbers.jl
+edit_uri:         edit/master/docs/src/
+site_description: Random number generators for Julia language.
+site_author:      Sunoru
+
+theme: material
+
+extra:
+  palette:
+    primary: 'indigo'
+    accent:  'blue'
+
+extra_css:
+  - assets/Documenter.css
+
+markdown_extensions:
+  - codehilite
+  - extra
+  - tables
+  - fenced_code
+  - mdx_math
+  - admonition
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML
+  - assets/mathjaxhelper.js
+
+docs_dir: 'build'
+
+pages:
+- Home: index.md
+- Manual:
+    - Basics: man/basics.md
+    - Benchmark: man/benchmark.md
+    - PCG Family: man/pcg.md
+    - Mersenne Twisters: man/mersenne-twisters.md
+    - Random123 Family: man/random123.md
+    - Xorshift Family: man/xorshifts.md
+- Library:
+    - RandomNumbers: lib/random-numbers.md
+    - PCG: lib/pcg.md
+    - MersenneTwisters: lib/mersenne-twisters.md
+    - Random123: lib/random123.md
+    - Xorshifts: lib/xorshifts.md

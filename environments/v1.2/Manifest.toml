@@ -614,6 +614,12 @@ git-tree-sha1 = "bda0f3ddd79f2bba264783f705a0c59157f0f36f"
 uuid = "2e2ca445-9e14-5b13-8677-4410f177f82b"
 version = "0.4.4"
 
+[[BAT]]
+deps = ["ArgCheck", "ArraysOfArrays", "Clustering", "Colors", "Cuba", "DataStructures", "Distributed", "Distributions", "DoubleFloats", "ElasticArrays", "FunctionWrappers", "IntervalSets", "LaTeXStrings", "LinearAlgebra", "Markdown", "PDMats", "ParallelProcessingTools", "Parameters", "Printf", "ProgressMeter", "Random", "Random123", "RecipesBase", "Requires", "StaticArrays", "Statistics", "StatsBase", "Tables", "TypedTables", "UnsafeArrays"]
+git-tree-sha1 = "3a950fd8cba527d509b6ce70b82826b08b347b15"
+uuid = "c0cd4b16-88b7-57fa-983b-ab80aecada7e"
+version = "0.3.0"
+
 [[BSON]]
 deps = ["Profile", "Test"]
 git-tree-sha1 = "6453cef4f9cb8ded8e28e4d6d12e11e20eb692ea"
@@ -873,6 +879,12 @@ git-tree-sha1 = "46b48742a84bb839e74215b7e468a4a1c6ba30f9"
 uuid = "3a865a2d-5b23-5a0f-bc46-62713ec82fae"
 version = "1.2.1"
 
+[[Cuba]]
+deps = ["BinaryProvider", "Distributed", "Libdl", "LinearAlgebra", "Printf", "Test"]
+git-tree-sha1 = "556cfa54b4b4434b4e0eb99c50fcd09ad73f92ad"
+uuid = "8a292aeb-7a57-582c-b821-06e4c11590b1"
+version = "2.0.0"
+
 [[CustomUnitRanges]]
 deps = ["Test"]
 git-tree-sha1 = "0a106457a1831555857e18ac9617279c22fc393b"
@@ -1026,6 +1038,12 @@ git-tree-sha1 = "591ad14ca2c777b07463b6bde3afb2bfe852e1be"
 uuid = "5b8099bc-c8ec-5219-889f-1d9e522a28bf"
 version = "0.1.0"
 
+[[DoubleFloats]]
+deps = ["GenericSVD", "GenericSchur", "LinearAlgebra", "Polynomials", "Quadmath", "Random", "Requires"]
+git-tree-sha1 = "dd2b360df2bbbc7f0f76e1d5a872dc9448948c83"
+uuid = "497a8b3b-efae-58df-a0af-a86822472b78"
+version = "0.9.7"
+
 [[DualMatrixTools]]
 deps = ["DualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "de17ad165602c7e57dd65e593aa2c7b880dad6c5"
@@ -1043,6 +1061,11 @@ deps = ["Dates", "DelimitedFiles", "LeapSeconds", "OptionalData", "RemoteFiles",
 git-tree-sha1 = "7ceae02eea4ffa57be45c47b237aca093926badc"
 uuid = "732a3c5d-d6c0-58bc-adb1-1b51709a25e2"
 version = "0.4.1"
+
+[[ElasticArrays]]
+git-tree-sha1 = "d9c079b747b9e9985d83e806bb77e41d149c959a"
+uuid = "fdbdab4c-e67f-52f5-8c3f-e7b388dad3d4"
+version = "0.4.0"
 
 [[Electron]]
 deps = ["Base64", "JSON", "Sockets", "URIParser"]
@@ -1937,6 +1960,12 @@ git-tree-sha1 = "7da3e7e1a58cffbf10177553ae95f17b92516912"
 uuid = "5432bcbf-9aad-5242-b902-cca2824c8663"
 version = "0.4.2"
 
+[[ParallelProcessingTools]]
+deps = ["Distributed"]
+git-tree-sha1 = "f2d84e92177cbffd911a228f55606b46745941d2"
+uuid = "8e8a01fc-6193-5ca1-a2f1-20776dae4199"
+version = "0.4.0"
+
 [[Parameters]]
 deps = ["Markdown", "OrderedCollections", "REPL", "Test"]
 git-tree-sha1 = "70bdbfb2bceabb15345c0b54be4544813b3444e4"
@@ -2032,6 +2061,12 @@ git-tree-sha1 = "3ce467a8e76c6030d4c3786e7d3a73442017cdc0"
 uuid = "1fd47b50-473d-5c70-9696-f719f8f3bcdc"
 version = "2.0.3"
 
+[[Quadmath]]
+deps = ["Random", "Requires"]
+git-tree-sha1 = "0d177ab3217bd6347d01bdf56e5da0571222d7f3"
+uuid = "be4d8f0f-7fa4-5f49-b795-2f01399ab2dd"
+version = "0.5.0"
+
 [[REPL]]
 deps = ["InteractiveUtils", "Markdown", "Sockets"]
 uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
@@ -2039,6 +2074,18 @@ uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 [[Random]]
 deps = ["Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[[Random123]]
+deps = ["Libdl", "Random", "RandomNumbers", "Test"]
+git-tree-sha1 = "efa7c17c4b9150a3f7083228d73fa77557ce0edc"
+uuid = "74087812-796a-5b5d-8853-05524746bad3"
+version = "1.2.0"
+
+[[RandomNumbers]]
+deps = ["Random", "Requires"]
+git-tree-sha1 = "1417be19c15706c1584d01e32662eb640a4cc908"
+uuid = "e6cf234a-135c-5ec9-84dd-332b85af5143"
+version = "1.3.0"
 
 [[RangeArrays]]
 deps = ["Compat"]
@@ -2373,6 +2420,12 @@ version = "0.3.0"
 git-tree-sha1 = "d539b357e7695d80c75f5b066cec5d8c45886ab2"
 uuid = "94a5cd58-49a0-5741-bd07-fa4f4be8babf"
 version = "1.1.0"
+
+[[TypedTables]]
+deps = ["SplitApplyCombine", "Tables", "Unicode"]
+git-tree-sha1 = "519533acaccc7d84e214426f69820489e1f46617"
+uuid = "9d95f2ec-7b3d-5a63-8d20-e2491e220bb9"
+version = "1.2.0"
 
 [[URIParser]]
 deps = ["Test", "Unicode"]

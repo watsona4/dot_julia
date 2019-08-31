@@ -26681,3 +26681,51 @@ Installing BARON
   [2e2ca445] + BARON v0.4.4
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [2e2ca445] + BARON v0.4.4
+[master 9fe34b4d9] added package BARON
+ 17 files changed, 642 insertions(+)
+ create mode 100644 packages/BARON/ZMYno/.gitignore
+ create mode 100644 packages/BARON/ZMYno/LICENSE
+ create mode 100644 packages/BARON/ZMYno/README.md
+ create mode 100644 packages/BARON/ZMYno/REQUIRE
+ create mode 100644 packages/BARON/ZMYno/src/BARON.jl
+ create mode 100644 packages/BARON/ZMYno/test/REQUIRE
+ create mode 100644 packages/BARON/ZMYno/test/bad_expressions.jl
+ create mode 100644 packages/BARON/ZMYno/test/gear.jl
+ create mode 100644 packages/BARON/ZMYno/test/minlp.jl
+ create mode 100644 packages/BARON/ZMYno/test/nlp1.jl
+ create mode 100644 packages/BARON/ZMYno/test/nlp2.jl
+ create mode 100644 packages/BARON/ZMYno/test/pool1.jl
+ create mode 100644 packages/BARON/ZMYno/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   ba28028ed..9fe34b4d9  master -> master
+Progress:   5%|█▉                                       |  ETA: 5 days, 5:45:42[K
+Installing BAT
+ Resolving package versions...
+ Installed RandomNumbers ─────────── v1.3.0
+ Installed ParallelProcessingTools ─ v0.4.0
+ Installed TypedTables ───────────── v1.2.0
+ Installed Cuba ──────────────────── v2.0.0
+ Installed Quadmath ──────────────── v0.5.0
+ Installed DoubleFloats ──────────── v0.9.7
+ Installed Random123 ─────────────── v1.2.0
+ Installed BAT ───────────────────── v0.3.0
+ Installed ElasticArrays ─────────── v0.4.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [c0cd4b16] + BAT v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [c0cd4b16] + BAT v0.3.0
+  [8a292aeb] + Cuba v2.0.0
+  [497a8b3b] + DoubleFloats v0.9.7
+  [fdbdab4c] + ElasticArrays v0.4.0
+  [8e8a01fc] + ParallelProcessingTools v0.4.0
+  [be4d8f0f] + Quadmath v0.5.0
+  [74087812] + Random123 v1.2.0
+  [e6cf234a] + RandomNumbers v1.3.0
+  [9d95f2ec] + TypedTables v1.2.0
+  Building Cuba ─────→ `~/.julia/packages/Cuba/084zH/deps/build.log`
+  Building Random123 → `~/.julia/packages/Random123/Y2Du3/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building Cuba ────────────→ `~/.julia/packages/Cuba/084zH/deps/build.log`
+  Building Random123 ───────→ `~/.julia/packages/Random123/Y2Du3/deps/build.log`
