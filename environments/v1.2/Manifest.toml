@@ -18,6 +18,12 @@ git-tree-sha1 = "8b53ae0743849e36eeeaca9af81917158f356a76"
 uuid = "3868d828-178d-56af-83e1-d523478a73cd"
 version = "0.0.1"
 
+[[AMD]]
+deps = ["Libdl", "LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "7b8e22e91af4ccbfbcae87c36d141441defe6f0f"
+uuid = "14f7f29c-3bd6-536c-9a0b-7339e30b5a3e"
+version = "0.3.1"
+
 [[AbstractFFTs]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "380e36c66edfa099cd90116b24c1ce8cafccac40"
