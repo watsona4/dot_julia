@@ -1,0 +1,9 @@
+# Cbc fails to build on Windows: https://github.com/JuliaOpt/Cbc.jl/issues/56
+# Cbc
+# Clp has unexplained missing symbol errors: https://github.com/JuliaOpt/JuMP.jl/pull/1477#issuecomment-423249985
+# Clp
+GLPKMathProgInterface
+Ipopt
+ECOS
+SCS
+OffsetArrays 0.2.13

@@ -1,0 +1,8 @@
+*.swp
+*.lp
+*.mps
+.DS_Store
+*.sublime*
+*.opf
+*.cov
+Manifest.toml

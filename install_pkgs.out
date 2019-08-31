@@ -9013,3 +9013,53 @@ Installing AllanDeviations
   [7e732cdd] + AllanDeviations v0.2.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [7e732cdd] + AllanDeviations v0.2.0
+[master 34afea3e5] added package AllanDeviations
+ 37 files changed, 1436 insertions(+)
+ create mode 100644 packages/AllanDeviations/9TiHD/.gitattributes
+ create mode 100644 packages/AllanDeviations/9TiHD/.gitignore
+ create mode 100644 packages/AllanDeviations/9TiHD/.travis.yml
+ create mode 100644 packages/AllanDeviations/9TiHD/LICENSE
+ create mode 100644 packages/AllanDeviations/9TiHD/Project.toml
+ create mode 100644 packages/AllanDeviations/9TiHD/README.md
+ create mode 100644 packages/AllanDeviations/9TiHD/REQUIRE
+ create mode 100644 packages/AllanDeviations/9TiHD/appveyor.yml
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/make.jl
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/assets/AllanDeviationsLogo.png
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/assets/DeviationResults.png
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/assets/Logo.png
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/assets/allanDevPlot.png
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/assets/favicon.ico
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/index.md
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/installation.md
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/lib/allandev.md
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/lib/apiguide.md
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/lib/hadamarddev.md
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/lib/mallandev.md
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/lib/mtie.md
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/lib/timedev.md
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/lib/totaldev.md
+ create mode 100644 packages/AllanDeviations/9TiHD/doc/src/quickstart.md
+ create mode 100644 packages/AllanDeviations/9TiHD/src/AllanDeviations.jl
+ create mode 100644 packages/AllanDeviations/9TiHD/src/dev_allan.jl
+ create mode 100644 packages/AllanDeviations/9TiHD/src/dev_hadamard.jl
+ create mode 100644 packages/AllanDeviations/9TiHD/src/dev_mallan.jl
+ create mode 100644 packages/AllanDeviations/9TiHD/src/dev_mtie.jl
+ create mode 100644 packages/AllanDeviations/9TiHD/src/dev_time.jl
+ create mode 100644 packages/AllanDeviations/9TiHD/src/dev_total.jl
+ create mode 100644 packages/AllanDeviations/9TiHD/test/runtests.jl
+ create mode 100644 packages/AllanDeviations/9TiHD/test/test_general.jl
+To https://github.com/watsona4/dot_julia.git
+   78004026c..34afea3e5  master -> master
+Progress:   2%|▉                                        |  ETA: 2 days, 6:06:19[K
+Installing Alpine
+ Resolving package versions...
+ Installed ReverseDiffSparse ─ v0.8.6
+ Installed Alpine ──────────── v0.1.9
+ Installed JuMP ────────────── v0.18.6
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [07493b3f] + Alpine v0.1.9
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [07493b3f] + Alpine v0.1.9
+  [4076af6c] + JuMP v0.18.6
+  [89212889] + ReverseDiffSparse v0.8.6
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`

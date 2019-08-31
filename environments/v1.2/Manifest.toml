@@ -246,6 +246,12 @@ git-tree-sha1 = "0262eecc59acc35103061f0fbcadced195961ad3"
 uuid = "7e732cdd-9a46-54ef-932c-559ab8d83ddb"
 version = "0.2.0"
 
+[[Alpine]]
+deps = ["Distributed", "JuMP", "LinearAlgebra", "MathProgBase", "Printf", "Random", "SparseArrays", "Statistics"]
+git-tree-sha1 = "af79e0b0b6d59819ae3d0ed61e6dae9110045c49"
+uuid = "07493b3f-dabb-5b16-a503-4139292d7dd4"
+version = "0.1.9"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -843,6 +849,12 @@ git-tree-sha1 = "2a9bcb7006a0159194d54c9c54c2b933b77ea41d"
 uuid = "945c410c-986d-556a-acb1-167a618e0462"
 version = "0.8.2"
 
+[[JuMP]]
+deps = ["Calculus", "Compat", "ForwardDiff", "MathProgBase", "ReverseDiffSparse"]
+git-tree-sha1 = "8e1aea93f99e1141a8053e1d542d4534f62fe43f"
+uuid = "4076af6c-e467-56ae-b986-b466b2749572"
+version = "0.18.6"
+
 [[LLVM]]
 deps = ["CEnum", "Libdl", "Printf", "Unicode"]
 git-tree-sha1 = "52cfea426bd248a427aace7d88eb5d45b84ea297"
@@ -1161,6 +1173,12 @@ deps = ["Test"]
 git-tree-sha1 = "56bfdfca33e70883e96fd398548ebd4d405b41fe"
 uuid = "20febd7b-183b-5ae2-ac4a-720e7ce64774"
 version = "0.4.0"
+
+[[ReverseDiffSparse]]
+deps = ["Calculus", "Compat", "DataStructures", "ForwardDiff", "MathProgBase", "NaNMath"]
+git-tree-sha1 = "cbbc2c710abea5cfe71459ce4711d80a212aac5a"
+uuid = "89212889-6d3f-5f97-b412-7825138f6c9c"
+version = "0.8.6"
 
 [[Rmath]]
 deps = ["BinaryProvider", "Libdl", "Random", "Statistics", "Test"]
