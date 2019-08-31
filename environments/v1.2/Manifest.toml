@@ -1952,6 +1952,12 @@ git-tree-sha1 = "2d576efc31a37bb8818a8a96abcdf0e3944cb8a0"
 uuid = "7d11a335-8259-52c9-8750-e30c45c66484"
 version = "0.1.0"
 
+[[ConceptnetNumberbatch]]
+deps = ["CodecZlib", "HDF5", "Languages", "Pkg", "Random", "Serialization", "Test", "TranscodingStreams"]
+git-tree-sha1 = "4c116b1b8bb103056face999b60b4547339a0c01"
+uuid = "6bdbf80b-0969-53f9-8443-f41591bd656e"
+version = "0.1.5"
+
 [[Conda]]
 deps = ["JSON", "VersionParsing"]
 git-tree-sha1 = "9a11d428dcdc425072af4aea19ab1e8c3e01c032"
@@ -3161,6 +3167,12 @@ deps = ["Test"]
 git-tree-sha1 = "ec5a59b498330ac1e5b1c505c46dc53dcefdf90e"
 uuid = "984bce1d-4616-540c-a9ee-88d1112d94c9"
 version = "0.4.3"
+
+[[Languages]]
+deps = ["JSON", "Test"]
+git-tree-sha1 = "fc6ee05e35074a66dc12a716065a25d9deece6fb"
+uuid = "8ef0a80b-9436-5d2c-a485-80b904378c43"
+version = "0.4.2"
 
 [[Lazy]]
 deps = ["Compat", "MacroTools", "Test"]
