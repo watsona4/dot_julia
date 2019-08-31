@@ -30110,3 +30110,159 @@ Installing BeliefUpdaters
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master 28d551467] added package BeliefUpdaters
+ 137 files changed, 10474 insertions(+)
+ create mode 100644 packages/BeliefUpdaters/poIxl/.gitignore
+ create mode 100644 packages/BeliefUpdaters/poIxl/.travis.yml
+ create mode 100644 packages/BeliefUpdaters/poIxl/LICENSE
+ create mode 100644 packages/BeliefUpdaters/poIxl/Project.toml
+ create mode 100644 packages/BeliefUpdaters/poIxl/README.md
+ create mode 100644 packages/BeliefUpdaters/poIxl/docs/make.jl
+ create mode 100644 packages/BeliefUpdaters/poIxl/docs/mkdocs.yml
+ create mode 100644 packages/BeliefUpdaters/poIxl/docs/src/discrete.md
+ create mode 100644 packages/BeliefUpdaters/poIxl/docs/src/index.md
+ create mode 100644 packages/BeliefUpdaters/poIxl/docs/src/k_previous_observations.md
+ create mode 100644 packages/BeliefUpdaters/poIxl/docs/src/previous_observation.md
+ create mode 100644 packages/BeliefUpdaters/poIxl/docs/src/void.md
+ create mode 100644 packages/BeliefUpdaters/poIxl/src/BeliefUpdaters.jl
+ create mode 100644 packages/BeliefUpdaters/poIxl/src/discrete.jl
+ create mode 100644 packages/BeliefUpdaters/poIxl/src/k_previous_observations.jl
+ create mode 100644 packages/BeliefUpdaters/poIxl/src/previous_observation.jl
+ create mode 100644 packages/BeliefUpdaters/poIxl/src/void.jl
+ create mode 100644 packages/BeliefUpdaters/poIxl/test/runtests.jl
+ create mode 100644 packages/BeliefUpdaters/poIxl/test/test_belief.jl
+ create mode 100644 packages/BeliefUpdaters/poIxl/test/test_k_previous_observations_belief.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/.codecov.yml
+ create mode 100644 packages/POMDPModelTools/0Mrir/.gitignore
+ create mode 100644 packages/POMDPModelTools/0Mrir/.travis.yml
+ create mode 100644 packages/POMDPModelTools/0Mrir/LICENSE.md
+ create mode 100644 packages/POMDPModelTools/0Mrir/Project.toml
+ create mode 100644 packages/POMDPModelTools/0Mrir/README.md
+ create mode 100644 packages/POMDPModelTools/0Mrir/appveyor.yml
+ create mode 100644 packages/POMDPModelTools/0Mrir/docs/make.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/docs/mkdocs.yml
+ create mode 100644 packages/POMDPModelTools/0Mrir/docs/src/convenience.md
+ create mode 100644 packages/POMDPModelTools/0Mrir/docs/src/distributions.md
+ create mode 100644 packages/POMDPModelTools/0Mrir/docs/src/index.md
+ create mode 100644 packages/POMDPModelTools/0Mrir/docs/src/interface_extensions.md
+ create mode 100644 packages/POMDPModelTools/0Mrir/docs/src/model_transformations.md
+ create mode 100644 packages/POMDPModelTools/0Mrir/docs/src/policy_evaluation.md
+ create mode 100644 packages/POMDPModelTools/0Mrir/docs/src/utility_types.md
+ create mode 100644 packages/POMDPModelTools/0Mrir/docs/src/visualization.md
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/POMDPModelTools.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/convenient_implementations.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/distributions/bool.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/distributions/deterministic.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/distributions/pretty_printing.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/distributions/sparse_cat.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/distributions/uniform.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/distributions/weighted_iteration.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/fully_observable_pomdp.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/generative_belief_mdp.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/info.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/obs_weight.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/ordered_spaces.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/policy_evaluation.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/sparse_tabular.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/terminal_state.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/underlying_mdp.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/src/visualization.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/runtests.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_bool.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_deterministic.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_evaluation.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_fully_observable_pomdp.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_generative_belief_mdp.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_implementations.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_info.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_obs_weight.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_ordered_spaces.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_pretty_printing.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_sparse_cat.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_tabular.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_terminal_state.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_underlying_mdp.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_uniform.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_visualization.jl
+ create mode 100644 packages/POMDPModelTools/0Mrir/test/test_weighted_iteration.jl
+ create mode 100644 packages/POMDPs/JiYXY/.gitignore
+ create mode 100644 packages/POMDPs/JiYXY/.travis.yml
+ create mode 100644 packages/POMDPs/JiYXY/LICENSE.md
+ create mode 100644 packages/POMDPs/JiYXY/NEWS.md
+ create mode 100644 packages/POMDPs/JiYXY/README.md
+ create mode 100644 packages/POMDPs/JiYXY/REQUIRE
+ create mode 100644 packages/POMDPs/JiYXY/docs/make.jl
+ create mode 100644 packages/POMDPs/JiYXY/docs/mkdocs.yml
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/api.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/concepts.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/def_pomdp.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/def_solver.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/def_updater.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/explicit.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/faq.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/figures/concepts.png
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/figures/interface_relationships.svg
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/figures/requirements_info_gw.png
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/figures/requirements_info_new.png
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/generative.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/get_started.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/index.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/install.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/interfaces.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/requirements.md
+ create mode 100644 packages/POMDPs/JiYXY/docs/src/specifying_requirements.md
+ create mode 100644 packages/POMDPs/JiYXY/examples/GridWorld.ipynb
+ create mode 100644 packages/POMDPs/JiYXY/examples/Tiger.ipynb
+ create mode 100644 packages/POMDPs/JiYXY/examples/gw.jpg
+ create mode 100644 packages/POMDPs/JiYXY/examples/rl-tuto/eve.png
+ create mode 100644 packages/POMDPs/JiYXY/examples/rl-tuto/initial_state.png
+ create mode 100644 packages/POMDPs/JiYXY/examples/rl-tuto/plant.png
+ create mode 100644 packages/POMDPs/JiYXY/examples/rl-tuto/reinforcement_learning_tutorial.ipynb
+ create mode 100644 packages/POMDPs/JiYXY/examples/rl-tuto/render.jl
+ create mode 100644 packages/POMDPs/JiYXY/examples/rl-tuto/sample_image.png
+ create mode 100644 packages/POMDPs/JiYXY/examples/rl-tuto/sample_image_copy.png
+ create mode 100644 packages/POMDPs/JiYXY/examples/rl-tuto/wall_e.png
+ create mode 100644 packages/POMDPs/JiYXY/src/POMDPs.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/belief.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/constants.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/distribution.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/generative.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/generative_impl.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/io.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/policy.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/pomdp.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/requirements_interface.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/requirements_internals.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/requirements_printing.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/simulator.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/solver.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/space.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/type_inferrence.jl
+ create mode 100644 packages/POMDPs/JiYXY/src/utils.jl
+ create mode 100644 packages/POMDPs/JiYXY/test/runtests.jl
+ create mode 100644 packages/POMDPs/JiYXY/test/test_generative.jl
+ create mode 100644 packages/POMDPs/JiYXY/test/test_generative_backedges.jl
+ create mode 100644 packages/POMDPs/JiYXY/test/test_inferrence.jl
+ create mode 100644 packages/POMDPs/JiYXY/test/test_requirements.jl
+ create mode 100644 packages/POMDPs/JiYXY/test/test_tutorials.jl
+To https://github.com/watsona4/dot_julia.git
+   7dcc6480d..28d551467  master -> master
+Progress:   6%|██▌                                      |  ETA: 4 days, 10:52:57[K
+Installing Benchmark
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package DataArrays [0fe7c1db]:\n DataArrays [0fe7c1db] log:\n ├─possible versions are: [0.0.1-0.0.3, 0.1.0-0.1.12, 0.2.0-0.2.20, 0.3.0-0.3.12, 0.4.0-0.4.1, 0.5.0-0.5.3, 0.6.0-0.6.2, 0.7.0] or uninstalled\n ├─restricted by compatibility requirements with Benchmark [de6e09b3] to versions: [0.0.1-0.0.3, 0.1.0-0.1.12, 0.2.0-0.2.20, 0.3.0-0.3.12, 0.4.0-0.4.1, 0.5.0-0.5.3, 0.6.0-0.6.2]\n │ └─Benchmark [de6e09b3] log:\n │   ├─possible versions are: [0.0.1-0.0.3, 0.1.0] or uninstalled\n │   └─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.3, 0.1.0]\n └─restricted by julia compatibility requirements to versions: 0.7.0 or uninstalled — no versions left", nothing)
+Progress:   6%|██▌                                      |  ETA: 4 days, 10:18:59[K
+Installing BenchmarkLite
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package BenchmarkLite [db6c7170]:\n BenchmarkLite [db6c7170] log:\n ├─possible versions are: [0.0.1, 0.1.0-0.1.2] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0-0.1.2]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   6%|██▌                                      |  ETA: 4 days, 9:45:13[K
+Installing BenchmarkProfiles
+ Resolving package versions...
+ Installed BenchmarkProfiles ─ v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [ecbce9bc] + BenchmarkProfiles v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [ecbce9bc] + BenchmarkProfiles v0.2.0
+  Building GR ────→ `~/.julia/packages/GR/ZI5OE/deps/build.log`
+  Building FFMPEG → `~/.julia/packages/FFMPEG/9JQpZ/deps/build.log`
+  Building Plots ─→ `~/.julia/packages/Plots/Ih71u/deps/build.log`

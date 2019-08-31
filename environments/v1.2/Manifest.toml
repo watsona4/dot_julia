@@ -809,6 +809,12 @@ git-tree-sha1 = "65bda62fef51da730e4bbba14aad7ae3abb38862"
 uuid = "8bb6e9a1-7d73-552c-a44a-e5dc5634aac4"
 version = "0.1.2"
 
+[[BenchmarkProfiles]]
+deps = ["NaNMath", "Plots", "Printf", "Test"]
+git-tree-sha1 = "f363229286d2726021a7880383f8bff240062e41"
+uuid = "ecbce9bc-3e5e-569d-9e29-55181f61f8d0"
+version = "0.2.0"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
