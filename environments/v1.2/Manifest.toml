@@ -222,6 +222,12 @@ git-tree-sha1 = "3c085724a521a5635069f6ebcf2268fef61cfcb7"
 uuid = "46ada45e-f475-11e8-01d0-f70cc89e6671"
 version = "1.1.7"
 
+[[AlgebraResultTypes]]
+deps = ["Random", "Test"]
+git-tree-sha1 = "35b4bb7faf87732176dd7f5404bca4e4ce1a0371"
+uuid = "32e1273b-95f2-5990-a28e-8939b2e70f37"
+version = "0.2.0"
+
 [[AlgebraicMultigrid]]
 deps = ["Compat", "IterativeSolvers", "Random"]
 git-tree-sha1 = "a26560b0f8cb9104d96715c32f7c272504631ea9"

@@ -1,0 +1,11 @@
+name = "AlgebraResultTypes"
+uuid = "32e1273b-95f2-5990-a28e-8939b2e70f37"
+authors = ["Tamas K. Papp <tkpapp@gmail.com>"]
+
+[extras]
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "ForwardDiff", "Random"]
