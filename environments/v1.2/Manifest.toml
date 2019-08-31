@@ -797,6 +797,12 @@ git-tree-sha1 = "039106453269e691fb54fb14e2b40f6c26091f62"
 uuid = "0bcc2ff6-69eb-520d-bede-0374fc5bd2fd"
 version = "1.1.0"
 
+[[BedgraphFiles]]
+deps = ["Bedgraph", "DataValues", "FileIO", "IterableTables", "IteratorInterfaceExtensions", "Requires", "TableShowUtils", "TableTraits", "TableTraitsUtils"]
+git-tree-sha1 = "84c5b891253926aa32dfae3f79622f9528c73293"
+uuid = "85eb9095-274b-55ce-be28-9e90f41ac741"
+version = "2.1.2"
+
 [[BenchmarkTools]]
 deps = ["JSON", "Printf", "Statistics", "Test"]
 git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
@@ -2609,6 +2615,12 @@ repo-rev = "master"
 repo-url = "https://github.com/wildart/TOML.jl.git"
 uuid = "191fdcea-f9f2-43e0-b922-d33f71e2abc3"
 version = "0.4.0"
+
+[[TableShowUtils]]
+deps = ["DataValues", "Dates", "JSON", "Markdown", "Test"]
+git-tree-sha1 = "14c54e1e96431fb87f0d2f5983f090f1b9d06457"
+uuid = "5e66a065-1f0a-5976-b372-e0b8c017ca10"
+version = "0.2.5"
 
 [[TableTraits]]
 deps = ["IteratorInterfaceExtensions"]

@@ -30036,3 +30036,34 @@ Installing Bedgraph
   [0bcc2ff6] + Bedgraph v1.1.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [0bcc2ff6] + Bedgraph v1.1.0
+[master 253983f55] added package Bedgraph
+ 21 files changed, 1214 insertions(+)
+ create mode 100644 packages/Bedgraph/1afDP/.codecov.yml
+ create mode 100644 packages/Bedgraph/1afDP/.gitignore
+ create mode 100644 packages/Bedgraph/1afDP/.travis.yml
+ create mode 100644 packages/Bedgraph/1afDP/LICENSE.md
+ create mode 100644 packages/Bedgraph/1afDP/Project.toml
+ create mode 100644 packages/Bedgraph/1afDP/README.md
+ create mode 100644 packages/Bedgraph/1afDP/REQUIRE
+ create mode 100644 packages/Bedgraph/1afDP/appveyor.yml
+ create mode 100644 packages/Bedgraph/1afDP/src/Bedgraph.jl
+ create mode 100644 packages/Bedgraph/1afDP/src/header.jl
+ create mode 100644 packages/Bedgraph/1afDP/src/helpers.jl
+ create mode 100644 packages/Bedgraph/1afDP/src/reader.jl
+ create mode 100644 packages/Bedgraph/1afDP/src/record.jl
+ create mode 100644 packages/Bedgraph/1afDP/src/writer.jl
+ create mode 100644 packages/Bedgraph/1afDP/test/data-headerless.bedgraph
+ create mode 100644 packages/Bedgraph/1afDP/test/data.bedgraph
+ create mode 100644 packages/Bedgraph/1afDP/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   62dd70b46..253983f55  master -> master
+Progress:   6%|██▌                                      |  ETA: 4 days, 11:24:03[K
+Installing BedgraphFiles
+ Resolving package versions...
+ Installed BedgraphFiles ── v2.1.2
+ Installed TableShowUtils ─ v0.2.5
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [85eb9095] + BedgraphFiles v2.1.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [85eb9095] + BedgraphFiles v2.1.2
+  [5e66a065] + TableShowUtils v0.2.5
