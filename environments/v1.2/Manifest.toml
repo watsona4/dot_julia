@@ -270,6 +270,12 @@ git-tree-sha1 = "c1147a1f8702d183b0a87f2ff9692b14d69451fe"
 uuid = "77dd3d4c-cb1d-5e09-9340-85030ff7ba66"
 version = "0.5.0"
 
+[[AmplNLWriter]]
+deps = ["Compat", "MathOptInterface", "MathProgBase", "Test"]
+git-tree-sha1 = "b4732793f7c7c481cf0033f36e2bf5e2b89d88f1"
+uuid = "7c4d4715-977e-5154-bfe0-e096adeac482"
+version = "0.5.0"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -308,6 +314,12 @@ version = "0.2.3"
 
 [[Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
+
+[[BenchmarkTools]]
+deps = ["JSON", "Printf", "Statistics", "Test"]
+git-tree-sha1 = "5d1dd8577643ba9014574cd40d9c028cd5e4b85a"
+uuid = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+version = "0.4.2"
 
 [[BinDeps]]
 deps = ["Compat", "Libdl", "SHA", "URIParser"]
@@ -971,6 +983,12 @@ version = "0.2.1"
 [[Markdown]]
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
+
+[[MathOptInterface]]
+deps = ["BenchmarkTools", "LinearAlgebra", "OrderedCollections", "SparseArrays", "Test", "Unicode"]
+git-tree-sha1 = "5e6e36e2f01efbc62b3f8bf68c8cf82035e2c6a6"
+uuid = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
+version = "0.9.1"
 
 [[MathProgBase]]
 deps = ["Compat"]
