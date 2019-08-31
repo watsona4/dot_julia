@@ -9273,3 +9273,31 @@ Installing AltDistributions
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
   Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
   Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+[master f43138434] added package AltDistributions
+ 18 files changed, 661 insertions(+)
+ create mode 100644 packages/AltDistributions/Qxbke/.codecov.yml
+ create mode 100644 packages/AltDistributions/Qxbke/.gitignore
+ create mode 100644 packages/AltDistributions/Qxbke/.travis.yml
+ create mode 100644 packages/AltDistributions/Qxbke/LICENSE.md
+ create mode 100644 packages/AltDistributions/Qxbke/Project.toml
+ create mode 100644 packages/AltDistributions/Qxbke/README.md
+ create mode 100644 packages/AltDistributions/Qxbke/REQUIRE
+ create mode 100644 packages/AltDistributions/Qxbke/docs/Project.toml
+ create mode 100644 packages/AltDistributions/Qxbke/docs/make.jl
+ create mode 100644 packages/AltDistributions/Qxbke/docs/src/index.md
+ create mode 100644 packages/AltDistributions/Qxbke/src/AltDistributions.jl
+ create mode 100644 packages/AltDistributions/Qxbke/test/coverage/Project.toml
+ create mode 100644 packages/AltDistributions/Qxbke/test/coverage/coverage.jl
+ create mode 100644 packages/AltDistributions/Qxbke/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   184bf1180..f43138434  master -> master
+Progress:   2%|▉                                        |  ETA: 2 days, 5:35:01[K
+Installing Amb
+ Resolving package versions...
+ Installed Amb ────── v0.1.0
+ Installed Cassette ─ v0.2.6
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [c42f9944] + Amb v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [c42f9944] + Amb v0.1.0
+  [7057c7e9] + Cassette v0.2.6

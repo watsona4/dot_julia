@@ -258,6 +258,12 @@ git-tree-sha1 = "8cadd0ac25dabf7c17b3154edf15f417ec02b7e7"
 uuid = "875e7ca2-ab9d-5828-93ae-a098eac53262"
 version = "0.2.0"
 
+[[Amb]]
+deps = ["Cassette"]
+git-tree-sha1 = "0c1e68affc6d9af740248aaf79d993d75788d939"
+uuid = "c42f9944-9a8f-11e9-2851-1930a3e1c813"
+version = "0.1.0"
+
 [[ArgCheck]]
 deps = ["Random"]
 git-tree-sha1 = "dab25d711a1dedb707a55dbc1eb9fd578f76ff32"
@@ -367,6 +373,11 @@ deps = ["Compat"]
 git-tree-sha1 = "bd8bbd105ba583a42385bd6dc4a20dad8ab3dc11"
 uuid = "49dc2e85-a5d0-5ad3-a950-438e2897f1b9"
 version = "0.5.0"
+
+[[Cassette]]
+git-tree-sha1 = "da85d135b6048d3e78603e277cf9a4609f7e0673"
+uuid = "7057c7e9-c182-5462-911a-8362d720325c"
+version = "0.2.6"
 
 [[CategoricalArrays]]
 deps = ["Compat", "DataAPI", "Future", "JSON", "Missings", "Printf", "Reexport"]

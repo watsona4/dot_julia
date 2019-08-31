@@ -1,0 +1,16 @@
+name = "Amb"
+uuid = "c42f9944-9a8f-11e9-2851-1930a3e1c813"
+authors = ["Shashi Gowda <shashigowda91@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Cassette = "7057c7e9-c182-5462-911a-8362d720325c"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "1"
