@@ -1,0 +1,15 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+docs/build/
+docs/site/
+.directory
+.ipynb_checkpoints
+docs/Manifest.toml
+Manifest.toml
+.vscode
+deps/node_modules/
+deps/lib/
+deps/npm-debug.log
+deps/build.log
+lcov.info

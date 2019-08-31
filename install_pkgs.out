@@ -7757,3 +7757,106 @@ Installing AffineInvariantMCMC
   [a0f608ac] + AffineInvariantMCMC v0.5.0
   [27aeedcb] + RobustPmap v0.5.0
   Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+[master 83cb02200] added package AffineInvariantMCMC
+ 23 files changed, 1843 insertions(+)
+ create mode 100644 packages/AffineInvariantMCMC/Go89o/.travis.yml
+ create mode 100644 packages/AffineInvariantMCMC/Go89o/ACKNOWLEDGMENTS.md
+ create mode 100644 packages/AffineInvariantMCMC/Go89o/COPYING.md
+ create mode 100644 packages/AffineInvariantMCMC/Go89o/LICENSE.md
+ create mode 100644 packages/AffineInvariantMCMC/Go89o/MADS.md
+ create mode 100644 packages/AffineInvariantMCMC/Go89o/Project.toml
+ create mode 100644 packages/AffineInvariantMCMC/Go89o/README.md
+ create mode 100644 packages/AffineInvariantMCMC/Go89o/REQUIRE
+ create mode 100644 packages/AffineInvariantMCMC/Go89o/src/AffineInvariantMCMC.jl
+ create mode 100644 packages/AffineInvariantMCMC/Go89o/test/runtests.jl
+ create mode 100644 packages/RobustPmap/FeZSz/.gitignore
+ create mode 100644 packages/RobustPmap/FeZSz/.travis.yml
+ create mode 100644 packages/RobustPmap/FeZSz/COPYING.md
+ create mode 100644 packages/RobustPmap/FeZSz/LICENSE
+ create mode 100644 packages/RobustPmap/FeZSz/Project.toml
+ create mode 100644 packages/RobustPmap/FeZSz/README.md
+ create mode 100644 packages/RobustPmap/FeZSz/REQUIRE
+ create mode 100644 packages/RobustPmap/FeZSz/src/RobustPmap.jl
+ create mode 100644 packages/RobustPmap/FeZSz/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   12d66cb68..83cb02200  master -> master
+Progress:   2%|▊                                        |  ETA: 2 days, 0:17:30[K
+Installing AffineTransforms
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package AffineTransforms [7914e933]:\n AffineTransforms [7914e933] log:\n ├─possible versions are: [0.0.1-0.0.5, 0.1.0-0.1.5, 0.2.0-0.2.3] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1-0.0.5, 0.1.0-0.1.5, 0.2.0-0.2.3]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   2%|▊                                        |  ETA: 1 days, 23:28:19[K
+Installing Agents
+ Resolving package versions...
+ Installed Fontconfig ─────── v0.2.0
+ Installed NodeJS ─────────── v0.6.0
+ Installed HTTPClient ─────── v0.2.1
+ Installed Electron ───────── v1.0.0
+ Installed TableTraitsUtils ─ v1.0.0
+ Installed Homebrew ───────── v0.7.1
+ Installed DataValues ─────── v0.4.12
+ Installed Agents ─────────── v1.1.7
+ Installed IterableTables ─── v0.11.0
+ Installed Measures ───────── v0.3.0
+ Installed JSON ───────────── v0.20.0
+ Installed Inflate ────────── v0.1.1
+ Installed JSONSchema ─────── v0.1.1
+ Installed Compose ────────── v0.7.3
+ Installed FilePaths ──────── v0.8.0
+ Installed DataVoyager ────── v0.3.1
+ Installed SimpleTraits ───── v0.9.0
+ Installed WinRPM ─────────── v0.4.2
+ Installed Cairo ──────────── v0.6.0
+ Installed ArnoldiMethod ──── v0.0.4
+ Installed GraphPlot ──────── v0.3.1
+ Installed LibCURL ────────── v0.5.2
+ Installed LibExpat ───────── v0.5.0
+ Installed LightGraphs ────── v1.3.0
+ Installed VegaLite ───────── v0.7.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [46ada45e] + Agents v1.1.7
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [46ada45e] + Agents v1.1.7
+  [ec485272] + ArnoldiMethod v0.0.4
+  [159f3aea] + Cairo v0.6.0
+  [a81c6b42] + Compose v0.7.3
+  [e7dc6d0d] + DataValues v0.4.12
+  [5721bf48] + DataVoyager v0.3.1
+  [a1bb12fb] + Electron v1.0.0
+  [8fc22ac5] + FilePaths v0.8.0
+  [186bb1d3] + Fontconfig v0.2.0
+  [a2cc645c] + GraphPlot v0.3.1
+  [0862f596] + HTTPClient v0.2.1
+  [d9be37ee] + Homebrew v0.7.1
+  [d25df0c9] + Inflate v0.1.1
+  [1c8ee90f] + IterableTables v0.11.0
+  [682c06a0] ↓ JSON v0.21.0 ⇒ v0.20.0
+  [7d188eb4] + JSONSchema v0.1.1
+  [b27032c2] + LibCURL v0.5.2
+  [522f3ed2] + LibExpat v0.5.0
+  [093fc24a] + LightGraphs v1.3.0
+  [442fdcdd] + Measures v0.3.0
+  [2bd173c7] + NodeJS v0.6.0
+  [699a6c99] + SimpleTraits v0.9.0
+  [382cd787] + TableTraitsUtils v1.0.0
+  [112f6efa] + VegaLite v0.7.0
+  [c17dfb99] + WinRPM v0.4.2
+  Building Electron ──→ `~/.julia/packages/Electron/wL84D/deps/build.log`
+  Building NodeJS ────→ `~/.julia/packages/NodeJS/rx0mH/deps/build.log`
+  Building Homebrew ──→ `~/.julia/packages/Homebrew/s09IX/deps/build.log`
+  Building LibCURL ───→ `~/.julia/packages/LibCURL/lWJxD/deps/build.log`
+  Building WinRPM ────→ `~/.julia/packages/WinRPM/Y9QdZ/deps/build.log`
+  Building Fontconfig → `~/.julia/packages/Fontconfig/exUSO/deps/build.log`
+  Building VegaLite ──→ `~/.julia/packages/VegaLite/sHyyT/deps/build.log`
+  Building Cairo ─────→ `~/.julia/packages/Cairo/p68X8/deps/build.log`
+  Building LibCURL ─────────→ `~/.julia/packages/LibCURL/lWJxD/deps/build.log`
+  Building WinRPM ──────────→ `~/.julia/packages/WinRPM/Y9QdZ/deps/build.log`
+  Building Homebrew ────────→ `~/.julia/packages/Homebrew/s09IX/deps/build.log`
+  Building Fontconfig ──────→ `~/.julia/packages/Fontconfig/exUSO/deps/build.log`
+  Building Electron ────────→ `~/.julia/packages/Electron/wL84D/deps/build.log`
+  Building MbedTLS ─────────→ `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+  Building NodeJS ──────────→ `~/.julia/packages/NodeJS/rx0mH/deps/build.log`
+  Building VegaLite ────────→ `~/.julia/packages/VegaLite/sHyyT/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building Cairo ───────────→ `~/.julia/packages/Cairo/p68X8/deps/build.log`

@@ -1,0 +1,13 @@
+{
+    "name": "vegalitejl",
+    "description": "Julia bindings to Vega-Lite",
+    "repository": "https://github.com/fredo-dedup/VegaLite.jl",
+    "license": "MIT",
+    "version": "1.0.1",
+    "dependencies": {
+        "vega": "5.4.0",
+        "vega-lite": "3.3.0",
+        "canvas": "2.5.0",
+        "vega-cli": "5.4.0"
+    }
+}

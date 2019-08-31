@@ -1,0 +1,32 @@
+language: julia
+os:
+    - linux
+    - osx
+sudo: required
+dist: trusty
+julia:
+    - 1.0
+    - nightly
+matrix:
+  allow_failures:
+  - julia: nightly
+notifications:
+    email: false
+before_install:
+    - if [ `uname` = "Linux" ]; then
+        sudo apt-get update -qq -y;
+        sudo apt-get install -y libcairo2 libfontconfig1 libpango1.0-0 libpng12-0 libpng12-dev libpixman-1-0 gettext;
+      fi
+after_success:
+   - julia -e 'using Pkg; cd(Pkg.dir("Compose")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())';
+
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.0
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.instantiate();
+                                    Pkg.develop(PackageSpec(path=pwd()))'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip

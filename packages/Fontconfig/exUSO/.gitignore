@@ -1,0 +1,8 @@
+deps/builds
+deps/downloads
+deps/usr
+deps/src
+deps/deps.jl
+deps/build.log
+.DS_Store
+*~

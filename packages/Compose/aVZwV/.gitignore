@@ -1,0 +1,8 @@
+*~
+*swp
+
+# Documenter generated code
+docs/build/
+docs/site/
+
+test/output
