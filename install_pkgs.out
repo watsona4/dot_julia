@@ -26173,3 +26173,67 @@ Installing AutoGrad
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [6710c13c] + AutoGrad v1.1.4
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+[master 2f7d9315f] added package AutoGrad
+ 56 files changed, 6069 insertions(+)
+ create mode 100644 packages/AutoGrad/FKOf4/.gitignore
+ create mode 100644 packages/AutoGrad/FKOf4/.travis.yml
+ create mode 100644 packages/AutoGrad/FKOf4/ChangeLog
+ create mode 100644 packages/AutoGrad/FKOf4/LICENSE.md
+ create mode 100644 packages/AutoGrad/FKOf4/NEWS.md
+ create mode 100644 packages/AutoGrad/FKOf4/Project.toml
+ create mode 100644 packages/AutoGrad/FKOf4/README.md
+ create mode 100644 packages/AutoGrad/FKOf4/appveyor.yml
+ create mode 100644 packages/AutoGrad/FKOf4/data/README
+ create mode 100644 packages/AutoGrad/FKOf4/examples/README.md
+ create mode 100644 packages/AutoGrad/FKOf4/examples/charlm.jl
+ create mode 100644 packages/AutoGrad/FKOf4/examples/housing.jl
+ create mode 100644 packages/AutoGrad/FKOf4/examples/mnist.jl
+ create mode 100644 packages/AutoGrad/FKOf4/examples/rnn_lonely_integer.jl
+ create mode 100755 packages/AutoGrad/FKOf4/prof/profflat.pl
+ create mode 100644 packages/AutoGrad/FKOf4/prof/profile.jl
+ create mode 100755 packages/AutoGrad/FKOf4/prof/proftree.pl
+ create mode 100644 packages/AutoGrad/FKOf4/src/AutoGrad.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/base.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/cat.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/core.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/core.notes
+ create mode 100644 packages/AutoGrad/FKOf4/src/getindex.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/iterate.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/linearalgebra.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/macros.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/math.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/params.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/show.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/specialfunctions.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/statistics.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/sum_outgrads.jl
+ create mode 100644 packages/AutoGrad/FKOf4/src/unbroadcast.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/base.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/cat.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/core.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/getindex.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/gradcheck.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/header.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/highorder.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/iterate.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/linearalgebra.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/math.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/neuralnet.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/rosenbrock.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/runtests.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/specialfunctions.jl
+ create mode 100644 packages/AutoGrad/FKOf4/test/statistics.jl
+ create mode 100644 packages/AutoGrad/FKOf4/util/debug.jl
+ create mode 100644 packages/AutoGrad/FKOf4/util/functions.jl
+ create mode 100644 packages/AutoGrad/FKOf4/util/imports.pl
+ create mode 100644 packages/AutoGrad/FKOf4/util/util.jl
+To https://github.com/watsona4/dot_julia.git
+   2f3973491..2f7d9315f  master -> master
+Progress:   4%|█▊                                       |  ETA: 5 days, 14:39:36[K
+Installing AutoHashEquals
+ Resolving package versions...
+ Installed AutoHashEquals ─ v0.2.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [15f4f7f2] + AutoHashEquals v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [15f4f7f2] + AutoHashEquals v0.2.0

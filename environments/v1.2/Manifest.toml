@@ -567,6 +567,11 @@ git-tree-sha1 = "27512db681db1faa4e0694d74b6112fb375410f8"
 uuid = "6710c13c-97f1-543f-91c5-74e8f7d95b35"
 version = "1.1.4"
 
+[[AutoHashEquals]]
+git-tree-sha1 = "45bb6705d93be619b81451bb2006b7ee5d4e4453"
+uuid = "15f4f7f2-30c1-5605-9d31-71845cf9641f"
+version = "0.2.0"
+
 [[AxisAlgorithms]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "WoodburyMatrices"]
 git-tree-sha1 = "a4d07a1c313392a77042855df46c5f534076fab9"
