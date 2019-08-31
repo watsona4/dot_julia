@@ -1166,6 +1166,12 @@ git-tree-sha1 = "6c98db6041340b32d883d8bea9900e862f9f56ac"
 uuid = "2d3116d5-4b8f-5680-861c-71f149790274"
 version = "0.10.0"
 
+[[BridgeSDEInference]]
+deps = ["Bridge", "DataFrames", "Distributions", "GaussianDistributions", "Parameters", "StaticArrays"]
+git-tree-sha1 = "362581ffdfc21b1249c5c399d5fd093e510de5af"
+uuid = "46d747a0-b9e1-11e9-14b5-615c73e45078"
+version = "0.1.0"
+
 [[BufferedStreams]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "5d55b9486590fdda5905c275bb21ce1f0754020f"
@@ -1887,6 +1893,12 @@ deps = ["Base64", "CategoricalArrays", "Colors", "Compat", "Compose", "Contour",
 git-tree-sha1 = "ee709588c71eb62ce53cecf5a594bdefd6f2a9be"
 uuid = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
 version = "1.0.1"
+
+[[GaussianDistributions]]
+deps = ["Distributions", "LinearAlgebra", "Random", "Statistics", "Test"]
+git-tree-sha1 = "3b4732afce4035be36f943b476f1bc63920076c1"
+uuid = "43dcc890-d446-5863-8d1a-14597580bb8d"
+version = "0.3.2"
 
 [[GaussianProcesses]]
 deps = ["Distances", "Distributions", "ElasticArrays", "ElasticPDMats", "FastGaussQuadrature", "ForwardDiff", "LinearAlgebra", "Optim", "PDMats", "Printf", "Random", "RecipesBase", "ScikitLearnBase", "SpecialFunctions", "StaticArrays", "Statistics", "StatsFuns", "Test"]
