@@ -1612,6 +1612,12 @@ git-tree-sha1 = "4ebd4cdf92714324a6667abbf7b961ca844bc3f9"
 uuid = "de988000-0167-11e9-3115-2b7bbce15f76"
 version = "0.0.1"
 
+[[Chemfiles]]
+deps = ["Libdl", "Test"]
+git-tree-sha1 = "d5281034ea727dd0420505afe0ef617040fec333"
+uuid = "46823bd8-5fb3-5f92-9aa0-96921f3dd015"
+version = "0.9.1"
+
 [[Clang]]
 deps = ["BinaryProvider", "CEnum", "DataStructures", "Libdl"]
 git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"

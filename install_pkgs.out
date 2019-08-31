@@ -48322,3 +48322,37 @@ Installing ChartParsers
   [de988000] + ChartParsers v0.0.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [de988000] + ChartParsers v0.0.1
+[master 0f8716532] added package ChartParsers
+ 16 files changed, 834 insertions(+)
+ create mode 100644 packages/ChartParsers/U6zWI/.travis.yml
+ create mode 100644 packages/ChartParsers/U6zWI/LICENSE.md
+ create mode 100644 packages/ChartParsers/U6zWI/Manifest.toml
+ create mode 100644 packages/ChartParsers/U6zWI/Project.toml
+ create mode 100644 packages/ChartParsers/U6zWI/Readme.md
+ create mode 100644 packages/ChartParsers/U6zWI/src/ChartParsers.jl
+ create mode 100644 packages/ChartParsers/U6zWI/src/LayeredVectors.jl
+ create mode 100644 packages/ChartParsers/U6zWI/src/arc.jl
+ create mode 100644 packages/ChartParsers/U6zWI/src/chart.jl
+ create mode 100644 packages/ChartParsers/U6zWI/src/grammar.jl
+ create mode 100644 packages/ChartParsers/U6zWI/src/parser.jl
+ create mode 100644 packages/ChartParsers/U6zWI/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   3886776a1..0f8716532  master -> master
+Progress:  12%|█████                                    |  ETA: 3 days, 11:12:15[K
+Installing Chatter
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Chatter [9410fac5]:\n Chatter [9410fac5] log:\n ├─possible versions are: 0.1.0 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.1.0\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  12%|█████                                    |  ETA: 3 days, 10:58:50[K
+Installing Checkers
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Checkers [700e45bd]:\n Checkers [700e45bd] log:\n ├─possible versions are: 0.0.1 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  12%|█████                                    |  ETA: 3 days, 10:45:35[K
+Installing Chemfiles
+ Resolving package versions...
+ Installed Chemfiles ─ v0.9.1
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [46823bd8] + Chemfiles v0.9.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [46823bd8] + Chemfiles v0.9.1
+  Building Chemfiles → `~/.julia/packages/Chemfiles/P8wKX/deps/build.log`
+  Building Chemfiles → `~/.julia/packages/Chemfiles/P8wKX/deps/build.log`
