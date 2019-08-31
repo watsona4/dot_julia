@@ -28984,3 +28984,72 @@ Installing BangBang
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [198e06fe] + BangBang v0.2.0
   [22cec73e] + InitialValues v0.2.0
+[master 67e403051] added package BangBang
+ 61 files changed, 1713 insertions(+)
+ create mode 100644 packages/BangBang/wmLbH/.gitignore
+ create mode 100644 packages/BangBang/wmLbH/.travis.yml
+ create mode 100644 packages/BangBang/wmLbH/LICENSE
+ create mode 100644 packages/BangBang/wmLbH/Project.toml
+ create mode 100644 packages/BangBang/wmLbH/README.md
+ create mode 100644 packages/BangBang/wmLbH/benchmark/map.jl
+ create mode 100644 packages/BangBang/wmLbH/docs/Project.toml
+ create mode 100644 packages/BangBang/wmLbH/docs/make.jl
+ create mode 100644 packages/BangBang/wmLbH/docs/src/index.md
+ create mode 100644 packages/BangBang/wmLbH/src/BangBang.jl
+ create mode 100644 packages/BangBang/wmLbH/src/NoBang/NoBang.jl
+ create mode 100644 packages/BangBang/wmLbH/src/NoBang/base.jl
+ create mode 100644 packages/BangBang/wmLbH/src/NoBang/linearalgebra.jl
+ create mode 100644 packages/BangBang/wmLbH/src/NoBang/singletoncontainers.jl
+ create mode 100644 packages/BangBang/wmLbH/src/NoBang/staticarrays.jl
+ create mode 100644 packages/BangBang/wmLbH/src/base.jl
+ create mode 100644 packages/BangBang/wmLbH/src/core.jl
+ create mode 100644 packages/BangBang/wmLbH/src/initials.jl
+ create mode 100644 packages/BangBang/wmLbH/src/linearalgebra.jl
+ create mode 100644 packages/BangBang/wmLbH/src/staticarrays.jl
+ create mode 100644 packages/BangBang/wmLbH/test/Project.toml
+ create mode 100644 packages/BangBang/wmLbH/test/__test_ir.jl
+ create mode 100644 packages/BangBang/wmLbH/test/preamble.jl
+ create mode 100644 packages/BangBang/wmLbH/test/runtests.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_append.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_aqua.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_core.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_delete.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_empty.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_initials.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_ir.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_mul.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_pop.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_popfirst.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_push.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_pushfirst.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_setindex.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_setproperty.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_splice.jl
+ create mode 100644 packages/BangBang/wmLbH/test/test_staticarrays.jl
+ create mode 100644 packages/InitialValues/6KV71/.gitignore
+ create mode 100644 packages/InitialValues/6KV71/.travis.yml
+ create mode 100644 packages/InitialValues/6KV71/LICENSE
+ create mode 100644 packages/InitialValues/6KV71/Project.toml
+ create mode 100644 packages/InitialValues/6KV71/README.md
+ create mode 100644 packages/InitialValues/6KV71/docs/Project.toml
+ create mode 100644 packages/InitialValues/6KV71/docs/make.jl
+ create mode 100644 packages/InitialValues/6KV71/docs/src/index.md
+ create mode 100644 packages/InitialValues/6KV71/src/InitialValues.jl
+ create mode 100644 packages/InitialValues/6KV71/src/prettyexpr.jl
+ create mode 100644 packages/InitialValues/6KV71/test/Project.toml
+ create mode 100644 packages/InitialValues/6KV71/test/interop/test_bangbang.jl
+ create mode 100644 packages/InitialValues/6KV71/test/runtests.jl
+ create mode 100644 packages/InitialValues/6KV71/test/test_aqua.jl
+ create mode 100644 packages/InitialValues/6KV71/test/test_basics.jl
+ create mode 100644 packages/InitialValues/6KV71/test/test_def.jl
+ create mode 100644 packages/InitialValues/6KV71/test/test_prettyexpr.jl
+To https://github.com/watsona4/dot_julia.git
+   97f0abe12..67e403051  master -> master
+Progress:   5%|██▏                                      |  ETA: 4 days, 17:48:14[K
+Installing BarycentricInterpolation
+ Resolving package versions...
+ Installed BarycentricInterpolation ─ v0.1.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9eb6a62d] + BarycentricInterpolation v0.1.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9eb6a62d] + BarycentricInterpolation v0.1.2

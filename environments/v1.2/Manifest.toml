@@ -704,6 +704,12 @@ git-tree-sha1 = "df248efd42d8d16eb4a3e9dc9bcb13121aac6bf2"
 uuid = "198e06fe-97b7-11e9-32a5-e1d131e6ad66"
 version = "0.2.0"
 
+[[BarycentricInterpolation]]
+deps = ["LinearAlgebra", "Test"]
+git-tree-sha1 = "c4642f34668de766ab7576be3530e0799f91fe5c"
+uuid = "9eb6a62d-0ffa-5353-839e-400c605afeda"
+version = "0.1.2"
+
 [[Base58]]
 deps = ["Base64", "SHA", "Test"]
 git-tree-sha1 = "928c15a6a41d2f4eec8e8cf2b911e2b31b78d71f"
