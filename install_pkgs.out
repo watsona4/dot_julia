@@ -5887,3 +5887,31 @@ Installing AbstractNumbers
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [85c772de] + AbstractNumbers v0.2.0
   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+[master 5785325bf] added package AbstractNumbers
+ 15 files changed, 1846 insertions(+)
+ create mode 100644 packages/AbstractNumbers/VWdQ8/.codecov.yml
+ create mode 100644 packages/AbstractNumbers/VWdQ8/.gitignore
+ create mode 100644 packages/AbstractNumbers/VWdQ8/.travis.yml
+ create mode 100644 packages/AbstractNumbers/VWdQ8/LICENSE.md
+ create mode 100644 packages/AbstractNumbers/VWdQ8/Project.toml
+ create mode 100644 packages/AbstractNumbers/VWdQ8/README.md
+ create mode 100644 packages/AbstractNumbers/VWdQ8/appveyor.yml
+ create mode 100644 packages/AbstractNumbers/VWdQ8/src/AbstractNumbers.jl
+ create mode 100644 packages/AbstractNumbers/VWdQ8/src/generator_script.jl
+ create mode 100644 packages/AbstractNumbers/VWdQ8/src/overloads.jl
+ create mode 100644 packages/AbstractNumbers/VWdQ8/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   e0ac387d9..5785325bf  master -> master
+Progress:   1%|▌                                        |  ETA: 2 days, 1:46:37[K
+Installing AbstractOperators
+ Resolving package versions...
+ Installed DSP ─────────────── v0.6.0
+ Installed AbstractOperators ─ v0.2.2
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [d9c5613a] + AbstractOperators v0.2.2
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [d9c5613a] + AbstractOperators v0.2.2
+  [717857b8] + DSP v0.6.0
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`

@@ -126,6 +126,12 @@ git-tree-sha1 = "166dd550832720b4c851f30e5938e675e42c16d4"
 uuid = "85c772de-338a-5e7f-b815-41e76c26ac1f"
 version = "0.2.0"
 
+[[AbstractOperators]]
+deps = ["AbstractFFTs", "DSP", "FFTW", "LinearAlgebra", "RecursiveArrayTools"]
+git-tree-sha1 = "ea4e4ad8d7def7e6e83e2336454d67d4cc5c421f"
+uuid = "d9c5613a-d543-52d8-9afd-8f241a8c3f1c"
+version = "0.2.2"
+
 [[Adapt]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "82dab828020b872fa9efd3abec1152b075bc7cbf"
@@ -259,6 +265,12 @@ deps = ["JSON", "VersionParsing"]
 git-tree-sha1 = "9a11d428dcdc425072af4aea19ab1e8c3e01c032"
 uuid = "8f4d0f93-b110-5947-807f-2305c1781a2d"
 version = "1.3.0"
+
+[[DSP]]
+deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
+git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"
+uuid = "717857b8-e6f2-59f4-9121-6e50c889abd2"
+version = "0.6.0"
 
 [[DataAPI]]
 git-tree-sha1 = "8903f0219d3472543fc4b2f5ebaf675a07f817c0"
