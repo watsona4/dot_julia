@@ -2022,6 +2022,12 @@ git-tree-sha1 = "d4439019ee5d7fabe0d4e47d817ec57116c27265"
 uuid = "eab40c8d-01e0-5a99-916a-641eeda4da29"
 version = "0.2.0"
 
+[[ContinuousTransformations]]
+deps = ["ArgCheck", "AutoHashEquals", "Distributions", "DocStringExtensions", "Lazy", "LinearAlgebra", "MacroTools", "Markdown", "Parameters", "Statistics", "StatsFuns", "Test"]
+git-tree-sha1 = "1715313da25da5dba38fdb2e77379c2475da71ec"
+uuid = "98729d58-ae14-580b-85cc-57d472ed321e"
+version = "1.0.0"
+
 [[Contour]]
 deps = ["LinearAlgebra", "StaticArrays", "Test"]
 git-tree-sha1 = "b974e164358fea753ef853ce7bad97afec15bb80"
