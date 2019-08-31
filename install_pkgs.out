@@ -50094,3 +50094,31 @@ Installing CircularList
   [e1d4a2be] + CircularList v1.0.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [e1d4a2be] + CircularList v1.0.0
+[master 3a6c22198] added package CircularList
+ 16 files changed, 595 insertions(+)
+ create mode 100644 packages/CircularList/jIaML/.appveyor.yml
+ create mode 100644 packages/CircularList/jIaML/.gitignore
+ create mode 100644 packages/CircularList/jIaML/.travis.yml
+ create mode 100644 packages/CircularList/jIaML/LICENSE
+ create mode 100644 packages/CircularList/jIaML/Project.toml
+ create mode 100644 packages/CircularList/jIaML/README.md
+ create mode 100644 packages/CircularList/jIaML/REQUIRE
+ create mode 100644 packages/CircularList/jIaML/docs/make.jl
+ create mode 100644 packages/CircularList/jIaML/docs/src/index.md
+ create mode 100644 packages/CircularList/jIaML/src/CircularList.jl
+ create mode 100644 packages/CircularList/jIaML/test/aoc9.jl
+ create mode 100644 packages/CircularList/jIaML/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   8d0e565db..3a6c22198  master -> master
+Progress:  13%|█████▎                                   |  ETA: 3 days, 9:06:06[K
+Installing CirruParser
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CirruParser [6d41d727]:\n CirruParser [6d41d727] log:\n ├─possible versions are: 0.0.1-0.0.2 or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions 0.0.1-0.0.2\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:  13%|█████▎                                   |  ETA: 3 days, 8:53:33[K
+Installing Clang
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [40e3b903] + Clang v0.9.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
+  Building Clang → `~/.julia/packages/Clang/CiPzM/deps/build.log`
