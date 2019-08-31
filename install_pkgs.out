@@ -22998,3 +22998,46 @@ Installing ArrayFire
 │  [8] top-level scope at none:5
 │ in expression starting at /home/ec2-user/.julia/packages/ArrayFire/Tx4Iq/deps/build.jl:4
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+[master 07ccfe288] added package ArrayFire
+ 36 files changed, 5380 insertions(+)
+ create mode 100644 packages/ArrayFire/Tx4Iq/.gitignore
+ create mode 100644 packages/ArrayFire/Tx4Iq/.travis.yml
+ create mode 100644 packages/ArrayFire/Tx4Iq/LICENSE.md
+ create mode 100644 packages/ArrayFire/Tx4Iq/Project.toml
+ create mode 100644 packages/ArrayFire/Tx4Iq/README.md
+ create mode 100644 packages/ArrayFire/Tx4Iq/REQUIRE
+ create mode 100644 packages/ArrayFire/Tx4Iq/benchmarks/benchmark.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/benchmarks/nmf_benchmark.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/deps/build.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/deps/build.log
+ create mode 100644 packages/ArrayFire/Tx4Iq/examples/blackscholes.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/examples/mandelbrot.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/generate/generate.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/generate/stdbool.h
+ create mode 100644 packages/ArrayFire/Tx4Iq/generate/stdlib.h
+ create mode 100644 packages/ArrayFire/Tx4Iq/src/ArrayFire.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/src/array.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/src/common.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/src/fft.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/src/graphics.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/src/indexing.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/src/random.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/src/util.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/src/wrap.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/test/array.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/test/blackscholes.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/test/bugs.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/test/fft.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/test/indexing.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/test/math.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/test/runtests.jl
+ create mode 100644 packages/ArrayFire/Tx4Iq/test/sparse.jl
+To https://github.com/watsona4/dot_julia.git
+   b0dacf741..07ccfe288  master -> master
+Progress:   3%|█▍                                       |  ETA: 6 days, 11:08:45[K
+Installing ArrayInterface
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [4fba245c] + ArrayInterface v1.2.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
