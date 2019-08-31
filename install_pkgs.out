@@ -23193,3 +23193,36 @@ Installing AssetRegistry
   [bf4720bc] + AssetRegistry v0.1.0
   [fa939f87] + Pidfile v1.1.0
   [7b1f6079] + FileWatching 
+[master fb495f162] added package AssetRegistry
+ 25 files changed, 939 insertions(+)
+ create mode 100644 packages/AssetRegistry/4TyKv/.codecov.yml
+ create mode 100644 packages/AssetRegistry/4TyKv/.gitignore
+ create mode 100644 packages/AssetRegistry/4TyKv/.travis.yml
+ create mode 100644 packages/AssetRegistry/4TyKv/LICENSE.md
+ create mode 100644 packages/AssetRegistry/4TyKv/README.md
+ create mode 100644 packages/AssetRegistry/4TyKv/REQUIRE
+ create mode 100644 packages/AssetRegistry/4TyKv/appveyor.yml
+ create mode 100644 packages/AssetRegistry/4TyKv/src/AssetRegistry.jl
+ create mode 100644 packages/AssetRegistry/4TyKv/test/runtests.jl
+ create mode 100644 packages/Pidfile/q0iHJ/.appveyor.yml
+ create mode 100644 packages/Pidfile/q0iHJ/.codecov.yml
+ create mode 100644 packages/Pidfile/q0iHJ/.gitignore
+ create mode 100644 packages/Pidfile/q0iHJ/.travis.yml
+ create mode 100644 packages/Pidfile/q0iHJ/LICENSE.md
+ create mode 100644 packages/Pidfile/q0iHJ/README.md
+ create mode 100644 packages/Pidfile/q0iHJ/REQUIRE
+ create mode 100644 packages/Pidfile/q0iHJ/docs/.gitignore
+ create mode 100644 packages/Pidfile/q0iHJ/docs/make.jl
+ create mode 100644 packages/Pidfile/q0iHJ/docs/src/index.md
+ create mode 100644 packages/Pidfile/q0iHJ/src/Pidfile.jl
+ create mode 100644 packages/Pidfile/q0iHJ/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   6c0eed3da..fb495f162  master -> master
+Progress:   4%|█▌                                       |  ETA: 6 days, 2:10:44[K
+Installing AssociativeArrays
+ Resolving package versions...
+ Installed AssociativeArrays ─ v0.0.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9477f2fd] + AssociativeArrays v0.0.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9477f2fd] + AssociativeArrays v0.0.3

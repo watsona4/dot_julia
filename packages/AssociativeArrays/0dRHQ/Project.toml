@@ -1,0 +1,21 @@
+name = "AssociativeArrays"
+uuid = "9477f2fd-3d51-5b6a-a127-ca3a070ddf94"
+authors = ["Yuri Vishnevsky <yurivish@gmail.com>"]
+version = "0.0.3"
+
+[deps]
+ArgCheck = "dce04be8-c92d-5529-be00-80e4d2c0e197"
+IterTools = "c8e1da08-722c-5040-9ed9-7db0dc04731e"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+SplitApplyCombine = "03a91e81-4c3e-53e1-a0a4-9c0c8f19dd66"
+Tables = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Transducers = "28d57a85-8fef-5791-bfe6-a80928e7c999"
+
+[compat]
+julia = "1.1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
