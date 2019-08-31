@@ -1,0 +1,14 @@
+language: julia
+os:
+    - linux
+    - osx
+julia:
+    - 0.7
+    - 1.0
+    - nightly
+env:
+  matrix:
+    - FORCE_COMPILE_ZMQ=yes
+    - FORCE_COMPILE_ZMQ=no
+notifications:
+    email: false

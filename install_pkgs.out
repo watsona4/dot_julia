@@ -44796,3 +44796,111 @@ Installing Caching
   Building CodecBzip2 → `~/.julia/packages/CodecBzip2/T5yr7/deps/build.log`
   Building CodecZlib ─→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
   Building CodecBzip2 → `~/.julia/packages/CodecBzip2/T5yr7/deps/build.log`
+[master 124c2e69b] added package Caching
+ 35 files changed, 2061 insertions(+)
+ create mode 100644 packages/Caching/RGux2/.codecov.yml
+ create mode 100644 packages/Caching/RGux2/.gitignore
+ create mode 100644 packages/Caching/RGux2/.travis.yml
+ create mode 100644 packages/Caching/RGux2/LICENSE.md
+ create mode 100644 packages/Caching/RGux2/Manifest.toml
+ create mode 100644 packages/Caching/RGux2/Project.toml
+ create mode 100644 packages/Caching/RGux2/README.md
+ create mode 100644 packages/Caching/RGux2/REQUIRE
+ create mode 100644 packages/Caching/RGux2/docs/Project.toml
+ create mode 100644 packages/Caching/RGux2/docs/make.jl
+ create mode 100644 packages/Caching/RGux2/docs/src/api.md
+ create mode 100644 packages/Caching/RGux2/docs/src/examples.md
+ create mode 100644 packages/Caching/RGux2/docs/src/index.md
+ create mode 100644 packages/Caching/RGux2/src/Caching.jl
+ create mode 100644 packages/Caching/RGux2/src/cache.jl
+ create mode 100644 packages/Caching/RGux2/src/file.jl
+ create mode 100644 packages/Caching/RGux2/src/utils.jl
+ create mode 100644 packages/Caching/RGux2/test/runtests.jl
+ create mode 100644 packages/CodecBzip2/T5yr7/.codecov.yml
+ create mode 100644 packages/CodecBzip2/T5yr7/.gitignore
+ create mode 100644 packages/CodecBzip2/T5yr7/.travis.yml
+ create mode 100644 packages/CodecBzip2/T5yr7/LICENSE.md
+ create mode 100644 packages/CodecBzip2/T5yr7/Project.toml
+ create mode 100644 packages/CodecBzip2/T5yr7/README.md
+ create mode 100644 packages/CodecBzip2/T5yr7/appveyor.yml
+ create mode 100644 packages/CodecBzip2/T5yr7/deps/build.jl
+ create mode 100644 packages/CodecBzip2/T5yr7/src/CodecBzip2.jl
+ create mode 100644 packages/CodecBzip2/T5yr7/src/compression.jl
+ create mode 100644 packages/CodecBzip2/T5yr7/src/decompression.jl
+ create mode 100644 packages/CodecBzip2/T5yr7/src/libbz2.jl
+ create mode 100644 packages/CodecBzip2/T5yr7/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   17cf56dbd..124c2e69b  master -> master
+Progress:  11%|████▌                                    |  ETA: 3 days, 14:39:45[K
+Installing Caesar
+ Resolving package versions...
+ Installed ProtoBuf ──────────────── v0.7.0
+ Installed Neo4j ─────────────────── v2.0.0
+ Installed ZMQ ───────────────────── v1.0.0
+ Installed Mongoc ────────────────── v0.2.1
+ Installed DistributedFactorGraphs ─ v0.3.2
+ Installed Graphs ────────────────── v0.10.3
+ Installed RoME ──────────────────── v0.4.0
+ Installed CloudGraphs ───────────── v0.1.2
+ Installed IncrementalInference ──── v0.7.5
+ Installed Unmarshal ─────────────── v0.2.1
+ Installed FunctionalStateMachine ── v0.1.2
+ Installed MetaGraphs ────────────── v0.6.4
+ Installed Caesar ────────────────── v0.4.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [62eebf14] + Caesar v0.4.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [62eebf14] + Caesar v0.4.0
+  [39d38320] + CloudGraphs v0.1.2
+  [b5cc3c7e] + DistributedFactorGraphs v0.3.2
+  [3e9e306e] + FunctionalStateMachine v0.1.2
+  [86223c79] + Graphs v0.10.3
+  [904591bb] + IncrementalInference v0.7.5
+  [626554b9] + MetaGraphs v0.6.4
+  [4fe8b98c] + Mongoc v0.2.1
+  [d2adbeaf] + Neo4j v2.0.0
+  [3349acd9] + ProtoBuf v0.7.0
+  [91fb55c2] + RoME v0.4.0
+  [cbff2730] + Unmarshal v0.2.1
+  [c2297ded] + ZMQ v1.0.0
+  Building Mongoc → `~/.julia/packages/Mongoc/N4NkA/deps/build.log`
+  Building ZMQ ───→ `~/.julia/packages/ZMQ/ABGOx/deps/build.log`
+  Building Mongoc ──────────→ `~/.julia/packages/Mongoc/N4NkA/deps/build.log`
+  Building Arpack ──────────→ `~/.julia/packages/Arpack/cu5By/deps/build.log`
+  Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+  Building Rmath ───────────→ `~/.julia/packages/Rmath/Py9gH/deps/build.log`
+  Building LCMCore ─────────→ `~/.julia/packages/LCMCore/cPbOB/deps/build.log`
+┌ Error: Error building `LCMCore`: 
+│ Package glib-2.0 was not found in the pkg-config search path.
+│ Perhaps you should add the directory containing `glib-2.0.pc'
+│ to the PKG_CONFIG_PATH environment variable
+│ No package 'glib-2.0' found
+│ Package glib-2.0 was not found in the pkg-config search path.
+│ Perhaps you should add the directory containing `glib-2.0.pc'
+│ to the PKG_CONFIG_PATH environment variable
+│ No package 'glib-2.0' found
+│ ERROR: LoadError: None of the selected providers can install dependency glib.
+│ Use BinDeps.debug(package_name) to see available providers
+│ 
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:949
+│  [3] satisfy!(::BinDeps.LibraryDependency) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [4] top-level scope at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [5] include at ./boot.jl:328 [inlined]
+│  [6] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [7] include(::Module, ::String) at ./Base.jl:31
+│  [8] include(::String) at ./client.jl:431
+│  [9] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/LCMCore/cPbOB/deps/build.jl:75
+│ Activating environment at `~/.julia/packages/LCMCore/cPbOB/deps/Project.toml`
+│   Updating registry at `~/.julia/registries/General`
+│   Updating git-repo `https://github.com/JuliaRegistries/General.git`
+│ [?25l[2K[?25h
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building CodecZlib ───────→ `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+  Building MbedTLS ─────────→ `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+  Building ZMQ ─────────────→ `~/.julia/packages/ZMQ/ABGOx/deps/build.log`
+  Building Conda ───────────→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+  Building FFTW ────────────→ `~/.julia/packages/FFTW/2okGQ/deps/build.log`
+  Building ImageMagick ─────→ `~/.julia/packages/ImageMagick/vMfoS/deps/build.log`

@@ -1,0 +1,6 @@
+*.png
+*.dot
+*.pdf
+src/tmpimgs/*.gif
+
+Manifest.toml

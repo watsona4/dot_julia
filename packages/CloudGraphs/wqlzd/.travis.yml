@@ -1,0 +1,26 @@
+language: julia
+os:
+  - linux
+julia:
+  - 0.7
+  - 1.0
+  - nightly
+notifications:
+  email: false
+services:
+  - mongodb
+matrix:
+  allow_failures:
+    - julia: nightly
+before_install:
+  - wget dist.neo4j.org/neo4j-community-2.3.4-unix.tar.gz
+  - tar -xzf neo4j-community-2.3.4-unix.tar.gz
+  - sed -i 's/#dbms.security.auth_enabled=false/dbms.security.auth_enabled=false/g' neo4j-community-2.3.4/conf/neo4j-server.properties
+  - sed -i 's/dbms.security.auth_enabled=true/dbms.security.auth_enabled=false/g' neo4j-community-2.3.4/conf/neo4j-server.properties
+  - neo4j-community-2.3.4/bin/neo4j start
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia --check-bounds=yes -e 'using Pkg; Pkg.clone(pwd()); Pkg.test("CloudGraphs"; coverage=true)'
+
+after_success:
+  - julia -e 'using Pkg; cd(Pkg.dir("CloudGraphs")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'

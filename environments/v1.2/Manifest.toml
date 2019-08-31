@@ -1452,6 +1452,12 @@ git-tree-sha1 = "2742973a7e2d46755ea63f29dbde05d650aa1b2c"
 uuid = "68ad905a-5087-500a-aae7-0fd6acda2eb1"
 version = "0.1.1"
 
+[[Caesar]]
+deps = ["ApproxManifoldProducts", "CloudGraphs", "Combinatorics", "CoordinateTransformations", "DataStructures", "Dates", "DelimitedFiles", "Distributed", "Distributions", "DocStringExtensions", "FFTW", "FileIO", "Graphs", "ImageCore", "ImageMagick", "IncrementalInference", "JLD2", "JSON", "KernelDensityEstimate", "LCMCore", "LinearAlgebra", "Mongoc", "NLsolve", "Neo4j", "ProgressMeter", "Reexport", "RoME", "Rotations", "Statistics", "Test", "TransformUtils", "UUIDs", "Unmarshal", "YAML", "ZMQ"]
+git-tree-sha1 = "5c135ea6ffa646c736282b14944ec558069a58be"
+uuid = "62eebf14-49bc-5f46-9df9-f7b7ef379406"
+version = "0.4.0"
+
 [[Cairo]]
 deps = ["BinDeps", "Colors", "Compat", "Graphics", "Homebrew", "Libdl", "Pkg", "WinRPM"]
 git-tree-sha1 = "e577cb41e7e2641f4b97f1b6dbcb9a69c9288330"
@@ -1486,6 +1492,12 @@ deps = ["BinaryProvider", "CEnum", "DataStructures", "Libdl"]
 git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"
 uuid = "40e3b903-d033-50b4-a0cc-940c62c95e31"
 version = "0.9.1"
+
+[[CloudGraphs]]
+deps = ["Dates", "DocStringExtensions", "Graphs", "JSON", "Mongoc", "Neo4j", "ProtoBuf", "Test", "UUIDs"]
+git-tree-sha1 = "41129bf1af018b49855a846b1b3955cee980bf8a"
+uuid = "39d38320-a18c-5735-a4f5-135970cd79b8"
+version = "0.1.2"
 
 [[Clustering]]
 deps = ["Distances", "LinearAlgebra", "NearestNeighbors", "Printf", "SparseArrays", "Statistics", "StatsBase"]
@@ -1791,6 +1803,12 @@ git-tree-sha1 = "b9cde03fd283e49ea09911297067b2f872f84c2d"
 uuid = "aaf54ef3-cdf8-58ed-94cc-d582ad619b94"
 version = "0.6.4"
 
+[[DistributedFactorGraphs]]
+deps = ["DataFrames", "Dates", "Distributions", "DocStringExtensions", "Graphs", "JSON2", "LightGraphs", "LinearAlgebra", "MetaGraphs", "Neo4j", "Reexport", "Requires"]
+git-tree-sha1 = "f3815c40577248151c4797979a7c65b98f6f5bf6"
+uuid = "b5cc3c7e-6572-11e9-2517-99fb8daf2f04"
+version = "0.3.2"
+
 [[Distributions]]
 deps = ["LinearAlgebra", "PDMats", "Printf", "QuadGK", "Random", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns"]
 git-tree-sha1 = "56a158bc0abe4af5d4027af2275fde484261ca6d"
@@ -2088,6 +2106,12 @@ git-tree-sha1 = "04cb9cfaa6ba5311973994fe3496ddec19b6292a"
 uuid = "de31a74c-ac4f-5751-b3fd-e18cd04993ca"
 version = "0.5.0"
 
+[[FunctionalStateMachine]]
+deps = ["Dates", "DocStringExtensions", "ProgressMeter", "Requires"]
+git-tree-sha1 = "05096fa401daba92272588a82d8b17c1d951c279"
+uuid = "3e9e306e-7e3c-11e9-12d2-8f8f67a2f951"
+version = "0.1.2"
+
 [[Future]]
 deps = ["Random"]
 uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
@@ -2205,6 +2229,12 @@ deps = ["Colors", "Compat", "NaNMath"]
 git-tree-sha1 = "e3ead4211073d4117a0d2ef7d1efc5c8092c8412"
 uuid = "a2bd30eb-e257-5431-a919-1863eab51364"
 version = "0.4.0"
+
+[[Graphs]]
+deps = ["DataStructures", "SparseArrays"]
+git-tree-sha1 = "9409e40f53532c45f2478c33531aa7a65ec4e2de"
+uuid = "86223c79-3864-5bf0-83f7-82e725a168b6"
+version = "0.10.3"
 
 [[Gumbo]]
 deps = ["AbstractTrees", "BinaryProvider", "Libdl", "Test"]
@@ -2379,6 +2409,12 @@ deps = ["Test"]
 git-tree-sha1 = "cedbaf75814a31101cb9092115b2f0217d24c22d"
 uuid = "c65182e5-40f4-518f-8165-175b85689199"
 version = "1.0.3"
+
+[[IncrementalInference]]
+deps = ["ApproxManifoldProducts", "Dates", "Distributed", "DistributedFactorGraphs", "Distributions", "DocStringExtensions", "FileIO", "FunctionalStateMachine", "Graphs", "JLD2", "JSON2", "KernelDensityEstimate", "LinearAlgebra", "Logging", "NLsolve", "Optim", "ProgressMeter", "Random", "Reexport", "Requires", "SparseArrays", "Statistics", "StatsBase", "SuiteSparse"]
+git-tree-sha1 = "5d1169c51c47d601a3e8372d79142b9069993497"
+uuid = "904591bb-b899-562f-9e6f-b8df64c7d480"
+version = "0.7.5"
 
 [[IndexableBitVectors]]
 deps = ["Random", "Test"]
@@ -2847,6 +2883,12 @@ git-tree-sha1 = "2d24c0988d8908bf9e352aa0f5bf8cf61722c2c0"
 uuid = "06dfef30-8e85-11e9-0a8e-cb6ed32fdbef"
 version = "0.1.0"
 
+[[MetaGraphs]]
+deps = ["JLD2", "LightGraphs", "Random"]
+git-tree-sha1 = "43ebbe06b22d213e4a8750424f9c7d1311bee2a6"
+uuid = "626554b9-1ddb-594c-aa3c-2596fe9399a5"
+version = "0.6.4"
+
 [[MetaProgTools]]
 git-tree-sha1 = "cc8b2b47177f096abf5fc8e39786250655feeb03"
 uuid = "b1909ce5-9a67-5ea4-ba1b-9d85528f5779"
@@ -2872,6 +2914,12 @@ deps = ["Libdl"]
 git-tree-sha1 = "f4f8fa8d04d3c1e7294f07fc37586c819466ad38"
 uuid = "66fc600b-dfda-50eb-8b99-91cfa97b1301"
 version = "1.0.0"
+
+[[Mongoc]]
+deps = ["BinaryProvider", "Dates", "Libdl", "Test"]
+git-tree-sha1 = "c028ec2dfad92d9a3718ccc94800fe0d634b9985"
+uuid = "4fe8b98c-fc19-5c23-8ec2-168ff83495f2"
+version = "0.2.1"
 
 [[MsgPack]]
 deps = ["Compat", "Random", "Test"]
@@ -2956,6 +3004,12 @@ deps = ["LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "c807689feb2127a011d8e174541c79e5a3a8acab"
 uuid = "2fcf5ba9-9ed4-57cf-b73f-ff513e316b9c"
 version = "0.5.0"
+
+[[Neo4j]]
+deps = ["Base64", "DataFrames", "DocStringExtensions", "HTTP", "JSON", "Missings", "Test"]
+git-tree-sha1 = "b8fe8321b0e17ac6f7b0b4f5df628610024acb11"
+uuid = "d2adbeaf-5838-5367-8a2f-e46d570981db"
+version = "2.0.0"
 
 [[NodeJS]]
 deps = ["Test"]
@@ -3159,6 +3213,12 @@ git-tree-sha1 = "2073c3ce97519a500feb3cd91812e02ef4404d14"
 uuid = "9a7e659c-8ee8-5706-894e-f68f43bc57ea"
 version = "0.5.0"
 
+[[ProtoBuf]]
+deps = ["Random", "Serialization", "Sockets", "Test"]
+git-tree-sha1 = "cc57b8d2d37f51f9bdfb440ba933c75764e6e171"
+uuid = "3349acd9-ac6a-5e09-bcdb-63829b23a429"
+version = "0.7.0"
+
 [[PtFEM]]
 deps = ["Compat", "CustomUnitRanges", "DataFrames", "Documenter", "GR", "Interpolations", "LinearAlgebra", "OffsetArrays", "Plots", "Printf", "QuadGK", "SHA", "SparseArrays", "Statistics", "SuiteSparse", "Test"]
 git-tree-sha1 = "7a1a1bf8e82f1c03ade925d6af70c742de15da95"
@@ -3333,6 +3393,12 @@ deps = ["BinaryProvider", "Libdl", "Random", "Statistics", "Test"]
 git-tree-sha1 = "9a6c758cdf73036c3239b0afbea790def1dabff9"
 uuid = "79098fc4-a85e-5d69-aa6a-4863f24498fa"
 version = "0.5.0"
+
+[[RoME]]
+deps = ["ApproxManifoldProducts", "CoordinateTransformations", "DelimitedFiles", "Distributed", "DistributedFactorGraphs", "Distributions", "DocStringExtensions", "FileIO", "Graphs", "IncrementalInference", "JLD2", "KernelDensityEstimate", "LinearAlgebra", "Optim", "ProgressMeter", "Reexport", "Rotations", "Statistics", "TransformUtils"]
+git-tree-sha1 = "2734a0290570123123c02bd364e5220970fd0be6"
+uuid = "91fb55c2-4c03-5a59-ba21-f4ea956187b8"
+version = "0.4.0"
 
 [[RobustPmap]]
 deps = ["Compat", "Distributed", "FileIO", "JLD2"]
@@ -3723,6 +3789,12 @@ git-tree-sha1 = "69927c150d1347d438cb9440ac1044f7d11ea9c9"
 uuid = "6112ee07-acf9-5e0f-b108-d242c714bf9f"
 version = "0.3.0"
 
+[[Unmarshal]]
+deps = ["JSON", "LinearAlgebra", "Missings", "Nullables", "Test"]
+git-tree-sha1 = "2b1f8a501a6c9932721e791f5586b7a48f4e0c2f"
+uuid = "cbff2730-442d-58d7-89d1-8e530c41eb02"
+version = "0.2.1"
+
 [[UnsafeArrays]]
 deps = ["Compat"]
 git-tree-sha1 = "460f4f7bab69dd47512ac8ec4b2c14b28c6cb4a0"
@@ -3830,6 +3902,12 @@ deps = ["Codecs", "Compat"]
 git-tree-sha1 = "3bde77cee95cce0c0b9b18813d85e18e8ed4f415"
 uuid = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
 version = "0.3.2"
+
+[[ZMQ]]
+deps = ["BinaryProvider", "FileWatching", "Libdl", "Sockets", "Test"]
+git-tree-sha1 = "34e7ac2d1d59d19d0e86bde99f1f02262bfa1613"
+uuid = "c2297ded-f4af-51ae-bb23-16f91089e4e1"
+version = "1.0.0"
 
 [[ZipFile]]
 deps = ["BinaryProvider", "Libdl", "Printf"]
