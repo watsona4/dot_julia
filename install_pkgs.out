@@ -5835,3 +5835,15 @@ Installing AbstractFFTs
   [621f4979] + AbstractFFTs v0.4.1
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master a05d5c566] added package AbstractFFTs
+ 3 files changed, 156 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   c36764be4..a05d5c566  master -> master
+Progress:   1%|▍                                        |  ETA: 2 days, 6:07:31[K
+Installing AbstractInstances
+ Resolving package versions...
+ Installed AbstractInstances ─ v0.1.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [9e5c662f] + AbstractInstances v0.1.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [9e5c662f] + AbstractInstances v0.1.0
