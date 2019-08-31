@@ -37462,3 +37462,165 @@ Installing CImGui
 │ in expression starting at /home/ec2-user/.julia/packages/GLFW/e257h/deps/build.jl:21
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
   Building CImGui → `~/.julia/packages/CImGui/yMlSC/deps/build.log`
+[master ad90b5f29] added package CImGui
+ 109 files changed, 21243 insertions(+)
+ rewrite compiled/v1.2/CMake/TDh52.ji (95%)
+ create mode 100644 packages/CImGui/yMlSC/.appveyor.yml
+ create mode 100644 packages/CImGui/yMlSC/.gitignore
+ create mode 100644 packages/CImGui/yMlSC/.travis.yml
+ create mode 100644 packages/CImGui/yMlSC/LICENSE
+ create mode 100644 packages/CImGui/yMlSC/Project.toml
+ create mode 100644 packages/CImGui/yMlSC/README.md
+ create mode 100644 packages/CImGui/yMlSC/demo/demo.jl
+ create mode 100644 packages/CImGui/yMlSC/demo/demo.png
+ create mode 100644 packages/CImGui/yMlSC/demo/multicontext.jl
+ create mode 100644 packages/CImGui/yMlSC/deps/build.jl
+ create mode 100644 packages/CImGui/yMlSC/docs/.gitignore
+ create mode 100644 packages/CImGui/yMlSC/docs/Project.toml
+ create mode 100644 packages/CImGui/yMlSC/docs/make.jl
+ create mode 100644 packages/CImGui/yMlSC/docs/src/api.md
+ create mode 100644 packages/CImGui/yMlSC/docs/src/index.md
+ create mode 100644 packages/CImGui/yMlSC/examples/app_auto_resize.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/app_constrained_resize.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/app_custom_rendering.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/app_long_text.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/app_main_menu_bar.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/app_property_editor.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/app_simple_layout.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/app_simple_overlay.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/app_window_titles.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/custom_callback.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/demo.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/demo_columns.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/demo_helper.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/demo_layout.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/demo_misc.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/demo_popups.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/demo_widgets.jl
+ create mode 100644 packages/CImGui/yMlSC/examples/demo_window.jl
+ create mode 100644 packages/CImGui/yMlSC/fonts/Cousine-Regular.ttf
+ create mode 100644 packages/CImGui/yMlSC/fonts/DroidSans.ttf
+ create mode 100644 packages/CImGui/yMlSC/fonts/Karla-Regular.ttf
+ create mode 100644 packages/CImGui/yMlSC/fonts/ProggyClean.ttf
+ create mode 100644 packages/CImGui/yMlSC/fonts/ProggyTiny.ttf
+ create mode 100644 packages/CImGui/yMlSC/fonts/README.txt
+ create mode 100644 packages/CImGui/yMlSC/fonts/Roboto-Medium.ttf
+ create mode 100644 packages/CImGui/yMlSC/gen/gen_helper.jl
+ create mode 100644 packages/CImGui/yMlSC/gen/generator.jl
+ create mode 100644 packages/CImGui/yMlSC/gen/libcimgui_api.jl
+ create mode 100644 packages/CImGui/yMlSC/gen/libcimgui_common.jl
+ create mode 100644 packages/CImGui/yMlSC/gen/libhelper_api.jl
+ create mode 100644 packages/CImGui/yMlSC/src/CImGui.jl
+ create mode 100644 packages/CImGui/yMlSC/src/LibCImGui.jl
+ create mode 100644 packages/CImGui/yMlSC/src/backend/GLFW/GLFWBackend.jl
+ create mode 100644 packages/CImGui/yMlSC/src/backend/GLFW/callbacks.jl
+ create mode 100644 packages/CImGui/yMlSC/src/backend/GLFW/impl.jl
+ create mode 100644 packages/CImGui/yMlSC/src/backend/OpenGL/OpenGLBackend.jl
+ create mode 100644 packages/CImGui/yMlSC/src/backend/OpenGL/impl.jl
+ create mode 100644 packages/CImGui/yMlSC/src/helper.jl
+ create mode 100644 packages/CImGui/yMlSC/src/wrapper.jl
+ create mode 100644 packages/CImGui/yMlSC/test/runtests.jl
+ create mode 100644 packages/CSyntax/dcsnO/.appveyor.yml
+ create mode 100644 packages/CSyntax/dcsnO/.gitignore
+ create mode 100644 packages/CSyntax/dcsnO/.travis.yml
+ create mode 100644 packages/CSyntax/dcsnO/LICENSE
+ create mode 100644 packages/CSyntax/dcsnO/Project.toml
+ create mode 100644 packages/CSyntax/dcsnO/README.md
+ create mode 100644 packages/CSyntax/dcsnO/REQUIRE
+ create mode 100644 packages/CSyntax/dcsnO/src/CFor.jl
+ create mode 100644 packages/CSyntax/dcsnO/src/CRef.jl
+ create mode 100644 packages/CSyntax/dcsnO/src/CStatic.jl
+ create mode 100644 packages/CSyntax/dcsnO/src/CSwitch.jl
+ create mode 100644 packages/CSyntax/dcsnO/src/CSyntax.jl
+ create mode 100644 packages/CSyntax/dcsnO/test/for.jl
+ create mode 100644 packages/CSyntax/dcsnO/test/ref.jl
+ create mode 100644 packages/CSyntax/dcsnO/test/runtests.jl
+ create mode 100644 packages/CSyntax/dcsnO/test/static.jl
+ create mode 100644 packages/CSyntax/dcsnO/test/switch.jl
+ create mode 100644 packages/CSyntax/dcsnO/test/vsSwitch.jl
+ create mode 100644 packages/GLFW/e257h/.appveyor.yml
+ create mode 100644 packages/GLFW/e257h/.gitattributes
+ create mode 100644 packages/GLFW/e257h/.gitignore
+ create mode 100644 packages/GLFW/e257h/.travis.yml
+ create mode 100644 packages/GLFW/e257h/LICENSE.md
+ create mode 100644 packages/GLFW/e257h/Project.toml
+ create mode 100644 packages/GLFW/e257h/README.md
+ create mode 100644 packages/GLFW/e257h/deps/build.jl
+ create mode 100644 packages/GLFW/e257h/examples/callbacks.jl
+ create mode 100644 packages/GLFW/e257h/examples/multiwindow.jl
+ create mode 100644 packages/GLFW/e257h/examples/simple.jl
+ create mode 100644 packages/GLFW/e257h/src/GLFW.jl
+ create mode 100644 packages/GLFW/e257h/src/callback.jl
+ create mode 100644 packages/GLFW/e257h/src/glfw3.jl
+ create mode 100644 packages/GLFW/e257h/src/monitor_properties.jl
+ create mode 100644 packages/GLFW/e257h/src/vulkan.jl
+ create mode 100644 packages/GLFW/e257h/test/runtests.jl
+ create mode 100644 packages/GLFW/e257h/test/windowclose.jl
+ create mode 100644 packages/ModernGL/oi403/.travis.yml
+ create mode 100644 packages/ModernGL/oi403/LICENSE.md
+ create mode 100644 packages/ModernGL/oi403/README.md
+ create mode 100644 packages/ModernGL/oi403/REQUIRE
+ create mode 100644 packages/ModernGL/oi403/appveyor.yml
+ create mode 100644 packages/ModernGL/oi403/src/ModernGL.jl
+ create mode 100644 packages/ModernGL/oi403/src/functionloading.jl
+ create mode 100644 packages/ModernGL/oi403/src/glConstants.jl
+ create mode 100644 packages/ModernGL/oi403/src/glFunctions.jl
+ create mode 100644 packages/ModernGL/oi403/src/glTypes.jl
+ create mode 100644 packages/ModernGL/oi403/test/REQUIRE
+ create mode 100644 packages/ModernGL/oi403/test/runtests.jl
+ create mode 100644 packages/ModernGL/oi403/test/util.jl
+To https://github.com/watsona4/dot_julia.git
+   2d7f4ac48..ad90b5f29  master -> master
+Progress:   9%|███▊                                     |  ETA: 3 days, 15:51:20[K
+Installing CLArrays
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CLFFT [f2e7fd27]:\n CLFFT [f2e7fd27] log:\n ├─possible versions are: [0.0.1-0.0.3, 0.1.0, 0.2.0-0.2.1, 0.3.0, 0.4.0, 0.5.0-0.5.2] or uninstalled\n ├─restricted by julia compatibility requirements to versions: uninstalled\n └─restricted by compatibility requirements with CLArrays [236a7b2a] to versions: [0.4.0, 0.5.0-0.5.2] — no versions left\n   └─CLArrays [236a7b2a] log:\n     ├─possible versions are: 0.1.0-0.1.3 or uninstalled\n     └─restricted to versions * by an explicit requirement, leaving only versions 0.1.0-0.1.3", nothing)
+Progress:   9%|███▉                                     |  ETA: 3 days, 15:33:20[K
+Installing CLBLAS
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package CLBLAS [422c787a]:\n CLBLAS [422c787a] log:\n ├─possible versions are: [0.1.0, 1.1.0-1.1.5, 1.2.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 1.1.0-1.1.5, 1.2.0]\n └─restricted by julia compatibility requirements to versions: uninstalled — no versions left", nothing)
+Progress:   9%|███▉                                     |  ETA: 3 days, 15:15:03[K
+Installing CLBlast
+ Resolving package versions...
+ Installed CLBlast ─ v0.2.0
+ Installed OpenCL ── v0.8.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [a761db2c] + CLBlast v0.2.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [a761db2c] + CLBlast v0.2.0
+  [08131aa3] + OpenCL v0.8.0
+  Building CLBlast → `~/.julia/packages/CLBlast/lZMpD/deps/build.log`
+┌ Error: Error building `CLBlast`: 
+│ ERROR: LoadError: IOError: could not spawn `cmake -DSAMPLES=OFF -DTESTS=OFF -DTUNERS=OFF -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ ..`: no such file or directory (ENOENT)
+│ Stacktrace:
+│  [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:401
+│  [2] setup_stdios(::getfield(Base, Symbol("##526#527")){Cmd}, ::Array{Any,1}) at ./process.jl:414
+│  [3] _spawn at ./process.jl:413 [inlined]
+│  [4] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:727
+│  [5] run(::Cmd) at ./process.jl:726
+│  [6] top-level scope at /home/ec2-user/.julia/packages/CLBlast/lZMpD/deps/build.jl:86
+│  [7] include at ./boot.jl:328 [inlined]
+│  [8] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [9] include(::Module, ::String) at ./Base.jl:31
+│  [10] include(::String) at ./client.jl:431
+│  [11] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CLBlast/lZMpD/deps/build.jl:60
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Building Homebrew → `~/.julia/packages/Homebrew/s09IX/deps/build.log`
+  Building CLBlast ─→ `~/.julia/packages/CLBlast/lZMpD/deps/build.log`
+┌ Error: Error building `CLBlast`: 
+│ ERROR: LoadError: IOError: could not spawn `cmake -DSAMPLES=OFF -DTESTS=OFF -DTUNERS=OFF -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ ..`: no such file or directory (ENOENT)
+│ Stacktrace:
+│  [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:401
+│  [2] setup_stdios(::getfield(Base, Symbol("##526#527")){Cmd}, ::Array{Any,1}) at ./process.jl:414
+│  [3] _spawn at ./process.jl:413 [inlined]
+│  [4] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:727
+│  [5] run(::Cmd) at ./process.jl:726
+│  [6] top-level scope at /home/ec2-user/.julia/packages/CLBlast/lZMpD/deps/build.jl:86
+│  [7] include at ./boot.jl:328 [inlined]
+│  [8] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [9] include(::Module, ::String) at ./Base.jl:31
+│  [10] include(::String) at ./client.jl:431
+│  [11] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/CLBlast/lZMpD/deps/build.jl:60
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647

@@ -1273,6 +1273,12 @@ git-tree-sha1 = "1844ea7b7f4d457290fe71a90822971871729a4a"
 uuid = "5d785b6c-b76f-510e-a07c-3070796c7e87"
 version = "1.69.3"
 
+[[CLBlast]]
+deps = ["BinDeps", "Compat", "Homebrew", "Libdl", "LinearAlgebra", "OpenCL", "Printf", "Random"]
+git-tree-sha1 = "48e5cfba99403037e35a4ca9eb6c56aaea9c8a12"
+uuid = "a761db2c-effc-550d-a410-5f59553ed40d"
+version = "0.2.0"
+
 [[CMake]]
 deps = ["BinDeps"]
 git-tree-sha1 = "c67a8689dc5444adc5eb2be7d837100340ecba11"
@@ -2865,6 +2871,12 @@ version = "0.1.2"
 git-tree-sha1 = "1af2f79c7eaac3e019a0de41ef63335ff26a0a57"
 uuid = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
 version = "0.11.1"
+
+[[OpenCL]]
+deps = ["Libdl", "LinearAlgebra", "Printf", "Test"]
+git-tree-sha1 = "4e67bbe5f88ac62eb01237e6d0e3befff8b3dcf4"
+uuid = "08131aa3-fb12-5dee-8b74-c09406e224a2"
+version = "0.8.0"
 
 [[Optim]]
 deps = ["Calculus", "DiffEqDiffTools", "FillArrays", "ForwardDiff", "LineSearches", "LinearAlgebra", "NLSolversBase", "NaNMath", "Parameters", "PositiveFactorizations", "Printf", "Random", "SparseArrays", "StatsBase"]
