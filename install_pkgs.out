@@ -22655,3 +22655,158 @@ Installing ArchGDAL
   [cf35fbd7] + GeoInterface v0.4.1
   Building GDAL → `~/.julia/packages/GDAL/vec6Y/deps/build.log`
   Building GDAL → `~/.julia/packages/GDAL/vec6Y/deps/build.log`
+[master 5ab0aab90] added package ArchGDAL
+ 144 files changed, 50332 insertions(+)
+ create mode 100644 packages/ArchGDAL/RCmkd/.codecov.yml
+ create mode 100644 packages/ArchGDAL/RCmkd/.gitignore
+ create mode 100644 packages/ArchGDAL/RCmkd/.travis.yml
+ create mode 100644 packages/ArchGDAL/RCmkd/LICENSE.md
+ create mode 100644 packages/ArchGDAL/RCmkd/Project.toml
+ create mode 100644 packages/ArchGDAL/RCmkd/README.md
+ create mode 100644 packages/ArchGDAL/RCmkd/appveyor.yml
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/make.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/src/considerations.md
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/src/conventions.md
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/src/datasets.md
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/src/features.md
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/src/geometries.md
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/src/index.md
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/src/memory.md
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/src/projections.md
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/src/rasters.md
+ create mode 100644 packages/ArchGDAL/RCmkd/docs/src/spatialite.md
+ create mode 100644 packages/ArchGDAL/RCmkd/src/ArchGDAL.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/base/display.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/base/iterators.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/context.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/dataset.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/datastreams.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/driver.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/gcp.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/geointerface.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/ogr/feature.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/ogr/featuredefn.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/ogr/featurelayer.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/ogr/fielddefn.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/ogr/geometry.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/ogr/styletable.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/raster/colortable.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/raster/rasterattributetable.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/raster/rasterband.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/raster/rasterio.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/spatialref.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/types.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/utilities.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/src/utils.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/REQUIRE
+ create mode 100644 packages/ArchGDAL/RCmkd/test/runtests.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_cookbook_geometry.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_cookbook_projection.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_dataset.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_datastreams.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_display.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_drivers.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_feature.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_featurelayer.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_fielddefn.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_gdal_tutorials.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_gdalutilities.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_geometry.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_geos_operations.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_ospy_examples.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_rasterattrtable.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_rasterband.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_rasterio.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_styletable.jl
+ create mode 100644 packages/ArchGDAL/RCmkd/test/test_types.jl
+ create mode 100644 packages/DataStreams/mEqAy/.gitignore
+ create mode 100644 packages/DataStreams/mEqAy/.travis.yml
+ create mode 100644 packages/DataStreams/mEqAy/LICENSE.md
+ create mode 100644 packages/DataStreams/mEqAy/Project.toml
+ create mode 100644 packages/DataStreams/mEqAy/README.md
+ create mode 100644 packages/DataStreams/mEqAy/appveyor.yml
+ create mode 100644 packages/DataStreams/mEqAy/docs/make.jl
+ create mode 100644 packages/DataStreams/mEqAy/docs/mkdocs.yml
+ create mode 100644 packages/DataStreams/mEqAy/docs/src/index.md
+ create mode 100644 packages/DataStreams/mEqAy/src/DataStreams.jl
+ create mode 100644 packages/DataStreams/mEqAy/src/namedtuples.jl
+ create mode 100644 packages/DataStreams/mEqAy/src/query.jl
+ create mode 100644 packages/DataStreams/mEqAy/src/queryutils.jl
+ create mode 100644 packages/DataStreams/mEqAy/test/codegen.jl
+ create mode 100644 packages/DataStreams/mEqAy/test/query.jl
+ create mode 100644 packages/DataStreams/mEqAy/test/runtests.jl
+ create mode 100644 packages/GDAL/vec6Y/.gitignore
+ create mode 100644 packages/GDAL/vec6Y/.travis.yml
+ create mode 100644 packages/GDAL/vec6Y/CHANGELOG.md
+ create mode 100644 packages/GDAL/vec6Y/LICENSE.md
+ create mode 100644 packages/GDAL/vec6Y/README.md
+ create mode 100644 packages/GDAL/vec6Y/REQUIRE
+ create mode 100644 packages/GDAL/vec6Y/appveyor.yml
+ create mode 100644 packages/GDAL/vec6Y/deps/build.jl
+ create mode 100644 packages/GDAL/vec6Y/deps/build.log
+ create mode 100644 packages/GDAL/vec6Y/deps/build_GEOS.v3.6.2.jl
+ create mode 100644 packages/GDAL/vec6Y/deps/build_PROJ.v4.9.3.jl
+ create mode 100644 packages/GDAL/vec6Y/deps/build_Zlib.v1.2.11.jl
+ create mode 100644 packages/GDAL/vec6Y/gen/README.md
+ create mode 100644 packages/GDAL/vec6Y/gen/combine_gdal_doxygen_xml.py
+ create mode 100644 packages/GDAL/vec6Y/gen/doc.jl
+ create mode 100644 packages/GDAL/vec6Y/gen/rewriter.jl
+ create mode 100755 packages/GDAL/vec6Y/gen/wrap_gdal.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/README.md
+ create mode 100644 packages/GDAL/vec6Y/src/C/common.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/cpl_conv.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/cpl_error.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/cpl_minixml.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/cpl_progress.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/cpl_virtualmem.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/cpl_vsi.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/gdal.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/gdal_alg.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/gdal_utils.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/gdal_vrt.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/gdalwarper.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/misc.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/ogr_api.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/ogr_core.jl
+ create mode 100644 packages/GDAL/vec6Y/src/C/ogr_srs_api.jl
+ create mode 100644 packages/GDAL/vec6Y/src/GDAL.jl
+ create mode 100644 packages/GDAL/vec6Y/src/common.jl
+ create mode 100644 packages/GDAL/vec6Y/src/cpl_error.jl
+ create mode 100644 packages/GDAL/vec6Y/src/error.jl
+ create mode 100644 packages/GDAL/vec6Y/src/gdal_alg.jl
+ create mode 100644 packages/GDAL/vec6Y/src/gdal_h.jl
+ create mode 100644 packages/GDAL/vec6Y/src/gdal_utils.jl
+ create mode 100644 packages/GDAL/vec6Y/src/gdal_vrt.jl
+ create mode 100644 packages/GDAL/vec6Y/src/ogr_api.jl
+ create mode 100644 packages/GDAL/vec6Y/src/ogr_srs_api.jl
+ create mode 100644 packages/GDAL/vec6Y/src/types.jl
+ create mode 100644 packages/GDAL/vec6Y/test/data/point.geojson
+ create mode 100644 packages/GDAL/vec6Y/test/data/utmsmall.tif
+ create mode 100644 packages/GDAL/vec6Y/test/gdal_utils.jl
+ create mode 100644 packages/GDAL/vec6Y/test/runtests.jl
+ create mode 100644 packages/GDAL/vec6Y/test/tutorial_raster.jl
+ create mode 100644 packages/GDAL/vec6Y/test/tutorial_vector.jl
+ create mode 100644 packages/GDAL/vec6Y/test/tutorial_vrt.jl
+ create mode 100644 packages/GeoInterface/M6axi/.gitignore
+ create mode 100644 packages/GeoInterface/M6axi/.travis.yml
+ create mode 100644 packages/GeoInterface/M6axi/LICENSE.md
+ create mode 100644 packages/GeoInterface/M6axi/README.md
+ create mode 100644 packages/GeoInterface/M6axi/REQUIRE
+ create mode 100644 packages/GeoInterface/M6axi/src/GeoInterface.jl
+ create mode 100644 packages/GeoInterface/M6axi/src/geotypes.jl
+ create mode 100644 packages/GeoInterface/M6axi/src/operations.jl
+ create mode 100644 packages/GeoInterface/M6axi/src/plotrecipes.jl
+ create mode 100644 packages/GeoInterface/M6axi/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   f7845adce..5ab0aab90  master -> master
+Progress:   3%|█▎                                       |  ETA: 6 days, 22:18:38[K
+Installing Arena
+ Resolving package versions...
+Pkg.Types.ResolverError("Unsatisfiable requirements detected for package Arena [53eacc40]:\n Arena [53eacc40] log:\n ├─possible versions are: [0.0.1, 0.1.0, 0.2.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0, 0.2.0]\n └─restricted by compatibility requirements with ProgressMeter [92933f4c] to versions: uninstalled — no versions left\n   └─ProgressMeter [92933f4c] log:\n     ├─possible versions are: [0.0.1-0.0.2, 0.1.0-0.1.3, 0.2.0-0.2.3, 0.3.0-0.3.4, 0.4.0, 0.5.0-0.5.6, 0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0, 1.0.0] or uninstalled\n     └─restricted to versions 1.0.0 by an explicit requirement, leaving only versions 1.0.0", nothing)
+Progress:   3%|█▎                                       |  ETA: 6 days, 20:36:51[K
+Installing ArgCheck
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [dce04be8] + ArgCheck v1.0.1
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
