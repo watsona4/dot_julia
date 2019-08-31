@@ -1,0 +1,8 @@
+name = "UnionFind"
+uuid = "99c6138d-4661-531e-8606-19bf1ec96588"
+license = "MIT"
+version = "0.1.0"
+
+[deps]
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

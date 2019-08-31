@@ -1523,6 +1523,12 @@ git-tree-sha1 = "13240cfcc884837fc1aa89b60d500a652bcc3f10"
 uuid = "324d7699-5711-5eae-9e2f-1d82baa6b597"
 version = "0.5.5"
 
+[[Catlab]]
+deps = ["AutoHashEquals", "Compat", "DataStructures", "JSON", "LightGraphs", "LightXML", "Match", "MetaGraphs", "Parameters", "Pkg", "Reexport", "Requires", "Test", "UnionFind"]
+git-tree-sha1 = "fddfe03b029b68e17a362131f8afaa6a2c9f4bcf"
+uuid = "134e5e36-593f-5add-ad60-77f754baafbe"
+version = "0.2.3"
+
 [[Clang]]
 deps = ["BinaryProvider", "CEnum", "DataStructures", "Libdl"]
 git-tree-sha1 = "a4110b4078ec19240b9f79993a5f6498956da37f"
@@ -2877,6 +2883,12 @@ version = "0.2.1"
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 
+[[Match]]
+deps = ["Test"]
+git-tree-sha1 = "8d8253da9e8d38d642cec03d41786a5201479210"
+uuid = "7eb4fadd-790c-5f42-8a69-bfa0b872bfbf"
+version = "1.0.2"
+
 [[MathOptInterface]]
 deps = ["BenchmarkTools", "LinearAlgebra", "OrderedCollections", "SparseArrays", "Test", "Unicode"]
 git-tree-sha1 = "5e6e36e2f01efbc62b3f8bf68c8cf82035e2c6a6"
@@ -3836,6 +3848,12 @@ deps = ["Dates", "Random", "SparseArrays", "StatsBase", "Test"]
 git-tree-sha1 = "b8e58d4390ccebfa4f3bf502a45e08066eec3bf9"
 uuid = "b8865327-cd53-5732-bb35-84acbb429228"
 version = "1.1.0"
+
+[[UnionFind]]
+deps = ["Printf", "Test"]
+git-tree-sha1 = "8830ae3d26179ed6fc177335b4c252158192c0e5"
+uuid = "99c6138d-4661-531e-8606-19bf1ec96588"
+version = "0.1.0"
 
 [[Unitful]]
 deps = ["LinearAlgebra", "Random"]

@@ -46058,3 +46058,21 @@ Installing CategoricalArrays
   [324d7699] + CategoricalArrays v0.5.5
   Updating `~/.julia/environments/v1.2/Manifest.toml`
  [no changes]
+[master 0661c9c8e] added package CategoricalArrays
+ 3 files changed, 38 insertions(+)
+To https://github.com/watsona4/dot_julia.git
+   75d054921..0661c9c8e  master -> master
+Progress:  12%|████▊                                    |  ETA: 3 days, 12:44:50[K
+Installing Catlab
+ Resolving package versions...
+ Installed UnionFind ─ v0.1.0
+ Installed Match ───── v1.0.2
+ Installed Catlab ──── v0.2.3
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [134e5e36] + Catlab v0.2.3
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [134e5e36] + Catlab v0.2.3
+  [7eb4fadd] + Match v1.0.2
+  [99c6138d] + UnionFind v0.1.0
+  Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+  Building LightXML ─→ `~/.julia/packages/LightXML/k3mJ4/deps/build.log`
