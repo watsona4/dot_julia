@@ -1250,6 +1250,12 @@ git-tree-sha1 = "2f8290ab53725d9d405532cd95399169f9bfa643"
 uuid = "4fe2ecd4-b952-581a-b4b6-a532675a646e"
 version = "0.1.0"
 
+[[CDDLib]]
+deps = ["BinDeps", "Homebrew", "Libdl", "LinearAlgebra", "MathProgBase", "Polyhedra", "SparseArrays", "Test", "WinRPM"]
+git-tree-sha1 = "ffcdc397eb04167798e80cd4719090b7551ed0a6"
+uuid = "3391f64e-dcde-5f30-b752-e11513730f60"
+version = "0.4.1"
+
 [[CEnum]]
 git-tree-sha1 = "62847acab40e6855a9b5905ccb99c2b5cf6b3ebb"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"
@@ -2941,6 +2947,12 @@ deps = ["Base64", "Contour", "Dates", "FFMPEG", "FixedPointNumbers", "GR", "Geom
 git-tree-sha1 = "f2aa8a7b5bc0ccec57a1237a97b6f59fc8d9ef57"
 uuid = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 version = "0.26.2"
+
+[[Polyhedra]]
+deps = ["GeometryTypes", "JuMP", "LinearAlgebra", "MathProgBase", "RecipesBase", "SparseArrays", "StaticArrays", "Test"]
+git-tree-sha1 = "04123e891d4a7fb1a2831f09cb07e26233fdff9c"
+uuid = "67491407-f73d-577b-9b50-8179a7c68029"
+version = "0.4.5"
 
 [[Polynomials]]
 deps = ["LinearAlgebra", "SparseArrays", "Test"]
