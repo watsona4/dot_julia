@@ -38601,3 +38601,25 @@ Installing CSVReader
   [6320db66] + CSVReader v1.0.2
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [6320db66] + CSVReader v1.0.2
+[master 85e9b56fb] added package CSVReader
+ 15 files changed, 931 insertions(+)
+ create mode 100644 packages/CSVReader/s8MN8/.codecov.yml
+ create mode 100644 packages/CSVReader/s8MN8/.travis.yml
+ create mode 100644 packages/CSVReader/s8MN8/LICENSE.md
+ create mode 100644 packages/CSVReader/s8MN8/Project.toml
+ create mode 100644 packages/CSVReader/s8MN8/README.md
+ create mode 100644 packages/CSVReader/s8MN8/src/CSVReader.jl
+ create mode 100644 packages/CSVReader/s8MN8/test/iris.csv
+ create mode 100644 packages/CSVReader/s8MN8/test/iris2.csv
+ create mode 100644 packages/CSVReader/s8MN8/test/missing1.csv
+ create mode 100644 packages/CSVReader/s8MN8/test/missing2.csv
+ create mode 100644 packages/CSVReader/s8MN8/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   9e1c49e3c..85e9b56fb  master -> master
+Progress:  10%|████▏                                    |  ETA: 3 days, 10:44:14[K
+Installing CSyntax
+ Resolving package versions...
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [ea656a56] + CSyntax v0.3.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+ [no changes]
