@@ -30712,3 +30712,67 @@ Installing BinningAnalysis
   [b7192094] + BinningAnalysis v0.3.0
   Updating `~/.julia/environments/v1.2/Manifest.toml`
   [b7192094] + BinningAnalysis v0.3.0
+[master 80a074e0b] added package BinningAnalysis
+ 25 files changed, 12125 insertions(+)
+ create mode 100644 packages/BinningAnalysis/Ntq26/.codecov.yml
+ create mode 100644 packages/BinningAnalysis/Ntq26/.gitignore
+ create mode 100644 packages/BinningAnalysis/Ntq26/.travis.yml
+ create mode 100644 packages/BinningAnalysis/Ntq26/LICENSE.md
+ create mode 100644 packages/BinningAnalysis/Ntq26/Project.toml
+ create mode 100644 packages/BinningAnalysis/Ntq26/README.md
+ create mode 100644 packages/BinningAnalysis/Ntq26/appveyor.yml
+ create mode 100644 packages/BinningAnalysis/Ntq26/docs/src/assets/logo.ai
+ create mode 100644 packages/BinningAnalysis/Ntq26/docs/src/assets/logo_with_text.pdf
+ create mode 100644 packages/BinningAnalysis/Ntq26/docs/src/assets/logo_with_text.png
+ create mode 100644 packages/BinningAnalysis/Ntq26/src/BinningAnalysis.jl
+ create mode 100644 packages/BinningAnalysis/Ntq26/src/Jackknife.jl
+ create mode 100644 packages/BinningAnalysis/Ntq26/src/full/binning.jl
+ create mode 100644 packages/BinningAnalysis/Ntq26/src/full/statistics.jl
+ create mode 100644 packages/BinningAnalysis/Ntq26/src/generic.jl
+ create mode 100644 packages/BinningAnalysis/Ntq26/src/log/binning.jl
+ create mode 100644 packages/BinningAnalysis/Ntq26/src/log/statistics.jl
+ create mode 100644 packages/BinningAnalysis/Ntq26/test/fullbinning.jl
+ create mode 100644 packages/BinningAnalysis/Ntq26/test/logbinning.jl
+ create mode 100644 packages/BinningAnalysis/Ntq26/test/performance.jl
+ create mode 100644 packages/BinningAnalysis/Ntq26/test/runtests.jl
+To https://github.com/watsona4/dot_julia.git
+   2519eb1d5..80a074e0b  master -> master
+Progress:   7%|██▊                                      |  ETA: 4 days, 5:24:20[K
+Installing Bio
+ Resolving package versions...
+ Installed Bio ───────────────── v1.0.0
+ Installed IntervalTrees ─────── v1.0.0
+ Installed Gumbo ─────────────── v0.5.1
+ Installed IndexableBitVectors ─ v1.0.0
+ Installed BioSymbols ────────── v3.1.0
+ Installed GeneticVariation ──── v0.4.0
+ Installed GenomicFeatures ───── v1.0.0
+ Installed BioSequences ──────── v1.1.0
+ Installed Format ────────────── v1.0.0
+ Installed BioStructures ─────── v0.5.1
+ Installed BioServices ───────── v0.3.2
+ Installed BioAlignments ─────── v1.0.0
+ Installed Twiddle ───────────── v1.1.1
+ Installed BioTools ──────────── v1.0.0
+  Updating `~/.julia/environments/v1.2/Project.toml`
+  [3637df68] + Bio v1.0.0
+  Updating `~/.julia/environments/v1.2/Manifest.toml`
+  [3637df68] + Bio v1.0.0
+  [00701ae9] + BioAlignments v1.0.0
+  [7e6ae17a] + BioSequences v1.1.0
+  [a0d4ced5] + BioServices v0.3.2
+  [de9282ab] + BioStructures v0.5.1
+  [3c28c6f8] + BioSymbols v3.1.0
+  [fa51a905] + BioTools v1.0.0
+  [1fa38f19] + Format v1.0.0
+  [9bc6ac9d] + GeneticVariation v0.4.0
+  [899a7d2d] + GenomicFeatures v1.0.0
+  [708ec375] + Gumbo v0.5.1
+  [1cb3b9ac] + IndexableBitVectors v1.0.0
+  [524e6230] + IntervalTrees v1.0.0
+  [7200193e] + Twiddle v1.1.1
+  Building Gumbo → `~/.julia/packages/Gumbo/G7Qbw/deps/build.log`
+  Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+  Building EzXML ────→ `~/.julia/packages/EzXML/G0JeY/deps/build.log`
+  Building MbedTLS ──→ `~/.julia/packages/MbedTLS/a1JFn/deps/build.log`
+  Building Gumbo ────→ `~/.julia/packages/Gumbo/G7Qbw/deps/build.log`

@@ -1,0 +1,14 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.7
+  - 1.0
+notifications:
+  email: false
+after_success:
+  - julia -e 'using Pkg; Pkg.add("Documenter"); Pkg.add("Coverage")'
+  - julia -e 'using Coverage; import BioSymbols; cd(dirname(dirname(pathof(BioSymbols)))); Codecov.submit(process_folder())'
+  - julia -e 'import BioSymbols; cd(dirname(dirname(pathof(BioSymbols)))); include(joinpath("docs", "make.jl"))'
