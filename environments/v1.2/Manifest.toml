@@ -2392,6 +2392,12 @@ git-tree-sha1 = "494cb14e8ca5912ded3652f11f9e67914c437a47"
 uuid = "0fe7c1db-08c2-54a3-a222-6d1d3b7a471a"
 version = "0.7.0"
 
+[[DataAssim]]
+deps = ["DIVAnd", "LinearAlgebra", "Optim", "Printf", "Random", "SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "2ba08eb4f8cefe4d9075c5b3000d45fa6687c151"
+uuid = "cf87cc76-4620-5dad-9f0a-7411b2d39d18"
+version = "0.3.1"
+
 [[DataDeps]]
 deps = ["HTTP", "Reexport", "SHA"]
 git-tree-sha1 = "c18e7b5ee4c7ff080d99ec03f553c95ad071a879"
