@@ -3492,6 +3492,12 @@ git-tree-sha1 = "65fc6e4168a25294d404e902377766a6c984d4f7"
 uuid = "e0ba718c-02ec-11e9-384b-dd2930072415"
 version = "1.0.1"
 
+[[ExpectationStubs]]
+deps = ["MacroTools", "Test"]
+git-tree-sha1 = "29ff679df0dfd5674329db705f893849e86c74c1"
+uuid = "cd0106a6-6d98-567f-99b2-156dd1635c57"
+version = "0.3.0"
+
 [[Expectations]]
 deps = ["Compat", "Distributions", "FastGaussQuadrature", "SpecialFunctions"]
 git-tree-sha1 = "5b50b515886773484a28f19d9c103dffc7702702"
