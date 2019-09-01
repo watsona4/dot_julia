@@ -3375,6 +3375,12 @@ git-tree-sha1 = "efc91c3b57c78345f0c629b556d0718ac3e2a532"
 uuid = "340492b5-2a47-5f55-813d-aca7ddf97656"
 version = "0.2.0"
 
+[[EnglishText]]
+deps = ["JSON", "Test"]
+git-tree-sha1 = "9dfa0d099f42b8110a26b299ebaa4cead2956fb2"
+uuid = "a9e4a3a0-3b51-51f6-8ce2-a898b8c5b12e"
+version = "0.6.0"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"

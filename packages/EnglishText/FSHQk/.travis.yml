@@ -1,0 +1,16 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+    - linux
+    - osx
+julia:
+    - 0.7
+    - nightly
+script:
+    - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+    - julia --compiled-modules=no -e 'import Pkg; Pkg.clone(pwd()); Pkg.build("EnglishText"); Pkg.test("EnglishText"; coverage=true)'
+    - julia -e 'using EnglishText'  # loading after precompiled
+after_success:
+    - julia -e 'import Pkg; Pkg.add("Documenter")'
+    - julia -e 'import Pkg; cd(Pkg.dir("EnglishText")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
+    - julia -e 'import Pkg; cd(Pkg.dir("EnglishText")); include(joinpath("docs", "make.jl"))'
