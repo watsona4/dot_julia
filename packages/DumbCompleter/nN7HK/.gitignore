@@ -1,0 +1,5 @@
+*.cov
+.DS_Store
+/deps/completions-*
+/dev/
+/docs/build/
