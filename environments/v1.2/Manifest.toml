@@ -3182,6 +3182,12 @@ git-tree-sha1 = "72565c50aa2fa4c7c88964e29c3646d4398d53e5"
 uuid = "17511681-8477-586a-8d98-4cfd5a1f2ec3"
 version = "0.5.0"
 
+[[EarCut]]
+deps = ["BinaryProvider", "GeometryTypes", "Libdl", "Test"]
+git-tree-sha1 = "042256d69cdc9409c6e80b5f957b881a0821590d"
+uuid = "5160dea5-cc57-53b0-be5f-ac191989508a"
+version = "1.1.0"
+
 [[EarthOrientation]]
 deps = ["Dates", "DelimitedFiles", "LeapSeconds", "OptionalData", "RemoteFiles", "Test"]
 git-tree-sha1 = "7ceae02eea4ffa57be45c47b237aca093926badc"

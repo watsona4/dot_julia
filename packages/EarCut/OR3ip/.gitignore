@@ -1,0 +1,9 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*.dll
+*.dylib
+*.o
+*.so
+deps/deps.jl
+deps/usr
