@@ -3818,6 +3818,12 @@ git-tree-sha1 = "632193bb313e5b7fb3e1864ad476a64b1ad37b1a"
 uuid = "bf96fef3-21d2-5d20-8afa-0e7d4c32a885"
 version = "0.1.1"
 
+[[Figures]]
+deps = ["JSON", "Pages", "Test"]
+git-tree-sha1 = "b35f6ba1cdc534cef9c6d5d566a50bdcc1752fd2"
+uuid = "fb03b324-f2a4-578c-aba7-71fab90f4c9b"
+version = "0.1.1"
+
 [[FileIO]]
 deps = ["Pkg"]
 git-tree-sha1 = "351f001a78aa1b7ad2696e386e110b5abd071c71"
@@ -5334,6 +5340,12 @@ deps = ["OffsetArrays", "Test"]
 git-tree-sha1 = "7da3e7e1a58cffbf10177553ae95f17b92516912"
 uuid = "5432bcbf-9aad-5242-b902-cca2824c8663"
 version = "0.4.2"
+
+[[Pages]]
+deps = ["HTTP", "JSON", "Test"]
+git-tree-sha1 = "da02b5cdabdf3a850dad6a92167ef9e45fe144bf"
+uuid = "7c165e09-dada-5b64-9fdc-39b801c58527"
+version = "0.3.1"
 
 [[ParallelProcessingTools]]
 deps = ["Distributed"]

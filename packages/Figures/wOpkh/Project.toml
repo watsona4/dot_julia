@@ -1,0 +1,14 @@
+name = "Figures"
+uuid = "fb03b324-f2a4-578c-aba7-71fab90f4c9b"
+authors = ["Eric Forgy <Eric.Forgy@coherentasia.com>"]
+version = "0.1.1"
+
+[deps]
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+Pages = "7c165e09-dada-5b64-9fdc-39b801c58527"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

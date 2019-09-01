@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	Send a POST request and receive an echo of the body. The body is printed to the Julia REPL.<br><br>
+	<input type="text" placeholder="POST data" id="postData" value="Hello!"><br>
+	<button type="button" onclick="post()">POST</button><br><br>
+	<div id="postResponse"></div><br><br>
+	Send a GET request and receive an echo of the request parameter. The parameters are printed to the Julia REPL.<br><br>
+	<input type="text" placeholder="GET parameters" id="getData" value="?id=1"><br>
+	<button type="button" onclick="get()">GET</button><br><br>
+	<div id="getResponse"></div><br><br>
+</body>
+</html>
+
+<script>
+	var echoPath = window.location.href+"/echo"
+
+	function post() {
+		var postData = document.getElementById("postData").value
+		console.log(postData)
+		fetch(echoPath, {
+			method: "post",
+			headers: {
+				"Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+			},
+			body: postData
+		})
+		.then(res => res.json())
+		.then(function (data) {
+			document.getElementById("postResponse").innerHTML = "POST request succeeded with JSON response: "+JSON.stringify(data);
+		})
+		.catch(function (error) {
+			document.getElementById("postResponse").innerHTML = "POST request failed: "+JSON.stringify(error);
+		});
+	}
+
+	function get() {
+		var getData = document.getElementById("getData").value
+		console.log(postData)
+		fetch(echoPath+getData, {
+			method: "get",
+			headers: {
+				"Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+			},
+		})
+		.then(res => res.json())
+		.then(function (data) {
+			document.getElementById("getResponse").innerHTML = "GET request succeeded with JSON response: "+JSON.stringify(data);
+		})
+		.catch(function (error) {
+			document.getElementById("getResponse").innerHTML = "GET request failed: "+JSON.stringify(error);
+		});
+	}
+
+</script>
