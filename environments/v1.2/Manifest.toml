@@ -3038,6 +3038,12 @@ git-tree-sha1 = "8f56fdeaac7404d6deb1e79091ca9484cf19b6e2"
 uuid = "1d51b185-1a84-59cf-b84e-03b0e3da30b7"
 version = "0.1.2"
 
+[[DropboxSDK]]
+deps = ["ArgParse", "ConfParser", "Dates", "HTTP", "JSON", "SHA", "Test", "UUIDs"]
+git-tree-sha1 = "637be68a55962e07ef958c5427084f77347b7288"
+uuid = "bfd8ad24-ccb0-5e6a-9bd1-fc4bec713fae"
+version = "1.0.0"
+
 [[DualMatrixTools]]
 deps = ["DualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "de17ad165602c7e57dd65e593aa2c7b880dad6c5"

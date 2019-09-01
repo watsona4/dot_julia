@@ -1,0 +1,4 @@
+flymd.*
+secrets.*
+bin/dbftp2.jl
+builddir

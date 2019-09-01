@@ -1,0 +1,12 @@
+#!/bin/bash
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+DROPBOXSDK_DIR="$DIR/.."
+
+julia -e '
+    using Pkg
+    Pkg.activate("'"$DROPBOXSDK_DIR"'")
+    include("'"$DROPBOXSDK_DIR/src/DropboxCLI.jl"'")
+    exit_code = DropboxCLI.main(Base.ARGS)
+    exit(exit_code)
+' "$@"

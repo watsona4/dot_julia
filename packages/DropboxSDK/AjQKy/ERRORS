@@ -1,0 +1,7 @@
+Info: Finalizing upload
+Caught excpetion in task
+Context: (:cmd_put, :upload_many_files, Any["redshift"], "")                   
+Exception: ErrorException("Unexpected end of input\nLine: 0\nAround: ......\n  
+        ^\n")
+Backtrace: Union{Ptr{Nothing}, InterpreterIP}[Ptr{Nothing} @0x0000155554c4c1c8,
+Ptr{Nothing} @0x0000155554c1c954, Ptr{Nothing} @0x0000155549493a32, Ptr{Nothing} @0x000015553c692046, Ptr{Nothing} @0x000015553c692541, Ptr{Nothing} @0x000015553c68fc97, Ptr{Nothing} @0x0000155554c02f9b, Ptr{Nothing} @0x0000155554c025b9, Ptr{Nothing} @0x0000155554c1d147, Ptr{Nothing} @0x0000000000000000]              
