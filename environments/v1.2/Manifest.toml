@@ -2497,6 +2497,12 @@ git-tree-sha1 = "b6cf799e140af67157f6b6ce85f1d6c7da231dea"
 uuid = "44e31299-2c53-5a9b-9141-82aa45d7972f"
 version = "0.0.1"
 
+[[DeIdentification]]
+deps = ["CSV", "DataStructures", "Dates", "Glob", "JSON", "Memento", "REPL", "Random", "SHA", "Tables", "YAML"]
+git-tree-sha1 = "dd61797e11309916fc972ae63784d48d35b87bc2"
+uuid = "b905b068-7150-5b22-bc23-80596c88c6a6"
+version = "0.6.1"
+
 [[DecFP]]
 deps = ["BinaryProvider", "Compat", "Libdl", "SpecialFunctions"]
 git-tree-sha1 = "26512f6d65cab2892bec756cd7c0efff3481113d"

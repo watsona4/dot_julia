@@ -1,0 +1,13 @@
+repo:             DeIdentification.jl
+site_name:        DeIdentification.jl
+maintainers:
+  - name: Paul Stey
+    github_user: paulstey
+  - name: Mary McGrath
+    github_user: mcmcgrath13
+
+repo_url:         https://github.com/bcbi/DeIdentification.jl
+site_description: Julia package for the de-identification of data sets
+docs_url:         https://bcbi.github.io/DeIdentification.jl/latest # if it's a software and has documantion
+doi:              "10.5281/zenodo.1976432" # if the project has a related publication.
+type:             software # choose from [web_app, software]

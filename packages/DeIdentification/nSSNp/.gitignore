@@ -1,0 +1,7 @@
+logs/
+output/
+*.*~
+Manifest.toml
+docs/build/
+deleteme.jl
+.DS_Store

@@ -1,0 +1,256 @@
+Source Universe,Source Table,Field,PHI,Method
+BCBI Clinic Visits,BCBI Clinic Detail,Patient Id,Y,Hash - Research ID
+BCBI Clinic Visits,BCBI Clinic Detail,BCBI Clinic Arrival Method,N,
+BCBI Clinic Visits,BCBI Clinic Detail,BCBI Clinic Discharge Disposition,N,
+BCBI Clinic Visits,BCBI Clinic Detail,BCBI Clinic Acuity Level,N,
+BCBI Clinic Visits,BCBI Clinic Detail,BCBI Clinic Level Of Care,N,
+BCBI Clinic Visits,BCBI Clinic Detail,BCBI Clinic Financial Class,N,
+BCBI Clinic Visits,BCBI Clinic Detail,BCBI Clinic Facility Level Of Service,N,
+BCBI Clinic Visits,BCBI Clinic Detail,BCBI Clinic Professional Level Of Service,N,
+BCBI Clinic Visits,BCBI Clinic Detail,Clinic Visit Encounter Csn,Y,Hash
+BCBI Clinic Visits,BCBI Clinic Detail,Clinic Department Name,N,
+BCBI Clinic Visits,BCBI Clinic Detail,Clinic Department Id,N,
+BCBI Clinic Visits,BCBI Clinic Detail,Primary Clinic Diagnosis Name,N,
+BCBI Clinic Visits,BCBI Clinic Detail,Primary Clinic Diagnosis Id,N,
+BCBI Clinic Visits,BCBI Clinic Detail,Primary Chief Complaint Name,N,
+BCBI Clinic Visits,BCBI Clinic Detail,Primary Chief Complaint Id,N,
+BCBI Clinic Visits,BCBI Clinic Detail,Encounter Type,N,
+BCBI Clinic Visits,BCBI Clinic Detail,Encounter Admission Type,N,
+BCBI Clinic Visits,BCBI Clinic Detail,Encounter Admission Source,N,
+BCBI Clinic Visits,BCBI Clinic Detail,Encounter Date,Y,Date Shift
+BCBI Clinic Visits,BCBI Clinic Detail,Encounter End Instant,Y,Date Shift
+BCBI Clinic Visits,BCBI Clinic Detail,Encounter Admission Instant,Y,Date Shift
+BCBI Clinic Visits,BCBI Clinic Detail,Encounter Discharge Instant,Y,Date Shift
+BCBI Clinic Visits,BCBI Clinic Detail,First Trauma Start Instant,Y,Date Shift
+BCBI Clinic Visits,BCBI Clinic Detail,First Trauma End Instant,Y,Date Shift
+BCBI Clinic Visits,BCBI Clinic Detail,Arrival Instant,Y,Date Shift
+BCBI Clinic Visits,BCBI Clinic Detail,Departure Instant,Y,Date Shift
+,,,,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Id,Y,Hash - Research ID
+BCBI Clinic Visits,BCBI Clinic Demographics,Clinic Visit Encounter Csn,Y,Hash
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Name,Y,Hash & Salt
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient First Name,Y,Hash & Salt
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Middle Name,Y,Hash & Salt
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Last Name,Y,Hash & Salt
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Sex,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Preferred Language,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Ethnicity,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient First Race,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Second Race,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Third Race,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Fourth Race,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Fifth Race,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Multi Racial?,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Birth Date,Y,Date Shift
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Death Instant,Y,Date Shift
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Death Location,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Status,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Address,Y,Drop
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient City,Y,Drop
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient County,Y,Drop
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient State Or Province,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Country,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Postal Code,Y,Hash
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Sexual Orientation,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Marital Status,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Religion,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Smoking Status,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Highest Level Of Education,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Is Cancer Patient?,N,
+BCBI Clinic Visits,BCBI Clinic Demographics,Patient Restricted?,N,
+,,,,
+BCBI Clinic Visits,BCBI Clinic Providers,Patient Id,Y,Hash - Research ID
+BCBI Clinic Visits,BCBI Clinic Providers,Clinic Visit Encounter Csn,Y,Hash
+BCBI Clinic Visits,BCBI Clinic Providers,First Attending Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Attending Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Attending Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Attending Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Attending Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Attending Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Attending Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Attending Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Attending Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Attending Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Attending Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Attending Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Attending Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Attending Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Attending Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Attending Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Attending Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Attending Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Mid Level Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Mid Level Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Mid Level Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Mid Level Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Mid Level Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Mid Level Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Mid Level Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Mid Level Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Mid Level Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Mid Level Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Mid Level Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Mid Level Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Mid Level Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Mid Level Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Mid Level Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Mid Level Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Mid Level Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Mid Level Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Resident Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Resident Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Resident Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Resident Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Resident Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Resident Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Resident Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Resident Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Resident Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Resident Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Resident Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Resident Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Resident Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Resident Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Resident Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Resident Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Resident Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Resident Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Nurse Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Nurse Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Nurse Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Nurse Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Nurse Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,First Nurse Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Nurse Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Nurse Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Nurse Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Nurse Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Nurse Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Longest Nurse Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Nurse Assigned Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Nurse Assigned Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Nurse Assigned Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Nurse Assigned Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Nurse Assigned Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Last Nurse Assigned Third Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Case Manager Id,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Case Manager Npi,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Case Manager Dea Number,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Case Manager Primary Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Case Manager Second Specialty,N,
+BCBI Clinic Visits,BCBI Clinic Providers,Case Manager Third Specialty,N,
+,,,,
+BCBI Clinic Visits,BCBI Clinic Coverages,Patient Id,Y,Hash - Research ID
+BCBI Clinic Visits,BCBI Clinic Coverages,Clinic Visit Encounter Csn,Y,Hash
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Id,Y,Hash
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Financial Class,N,
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Type,N,
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Employer Group Name,Y,Hash
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Benefit Plan Id,N,
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Benefit Plan Name,N,
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Benefit Plan Product Type,N,
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Benefit Plan Type,N,
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Payor Id,N,
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Payor Name,N,
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Payor Financial Class,N,
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Payor Product Type,N,
+BCBI Clinic Visits,BCBI Clinic Coverages,Coverage Is Self Pay?,N,
+,,,,
+BCBI Diagnosis Event,Diagnoses,Patient ID,Y,Hash
+BCBI Diagnosis Event,Diagnoses,Encounter CSN,Y,Hash
+BCBI Diagnosis Event,Diagnoses,Diagnosis Event Type,N,
+BCBI Diagnosis Event,Diagnoses,Diagnosis Event Status,N,
+BCBI Diagnosis Event,Diagnoses,Diagnosis Event Present On Admission,N,
+BCBI Diagnosis Event,Diagnoses,Diagnosis ID,N,
+BCBI Diagnosis Event,Diagnoses,Diagnosis Name,N,
+,,,,
+BCBI Diagnosis Event,Diagnosis Codes,Diagnosis ID,N,
+BCBI Diagnosis Event,Diagnosis Codes,Diagnosis Code Type,N,
+BCBI Diagnosis Event,Diagnosis Codes,7,N,
+,,,,
+BCBI Encounters,Encounters,Patient Id,Y,Hash - Research ID
+BCBI Encounters,Encounters,Patient Death Date,Y,Drop
+BCBI Encounters,Encounters,Encounter Csn,Y,Hash
+BCBI Encounters,Encounters,Date,Y,Date Shift
+BCBI Encounters,Encounters,End Instant,Y,Date Shift
+BCBI Encounters,Encounters,Encounter Type,N,
+BCBI Encounters,Encounters,Encounter Admission Type,N,
+BCBI Encounters,Encounters,Encounter Visit Type,N,
+BCBI Encounters,Encounters,Encounter Patient Class,N,
+BCBI Encounters,Encounters,Provider Id,N,
+BCBI Encounters,Encounters,Provider Primary Specialty,N,
+BCBI Encounters,Encounters,Department Id,N,
+BCBI Encounters,Encounters,Department Name,N,
+,,,,
+BCBI Medication Orders,Medications,Patient Id,Y,Hash - Research ID
+BCBI Medication Orders,Medications,Encounter Csn,Y,Hash
+BCBI Medication Orders,Medications,Medication Id,N,
+BCBI Medication Orders,Medications,Medication Order Id,N,
+BCBI Medication Orders,Medications,Medication Name,N,
+BCBI Medication Orders,Medications,Medication Generic Name,N,
+BCBI Medication Orders,Medications,Medication Simple Generic Name,N,
+BCBI Medication Orders,Medications,Medication Therapeutic Class,N,
+BCBI Medication Orders,Medications,Medication Pharmaceutical Class,N,
+BCBI Medication Orders,Medications,Medication Dea Class,N,
+BCBI Medication Orders,Medications,Medication Gpi,N,
+BCBI Medication Orders,Medications,Medication Strength,N,
+BCBI Medication Orders,Medications,Medication Form,N,
+BCBI Medication Orders,Medications,Medication Route,N,
+BCBI Medication Orders,Medications,Medication Controlled?,N,
+BCBI Medication Orders,Medications,Release Instant,Y,Date Shift
+BCBI Medication Orders,Medications,Ordered Date Value,Y,Date Shift
+BCBI Medication Orders,Medications,Ordered Time Of Day Time Value,N,
+BCBI Medication Orders,Medications,Medication Order Order Name,N,
+BCBI Medication Orders,Medications,Medication Order Frequency,N,
+BCBI Medication Orders,Medications,Medication Order Route,N,
+BCBI Medication Orders,Medications,Medication Order Quantity Unit,N,
+BCBI Medication Orders,Medications,Medication Order Dose Unit,N,
+BCBI Medication Orders,Medications,Medication Order Calculated Dose Unit,N,
+BCBI Medication Orders,Medications,Medication Order Class,N,
+BCBI Medication Orders,Medications,Medication Order Mode,N,
+BCBI Medication Orders,Medications,Medication Order Order Priority,N,
+BCBI Medication Orders,Medications,Medication Order Source,N,
+BCBI Medication Orders,Medications,Medication Order Set Source,N,
+BCBI Medication Orders,Medications,Medication Order Preference List,N,
+BCBI Medication Orders,Medications,Medication Order Non Formulary Exception Reason,N,
+BCBI Medication Orders,Medications,Medication Order First Prn Reason,N,
+BCBI Medication Orders,Medications,Medication Order Second Prn Reason,N,
+BCBI Medication Orders,Medications,Medication Order Third Prn Reason,N,
+BCBI Medication Orders,Medications,Medication Order Fourth Prn Reason,N,
+BCBI Medication Orders,Medications,Medication Order Fifth Prn Reason,N,
+BCBI Medication Orders,Medications,Medication Order Sixth Prn Reason,N,
+BCBI Medication Orders,Medications,Medication Order First Indication For Use,N,
+BCBI Medication Orders,Medications,Medication Order Second Indication For Use,N,
+BCBI Medication Orders,Medications,Medication Order Third Indication For Use,N,
+BCBI Medication Orders,Medications,Medication Order Fourth Indication For Use,N,
+BCBI Medication Orders,Medications,Medication Order Fifth Indication For Use,N,
+BCBI Medication Orders,Medications,Medication Order Sixth Indication For Use,N,
+BCBI Medication Orders,Medications,Ordered By Provider Id,N,
+BCBI Medication Orders,Medications,Ordered By Provider Primary Specialty,N,
+BCBI Medication Orders,Medications,Authorized By Provider Id,N,
+BCBI Medication Orders,Medications,Authorized By Provider Primary Specialty,N,
+BCBI Medication Orders,Medications,Duration Days,N,
+,,,,
+BCBI Medication Orders,Med Associated Diagnoses,Patient Id,Y,Hash - Research ID
+BCBI Medication Orders,Med Associated Diagnoses,Encounter Csn,Y,Hash
+BCBI Medication Orders,Med Associated Diagnoses,Medication Order Id,N,
+BCBI Medication Orders,Med Associated Diagnoses,Associated Diagnosis Combo Code Value,N,
+BCBI Medication Orders,Med Associated Diagnoses,Associated Diagnosis Combo Code Display String,N,
+BCBI Medication Orders,Med Associated Diagnoses,Associated Diagnosis Combo Id,N,
+BCBI Medication Orders,Med Associated Diagnoses,Associated Diagnosis Combo Name,N,
+,,,,
+BCBI Clinic Visits,ED Chief Complaints,Patient Id,Y,Hash - Research ID
+BCBI Clinic Visits,ED Chief Complaints,Clinic Visit Encounter Csn,Y,Hash
+BCBI Clinic Visits,ED Chief Complaints,Chief Complaint Combo Id,N,
+BCBI Clinic Visits,ED Chief Complaints,Chief Complaint Combo Name,N,
+,,,,
+BCBI Flowsheet Values,Trauma Level,Patient Id,Y,Hash - Research ID
+BCBI Flowsheet Values,Trauma Level,Encounter Csn,Y,Hash
+BCBI Flowsheet Values,Trauma Level,Taken Instant,Y,Date Shift
+BCBI Flowsheet Values,Trauma Level,Flowsheet Value Value,N,
+,,,,
+BCBI Procedure Orders,ED Consults,Patient Id,Y,Hash - Research ID
+BCBI Procedure Orders,ED Consults,Encounter Csn,Y,Hash
+BCBI Procedure Orders,ED Consults,Procedure Name,N,
+BCBI Procedure Orders,ED Consults,Ordered Date Value,Y,Date Shift
+BCBI Procedure Orders,ED Consults,Ordered Time Of Day Time Value,N,

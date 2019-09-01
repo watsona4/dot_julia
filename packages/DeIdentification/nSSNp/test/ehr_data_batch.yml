@@ -1,0 +1,62 @@
+project:                "ehr"
+project_seed:           42          # for reproducibility
+log_path:               "logs"
+max_dateshift_days:     30
+dateshift_years:        100
+output_path:            "output"
+
+# The primary ID must be present in all data sets, so that dateshifting and salting works appropriately
+primary_id: "CSN"
+
+# Default date format is "y/m/d H:M:S" (e.g. 1999/05/21 11:23:56) - see Dates.DateFormat for options
+date_format: "y-m-dTH:M:S.s"
+
+datasets:
+  - name: dx
+    filename: "./data/batch/dx*.csv"
+    rename_cols:
+      - in: "EncounterBrownCSN"
+        out: "CSN"
+    hash_cols:
+      - "CSN"
+      - "PatientPrimaryMRN"
+    dateshift_cols:
+      - "ArrivalDateandTime"
+    drop_cols:
+      - "DiagnosisTerminologyType"
+  - name: pat
+    filename: "./data/batch/pat*.csv"
+    # NOTE: renaming happens before any other operations (pre-processing, hashing, salting, dropping, dateshifting, post-processing)
+    rename_cols:
+      - in: "EncounterBrownCSN"
+        out: "CSN"
+      - in: "PatientLastName"
+        out: "last_name"
+    # NOTE: VAL must be used to indicate the field value being transformed - no matter the field's type, VAL will be processed as a string
+    preprocess_cols:
+      - col: "PatientPostalCode"
+        transform: "getindex(VAL, 1:5)"
+    hash_cols:
+      - "CSN"
+      - "PatientPostalCode"
+    salt_cols:
+      - "last_name"
+    dateshift_cols:
+      - "ArrivalDateandTime"
+      - "DepartureDateandTime"
+      - "PatientBirthDate"
+    # NOTE: VAL must be used to indicate the field value being transformed - no matter the field's type, VAL will be processed as a string
+    postprocess_cols:
+      - col: "PatientBirthDate"
+        transform: "max(2000+100, parse(Int, getindex(VAL, 1:4)))"
+  - name: med
+    filename: "./data/batch/med*.csv"
+    rename_cols:
+      - in: "EncounterBrownCSN"
+        out: "CSN"
+    hash_cols:
+      - "CSN"
+    dateshift_cols:
+      - "ArrivalDateandTime"
+    drop_cols:
+      - "MedicationTherapeuticClass"
