@@ -2088,6 +2088,12 @@ git-tree-sha1 = "7e7dd8677fc9bdb8783813d3c46a778259272ad5"
 uuid = "0374c0b2-85fe-5995-9aba-c71c9668af00"
 version = "1.0.1"
 
+[[Cosmology]]
+deps = ["QuadGK", "Test", "Unitful", "UnitfulAstro"]
+git-tree-sha1 = "38a7995285fcff298532cd013199b1426d72af2c"
+uuid = "76746363-e552-5dba-9a5a-cef6fa9cc5ab"
+version = "0.5.0"
+
 [[CoupledFields]]
 deps = ["Compat", "StatsBase"]
 git-tree-sha1 = "d56f26542bb7af9c0ec16e098a0a33352f3c9d8e"
