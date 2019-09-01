@@ -2919,6 +2919,12 @@ git-tree-sha1 = "5e8f7e0e02b29127384deccee4c45690fdd77df1"
 uuid = "d3d5718d-52de-57ab-b67a-eca7fd6175a4"
 version = "0.4.6"
 
+[[DocOpt]]
+deps = ["Dates", "Printf", "Test"]
+git-tree-sha1 = "9c9e84257f4ff4c3b23d62022496791d7f153238"
+uuid = "968ba79b-81e4-546f-ab3a-2eecfa62a9db"
+version = "0.4.0"
+
 [[DocSeeker]]
 deps = ["Hiccup", "IterTools", "Markdown", "REPL", "Requires", "Serialization", "StringDistances", "Test", "URIParser"]
 git-tree-sha1 = "8d4d5f9ec970944445c77cfdcd5d3246a4e0cd0d"
