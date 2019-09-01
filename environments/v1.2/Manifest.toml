@@ -3959,6 +3959,12 @@ git-tree-sha1 = "f2340868b95891c36bb643387326a7e336184ee4"
 uuid = "b67e1e5a-d13e-5892-ad81-fb75f5903773"
 version = "0.0.3"
 
+[[FlightMechanics]]
+deps = ["LinearAlgebra", "Markdown", "Test"]
+git-tree-sha1 = "221f8b6be816992d80949cfabee1c65e59ab0e09"
+uuid = "d8b13f87-1844-53e1-ad89-0742af8604bf"
+version = "0.1.0"
+
 [[Flux]]
 deps = ["AbstractTrees", "Adapt", "CodecZlib", "Colors", "DelimitedFiles", "Juno", "LinearAlgebra", "MacroTools", "NNlib", "Pkg", "Printf", "Random", "Reexport", "Requires", "SHA", "Statistics", "StatsBase", "Tracker", "ZipFile"]
 git-tree-sha1 = "08212989c2856f95f90709ea5fd824bd27b34514"
