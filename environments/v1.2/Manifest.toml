@@ -4055,6 +4055,12 @@ git-tree-sha1 = "45c65034cce53ddc3e3dc482fe02d15ce0c10290"
 uuid = "d440507b-0e4e-5f44-bdb1-2286f97ade5a"
 version = "0.1.0"
 
+[[FourierFlows]]
+deps = ["Coverage", "FFTW", "Interpolations", "JLD2", "LinearAlgebra", "Printf", "Random", "Reexport", "Requires", "Statistics"]
+git-tree-sha1 = "e430df633d39e02e772856e6cb745b99b069de19"
+uuid = "2aec4490-903f-5c70-9b11-9bed06a700e1"
+version = "0.3.1"
+
 [[FredData]]
 deps = ["DataFrames", "Dates", "HTTP", "JSON", "Printf", "Test"]
 git-tree-sha1 = "69b4644137005c7cad854db7425ba5347c79e54a"
