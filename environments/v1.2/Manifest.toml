@@ -3026,6 +3026,12 @@ git-tree-sha1 = "1f15e16b5bd27a3d78042c6295237895793c8b25"
 uuid = "6484683b-de53-5689-b9d2-2f18b83297fe"
 version = "0.2.0"
 
+[[DrakeVisualizer]]
+deps = ["BinDeps", "CMakeWrapper", "ColorTypes", "CoordinateTransformations", "DataStructures", "Dates", "FileIO", "GeometryTypes", "JSON", "LCMCore", "Libdl", "LinearAlgebra", "MeshIO", "Meshing", "Pkg", "Random", "Rotations", "StaticArrays", "Test"]
+git-tree-sha1 = "1fde43cfffa8d96f6dd17f058d52dcc5bc9b7641"
+uuid = "49c7015b-b8db-5bc5-841b-fcb31c578176"
+version = "0.4.0"
+
 [[DualMatrixTools]]
 deps = ["DualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "de17ad165602c7e57dd65e593aa2c7b880dad6c5"
@@ -4279,6 +4285,12 @@ deps = ["ColorTypes", "FileIO", "GeometryTypes", "Printf", "Test"]
 git-tree-sha1 = "3e01e12c4c626578a9d47fac0d15c9fe8dad5139"
 uuid = "7269a6da-0436-5bbc-96c2-40638cbb6118"
 version = "0.3.1"
+
+[[Meshing]]
+deps = ["GeometryTypes", "LinearAlgebra", "Profile", "Statistics", "Test"]
+git-tree-sha1 = "4a61ec51d3f1548f779ae46ff43638797a96de92"
+uuid = "e6723b4c-ebff-59f1-b4b7-d97aa5274f73"
+version = "0.4.1"
 
 [[MetaGraphs]]
 deps = ["JLD2", "LightGraphs", "Random"]

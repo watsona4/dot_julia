@@ -1,0 +1,17 @@
+ERROR: LoadError: IOError: could not spawn `lsb_release -i -s`: no such file or directory (ENOENT)
+Stacktrace:
+ [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:401
+ [2] setup_stdios(::getfield(Base, Symbol("##526#527")){Cmd}, ::Array{Any,1}) at ./process.jl:414
+ [3] _spawn at ./process.jl:413 [inlined]
+ [4] #open#535(::Bool, ::Bool, ::typeof(open), ::Cmd, ::Base.DevNull) at ./process.jl:658
+ [5] open at ./process.jl:649 [inlined]
+ [6] open(::Cmd, ::String, ::Base.DevNull) at ./process.jl:629
+ [7] read(::Cmd) at ./process.jl:698
+ [8] read(::Cmd, ::Type{String}) at ./process.jl:709
+ [9] top-level scope at /home/ec2-user/.julia/packages/DrakeVisualizer/r6aOq/deps/build.jl:40
+ [10] include at ./boot.jl:328 [inlined]
+ [11] include_relative(::Module, ::String) at ./loading.jl:1094
+ [12] include(::Module, ::String) at ./Base.jl:31
+ [13] include(::String) at ./client.jl:431
+ [14] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/DrakeVisualizer/r6aOq/deps/build.jl:34
