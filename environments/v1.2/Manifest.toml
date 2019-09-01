@@ -2741,6 +2741,12 @@ git-tree-sha1 = "9f4b98590c63bf202d12ae20783203baad3dd27a"
 uuid = "055956cb-9e8b-5191-98cc-73ae4a59e68a"
 version = "3.2.0"
 
+[[DiffEqProblemLibrary]]
+deps = ["DiffEqBase", "DiffEqBiological", "DiffEqOperators", "LinearAlgebra", "Markdown", "ModelingToolkit", "Random"]
+git-tree-sha1 = "11acdc798cd439647c9094712f1ac3b3a68a4264"
+uuid = "a077e3f3-b75c-5d7f-a0c6-6bc4c8ec64a9"
+version = "4.5.1"
+
 [[DiffEqSensitivity]]
 deps = ["DataFrames", "DiffEqBase", "DiffEqCallbacks", "DiffEqDiffTools", "Flux", "ForwardDiff", "GLM", "LinearAlgebra", "Parameters", "QuadGK", "RecursiveArrayTools", "Statistics"]
 git-tree-sha1 = "4871d048d02f184d2cfe870a17559b0f31b406d6"
@@ -4136,6 +4142,12 @@ uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 git-tree-sha1 = "7f42a32a8cef08f45d43c35663e73bd4e3b35f6d"
 uuid = "78c3b35d-d492-501b-9361-3d52fe80e533"
 version = "0.6.0"
+
+[[ModelingToolkit]]
+deps = ["DiffEqBase", "DiffRules", "DocStringExtensions", "LinearAlgebra", "MacroTools", "NaNMath", "SparseArrays", "SpecialFunctions", "StaticArrays"]
+git-tree-sha1 = "2cee0f3f7b062867193fee3e182ccbcfe991c1b8"
+uuid = "961ee093-0014-501f-94e3-6117800e7a78"
+version = "0.6.4"
 
 [[ModernGL]]
 deps = ["Libdl"]
