@@ -1,0 +1,11 @@
+
+  
+language: julia
+sudo: false
+os:
+  - linux
+julia:
+  - 1.0
+
+notifications:
+  email: false
