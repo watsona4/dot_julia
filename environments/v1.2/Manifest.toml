@@ -3546,6 +3546,12 @@ git-tree-sha1 = "cee4cf6dacce5989a1d7172ef0d6bceb4b4587d8"
 uuid = "22609570-6d06-11e9-3c98-5705e233061e"
 version = "0.1.0"
 
+[[ExtendableSparse]]
+deps = ["DocStringExtensions", "LinearAlgebra", "Printf", "SparseArrays", "Test"]
+git-tree-sha1 = "5302aa656a312c234d87a3ec94924fde82961e09"
+uuid = "95c220a8-a1cf-11e9-0c77-dbfce5f500b3"
+version = "0.1.1"
+
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "aed48d722e528bc634bd36a7d0e090fa2952a3c0"
