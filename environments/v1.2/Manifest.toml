@@ -2249,6 +2249,12 @@ git-tree-sha1 = "0a106457a1831555857e18ac9617279c22fc393b"
 uuid = "dc8bdbbb-1ca9-579f-8c36-e416f6a65cce"
 version = "0.2.0"
 
+[[CutPruners]]
+deps = ["Compat", "MathProgBase"]
+git-tree-sha1 = "e8105c939afcb8540a8525105120b1126bd1a5aa"
+uuid = "65d46eb8-70e9-5a30-bf48-2afa3a021b8f"
+version = "0.1.0"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"
