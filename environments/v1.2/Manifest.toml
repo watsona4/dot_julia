@@ -2297,6 +2297,12 @@ git-tree-sha1 = "f5a64b32c0fd59ae0a5108f78b6d6d9a494fbf3f"
 uuid = "e993076c-0cfd-5d6b-a1ac-36489fdf7917"
 version = "2.4.0"
 
+[[DBFTables]]
+deps = ["DataFrames", "Printf"]
+git-tree-sha1 = "de4f06e05190a2aa5d8f6081766332d68790f03d"
+uuid = "75c7ada1-017a-5fb6-b8c7-2125ff2d6c93"
+version = "0.1.1"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"
