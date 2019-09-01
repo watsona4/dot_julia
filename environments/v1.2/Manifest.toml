@@ -2789,6 +2789,12 @@ git-tree-sha1 = "ab5c53d7ce5b457f9b91217fa33e133cf3386b39"
 uuid = "9cd584b6-1a68-5b24-b787-24af5fbbf48b"
 version = "0.4.0"
 
+[[DifferentialDynamicsModels]]
+deps = ["LinearAlgebra", "StaticArrays"]
+git-tree-sha1 = "92f7d7276eaec7a15d11bcf80e9f64a8b87bd11e"
+uuid = "cb52cc87-d0c7-5933-bad1-08679d8b4c67"
+version = "1.0.1"
+
 [[DifferentialEquations]]
 deps = ["BoundaryValueDiffEq", "DelayDiffEq", "DiffEqBase", "DiffEqBiological", "DiffEqCallbacks", "DiffEqDevTools", "DiffEqFinancial", "DiffEqJump", "DiffEqMonteCarlo", "DiffEqNoiseProcess", "DiffEqPDEBase", "DiffEqParamEstim", "DiffEqPhysics", "DiffEqSensitivity", "DiffEqUncertainty", "DimensionalPlotRecipes", "LinearAlgebra", "MultiScaleArrays", "OrdinaryDiffEq", "ParameterizedFunctions", "Random", "RecursiveArrayTools", "Reexport", "SteadyStateDiffEq", "StochasticDiffEq", "Sundials", "Test"]
 git-tree-sha1 = "1f5d7977befe3265d9b7fc256d8f88d0bd9b6ffa"
