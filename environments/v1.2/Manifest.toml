@@ -4441,6 +4441,12 @@ git-tree-sha1 = "2b0bfb379a54bdfcd2942f388f7d045f8952373d"
 uuid = "4d00f742-c7ba-57c2-abde-4428a4b178cb"
 version = "0.7.5"
 
+[[GeophysicalFlows]]
+deps = ["Coverage", "FFTW", "FourierFlows", "JLD2", "LinearAlgebra", "Printf", "PyPlot", "Random", "Reexport", "SpecialFunctions", "Statistics"]
+git-tree-sha1 = "2c947fe0205925d6ed73eb2d4c712f9e53a7ea85"
+uuid = "44ee3b1c-bc02-53fa-8355-8e347616e15e"
+version = "0.3.0"
+
 [[GitHub]]
 deps = ["Base64", "Compat", "Dates", "HTTP", "JSON", "MbedTLS", "Sockets", "Test"]
 git-tree-sha1 = "0224f2efcf87d783d64861e4a9ee08299164a569"
