@@ -3236,6 +3236,12 @@ git-tree-sha1 = "406d72dbbf3f3e060af252d755453f573f3f6c10"
 uuid = "f03a62fe-f8ab-5b77-a061-bb599b765229"
 version = "0.2.1"
 
+[[EcologicalNetworksPlots]]
+deps = ["EcologicalNetworks", "Random", "RecipesBase", "Statistics", "StatsBase"]
+git-tree-sha1 = "cc20d98f773807ad5e75b8c9deab41c7fa916488"
+uuid = "9f7a259d-73a7-556d-a7a2-3eb122d3865b"
+version = "0.0.3"
+
 [[ElasticArrays]]
 git-tree-sha1 = "d9c079b747b9e9985d83e806bb77e41d149c959a"
 uuid = "fdbdab4c-e67f-52f5-8c3f-e7b388dad3d4"
