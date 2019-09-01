@@ -3689,6 +3689,12 @@ git-tree-sha1 = "e0617188d5abfb9955663158c95e71ae215f8904"
 uuid = "01fcc997-4f28-56b8-8a06-30002c134abb"
 version = "1.0.1"
 
+[[FTPServer]]
+deps = ["Conda", "Memento", "PyCall", "Random"]
+git-tree-sha1 = "ab33b20b2ea799d60f51cb39f2e91db0efa4b647"
+uuid = "9c2b0ca7-0fb3-5789-8f1a-7604e426024c"
+version = "0.2.0"
+
 [[FastClosures]]
 git-tree-sha1 = "b451807e68d0056fab1d094eab27e3b5fd424f1b"
 uuid = "9aa1b823-49e4-5ca5-8b0f-3971ec8bab6a"

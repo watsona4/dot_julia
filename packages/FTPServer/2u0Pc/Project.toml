@@ -1,0 +1,23 @@
+name = "FTPServer"
+uuid = "9c2b0ca7-0fb3-5789-8f1a-7604e426024c"
+author = "Invenia Technical Computing Corperation"
+version = "0.2.0"
+
+[deps]
+Conda = "8f4d0f93-b110-5947-807f-2305c1781a2d"
+Memento = "f28f55f0-a522-5efc-85c2-fe41dfb9b2d9"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[compat]
+Conda = "1.3"
+Memento = "0.12"
+PyCall = "1.91"
+julia = "1"
+
+[extras]
+FTPClient = "01fcc997-4f28-56b8-8a06-30002c134abb"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "FTPClient"]

@@ -1,0 +1,6 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+FTPServer = "9c2b0ca7-0fb3-5789-8f1a-7604e426024c"
+
+[compat]
+Documenter = "~0.22.4"
