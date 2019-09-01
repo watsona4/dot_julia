@@ -1,0 +1,79 @@
+using GenomicVectors
+?slide
+?slide
+?slide!
+exit()
+?slide
+using GenomicVectors
+using GenomicVectors
+?slide
+?slide!
+?slide!
+exit()
+
+function GenomicRanges(genome_name, reader::BioAlignments.BAM.Reader)
+    info = GenomeInfo(genome_name, reader)
+    chr = String[]
+    left_pos = Int64[]
+    right_pos = Int64[]
+    str::Vector{Strand}
+    record = BAM.Record()
+    ## FIXME: convert to genopos in the loop?
+    while !eof(reader)
+        read!(reader, record)
+        if BAM.ismapped(record)
+            push!(chr, BAM.refname(record))
+            push!(left_pos, leftposition(record))
+            push!(right_pos, rightposition(record))
+            push!(strand, strand(record))
+        end
+    end
+    GenomicRanges(chr, left_pos, right_pos, strands, info)
+end
+
+
+function GenomicRanges(genome_name, reader::BioAlignments.BAM.Reader)
+    info = GenomeInfo(genome_name, reader)
+    chr = String[]
+    left_pos = Int64[]
+    right_pos = Int64[]
+    str::Vector{Strand}
+    record = BAM.Record()
+    ## FIXME: convert to genopos in the loop?
+    while !eof(reader)
+        read!(reader, record)
+        if BAM.ismapped(record)
+            push!(chr, BAM.refname(record))
+            push!(left_pos, leftposition(record))
+            push!(right_pos, rightposition(record))
+            push!(str, strand(record))
+        end
+    end
+    GenomicRanges(chr, left_pos, right_pos, strands, info)
+end
+
+
+function GenomicRanges(genome_name, reader::BioAlignments.BAM.Reader)
+    info = GenomeInfo(genome_name, reader)
+    chr = String[]
+    left_pos = Int64[]
+    right_pos = Int64[]
+    strand_pos::Vector{Strand}
+    record = BAM.Record()
+    ## FIXME: convert to genopos in the loop?
+    while !eof(reader)
+        read!(reader, record)
+        if BAM.ismapped(record)
+            push!(chr, BAM.refname(record))
+            push!(left_pos, leftposition(record))
+            push!(right_pos, rightposition(record))
+            push!(strand_pos, strand(record))
+        end
+    end
+    GenomicRanges(chr, left_pos, right_pos, strand_pos, info)
+end
+
+exit()
+Pkg.test("GenomicVectors")
+methods(strand)
+exit()

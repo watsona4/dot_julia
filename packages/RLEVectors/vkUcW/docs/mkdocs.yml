@@ -1,0 +1,26 @@
+site_name:        RLEVectors.jl
+repo_url:         https://github.com/phaverty/RLEVectors.jl
+site_description: Run Length Encoded vectors for julia, inspired by BioConductor.
+site_author:      Peter Haverty
+theme:            readthedocs
+
+extra_css:
+  - assets/Documenter.css
+
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - assets/mathjaxhelper.js
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+
+docs_dir: 'build'
+
+pages:
+  - Home: index.md
+  - News:
+    - Changelog: NEWS.md
+    - TODO: TODO.md
+  - API: api.md
