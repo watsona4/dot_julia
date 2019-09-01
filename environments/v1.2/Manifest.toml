@@ -2166,6 +2166,12 @@ git-tree-sha1 = "237a65db9aaab893957334a84e6f2b95f77be6f7"
 uuid = "6fc5cb8a-a410-53bb-86da-72917ac2b213"
 version = "3.0.0"
 
+[[CryptoUtils]]
+deps = ["Primes"]
+git-tree-sha1 = "d122962d8fa58fecf0e3722fdd4a7291eeb5e62d"
+uuid = "04afed74-ac16-11e9-37b6-1352e3e05830"
+version = "0.1.0"
+
 [[Cuba]]
 deps = ["BinaryProvider", "Distributed", "Libdl", "LinearAlgebra", "Printf", "Test"]
 git-tree-sha1 = "556cfa54b4b4434b4e0eb99c50fcd09ad73f92ad"
