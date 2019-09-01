@@ -2831,6 +2831,12 @@ git-tree-sha1 = "8deb1fd3dd6a077e96c968ef1dc6102eb92964aa"
 uuid = "60a1edcd-6e1b-57a1-8cb7-ec83bf7a2d9a"
 version = "0.2.0"
 
+[[DirectGaussianSimulation]]
+deps = ["GeoStatsBase", "LinearAlgebra", "Random", "Variography"]
+git-tree-sha1 = "5116e1d9dbd633ed1291e430b074315a8c3dea62"
+uuid = "b9828eed-09bc-50cb-b95c-f80757bd8d62"
+version = "0.2.1"
+
 [[DirectSum]]
 deps = ["LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "641f8b5d15185c29b0a409adb9f59c01b48ee0e4"
