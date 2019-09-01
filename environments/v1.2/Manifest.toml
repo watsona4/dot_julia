@@ -4250,6 +4250,12 @@ git-tree-sha1 = "ee709588c71eb62ce53cecf5a594bdefd6f2a9be"
 uuid = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
 version = "1.0.1"
 
+[[GaloisFields]]
+deps = ["HTTP", "JSON", "LinearAlgebra", "Polynomials", "Primes", "Random", "Serialization", "Test"]
+git-tree-sha1 = "1fae69a5438eaeb7148ca761bb6b33febfb88524"
+uuid = "8d0d7f98-d412-5cd4-8397-071c807280aa"
+version = "0.4.0"
+
 [[GaussianDistributions]]
 deps = ["Distributions", "LinearAlgebra", "Random", "Statistics", "Test"]
 git-tree-sha1 = "3b4732afce4035be36f943b476f1bc63920076c1"
