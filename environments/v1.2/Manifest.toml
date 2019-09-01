@@ -4172,6 +4172,12 @@ git-tree-sha1 = "2b65aee2c201ac17a97a285e9bfdcb5026c4e220"
 uuid = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
 version = "1.1.1"
 
+[[GLMNet]]
+deps = ["BinaryProvider", "Distributed", "Distributions", "Libdl", "Printf", "Random", "SparseArrays", "StatsBase"]
+git-tree-sha1 = "a8ec69741da46c70060a5cde2876aa89840ae6d3"
+uuid = "8d5ece8b-de18-5317-b113-243142960cc6"
+version = "0.4.2"
+
 [[GLPK]]
 deps = ["BinaryProvider", "Libdl", "MathOptInterface", "SparseArrays"]
 git-tree-sha1 = "07096d326788fad9902e55ae3e92220abffda2cf"
