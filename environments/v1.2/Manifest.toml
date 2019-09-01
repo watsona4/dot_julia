@@ -3254,6 +3254,12 @@ git-tree-sha1 = "2c1b4b47083dded7615a266f50cdd5841d7bc322"
 uuid = "e248de7e-9197-5860-972e-353a2af44d75"
 version = "0.1.0"
 
+[[Einsum]]
+deps = ["Compat"]
+git-tree-sha1 = "4a6b3eee0161c89700b6c1949feae8b851da5494"
+uuid = "b7d42ee7-0b51-5a75-98ca-779d3107e4c0"
+version = "0.4.1"
+
 [[ElasticArrays]]
 git-tree-sha1 = "d9c079b747b9e9985d83e806bb77e41d149c959a"
 uuid = "fdbdab4c-e67f-52f5-8c3f-e7b388dad3d4"
