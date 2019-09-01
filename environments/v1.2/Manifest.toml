@@ -2527,6 +2527,12 @@ git-tree-sha1 = "594057e7171467e2983ab49739a3019ce2eae67f"
 uuid = "7806a523-6efd-50cb-b5f6-3fa6f1930dbb"
 version = "0.8.3"
 
+[[Deconvolution]]
+deps = ["FFTW", "Random", "Test"]
+git-tree-sha1 = "93f134de891c51706e7011be1ee0e2ccee09d945"
+uuid = "41ba435c-a500-5816-a783-a9707c6f5f3a"
+version = "0.2.0"
+
 [[DefaultApplication]]
 deps = ["Test"]
 git-tree-sha1 = "a51d16b075dc52e22cde13b4a6e0ba4ba86649ee"
