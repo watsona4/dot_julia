@@ -3741,6 +3741,12 @@ git-tree-sha1 = "14d815c8c40e319433cead275cf370609ebdf208"
 uuid = "8509a5d2-ae42-11e8-0b46-5d0ace601ee4"
 version = "0.1.0"
 
+[[FastRationals]]
+deps = ["MacroTools"]
+git-tree-sha1 = "8fa69786fa9f8c52dd204f6303124bf370e07142"
+uuid = "275e499e-7a09-5551-a1d1-9fe535a2b717"
+version = "0.1.8"
+
 [[FastRounding]]
 deps = ["ErrorfreeArithmetic", "Test"]
 git-tree-sha1 = "224175e213fd4fe112db3eea05d66b308dc2bf6b"
