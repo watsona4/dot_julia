@@ -1,0 +1,19 @@
+name = "FieldDocTables"
+uuid = "a5d692f0-33f0-11e9-293e-eb83c8d6177d"
+authors = ["Rafael Schouten <rafaelschouten@gmail.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[deps]
+DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+PrettyTables = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
+
+[extras]
+FieldMetadata = "bf96fef3-21d2-5d20-8afa-0e7d4c32a885"
+Markdown = "d6f4376e-aef5-505a-96c1-9c027394607a"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["FieldMetadata","Test","Markdown"]
