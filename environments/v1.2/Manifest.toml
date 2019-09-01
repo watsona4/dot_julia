@@ -2225,6 +2225,12 @@ git-tree-sha1 = "822c93db371991f30c0005b8ce879d70db8fa838"
 uuid = "a33ca353-0707-5c2b-b398-646075a850cd"
 version = "0.1.0"
 
+[[CurricularAnalytics]]
+deps = ["Blink", "Bukdu", "CSV", "DataFrames", "DataStructures", "Documenter", "Gurobi", "HTTP", "JSON", "JuMP", "LightGraphs", "LinearAlgebra", "Markdown", "MultiJuMP", "Printf", "Test", "WebIO"]
+git-tree-sha1 = "39c121e7f03ecf3d9b843b129b73b97ed66bf578"
+uuid = "593ffa3d-269e-5d81-88bc-c3b6809c35a6"
+version = "0.5.2"
+
 [[CustomUnitRanges]]
 deps = ["Test"]
 git-tree-sha1 = "0a106457a1831555857e18ac9617279c22fc393b"
@@ -2930,6 +2936,12 @@ deps = ["AbstractTrees", "BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "b16b6c5127e8c6be3084e6658c5fb5dd1f97d7fd"
 uuid = "708ec375-b3d6-5a57-a7ce-8257bf98657a"
 version = "0.5.1"
+
+[[Gurobi]]
+deps = ["Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "OrderedCollections", "SparseArrays"]
+git-tree-sha1 = "c57375bf7e0834d519c34df045c4e609276dc34e"
+uuid = "2e9cd046-0924-5485-92f1-d5272153d98b"
+version = "0.7.2"
 
 [[HCubature]]
 deps = ["Combinatorics", "DataStructures", "LinearAlgebra", "QuadGK", "StaticArrays"]
@@ -3739,6 +3751,12 @@ deps = ["MacroTools", "Test"]
 git-tree-sha1 = "41e6e7c4b448afeaddaac7f496b414854f83b848"
 uuid = "46d2c3a1-f734-5fdb-9937-b9b9aeba4221"
 version = "0.2.1"
+
+[[MultiJuMP]]
+deps = ["Combinatorics", "JuMP", "LaTeXStrings", "LinearAlgebra", "MathProgBase", "RecipesBase", "Test"]
+git-tree-sha1 = "61e02863f22590ba6a843bc568ae271f8c1b5e47"
+uuid = "f6097e2c-3ba3-5605-a9a8-3a277acb490f"
+version = "0.5.0"
 
 [[MultiResolutionIterators]]
 deps = ["IterTools", "Random", "Test"]
