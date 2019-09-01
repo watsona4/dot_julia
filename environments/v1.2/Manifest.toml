@@ -2901,6 +2901,12 @@ git-tree-sha1 = "4ae0ff1a3a556383f7b1b004f5fb964b26ac96c9"
 uuid = "31c24e10-a181-5473-b8eb-7969acd0382f"
 version = "0.20.0"
 
+[[Ditherings]]
+deps = ["Images", "Test"]
+git-tree-sha1 = "b82c1da2a9bde0821926927b2185f312c0c8e4c5"
+uuid = "18716f60-6c0e-11e9-0a37-e9870d4a7c8f"
+version = "0.1.0"
+
 [[DocSeeker]]
 deps = ["Hiccup", "IterTools", "Markdown", "REPL", "Requires", "Serialization", "StringDistances", "Test", "URIParser"]
 git-tree-sha1 = "8d4d5f9ec970944445c77cfdcd5d3246a4e0cd0d"
