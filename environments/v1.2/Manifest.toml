@@ -4049,6 +4049,12 @@ git-tree-sha1 = "4c4d727f1b7e0092134fabfab6396b8945c1ea5b"
 uuid = "f6369f11-7733-5829-9624-2563aa707210"
 version = "0.10.3"
 
+[[FoundationDB]]
+deps = ["Distributed", "Libdl", "Test"]
+git-tree-sha1 = "45c65034cce53ddc3e3dc482fe02d15ce0c10290"
+uuid = "d440507b-0e4e-5f44-bdb1-2286f97ade5a"
+version = "0.1.0"
+
 [[FredData]]
 deps = ["DataFrames", "Dates", "HTTP", "JSON", "Printf", "Test"]
 git-tree-sha1 = "69b4644137005c7cad854db7425ba5347c79e54a"

@@ -1,0 +1,30 @@
+language: julia
+sudo: required
+dist: trusty
+os:
+  - linux
+julia:
+  - 1.0
+  - nightly
+env:
+  - JULIA_NUM_THREADS=2
+matrix:
+  fast_finish: true
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+git:
+  depth: 99999999
+before_install:
+  - if [ $TRAVIS_OS_NAME = "linux" ]; then ./install_fdb.sh; fi
+
+script:
+  - echo JULIA_NUM_THREADS=$JULIA_NUM_THREADS
+  - export JULIA_NUM_THREADS
+  - julia -e 'using Pkg; Pkg.clone(pwd()); Pkg.build("FoundationDB"); Pkg.test("FoundationDB"; coverage=true)'
+after_success:
+  # push coverage results to Coveralls
+  - julia -e 'using Pkg; cd(Pkg.dir("FoundationDB")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
+  # push coverage results to Codecov
+  - julia -e 'using Pkg; cd(Pkg.dir("FoundationDB")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
