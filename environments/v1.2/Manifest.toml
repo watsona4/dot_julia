@@ -2475,6 +2475,12 @@ git-tree-sha1 = "1d2844192be173ce729c196649c08d0692a4442b"
 uuid = "5721bf48-af8e-5845-8445-c9e18126e773"
 version = "0.3.1"
 
+[[DatagenCopulaBased]]
+deps = ["Combinatorics", "Distributed", "Distributions", "HCubature", "HypothesisTests", "LinearAlgebra", "QuadGK", "Random", "Roots", "SharedArrays", "SpecialFunctions", "StatsBase", "Test"]
+git-tree-sha1 = "679d3eb9270b4dc1517b85a55a146523e52634c7"
+uuid = "b9879e35-cdd4-53a9-a12a-bc41659e9769"
+version = "1.0.0"
+
 [[Dates]]
 deps = ["Printf"]
 uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
