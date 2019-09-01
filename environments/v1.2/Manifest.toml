@@ -4567,6 +4567,12 @@ git-tree-sha1 = "73d62eb9474068f4cadd7b365a49e3b5fff63987"
 uuid = "cadd898e-fd86-5def-96da-d3badf016279"
 version = "0.1.1"
 
+[[GracePlot]]
+deps = ["Printf", "Test"]
+git-tree-sha1 = "b5661a10005d7df541a85c3836bcfeb7d2cc9d1d"
+uuid = "7eab9655-7a32-54b9-bc77-719f19b65607"
+version = "0.3.2"
+
 [[GradDescent]]
 deps = ["Distributions", "ForwardDiff", "LinearAlgebra", "Random", "Test"]
 git-tree-sha1 = "2180f700605eb0ad851f54577855c6a8f13b9a20"
