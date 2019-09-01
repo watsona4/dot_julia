@@ -1,0 +1,20 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.7
+  - 1.0
+# - nightly
+notifications:
+  email: false
+addons:
+  apt:
+    packages:
+      - hdf5-tools
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia -e 'using Pkg; Pkg.clone(pwd())'
+  - julia -e 'using Pkg; Pkg.build("CumulantsUpdates"); Pkg.test("CumulantsUpdates"; coverage=true)'
+after_success:
+  - julia -e 'using Pkg; cd(Pkg.dir("CumulantsUpdates")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(process_folder())'

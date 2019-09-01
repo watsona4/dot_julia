@@ -2201,6 +2201,18 @@ git-tree-sha1 = "dc7e498ea7b1ae6dfe83578918681b1b426b3e31"
 uuid = "01e79fc4-f247-5fa3-af0e-2bd1d4cc767f"
 version = "1.0.2"
 
+[[CumulantsFeatures]]
+deps = ["Cumulants", "CumulantsUpdates", "Distributed", "Distributions", "LinearAlgebra", "Random", "SharedArrays", "StatsBase", "SymmetricTensors", "Test"]
+git-tree-sha1 = "a7be4dd7843bc84f96befff551cd5af818862266"
+uuid = "89efba0d-c40c-5510-8345-5c0ed49e5930"
+version = "1.0.1"
+
+[[CumulantsUpdates]]
+deps = ["Cumulants", "Distributed", "FileIO", "JLD2", "LinearAlgebra", "Random", "StatsBase", "SymmetricTensors", "Test"]
+git-tree-sha1 = "3641e5658af29f4bee2b7bcc76540508d5e5b897"
+uuid = "d4707d7b-0fe1-5399-a86f-c75188857573"
+version = "1.0.1"
+
 [[CustomUnitRanges]]
 deps = ["Test"]
 git-tree-sha1 = "0a106457a1831555857e18ac9617279c22fc393b"
