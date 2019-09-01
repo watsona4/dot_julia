@@ -1,0 +1,421 @@
+commit 37b57f4324504d2e9ae8a00ced66030b597f231e
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Nov 7 13:37:24 2018 -0600
+
+    Add deps
+
+commit 130caee76b8c0c6247da283b8a1128408a856d68
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Wed Nov 7 11:37:10 2018 -0600
+
+    Use ninja on Windows
+
+commit 6376e4d27aeaa01d46244782a5dc76af4d666212
+Author: Ray Donnelly <mingw.android@gmail.com>
+Date:   Mon Nov 5 15:10:51 2018 -0600
+
+    Update to 3.3.8
+
+commit 96fd14b2d9214174dac702c1011d6f8e57e6631f
+Merge: 8eaa8a1 85588e0
+Author: Gregory R. Lee <grlee77@gmail.com>
+Date:   Fri Mar 2 13:33:43 2018 -0500
+
+    Merge pull request #38 from jakirkham-feedstocks/re-render__master__2.4.5
+    
+    Add back VC 14 build and re-render with conda-smith 2.4.5
+
+commit 85588e0175fbeb072b0631262d8e541feb1123f8
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Mar 1 13:25:50 2018 -0500
+
+    MNT: Re-rendered with conda-smithy 2.4.5
+    
+    Now that `python` is a build dependency, re-render to get the Python
+    builds added back (in particular Python 3.6 for VC 14).
+
+commit fb62129b19e76fd93c4acd063b00c0e90fa67b42
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Mar 1 13:25:49 2018 -0500
+
+    Add Python as a Windows build dependency
+    
+    For some reason we were missing Python on Windows as a build dependency.
+    However this is used to configure the `vc` features. So add `python` as
+    a Windows dependency so that we can fix the `vc` feature selection.
+
+commit 31d2b36dd641862100e38044d3bdd9c87333ae3b
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Thu Mar 1 13:25:47 2018 -0500
+
+    MNT: Re-rendered with conda-smithy 2.4.5
+
+commit 8eaa8a1c63e7fcb97c63c1ee8e33c62ef3afa9c7
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Fri Nov 3 21:38:50 2017 +0100
+
+    Update to 3.3.7 (#36)
+
+commit a53d4c4452a30824b8cfef8c7d738dfda45e3796
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Tue Aug 22 11:51:18 2017 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 1918f4bd9c0d2795ad5973243ef9f99b91eb740f
+Author: Gregory R. Lee <grlee77@gmail.com>
+Date:   Sun Aug 20 13:59:53 2017 -0400
+
+    Add  optimization flags
+    
+    On my test systems this makes single-threaded FFTs ~5 times faster.
+
+commit ef4b7a32e8db88bbc34e66a0981e06053d290b66
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Sat Aug 19 05:02:16 2017 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit a33ed772e17926285d238578335cf6d52d2223f1
+Merge: b144803 371516b
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Tue Jul 11 08:28:49 2017 +0200
+
+    Merge pull request #33 from jschueller/single
+    
+    Fix single precision library
+
+commit 371516b4d234d3edcd765ca5e752d9c8461f0a10
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Tue Jul 11 00:29:54 2017 +0200
+
+    Fix single precision library
+
+commit b1448035f0ba7f8e7871fd21485c793cd40c585f
+Merge: 60c8026 213a060
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Mon Jul 10 08:14:20 2017 +0200
+
+    Merge pull request #32 from jschueller/win
+    
+    Add windows support
+
+commit 213a060a470d8eebfc3ef6ac3c8f49001376f5af
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Sun Jul 9 13:24:43 2017 +0200
+
+    Enable avx/sse2
+
+commit 0fc56b42cd9b2fa4f9a338092f5ab5004a1a7ee4
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Fri Jul 7 23:36:37 2017 +0200
+
+    Add windows support
+
+commit 60c802636bd5f4255cdb88faa7174f43878b9314
+Merge: 9b380ee 3f50dc7
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Wed Jul 5 20:17:19 2017 +0200
+
+    Merge pull request #31 from jschueller/toolchain
+    
+    Use toolchain
+
+commit 3f50dc7a7b33b715c76561a4f302698de5f1169a
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Wed Jul 5 11:58:14 2017 +0200
+
+    No LIBRARY_SEARCH_VAR
+
+commit b59778d3e79114256d1a59cbdcfb2414eb86f236
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Wed Jul 5 11:10:06 2017 +0200
+
+    Use toolchain
+
+commit 9b380eeb7ba55b43e6c0722682be9ea28b279bfa
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Thu Jun 8 15:40:43 2017 +0200
+
+    Bump release
+
+commit 24ea906d63781992f3107421cfa5d79f1db622f7
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Thu Jun 8 15:39:11 2017 +0200
+
+    Update to 3.3.6p2 (#28)
+
+commit 8e3ec18d42a949ed93029dfb8d69b7b43fe89060
+Merge: ce1c7d5 081b588
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Wed May 17 01:11:43 2017 -0400
+
+    Merge pull request #26 from jakirkham/re-render__master__2.3.1
+    
+    MNT: Re-rendered with conda-smithy 2.3.1 [ci skip]
+
+commit 081b588eb2fa85f3dbda09edc48ae4acd57bbfd4
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Wed May 17 00:38:20 2017 -0400
+
+    MNT: Re-rendered with conda-smithy 2.3.1
+
+commit ce1c7d5ababb99d74739ab3cfe347bb7189d3a3c
+Merge: 87f61de fb2cc8c
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Thu Mar 23 08:26:59 2017 +0100
+
+    Merge pull request #24 from shadowwalkersb/add-tests
+    
+    Add existence tests for headers and shared libraries
+
+commit fb2cc8c093a812eaa8dac375273f093acf9dcc82
+Author: shadow_walker <shadowwalkersb@gmail.com>
+Date:   Wed Mar 22 18:00:51 2017 -0500
+
+    add existence tests for headers and shared libraries
+
+commit 87f61dea8ef246afcb109e84ad05492b9b80049a
+Merge: bfafd14 73bda8d
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Mon Feb 13 13:55:01 2017 +0100
+
+    Merge pull request #22 from jschueller/336
+    
+    Version 3.3.6
+
+commit 73bda8d055b4d891156186101230d86c2da76f93
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Fri Feb 10 10:29:47 2017 +0100
+
+    MNT: Re-rendered with conda-smithy 2.0.1
+
+commit caccd5ec76ef3ced16e5506813ccb76086d2caaa
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Wed Feb 8 16:24:17 2017 +0100
+
+    Update to 3.3.6
+
+commit bfafd14a3a8beecda53abe50b2701ecd6c9dbb60
+Merge: 640b86b 12c2a79
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Sun Dec 18 03:57:28 2016 -0500
+
+    Merge pull request #19 from jakirkham/re-render_1.7.0
+    
+    MNT: Re-rendered with conda-smithy 1.7.0 [ci skip]
+
+commit 12c2a7940846c6ac72ef56aa9ad19d03ab7231a2
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Sun Dec 18 02:04:27 2016 -0500
+
+    MNT: Re-rendered with conda-smithy 1.7.0
+
+commit 640b86b2a5093395daa9ef640aaa0aa8220b5f69
+Merge: ad8bc8c c1c09d0
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Fri Nov 18 01:55:17 2016 -0500
+
+    Merge pull request #18 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit c1c09d05f77cb9d3be31d9e7c487fe7a251eba75
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Fri Nov 18 01:37:12 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.5.3.
+
+commit ad8bc8c5661447db646ff3c48fed3dd4a23edc5a
+Merge: a7debaf 747beb1
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Fri Oct 7 09:05:32 2016 -0400
+
+    Merge pull request #15 from jschueller/patch-1
+    
+    Addd myself to maintainers [ci skip]
+
+commit 747beb164e2f16f629d9935fd01cd30a2ae6c914
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Fri Oct 7 10:40:22 2016 +0200
+
+    Addd myself to maintainers
+
+commit a7debaf7162f1e7086dba03d7801fd1d0acb1cfc
+Merge: c466b63 acaaa29
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Thu Oct 6 23:05:10 2016 -0400
+
+    Merge pull request #14 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock [ci skip]
+
+commit acaaa29d42c3b964625fcebfa4e1f9748ae34277
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Thu Oct 6 12:53:38 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 1.3.2.
+
+commit c466b63c76d7e240086af931810c263a459da9c7
+Merge: 500a3fb a6baecf
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue Aug 30 13:00:19 2016 -0400
+
+    Merge pull request #12 from jakirkham/re_render_1.1.2
+    
+    Re-render with `conda-smithy` version `1.1.2`
+
+commit a6baecfbff86122474cde00adf0ed72451468a91
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Tue Aug 30 11:36:06 2016 -0400
+
+    Re-render with `conda-smithy` version `1.1.2`.
+
+commit 500a3fbc11cc8fdc982e5f065666f2ed4f98e2ef
+Merge: 619e0f6 fe41ae2
+Author: Jonathan J. Helmus <jjhelmus@gmail.com>
+Date:   Fri Aug 12 09:11:44 2016 -0500
+
+    Merge pull request #9 from jschueller/335
+    
+    Update to 3.3.5
+
+commit fe41ae2130fdda017c2d9119bf7306d342757e4c
+Author: Julien Schueller <schueller@phimeca.com>
+Date:   Fri Aug 12 09:18:52 2016 +0200
+
+    Update to 3.3.5
+
+commit 619e0f6ee2f6814d0c33559e24e24693fe77bcfd
+Merge: 312afa6 7755676
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue Jun 21 01:36:06 2016 -0400
+
+    Merge pull request #7 from pelson/rerender
+    
+    Correctly deal with perl, and rerender.
+
+commit 7755676412f37a1a5636c70d72da54437bc0da2a
+Author: Phil Elson <pelson.pub@gmail.com>
+Date:   Sun Jun 5 15:20:22 2016 +0100
+
+    Correctly deal with perl, and rerender.
+
+commit 312afa673e79a13f90de7896cc00d709f9a328d7
+Merge: 22b961e ad821a9
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Fri Jun 3 16:22:37 2016 -0400
+
+    Merge pull request #6 from jakirkham/fix_fftw_tests
+    
+    Add `perl` as a build dependency
+
+commit ad821a95247cc90ebb3445fba12d5a1763930a08
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Fri Jun 3 15:25:49 2016 -0400
+
+    recipe: Add `perl` as a build dependency.
+
+commit 22b961ec2910d2d83d02472d216689677fb91033
+Merge: 77e903c 45a7d3b
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Fri Jun 3 15:06:32 2016 -0400
+
+    Merge pull request #4 from grlee77/fPIC_and_AVX
+    
+    update configure flags to enable -fPIC and AVX
+
+commit 45a7d3b6408fe07b2c22c9fca6a18fbe97a9afcc
+Author: Gregory R. Lee <grlee77@gmail.com>
+Date:   Thu May 26 10:14:56 2016 -0400
+
+    restore enable-sse flag to single precision case
+
+commit 4952184baca6beafb8c26ef649ef058220dd8960
+Author: Gregory R. Lee <grlee77@gmail.com>
+Date:   Thu May 26 09:12:38 2016 -0400
+
+    MAINT: loop over the multiple build cases
+
+commit 77e903c58183e87e727ebbe089422f9d640812a3
+Merge: 9c1bf99 d9cd77d
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Tue May 17 01:02:28 2016 -0400
+
+    Merge pull request #5 from conda-forge-admin/feedstock_rerender_master
+    
+    MNT: Re-render the feedstock
+
+commit d9cd77d93eabd7ba439f5e9487a9ce858dd3b237
+Author: conda-forge-admin <pelson.pub+conda-forge@gmail.com>
+Date:   Tue May 17 03:43:46 2016 +0000
+
+    MNT: Updated the feedstock for conda-smithy version 0.10.3.
+    
+    [ci skip]
+
+commit a2b97e5654cbe4f8e9492b87a7ce2eebc527be8e
+Author: Gregory R. Lee <gregory.lee@cchmc.org>
+Date:   Wed May 11 19:47:09 2016 -0400
+
+    add grlee77 as a maintainer
+
+commit 5050791dcb349bd737c172809d1bfabee93bf2be
+Author: Gregory R. Lee <gregory.lee@cchmc.org>
+Date:   Wed May 11 19:40:54 2016 -0400
+
+    ENH: enable both sse2 and AVX where possible
+
+commit aae2375e70d288c9cba678237bebb8aad5613e50
+Author: Gregory R. Lee <gregory.lee@cchmc.org>
+Date:   Wed May 11 19:34:32 2016 -0400
+
+    ENH: add fPIC to allow pyFFTW the option to link to static libs
+
+commit 9c1bf99c06959cda3e9d70379bfcd9b6877d60b6
+Merge: e5ed838 ba2e2e0
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Wed Mar 30 13:50:58 2016 -0400
+
+    Merge pull request #3 from jakirkham/add_alexbw
+    
+    Add alexbw as a maintainer
+
+commit ba2e2e0f6338410c5a4f96b9f28289c5ea26131a
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Wed Mar 30 10:28:32 2016 -0400
+
+    Add alexbw as a maintainer. [skip appveyor]
+
+commit e5ed8383ce1b730bfc6d964d37f2cd6a51b51341
+Merge: bab3d32 3df5ba2
+Author: jakirkham <jakirkham@gmail.com>
+Date:   Wed Mar 16 22:15:41 2016 -0400
+
+    Merge pull request #1 from jakirkham/add_jjhelmus
+    
+    Add jjhelmus as a maintainer
+
+commit 3df5ba24d831206187fb94cf3b72e7b792abc70c
+Author: John Kirkham <kirkhamj@janelia.hhmi.org>
+Date:   Wed Mar 16 19:45:22 2016 -0400
+
+    Add jjhelmus as a maintainer. [skip appveyor]
+
+commit bab3d32cce387bda3a8d3891dc8de339472e67fb
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Mar 16 19:13:03 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 5b06579a120a1c4e5d043286842b0cf1622bbdb5
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Mar 16 18:10:26 2016 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 1f6bcba25b2099812064c406412fec75ac017f31
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Wed Mar 16 18:09:51 2016 +0000
+
+    Initial commit of the fftw feedstock.

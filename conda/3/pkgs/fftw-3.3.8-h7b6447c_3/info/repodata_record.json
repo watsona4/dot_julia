@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "h7b6447c_3",
+  "build_number": 3,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "fftw-3.3.8-h7b6447c_3.conda",
+  "legacy_bz2_md5": "43cec2cbbff0ecb36e4e92c9782c8f79",
+  "license": "GPL 2",
+  "md5": "d58c911c6824974a8bf9c2ec92387fe9",
+  "name": "fftw",
+  "platform": "linux",
+  "sha256": "4346d91967a222c50d418ab50b1f1589164b4aed0e4c5fb74ad627f7dd6bd281",
+  "size": 2414606,
+  "subdir": "linux-64",
+  "timestamp": 1541922820942,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/fftw-3.3.8-h7b6447c_3.conda",
+  "version": "3.3.8"
+}

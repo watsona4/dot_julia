@@ -55,3 +55,4 @@ https://repo.anaconda.com/pkgs/main/linux-64/libgfortran-ng-7.3.0-hdf63c60_0.con
 https://repo.anaconda.com/pkgs/main/linux-64/hdf4-4.2.13-h3ca952b_2.conda
 https://repo.anaconda.com/pkgs/main/linux-64/libssh2-1.8.2-h1ba5d50_0.conda
 https://repo.anaconda.com/pkgs/main/linux-64/krb5-1.16.1-h173b8e3_7.conda
+https://repo.anaconda.com/pkgs/main/linux-64/fftw-3.3.8-h7b6447c_3.conda

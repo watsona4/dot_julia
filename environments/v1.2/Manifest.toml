@@ -3659,6 +3659,12 @@ git-tree-sha1 = "e1a479d3c972f20c9a70563eec740bbfc786f515"
 uuid = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
 version = "0.3.0"
 
+[[FINUFFT]]
+deps = ["BinDeps", "Conda", "Libdl"]
+git-tree-sha1 = "387b9e35647688f68d06d36afc00f507247dc40b"
+uuid = "d8beea63-0952-562e-9c6a-8e8ef7364055"
+version = "0.4.2"
+
 [[FITSIO]]
 deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "6624bd0cdd03aa82df34d3eac56ab77ff696472e"

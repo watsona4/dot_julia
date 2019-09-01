@@ -1,0 +1,36 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+
+notifications:
+  email: false
+
+matrix:
+  include:  
+  # Linux
+  - os: linux
+    julia: 1.1
+  - os: linux
+    julia: 1.0
+  # MacOS: Xcode version fixed at 9.2 due to bug
+  - os: osx
+    julia: 1.1
+    osx_image: xcode9.2
+  - os: osx
+    julia: 1.0
+    osx_image: xcode9.2
+  # Documentation
+  - stage: "Documentation"
+    julia: 1.0
+    os: linux
+    script:
+      - julia --project=docs/ -e 'using Pkg; Pkg.instantiate();
+                                  Pkg.develop(PackageSpec(path=pwd()));
+                                  Pkg.build("FINUFFT")'
+      - julia --project=docs/ docs/make.jl
+    after_success: skip
+
+# Build script is hardwired to gcc8 on MacOS
+before_script: # homebrew for mac
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then brew install gcc@8; fi
+
+coveralls: true

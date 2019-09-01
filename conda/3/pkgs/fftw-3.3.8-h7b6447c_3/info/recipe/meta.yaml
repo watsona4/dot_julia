@@ -1,0 +1,53 @@
+# This file created by conda-build 3.16.2
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/fftw-3.3.8-on-linux_64, last modified Sun Nov 11 07:24:40 2018
+# ------------------------------------------------
+
+package:
+    name: fftw
+    version: 3.3.8
+source:
+    fn: fftw-3.3.8.tar.gz
+    md5: 8aac833c943d8e90d51b697b27d4384d
+    url: http://www.fftw.org/fftw-3.3.8.tar.gz
+build:
+    number: '3'
+    run_exports:
+        - fftw >=3.3.8,<3.4.0a0
+    string: h7b6447c_3
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - make 4.2.1 h1bed415_1
+        - perl 5.26.2 h14c3975_0
+    host:
+        - libgcc-ng 8.2.0 hdf63c60_1
+    run:
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - exit $(test -f ${PREFIX}/lib/libfftw3f.a)
+        - exit $(test -f ${PREFIX}/lib/libfftw3.a)
+        - exit $(test -f ${PREFIX}/lib/libfftw3l.a)
+        - exit $(test -f ${PREFIX}/lib/libfftw3f_threads.a)
+        - exit $(test -f ${PREFIX}/lib/libfftw3_threads.a)
+        - exit $(test -f ${PREFIX}/lib/libfftw3l_threads.a)
+        - test -f ${PREFIX}/include/fftw3.h
+about:
+    home: http://fftw.org
+    license: GPL 2
+    summary: The fastest Fourier transform in the west.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - alexbw
+        - grlee77
+        - jakirkham
+        - jjhelmus
+        - jschueller
