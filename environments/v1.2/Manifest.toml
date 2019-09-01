@@ -2591,6 +2591,12 @@ git-tree-sha1 = "ad6895f4930d5171c92df4ee243e6c3405c635b9"
 uuid = "311a05b2-6137-4a5a-b473-18580a3d38b5"
 version = "0.0.1"
 
+[[Dendriform]]
+deps = ["AbstractLattices", "Combinatorics", "Test"]
+git-tree-sha1 = "4c7ecc5b38fd34a631ff1c08b2a56ffb8d4f35ea"
+uuid = "d8da5c1c-6f31-57d0-a642-102aa94a823b"
+version = "0.2.1"
+
 [[Dierckx]]
 deps = ["BinaryProvider", "Libdl", "Random", "Test"]
 git-tree-sha1 = "27a74763c20938a814da26f31a9e8408d16fec44"
