@@ -2491,6 +2491,12 @@ version = "0.3.0"
 deps = ["Printf"]
 uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
 
+[[DayCounts]]
+deps = ["Dates", "Test"]
+git-tree-sha1 = "b6cf799e140af67157f6b6ce85f1d6c7da231dea"
+uuid = "44e31299-2c53-5a9b-9141-82aa45d7972f"
+version = "0.0.1"
+
 [[DecFP]]
 deps = ["BinaryProvider", "Compat", "Libdl", "SpecialFunctions"]
 git-tree-sha1 = "26512f6d65cab2892bec756cd7c0efff3481113d"
