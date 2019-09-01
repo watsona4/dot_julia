@@ -3283,6 +3283,12 @@ git-tree-sha1 = "a3f9092f25b5ec3227df9026381d52892cad515f"
 uuid = "84e62fa8-74a0-5990-9214-c45bd74ae4d7"
 version = "0.4.5"
 
+[[ElectromagneticFields]]
+deps = ["Combinatorics", "Documenter", "LinearAlgebra", "SymPy", "Test"]
+git-tree-sha1 = "3c3aad06fa7d489abb401c990ee1d46f2b6abf86"
+uuid = "d6c1ba6f-ee03-53af-b876-68cefeb88ec8"
+version = "0.1.4"
+
 [[Electron]]
 deps = ["Base64", "JSON", "Sockets", "URIParser"]
 git-tree-sha1 = "7731daad05c67a98995152990630555ec0c0b4ee"

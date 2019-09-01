@@ -1,0 +1,28 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+env:
+  - PYTHON=""
+matrix:
+  allow_failures:
+    - julia: nightly
+    - os: osx
+  fast_finish: true
+jobs:
+  allow_failures:
+    - script: bash ./docs/travis.sh
+  include:
+    - stage: "Documentation"
+      julia: 1.1
+      os: linux
+      script: bash ./docs/travis.sh
+      after_success: skip
+notifications:
+  email: false
+codecov: true
+coveralls: true
