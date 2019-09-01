@@ -3486,6 +3486,12 @@ git-tree-sha1 = "502ad8f10ac54020a1964531602655304543f643"
 uuid = "b06d6668-ed87-5b0c-b882-855c8dde7d29"
 version = "0.1.4"
 
+[[ExoplanetsSysSim]]
+deps = ["CORBITS", "CSV", "Combinatorics", "Compat", "DataFrames", "Distributions", "FileIO", "HypothesisTests", "JLD", "JLD2", "LibGit2", "Libdl", "LinearAlgebra", "PDMats", "Pkg", "SpecialFunctions", "Statistics", "StatsFuns"]
+git-tree-sha1 = "65fc6e4168a25294d404e902377766a6c984d4f7"
+uuid = "e0ba718c-02ec-11e9-384b-dd2930072415"
+version = "1.0.1"
+
 [[Expectations]]
 deps = ["Compat", "Distributions", "FastGaussQuadrature", "SpecialFunctions"]
 git-tree-sha1 = "5b50b515886773484a28f19d9c103dffc7702702"
