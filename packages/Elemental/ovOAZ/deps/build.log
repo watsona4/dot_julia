@@ -1,0 +1,16 @@
+ERROR: LoadError: IOError: could not spawn `cmake -D CMAKE_INSTALL_PREFIX=/home/ec2-user/.julia/packages/Elemental/ovOAZ/deps/usr -D INSTALL_PYTHON_PACKAGE=OFF -D PYTHON_EXECUTABLE= -D PYTHON_SITE_PACKAGES= -D EL_USE_64BIT_INTS=ON -D EL_USE_64BIT_BLAS_INTS=ON -D MATH_LIBS=/home/ec2-user/julia-1.2.0/bin/../lib/julia/libopenblas64_.so -D EL_BLAS_SUFFIX=_64_ -D EL_LAPACK_SUFFIX=_64_ -D CMAKE_INSTALL_LIBDIR=/home/ec2-user/.julia/packages/Elemental/ovOAZ/deps/usr/lib -D CMAKE_INSTALL_RPATH=/home/ec2-user/.julia/packages/Elemental/ovOAZ/deps/usr/lib /home/ec2-user/.julia/packages/Elemental/ovOAZ/deps/src/Elemental`: no such file or directory (ENOENT)
+Stacktrace:
+ [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:401
+ [2] setup_stdios(::getfield(Base, Symbol("##526#527")){Cmd}, ::Array{Any,1}) at ./process.jl:414
+ [3] _spawn at ./process.jl:413 [inlined]
+ [4] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:727
+ [5] run at ./process.jl:726 [inlined]
+ [6] (::getfield(Main, Symbol("##5#6")))() at /home/ec2-user/.julia/packages/Elemental/ovOAZ/deps/build.jl:43
+ [7] cd(::getfield(Main, Symbol("##5#6")), ::String) at ./file.jl:96
+ [8] top-level scope at /home/ec2-user/.julia/packages/Elemental/ovOAZ/deps/build.jl:42
+ [9] include at ./boot.jl:328 [inlined]
+ [10] include_relative(::Module, ::String) at ./loading.jl:1094
+ [11] include(::Module, ::String) at ./Base.jl:31
+ [12] include(::String) at ./client.jl:431
+ [13] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/Elemental/ovOAZ/deps/build.jl:42

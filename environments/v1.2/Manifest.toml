@@ -3301,6 +3301,12 @@ git-tree-sha1 = "fc5ed8f3eb449b7e89be846d810238a0890d98d1"
 uuid = "d872a56f-244b-5cc9-b574-2017b5b909a8"
 version = "0.8.0"
 
+[[Elemental]]
+deps = ["Distributed", "DistributedArrays", "LibGit2", "Libdl", "LinearAlgebra", "Test"]
+git-tree-sha1 = "8d21d24b343fd4375a8c194bea7c48d9a2e5148f"
+uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
+version = "0.5.0"
+
 [[EllipsisNotation]]
 git-tree-sha1 = "65dad386e877850e6fce4fc77f60fe75a468ce9d"
 uuid = "da5c29d0-fa7d-589e-88eb-ea29b0a81949"
