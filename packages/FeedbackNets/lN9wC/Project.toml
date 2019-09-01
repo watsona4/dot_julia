@@ -1,0 +1,19 @@
+name = "FeedbackNets"
+uuid = "9baa0d68-9979-11e9-30aa-bfec78b4c1ae"
+authors = ["Christian Jarvers <christian.jarvers@uni-ulm.de>"]
+version = "0.3.0"
+
+[deps]
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+
+[compat]
+Flux = "0.8"
+julia = "1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

@@ -3789,6 +3789,12 @@ git-tree-sha1 = "a3d0c5ca2f08bc8fae4394775f371f8e032149ab"
 uuid = "409f5150-fb84-534f-94db-80d1e10f57e1"
 version = "0.2.0"
 
+[[FeedbackNets]]
+deps = ["Flux", "MacroTools", "Reexport"]
+git-tree-sha1 = "0f92e4703d76c9602555c8908b3c8eff80f1c29b"
+uuid = "9baa0d68-9979-11e9-30aa-bfec78b4c1ae"
+version = "0.3.0"
+
 [[FieldMetadata]]
 git-tree-sha1 = "632193bb313e5b7fb3e1864ad476a64b1ad37b1a"
 uuid = "bf96fef3-21d2-5d20-8afa-0e7d4c32a885"
