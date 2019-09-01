@@ -4334,6 +4334,12 @@ git-tree-sha1 = "6547ae1d668a7b219a3ff70e2df27442b2b3ed06"
 uuid = "c43c736e-a2d1-11e8-161f-af95117fbd1e"
 version = "0.16.0"
 
+[[GenomicAnnotations]]
+deps = ["BioSequences", "DataFrames", "GZip", "Test"]
+git-tree-sha1 = "9d8de6afe9a8963a3319af55af893b3d9b8100f9"
+uuid = "4f8a0a0a-376d-5ac0-ab14-e88793df67f0"
+version = "0.1.1"
+
 [[GenomicFeatures]]
 deps = ["Automa", "BGZFStreams", "BioCore", "BioSequences", "BufferedStreams", "ColorTypes", "DataStructures", "FixedPointNumbers", "IntervalTrees", "Libz", "Random", "Test", "URIParser"]
 git-tree-sha1 = "3d6dd4ec649a45a7a7d0096d388e2701af9946f4"
