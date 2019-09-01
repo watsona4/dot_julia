@@ -1,0 +1,26 @@
+name = "Debugger"
+uuid = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
+version = "0.5.0"
+
+[deps]
+CodeTracking = "da1fd8a2-8d9e-5ec2-8556-3022fb5608a2"
+Crayons = "a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f"
+Highlights = "eafb193a-b7ab-5a9e-9068-77385905fa72"
+InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+JuliaInterpreter = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
+Markdown = "d6f4376e-aef5-505a-96c1-9c027394607a"
+REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+
+[compat]
+CodeTracking = "0.5.7"
+Crayons = "3, 4"
+Highlights = "0.3.1"
+JuliaInterpreter = "0.6"
+julia = "1"
+
+[extras]
+TerminalRegressionTests = "98bfdc55-cc95-5876-a49a-74609291cbe0"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "TerminalRegressionTests"]

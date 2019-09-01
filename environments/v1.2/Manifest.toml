@@ -2503,6 +2503,12 @@ git-tree-sha1 = "dd61797e11309916fc972ae63784d48d35b87bc2"
 uuid = "b905b068-7150-5b22-bc23-80596c88c6a6"
 version = "0.6.1"
 
+[[Debugger]]
+deps = ["CodeTracking", "Crayons", "Highlights", "InteractiveUtils", "JuliaInterpreter", "Markdown", "REPL"]
+git-tree-sha1 = "56025e74b60af987c2de0ef0bac1cca0d62dbd64"
+uuid = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
+version = "0.5.0"
+
 [[DecFP]]
 deps = ["BinaryProvider", "Compat", "Libdl", "SpecialFunctions"]
 git-tree-sha1 = "26512f6d65cab2892bec756cd7c0efff3481113d"
@@ -3206,6 +3212,12 @@ deps = ["LinearAlgebra"]
 git-tree-sha1 = "a272f4fca3b56902e06c25338cfbe11cb5465f6e"
 uuid = "7c893195-952b-5c83-bb6e-be12f22eed51"
 version = "0.2.0"
+
+[[Highlights]]
+deps = ["DocStringExtensions", "InteractiveUtils", "REPL", "Test"]
+git-tree-sha1 = "286ff83d696dd92748e603a3219618d9e407e872"
+uuid = "eafb193a-b7ab-5a9e-9068-77385905fa72"
+version = "0.3.1"
 
 [[Homebrew]]
 deps = ["BinDeps", "InteractiveUtils", "JSON", "Libdl", "Test", "Unicode"]
