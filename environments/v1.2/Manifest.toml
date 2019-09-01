@@ -2309,6 +2309,12 @@ git-tree-sha1 = "deab58d9fee656042fe793ac9a97f741bb870957"
 uuid = "748a5540-242a-11e9-3d63-bf3149dae578"
 version = "0.1.0"
 
+[[DCEMRI]]
+deps = ["ArgParse", "Calculus", "MAT", "PyPlot"]
+git-tree-sha1 = "921e34857d7bdc98b004c444970b3ebd7c0f2622"
+uuid = "2b3899e7-9068-5c5c-a4f4-f7d195ee295c"
+version = "0.2.1"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"
