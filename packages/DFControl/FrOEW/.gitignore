@@ -1,0 +1,13 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+user_defaults/*
+.DS_Store
+docs/build/
+docs/site/
+deps/bin/
+deps/lib/
+deps/build.log
+wip
+
+deps/python2/
