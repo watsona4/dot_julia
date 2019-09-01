@@ -2267,6 +2267,12 @@ git-tree-sha1 = "8bba4210f70d2e205b4556f6e3e084ca5119dd8f"
 uuid = "a0b5b9ef-44b7-5148-a2d1-f6db19f3c3d2"
 version = "0.3.2"
 
+[[CxxWrap]]
+deps = ["BinaryProvider", "Libdl"]
+git-tree-sha1 = "c7865f82d1ccfd98d11bba256bd22c27b5ca2864"
+uuid = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"
+version = "0.8.2"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"

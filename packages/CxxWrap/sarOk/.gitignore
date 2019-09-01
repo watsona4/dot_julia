@@ -1,0 +1,15 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+/deps/builds
+/deps/build.log
+/deps/deps.jl
+/deps/usr
+/deps/src
+/deps/downloads
+CMakeLists.txt.user
+/test/deps.jl
+/Manifest.toml
+/Project.toml
+
+deps/downloads/CxxWrap.zip
