@@ -1,0 +1,7 @@
+*.aux
+*.log
+*.synctex.*
+*.cov
+.ipynb_checkpoints
+demo/*.jl
+docs/build
