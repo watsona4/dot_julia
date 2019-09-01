@@ -1,0 +1,7 @@
+docs/build/
+docs/site/
+*.cov
+*.pyc
+*.swp
+.ipynb_checkpoints
+*.lyx~

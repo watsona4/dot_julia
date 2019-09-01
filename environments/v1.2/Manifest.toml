@@ -3617,6 +3617,12 @@ git-tree-sha1 = "aa935fc1c3daeca832945d5282c8dbcad8b1c252"
 uuid = "353fb843-c566-51e6-ba49-78b3e3d5ebb5"
 version = "0.2.0"
 
+[[FEMBeam]]
+deps = ["FEMBase", "LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "c848335c3b921897b0419dba7d1297eb98df03ec"
+uuid = "962f5c4a-ca9e-56d3-a659-14f0d9baaf78"
+version = "0.3.0"
+
 [[FEMQuad]]
 deps = ["Test"]
 git-tree-sha1 = "324592bf6e933b089f82f44355f051adfa0c82aa"
