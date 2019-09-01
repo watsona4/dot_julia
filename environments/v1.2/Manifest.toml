@@ -4085,6 +4085,12 @@ git-tree-sha1 = "93ce75cae27c2d1c6518771d597b6dd0a3d623d3"
 uuid = "da1fdf0e-e0ff-5433-a45f-9bb5ff651cb1"
 version = "0.3.1"
 
+[[FstFileFormat]]
+deps = ["DataFrames", "RCall"]
+git-tree-sha1 = "49c2e3f2e3ae0a3ab9432bf6358e10c9cef621ae"
+uuid = "01a6e8c0-b5b3-11e9-1fe6-8b3e5c2aa61e"
+version = "0.1.0"
+
 [[FunctionWrappers]]
 deps = ["Compat"]
 git-tree-sha1 = "49bf793ebd37db5adaa7ac1eae96c2c97ec86db5"
