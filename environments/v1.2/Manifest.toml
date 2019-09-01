@@ -4417,6 +4417,12 @@ git-tree-sha1 = "4e3aa59b6b6ffdaf7a109a865f97b24c77e6c0c8"
 uuid = "6320efe0-8d16-11e8-2e58-678c92c371c6"
 version = "0.1.0"
 
+[[GeometricFlux]]
+deps = ["Flux", "LightGraphs", "LinearAlgebra", "MetaGraphs", "Requires", "SimpleWeightedGraphs", "SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "297bf4be1b432e40a84bbcdb9cd746a2a3510136"
+uuid = "7e08b658-56d3-11e9-2997-919d5b31e4ea"
+version = "0.1.1"
+
 [[GeometryTypes]]
 deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "2b0bfb379a54bdfcd2942f388f7d045f8952373d"
