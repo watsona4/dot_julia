@@ -3468,6 +3468,18 @@ git-tree-sha1 = "46e44e869b4d90b96bd8ed1fdcf32244fddfb6cc"
 uuid = "7876af07-990d-54b4-ab0e-23690620f79a"
 version = "0.5.3"
 
+[[ExcelFiles]]
+deps = ["DataValues", "Dates", "ExcelReaders", "FileIO", "IterableTables", "IteratorInterfaceExtensions", "Printf", "PyCall", "TableShowUtils", "TableTraits", "TableTraitsUtils", "XLSX"]
+git-tree-sha1 = "f3e5f4279d77b74bf6aef2b53562f771cc5a0474"
+uuid = "89b67f3b-d1aa-5f6f-9ca4-282e8d98620d"
+version = "1.0.0"
+
+[[ExcelReaders]]
+deps = ["DataValues", "Dates", "PyCall", "Test"]
+git-tree-sha1 = "6f9db420dd362bd5bcea3a0f6dabf8bda587fec3"
+uuid = "c04bee98-12a5-510c-87df-2a230cb6e075"
+version = "0.11.0"
+
 [[Expectations]]
 deps = ["Compat", "Distributions", "FastGaussQuadrature", "SpecialFunctions"]
 git-tree-sha1 = "5b50b515886773484a28f19d9c103dffc7702702"
@@ -6282,6 +6294,12 @@ deps = ["HTML_Entities", "StrTables", "Unicode"]
 git-tree-sha1 = "983ca717c4ec786d0458ebcbe395a1a50b3a1897"
 uuid = "796a5d58-b03d-544a-977e-18100b691f6e"
 version = "0.5.3"
+
+[[XLSX]]
+deps = ["Dates", "EzXML", "Printf", "ZipFile"]
+git-tree-sha1 = "aabc3b2867f7a36b08ee3618893e510b88c68e4d"
+uuid = "fdbf4ff8-1666-58a4-91e7-1b58723a45e0"
+version = "0.5.5"
 
 [[XMLDict]]
 deps = ["DataStructures", "EzXML", "IterTools", "Test"]
