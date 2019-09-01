@@ -2897,9 +2897,9 @@ version = "0.3.2"
 
 [[Distributions]]
 deps = ["LinearAlgebra", "PDMats", "Printf", "QuadGK", "Random", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns"]
-git-tree-sha1 = "56a158bc0abe4af5d4027af2275fde484261ca6d"
+git-tree-sha1 = "4ae0ff1a3a556383f7b1b004f5fb964b26ac96c9"
 uuid = "31c24e10-a181-5473-b8eb-7969acd0382f"
-version = "0.19.2"
+version = "0.20.0"
 
 [[DocSeeker]]
 deps = ["Hiccup", "IterTools", "Markdown", "REPL", "Requires", "Serialization", "StringDistances", "Test", "URIParser"]
@@ -3263,9 +3263,9 @@ version = "3.1.0"
 
 [[GLM]]
 deps = ["Distributions", "LinearAlgebra", "Printf", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns", "StatsModels"]
-git-tree-sha1 = "b68052e0ddae57af3c5198c0dcf3f06ffaa11d39"
+git-tree-sha1 = "2b65aee2c201ac17a97a285e9bfdcb5026c4e220"
 uuid = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
-version = "1.2.0"
+version = "1.1.1"
 
 [[GR]]
 deps = ["Base64", "DelimitedFiles", "LinearAlgebra", "Pkg", "Printf", "Random", "Serialization", "Sockets", "Test"]
