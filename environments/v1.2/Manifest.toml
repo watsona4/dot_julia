@@ -2094,6 +2094,12 @@ git-tree-sha1 = "38a7995285fcff298532cd013199b1426d72af2c"
 uuid = "76746363-e552-5dba-9a5a-cef6fa9cc5ab"
 version = "0.5.0"
 
+[[Coulter]]
+deps = ["DataStructures", "Dates", "Distributions", "FileIO", "Gadfly", "KernelDensity", "Random", "StatsBase", "Test"]
+git-tree-sha1 = "e482cc433cdd0b08f28b24e66179869677b1d155"
+uuid = "a3d351dc-6fd6-5e2a-8264-8c30d37eaa59"
+version = "0.1.0"
+
 [[CoupledFields]]
 deps = ["Compat", "StatsBase"]
 git-tree-sha1 = "d56f26542bb7af9c0ec16e098a0a33352f3c9d8e"
