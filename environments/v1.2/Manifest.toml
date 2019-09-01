@@ -3032,6 +3032,12 @@ git-tree-sha1 = "1fde43cfffa8d96f6dd17f058d52dcc5bc9b7641"
 uuid = "49c7015b-b8db-5bc5-841b-fcb31c578176"
 version = "0.4.0"
 
+[[DrawSimpleGraphs]]
+deps = ["Plots", "SimpleDrawing", "SimpleGraphs", "Test"]
+git-tree-sha1 = "8f56fdeaac7404d6deb1e79091ca9484cf19b6e2"
+uuid = "1d51b185-1a84-59cf-b84e-03b0e3da30b7"
+version = "0.1.2"
+
 [[DualMatrixTools]]
 deps = ["DualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "de17ad165602c7e57dd65e593aa2c7b880dad6c5"
@@ -5116,6 +5122,30 @@ deps = ["DiffEqBase", "RecursiveArrayTools", "Reexport", "StaticArrays"]
 git-tree-sha1 = "dab78d468cbff62d0b94aa89dcbdd62d87030cae"
 uuid = "05bca326-078c-5bf0-a5bf-ce7c7982d7fd"
 version = "0.4.0"
+
+[[SimpleDrawing]]
+deps = ["LinearAlgebra", "Plots", "Test"]
+git-tree-sha1 = "7948f674a788281de55d3f27e0e5cda88fb9b9c4"
+uuid = "d78a06e8-ae74-583c-9a07-0d6572347000"
+version = "0.2.1"
+
+[[SimpleGraphs]]
+deps = ["AbstractLattices", "DataStructures", "IterTools", "LightXML", "LinearAlgebra", "Optim", "Polynomials", "Primes", "Random", "SimplePartitions", "SimpleRandom", "SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "fc3d2d51625cd87a88da54c0c6a433e8dc64eaa3"
+uuid = "55797a34-41de-5266-9ec1-32ac4eb504d3"
+version = "0.3.0"
+
+[[SimplePartitions]]
+deps = ["AbstractLattices", "DataStructures", "Permutations", "Test"]
+git-tree-sha1 = "2952f80c5834ae5363a5f5942084186b9fb66586"
+uuid = "ec83eff0-a5b5-5643-ae32-5cbf6eedec9d"
+version = "0.2.0"
+
+[[SimpleRandom]]
+deps = ["Distributions", "Random", "Test"]
+git-tree-sha1 = "8c182908ea6ec36f6d88505b79bdc8a35493262f"
+uuid = "a6525b86-64cd-54fa-8f65-62fc48bdc0e8"
+version = "0.2.0"
 
 [[SimpleTools]]
 deps = ["Test"]
