@@ -1,0 +1,13 @@
+name = "EntityComponentSystem"
+uuid = "a8343a65-b356-5275-be17-d741438d126c"
+authors = ["Richard Anaya <richard.anaya@gmail.com>"]
+version = "0.0.1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "1.0"

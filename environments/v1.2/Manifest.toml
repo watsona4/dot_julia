@@ -3393,6 +3393,11 @@ git-tree-sha1 = "a73201aaeeab6344a4b5220bd3c8f60f4ef67ca6"
 uuid = "5d3b31b8-5173-11e9-1ac0-b32cb3db6653"
 version = "0.1.0"
 
+[[EntityComponentSystem]]
+git-tree-sha1 = "60d860a7561096769c7553fdd6094bbc71cd7c21"
+uuid = "a8343a65-b356-5275-be17-d741438d126c"
+version = "0.0.1"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
