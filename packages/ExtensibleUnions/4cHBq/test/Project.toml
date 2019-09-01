@@ -1,0 +1,6 @@
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Traceur = "37b6cedf-1f77-55f8-9503-c64b63398394"
+
+[compat]
+Traceur = "^0.3.0"

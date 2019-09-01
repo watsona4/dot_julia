@@ -3558,6 +3558,11 @@ git-tree-sha1 = "5230fac8ebbae92240c1a78a5def697905e17c97"
 uuid = "6837a093-145e-5c9b-b5ad-3b557e31aa31"
 version = "0.1.1"
 
+[[ExtensibleUnions]]
+git-tree-sha1 = "6752e932a35d96d28eb3d09a639bcb6c45f0ab1d"
+uuid = "d387736e-c2c9-11e9-2eda-659a30e947ca"
+version = "0.3.0"
+
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "aed48d722e528bc634bd36a7d0e090fa2952a3c0"
