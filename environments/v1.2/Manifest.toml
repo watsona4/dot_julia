@@ -4579,6 +4579,12 @@ git-tree-sha1 = "2180f700605eb0ad851f54577855c6a8f13b9a20"
 uuid = "e1397348-e965-55d8-8fb3-3dd9faf6e4f1"
 version = "0.3.1"
 
+[[Granular]]
+deps = ["Dates", "DelimitedFiles", "JLD2", "LinearAlgebra", "Pkg", "Printf", "Random", "Test", "WriteVTK"]
+git-tree-sha1 = "c65060f95f38eb5606c172fab19d1418e8f97536"
+uuid = "f5c4805d-b585-58fe-b08a-e9c59614aa64"
+version = "0.4.3"
+
 [[GraphPlot]]
 deps = ["ArnoldiMethod", "ColorTypes", "Colors", "Compose", "DelimitedFiles", "LightGraphs", "LinearAlgebra", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "f4435ce0055d4da938f3bab0c0e523826735c96a"
@@ -7123,6 +7129,12 @@ deps = ["HTML_Entities", "StrTables", "Unicode"]
 git-tree-sha1 = "983ca717c4ec786d0458ebcbe395a1a50b3a1897"
 uuid = "796a5d58-b03d-544a-977e-18100b691f6e"
 version = "0.5.3"
+
+[[WriteVTK]]
+deps = ["Base64", "CodecZlib", "LightXML", "Random", "TranscodingStreams"]
+git-tree-sha1 = "1a2b0723c5db05c511e2f06093079a2833081674"
+uuid = "64499a7a-5c06-52f2-abe2-ccb03c286192"
+version = "1.2.0"
 
 [[XLSX]]
 deps = ["Dates", "EzXML", "Printf", "ZipFile"]

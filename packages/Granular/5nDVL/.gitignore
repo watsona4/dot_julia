@@ -1,0 +1,23 @@
+# julia-specific files
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+*.info
+
+# editor swap files
+*.swp
+
+# simulation output files
+*.vtu
+*.vtp
+*.vts
+*.pdf
+
+# documentation
+docs/build/
+docs/site/
+
+# temporary files
+.DS_Store
+tags

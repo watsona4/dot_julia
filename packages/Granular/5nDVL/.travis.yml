@@ -1,0 +1,50 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+
+notifications:
+  email:
+    on_success: never  # default: change
+    on_failure: always # default: always
+
+os:
+  - linux
+  - osx
+
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+
+addons:
+  apt:
+    packages:
+    - gnuplot
+    - imagemagick
+
+matrix:
+  allow_failures:
+  - julia: nightly
+
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia -e 'import Pkg; Pkg.add("NetCDF"); Pkg.build("NetCDF");
+              Pkg.clone(pwd()); Pkg.build("Granular");
+              Pkg.test("Granular"; coverage=true);
+              Pkg.add("Coverage"); using Coverage;
+              Codecov.submit(Codecov.process_folder())'
+
+jobs:
+  include:
+    - stage: docs
+      julia: 1.0
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.instantiate();
+                                    Pkg.develop(PackageSpec(path=pwd()))'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip
+      on:
+        os: linux
+        julia: 1.0
+        all_branches: true
+        condition: $TRAVIS_BRANCH == "master" || -n $TRAVIS_TAG

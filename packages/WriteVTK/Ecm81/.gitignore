@@ -1,0 +1,13 @@
+*.jl.cov
+*.jl.mem
+
+# VTK files
+*.vts
+*.vtr
+*.vtu
+*.vti
+*.vtm
+*.pvd
+
+# Exuberant Ctags
+tags

@@ -1,0 +1,82 @@
+<CustomFilterDefinitions>
+  <CustomProxyDefinition name="GranularInteraction" group="filters">
+    <CompoundSourceProxy id="6731" servers="1">
+      <Proxy group="filters" type="TubeFilter" id="6634" servers="1" compound_name="Tube1">
+        <Property name="Capping" id="6634.Capping" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="bool" id="6634.Capping.bool"/>
+        </Property>
+        <Property name="DefaultNormal" id="6634.DefaultNormal" number_of_elements="3">
+          <Element index="0" value="0"/>
+          <Element index="1" value="0"/>
+          <Element index="2" value="1"/>
+          <Domain name="range" id="6634.DefaultNormal.range"/>
+        </Property>
+        <Property name="Input" id="6634.Input" number_of_elements="1">
+          <Domain name="groups" id="6634.Input.groups"/>
+          <Domain name="input_array1" id="6634.Input.input_array1"/>
+          <Domain name="input_array2" id="6634.Input.input_array2"/>
+          <Domain name="input_type" id="6634.Input.input_type"/>
+        </Property>
+        <Property name="NumberOfSides" id="6634.NumberOfSides" number_of_elements="1">
+          <Element index="0" value="6"/>
+          <Domain name="range" id="6634.NumberOfSides.range"/>
+        </Property>
+        <Property name="Radius" id="6634.Radius" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="bounds" id="6634.Radius.bounds"/>
+        </Property>
+        <Property name="RadiusFactor" id="6634.RadiusFactor" number_of_elements="1">
+          <Element index="0" value="250"/>
+          <Domain name="range" id="6634.RadiusFactor.range"/>
+        </Property>
+        <Property name="SelectInputScalars" id="6634.SelectInputScalars" number_of_elements="5">
+          <Element index="0" value=""/>
+          <Element index="1" value=""/>
+          <Element index="2" value=""/>
+          <Element index="3" value="0"/>
+          <Element index="4" value="Tensile stress [Pa]"/>
+          <Domain name="array_list" id="6634.SelectInputScalars.array_list">
+            <String text="Contact age [s]"/>
+            <String text="Contact area [m^2]"/>
+            <String text="Contact stiffness [N/m]"/>
+            <String text="Effective radius [m]"/>
+            <String text="Force [N]"/>
+            <String text="Tensile stress [Pa]"/>
+          </Domain>
+        </Property>
+        <Property name="SelectInputVectors" id="6634.SelectInputVectors" number_of_elements="5">
+          <Element index="0" value="1"/>
+          <Element index="1" value=""/>
+          <Element index="2" value=""/>
+          <Element index="3" value="0"/>
+          <Element index="4" value="Inter-particle vector [m]"/>
+          <Domain name="array_list" id="6634.SelectInputVectors.array_list">
+            <String text="Inter-particle vector [m]"/>
+            <String text="Shear displacement [m]"/>
+          </Domain>
+        </Property>
+        <Property name="UseDefaultNormal" id="6634.UseDefaultNormal" number_of_elements="1">
+          <Element index="0" value="0"/>
+          <Domain name="bool" id="6634.UseDefaultNormal.bool"/>
+        </Property>
+        <Property name="VaryRadius" id="6634.VaryRadius" number_of_elements="1">
+          <Element index="0" value="1"/>
+          <Domain name="enum" id="6634.VaryRadius.enum">
+            <Entry value="0" text="Off"/>
+            <Entry value="1" text="By Scalar"/>
+            <Entry value="2" text="By Vector"/>
+            <Entry value="3" text="By Absolute Scalar"/>
+          </Domain>
+        </Property>
+      </Proxy>
+      <ExposedProperties>
+        <Property name="Input" proxy_name="Tube1" exposed_name="Input"/>
+      </ExposedProperties>
+      <OutputPort name="Output" proxy="Tube1" port_index="0"/>
+      <Hints>
+        <ShowInMenu/>
+      </Hints>
+    </CompoundSourceProxy>
+  </CustomProxyDefinition>
+</CustomFilterDefinitions>
