@@ -3977,6 +3977,12 @@ git-tree-sha1 = "08212989c2856f95f90709ea5fd824bd27b34514"
 uuid = "587475ba-b771-5e3f-ad9e-33799f191a9c"
 version = "0.8.3"
 
+[[FluxJS]]
+deps = ["BSON", "DataFlow", "Flux", "JuliaInterpreter", "MacroTools", "NNlib", "Vinyl"]
+git-tree-sha1 = "1a44a2872f31298f3fe847e47f3deb85b95eb7ac"
+uuid = "0e18b5df-1f6d-5218-abdd-6febb37acc78"
+version = "0.2.0"
+
 [[Fontconfig]]
 deps = ["BinDeps", "Compat", "Homebrew", "Libdl", "WinRPM"]
 git-tree-sha1 = "d1fd629ca493abd85cde2ee59e60bceb4146f113"
@@ -6605,6 +6611,12 @@ deps = ["LightGraphs"]
 git-tree-sha1 = "08137053c117afb92f59497160ac2d12abec66d8"
 uuid = "19fa3120-7c27-5ec5-8db8-b0b0aa330d6f"
 version = "0.1.0"
+
+[[Vinyl]]
+deps = ["Debugger", "JuliaInterpreter", "MacroTools", "Test"]
+git-tree-sha1 = "e35c4a2101b76edd5a857bccec3635bb221342f1"
+uuid = "83e47e11-4a7a-5bf8-892c-11f81bf9b223"
+version = "0.2.0"
 
 [[WCS]]
 deps = ["BinaryProvider", "Libdl", "Test"]
