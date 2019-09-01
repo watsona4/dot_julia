@@ -3463,6 +3463,11 @@ git-tree-sha1 = "5ec386a80a3f7ff915957508336ec0f8d05b6c44"
 uuid = "429591f6-91af-11e9-00e2-59fbe8cec110"
 version = "2.2.0"
 
+[[Example]]
+git-tree-sha1 = "46e44e869b4d90b96bd8ed1fdcf32244fddfb6cc"
+uuid = "7876af07-990d-54b4-ab0e-23690620f79a"
+version = "0.5.3"
+
 [[Expectations]]
 deps = ["Compat", "Distributions", "FastGaussQuadrature", "SpecialFunctions"]
 git-tree-sha1 = "5b50b515886773484a28f19d9c103dffc7702702"
