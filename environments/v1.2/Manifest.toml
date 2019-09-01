@@ -2481,6 +2481,12 @@ git-tree-sha1 = "679d3eb9270b4dc1517b85a55a146523e52634c7"
 uuid = "b9879e35-cdd4-53a9-a12a-bc41659e9769"
 version = "1.0.0"
 
+[[DatasetsCF]]
+deps = ["BinDeps", "CSV", "DataFrames", "Libdl", "MLBase", "Persa", "Test"]
+git-tree-sha1 = "a5e625ffdf71c3722e0cde36de303cf13d61c3af"
+uuid = "6bac03b7-bcd8-55bf-9a08-86b9b673b6cc"
+version = "0.3.0"
+
 [[Dates]]
 deps = ["Printf"]
 uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
@@ -4236,6 +4242,12 @@ deps = ["Conda", "Distributed", "Documenter", "InplaceOps", "LinearAlgebra", "Pa
 git-tree-sha1 = "93dd07f21cedca6c50d4ec04d409d04494ca42f7"
 uuid = "260eed61-d0e8-5f1e-b040-a9756a401c97"
 version = "0.2.3"
+
+[[Persa]]
+deps = ["DataFrames", "SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "5eaf3e1e6ee2f5694c39d63669b96cc000c7f163"
+uuid = "86800b63-3017-5277-aca5-15d7d6a5f2b2"
+version = "0.1.1"
 
 [[Pidfile]]
 deps = ["FileWatching", "Test"]
