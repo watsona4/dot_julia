@@ -1,0 +1,5 @@
+#+SETUPFILE: ./Setup/setupFile.org
+#+TITLE: Index
+
+#+INCLUDE: "theindex.inc"
+

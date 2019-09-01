@@ -1,0 +1,11 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*~
+**/.juliahistory
+**/_minted-*/*
+/docs/docs.bbl
+/docs/docs.tex
+/docs/sitemap.org
+/docs/docs.pdf
+/docs/index_preamble.html

@@ -2825,6 +2825,12 @@ git-tree-sha1 = "d9b760ca681f7193a3680590b85fafd0a63c4817"
 uuid = "e655511c-e992-5001-b8e2-2048e6aa15e9"
 version = "0.1.0"
 
+[[DirectConvolution]]
+deps = ["LinearAlgebra", "StaticArrays", "Test"]
+git-tree-sha1 = "8deb1fd3dd6a077e96c968ef1dc6102eb92964aa"
+uuid = "60a1edcd-6e1b-57a1-8cb7-ec83bf7a2d9a"
+version = "0.2.0"
+
 [[DirectSum]]
 deps = ["LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "641f8b5d15185c29b0a409adb9f59c01b48ee0e4"

@@ -1,0 +1,113 @@
+#+SETUPFILE: ../../Setup/setupFile-2.org
+#+TITLE: Undecimated Wavelet Transform
+#+PROPERTY: header-args:julia :session *session_usecases_udwt*  :exports code :eval no-export
+
+#+BEGIN_EXPORT latex
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+\setminted[]{
+  bgcolor=bg,
+  breaklines=true,
+  breakanywhere=true,
+  mathescape,
+  fontsize=\footnotesize}
+#+END_EXPORT
+
+#+BEGIN_SRC julia :exports none
+using Plots
+using DirectConvolution
+#+END_SRC
+
+#+RESULTS:
+
+* Undecimated Wavelet Transform
+
+** Signal 
+   #+BEGIN_SRC julia :results none
+signal=readcsv(joinpath(DirectConvolution.RootDir,"data/signal_1.csv"));
+signal=signal[:,2];
+plot(signal,label="signal")
+   #+END_SRC
+
+
+   #+BEGIN_SRC julia :results graphics :file figures/signal.png :exports results
+savefig("figures/signal.png")
+   #+END_SRC
+
+   #+ATTR_HTML: :align center :width 600px
+   #+CAPTION: Signal
+   #+RESULTS:
+   [[file:figures/signal.png]]
+
+** Direct transform 
+
+   Use some wavelet filter 
+
+   #+BEGIN_SRC julia :exports code :results none
+filter = Filter_Starck2{Float64}()
+   #+END_SRC
+
+   Direct udwt transform
+
+   #+BEGIN_SRC julia :exports code :results none
+m = udwt(signal,filter,scale=8)
+   #+END_SRC
+
+   #+RESULTS:
+
+   Plot results 
+
+   #+BEGIN_SRC julia :exports code :results none
+label=["W$i" for i in 1:scale(m)];
+plot(m.W,label=reshape(label,1,scale(m)))
+plot!(m.V,label="V$(scale(m))");
+plot!(signal,label="signal")
+   #+END_SRC
+
+   #+BEGIN_SRC julia :results graphics :file figures/W.png :exports results
+savefig("figures/W.png")
+   #+END_SRC
+
+   #+ATTR_HTML: :align center :width 600px
+   #+CAPTION: Undecimated Wavelet Transform
+   #+RESULTS:
+   [[file:figures/W.png]]
+
+
+** Inverse transform
+
+   Check perfect reconstruction
+
+   #+BEGIN_SRC julia :exports both
+reconst = inverse_udwt(m);
+norm(signal-reconst)
+   #+END_SRC
+
+   #+RESULTS:
+   : 532.1170503445027
+
+** Smoothing
+
+   Rough solution... cancels the two finest resolution levels.
+
+   #+BEGIN_SRC julia :exports code :results none
+m.W[:,1] .= 0
+m.W[:,2] .= 0
+reconst=inverse_udwt(m)
+plot(reconst,linewidth=3, label="smoothed");
+plot!(signal,label="signal")
+   #+END_SRC
+
+   #+RESULTS:
+
+
+   #+BEGIN_SRC julia :results graphics :file figures/W12_eq_0.png :exports results 
+savefig("figures/W12_eq_0.png")
+   #+END_SRC
+
+   #+ATTR_HTML: :align center :width 600px
+   #+CAPTION: (over) smoothed signal
+   #+RESULTS:
+   [[file:figures/W12_eq_0.png]]
+
+
+

@@ -1,0 +1,49 @@
+#+SETUPFILE: Setup/setupFile.org
+#+TITLE: Work in Progress
+#+PROPERTY: header-args:julia :session *directConvolution_session*  :exports code :eval no-export
+
+#+BEGIN_SRC julia :exports none
+using Revise
+using DirectConvolution
+using J4Org
+#+END_SRC
+
+#+RESULTS:
+
+
+* Project Journal
+** [2018-06-21 Thu] 
+- add dedicated apply_SG_filter functions
+- add 2D directConvolution
+- reorganize use cases directory
+- add 2D smoothing example 
+** [2018-04-26 Thu] tag v0.1.0
+- documentation improvement 
+- fix missing exportation of =directCrossCorrelation= symbol
+- fix Savitzky-Golay filters doc
+** [2018-04-18 Wed] tag v0.0.2 
+- first release
+** [2018-04-15 Sun] tag v0.0.1 
+- pre-release 
+** [2018-04-04 Wed] doc with J4org online
+
+* Project TODO
+
+** TODO [0/1]
+
+- [ ] provide function to compute UDWT adjoint
+
+** TODO Code [1/1]
+
+#+BEGIN_SRC julia :results output drawer :exports results
+documented_items=create_documented_item_array_dir("~/GitHub/DirectConvolution.jl/src/");
+print_org_doc(documented_items,tag="TODO",header_level=0)
+#+END_SRC
+
+#+RESULTS:
+:RESULTS:
+
+:END:
+
+* W3 Links
+
