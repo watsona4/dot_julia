@@ -1,0 +1,12 @@
+name = "ExpressPathToRegex"
+uuid = "22609570-6d06-11e9-3c98-5705e233061e"
+authors = ["Till Ehrengruber <till@ehrengruber.ch>"]
+version = "0.1.0"
+
+[deps]
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+URIParser = "30578b45-9adc-5946-b283-645ec420af67"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "1.0"

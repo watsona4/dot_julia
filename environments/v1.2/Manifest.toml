@@ -3540,6 +3540,12 @@ git-tree-sha1 = "bcc650b58e68bac8c49c10ecb52477c2e9dd6a79"
 uuid = "e7058ba0-a568-556c-b31a-209ee9d855a8"
 version = "0.3.3"
 
+[[ExpressPathToRegex]]
+deps = ["JSON", "Test", "URIParser"]
+git-tree-sha1 = "cee4cf6dacce5989a1d7172ef0d6bceb4b4587d8"
+uuid = "22609570-6d06-11e9-3c98-5705e233061e"
+version = "0.1.0"
+
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "aed48d722e528bc634bd36a7d0e090fa2952a3c0"
