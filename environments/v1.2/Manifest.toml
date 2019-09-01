@@ -3771,6 +3771,12 @@ git-tree-sha1 = "ce345887dc4a6ffce3b7adf6cad0ffa32859c454"
 uuid = "5f923234-c850-556d-bb4f-28324fa1959a"
 version = "1.1.0"
 
+[[Feather]]
+deps = ["Arrow", "CategoricalArrays", "DataFrames", "Dates", "FlatBuffers", "Mmap", "Tables"]
+git-tree-sha1 = "a963f89bc16735af00cd28ac60d4145cd7fe2abd"
+uuid = "becb17da-46f6-5d3c-ad1b-1c5fe96bc73c"
+version = "0.5.3"
+
 [[FieldMetadata]]
 git-tree-sha1 = "632193bb313e5b7fb3e1864ad476a64b1ad37b1a"
 uuid = "bf96fef3-21d2-5d20-8afa-0e7d4c32a885"
@@ -3826,6 +3832,12 @@ deps = ["LinearAlgebra", "MultivariatePolynomials", "Test"]
 git-tree-sha1 = "32ec33fe4387eb165461b7141d4be732097086ad"
 uuid = "3dd14ad9-0029-526e-86e9-8aa0bdd2ab0d"
 version = "0.4.0"
+
+[[FlatBuffers]]
+deps = ["Parameters", "Pkg", "Test"]
+git-tree-sha1 = "dd5c2460639eef7962178216fd150c60fa42a1c4"
+uuid = "53afe959-3a16-52fa-a8da-cf864710bae9"
+version = "0.5.3"
 
 [[Flatten]]
 deps = ["FieldMetadata", "Requires"]
