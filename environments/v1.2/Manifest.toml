@@ -2303,6 +2303,12 @@ git-tree-sha1 = "de4f06e05190a2aa5d8f6081766332d68790f03d"
 uuid = "75c7ada1-017a-5fb6-b8c7-2125ff2d6c93"
 version = "0.1.1"
 
+[[DBnomics]]
+deps = ["DataFrames", "Dates", "HTTP", "JSON", "TimeZones"]
+git-tree-sha1 = "deab58d9fee656042fe793ac9a97f741bb870957"
+uuid = "748a5540-242a-11e9-3d63-bf3149dae578"
+version = "0.1.0"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"
