@@ -2112,6 +2112,12 @@ git-tree-sha1 = "d56f26542bb7af9c0ec16e098a0a33352f3c9d8e"
 uuid = "7ad07ef1-bdf2-5661-9d2b-286fd4296dac"
 version = "0.1.0"
 
+[[CovarianceEstimation]]
+deps = ["LinearAlgebra", "Statistics", "StatsBase"]
+git-tree-sha1 = "0a7d08fec5efec2c46396adad23a0df251612633"
+uuid = "587fd27a-f159-11e8-2dae-1979310e6154"
+version = "0.2.3"
+
 [[Coverage]]
 deps = ["HTTP", "JSON", "LibGit2", "MbedTLS"]
 git-tree-sha1 = "f9780daf3fea51ad2d7b7ed4f480ac34ab36587f"
