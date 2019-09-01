@@ -1,0 +1,39 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.6
+  - 1.0
+#  - nightly
+#matrix:
+#  allow_failures:
+#    - julia: 0.7
+#    - julia: 1.0
+#    - julia: nightly
+addons:
+    apt: # apt-get for linux
+        packages:
+          - libnetcdf-dev
+notifications:
+  email: false
+
+# using default test script
+after_success:
+  # push coverage results to Coveralls
+  - julia -e 'VERSION >= v"0.7.0" && using Pkg; cd(Pkg.dir("DIVAnd")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
+  # push coverage results to Codecov
+  - julia -e 'VERSION >= v"0.7.0" && using Pkg; cd(Pkg.dir("DIVAnd")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.0
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.instantiate();
+                                    Pkg.develop(PackageSpec(path=pwd()));
+                                    Pkg.build("DIVAnd")'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip

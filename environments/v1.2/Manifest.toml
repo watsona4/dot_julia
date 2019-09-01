@@ -2333,6 +2333,12 @@ git-tree-sha1 = "557c5d8181d5872f287dc604d4e368ef8f652e57"
 uuid = "a26e6606-dd52-5f6a-a97f-4f611373d757"
 version = "0.3.1"
 
+[[DIVAnd]]
+deps = ["Compat", "DataStructures", "Dates", "DelimitedFiles", "Distributed", "EzXML", "HTTP", "Interpolations", "LinearAlgebra", "Missings", "Mustache", "NCDatasets", "Printf", "Random", "SharedArrays", "SparseArrays", "SpecialFunctions", "Statistics", "StatsBase", "SuiteSparse", "Test", "UUIDs", "ZipFile"]
+git-tree-sha1 = "53d1d1411e34497627cca2db5d23fb86a08991a3"
+uuid = "efc8151c-67de-5a8f-9a35-d8f54746ae9d"
+version = "2.4.0"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"
