@@ -1,0 +1,64 @@
+struct DataDryad <: DataRepo
+end
+
+base_url(::DataDryad) = "https://datadryad.org/resource/doi:"
+
+description(repo::DataDryad, mainpage) = replace(text_only(first(eachmatch(sel".article-abstract", mainpage.root))), "Abstract " => "")
+
+function author(::DataDryad, mainpage)
+    author = missing
+    try
+        author = text_only(first(eachmatch(sel".pub-authors a", mainpage.root)))
+    catch
+        author = string(split(text_only(first(eachmatch(sel".pub-authors", mainpage.root))), ", ")[1])
+    end
+    [author]
+end
+
+license(::DataDryad, mainpage) = getattr(first(eachmatch(sel".single-image-link", mainpage.root)), "href")
+
+function published_date(::DataDryad, mainpage)
+    dateelem = eachmatch(sel".publication-header p", mainpage.root)
+    replace(text_only(dateelem[length(dateelem)-1]), "Date Published: " => "")
+end
+
+paper_cite(::DataDryad, mainpage) = text_only(first(eachmatch(sel".citation-sample", mainpage.root)))
+
+dataset_cite(::DataDryad, mainpage) = replace(text_only(last(eachmatch(sel".publication-header p", mainpage.root))), "DOI: " => "")
+
+function get_urls(repo::DataDryad, page)
+    urls = []
+    links = eachmatch(sel".package-file-description tbody tr td a", page.root)
+    for link in links
+        urlhref = getattr(link, "href")
+        dryadurl = "https://datadryad.org" * string(urlhref)
+        if occursin("Download" , string(link.parent.parent))
+            push!(urls, dryadurl)
+        end
+    end
+    urls
+end
+
+function get_checksums(repo::DataDryad, page)
+    checksums = []
+    links = eachmatch(sel"a", page.root)
+    regex = r"\bresource\/doi:[0-9]*.[0-9]*\/dryad.[a-z, 0-9]*\/[0-9]+\b"
+    for checksum_link in links
+        if occursin(regex,checksum_link.attributes["href"])
+            checksum = match(regex, checksum_link.attributes["href"])
+            url = replace(checksum.match, "resource/doi:" => "https://datadryad.org/mn/checksum/doi:")
+            md5 = (:md5, text_only(getpage(url).root))
+            push!(checksums, md5)
+        end
+    end
+    if length(checksums) > 0
+        @info("The generated registration block uses md5 hash, " *
+            "the MD5.jl package must be loaded to run the registration")
+    end
+    checksums
+end
+
+function data_fullname(::DataDryad, mainpage)
+    # mainpage = replace(mainpage, "resource", "mn/object")
+    text_only(first(eachmatch(sel".pub-title", mainpage.root)))
+end

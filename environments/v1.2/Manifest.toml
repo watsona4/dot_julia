@@ -2404,6 +2404,12 @@ git-tree-sha1 = "c18e7b5ee4c7ff080d99ec03f553c95ad071a879"
 uuid = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
 version = "0.6.5"
 
+[[DataDepsGenerators]]
+deps = ["AbstractTrees", "Cascadia", "Dates", "Gumbo", "HTTP", "InteractiveUtils", "JSON", "Test"]
+git-tree-sha1 = "e29c66dc5250ec22f792a5507a47693c135d6abc"
+uuid = "a14fa8ac-7845-53f2-854f-e9bba4c623ff"
+version = "0.5.0"
+
 [[DataFrames]]
 deps = ["CategoricalArrays", "Compat", "IteratorInterfaceExtensions", "Missings", "PooledArrays", "Printf", "REPL", "Reexport", "SortingAlgorithms", "Statistics", "StatsBase", "TableTraits", "Tables", "Unicode"]
 git-tree-sha1 = "7c0f86a01be0f77cc7f3f9096ed875f1217487e1"
