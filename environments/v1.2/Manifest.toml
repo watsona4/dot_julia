@@ -2966,6 +2966,12 @@ git-tree-sha1 = "653299370be20ff580bccd707dc9f360c0852d7f"
 uuid = "cd674d7a-5f81-5cf3-af33-235ef1834b99"
 version = "0.2.0"
 
+[[DocumenterMarkdown]]
+deps = ["Documenter", "Test"]
+git-tree-sha1 = "c302ba512683c3db462ee4eff718ae6fedcbf380"
+uuid = "997ab1e6-3595-5248-9280-8efb232c3433"
+version = "0.2.0"
+
 [[DocumenterTools]]
 deps = ["Base64", "DocStringExtensions", "LibGit2", "Pkg", "Test"]
 git-tree-sha1 = "f5803a9c2c23ff226e8eab2df7ac4c75e77a0d53"
