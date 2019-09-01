@@ -2231,6 +2231,12 @@ git-tree-sha1 = "39c121e7f03ecf3d9b843b129b73b97ed66bf578"
 uuid = "593ffa3d-269e-5d81-88bc-c3b6809c35a6"
 version = "0.5.2"
 
+[[CurveFit]]
+deps = ["LinearAlgebra", "Polynomials", "Test"]
+git-tree-sha1 = "095155671840a27d48cce334510b219805bdf55f"
+uuid = "5a033b19-8c74-5913-a970-47c3779ef25c"
+version = "0.3.2"
+
 [[CustomUnitRanges]]
 deps = ["Test"]
 git-tree-sha1 = "0a106457a1831555857e18ac9617279c22fc393b"
