@@ -2867,6 +2867,12 @@ git-tree-sha1 = "5e979e24463066a139fb92962398ddc5b0b4052f"
 uuid = "67fdca37-c731-5d95-9a19-4e7673210fab"
 version = "1.0.0"
 
+[[DistQuads]]
+deps = ["Distributions", "FastGaussQuadrature", "LinearAlgebra", "Reexport", "Statistics", "Test"]
+git-tree-sha1 = "1870fec86e98782e61aa5a10a97b40ec9eec9c96"
+uuid = "6966f90c-3441-5cda-97d6-80813c921d68"
+version = "2.0.0"
+
 [[Distances]]
 deps = ["LinearAlgebra", "Statistics"]
 git-tree-sha1 = "23717536c81b63e250f682b0e0933769eecd1411"
