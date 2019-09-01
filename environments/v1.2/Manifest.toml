@@ -3140,6 +3140,12 @@ git-tree-sha1 = "3fa78845b6a0c215c075e71cb355dbc9aa9ae0ae"
 uuid = "6e36e845-645a-534a-86f2-f5d4aa5a06b4"
 version = "1.3.0"
 
+[[ECC]]
+deps = ["Test"]
+git-tree-sha1 = "ebff856a4057ad7dbb4648bf3d4c7f9e4bc35e97"
+uuid = "a99b485a-c5c8-540e-ab00-7a7265134077"
+version = "0.2.3"
+
 [[EarthOrientation]]
 deps = ["Dates", "DelimitedFiles", "LeapSeconds", "OptionalData", "RemoteFiles", "Test"]
 git-tree-sha1 = "7ceae02eea4ffa57be45c47b237aca093926badc"
