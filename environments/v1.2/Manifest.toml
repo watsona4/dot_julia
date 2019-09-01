@@ -2410,6 +2410,12 @@ git-tree-sha1 = "e29c66dc5250ec22f792a5507a47693c135d6abc"
 uuid = "a14fa8ac-7845-53f2-854f-e9bba4c623ff"
 version = "0.5.0"
 
+[[DataFitting]]
+deps = ["LsqFit", "Printf", "Random", "Statistics", "Test"]
+git-tree-sha1 = "ba31ecf5346b5081a040c95510a2b99a3a033368"
+uuid = "2e2c70e5-d463-5cb0-9776-5d0c86956fe9"
+version = "0.1.0"
+
 [[DataFrames]]
 deps = ["CategoricalArrays", "Compat", "IteratorInterfaceExtensions", "Missings", "PooledArrays", "Printf", "REPL", "Reexport", "SortingAlgorithms", "Statistics", "StatsBase", "TableTraits", "Tables", "Unicode"]
 git-tree-sha1 = "7c0f86a01be0f77cc7f3f9096ed875f1217487e1"
@@ -3712,6 +3718,12 @@ git-tree-sha1 = "4079dfefba2cf541e0770e6426f7756ee90efbe8"
 uuid = "898213cb-b102-5a47-900c-97e73b919f73"
 version = "0.2.3"
 
+[[LsqFit]]
+deps = ["Distributions", "LinearAlgebra", "NLSolversBase", "OptimBase", "Random", "StatsBase", "Test"]
+git-tree-sha1 = "186c2afbdb3cd52191078cfc6176f7084ed9dfb7"
+uuid = "2fda8390-95c7-5789-9bda-21331edee243"
+version = "0.8.1"
+
 [[LuxurySparse]]
 deps = ["FillArrays", "LinearAlgebra", "Random", "SparseArrays", "StaticArrays"]
 git-tree-sha1 = "bf4fe79cdbcadaa6114faaf5189521337e6e24ea"
@@ -4098,6 +4110,12 @@ deps = ["Calculus", "DiffEqDiffTools", "FillArrays", "ForwardDiff", "LineSearche
 git-tree-sha1 = "ca8f8917df469d607f8cf116784e58c9c084d0b4"
 uuid = "429524aa-4258-5aef-a3af-852621145aeb"
 version = "0.19.2"
+
+[[OptimBase]]
+deps = ["Compat", "NLSolversBase", "Printf", "Reexport", "Test"]
+git-tree-sha1 = "92667ab46a66ad502ec3044f65c41ea68b2e0e9c"
+uuid = "87e2bd06-a317-5318-96d9-3ecbac512eee"
+version = "2.0.0"
 
 [[OptionalData]]
 deps = ["Test"]
