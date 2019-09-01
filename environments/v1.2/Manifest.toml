@@ -2237,6 +2237,12 @@ git-tree-sha1 = "095155671840a27d48cce334510b219805bdf55f"
 uuid = "5a033b19-8c74-5913-a970-47c3779ef25c"
 version = "0.3.2"
 
+[[CurveProximityQueries]]
+deps = ["ConvexBodyProximityQueries", "DataStructures", "IntervalArithmetic", "LinearAlgebra", "Random", "RecipesBase", "StaticArrays"]
+git-tree-sha1 = "e88a45311ba02917a3012f15cce886cfb17a6290"
+uuid = "e79eea86-5fe6-5310-9049-79d90d78ad74"
+version = "0.1.3"
+
 [[CustomUnitRanges]]
 deps = ["Test"]
 git-tree-sha1 = "0a106457a1831555857e18ac9617279c22fc393b"
