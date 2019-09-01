@@ -1,4 +1,4 @@
-start_pkg = ""
+start_pkg = "GeoStatsImages"
 
 skip = []
 

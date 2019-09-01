@@ -4406,6 +4406,12 @@ git-tree-sha1 = "ad5065433807f9551541fa6d0ea2c9bf34a47e8b"
 uuid = "7cd16168-b42c-5e7d-a585-4f59d326662d"
 version = "0.3.1"
 
+[[Geodesy]]
+deps = ["CoordinateTransformations", "Dates", "LinearAlgebra", "StaticArrays", "Test"]
+git-tree-sha1 = "f80ea86cb88db337a1906e245e495592f0b5cc25"
+uuid = "0ef565a4-170c-5f04-8de2-149903a85f3d"
+version = "0.5.0"
+
 [[GeometryTypes]]
 deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "2b0bfb379a54bdfcd2942f388f7d045f8952373d"
@@ -4521,10 +4527,10 @@ uuid = "9fb69e20-1954-56bb-a84f-559cc56a8ff7"
 version = "0.2.2"
 
 [[HierarchicalMatrices]]
-deps = ["LinearAlgebra"]
-git-tree-sha1 = "a272f4fca3b56902e06c25338cfbe11cb5465f6e"
+deps = ["Compat"]
+git-tree-sha1 = "acfcaf1aa47d038f593f301ed3bdebc0129035bc"
 uuid = "7c893195-952b-5c83-bb6e-be12f22eed51"
-version = "0.2.0"
+version = "0.1.4"
 
 [[Highlights]]
 deps = ["DocStringExtensions", "InteractiveUtils", "REPL", "Test"]
