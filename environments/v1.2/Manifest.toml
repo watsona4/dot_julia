@@ -3893,6 +3893,18 @@ git-tree-sha1 = "e6c17598e29f663cd9dc924b598cfeab6103ce18"
 uuid = "652a1917-b8e5-5d9b-be38-bbf27e56fe44"
 version = "0.1.0"
 
+[[FixedEffectModels]]
+deps = ["CategoricalArrays", "Combinatorics", "DataFrames", "Distributions", "FillArrays", "FixedEffects", "LinearAlgebra", "Printf", "Random", "Reexport", "Statistics", "StatsBase", "StatsModels"]
+git-tree-sha1 = "b3e7b8f6535d45805189ec000790838521c5db93"
+uuid = "9d5cd8c9-2029-5cab-9928-427838db53e3"
+version = "0.7.3"
+
+[[FixedEffects]]
+deps = ["CategoricalArrays", "Distributed", "FillArrays", "LinearAlgebra", "Reexport", "SparseArrays", "StatsBase", "Test"]
+git-tree-sha1 = "7d330d901e4da5841d27bfd8b63de74cd1f6ccfd"
+uuid = "c8885935-8500-56a7-9867-7708b20db0eb"
+version = "0.1.2"
+
 [[FixedPointDecimals]]
 deps = ["Printf", "Test"]
 git-tree-sha1 = "b17a731934600b835150b7882238e7f06f8be368"
