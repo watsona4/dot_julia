@@ -4013,6 +4013,12 @@ git-tree-sha1 = "25175b563db2243bc82e1dc4abe9f3707120fc3a"
 uuid = "c08c26e9-7d88-5404-9cd5-c0fa6a8b90ba"
 version = "1.0.0"
 
+[[ForestBiometrics]]
+deps = ["OffsetArrays", "Plots", "RecipesBase", "Test"]
+git-tree-sha1 = "348ed90db6402bf81b988bec1ddf6f3b5aeecaa0"
+uuid = "41a43668-ff68-5e81-b2d7-6ef3c0dd3db1"
+version = "0.2.0"
+
 [[Format]]
 deps = ["Compat"]
 git-tree-sha1 = "c6fff9afa5d716fefc883d449dfc954b859718b9"
