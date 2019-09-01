@@ -3242,6 +3242,12 @@ git-tree-sha1 = "cc20d98f773807ad5e75b8c9deab41c7fa916488"
 uuid = "9f7a259d-73a7-556d-a7a2-3eb122d3865b"
 version = "0.0.3"
 
+[[EconPDEs]]
+deps = ["BlockBandedMatrices", "DiffEqDiffTools", "LinearAlgebra", "NLsolve", "OrderedCollections", "SparseArrays", "SparseDiffTools"]
+git-tree-sha1 = "ffc66b3a99e73dbe071b7f1c66c8468a8c91912e"
+uuid = "a3315474-fad9-5060-8696-cee5f38a87b7"
+version = "0.2.4"
+
 [[ElasticArrays]]
 git-tree-sha1 = "d9c079b747b9e9985d83e806bb77e41d149c959a"
 uuid = "fdbdab4c-e67f-52f5-8c3f-e7b388dad3d4"
