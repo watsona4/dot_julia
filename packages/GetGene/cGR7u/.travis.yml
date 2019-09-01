@@ -1,0 +1,31 @@
+language: julia
+sudo: required
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+addons:
+    apt_packages:
+        - gfortran
+notifications:
+  email: false
+git:
+  depth: 99999999
+after_success:
+  - julia -e 'using Pkg, GetGene; cd(joinpath(dirname(pathof(GetGene)), "..")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder()); Coveralls.submit(process_folder())'
+
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.1
+      os: osx
+      script:
+        - julia -e 'using Pkg; Pkg.add("Documenter")'
+        - julia -e 'using GetGene; include(joinpath(dirname(pathof(GetGene)), "..", "docs", "make.jl"))'
+      after_script: skip

@@ -4453,6 +4453,12 @@ git-tree-sha1 = "a6b36f88dd41bc8641dbc2399f3e8ee978cc69b5"
 uuid = "acd30bff-8734-59b1-86d1-c3ef2efb63d6"
 version = "0.3.2"
 
+[[GetGene]]
+deps = ["DataFrames", "HTTP", "LazyJSON"]
+git-tree-sha1 = "a651aa5adf5284bfab7f1c8314d9cf02debf17f9"
+uuid = "fa12694a-6dff-11e9-3f23-c5fa6b69506f"
+version = "0.1.0"
+
 [[GitHub]]
 deps = ["Base64", "Compat", "Dates", "HTTP", "JSON", "MbedTLS", "Sockets", "Test"]
 git-tree-sha1 = "0224f2efcf87d783d64861e4a9ee08299164a569"

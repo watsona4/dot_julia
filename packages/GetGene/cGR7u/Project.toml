@@ -1,0 +1,19 @@
+name = "GetGene"
+uuid = "fa12694a-6dff-11e9-3f23-c5fa6b69506f"
+keywords = ["GWAS", "genetics", "gene", "rsid", "snpid", "snp rs lookup"]
+authors = ["Chris German <germc3@ucla.edu>"]
+version = "0.1.0"
+
+[deps]
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+LazyJSON = "fc18253b-5e1b-504c-a4a2-9ece4944c004"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "1"
