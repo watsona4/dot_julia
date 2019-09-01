@@ -3528,6 +3528,18 @@ git-tree-sha1 = "8b16199c80d7a0bd7ac1d05d52b51e3e0a9f8c0f"
 uuid = "ad2082ca-a69e-11e9-38fa-e96309a31fe4"
 version = "0.1.2"
 
+[[ExprOptimization]]
+deps = ["AbstractTrees", "ExprRules", "LinearAlgebra", "Random", "Reexport", "StatsBase", "Test"]
+git-tree-sha1 = "c4a1acf66d6f7fc57d4c1fa75f7c21f69b8de4c3"
+uuid = "0d84ce59-e78b-5c9a-b954-3a5400d7f6ed"
+version = "0.2.0"
+
+[[ExprRules]]
+deps = ["AbstractTrees", "DataStructures", "Nullables", "Random", "Statistics", "StatsBase", "Test", "TreeView"]
+git-tree-sha1 = "bcc650b58e68bac8c49c10ecb52477c2e9dd6a79"
+uuid = "e7058ba0-a568-556c-b31a-209ee9d855a8"
+version = "0.3.3"
+
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "aed48d722e528bc634bd36a7d0e090fa2952a3c0"
@@ -6121,6 +6133,12 @@ deps = ["ArgCheck", "DocStringExtensions", "ForwardDiff", "LinearAlgebra", "Macr
 git-tree-sha1 = "92ae24ba0e9e5b421fc9fd64f6aa26f046e48fd0"
 uuid = "84d833dd-6860-57f9-a1a7-6da5db126cff"
 version = "0.3.5"
+
+[[TreeView]]
+deps = ["CommonSubexpressions", "LightGraphs", "MacroTools", "Test", "TikzGraphs"]
+git-tree-sha1 = "37e555e1e0c85275d1de30d379610dea9d93cfe0"
+uuid = "39424ebd-4cf3-5550-a685-96706a953f40"
+version = "0.3.1"
 
 [[TreeViews]]
 deps = ["Test"]
