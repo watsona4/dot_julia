@@ -2291,6 +2291,12 @@ git-tree-sha1 = "a41b3d671370e257d111fd38f657463bdc7b4f0f"
 uuid = "165a45c3-f624-5814-8e85-3bdf39a7becd"
 version = "2.4.0"
 
+[[DASSL]]
+deps = ["DiffEqBase", "LinearAlgebra", "Reexport"]
+git-tree-sha1 = "f5a64b32c0fd59ae0a5108f78b6d6d9a494fbf3f"
+uuid = "e993076c-0cfd-5d6b-a1ac-36489fdf7917"
+version = "2.4.0"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"
