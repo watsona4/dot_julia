@@ -1,0 +1,5 @@
+language: julia
+sudo: false
+julia:
+  - 0.7
+  - 1.0

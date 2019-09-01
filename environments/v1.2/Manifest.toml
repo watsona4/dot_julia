@@ -4561,6 +4561,12 @@ git-tree-sha1 = "6f8d69afa123c22c97c313f11a9f82fc1b437804"
 uuid = "b6ac9c74-f072-5636-adac-bd17907ec0b6"
 version = "0.1.0"
 
+[[GoogleSheetsCSVExporter]]
+deps = ["HTTP", "Test"]
+git-tree-sha1 = "73d62eb9474068f4cadd7b365a49e3b5fff63987"
+uuid = "cadd898e-fd86-5def-96da-d3badf016279"
+version = "0.1.1"
+
 [[GradDescent]]
 deps = ["Distributions", "ForwardDiff", "LinearAlgebra", "Random", "Test"]
 git-tree-sha1 = "2180f700605eb0ad851f54577855c6a8f13b9a20"
