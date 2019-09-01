@@ -4513,6 +4513,12 @@ git-tree-sha1 = "818cbe61516692197ed6c1126db5aa8e105bf76a"
 uuid = "a066f67d-7bb6-5c78-aee2-fe6a6ddc0b62"
 version = "0.1.1"
 
+[[GlobalSensitivityAnalysis]]
+deps = ["DataStructures", "Distributions", "Sobol", "Statistics", "Test"]
+git-tree-sha1 = "2abf79d132fc3732dc4aded2f256047ab6fa8f8e"
+uuid = "1b10255b-6da3-57ce-9089-d24e8517b87e"
+version = "0.0.5"
+
 [[GoogleCloud]]
 deps = ["Base64", "Dates", "HTTP", "JSON", "Libz", "Markdown", "MbedTLS", "MsgPack", "Printf", "Test"]
 git-tree-sha1 = "96a8c98805e3635f189c49903fffbad725e5de46"
