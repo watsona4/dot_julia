@@ -3504,6 +3504,12 @@ git-tree-sha1 = "5b50b515886773484a28f19d9c103dffc7702702"
 uuid = "2fe49d83-0758-5602-8f54-1f90ad0d522b"
 version = "1.1.1"
 
+[[ExpmV]]
+deps = ["LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "46413a4dc730da6ae3f3da65a3352a8a707bfe55"
+uuid = "a3781d3e-2c8e-5597-8496-846d69e16182"
+version = "0.1.2"
+
 [[ExponentialUtilities]]
 deps = ["LinearAlgebra", "Printf", "SparseArrays"]
 git-tree-sha1 = "85e1ce16aa9b98793df704e17e7a0ceadefe404f"
