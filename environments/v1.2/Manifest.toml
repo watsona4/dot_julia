@@ -3887,6 +3887,12 @@ git-tree-sha1 = "32e0f088bc6194a452ecfd4cc671f40acc1bf5df"
 uuid = "e34fb328-7f7f-54d6-9f45-12944764ead7"
 version = "0.1.4"
 
+[[Fire]]
+deps = ["Test"]
+git-tree-sha1 = "e6c17598e29f663cd9dc924b598cfeab6103ce18"
+uuid = "652a1917-b8e5-5d9b-be38-bbf27e56fe44"
+version = "0.1.0"
+
 [[FixedPointDecimals]]
 deps = ["Printf", "Test"]
 git-tree-sha1 = "b17a731934600b835150b7882238e7f06f8be368"
