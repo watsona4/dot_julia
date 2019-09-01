@@ -4007,6 +4007,12 @@ git-tree-sha1 = "7ac07d5194360af910146abd33af89bb69541194"
 uuid = "9dda63f9-cce7-5873-89fa-eccbb2fffcde"
 version = "0.0.3"
 
+[[ForecastEval]]
+deps = ["DependentBootstrap", "Distributions", "Random", "StatsBase", "Test"]
+git-tree-sha1 = "25175b563db2243bc82e1dc4abe9f3707120fc3a"
+uuid = "c08c26e9-7d88-5404-9cd5-c0fa6a8b90ba"
+version = "1.0.0"
+
 [[Format]]
 deps = ["Compat"]
 git-tree-sha1 = "c6fff9afa5d716fefc883d449dfc954b859718b9"
