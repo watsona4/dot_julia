@@ -1,0 +1,19 @@
+site_name:        DarkSky.jl
+repo_url:         https://github.com/ellisvalentiner/DarkSky.jl
+site_description: A Julia wrapper for the Dark Sky API.
+site_author:      Ellis Valentiner
+
+theme: readthedocs
+
+extra_css:
+  - assets/Documenter.css
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+
+docs_dir: 'build'
+
+pages:
+  - Home: index.md
