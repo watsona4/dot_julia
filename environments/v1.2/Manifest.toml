@@ -4142,6 +4142,12 @@ git-tree-sha1 = "d6269367f194023a1b9bf05b41af2bbbabf0cc77"
 uuid = "cd4130c4-8d21-11e9-2a29-61e008680c2d"
 version = "1.0.0"
 
+[[GBIF]]
+deps = ["Dates", "HTTP", "JSON", "Test"]
+git-tree-sha1 = "ce13c964c7fcfde52b78e948cb75d937252da930"
+uuid = "ee291a33-5a6c-5552-a3c8-0f29a1181037"
+version = "0.1.4"
+
 [[GDAL]]
 deps = ["BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "100429098b7ec9930f7db9ba68aee3495365be24"
