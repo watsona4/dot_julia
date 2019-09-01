@@ -3404,6 +3404,12 @@ git-tree-sha1 = "7242a67626b8a1079188a9ba23918941f467cb08"
 uuid = "46c19be6-bce2-539c-96b6-a48c64de3b10"
 version = "0.0.1"
 
+[[EponymTuples]]
+deps = ["Test"]
+git-tree-sha1 = "beb267f768b829fedf7562da883354066977c809"
+uuid = "97e2ac4a-e175-5f49-beb1-4d6866a6cdc3"
+version = "0.2.2"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
