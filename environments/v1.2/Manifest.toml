@@ -2807,6 +2807,12 @@ git-tree-sha1 = "f536900095c88154ea2c90aaccdeaf523e885f59"
 uuid = "a7b11256-881b-11e9-3aff-ff4a76f1bfae"
 version = "0.2.0"
 
+[[DimArrays]]
+deps = ["Lazy", "LinearAlgebra", "RecipesBase", "Requires", "Statistics", "Test"]
+git-tree-sha1 = "65f08e807a580603aaf6a6f69d345e9b8d3d5211"
+uuid = "afd54cf4-456d-5b26-a0a9-2ab8a8120e3d"
+version = "0.2.1"
+
 [[DimensionalPlotRecipes]]
 deps = ["LinearAlgebra", "RecipesBase", "Test"]
 git-tree-sha1 = "d348688f9a3d02c24455327231c450c272b7401c"
