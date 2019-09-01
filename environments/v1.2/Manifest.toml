@@ -3965,6 +3965,12 @@ git-tree-sha1 = "221f8b6be816992d80949cfabee1c65e59ab0e09"
 uuid = "d8b13f87-1844-53e1-ad89-0742af8604bf"
 version = "0.1.0"
 
+[[FluorescentSeries]]
+deps = ["AxisArrays", "ImageAxes", "Test"]
+git-tree-sha1 = "35274e93c2476e1ff1f32a4b1eea324b6d1dc39e"
+uuid = "68ab7a74-b89c-58c4-90e0-a4e17bbb69bc"
+version = "0.1.0"
+
 [[Flux]]
 deps = ["AbstractTrees", "Adapt", "CodecZlib", "Colors", "DelimitedFiles", "Juno", "LinearAlgebra", "MacroTools", "NNlib", "Pkg", "Printf", "Random", "Reexport", "Requires", "SHA", "Statistics", "StatsBase", "Tracker", "ZipFile"]
 git-tree-sha1 = "08212989c2856f95f90709ea5fd824bd27b34514"
