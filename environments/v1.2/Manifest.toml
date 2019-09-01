@@ -3351,6 +3351,12 @@ git-tree-sha1 = "b05239411efc2ae165c99960d1163ab68da6e327"
 uuid = "0dcf7749-4f9f-5e13-9c57-506664207bbc"
 version = "0.2.1"
 
+[[EmpiricalModeDecomposition]]
+deps = ["AbstractFFTs", "Dierckx", "Distributions", "Documenter", "FFTW", "ForwardDiff", "LinearAlgebra", "Random", "Statistics", "Test"]
+git-tree-sha1 = "539ddbf8dc9386fea8276b61b7b4480a2febfcd3"
+uuid = "6a34a51b-2f4a-4636-bd3c-e47519ebd0d9"
+version = "0.1.1"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
