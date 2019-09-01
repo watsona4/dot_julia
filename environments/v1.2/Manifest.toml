@@ -3935,6 +3935,12 @@ git-tree-sha1 = "d97b42cc9bfca31cc26c8e1e8cd7bdc7b1e23413"
 uuid = "3ca710bb-85d4-534c-9bae-b7b5d9e27e20"
 version = "0.1.0"
 
+[[FlashWeave]]
+deps = ["Combinatorics", "DataStructures", "Dates", "DelimitedFiles", "Distributed", "Distributions", "FileIO", "HDF5", "JLD2", "JSON", "LightGraphs", "LinearAlgebra", "Logging", "Random", "SharedArrays", "SimpleWeightedGraphs", "SparseArrays", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "40b0f07a5d78ac04bc7eba7487152f8d93a34c27"
+uuid = "2be3f83a-7913-5748-9f20-7d448995b934"
+version = "0.14.0"
+
 [[FlatBuffers]]
 deps = ["Parameters", "Pkg", "Test"]
 git-tree-sha1 = "dd5c2460639eef7962178216fd150c60fa42a1c4"
