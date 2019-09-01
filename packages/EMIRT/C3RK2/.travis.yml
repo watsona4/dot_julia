@@ -1,0 +1,24 @@
+language: julia
+os: linux
+
+julia:
+    - 0.7
+    - 1.0
+    - nightly
+
+notifications:
+    email: false
+
+matrix:
+    allow_failures:
+        julia: nightly 
+
+sudo: required 
+
+install:
+    - sudo apt-get install -y -qq hdf5-tools
+script:
+    - julia -e 'import Pkg; Pkg.clone(pwd()); Pkg.test("EMIRT"; coverage=true)'
+    
+after_success:
+    - julia -e 'import Pkg; Pkg.add("Coverage"); using Coverage; Coverall.submit(process_folder())'

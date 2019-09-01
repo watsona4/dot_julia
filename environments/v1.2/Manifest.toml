@@ -3164,6 +3164,12 @@ git-tree-sha1 = "1429dc227b8585ad0b84b06ce4e5fcbf1dacd8cc"
 uuid = "582d7a84-78fd-59ab-a7bb-47fc6b175004"
 version = "0.0.5"
 
+[[EMIRT]]
+deps = ["Colors", "Distributed", "FileIO", "FixedPointNumbers", "HDF5", "Test"]
+git-tree-sha1 = "e597bd793724cc528f85d21a36e2e704ac60d02a"
+uuid = "8acf8dda-514d-5c36-9488-7e3496cf596e"
+version = "0.7.0"
+
 [[EarthOrientation]]
 deps = ["Dates", "DelimitedFiles", "LeapSeconds", "OptionalData", "RemoteFiles", "Test"]
 git-tree-sha1 = "7ceae02eea4ffa57be45c47b237aca093926badc"
