@@ -4423,6 +4423,12 @@ git-tree-sha1 = "297bf4be1b432e40a84bbcdb9cd746a2a3510136"
 uuid = "7e08b658-56d3-11e9-2997-919d5b31e4ea"
 version = "0.1.1"
 
+[[GeometricalPredicates]]
+deps = ["Test"]
+git-tree-sha1 = "ccf306c88eedb19c95432947d8b7f4d0e916e1a2"
+uuid = "fd0ad045-b25c-564e-8f9c-8ef5c5f21267"
+version = "0.2.0"
+
 [[GeometryTypes]]
 deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "2b0bfb379a54bdfcd2942f388f7d045f8952373d"
