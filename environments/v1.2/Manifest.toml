@@ -4268,6 +4268,12 @@ git-tree-sha1 = "38720a6798787184b527992d23d5b132faae4bfb"
 uuid = "4b11ee91-296f-5714-9832-002c20994614"
 version = "0.10.0"
 
+[[GaussQuadrature]]
+deps = ["LinearAlgebra", "Printf", "SpecialFunctions", "Test"]
+git-tree-sha1 = "3113b28de0e25576348c06731327f3df8de6ad90"
+uuid = "d54b0c1a-921d-58e0-8e36-89d8069c0969"
+version = "0.5.0"
+
 [[GaussianDistributions]]
 deps = ["Distributions", "LinearAlgebra", "Random", "Statistics", "Test"]
 git-tree-sha1 = "3b4732afce4035be36f943b476f1bc63920076c1"
