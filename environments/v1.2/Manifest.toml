@@ -3176,6 +3176,12 @@ git-tree-sha1 = "fd21dab707b934e82552d3243102fe0857ecb4ac"
 uuid = "0ca9fa26-8833-11e9-3415-832a08817e5a"
 version = "0.1.0"
 
+[[ERFA]]
+deps = ["BinaryProvider", "Libdl"]
+git-tree-sha1 = "72565c50aa2fa4c7c88964e29c3646d4398d53e5"
+uuid = "17511681-8477-586a-8d98-4cfd5a1f2ec3"
+version = "0.5.0"
+
 [[EarthOrientation]]
 deps = ["Dates", "DelimitedFiles", "LeapSeconds", "OptionalData", "RemoteFiles", "Test"]
 git-tree-sha1 = "7ceae02eea4ffa57be45c47b237aca093926badc"
