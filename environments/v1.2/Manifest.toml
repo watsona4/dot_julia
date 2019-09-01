@@ -4501,6 +4501,12 @@ git-tree-sha1 = "c72f1fcb7d17426de1e8af2e948dfb3de1116eed"
 uuid = "c27321d9-0574-5035-807b-f59d2c89b15c"
 version = "1.2.0"
 
+[[GlobalSearchRegression]]
+deps = ["DataFrames", "DelimitedFiles", "Distributed", "Distributions", "LinearAlgebra", "Printf", "SharedArrays", "Test"]
+git-tree-sha1 = "ca97c7cf12a6e1ad1cfd4fbb1948d023d8bafe20"
+uuid = "5b3bc22e-96cb-5e8b-bdf1-153217652f04"
+version = "1.0.3"
+
 [[GoogleCloud]]
 deps = ["Base64", "Dates", "HTTP", "JSON", "Libz", "Markdown", "MbedTLS", "MsgPack", "Printf", "Test"]
 git-tree-sha1 = "96a8c98805e3635f189c49903fffbad725e5de46"
