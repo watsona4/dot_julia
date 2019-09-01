@@ -2195,6 +2195,12 @@ git-tree-sha1 = "2dc552c3eb10eb0694f81269145abcab3ce50e9e"
 uuid = "9c784101-8907-5a6d-9be6-98f00873c89b"
 version = "0.1.0"
 
+[[Cumulants]]
+deps = ["Combinatorics", "Distributed", "Distributions", "Random", "SymmetricTensors", "Test"]
+git-tree-sha1 = "dc7e498ea7b1ae6dfe83578918681b1b426b3e31"
+uuid = "01e79fc4-f247-5fa3-af0e-2bd1d4cc767f"
+version = "1.0.2"
+
 [[CustomUnitRanges]]
 deps = ["Test"]
 git-tree-sha1 = "0a106457a1831555857e18ac9617279c22fc393b"
@@ -4591,6 +4597,12 @@ deps = ["LinearAlgebra", "PyCall", "RecipesBase", "SpecialFunctions"]
 git-tree-sha1 = "0bca6c3dc6543d8049ba3e693311201a393c687e"
 uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 version = "1.0.5"
+
+[[SymmetricTensors]]
+deps = ["Combinatorics", "LinearAlgebra", "Random", "StatsBase", "Test"]
+git-tree-sha1 = "39217192b62f6d3077cd517223e5536fed1e7fc5"
+uuid = "1ab33d94-6c6c-50cc-93f0-e3f623a46aa0"
+version = "1.0.0"
 
 [[Syslogs]]
 deps = ["Printf", "Sockets"]
