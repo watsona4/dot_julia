@@ -4125,6 +4125,12 @@ version = "0.3.1"
 deps = ["Random"]
 uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
 
+[[GAFramework]]
+deps = ["Future", "JLD", "LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "b31a20e1bdf0992f3b765c1ebe2f3faada27aa77"
+uuid = "91ca9103-c91c-5507-a6ff-05d8648e996f"
+version = "0.2.0"
+
 [[GDAL]]
 deps = ["BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "100429098b7ec9930f7db9ba68aee3495365be24"
