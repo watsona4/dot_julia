@@ -2693,6 +2693,12 @@ git-tree-sha1 = "f250512b982b771f6bdb3df05b89df314f2c2580"
 uuid = "5a0ffddc-d203-54b0-88ba-2c03c0fc2e67"
 version = "2.1.0"
 
+[[DiffEqFlux]]
+deps = ["Adapt", "DiffEqBase", "DiffEqSensitivity", "DiffResults", "Flux", "ForwardDiff", "LinearAlgebra", "RecursiveArrayTools", "Requires"]
+git-tree-sha1 = "ab15a27f886d688c4c59b4b843dec220b957f2a3"
+uuid = "aae7a2af-3d4f-5e19-a356-7da93b79d9d0"
+version = "0.6.1"
+
 [[DiffEqJump]]
 deps = ["Compat", "DataStructures", "DiffEqBase", "FunctionWrappers", "LinearAlgebra", "Parameters", "PoissonRandom", "Random", "RandomNumbers", "RecursiveArrayTools", "Statistics", "Test", "TreeViews"]
 git-tree-sha1 = "784b979eeca8e9586aea9e63edbdcf5573bf9449"
