@@ -3428,6 +3428,12 @@ git-tree-sha1 = "79ee2bede93b4d660e30123762d09556187f92b7"
 uuid = "36e9a02b-89ba-5c81-9f23-352891f35b31"
 version = "0.1.1"
 
+[[ErlangTerm]]
+deps = ["Test"]
+git-tree-sha1 = "04a208013514603aa21796de554f82cf93ea020c"
+uuid = "6cf46ab0-e18c-5424-9784-c70c22e5b0c7"
+version = "0.1.0"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
