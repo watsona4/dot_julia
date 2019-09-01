@@ -3104,6 +3104,12 @@ git-tree-sha1 = "3815065447269fd3112eff1f50eb1e9cceeac1db"
 uuid = "6266e5bf-9887-5dfa-a522-2c46ecdcf14a"
 version = "0.4.0"
 
+[[DynamicIterators]]
+deps = ["Random", "Test", "Trajectories"]
+git-tree-sha1 = "ff4da5660d2047e800027b3195c67c0319587147"
+uuid = "6c76993d-992e-5bf1-9e63-34920a5a5a38"
+version = "0.3.0"
+
 [[DynamicPolynomials]]
 deps = ["LinearAlgebra", "MultivariatePolynomials", "Pkg", "Reexport", "Test"]
 git-tree-sha1 = "3a62d031f2ad15a68e4b4603bc85ebb1580438ca"
