@@ -4346,6 +4346,12 @@ git-tree-sha1 = "3d6dd4ec649a45a7a7d0096d388e2701af9946f4"
 uuid = "899a7d2d-5c61-547b-bef9-6698a8d05446"
 version = "1.0.0"
 
+[[GenomicMaps]]
+deps = ["Colors", "GenomicAnnotations", "Luxor", "Printf", "Statistics"]
+git-tree-sha1 = "3d8fa7d0f2c911d5341bd1308e8dc5a6e170c923"
+uuid = "db448a0f-c3d9-5f82-93ff-ed9bd37d70e8"
+version = "0.1.2"
+
 [[GeoInterface]]
 deps = ["RecipesBase", "Test"]
 git-tree-sha1 = "0c0c0bf9c79b10e48aa089e78ac504ebc43db3a0"
