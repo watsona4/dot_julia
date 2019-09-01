@@ -2717,6 +2717,12 @@ git-tree-sha1 = "f5333c0aa6208680e48cd24ae6f759c262a1cf85"
 uuid = "77a26b50-5914-5dd7-bc55-306e6241c503"
 version = "3.3.1"
 
+[[DiffEqOperators]]
+deps = ["BandedMatrices", "DiffEqBase", "ForwardDiff", "LinearAlgebra", "NNlib", "SparseArrays", "StaticArrays", "SuiteSparse"]
+git-tree-sha1 = "730b9dfb221310fd73a299f6bdb5823347fe72e5"
+uuid = "9fdde737-9c7f-55bf-ade8-46b3f136cc48"
+version = "4.1.0"
+
 [[DiffEqPDEBase]]
 deps = ["ChunkedArrays", "Compat", "DiffEqBase", "RecipesBase", "VectorizedRoutines"]
 git-tree-sha1 = "2a997aba53ecff1b19e6c78f1181352787bd9c54"
