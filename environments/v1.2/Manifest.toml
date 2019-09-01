@@ -3020,6 +3020,12 @@ git-tree-sha1 = "ff1d5110f49238a9b2e806d41522ba18c01cff3a"
 uuid = "634d3b9d-ee7a-5ddf-bec9-22491ea816e1"
 version = "1.0.0"
 
+[[DrakeLCMTypes]]
+deps = ["LCMCore", "StaticArrays"]
+git-tree-sha1 = "1f15e16b5bd27a3d78042c6295237895793c8b25"
+uuid = "6484683b-de53-5689-b9d2-2f18b83297fe"
+version = "0.2.0"
+
 [[DualMatrixTools]]
 deps = ["DualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "de17ad165602c7e57dd65e593aa2c7b880dad6c5"

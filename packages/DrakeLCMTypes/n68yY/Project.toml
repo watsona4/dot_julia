@@ -1,0 +1,18 @@
+name = "DrakeLCMTypes"
+uuid = "6484683b-de53-5689-b9d2-2f18b83297fe"
+version = "0.2.0"
+
+[deps]
+LCMCore = "0ea44823-1ff1-5b9a-8293-5fd55a38e746"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[compat]
+LCMCore = "≥ 0.2.0"
+StaticArrays = "≥ 0.5.0"
+julia = "≥ 0.7.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
