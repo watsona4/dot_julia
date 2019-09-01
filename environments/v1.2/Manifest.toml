@@ -2907,6 +2907,12 @@ git-tree-sha1 = "b82c1da2a9bde0821926927b2185f312c0c8e4c5"
 uuid = "18716f60-6c0e-11e9-0a37-e9870d4a7c8f"
 version = "0.1.0"
 
+[[Divergences]]
+deps = ["Calculus", "Distances", "Random", "StatsFuns", "Test"]
+git-tree-sha1 = "c3e3de0a8f0b1e9c1c60b3a5adfed6f51b2c70c9"
+uuid = "7f07e4c8-6df2-5971-ad44-bf349b9adcfd"
+version = "0.2.0"
+
 [[DocSeeker]]
 deps = ["Hiccup", "IterTools", "Markdown", "REPL", "Requires", "Serialization", "StringDistances", "Test", "URIParser"]
 git-tree-sha1 = "8d4d5f9ec970944445c77cfdcd5d3246a4e0cd0d"
