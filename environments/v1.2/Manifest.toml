@@ -2363,6 +2363,12 @@ git-tree-sha1 = "39dd9351c6637a71d1925e26e49adcd8a25ebf0b"
 uuid = "d58978e5-989f-55fb-8d15-ea34adc7bf54"
 version = "0.8.0"
 
+[[DandelionWebSockets]]
+deps = ["Base64", "HTTP", "Logging", "MbedTLS", "Random", "SHA", "Sockets", "Test"]
+git-tree-sha1 = "d46a6a6e519512984cd1600c46fd4049ae58ba18"
+uuid = "a3dee88c-baf6-5d24-a1ed-2b752da90c9e"
+version = "0.2.0"
+
 [[DataAPI]]
 git-tree-sha1 = "8903f0219d3472543fc4b2f5ebaf675a07f817c0"
 uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
