@@ -3983,6 +3983,12 @@ git-tree-sha1 = "1a44a2872f31298f3fe847e47f3deb85b95eb7ac"
 uuid = "0e18b5df-1f6d-5218-abdd-6febb37acc78"
 version = "0.2.0"
 
+[[FocusedBlindDecon]]
+deps = ["Dates", "LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "465588d4c0de7c3268d599dfe185d6f4212860d3"
+uuid = "3b47aaff-9524-5d9d-a292-eeb6a187c032"
+version = "2.6.4"
+
 [[Fontconfig]]
 deps = ["BinDeps", "Compat", "Homebrew", "Libdl", "WinRPM"]
 git-tree-sha1 = "d1fd629ca493abd85cde2ee59e60bceb4146f113"
