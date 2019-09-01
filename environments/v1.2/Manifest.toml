@@ -3056,6 +3056,12 @@ git-tree-sha1 = "e178a6768dad879ff1abfc1c612406856bb06ce0"
 uuid = "fa6b7ba4-c1ee-5f82-b5fc-ecf0adba8f74"
 version = "0.6.2"
 
+[[Dubins]]
+deps = ["Compat", "Memento"]
+git-tree-sha1 = "36ca76c0ca290f4024ffa5e1c570bc55c35f90de"
+uuid = "c4b27c1d-289f-5655-aa69-f096df7d9e2b"
+version = "1.1.0"
+
 [[DynamicHMC]]
 deps = ["ArgCheck", "DataStructures", "DocStringExtensions", "LinearAlgebra", "LogDensityProblems", "Parameters", "Random", "Statistics", "StatsFuns", "TransformVariables"]
 git-tree-sha1 = "b1a272a63eebb2b58f5e370f243991244a52aa28"

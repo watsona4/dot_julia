@@ -1,0 +1,18 @@
+name = "Dubins"
+uuid = "c4b27c1d-289f-5655-aa69-f096df7d9e2b"
+authors = ["Kaarthik Sundar <kaarthik01sundar@gmail.com>"]
+repo = "https://github.com/kaarthiksundar/Dubins.jl.git"
+version = "1.1.0"
+
+[deps]
+Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
+Memento = "f28f55f0-a522-5efc-85c2-fe41dfb9b2d9"
+
+[compat]
+julia = "^1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
