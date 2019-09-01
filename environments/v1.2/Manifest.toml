@@ -2321,6 +2321,12 @@ git-tree-sha1 = "e7a386ab2e1b15bc77d379ff8656c56918840799"
 uuid = "1e31e15d-4957-550d-a244-318eced754ae"
 version = "0.2.0"
 
+[[DFOLS]]
+deps = ["LinearAlgebra", "Printf", "PyCall", "Random", "Test"]
+git-tree-sha1 = "0844a07ec62c3c517daeeb39b79e90bbd5a8a72a"
+uuid = "0dc4ae03-94be-5b30-bb99-4e20affbc5f0"
+version = "0.2.0"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"
