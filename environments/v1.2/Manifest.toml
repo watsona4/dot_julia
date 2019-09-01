@@ -3248,6 +3248,12 @@ git-tree-sha1 = "ffc66b3a99e73dbe071b7f1c66c8468a8c91912e"
 uuid = "a3315474-fad9-5060-8696-cee5f38a87b7"
 version = "0.2.4"
 
+[[EffectSizes]]
+deps = ["Statistics", "Test"]
+git-tree-sha1 = "2c1b4b47083dded7615a266f50cdd5841d7bc322"
+uuid = "e248de7e-9197-5860-972e-353a2af44d75"
+version = "0.1.0"
+
 [[ElasticArrays]]
 git-tree-sha1 = "d9c079b747b9e9985d83e806bb77e41d149c959a"
 uuid = "fdbdab4c-e67f-52f5-8c3f-e7b388dad3d4"
