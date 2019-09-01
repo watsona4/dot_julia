@@ -3695,6 +3695,12 @@ git-tree-sha1 = "ab33b20b2ea799d60f51cb39f2e91db0efa4b647"
 uuid = "9c2b0ca7-0fb3-5789-8f1a-7604e426024c"
 version = "0.2.0"
 
+[[Faker]]
+deps = ["Dates", "Random", "Test", "YAML"]
+git-tree-sha1 = "d17af5e869fcc28832ca2244503101751001a8f6"
+uuid = "0efc519c-db33-5916-ab87-703215c3906f"
+version = "0.2.1"
+
 [[FastClosures]]
 git-tree-sha1 = "b451807e68d0056fab1d094eab27e3b5fd424f1b"
 uuid = "9aa1b823-49e4-5ca5-8b0f-3971ec8bab6a"
