@@ -1,0 +1,6 @@
+julia 1.0
+RobustPmap
+IterativeSolvers 0.5.0
+Interpolations
+FFTW
+Random
