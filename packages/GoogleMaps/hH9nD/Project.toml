@@ -1,0 +1,17 @@
+name = "GoogleMaps"
+uuid = "0aa3f6d8-b09a-4857-7ddf-475680c99cb7"
+license = "MIT"
+authors = ["Ellis Valentiner <ellisvalentiner@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+ArgCheck = "dce04be8-c92d-5529-be00-80e4d2c0e197"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

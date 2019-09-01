@@ -1,0 +1,18 @@
+language: julia
+os:
+- linux
+- osx
+julia:
+- 1.0
+- nightly
+notifications:
+  email: false
+git:
+  depth: 1
+after_success:
+- julia -e 'using Pkg; Pkg.add("Documenter"); Pkg.add("Coverage");'
+- julia -e 'import GoogleMaps; joinpath(dirname(pathof(GoogleMaps)), ".."); include(joinpath("docs", "make.jl"))'
+- julia -e 'import GoogleMaps; joinpath(dirname(pathof(GoogleMaps)), ".."); using Coverage; Coveralls.submit(Coveralls.process_folder()); Codecov.submit(Codecov.process_folder())'
+env:
+  matrix:
+    secure: I8Vn6YzJipb+gFD2X7k5NUARwD8kR6FHQPTbzstC52sL/YRr/t4nw7fNnCuoQimpKvJj4gzXTrlCg2O2igj2NtCDAEExy5XNRPTBe6n057p0poPW6p6PijNCrIR3meSSYVUQBQwDqUj4EROFBBC6bvispzFgQ/QHKdrSKozCOk28pXIYQF6zj45SsisT5Ucxdp7R3rT6vCoRF8PbFbG9ZgBSjw7CfaC+s9mbtjxTJ8rM+wDQ8LlpmO1BwtZlkYPDhuBnJB9XzyHy0sBdcL3lsglLhG7JK3Ow32FS1745ixPaEybYFAl+mvzISfBpRPkNVfKKgQmAbwLIuaNdBr9Qbcu2ePZBrUxsxb5F1muv6lk2pd/oYWplpkLwzGt9OeU4MaSvyrOzDdItJ03+Ckp5bOe4ZSnL4zWSvt4+gyH6qe5FHzmwEWuVNPER0TmWjZO3Gu4qAdYoUTrtbuntui7vLZl3G0g50J3UBmMopH0r/tGHtQZkcSdbFQYgghHAA5e8UyHHNysWL/n2XfJ2yTjIvNAf9yiEbfHE/SmOb+jQdYdmt3NNlGyfXG13Bf+7LvyRvzlKqZU2ZXwDG515Af4KVTm+PzjOIGguIlYXlsiBJa3mKTPWZb8FJi8pI17ySpf4cChS6QD3bKiM2rja6z3b+YMYwXe3ImZ7RjMbxbiOLuk=

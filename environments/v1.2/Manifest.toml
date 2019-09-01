@@ -4555,6 +4555,12 @@ git-tree-sha1 = "888bb4c64da0e374c745fe3aa706a59c458afa3a"
 uuid = "be5e5202-b427-58d6-b196-3d129152056c"
 version = "0.1.1"
 
+[[GoogleMaps]]
+deps = ["ArgCheck", "Dates", "HTTP", "JSON", "Test"]
+git-tree-sha1 = "6f8d69afa123c22c97c313f11a9f82fc1b437804"
+uuid = "b6ac9c74-f072-5636-adac-bd17907ec0b6"
+version = "0.1.0"
+
 [[GradDescent]]
 deps = ["Distributions", "ForwardDiff", "LinearAlgebra", "Random", "Test"]
 git-tree-sha1 = "2180f700605eb0ad851f54577855c6a8f13b9a20"
