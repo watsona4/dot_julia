@@ -4328,6 +4328,12 @@ git-tree-sha1 = "b7cc1465200d1c82666754930a55763b507f097e"
 uuid = "9bc6ac9d-e6b2-5f70-b0a8-242a01662520"
 version = "0.4.0"
 
+[[Genie]]
+deps = ["ArgParse", "Dates", "Distributed", "Gumbo", "HTTP", "HttpCommon", "JSON", "Logging", "Markdown", "MbedTLS", "Millboard", "Nettle", "Nullables", "OrderedCollections", "Pkg", "Reexport", "Revise", "SHA", "Serialization", "Sockets", "URIParser", "Unicode", "YAML"]
+git-tree-sha1 = "6547ae1d668a7b219a3ff70e2df27442b2b3ed06"
+uuid = "c43c736e-a2d1-11e8-161f-af95117fbd1e"
+version = "0.16.0"
+
 [[GenomicFeatures]]
 deps = ["Automa", "BGZFStreams", "BioCore", "BioSequences", "BufferedStreams", "ColorTypes", "DataStructures", "FixedPointNumbers", "IntervalTrees", "Libz", "Random", "Test", "URIParser"]
 git-tree-sha1 = "3d6dd4ec649a45a7a7d0096d388e2701af9946f4"
@@ -4495,6 +4501,12 @@ deps = ["DoubleFloats", "DynamicPolynomials", "ElasticArrays", "FixedPolynomials
 git-tree-sha1 = "4f1d5c27553f2db3599db56385e0a303e0049da9"
 uuid = "f213a82b-91d6-5c5d-acf7-10f1c761b327"
 version = "1.1.1"
+
+[[HttpCommon]]
+deps = ["Dates", "Nullables", "Test", "URIParser"]
+git-tree-sha1 = "46313284237aa6ca67a6bce6d6fbd323d19cff59"
+uuid = "77172c1b-203f-54ac-aa54-3f1198fe9f90"
+version = "0.5.0"
 
 [[HyperDualMatrixTools]]
 deps = ["HyperDualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
@@ -5298,6 +5310,11 @@ git-tree-sha1 = "2596f1cf9228fb65621b28989ab7dd1307f0a28e"
 uuid = "3bd8f0ae-a0f2-5238-a5af-e1b399a4940c"
 version = "0.4.0"
 
+[[Millboard]]
+git-tree-sha1 = "c6d4a61d1b74ba35b1efe5cb025bf852145521e1"
+uuid = "39ec1447-df44-5f4c-beaa-866f30b4d3b2"
+version = "0.2.1"
+
 [[Missings]]
 deps = ["SparseArrays", "Test"]
 git-tree-sha1 = "f0719736664b4358aa9ec173077d4285775f8007"
@@ -5496,6 +5513,12 @@ deps = ["BinDeps", "CondaBinDeps", "Formatting", "Libdl"]
 git-tree-sha1 = "fce0c7962fb14b8cf2f33ea77885f3b7c7e1485e"
 uuid = "30363a11-5582-574a-97bb-aa9a979735b9"
 version = "0.8.0"
+
+[[Nettle]]
+deps = ["BinDeps", "BinaryProvider", "Libdl", "Test"]
+git-tree-sha1 = "f57e8e907faab4f55f9f164313a633509ac83e2c"
+uuid = "49dea1ee-f6fa-5aa6-9a11-8816cee7d4b9"
+version = "0.4.0"
 
 [[NodeJS]]
 deps = ["Test"]
