@@ -4262,6 +4262,12 @@ git-tree-sha1 = "70f2e851e8234832ce29a283e247e56096ce6319"
 uuid = "5e113713-6c35-5477-b766-e1109486666f"
 version = "0.3.5"
 
+[[Gaston]]
+deps = ["DelimitedFiles", "Random"]
+git-tree-sha1 = "38720a6798787184b527992d23d5b132faae4bfb"
+uuid = "4b11ee91-296f-5714-9832-002c20994614"
+version = "0.10.0"
+
 [[GaussianDistributions]]
 deps = ["Distributions", "LinearAlgebra", "Random", "Statistics", "Test"]
 git-tree-sha1 = "3b4732afce4035be36f943b476f1bc63920076c1"
