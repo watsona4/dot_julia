@@ -2255,6 +2255,12 @@ git-tree-sha1 = "e8105c939afcb8540a8525105120b1126bd1a5aa"
 uuid = "65d46eb8-70e9-5a30-bf48-2afa3a021b8f"
 version = "0.1.0"
 
+[[CuthillMcKee]]
+deps = ["SparseArrays", "Test"]
+git-tree-sha1 = "8f850f57b6bf88779e1060311d8620ce15153970"
+uuid = "17f17636-5e38-52e3-a803-7ae3aaaf3da9"
+version = "0.1.0"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"

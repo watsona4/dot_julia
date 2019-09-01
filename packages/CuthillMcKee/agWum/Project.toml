@@ -1,0 +1,7 @@
+authors = ["Robert Lee Gates <robert.gates@gmail.com>"]
+name = "CuthillMcKee"
+uuid = "17f17636-5e38-52e3-a803-7ae3aaaf3da9"
+version = "0.1.0"
+
+[deps]
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
