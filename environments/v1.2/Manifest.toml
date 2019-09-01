@@ -3369,6 +3369,12 @@ git-tree-sha1 = "f21b0c12684ee39b13fb18a37ed45551af0a6afe"
 uuid = "97725368-735e-11e9-0dd7-6bf34c3b13a8"
 version = "0.2.0"
 
+[[EndpointRanges]]
+deps = ["Test"]
+git-tree-sha1 = "efc91c3b57c78345f0c629b556d0718ac3e2a532"
+uuid = "340492b5-2a47-5f55-813d-aca7ddf97656"
+version = "0.2.0"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
