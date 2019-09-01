@@ -3230,6 +3230,12 @@ git-tree-sha1 = "927e8aea9c9856b88fda40791e3872de07d05751"
 uuid = "a58aae7d-b440-5a11-b283-399458f99aac"
 version = "0.0.7"
 
+[[EcologicalNetworks]]
+deps = ["Combinatorics", "DataStructures", "DelimitedFiles", "Distributions", "LinearAlgebra", "Random", "Requires", "Statistics", "StatsBase"]
+git-tree-sha1 = "406d72dbbf3f3e060af252d755453f573f3f6c10"
+uuid = "f03a62fe-f8ab-5b77-a061-bb599b765229"
+version = "0.2.1"
+
 [[ElasticArrays]]
 git-tree-sha1 = "d9c079b747b9e9985d83e806bb77e41d149c959a"
 uuid = "fdbdab4c-e67f-52f5-8c3f-e7b388dad3d4"
