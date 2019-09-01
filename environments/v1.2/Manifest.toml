@@ -3953,6 +3953,12 @@ git-tree-sha1 = "69941e9412036c66c83d80b2ddfe6afe84e8bf43"
 uuid = "4c728ea3-d9ee-5c9a-9642-b6f7d7dc04fa"
 version = "0.2.1"
 
+[[FlexLinearAlgebra]]
+deps = ["LinearAlgebra", "Test"]
+git-tree-sha1 = "f2340868b95891c36bb643387326a7e336184ee4"
+uuid = "b67e1e5a-d13e-5892-ad81-fb75f5903773"
+version = "0.0.3"
+
 [[Flux]]
 deps = ["AbstractTrees", "Adapt", "CodecZlib", "Colors", "DelimitedFiles", "Juno", "LinearAlgebra", "MacroTools", "NNlib", "Pkg", "Printf", "Random", "Reexport", "Requires", "SHA", "Statistics", "StatsBase", "Tracker", "ZipFile"]
 git-tree-sha1 = "08212989c2856f95f90709ea5fd824bd27b34514"
