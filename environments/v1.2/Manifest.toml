@@ -4471,6 +4471,12 @@ git-tree-sha1 = "6a405b64a4ad80afc788926b2310038c0162b339"
 uuid = "a6aca261-61b0-5b33-a99a-e9c977ffa089"
 version = "0.2.0"
 
+[[GigaSOM]]
+deps = ["CSV", "DataFrames", "Distances", "Distributed", "DistributedArrays", "Distributions", "FCSFiles", "FileIO", "JSON", "Random", "SHA", "Test", "XLSX"]
+git-tree-sha1 = "94d91c4eae0ac0016a13dad900ce37f90247c287"
+uuid = "a03a9c34-069e-5582-a11c-5c984cab887c"
+version = "0.1.0"
+
 [[GitHub]]
 deps = ["Base64", "Compat", "Dates", "HTTP", "JSON", "MbedTLS", "Sockets", "Test"]
 git-tree-sha1 = "0224f2efcf87d783d64861e4a9ee08299164a569"
