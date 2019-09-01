@@ -1,0 +1,16 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+
+data/
+.Rproj.user
+.RData
+.Rhistory
+EvoTrees.jl.Rproj
+
+.DS_Store
+
+JuliaGBT-Benchmark.R
+
+/*/.DS_Store

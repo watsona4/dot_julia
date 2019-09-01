@@ -3451,6 +3451,12 @@ git-tree-sha1 = "cf102eb615c6361b5a4fb5043cf53ebb97fc018d"
 uuid = "bf752c2e-6b1c-53e3-a22f-e5bb209bd3f1"
 version = "0.7.1"
 
+[[EvoTrees]]
+deps = ["BenchmarkTools", "CSV", "CodeTracking", "DataFrames", "MLJ", "MLJBase", "Random", "Revise", "SortingAlgorithms", "StaticArrays", "Statistics", "StatsBase", "Tables", "Test", "Traceur"]
+git-tree-sha1 = "12c4dade1445bc0acb98931ce85dc50b06fea8ad"
+uuid = "f6006082-12f8-11e9-0c9c-0d5d367ab1e5"
+version = "0.2.3"
+
 [[Expectations]]
 deps = ["Compat", "Distributions", "FastGaussQuadrature", "SpecialFunctions"]
 git-tree-sha1 = "5b50b515886773484a28f19d9c103dffc7702702"
@@ -4326,6 +4332,18 @@ git-tree-sha1 = "fa3b5f5530bac7b972c2eb3a2e8edfab9e80b44a"
 uuid = "40e66cde-538c-5869-a4ad-c39174c6795b"
 version = "0.3.0"
 
+[[LIBLINEAR]]
+deps = ["DelimitedFiles", "Libdl", "SparseArrays", "Test"]
+git-tree-sha1 = "42cacc29d9b4ae77b6702c181bbfa58f14d8ef7a"
+uuid = "2d691ee1-e668-5016-a719-b2531b85e0f5"
+version = "0.5.1"
+
+[[LIBSVM]]
+deps = ["Compat", "DelimitedFiles", "LIBLINEAR", "Libdl", "ScikitLearnBase", "SparseArrays", "Test"]
+git-tree-sha1 = "f17068e3f13a83da68c05f36c47a696b22129cff"
+uuid = "b1bec4e5-fd48-53fe-b0cb-9723c09d164b"
+version = "0.3.1"
+
 [[LLVM]]
 deps = ["CEnum", "Libdl", "Printf", "Unicode"]
 git-tree-sha1 = "52cfea426bd248a427aace7d88eb5d45b84ea297"
@@ -4571,6 +4589,24 @@ deps = ["IterTools", "Random", "Reexport", "StatsBase", "Test"]
 git-tree-sha1 = "f63a8d37429568b8c4384d76c4a96fc2897d6ddf"
 uuid = "f0e99cf1-93fa-52ec-9ecc-5026115318e0"
 version = "0.8.0"
+
+[[MLJ]]
+deps = ["CSV", "CategoricalArrays", "Dates", "Distributed", "Distributions", "LinearAlgebra", "MLJBase", "MLJModels", "Pkg", "ProgressMeter", "Random", "RecipesBase", "RemoteFiles", "Statistics", "StatsBase", "Tables"]
+git-tree-sha1 = "b03ffb1421ec00b1acdf7f3ddbf4f1a1c38a5b2d"
+uuid = "add582a8-e3ab-11e8-2d5e-e98b27df1bc7"
+version = "0.2.3"
+
+[[MLJBase]]
+deps = ["CSV", "CategoricalArrays", "Distributions", "InteractiveUtils", "Random", "SparseArrays", "Statistics", "StatsBase", "Tables"]
+git-tree-sha1 = "ef43664c9488e1de4a3b1bd15aa65b9d3dfc4d99"
+uuid = "a7f614a8-145f-11e9-1d2a-a57a1082229d"
+version = "0.2.2"
+
+[[MLJModels]]
+deps = ["CategoricalArrays", "Distances", "Distributions", "LIBSVM", "LinearAlgebra", "MLJBase", "Pkg", "Random", "Requires"]
+git-tree-sha1 = "84b9b1c951a9adf2c96c58a6214743a997e7f734"
+uuid = "d491faf4-2d78-11e9-2867-c94bc002c0b7"
+version = "0.2.3"
 
 [[MPI]]
 deps = ["Distributed", "Libdl", "Random", "Requires", "Serialization", "Sockets"]
