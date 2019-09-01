@@ -2416,6 +2416,12 @@ git-tree-sha1 = "ba31ecf5346b5081a040c95510a2b99a3a033368"
 uuid = "2e2c70e5-d463-5cb0-9776-5d0c86956fe9"
 version = "0.1.0"
 
+[[DataFlow]]
+deps = ["Juno", "Lazy", "MacroTools"]
+git-tree-sha1 = "e95561c5bf352d58eacf348e30e85f2d87d37321"
+uuid = "a237f610-4214-5ca7-a9c6-385896804134"
+version = "0.5.0"
+
 [[DataFrames]]
 deps = ["CategoricalArrays", "Compat", "IteratorInterfaceExtensions", "Missings", "PooledArrays", "Printf", "REPL", "Reexport", "SortingAlgorithms", "Statistics", "StatsBase", "TableTraits", "Tables", "Unicode"]
 git-tree-sha1 = "7c0f86a01be0f77cc7f3f9096ed875f1217487e1"
