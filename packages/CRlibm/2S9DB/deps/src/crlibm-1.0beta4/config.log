@@ -191,7 +191,7 @@ configure:4431: $? = 0
 configure:4439: result: inline
 configure:4461: checking for sqrt
 configure:4461: gcc -o conftest -fpic -w   conftest.c  >&5
-/tmp/ccJJ82WZ.o: In function `main':
+/tmp/ccmiHtF4.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `sqrt'
 collect2: error: ld returned 1 exit status
 configure:4461: $? = 1
@@ -539,7 +539,7 @@ INSTALL_DATA='${INSTALL} -m 644'
 INSTALL_PROGRAM='${INSTALL}'
 INSTALL_SCRIPT='${INSTALL}'
 INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
-ISODATE='2019-08-31'
+ISODATE='2019-09-01'
 LDFLAGS=''
 LIBOBJS=''
 LIBS='-lm '
