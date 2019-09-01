@@ -3416,6 +3416,12 @@ git-tree-sha1 = "deda1dd24df84713831bfbfda35511231245cc37"
 uuid = "0438fec6-b81c-52d9-9651-d286848f50a8"
 version = "1.1.4"
 
+[[Erdos]]
+deps = ["Arpack", "Clustering", "DataStructures", "Dates", "EzXML", "GZip", "IterTools", "LinearAlgebra", "Printf", "Random", "SparseArrays", "Statistics", "StatsFuns", "Test"]
+git-tree-sha1 = "b94329a4bc959a38f9ead6c7db8a51e4fc22d37e"
+uuid = "90d7349d-81aa-5495-813a-883243abfe31"
+version = "0.7.0"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
