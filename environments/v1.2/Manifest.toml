@@ -3094,9 +3094,9 @@ version = "0.1.1"
 
 [[DynamicHMC]]
 deps = ["ArgCheck", "DataStructures", "DocStringExtensions", "LinearAlgebra", "LogDensityProblems", "Parameters", "Random", "Statistics", "StatsFuns", "TransformVariables"]
-git-tree-sha1 = "b1a272a63eebb2b58f5e370f243991244a52aa28"
+git-tree-sha1 = "0354daa83afd704976de89ab03862bbeb8f7c0fe"
 uuid = "bbc10e6e-7c05-544b-b16e-64fede858acb"
-version = "1.0.5"
+version = "1.0.6"
 
 [[DynamicPolynomials]]
 deps = ["LinearAlgebra", "MultivariatePolynomials", "Pkg", "Reexport", "Test"]
@@ -4167,9 +4167,9 @@ version = "0.5.0"
 
 [[LogDensityProblems]]
 deps = ["ArgCheck", "BenchmarkTools", "DiffResults", "DocStringExtensions", "Parameters", "Random", "Requires", "TransformVariables"]
-git-tree-sha1 = "10058bfce11b71237e3ea9975b4153f8207d536e"
+git-tree-sha1 = "2a97dcb4e23ce0d2ae2d671dc884fb4327a9641d"
 uuid = "6fdf6af0-433a-55f7-b3ed-c6c6e0b8df7c"
-version = "0.9.1"
+version = "0.8.3"
 
 [[Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
