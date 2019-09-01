@@ -2615,6 +2615,12 @@ git-tree-sha1 = "ea6f5b7fcc57ed25f2e584f17837d9f3d68919be"
 uuid = "191d1da1-0f37-5779-b8ea-a655caa0c150"
 version = "1.1.2"
 
+[[DesignStructureMatrix]]
+deps = ["Gadfly", "LinearAlgebra"]
+git-tree-sha1 = "abc84917d4d6d97ae89696d6ece1be631ee2f5b8"
+uuid = "19401b82-8c43-11e9-36fe-e7e08b9911f1"
+version = "0.1.0"
+
 [[Dierckx]]
 deps = ["BinaryProvider", "Libdl", "Random", "Test"]
 git-tree-sha1 = "27a74763c20938a814da26f31a9e8408d16fec44"
