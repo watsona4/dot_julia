@@ -3200,6 +3200,12 @@ git-tree-sha1 = "2378de22ecfd9120859658402b020f5b9e38f1a9"
 uuid = "414d4a1f-53a7-59c9-88e8-37580f05eeca"
 version = "0.1.1"
 
+[[EchogramColorSchemes]]
+deps = ["ColorSchemes", "ColorTypes"]
+git-tree-sha1 = "6f9328c52e5a651db7d05734318f2a9868d7f21b"
+uuid = "4c5cd976-4938-5223-a900-acc20a7c8507"
+version = "0.1.1"
+
 [[EcoBase]]
 deps = ["Compat", "RecipesBase"]
 git-tree-sha1 = "927e8aea9c9856b88fda40791e3872de07d05751"
