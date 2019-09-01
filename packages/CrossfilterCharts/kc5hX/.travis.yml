@@ -1,0 +1,16 @@
+language: julia
+julia:
+  - nightly
+  - 1.0
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+before_install:
+  - sudo apt-get -qq update
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia --project --check-bounds=yes -e 'import Pkg; Pkg.clone(pwd()); Pkg.build(); Pkg.test("CrossfilterCharts"; coverage=true)'
+after_success:
+  - julia -e 'import Pkg; cd(Pkg.dir("CrossfilterCharts")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'

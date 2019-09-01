@@ -1,0 +1,4 @@
+.ipynb_checkpoints/
+*.ipynb
+test_modified.htm
+dc[0-9]*_[0-9]*.htm

@@ -2160,6 +2160,12 @@ git-tree-sha1 = "9b77436ddcf1da8b5dfbfd213588fde244703805"
 uuid = "7011085d-2e9b-5a7b-b0c2-f102c05e50c2"
 version = "0.2.3"
 
+[[CrossfilterCharts]]
+deps = ["DataFrames", "Printf", "RDatasets"]
+git-tree-sha1 = "237a65db9aaab893957334a84e6f2b95f77be6f7"
+uuid = "6fc5cb8a-a410-53bb-86da-72917ac2b213"
+version = "3.0.0"
+
 [[Cuba]]
 deps = ["BinaryProvider", "Distributed", "Libdl", "LinearAlgebra", "Printf", "Test"]
 git-tree-sha1 = "556cfa54b4b4434b4e0eb99c50fcd09ad73f92ad"
