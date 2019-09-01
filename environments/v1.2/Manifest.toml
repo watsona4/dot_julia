@@ -3995,6 +3995,12 @@ git-tree-sha1 = "d1fd629ca493abd85cde2ee59e60bceb4146f113"
 uuid = "186bb1d3-e1f7-5a2c-a377-96d770f13627"
 version = "0.2.0"
 
+[[ForTheBadge]]
+deps = ["Colors", "Luxor"]
+git-tree-sha1 = "3c1607ed9993ffbb16b21ca727e17fef7b0c3143"
+uuid = "64e55fb5-fece-45e4-9f07-6b725a6cb483"
+version = "0.1.0"
+
 [[ForceImport]]
 deps = ["Test"]
 git-tree-sha1 = "7ac07d5194360af910146abd33af89bb69541194"
@@ -4929,6 +4935,12 @@ deps = ["Distributions", "LinearAlgebra", "NLSolversBase", "OptimBase", "Random"
 git-tree-sha1 = "186c2afbdb3cd52191078cfc6176f7084ed9dfb7"
 uuid = "2fda8390-95c7-5789-9bda-21331edee243"
 version = "0.8.1"
+
+[[Luxor]]
+deps = ["Cairo", "Colors", "Dates", "FileIO", "ImageMagick", "Juno", "QuartzImageIO", "Random"]
+git-tree-sha1 = "d064b07cf460a0d84350ef394be32990f001092a"
+uuid = "ae8d54c2-7ccd-5906-9d76-62fc9837b5bc"
+version = "1.6.0"
 
 [[LuxurySparse]]
 deps = ["FillArrays", "LinearAlgebra", "Random", "SparseArrays", "StaticArrays"]
