@@ -1,0 +1,40 @@
+../src/DASKR/ddaskr.f:1932:20:
+
+      *   RWORK(LRX),JROOT,IRT,RWORK(LROUND),INFO(3),
+                    1
+Warning: Rank mismatch in argument ‘jroot’ at (1) (rank-1 and scalar) [-Wargument-mismatch]
+../src/DASKR/ddaskr.f:1955:20:
+
+      *   RWORK(LRX),JROOT,IRT,RWORK(LROUND),INFO(3),
+                    1
+Warning: Rank mismatch in argument ‘jroot’ at (1) (rank-1 and scalar) [-Wargument-mismatch]
+../src/DASKR/ddaskr.f:2183:20:
+
+      *   RWORK(LRX),JROOT,IRT,RWORK(LROUND),INFO(3),
+                    1
+Warning: Rank mismatch in argument ‘jroot’ at (1) (rank-1 and scalar) [-Wargument-mismatch]
+../src/DASKR/dlinpk.f:763:72:
+
+    10 assign 30 to next
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+../src/DASKR/dlinpk.f:768:19:
+
+    20    go to next,(30, 50, 70, 110)
+                   1
+Warning: Deleted feature: Assigned GOTO statement at (1)
+../src/DASKR/dlinpk.f:770:72:
+
+       assign 50 to next
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+../src/DASKR/dlinpk.f:779:72:
+
+       assign 70 to next
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
+../src/DASKR/dlinpk.f:785:72:
+
+       assign 110 to next
+                                                                        1
+Warning: Deleted feature: ASSIGN statement at (1)
