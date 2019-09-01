@@ -4465,6 +4465,12 @@ git-tree-sha1 = "2d11ce0b4c152b8d665e53aa9408657e3038b164"
 uuid = "31df374a-5bce-54dc-914a-f687be069de8"
 version = "0.1.0"
 
+[[Gettext]]
+deps = ["Pkg", "PyCall", "Test"]
+git-tree-sha1 = "6a405b64a4ad80afc788926b2310038c0162b339"
+uuid = "a6aca261-61b0-5b33-a99a-e9c977ffa089"
+version = "0.2.0"
+
 [[GitHub]]
 deps = ["Base64", "Compat", "Dates", "HTTP", "JSON", "MbedTLS", "Sockets", "Test"]
 git-tree-sha1 = "0224f2efcf87d783d64861e4a9ee08299164a569"

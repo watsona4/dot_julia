@@ -1,0 +1,15 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Hello, world!"
+msgstr "Bonjour le monde !"
+
+msgid "{1} day"
+msgid_plural "{1} days"
+msgstr[0] "{1} jour"
+msgstr[1] "{1} jours"
