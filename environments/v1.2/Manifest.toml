@@ -3146,6 +3146,12 @@ git-tree-sha1 = "ebff856a4057ad7dbb4648bf3d4c7f9e4bc35e97"
 uuid = "a99b485a-c5c8-540e-ab00-7a7265134077"
 version = "0.2.3"
 
+[[ECOS]]
+deps = ["BinaryProvider", "Compat", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
+git-tree-sha1 = "3febd87acacfc35e364eed4a07ae0a684208aa64"
+uuid = "e2685f51-7e38-5353-a97d-a921fd2c8199"
+version = "0.10.0"
+
 [[EarthOrientation]]
 deps = ["Dates", "DelimitedFiles", "LeapSeconds", "OptionalData", "RemoteFiles", "Test"]
 git-tree-sha1 = "7ceae02eea4ffa57be45c47b237aca093926badc"
