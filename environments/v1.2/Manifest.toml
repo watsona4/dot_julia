@@ -2327,6 +2327,12 @@ git-tree-sha1 = "0844a07ec62c3c517daeeb39b79e90bbd5a8a72a"
 uuid = "0dc4ae03-94be-5b30-bb99-4e20affbc5f0"
 version = "0.2.0"
 
+[[DICOM]]
+deps = ["Test"]
+git-tree-sha1 = "557c5d8181d5872f287dc604d4e368ef8f652e57"
+uuid = "a26e6606-dd52-5f6a-a97f-4f611373d757"
+version = "0.3.1"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"
