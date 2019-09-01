@@ -1,0 +1,6 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+test/codegen/*
+test/*.bin
+docs/build/
