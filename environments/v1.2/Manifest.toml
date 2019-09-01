@@ -3410,6 +3410,12 @@ git-tree-sha1 = "beb267f768b829fedf7562da883354066977c809"
 uuid = "97e2ac4a-e175-5f49-beb1-4d6866a6cdc3"
 version = "0.2.2"
 
+[[EquationsOfState]]
+deps = ["GSL", "InteractiveUtils", "LinearAlgebra", "LsqFit", "Polynomials", "Reexport", "Rematch", "StaticArrays", "Test", "Transducers", "Unitful"]
+git-tree-sha1 = "deda1dd24df84713831bfbfda35511231245cc37"
+uuid = "0438fec6-b81c-52d9-9651-d286848f50a8"
+version = "1.1.4"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
@@ -3676,6 +3682,12 @@ deps = ["Base64", "DelimitedFiles", "LinearAlgebra", "Pkg", "Printf", "Random", 
 git-tree-sha1 = "b4c31b6377b6d51b6c69a3a9737d10c34d43974e"
 uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
 version = "0.41.0"
+
+[[GSL]]
+deps = ["BinaryProvider", "Libdl", "Markdown"]
+git-tree-sha1 = "429b70c7a08ec34a20e0864366c20dfb8966e5e5"
+uuid = "92c85e6c-cbff-5e0c-80f7-495c94daaecd"
+version = "0.5.1"
 
 [[GZip]]
 deps = ["Libdl", "Test"]
@@ -5331,6 +5343,12 @@ git-tree-sha1 = "0427d783807b6c97504db63350a58d3f66451dec"
 uuid = "0376cc21-f8a9-5fcf-8891-fde1415a4fd3"
 version = "0.2.0"
 
+[[Rematch]]
+deps = ["Compat", "MacroTools"]
+git-tree-sha1 = "3abde2b1c5d0f942b40700bebdc6c8cfa60c8b37"
+uuid = "bfecab0d-fd4d-5014-a23f-56c5fae6447a"
+version = "0.2.0"
+
 [[RemoteFiles]]
 deps = ["Dates", "FileIO", "HTTP"]
 git-tree-sha1 = "fa573e218ee48b93b9c9f5f7b54f2162124b0451"
@@ -5942,6 +5960,12 @@ deps = ["Random", "Test"]
 git-tree-sha1 = "7c53c35547de1c5b9d46a4797cf6d8253807108c"
 uuid = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
 version = "0.9.5"
+
+[[Transducers]]
+deps = ["ArgCheck", "BangBang", "InitialValues", "Markdown", "Requires", "Setfield"]
+git-tree-sha1 = "21a8e6c4fecb5c93b7cc7f98cd2d10935b3b10ae"
+uuid = "28d57a85-8fef-5791-bfe6-a80928e7c999"
+version = "0.4.0"
 
 [[TransferEntropy]]
 deps = ["Conda", "Distances", "Distributions", "Interpolations", "NearestNeighbors", "PerronFrobenius", "PyCall", "Reexport", "Simplices", "SpecialFunctions", "StateSpaceReconstruction", "Test"]

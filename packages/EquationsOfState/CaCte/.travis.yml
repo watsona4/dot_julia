@@ -1,0 +1,23 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - nightly
+branches:
+  only:
+    - master
+    - develop
+script: # the default script is equivalent to the following
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia --color=yes -e 'import Pkg; Pkg.add("Test"); Pkg.build("EquationsOfState"); Pkg.test("EquationsOfState"; coverage=true)';
+matrix:
+  allow_failures:
+    - julia: nightly
+  fast_finish: true
+after_success:
+  - julia --color=yes -e 'using Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
+notifications:
+  email:
+    - singularitti@outlook.com

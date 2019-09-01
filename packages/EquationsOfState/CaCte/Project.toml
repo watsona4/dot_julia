@@ -1,0 +1,16 @@
+name = "EquationsOfState"
+uuid = "0438fec6-b81c-52d9-9651-d286848f50a8"
+authors = ["Qi Zhang <singularitti@outlook.com>"]
+version = "1.1.4"
+
+[deps]
+GSL = "92c85e6c-cbff-5e0c-80f7-495c94daaecd"
+InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+LsqFit = "2fda8390-95c7-5789-9bda-21331edee243"
+Polynomials = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+Rematch = "bfecab0d-fd4d-5014-a23f-56c5fae6447a"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+Transducers = "28d57a85-8fef-5791-bfe6-a80928e7c999"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
