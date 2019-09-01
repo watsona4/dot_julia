@@ -2843,6 +2843,12 @@ git-tree-sha1 = "641f8b5d15185c29b0a409adb9f59c01b48ee0e4"
 uuid = "22fd7b30-a8c0-5bf2-aabe-97783860d07c"
 version = "0.3.0"
 
+[[Discreet]]
+deps = ["Compat", "StatsBase"]
+git-tree-sha1 = "eff885fa47af941d4164d258e32870bb8a9fe01c"
+uuid = "c2843242-4f35-58a6-a2a0-7e7527607317"
+version = "0.2.1"
+
 [[Discretizers]]
 deps = ["DataStructures", "SpecialFunctions", "Statistics", "StatsBase"]
 git-tree-sha1 = "7e44507c298b86fd0aa9f9247fda31995761dcf2"
