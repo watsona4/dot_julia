@@ -1,0 +1,18 @@
+name = "EclipsingBinaryStars"
+uuid = "298f00ba-5fcf-566c-9100-f8b551e1d946"
+authors = ["m-wells"]
+version = "0.2.2"
+
+[deps]
+Optim = "429524aa-4258-5aef-a3af-852621145aeb"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+UnitfulAstro = "6112ee07-acf9-5e0f-b108-d242c714bf9f"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

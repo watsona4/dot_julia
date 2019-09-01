@@ -3218,6 +3218,12 @@ git-tree-sha1 = "ba22869aa0e67b5a29ae4843e256fae5acf1fd0b"
 uuid = "97003a88-0ad9-518a-a49a-13194a5ffd9e"
 version = "0.1.0"
 
+[[EclipsingBinaryStars]]
+deps = ["Optim", "Unitful", "UnitfulAstro"]
+git-tree-sha1 = "4de60c5ed6f628a5ba2c1b1dd9e2fd3b0bce3416"
+uuid = "298f00ba-5fcf-566c-9100-f8b551e1d946"
+version = "0.2.2"
+
 [[EcoBase]]
 deps = ["Compat", "RecipesBase"]
 git-tree-sha1 = "927e8aea9c9856b88fda40791e3872de07d05751"

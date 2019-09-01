@@ -1,0 +1,84 @@
+% vim:ft=tex:
+%
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+
+\newcommand{\syncpar}{\mathsf{F}}
+\newcommand{\rpole}{\varrho_\text{pole}}
+
+\title{
+	method
+}
+\author{
+	Mark Wells --- \texttt{mwellsa@gmail.com}
+}
+
+\begin{document}
+\maketitle
+
+Generalized potential with respect to star 1 is given by Equation 3.16 in PHOEBE Scientific Reference
+\begin{equation}
+    \Omega = \frac{1}{\varrho} + q \left( \frac{1}{\sqrt{ \delta^2
+                                                        + \varrho^2
+                                                        - 2\varrho\lambda\delta
+                                                        }
+                                                  }
+                                        - \frac{\varrho\lambda}{\delta^2}
+                                   \right)
+                                   + \frac{1}{2}\syncpar^2(1+q)\varrho^2(1-\nu^2)
+\end{equation}
+To get star 2 (Equation~3.15 in P.S.R.)
+\begin{equation}
+    \Omega' = \frac{\Omega}{q} + \frac{1}{2}\frac{q-1}{q}
+\end{equation}
+where
+\begin{itemize}
+    \item $\varrho = r/a$ where $r$ is the radial distance originating from star 1 and $a$ is the semi-major axis
+    \item $q$ is the mass ratio
+    \item $\delta = D/a$ is the normalized instantaneous separation between the two stars
+    \item $\syncpar$ is the synchronicity parameter (will be introduced when needed)
+    \item $\lambda$ and $\nu$ are the $x$ and $z$ directional cosines, respectively (Eqn.~3.8~P.S.R.)
+\end{itemize}
+
+The potential at the pole reduces to Equation~3.20 (PHOEBE Sci. Ref.)
+\begin{equation}
+    \Omega = \frac{1}{\rpole} + q\left(\frac{1}{\sqrt{\delta^2 + \rpole^2}}\right)
+\end{equation}
+
+
+The position of $L_1$ is given by Equation~3.23 (PHOEBE Sci. Ref.)
+\begin{equation}
+    x_{L1} = z - \frac{1}{3}z^2 - \frac{1}{9}z^3 + \frac{58}{81}z^4
+\end{equation}
+where $z = (\mu/3)^{1/3}$ and $\mu = M_2/(M_1 + M_2)$
+
+Before plugging back in to the equation of the general potential lets note the following:
+\begin{itemize}
+    \item along the $x$-axis so $\nu = 0$ and $\lambda = 1$
+    \item $\varrho = x_{L1}$
+    \item lets check at periastron so $\delta = (1-\varepsilon)$
+\end{itemize}
+\begin{equation}
+    \Omega = \frac{1}{x_{L1}} + q \left( \frac{1}{\sqrt{ \delta^2
+                                                        + x_{L1}^2
+                                                        - 2x_{L1}\delta
+                                                        }
+                                                  }
+                                        - \frac{x_{L1}}{\delta^2}
+                                   \right)
+                                   + \frac{1}{2}\syncpar^2(1+q)x_{L1}^2
+\end{equation}
+
+
+We adopt the condition that
+\begin{equation}
+\syncpar = 
+    \begin{cases}
+        1 & \text{if } \varepsilon < 0.05 \\
+        \sqrt{\frac{1+\varepsilon}{(1-\varepsilon)^3}} & \text{if } \varepsilon \geq 0.05
+   \end{cases}
+\end{equation}
+
+
+\end{document}
