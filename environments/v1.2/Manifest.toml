@@ -3212,6 +3212,12 @@ git-tree-sha1 = "124d3ec119b17c0b38c3553e0e36f8a9ed7bc61f"
 uuid = "7cb56c3c-3875-5421-bd9a-4b97f0aadfe6"
 version = "0.1.0"
 
+[[EchoviewEvr]]
+deps = ["Dates", "Filetimes", "Test"]
+git-tree-sha1 = "ba22869aa0e67b5a29ae4843e256fae5acf1fd0b"
+uuid = "97003a88-0ad9-518a-a49a-13194a5ffd9e"
+version = "0.1.0"
+
 [[EcoBase]]
 deps = ["Compat", "RecipesBase"]
 git-tree-sha1 = "927e8aea9c9856b88fda40791e3872de07d05751"
@@ -3382,6 +3388,12 @@ version = "0.6.2"
 
 [[FileWatching]]
 uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
+
+[[Filetimes]]
+deps = ["Dates", "Test"]
+git-tree-sha1 = "e833f4f3d8650be8cc3f5f083c825d7fc12bc4c1"
+uuid = "3549b72e-d846-5e61-81ad-7b3ef408fc17"
+version = "0.1.0"
 
 [[FillArrays]]
 deps = ["LinearAlgebra", "Random", "SparseArrays"]
