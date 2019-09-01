@@ -1,0 +1,23 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+
+codecov: true
+
+matrix:
+  include:
+  - os: linux
+    env: CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+    julia: 1.1
+  - os: linux
+    env: CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+    julia: 1.0
+  - os: osx
+    julia: 1.1
+  - os: osx
+    julia: 1.0
+
+after_success:
+  # push coverage results to Codecov
+  # - julia -e 'using Pkg; cd(Pkg.dir("GeoArrays")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+  # build documentation
+  - julia -e 'using Pkg; Pkg.add("Documenter"); using GeoArrays; cd(Pkg.dir("GeoArrays")); include(joinpath("docs", "make.jl"))'
