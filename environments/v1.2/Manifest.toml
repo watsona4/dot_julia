@@ -2172,6 +2172,12 @@ git-tree-sha1 = "d122962d8fa58fecf0e3722fdd4a7291eeb5e62d"
 uuid = "04afed74-ac16-11e9-37b6-1352e3e05830"
 version = "0.1.0"
 
+[[Cthulhu]]
+deps = ["Crayons", "InteractiveUtils", "Requires", "TerminalMenus", "Unicode"]
+git-tree-sha1 = "05966f9fe3c01f6d1723247f2401d08f003c0010"
+uuid = "f68482b8-f384-11e8-15f7-abe071a5a75f"
+version = "0.1.1"
+
 [[Cuba]]
 deps = ["BinaryProvider", "Distributed", "Libdl", "LinearAlgebra", "Printf", "Test"]
 git-tree-sha1 = "556cfa54b4b4434b4e0eb99c50fcd09ad73f92ad"
@@ -4612,6 +4618,12 @@ deps = ["DataAPI", "DataValueInterfaces", "IteratorInterfaceExtensions", "Linear
 git-tree-sha1 = "aaed7b3b00248ff6a794375ad6adf30f30ca5591"
 uuid = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
 version = "0.2.11"
+
+[[TerminalMenus]]
+deps = ["Compat", "REPL", "Test"]
+git-tree-sha1 = "9ae6ed0c94eee4d898e049820942af21daf15efc"
+uuid = "dc548174-15c3-5faf-af27-7997cfbde655"
+version = "0.1.0"
 
 [[Test]]
 deps = ["Distributed", "InteractiveUtils", "Logging", "Random"]
