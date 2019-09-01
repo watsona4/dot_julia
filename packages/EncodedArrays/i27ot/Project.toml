@@ -1,0 +1,18 @@
+name = "EncodedArrays"
+uuid = "97725368-735e-11e9-0dd7-6bf34c3b13a8"
+version = "0.2.0"
+
+[deps]
+ArraysOfArrays = "65a8f2f4-9b39-5baf-92e2-a9cc46fdf018"
+BitOperations = "e1e0eea2-bc69-5bf6-8574-13634873a17c"
+FillArrays = "1a297f60-69ca-5386-bcde-b61e274b549b"
+StructArrays = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

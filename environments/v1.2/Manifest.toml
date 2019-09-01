@@ -3363,6 +3363,12 @@ git-tree-sha1 = "ab4e8591bcb9452e76636d43bc2ea5800e2ebc67"
 uuid = "685896a8-a41b-11e9-3419-3315e75b5d74"
 version = "0.1.0"
 
+[[EncodedArrays]]
+deps = ["ArraysOfArrays", "BitOperations", "FillArrays", "StructArrays"]
+git-tree-sha1 = "f21b0c12684ee39b13fb18a37ed45551af0a6afe"
+uuid = "97725368-735e-11e9-0dd7-6bf34c3b13a8"
+version = "0.2.0"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
