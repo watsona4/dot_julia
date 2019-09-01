@@ -4196,6 +4196,12 @@ git-tree-sha1 = "a7802595ed7e2ab69cd4e496bf2cf8f633082237"
 uuid = "3c7084bd-78ad-589a-b5bb-dbd673274bea"
 version = "0.4.4"
 
+[[GLTF]]
+deps = ["JSON3"]
+git-tree-sha1 = "c64db2f192476247e8fed283735df06f4bc1693d"
+uuid = "aeeaf58c-ab4d-11e9-3a9f-9b6bf58b5bc3"
+version = "0.2.0"
+
 [[GR]]
 deps = ["Base64", "DelimitedFiles", "LinearAlgebra", "Pkg", "Printf", "Random", "Serialization", "Sockets", "Test"]
 git-tree-sha1 = "b4c31b6377b6d51b6c69a3a9737d10c34d43974e"
@@ -4718,6 +4724,12 @@ deps = ["Dates", "Parsers", "Test"]
 git-tree-sha1 = "6cbbbab27d9411946725f5d5c91e8b8fb5f7d5db"
 uuid = "2535ab7d-5cd8-5a07-80ac-9b1792aadce3"
 version = "0.3.1"
+
+[[JSON3]]
+deps = ["Mmap", "Parsers", "Test"]
+git-tree-sha1 = "8c37294ed70b5389be5f92a967192ccad392e4bc"
+uuid = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+version = "0.1.8"
 
 [[JSONSchema]]
 deps = ["HTTP", "JSON", "Test"]
