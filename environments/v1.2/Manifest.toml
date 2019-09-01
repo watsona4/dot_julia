@@ -2148,6 +2148,12 @@ git-tree-sha1 = "42b2d23f7cdf5de4a6b44d2479c97b1777ad84db"
 uuid = "69416ee2-9ea2-11e9-0a75-cfadc9107a51"
 version = "0.1.0"
 
+[[CrimsonDagger]]
+deps = ["Dagger", "Distributed", "MemPool"]
+git-tree-sha1 = "83bf163c0968a6e18ed23e12e93905e9758fc4b1"
+uuid = "a7d8db30-8dd7-11e9-0e2d-93ab1805d894"
+version = "0.1.0"
+
 [[CrossMappings]]
 deps = ["Conda", "Distances", "DynamicalSystems", "NearestNeighbors", "PyCall", "StateSpaceReconstruction", "Statistics", "StatsBase", "Test", "TimeseriesSurrogates"]
 git-tree-sha1 = "9b77436ddcf1da8b5dfbfd213588fde244703805"

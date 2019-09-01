@@ -1,0 +1,20 @@
+image: archlinux
+
+triggers:
+  - action: email
+    condition: failure
+    to: Julian Samaroo <jpsamaroo@jpsamaroo.me>
+packages:
+  - wget
+sources:
+  - https://github.com/jpsamaroo/CrimsonDagger.jl
+tasks:
+  - get-julia: |
+      wget --quiet https://julialangnightlies-s3.julialang.org/bin/linux/x64/julia-latest-linux64.tar.gz
+      tar xvf julia-latest-linux64.tar.gz 2>&1 >/dev/null
+      mkdir -p $HOME/bin
+      ln -s $HOME/julia-*/bin/julia $HOME/bin/julia
+  - test: |
+      export PATH=$HOME/bin:$PATH
+      cd CrimsonDagger.jl
+      julia --project -e "using Pkg; Pkg.test()"
