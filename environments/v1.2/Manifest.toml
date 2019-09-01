@@ -3014,6 +3014,12 @@ git-tree-sha1 = "dd2b360df2bbbc7f0f76e1d5a872dc9448948c83"
 uuid = "497a8b3b-efae-58df-a0af-a86822472b78"
 version = "0.9.7"
 
+[[DrWatson]]
+deps = ["FileIO", "LibGit2", "Pkg", "Random", "Requires"]
+git-tree-sha1 = "ff1d5110f49238a9b2e806d41522ba18c01cff3a"
+uuid = "634d3b9d-ee7a-5ddf-bec9-22491ea816e1"
+version = "1.0.0"
+
 [[DualMatrixTools]]
 deps = ["DualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "de17ad165602c7e57dd65e593aa2c7b880dad6c5"
