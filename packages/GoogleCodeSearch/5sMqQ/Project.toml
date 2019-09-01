@@ -1,0 +1,21 @@
+name = "GoogleCodeSearch"
+uuid = "be5e5202-b427-58d6-b196-3d129152056c"
+authors = ["Tanmay Mohapatra <tanmaykm@gmail.com>"]
+version = "0.1.1"
+
+[deps]
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+Sockets = "6462fe0b-24de-5631-8697-dd941f90decc"
+BinaryProvider = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "~1"
+HTTP = "~0.8"

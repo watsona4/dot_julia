@@ -4549,6 +4549,12 @@ git-tree-sha1 = "286f5e20e5758866d17acb9f1895cc96cb8897cf"
 uuid = "2a67aa01-6213-50f9-bb91-c167b72acb78"
 version = "0.1.0"
 
+[[GoogleCodeSearch]]
+deps = ["BinaryProvider", "HTTP", "JSON", "Libdl", "Sockets"]
+git-tree-sha1 = "888bb4c64da0e374c745fe3aa706a59c458afa3a"
+uuid = "be5e5202-b427-58d6-b196-3d129152056c"
+version = "0.1.1"
+
 [[GradDescent]]
 deps = ["Distributions", "ForwardDiff", "LinearAlgebra", "Random", "Test"]
 git-tree-sha1 = "2180f700605eb0ad851f54577855c6a8f13b9a20"
