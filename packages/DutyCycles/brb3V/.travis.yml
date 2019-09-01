@@ -1,0 +1,30 @@
+language: julia
+
+before_install:
+- eval "$(ssh-agent -s)"
+- echo -e $SSH_KEY |base64 -d >$HOME/.ssh/id_rsa
+- chmod 600 $HOME/.ssh/id_rsa
+- echo '|1|tCbF6ylipISewwuZfzDbsw623ic=|zj/fFRcWw7BfUrYvl0pTSmSfqNQ= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAGp1W0jQ217mdjE0OvggNr/wg9kHYYgmlTcA/ObLKN5bCtPpMJGDdm/vAYbSFaBtHHiOAQQmPg6LejJuOhk7Zo=' >>$HOME/.ssh/known_hosts
+- echo '|1|jKCOWAH9yrDZ3ey2kQewgzuMjvc=|tivCVhqU7PCYU6Sz6AAAPN735/c= ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDypicw6GdbqBGMXgcrXoxRNUyOJWRBzv06a2TMlO7fQ34OSiekvBcJue7HLnFNYUpqlr7SHKynK8OcP8pFMntJEoDgIboWuFCphZhzEfBSjpryNF/Cp8jpF4vswi42FpbWCsooGn9NuXmW0isoCWQVEz73412gSvFnbgG/s8JSf21wlVl1yUDBI6m5btrikhGU34movU/3qQy44x/02pvBVAenTaSfH2IyjayUpr7vb0fF/inNCebmDAKitJ5vbfmVuoCYcZ0P+KSuR7XjVuFa2SbS5AJbUwKRj31tw4Fd1I1yii3XBKYm5DygkVCSIfTvu7Qi/B4nE97RymtSp5cr' >>$HOME/.ssh/known_hosts
+- ssh-add $HOME/.ssh/id_rsa
+
+julia:
+- 1.0
+
+cache:
+  directories:
+  - "$HOME/.julia"
+
+script:
+- julia --color=yes -e "using Pkg; Pkg.build(); Pkg.test(coverage=true)" && julia --color=yes docs/make.jl
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: .travis/deploy.sh
+  on:
+    branch: master
+
+notifications:
+  slack:
+    secure: gn3tj9KRJQYCDGWsEtr0U/OMgIITKj0NqNQtyknhYpAQgWTWOidUnXitb4A5oaC8jEURSyg72wPU2O+y+E6mUuwlmDQmSY9/M+odKeEtVCQWdr7AisUo5+KRcJZXa/WkjBPm8E7uD9mZekAahCEOjPW+9amF96VJtgQMgCmaVDdH71Rgu9MZ5X/kRgiFtS3QuFhZE0JOqk1RG0VRLZuE7WPzezdSesgv+dEm+BOJhftArHGlx14A2qX+IcU0KEAYe118of7ICxnmGyDG6jjeiLpYVSAW2d5Zij3isQHnjVNqAjx9C3HvSeXieEBW4dVI1xLoNj15A/fL4VLv/hdnCqFwma9/zSBNFx74gTV6ZF+1ZrkxvvjOHC8yP3FOqFpvLGZeD/scAPozaXDTbXwNn18TFwKg8HEOj8fZVcUmrB4o4+DEhFYTIWLO9uFO+AOU8tGWt2/ES461UOtio3kpGcs2EBiz8LzDd6e8yEjoME6UgiMoggBvm1nCJV8/R10w1gVXIejkg+8ed4DGbXEv9UFAx+gRDlMk8lQ87p/3+VGDbJqubILajoqPWFTHSPMPzGu6yAjx7iGaqHT4a+l5Wz6kwCOYH+tvMJQ/HI3ZoxJi8Jlc26r+/w3eQKvzcoqlVvoxxTylSRHaZNJvOg770aT8wkzZzqP7H3b4hGibS7k=
