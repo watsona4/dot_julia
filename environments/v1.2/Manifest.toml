@@ -3457,6 +3457,12 @@ git-tree-sha1 = "12c4dade1445bc0acb98931ce85dc50b06fea8ad"
 uuid = "f6006082-12f8-11e9-0c9c-0d5d367ab1e5"
 version = "0.2.3"
 
+[[ExactPredicates]]
+deps = ["IntervalArithmetic", "StaticArrays", "Test"]
+git-tree-sha1 = "5ec386a80a3f7ff915957508336ec0f8d05b6c44"
+uuid = "429591f6-91af-11e9-00e2-59fbe8cec110"
+version = "2.2.0"
+
 [[Expectations]]
 deps = ["Compat", "Distributions", "FastGaussQuadrature", "SpecialFunctions"]
 git-tree-sha1 = "5b50b515886773484a28f19d9c103dffc7702702"
