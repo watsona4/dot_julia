@@ -1,0 +1,17 @@
+name = "FDDerivatives"
+uuid = "66d7c4ea-78be-5636-8e8c-eba2f3c94ae1"
+version = "0.1.0"
+
+[deps]
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
+[extras]
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "Random"]
+
+[compat]
+julia = "≥ 1.0.0"

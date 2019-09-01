@@ -3593,6 +3593,12 @@ git-tree-sha1 = "1831c5343eaa702beb6df2b08de7eef35836ae7a"
 uuid = "d76558cf-badf-52d4-a17e-381ab0b0d937"
 version = "0.1.0"
 
+[[FDDerivatives]]
+deps = ["Distributed", "LinearAlgebra"]
+git-tree-sha1 = "5d36584ee6713a635b93c9f030bd073857f9ed09"
+uuid = "66d7c4ea-78be-5636-8e8c-eba2f3c94ae1"
+version = "0.1.0"
+
 [[FDM]]
 deps = ["LinearAlgebra", "Printf"]
 git-tree-sha1 = "51f56372090c3af1ce784610c5cf3c4c224563e4"
