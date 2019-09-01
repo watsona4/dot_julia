@@ -2375,6 +2375,12 @@ git-tree-sha1 = "e064156c843b04485b54b4e839d3818d9bbbff44"
 uuid = "b0bd82bd-0fcb-530b-8c5b-e45de9021bf5"
 version = "1.1.0"
 
+[[Darknet]]
+deps = ["BinaryProvider", "CEnum", "Libdl", "Test"]
+git-tree-sha1 = "70595a7ed8fd6ac2d8f05a1dcdc64dfb5f536131"
+uuid = "e2912957-7d06-5673-a7d6-96d153624877"
+version = "0.1.2"
+
 [[DataAPI]]
 git-tree-sha1 = "8903f0219d3472543fc4b2f5ebaf675a07f817c0"
 uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
