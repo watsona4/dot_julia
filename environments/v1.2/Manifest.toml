@@ -2627,6 +2627,12 @@ git-tree-sha1 = "6fa3435fbe297d110214f18f10e33c43bde8726f"
 uuid = "dde75ccc-4946-507f-85f2-ccadd28c929c"
 version = "1.1.0"
 
+[[DetectionTheory]]
+deps = ["DelimitedFiles", "Distributions", "DocStringExtensions", "HDF5", "QuadGK", "Roots", "Test"]
+git-tree-sha1 = "105140a96eee6d1a65a1dda732896f6f8ba94096"
+uuid = "21f26bdd-93a7-5c22-aaad-c68df1035b25"
+version = "0.2.1"
+
 [[Dierckx]]
 deps = ["BinaryProvider", "Libdl", "Random", "Test"]
 git-tree-sha1 = "27a74763c20938a814da26f31a9e8408d16fec44"
