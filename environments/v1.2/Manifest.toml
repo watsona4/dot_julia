@@ -3295,6 +3295,12 @@ git-tree-sha1 = "7731daad05c67a98995152990630555ec0c0b4ee"
 uuid = "a1bb12fb-d4d1-54b4-b10a-ee7951ef7ad3"
 version = "1.0.0"
 
+[[ElectronDisplay]]
+deps = ["Base64", "Electron", "IteratorInterfaceExtensions", "Markdown", "TableShowUtils", "TableTraits"]
+git-tree-sha1 = "fc5ed8f3eb449b7e89be846d810238a0890d98d1"
+uuid = "d872a56f-244b-5cc9-b574-2017b5b909a8"
+version = "0.8.0"
+
 [[EllipsisNotation]]
 git-tree-sha1 = "65dad386e877850e6fce4fc77f60fe75a468ce9d"
 uuid = "da5c29d0-fa7d-589e-88eb-ea29b0a81949"
