@@ -3439,6 +3439,12 @@ git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
 version = "0.4.0"
 
+[[Espresso]]
+deps = ["LinearAlgebra", "Statistics", "Test"]
+git-tree-sha1 = "cde61b7c72023d15e2aaae8d4eb3e2c94f5bdb7b"
+uuid = "6912e4f1-e036-58b0-9138-08d1e6358ea9"
+version = "0.6.0"
+
 [[Expectations]]
 deps = ["Compat", "Distributions", "FastGaussQuadrature", "SpecialFunctions"]
 git-tree-sha1 = "5b50b515886773484a28f19d9c103dffc7702702"
