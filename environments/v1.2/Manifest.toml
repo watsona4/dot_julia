@@ -3587,6 +3587,12 @@ git-tree-sha1 = "c04d50fe130bcfea4ed2f598c17be1e1ab1cc4f8"
 uuid = "d5605bae-6d76-11e9-2fd7-71bcf42edbaa"
 version = "0.2.1"
 
+[[FCSFiles]]
+deps = ["FileIO", "Test"]
+git-tree-sha1 = "1831c5343eaa702beb6df2b08de7eef35836ae7a"
+uuid = "d76558cf-badf-52d4-a17e-381ab0b0d937"
+version = "0.1.0"
+
 [[FDM]]
 deps = ["LinearAlgebra", "Printf"]
 git-tree-sha1 = "51f56372090c3af1ce784610c5cf3c4c224563e4"
