@@ -3387,6 +3387,12 @@ git-tree-sha1 = "4e12f1e00d1f5350048cea7d78cbcc40972f6a5c"
 uuid = "3d39a06a-b57e-5769-b499-4d62b23c243f"
 version = "0.4.0"
 
+[[EnhancedLogging]]
+deps = ["Distributed", "Logging", "Printf"]
+git-tree-sha1 = "a73201aaeeab6344a4b5220bd3c8f60f4ef67ca6"
+uuid = "5d3b31b8-5173-11e9-1ac0-b32cb3db6653"
+version = "0.1.0"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
