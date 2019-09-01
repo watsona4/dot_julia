@@ -1,0 +1,8 @@
+authors = ["Bill Burdick <bill.burdick@gmail.com>"]
+name = "DifferenceLists"
+uuid = "48e5bf3a-adef-11e8-2ea4-3f72b1e40b09"
+version = "0.1.0"
+url = "https://github.com/zot/DifferenceLists"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
