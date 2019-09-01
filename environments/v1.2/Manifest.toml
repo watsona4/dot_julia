@@ -2557,6 +2557,12 @@ git-tree-sha1 = "d996f37909c203b57b2577ab93e6913a15ebf271"
 uuid = "6f25fe36-ecbb-5dff-aeb8-f7b50c87fb5f"
 version = "0.1.1"
 
+[[DeferredFutures]]
+deps = ["AutoHashEquals", "Distributed", "Serialization"]
+git-tree-sha1 = "be89a2e27c7d221e16fe456a5f01c944962cc3f5"
+uuid = "d2772ebe-fee8-5277-ba6e-705bb5633645"
+version = "1.0.0"
+
 [[DelayDiffEq]]
 deps = ["DataStructures", "DiffEqBase", "LinearAlgebra", "Logging", "OrdinaryDiffEq", "Parameters", "RecursiveArrayTools", "Reexport", "Roots"]
 git-tree-sha1 = "6a4d3747e475fbdac832ba42d047e659945b83e9"
