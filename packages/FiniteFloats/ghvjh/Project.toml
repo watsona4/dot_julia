@@ -1,0 +1,15 @@
+name = "FiniteFloats"
+uuid = "e34fb328-7f7f-54d6-9f45-12944764ead7"
+repo = "https://github.com/JeffreySarnoff/FiniteFloats.jl.git"
+author = "Jeffrey Sarnoff"
+license = "MIT"
+version = "v0.1.4"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

@@ -3881,6 +3881,12 @@ git-tree-sha1 = "4fe46abfb7d9f03dd3d1f52d8bfaf50a82807b34"
 uuid = "26cc04aa-876d-5657-8c51-4c34ba976000"
 version = "0.7.1"
 
+[[FiniteFloats]]
+deps = ["LinearAlgebra", "Test"]
+git-tree-sha1 = "32e0f088bc6194a452ecfd4cc671f40acc1bf5df"
+uuid = "e34fb328-7f7f-54d6-9f45-12944764ead7"
+version = "0.1.4"
+
 [[FixedPointDecimals]]
 deps = ["Printf", "Test"]
 git-tree-sha1 = "b17a731934600b835150b7882238e7f06f8be368"
