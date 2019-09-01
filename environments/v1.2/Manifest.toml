@@ -2190,6 +2190,11 @@ git-tree-sha1 = "2c8c4102e905a2444cdbf6f7c1a71771815f2910"
 uuid = "667455a9-e2ce-5579-9412-b964f529a492"
 version = "1.4.1"
 
+[[CubicSplines]]
+git-tree-sha1 = "2dc552c3eb10eb0694f81269145abcab3ce50e9e"
+uuid = "9c784101-8907-5a6d-9be6-98f00873c89b"
+version = "0.1.0"
+
 [[CustomUnitRanges]]
 deps = ["Test"]
 git-tree-sha1 = "0a106457a1831555857e18ac9617279c22fc393b"
