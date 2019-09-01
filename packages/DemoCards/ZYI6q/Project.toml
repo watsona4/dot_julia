@@ -1,0 +1,22 @@
+name = "DemoCards"
+uuid = "311a05b2-6137-4a5a-b473-18580a3d38b5"
+authors = ["Johnny Chen <johnnychen94@hotmail.com>"]
+version = "0.0.1"
+
+[deps]
+FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
+ImageCore = "a09fc81d-aa75-5fe9-8630-4744c3626534"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+Mustache = "ffc61752-8dc7-55ee-8c37-f3e9cdd09e70"
+YAML = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
+
+[compat]
+julia = "1"
+
+[extras]
+ImageMagick = "6218d12a-5da1-5696-b52f-db25d2ecc6d1"
+ReferenceTests = "324d217c-45ce-50fc-942e-d289b448e8cf"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["ImageMagick", "ReferenceTests", "Test"]
