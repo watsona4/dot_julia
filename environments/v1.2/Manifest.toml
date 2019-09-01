@@ -4178,6 +4178,12 @@ git-tree-sha1 = "a8ec69741da46c70060a5cde2876aa89840ae6d3"
 uuid = "8d5ece8b-de18-5317-b113-243142960cc6"
 version = "0.4.2"
 
+[[GLMakie]]
+deps = ["AbstractPlotting", "AxisArrays", "ColorTypes", "ColorVectorSpace", "Colors", "FileIO", "FixedPointNumbers", "FreeType", "FreeTypeAbstraction", "GLFW", "GeometryTypes", "ImageAxes", "ImageCore", "ImageFiltering", "ImageMagick", "ImageTransformations", "IndirectArrays", "IntervalSets", "IterTools", "LinearAlgebra", "Markdown", "MeshIO", "ModernGL", "Observables", "Printf", "Serialization", "StaticArrays"]
+git-tree-sha1 = "f9cb7da799e16baa7079c55d78a694c72004d79c"
+uuid = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
+version = "0.0.7"
+
 [[GLPK]]
 deps = ["BinaryProvider", "Libdl", "MathOptInterface", "SparseArrays"]
 git-tree-sha1 = "07096d326788fad9902e55ae3e92220abffda2cf"
