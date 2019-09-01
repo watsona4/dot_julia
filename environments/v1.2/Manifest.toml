@@ -2913,6 +2913,12 @@ git-tree-sha1 = "c3e3de0a8f0b1e9c1c60b3a5adfed6f51b2c70c9"
 uuid = "7f07e4c8-6df2-5971-ad44-bf349b9adcfd"
 version = "0.2.0"
 
+[[Diversity]]
+deps = ["Compat", "DataFrames", "EcoBase", "Missings", "RecipesBase", "Requires"]
+git-tree-sha1 = "5e8f7e0e02b29127384deccee4c45690fdd77df1"
+uuid = "d3d5718d-52de-57ab-b67a-eca7fd6175a4"
+version = "0.4.6"
+
 [[DocSeeker]]
 deps = ["Hiccup", "IterTools", "Markdown", "REPL", "Requires", "Serialization", "StringDistances", "Test", "URIParser"]
 git-tree-sha1 = "8d4d5f9ec970944445c77cfdcd5d3246a4e0cd0d"

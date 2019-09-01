@@ -1,0 +1,26 @@
+- v0.4.5
+  - Full EcoJulia default implementation to allow cross-compatibility with other AbstractAssemblage-derived types
+- v0.4.4
+  - Major reworking, especially of iterators to speed up code and run with Julia v1.0
+  - Some intermediate work to allow interface to EcoJulia and new PhyloSets
+- v0.4.3
+  - Minor fixes to validate with updates to Julia and rdiversity R package
+  - Fix some more Julia 0.7 problems
+- v0.4.2
+  - Work around problems with PackageEvaluator.jl
+  - Julia 0.7 iterator fixes
+- v0.4.1
+  - Fix Nullable{T} to Union{T, Missing}
+  - Other minor updates for Julia 0.7
+- v0.4.0
+  - Add in phylogenetic diversity
+  - Create a formal API (in `API.jl`) for extending to new types of diversity
+  - Extract interface into `Interface.jl`
+  - Julia v0.6 and nightly compliant, drop support for Julia v0.5
+  - Removes deprecated syntax from Diversity v0.2.x
+- v0.3.1
+  - Include validation against boydorr/rdiversity R package
+- v0.3.0
+  - Update input interface and deprecate old format
+  - Update output format to use DataFrames
+  - Remove deprecations for Julia v0.6 and drop support for Julia v0.4
