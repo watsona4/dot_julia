@@ -3929,6 +3929,12 @@ git-tree-sha1 = "32ec33fe4387eb165461b7141d4be732097086ad"
 uuid = "3dd14ad9-0029-526e-86e9-8aa0bdd2ab0d"
 version = "0.4.0"
 
+[[FixedSizeStrings]]
+deps = ["Test"]
+git-tree-sha1 = "d97b42cc9bfca31cc26c8e1e8cd7bdc7b1e23413"
+uuid = "3ca710bb-85d4-534c-9bae-b7b5d9e27e20"
+version = "0.1.0"
+
 [[FlatBuffers]]
 deps = ["Parameters", "Pkg", "Test"]
 git-tree-sha1 = "dd5c2460639eef7962178216fd150c60fa42a1c4"
