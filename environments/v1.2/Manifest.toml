@@ -4412,6 +4412,11 @@ git-tree-sha1 = "f80ea86cb88db337a1906e245e495592f0b5cc25"
 uuid = "0ef565a4-170c-5f04-8de2-149903a85f3d"
 version = "0.5.0"
 
+[[GeohashHilbert]]
+git-tree-sha1 = "4e3aa59b6b6ffdaf7a109a865f97b24c77e6c0c8"
+uuid = "6320efe0-8d16-11e8-2e58-678c92c371c6"
+version = "0.1.0"
+
 [[GeometryTypes]]
 deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "2b0bfb379a54bdfcd2942f388f7d045f8952373d"

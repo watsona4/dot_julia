@@ -1,0 +1,14 @@
+name = "GeohashHilbert"
+uuid = "6320efe0-8d16-11e8-2e58-678c92c371c6"
+version = "0.1.0"
+
+[extras]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["CSV", "Random", "Test"]
+
+[compat]
+julia = "1"
