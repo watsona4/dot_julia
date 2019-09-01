@@ -2100,6 +2100,12 @@ git-tree-sha1 = "e482cc433cdd0b08f28b24e66179869677b1d155"
 uuid = "a3d351dc-6fd6-5e2a-8264-8c30d37eaa59"
 version = "0.1.0"
 
+[[Counters]]
+deps = ["SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "f9c1659c3ef4171a8181b77a5284b24f581b5a9c"
+uuid = "5a653867-b65e-5b16-a095-b1e26d522bbf"
+version = "0.2.1"
+
 [[CoupledFields]]
 deps = ["Compat", "StatsBase"]
 git-tree-sha1 = "d56f26542bb7af9c0ec16e098a0a33352f3c9d8e"
