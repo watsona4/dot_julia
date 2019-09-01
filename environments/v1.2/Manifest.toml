@@ -3777,6 +3777,18 @@ git-tree-sha1 = "a963f89bc16735af00cd28ac60d4145cd7fe2abd"
 uuid = "becb17da-46f6-5d3c-ad1b-1c5fe96bc73c"
 version = "0.5.3"
 
+[[FeatherFiles]]
+deps = ["Arrow", "DataValues", "FeatherLib", "FileIO", "IterableTables", "IteratorInterfaceExtensions", "TableShowUtils", "TableTraits", "TableTraitsUtils", "Test"]
+git-tree-sha1 = "a2f2b57b23be259d7839bebae2b8f7bba4851a9b"
+uuid = "b675d258-116a-5741-b937-b79f054b0542"
+version = "0.8.1"
+
+[[FeatherLib]]
+deps = ["Arrow", "CategoricalArrays", "Dates", "FlatBuffers", "Mmap", "Random"]
+git-tree-sha1 = "a3d0c5ca2f08bc8fae4394775f371f8e032149ab"
+uuid = "409f5150-fb84-534f-94db-80d1e10f57e1"
+version = "0.2.0"
+
 [[FieldMetadata]]
 git-tree-sha1 = "632193bb313e5b7fb3e1864ad476a64b1ad37b1a"
 uuid = "bf96fef3-21d2-5d20-8afa-0e7d4c32a885"

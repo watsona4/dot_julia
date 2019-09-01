@@ -1,0 +1,24 @@
+name = "FeatherLib"
+uuid = "409f5150-fb84-534f-94db-80d1e10f57e1"
+version = "0.2.0"
+
+[deps]
+Arrow = "69666777-d1a9-59fb-9406-91d4454c9d45"
+CategoricalArrays = "324d7699-5711-5eae-9e2f-1d82baa6b597"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+FlatBuffers = "53afe959-3a16-52fa-a8da-cf864710bae9"
+Mmap = "a63ad114-7e13-5084-954f-fe012c677804"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[compat]
+Arrow = "≥ 0.2.1"
+CategoricalArrays = "≥ 0.3.13"
+FlatBuffers = "≥ 0.4.0"
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Missings = "e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28"
+
+[targets]
+test = ["Test", "Missings"]
