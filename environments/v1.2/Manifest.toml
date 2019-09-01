@@ -2076,6 +2076,12 @@ git-tree-sha1 = "ab0c9c00562c11ce272f836582fb4272cae39887"
 uuid = "b8d669dd-3d88-55df-ae05-b65fc3f9fff9"
 version = "0.0.1"
 
+[[CorpusLoaders]]
+deps = ["CSV", "DataDeps", "Glob", "InternedStrings", "LightXML", "MultiResolutionIterators", "StringEncodings", "WordTokenizers"]
+git-tree-sha1 = "d3b542059e2be3a4e23152b7888016ad28430b03"
+uuid = "214a0ac2-f95b-54f7-a80b-442ed9c2c9e8"
+version = "0.3.0"
+
 [[CoupledFields]]
 deps = ["Compat", "StatsBase"]
 git-tree-sha1 = "d56f26542bb7af9c0ec16e098a0a33352f3c9d8e"
@@ -3615,6 +3621,12 @@ git-tree-sha1 = "41e6e7c4b448afeaddaac7f496b414854f83b848"
 uuid = "46d2c3a1-f734-5fdb-9937-b9b9aeba4221"
 version = "0.2.1"
 
+[[MultiResolutionIterators]]
+deps = ["IterTools", "Random", "Test"]
+git-tree-sha1 = "27fa99913e031afaf06ea8a6d4362fd8c94bb9fb"
+uuid = "396aa475-d5af-5b65-8c11-5c82e21b2380"
+version = "0.5.0"
+
 [[MultiScaleArrays]]
 deps = ["DiffEqBase", "RecursiveArrayTools", "Statistics", "StochasticDiffEq", "TreeViews"]
 git-tree-sha1 = "cf6bc444a74ddcb781b04d0be8988bbff83c91df"
@@ -4456,6 +4468,12 @@ deps = ["DataStructures", "Distances", "Random", "Test"]
 git-tree-sha1 = "f9d2e623061009441ab27eb961e3307e492b30d6"
 uuid = "88034a9c-02f8-509d-84a9-84ec65e18404"
 version = "0.4.0"
+
+[[StringEncodings]]
+deps = ["BinaryProvider", "Libdl", "Test"]
+git-tree-sha1 = "558e2aa14f061ee6a8b49f55241a74f69b84a196"
+uuid = "69024149-9ee7-55f6-a4c4-859efe599b68"
+version = "0.3.1"
 
 [[StructArrays]]
 deps = ["PooledArrays", "Requires"]
