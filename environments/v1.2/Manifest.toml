@@ -2440,6 +2440,12 @@ git-tree-sha1 = "62321911221064ff23e0305a8193b45dafc4019d"
 uuid = "82cc6244-b520-54b8-b5a6-8a565e85f1d0"
 version = "0.2.0"
 
+[[DataKnots]]
+deps = ["PrettyPrinting", "Tables"]
+git-tree-sha1 = "71a056b6fd7e32510772f481b57e3010f25df21b"
+uuid = "f3f2b2ad-91c8-5588-b964-d77e2d3bb090"
+version = "0.9.0"
+
 [[DataStreams]]
 deps = ["Missings", "WeakRefStrings"]
 git-tree-sha1 = "19cccd7f86ade39d81ca088b932974e97df7f1f6"
@@ -4281,6 +4287,12 @@ deps = ["LinearAlgebra", "Test"]
 git-tree-sha1 = "957c3dd7c33895469760ce873082fbb6b3620641"
 uuid = "85a6dd25-e78a-55b7-8502-1745935b8125"
 version = "0.2.2"
+
+[[PrettyPrinting]]
+deps = ["Markdown", "Pkg"]
+git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
+uuid = "54e16d92-306c-5ea0-a30b-337be88ac337"
+version = "0.1.0"
 
 [[Primes]]
 deps = ["Test"]
