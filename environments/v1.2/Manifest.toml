@@ -4097,6 +4097,12 @@ git-tree-sha1 = "49bf793ebd37db5adaa7ac1eae96c2c97ec86db5"
 uuid = "069b7b12-0de2-55c6-9aab-29f3d0a68a2e"
 version = "1.0.0"
 
+[[FunctionZeros]]
+deps = ["Roots", "SpecialFunctions", "Test"]
+git-tree-sha1 = "a7d31aabf0fb8ec1947b93de51230d1875c0face"
+uuid = "b21f74c0-b399-568f-9643-d20f4fa2c814"
+version = "0.1.1"
+
 [[FunctionalCollections]]
 deps = ["Test"]
 git-tree-sha1 = "04cb9cfaa6ba5311973994fe3496ddec19b6292a"
