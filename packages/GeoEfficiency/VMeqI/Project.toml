@@ -1,0 +1,22 @@
+name = "GeoEfficiency"
+uuid = "b1f22607-7830-5ceb-9a8e-05ab1ac77008"
+repo = "https://github.com/DrKrar/GeoEfficiency.jl.git"
+authors = ["Mohamed Krar <DrKrar@gmail.com>"]
+version = "v0.9.3"
+
+[deps]
+Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+QuadGK = "1fd47b50-473d-5c70-9696-f719f8f3bcdc"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+ [targets]
+test = ["Test"]
+
+[compat]
+julia = "0.6, 0.7, 1.0"
+Compat = ">= 0.63.0"
+QuadGK = ">= 0.3.0"

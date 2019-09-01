@@ -4364,6 +4364,12 @@ git-tree-sha1 = "07030654f8f74d880edf4a4fa2871237312fa95f"
 uuid = "2fb1d81b-e6a0-5fc5-82e6-8e06903437ab"
 version = "0.1.0"
 
+[[GeoEfficiency]]
+deps = ["Compat", "QuadGK"]
+git-tree-sha1 = "dd5b5172324cf30624fbf89d37c8948750483a5f"
+uuid = "b1f22607-7830-5ceb-9a8e-05ab1ac77008"
+version = "0.9.3"
+
 [[GeoInterface]]
 deps = ["RecipesBase", "Test"]
 git-tree-sha1 = "0c0c0bf9c79b10e48aa089e78ac504ebc43db3a0"
