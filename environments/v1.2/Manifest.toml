@@ -3080,6 +3080,12 @@ git-tree-sha1 = "3f9ba518660c82c2f2512dd31d4fcfb28835e458"
 uuid = "85f775e4-5132-11e9-29db-1f7edb98f041"
 version = "0.1.0"
 
+[[Dyn3d]]
+deps = ["Compat", "DocStringExtensions", "Interact", "Interpolations", "LaTeXStrings", "LinearAlgebra", "Plots", "PyPlot", "Reactive", "Reexport"]
+git-tree-sha1 = "e4843d9579f6a653f8bda41c245f226d92cd1c6c"
+uuid = "d8047ffa-7f43-11e9-2204-adfbb6974ec5"
+version = "0.1.1"
+
 [[DynamicHMC]]
 deps = ["ArgCheck", "DataStructures", "DocStringExtensions", "LinearAlgebra", "LogDensityProblems", "Parameters", "Random", "Statistics", "StatsFuns", "TransformVariables"]
 git-tree-sha1 = "b1a272a63eebb2b58f5e370f243991244a52aa28"
@@ -4933,6 +4939,12 @@ deps = ["Compat"]
 git-tree-sha1 = "cdbbe0f350581296f3a2e3e7a91b214121934407"
 uuid = "c84ed2f1-dad5-54f0-aa8e-dbefe2724439"
 version = "0.3.1"
+
+[[Reactive]]
+deps = ["DataStructures", "Distributed", "Test"]
+git-tree-sha1 = "5862d915387ebb954016f50a88e34f79a9e5fcd2"
+uuid = "a223df75-4e93-5b7c-acf9-bdd599c0f4de"
+version = "0.8.3"
 
 [[ReadableNumbers]]
 deps = ["Test"]

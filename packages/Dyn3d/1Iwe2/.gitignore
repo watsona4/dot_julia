@@ -1,0 +1,10 @@
+*/.ipynb_checkpoints
+test/casual_test.ipynb
+*.avi
+*.mat
+*.mem
+docs/build
+*.cov
+notebook/local_run
+notebook/movies
+notebook/saved_data

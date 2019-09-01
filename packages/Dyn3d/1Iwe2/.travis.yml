@@ -1,0 +1,21 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+julia:
+  - 1.1
+branches:
+  only:
+    - master
+notifications:
+  email: false
+addons:
+  apt:
+    update: true
+
+after_success:
+  # deploy docs
+  - julia -e 'Pkg.add("Documenter")'
+  - julia -e 'cd(dirname(pathof(Dyn3d))); include(joinpath("docs", "make.jl"))'
+  # push coverage results to Codecov
+  - julia -e 'cd(dirname(pathof(Dyn3d))); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
