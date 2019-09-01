@@ -3345,6 +3345,12 @@ git-tree-sha1 = "baaf6c8d153c5a12f53c19e8fbd35de720e41331"
 uuid = "fd8f23de-bd2f-5c75-921c-0c9ab51355f5"
 version = "1.0.0"
 
+[[EmpiricalCDFs]]
+deps = ["Printf", "Statistics", "Test"]
+git-tree-sha1 = "b05239411efc2ae165c99960d1163ab68da6e327"
+uuid = "0dcf7749-4f9f-5e13-9c57-506664207bbc"
+version = "0.2.1"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
