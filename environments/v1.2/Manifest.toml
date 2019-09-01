@@ -2849,6 +2849,12 @@ git-tree-sha1 = "eff885fa47af941d4164d258e32870bb8a9fe01c"
 uuid = "c2843242-4f35-58a6-a2a0-7e7527607317"
 version = "0.2.1"
 
+[[DiscreteFunctions]]
+deps = ["Permutations", "SimpleTools", "Test"]
+git-tree-sha1 = "06deb66c7608df426ccef20f1b355ba9b806612e"
+uuid = "b53ab163-7315-5a32-b7e7-8af45be20176"
+version = "0.1.1"
+
 [[Discretizers]]
 deps = ["DataStructures", "SpecialFunctions", "Statistics", "StatsBase"]
 git-tree-sha1 = "7e44507c298b86fd0aa9f9247fda31995761dcf2"
@@ -4549,6 +4555,12 @@ git-tree-sha1 = "b0baaa5218ca0ffd6a8ae37ef0b58e0df688ac8b"
 uuid = "06bb1623-fdd5-5ca2-a01c-88eae3ea319e"
 version = "0.1.2"
 
+[[Permutations]]
+deps = ["Combinatorics", "LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "6b51b8689ed5bf3b99643bd8eadb962ace80ea86"
+uuid = "2ae35dd2-176d-5d53-8349-f30d82d94d4f"
+version = "0.3.2"
+
 [[PerronFrobenius]]
 deps = ["Conda", "Distributed", "Documenter", "InplaceOps", "LinearAlgebra", "Parameters", "Printf", "PyCall", "RecipesBase", "Reexport", "SharedArrays", "Simplices", "SparseArrays", "StateSpaceReconstruction", "StaticArrays", "Test"]
 git-tree-sha1 = "93dd07f21cedca6c50d4ec04d409d04494ca42f7"
@@ -4990,6 +5002,12 @@ deps = ["DiffEqBase", "RecursiveArrayTools", "Reexport", "StaticArrays"]
 git-tree-sha1 = "dab78d468cbff62d0b94aa89dcbdd62d87030cae"
 uuid = "05bca326-078c-5bf0-a5bf-ce7c7982d7fd"
 version = "0.4.0"
+
+[[SimpleTools]]
+deps = ["Test"]
+git-tree-sha1 = "d3dfe64770fd01e15795efb405402b7d7f57da1e"
+uuid = "4696fa5f-36f0-5b18-99a6-fef83351280f"
+version = "0.3.0"
 
 [[SimpleTraits]]
 deps = ["InteractiveUtils", "MacroTools"]
