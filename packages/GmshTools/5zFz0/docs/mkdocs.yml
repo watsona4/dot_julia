@@ -1,0 +1,61 @@
+site_name:        'GmshTools.jl'
+site_description: 'Read Gmsh Mesh File'
+site_author:      'Pengcheng Shi'
+site_url:         'https://github.com/shipengcheng1230/GmshTools.jl'
+
+repo_name:        'GmshTools.jl'
+repo_url:         'https://github.com/shipengcheng1230/GmshTools.jl'
+
+copyright: 'Copyright &copy; 2018 - 2019 <a href="https://github.com/shipengcheng1230/GmshTools.jl">Pengcheng Shi</a>'
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'light blue'
+    accent: 'light blue'
+
+extra:
+  search:
+    tokenizer: '[\s\-\.]+'
+  social:
+    - type: 'github'
+      link: 'https://github.com/shipengcheng1230'
+
+extra_css:
+  - assets/Documenter.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML
+  - assets/mathjaxhelper.js
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - extra
+  - tables
+  - fenced_code
+  - mdx_math
+  - admonition
+  - pymdownx.highlight:
+      css_class: codehilite
+      linenums: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        - name: flow
+          class: uml-flowchart
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: sequence
+          class: uml-sequence-diagram
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+
+docs_dir: 'build'
+
+nav:
+  - Home: 'index.md'
+  - Element Types: 'element_types.md'

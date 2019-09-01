@@ -4525,6 +4525,12 @@ git-tree-sha1 = "8969388b206c55a8bf81415da93aa4ea1dcfed0a"
 uuid = "d04f5788-f3bf-50c4-8044-9206750af6c9"
 version = "0.1.1"
 
+[[GmshTools]]
+deps = ["BinaryProvider", "Libdl", "MLStyle"]
+git-tree-sha1 = "36bc7c73b7dbffa48e1aa2da7e26bf38fd5ce2cc"
+uuid = "82e2f556-b1bd-5f1a-9576-f93c0da5f0ee"
+version = "0.2.2"
+
 [[GoogleCloud]]
 deps = ["Base64", "Dates", "HTTP", "JSON", "Libz", "Markdown", "MbedTLS", "MsgPack", "Printf", "Test"]
 git-tree-sha1 = "96a8c98805e3635f189c49903fffbad725e5de46"
@@ -5329,6 +5335,11 @@ deps = ["CategoricalArrays", "Distances", "Distributions", "LIBSVM", "LinearAlge
 git-tree-sha1 = "84b9b1c951a9adf2c96c58a6214743a997e7f734"
 uuid = "d491faf4-2d78-11e9-2867-c94bc002c0b7"
 version = "0.2.3"
+
+[[MLStyle]]
+git-tree-sha1 = "67f9a88611bc79f992aa705d9bbc833a2547dec7"
+uuid = "d8e11817-5142-5d16-987a-aa16d5891078"
+version = "0.3.1"
 
 [[MPI]]
 deps = ["Distributed", "Libdl", "Random", "Requires", "Serialization", "Sockets"]
