@@ -1,0 +1,30 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+sudo: false
+os:
+  - linux
+  # - osx  # we don't do any binary dependencies or OS specific magic
+addons:
+  apt:
+    packages:
+    - libnlopt0
+julia:
+  - 1.1
+  - 1.0
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+script:
+    - julia -e 'using Pkg; Pkg.develop("Dolang"); Pkg.develop("AxisArrays"); Pkg.develop("BasisMatrices")'
+    - julia -e 'using Pkg; Pkg.clone(pwd()); Pkg.build("Dolo"); Pkg.add("Coverage"); Pkg.test("Dolo"; coverage=true)'
+after_success:
+    - echo $TRAVIS_JULIA_VERSION
+    - echo $TRAVIS_OS_NAME
+    - if [ $TRAVIS_JULIA_VERSION = "release" ] && [ $TRAVIS_OS_NAME = "linux" ]; then
+         julia -e 'cd(Pkg.dir("Dolo")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder()); Codecov.submit(process_folder());';
+      fi
+    - julia -e 'Pkg.add("Documenter")'
+    - julia -e 'cd(Pkg.dir("Dolo")); include(joinpath("docs", "make.jl"))'
