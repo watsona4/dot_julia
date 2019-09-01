@@ -3857,6 +3857,12 @@ git-tree-sha1 = "8fba6ddaf66b45dec830233cea0aae43eb1261ad"
 uuid = "1a297f60-69ca-5386-bcde-b61e274b549b"
 version = "0.6.4"
 
+[[FinEtools]]
+deps = ["Arpack", "DelimitedFiles", "LinearAlgebra", "Printf", "Random", "SparseArrays", "Statistics", "StatsBase", "Test", "Unicode"]
+git-tree-sha1 = "c212e8acdba3678fe3e26021b6b4fa563e17d7e5"
+uuid = "91bb5406-6c9a-523d-811d-0644c4229550"
+version = "3.0.1"
+
 [[FixedPointDecimals]]
 deps = ["Printf", "Test"]
 git-tree-sha1 = "b17a731934600b835150b7882238e7f06f8be368"
