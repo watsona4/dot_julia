@@ -2633,6 +2633,12 @@ git-tree-sha1 = "105140a96eee6d1a65a1dda732896f6f8ba94096"
 uuid = "21f26bdd-93a7-5c22-aaad-c68df1035b25"
 version = "0.2.1"
 
+[[DevIL]]
+deps = ["Libdl"]
+git-tree-sha1 = "2a2efc80dfc274f1085108f8c61afe0a6b3f7efa"
+uuid = "01638602-6071-5c9b-be9d-28079212bf65"
+version = "0.5.0"
+
 [[Dierckx]]
 deps = ["BinaryProvider", "Libdl", "Random", "Test"]
 git-tree-sha1 = "27a74763c20938a814da26f31a9e8408d16fec44"
