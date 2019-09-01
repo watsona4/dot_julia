@@ -1,0 +1,11 @@
+name = "DotTestSets"
+uuid = "c389a1a6-a4ad-11e9-3760-17d115de83c0"
+authors = ["Magnus Lie Hetland <magnus@hetland.org>"]
+version = "0.1.0"
+
+[deps]
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "0.7, 1"
