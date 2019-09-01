@@ -1,0 +1,98 @@
+#========================================================================================#
+#               ECHOVIEW CALIBRATION SUPPLEMENT (.ECS) FILE (SimradEK60Raw)              #
+#                                   7/05/2015 21:13:02                                   #
+#========================================================================================#
+#       +----------+   +-----------+   +----------+   +-----------+   +----------+       #
+#       | Default  |-->| Data File |-->| Fileset  |-->| SourceCal |-->| LocalCal |       #
+#       | Settings |   | Settings  |   | Settings |   | Settings  |   | Settings |       #
+#       +----------+   +-----------+   +----------+   +-----------+   +----------+       #
+# - Settings to the right override those to their left.                                  #
+# - See the Help file page "About calibration".                                          #
+#========================================================================================#
+
+Version 1.00
+
+
+
+#========================================================================================#
+#                                    FILESET SETTINGS                                    #
+#========================================================================================#
+
+  SoundSpeed = 1541.21 # (meters per second) [1400.00..1700.00]
+# TvgRangeCorrection = SimradEx60 # [None, BySamples, SimradEx500, SimradEx60, BioSonics, Kaijo, PulseLength, Ex500Forced]
+# TvgRangeCorrectionOffset = # (samples) [-10000.00..10000.00]
+
+
+#========================================================================================#
+#                                   SOURCECAL SETTINGS                                   #
+#========================================================================================#
+
+SourceCal T1
+      WedgeVolumeBeamAngle = # (degrees) [0.00..359.99]
+    # AbsorptionCoefficient = 0.0026547 # (decibels per meter) [0.0000000..100.0000000]
+      EK60SaCorrection = -1.5 # (decibels) [-99.9900..99.9900]
+      Ek60TransducerGain = 18.8 # (decibels) [1.0000..99.0000]
+      Frequency = 18.00 # (kilohertz) [0.01..10000.00]
+      SoundSpeed = 1520.00
+    # MajorAxis3dbBeamAngle = 10.80 # (degrees) [0.00..359.99]
+    # MajorAxisAngleOffset = 0.00 # (degrees) [-9.99..9.99]
+    # MinorAxis3dbBeamAngle = 10.80 # (degrees) [0.00..359.99]
+    # MinorAxisAngleOffset = 0.00 # (degrees) [-9.99..9.99]
+    # SoundSpeed = 1500.00 # (meters per second) [1400.00..1700.00]
+    # TransmittedPower = 2000.00000 # (watts) [1.00000..30000.00000]
+    # TransmittedPulseLength = 0.512 # (milliseconds) [0.001..50.000]
+    # TvgRangeCorrection = SimradEx60 # [None, BySamples, SimradEx500, SimradEx60, BioSonics, Kaijo, PulseLength, Ex500Forced]
+    # TwoWayBeamAngle = -17.000000 # (decibels re 1 steradian) [-99.000000..-1.000000]
+
+SourceCal T2
+    # AbsorptionCoefficient = 0.0097472 # (decibels per meter) [0.0000000..100.0000000]
+      EK60SaCorrection = -1.0100 # (decibels) [-99.9900..99.9900]
+      Ek60TransducerGain = 22.8100 # (decibels) [1.0000..99.0000]
+      Frequency = 38.00 # (kilohertz) [0.01..10000.00]
+    # MajorAxis3dbBeamAngle = 9.60 # (degrees) [0.00..359.99]
+    # MajorAxisAngleOffset = 0.00 # (degrees) [-9.99..9.99]
+    # MajorAxisAngleSensitivity = 18.299999 # [0.100000..100.000000]
+    # MinorAxis3dbBeamAngle = 9.60 # (degrees) [0.00..359.99]
+    # MinorAxisAngleOffset = 0.00 # (degrees) [-9.99..9.99]
+    # MinorAxisAngleSensitivity = 18.299999 # [0.100000..100.000000]
+    # SoundSpeed = 1500.00 # (meters per second) [1400.00..1700.00]
+    # TransmittedPower = 1500.00000 # (watts) [1.00000..30000.00000]
+    # TransmittedPulseLength = 0.256 # (milliseconds) [0.001..50.000]
+    # TvgRangeCorrection = SimradEx60 # [None, BySamples, SimradEx500, SimradEx60, BioSonics, Kaijo, PulseLength, Ex500Forced]
+    # TwoWayBeamAngle = -18.000000 # (decibels re 1 steradian) [-99.000000..-1.000000]
+
+SourceCal T3
+    # AbsorptionCoefficient = 0.0373058 # (decibels per meter) [0.0000000..100.0000000]
+      EK60SaCorrection = -0.6500 # (decibels) [-99.9900..99.9900]
+      Ek60TransducerGain = 26.8900 # (decibels) [1.0000..99.0000]
+      Frequency = 120.00 # (kilohertz) [0.01..10000.00]
+    # MajorAxis3dbBeamAngle = 7.00 # (degrees) [0.00..359.99]
+    # MajorAxisAngleOffset = 0.00 # (degrees) [-9.99..9.99]
+    # MajorAxisAngleSensitivity = 23.000000 # [0.100000..100.000000]
+    # MinorAxis3dbBeamAngle = 7.00 # (degrees) [0.00..359.99]
+    # MinorAxisAngleOffset = 0.00 # (degrees) [-9.99..9.99]
+    # MinorAxisAngleSensitivity = 23.000000 # [0.100000..100.000000]
+    # SoundSpeed = 1500.00 # (meters per second) [1400.00..1700.00]
+    # TransmittedPower = 1000.00000 # (watts) [1.00000..30000.00000]
+    # TransmittedPulseLength = 0.064 # (milliseconds) [0.001..50.000]
+    # TvgRangeCorrection = SimradEx60 # [None, BySamples, SimradEx500, SimradEx60, BioSonics, Kaijo, PulseLength, Ex500Forced]
+    # TwoWayBeamAngle = -21.000000 # (decibels re 1 steradian) [-99.000000..-1.000000]
+
+SourceCal T4
+    # AbsorptionCoefficient = 0.0525231 # (decibels per meter) [0.0000000..100.0000000]
+      EK60SaCorrection = -1.54 # (decibels) [-99.9900..99.9900]
+      Ek60TransducerGain = 23.96000 # (decibels) [1.0000..99.0000]
+      Frequency = 200.00 # (kilohertz) [0.01..10000.00]
+    # MajorAxis3dbBeamAngle = 7.00 # (degrees) [0.00..359.99]
+    # MajorAxisAngleOffset = 0.00 # (degrees) [-9.99..9.99]
+    # MinorAxis3dbBeamAngle = 7.00 # (degrees) [0.00..359.99]
+    # MinorAxisAngleOffset = 0.00 # (degrees) [-9.99..9.99]
+    # SoundSpeed = 1500.00 # (meters per second) [1400.00..1700.00]
+    # TransmittedPower = 1000.00000 # (watts) [1.00000..30000.00000]
+    # TransmittedPulseLength = 0.064 # (milliseconds) [0.001..50.000]
+    # TvgRangeCorrection = SimradEx60 # [None, BySamples, SimradEx500, SimradEx60, BioSonics, Kaijo, PulseLength, Ex500Forced]
+    # TwoWayBeamAngle = -20.700001 # (decibels re 1 steradian) [-99.000000..-1.000000]
+
+#========================================================================================#
+#                                    LOCALCAL SETTINGS                                   #
+#========================================================================================#
