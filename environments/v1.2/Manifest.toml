@@ -2575,6 +2575,12 @@ git-tree-sha1 = "41387597efe494acf058423b6c87a5f28aa1a708"
 uuid = "5732040d-69e3-5649-938a-b6b4f237613f"
 version = "1.1.0"
 
+[[Deldir]]
+deps = ["BinaryProvider", "DataFrames", "Libdl"]
+git-tree-sha1 = "971ebf9ee38034e565d44c5a38f32b10a0d9c0aa"
+uuid = "64db5801-a3ae-51a7-b7d2-a0a5f0813e47"
+version = "1.1.1"
+
 [[DelimitedFiles]]
 deps = ["Mmap"]
 uuid = "8bb1440f-4735-579b-a4ab-409b98df4dab"
