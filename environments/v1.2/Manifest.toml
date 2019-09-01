@@ -4202,6 +4202,12 @@ git-tree-sha1 = "c64db2f192476247e8fed283735df06f4bc1693d"
 uuid = "aeeaf58c-ab4d-11e9-3a9f-9b6bf58b5bc3"
 version = "0.2.0"
 
+[[GMT]]
+deps = ["Printf"]
+git-tree-sha1 = "f2286cb236af62c5fbab2730afee591d7e270c38"
+uuid = "5752ebe1-31b9-557e-87aa-f909b540aa54"
+version = "0.11.0"
+
 [[GR]]
 deps = ["Base64", "DelimitedFiles", "LinearAlgebra", "Pkg", "Printf", "Random", "Serialization", "Sockets", "Test"]
 git-tree-sha1 = "b4c31b6377b6d51b6c69a3a9737d10c34d43974e"
