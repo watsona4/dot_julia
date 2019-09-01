@@ -1,0 +1,35 @@
+[server]
+# Remove http_port to make the server use ENV["PORT"]. Heroku users must do this.
+http_port = 8001
+http_ip = "0.0.0.0"
+stop_file = "/tmp/stopregistrator"
+log_level = "debug"
+
+[github]
+user = ""
+email = ""
+name = ""
+token = ""
+secret = ""
+app_id = 12345
+priv_pem = "private-key.pem"
+
+[targets.qux]
+repo = "https://github.com/your_github_id/QuxRegistry"
+base_branch = "master"
+
+[registrator]
+trigger = "quxregister"
+report_issue = false
+issue_repo = "JuliaComputing/Registrator.jl"
+reply_comment = true
+set_status = true
+enc_key = "1234567890123456"
+disable_pull_request_trigger = false
+disable_approval_process = false
+registry_deps = ["https://github.com/JuliaRegistries/General"]
+
+[slack]
+alert = false
+token = "xxxx"
+channel = "xxxx"

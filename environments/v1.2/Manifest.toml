@@ -3357,6 +3357,12 @@ git-tree-sha1 = "539ddbf8dc9386fea8276b61b7b4480a2febfcd3"
 uuid = "6a34a51b-2f4a-4636-bd3c-e47519ebd0d9"
 version = "0.1.1"
 
+[[EnKF]]
+deps = ["ColorSchemes", "DifferentialEquations", "Distributions", "DocStringExtensions", "Documenter", "FFTW", "FileIO", "IJulia", "Interpolations", "JLD2", "LaTeXStrings", "Lazy", "LinearAlgebra", "ParameterizedFunctions", "Plots", "PotentialFlow", "ProgressMeter", "Random", "RecursiveArrayTools", "Reexport", "Registrator", "Revise", "Statistics", "Test"]
+git-tree-sha1 = "ab4e8591bcb9452e76636d43bc2ea5800e2ebc67"
+uuid = "685896a8-a41b-11e9-3419-3315e75b5d74"
+version = "0.1.0"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
@@ -3863,6 +3869,12 @@ deps = ["Combinatorics", "Distributions", "LinearAlgebra", "Random", "Rmath", "R
 git-tree-sha1 = "0fe2b78bd7cadcaed2071aab7ed12b40d220c392"
 uuid = "09f84164-cd44-5f33-b23f-e6b0d136a0d5"
 version = "0.8.0"
+
+[[IJulia]]
+deps = ["Base64", "Conda", "Dates", "InteractiveUtils", "JSON", "Markdown", "MbedTLS", "Pkg", "Printf", "REPL", "Random", "SoftGlobalScope", "Test", "UUIDs", "ZMQ"]
+git-tree-sha1 = "64afa8fe079bdefcea145a16e3a1809846734d67"
+uuid = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
+version = "1.20.0"
 
 [[IRTools]]
 deps = ["InteractiveUtils", "MacroTools", "Test"]
@@ -4410,6 +4422,12 @@ deps = ["FFTW", "FillArrays", "LinearAlgebra", "Nullables", "Random", "SparseArr
 git-tree-sha1 = "4079dfefba2cf541e0770e6426f7756ee90efbe8"
 uuid = "898213cb-b102-5a47-900c-97e73b919f73"
 version = "0.2.3"
+
+[[LoweredCodeUtils]]
+deps = ["JuliaInterpreter"]
+git-tree-sha1 = "ea065f38cccb556b4eabe43b3b3b91e1c67cbffd"
+uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
+version = "0.3.8"
 
 [[LsqFit]]
 deps = ["Distributions", "LinearAlgebra", "NLSolversBase", "OptimBase", "Random", "StatsBase", "Test"]
@@ -5035,6 +5053,12 @@ git-tree-sha1 = "957c3dd7c33895469760ce873082fbb6b3620641"
 uuid = "85a6dd25-e78a-55b7-8502-1745935b8125"
 version = "0.2.2"
 
+[[PotentialFlow]]
+deps = ["ColorTypes", "DocStringExtensions", "FFTW", "ForwardDiff", "Future", "Interpolations", "LinearAlgebra", "MacroTools", "MappedArrays", "PlotUtils", "RecipesBase", "Reexport", "SchwarzChristoffel"]
+git-tree-sha1 = "738bfbcdb06562387dfb7a576f1a0d50438cfde6"
+uuid = "73af2aaf-3f58-5b29-82a9-435ecf827f5b"
+version = "0.1.5"
+
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
 git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
@@ -5248,6 +5272,12 @@ git-tree-sha1 = "763ea91022b03c1ff18d5c80d61f676419fb7505"
 uuid = "dee08c22-ab7f-5625-9660-a9af2021b33f"
 version = "0.3.0"
 
+[[Registrator]]
+deps = ["Base64", "DataStructures", "Dates", "Distributed", "GitHub", "HTTP", "JSON", "LibGit2", "Logging", "MbedTLS", "Pkg", "Sockets", "UUIDs"]
+git-tree-sha1 = "e7f59bec82a47801360f80caa1bf3c5ff058c157"
+uuid = "4418983a-e44d-11e8-3aec-9789530b3b3e"
+version = "0.1.0"
+
 [[Reinforce]]
 deps = ["Distributions", "LearnBase", "LearningStrategies", "Random", "RecipesBase", "Reexport", "StatsBase", "Test"]
 git-tree-sha1 = "0427d783807b6c97504db63350a58d3f66451dec"
@@ -5289,6 +5319,12 @@ deps = ["Calculus", "Compat", "DataStructures", "ForwardDiff", "MathProgBase", "
 git-tree-sha1 = "cbbc2c710abea5cfe71459ce4711d80a212aac5a"
 uuid = "89212889-6d3f-5f97-b412-7825138f6c9c"
 version = "0.8.6"
+
+[[Revise]]
+deps = ["CodeTracking", "Distributed", "FileWatching", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "Pkg", "REPL", "UUIDs", "Unicode"]
+git-tree-sha1 = "44a36fadf916ce20ffb33fb33ff67c67404e55ac"
+uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
+version = "2.1.9"
 
 [[RigidBodyDynamics]]
 deps = ["DocStringExtensions", "LightXML", "LinearAlgebra", "LoopThrottle", "Random", "Reexport", "Rotations", "SparseArrays", "StaticArrays", "TypeSortedCollections", "UnsafeArrays"]
@@ -5352,6 +5388,12 @@ deps = ["CompScienceMeshes", "FastGaussQuadrature", "LinearAlgebra", "StaticArra
 git-tree-sha1 = "04613230d106781615014703c3bee8bb62e934d0"
 uuid = "535c7bfe-2023-5c1d-b712-654ef9d93a38"
 version = "2.1.0"
+
+[[SchwarzChristoffel]]
+deps = ["ColorTypes", "Compat", "FastGaussQuadrature", "NLsolve", "OrdinaryDiffEq", "RecipesBase", "Reexport"]
+git-tree-sha1 = "d2d315205eede65e481c72ff372524f838fa5897"
+uuid = "6e93f119-a087-51f0-a155-b73ce4943121"
+version = "0.1.4"
 
 [[ScikitLearn]]
 deps = ["Compat", "Conda", "DataFrames", "DecisionTree", "Distributed", "GaussianMixtures", "GaussianProcesses", "IterTools", "LinearAlgebra", "MacroTools", "NBInclude", "Parameters", "Printf", "PyCall", "PyPlot", "RData", "RDatasets", "Random", "ScikitLearnBase", "SparseArrays", "StatsBase"]
