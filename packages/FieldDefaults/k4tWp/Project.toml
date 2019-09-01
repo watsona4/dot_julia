@@ -1,0 +1,18 @@
+name = "FieldDefaults"
+uuid = "49426c49-986f-5969-8844-d5cc96441cfc"
+authors = ["Rafael Schouten <rafaelschouten@gmail.com>"]
+version = "0.1.2"
+
+[compat]
+julia = "1"
+
+[deps]
+FieldMetadata = "bf96fef3-21d2-5d20-8afa-0e7d4c32a885"
+Setfield = "efcf1570-3423-57d1-acb7-fd33fddbac46"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+
+[targets]
+test = ["Unitful", "Test"]

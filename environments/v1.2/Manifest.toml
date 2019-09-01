@@ -3801,6 +3801,12 @@ git-tree-sha1 = "7e9e270e372f22e113eb27565566141b163efb76"
 uuid = "f4440bb6-80da-11e9-1db0-85cc1897f664"
 version = "0.2.0"
 
+[[FieldDefaults]]
+deps = ["FieldMetadata", "Setfield"]
+git-tree-sha1 = "870a722b849eb1c8e87946a28ab90df4fe22a3cc"
+uuid = "49426c49-986f-5969-8844-d5cc96441cfc"
+version = "0.1.2"
+
 [[FieldMetadata]]
 git-tree-sha1 = "632193bb313e5b7fb3e1864ad476a64b1ad37b1a"
 uuid = "bf96fef3-21d2-5d20-8afa-0e7d4c32a885"
