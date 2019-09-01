@@ -4280,6 +4280,12 @@ git-tree-sha1 = "3b4732afce4035be36f943b476f1bc63920076c1"
 uuid = "43dcc890-d446-5863-8d1a-14597580bb8d"
 version = "0.3.2"
 
+[[GaussianMixtureTest]]
+deps = ["DelimitedFiles", "Distributed", "Distributions", "LinearAlgebra", "Random", "StatsBase", "StatsFuns", "Test", "Yeppp"]
+git-tree-sha1 = "06ac26d1dae1b646a9b868d31c825cf47945d7b2"
+uuid = "435c3d8c-e5f4-5f7f-83ee-d96dcc9b5a11"
+version = "0.1.1"
+
 [[GaussianMixtures]]
 deps = ["Clustering", "Compat", "DelimitedFiles", "Distributed", "Distributions", "FileIO", "JLD", "LinearAlgebra", "Logging", "PDMats", "Printf", "Random", "ScikitLearnBase", "SpecialFunctions", "Statistics", "StatsBase"]
 git-tree-sha1 = "9b892cfc95da04ca9eff2387bc66f6baddeed606"
@@ -6892,6 +6898,12 @@ deps = ["Codecs", "Compat"]
 git-tree-sha1 = "3bde77cee95cce0c0b9b18813d85e18e8ed4f415"
 uuid = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
 version = "0.3.2"
+
+[[Yeppp]]
+deps = ["BinDeps", "Libdl", "LinearAlgebra", "Test"]
+git-tree-sha1 = "3cdc43f9123a3cc8f31a00aae73c63b5b71033af"
+uuid = "6310b701-1812-5374-a82f-9f6f2d54a40a"
+version = "0.4.0"
 
 [[ZMQ]]
 deps = ["BinaryProvider", "FileWatching", "Libdl", "Sockets", "Test"]
