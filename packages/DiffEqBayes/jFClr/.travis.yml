@@ -1,0 +1,26 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+julia:
+  - 1.0
+  - nightly
+notifications:
+  email: false
+git:
+  depth: 99999999
+matrix:
+  allow_failures:
+  - julia: nightly
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - cd $HOME; if [[ ! -d cmdstan ]]; then git clone https://github.com/stan-dev/cmdstan.git; fi
+  - cd $HOME/cmdstan; git checkout v2.16.0; make stan-update; make build
+  - export CMDSTAN_HOME=$HOME/cmdstan
+  - cd $TRAVIS_BUILD_DIR
+  - julia -e 'using Pkg; Pkg.clone(pwd()); Pkg.build("DiffEqBayes"); Pkg.test("DiffEqBayes"; coverage=true)'
+after_success:
+  # push coverage results to Coveralls
+  - julia -e 'using Pkg; cd(Pkg.dir("DiffEqBayes")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
+  # push coverage results to Codecov
+  - julia -e 'using Pkg; cd(Pkg.dir("DiffEqBayes")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'

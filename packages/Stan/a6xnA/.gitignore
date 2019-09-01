@@ -1,0 +1,16 @@
+*.cpp
+*.d
+*.csv
+*.o
+*.log
+#*.pdf
+#*.svg
+bernoulli.bugs
+bernoulli.data.R
+win_tests_*.jl
+.ipynb_checkpoints
+docs/build/
+docs/site/
+Examples/OtherExamples/DiffEqBayes/Lorenz/tmp/*
+Examples/OtherExamples/DiffEqBayes/LotkaVolterra/tmp/*
+Manifest.toml

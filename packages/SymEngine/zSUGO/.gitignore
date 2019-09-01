@@ -1,0 +1,8 @@
+*~
+deps/deps.jl
+deps/builds
+deps/downloads
+deps/src
+deps/usr
+deps/symengine-0.3
+build.log
