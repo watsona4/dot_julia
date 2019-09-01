@@ -3735,6 +3735,12 @@ git-tree-sha1 = "c4f9ea47b13b8d21852beba0dadf69ee259aebaa"
 uuid = "6ccb8d0d-f5f8-5ae0-a392-f5aa62729a81"
 version = "0.3.1"
 
+[[FastJet]]
+deps = ["BinaryProvider", "CxxWrap", "Libdl"]
+git-tree-sha1 = "14d815c8c40e319433cead275cf370609ebdf208"
+uuid = "8509a5d2-ae42-11e8-0b46-5d0ace601ee4"
+version = "0.1.0"
+
 [[FastRounding]]
 deps = ["ErrorfreeArithmetic", "Test"]
 git-tree-sha1 = "224175e213fd4fe112db3eea05d66b308dc2bf6b"

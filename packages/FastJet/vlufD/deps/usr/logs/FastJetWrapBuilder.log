@@ -1,0 +1,265 @@
+`/bin/bash -c "alias ll='ls -la'
+
+vecho() {
+    if [[ \"true\" == \"true\" ]]; then
+        echo \"\$@\"
+    fi
+}
+vecho_red() {
+    (vecho \"\$@\" >&2)
+}
+
+# Save bash history (and optionally echo it out as it happens)
+save_history() {
+    vecho_red \" ---> \$BASH_COMMAND\"
+    history -s \"\$BASH_COMMAND\"
+    history -a
+}
+
+# Save our environment into \`/meta/.env\`, eliminating read-only variables
+# so that this file can be sourced upon entering a debug shell.
+save_env() {
+    set +x
+    set > /meta/.env
+    # Ignore read-only variables
+    for l in BASHOPTS BASH_VERSINFO UID EUID PPID SHELLOPTS; do
+        grep -v \"^\$l=\" /meta/.env > /meta/.env2
+        mv /meta/.env2 /meta/.env
+    done
+    echo \"cd \$(pwd)\" >> /meta/.env
+}
+
+# We do a little sleight-of-hand here; we want to build inside of a tmpfs
+# because \`srcdir\` might be mapped in through a networked filesystem, which
+# totally wrecks our I/O performance.  So what we do instead is bind-mount
+# \`srcdir\` to another location so that we can always get at it, copy its
+# contents to a new tmpfs we mount at the location of \`srcdir\`, then when
+# we exit on an error, we copy everything back over again
+tmpify_srcdir() {
+    vecho \"Copying srcdir to tmpfs...\"
+    mkdir -p \$WORKSPACE/.true_srcdir
+    mount --bind \$WORKSPACE/srcdir \$WORKSPACE/.true_srcdir
+    mount -t tmpfs tmpfs \$WORKSPACE/srcdir
+    rsync -rlptD \$WORKSPACE/.true_srcdir/ \$WORKSPACE/srcdir
+
+    # We may have changed what pwd() means out from underneath ourselves
+    cd \$(pwd)
+}
+
+# Copy our tmpfs version of \`srcdir\` back onto disk.
+save_srcdir() {
+    vecho_red \"Saving srcdir due to previous error...\"
+    rsync -rlptD \$WORKSPACE/srcdir/ \$WORKSPACE/.true_srcdir --delete
+}
+
+# If /meta is mounted, then we want to save history and environment
+if [[ -d /meta ]]; then
+    trap save_history DEBUG
+    trap \"save_env\" EXIT
+    trap \"save_env; save_srcdir\" INT TERM ERR
+fi
+
+# Stop if we hit any errors.
+set -e
+
+# Swap out srcdir from underneath our feet
+tmpify_srcdir
+
+JlCxx_DIR=\${prefix}/lib/cmake/JlCxx/
+cd \${WORKSPACE}/srcdir/
+mkdir build && cd build
+cmake -DCMAKE_INSTALL_PREFIX=\${prefix} -DCMAKE_TOOLCHAIN_FILE=/opt/\$target/\$target.toolchain -DCMAKE_FIND_ROOT_PATH=\${prefix} -DJulia_PREFIX=\${prefix} ..
+VERBOSE=OFF cmake --build . --config Release --target install
+
+"`
+verbose sandbox enabled (running in unprivileged container mode)
+Parsed --rootfs as "/home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu"
+Parsed --cd as "/workspace/srcdir"
+Parsed --workspace as "/home/travis/build/jstrube/build/x86_64-linux-gnu-gcc7-cxx11/QpwGOj6P" -> "/workspace"
+Parsed --workspace as "/home/travis/build/jstrube/build/x86_64-linux-gnu-gcc7-cxx11/QpwGOj6P/metadir" -> "/meta"
+Parsed --map as "/home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/BaseCompilerShard-x86_64-linux-gnu.v2018.11.11.x86_64-linux-gnu" -> "/opt/x86_64-linux-gnu/BaseCompilerShard-2018.11.11"
+Parsed --map as "/home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/GCC-x86_64-linux-gnu.v7.1.0.x86_64-linux-gnu" -> "/opt/x86_64-linux-gnu/GCC-7.1.0"
+Parsed --map as "/home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/LLVM.v6.0.1-0.x86_64-linux-gnu" -> "/opt/x86_64-linux-gnu/LLVM-6.0.1-0"
+--> Creating overlay workdir at /proc
+--> Mounting overlay of /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu at /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu (modifications in /proc/upper/rootfs, workspace in /proc/work/rootfs)
+--> mapping /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/LLVM.v6.0.1-0.x86_64-linux-gnu to /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/opt/x86_64-linux-gnu/LLVM-6.0.1-0
+--> mapping /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/GCC-x86_64-linux-gnu.v7.1.0.x86_64-linux-gnu to /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/opt/x86_64-linux-gnu/GCC-7.1.0
+--> mapping /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/BaseCompilerShard-x86_64-linux-gnu.v2018.11.11.x86_64-linux-gnu to /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/opt/x86_64-linux-gnu/BaseCompilerShard-2018.11.11
+--> Mounting overlay of /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/opt/x86_64-linux-gnu/BaseCompilerShard-2018.11.11:/home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/opt/x86_64-linux-gnu/GCC-7.1.0:/home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/opt/x86_64-linux-gnu/LLVM-6.0.1-0 at /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/opt/x86_64-linux-gnu (modifications in /proc/upper/x86_64-linux-gnu, workspace in /proc/work/x86_64-linux-gnu)
+--> Mounting procfs at /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/proc
+--> Mounting /dev/null at /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/dev/null
+--> Mounting /dev/tty at /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/dev/tty
+--> Mounting /dev/urandom at /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/dev/urandom
+--> workspacing /home/travis/build/jstrube/build/x86_64-linux-gnu-gcc7-cxx11/QpwGOj6P/metadir to /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/meta
+--> workspacing /home/travis/build/jstrube/build/x86_64-linux-gnu-gcc7-cxx11/QpwGOj6P to /home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu/workspace
+--> Mounting procfs at /proc
+About to run `/bin/bash` `-c` `alias ll='ls -la'
+
+vecho() {
+    if [[ "true" == "true" ]]; then
+        echo "$@"
+    fi
+}
+vecho_red() {
+    (vecho "$@" >&2)
+}
+
+# Save bash history (and optionally echo it out as it happens)
+save_history() {
+    vecho_red " ---> $BASH_COMMAND"
+    history -s "$BASH_COMMAND"
+    history -a
+}
+
+# Save our environment into `/meta/.env`, eliminating read-only variables
+# so that this file can be sourced upon entering a debug shell.
+save_env() {
+    set +x
+    set > /meta/.env
+    # Ignore read-only variables
+    for l in BASHOPTS BASH_VERSINFO UID EUID PPID SHELLOPTS; do
+        grep -v "^$l=" /meta/.env > /meta/.env2
+        mv /meta/.env2 /meta/.env
+    done
+    echo "cd $(pwd)" >> /meta/.env
+}
+
+# We do a little sleight-of-hand here; we want to build inside of a tmpfs
+# because `srcdir` might be mapped in through a networked filesystem, which
+# totally wrecks our I/O performance.  So what we do instead is bind-mount
+# `srcdir` to another location so that we can always get at it, copy its
+# contents to a new tmpfs we mount at the location of `srcdir`, then when
+# we exit on an error, we copy everything back over again
+tmpify_srcdir() {
+    vecho "Copying srcdir to tmpfs..."
+    mkdir -p $WORKSPACE/.true_srcdir
+    mount --bind $WORKSPACE/srcdir $WORKSPACE/.true_srcdir
+    mount -t tmpfs tmpfs $WORKSPACE/srcdir
+    rsync -rlptD $WORKSPACE/.true_srcdir/ $WORKSPACE/srcdir
+
+    # We may have changed what pwd() means out from underneath ourselves
+    cd $(pwd)
+}
+
+# Copy our tmpfs version of `srcdir` back onto disk.
+save_srcdir() {
+    vecho_red "Saving srcdir due to previous error..."
+    rsync -rlptD $WORKSPACE/srcdir/ $WORKSPACE/.true_srcdir --delete
+}
+
+# If /meta is mounted, then we want to save history and environment
+if [[ -d /meta ]]; then
+    trap save_history DEBUG
+    trap "save_env" EXIT
+    trap "save_env; save_srcdir" INT TERM ERR
+fi
+
+# Stop if we hit any errors.
+set -e
+
+# Swap out srcdir from underneath our feet
+tmpify_srcdir
+
+JlCxx_DIR=${prefix}/lib/cmake/JlCxx/
+cd ${WORKSPACE}/srcdir/
+mkdir build && cd build
+cmake -DCMAKE_INSTALL_PREFIX=${prefix} -DCMAKE_TOOLCHAIN_FILE=/opt/$target/$target.toolchain -DCMAKE_FIND_ROOT_PATH=${prefix} -DJulia_PREFIX=${prefix} ..
+VERBOSE=OFF cmake --build . --config Release --target install
+
+` 
+ ---> trap "save_env" EXIT
+ ---> trap "save_env; save_srcdir" INT TERM ERR
+ ---> set -e
+ ---> tmpify_srcdir
+Copying srcdir to tmpfs...
+ ---> JlCxx_DIR=${prefix}/lib/cmake/JlCxx/
+ ---> cd ${WORKSPACE}/srcdir/
+ ---> mkdir build
+ ---> cd build
+ ---> cmake -DCMAKE_INSTALL_PREFIX=${prefix} -DCMAKE_TOOLCHAIN_FILE=/opt/$target/$target.toolchain -DCMAKE_FIND_ROOT_PATH=${prefix} -DJulia_PREFIX=${prefix} ..
+-- The C compiler identification is GNU 7.1.0
+-- The CXX compiler identification is GNU 7.1.0
+-- Check for working C compiler: /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc
+-- Check for working C compiler: /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++
+-- Check for working CXX compiler: /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Adding path /workspace/destdir to search path
+-- THIS BRANCH
+-- Julia_VERSION_STRING: 1.0.0
+-- Julia_INCLUDE_DIRS:   /workspace/destdir/include/julia
+-- Julia_LIBRARY_DIR:    /workspace/destdir/lib
+-- Julia_LIBRARY:        /workspace/destdir/lib/libjulia.so
+-- Found Julia: /workspace/destdir/lib/libjulia.so (found version "1.0.0") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/srcdir/build
+ ---> VERBOSE=OFF cmake --build . --config Release --target install
+/usr/bin/cmake -H/workspace/srcdir -B/workspace/srcdir/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /workspace/srcdir/build/CMakeFiles /workspace/srcdir/build/CMakeFiles/progress.marks
+/usr/bin/make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/workspace/srcdir/build'
+/usr/bin/make -f CMakeFiles/fjcore.dir/build.make CMakeFiles/fjcore.dir/depend
+make[2]: Entering directory '/workspace/srcdir/build'
+cd /workspace/srcdir/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/srcdir /workspace/srcdir /workspace/srcdir/build /workspace/srcdir/build /workspace/srcdir/build/CMakeFiles/fjcore.dir/DependInfo.cmake --color=
+Dependee "/workspace/srcdir/build/CMakeFiles/fjcore.dir/DependInfo.cmake" is newer than depender "/workspace/srcdir/build/CMakeFiles/fjcore.dir/depend.internal".
+Dependee "/workspace/srcdir/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/workspace/srcdir/build/CMakeFiles/fjcore.dir/depend.internal".
+Scanning dependencies of target fjcore
+make[2]: Leaving directory '/workspace/srcdir/build'
+/usr/bin/make -f CMakeFiles/fjcore.dir/build.make CMakeFiles/fjcore.dir/build
+make[2]: Entering directory '/workspace/srcdir/build'
+[ 20%] Building CXX object CMakeFiles/fjcore.dir/src/fjcore.cc.o
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ --sysroot=/opt/x86_64-linux-gnu/x86_64-linux-gnu/sys-root/  -DJULIA_ENABLE_THREADING -Dfjcore_EXPORTS -I/workspace/srcdir/include  -fPIC   -std=gnu++14 -o CMakeFiles/fjcore.dir/src/fjcore.cc.o -c /workspace/srcdir/src/fjcore.cc
+[ 40%] Linking CXX shared library libfjcore.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/fjcore.dir/link.txt --verbose=OFF
+make[2]: Leaving directory '/workspace/srcdir/build'
+[ 40%] Built target fjcore
+/usr/bin/make -f CMakeFiles/fastjetwrap.dir/build.make CMakeFiles/fastjetwrap.dir/depend
+make[2]: Entering directory '/workspace/srcdir/build'
+cd /workspace/srcdir/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/srcdir /workspace/srcdir /workspace/srcdir/build /workspace/srcdir/build /workspace/srcdir/build/CMakeFiles/fastjetwrap.dir/DependInfo.cmake --color=
+Dependee "/workspace/srcdir/build/CMakeFiles/fastjetwrap.dir/DependInfo.cmake" is newer than depender "/workspace/srcdir/build/CMakeFiles/fastjetwrap.dir/depend.internal".
+Dependee "/workspace/srcdir/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/workspace/srcdir/build/CMakeFiles/fastjetwrap.dir/depend.internal".
+Scanning dependencies of target fastjetwrap
+make[2]: Leaving directory '/workspace/srcdir/build'
+/usr/bin/make -f CMakeFiles/fastjetwrap.dir/build.make CMakeFiles/fastjetwrap.dir/build
+make[2]: Entering directory '/workspace/srcdir/build'
+[ 60%] Building CXX object CMakeFiles/fastjetwrap.dir/src/fastJetWrap.cc.o
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ --sysroot=/opt/x86_64-linux-gnu/x86_64-linux-gnu/sys-root/  -DJULIA_ENABLE_THREADING -Dfastjetwrap_EXPORTS -I/workspace/srcdir/include -isystem /workspace/destdir/include -isystem /workspace/destdir/include/julia  -fPIC   -std=c++14 -std=gnu++14 -o CMakeFiles/fastjetwrap.dir/src/fastJetWrap.cc.o -c /workspace/srcdir/src/fastJetWrap.cc
+[ 80%] Building CXX object CMakeFiles/fastjetwrap.dir/src/fjcore.cc.o
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ --sysroot=/opt/x86_64-linux-gnu/x86_64-linux-gnu/sys-root/  -DJULIA_ENABLE_THREADING -Dfastjetwrap_EXPORTS -I/workspace/srcdir/include -isystem /workspace/destdir/include -isystem /workspace/destdir/include/julia  -fPIC   -std=c++14 -std=gnu++14 -o CMakeFiles/fastjetwrap.dir/src/fjcore.cc.o -c /workspace/srcdir/src/fjcore.cc
+[100%] Linking CXX shared library libfastjetwrap.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/fastjetwrap.dir/link.txt --verbose=OFF
+make[2]: Leaving directory '/workspace/srcdir/build'
+[100%] Built target fastjetwrap
+make[1]: Leaving directory '/workspace/srcdir/build'
+/usr/bin/cmake -E cmake_progress_start /workspace/srcdir/build/CMakeFiles 0
+/usr/bin/make -f CMakeFiles/Makefile2 preinstall
+make[1]: Entering directory '/workspace/srcdir/build'
+make[1]: Nothing to be done for 'preinstall'.
+make[1]: Leaving directory '/workspace/srcdir/build'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: ""
+-- Installing: /workspace/destdir/lib/libfastjetwrap.so
+-- Set runtime path of "/workspace/destdir/lib/libfastjetwrap.so" to "/workspace/destdir/lib"
+-- Installing: /workspace/destdir/lib/libfjcore.so
+-- Set runtime path of "/workspace/destdir/lib/libfjcore.so" to "/workspace/destdir/lib"
+ ---> VERBOSE=OFF cmake --build . --config Release --target install
+verbose sandbox enabled (running in unprivileged container mode)
+Parsed --rootfs as "/home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/Rootfs.v2018.11.11.x86_64-linux-gnu"
+Parsed --cd as "/workspace/srcdir"
+Parsed --workspace as "/home/travis/build/jstrube/build/x86_64-linux-gnu-gcc7-cxx11/QpwGOj6P" -> "/workspace"
+Parsed --workspace as "/home/travis/build/jstrube/build/x86_64-linux-gnu-gcc7-cxx11/QpwGOj6P/metadir" -> "/meta"
+Parsed --map as "/home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/BaseCompilerShard-x86_64-linux-gnu.v2018.11.11.x86_64-linux-gnu" -> "/opt/x86_64-linux-gnu/BaseCompilerShard-2018.11.11"
+Parsed --map as "/home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/GCC-x86_64-linux-gnu.v7.1.0.x86_64-linux-gnu" -> "/opt/x86_64-linux-gnu/GCC-7.1.0"
+Parsed --map as "/home/travis/.julia/packages/BinaryBuilder/vkHhH/deps/mounts/LLVM.v6.0.1-0.x86_64-linux-gnu" -> "/opt/x86_64-linux-gnu/LLVM-6.0.1-0"
+Child Process PID is 4423
+--> Mapping 2000:2000 to root:root within container namespace
+Child Process exited, exit code 0

@@ -1,0 +1,18 @@
+ERROR: LoadError: SystemError: opening file "/home/ec2-user/.julia/packages/FastJet/vlufD/deps/deps.jl": Permission denied
+Stacktrace:
+ [1] #systemerror#44(::Nothing, ::typeof(systemerror), ::String, ::Bool) at ./error.jl:134
+ [2] systemerror at ./error.jl:134 [inlined]
+ [3] #open#311(::Nothing, ::Nothing, ::Nothing, ::Bool, ::Nothing, ::typeof(open), ::String) at ./iostream.jl:289
+ [4] #open at ./none:0 [inlined]
+ [5] open(::String, ::String) at ./iostream.jl:345
+ [6] #open#312(::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(open), ::getfield(BinaryProvider, Symbol("##154#158")){Bool,String,Array{LibraryProduct,1},getfield(BinaryProvider, Symbol("##153#157")),SubString{String}}, ::String, ::Vararg{String,N} where N) at ./iostream.jl:373
+ [7] open at ./iostream.jl:373 [inlined]
+ [8] #write_deps_file#152(::Bool, ::typeof(write_deps_file), ::String, ::Array{LibraryProduct,1}) at /home/ec2-user/.julia/packages/BinaryProvider/TcAwt/src/Products.jl:419
+ [9] (::getfield(BinaryProvider, Symbol("#kw##write_deps_file")))(::NamedTuple{(:verbose,),Tuple{Bool}}, ::typeof(write_deps_file), ::String, ::Array{LibraryProduct,1}) at ./none:0
+ [10] top-level scope at /home/ec2-user/.julia/packages/FastJet/vlufD/deps/build.jl:41
+ [11] include at ./boot.jl:328 [inlined]
+ [12] include_relative(::Module, ::String) at ./loading.jl:1094
+ [13] include(::Module, ::String) at ./Base.jl:31
+ [14] include(::String) at ./client.jl:431
+ [15] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/FastJet/vlufD/deps/build.jl:41
