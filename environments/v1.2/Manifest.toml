@@ -3581,6 +3581,12 @@ git-tree-sha1 = "aed48d722e528bc634bd36a7d0e090fa2952a3c0"
 uuid = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
 version = "0.9.4"
 
+[[F1Method]]
+deps = ["DiffEqBase", "DualNumbers", "HyperDualNumbers", "LinearAlgebra"]
+git-tree-sha1 = "c04d50fe130bcfea4ed2f598c17be1e1ab1cc4f8"
+uuid = "d5605bae-6d76-11e9-2fd7-71bcf42edbaa"
+version = "0.2.1"
+
 [[FDM]]
 deps = ["LinearAlgebra", "Printf"]
 git-tree-sha1 = "51f56372090c3af1ce784610c5cf3c4c224563e4"
