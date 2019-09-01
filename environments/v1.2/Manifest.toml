@@ -3086,6 +3086,12 @@ git-tree-sha1 = "e4843d9579f6a653f8bda41c245f226d92cd1c6c"
 uuid = "d8047ffa-7f43-11e9-2204-adfbb6974ec5"
 version = "0.1.1"
 
+[[DynACof]]
+deps = ["CSV", "DataFrames", "Dates", "Documenter", "ForwardDiff", "Interpolations", "Optim", "ProgressMeter"]
+git-tree-sha1 = "bede9c71774dd38dacf80d611a29cd67f59dcb78"
+uuid = "d4e20bd3-38f5-51f3-b39d-16897e8b4820"
+version = "0.1.1"
+
 [[DynamicHMC]]
 deps = ["ArgCheck", "DataStructures", "DocStringExtensions", "LinearAlgebra", "LogDensityProblems", "Parameters", "Random", "Statistics", "StatsFuns", "TransformVariables"]
 git-tree-sha1 = "b1a272a63eebb2b58f5e370f243991244a52aa28"
