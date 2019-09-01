@@ -4477,6 +4477,12 @@ git-tree-sha1 = "94d91c4eae0ac0016a13dad900ce37f90247c287"
 uuid = "a03a9c34-069e-5582-a11c-5c984cab887c"
 version = "0.1.0"
 
+[[Git]]
+deps = ["BinDeps", "Homebrew", "Libdl", "Test", "VersionParsing"]
+git-tree-sha1 = "0419db5d174ec0fc26d67f05c7eaa010d4485e8a"
+uuid = "d7ba0133-e1db-5d97-8f8c-041e4b3a1eb2"
+version = "0.3.0"
+
 [[GitHub]]
 deps = ["Base64", "Compat", "Dates", "HTTP", "JSON", "MbedTLS", "Sockets", "Test"]
 git-tree-sha1 = "0224f2efcf87d783d64861e4a9ee08299164a569"
