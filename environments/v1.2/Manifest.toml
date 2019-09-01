@@ -2639,6 +2639,12 @@ git-tree-sha1 = "2a2efc80dfc274f1085108f8c61afe0a6b3f7efa"
 uuid = "01638602-6071-5c9b-be9d-28079212bf65"
 version = "0.5.0"
 
+[[Diana]]
+deps = ["HTTP", "JSON"]
+git-tree-sha1 = "65f36bfd3ae9ccf3340dd3f083b341e2f9334a74"
+uuid = "070d9d8b-17a7-5814-83fa-42438ba5c6e0"
+version = "0.2.0"
+
 [[Dierckx]]
 deps = ["BinaryProvider", "Libdl", "Random", "Test"]
 git-tree-sha1 = "27a74763c20938a814da26f31a9e8408d16fec44"
