@@ -4131,6 +4131,17 @@ git-tree-sha1 = "b31a20e1bdf0992f3b765c1ebe2f3faada27aa77"
 uuid = "91ca9103-c91c-5507-a6ff-05d8648e996f"
 version = "0.2.0"
 
+[[GAP]]
+deps = ["GAPTypes", "Libdl", "Pkg", "REPL"]
+git-tree-sha1 = "3754071595f52c1c8cf253410722aa6be702c884"
+uuid = "c863536a-3901-11e9-33e7-d5cd0df7b904"
+version = "0.2.0"
+
+[[GAPTypes]]
+git-tree-sha1 = "d6269367f194023a1b9bf05b41af2bbbabf0cc77"
+uuid = "cd4130c4-8d21-11e9-2a29-61e008680c2d"
+version = "1.0.0"
+
 [[GDAL]]
 deps = ["BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "100429098b7ec9930f7db9ba68aee3495365be24"

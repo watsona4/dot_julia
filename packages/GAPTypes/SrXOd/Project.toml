@@ -1,0 +1,7 @@
+name = "GAPTypes"
+uuid = "cd4130c4-8d21-11e9-2a29-61e008680c2d"
+authors = ["Sebastian Gutsche <gutsche@mathematik.uni-siegen.de>"]
+version = "1.0.0"
+
+[compat]
+julia = "1.1"
