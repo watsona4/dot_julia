@@ -1,0 +1,7 @@
+┌ Warning: 		Python Dependancies not installed
+│ 		Please either:
+│ 		 - Rebuild PyCall using the path to FEniCS using
+│ 		 - `ENV["PYTHON"]="/path/to/FEniCS"; Pkg.build("PyCall"); Pkg.build("FEniCS")`
+│ 		 - Or install the Dependancies using the Docker image provided
+│  
+└ @ Main ~/.julia/packages/FEniCS/3SbJb/deps/build.jl:14

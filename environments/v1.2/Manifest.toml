@@ -3635,6 +3635,12 @@ git-tree-sha1 = "7ef53966cfb0b679d81588d6ab55e32e5ed1b298"
 uuid = "dcdf9ed5-39e7-592a-90de-966c054b7718"
 version = "0.1.0"
 
+[[FEniCS]]
+deps = ["ProgressMeter", "PyCall", "Requires"]
+git-tree-sha1 = "ef6e2d95d0943065f491ba356259594b2117541c"
+uuid = "186dfeec-b415-5c13-8e76-5fbf19f56f9b"
+version = "0.3.0"
+
 [[FFMPEG]]
 deps = ["BinaryProvider", "Libdl"]
 git-tree-sha1 = "1dd2128ff10894081f30931b355dc892d1352de9"
