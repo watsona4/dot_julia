@@ -3398,6 +3398,12 @@ git-tree-sha1 = "60d860a7561096769c7553fdd6094bbc71cd7c21"
 uuid = "a8343a65-b356-5275-be17-d741438d126c"
 version = "0.0.1"
 
+[[EntropicCone]]
+deps = ["CutPruners", "LinearAlgebra", "MathProgBase", "Polyhedra", "SparseArrays", "StructDualDynProg", "Test"]
+git-tree-sha1 = "7242a67626b8a1079188a9ba23918941f467cb08"
+uuid = "46c19be6-bce2-539c-96b6-a48c64de3b10"
+version = "0.0.1"
+
 [[ErrorfreeArithmetic]]
 git-tree-sha1 = "a2b7d5a7962e5bfaab0e2e87c9cde7d3087f4e2c"
 uuid = "90fa49ef-747e-5e6f-a989-263ba693cf1a"
@@ -5688,6 +5694,12 @@ git-tree-sha1 = "9a2de84a1618e1702dbb95ebdbb84dbf7f24d1ab"
 uuid = "9672c7b4-1e72-59bd-8a11-6ac3964bc41f"
 version = "1.5.0"
 
+[[StochOptInterface]]
+deps = ["Compat", "DocStringExtensions", "LightGraphs", "TimerOutputs"]
+git-tree-sha1 = "81b9ad624b602e8440af3fd60eabef130d7bff09"
+uuid = "ddbffdd9-5b1a-5f20-b6eb-597a58a751db"
+version = "0.0.1"
+
 [[StochasticDiffEq]]
 deps = ["ArrayInterface", "DataStructures", "DiffEqBase", "DiffEqDiffTools", "DiffEqNoiseProcess", "FillArrays", "ForwardDiff", "LinearAlgebra", "Logging", "MuladdMacro", "NLsolve", "Parameters", "Random", "RandomNumbers", "RecursiveArrayTools", "Reexport", "SparseArrays", "SparseDiffTools", "StaticArrays"]
 git-tree-sha1 = "e288a36e42eb122b070de59190a0632065b19ebe"
@@ -5723,6 +5735,18 @@ deps = ["PooledArrays", "Requires"]
 git-tree-sha1 = "8b4ea677c4dfbcb538695e853207a9f70f84be20"
 uuid = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
 version = "0.4.0"
+
+[[StructDualDynProg]]
+deps = ["Compat", "CutPruners", "JuMP", "LightGraphs", "MathProgBase", "StochOptInterface", "StructJuMP", "TimerOutputs"]
+git-tree-sha1 = "911ccbc6e816cb5e8189efcf50f5d79027b3ef6d"
+uuid = "5d41aeb0-57df-5a94-a3c4-60ba49600646"
+version = "0.2.0"
+
+[[StructJuMP]]
+deps = ["Compat", "JuMP", "MathProgBase", "ReverseDiffSparse"]
+git-tree-sha1 = "af25e12c7e3d857285c0d30dae6fbedddca4ebbe"
+uuid = "34f15cae-5318-50c9-93d3-9feadd34e321"
+version = "0.1.0"
 
 [[SuiteSparse]]
 deps = ["Libdl", "LinearAlgebra", "Serialization", "SparseArrays"]
