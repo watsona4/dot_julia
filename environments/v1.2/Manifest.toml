@@ -4543,6 +4543,12 @@ git-tree-sha1 = "96a8c98805e3635f189c49903fffbad725e5de46"
 uuid = "55e21f81-8b0a-565e-b5ad-6816892a5ee7"
 version = "0.8.0"
 
+[[GoogleCloudObjectStores]]
+deps = ["GoogleCloud", "JSON", "ObjectStores", "Reexport", "Test"]
+git-tree-sha1 = "286f5e20e5758866d17acb9f1895cc96cb8897cf"
+uuid = "2a67aa01-6213-50f9-bb91-c167b72acb78"
+version = "0.1.0"
+
 [[GradDescent]]
 deps = ["Distributions", "ForwardDiff", "LinearAlgebra", "Random", "Test"]
 git-tree-sha1 = "2180f700605eb0ad851f54577855c6a8f13b9a20"
@@ -5703,6 +5709,12 @@ deps = ["Compat"]
 git-tree-sha1 = "ae1a63457e14554df2159b0b028f48536125092d"
 uuid = "4d1e1d77-625e-5b40-9113-a560ec7a8ecd"
 version = "0.0.8"
+
+[[ObjectStores]]
+deps = ["Authorization", "Logging", "Test"]
+git-tree-sha1 = "85fd0cf856a804f9f72f0efbfcc60a3ae3b5faca"
+uuid = "03c2b57b-fb4c-5576-ac09-ef0ca0563633"
+version = "0.3.0"
 
 [[Observables]]
 deps = ["Test"]
