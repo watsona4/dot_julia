@@ -3552,6 +3552,12 @@ git-tree-sha1 = "5302aa656a312c234d87a3ec94924fde82961e09"
 uuid = "95c220a8-a1cf-11e9-0c77-dbfce5f500b3"
 version = "0.1.1"
 
+[[ExtensibleScheduler]]
+deps = ["DataStructures", "Dates", "Test", "TimeFrames", "TimeZones", "UUIDs"]
+git-tree-sha1 = "5230fac8ebbae92240c1a78a5def697905e17c97"
+uuid = "6837a093-145e-5c9b-b5ad-3b557e31aa31"
+version = "0.1.1"
+
 [[EzXML]]
 deps = ["BinaryProvider", "Libdl", "Printf"]
 git-tree-sha1 = "aed48d722e528bc634bd36a7d0e090fa2952a3c0"
@@ -6050,6 +6056,12 @@ deps = ["OffsetArrays", "Test"]
 git-tree-sha1 = "58f6f07d3b54a363ec283a8f5fc9fb4ecebde656"
 uuid = "06e1c1a7-607b-532d-9fad-de7d9aa2abac"
 version = "0.2.3"
+
+[[TimeFrames]]
+deps = ["Dates", "Test"]
+git-tree-sha1 = "168631df303a1b26c7d33db6a463f8a9da3a3fdf"
+uuid = "51948d2b-02eb-5b28-9840-c902cc6821c9"
+version = "0.2.0"
 
 [[TimeSeries]]
 deps = ["Dates", "DelimitedFiles", "RecipesBase", "Reexport", "Statistics", "Tables"]
