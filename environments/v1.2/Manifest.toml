@@ -2386,6 +2386,12 @@ git-tree-sha1 = "8903f0219d3472543fc4b2f5ebaf675a07f817c0"
 uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
 version = "1.0.1"
 
+[[DataArrays]]
+deps = ["Missings", "Reexport", "SpecialFunctions", "StatsBase"]
+git-tree-sha1 = "494cb14e8ca5912ded3652f11f9e67914c437a47"
+uuid = "0fe7c1db-08c2-54a3-a222-6d1d3b7a471a"
+version = "0.7.0"
+
 [[DataDeps]]
 deps = ["HTTP", "Reexport", "SHA"]
 git-tree-sha1 = "c18e7b5ee4c7ff080d99ec03f553c95ad071a879"
