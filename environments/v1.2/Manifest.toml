@@ -3863,6 +3863,12 @@ git-tree-sha1 = "c212e8acdba3678fe3e26021b6b4fa563e17d7e5"
 uuid = "91bb5406-6c9a-523d-811d-0644c4229550"
 version = "3.0.1"
 
+[[FinancialDerivatives]]
+deps = ["Distributions", "Statistics", "Test"]
+git-tree-sha1 = "ec455e3c64b619fda63a3d408099a4d7aa627bdc"
+uuid = "43843433-91eb-5384-8a0e-cbb992997742"
+version = "0.0.1"
+
 [[FixedPointDecimals]]
 deps = ["Printf", "Test"]
 git-tree-sha1 = "b17a731934600b835150b7882238e7f06f8be368"
