@@ -2345,6 +2345,12 @@ git-tree-sha1 = "1082402cab5c1c0f6a9d76c250c061f2d9122bda"
 uuid = "2841fd70-8698-11e9-176d-6dfa142d2ee7"
 version = "0.1.3"
 
+[[DSGE]]
+deps = ["BenchmarkTools", "CSV", "Calculus", "ClusterManagers", "ColorTypes", "DataFrames", "DataStructures", "Dates", "DelimitedFiles", "DifferentialEquations", "Distributed", "Distributions", "FFTW", "FileIO", "ForwardDiff", "FredData", "GR", "HDF5", "InteractiveUtils", "JLD2", "LinearAlgebra", "MbedTLS", "Missings", "Nullables", "Optim", "OrderedCollections", "PDMats", "Plots", "Printf", "QuantEcon", "Random", "RecipesBase", "Roots", "SparseArrays", "SpecialFunctions", "StateSpaceRoutines", "Statistics", "StatsBase", "StatsFuns", "StatsPlots", "Test"]
+git-tree-sha1 = "13162c593255b2ac09504da58872857bae35c775"
+uuid = "6cf23378-2c47-544c-b0c3-6efefe57ca11"
+version = "0.7.2"
+
 [[DSP]]
 deps = ["FFTW", "LinearAlgebra", "Polynomials", "Random", "Reexport", "SpecialFunctions", "Statistics"]
 git-tree-sha1 = "fd5dc811fc47f8c31274712d887c466bea0841c8"
@@ -2854,6 +2860,12 @@ deps = ["CommonSubexpressions", "DiffResults", "DiffRules", "InteractiveUtils", 
 git-tree-sha1 = "4c4d727f1b7e0092134fabfab6396b8945c1ea5b"
 uuid = "f6369f11-7733-5829-9624-2563aa707210"
 version = "0.10.3"
+
+[[FredData]]
+deps = ["DataFrames", "Dates", "HTTP", "JSON", "Printf", "Test"]
+git-tree-sha1 = "69b4644137005c7cad854db7425ba5347c79e54a"
+uuid = "6e85b7ee-7d24-5488-b1b7-e4f4198c51ac"
+version = "0.3.0"
 
 [[FreeType]]
 deps = ["BinaryProvider", "Libdl", "Pkg", "Test"]
@@ -4655,6 +4667,12 @@ deps = ["Conda", "Distances", "Distributions", "LinearAlgebra", "NearestNeighbor
 git-tree-sha1 = "211298d65326fd109bb00c92ce0adca0f4c09435"
 uuid = "1441a9f6-6a74-5418-a591-cdf1d78a07f0"
 version = "0.3.1"
+
+[[StateSpaceRoutines]]
+deps = ["Distributed", "Distributions", "FileIO", "HDF5", "JLD2", "LinearAlgebra", "PDMats", "QuantEcon", "Random", "Roots", "SharedArrays", "Statistics", "Test"]
+git-tree-sha1 = "74f7048cfba95490d6a0578c330087d235535185"
+uuid = "261fd431-d7e4-51f7-86ab-ce9e57fc1fff"
+version = "0.2.0"
 
 [[StaticArrays]]
 deps = ["LinearAlgebra", "Random", "Statistics"]

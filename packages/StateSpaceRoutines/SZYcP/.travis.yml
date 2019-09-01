@@ -1,0 +1,24 @@
+language: julia
+os:
+    - osx
+    - linux
+julia:
+    - 0.7
+notifications:
+    email: false
+addons:
+  apt:
+    packages:
+    - hdf5-tools
+    - libnlopt0
+    homebrew:
+      packages:
+      - hdf5
+script:
+    - julia --color=yes -e 'using Pkg; Pkg.build()'
+    - julia --check-bounds=yes --color=yes -e 'using Pkg; Pkg.test(coverage=true)'
+branches:
+  only:
+    - master
+after_success:
+- julia -e 'using Pkg; cd(Pkg.dir("StateSpaceRoutines")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(process_folder())'
