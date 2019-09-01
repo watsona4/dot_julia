@@ -1,0 +1,23 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+    - 0.7
+    - 1.0
+    - 1.1
+    - nightly
+notifications:
+    email: false
+
+addons:
+  apt:
+    packages:
+    - hdf5-tools
+
+sudo: false
+#script:
+#    - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#    - julia -e 'Pkg.clone(pwd()); Pkg.build("GitHub"); Pkg.test("GitHub"; coverage=true)';
+after_success:
+    - julia -e 'cd(Pkg.dir("GitHub")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
