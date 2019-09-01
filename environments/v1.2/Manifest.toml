@@ -3158,6 +3158,12 @@ git-tree-sha1 = "4a7dcf7272a54790834ac38410bce40b7cedadb3"
 uuid = "f9630f5b-a116-5b0c-bd6c-4699aee17694"
 version = "0.1.1"
 
+[[EDFPlus]]
+deps = ["DSP", "Dates", "IterTools", "Test"]
+git-tree-sha1 = "1429dc227b8585ad0b84b06ce4e5fcbf1dacd8cc"
+uuid = "582d7a84-78fd-59ab-a7bb-47fc6b175004"
+version = "0.0.5"
+
 [[EarthOrientation]]
 deps = ["Dates", "DelimitedFiles", "LeapSeconds", "OptionalData", "RemoteFiles", "Test"]
 git-tree-sha1 = "7ceae02eea4ffa57be45c47b237aca093926badc"
