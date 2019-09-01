@@ -2597,6 +2597,12 @@ git-tree-sha1 = "4c7ecc5b38fd34a631ff1c08b2a56ffb8d4f35ea"
 uuid = "d8da5c1c-6f31-57d0-a642-102aa94a823b"
 version = "0.2.1"
 
+[[DependenciesParser]]
+deps = ["Pkg", "Test"]
+git-tree-sha1 = "73058ba57a35e0508b386b87909d35649b3f218d"
+uuid = "074bffb8-faa7-59ba-9894-a592f955b684"
+version = "0.2.0"
+
 [[Dierckx]]
 deps = ["BinaryProvider", "Libdl", "Random", "Test"]
 git-tree-sha1 = "27a74763c20938a814da26f31a9e8408d16fec44"

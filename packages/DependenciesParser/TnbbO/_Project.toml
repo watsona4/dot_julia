@@ -1,0 +1,19 @@
+name = "DependenciesParser"
+uuid = "074bffb8-faa7-59ba-9894-a592f955b684"
+keywords = ["Dependency", "Parser", "Ecosystem", "Metadata"]
+license = "ISC"
+description = "Dependency Parser for Julia"
+repository = "https://github.com/Nosferican/DependenciesParser.jl.git"
+version = "0.2.0"
+
+[deps]
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

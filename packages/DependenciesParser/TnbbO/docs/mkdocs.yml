@@ -1,0 +1,9 @@
+site_name:        DependenciesParser.jl
+repo_url:         https://github.com/Nosferican/DependenciesParser.jl
+site_description: DependenciesParser Docs
+site_author:      José Bayoán Santiago Calderón
+
+theme: material
+
+extra_css:
+  - assets/Documenter.css
