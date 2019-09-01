@@ -1,0 +1,11 @@
+language: julia
+
+os:
+    - linux
+
+julia:
+    - 1.0
+    - nightly
+
+after_success:
+    - julia -e 'cd(Pkg.dir("FEMSparse")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
