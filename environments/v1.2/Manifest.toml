@@ -4400,6 +4400,12 @@ git-tree-sha1 = "83edef15538ad73cf81a24019866467f71f3d477"
 uuid = "19e549d1-356f-5655-9f3d-c1d6136da705"
 version = "0.4.5"
 
+[[GeoStatsImages]]
+deps = ["DelimitedFiles"]
+git-tree-sha1 = "ad5065433807f9551541fa6d0ea2c9bf34a47e8b"
+uuid = "7cd16168-b42c-5e7d-a585-4f59d326662d"
+version = "0.3.1"
+
 [[GeometryTypes]]
 deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "2b0bfb379a54bdfcd2942f388f7d045f8952373d"
