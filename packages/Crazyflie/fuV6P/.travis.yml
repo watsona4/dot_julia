@@ -1,0 +1,25 @@
+language: julia
+
+os:
+  - linux
+dist: bionic
+
+julia:
+  - 1.1
+  - nightly
+
+matrix:
+ allow_failures:
+ - julia: nightly
+
+notifications:
+  email: false
+
+before_install:
+  - sudo apt-get install python3 python3-pip python3-setuptools
+  - pip3 install git+https://github.com/bitcraze/crazyflie-lib-python.git
+  - pip3 install pyusb
+
+after_success:
+  # push coverage results to Codecov
+- julia -e 'using Pkg; cd(Pkg.dir("Crazyflie")); Pkg.add("git@github.com:arlk/Crazyflie.jl"); using Coverage; Codecov.submit(Codecov.process_folder())'
