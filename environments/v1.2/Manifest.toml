@@ -3671,6 +3671,12 @@ git-tree-sha1 = "6624bd0cdd03aa82df34d3eac56ab77ff696472e"
 uuid = "525bcba6-941b-5504-bd06-fd0dc1a4d2eb"
 version = "0.14.0"
 
+[[FLANN]]
+deps = ["BinDeps", "Distances", "Libdl"]
+git-tree-sha1 = "ca77a32f095271f19febf8ebe672cfb4b74f820d"
+uuid = "4ef67f76-e0de-5105-ac01-03b6482fb4f8"
+version = "1.0.1"
+
 [[FTPClient]]
 deps = ["LibCURL", "URIParser"]
 git-tree-sha1 = "e0617188d5abfb9955663158c95e71ae215f8904"
