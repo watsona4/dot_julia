@@ -4208,6 +4208,12 @@ git-tree-sha1 = "f2286cb236af62c5fbab2730afee591d7e270c38"
 uuid = "5752ebe1-31b9-557e-87aa-f909b540aa54"
 version = "0.11.0"
 
+[[GNSSSignals]]
+deps = ["DataStructures", "DocStringExtensions", "StaticArrays", "Test", "Unitful"]
+git-tree-sha1 = "7a2998eee5bcf348a95f253c11a9b2aa7fadbc37"
+uuid = "52c80523-2a4e-5c38-8979-05588f836870"
+version = "0.9.1"
+
 [[GR]]
 deps = ["Base64", "DelimitedFiles", "LinearAlgebra", "Pkg", "Printf", "Random", "Serialization", "Sockets", "Test"]
 git-tree-sha1 = "b4c31b6377b6d51b6c69a3a9737d10c34d43974e"
