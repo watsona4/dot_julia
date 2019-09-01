@@ -4220,6 +4220,12 @@ git-tree-sha1 = "dd169c636d1d3656a9faca772f5bd7c226a61254"
 uuid = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
 version = "1.0.1"
 
+[[GPUifyLoops]]
+deps = ["Cassette", "Requires", "StaticArrays"]
+git-tree-sha1 = "d71c32197caf7dadab270dc10b0f7dce20c9947b"
+uuid = "ba82f77b-6841-5d2e-bd9f-4daf811aec27"
+version = "0.2.8"
+
 [[GR]]
 deps = ["Base64", "DelimitedFiles", "LinearAlgebra", "Pkg", "Printf", "Random", "Serialization", "Sockets", "Test"]
 git-tree-sha1 = "b4c31b6377b6d51b6c69a3a9737d10c34d43974e"
