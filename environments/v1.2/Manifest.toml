@@ -7899,6 +7899,12 @@ git-tree-sha1 = "adde9ad01842a4f62c3724b8707bed90293f0f3f"
 uuid = "46757867-2c16-5918-afeb-47bfcb05e46a"
 version = "0.2.0"
 
+[[NetworkLearning]]
+deps = ["DelimitedFiles", "Distances", "Future", "LearnBase", "LightGraphs", "LinearAlgebra", "MLDataPattern", "MLLabelUtils", "Random", "SimpleWeightedGraphs", "SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "ab902cd9606bb1fad07699c92593e881388e5e11"
+uuid = "e2554591-2d5a-5553-bb4c-ff0ef3342964"
+version = "0.1.1"
+
 [[NodeJS]]
 deps = ["Test"]
 git-tree-sha1 = "74b1bd25ec1709609462c1ab4b383dd463c57df9"
