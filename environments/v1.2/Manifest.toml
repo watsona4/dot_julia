@@ -7352,6 +7352,12 @@ git-tree-sha1 = "f4f8fa8d04d3c1e7294f07fc37586c819466ad38"
 uuid = "66fc600b-dfda-50eb-8b99-91cfa97b1301"
 version = "1.0.0"
 
+[[ModernRoboticsBook]]
+deps = ["LinearAlgebra", "Test"]
+git-tree-sha1 = "c69a55a0679ceb3aa12e77dae3617fb106a410ae"
+uuid = "5e1d693a-52d4-54aa-90a0-6f94c7384aed"
+version = "0.1.1"
+
 [[ModuleInterfaceTools]]
 git-tree-sha1 = "137fe5b646de73455486043ba766490722f0546c"
 uuid = "5cb8414e-7aab-5a03-a681-351269c074bf"
