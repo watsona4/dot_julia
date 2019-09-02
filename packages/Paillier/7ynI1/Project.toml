@@ -1,0 +1,18 @@
+name = "Paillier"
+uuid = "84e01822-a062-59e4-8289-aa032edeecdd"
+authors = ["Brian Thorne <brian@thorne.link>"]
+version = "0.2.4"
+
+[deps]
+Polynomials = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
+Primes = "27ebfcd6-29c5-5fa9-bf4b-fb8fc14df3ae"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[compat]
+julia = "1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

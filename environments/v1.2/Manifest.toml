@@ -8411,6 +8411,12 @@ git-tree-sha1 = "da02b5cdabdf3a850dad6a92167ef9e45fe144bf"
 uuid = "7c165e09-dada-5b64-9fdc-39b801c58527"
 version = "0.3.1"
 
+[[Paillier]]
+deps = ["Polynomials", "Primes", "Random"]
+git-tree-sha1 = "4da59ccc00548b8765b74909f7be4be998eab061"
+uuid = "84e01822-a062-59e4-8289-aa032edeecdd"
+version = "0.2.4"
+
 [[PairwiseListMatrices]]
 deps = ["DelimitedFiles", "LinearAlgebra", "NamedArrays", "Pkg", "RecipesBase", "Statistics", "Test"]
 git-tree-sha1 = "2ead40f9c4cd83103b78f0afdd19e2b066eb6bc1"
