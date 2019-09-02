@@ -1,0 +1,8 @@
+*.jl.cov
+*.jl.mem
+*.swp
+doc/_build/*
+doc/_static/*
+doc/_templates/*
+doc/src/*
+docs/build

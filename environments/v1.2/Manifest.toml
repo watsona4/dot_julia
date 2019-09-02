@@ -6837,6 +6837,12 @@ git-tree-sha1 = "84b9b1c951a9adf2c96c58a6214743a997e7f734"
 uuid = "d491faf4-2d78-11e9-2867-c94bc002c0b7"
 version = "0.2.3"
 
+[[MLKernels]]
+deps = ["LinearAlgebra", "SpecialFunctions", "Statistics", "Test"]
+git-tree-sha1 = "d8ae6ac28480a25ddaae9ad9108371035ef9a346"
+uuid = "6899632a-1081-549c-8d71-752c8a25a7ba"
+version = "0.4.0"
+
 [[MLLabelUtils]]
 deps = ["LearnBase", "MappedArrays", "StatsBase", "Test"]
 git-tree-sha1 = "396eecfa05bf6e7628fc5fc3820545fce6620623"
