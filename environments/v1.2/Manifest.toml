@@ -7309,6 +7309,12 @@ git-tree-sha1 = "f0719736664b4358aa9ec173077d4285775f8007"
 uuid = "e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28"
 version = "0.4.1"
 
+[[MittagLeffler]]
+deps = ["QuadGK", "SpecialFunctions", "Test"]
+git-tree-sha1 = "6054372e7c5beed1f72c6ecbe12ebc99f13a6e40"
+uuid = "9c257583-4f8f-53fd-abd9-c69d5080dd54"
+version = "0.1.1"
+
 [[MixedSubdivisions]]
 deps = ["LinearAlgebra", "MultivariatePolynomials", "ProgressMeter", "StaticArrays"]
 git-tree-sha1 = "ffbb5977a358cbd50288caa60954596ca32a3b34"
