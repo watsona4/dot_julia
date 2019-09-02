@@ -1,0 +1,9 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+.DS_Store
+test/credentials.jl
+build
+src/toimplement.jl
+docs/build/
+docs/site/
