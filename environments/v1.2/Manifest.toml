@@ -7238,6 +7238,12 @@ git-tree-sha1 = "28644001ec87dbb9900bfe709b3a68f54be27b93"
 uuid = "49441bc9-da82-574f-b07c-a0d10dd4ac13"
 version = "0.1.0"
 
+[[Metis]]
+deps = ["BinaryProvider", "Libdl", "LightGraphs", "LinearAlgebra", "Random", "SparseArrays", "Test"]
+git-tree-sha1 = "5d13bbd3caa04d9f0aacb77ceeccbe32b57b2b20"
+uuid = "2679e427-3c69-5b7f-982b-ece356f1e94b"
+version = "0.1.0"
+
 [[Microbiome]]
 deps = ["Clustering", "DataFrames", "Distances", "LinearAlgebra", "Random", "Reexport", "SpatialEcology", "Statistics", "StatsBase", "Test"]
 git-tree-sha1 = "2596f1cf9228fb65621b28989ab7dd1307f0a28e"
