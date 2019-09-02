@@ -7285,6 +7285,12 @@ git-tree-sha1 = "c6d4a61d1b74ba35b1efe5cb025bf852145521e1"
 uuid = "39ec1447-df44-5f4c-beaa-866f30b4d3b2"
 version = "0.2.1"
 
+[[Mimi]]
+deps = ["CSVFiles", "Compose", "DataFrames", "DataStructures", "Dates", "DelimitedFiles", "Distributions", "Electron", "FileIO", "FilePaths", "GlobalSensitivityAnalysis", "GraphPlot", "IterTools", "IteratorInterfaceExtensions", "JSON", "LightGraphs", "LinearAlgebra", "Logging", "MacroTools", "MetaGraphs", "NamedArrays", "Pkg", "ProgressMeter", "Random", "Serialization", "Statistics", "StatsBase", "StringBuilders", "TableTraits", "VegaLite"]
+git-tree-sha1 = "894c3a3cace71225ced43e7a980a6863b15124b1"
+uuid = "e4e893b0-ee5e-52ea-8111-44b3bdec128c"
+version = "0.9.1"
+
 [[Missings]]
 deps = ["SparseArrays", "Test"]
 git-tree-sha1 = "f0719736664b4358aa9ec173077d4285775f8007"
@@ -8588,6 +8594,12 @@ deps = ["Dates"]
 git-tree-sha1 = "5998faae8c6308acc25c25896562a1e66a3bb038"
 uuid = "9700d1a9-a7c8-5760-9816-a99fda30bb8f"
 version = "1.0.1"
+
+[[StringBuilders]]
+deps = ["Test"]
+git-tree-sha1 = "f1ca94badd76e66cf86402516079ffc792e12a98"
+uuid = "db12335b-fddc-5e1b-b0ee-42071d21ae50"
+version = "0.2.0"
 
 [[StringDistances]]
 deps = ["DataStructures", "Distances", "Random", "Test"]
