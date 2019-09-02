@@ -4985,6 +4985,12 @@ git-tree-sha1 = "c4b2860534dd0d6bc121606642975acb6fdbd98e"
 uuid = "0111da9b-5c18-507b-82d1-0701aba3485a"
 version = "0.2.3"
 
+[[HypergeometricFunctions]]
+deps = ["DualNumbers", "LinearAlgebra", "SpecialFunctions", "Test"]
+git-tree-sha1 = "6b21e381c84e083d40a6681917ea400b51a9eca5"
+uuid = "34004b35-14d8-5ef3-9330-4cdb6864b03a"
+version = "0.1.0"
+
 [[HypothesisTests]]
 deps = ["Combinatorics", "Distributions", "LinearAlgebra", "Random", "Rmath", "Roots", "Statistics", "StatsBase", "Test"]
 git-tree-sha1 = "0fe2b78bd7cadcaed2071aab7ed12b40d220c392"
