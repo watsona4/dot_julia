@@ -7335,6 +7335,11 @@ git-tree-sha1 = "7f42a32a8cef08f45d43c35663e73bd4e3b35f6d"
 uuid = "78c3b35d-d492-501b-9361-3d52fe80e533"
 version = "0.6.0"
 
+[[ModelSanitizer]]
+git-tree-sha1 = "4d0b76fce1f2b7d770db779326aebb4e8bea1025"
+uuid = "913cd07a-ab48-11e9-38cf-61416429a70b"
+version = "0.3.0"
+
 [[ModelingToolkit]]
 deps = ["DiffEqBase", "DiffRules", "DocStringExtensions", "LinearAlgebra", "MacroTools", "NaNMath", "SparseArrays", "SpecialFunctions", "StaticArrays"]
 git-tree-sha1 = "2cee0f3f7b062867193fee3e182ccbcfe991c1b8"

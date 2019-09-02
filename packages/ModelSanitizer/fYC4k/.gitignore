@@ -1,0 +1,15 @@
+*.jl.*.cov
+*.jl.cov
+*.jl.mem
+.*.sw?
+.*~
+.DS_Store
+/dev/
+benchmark/benchmarkingenvironment/
+benchmark/params.jld
+benchmark/tune.json
+deps/already_showed
+deps/build.log
+docs/build
+Manifest.toml
+test/x.json
