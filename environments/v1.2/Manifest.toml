@@ -6276,6 +6276,12 @@ git-tree-sha1 = "4019b6d3d557f9195d1deea7cef755df2c24f076"
 uuid = "3db4a2ba-fc88-11e8-3e01-49c72059a882"
 version = "0.1.0"
 
+[[LegibleLambdas]]
+deps = ["MLStyle", "MacroTools", "Test"]
+git-tree-sha1 = "987298a681f4946b0d5d87ded1e89b53957d3b07"
+uuid = "f1f30506-32fe-5131-bd72-7c197988f9e5"
+version = "0.2.0"
+
 [[Leibniz]]
 deps = ["AbstractLattices", "AbstractTensors", "DirectSum", "LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "e9c2016500178abed325592026f307e50ac492d8"
