@@ -4848,6 +4848,12 @@ git-tree-sha1 = "7c040e4b610668e9fa050a6208268d0b850a624d"
 uuid = "3e1990a7-5d81-5526-99ce-9ba3ff248f21"
 version = "0.6.5"
 
+[[Hermetic]]
+deps = ["Calculus", "Combinatorics", "Compat", "Documenter", "LinearAlgebra", "Markdown", "Test"]
+git-tree-sha1 = "703fad61df6639b485ea6ecb2880bd0d628291f4"
+uuid = "b255c96a-a4ac-5b61-a2c4-3db36d36609d"
+version = "0.2.0"
+
 [[Hexagons]]
 deps = ["Test"]
 git-tree-sha1 = "de4a6f9e7c4710ced6838ca906f81905f7385fd6"
