@@ -6091,6 +6091,12 @@ git-tree-sha1 = "e19c49a2b18b8e98588f666a06bea0c5d3e7b0a6"
 uuid = "266f59ce-6e72-579c-98bb-27b39b5c037e"
 version = "0.1.1"
 
+[[LaTeX_Entities]]
+deps = ["LightXML", "StrTables"]
+git-tree-sha1 = "8cbd80230cfdde937d5e317a47792d1753309f57"
+uuid = "9927f19a-46ce-5bdd-a20a-f46a78b61e3d"
+version = "1.0.0"
+
 [[LambertW]]
 deps = ["Test"]
 git-tree-sha1 = "ec5a59b498330ac1e5b1c505c46dc53dcefdf90e"
