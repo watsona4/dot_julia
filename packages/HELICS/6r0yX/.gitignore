@@ -1,0 +1,8 @@
+deps/build.log
+deps/apple/*
+deps/linux/*
+deps/windows/*
+deps/output/*
+docs/build/*
+docs/src/index.md
+docs/site

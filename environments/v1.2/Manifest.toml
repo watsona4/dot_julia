@@ -4747,6 +4747,12 @@ git-tree-sha1 = "5682158c5200c4568df03a58f17d2416c1c84486"
 uuid = "a770b2f2-aca6-5e76-943a-580dc53aa03d"
 version = "1.0.0"
 
+[[HELICS]]
+deps = ["Libdl", "Test"]
+git-tree-sha1 = "e1a9ae71f4d5e297f427eb925c1f6915e34dfc2d"
+uuid = "81524022-8764-5038-b61c-08cb1f58760f"
+version = "0.2.2"
+
 [[HSARuntime]]
 deps = ["CEnum", "Libdl", "Setfield"]
 git-tree-sha1 = "ea40d80684b6f986599f19b1840abc00af4a399b"
