@@ -1,0 +1,6 @@
+Requirement already up-to-date: pip in /home/ec2-user/.local/lib/python3.7/site-packages (19.2.3)
+Requirement already up-to-date: setuptools in /home/ec2-user/.local/lib/python3.7/site-packages (41.2.0)
+Requirement already satisfied: ezodf in /home/ec2-user/.local/lib/python3.7/site-packages (0.3.2)
+Requirement already satisfied: lxml in /home/ec2-user/.local/lib/python3.7/site-packages (4.4.1)
+Running build.jl for the OdsIO package.
+Installing required python packages using pip
