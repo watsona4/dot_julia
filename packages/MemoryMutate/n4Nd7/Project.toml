@@ -1,0 +1,10 @@
+name = "MemoryMutate"
+uuid = "a5f39ad1-fb6e-5f16-afbb-4d8233a49418"
+authors = ["Marcus Christian Lehmann <lehmann_ch@web.de>"]
+version = "0.0.4"
+
+[deps]
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[compat]
+StaticArrays = "^0.8, ^0.9, ^0.10"
