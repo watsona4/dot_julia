@@ -8079,6 +8079,11 @@ git-tree-sha1 = "e3910c6bd5d790b9b0a8ab98ac4f9b98172e547a"
 uuid = "b729bf19-12cd-5270-a5a7-361c22ea64b8"
 version = "0.1.3"
 
+[[OOPMacro]]
+git-tree-sha1 = "3dc50b08d69a015d4cb91f0dcff0ed2f4973b1e1"
+uuid = "90c472d1-064c-5c63-af2e-229f1fdb5f26"
+version = "0.3.0"
+
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"
