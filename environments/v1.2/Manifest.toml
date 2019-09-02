@@ -7297,6 +7297,12 @@ git-tree-sha1 = "4f2f5ca0663afa0172db23bbdd99e683dd17fb0e"
 uuid = "f59402ec-0262-5707-a561-770af94bc5a6"
 version = "0.2.0"
 
+[[MirroredArrayViews]]
+deps = ["Random", "Test"]
+git-tree-sha1 = "98c7046c55aca05e3bcd0692e008023b7e8e1882"
+uuid = "b32b01fb-8833-5495-9754-2f5f3e3ebfd4"
+version = "1.0.0"
+
 [[Missings]]
 deps = ["SparseArrays", "Test"]
 git-tree-sha1 = "f0719736664b4358aa9ec173077d4285775f8007"
