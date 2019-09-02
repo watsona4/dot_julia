@@ -7044,6 +7044,12 @@ git-tree-sha1 = "d73dc866267bea94a5c4285453aeed187bfe35d7"
 uuid = "0087ddc6-3964-5e57-817f-9937aefb0357"
 version = "0.5.2"
 
+[[MathPhysicalConstants]]
+deps = ["Test"]
+git-tree-sha1 = "9574d0795f6b83ab0279f3b4aa730c8b558abb7e"
+uuid = "b5851bab-7749-5a5f-a75f-46072e3516e8"
+version = "0.0.5"
+
 [[MathProgBase]]
 deps = ["Compat"]
 git-tree-sha1 = "3bf2e534e635df810e5f4b4f1a8b6de9004a0d53"
