@@ -8507,6 +8507,12 @@ git-tree-sha1 = "ef0af6c8601db18c282d092ccbd2f01f3f0cd70b"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
 version = "0.3.7"
 
+[[PartedArrays]]
+deps = ["Test"]
+git-tree-sha1 = "802627af8bf3ad7e55882c5edefb318dd1ada8e3"
+uuid = "c45eb73e-4025-11e9-27c7-23913323ccd5"
+version = "0.1.0"
+
 [[PenaltyFunctions]]
 deps = ["InteractiveUtils", "LearnBase", "LinearAlgebra", "RecipesBase", "Reexport", "Test"]
 git-tree-sha1 = "b0baaa5218ca0ffd6a8ae37ef0b58e0df688ac8b"
