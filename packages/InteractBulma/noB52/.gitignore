@@ -1,0 +1,10 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*play.jl
+assets/sass/
+*.sass
+*.min.css
+assets/all.js
+assets/_*.scss
+deps/build.log

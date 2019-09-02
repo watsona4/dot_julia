@@ -1,0 +1,30 @@
+.interact-widget {
+    @import "variables";
+    @import "bulma.sass";
+    @import "bulma-switch.sass";
+    @import "bulma-slider.sass";
+    @import "bulma-accordion.sass";
+    @import "bulma-checkradio.sass";
+    @import "bulma-tooltip.sass";
+    &.rangeslider {
+        .noUi-connect{
+            background-color: $grey;
+        }
+    }
+    @each $name, $pair in $colors {
+        $color: nth($pair, 1);
+        &.rangeslider.is-#{$name} {
+            .noUi-connect {
+                background-color: $color;
+            }
+        }
+    }
+    @each $name, $color in $shades {
+        &.rangeslider.is-#{$name} {
+            .noUi-connect {
+                background-color: $color;
+            }
+        }
+    }
+    @import "overrides";
+}
