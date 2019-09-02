@@ -8019,6 +8019,12 @@ git-tree-sha1 = "36337e5cc57a1152007f4f1f36a89d94a4c9c7de"
 uuid = "be6f12e9-ca4f-5eb2-a339-a4f995cc0291"
 version = "0.8.5"
 
+[[ODE]]
+deps = ["Compat", "DiffEqBase", "LinearAlgebra", "Polynomials", "Reexport", "Test"]
+git-tree-sha1 = "a9254608dde4ae0d9a40192e08585451a8fd6ad9"
+uuid = "c030b06c-0b6d-57c2-b091-7029874bd033"
+version = "2.4.0"
+
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"
