@@ -6489,6 +6489,12 @@ git-tree-sha1 = "b32e88a3a99685a38780f5b31fc1e0af28f01477"
 uuid = "7a12625a-238d-50fd-b39a-03d52299707e"
 version = "2.5.1"
 
+[[LinearMapsAA]]
+deps = ["LinearAlgebra", "LinearMaps", "SparseArrays", "Test"]
+git-tree-sha1 = "fe7617433e75ef5eb2de3ad3be90d49d4616c3ec"
+uuid = "599c1a8e-b958-11e9-0d14-b1e6b2ecea07"
+version = "0.2.0"
+
 [[LinearOperators]]
 deps = ["FastClosures", "LinearAlgebra", "Printf", "SparseArrays", "Test"]
 git-tree-sha1 = "316d05c6b0df402efc110a3cfb0c0a365171fb51"
