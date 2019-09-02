@@ -6109,6 +6109,12 @@ git-tree-sha1 = "db1a78a5787f9938938ec8dede4b53ca51b7cdc0"
 uuid = "2ee39098-c373-598a-b85f-a56591580800"
 version = "0.7.1"
 
+[[LambdaFn]]
+deps = ["MacroTools", "Printf"]
+git-tree-sha1 = "20140392eb6db1696f0909957add897441ed8d7f"
+uuid = "fcefd6c4-8de0-11e9-0d15-03bc7c8ec982"
+version = "0.2.1"
+
 [[LambertW]]
 deps = ["Test"]
 git-tree-sha1 = "ec5a59b498330ac1e5b1c505c46dc53dcefdf90e"
