@@ -1,0 +1,3 @@
+# POMDPToolbox
+
+AS OF JULIA 0.7/1.0, POMDPToolbox HAS BEEN REPLACED BY THE FOLLOWING PACKAGES: POMDPModelTools, POMDPPolicies, BeliefUpdaters, POMDPSimulators

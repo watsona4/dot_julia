@@ -8364,6 +8364,11 @@ git-tree-sha1 = "fdd31fe5e9167eb0e53300defce309293ad5987b"
 uuid = "92e6a534-49c2-5324-9027-86e3c861ab81"
 version = "0.1.0"
 
+[[POMDPToolbox]]
+git-tree-sha1 = "744f7f5a7d24a28223db407d7693c84c52b40a80"
+uuid = "0729bffe-8e6b-52fa-a3fa-893719b744f4"
+version = "0.3.0"
+
 [[POMDPs]]
 deps = ["Distributions", "LibGit2", "Pkg", "Random", "Statistics", "Test"]
 git-tree-sha1 = "4214e0a48a4c746ecde390eed7bc0e2205dc40a0"
