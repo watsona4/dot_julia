@@ -1,0 +1,4 @@
+name = "LorentzDrudeMetals"
+uuid = "100d92e6-c477-5236-9e74-205fcab5fd63"
+authors = ["S J Palmer <samuelpalmer94@gmail.com>"]
+version = "0.1.0"
