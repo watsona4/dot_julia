@@ -1,0 +1,57 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+  # - osx
+julia:
+  - 0.6
+  - 0.7
+  - 1.0
+  # - nightly
+env:
+  - CONDA_JL_VERSION="2"
+  - CONDA_JL_VERSION="3"
+notifications:
+  email: false
+git:
+  depth: 99999999
+
+## uncomment the following lines to allow failures on nightly julia
+## (tests will run but not make your overall status red)
+#matrix:
+#  allow_failures:
+#  - julia: nightly
+
+## uncomment and modify the following lines to manually install system packages
+#addons:
+#  apt: # apt-get for linux
+#    packages:
+#    - gfortran
+
+before_script:
+  - julia --color=yes ci/before_script.jl
+#  - if [ $TRAVIS_OS_NAME = osx ]; then brew install gcc; fi
+
+script:
+  - julia --color=yes -e 'VERSION >= v"0.7-" && using Pkg; Pkg.test("IPython"; coverage=true)'
+
+  # Test that IPython.install_dependency("ipython-pre") works:
+  - if [ "$CONDA_JL_VERSION" = 3 ]; then
+    julia --color=yes -e '
+      using IPython;
+      IPython.install_dependency("ipython-pre"; force=true)';
+    fi
+
+  # Test that IPython.install_dependency("ipython-dev") works:
+  - if [ "$CONDA_JL_VERSION" = 3 ]; then
+    julia --color=yes -e '
+      using IPython;
+      IPython.install_dependency("ipython-dev"; force=true)';
+    julia --color=yes -e 'VERSION >= v"0.7-" && using Pkg; Pkg.test("IPython")';
+    fi
+
+after_success:
+  # push coverage results to Coveralls
+  - julia --color=yes -e 'cd(Pkg.dir("IPython")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
+  # push coverage results to Codecov
+  - julia --color=yes -e 'cd(Pkg.dir("IPython")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
