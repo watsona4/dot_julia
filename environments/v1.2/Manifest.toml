@@ -6163,6 +6163,12 @@ git-tree-sha1 = "d16e4026612333e691001984b593ac42e0ee07e9"
 uuid = "b4fcebef-c861-5a0f-a7e2-ba9dc32b180a"
 version = "0.4.0"
 
+[[LassoPlot]]
+deps = ["DataFrames", "Lasso", "MLBase", "Pkg", "Plots", "Random", "StatsPlots", "Test"]
+git-tree-sha1 = "1719a379478ef457b54f33bbcff6775d375b37f1"
+uuid = "21d151f5-1f6d-55ec-8524-1c9aee35b0a4"
+version = "1.0.1"
+
 [[LatinHypercubeSampling]]
 deps = ["Random", "StatsBase", "Test"]
 git-tree-sha1 = "7cd8af9c1c8591b7501e82ae5d6f39fcb826aae9"
