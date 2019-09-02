@@ -5391,6 +5391,12 @@ git-tree-sha1 = "1f5789da81ef33ada621ed6404a44224290306d3"
 uuid = "7981ab7d-5bfa-5e03-9ec9-f3d4afc0a1ca"
 version = "0.6.1"
 
+[[InteractiveChaos]]
+deps = ["AbstractPlotting", "Blink", "Colors", "DynamicalSystems", "Interact", "Observables", "Reexport", "StatsBase", "StatsMakie", "Test"]
+git-tree-sha1 = "1b122de32713a06bec16b4f8d3eb87d58f5c0109"
+uuid = "81850811-659e-51ab-a7c2-5dd848ff4aa4"
+version = "0.3.2"
+
 [[InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
@@ -7171,6 +7177,12 @@ deps = ["Rmath", "SpecialFunctions", "Test"]
 git-tree-sha1 = "b3a4e86aa13c732b8a8c0ba0c3d3264f55e6bb3e"
 uuid = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
 version = "0.8.0"
+
+[[StatsMakie]]
+deps = ["AbstractPlotting", "Distributions", "FileIO", "FreqTables", "IntervalSets", "KernelDensity", "Loess", "NamedArrays", "Observables", "OrderedCollections", "Random", "Statistics", "StatsBase", "StructArrays", "Tables", "Widgets"]
+git-tree-sha1 = "2307293357f872a6dcbe2616d47efdaa0ea2bb9b"
+uuid = "65254759-4cff-5aa5-8326-61ce017a8c70"
+version = "0.0.6"
 
 [[StatsModels]]
 deps = ["Compat", "DataFrames", "StatsBase", "Test"]
