@@ -1,0 +1,28 @@
+name = "PlotAxes"
+uuid = "8b6f5f00-d239-11e8-3a24-33314b00f6b0"
+authors = ["David Little <david.frank.little@gmail.com>"]
+version = "0.2.2"
+
+[deps]
+AxisArrays = "39de3d68-74b9-583c-8d2d-e117c070f3a9"
+Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+
+[compat]
+AxisArrays = "≥ 0.3"
+DataFrames = "≥ 0.14"
+Requires = "≥ 0.5"
+julia = "1"
+
+[extras]
+Conda = "8f4d0f93-b110-5947-807f-2305c1781a2d"
+Gadfly = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
+RCall = "6f49c342-dc21-5d91-9882-a32aef131414"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+VegaLite = "112f6efa-9a02-5b7d-90c0-432ed331239a"
+
+[targets]
+test = ["Test", "Gadfly", "VegaLite", "RCall", "Conda", "Unitful"]

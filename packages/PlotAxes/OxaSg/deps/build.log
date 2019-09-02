@@ -1,0 +1,11 @@
+ERROR: LoadError: ArgumentError: Package Pkg not found in current path:
+- Run `import Pkg; Pkg.add("Pkg")` to install the Pkg package.
+
+Stacktrace:
+ [1] require(::Module, ::Symbol) at ./loading.jl:876
+ [2] include at ./boot.jl:328 [inlined]
+ [3] include_relative(::Module, ::String) at ./loading.jl:1094
+ [4] include(::Module, ::String) at ./Base.jl:31
+ [5] include(::String) at ./client.jl:431
+ [6] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/PlotAxes/OxaSg/deps/build.jl:1

@@ -8750,6 +8750,12 @@ git-tree-sha1 = "94ab69bdefcc92aee1f5fc30432a8abfc8ce6845"
 uuid = "d3f7391f-f14a-50cc-bbe4-76a32d1bad3c"
 version = "0.2.0"
 
+[[PlotAxes]]
+deps = ["AxisArrays", "Compat", "DataFrames", "Dates", "Requires"]
+git-tree-sha1 = "cdcd22a79086574d2227cefd2b2d5f9ce13bccc5"
+uuid = "8b6f5f00-d239-11e8-3a24-33314b00f6b0"
+version = "0.2.2"
+
 [[PlotThemes]]
 deps = ["PlotUtils", "Requires", "Test"]
 git-tree-sha1 = "f3afd2d58e1f6ac9be2cea46e4a9083ccc1d990b"
