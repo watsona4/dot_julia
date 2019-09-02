@@ -5615,6 +5615,12 @@ git-tree-sha1 = "6f80c4ea9ccf648766380b28b63efd1050dee940"
 uuid = "7d188eb4-7ad8-530c-ae41-71a32a6d4692"
 version = "0.1.1"
 
+[[JSONTables]]
+deps = ["JSON3", "Tables"]
+git-tree-sha1 = "d07fd098d1559e88eb4e1a8a86387098a7493745"
+uuid = "b9914132-a727-11e9-1322-f18e41205b0b"
+version = "0.1.2"
+
 [[JavaCall]]
 deps = ["DataStructures", "Dates", "Libdl", "Test", "WinReg"]
 git-tree-sha1 = "192aa4f92bc1b19c5e400504f26ad03c4553b265"
