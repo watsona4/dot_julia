@@ -1,0 +1,16 @@
+name = "MolecularTrajectories"
+uuid = "c3751834-3f3f-50ce-917e-73bb091d662c"
+authors = ["Tom Lee <contact@tomlee.com.au>"]
+version = "2.1.0"
+
+[deps]
+MolecularBoxes = "aea3f91d-3b18-5712-a377-5bd7ed4ed15b"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[extras]
+MolecularTopologies = "57484d9e-382c-5364-a237-1ed6cd00a13f"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "MolecularTopologies"]

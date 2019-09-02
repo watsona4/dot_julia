@@ -7416,6 +7416,12 @@ git-tree-sha1 = "a8d98ddfce388d620a5ec1b5bddd6eb023558501"
 uuid = "57484d9e-382c-5364-a237-1ed6cd00a13f"
 version = "1.1.2"
 
+[[MolecularTrajectories]]
+deps = ["MolecularBoxes", "StaticArrays", "Test"]
+git-tree-sha1 = "4a3bb35e0ca72652cb980eecdf369fb7dbea1e67"
+uuid = "c3751834-3f3f-50ce-917e-73bb091d662c"
+version = "2.1.0"
+
 [[Mongoc]]
 deps = ["BinaryProvider", "Dates", "Libdl", "Test"]
 git-tree-sha1 = "c028ec2dfad92d9a3718ccc94800fe0d634b9985"
