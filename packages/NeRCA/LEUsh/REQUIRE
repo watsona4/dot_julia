@@ -1,0 +1,9 @@
+julia 1.0
+
+DataStructures
+StaticArrays
+HDF5
+RecipesBase
+PlotThemes
+JuMP
+Ipopt

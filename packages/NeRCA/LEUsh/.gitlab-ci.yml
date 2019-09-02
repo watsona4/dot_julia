@@ -1,0 +1,37 @@
+.test_template: &test_definition
+  script:
+    - apt-get update -qq && apt-get install -y hdf5-tools libaec0 libgfortran3 libhdf5-100 libquadmath0 libsz2
+    - julia -e 'using Pkg; Pkg.clone(pwd()); Pkg.build("NeRCA"); Pkg.test("NeRCA"; coverage = true)'
+    - julia -e 'using Pkg; Pkg.add("Coverage"); 
+      import NeRCA; cd(joinpath(dirname(pathof(NeRCA)), ".."));
+      using Coverage; cl, tl = get_summary(process_folder());
+      println("(", cl/tl*100, "%) covered")'
+
+cache:
+  paths:
+    - .julia/packages
+  key: "$CI_COMMIT_REF_SLUG"
+
+test:1.0:
+  image: docker.km3net.de/base/julia:1.0
+  <<: *test_definition
+
+test:1.1:
+  image: docker.km3net.de/base/julia:1.1
+  <<: *test_definition
+
+
+pages:
+  image: docker.km3net.de/base/julia:1.1
+  stage: deploy
+  script:
+    - apt-get update -qq && apt-get install -y git # needed by Documenter
+    - apt-get install -y hdf5-tools libaec0 libgfortran3 libhdf5-100 libquadmath0 libsz2  # for HDF5.jl
+    - julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'
+    - julia --color=yes --project=docs/ docs/make.jl # make documentation
+    - mv docs/build public # move to the directory picked up by Gitlab pages
+  artifacts:
+    paths:
+      - public
+  only:
+  - master

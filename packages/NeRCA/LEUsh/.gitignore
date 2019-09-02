@@ -1,0 +1,14 @@
+Manifest.toml
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*.swp
+
+.DS_Store
+
+docs/build
+docs/site
+
+*.h5
+*.detx
+*.csv

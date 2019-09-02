@@ -7833,6 +7833,12 @@ git-tree-sha1 = "28462d28ee55ed3378aa682be12c6fe09da06254"
 uuid = "e0f4c8e6-5ce5-555a-ba92-69b8d3d44885"
 version = "0.0.6"
 
+[[NeRCA]]
+deps = ["DataStructures", "HDF5", "Ipopt", "JuMP", "LinearAlgebra", "PGFPlotsX", "PlotThemes", "Printf", "RecipesBase", "Sockets", "StaticArrays", "Statistics"]
+git-tree-sha1 = "64604b0a85ec803599836644526ac88c021c0930"
+uuid = "89b7c20c-a96a-11e9-35df-35fba0891eb2"
+version = "0.2.0"
+
 [[NearestNeighbors]]
 deps = ["Distances", "LinearAlgebra", "Mmap", "StaticArrays", "Test"]
 git-tree-sha1 = "f47c5d97cf9a8caefa47e9fa9d99d8fda1a65154"
