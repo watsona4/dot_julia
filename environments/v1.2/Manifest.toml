@@ -6711,6 +6711,12 @@ git-tree-sha1 = "c6f44a64f96ba3b2cb14c2d99e648759ab9f4722"
 uuid = "72ce6e51-3f7f-5ebd-8e88-b86aa3e31c30"
 version = "0.5.0"
 
+[[MCMCChain]]
+deps = ["Distributions", "LinearAlgebra", "Pkg", "RecipesBase", "Serialization", "Showoff", "SpecialFunctions", "StatsBase", "Test"]
+git-tree-sha1 = "5db661f28ccfbf7c0844e7cc067cc94161b93ab8"
+uuid = "1671dc4f-43c8-512c-ab25-e1704a74065e"
+version = "0.2.3"
+
 [[MCMCChains]]
 deps = ["AxisArrays", "DataFrames", "Distributions", "KernelDensity", "LinearAlgebra", "Plots", "Random", "RecipesBase", "Serialization", "Showoff", "SpecialFunctions", "Statistics", "StatsBase"]
 git-tree-sha1 = "69859d2c2f8747433817fcd313b79ca78ec527f0"
