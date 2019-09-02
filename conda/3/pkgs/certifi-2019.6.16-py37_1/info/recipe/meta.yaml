@@ -1,6 +1,6 @@
-# This file created by conda-build 3.18.9
+# This file created by conda-build 3.18.7
 # meta.yaml template originally from:
-# /tmp/build/80754af9/rsync-recipes/certifi-2019.6.16-python_3.7-on-linux_canary, last modified Thu Jul 25 13:49:26 2019
+# /home/conda/recipe_root, last modified Tue Jul 16 12:52:30 2019
 # ------------------------------------------------
 
 package:
@@ -22,19 +22,19 @@ build:
 requirements:
     host:
         - _libgcc_mutex 0.1 main
-        - ca-certificates 2019.5.15 0
-        - libedit 3.1.20181209 hc058e9b_0
-        - libffi 3.2.1 hd88cf55_4
+        - bzip2 1.0.8 h516909a_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - libffi 3.2.1 he1b5a44_1006
         - libgcc-ng 9.1.0 hdf63c60_0
         - libstdcxx-ng 9.1.0 hdf63c60_0
-        - ncurses 6.1 he6710b0_1
-        - openssl 1.1.1c h7b6447c_1
-        - python 3.7.3 h0371630_0
-        - readline 7.0 h7b6447c_5
-        - sqlite 3.29.0 h7b6447c_0
-        - tk 8.6.8 hbc83047_0
-        - xz 5.2.4 h14c3975_4
-        - zlib 1.2.11 h7b6447c_3
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1c h516909a_0
+        - python 3.7.3 h33d41f4_1
+        - readline 8.0 hf8c457e_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
     run:
         - python >=3.7,<3.8.0a0
 test:

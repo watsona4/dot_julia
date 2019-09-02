@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "py37_0",
+  "build_number": 0,
+  "depends": [
+    "ptyprocess >=0.5",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "license": "ISC",
+  "name": "pexpect",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1554644367093,
+  "version": "4.7.0"
+}

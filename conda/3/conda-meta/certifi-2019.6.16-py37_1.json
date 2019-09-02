@@ -1,7 +1,7 @@
 {
   "build": "py37_1",
   "build_number": 1,
-  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
   "constrains": [],
   "depends": [
     "python >=3.7,<3.8.0a0"
@@ -29,7 +29,7 @@
     "source": "/home/ec2-user/.julia/conda/3/pkgs/certifi-2019.6.16-py37_1",
     "type": 1
   },
-  "md5": "2c802b096ae72a4f6563f3818aac36ef",
+  "md5": "617a28674178f6633008527ef497e540",
   "name": "certifi",
   "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/certifi-2019.6.16-py37_1.tar.bz2",
   "paths_data": {
@@ -129,11 +129,11 @@
     "paths_version": 1
   },
   "requested_spec": "None",
-  "sha256": "751d5290c039d8673e4a2db75b4a7a52d6dd28e5db440f169c447a1a67f10fa8",
-  "size": 159404,
+  "sha256": "1460ca5afc0923faaae1072ae3d3a1f6a74a09f0e338f45377199204d777a46a",
+  "size": 152288,
   "subdir": "linux-64",
-  "timestamp": 1564158795394,
+  "timestamp": 1563281686494,
   "track_features": "",
-  "url": "https://repo.anaconda.com/pkgs/main/linux-64/certifi-2019.6.16-py37_1.tar.bz2",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/certifi-2019.6.16-py37_1.tar.bz2",
   "version": "2019.6.16"
 }

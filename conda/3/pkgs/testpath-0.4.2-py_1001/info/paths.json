@@ -1,0 +1,77 @@
+{
+  "paths": [
+    {
+      "_path": "site-packages/testpath-0.4.2.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "size_in_bytes": 4
+    },
+    {
+      "_path": "site-packages/testpath-0.4.2.dist-info/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "95f7c73530d13d9fe14e59b8bbd2eb4901aab79e119e336cd937f495cce6fc36",
+      "size_in_bytes": 1528
+    },
+    {
+      "_path": "site-packages/testpath-0.4.2.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "d0e737afcc4ee0879610f53ebd38f04ca147ef2c38e13986248f7ea3a54eb5a8",
+      "size_in_bytes": 1185
+    },
+    {
+      "_path": "site-packages/testpath-0.4.2.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "cff1982fc4f4927349cbae576fff676c6cd8f0df286fdcd2c0607b9020cb8d7b",
+      "size_in_bytes": 1162
+    },
+    {
+      "_path": "site-packages/testpath-0.4.2.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "4451a97925b2d8c867387ecc6c86665fd651d1ebd6976789bec30efb217eb437",
+      "size_in_bytes": 97
+    },
+    {
+      "_path": "site-packages/testpath/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "64ad45b02782c360956ef262af012037ad5f718e78c4e1e0c3b419b8c5862e7a",
+      "size_in_bytes": 220
+    },
+    {
+      "_path": "site-packages/testpath/asserts.py",
+      "path_type": "hardlink",
+      "sha256": "52ff7f33277619b4849d576cf6a1d8c6cc06d90ee3e8cf8b9a90e6d90e135d35",
+      "size_in_bytes": 6679
+    },
+    {
+      "_path": "site-packages/testpath/cli-32.exe",
+      "path_type": "hardlink",
+      "sha256": "75f12ea2f30d9c0d872dade345f30f562e6d93847b6a509ba53beec6d0b2c346",
+      "size_in_bytes": 65536
+    },
+    {
+      "_path": "site-packages/testpath/cli-64.exe",
+      "path_type": "hardlink",
+      "sha256": "28b001bb9a72ae7a24242bfab248d767a1ac5dec981c672a3944f7a072375e9a",
+      "size_in_bytes": 74752
+    },
+    {
+      "_path": "site-packages/testpath/commands.py",
+      "path_type": "hardlink",
+      "sha256": "e0a2f0c380a20ca0fc80cdab7c9bdbc9bd50dc4085a6864f8b8a19645212d10a",
+      "size_in_bytes": 4873
+    },
+    {
+      "_path": "site-packages/testpath/env.py",
+      "path_type": "hardlink",
+      "sha256": "c287366d423057dd3c21dd356a8a239b0f4ee9f88b694d2159ec7a7f459c6c08",
+      "size_in_bytes": 2370
+    },
+    {
+      "_path": "site-packages/testpath/tempdir.py",
+      "path_type": "hardlink",
+      "sha256": "e2a99f77d874159f1c37d5e89efcaf01f7f95a373f21df3e62b420e099cfe07d",
+      "size_in_bytes": 5246
+    }
+  ],
+  "paths_version": 1
+}

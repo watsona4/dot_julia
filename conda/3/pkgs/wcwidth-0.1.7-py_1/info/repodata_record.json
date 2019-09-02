@@ -1,0 +1,23 @@
+{
+  "build": "py_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "features": "",
+  "fn": "wcwidth-0.1.7-py_1.tar.bz2",
+  "license": "MIT",
+  "md5": "434ea24626de48cf512ed0d6ec2043e6",
+  "name": "wcwidth",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "e44d0b57ae940424420a64c84fb64f835ba31b13655098352761cd275d6c27b6",
+  "size": 17313,
+  "subdir": "noarch",
+  "timestamp": 1531075543970,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/wcwidth-0.1.7-py_1.tar.bz2",
+  "version": "0.1.7"
+}

@@ -1,0 +1,52 @@
+# This file created by conda-build 3.15.1
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Oct  3 18:49:56 2018
+# ------------------------------------------------
+
+package:
+    name: pickleshare
+    version: 0.7.5
+source:
+    sha256: 87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca
+    url: https://pypi.io/packages/source/p/pickleshare/pickleshare-0.7.5.tar.gz
+build:
+    number: '1000'
+    script: /home/conda/feedstock_root/build_artifacts/pickleshare_1538592768817/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/bin/python
+        -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    string: py37_1000
+requirements:
+    build:
+        - bzip2 1.0.6 h470a237_2
+        - ca-certificates 2018.8.24 ha4d7672_0
+        - certifi 2018.8.24 py37_1001
+        - libffi 3.2.1 hfc679d8_5
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hfc679d8_1
+        - openssl 1.0.2p h470a237_0
+        - pip 18.0 py37_1001
+        - python 3.7.0 h5001a0f_4
+        - readline 7.0 haf1bffa_1
+        - setuptools 40.4.3 py37_0
+        - sqlite 3.25.2 hb1c47c0_0
+        - tk 8.6.8 ha92aebf_0
+        - wheel 0.32.0 py37_1000
+        - xz 5.2.4 h470a237_1
+        - zlib 1.2.11 h470a237_3
+    run:
+        - python >=3.7,<3.8.0a0
+test:
+    imports:
+        - pickleshare
+about:
+    home: https://github.com/pickleshare/pickleshare/
+    license: MIT
+    license_file: LICENSE
+    summary: Tiny 'shelve'-like database with concurrency support
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - ocefpaf
+        - pelson
+        - takluyver

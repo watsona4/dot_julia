@@ -5810,6 +5810,12 @@ git-tree-sha1 = "30d94657a422d09cb97b6f86f04f750fa9c50df8"
 uuid = "e5e0dc1b-0480-54bc-9374-aad01c23163d"
 version = "0.7.2"
 
+[[JupyterParameters]]
+deps = ["ArgParse", "Conda", "DataStructures", "IJulia", "JSON"]
+git-tree-sha1 = "cdc8ce82826d10fa69631c7d0303cce10ae25f57"
+uuid = "2f2169dc-6776-11e9-1952-6179d4a35fe3"
+version = "0.1.2"
+
 [[KernelDensity]]
 deps = ["Distributions", "FFTW", "Interpolations", "Optim", "StatsBase", "Test"]
 git-tree-sha1 = "c1048817fe5711f699abc8fabd47b1ac6ba4db04"

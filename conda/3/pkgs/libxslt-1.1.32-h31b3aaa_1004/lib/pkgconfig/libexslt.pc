@@ -1,0 +1,12 @@
+prefix=/opt/anaconda1anaconda2anaconda3
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: libexslt
+Version: 0.8.20
+Description: EXSLT Extension library
+Requires: libxml-2.0
+Libs: -L${libdir} -lexslt -lxslt -L/opt/anaconda1anaconda2anaconda3/lib -lxml2 -L/opt/anaconda1anaconda2anaconda3/lib -lz -L/opt/anaconda1anaconda2anaconda3/lib -llzma -lpthread -L/opt/anaconda1anaconda2anaconda3/lib -liconv -L/opt/anaconda1anaconda2anaconda3/lib -licui18n -licuuc -licudata -lm -ldl -lm 
+Cflags: -I${includedir}

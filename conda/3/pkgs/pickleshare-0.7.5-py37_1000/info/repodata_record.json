@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "py37_1000",
+  "build_number": 1000,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "features": "",
+  "fn": "pickleshare-0.7.5-py37_1000.tar.bz2",
+  "license": "MIT",
+  "md5": "38701a546fd4231ba4907aff8a3d508b",
+  "name": "pickleshare",
+  "platform": "linux",
+  "sha256": "2c40a86d091fa303388624618eb9d6e37b54a6d166cb0fdb6c25c728d289fb58",
+  "size": 12073,
+  "subdir": "linux-64",
+  "timestamp": 1538592799513,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/pickleshare-0.7.5-py37_1000.tar.bz2",
+  "version": "0.7.5"
+}

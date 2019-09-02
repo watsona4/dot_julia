@@ -1,0 +1,37 @@
+{% set version = "0.7.5" %}
+
+package:
+  name: pickleshare
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/p/pickleshare/pickleshare-{{ version }}.tar.gz
+  sha256: 87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca
+
+build:
+  number: 1000
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+
+requirements:
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - pathlib2  # [py<34]
+
+test:
+  imports:
+    - pickleshare
+
+about:
+  home: https://github.com/pickleshare/pickleshare/
+  license: MIT
+  license_file: LICENSE
+  summary: "Tiny 'shelve'-like database with concurrency support"
+
+extra:
+  recipe-maintainers:
+    - pelson
+    - takluyver
+    - ocefpaf

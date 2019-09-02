@@ -1,0 +1,83 @@
+# This file created by conda-build 3.17.5
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Jan  2 15:45:33 2019
+# ------------------------------------------------
+
+package:
+    name: jupyter_contrib_nbextensions
+    version: 0.5.1
+source:
+    sha256: eecd28ecc2fc410226c0a3d4932ed2fac4860ccf8d9e9b1b29548835a35b22ab
+    url: https://pypi.io/packages/source/j/jupyter_contrib_nbextensions/jupyter_contrib_nbextensions-0.5.1.tar.gz
+build:
+    entry_points:
+        - jupyter-contrib-nbextension = jupyter_contrib_nbextensions.application:main
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/jupyter_contrib_nbextensions_1546444111067/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl/bin/python
+        -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    string: py37_0
+requirements:
+    build:
+        - bzip2 1.0.6 h470a237_2
+        - ca-certificates 2018.11.29 ha4d7672_0
+        - certifi 2018.11.29 py37_1000
+        - libffi 3.2.1 hfc679d8_5
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hfc679d8_2
+        - openssl 1.0.2p h470a237_1
+        - pip 18.1 py37_1000
+        - python 3.7.1 h5001a0f_0
+        - readline 7.0 haf1bffa_1
+        - setuptools 40.6.3 py37_0
+        - sqlite 3.26.0 hb1c47c0_0
+        - tk 8.6.9 ha92aebf_0
+        - wheel 0.32.3 py37_0
+        - xz 5.2.4 h470a237_1
+        - zlib 1.2.11 h470a237_3
+    run:
+        - ipython_genutils
+        - jupyter_contrib_core >=0.3.3
+        - jupyter_core
+        - jupyter_highlight_selected_word >=0.1.1
+        - jupyter_latex_envs >=1.3.8
+        - jupyter_nbextensions_configurator >=0.4.0
+        - lxml
+        - nbconvert >=4.2
+        - notebook >=4.0
+        - python >=3.7,<3.8.0a0
+        - pyyaml
+        - tornado
+        - traitlets >=4.1
+test:
+    commands:
+        - jupyter contrib nbextension --help
+        - jupyter contrib nbextensions --help
+        - jupyter contrib nbextension install --help
+        - jupyter contrib nbextension uninstall --help
+        - jupyter contrib nbextension migrate --help
+    imports:
+        - jupyter_contrib_nbextensions
+        - jupyter_contrib_nbextensions.application
+        - jupyter_contrib_nbextensions.install
+        - jupyter_contrib_nbextensions.migrate
+        - jupyter_contrib_nbextensions.nbconvert_support
+        - jupyter_contrib_nbextensions.nbconvert_support.collapsible_headings
+        - jupyter_contrib_nbextensions.nbconvert_support.embedhtml
+        - jupyter_contrib_nbextensions.nbconvert_support.pp_highlighter
+        - jupyter_contrib_nbextensions.nbconvert_support.pre_codefolding
+        - jupyter_contrib_nbextensions.nbconvert_support.pre_pymarkdown
+        - jupyter_contrib_nbextensions.nbconvert_support.pre_svg2pdf
+        - jupyter_contrib_nbextensions.nbconvert_support.toc2
+about:
+    home: https://github.com/ipython-contrib/jupyter_contrib_nbextensions
+    license: BSD-3-Clause
+    license_file: COPYING.rst
+    summary: A collection of various different notebook extensions for Jupyter
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jcb91
+        - juhasch
+        - ocefpaf

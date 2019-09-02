@@ -1,0 +1,67 @@
+{% set version = "5.1.2" %}
+
+package:
+  name: ipykernel
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/i/ipykernel/ipykernel-{{ version }}.tar.gz
+  sha256: b503913e0b4cce7ed2de965457dfb2edd633e8234161a60e23f2fe2161345d12
+
+build:
+  number: 0
+  skip: True  # [py<34]
+  script:
+    - {{ PYTHON }} setup.py bdist_wheel
+    - cd dist
+    - {{ PYTHON }} -m pip install ipykernel-{{ version }}-py3-none-any.whl --no-deps -vv
+    - {{ PYTHON }} -m ipykernel install --sys-prefix
+
+requirements:
+  host:
+    - ipython >=5.0
+    - jupyter_client
+    - pip
+    - python
+  run:
+    - ipython >=5.0
+    - jupyter_client
+    - python
+    - tornado >=4.2
+    - traitlets >=4.1
+
+test:
+  requires:
+    - curio  # [unix]
+    - nose
+    - numpy
+    - pytest
+    - ipython
+  imports:
+    - ipykernel
+  commands:
+    - jupyter kernelspec list
+    - pytest --pyargs ipykernel  # [unix]
+
+about:
+  home: https://ipython.org
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: COPYING.md
+  summary: IPython Kernel for Jupyter
+  description: |
+    A powerful interactive Python shell and a Jupyter kernel to work with
+    Python code in Jupyter notebooks and other interactive frontends.
+  dev_url: https://github.com/ipython/ipykernel
+  doc_url: https://ipython.readthedocs.io
+  doc_source_url: https://github.com/ipython/ipykernel/blob/master/docs/index.rst
+
+extra:
+  recipe-maintainers:
+    - blink1073
+    - bollwyvl
+    - Carreau
+    - jakirkham
+    - minrk
+    - ocefpaf
+    - pelson

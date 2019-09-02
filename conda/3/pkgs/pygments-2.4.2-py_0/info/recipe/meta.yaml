@@ -1,0 +1,64 @@
+# This file created by conda-build 3.18.2
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue May 28 14:06:52 2019
+# ------------------------------------------------
+
+package:
+    name: pygments
+    version: 2.4.2
+source:
+    fn: Pygments-2.4.2.tar.gz
+    sha256: 881c4c157e45f30af185c1ffe8d549d48ac9127433f2c380c24b84572ad66297
+    url: https://pypi.io/packages/source/P/Pygments/Pygments-2.4.2.tar.gz
+build:
+    entry_points:
+        - pygmentize = pygments.cmdline:main
+    noarch: python
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/pygments_1559052556016/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl/bin/python
+        -m pip install . --no-deps -vv
+    string: py_0
+requirements:
+    host:
+        - ca-certificates 2019.3.9 hecc5488_0
+        - certifi 2019.3.9 py27_0
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1b h14c3975_1
+        - pip 19.1 py27_0
+        - python 2.7.15 h721da81_1008
+        - readline 7.0 hf8c457e_1001
+        - setuptools 41.0.1 py27_0
+        - sqlite 3.28.0 h8b20d00_0
+        - tk 8.6.9 h84994c4_1001
+        - wheel 0.33.4 py27_0
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - python
+        - setuptools
+test:
+    commands:
+        - pygmentize -h
+    imports:
+        - pygments
+        - pygments.filters
+        - pygments.formatters
+        - pygments.lexers
+        - pygments.plugin
+        - pygments.styles
+about:
+    home: http://pygments.org/
+    license: BSD 2-clause
+    license_file: LICENSE
+    summary: Pygments is a generic syntax highlighter suitable for use in code hosting,
+        forums, wikis or other applications that need to prettify source code.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - ocefpaf
+        - pelson
+        - scopatz

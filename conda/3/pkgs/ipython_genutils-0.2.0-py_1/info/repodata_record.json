@@ -1,0 +1,23 @@
+{
+  "build": "py_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "features": "",
+  "fn": "ipython_genutils-0.2.0-py_1.tar.bz2",
+  "license": "BSD 3-Clause",
+  "md5": "5071c982548b3a20caf70462f04f5287",
+  "name": "ipython_genutils",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "0fafbc60209f1d8c0b89a2f79f3ff0f7bc45589a23da1d2e5cc55bcca906707b",
+  "size": 21562,
+  "subdir": "noarch",
+  "timestamp": 1530963305778,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/ipython_genutils-0.2.0-py_1.tar.bz2",
+  "version": "0.2.0"
+}

@@ -1,0 +1,58 @@
+# This file created by conda-build 3.16.1
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Fri Oct 12 19:19:32 2018
+# ------------------------------------------------
+
+package:
+    name: jupyter_latex_envs
+    version: 1.4.4
+source:
+    sha256: b0a83e0cda2d33e61c4b2da94365d2de4dfcdc1ed67abdba3cbe390872cf5231
+    url: https://pypi.io/packages/source/j/jupyter_latex_envs/jupyter_latex_envs-1.4.4.tar.gz
+build:
+    number: '1000'
+    script: /home/conda/feedstock_root/build_artifacts/jupyter_latex_envs_1539372149221/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl/bin/python
+        -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    string: py37_1000
+requirements:
+    host:
+        - bzip2 1.0.6 h470a237_2
+        - ca-certificates 2018.8.24 ha4d7672_0
+        - certifi 2018.8.24 py37_1001
+        - libffi 3.2.1 hfc679d8_5
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hfc679d8_1
+        - openssl 1.0.2p h470a237_1
+        - pip 18.1 py37_1000
+        - python 3.7.0 h5001a0f_4
+        - readline 7.0 haf1bffa_1
+        - setuptools 40.4.3 py37_0
+        - sqlite 3.25.2 hb1c47c0_0
+        - tk 8.6.8 ha92aebf_0
+        - wheel 0.32.1 py37_0
+        - xz 5.2.4 h470a237_1
+        - zlib 1.2.11 h470a237_3
+    run:
+        - ipython
+        - jupyter_contrib_core >=0.3
+        - nbconvert
+        - notebook >=4.0
+        - python >=3.7,<3.8.0a0
+        - setuptools
+        - traitlets >=4.1
+test:
+    imports:
+        - latex_envs
+        - latex_envs.latex_envs
+about:
+    home: https://github.com/jfbercher/jupyter_latex_envs
+    license: BSD-3-Clause
+    license_file: LICENSE.txt
+    summary: Jupyter nbextension providing some LaTeX environments for markdown cells.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jcb91
+        - jfbercher

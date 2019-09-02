@@ -1,0 +1,15 @@
+{
+  "arch": null,
+  "build": "py_1",
+  "build_number": 1,
+  "depends": [
+    "python"
+  ],
+  "license": "MIT",
+  "name": "wcwidth",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1531075543970,
+  "version": "0.1.7"
+}

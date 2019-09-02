@@ -1,0 +1,89 @@
+# This file created by conda-build 3.17.5
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Jan  8 17:01:13 2019
+# ------------------------------------------------
+
+package:
+    name: entrypoints
+    version: '0.3'
+source:
+    sha256: c70dd71abe5a8c85e55e12c19bd91ccfeec11a6e99044204511f9ed547d48451
+    url: https://pypi.io/packages/source/e/entrypoints/entrypoints-0.3.tar.gz
+build:
+    number: '1000'
+    script:
+        - flit build --format wheel
+        - /home/conda/feedstock_root/build_artifacts/entrypoints_1546967065339/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/bin/python
+            -m pip install dist/entrypoints-0.3-py2.py3-none-any.whl --no-deps --ignore-installed
+            --no-cache-dir -vvv
+    string: py37_1000
+requirements:
+    build:
+        - asn1crypto 0.24.0 py37_1003
+        - bzip2 1.0.6 h470a237_2
+        - ca-certificates 2018.11.29 ha4d7672_0
+        - certifi 2018.11.29 py37_1000
+        - cffi 1.11.5 py37h5e8e0c9_1
+        - chardet 3.0.4 py37_1003
+        - cryptography 2.3.1 py37hdffb7b8_0
+        - docutils 0.14 py37_1001
+        - flit 1.2.1 py37_1000
+        - idna 2.8 py37_1000
+        - libffi 3.2.1 hfc679d8_5
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hfc679d8_2
+        - openssl 1.0.2p h470a237_2
+        - pip 18.1 py37_1000
+        - pycparser 2.19 py_0
+        - pyopenssl 18.0.0 py37_1000
+        - pysocks 1.6.8 py37_1002
+        - python 3.7.1 h5001a0f_0
+        - pytoml 0.1.20 py_0
+        - readline 7.0 haf1bffa_1
+        - requests 2.21.0 py37_1000
+        - requests_download 0.1.2 py_1
+        - setuptools 40.6.3 py37_0
+        - six 1.12.0 py37_1000
+        - sqlite 3.26.0 hb1c47c0_0
+        - tk 8.6.9 ha92aebf_0
+        - urllib3 1.24.1 py37_1000
+        - wheel 0.32.3 py37_0
+        - xz 5.2.4 h470a237_1
+        - zlib 1.2.11 h470a237_4
+    host:
+        - bzip2 1.0.6 h470a237_2
+        - ca-certificates 2018.11.29 ha4d7672_0
+        - certifi 2018.11.29 py37_1000
+        - libffi 3.2.1 hfc679d8_5
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hfc679d8_2
+        - openssl 1.0.2p h470a237_2
+        - pip 18.1 py37_1000
+        - python 3.7.1 h5001a0f_0
+        - readline 7.0 haf1bffa_1
+        - setuptools 40.6.3 py37_0
+        - sqlite 3.26.0 hb1c47c0_0
+        - tk 8.6.9 ha92aebf_0
+        - wheel 0.32.3 py37_0
+        - xz 5.2.4 h470a237_1
+        - zlib 1.2.11 h470a237_4
+    run:
+        - python >=3.7,<3.8.0a0
+test:
+    imports:
+        - entrypoints
+about:
+    home: https://entrypoints.readthedocs.io/
+    license: MIT
+    license_file: LICENSE
+    summary: Discover and load entry points from installed packages
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - minrk
+        - ocefpaf
+        - pelson
+        - takluyver

@@ -1,0 +1,13 @@
+{
+  "arch": "x86_64",
+  "build": "0",
+  "build_number": 0,
+  "depends": [],
+  "license": "GPL-2.0",
+  "license_family": "GPL",
+  "name": "pandoc",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1560347299628,
+  "version": "2.7.3"
+}

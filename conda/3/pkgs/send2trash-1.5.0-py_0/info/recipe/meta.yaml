@@ -1,0 +1,52 @@
+# This file created by conda-build 2.1.18
+# meta.yaml template originally from:
+# /recipe_root, last modified Sun Feb 18 14:29:43 2018
+# ------------------------------------------------
+
+package:
+    name: send2trash
+    version: 1.5.0
+source:
+    fn: Send2Trash-1.5.0.tar.gz
+    sha256: 60001cc07d707fe247c94f74ca6ac0d3255aabcb930529690897ca2a39db28b2
+    url: https://pypi.io/packages/source/S/Send2Trash/Send2Trash-1.5.0.tar.gz
+build:
+    noarch: python
+    noarch_python: false
+    number: '0'
+    script: python -m pip install --no-deps --ignore-installed .
+    string: py_0
+requirements:
+    build:
+        - certifi 2018.1.18 py36_0
+        - python 3.6.4 0
+        - xz 5.2.3 0
+        - openssl 1.0.2n 0
+        - pip 9.0.1 py36_1
+        - readline 7.0 0
+        - setuptools 38.5.1 py36_0
+        - zlib 1.2.11 0
+        - tk 8.6.7 0
+        - ca-certificates 2018.1.18 0
+        - ncurses 5.9 10
+        - wheel 0.30.0 py36_2
+        - sqlite 3.20.1 2
+    run:
+        - python
+test:
+    commands:
+        - echo test > test.txt
+        - python -c "from send2trash import *; send2trash('test.txt')"
+    imports:
+        - send2trash
+about:
+    home: https://github.com/hsoft/send2trash
+    license: BSD-3-Clause
+    license_family: BSD
+    license_file: LICENSE
+    summary: Python library to natively send files to Trash (or Recycle bin) on all
+        platforms.
+extra:
+    final: true
+    recipe-maintainers:
+        - bollwyvl

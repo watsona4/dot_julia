@@ -1,0 +1,142 @@
+{
+  "build": "py37_1000",
+  "build_number": 1000,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "jupyter_contrib_core >=0.3",
+    "notebook >=4.0",
+    "python >=3.7,<3.8.0a0",
+    "setuptools"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/jupyter_highlight_selected_word-0.2.0-py37_1000",
+  "features": "",
+  "files": [
+    "bin/.jupyter_highlight_selected_word-post-link.sh",
+    "bin/.jupyter_highlight_selected_word-pre-unlink.sh",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/PKG-INFO",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/SOURCES.txt",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/dependency_links.txt",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/installed-files.txt",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/not-zip-safe",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/top_level.txt",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word/__init__.py",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/README.md",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/configurator.yaml",
+    "lib/python3.7/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/main.js"
+  ],
+  "fn": "jupyter_highlight_selected_word-0.2.0-py37_1000.tar.bz2",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/jupyter_highlight_selected_word-0.2.0-py37_1000",
+    "type": 1
+  },
+  "md5": "8a8cbbf8d25c693396eaf687770c8e72",
+  "name": "jupyter_highlight_selected_word",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/jupyter_highlight_selected_word-0.2.0-py37_1000.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/.jupyter_highlight_selected_word-post-link.sh",
+        "path_type": "hardlink",
+        "sha256": "965aaed3aeb11ab76e241f5f2b7bfc85b78a117ba26a3e4dfd9b031c52843234",
+        "sha256_in_prefix": "965aaed3aeb11ab76e241f5f2b7bfc85b78a117ba26a3e4dfd9b031c52843234",
+        "size_in_bytes": 428
+      },
+      {
+        "_path": "bin/.jupyter_highlight_selected_word-pre-unlink.sh",
+        "path_type": "hardlink",
+        "sha256": "d6996dff31b87120e1f9792d5a138ce7a2c4ffc249a7398578d6b0767269969d",
+        "sha256_in_prefix": "d6996dff31b87120e1f9792d5a138ce7a2c4ffc249a7398578d6b0767269969d",
+        "size_in_bytes": 432
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "3efcabb24edba271f26eea580ade4991ec6dbcb7e734fe4e46164715efc7c721",
+        "sha256_in_prefix": "3efcabb24edba271f26eea580ade4991ec6dbcb7e734fe4e46164715efc7c721",
+        "size_in_bytes": 763
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "7eed70dda15eaa8b894acbeb279638a5f430edd105e2d29b84a0ee6cb3525381",
+        "sha256_in_prefix": "7eed70dda15eaa8b894acbeb279638a5f430edd105e2d29b84a0ee6cb3525381",
+        "size_in_bytes": 656
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "0e41a517391e264748e8fede276692dbd4aa4893f47aa54e57e40a50865130a7",
+        "sha256_in_prefix": "0e41a517391e264748e8fede276692dbd4aa4893f47aa54e57e40a50865130a7",
+        "size_in_bytes": 421
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word-0.2.0-py3.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "89f445bd669a5d52e7880a35f454b4cc02a64cfb36ae00b504520f48c0bd619b",
+        "sha256_in_prefix": "89f445bd669a5d52e7880a35f454b4cc02a64cfb36ae00b504520f48c0bd619b",
+        "size_in_bytes": 32
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bb78e5d16e0f4d24d5896da01e2e79ac739674f20476497d5e04de272baed5e4",
+        "sha256_in_prefix": "bb78e5d16e0f4d24d5896da01e2e79ac739674f20476497d5e04de272baed5e4",
+        "size_in_bytes": 760
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "e521555cc319bafaa1c163f86ab26042404e44d310bbf022872d1f3961854e7e",
+        "sha256_in_prefix": "e521555cc319bafaa1c163f86ab26042404e44d310bbf022872d1f3961854e7e",
+        "size_in_bytes": 564
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/README.md",
+        "path_type": "hardlink",
+        "sha256": "c1e4c247ab62efac424e1bdc8eafd2fd4be696c8367e26a57cd65174cc6db6a3",
+        "sha256_in_prefix": "c1e4c247ab62efac424e1bdc8eafd2fd4be696c8367e26a57cd65174cc6db6a3",
+        "size_in_bytes": 4924
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/configurator.yaml",
+        "path_type": "hardlink",
+        "sha256": "524d491c1d6af9683fecc13a90a40860163f08cc39c520da869e59381dffd371",
+        "sha256_in_prefix": "524d491c1d6af9683fecc13a90a40860163f08cc39c520da869e59381dffd371",
+        "size_in_bytes": 4135
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_highlight_selected_word/static/highlight_selected_word/main.js",
+        "path_type": "hardlink",
+        "sha256": "a217d4444b879998147bb1873fa2f81b3f4d2cd1de8d9f70c94bc253900f07a3",
+        "sha256_in_prefix": "a217d4444b879998147bb1873fa2f81b3f4d2cd1de8d9f70c94bc253900f07a3",
+        "size_in_bytes": 13598
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "a39651f1eaccfb2cfdfd00c48beb0aadc1403d0122ba648b89c699fee3aa8419",
+  "size": 13158,
+  "subdir": "linux-64",
+  "timestamp": 1538745713132,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/jupyter_highlight_selected_word-0.2.0-py37_1000.tar.bz2",
+  "version": "0.2.0"
+}

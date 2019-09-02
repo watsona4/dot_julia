@@ -1,0 +1,19 @@
+{
+  "arch": "x86_64",
+  "build": "py37h5ca1d4c_0",
+  "build_number": 0,
+  "depends": [
+    "ipython >=5.0",
+    "jupyter_client",
+    "python >=3.7,<3.8.0a0",
+    "tornado >=4.2",
+    "traitlets >=4.1"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "ipykernel",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1565268405509,
+  "version": "5.1.2"
+}

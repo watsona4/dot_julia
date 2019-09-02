@@ -1,0 +1,82 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Thu Aug 22 12:04:54 2019
+# ------------------------------------------------
+
+package:
+    name: notebook
+    version: 6.0.1
+source:
+    sha256: 660976fe4fe45c7aa55e04bf4bccb9f9566749ff637e9020af3422f9921f9a5d
+    url: https://pypi.io/packages/source/n/notebook/notebook-6.0.1.tar.gz
+build:
+    entry_points:
+        - jupyter-bundlerextension = notebook.bundler.bundlerextensions:main
+        - jupyter-nbextension = notebook.nbextensions:main
+        - jupyter-notebook = notebook.notebookapp:main
+        - jupyter-serverextension = notebook.serverextensions:main
+    number: '0'
+    script:
+        - /home/conda/feedstock_root/build_artifacts/notebook_1566475577654/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl/bin/python
+            -m pip install . --no-deps -vv
+        - find /home/conda/feedstock_root/build_artifacts/notebook_1566475577654/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl
+            -name '*.js.map' -delete
+    string: py37_0
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - bzip2 1.0.8 h516909a_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py37_1
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1c h516909a_0
+        - pip 19.2.2 py37_0
+        - python 3.7.3 h33d41f4_1
+        - readline 8.0 hf8c457e_0
+        - setuptools 41.2.0 py37_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.6 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - ipykernel
+        - ipython_genutils
+        - jinja2
+        - jupyter_client >=5.3.1
+        - jupyter_core >=4.4.0
+        - nbconvert
+        - nbformat
+        - prometheus_client
+        - python >=3.7,<3.8.0a0
+        - pyzmq >=17
+        - send2trash
+        - terminado >=0.8.1
+        - tornado >=5.0,<7
+        - traitlets >=4.2.1
+test:
+    commands:
+        - jupyter notebook -h
+        - jupyter nbextension -h
+        - jupyter serverextension -h
+        - jupyter bundlerextension -h
+    imports:
+        - notebook
+about:
+    home: http://jupyter.org
+    license: BSD 3-clause
+    license_file: COPYING.md
+    summary: A web-based notebook environment for interactive computing
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - SylvainCorlay
+        - gnestor
+        - jakirkham
+        - minrk
+        - pelson
+        - takluyver

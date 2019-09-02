@@ -1,0 +1,67 @@
+# This file created by conda-build 3.15.1
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Fri Oct  5 13:17:30 2018
+# ------------------------------------------------
+
+package:
+    name: jupyter_highlight_selected_word
+    version: 0.2.0
+source:
+    sha256: 9fa740424859a807950ca08d2bfd28a35154cd32dd6d50ac4e0950022adc0e7b
+    url: https://pypi.io/packages/source/j/jupyter_highlight_selected_word/jupyter_highlight_selected_word-0.2.0.tar.gz
+build:
+    number: '1000'
+    script: /home/conda/feedstock_root/build_artifacts/jupyter_highlight_selected_word_1538745652923/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/bin/python
+        -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    string: py37_1000
+requirements:
+    host:
+        - bzip2 1.0.6 h470a237_2
+        - ca-certificates 2018.8.24 ha4d7672_0
+        - certifi 2018.8.24 py37_1001
+        - libffi 3.2.1 hfc679d8_5
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hfc679d8_1
+        - openssl 1.0.2p h470a237_0
+        - pip 18.0 py37_1001
+        - python 3.7.0 h5001a0f_4
+        - readline 7.0 haf1bffa_1
+        - setuptools 40.4.3 py37_0
+        - sqlite 3.25.2 hb1c47c0_0
+        - tk 8.6.8 ha92aebf_0
+        - wheel 0.32.1 py37_0
+        - xz 5.2.4 h470a237_1
+        - zlib 1.2.11 h470a237_3
+    run:
+        - jupyter_contrib_core >=0.3
+        - notebook >=4.0
+        - python >=3.7,<3.8.0a0
+        - setuptools
+test:
+    imports:
+        - jupyter_highlight_selected_word
+about:
+    home: https://github.com/jcb91/jupyter_highlight_selected_word
+    license: BSD-3-Clause
+    license_file: LICENSE.txt
+    summary: 'Jupyter notebook extension that enables highlighting of all instances
+        of
+
+        the currently-selected or cursor-adjecent word in either the current cell''s
+
+        editor, or in the whole notebook.
+
+        Based on the  CodeMirror addon
+
+        https://codemirror.net/demo/matchhighlighter.html
+
+        extended to work across multiple editors.
+
+        '
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jcb91
+        - ocefpaf

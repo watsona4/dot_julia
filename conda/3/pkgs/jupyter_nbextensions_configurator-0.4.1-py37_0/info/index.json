@@ -1,0 +1,21 @@
+{
+  "arch": "x86_64",
+  "build": "py37_0",
+  "build_number": 0,
+  "depends": [
+    "jupyter_contrib_core >=0.3.2",
+    "jupyter_core",
+    "nbconvert",
+    "notebook >=4.0",
+    "python >=3.7,<3.8.0a0",
+    "pyyaml",
+    "tornado",
+    "traitlets"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "jupyter_nbextensions_configurator",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1546269501953,
+  "version": "0.4.1"
+}

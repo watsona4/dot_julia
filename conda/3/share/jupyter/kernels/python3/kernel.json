@@ -1,0 +1,11 @@
+{
+ "argv": [
+  "/home/ec2-user/.julia/conda/3/bin/python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Python 3",
+ "language": "python"
+}

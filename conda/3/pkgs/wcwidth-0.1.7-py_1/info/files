@@ -1,0 +1,12 @@
+site-packages/wcwidth-0.1.7-py2.7.egg-info/PKG-INFO
+site-packages/wcwidth-0.1.7-py2.7.egg-info/SOURCES.txt
+site-packages/wcwidth-0.1.7-py2.7.egg-info/dependency_links.txt
+site-packages/wcwidth-0.1.7-py2.7.egg-info/installed-files.txt
+site-packages/wcwidth-0.1.7-py2.7.egg-info/top_level.txt
+site-packages/wcwidth-0.1.7-py2.7.egg-info/zip-safe
+site-packages/wcwidth/__init__.py
+site-packages/wcwidth/table_wide.py
+site-packages/wcwidth/table_zero.py
+site-packages/wcwidth/tests/__init__.py
+site-packages/wcwidth/tests/test_core.py
+site-packages/wcwidth/wcwidth.py

@@ -1,0 +1,65 @@
+{% set version = "6.0.1" %}
+
+package:
+  name: notebook
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/n/notebook/notebook-{{ version }}.tar.gz
+  sha256: 660976fe4fe45c7aa55e04bf4bccb9f9566749ff637e9020af3422f9921f9a5d
+
+build:
+  script:
+    - "{{ PYTHON }} -m pip install . --no-deps -vv"
+    - find {{ PREFIX }} -name '*.js.map' -delete  # [not win]
+  number: 0
+  entry_points:
+    - jupyter-notebook = notebook.notebookapp:main
+    - jupyter-nbextension = notebook.nbextensions:main
+    - jupyter-serverextension = notebook.serverextensions:main
+    - jupyter-bundlerextension = notebook.bundler.bundlerextensions:main
+  skip: true  # [py2k]
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - ipykernel
+    - ipython_genutils
+    - jinja2
+    - jupyter_core >=4.4.0
+    - jupyter_client >=5.3.1
+    - nbconvert
+    - nbformat
+    - python
+    - pyzmq >=17
+    - send2trash
+    - terminado >=0.8.1
+    - tornado >=5.0,<7
+    - traitlets >=4.2.1
+    - prometheus_client
+
+test:
+  commands:
+    - jupyter notebook -h
+    - jupyter nbextension -h
+    - jupyter serverextension -h
+    - jupyter bundlerextension -h
+  imports:
+    - notebook
+
+about:
+  home: http://jupyter.org
+  license: BSD 3-clause
+  license_file: COPYING.md
+  summary: A web-based notebook environment for interactive computing
+
+extra:
+  recipe-maintainers:
+    - SylvainCorlay
+    - jakirkham
+    - minrk
+    - pelson
+    - gnestor
+    - takluyver

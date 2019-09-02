@@ -1,0 +1,12 @@
+prefix=/home/ec2-user/.julia/conda/3
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: libxslt
+Version: 1.1.32
+Description: XSLT library version 2.
+Requires: libxml-2.0
+Libs: -L${libdir} -lxslt -L/home/ec2-user/.julia/conda/3/lib -lxml2 -L/home/ec2-user/.julia/conda/3/lib -lz -L/home/ec2-user/.julia/conda/3/lib -llzma -lpthread -L/home/ec2-user/.julia/conda/3/lib -liconv -L/home/ec2-user/.julia/conda/3/lib -licui18n -licuuc -licudata -lm -ldl -lm  -lrt
+Cflags: -I${includedir}

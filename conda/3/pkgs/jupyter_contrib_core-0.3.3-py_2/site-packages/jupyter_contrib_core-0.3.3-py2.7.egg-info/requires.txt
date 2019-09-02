@@ -1,0 +1,11 @@
+jupyter_core
+notebook>=4.0
+setuptools
+traitlets
+tornado
+
+[testing_utils]
+nose
+
+[testing_utils:python_version == "2.7"]
+mock

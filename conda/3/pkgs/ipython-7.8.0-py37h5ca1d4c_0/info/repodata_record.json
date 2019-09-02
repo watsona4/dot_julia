@@ -1,0 +1,32 @@
+{
+  "arch": "x86_64",
+  "build": "py37h5ca1d4c_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "backcall",
+    "decorator",
+    "jedi >=0.10",
+    "pexpect",
+    "pickleshare",
+    "prompt_toolkit >=2.0.0",
+    "pygments",
+    "python >=3.7,<3.8.0a0",
+    "traitlets >=4.2"
+  ],
+  "features": "",
+  "fn": "ipython-7.8.0-py37h5ca1d4c_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "374cacc757a71c6e00757df4bb03bdef",
+  "name": "ipython",
+  "platform": "linux",
+  "sha256": "7c9b5e71a14e82d725a1b807e9eb57dc259eb07d4a26f415de8cf2bfd82922ed",
+  "size": 1154811,
+  "subdir": "linux-64",
+  "timestamp": 1567209241126,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/ipython-7.8.0-py37h5ca1d4c_0.tar.bz2",
+  "version": "7.8.0"
+}

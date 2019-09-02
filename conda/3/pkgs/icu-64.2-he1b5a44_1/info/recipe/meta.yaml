@@ -1,0 +1,77 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Aug 26 04:49:53 2019
+# ------------------------------------------------
+
+package:
+    name: icu
+    version: '64.2'
+source:
+    -   patches: null
+        sha256: 627d5d8478e6d96fc8c90fed4851239079a561a6a8b9e48b0892f24e82d31d6c
+        url: http://download.icu-project.org/files/icu4c/64.2/icu4c-64_2-src.tgz
+    -   folder: source/data
+        sha256: fba0e89f5b3f285d722a83317647bffee69b6f1eb8d067d5da03c5677c45e510
+        url: http://download.icu-project.org/files/icu4c/64.2/icu4c-64_2-data.zip
+build:
+    number: '1'
+    run_exports:
+        - icu >=64.2,<65.0a0
+    string: he1b5a44_1
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_8
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_8
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_8
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - make 4.2.1 h14c3975_2004
+    host:
+        - _libgcc_mutex 0.1 main
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+test:
+    commands:
+        - test -f $PREFIX/lib/libicudata.a
+        - test -f $PREFIX/lib/libicudata.so.64.2
+        - test -f $PREFIX/lib/libicui18n.a
+        - test -f $PREFIX/lib/libicui18n.so.64.2
+        - test -f $PREFIX/lib/libicuio.a
+        - test -f $PREFIX/lib/libicuio.so.64.2
+        - test -f $PREFIX/lib/libicutest.a
+        - test -f $PREFIX/lib/libicutest.so.64.2
+        - test -f $PREFIX/lib/libicutu.a
+        - test -f $PREFIX/lib/libicutu.so.64.2
+        - test -f $PREFIX/lib/libicuuc.a
+        - test -f $PREFIX/lib/libicuuc.so.64.2
+        - genbrk --help
+        - gencfu --help
+        - gencnval --help
+        - gendict --help
+        - icuinfo --help
+        - icu-config --help
+        - makeconv gb-18030-2000.ucm
+        - conda inspect linkages -p $PREFIX $PKG_NAME
+    files:
+        - de.txt
+        - gb-18030-2000.ucm
+about:
+    home: http://site.icu-project.org/
+    license: MIT
+    license_file: LICENSE
+    summary: International Components for Unicode.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - ccordoba12
+        - jakirkham
+        - msarahan
+        - ocefpaf

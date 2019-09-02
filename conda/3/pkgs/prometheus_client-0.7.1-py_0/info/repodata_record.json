@@ -1,0 +1,24 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "features": "",
+  "fn": "prometheus_client-0.7.1-py_0.tar.bz2",
+  "license": "Apache 2.0",
+  "license_family": "Apache",
+  "md5": "469be7d5090ceca761a23f3baa078f1f",
+  "name": "prometheus_client",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "f0871cb4acca87002200a65b6a15f7127364fec9da81131aa5c2ef2892a2768b",
+  "size": 38988,
+  "subdir": "noarch",
+  "timestamp": 1561132539289,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/prometheus_client-0.7.1-py_0.tar.bz2",
+  "version": "0.7.1"
+}

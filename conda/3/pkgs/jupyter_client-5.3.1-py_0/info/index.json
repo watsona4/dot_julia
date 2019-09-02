@@ -1,0 +1,20 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "jupyter_core",
+    "python",
+    "python-dateutil >=2.1",
+    "pyzmq >=13",
+    "tornado >=4.1",
+    "traitlets"
+  ],
+  "license": "BSD 3-clause",
+  "name": "jupyter_client",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1562712837909,
+  "version": "5.3.1"
+}

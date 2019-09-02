@@ -1,0 +1,40 @@
+{% set version = "1.1.1" %}
+
+package:
+  name: markupsafe
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/M/MarkupSafe/MarkupSafe-{{ version }}.tar.gz
+  sha256: 29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+    - python
+    - pip
+  run:
+    - python
+
+test:
+  imports:
+    - markupsafe
+
+about:
+  home: https://www.palletsprojects.com/p/markupsafe
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.rst
+  summary: A Python module that implements the jinja2.Markup string
+  dev_url: https://github.com/pallets/markupsafe
+
+extra:
+  recipe-maintainers:
+    - pelson
+    - scopatz
+    - ocefpaf

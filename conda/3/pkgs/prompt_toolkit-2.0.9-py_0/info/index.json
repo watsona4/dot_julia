@@ -1,0 +1,18 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "pygments",
+    "python",
+    "six >=1.9.0",
+    "wcwidth"
+  ],
+  "license": "BSD 3-clause",
+  "name": "prompt_toolkit",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1550615995801,
+  "version": "2.0.9"
+}

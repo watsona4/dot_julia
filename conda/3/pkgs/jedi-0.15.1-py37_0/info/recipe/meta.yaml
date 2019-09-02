@@ -1,0 +1,71 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Aug 13 07:20:01 2019
+# ------------------------------------------------
+
+package:
+    name: jedi
+    version: 0.15.1
+source:
+    sha256: ba859c74fa3c966a22f2aeebe1b74ee27e2a462f56d3f5f7ca4a59af61bfe42e
+    url: https://pypi.io/packages/source/j/jedi/jedi-0.15.1.tar.gz
+build:
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/jedi_1565680891324/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh/bin/python
+        -m pip install . --no-deps -vv
+    string: py37_0
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - bzip2 1.0.8 h516909a_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py37_1
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1c h516909a_0
+        - pip 19.2.2 py37_0
+        - python 3.7.3 h33d41f4_1
+        - readline 8.0 hf8c457e_0
+        - setuptools 41.0.1 py37_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.4 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - parso >=0.5.0
+        - python >=3.7,<3.8.0a0
+test:
+    imports:
+        - jedi
+        - jedi.api
+        - jedi.evaluate
+        - jedi.evaluate.compiled
+about:
+    description: 'Jedi is a static analysis tool for Python that can be used in IDEs/editors.
+
+        Its historic focus is autocompletion, but does static analysis for now as
+
+        well. Jedi is fast and is very well tested. It understands Python on a
+
+        deeper level than all other static analysis frameworks for Python.
+
+        '
+    dev_url: https://github.com/davidhalter/jedi/
+    doc_source_url: https://github.com/davidhalter/jedi/blob/master/docs/index.rst
+    doc_url: http://jedi.readthedocs.io/en/latest/
+    home: https://github.com/davidhalter/jedi/
+    license: MIT
+    license_family: MIT
+    license_file: LICENSE.txt
+    summary: An autocompletion tool for Python that can be used for text editors.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - asmeurer
+        - goanpeca
+        - nehaljwani
+        - ocefpaf

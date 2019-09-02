@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "he1b5a44_1",
+  "build_number": 1,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "license": "MIT",
+  "name": "icu",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1566795693178,
+  "version": "64.2"
+}

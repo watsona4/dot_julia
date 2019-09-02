@@ -1,0 +1,30 @@
+{
+  "arch": "x86_64",
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "jupyter_contrib_core >=0.3.2",
+    "jupyter_core",
+    "nbconvert",
+    "notebook >=4.0",
+    "python >=3.7,<3.8.0a0",
+    "pyyaml",
+    "tornado",
+    "traitlets"
+  ],
+  "features": "",
+  "fn": "jupyter_nbextensions_configurator-0.4.1-py37_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "md5": "1cdebf866ca78b8a5c45c8bb932bd344",
+  "name": "jupyter_nbextensions_configurator",
+  "platform": "linux",
+  "sha256": "d07353686787c4f1e635cb460cbdb986176e37733e004eb99870f3d202313f0e",
+  "size": 479310,
+  "subdir": "linux-64",
+  "timestamp": 1546269501953,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/jupyter_nbextensions_configurator-0.4.1-py37_0.tar.bz2",
+  "version": "0.4.1"
+}

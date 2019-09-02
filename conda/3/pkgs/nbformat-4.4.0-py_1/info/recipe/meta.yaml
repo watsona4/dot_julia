@@ -1,0 +1,61 @@
+# This file created by conda-build 3.10.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Jul 16 23:22:35 2018
+# ------------------------------------------------
+
+package:
+    name: nbformat
+    version: 4.4.0
+source:
+    fn: nbformat-4.4.0.tar.gz
+    sha256: f7494ef0df60766b7cabe0a3651556345a963b74dbc16bc7c18479041170d402
+    url: https://pypi.io/packages/source/n/nbformat/nbformat-4.4.0.tar.gz
+build:
+    entry_points:
+        - jupyter-trust = nbformat.sign:TrustNotebookApp.launch_instance
+    noarch: python
+    number: '1'
+    script: python -m pip install --no-deps --ignore-installed .
+    string: py_1
+requirements:
+    host:
+        - ca-certificates 2018.4.16 0
+        - certifi 2018.4.16 py36_0
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - ncurses 5.9 10
+        - openssl 1.0.2o 0
+        - pip 9.0.3 py36_0
+        - python 3.6.5 1
+        - readline 7.0 0
+        - setuptools 40.0.0 py36_0
+        - sqlite 3.20.1 2
+        - tk 8.6.7 0
+        - wheel 0.31.1 py36_0
+        - xz 5.2.3 0
+        - zlib 1.2.11 h470a237_3
+    run:
+        - ipython_genutils
+        - jsonschema >=2.4,!=2.5.0
+        - jupyter_core
+        - python
+        - traitlets >=4.1
+test:
+    commands:
+        - jupyter-trust -h
+    imports:
+        - nbformat
+about:
+    home: http://jupyter.org
+    license: BSD 3-clause
+    license_file: COPYING.md
+    summary: The Jupyter Notebook format
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - minrk
+        - mpacer
+        - ocefpaf
+        - pelson
+        - takluyver

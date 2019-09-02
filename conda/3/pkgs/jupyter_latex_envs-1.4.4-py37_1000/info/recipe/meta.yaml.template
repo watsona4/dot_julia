@@ -1,0 +1,42 @@
+{% set version = "1.4.4" %}
+
+package:
+  name: jupyter_latex_envs
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/j/jupyter_latex_envs/jupyter_latex_envs-{{ version }}.tar.gz
+  sha256: b0a83e0cda2d33e61c4b2da94365d2de4dfcdc1ed67abdba3cbe390872cf5231
+
+build:
+  number: 1000
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - ipython
+    - jupyter_contrib_core >=0.3
+    - nbconvert
+    - notebook >=4.0
+    - setuptools
+    - traitlets >=4.1
+
+test:
+  imports:
+    - latex_envs
+    - latex_envs.latex_envs
+
+about:
+  summary: Jupyter nbextension providing some LaTeX environments for markdown cells.
+  home: https://github.com/jfbercher/jupyter_latex_envs
+  license_file: LICENSE.txt
+  license: BSD-3-Clause
+
+extra:
+  recipe-maintainers:
+    - jcb91
+    - jfbercher

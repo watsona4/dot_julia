@@ -1,0 +1,50 @@
+{
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/pandoc-2.7.3-0",
+  "features": "",
+  "files": [
+    "bin/pandoc",
+    "bin/pandoc-citeproc"
+  ],
+  "fn": "pandoc-2.7.3-0.tar.bz2",
+  "license": "GPL-2.0",
+  "license_family": "GPL",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/pandoc-2.7.3-0",
+    "type": 1
+  },
+  "md5": "3fd50bd4e1a70f36400ae9cc5e142aee",
+  "name": "pandoc",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/pandoc-2.7.3-0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/pandoc",
+        "path_type": "hardlink",
+        "sha256": "ad46dc1745dad0d4dbdb4fe14892534eca3a8507d35e33fd7eadc6d7fda05fea",
+        "sha256_in_prefix": "ad46dc1745dad0d4dbdb4fe14892534eca3a8507d35e33fd7eadc6d7fda05fea",
+        "size_in_bytes": 74689368
+      },
+      {
+        "_path": "bin/pandoc-citeproc",
+        "path_type": "hardlink",
+        "sha256": "4c6705b250fc7f080fb6b12bfc3fdce723c174214f6ad82e0ffd040bee34ce54",
+        "sha256_in_prefix": "4c6705b250fc7f080fb6b12bfc3fdce723c174214f6ad82e0ffd040bee34ce54",
+        "size_in_bytes": 61311032
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "36d64f1534ca6e35d0ab7baf390d73d31a08c0d0aeffaa6241391f642a5885b8",
+  "size": 23438370,
+  "subdir": "linux-64",
+  "timestamp": 1560347299628,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/pandoc-2.7.3-0.tar.bz2",
+  "version": "2.7.3"
+}

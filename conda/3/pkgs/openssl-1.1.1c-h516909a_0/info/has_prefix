@@ -1,0 +1,5 @@
+/home/conda/feedstock_root/build_artifacts/openssl_split_1562803046698/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho binary lib/libcrypto.so.1.1
+/opt/anaconda1anaconda2anaconda3 text bin/c_rehash
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libcrypto.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libssl.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/openssl.pc

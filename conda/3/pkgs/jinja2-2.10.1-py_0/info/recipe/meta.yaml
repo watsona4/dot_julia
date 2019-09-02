@@ -1,0 +1,65 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sun Apr  7 06:10:06 2019
+# ------------------------------------------------
+
+package:
+    name: jinja2
+    version: 2.10.1
+source:
+    fn: Jinja2-2.10.1.tar.gz
+    sha256: 065c4f02ebe7f7cf559e49ee5a95fb800a9e4528727aec6f24402a5374c65013
+    url: https://pypi.io/packages/source/J/Jinja2/Jinja2-2.10.1.tar.gz
+build:
+    noarch: python
+    number: '0'
+    script: python -m pip install --no-deps --ignore-installed .
+    string: py_0
+requirements:
+    host:
+        - ca-certificates 2019.3.9 hecc5488_0
+        - certifi 2019.3.9 py27_0
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1b h14c3975_1
+        - pip 19.0.3 py27_0
+        - python 2.7.15 h721da81_1008
+        - readline 7.0 hf8c457e_1001
+        - setuptools 40.9.0 py27_0
+        - sqlite 3.26.0 h67949de_1001
+        - tk 8.6.9 h84994c4_1001
+        - wheel 0.33.1 py27_0
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - markupsafe >=0.23
+        - python
+        - setuptools
+test:
+    imports:
+        - jinja2
+about:
+    description: 'Jinja2 is a full featured template engine for Python. It has full
+        unicode
+
+        support, an optional integrated sandboxed execution environment, widely
+
+        used and BSD licensed.
+
+        '
+    dev_url: https://github.com/pallets/jinja
+    doc_source_url: https://github.com/pallets/jinja/blob/master/docs/index.rst
+    doc_url: http://jinja.pocoo.org/docs/dev/
+    home: http://jinja.pocoo.org
+    license: 3-Clause BSD
+    license_file: LICENSE
+    summary: An easy to use stand-alone template engine written in pure python.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - msarahan
+        - nehaljwani
+        - scopatz

@@ -1,0 +1,20 @@
+{
+  "arch": null,
+  "build": "py_2",
+  "build_number": 2,
+  "depends": [
+    "jupyter_core",
+    "notebook >=4.0",
+    "python",
+    "setuptools",
+    "tornado",
+    "traitlets"
+  ],
+  "license": "BSD 3-clause",
+  "name": "jupyter_contrib_core",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1531796674874,
+  "version": "0.3.3"
+}

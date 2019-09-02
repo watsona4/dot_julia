@@ -1,0 +1,79 @@
+# This file created by conda-build 3.18.4
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Jun 24 12:47:31 2019
+# ------------------------------------------------
+
+package:
+    name: tornado
+    version: 6.0.3
+source:
+    sha256: c845db36ba616912074c5b1ee897f8e0124df269468f25e4fe21fe72f6edd7a9
+    url: https://pypi.io/packages/source/t/tornado/tornado-6.0.3.tar.gz
+build:
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/tornado_1561380598884/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/bin/python
+        -m pip install . --no-deps -vv
+    string: py37h516909a_0
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_7
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_7
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    host:
+        - bzip2 1.0.6 h14c3975_1002
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py37_0
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1b h14c3975_1
+        - pip 19.1.1 py37_0
+        - python 3.7.3 h5b0a415_0
+        - readline 7.0 hf8c457e_1001
+        - setuptools 41.0.1 py37_0
+        - sqlite 3.28.0 h8b20d00_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.4 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - libgcc-ng >=7.3.0
+        - python >=3.7,<3.8.0a0
+test:
+    imports:
+        - tornado
+        - tornado.gen
+        - tornado.netutil
+        - tornado.platform
+        - tornado.test
+about:
+    description: 'Tornado is a Python web framework and asynchronous networking library.
+
+        By using non-blocking network I/O, Tornado can scale to tens of thousands
+
+        of open connections, making it ideal for long polling, WebSockets, and
+
+        other applications that require a long-lived connection to each user.
+
+        '
+    dev_url: https://github.com/tornadoweb/tornado
+    doc_source_url: https://github.com/tornadoweb/tornado/blob/stable/docs/index.rst
+    doc_url: http://www.tornadoweb.org/en/stable/
+    home: http://www.tornadoweb.org/
+    license: Apache 2.0
+    license_family: Apache
+    license_file: LICENSE
+    license_url: http://www.apache.org/licenses/LICENSE-2.0
+    summary: A Python web framework and asynchronous networking library, originally
+        developed at FriendFeed.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - ocefpaf
+        - pelson

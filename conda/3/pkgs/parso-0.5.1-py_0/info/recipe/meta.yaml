@@ -1,0 +1,63 @@
+# This file created by conda-build 3.18.7
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Jul 15 20:21:57 2019
+# ------------------------------------------------
+
+package:
+    name: parso
+    version: 0.5.1
+source:
+    fn: parso-0.5.1.tar.gz
+    sha256: 666b0ee4a7a1220f65d367617f2cd3ffddff3e205f3f16a0284df30e774c2a9c
+    url: https://pypi.io/packages/source/p/parso/parso-0.5.1.tar.gz
+build:
+    noarch: python
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/parso_1563222209742/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/bin/python
+        -m pip install . -vv
+    string: py_0
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py27_0
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1c h516909a_0
+        - pip 19.1.1 py27_0
+        - python 2.7.15 h5a48372_1009
+        - readline 8.0 hf8c457e_0
+        - setuptools 41.0.1 py27_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.4 py27_0
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - python
+test:
+    imports:
+        - parso
+        - parso.pgen2
+        - parso.python
+about:
+    description: 'Parso is a Python parser that supports error recovery and round-trip
+        parsing for different Python versions (in multiple Python versions).
+
+        Parso is also able to list multiple syntax errors in your python file.
+
+        '
+    dev_url: https://github.com/davidhalter/parso
+    doc_url: https://parso.readthedocs.io/en/latest/
+    home: https://github.com/davidhalter/parso
+    license: MIT
+    license_family: MIT
+    license_file: LICENSE.txt
+    summary: A Python Parser
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - iron0012
+        - synapticarbors

@@ -1,0 +1,70 @@
+# This file created by conda-build 3.18.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Fri Jul 19 16:57:12 2019
+# ------------------------------------------------
+
+package:
+    name: libxslt
+    version: 1.1.32
+source:
+    sha256: 526ecd0abaf4a7789041622c3950c0e7f2c4c8835471515fd77eec684a355460
+    url: ftp://xmlsoft.org/libxml2/libxslt-1.1.32.tar.gz
+build:
+    number: '1004'
+    run_exports:
+        - libxslt >=1.1.32,<2.0a0
+    string: h31b3aaa_1004
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_7
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_7
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - make 4.2.1 h14c3975_2004
+    host:
+        - _libgcc_mutex 0.1 main
+        - icu 64.2 he1b5a44_0
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libiconv 1.15 h516909a_1005
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - libxml2 2.9.9 hee79883_2
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - icu >=64.2,<65.0a0
+        - icu >=64.2,<65.0a0
+        - libgcc-ng >=7.3.0
+        - libxml2 >=2.9.9,<2.10.0a0
+        - libxml2 >=2.9.9,<2.10.0a0
+test:
+    commands:
+        - xsltproc --version
+        - conda inspect linkages -p $PREFIX $PKG_NAME
+about:
+    description: '"Libxslt is the XSLT C library developed for the GNOME project.
+
+        XSLT itself is a an XML language to define transformation for XML.
+
+        Libxslt is based on libxml2 the XML C library developed for the GNOME project.
+
+        It also implements most of the EXSLT set of processor-portable extensions
+        functions
+
+        and some of Saxon''s evaluate and expressions extensions."
+
+        '
+    doc_source_url: https://github.com/GNOME/libxslt/tree/master/doc
+    doc_url: http://xmlsoft.org/XSLT/
+    home: http://xmlsoft.org/XSLT/
+    license: MIT
+    license_file: COPYING
+    summary: The XSLT C library developed for the GNOME project
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - ocefpaf
+        - scopatz

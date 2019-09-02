@@ -1,0 +1,15 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "python",
+    "traitlets"
+  ],
+  "license": "BSD 3-clause",
+  "name": "jupyter_core",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "version": "4.4.0"
+}

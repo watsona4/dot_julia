@@ -1,0 +1,6 @@
+/opt/anaconda1anaconda2anaconda3 text bin/icu-config
+/opt/anaconda1anaconda2anaconda3 text lib/icu/64.2/Makefile.inc
+/opt/anaconda1anaconda2anaconda3 text lib/icu/64.2/pkgdata.inc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/icu-i18n.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/icu-io.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/icu-uc.pc

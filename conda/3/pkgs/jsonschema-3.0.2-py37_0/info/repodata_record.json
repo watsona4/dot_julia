@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "attrs >=17.4.0",
+    "pyrsistent >=0.14.0",
+    "python >=3.7,<3.8.0a0",
+    "setuptools",
+    "six >=1.11.0"
+  ],
+  "features": "",
+  "fn": "jsonschema-3.0.2-py37_0.tar.bz2",
+  "license": "MIT",
+  "md5": "336d235a50783b51c82da918ef5afe29",
+  "name": "jsonschema",
+  "platform": "linux",
+  "sha256": "fb6d3db71736915f892b72cf5ff0ad87c9de8caa16fb8dee27823c3878f3513b",
+  "size": 89125,
+  "subdir": "linux-64",
+  "timestamp": 1564744870262,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/jsonschema-3.0.2-py37_0.tar.bz2",
+  "version": "3.0.2"
+}

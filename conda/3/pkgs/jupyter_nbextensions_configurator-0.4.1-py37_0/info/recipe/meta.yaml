@@ -1,0 +1,65 @@
+# This file created by conda-build 3.17.5
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Dec 31 15:13:20 2018
+# ------------------------------------------------
+
+package:
+    name: jupyter_nbextensions_configurator
+    version: 0.4.1
+source:
+    sha256: e5e86b5d9d898e1ffb30ebb08e4ad8696999f798fef3ff3262d7b999076e4e83
+    url: https://pypi.io/packages/source/j/jupyter_nbextensions_configurator/jupyter_nbextensions_configurator-0.4.1.tar.gz
+build:
+    entry_points:
+        - jupyter-nbextensions_configurator = jupyter_nbextensions_configurator.application:main
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/jupyter_nbextensions_configurator_1546269365638/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/bin/python
+        -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    string: py37_0
+requirements:
+    host:
+        - bzip2 1.0.6 h470a237_2
+        - ca-certificates 2018.11.29 ha4d7672_0
+        - certifi 2018.11.29 py37_1000
+        - libffi 3.2.1 hfc679d8_5
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hfc679d8_2
+        - openssl 1.0.2p h470a237_1
+        - pip 18.1 py37_1000
+        - python 3.7.1 h5001a0f_0
+        - readline 7.0 haf1bffa_1
+        - setuptools 40.6.3 py37_0
+        - sqlite 3.26.0 hb1c47c0_0
+        - tk 8.6.9 ha92aebf_0
+        - wheel 0.32.3 py37_0
+        - xz 5.2.4 h470a237_1
+        - zlib 1.2.11 h470a237_3
+    run:
+        - jupyter_contrib_core >=0.3.2
+        - jupyter_core
+        - nbconvert
+        - notebook >=4.0
+        - python >=3.7,<3.8.0a0
+        - pyyaml
+        - tornado
+        - traitlets
+test:
+    commands:
+        - jupyter nbextensions_configurator --help
+        - jupyter nbextensions_configurator enable --help
+        - jupyter nbextensions_configurator disable --help
+    imports:
+        - jupyter_nbextensions_configurator
+        - jupyter_nbextensions_configurator.application
+about:
+    home: https://github.com/jupyter-contrib/jupyter_nbextensions_configurator
+    license: BSD-3-Clause
+    license_file: LICENSE.txt
+    summary: A server extension for jupyter notebook providing configuration interfaces
+        for notebook extensions (nbextensions).
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jcb91

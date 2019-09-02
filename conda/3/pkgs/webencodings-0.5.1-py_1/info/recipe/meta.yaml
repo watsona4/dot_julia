@@ -1,0 +1,53 @@
+# This file created by conda-build 3.13.0
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Aug 28 03:29:05 2018
+# ------------------------------------------------
+
+package:
+    name: webencodings
+    version: 0.5.1
+source:
+    sha256: 082367f568a7812aa5f6922ffe3d9d027cd83829dc32bcaac4c874eeed618000
+    url: https://github.com/gsnedders/python-webencodings/archive/v0.5.1.tar.gz
+build:
+    noarch: python
+    number: '1'
+    script: /home/conda/feedstock_root/build_artifacts/webencodings_1535427063609/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol/bin/python
+        -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    string: py_1
+requirements:
+    host:
+        - bzip2 1.0.6 h470a237_2
+        - ca-certificates 2018.8.24 ha4d7672_0
+        - certifi 2018.8.24 py27_1
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hfc679d8_1
+        - openssl 1.0.2o h470a237_1
+        - pip 18.0 py27_1
+        - python 2.7.15 h9fef7bc_0
+        - readline 7.0 haf1bffa_1
+        - setuptools 40.2.0 py27_0
+        - sqlite 3.24.0 h2f33b56_0
+        - tk 8.6.8 0
+        - wheel 0.31.1 py27_1
+        - zlib 1.2.11 h470a237_3
+    run:
+        - python
+test:
+    imports:
+        - webencodings
+about:
+    dev_url: https://github.com/gsnedders/python-webencodings
+    doc_url: https://pythonhosted.org/webencodings
+    home: https://github.com/gsnedders/python-webencodings
+    license: BSD 3-Clause
+    license_family: BSD
+    license_file: LICENSE
+    summary: Character encoding aliases for legacy web content
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jschueller
+        - ocefpaf

@@ -1,0 +1,308 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "jupyter_contrib_core >=0.3.2",
+    "jupyter_core",
+    "nbconvert",
+    "notebook >=4.0",
+    "python >=3.7,<3.8.0a0",
+    "pyyaml",
+    "tornado",
+    "traitlets"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/jupyter_nbextensions_configurator-0.4.1-py37_0",
+  "features": "",
+  "files": [
+    "bin/.jupyter_nbextensions_configurator-post-link.sh",
+    "bin/.jupyter_nbextensions_configurator-pre-unlink.sh",
+    "bin/jupyter-nbextensions_configurator",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/PKG-INFO",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/SOURCES.txt",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/dependency_links.txt",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/entry_points.txt",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/installed-files.txt",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/not-zip-safe",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/requires.txt",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/top_level.txt",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/__init__.py",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/__pycache__/application.cpython-37.pyc",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/application.py",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/config_menu/config_menu.yaml",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/config_menu/icon.png",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/config_menu/main.js",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/icon.png",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/kse_components.js",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/main.css",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/main.js",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/quickhelp_shim.js",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/readme.md",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/render.js",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/rendermd.css",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/video_play.svg",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/tree_tab/icon.png",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/tree_tab/main.js",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/tree_tab/readme.md",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/tree_tab/tree_tab.yaml",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/templates/nbextensions_configurator.html",
+    "lib/python3.7/site-packages/jupyter_nbextensions_configurator/templates/rendermd.html"
+  ],
+  "fn": "jupyter_nbextensions_configurator-0.4.1-py37_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/jupyter_nbextensions_configurator-0.4.1-py37_0",
+    "type": 1
+  },
+  "md5": "1cdebf866ca78b8a5c45c8bb932bd344",
+  "name": "jupyter_nbextensions_configurator",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/jupyter_nbextensions_configurator-0.4.1-py37_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/.jupyter_nbextensions_configurator-post-link.sh",
+        "path_type": "hardlink",
+        "sha256": "8d337776d51a1c14f62d1899ca0f3bccd24de687c0d49079e4ce43824d8d7355",
+        "sha256_in_prefix": "8d337776d51a1c14f62d1899ca0f3bccd24de687c0d49079e4ce43824d8d7355",
+        "size_in_bytes": 121
+      },
+      {
+        "_path": "bin/.jupyter_nbextensions_configurator-pre-unlink.sh",
+        "path_type": "hardlink",
+        "sha256": "6cf99f244e5f85bdf3ae67d90dd80768e19f4541326ba49d602c594c20646476",
+        "sha256_in_prefix": "6cf99f244e5f85bdf3ae67d90dd80768e19f4541326ba49d602c594c20646476",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "bin/jupyter-nbextensions_configurator",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "c234029dbc62a1f892c18972e112da3f986d3fd8fd1402c7b50cc60dc31a63d2",
+        "sha256_in_prefix": "d1a472a7d558e6bb0c860d6a1055817d35067068033a69732e7433f2eff90838",
+        "size_in_bytes": 275
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "bfdd80790222bebb2b342bed1c0a2b182f4b1fc1a71f0f28ecda7401845b42bb",
+        "sha256_in_prefix": "bfdd80790222bebb2b342bed1c0a2b182f4b1fc1a71f0f28ecda7401845b42bb",
+        "size_in_bytes": 1363
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "ebb3677b2cf8f58d2161e9fa89e5d3b90fc789979b7f04ff1283df7a537a0f7e",
+        "sha256_in_prefix": "ebb3677b2cf8f58d2161e9fa89e5d3b90fc789979b7f04ff1283df7a537a0f7e",
+        "size_in_bytes": 2330
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "7026fafa8f015d9ccf0e050a5923f269550cc079faf43c3f36b6691dcf72fb30",
+        "sha256_in_prefix": "7026fafa8f015d9ccf0e050a5923f269550cc079faf43c3f36b6691dcf72fb30",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "6cc16c84f8f736e24b85afd370155944e13abaa1a162d9d182232d42f1c1cdaa",
+        "sha256_in_prefix": "6cc16c84f8f736e24b85afd370155944e13abaa1a162d9d182232d42f1c1cdaa",
+        "size_in_bytes": 1936
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "207ae8c913866bd4f6e4c42ad0e33838bc4b809c4ae0c3f9009c5cb930aa0b75",
+        "sha256_in_prefix": "207ae8c913866bd4f6e4c42ad0e33838bc4b809c4ae0c3f9009c5cb930aa0b75",
+        "size_in_bytes": 184
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator-0.4.1-py3.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f32255af5acbd23209f15757879f491d2d2134e154af32c413205911301ce84c",
+        "sha256_in_prefix": "f32255af5acbd23209f15757879f491d2d2134e154af32c413205911301ce84c",
+        "size_in_bytes": 34
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bf6d5df58dc650751476b5471c2a5455ac2e67ab3fde3228474c84f4c82b7934",
+        "sha256_in_prefix": "bf6d5df58dc650751476b5471c2a5455ac2e67ab3fde3228474c84f4c82b7934",
+        "size_in_bytes": 10342
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "a2834a345ec3edc37cc2cf79928b2b3a91b50be8a459ebbffc02c53cb93a0bc4",
+        "sha256_in_prefix": "a2834a345ec3edc37cc2cf79928b2b3a91b50be8a459ebbffc02c53cb93a0bc4",
+        "size_in_bytes": 8765
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/__pycache__/application.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "f7fc3a429239553ff8b7c64e5ed5cf6de923079c1dd1da6723d9b94e6adfe1c4",
+        "sha256_in_prefix": "f7fc3a429239553ff8b7c64e5ed5cf6de923079c1dd1da6723d9b94e6adfe1c4",
+        "size_in_bytes": 4754
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/application.py",
+        "path_type": "hardlink",
+        "sha256": "a594d79d47a5c5a9ea8252ee686d671a31b6befb3bb583d1ddc40a7ac05855e3",
+        "sha256_in_prefix": "a594d79d47a5c5a9ea8252ee686d671a31b6befb3bb583d1ddc40a7ac05855e3",
+        "size_in_bytes": 4817
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/config_menu/config_menu.yaml",
+        "path_type": "hardlink",
+        "sha256": "5020fb08aa43605e6dcae196b79631dc8ac0b5ee23c217bb872fd7ae9f61f0df",
+        "sha256_in_prefix": "5020fb08aa43605e6dcae196b79631dc8ac0b5ee23c217bb872fd7ae9f61f0df",
+        "size_in_bytes": 226
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/config_menu/icon.png",
+        "path_type": "hardlink",
+        "sha256": "f8e572abc95d7f06e7f381f905e809ac2f397502a1ba9c01fe8a5bd5ea822817",
+        "sha256_in_prefix": "f8e572abc95d7f06e7f381f905e809ac2f397502a1ba9c01fe8a5bd5ea822817",
+        "size_in_bytes": 33794
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/config_menu/main.js",
+        "path_type": "hardlink",
+        "sha256": "0543ecc665c09cbf397ba01d919e84a0d89bec57a43471d4dec07c2ad9e0b979",
+        "sha256_in_prefix": "0543ecc665c09cbf397ba01d919e84a0d89bec57a43471d4dec07c2ad9e0b979",
+        "size_in_bytes": 967
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/icon.png",
+        "path_type": "hardlink",
+        "sha256": "64aea36de104b225d516804c0af3892e2a5c8ec0d44d6bd2c09c34164fd5030e",
+        "sha256_in_prefix": "64aea36de104b225d516804c0af3892e2a5c8ec0d44d6bd2c09c34164fd5030e",
+        "size_in_bytes": 298383
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/kse_components.js",
+        "path_type": "hardlink",
+        "sha256": "b643379c9f7a72ac698443a0a5f30dabf1a653e79267e193eb29295f4db9d37d",
+        "sha256_in_prefix": "b643379c9f7a72ac698443a0a5f30dabf1a653e79267e193eb29295f4db9d37d",
+        "size_in_bytes": 12695
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/main.css",
+        "path_type": "hardlink",
+        "sha256": "0fb2e6dde5a1385c2363e8b131ffb06cca6e8b1c46fa7f839066d9526dfe2433",
+        "sha256_in_prefix": "0fb2e6dde5a1385c2363e8b131ffb06cca6e8b1c46fa7f839066d9526dfe2433",
+        "size_in_bytes": 5354
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/main.js",
+        "path_type": "hardlink",
+        "sha256": "fcb2d89832ee7ec04b846e4beca90df3a5f4724901ec82b3163ebf18600e861f",
+        "sha256_in_prefix": "fcb2d89832ee7ec04b846e4beca90df3a5f4724901ec82b3163ebf18600e861f",
+        "size_in_bytes": 61473
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/quickhelp_shim.js",
+        "path_type": "hardlink",
+        "sha256": "7a0c9786a5a15d06c4929e199c1e18d71471e31fc55fe48d002050a820af621d",
+        "sha256_in_prefix": "7a0c9786a5a15d06c4929e199c1e18d71471e31fc55fe48d002050a820af621d",
+        "size_in_bytes": 6177
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/readme.md",
+        "path_type": "hardlink",
+        "sha256": "b1d3e688cecb8e45ec868c185e36343643545c04afcd8a9325df3f7cbad09a77",
+        "sha256_in_prefix": "b1d3e688cecb8e45ec868c185e36343643545c04afcd8a9325df3f7cbad09a77",
+        "size_in_bytes": 9447
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/render.js",
+        "path_type": "hardlink",
+        "sha256": "e81423213e354bd112613f6e71603c62cc6d0853ae969f9b06e73f31221fe430",
+        "sha256_in_prefix": "e81423213e354bd112613f6e71603c62cc6d0853ae969f9b06e73f31221fe430",
+        "size_in_bytes": 9575
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/rendermd.css",
+        "path_type": "hardlink",
+        "sha256": "8e042ada483a6c1a31045946967f35e3af4f955d739dc8e4be0b1be7dffdb6d0",
+        "sha256_in_prefix": "8e042ada483a6c1a31045946967f35e3af4f955d739dc8e4be0b1be7dffdb6d0",
+        "size_in_bytes": 1644
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/video_play.svg",
+        "path_type": "hardlink",
+        "sha256": "00985f0b5272a917c6d1dd884eeea51450d2c0379eda14d8edfdb4a08705ff49",
+        "sha256_in_prefix": "00985f0b5272a917c6d1dd884eeea51450d2c0379eda14d8edfdb4a08705ff49",
+        "size_in_bytes": 1655
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/tree_tab/icon.png",
+        "path_type": "hardlink",
+        "sha256": "bad43bab2af983884f499619560cac80cd7b708015e30de4f85a03d4abf510ba",
+        "sha256_in_prefix": "bad43bab2af983884f499619560cac80cd7b708015e30de4f85a03d4abf510ba",
+        "size_in_bytes": 132963
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/tree_tab/main.js",
+        "path_type": "hardlink",
+        "sha256": "422b95109a7f8d305bfacc75ebf52e577764c414c41b909f6fdd8e876bebd567",
+        "sha256_in_prefix": "422b95109a7f8d305bfacc75ebf52e577764c414c41b909f6fdd8e876bebd567",
+        "size_in_bytes": 1579
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/tree_tab/readme.md",
+        "path_type": "hardlink",
+        "sha256": "91f8550437246e26909cf37241d38254cfd299bf21966e0a34708df3b8d74ddb",
+        "sha256_in_prefix": "91f8550437246e26909cf37241d38254cfd299bf21966e0a34708df3b8d74ddb",
+        "size_in_bytes": 594
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/tree_tab/tree_tab.yaml",
+        "path_type": "hardlink",
+        "sha256": "836cd8156f6a3c127f58fcee55ada415027cf8dbe7355db0e57df847ffc99ad5",
+        "sha256_in_prefix": "836cd8156f6a3c127f58fcee55ada415027cf8dbe7355db0e57df847ffc99ad5",
+        "size_in_bytes": 281
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/templates/nbextensions_configurator.html",
+        "path_type": "hardlink",
+        "sha256": "b9fca0ac5ef83f06e5b3fb34fed9dcfa11bd82c5b722faa687ce3a3e56ed7d08",
+        "sha256_in_prefix": "b9fca0ac5ef83f06e5b3fb34fed9dcfa11bd82c5b722faa687ce3a3e56ed7d08",
+        "size_in_bytes": 2171
+      },
+      {
+        "_path": "lib/python3.7/site-packages/jupyter_nbextensions_configurator/templates/rendermd.html",
+        "path_type": "hardlink",
+        "sha256": "c413767bb8bbaefb133ce75d0b8427a6b0f59c6f3198091694d48128d7b03380",
+        "sha256_in_prefix": "c413767bb8bbaefb133ce75d0b8427a6b0f59c6f3198091694d48128d7b03380",
+        "size_in_bytes": 2232
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "d07353686787c4f1e635cb460cbdb986176e37733e004eb99870f3d202313f0e",
+  "size": 479310,
+  "subdir": "linux-64",
+  "timestamp": 1546269501953,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/jupyter_nbextensions_configurator-0.4.1-py37_0.tar.bz2",
+  "version": "0.4.1"
+}

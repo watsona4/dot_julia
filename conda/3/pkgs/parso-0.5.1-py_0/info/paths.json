@@ -1,0 +1,221 @@
+{
+  "paths": [
+    {
+      "_path": "site-packages/parso-0.5.1.dist-info/AUTHORS.txt",
+      "path_type": "hardlink",
+      "sha256": "6f1ae79cc0b49e28510003a2d6f13446ca81b810f29946f55b63e10aff3e2614",
+      "size_in_bytes": 1825
+    },
+    {
+      "_path": "site-packages/parso-0.5.1.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "site-packages/parso-0.5.1.dist-info/LICENSE.txt",
+      "path_type": "hardlink",
+      "sha256": "fa67973073753d17624caf8684d5ee816d70c89d912c5bca7ca0f08e7b150edb",
+      "size_in_bytes": 4176
+    },
+    {
+      "_path": "site-packages/parso-0.5.1.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "fb17c7c0b959e63560176161072f7af1835f9ec85ec1e5b20a3c2b46c9202de9",
+      "size_in_bytes": 5680
+    },
+    {
+      "_path": "site-packages/parso-0.5.1.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "0da36984081aa21ed9f27de432b2488f3ab3bc1ecf15998c1796d4fd77e8e4e6",
+      "size_in_bytes": 3395
+    },
+    {
+      "_path": "site-packages/parso-0.5.1.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "87f6959f9381d8811152331b8b6a6e72647fcf3589b64df4dd85ef861eb4349f",
+      "size_in_bytes": 110
+    },
+    {
+      "_path": "site-packages/parso-0.5.1.dist-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "18e38a4023dc9ebd3fec8440af1c88d025f92cbbb858b973211015592faf278b",
+      "size_in_bytes": 6
+    },
+    {
+      "_path": "site-packages/parso/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "239fbecbfc31c0f4d85ec20dee78c2ace7772f22b41ddc2ac792123ff02b1a26",
+      "size_in_bytes": 1607
+    },
+    {
+      "_path": "site-packages/parso/_compatibility.py",
+      "path_type": "hardlink",
+      "sha256": "cdbbc0fa521e80f2593583193ebbdfec1f1259162ffcee163c401e9f58505137",
+      "size_in_bytes": 3441
+    },
+    {
+      "_path": "site-packages/parso/cache.py",
+      "path_type": "hardlink",
+      "sha256": "f5c10fe7b8b80a368c9841621dc7d1939541c14648fb37079b8f125b2fcda6ba",
+      "size_in_bytes": 4887
+    },
+    {
+      "_path": "site-packages/parso/file_io.py",
+      "path_type": "hardlink",
+      "sha256": "3e5a71e90c045b5253ad85d4c3bdcbea670170c946454e6be01c1a072b81c5c1",
+      "size_in_bytes": 972
+    },
+    {
+      "_path": "site-packages/parso/grammar.py",
+      "path_type": "hardlink",
+      "sha256": "1ae91788dee50a7dd9787b2f25c32b1eab500c5ced2fe281b1d4307b3ab25c37",
+      "size_in_bytes": 10275
+    },
+    {
+      "_path": "site-packages/parso/normalizer.py",
+      "path_type": "hardlink",
+      "sha256": "c473e1bedcb77d844dece1e2265bcc3f8438298af732e9c5874f026f666a1173",
+      "size_in_bytes": 5170
+    },
+    {
+      "_path": "site-packages/parso/parser.py",
+      "path_type": "hardlink",
+      "sha256": "8972b19ee4c3aae6a7825bcf937a19e22b82cf2547862a0f25a536128cdec528",
+      "size_in_bytes": 7160
+    },
+    {
+      "_path": "site-packages/parso/pgen2/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "9057d166c49178ce3d57460827f706d3f4cc4dec36b7820c6c6f7928ed8123c1",
+      "size_in_bytes": 382
+    },
+    {
+      "_path": "site-packages/parso/pgen2/generator.py",
+      "path_type": "hardlink",
+      "sha256": "39937b87db528687a77e2d54778db1b67b53d39079f8542a2af147e7e39079da",
+      "size_in_bytes": 13264
+    },
+    {
+      "_path": "site-packages/parso/pgen2/grammar_parser.py",
+      "path_type": "hardlink",
+      "sha256": "8c2c9c1a4d1ed3aa48d955e3dca8c5174baa59b75120c488e525cd6da3f5a901",
+      "size_in_bytes": 5292
+    },
+    {
+      "_path": "site-packages/parso/python/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/parso/python/diff.py",
+      "path_type": "hardlink",
+      "sha256": "a987345184f003c4ddbb1483487902cd53e431352c00fa41e4dab6e09c3c7608",
+      "size_in_bytes": 27173
+    },
+    {
+      "_path": "site-packages/parso/python/errors.py",
+      "path_type": "hardlink",
+      "sha256": "256043e3c8236b2fa725dad7a6765aca8af71bd7af7a0aef453a9a5bb2a6d848",
+      "size_in_bytes": 37622
+    },
+    {
+      "_path": "site-packages/parso/python/grammar26.txt",
+      "path_type": "hardlink",
+      "sha256": "7102d1f2c2fe82193a4dc97970f098283df9011960da46701f76abe68ef117bd",
+      "size_in_bytes": 6426
+    },
+    {
+      "_path": "site-packages/parso/python/grammar27.txt",
+      "path_type": "hardlink",
+      "sha256": "32514e5a8ca03ab3a4c5f73e35fea4ac5a7fa61a48f54bd011911378a6f18b60",
+      "size_in_bytes": 5960
+    },
+    {
+      "_path": "site-packages/parso/python/grammar33.txt",
+      "path_type": "hardlink",
+      "sha256": "07fc540d8a562cfd60fc49a2326c1dc7eb6c7e35f95f654f36cb7fe7852a0409",
+      "size_in_bytes": 6126
+    },
+    {
+      "_path": "site-packages/parso/python/grammar34.txt",
+      "path_type": "hardlink",
+      "sha256": "ac2788a326846ed97e8219aa9eb7bcbeb2c7f13c2b4203e8e8b672c0f0057413",
+      "size_in_bytes": 6130
+    },
+    {
+      "_path": "site-packages/parso/python/grammar35.txt",
+      "path_type": "hardlink",
+      "sha256": "36715319fe4a3b1b3277ff703c26d34fe62107ced96fbf165adfeb9ce38faff2",
+      "size_in_bytes": 6935
+    },
+    {
+      "_path": "site-packages/parso/python/grammar36.txt",
+      "path_type": "hardlink",
+      "sha256": "e2f7319a4c2d7ecdf6ad242434ae25c10ab32cc6f3107f892059e96b7ee430e3",
+      "size_in_bytes": 6935
+    },
+    {
+      "_path": "site-packages/parso/python/grammar37.txt",
+      "path_type": "hardlink",
+      "sha256": "17708d38681238dd1bba305ffeb4ac990f31754460f9a2481cbff62497eedbfb",
+      "size_in_bytes": 6786
+    },
+    {
+      "_path": "site-packages/parso/python/grammar38.txt",
+      "path_type": "hardlink",
+      "sha256": "5107eb62435166fca767bc009413d9118fad2504d8b16bd76a2db85ef714e9dc",
+      "size_in_bytes": 7546
+    },
+    {
+      "_path": "site-packages/parso/python/parser.py",
+      "path_type": "hardlink",
+      "sha256": "bdc3ebfdd2d9a6f9fcd721be80003bb6f335d95aa513865b6b320fc5a89b221b",
+      "size_in_bytes": 8610
+    },
+    {
+      "_path": "site-packages/parso/python/pep8.py",
+      "path_type": "hardlink",
+      "sha256": "8a068c59801fb5acdea3195c355ac46030a87c8f289a7f122973ec6c9b04ce11",
+      "size_in_bytes": 32216
+    },
+    {
+      "_path": "site-packages/parso/python/prefix.py",
+      "path_type": "hardlink",
+      "sha256": "28d2303a117a8cfe84e10484a55ddd76b8fdd709bd6bb3fc39841bf6a7bfce97",
+      "size_in_bytes": 2405
+    },
+    {
+      "_path": "site-packages/parso/python/token.py",
+      "path_type": "hardlink",
+      "sha256": "a6b4591ebe2f54c2b7e49516542f4cf64c9eaaa1162c3c8e2a38302d0378873a",
+      "size_in_bytes": 811
+    },
+    {
+      "_path": "site-packages/parso/python/tokenize.py",
+      "path_type": "hardlink",
+      "sha256": "67bd782a158d5fd18bca66e28e93802684e0b0ddbb7b1ac012d0ee069a618f20",
+      "size_in_bytes": 25760
+    },
+    {
+      "_path": "site-packages/parso/python/tree.py",
+      "path_type": "hardlink",
+      "sha256": "f7163998f656246f38a14164192f6e00c63fcddd510b2239ccb836ba69ef9f23",
+      "size_in_bytes": 36879
+    },
+    {
+      "_path": "site-packages/parso/tree.py",
+      "path_type": "hardlink",
+      "sha256": "576ddc9a475209bb327ee87308c0e33037f9c57737f8f7fbc4815c2e0f01c27f",
+      "size_in_bytes": 11302
+    },
+    {
+      "_path": "site-packages/parso/utils.py",
+      "path_type": "hardlink",
+      "sha256": "1fe3d3a473b14e6b5eefaf84fe70a24c32990bc403fa495a8935ce341709b96e",
+      "size_in_bytes": 6052
+    }
+  ],
+  "paths_version": 1
+}

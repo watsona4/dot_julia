@@ -1,0 +1,16 @@
+.bumpversion.cfg
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tox.ini
+src/jupyter_highlight_selected_word/__init__.py
+src/jupyter_highlight_selected_word.egg-info/PKG-INFO
+src/jupyter_highlight_selected_word.egg-info/SOURCES.txt
+src/jupyter_highlight_selected_word.egg-info/dependency_links.txt
+src/jupyter_highlight_selected_word.egg-info/not-zip-safe
+src/jupyter_highlight_selected_word.egg-info/top_level.txt
+src/jupyter_highlight_selected_word/static/highlight_selected_word/README.md
+src/jupyter_highlight_selected_word/static/highlight_selected_word/configurator.yaml
+src/jupyter_highlight_selected_word/static/highlight_selected_word/main.js

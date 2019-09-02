@@ -1,0 +1,52 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sun Mar 17 03:40:41 2019
+# ------------------------------------------------
+
+package:
+    name: decorator
+    version: 4.4.0
+source:
+    sha256: 86156361c50488b84a3f148056ea716ca587df2f0de1d34750d35c21312725de
+    url: https://pypi.io/packages/source/d/decorator/decorator-4.4.0.tar.gz
+build:
+    noarch: python
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/decorator_1552794129588/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p/bin/python
+        -m pip install . --no-deps -vv
+    string: py_0
+requirements:
+    build:
+        - ca-certificates 2019.3.9 hecc5488_0
+        - certifi 2019.3.9 py27_0
+        - libffi 3.2.1 hf484d3e_1005
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1b h14c3975_1
+        - pip 19.0.3 py27_0
+        - python 2.7.15 h721da81_1008
+        - readline 7.0 hf8c457e_1001
+        - setuptools 40.8.0 py27_0
+        - sqlite 3.26.0 h67949de_1001
+        - tk 8.6.9 h84994c4_1000
+        - wheel 0.33.1 py27_0
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - python
+test:
+    imports:
+        - decorator
+about:
+    home: https://github.com/micheles/decorator
+    license: BSD 3-Clause
+    license_file: LICENSE.txt
+    summary: Better living through Python with decorators.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - msarahan
+        - ocefpaf
+        - pelson
+        - scopatz

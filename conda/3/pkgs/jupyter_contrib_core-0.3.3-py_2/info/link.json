@@ -1,0 +1,9 @@
+{
+  "noarch": {
+    "entry_points": [
+      "jupyter-contrib = jupyter_contrib_core.application:main"
+    ],
+    "type": "python"
+  },
+  "package_metadata_version": 1
+}

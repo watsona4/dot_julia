@@ -1,0 +1,16 @@
+{
+  "arch": null,
+  "build": "py_1",
+  "build_number": 1,
+  "depends": [
+    "python"
+  ],
+  "license": "PSF 2.0",
+  "license_family": "PSF",
+  "name": "defusedxml",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1539010792530,
+  "version": "0.5.0"
+}

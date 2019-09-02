@@ -1,0 +1,16 @@
+{
+  "arch": null,
+  "build": "py_1",
+  "build_number": 1,
+  "depends": [
+    "python"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "pandocfilters",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1531512387814,
+  "version": "1.4.2"
+}

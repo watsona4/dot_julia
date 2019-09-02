@@ -1,0 +1,21 @@
+{
+  "arch": "x86_64",
+  "build": "hecc5488_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "ca-certificates-2019.6.16-hecc5488_0.tar.bz2",
+  "license": "ISC",
+  "md5": "f55faaf89b668308ac9ff6402c229558",
+  "name": "ca-certificates",
+  "platform": "linux",
+  "sha256": "3f19a650f3c2455f513936501730461142e1449a486b8c6c6aca60412c85ba82",
+  "size": 148983,
+  "subdir": "linux-64",
+  "timestamp": 1560698280327,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/ca-certificates-2019.6.16-hecc5488_0.tar.bz2",
+  "version": "2019.6.16"
+}

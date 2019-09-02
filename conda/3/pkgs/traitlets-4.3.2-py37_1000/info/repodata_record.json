@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "py37_1000",
+  "build_number": 1000,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "decorator",
+    "ipython_genutils",
+    "python >=3.7,<3.8.0a0",
+    "six"
+  ],
+  "features": "",
+  "fn": "traitlets-4.3.2-py37_1000.tar.bz2",
+  "license": "BSD-3-Clause",
+  "md5": "39f46ce9a9af08dbb1305d0e437fea93",
+  "name": "traitlets",
+  "platform": "linux",
+  "sha256": "7a205a985c8b977804b95f6a66cf52ffdfd7fee59ae1cb97041d8ce42b508918",
+  "size": 133524,
+  "subdir": "linux-64",
+  "timestamp": 1538560964824,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/traitlets-4.3.2-py37_1000.tar.bz2",
+  "version": "4.3.2"
+}

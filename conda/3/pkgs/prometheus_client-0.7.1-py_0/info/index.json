@@ -1,0 +1,16 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "python"
+  ],
+  "license": "Apache 2.0",
+  "license_family": "Apache",
+  "name": "prometheus_client",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1561132539289,
+  "version": "0.7.1"
+}

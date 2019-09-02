@@ -1,0 +1,11 @@
+{
+  "noarch": {
+    "entry_points": [
+      "jupyter = jupyter_core.command:main",
+      "jupyter-migrate = jupyter_core.migrate:main",
+      "jupyter-troubleshoot = jupyter_core.troubleshoot:main"
+    ],
+    "type": "python"
+  },
+  "package_metadata_version": 1
+}

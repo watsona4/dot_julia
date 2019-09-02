@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "py37h5ca1d4c_0",
+  "build_number": 0,
+  "depends": [
+    "backcall",
+    "decorator",
+    "jedi >=0.10",
+    "pexpect",
+    "pickleshare",
+    "prompt_toolkit >=2.0.0",
+    "pygments",
+    "python >=3.7,<3.8.0a0",
+    "traitlets >=4.2"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "ipython",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1567209241126,
+  "version": "7.8.0"
+}

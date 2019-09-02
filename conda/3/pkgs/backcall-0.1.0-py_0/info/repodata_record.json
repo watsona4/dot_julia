@@ -1,0 +1,23 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "features": "",
+  "fn": "backcall-0.1.0-py_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "a6d55d275ba454de578438ae587d7d86",
+  "name": "backcall",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "0b51f2c01d1a500294c55ec9ec3e8baeddd880fcc72da9d4cc489a00d9f0ea5e",
+  "size": 12973,
+  "subdir": "noarch",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/backcall-0.1.0-py_0.tar.bz2",
+  "version": "0.1.0"
+}

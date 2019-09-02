@@ -1,0 +1,27 @@
+{
+  "build": "py_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "ipython_genutils",
+    "jsonschema >=2.4,!=2.5.0",
+    "jupyter_core",
+    "python",
+    "traitlets >=4.1"
+  ],
+  "features": "",
+  "fn": "nbformat-4.4.0-py_1.tar.bz2",
+  "license": "BSD 3-clause",
+  "md5": "2571f1e8b5797bd6fdc46c525b4ee584",
+  "name": "nbformat",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "4ddae0bb11862ddeeacf5cecb820a90203363607e444d1386916d910d8d43f88",
+  "size": 93599,
+  "subdir": "noarch",
+  "timestamp": 1531783456530,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/nbformat-4.4.0-py_1.tar.bz2",
+  "version": "4.4.0"
+}

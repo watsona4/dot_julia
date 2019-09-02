@@ -1,0 +1,12 @@
+{
+  "arch": "x86_64",
+  "build": "hecc5488_0",
+  "build_number": 0,
+  "depends": [],
+  "license": "ISC",
+  "name": "ca-certificates",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1560698280327,
+  "version": "2019.6.16"
+}

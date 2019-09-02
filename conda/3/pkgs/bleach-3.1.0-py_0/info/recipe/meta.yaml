@@ -1,0 +1,63 @@
+# This file created by conda-build 3.17.5
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Jan  9 19:15:51 2019
+# ------------------------------------------------
+
+package:
+    name: bleach
+    version: 3.1.0
+source:
+    sha256: 3fdf7f77adcf649c9911387df51254b813185e32b2c6619f690b593a617e19fa
+    url: https://pypi.io/packages/source/b/bleach/bleach-3.1.0.tar.gz
+build:
+    noarch: python
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/bleach_1547061478149/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac/bin/python
+        -m pip install . -vvv
+    string: py_0
+requirements:
+    host:
+        - ca-certificates 2018.11.29 ha4d7672_0
+        - certifi 2018.11.29 py27_1000
+        - libffi 3.2.1 hfc679d8_5
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hfc679d8_2
+        - openssl 1.0.2p h470a237_2
+        - pip 18.1 py27_1000
+        - python 2.7.15 h33da82c_6
+        - readline 7.0 haf1bffa_1
+        - setuptools 40.6.3 py27_0
+        - sqlite 3.26.0 hb1c47c0_0
+        - tk 8.6.9 ha92aebf_0
+        - wheel 0.32.3 py27_0
+        - zlib 1.2.11 h470a237_4
+    run:
+        - python
+        - setuptools
+        - six
+        - webencodings
+test:
+    imports:
+        - bleach
+about:
+    description: 'Bleach is an allowed-list-based HTML sanitizing library that escapes
+        or
+
+        strips markup and attributes.
+
+        '
+    dev_url: https://github.com/mozilla/bleach
+    doc_source_url: https://github.com/mozilla/bleach/blob/master/docs/index.rst
+    doc_url: https://bleach.readthedocs.io/
+    home: https://github.com/mozilla/bleach
+    license: Apache-2.0
+    license_family: Apache
+    license_file: LICENSE
+    summary: Easy, whitelist-based HTML-sanitizing tool
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - minrk
+        - ocefpaf

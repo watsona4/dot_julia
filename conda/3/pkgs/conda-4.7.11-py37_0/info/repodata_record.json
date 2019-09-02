@@ -2,7 +2,7 @@
   "arch": "x86_64",
   "build": "py37_0",
   "build_number": 0,
-  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
   "constrains": [
     "conda-build >=3",
     "conda-env >=2.6",
@@ -21,14 +21,14 @@
   "features": "",
   "fn": "conda-4.7.11-py37_0.tar.bz2",
   "license": "BSD 3-Clause",
-  "md5": "8351e77997facfdb87309d70f789ab04",
+  "md5": "8cf308404cf821cb0d23932d285d463e",
   "name": "conda",
   "platform": "linux",
-  "sha256": "a612ac5bcb5ae1bd8188d056c72db853b451424099f3938db3e37446062b8547",
-  "size": 3139069,
+  "sha256": "031df7bbaa9134c1bfa7dbdb2ac66bfb68a4f768d54a6448da0f5782e6d75a28",
+  "size": 3122349,
   "subdir": "linux-64",
-  "timestamp": 1565121200033,
+  "timestamp": 1565126726696,
   "track_features": "",
-  "url": "https://repo.anaconda.com/pkgs/main/linux-64/conda-4.7.11-py37_0.tar.bz2",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/conda-4.7.11-py37_0.tar.bz2",
   "version": "4.7.11"
 }

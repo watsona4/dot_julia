@@ -1,0 +1,28 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "jupyter_core",
+    "python",
+    "python-dateutil >=2.1",
+    "pyzmq >=13",
+    "tornado >=4.1",
+    "traitlets"
+  ],
+  "features": "",
+  "fn": "jupyter_client-5.3.1-py_0.tar.bz2",
+  "license": "BSD 3-clause",
+  "md5": "37f05f124897c03e00f91cb198251545",
+  "name": "jupyter_client",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "331f67e4ef716ee32e3a052618803542804219e7f4ee459428bb25dd1e2e7e51",
+  "size": 65716,
+  "subdir": "noarch",
+  "timestamp": 1562712837909,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/jupyter_client-5.3.1-py_0.tar.bz2",
+  "version": "5.3.1"
+}

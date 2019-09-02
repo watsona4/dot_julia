@@ -1,0 +1,23 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python",
+    "traitlets"
+  ],
+  "features": "",
+  "fn": "jupyter_core-4.4.0-py_0.tar.bz2",
+  "license": "BSD 3-clause",
+  "md5": "0711eac03688a136f594e4f20e33989b",
+  "name": "jupyter_core",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "979e5c632604bec9ed8c2fba1d9d3634f10dba8a2659d57a213ffd482aa9bb39",
+  "size": 44623,
+  "subdir": "noarch",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/jupyter_core-4.4.0-py_0.tar.bz2",
+  "version": "4.4.0"
+}

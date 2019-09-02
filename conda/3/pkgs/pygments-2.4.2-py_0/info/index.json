@@ -1,0 +1,16 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "python",
+    "setuptools"
+  ],
+  "license": "BSD 2-clause",
+  "name": "pygments",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1559052618939,
+  "version": "2.4.2"
+}

@@ -1,0 +1,24 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python",
+    "setuptools"
+  ],
+  "features": "",
+  "fn": "pygments-2.4.2-py_0.tar.bz2",
+  "license": "BSD 2-clause",
+  "md5": "e905e414b8071fee1ee2be7ee999baed",
+  "name": "pygments",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "6a1acbfc7e5664d927b12da72c25c3ef066ec40efbf4b67b2f807f7de1e44647",
+  "size": 676749,
+  "subdir": "noarch",
+  "timestamp": 1559052618939,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pygments-2.4.2-py_0.tar.bz2",
+  "version": "2.4.2"
+}

@@ -1,0 +1,47 @@
+{
+  "paths": [
+    {
+      "_path": "lib/python3.7/site-packages/__pycache__/entrypoints.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "8697fbe66e0ca6d5acf2e0652315223b27150584c718096150fe9a71b986ec35",
+      "size_in_bytes": 7078
+    },
+    {
+      "_path": "lib/python3.7/site-packages/entrypoints-0.3.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "size_in_bytes": 4
+    },
+    {
+      "_path": "lib/python3.7/site-packages/entrypoints-0.3.dist-info/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "de5fcd7349cdf399b0707a2a024833c4704743650133c72d6f0ff7561a03a848",
+      "size_in_bytes": 1098
+    },
+    {
+      "_path": "lib/python3.7/site-packages/entrypoints-0.3.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "6e47cfcc0dfd2584191808afb0dde74109728201b36593b647479d4fa5b0d56a",
+      "size_in_bytes": 1369
+    },
+    {
+      "_path": "lib/python3.7/site-packages/entrypoints-0.3.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "81e903c0910576832340adf46e70937a8fc0dc302171bddeeead2cf32af44fdb",
+      "size_in_bytes": 510
+    },
+    {
+      "_path": "lib/python3.7/site-packages/entrypoints-0.3.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "bac35af45aba98244f8d4d278b61a429344db2511031199fef5caefa1505f79f",
+      "size_in_bytes": 99
+    },
+    {
+      "_path": "lib/python3.7/site-packages/entrypoints.py",
+      "path_type": "hardlink",
+      "sha256": "68a5307fc9444bce2f15b1bf04a97bd233c20ffdd7d8277205e5e546503be1f0",
+      "size_in_bytes": 8262
+    }
+  ],
+  "paths_version": 1
+}

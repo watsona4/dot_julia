@@ -1,0 +1,15 @@
+{
+  "arch": null,
+  "build": "py_1",
+  "build_number": 1,
+  "depends": [
+    "python"
+  ],
+  "license": "BSD 3-Clause",
+  "name": "ipython_genutils",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1530963305778,
+  "version": "0.2.0"
+}

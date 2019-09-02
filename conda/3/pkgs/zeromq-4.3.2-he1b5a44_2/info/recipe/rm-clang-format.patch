@@ -1,0 +1,14 @@
+---
+zeromq-4.2.5 doesn't include files required to include ClangFormat
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1520,5 +1520,5 @@ if (MSVC_VERSION EQUAL 1600)
+   endif ()
+ endif ()
+
+ # this cannot be moved, as it does not only contain function/macro definitions
+-include(ClangFormat)
++# include(ClangFormat)
+--
+2.16.2
+

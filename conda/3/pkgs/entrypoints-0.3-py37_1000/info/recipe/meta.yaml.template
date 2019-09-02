@@ -1,0 +1,43 @@
+{% set version = "0.3" %}
+
+package:
+  name: entrypoints
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/e/entrypoints/entrypoints-{{ version }}.tar.gz
+  sha256: c70dd71abe5a8c85e55e12c19bd91ccfeec11a6e99044204511f9ed547d48451
+
+build:
+  number: 1000
+  script:
+    - "flit build --format wheel"
+    - "{{ PYTHON }} -m pip install dist/entrypoints-{{ version }}-py2.py3-none-any.whl --no-deps --ignore-installed --no-cache-dir -vvv"
+
+requirements:
+  build:
+    - python >=3.6
+    - flit
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - configparser >=3.5  # [py27]
+
+test:
+  imports:
+    - entrypoints
+
+about:
+  home: https://entrypoints.readthedocs.io/
+  license: MIT
+  license_file: LICENSE
+  summary: Discover and load entry points from installed packages
+
+extra:
+  recipe-maintainers:
+    - pelson
+    - minrk
+    - takluyver
+    - ocefpaf

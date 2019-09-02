@@ -1,0 +1,72 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Jul 31 16:49:49 2019
+# ------------------------------------------------
+
+package:
+    name: pyyaml
+    version: 5.1.2
+source:
+    patches:
+        - 0001-Ensure-we-do-not-end-up-wih-CRLF-line-endings-on-tes.patch
+    sha256: 01adf0b6c6f61bd11af6e10ca52b7d4057dd0be0343eb9283c878cf3af56aee4
+    url: https://pypi.io/packages/source/P/PyYAML/PyYAML-5.1.2.tar.gz
+build:
+    number: '0'
+    script:
+        - python setup.py --with-libyaml build_ext --include-dirs="${PREFIX}/include"
+            --library-dirs="${PREFIX}/lib"
+        - python setup.py install
+        - python setup.py test
+    string: py37h516909a_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_7
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_7
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - bzip2 1.0.8 h516909a_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - cython 0.29.13 py37he1b5a44_0
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1c h516909a_0
+        - python 3.7.3 h33d41f4_1
+        - readline 8.0 hf8c457e_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - xz 5.2.4 h14c3975_1001
+        - yaml 0.1.7 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - libgcc-ng >=7.3.0
+        - python >=3.7,<3.8.0a0
+        - yaml >=0.1.7,<0.2.0a0
+test:
+    imports:
+        - _yaml
+        - yaml
+about:
+    dev_url: https://github.com/yaml/pyyaml
+    doc_url: http://pyyaml.org/wiki/PyYAML
+    home: http://pyyaml.org/wiki/PyYAML
+    license: MIT
+    license_family: MIT
+    license_file: LICENSE
+    summary: YAML parser and emitter for Python
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - jjhelmus
+        - msarahan
+        - ocefpaf
+        - pelson

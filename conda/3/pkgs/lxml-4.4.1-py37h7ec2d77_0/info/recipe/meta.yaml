@@ -1,0 +1,83 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sun Aug 11 13:02:05 2019
+# ------------------------------------------------
+
+package:
+    name: lxml
+    version: 4.4.1
+source:
+    sha256: c81cb40bff373ab7a7446d6bbca0190bccc5be3448b47b51d729e37799bb5692
+    url: https://pypi.io/packages/source/l/lxml/lxml-4.4.1.tar.gz
+build:
+    number: '0'
+    script:
+        - python -m pip install --no-deps --ignore-installed . --global-option="--with-xslt-config=$PREFIX/bin/xslt-config"
+    string: py37h7ec2d77_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_8
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_8
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - bzip2 1.0.8 h516909a_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py37_1
+        - cython 0.29.13 py37he1b5a44_0
+        - icu 64.2 he1b5a44_0
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libiconv 1.15 h516909a_1005
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - libxml2 2.9.9 hee79883_2
+        - libxslt 1.1.32 h31b3aaa_1004
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1c h516909a_0
+        - pip 19.2.1 py37_0
+        - python 3.7.3 h33d41f4_1
+        - readline 8.0 hf8c457e_0
+        - setuptools 41.0.1 py37_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.4 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - libgcc-ng >=7.3.0
+        - libxml2 >=2.9.9,<2.10.0a0
+        - libxslt >=1.1.32,<2.0a0
+        - python >=3.7,<3.8.0a0
+test:
+    imports:
+        - lxml
+        - lxml.etree
+        - lxml.objectify
+about:
+    description: 'The lxml XML toolkit is a Pythonic binding for the C libraries libxml2
+        and
+
+        libxslt. It is unique in that it combines the speed and XML feature
+
+        completeness of these libraries with the simplicity of a native Python API,
+
+        mostly compatible but superior to the well-known ElementTree API.
+
+        '
+    dev_url: https://github.com/lxml/lxml
+    doc_source_url: https://github.com/lxml/lxml/tree/master/doc
+    doc_url: http://lxml.de/index.html#documentation
+    home: http://lxml.de/
+    license: BSD 3-Clause, GPL-2.0, ZPL-2.0, and ElementTree
+    license_file: LICENSES.txt
+    summary: Pythonic binding for the C libraries libxml2 and libxslt.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jjhelmus
+        - ocefpaf

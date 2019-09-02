@@ -1,7 +1,7 @@
 {
   "build": "py37_0",
   "build_number": 0,
-  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
   "constrains": [
     "conda-build >=3",
     "conda-env >=2.6",
@@ -418,7 +418,7 @@
     "source": "/home/ec2-user/.julia/conda/3/pkgs/conda-4.7.11-py37_0",
     "type": 1
   },
-  "md5": "8351e77997facfdb87309d70f789ab04",
+  "md5": "8cf308404cf821cb0d23932d285d463e",
   "name": "conda",
   "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/conda-4.7.11-py37_0.tar.bz2",
   "paths_data": {
@@ -568,8 +568,8 @@
       {
         "_path": "lib/python3.7/site-packages/conda/__pycache__/__init__.cpython-37.pyc",
         "path_type": "hardlink",
-        "sha256": "0347caa961038c0b65c25468cdf4665dad119e341b8b5069c1b69da6b04214cf",
-        "sha256_in_prefix": "0347caa961038c0b65c25468cdf4665dad119e341b8b5069c1b69da6b04214cf",
+        "sha256": "747a87e367e0f89e43869ec85bc6e9489a97e69261a38cc8410e41b9b8f6d270",
+        "sha256_in_prefix": "747a87e367e0f89e43869ec85bc6e9489a97e69261a38cc8410e41b9b8f6d270",
         "size_in_bytes": 5700
       },
       {
@@ -3183,12 +3183,12 @@
     ],
     "paths_version": 1
   },
-  "requested_spec": "conda",
-  "sha256": "a612ac5bcb5ae1bd8188d056c72db853b451424099f3938db3e37446062b8547",
-  "size": 3139069,
+  "requested_spec": "None",
+  "sha256": "031df7bbaa9134c1bfa7dbdb2ac66bfb68a4f768d54a6448da0f5782e6d75a28",
+  "size": 3122349,
   "subdir": "linux-64",
-  "timestamp": 1565121200033,
+  "timestamp": 1565126726696,
   "track_features": "",
-  "url": "https://repo.anaconda.com/pkgs/main/linux-64/conda-4.7.11-py37_0.tar.bz2",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/conda-4.7.11-py37_0.tar.bz2",
   "version": "4.7.11"
 }

@@ -1,0 +1,69 @@
+# This file created by conda-build 3.18.7
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Fri Jul 12 08:46:37 2019
+# ------------------------------------------------
+
+package:
+    name: zeromq
+    version: 4.3.2
+source:
+    fn: zeromq-4.3.2.tar.gz
+    patches:
+        - 0003-windows-install.patch
+        - rm-clang-format.patch
+    sha256: ebd7b5c830d6428956b67a0454a7f8cbed1de74b3b01e5c33c5378e22740f763
+    url: https://github.com/zeromq/libzmq/releases/download/v4.3.2/zeromq-4.3.2.tar.gz
+build:
+    number: '2'
+    run_exports:
+        - zeromq >=4.3.2,<4.4.0a0
+    string: he1b5a44_2
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - autoconf 2.69 pl526h14c3975_9
+        - automake 1.16.1 pl526_1003
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_7
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_7
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_7
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - libtool 2.4.6 h14c3975_1002
+        - m4 1.4.18 h14c3975_1001
+        - make 4.2.1 h14c3975_2004
+        - perl 5.26.2 h516909a_1006
+        - pkg-config 0.29.2 h14c3975_1005
+    host:
+        - _libgcc_mutex 0.1 main
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libsodium 1.0.17 h516909a_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+        - libsodium >=1.0.17,<1.0.18.0a0
+        - libsodium >=1.0.17,<1.0.18.0a0
+        - libstdcxx-ng >=7.3.0
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libzmq.a
+        - test -f ${PREFIX}/lib/libzmq.so
+        - test -f ${PREFIX}/lib/libzmq.so.5
+        - ldd ${PREFIX}/lib/libzmq.so | grep sodium
+        - test -f ${PREFIX}/lib/cmake/ZeroMQ/ZeroMQConfig.cmake
+        - test -f ${PREFIX}/lib/cmake/ZeroMQ/ZeroMQConfigVersion.cmake
+        - ${PREFIX}/bin/curve_keygen
+about:
+    home: http://zeromq.org
+    license: LGPL 3
+    summary: A high-performance asynchronous messaging library.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - JohanMabille
+        - SylvainCorlay
+        - jakirkham
+        - minrk

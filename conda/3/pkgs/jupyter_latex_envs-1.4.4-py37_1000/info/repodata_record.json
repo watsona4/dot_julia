@@ -1,0 +1,29 @@
+{
+  "arch": "x86_64",
+  "build": "py37_1000",
+  "build_number": 1000,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "ipython",
+    "jupyter_contrib_core >=0.3",
+    "nbconvert",
+    "notebook >=4.0",
+    "python >=3.7,<3.8.0a0",
+    "setuptools",
+    "traitlets >=4.1"
+  ],
+  "features": "",
+  "fn": "jupyter_latex_envs-1.4.4-py37_1000.tar.bz2",
+  "license": "BSD-3-Clause",
+  "md5": "35f9de312c9ad7e5dea7a1801aebb2a3",
+  "name": "jupyter_latex_envs",
+  "platform": "linux",
+  "sha256": "edf3fe8583101b85cf830edf6265a30a830b89c734cf7784041cdced703813ce",
+  "size": 762661,
+  "subdir": "linux-64",
+  "timestamp": 1539372207739,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/jupyter_latex_envs-1.4.4-py37_1000.tar.bz2",
+  "version": "1.4.4"
+}

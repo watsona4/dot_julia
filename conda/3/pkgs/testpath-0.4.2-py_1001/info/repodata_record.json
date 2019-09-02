@@ -1,0 +1,24 @@
+{
+  "build": "py_1001",
+  "build_number": 1001,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "features": "",
+  "fn": "testpath-0.4.2-py_1001.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "fec99825f8dbed886b88efc8b75a8a14",
+  "name": "testpath",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "02a94a724cb63a78a6557d8ba1563e40e562a183781144f90fa869036c36800c",
+  "size": 86562,
+  "subdir": "noarch",
+  "timestamp": 1552822391190,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/testpath-0.4.2-py_1001.tar.bz2",
+  "version": "0.4.2"
+}

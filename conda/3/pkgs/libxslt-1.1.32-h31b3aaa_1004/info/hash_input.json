@@ -1,0 +1,6 @@
+{
+  "icu": "64.2",
+  "libxml2": "2.9",
+  "c_compiler": "gcc",
+  "c_compiler_version": "7"
+}

@@ -1,0 +1,25 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "markupsafe >=0.23",
+    "python",
+    "setuptools"
+  ],
+  "features": "",
+  "fn": "jinja2-2.10.1-py_0.tar.bz2",
+  "license": "3-Clause BSD",
+  "md5": "fcbcae105a231cd41e4f681b91e46876",
+  "name": "jinja2",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "3fc492f0820e3c8e0d07c4377a20f1c2b806bbb60b06bd2d08162caf26a7fa3c",
+  "size": 93033,
+  "subdir": "noarch",
+  "timestamp": 1554617615204,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/jinja2-2.10.1-py_0.tar.bz2",
+  "version": "2.10.1"
+}

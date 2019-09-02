@@ -1,0 +1,27 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python",
+    "setuptools",
+    "six",
+    "webencodings"
+  ],
+  "features": "",
+  "fn": "bleach-3.1.0-py_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "50fd99d2b4a6bfb8f7068078c4e5a833",
+  "name": "bleach",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "1a484fb82104c18c09a02ec71ecdaf5340358a9e50d78218d263ba973fddce52",
+  "size": 112485,
+  "subdir": "noarch",
+  "timestamp": 1547061512406,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/bleach-3.1.0-py_0.tar.bz2",
+  "version": "3.1.0"
+}

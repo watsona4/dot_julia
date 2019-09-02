@@ -1,0 +1,70 @@
+# This file created by conda-build 3.16.1
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sun Oct 14 13:44:31 2018
+# ------------------------------------------------
+
+package:
+    name: mistune
+    version: 0.8.4
+source:
+    sha256: 59a3429db53c50b5c6bcc8a07f8848cb00d7dc8bdb431a4ab41920d201d4756e
+    url: https://pypi.io/packages/source/m/mistune/mistune-0.8.4.tar.gz
+build:
+    number: '1000'
+    script: python -m pip install --no-deps --ignore-installed .
+    string: py37h14c3975_1000
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+    host:
+        - bzip2 1.0.6 h14c3975_1002
+        - ca-certificates 2018.03.07 0
+        - certifi 2018.8.24 py37_1001
+        - cython 0.28.5 py37hf484d3e_1000
+        - libffi 3.2.1 hf484d3e_1005
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1001
+        - openssl 1.0.2p h14c3975_1001
+        - pip 18.0 py37_1001
+        - python 3.7.0 hd21baee_1005
+        - readline 7.0 hf8c457e_1001
+        - setuptools 40.4.0 py37_1000
+        - sqlite 3.25.2 h67949de_1000
+        - tk 8.6.8 h84994c4_1000
+        - wheel 0.31.1 py37_1001
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h14c3975_1003
+    run:
+        - libgcc-ng >=7.3.0
+        - python >=3.7,<3.8.0a0
+test:
+    commands:
+        - nosetests
+    imports:
+        - mistune
+    requires:
+        - nose
+        - python >=3.7,<3.8.0a0
+    source_files:
+        - tests
+about:
+    dev_url: https://github.com/lepture/mistune
+    doc_url: https://mistune.readthedocs.io/
+    home: https://github.com/lepture/mistune
+    license: BSD 3-Clause
+    license_family: BSD
+    license_file: LICENSE
+    summary: The fastest markdown parser in pure Python.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - bollwyvl
+        - ocefpaf
+        - pelson

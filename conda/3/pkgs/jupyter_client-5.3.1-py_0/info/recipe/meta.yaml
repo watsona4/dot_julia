@@ -1,0 +1,67 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Jul  9 22:51:01 2019
+# ------------------------------------------------
+
+package:
+    name: jupyter_client
+    version: 5.3.1
+source:
+    sha256: 98e8af5edff5d24e4d31e73bc21043130ae9d955a91aa93fc0bc3b1d0f7b5880
+    url: https://pypi.io/packages/source/j/jupyter_client/jupyter_client-5.3.1.tar.gz
+build:
+    entry_points:
+        - jupyter-kernel = jupyter_client.kernelapp:main
+        - jupyter-kernelspec = jupyter_client.kernelspecapp:KernelSpecApp.launch_instance
+        - jupyter-run = jupyter_client.runapp:main
+    noarch: python
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/jupyter_client_1562712780743/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh/bin/python
+        -m pip install . --no-deps -vv
+    string: py_0
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py27_0
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1b h14c3975_1
+        - pip 19.1.1 py27_0
+        - python 2.7.15 h5a48372_1009
+        - readline 8.0 hf8c457e_0
+        - setuptools 41.0.1 py27_0
+        - sqlite 3.28.0 hcee41ef_1
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.4 py27_0
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - jupyter_core
+        - python
+        - python-dateutil >=2.1
+        - pyzmq >=13
+        - tornado >=4.1
+        - traitlets
+test:
+    commands:
+        - jupyter kernelspec list
+        - jupyter run -h
+    imports:
+        - jupyter_client
+about:
+    home: http://jupyter.org
+    license: BSD 3-clause
+    license_file: COPYING.md
+    summary: jupyter_client contains the reference implementation of the Jupyter protocol.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - SylvainCorlay
+        - carreau
+        - jakirkham
+        - minrk
+        - ocefpaf
+        - pelson

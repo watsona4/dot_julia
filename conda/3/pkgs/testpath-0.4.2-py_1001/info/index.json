@@ -1,0 +1,16 @@
+{
+  "arch": null,
+  "build": "py_1001",
+  "build_number": 1001,
+  "depends": [
+    "python"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "testpath",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1552822391190,
+  "version": "0.4.2"
+}

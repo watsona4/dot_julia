@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "py37_1000",
+  "build_number": 1000,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "features": "",
+  "fn": "entrypoints-0.3-py37_1000.tar.bz2",
+  "license": "MIT",
+  "md5": "bb4ea28bdac81e379bddfc9dcc1867c4",
+  "name": "entrypoints",
+  "platform": "linux",
+  "sha256": "ef6abdb50f9a96fc7ddf49e00888eacb8412a74407fb4a48eff8c6b1da781e4f",
+  "size": 10820,
+  "subdir": "linux-64",
+  "timestamp": 1546967095748,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/entrypoints-0.3-py37_1000.tar.bz2",
+  "version": "0.3"
+}

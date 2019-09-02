@@ -1,0 +1,17 @@
+{
+  "paths": [
+    {
+      "_path": "bin/pandoc",
+      "path_type": "hardlink",
+      "sha256": "ad46dc1745dad0d4dbdb4fe14892534eca3a8507d35e33fd7eadc6d7fda05fea",
+      "size_in_bytes": 74689368
+    },
+    {
+      "_path": "bin/pandoc-citeproc",
+      "path_type": "hardlink",
+      "sha256": "4c6705b250fc7f080fb6b12bfc3fdce723c174214f6ad82e0ffd040bee34ce54",
+      "size_in_bytes": 61311032
+    }
+  ],
+  "paths_version": 1
+}

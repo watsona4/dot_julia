@@ -1,0 +1,77 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sun Mar 17 11:31:08 2019
+# ------------------------------------------------
+
+package:
+    name: testpath
+    version: 0.4.2
+source:
+    sha256: b694b3d9288dbd81685c5d2e7140b81365d46c29f5db4bc659de5aa6b98780f8
+    url: https://pypi.io/packages/source/t/testpath/testpath-0.4.2.tar.gz
+build:
+    noarch: python
+    number: '1001'
+    script: /home/conda/feedstock_root/build_artifacts/testpath_1552822353182/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl/bin/python
+        -m pip install . --no-deps --ignore-installed -vv
+    string: py_1001
+requirements:
+    host:
+        - asn1crypto 0.24.0 py37_1003
+        - bzip2 1.0.6 h14c3975_1002
+        - ca-certificates 2019.3.9 hecc5488_0
+        - certifi 2019.3.9 py37_0
+        - cffi 1.12.2 py37hf0e25f4_1
+        - chardet 3.0.4 py37_1003
+        - cryptography 2.6.1 py37h9d9f1b6_0
+        - docutils 0.14 py37_1001
+        - flit 1.3 py37_0
+        - idna 2.8 py37_1000
+        - libffi 3.2.1 hf484d3e_1005
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1b h14c3975_1
+        - pip 19.0.3 py37_0
+        - pycparser 2.19 py37_1
+        - pyopenssl 19.0.0 py37_0
+        - pysocks 1.6.8 py37_1002
+        - python 3.7.1 h381d211_1003
+        - pytoml 0.1.20 py_0
+        - readline 7.0 hf8c457e_1001
+        - requests 2.21.0 py37_1000
+        - requests_download 0.1.2 py_1
+        - setuptools 40.8.0 py37_0
+        - six 1.12.0 py37_1000
+        - sqlite 3.26.0 h67949de_1001
+        - tk 8.6.9 h84994c4_1000
+        - urllib3 1.24.1 py37_1000
+        - wheel 0.33.1 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - python
+test:
+    imports:
+        - testpath
+about:
+    description: 'Testpath contains functions to check things on the filesystem,
+
+        and tools for mocking system commands and recording calls to those.
+
+        '
+    dev_url: https://github.com/jupyter/testpath
+    doc_url: https://testpath.readthedocs.io
+    home: https://testpath.readthedocs.io
+    license: BSD-3-Clause
+    license_family: BSD
+    license_file: LICENSE
+    summary: Testpath is a collection of utilities for Python code working with files
+        and commands.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - minrk
+        - ocefpaf
+        - takluyver

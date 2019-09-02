@@ -1,0 +1,17 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "markupsafe >=0.23",
+    "python",
+    "setuptools"
+  ],
+  "license": "3-Clause BSD",
+  "name": "jinja2",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1554617615204,
+  "version": "2.10.1"
+}

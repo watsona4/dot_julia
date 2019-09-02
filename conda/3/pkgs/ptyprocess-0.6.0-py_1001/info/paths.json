@@ -1,0 +1,59 @@
+{
+  "paths": [
+    {
+      "_path": "site-packages/ptyprocess-0.6.0.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "size_in_bytes": 4
+    },
+    {
+      "_path": "site-packages/ptyprocess-0.6.0.dist-info/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "c822d385b1a73329846241799becf18690b5d44764c1bed69300b536a405030a",
+      "size_in_bytes": 905
+    },
+    {
+      "_path": "site-packages/ptyprocess-0.6.0.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "137d820096a2f409c662fef97841f54109e02b74a0fafd4910e276abe14e0f74",
+      "size_in_bytes": 1312
+    },
+    {
+      "_path": "site-packages/ptyprocess-0.6.0.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "e5e1dad1b3aadb6b285ec8b1f5df7a2429d8c82f1e1f2409c01cdef0420f47e1",
+      "size_in_bytes": 918
+    },
+    {
+      "_path": "site-packages/ptyprocess-0.6.0.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "4451a97925b2d8c867387ecc6c86665fd651d1ebd6976789bec30efb217eb437",
+      "size_in_bytes": 97
+    },
+    {
+      "_path": "site-packages/ptyprocess/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "43b09ddf55530a415683828f1ea67be7290e43b923e64ba8fadce4a8ecfcb2ea",
+      "size_in_bytes": 138
+    },
+    {
+      "_path": "site-packages/ptyprocess/_fork_pty.py",
+      "path_type": "hardlink",
+      "sha256": "555bcccbc7386698c332220c4a0f13d414358374817b10e97b2fdcc62d27e5ac",
+      "size_in_bytes": 2362
+    },
+    {
+      "_path": "site-packages/ptyprocess/ptyprocess.py",
+      "path_type": "hardlink",
+      "sha256": "ac3ff556e5b4d87c7007884f226e9c6a1e571b1ee91e3f10698cf93a1097c1fe",
+      "size_in_bytes": 31355
+    },
+    {
+      "_path": "site-packages/ptyprocess/util.py",
+      "path_type": "hardlink",
+      "sha256": "ad001d0d165fa0e88e9fabf2916b61d3023a145280a7b689b4149db7e28159d5",
+      "size_in_bytes": 2785
+    }
+  ],
+  "paths_version": 1
+}

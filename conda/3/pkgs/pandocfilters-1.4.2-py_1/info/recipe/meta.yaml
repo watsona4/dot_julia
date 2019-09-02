@@ -1,0 +1,49 @@
+# This file created by conda-build 3.10.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Fri Jul 13 20:04:37 2018
+# ------------------------------------------------
+
+package:
+    name: pandocfilters
+    version: 1.4.2
+source:
+    fn: pandocfilters-1.4.2.tar.gz
+    sha256: b3dd70e169bb5449e6bc6ff96aea89c5eea8c5f6ab5e207fc2f521a2cf4a0da9
+    url: https://pypi.io/packages/source/p/pandocfilters/pandocfilters-1.4.2.tar.gz
+build:
+    noarch: python
+    number: '1'
+    script: python -m pip install --no-deps --ignore-installed .
+    string: py_1
+requirements:
+    host:
+        - ca-certificates 2018.4.16 0
+        - certifi 2018.4.16 py27_0
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - ncurses 5.9 10
+        - openssl 1.0.2o 0
+        - pip 9.0.3 py27_0
+        - python 2.7.15 0
+        - readline 7.0 0
+        - setuptools 40.0.0 py27_0
+        - sqlite 3.20.1 2
+        - tk 8.6.7 0
+        - wheel 0.31.1 py27_0
+        - zlib 1.2.11 h470a237_3
+    run:
+        - python
+test:
+    imports:
+        - pandocfilters
+about:
+    dev_url: https://github.com/jgm/pandocfilters
+    home: https://github.com/jgm/pandocfilters
+    license: BSD-3-Clause
+    license_family: BSD
+    license_file: LICENSE
+    summary: A python module for writing pandoc filters
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - minrk

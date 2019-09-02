@@ -1,0 +1,32 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Jun 12 13:45:28 2019
+# ------------------------------------------------
+
+package:
+    name: pandoc
+    version: 2.7.3
+source:
+    sha256: eb775fd42ec50329004d00f0c9b13076e707cdd44745517c8ce2581fb8abdb75
+    url: https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-linux.tar.gz
+build:
+    number: '0'
+    string: '0'
+test:
+    commands:
+        - pandoc --help
+        - pandoc --version
+about:
+    home: http://pandoc.org/
+    license: GPL-2.0
+    license_family: GPL
+    license_file: /home/conda/recipe_root/LICENSE
+    summary: Universal markup converter (repackaged binaries)
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - dhimmel
+        - jankatins
+        - kiwi0fruit
+        - ocefpaf

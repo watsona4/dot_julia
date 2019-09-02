@@ -1,0 +1,23 @@
+{
+  "build": "py_1001",
+  "build_number": 1001,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "features": "",
+  "fn": "ptyprocess-0.6.0-py_1001.tar.bz2",
+  "license": "ISC",
+  "md5": "0c3a56f1ab48cfb002c69b48f9e1ddc6",
+  "name": "ptyprocess",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "4f2deda5c4c7e369a1c2df19e075a4fcb9cf40d7b469aab129096acbf346f732",
+  "size": 15628,
+  "subdir": "noarch",
+  "timestamp": 1554888316007,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/ptyprocess-0.6.0-py_1001.tar.bz2",
+  "version": "0.6.0"
+}

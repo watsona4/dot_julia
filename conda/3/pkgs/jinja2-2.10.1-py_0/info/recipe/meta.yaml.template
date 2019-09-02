@@ -1,0 +1,52 @@
+{% set name = "Jinja2" %}
+{% set version = "2.10.1" %}
+{% set sha256 = "065c4f02ebe7f7cf559e49ee5a95fb800a9e4528727aec6f24402a5374c65013" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+  host:
+    - pip
+    - python
+    - setuptools
+
+  run:
+    - python
+    - setuptools
+    - markupsafe >=0.23
+
+test:
+  imports:
+    - jinja2
+
+about:
+  home: http://jinja.pocoo.org
+  license: 3-Clause BSD
+  license_file: LICENSE
+  summary: An easy to use stand-alone template engine written in pure python.
+  description: |
+    Jinja2 is a full featured template engine for Python. It has full unicode
+    support, an optional integrated sandboxed execution environment, widely
+    used and BSD licensed.
+  doc_url: http://jinja.pocoo.org/docs/dev/
+  dev_url: https://github.com/pallets/jinja
+  doc_source_url: https://github.com/pallets/jinja/blob/master/docs/index.rst
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - msarahan
+    - scopatz
+    - nehaljwani

@@ -1,0 +1,28 @@
+{
+  "build": "py_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "jupyter_core",
+    "notebook >=4.0",
+    "python",
+    "setuptools",
+    "tornado",
+    "traitlets"
+  ],
+  "features": "",
+  "fn": "jupyter_contrib_core-0.3.3-py_2.tar.bz2",
+  "license": "BSD 3-clause",
+  "md5": "4704781b0a914d67e4ae8e9f9f5c37a0",
+  "name": "jupyter_contrib_core",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "2a9410d821361e887e853692c6ae092a17d0f147338c3790cb345932adb065b9",
+  "size": 14988,
+  "subdir": "noarch",
+  "timestamp": 1531796674874,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/jupyter_contrib_core-0.3.3-py_2.tar.bz2",
+  "version": "0.3.3"
+}

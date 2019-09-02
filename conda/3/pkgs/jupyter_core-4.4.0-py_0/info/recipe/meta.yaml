@@ -1,0 +1,60 @@
+# This file created by conda-build 2.1.17
+# meta.yaml template originally from:
+# /recipe_root, last modified Wed Nov  1 09:48:40 2017
+# ------------------------------------------------
+
+package:
+    name: jupyter_core
+    version: 4.4.0
+source:
+    fn: jupyter_core-4.4.0.tar.gz
+    sha256: ba70754aa680300306c699790128f6fbd8c306ee5927976cbe48adacf240c0b7
+    url: https://pypi.io/packages/source/j/jupyter_core/jupyter_core-4.4.0.tar.gz
+build:
+    entry_points:
+        - jupyter = jupyter_core.command:main
+        - jupyter-migrate = jupyter_core.migrate:main
+        - jupyter-troubleshoot = jupyter_core.troubleshoot:main
+    noarch: python
+    noarch_python: false
+    number: '0'
+    script: pip install --no-deps .
+    string: py_0
+requirements:
+    build:
+        - ncurses 5.9 10
+        - readline 6.2 0
+        - zlib 1.2.8 3
+        - tk 8.5.19 2
+        - ca-certificates 2017.7.27.1 0
+        - setuptools 36.6.0 py36_1
+        - pip 9.0.1 py36_0
+        - xz 5.2.3 0
+        - certifi 2017.7.27.1 py36_0
+        - python 3.6.3 0
+        - sqlite 3.13.0 1
+        - openssl 1.0.2l 0
+        - wheel 0.30.0 py_1
+    run:
+        - python
+        - traitlets
+test:
+    commands:
+        - jupyter -h
+        - jupyter-migrate -h
+        - jupyter-troubleshoot --help
+    imports:
+        - jupyter_core
+        - jupyter_core.utils
+about:
+    home: http://jupyter.org
+    license: BSD 3-clause
+    license_file: COPYING.md
+    summary: Core common functionality of Jupyter projects.
+extra:
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - pelson
+        - minrk
+        - ocefpaf

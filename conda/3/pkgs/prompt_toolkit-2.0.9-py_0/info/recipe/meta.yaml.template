@@ -1,0 +1,59 @@
+{% set name = "prompt_toolkit" %}
+{% set version = "2.0.9" %}
+{% set sha256 = "2519ad1d8038fd5fc8e770362237ad0364d16a7650fb5724af6997ed5515e3c1" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+  host:
+    - pip
+    - python
+    - setuptools
+  run:
+    - python
+    - pygments
+    - six >=1.9.0
+    - wcwidth
+
+test:
+  imports:
+    - prompt_toolkit
+    - prompt_toolkit.clipboard
+    - prompt_toolkit.contrib
+    - prompt_toolkit.contrib.completers
+    - prompt_toolkit.contrib.regular_languages
+    - prompt_toolkit.eventloop
+    - prompt_toolkit.filters
+    - prompt_toolkit.key_binding
+    - prompt_toolkit.key_binding.bindings
+    - prompt_toolkit.layout
+
+about:
+  home: https://github.com/jonathanslenders/python-prompt-toolkit
+  license: BSD 3-clause
+  license_file: LICENSE
+  summary: Library for building powerful interactive command lines in Python
+  description: |
+    prompt_toolkit is a library for building powerful interactive command
+    lines and terminal applications in Python. It can be a pure Python
+    replacement for GNU readline, but it can be much more than that.
+  doc_url: http://python-prompt-toolkit.readthedocs.io
+  dev_url: https://github.com/jonathanslenders/python-prompt-toolkit
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - ocefpaf
+    - scopatz
+    - asmeurer

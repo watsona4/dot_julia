@@ -1,0 +1,59 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue May  7 19:09:12 2019
+# ------------------------------------------------
+
+package:
+    name: libsodium
+    version: 1.0.17
+source:
+    fn: libsodium-1.0.17.tar.gz
+    sha256: 0cc3dae33e642cc187b5ceb467e0ad0e1b51dcba577de1190e9ffa17766ac2b1
+    url: https://github.com/jedisct1/libsodium/releases/download/1.0.17/libsodium-1.0.17.tar.gz
+build:
+    number: '0'
+    run_exports:
+        - libsodium >=1.0.17,<1.0.18.0a0
+    string: h516909a_0
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_6
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_6
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - make 4.2.1 h14c3975_2004
+    host:
+        - libgcc-ng 8.2.0 hdf63c60_1
+    run:
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - test -f ${PREFIX}/include/sodium.h
+        - test -f ${PREFIX}/lib/libsodium.a
+        - test -f ${PREFIX}/lib/libsodium.so
+about:
+    description: 'Sodium is a new, easy-to-use software library for encryption, decryption,
+
+        signatures, password hashing and more. It is a portable, cross-compilable,
+
+        installable, packageable fork of NaCl, with a compatible API, and an
+
+        extended API to improve usability even further. Its goal is to provide all
+
+        of the core operations needed to build higher-level cryptographic tools.
+
+        '
+    dev_url: https://github.com/jedisct1/libsodium
+    doc_url: https://download.libsodium.org/doc
+    home: http://libsodium.org
+    license: ISC
+    license_file: LICENSE
+    summary: A modern and easy-to-use crypto library.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - minrk

@@ -1,0 +1,66 @@
+{% set version = "18.0.2" %}
+
+package:
+  name: pyzmq
+  version: {{ version }}
+
+source:
+  # We use the pypi URL as it includes the prepared Cython files.
+  url: https://pypi.io/packages/source/p/pyzmq/pyzmq-{{ version }}.tar.gz
+  sha256: 31a11d37ac73107363b47e14c94547dbfc6a550029c3fe0530be443199026fc2
+
+build:
+  number: 2
+
+# On Windows ZeroMQ is bundled with pyzmq.
+# On Windows pyzmq includes tweetnacl so libsodium is not used.
+# We should revisit these in the future. However, packaging libsodium
+# on Windows is complicated by the fact that they ship project files,
+# but don't include one for VS 2008, which we would need for Python 2.7.
+requirements:
+  build:
+    - pkg-config  # [not win]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - python
+    - pip
+    - zeromq
+    - libsodium
+  run:
+    - python
+    - zeromq
+    - libsodium
+
+test:
+  imports:
+    - zmq
+    - zmq.backend.cython.socket
+    - zmq.backend.cython.utils
+    - zmq.devices.monitoredqueue
+
+  requires:
+    - pytest
+
+  # We run the zmq tests on all platforms except Windows.
+  # The only reason not to run the tests on Windows is that
+  # they terminate with an interactive prompt. See also
+  # https://github.com/conda-forge/staged-recipes/pull/292#issuecomment-208080893.
+  commands:                # [not win]
+    - py.test --pyargs zmq.tests.test_socket  # [not win]
+
+about:
+  home: https://github.com/zeromq/pyzmq
+  summary: Python bindings for zeromq
+  license: BSD 3-clause
+  license_file: COPYING.BSD
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - minrk
+    - msarahan
+    - pelson
+    - SylvainCorlay
+    - JohanMabille
+    - ocefpaf

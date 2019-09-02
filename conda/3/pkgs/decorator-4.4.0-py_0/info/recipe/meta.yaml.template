@@ -1,0 +1,38 @@
+{% set version = "4.4.0" %}
+
+package:
+  name: decorator
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/d/decorator/decorator-{{ version }}.tar.gz
+  sha256: 86156361c50488b84a3f148056ea716ca587df2f0de1d34750d35c21312725de
+
+build:
+  noarch: python
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  build:
+    - python
+    - pip
+  run:
+    - python
+
+test:
+  imports:
+    - decorator
+
+about:
+  home: https://github.com/micheles/decorator
+  license: BSD 3-Clause
+  license_file: LICENSE.txt
+  summary: 'Better living through Python with decorators.'
+
+extra:
+  recipe-maintainers:
+    - msarahan
+    - pelson
+    - ocefpaf
+    - scopatz

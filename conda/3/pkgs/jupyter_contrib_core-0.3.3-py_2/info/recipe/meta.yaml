@@ -1,0 +1,63 @@
+# This file created by conda-build 3.10.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Jul 17 03:02:31 2018
+# ------------------------------------------------
+
+package:
+    name: jupyter_contrib_core
+    version: 0.3.3
+source:
+    fn: jupyter_contrib_core-0.3.3.tar.gz
+    sha256: e65bc0e932ff31801003cef160a4665f2812efe26a53801925a634735e9a5794
+    url: https://pypi.io/packages/source/j/jupyter_contrib_core/jupyter_contrib_core-0.3.3.tar.gz
+build:
+    entry_points:
+        - jupyter-contrib = jupyter_contrib_core.application:main
+    noarch: python
+    number: '2'
+    script: python -m pip install --no-deps --ignore-installed .
+    string: py_2
+requirements:
+    host:
+        - ca-certificates 2018.4.16 0
+        - certifi 2018.4.16 py27_0
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - ncurses 5.9 10
+        - openssl 1.0.2o 0
+        - pip 9.0.3 py27_0
+        - python 2.7.15 0
+        - readline 7.0 0
+        - setuptools 40.0.0 py27_0
+        - sqlite 3.20.1 2
+        - tk 8.6.7 0
+        - wheel 0.31.1 py27_0
+        - zlib 1.2.11 h470a237_3
+    run:
+        - jupyter_core
+        - notebook >=4.0
+        - python
+        - setuptools
+        - tornado
+        - traitlets
+test:
+    commands:
+        - jupyter contrib --help
+    imports:
+        - jupyter_contrib_core
+        - jupyter_contrib_core.application
+        - jupyter_contrib_core.notebook_compat
+        - jupyter_contrib_core.notebook_compat._compat
+        - jupyter_contrib_core.notebook_compat._compat.nbextensions
+        - jupyter_contrib_core.notebook_compat._compat.serverextensions
+        - jupyter_contrib_core.notebook_compat.nbextensions
+        - jupyter_contrib_core.notebook_compat.serverextensions
+about:
+    home: https://github.com/jupyter-contrib/jupyter_contrib_core
+    license: BSD 3-clause
+    license_file: LICENSE.txt
+    summary: Common utilities for jupyter-contrib projects.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jcb91

@@ -1,0 +1,15 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "python"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "send2trash",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "version": "1.5.0"
+}

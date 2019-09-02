@@ -1,0 +1,23 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "features": "",
+  "fn": "send2trash-1.5.0-py_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "c3779037a635e1150f1c53c28b875949",
+  "name": "send2trash",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "daa74ff80221b6a3a394269570550825d3a73ca272052cdb18f8c3ebfb3738eb",
+  "size": 12541,
+  "subdir": "noarch",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/send2trash-1.5.0-py_0.tar.bz2",
+  "version": "1.5.0"
+}

@@ -1,0 +1,52 @@
+{% set version = "5.3.1" %}
+
+package:
+  name: jupyter_client
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/j/jupyter_client/jupyter_client-{{ version }}.tar.gz
+  sha256: 98e8af5edff5d24e4d31e73bc21043130ae9d955a91aa93fc0bc3b1d0f7b5880
+
+build:
+  noarch: python
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  entry_points:
+    - jupyter-kernelspec = jupyter_client.kernelspecapp:KernelSpecApp.launch_instance
+    - jupyter-run = jupyter_client.runapp:main
+    - jupyter-kernel = jupyter_client.kernelapp:main
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - traitlets
+    - jupyter_core
+    - python-dateutil >=2.1
+    - pyzmq >=13
+    - tornado >=4.1
+
+test:
+  commands:
+    - jupyter kernelspec list
+    - jupyter run -h
+  imports:
+    - jupyter_client
+
+about:
+  home: http://jupyter.org
+  license: BSD 3-clause
+  license_file: COPYING.md
+  summary: jupyter_client contains the reference implementation of the Jupyter protocol.
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - minrk
+    - pelson
+    - ocefpaf
+    - carreau
+    - SylvainCorlay
