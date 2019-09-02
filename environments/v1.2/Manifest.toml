@@ -6524,6 +6524,12 @@ git-tree-sha1 = "04913ce466978fad4eb666c9f5fafc718fcc4366"
 uuid = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
 version = "2.0.3"
 
+[[LiterateOrg]]
+deps = ["Test"]
+git-tree-sha1 = "6a6cd78d68bde13f5f4761817c91576cbde032f9"
+uuid = "a7ef59f1-ab8a-5612-8cbe-0c3d3c126043"
+version = "0.1.1"
+
 [[LiveServer]]
 deps = ["Crayons", "Documenter", "FileWatching", "HTTP", "Sockets", "Test"]
 git-tree-sha1 = "cb7d253514ed8c7c92fe9288fce474ea8132ef43"

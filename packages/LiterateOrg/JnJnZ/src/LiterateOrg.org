@@ -1,0 +1,366 @@
+#+TITLE: LiterateOrg.jl
+#+AUTHOR: Stefanos Carlström
+#+EMAIL: stefanos.carlstrom@gmail.com
+
+#+PROPERTY: header-args:julia :session *julia-LiterateOrg*
+
+* Introduction
+  LiterateOrg.jl is a Julia package for development of Julia packages
+  in the [[https://en.wikipedia.org/wiki/Literate_programming][literate programming]] paradigm invented by [[https://en.wikipedia.org/wiki/Donald_Knuth][Donald Knuth]], and
+  as implemented by Emacs' [[https://orgmode.org][Org-mode]].
+
+  The idea is that all Julia code blocks within an Org file are
+  tangled; those under a section headline simply called "Test" go into
+  the unit tests, whereas the rest make up the package implementation.
+
+* Imports
+  #+BEGIN_SRC julia
+    if VERSION.major > 0 || VERSION.minor > 6
+        using Printf
+        using Dates
+    end
+  #+END_SRC
+
+* Code to parse an Org-file
+** Org file data structure
+   #+BEGIN_SRC julia
+     abstract type OrgNode end
+
+     struct OrgSection <: OrgNode
+         title::String
+         level::Integer
+         children::Vector{OrgNode}
+         kind::Symbol
+     end
+     level(os::OrgSection) = os.level
+
+     mutable struct OrgText <: OrgNode
+         contents::String
+     end
+
+     mutable struct OrgCode <: OrgNode
+         contents::String
+         language::String
+         arguments::String
+     end
+
+     struct OrgProperty <: OrgNode
+         property::String
+         value::String
+     end
+
+     struct OrgFile
+         title::String
+         author::String
+         email::String
+         date
+         tree::Vector{OrgNode}
+     end
+   #+END_SRC
+
+   #+RESULTS:
+   : nothing
+** Simple stack implementation
+   #+BEGIN_SRC julia
+     struct SimpleStack{T}
+         v::Vector{T}
+     end
+
+     SimpleStack(T::Type) = SimpleStack(T[])
+
+     import Base: push!, pop!, isempty
+
+     push!(s::SimpleStack{T}, e::T) where T = push!(s.v, e)
+     pop!(s::SimpleStack{T}) where T = pop!(s.v)
+     isempty(s::SimpleStack{T}) where T = isempty(s.v)
+     top(s::SimpleStack{T}) where T = s.v[end]
+   #+END_SRC
+
+   #+RESULTS:
+   : top (generic function with 1 method)
+
+
+** Read Org file
+   This function reads an Org-mode file and turns it into a Julia data
+   structure.
+   #+BEGIN_SRC julia :results verbatim
+     function read_org_file(filename::String)
+         title = ""
+         author = ""
+         email = ""
+         date = now()
+         tree = OrgNode[]
+
+         prop_pat = r"^#\+(.*?):[ ]*(.*)"
+         sec_pat = r"^([*]+)[ ]+(COMMENT|TEST|EXAMPLE){0,1}[ ]*(.*)"
+         start_code_pat = r"[ ]*#\+begin_src[ ]+([^ ]+)(.*)"
+         end_code_pat = r"[ ]*#\+end_src"
+
+         sec_stack = SimpleStack(OrgSection)
+         last_node = nothing
+         node_mode = :text
+
+         open(filename) do file
+             for line in readlines(file)
+                 if occursin(prop_pat, line)
+                     m = match(prop_pat, line)
+                     prop = OrgProperty(lowercase(m[1]), m[2])
+                     push!(tree, prop)
+                     last_node = prop
+
+                     prop_type = prop.property
+                     prop_val = prop.value
+
+                     if prop_type == "title"
+                         title = prop_val
+                     elseif prop_type == "author"
+                         author = prop_val
+                     elseif prop_type == "email"
+                         email = prop_val
+                     elseif prop_type == "date"
+                         date = prop_val
+                     end
+                 elseif occursin(sec_pat, line)
+                     m = match(sec_pat, line)
+                     l = length(m[1])
+
+                     while !isempty(sec_stack) && level(top(sec_stack)) >= l
+                         pop!(sec_stack)
+                     end
+
+                     # We inherit the section kind of the section on the
+                     # top of the stack, unless the kind is specified in
+                     # the Org file.
+                     section = OrgSection(m[3], l, OrgNode[],
+                                          Symbol(m[2] != nothing ? lowercase(m[2]) :
+                                                 isempty(sec_stack) ? :normal : top(sec_stack).kind))
+
+                     if isempty(sec_stack)
+                         push!(sec_stack, section)
+                         push!(tree, section)
+                     else
+                         prev_sec = top(sec_stack)
+                         push!(prev_sec.children, section)
+                         push!(sec_stack, section)
+                     end
+
+                     last_node = section
+                 elseif occursin(end_code_pat, lowercase(line))
+                     node_mode = :text
+                 else # Code/normal text
+                     node = nothing
+                     if occursin(start_code_pat, lowercase(line))
+                         m = match(start_code_pat, lowercase(line))
+                         node = OrgCode("", m[1], m[2])
+                         last_node = node
+                         node_mode = :normal
+                     elseif typeof(last_node) == OrgText && node_mode == :text ||
+                         typeof(last_node) == OrgCode && node_mode == :normal
+                         last_node.contents = "$(last_node.contents)\n$(line)"
+                     else
+                         node = OrgText(line)
+                         last_node = node
+                         node_mode = :text
+                     end
+
+                     if node != nothing
+                         if !isempty(sec_stack)
+                             push!(top(sec_stack).children, node)
+                         else
+                             push!(tree, node)
+                         end
+                     end
+                 end
+             end
+         end
+
+         OrgFile(title, author, email, date, tree)
+     end
+   #+END_SRC
+
+   #+RESULTS:
+   : read_org_file
+
+*** TEST
+    This is an unnamed test.
+
+    All code blocks under this heading, regardless of depth, will be
+    included in the test suite, unless they belong to COMMENTs or
+    EXAMPLEs.
+
+    #+BEGIN_SRC julia
+      @test 1 == 1
+    #+END_SRC
+
+    #+RESULTS:
+    : 7
+
+**** This is a nested test set
+     #+BEGIN_SRC julia
+       @test 3 == 3
+     #+END_SRC
+
+*** TEST With a "name"
+    This is a named test
+    #+BEGIN_SRC julia
+      @test 2 == 2
+    #+END_SRC
+
+**** This is a nested test set
+     #+BEGIN_SRC julia
+       @test 3 == 3
+     #+END_SRC
+
+***** This is a nested, nested test set
+     #+BEGIN_SRC julia
+       @test 5 == 5
+     #+END_SRC
+
+***** TEST This is a nested, nested test set
+     #+BEGIN_SRC julia
+       @test 6 == 6
+     #+END_SRC
+
+**** This is another nested test set
+     #+BEGIN_SRC julia
+       @test 4 == 4
+     #+END_SRC
+
+** Tangle Julia code
+   Once we have a Julia representation of the Org file, we can tangle
+   the code to a Julia file.
+   #+BEGIN_SRC julia
+     file_endings = Dict("julia" => "jl", "python" => "py")
+     comments = Dict("julia" => "#", "python" => "#")
+
+     function tangle(io::IO, os::OrgSection, language::String, istestset::Bool=false)
+         os.kind ∈ [:comment, :example] && return
+         write(io, @sprintf("%s %s %s\n",
+                            comments[language],
+                            repeat("*", os.level),
+                            os.title))
+
+         istestset |= os.kind == :test && !isempty(os.title)
+         istestset &&  write(io, @sprintf("@testset \"%s\" begin\n",
+                                         replace(os.title, "\"" => "\\\"")))
+
+         map(n -> tangle(io, n, language, istestset), os.children)
+
+         istestset &&  write(io, "end\n")
+     end
+
+     function tangle(io::IO, ot::OrgText, language::String, ::Bool=false)
+         for line in split(ot.contents, "\n")
+             write(io, @sprintf("%s %s\n", comments[language], line))
+         end
+     end
+
+     tangle(io::IO, oc::OrgCode, language::String, ::Bool=false) =
+         oc.language == language && write(io, oc.contents)
+
+     tangle(io::IO, op::OrgProperty, language::String, ::Bool=false) =
+         write(io, @sprintf("%s % 10s: %s\n", comments[language], uppercase(op.property), op.value))
+
+     function tangle(outfilename::String, of::OrgFile, language::String="julia")
+         open(outfilename, "w") do file
+             map(n -> tangle(file, n, language), of.tree)
+         end
+     end
+
+     tangle(filename::String;
+            file_base = first(rsplit(filename, ".", limit=2)),
+            language="julia") =
+         tangle("$(file_base).$(file_endings[language])", read_org_file(filename), language)
+   #+END_SRC
+
+   #+RESULTS:
+   : nothing
+
+*** Tangle Julia package/tests
+    We use the functionality from above to generate a package source
+    code file from all code blocks that are /not/ test cases, and
+    conversely, a unit test file from all code blocks that are found
+    under sections with heading containing "TEST".
+    #+BEGIN_SRC julia
+      extract(o::OrgNode, ::Bool=false) = o
+
+      function extract(o::OrgSection, tests::Bool=false)
+          o.kind == :normal ||
+              tests && o.kind == :test ||
+              return nothing
+
+          children = OrgNode[]
+          for child in extract.(o.children, tests)
+              child != nothing && (!tests ||
+                                 typeof(child) == OrgSection ||
+                                 o.kind == :test) && push!(children, child)
+          end
+
+          OrgSection(o.title, o.level, children, o.kind)
+      end
+
+      function extract(o::OrgFile, tests::Bool=false)
+          tree = OrgNode[]
+          for node in extract.(o.tree, tests)
+              node != nothing && (!tests || typeof(node) == OrgSection) && push!(tree, node)
+          end
+
+          OrgFile(o.title, o.author, o.email, o.date, tree)
+      end
+
+
+      function tangle_package(org_filename::String, package_name::String)
+          org_file = read_org_file(org_filename)
+
+          pkg_dir = abspath(joinpath(dirname(org_filename), ".."))
+
+          tangle(joinpath(pkg_dir, "src", "literate_org_tangled_code.jl"), extract(org_file))
+          tangle(joinpath(pkg_dir, "test", "literate_org_tangled_tests.jl"), extract(org_file, true))
+      end
+
+      export tangle_package
+    #+END_SRC
+
+    #+RESULTS:
+    : nothing
+
+
+** String representation
+   #+BEGIN_SRC julia
+     import Base: show
+
+     function show(io::IO, os::OrgSection)
+         write(io, @sprintf("%s %s%s\n",
+                            repeat("*", os.level),
+                            os.kind == :normal ? "" : "$(uppercase(string(os.kind))) ",
+                            os.title))
+         map(n -> show(io, n), os.children)
+     end
+
+     show(io::IO, ot::OrgText) =
+         write(io, @sprintf("    %s bytes of text\n", sizeof(ot.contents)))
+
+     show(io::IO, oc::OrgCode) =
+         write(io, @sprintf("    %s bytes of %s code\n", sizeof(oc.contents), oc.language))
+
+     show(io::IO, op::OrgProperty) =
+         write(io, @sprintf("% 10s: %s\n", uppercase(op.property), op.value))
+
+     show(io::IO, of::OrgFile) =
+         map(n -> show(io, n), of.tree)
+   #+END_SRC
+
+   #+RESULTS:
+
+
+** COMMENT Commented out section
+   This entire section should be commented out.
+
+*** Commented out subsection
+    This too, by virtue of its parent's commmentedness.
+
+** EXAMPLE
+   This example should not end up in the code.
+
+** EXAMPLE Another example
+   Neither should this named example.
