@@ -1,0 +1,11 @@
+name = "NormalMaps"
+uuid = "11b9c370-7f32-11e9-2601-596d25f02000"
+authors = ["Nicholas Timmons <ngtimmons@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
+[compat]
+julia = "1.0, 1.1"

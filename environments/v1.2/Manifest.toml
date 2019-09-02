@@ -7941,6 +7941,12 @@ git-tree-sha1 = "353f62579173bccb39c481aea871c95cdad5678d"
 uuid = "0e1eec36-3e51-505b-9453-8db846dc2724"
 version = "0.1.0"
 
+[[NormalMaps]]
+deps = ["Images", "LinearAlgebra"]
+git-tree-sha1 = "a22d44545037637f68a9e2128d6a2e299a0d158d"
+uuid = "11b9c370-7f32-11e9-2601-596d25f02000"
+version = "0.1.0"
+
 [[NoveltyColors]]
 deps = ["JSON", "Test"]
 git-tree-sha1 = "5fc0da12654b2675eb9cdd711cd4f85f93dd3f6a"
