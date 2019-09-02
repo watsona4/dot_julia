@@ -8263,6 +8263,12 @@ git-tree-sha1 = "4359fca64d21e25a6489d23dc16629dc83d47bde"
 uuid = "fbd9d27c-2d1c-5c1c-99f2-7497d746985d"
 version = "0.2.1"
 
+[[Optionals]]
+deps = ["Compat", "Missings", "Nullables"]
+git-tree-sha1 = "823e1d59e0f59162a39cc07e9016903eaaca6770"
+uuid = "3304b86d-eb5b-5d22-9ed4-3b0a60539cfe"
+version = "0.1.0"
+
 [[OrderedCollections]]
 deps = ["Random", "Serialization", "Test"]
 git-tree-sha1 = "c4c13474d23c60d20a67b217f1d7f22a40edf8f1"

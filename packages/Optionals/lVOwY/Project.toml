@@ -1,0 +1,9 @@
+name = "Optionals"
+uuid = "b4ccb290-79ff-11e8-18ae-7b8a06b7ddea"
+authors = ["Simon Reiser <simonfxr@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
+Missings = "e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28"
+Nullables = "4d1e1d77-625e-5b40-9113-a560ec7a8ecd"
