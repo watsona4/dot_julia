@@ -8603,6 +8603,12 @@ git-tree-sha1 = "ad08f95fc90bc7035aa291df7dc10f801956aa07"
 uuid = "de004529-e20a-5d30-89d8-7739140c50e5"
 version = "0.2.0"
 
+[[PhilipsHue]]
+deps = ["Colors", "HTTP", "JSON", "Test"]
+git-tree-sha1 = "be5fd190a8553dfe603c52178879b4128cd54cb0"
+uuid = "4f36922e-b395-5139-af69-051d0331eef0"
+version = "0.0.1"
+
 [[PiGPIO]]
 deps = ["Sockets"]
 git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
