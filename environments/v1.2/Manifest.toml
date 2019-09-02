@@ -7364,6 +7364,12 @@ git-tree-sha1 = "be0ae2699e7f62f11197dfe847f5f0996b0cba47"
 uuid = "cb905087-75eb-5f27-8515-1ce0ec8e839e"
 version = "0.3.0"
 
+[[Modia3D]]
+deps = ["DataFrames", "DataStructures", "JSON", "Libdl", "LinearAlgebra", "ModiaMath", "StaticArrays", "Test", "Unitful"]
+git-tree-sha1 = "f2246cd40f703634f9f934de2ad7980bfc7e7ab8"
+uuid = "07f2c1e0-90b0-56cf-bda7-b44b56e34eed"
+version = "0.3.0"
+
 [[ModiaMath]]
 deps = ["DataFrames", "DataStructures", "LinearAlgebra", "Printf", "Requires", "StaticArrays", "Sundials", "Test", "Unitful"]
 git-tree-sha1 = "902971a4f44a19f06b7d190266ab746e6f93728d"
