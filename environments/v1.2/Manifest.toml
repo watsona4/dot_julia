@@ -5733,6 +5733,12 @@ git-tree-sha1 = "958bda10d25cca244e5d506785188079c77f2ac8"
 uuid = "a93385a2-3734-596a-9a66-3cfbb77141e6"
 version = "0.12.0"
 
+[[JuliaDBMeta]]
+deps = ["Dagger", "IndexedTables", "IterTools", "JuliaDB", "MacroTools", "Reexport"]
+git-tree-sha1 = "13aeb7fac06b5dcc64a1cf10b345c64b72b5fc3a"
+uuid = "2c06ca41-a429-545c-b8f0-5ca7dd64ba19"
+version = "0.4.3"
+
 [[JuliaFormatter]]
 deps = ["CSTParser", "Test", "Tokenize"]
 git-tree-sha1 = "7a6577ea3603239d106b6d2e3d3dc179f9a6f48d"
