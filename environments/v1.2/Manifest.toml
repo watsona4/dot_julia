@@ -8352,6 +8352,12 @@ git-tree-sha1 = "0592c2e92f5353dabd620b2f01ad1078dacbb6f0"
 uuid = "355abbd5-f08e-5560-ac9e-8b5f2592a0ca"
 version = "0.3.5"
 
+[[POMDPPolicies]]
+deps = ["BeliefUpdaters", "LinearAlgebra", "POMDPModelTools", "POMDPs", "Random", "SparseArrays", "StatsBase"]
+git-tree-sha1 = "eb03901bd24f8b836fa69e2a8171706a4d6f0eeb"
+uuid = "182e52fb-cfd0-5e46-8c26-fd0667c990f4"
+version = "0.1.5"
+
 [[POMDPs]]
 deps = ["Distributions", "LibGit2", "Pkg", "Random", "Statistics", "Test"]
 git-tree-sha1 = "4214e0a48a4c746ecde390eed7bc0e2205dc40a0"
