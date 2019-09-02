@@ -6996,6 +6996,12 @@ git-tree-sha1 = "ee1bde9351cc4f42387b33bd3996a7081e24e4e6"
 uuid = "945b72a4-3b13-509d-9b46-1525bb5c06de"
 version = "0.11.0"
 
+[[MarkovChains]]
+deps = ["LightGraphs", "LinearAlgebra", "SparseArrays", "Test", "TikzGraphs"]
+git-tree-sha1 = "6704403032d0f37127ee5745b089be71bb034b80"
+uuid = "bbc22021-04b3-5587-aeab-b7019f0e8a6b"
+version = "0.1.2"
+
 [[Match]]
 deps = ["Test"]
 git-tree-sha1 = "8d8253da9e8d38d642cec03d41786a5201479210"
