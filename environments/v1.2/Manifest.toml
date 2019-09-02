@@ -8245,6 +8245,12 @@ git-tree-sha1 = "92667ab46a66ad502ec3044f65c41ea68b2e0e9c"
 uuid = "87e2bd06-a317-5318-96d9-3ecbac512eee"
 version = "2.0.0"
 
+[[OptimTestProblems]]
+deps = ["LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "a4198f10a4c941836b59cd973877663d37a971b9"
+uuid = "cec144fc-5a64-5bc6-99fb-dde8f63e154c"
+version = "2.0.2"
+
 [[OptionalData]]
 deps = ["Test"]
 git-tree-sha1 = "4359fca64d21e25a6489d23dc16629dc83d47bde"
