@@ -4591,6 +4591,12 @@ git-tree-sha1 = "6947b14a5488947abce9daac4a35c42e62addcd4"
 uuid = "5f047416-9681-11e9-0804-033d9936201f"
 version = "0.2.0"
 
+[[GraphDataFrameBridge]]
+deps = ["DataFrames", "LightGraphs", "MetaGraphs", "Test"]
+git-tree-sha1 = "7a9224bbc25bf12af8c2e55dac8ac86a75c1d238"
+uuid = "3c71623a-a715-5176-9801-629b201a4880"
+version = "0.2.1"
+
 [[GraphPlot]]
 deps = ["ArnoldiMethod", "ColorTypes", "Colors", "Compose", "DelimitedFiles", "LightGraphs", "LinearAlgebra", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "f4435ce0055d4da938f3bab0c0e523826735c96a"
