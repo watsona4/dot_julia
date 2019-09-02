@@ -6350,6 +6350,12 @@ git-tree-sha1 = "86fb73f5e60418f038b2fc7f83c9cd0b18bc2e47"
 uuid = "a05a14c7-6e3b-5ba9-90a2-45558833e1df"
 version = "0.1.0"
 
+[[LibSndFile]]
+deps = ["BinDeps", "FileIO", "Homebrew", "InteractiveUtils", "Libdl", "LinearAlgebra", "Pkg", "Printf", "SampledSignals", "Test", "WinRPM"]
+git-tree-sha1 = "29b6c5956c5dcc60ddc8606866cbc678c078952e"
+uuid = "b13ce0c6-77b0-50c6-a2db-140568b8d1a5"
+version = "2.0.0"
+
 [[Libdl]]
 uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 
@@ -7586,6 +7592,12 @@ deps = ["Test"]
 git-tree-sha1 = "36ebc5622c82eb9324005cc75e7e2cc51181d181"
 uuid = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
 version = "0.0.1"
+
+[[SampledSignals]]
+deps = ["Compat", "DSP", "FFTW", "FixedPointNumbers", "InteractiveUtils", "IntervalSets", "LinearAlgebra", "Pkg", "Unitful"]
+git-tree-sha1 = "741c30f791c04625904e042b37876e1c8b18dd60"
+uuid = "bd7594eb-a658-542f-9e75-4c4d8908c167"
+version = "2.0.0"
 
 [[Sass]]
 deps = ["BinaryProvider", "Libdl", "Test"]
