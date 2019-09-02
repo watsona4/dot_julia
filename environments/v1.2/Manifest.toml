@@ -7382,6 +7382,12 @@ git-tree-sha1 = "e31203c06840dd7e44af0181a79dfbcd83337beb"
 uuid = "7475f97c-0381-53b1-977b-4c60186c8d62"
 version = "0.1.0"
 
+[[ModularForms]]
+deps = ["Nemo", "Test"]
+git-tree-sha1 = "c24aa28ad0b5bcd97707385513bce790d90e062e"
+uuid = "e4207f9d-5a5d-5278-bd5d-cae8f79430d9"
+version = "0.1.0"
+
 [[ModuleInterfaceTools]]
 git-tree-sha1 = "137fe5b646de73455486043ba766490722f0546c"
 uuid = "5cb8414e-7aab-5a03-a681-351269c074bf"
