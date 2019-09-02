@@ -1,0 +1,12 @@
+name = "OMRemote"
+uuid = "25b2b4a2-b5c6-11e9-0768-bd8610217833"
+authors = ["Christian Kral <dr.christian.kral@gmail.com>"]
+version = "2.10.0"
+
+[deps]
+Base64 = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
+OMJulia = "0f4fe800-344e-11e9-2949-fb537ad918e1"
+
+[compat]
+OMJulia = "≥ 0.1.0"
+julia = "≥ 1.0.0"

@@ -8061,6 +8061,12 @@ git-tree-sha1 = "39be02d3f31cee21f0741eb7f6e850ceaa973972"
 uuid = "0f4fe800-344e-11e9-2949-fb537ad918e1"
 version = "0.1.0"
 
+[[OMRemote]]
+deps = ["Base64", "OMJulia"]
+git-tree-sha1 = "fbc99d8d377a41c204c63f61ce3a348ebd1182be"
+uuid = "25b2b4a2-b5c6-11e9-0768-bd8610217833"
+version = "2.10.0"
+
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"
