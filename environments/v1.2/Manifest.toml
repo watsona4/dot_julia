@@ -5039,6 +5039,12 @@ git-tree-sha1 = "8891fbf4a644d2d4644c5e9ef594364bc4b1d247"
 uuid = "9ee9e592-2d2d-57f4-9c4b-95048a1bc2c4"
 version = "0.2.0"
 
+[[IPNets]]
+deps = ["Sockets", "Test"]
+git-tree-sha1 = "6ae7dcaf7eb68617e801297d6944373ac411a763"
+uuid = "66763231-799b-5fff-8662-389acfc33a85"
+version = "0.6.0"
+
 [[IRTools]]
 deps = ["InteractiveUtils", "MacroTools", "Test"]
 git-tree-sha1 = "e23faa71b8f54c3fdc99b230b9c2906cafdddca5"
