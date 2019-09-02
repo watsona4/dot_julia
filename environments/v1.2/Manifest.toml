@@ -7404,6 +7404,12 @@ git-tree-sha1 = "c4c80b833c8e016e2bc71bbecfd81497c66728c4"
 uuid = "aea3f91d-3b18-5712-a377-5bd7ed4ed15b"
 version = "1.0.1"
 
+[[MolecularGraph]]
+deps = ["Documenter", "LinearAlgebra", "Printf", "Statistics", "Test", "YAML"]
+git-tree-sha1 = "10a41f273801f8e8218ad27de88a449ce5c828ac"
+uuid = "6c89ec66-9cd8-5372-9f91-fabc50dd27fd"
+version = "0.3.1"
+
 [[Mongoc]]
 deps = ["BinaryProvider", "Dates", "Libdl", "Test"]
 git-tree-sha1 = "c028ec2dfad92d9a3718ccc94800fe0d634b9985"
