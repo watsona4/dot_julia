@@ -7410,6 +7410,12 @@ git-tree-sha1 = "10a41f273801f8e8218ad27de88a449ce5c828ac"
 uuid = "6c89ec66-9cd8-5372-9f91-fabc50dd27fd"
 version = "0.3.1"
 
+[[MolecularTopologies]]
+deps = ["Test"]
+git-tree-sha1 = "a8d98ddfce388d620a5ec1b5bddd6eb023558501"
+uuid = "57484d9e-382c-5364-a237-1ed6cd00a13f"
+version = "1.1.2"
+
 [[Mongoc]]
 deps = ["BinaryProvider", "Dates", "Libdl", "Test"]
 git-tree-sha1 = "c028ec2dfad92d9a3718ccc94800fe0d634b9985"
