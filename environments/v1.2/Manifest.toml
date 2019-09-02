@@ -5978,6 +5978,12 @@ git-tree-sha1 = "fb8c55d7059fbde87ee44dbe4e5c27e32b369224"
 uuid = "9a2cd570-f05c-5dc1-9209-93ad6f5727f7"
 version = "0.6.0"
 
+[[Kuber]]
+deps = ["Dates", "HTTP", "JSON", "Random", "Swagger", "Test"]
+git-tree-sha1 = "3873a0a02ff888207bd7205bb62970ab631513ba"
+uuid = "87e52247-8a1b-5e01-9430-8fbcac83a23a"
+version = "0.2.0"
+
 [[LCMCore]]
 deps = ["Dates", "FastIOBuffers", "FileWatching", "Libdl", "StaticArrays", "UnsafeArrays"]
 git-tree-sha1 = "2030bf616c051559ed01ef605755169bdf9f1362"
@@ -7712,6 +7718,12 @@ deps = ["Compat"]
 git-tree-sha1 = "a39342763981e766a72938b59032dc02a2d74da5"
 uuid = "fd094767-a336-5f1f-9728-57cf17d0bbfb"
 version = "0.1.1"
+
+[[Swagger]]
+deps = ["Dates", "HTTP", "JSON", "MbedTLS"]
+git-tree-sha1 = "a10bdc6919751ff88b3cd0f840e28d6e0b0f6671"
+uuid = "2d69052b-6a58-5cd9-a030-a48559c324ac"
+version = "0.2.3"
 
 [[SweepOperator]]
 deps = ["LinearAlgebra", "Test"]

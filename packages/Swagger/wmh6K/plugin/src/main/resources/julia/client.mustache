@@ -1,0 +1,27 @@
+{{>partial_header}}
+module {{packageName}}
+
+using Random
+using Dates
+using HTTP
+using Swagger
+import Swagger: field_name, property_type, hasproperty, validate_property, SwaggerApi, SwaggerModel
+import Base: convert, propertynames
+
+include("modelincludes.jl")
+{{#apiInfo}}{{#apis}}
+include("api_{{classname}}.jl"){{/apis}}{{/apiInfo}}
+
+# export models
+{{#models}}
+export convert{{#model}}, {{classname}}{{/model}}
+{{/models}}
+
+# export operations
+{{#apiInfo}}
+export convert{{#apis}}, {{classname}}{{/apis}}
+{{/apiInfo}}
+
+export check_required, field_name, property_type, hasproperty, propertynames, validate_property, convert
+
+end
