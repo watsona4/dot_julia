@@ -8869,6 +8869,12 @@ git-tree-sha1 = "6b1676f6c937f31bfd868bcd31215e1d6a180c79"
 uuid = "ec145902-31c2-532e-934a-7c64254c4b82"
 version = "0.3.0"
 
+[[PolynomialRings]]
+deps = ["Combinatorics", "DataStructures", "Documenter", "InPlace", "IterTools", "LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "721b3e2e139772f8dcee11d91340af3db849d93b"
+uuid = "c8ed2632-8d42-5af4-9089-7afd55769a28"
+version = "0.3.0"
+
 [[Polynomials]]
 deps = ["LinearAlgebra", "SparseArrays", "Test"]
 git-tree-sha1 = "62142bd65d3f8aeb2226ec64dd8493349147df94"
