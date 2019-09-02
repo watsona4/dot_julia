@@ -1,0 +1,17 @@
+name = "KeyedFrames"
+uuid = "ddd84059-9b64-5d1b-85eb-da48df743e32"
+version = "1.0.0"
+
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+
+[compat]
+DataFrames = ">= 0.16.0"
+julia = "1"
+
+[extras]
+KeyedFrames = "ddd84059-9b64-5d1b-85eb-da48df743e32"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["KeyedFrames", "Test"]
