@@ -1,0 +1,31 @@
+language: julia
+sudo: true
+dist: trusty   # need trusty to support orientation for spinbutton
+os:
+    - linux
+julia:
+    - 0.7
+    - 1.0
+    - nightly
+notifications:
+    email: false
+addons:
+    apt:
+        packages:
+            - xvfb
+            - xauth
+            - libgtk-3-0
+matrix:
+  allow_failures:
+    - julia: nightly
+script:
+    - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+    - if [[ `uname` = "Linux" ]]; then TESTCMD="xvfb-run julia"; else TESTCMD="julia"; fi
+    - $TESTCMD -e 'using Pkg; Pkg.build(); Pkg.test(coverage=true)'
+after_success:
+  # push coverage results to Codecov
+  - julia -e 'using Pkg, GtkReactive; cd(dirname(dirname(pathof(GtkReactive)))); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+  # update the documentation
+  - julia -e 'using Pkg; ps=Pkg.PackageSpec(name="Documenter", version="0.19"); Pkg.add(ps); Pkg.pin(ps)'
+  - $TESTCMD -e 'using Pkg, ImageMagick; cd(Pkg.dir("GtkReactive")); ENV["DOCUMENTER_DEBUG"] = "true"; include(joinpath("docs", "make.jl"))'
+  
