@@ -5491,6 +5491,12 @@ git-tree-sha1 = "6c9fcd87677231ae293f6806fad928c216ab6658"
 uuid = "524e6230-43b7-53ae-be76-1e9e4d08d11b"
 version = "1.0.0"
 
+[[Intervals]]
+deps = ["Compat", "TimeZones"]
+git-tree-sha1 = "32ea55c8a545aaa90f5e3f8432abe7857a6156f0"
+uuid = "d8418881-c3e1-53bb-8760-2df7ec849ed5"
+version = "0.5.1"
+
 [[InverseDistanceWeighting]]
 deps = ["Distances", "GeoStatsBase", "GeoStatsDevTools", "NearestNeighbors", "Reexport", "StaticArrays"]
 git-tree-sha1 = "2cd0e12ae1703e59173c62f71aa154929f87a95c"
