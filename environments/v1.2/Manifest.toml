@@ -6073,6 +6073,12 @@ git-tree-sha1 = "6505b43dbdb449462a52e8e45feb0706f8b36dab"
 uuid = "8ac3fa9e-de4c-5943-b1dc-09c6b5f20637"
 version = "1.0.2"
 
+[[LSODA]]
+deps = ["BinDeps", "Compat", "DiffEqBase", "Libdl", "LinearAlgebra", "Parameters", "Printf"]
+git-tree-sha1 = "86edaea55bff0e351891e19c09a0f6c9201f25cc"
+uuid = "7f56f5a3-f504-529b-bc02-0b1fe5e64312"
+version = "0.5.0"
+
 [[LaTeXStrings]]
 deps = ["Compat"]
 git-tree-sha1 = "7ab9b8788cfab2bdde22adf9004bda7ad9954b6c"
