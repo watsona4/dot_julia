@@ -8055,6 +8055,12 @@ git-tree-sha1 = "4ea737497eb2294a0c6b254c83e73c9471acf7fe"
 uuid = "ebe7aa44-baf0-506c-a96f-8464559b3922"
 version = "0.3.0"
 
+[[OMJulia]]
+deps = ["Compat", "DataFrames", "DataStructures", "LightXML", "Random", "ZMQ"]
+git-tree-sha1 = "39be02d3f31cee21f0741eb7f6e850ceaa973972"
+uuid = "0f4fe800-344e-11e9-2949-fb537ad918e1"
+version = "0.1.0"
+
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"
