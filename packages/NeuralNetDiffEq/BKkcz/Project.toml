@@ -1,0 +1,25 @@
+name = "NeuralNetDiffEq"
+uuid = "8faf48c0-8b73-11e9-0e63-2155955bfa4d"
+authors = ["Chris Rackauckas <accounts@chrisrackauckas.com>"]
+version = "1.0.1"
+
+[deps]
+DiffEqBase = "2b5f629d-d688-5b77-993f-72d75c75574e"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+DiffEqFlux = "aae7a2af-3d4f-5e19-a356-7da93b79d9d0"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+StochasticDiffEq = "789caeaf-c7a9-5a7d-9973-96adeb23e2a0"
+
+[compat]
+DiffEqBase = ">= 5.0.0"
+julia = "1"
+
+[extras]
+DiffEqDevTools = "f3b72e0c-5b89-59e1-b016-84e28bfd966d"
+SafeTestsets = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "SafeTestsets", "DiffEqDevTools"]

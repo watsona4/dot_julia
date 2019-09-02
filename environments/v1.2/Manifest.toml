@@ -7905,6 +7905,12 @@ git-tree-sha1 = "ab902cd9606bb1fad07699c92593e881388e5e11"
 uuid = "e2554591-2d5a-5553-bb4c-ff0ef3342964"
 version = "0.1.1"
 
+[[NeuralNetDiffEq]]
+deps = ["DiffEqBase", "DiffEqFlux", "Flux", "LinearAlgebra", "Reexport", "Statistics", "StochasticDiffEq"]
+git-tree-sha1 = "60a8592f2f6e96f89b0d82bc47fdbaebf787e74e"
+uuid = "8faf48c0-8b73-11e9-0e63-2155955bfa4d"
+version = "1.0.1"
+
 [[NodeJS]]
 deps = ["Test"]
 git-tree-sha1 = "74b1bd25ec1709609462c1ab4b383dd463c57df9"
