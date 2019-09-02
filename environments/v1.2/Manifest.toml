@@ -5966,6 +5966,12 @@ git-tree-sha1 = "df669d62794bdc55d57c4cc7c462ab737def89ad"
 uuid = "ba0b0d4f-ebba-5204-a429-3ac8c609bfb7"
 version = "0.3.0"
 
+[[KrylovKit]]
+deps = ["LinearAlgebra", "Printf", "Random", "Test"]
+git-tree-sha1 = "b20b380cc5e28f079ba5212450d7d42a10a85194"
+uuid = "0b1a1467-8014-51b9-945f-bf0ae24f4b77"
+version = "0.3.4"
+
 [[LCMCore]]
 deps = ["Dates", "FastIOBuffers", "FileWatching", "Libdl", "StaticArrays", "UnsafeArrays"]
 git-tree-sha1 = "2030bf616c051559ed01ef605755169bdf9f1362"
