@@ -7008,6 +7008,12 @@ git-tree-sha1 = "a0be12d9ad9c26169447f261ce3d8a631bec0787"
 uuid = "b1af39ce-6e51-5722-b548-1afc01310642"
 version = "0.1.1"
 
+[[MarriageMarkets]]
+deps = ["Distributions", "LinearAlgebra", "NLsolve", "QuantEcon", "Test"]
+git-tree-sha1 = "433ba21052cefac4705fc3ec103996be29f3daf4"
+uuid = "bccb7ab1-cda7-5383-b12b-a44596912546"
+version = "0.1.0"
+
 [[Match]]
 deps = ["Test"]
 git-tree-sha1 = "8d8253da9e8d38d642cec03d41786a5201479210"
