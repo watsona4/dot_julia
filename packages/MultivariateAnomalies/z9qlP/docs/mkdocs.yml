@@ -1,0 +1,31 @@
+site_name:        MultivariateAnomalies.jl
+repo_url:         https://github.com/milanflach/MultivariateAnomalies.jl.git
+site_description: A julia package to detect multivarate anomalies.
+site_author:      milanflach
+
+theme: readthedocs
+
+extra_css:
+  - assets/Documenter.css
+
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - assets/mathjaxhelper.js
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+  - mdx_math
+
+docs_dir: 'build'
+
+pages:
+- Home: 'index.md'
+- Manual:
+    - 'High Level Functions': 'man/HighLevelFunctions.md'
+    - 'Anomaly Detection Algorithms': 'man/DetectionAlgorithms.md'
+    - 'Distances and Densities': 'man/DistancesDensity.md'
+    - 'Preprocessing': 'man/Preprocessing.md'
+    - 'Postprocessing': 'man/Postprocessing.md'
+    - 'AUC': 'man/AUC.md'

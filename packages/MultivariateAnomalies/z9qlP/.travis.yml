@@ -1,0 +1,36 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+
+codecov: true
+
+os:
+  - linux
+  - osx
+
+julia:
+  - 0.7
+  - 1.0
+  - 1.1
+  - nightly
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    -julia: nightly
+
+notifications:
+  email: false
+
+after_success:
+  - julia -e 'using Pkg; Pkg.instantiate(); cd(Pkg.dir("MultivariateAnomalies")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.0
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd()));
+                                               Pkg.instantiate(); Pkg.add("Documenter")'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip

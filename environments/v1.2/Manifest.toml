@@ -7560,6 +7560,12 @@ git-tree-sha1 = "025b6273284baf3f4c137c12e18c07a0b7ab2390"
 uuid = "3b2b4ff1-bcff-5658-a3ee-dbcf1ce5ac09"
 version = "0.2.0"
 
+[[MultivariateAnomalies]]
+deps = ["Combinatorics", "Distances", "LIBSVM", "LinearAlgebra", "Statistics", "Test"]
+git-tree-sha1 = "66f810ae2359bc42b4a75ae4764a260a8effacb9"
+uuid = "6b1494d1-c0e4-5e11-970b-cb64accc6d0e"
+version = "0.2.3"
+
 [[MultivariatePolynomials]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "ddc00a66d775fab6ba10ecd9cf87a4cda2782036"
