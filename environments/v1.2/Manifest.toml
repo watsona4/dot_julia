@@ -4801,6 +4801,11 @@ git-tree-sha1 = "991d49835322dee46dee7554fae34bcf3e97474d"
 uuid = "4a05ff16-5f95-55f4-bb53-bb3f467c689a"
 version = "1.1.0"
 
+[[HalfIntegers]]
+git-tree-sha1 = "0d8c14fb6087546fa813440fb85536e6efab8905"
+uuid = "f0d1745a-41c9-11e9-1dd9-e5d34d218721"
+version = "0.1.2"
+
 [[Hexagons]]
 deps = ["Test"]
 git-tree-sha1 = "de4a6f9e7c4710ced6838ca906f81905f7385fd6"
