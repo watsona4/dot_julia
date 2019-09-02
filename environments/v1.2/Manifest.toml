@@ -6878,6 +6878,12 @@ git-tree-sha1 = "e8305df5e797dafc17a6100867917d170a4f8e87"
 uuid = "371237a9-e6c1-5201-9adb-3d8cfa78fa9f"
 version = "0.6.3"
 
+[[MPIReco]]
+deps = ["AxisArrays", "Distributed", "DistributedArrays", "Images", "LinearAlgebra", "LinearOperators", "MPIFiles", "ProgressMeter", "Reexport", "RegularizedLeastSquares", "SparseArrays", "Unitful"]
+git-tree-sha1 = "da077ea2487387cf9fae6fe427f8aeebbe1884be"
+uuid = "e4246700-6248-511e-8146-a1d1f47669d2"
+version = "0.1.1"
+
 [[MacroTools]]
 deps = ["CSTParser", "Compat", "DataStructures", "Test", "Tokenize"]
 git-tree-sha1 = "d6e9dedb8c92c3465575442da456aec15a89ff76"

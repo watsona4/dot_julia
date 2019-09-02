@@ -1,0 +1,10 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+test/data*
+test/SF*
+test/*.mdf
+deps/build.log
+test/img/*
+
+Manifest.toml
