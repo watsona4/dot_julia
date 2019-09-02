@@ -7775,6 +7775,12 @@ git-tree-sha1 = "ce3b85e484a5d4c71dd5316215069311135fa9f2"
 uuid = "77ba4419-2d1f-58cd-9bb1-8ffee604a2e3"
 version = "0.3.2"
 
+[[Nabla]]
+deps = ["DiffRules", "DualNumbers", "FDM", "LinearAlgebra", "SpecialFunctions", "Statistics"]
+git-tree-sha1 = "83d2a38342b7cd14e28439a16629fd57b425a080"
+uuid = "49c96f43-aa6d-5a04-a506-44c7070ebe78"
+version = "0.12.1"
+
 [[NamedArrays]]
 deps = ["Combinatorics", "DataStructures", "DelimitedFiles", "InvertedIndices", "LinearAlgebra", "Random", "Requires", "SparseArrays", "Statistics"]
 git-tree-sha1 = "2681361e30e0ee97aad617f1a6a728e53179bd15"
