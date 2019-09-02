@@ -5425,6 +5425,12 @@ git-tree-sha1 = "eb05b5625bc5d821b8075a77e4c421933e20c76b"
 uuid = "7d512f48-7fb1-5a58-b986-67e6dc259f01"
 version = "0.7.0"
 
+[[InterpolatedPDFs]]
+deps = ["Distributions", "Interpolations", "NumericalIntegration", "Random"]
+git-tree-sha1 = "377c467498cdbdd2b4d7700b68f17d1c1df91be9"
+uuid = "dd871ef8-c280-11e9-0edd-21d59c0cc143"
+version = "0.1.0"
+
 [[Interpolations]]
 deps = ["AxisAlgorithms", "LinearAlgebra", "OffsetArrays", "Random", "Ratios", "SharedArrays", "SparseArrays", "StaticArrays", "WoodburyMatrices"]
 git-tree-sha1 = "e1bac96b5ef3ea23b50e801b4a988ec21861a47f"
@@ -6312,6 +6318,12 @@ deps = ["Printf", "Test"]
 git-tree-sha1 = "0cb5fb8157780c06a36b1c7ccaab4fcebed83259"
 uuid = "6c575b1c-77cb-5640-a5dc-a54116c90507"
 version = "0.3.1"
+
+[[NumericalIntegration]]
+deps = ["InteractiveUtils", "LinearAlgebra", "Logging", "Test"]
+git-tree-sha1 = "71a5bf35469ec57e1bfdeec7dbb5757e51949bbb"
+uuid = "e7bfaba1-d571-5449-8927-abc22e82249b"
+version = "0.2.0"
 
 [[ObjectStores]]
 deps = ["Authorization", "Logging", "Test"]
