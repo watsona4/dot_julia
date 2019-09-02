@@ -1,0 +1,24 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - nightly
+matrix:
+    allow_failures:
+        - julia: nightly
+notifications:
+  email: false
+
+after_success:
+  - julia --project=coverage/ --color=yes coverage/coverage.jl
+
+jobs:
+    include:
+        - stage: "Documentation"
+          julia: 1.0
+          os: linux
+          script:
+            - julia --project=docs/ --color=yes docs/make.jl deploy
+          after_success: skip

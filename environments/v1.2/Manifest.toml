@@ -4645,6 +4645,12 @@ git-tree-sha1 = "011aa67826e8b02bbd82c13946421bb563836128"
 uuid = "775960c6-9b90-5df0-b405-1e337feb71e5"
 version = "0.2.0"
 
+[[GridArrays]]
+deps = ["DomainSets", "FastGaussQuadrature", "FillArrays", "GaussQuadrature", "RecipesBase", "StaticArrays", "Test"]
+git-tree-sha1 = "0b83aa25c7b388a750d15a79073758502c7c8ebe"
+uuid = "356ae075-8bc9-5ef9-a342-46c9ba26438c"
+version = "0.1.1"
+
 [[Gumbo]]
 deps = ["AbstractTrees", "BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "b16b6c5127e8c6be3084e6658c5fb5dd1f97d7fd"
