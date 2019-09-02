@@ -8720,6 +8720,12 @@ git-tree-sha1 = "552f516c9a015495c8f6c07210a85806113183fd"
 uuid = "d254efa0-af53-535e-b7f1-03c1c9fbcbe7"
 version = "0.1.0"
 
+[[PkgTemplates]]
+deps = ["Dates", "InteractiveUtils", "LibGit2", "Mustache", "Pkg", "REPL", "URIParser"]
+git-tree-sha1 = "dbb1672f1ee3a7e440fb39fcf5a2dc37c3d22c55"
+uuid = "14b8a8f1-9102-5b29-a752-f990bacb7fe1"
+version = "0.6.2"
+
 [[PlotThemes]]
 deps = ["PlotUtils", "Requires", "Test"]
 git-tree-sha1 = "f3afd2d58e1f6ac9be2cea46e4a9083ccc1d990b"
