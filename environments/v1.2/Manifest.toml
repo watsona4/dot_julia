@@ -7679,6 +7679,12 @@ git-tree-sha1 = "2151282446bb161941bff1b330a3212fb132e6b1"
 uuid = "a3a9e032-41b5-5fc4-967a-a6b7a19844d3"
 version = "0.4.0"
 
+[[NLIDatasets]]
+deps = ["DataDeps", "HTTP"]
+git-tree-sha1 = "cc2418156355d4142d1a4a6fa3833cb3a97fdf2e"
+uuid = "400165cc-b992-11e9-18fb-114a7be5e8c2"
+version = "0.1.0"
+
 [[NLPModels]]
 deps = ["FastClosures", "ForwardDiff", "LinearAlgebra", "LinearOperators", "Printf", "SparseArrays", "Test"]
 git-tree-sha1 = "8eedfa85d4b3b641b4e5153c175b11bddb12f775"

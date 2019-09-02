@@ -1,0 +1,17 @@
+name = "NLIDatasets"
+uuid = "400165cc-b992-11e9-18fb-114a7be5e8c2"
+authors = ["David Ellison <davidehellison@gmail.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "1.0"
+
+[deps]
+DataDeps = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
