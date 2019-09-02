@@ -6956,6 +6956,12 @@ git-tree-sha1 = "a8ab424c40330e2a09a80ee180c94e715e0007d3"
 uuid = "06eb3307-b2af-5a2a-abea-d33192699d32"
 version = "0.4.0"
 
+[[Manopt]]
+deps = ["CSV", "ColorSchemes", "ColorTypes", "Colors", "DataFrames", "Dates", "Documenter", "Images", "JLD2", "LinearAlgebra", "Literate", "Markdown", "Plots", "QuartzImageIO", "Random", "RecipesBase", "SimpleTraits", "SparseArrays", "Statistics", "Test", "TestImages"]
+git-tree-sha1 = "5e0899f54fba10e0ef1fb882ea15b134eb37bd8b"
+uuid = "0fc0a36d-df90-57f3-8f93-d78a9fc72bb5"
+version = "0.1.0"
+
 [[MappedArrays]]
 deps = ["Test"]
 git-tree-sha1 = "923441c5ac942b60bd3a842d5377d96646bcbf46"
@@ -8535,6 +8541,12 @@ version = "0.1.0"
 [[Test]]
 deps = ["Distributed", "InteractiveUtils", "Logging", "Random"]
 uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[[TestImages]]
+deps = ["AxisArrays", "FileIO", "ZipFile"]
+git-tree-sha1 = "fc32128605450adea0fc392920706f8a8aa56282"
+uuid = "5e47fb64-e119-507b-a336-dd2b206d9990"
+version = "0.5.1"
 
 [[TextParse]]
 deps = ["CodecZlib", "DataStructures", "Dates", "DoubleFloats", "Mmap", "Nullables", "PooledArrays", "WeakRefStrings"]
