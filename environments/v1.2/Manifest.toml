@@ -8627,6 +8627,12 @@ git-tree-sha1 = "24bbdb7a042d434edb5541fdc3c2941d1c866bab"
 uuid = "33ad39ac-ed31-50eb-9b15-43d0656eaa72"
 version = "0.9.1"
 
+[[PhyloPlots]]
+deps = ["ColorTypes", "Colors", "DataFrames", "Gadfly", "Markdown", "PhyloNetworks", "Printf", "RCall"]
+git-tree-sha1 = "e2b489d43a7c8193729072006e1cf15c73d9b2ae"
+uuid = "c0d5b6db-e3fc-52bc-a87d-1d050989ed3b"
+version = "0.2.1"
+
 [[PiGPIO]]
 deps = ["Sockets"]
 git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
