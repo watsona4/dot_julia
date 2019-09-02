@@ -7971,6 +7971,12 @@ git-tree-sha1 = "ae1a63457e14554df2159b0b028f48536125092d"
 uuid = "4d1e1d77-625e-5b40-9113-a560ec7a8ecd"
 version = "0.0.8"
 
+[[NumberIntervals]]
+deps = ["IntervalArithmetic"]
+git-tree-sha1 = "91f55b15eaefd76f91f97db03283bc851cc02dc6"
+uuid = "978898f6-561e-11e9-3f66-13949d9e5c8a"
+version = "0.1.0"
+
 [[NumericIO]]
 deps = ["Printf", "Test"]
 git-tree-sha1 = "0cb5fb8157780c06a36b1c7ccaab4fcebed83259"

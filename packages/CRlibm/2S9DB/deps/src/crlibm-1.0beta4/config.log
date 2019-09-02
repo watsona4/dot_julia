@@ -191,7 +191,7 @@ configure:4431: $? = 0
 configure:4439: result: inline
 configure:4461: checking for sqrt
 configure:4461: gcc -o conftest -fpic -w   conftest.c  >&5
-/tmp/ccqHjT2a.o: In function `main':
+/tmp/cca7oJ0s.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `sqrt'
 collect2: error: ld returned 1 exit status
 configure:4461: $? = 1

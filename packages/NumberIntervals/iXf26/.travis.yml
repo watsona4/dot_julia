@@ -1,0 +1,23 @@
+language: julia
+
+sudo: false
+
+os:
+      - linux
+      - osx
+      - windows
+
+julia:
+      - 1.0
+      - 1.1
+      - nightly
+
+codecov: true
+
+matrix:
+      allow_failures:
+          - julia: nightly
+          - os: windows
+
+notifications:
+      email: false
