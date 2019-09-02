@@ -1,0 +1,37 @@
+* File : expopt1.eo
+
+1   * numcon
+3   * numvar
+5   * numter
+
+* Coefficients of terms
+
+40           
+20
+40
+0.3333333
+1.3333333
+
+* For each term, the index of the 
+* constraints to the term belongs
+
+0     
+0
+0
+1
+1
+
+* Section defining a_kj
+
+0 0 -1
+0 1 -0.5
+0 2 -1
+1 0 1.0
+1 2 1.0
+2 0 1.0
+2 1 1.0
+2 2 1.0
+3 0 -2
+3 1 -2
+4 1 0.5
+4 2 -1.0

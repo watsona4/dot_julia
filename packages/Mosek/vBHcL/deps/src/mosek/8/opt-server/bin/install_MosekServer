@@ -1,0 +1,317 @@
+#!/bin/bash
+
+
+BDIR=$(cd $(dirname $0)/.. && pwd)
+
+#configuration
+declare -A CONFIG
+CONFIG[INSTMETHOD]=global
+CONFIG[PREFIX]=""
+CONFIG[UPDATE]=""
+CONFIG[PORT]=30080
+CONFIG[CERTDIR]=
+CONFIG[ADMINPASSWORD]=-
+CONFIG[CMD]=$(basename $0)
+CONFIG[GUI]="true"
+CONFIG[GETTASK]="false"
+CONFIG[ANONSUBMIT]="false"
+CONFIG[KEEPJOBS]="0"
+CONFIG[MAXFILESIZE]="0"
+CONFIG[MOSEKDIST]=""
+CONFIG[MOSEKBINDIR]=""
+CONFIG[USERAPI]="true"
+
+SETLOC=""
+
+function usage()
+{
+    echo "Syntax:"
+    echo "$CMD [ --inplace | --user | --global | --prefix PREFIX ] [ --certdir CERTDIR ] [ --password PWD ] [ --port PORT ]"
+    echo "  --inplace      Set up the server to run directly in the unpacked distro directory"
+    echo "  --mosekdir     Defines the location of the MOSEK installation"
+    echo "  --mosekbindir  Defines the the MOSEK binaries"
+    echo "  --user         Install in ~/.local"
+    echo "  --global       Install in /usr"
+    echo "  --prefix DIR   Install in DIR"
+    echo "  --certdir DIR  This directory contains valid cert.pem and key.pem for HTTPS. DIR='', HTTPS is disabled"
+    echo "  --password PWD Password for initial user 'admin'"
+    echo "  --port PORT    Configure server to listen to port PORT"
+    echo "  --keepjobs NUM Number of jobs to keep, deleting the oldest ones"
+    echo "  --disable-gui  Disable GUI"
+    echo "  --disable-userapi  Disable User API (API for managing users)"
+    echo "  --enable-get   Enable fetching submitted data/problem files"
+    echo "  --enable-anonymous Enable submitting without credentials"
+    echo "  --max-filesize NUM Limit the filesize that the server accepts"
+}
+
+while (($# > 0)); do
+    case "$1" in
+        "--inplace")
+            if [ -n "$SETLOC" ]; then
+                echo "Fail: Only one if --inplace, --user, --global and --prefix can be used"
+                exit 1
+            fi
+            CONFIG[INSTMETHOD]="inplace"
+            CONFIG[PREFIX]="$BDIR"
+            BINDIR="${CONFIG[PREFIX]}/bin"
+            VARDIR="${CONFIG[PREFIX]}/var"
+            ETCDIR="${CONFIG[PREFIX]}/etc"
+            SETLOC="YES"
+            shift
+            ;;
+        "--user")
+            if [ -n "$SETLOC" ]; then
+                echo "Fail: Only one if --inplace, --user, --global and --prefix can be used"
+                exit 1
+            fi
+            CONFIG[INSTMETHOD]="user"
+            CONFIG[PREFIX]=$HOME/.local
+            BINDIR="${CONFIG[PREFIX]}/bin"
+            VARDIR="${CONFIG[PREFIX]}/var"
+            ETCDIR="${CONFIG[PREFIX]}/etc"
+            SETLOC="YES"
+            shift
+            ;;
+        "--global")
+            if [ -n "$SETLOC" ]; then
+                echo "Fail: Only one if --inplace, --user, --global and --prefix can be used"
+                exit 1
+            fi
+            CONFIG[INSTMETHOD]="global"
+            CONFIG[PREFIX]="/usr"
+            BINDIR="${CONFIG[PREFIX]}/bin"
+            VARDIR="/var"
+            ETCDIR="/etc"
+            SETLOC="YES"
+            shift
+            ;;
+        "--prefix")
+            if [ -n "$SETLOC" ]; then
+                echo "Fail: Only one if --inplace, --user, --global and --prefix can be used"
+                exit 1
+            fi
+            CONFIG[INSTMETHOD]="prefix"
+            mkdir -p "$2"
+            pushd "$2"
+            CONFIG[PREFIX]=$(pwd)
+            popd
+            BINDIR="${CONFIG[PREFIX]}/bin"
+            VARDIR="${CONFIG[PREFIX]}/var"
+            ETCDIR="${CONFIG[PREFIX]}/etc"
+            SETLOC="YES"
+            shift 2
+            ;;
+        "--update")
+            CONFIG[UPDATE]="yes"
+            ;;
+        "--certdir")
+            if [ "$2" == "" ]; then
+                CONFIG[CERTDIR]=""
+            else                
+                mkdir -p "$2"
+                pushd "$2"
+                CONFIG[CERTDIR]=$(pwd)
+                popd
+            fi
+            shift 2
+            ;;
+        "--mosekdir")
+            if [ "$2" == "" ]; then
+                CONFIG[MOSEKDIR]=""
+            else                
+                mkdir -p "$2"
+                (cd "$2";
+                 CONFIG[MOSEKDIR]=$(pwd) )
+            fi
+            shift 2
+            ;;
+        "--mosekbindir")
+            if [ "$2" == "" ]; then
+                CONFIG[MOSEKBINDIR]=""
+            else                
+                mkdir -p "$2"
+                (cd "$2";
+                 CONFIG[MOSEKBINDIR]=$(pwd) )
+            fi
+            shift 2
+            ;;
+        "--password")
+            CONFIG[ADMINPASSWORD]="$2"
+            shift 2
+            ;;
+        "--keepjobs")
+            CONFIG[KEEPJOBS]="$2"
+            shift 2
+            ;;
+        "--max-filesize")
+            CONFIG[MAXFILESIZE]="$2"
+            shift 2
+            ;;
+        "--port")
+            CONFIG[PORT]="$2"
+            shift 2
+            ;;
+        "--disable-gui")
+            CONFIG[GUI]="false"
+            shift
+            ;;
+        "--disable-userapi")
+            CONFIG[USERAPI]="false"
+            shift
+            ;;
+        "--enable-anonymous")
+            CONFIG[ANONSUBMIT]="true"
+            shift
+            ;;
+        "--enable-get")
+            CONFIG[GETTASK]="true"
+            shift
+            ;;
+        "--help"|"-h")
+            usage
+            exit 1
+            ;;
+        "-*")
+            echo "Invalid flag: $1"
+            exit 1
+            ;;
+        *)
+            echo "Invalid argument: $1"
+            exit 1
+            ;;
+    esac
+done
+
+if [ "${CONFIG[PREFIX]}" == "" ]; then
+    usage
+    exit 1
+fi
+
+if [ -z "${CONFIG[MOSEKBINDIR]}" ]; then
+    if [ -z "${CONFIG[MOSEKDIR]}" ]; then
+        CONFIG[MOSEKDIR]=$HOME/mosek
+    fi
+
+    if [ -d "${CONFIG[MOSEKDIR]}" ]; then
+        VER=$(ls "${CONFIG[MOSEKDIR]}" | grep '^[0-9]\+\(\.[0-9]+\)\?\>' | sort -n | tail -n 1)
+        if [ -z "$VER" ]; then
+            echo "Failed to locate a suitable MOSEK version in ${CONFIG[MOSEKDIR]}" && exit 1
+        else
+            CONFIG[MOSEKBINDIR]="${CONFIG[MOSEKDIR]}/$VER/tools/platform/linux64x86/bin"
+        fi
+    else
+        echo "${CONFIG[MOSEKDIR]} is not a directory" && exit 1
+    fi
+fi
+
+function abspath() { cd $1 ; pwd; }
+
+SOLVECMD="\$basedir/script/solve.py \$workdir \$taskfile"
+if [ -d "${CONFIG[MOSEKBINDIR]}" ]; then
+    MOSEKBINDIR=$(abspath "${CONFIG[MOSEKBINDIR]}")
+    
+    if [ -e "$MOSEKBINDIR/mosekcli" ]; then
+        SOLVECMD="$MOSEKBINDIR/mosekcli -pid-file \$workdir/PID -log \$workdir/solver.log -read \$taskfile -solve:res=\$workdir/result.res,trm=\$workdir/result.trm,msg=\$workdir.msg -write-solution:json \$workdir/solution.jtask -write-solution:task \$workdir/solution.task -write-solution:plain \$workdir/solution.ascii -indicator-file:done \$workdir/done"
+    fi
+else
+    echo "${CONFIG[MOSEKBINDIR]} is not a directory" && exit 1
+fi
+
+CONFIGFILE="$ETCDIR/Mosek/server.conf"
+
+if [ "${CONFIG[INSTMETHOD]}" != "inplace" ]; then
+    echo "Make directories..."                        && \
+    mkdir -p "$BINDIR"                                && \
+    mkdir -p "$ETCDIR/Mosek/security"                 && \
+    mkdir -p "$VARDIR/Mosek/server/script"            && \
+    mkdir -p "$VARDIR/Mosek/server/static/script"     && \
+    mkdir -p "$VARDIR/Mosek/server/static/web"        && \
+    mkdir -p "$VARDIR/Mosek/server/work/users/def"    && \
+    mkdir -p "$VARDIR/Mosek/server/work/users/map"    && \
+    mkdir -p "$VARDIR/Mosek/server/work/users/access" && \
+    mkdir -p "$VARDIR/Mosek/server/work/users/login"  && \
+    mkdir -p "$VARDIR/Mosek/server/work/tasks"        && \
+    \
+    echo "Install into ${CONFIG[PREFIX]}" && \
+    cp "$BDIR/bin/MosekServer.bin" "$BINDIR/" && \
+    cp  "$BDIR/var/Mosek/server/static/jquery-1.11.3.min.js" \
+        "$BDIR/var/Mosek/server/static/script.js" \
+        "$BDIR/var/Mosek/server/static/style.css" \
+        "$BDIR/var/Mosek/server/static/favicon.png" \
+        "$BDIR/var/Mosek/server/static/mosekserver.png" \
+        "$BDIR/var/Mosek/server/static/webgraphmoseklogocolor.png" \
+        "$VARDIR/Mosek/server/static/" && \
+    cp  "$BDIR/var/Mosek/server/static/script/user.js" \
+        "$VARDIR/Mosek/server/static/script/" && \
+    cp  "$BDIR/var/Mosek/server/static/web/alljobs.html" \
+        "$BDIR/var/Mosek/server/static/web/default.html" \
+        "$BDIR/var/Mosek/server/static/web/index.html" \
+        "$BDIR/var/Mosek/server/static/web/myjobs.html" \
+        "$BDIR/var/Mosek/server/static/web/myjobs.js"  \
+        "$BDIR/var/Mosek/server/static/web/mytokens.html" \
+        "$BDIR/var/Mosek/server/static/web/mytokens.js" \
+        "$BDIR/var/Mosek/server/static/web/profile.html" \
+        "$BDIR/var/Mosek/server/static/web/sidebar.js" \
+        "$BDIR/var/Mosek/server/static/web/userlist.html" \
+        "$BDIR/var/Mosek/server/static/web/userlist.js" \
+        "$VARDIR/Mosek/server/static/web" && \
+    cp  "$BDIR/var/Mosek/server/script/solfmt.py" \
+        "$BDIR/var/Mosek/server/script/solve.py" \
+        "$BDIR/var/Mosek/server/script/tocondor.sh" \
+        "$VARDIR/Mosek/server/script/" && \
+    if [ "${CONFIG[CERTDIR]}" != "" ]; then
+        mkdir -p "$ETCDIR/Mosek/security/cert" && \
+        cp  "${CONFIG[CERTDIR]}/key.pem" \
+            "${CONFIG[CERTDIR]}/cert.pem" \
+            "$ETCDIR/Mosek/security/cert/" && \
+        chmod go-rw "$ETCDIR/Mosek/security/cert/cert.pem" "$ETCDIR/Mosek/security/cert/key.pem"
+    fi && \
+    echo "Creating server config file" && \
+    echo "#!/bin/bash" > "$BINDIR/MosekServer" && \
+    echo "exec \"$BINDIR/MosekServer.bin\" -config=\"$CONFIGFILE\" \"\$@\"" >> "$BINDIR/MosekServer" && \
+    chmod +x "$BINDIR/MosekServer"
+else # inplace
+    chmod go-rw "$ETCDIR/Mosek/security/cert/cert.pem" "$ETCDIR/Mosek/security/cert/key.pem" && \
+    mkdir -p "$VARDIR/Mosek/server/work/users/def"    && \
+    mkdir -p "$VARDIR/Mosek/server/work/users/map"    && \
+    mkdir -p "$VARDIR/Mosek/server/work/users/access" && \
+    mkdir -p "$VARDIR/Mosek/server/work/users/login"  && \
+    mkdir -p "$VARDIR/Mosek/server/work/tasks"
+fi && \
+\
+echo "Creating server configuration ($CONFIGFILE)"  && \
+(
+    if [ "${CONFIG[CERTDIR]}" == "" ]; then CERTDIR="$ETCDIR/Mosek/security/cert"; fi
+    echo "{" > $CONFIGFILE
+    echo "  \"hostname\"      : \"\"," >> $CONFIGFILE
+    echo "  \"port\"          : ${CONFIG[PORT]}," >> $CONFIGFILE
+    echo "  \"basedir\"       : \"$VARDIR/Mosek/server\"," >> $CONFIGFILE
+    echo "  \"workdir\"       : \"\$basedir/work/\"," >> $CONFIGFILE
+    echo "  \"static-html\"   : \"\$basedir/static\"," >> $CONFIGFILE
+    echo "  \"solve-cmd\"     : \"$SOLVECMD\"," >> $CONFIGFILE
+    echo "  \"certdir\"       : \"${CONFIG[CERTDIR]}\"," >> $CONFIGFILE
+    echo "  \"enable-anonymous-submit\" : ${CONFIG[ANONSUBMIT]}," >> $CONFIGFILE
+    echo "  \"enable-user-api\" : ${CONFIG[USERAPI]}," >> $CONFIGFILE
+    echo "  \"enable-user-gui\" : ${CONFIG[GUI]}," >> $CONFIGFILE
+    echo "  \"enable-get-problem\" : ${CONFIG[GETTASK]}," >> $CONFIGFILE
+    echo "  \"keep-jobs\"       : ${CONFIG[KEEPJOBS]}" >> $CONFIGFILE
+    echo "}" >> $CONFIGFILE ) && \
+\
+if [ ! -e "$VARDIR/Mosek/server/work/users/map/admin" ]; then
+  echo "Creating initial user 'admin'" && \
+  rm -f "$VARDIR/Mosek/server/work/users/map/admin" && \
+  "$BDIR/bin/MosekServer_adduser" -q -u --config "$CONFIGFILE" --admin --password "${CONFIG[ADMINPASSWORD]}" --name Administrator admin
+fi && \
+echo "Done." && \
+echo "Configuration file : $CONFIGFILE" && \
+echo "Administrative user: admin" && \
+echo "Listen to port:      ${CONFIG[PORT]}" && \
+echo "Server work dir:     $VARDIR/Mosek/server" && \
+echo && \
+echo "You can now start the server as:" &&\
+echo "$BINDIR/MosekServer" \
+|| \
+echo "Installation failed!"
+
+
+

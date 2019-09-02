@@ -1,0 +1,7 @@
+#!/bin/bash
+BDIR=$(dirname $0)
+if [ -e "$BDIR/../etc/Mosek/server.conf" ]; then 
+  $BDIR/MosekServer.bin -config=$BDIR/../etc/Mosek/server.conf "$@"
+else
+  $BDIR/MosekServer.bin -config=$BDIR/../etc/Mosek/default.conf "$@"
+fi

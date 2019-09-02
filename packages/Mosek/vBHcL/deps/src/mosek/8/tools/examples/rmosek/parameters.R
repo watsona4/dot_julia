@@ -1,0 +1,1 @@
+lo1$iparam <- list(LOG = 0);

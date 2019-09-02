@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <script src="../jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="../script/user.js"></script>
+    <script src="sidebar.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/jqc-1.11.3,dt-1.10.9/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+
+    <script>
+      var currentUser = null;
+
+      function submitUserChanges()
+      {
+         $("#error-msg").html("");
+         $("#status-msg").html("");
+
+         var name  = $("#field-user-name").val();
+         var email = $("#field-user-email").val();
+         var pwd   = $("#field-user-password").val();
+         var npwd1 = $("#field-user-new-pwd1").val();
+         var npwd2 = $("#field-user-new-pwd2").val();
+
+         if (npwd1.length > 0 && npwd2.length > 0 && npwd1 != npwd2)
+         {
+           $("#error-msg").html("New password 1 and 2 are not identical - please try again");
+           $("#field-new-pwd").val("");
+           $("#field-new-pwd2").val("");
+           $("#field-new-pwd").focus();
+           return;
+         }
+
+         var data = { "Userid" : currentUser.Userid, "Name" : name, "Email" : email };
+         if (npwd1.length > 0)
+         {
+           data["Password"] = pwd;
+           data["Newpassword1"] = npwd1;
+           data["Newpassword2"] = npwd2;
+         }
+
+         var req = new XMLHttpRequest();
+         req.onreadystatechange = function() {
+             if (req.readyState == 4)
+             {
+                 if (req.status == 200 || req.status == 204) {
+                   $("#status-msg").html("User information was updated");
+                 } else {
+                   $("#error-msg").html("Failed to update user information");
+                 }
+                 $("#userform").show();
+             }
+         };
+
+         $("#userform").hide();
+         req.open("POST", "/users/api/request", true);
+         req.send(JSON.stringify({"reqstr" : "update-users", "reqdata" : data }));
+      }
+
+
+      function resetContents()
+      {
+        user = currentUser;
+        $("#field-user-id").val(user.Userid);
+        $("#field-user-name").val(user.Name);
+        $("#field-user-email").val(user.Email);
+
+        $("#field-user-admin").prop("checked",user.Isadmin);
+        $("#field-user-submitter").prop("checked",user.Issubmitter);
+        if (! user.Isadmin)
+          $("#field-user-submitter").prop("disabled",true);
+      }
+
+      function renderContents(user)
+      {
+        currentUser = user;
+      resetContents();
+      }
+
+      function onDocumentReady()
+      {
+        docReady_CheckLogin(initializeSidebar,renderContents);
+      }
+
+      $(document).ready(onDocumentReady);
+    </script>
+  </head>
+<body>
+  <div id="outer">
+    <div id="top-bar">
+      <div id="top-left"> MOSEK Optimization Server </div>
+      <div id="top-right"><span style="display : none;" id="userid-and-logout"><span id="user-id"> </span> | <a href="javascript:user_LogOut()">log out</a> </span></div>
+    </div>
+    <table id="content-table">
+      <tr>
+        <td id="sidebar-cell">
+          <div class="sidebar">
+            <p class="logo"><img class="logo" src="../webgraphmoseklogocolor.png"/></p>
+            <div id="sidebar-div" style="display : none;">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="content-div" style="display : none;">
+            <div style="padding : 5em 0px 5em 0px;">
+            <center>
+              <div class="user-op-div-inline">
+                <form id="user-form" action="javascript:submitUserChanges()">
+                  <table>
+                    <tbody>
+                      <tr><td>User ID:</td> <td><input type="text" id="field-user-id" disabled>   </td></tr>
+                      <tr><td>Name:</td>    <td><input type="text" id="field-user-name">      </td></tr>
+                      <tr><td>Email:</td>   <td><input type="text" id="field-user-email"></td></tr>
+                      <tr><td>Current Password:</td><td><input type="password" id="field-user-password" placeholder="Current password">        </td></tr>
+                      <tr><td>New Password:</td><td><input type="password" id="field-user-new-pwd1" placeholder="New password">                </td></tr>
+                      <tr><td>New Password (again):</td><td><input id="field-user-new-pwd2" type="password" placeholder="Repeat new password"> </td></tr>
+                      <tr><td colspan="2">Submitter: <input id="field-user-submitter" value="Submitter" type="checkbox"> | Admin: <input  id="field-user-admin" type="checkbox" disabled> </td></tr>
+                      <tr>
+                        <td colspan="2">
+                          <input type="submit" value="Update">
+                          <input type="button" value="Reset" onClick="resetContents()">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+              <div id="error-msg"> </div>
+              <div id="status-msg"> </div>
+            </center>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div id="login-div" style="display : none;">
+            <center>
+              <form id="login-form" style="margin-top : 5em; margin-bottom : 5em;">
+                <table>
+                  <tr><td>Username:</td><td><input type="text"     id="form-userid"   placeholder="Username"></td></tr>
+                  <tr><td>Password:</td><td><input type="password" id="form-password" placeholder="Password"></td></tr>
+                  <tr><td>         </td><td><input type="submit"   id="form-submit"   value="Submit"> </td></tr>
+                  <tr><td rowspan="2" id="login-message"></td></tr>
+                </table>
+              </form>
+            </center>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

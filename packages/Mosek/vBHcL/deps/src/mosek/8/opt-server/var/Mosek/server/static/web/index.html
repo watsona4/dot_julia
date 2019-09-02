@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <script src="../jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="../script/user.js"></script>
+    <script src="sidebar.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/jqc-1.11.3,dt-1.10.9/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+
+    <script>
+      function onDocumentReady()
+      {
+        docReady_CheckLogin(initializeSidebar,null);
+      }
+
+      $(document).ready(onDocumentReady);
+    </script>
+  </head>
+<body>
+  <div id="outer">
+    <div id="top-bar">
+      <div id="top-left"> MOSEK Optimization Server </div>
+      <div id="top-right"><span style="display : none;" id="userid-and-logout"><span id="user-id"> </span> | <a href="javascript:user_LogOut()">log out</a> </span></div>
+    </div>
+    <table id="content-table">
+      <tr>
+        <td id="sidebar-cell">
+          <div class="sidebar">
+            <p class="logo"><img class="logo" src="../webgraphmoseklogocolor.png"/></p>
+            <div id="sidebar-div" style="display : none;">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="content-div" style="display : none;">
+            <center><h1>MOSEK Optimization Server</h1></center>
+
+            <center>
+              <img align="center" src="../mosekserver.png">
+            </center>
+            <center>
+              <div style="display : inline-block; text-align : left; padding-top : 5em;">
+                Submit problems, view solutions and logs, delete old jobs.
+              </div>
+            </center>
+          </div>
+
+
+
+
+
+
+          <div id="login-div" style="display : none;">
+            <center>
+              <form id="login-form" style="margin-top : 5em; margin-bottom : 5em;">
+                <table>
+                  <tr><td>Username:</td><td><input type="text"     id="form-userid"   placeholder="Username"></td></tr>
+                  <tr><td>Password:</td><td><input type="password" id="form-password" placeholder="Password"></td></tr>
+                  <tr><td>         </td><td><input type="submit"   id="form-submit"   value="Submit"> </td></tr>
+                  <tr><td rowspan="2" id="login-message"></td></tr>
+                </table>
+              </form>
+            </center>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

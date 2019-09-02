@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+
+import sys,json,base64,hashlib,os.path,argparse,getpass,random,os,re
+import re
+
+def RandomToken():
+    i0 = random.randint(0,0xffffffff)
+    i1 = random.randint(0,0xffffffff)
+    i2 = random.randint(0,0xffffffff)
+    i3 = random.randint(0,0xffffffff)
+    return '%08x%08x%08x%08x' % (i0,i1,i2,i3)
+
+def ExclOpen(filename,mode=0o666):
+    return os.open(filename,os.O_WRONLY|os.O_CREAT|os.O_EXCL,mode=mode)
+
+def CreateRandomTokenFile(basedir,ext,mode="wb",encoding="ascii"):
+    if not os.path.isdir(basedir):
+        raise FileNotFoundError(basedir)
+    while True:
+        tok = RandomToken()
+        filename = os.path.join(basedir,tok+ext)
+        try:
+            print("TRY: ",filename)
+            fd = ExclOpen(filename)
+            os.close(fd)
+            return open(filename,mode,encoding=encoding),tok,filename
+        except OSError:
+            # file existed or failed to be created
+            pass
+
+def dollarSubst(s,d):
+    while True:
+        s2 =  re.sub(r'\$(?:{([^}]*)}|([a-zA-Z0-9_]+))',lambda o: d[o.group(1) or o.group(2)], s)
+        if s == s2:
+            return s2
+        s = s2
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description="Create file with random content for salting passwords")
+    parser.add_argument(                   metavar='USERNAME', dest="username", nargs=1, help="Username")
+    parser.add_argument('--config','-c',   metavar="CONFIG",  dest="config",               default=None,help="Config file")
+    parser.add_argument('--name','-n',     metavar="FULLNAME",dest="name",                 default=None,help="Full name")
+    parser.add_argument('--email','-e',    metavar="EMAIL",   dest="email",                default=None,help="Email address")
+    parser.add_argument('--password','-p', metavar="PWD",     dest="pwd",                  default=None,help="Password. Specify '-' to get interactive prompt")
+    parser.add_argument('--admin',                            dest="admin", default=False, action="store_true", help="Administrative rights")
+    parser.add_argument('--submitter',                        dest="submitter", default=False, action="store_true", help="Can submit")
+    parser.add_argument('--update','-u',                      dest="update", default=False, action="store_true", help="Overwrite user if already exists")
+    parser.add_argument('--quiet','-q',                       dest="quiet", default=False, action="store_true", help="Be quiet")
+    args = parser.parse_args()
+
+    bdir = os.path.dirname(__file__)
+    configfile = os.path.join(bdir,'..','etc','Mosek','server.conf') if args.config is None else args.config
+
+    username = args.username[0]
+    if len(username) < 3 or not re.match(r'[0-9a-zA-Z_@.-]+',username):
+        raise ValueError("Invalid username '%s'" % username)
+
+    password = None
+    if args.pwd is None or len(args.pwd) == 0:
+        pass
+    elif args.pwd == '-':
+        password = getpass.getpass(prompt="Please enter password for '%s': " % username)
+        password2 = getpass.getpass(prompt="Re-enter password': ")
+        if password2 != password:
+            print("Error: Passwords must be identical")
+            sys.exit(1)
+    else:
+        password = args.pwd
+
+    pwdsalt = bytes([(random.randint(0,255)) for i in range(32) ])
+
+    if password is None:
+        pwdhash = ""
+        pwdver  = 0
+    else:
+        h = hashlib.sha256()
+        h.update(password.encode('ascii'))
+        h.update(pwdsalt)
+        pwdhash = base64.b64encode(h.digest()).decode('ascii')
+        pwdver = 1
+
+
+    perms = 0
+    if args.admin:     perms |= 1
+    if args.submitter: perms |= 2
+
+    with open(configfile,'rt',encoding='utf-8') as f:
+        conf = json.load(f)
+        d = {}
+        d['configfile'] = configfile
+        d['configdir']  = os.path.dirname(configfile)
+        d['workdir']    = conf.get('workdir','$basedir/work')
+        d['basedir']    = conf['basedir']
+
+    workdir = dollarSubst(d['workdir'],d)
+
+    userfile,userid,filename = CreateRandomTokenFile(os.path.join(workdir,'users','def'),'.json',"wt")
+    with userfile as f:
+        user = { 'Login'       : username,
+                 'Name'        : "" if args.name is None else args.name,
+                 'Email'       : "" if args.email is None else args.email,
+                 'PwdHash'     : pwdhash,
+                 'PwdVer'      : pwdver,
+                 'Permissions' : perms,
+                 'UserID'      : userid}
+        json.dump(user,f)
+    with open(os.path.join(workdir,'users','def',userid+'.salt'),"wb") as f:
+        f.write(pwdsalt)
+
+    try:
+        with os.fdopen(ExclOpen(os.path.join(os.path.join(workdir,'users','map',username))),'wb') as f:
+            f.write(userid.encode('ascii'))
+    except OSError:
+        raise ValueError("User already exists")
+
+    if not args.quiet:
+        print("USER '%s', ID = '%s'" % (username,userid))
+        print("      -> %s" % filename)

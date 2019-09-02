@@ -1,0 +1,230 @@
+body {
+    font-family : sans-serif;
+
+    border-left  : 1px solid #005582;
+    border-right : 1px solid #005582;
+    margin : 0px 40px 0px 40px;
+}
+
+#content-table {
+    width : 100%;
+    border-spacing : 0px;
+    border-collapse : collapse;
+}
+#content-table tr td {
+    vertical-align : top;
+    border-collapse : collapse;
+}
+
+#sidebar-cell {
+    width : 200px;
+    border-right : 1px solid gray;
+    padding : 0px;
+}
+
+div.sidebar p {
+    margin : 0px;
+}
+
+div.sidebar ul { margin : 0px; padding : 0px; list-style-type : none; margin-bottom : 1em; } 
+div.sidebar ul li { padding: 5px 0px 0px 5px; } 
+
+#outer {
+/*
+    -moz-box-shadow: 2px 2px 5px #000;
+    -webkit-box-shadow: 2px 2px 5px #000;
+*/
+    border-top : none 0px black;
+    border-bottom : none 0px black;
+    margin-top : 0px;
+    margin-bottom : 0px;
+    padding-top : 0px;
+    padding-bottom : 0px;
+}
+
+
+div.documentrapper {
+    /*from mskstyle.css */
+    margin : 0px 2em 0px 2em;
+}
+
+img.logo { width : 190px; margin : 5px;}
+div.sidebar {
+    width : 200px;
+}
+
+
+div.sidebar h4, div.sidebar h3 {
+    border           :  1px solid #005582;
+    background-color :  #005582;
+    color : white;
+    margin : 0px;
+    padding : 2px;
+}
+
+#data-table { width : 100%; }
+#data-table tbody tr:nth-child(odd) { background-color : #76b0cf }
+#data-table tbody tr:hover          { background-color : #b0b0ff }
+thead { background-color : #005582; color : white;  }
+tfoot { background-color : #005582; color : white;  }
+
+
+#data-table tbody tr.selected { background-color : #000022; color : white; }
+
+#top-bar  {
+    background-color : #005582;
+    color            : white;
+    padding          : 4px;
+    height           : 1.4em;
+}
+#top-left  { float : left; }
+#top-right { float : right; }
+
+
+div.button {
+    border        : solid thin black;
+    border-radius : 5px;
+    padding       : 4px;
+    text-align    : center;
+    cursor        : pointer;
+    display       : inline-block;
+    margin        : 0px 2px 0px 2px;
+}
+
+
+div.red             { background : #800000; color : white; }
+div.disabled-red    { background : #806060; color : gray;  }
+div.blue            { background : #005582; color : white; }
+div.disabled-blue   { background : #606080; color : gray;  }
+
+div.button-bar      { padding : 2px; }solid thin #005582;
+div.button-bar div  { margin : 0px 2px 0px 2px; }
+
+
+div.user-op-div    { border : solid thin #80a0ff; margin : .5em; padding : .5em; }
+div.user-op-div-inline  { border : solid thin #80a0ff; margin : .5em; padding : .5em; display : inline-block; }
+div.user-op-h2     { font-weight : bolder; font-size : 1.3em; padding-bottom : .5em; }
+
+div.error          { background : red; padding : 5px; color : white; }
+
+div.header {
+    border           :  1px solid #005582;
+    background-color :  #005582;
+    color   : white;
+    margin  : 0px;
+    padding : 2px;
+}
+
+span.expired {
+    color : red;
+}
+
+
+table.items-table {
+    width : 100%;
+    border-spacing : 0px;
+    border-collapse : collapse;
+    border-top : solid thin #005582;
+    border-bottom : solid thin #005582;
+}
+table.items-table thead { background-color : #005582; color : white;  }
+table.items-table tfoot { background-color : #005582; color : white;  }
+
+table.items-table thead th { padding-left : 5px; padding-right : 5px; }
+
+table.items-table tbody tr td {
+    text-align : center;
+}
+
+
+
+table.items-table tbody tr:nth-child(2n) { background-color : #f0f0ff; }
+
+
+table.items-table tbody tr.changed:nth-child(2n+1) { background-color : #008000; }
+table.items-table tbody tr.changed:nth-child(2n)   { background-color : #007000; }
+table.items-table tbody tr.marked-for-deletion:nth-child(2n+1) { background-color : #ff0000; }
+table.items-table tbody tr.marked-for-deletion:nth-child(2n)   { background-color : #f00000; }
+
+/*
+table.items-table tbody tr:hover {
+    background-color : gray;
+    color : white;
+}
+
+table.items-table tbody tr.marked-for-deletion:hover {
+    background-color : gray;
+    color : white;
+}
+*/
+
+table.items-table tbody tr.filtered-out {
+    display : none;
+}
+
+
+table.items-table tbody tr.selected  {
+    background-color : #808080;
+    color : white;
+}
+
+
+
+.sidebar-divider {
+    height : 5px;
+    /*background-color : gray;*/
+}
+
+.sidebar-entry {
+    padding : 5px 5px 5px 5px;
+/*    background-color : #f0f0f0;*/
+}
+
+
+#error-msg {
+    font-weight : bold;
+    color       : red;
+    text-align  : center;
+}
+
+#status-msg {
+    text-align  : center;
+}
+
+.link-button {
+    border        : solid thin black;
+    border-radius : 5px;
+    padding       : 4px;
+    text-align    : center;
+    cursor        : pointer;
+    display       : inline-block;
+    margin        : 0px 2px 0px 2px;
+
+    background-color : gray;
+    color            : white;
+    text-decoration  : none;
+}
+
+
+
+.toggle-help-button {
+    border-radius : 2px;
+    padding       : 2px;
+    text-align    : center;
+    cursor        : pointer;
+    display       : inline-block;
+    margin        : 0px21px 0px 2px;
+    background-color : #f0f0f0;
+    font-size : small;
+}
+.hidden { display : none; }
+
+.help-box {
+    background-color : #f0f0f0;
+    padding : 5px;
+}
+
+input.editable-cell {
+    border : none;
+    background : none;
+}

@@ -1,0 +1,28 @@
+[ Info: get version
+[ Info: mosekbin = mosek
+[ Info: Get latest MOSEK version (https://d2i6rjz61faulo.cloudfront.net/stable/8/version)
+[ Info: Latest MOSEK version = 8.1.0.81
+[ Info: MOSEK version currently installed = 8.1.0.81
+[ Info: get version
+[ Info: mosekbin = mosek
+┌ Info: res = 
+│ MOSEK Version 8.1.0.81 (Build date: 2019-6-25 13:08:19)
+│ Copyright (c) MOSEK ApS, Denmark. WWW: mosek.com
+│ Platform: Linux/64-X86
+│ 
+│ 
+│ *** No input file specfied. No optimization is performed.
+│ 
+└ Return code - 0  [MSK_RES_OK]
+[ Info: Update not necessary
+[ Info: get version
+[ Info: mosekbin = mosek
+┌ Info: res = 
+│ MOSEK Version 8.1.0.81 (Build date: 2019-6-25 13:08:19)
+│ Copyright (c) MOSEK ApS, Denmark. WWW: mosek.com
+│ Platform: Linux/64-X86
+│ 
+│ 
+│ *** No input file specfied. No optimization is performed.
+│ 
+└ Return code - 0  [MSK_RES_OK]
