@@ -6014,6 +6014,12 @@ git-tree-sha1 = "2030bf616c051559ed01ef605755169bdf9f1362"
 uuid = "0ea44823-1ff1-5b9a-8293-5fd55a38e746"
 version = "0.6.1"
 
+[[LCMGL]]
+deps = ["BinDeps", "Homebrew", "Libdl", "Test"]
+git-tree-sha1 = "30a9920c3925c211d19158525e9446dde6273280"
+uuid = "b1a4b0ec-3354-598b-9ba1-60d5189d7354"
+version = "0.1.0"
+
 [[LDLFactorizations]]
 deps = ["AMD", "LinearAlgebra", "SparseArrays", "Test"]
 git-tree-sha1 = "fa3b5f5530bac7b972c2eb3a2e8edfab9e80b44a"
