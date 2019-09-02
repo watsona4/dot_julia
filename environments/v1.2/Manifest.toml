@@ -6056,6 +6056,12 @@ git-tree-sha1 = "bae0010daaba5f122cefcbee9a97f5d82ea03e5c"
 uuid = "7c4cb9fa-83a0-5386-9231-d6167c818060"
 version = "0.2.0"
 
+[[LPVSpectral]]
+deps = ["DSP", "FFTW", "LinearAlgebra", "Printf", "ProximalOperators", "Random", "RecipesBase", "Statistics"]
+git-tree-sha1 = "32970fc313980ca073375c80cc0c3c5edfa57406"
+uuid = "26dcc766-85df-5edc-b560-6076d5dbac63"
+version = "0.1.2"
+
 [[LRUCache]]
 git-tree-sha1 = "6505b43dbdb449462a52e8e45feb0706f8b36dab"
 uuid = "8ac3fa9e-de4c-5943-b1dc-09c6b5f20637"
@@ -6754,6 +6760,12 @@ git-tree-sha1 = "71a5bf35469ec57e1bfdeec7dbb5757e51949bbb"
 uuid = "e7bfaba1-d571-5449-8927-abc22e82249b"
 version = "0.2.0"
 
+[[OSQP]]
+deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
+git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"
+uuid = "ab2f91bb-94b4-55e3-9ba0-7f65df51de79"
+version = "0.5.3"
+
 [[ObjectStores]]
 deps = ["Authorization", "Logging", "Test"]
 git-tree-sha1 = "85fd0cf856a804f9f72f0efbfcc60a3ae3b5faca"
@@ -7063,6 +7075,12 @@ deps = ["Random", "Serialization", "Sockets", "Test"]
 git-tree-sha1 = "cc57b8d2d37f51f9bdfb440ba933c75764e6e171"
 uuid = "3349acd9-ac6a-5e09-bcdb-63829b23a429"
 version = "0.7.0"
+
+[[ProximalOperators]]
+deps = ["IterativeSolvers", "LinearAlgebra", "OSQP", "SparseArrays", "SuiteSparse", "TSVD"]
+git-tree-sha1 = "30d91695a36c5b69a8634015a8d57da904637b1a"
+uuid = "a725b495-10eb-56fe-b38b-717eba820537"
+version = "0.10.2"
 
 [[PtFEM]]
 deps = ["Compat", "CustomUnitRanges", "DataFrames", "Documenter", "GR", "Interpolations", "LinearAlgebra", "OffsetArrays", "Plots", "Printf", "QuadGK", "SHA", "SparseArrays", "Statistics", "SuiteSparse", "Test"]
@@ -7809,6 +7827,12 @@ git-tree-sha1 = "70c12a7129b147aa9e43325c86f32f7fbb88245a"
 repo-rev = "master"
 repo-url = "https://github.com/wildart/TOML.jl.git"
 uuid = "191fdcea-f9f2-43e0-b922-d33f71e2abc3"
+version = "0.4.0"
+
+[[TSVD]]
+deps = ["Adapt", "LinearAlgebra"]
+git-tree-sha1 = "4c6caaa3d6658009a22c8c8f1e9de9e2bd7eef25"
+uuid = "9449cd9e-2762-5aa3-a617-5413e99d722e"
 version = "0.4.0"
 
 [[TableShowUtils]]
