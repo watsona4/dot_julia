@@ -1,0 +1,35 @@
+format-version: 1.2
+
+[Term]
+id: GO:0000001
+name: one
+namespace: biological_process
+def: AAA
+is_a: GO:0000002
+
+[Term]
+id: GO:0000002
+namespace: biological_process
+def: BBB
+name: two
+
+[Term]
+id: GO:0000004
+name: four
+namespace: biological_process
+def: CCC
+is_a: GO:0000002
+
+[Term]
+id: GO:0000005
+name: five
+namespace: biological_process
+def: DDD
+is_a: GO:0000004
+
+[Term]
+id: GO:0000006
+name: six
+namespace: biological_process
+def: EEE
+relationship: part_of GO:0000005
