@@ -7793,6 +7793,12 @@ git-tree-sha1 = "2681361e30e0ee97aad617f1a6a728e53179bd15"
 uuid = "86f7a689-2022-50b4-a561-43c23ac3c673"
 version = "0.9.3"
 
+[[NamedColors]]
+deps = ["ColorTypes", "Colors", "REPL", "Test"]
+git-tree-sha1 = "4ff563d3f97c65405e51982b81e47f4a23651697"
+uuid = "51fcb6bd-ecd8-522c-95bc-4099d1d03463"
+version = "0.2.0"
+
 [[NearestNeighbors]]
 deps = ["Distances", "LinearAlgebra", "Mmap", "StaticArrays", "Test"]
 git-tree-sha1 = "f47c5d97cf9a8caefa47e9fa9d99d8fda1a65154"
