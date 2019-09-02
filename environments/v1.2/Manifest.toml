@@ -8804,6 +8804,12 @@ git-tree-sha1 = "897e1b83bae6c23c5cb5dc5e69d6fd8cc321d0a0"
 uuid = "42171d58-473b-503a-8d5f-782019eb09ec"
 version = "1.0.0"
 
+[[PointProcessInference]]
+deps = ["DataDeps", "DelimitedFiles", "Distributions", "Optim", "Random", "SpecialFunctions", "Statistics", "Test"]
+git-tree-sha1 = "2ce1ad0ec46b48196fc9fdcf8ef724f0223c732d"
+uuid = "e7521202-fd63-590f-a507-4e5145ac8dd0"
+version = "0.1.0"
+
 [[PoissonRandom]]
 deps = ["Random", "Statistics", "Test"]
 git-tree-sha1 = "44d018211a56626288b5d3f8c6497d28c26dc850"
