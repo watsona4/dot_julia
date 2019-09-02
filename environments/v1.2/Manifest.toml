@@ -7098,6 +7098,12 @@ git-tree-sha1 = "afac5daee74c707a3130a2bc709ba70b09b59e2b"
 uuid = "e6386f5f-9a8a-5a5d-a605-d2d61207ca5a"
 version = "0.1.0"
 
+[[MaximumLikelihoodPower]]
+deps = ["Printf", "Random", "Test"]
+git-tree-sha1 = "369738b3e5aa540979dd823a7c0bf91926037f7b"
+uuid = "b27c85e4-d77a-5c9d-b9af-900830bae76b"
+version = "0.3.0"
+
 [[MbedTLS]]
 deps = ["BinaryProvider", "Dates", "Libdl", "Random", "Sockets"]
 git-tree-sha1 = "85f5947b53c8cfd53ccfa3f4abae31faa22c2181"
