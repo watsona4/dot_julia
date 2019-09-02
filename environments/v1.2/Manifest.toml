@@ -7198,6 +7198,12 @@ git-tree-sha1 = "0c12292949ae45c346c25e0a0a1b3dcad279dbdc"
 uuid = "5b70daea-9db9-5a46-aedf-2142e553ecc5"
 version = "0.2.0"
 
+[[MeshArrays]]
+deps = ["Printf"]
+git-tree-sha1 = "9816cc79091192fa421af961a6d298eda9e459b9"
+uuid = "cb8c808f-1acf-59a3-9d2b-6e38d009f683"
+version = "0.2.0"
+
 [[MeshIO]]
 deps = ["ColorTypes", "FileIO", "GeometryTypes", "Printf", "Test"]
 git-tree-sha1 = "3e01e12c4c626578a9d47fac0d15c9fe8dad5139"
