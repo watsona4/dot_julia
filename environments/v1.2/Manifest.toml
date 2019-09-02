@@ -5302,6 +5302,12 @@ git-tree-sha1 = "b7ec91c153cf8bff9aff58b39497925d133ef7fd"
 uuid = "d25df0c9-e2be-5dd7-82c8-3ad0b3e990b9"
 version = "0.1.1"
 
+[[InfoZIP]]
+deps = ["Test"]
+git-tree-sha1 = "087ad2b31892c028b7a56e0a502b13d91faa4b96"
+uuid = "f4508453-b816-52ab-a864-26fc7f6211fc"
+version = "0.2.0"
+
 [[InfrastructureModels]]
 deps = ["JuMP", "Memento"]
 git-tree-sha1 = "6f8198d3088666e7638a58914dc3f3be8504b0cf"
