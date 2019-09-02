@@ -1,0 +1,31 @@
+{
+  "description": "Nonlinear least-squares problems for NLPModels",
+  "title": "NLSProblems.jl",
+  "upload_type": "software",
+  "publication_date": "2019-02-06",
+  "creators": [
+    {
+      "affiliation": "Federal University of Paraná - UFPR",
+      "name": "Abel Soares Siqueira"
+    },
+    {
+      "affiliation": "École Polytechnique/GERAD - Montréal",
+      "name": "Dominique Orban"
+    }
+  ],
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/JuliaSmoothOptimizers/NLSProblems.jl/releases/latest",
+      "relation": "isSupplementTo"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Alexis Montoison",
+      "type": "Researcher"
+    }
+  ],
+  "license": "MPL-2.0"
+}

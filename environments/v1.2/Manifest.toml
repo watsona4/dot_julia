@@ -7709,6 +7709,12 @@ git-tree-sha1 = "6ee5e767d63c26f47def973af201a9ceee8baa33"
 uuid = "bec4dd0d-7755-52d5-9a02-22f0ffc7efcb"
 version = "0.1.0"
 
+[[NLSProblems]]
+deps = ["JuMP", "NLPModels", "NLPModelsJuMP"]
+git-tree-sha1 = "e0ece89eb1680afe252c639467ca3755aadb09d5"
+uuid = "7cde8186-f29c-533a-9367-b4054c592979"
+version = "0.1.2"
+
 [[NLSolversBase]]
 deps = ["Calculus", "DiffEqDiffTools", "DiffResults", "Distributed", "ForwardDiff"]
 git-tree-sha1 = "c430bd3f2dfcffc30688cf4a9cb61535e8d85f65"
