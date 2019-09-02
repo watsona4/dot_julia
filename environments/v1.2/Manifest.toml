@@ -6300,6 +6300,11 @@ git-tree-sha1 = "0ae258e21a9517cbd3ecc3b9f5b2f9dff88a5811"
 uuid = "6248df61-47b1-58fa-9b7c-c0f1183480ca"
 version = "2.1.0"
 
+[[Levenshtein]]
+git-tree-sha1 = "338eae8289eae2c0e12470520955c60212936e48"
+uuid = "cb002d51-b850-5775-a4f8-1db47be676b8"
+version = "0.2.0"
+
 [[LibCURL]]
 deps = ["BinaryProvider", "Libdl"]
 git-tree-sha1 = "fd5fc15f2a04608fe1435a769dbbfc7959ff1daa"
