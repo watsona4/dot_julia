@@ -6974,6 +6974,12 @@ git-tree-sha1 = "ba1f6ccaab7d8a213556e9d40ed29f416f7a0429"
 uuid = "329a7628-3119-536a-a060-c6b2f8e35265"
 version = "1.1.0"
 
+[[Marconi]]
+deps = ["Interpolations", "LinearAlgebra", "PGFPlotsX", "Printf"]
+git-tree-sha1 = "35beaff32005d60504202febab4ca907529e1d75"
+uuid = "bbe32c30-8a1d-11e9-18de-655e918680e9"
+version = "0.1.0"
+
 [[Markdown]]
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
@@ -7467,6 +7473,12 @@ deps = ["Arpack", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "9d6a9b3e19634612fb1edcafc4b1d75242b24bde"
 uuid = "90014a1f-27ba-587c-ab20-58faa44d9150"
 version = "0.9.9"
+
+[[PGFPlotsX]]
+deps = ["ArgCheck", "Crayons", "DataStructures", "Dates", "DefaultApplication", "DocStringExtensions", "MacroTools", "Missings", "Parameters", "Requires", "StatsBase", "Unicode"]
+git-tree-sha1 = "169528d1574e4695db9b5e8304ddfeb4bb717a3f"
+uuid = "8314cec4-20b6-5062-9cdb-752b83310925"
+version = "1.1.0"
 
 [[POMDPModelTools]]
 deps = ["Distributions", "LinearAlgebra", "POMDPs", "Random", "SparseArrays", "Statistics", "UnicodePlots"]
