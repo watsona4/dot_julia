@@ -1,0 +1,7 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+deps/gym
+deps/whichgym
+deps/build.log

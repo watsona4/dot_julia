@@ -1,0 +1,63 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+dist: xenial
+
+os:
+  - linux
+julia:
+  - 1.0
+notifications:
+  email: true
+git:
+  depth: 99999999
+
+## uncomment the following lines to allow failures on nightly julia
+## (tests will run but not make your overall status red)
+#matrix:
+#  allow_failures:
+#  - julia: nightly
+#
+env:
+  global:
+    - PYCALL_DEBUG_BUILD="yes"
+  matrix:
+    - PYTHON=python3
+
+before_install:
+  - sudo apt-get install python3 python3-setuptools python3-dev python3-pip python-augeas gcc swig dialog
+  - export PATH=$HOME/.local/bin:$PATH
+  - which python
+  - which pip
+  - export alias python=python3
+  - export alias pip=pip3
+  - pip3 install --user --upgrade pip
+  - which python
+  - which pip
+
+
+## uncomment and modify the following lines to manually install system packages
+#addons:
+#  apt: # apt-get for linux
+#    packages:
+#    - gfortran
+#before_script: # homebrew for mac
+#  - if [ $TRAVIS_OS_NAME = osx ]; then brew install gcc; fi
+
+## uncomment the following lines to override the default test script
+#script:
+#  - git clone https://github.com/openai/gym
+#  - cd gym
+#  - pip install --user scipy
+#  - pip install --user -e .
+#  - pip install --user -e '.[atari]'
+#  - pip install --user -e '.[box2d]'
+#  - pip install --user -e '.[classic_control]'
+#  - pip install --user -e '.[algorithmic]'
+#  - cd ..
+#  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia --color=yes -e 'using Pkg; ENV["GYM_ENVS"]="atari:algorithmic:box2d:classic_control"; Pkg.activate(); Pkg.instantiate(); Pkg.build(); Pkg.test()'
+after_success:
+  # push coverage results to Coveralls
+  - julia -e 'using Pkg; cd(Pkg.dir("Gym")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
+  # push coverage results to Codecov
+  - julia -e 'using Pkg; cd(Pkg.dir("Gym")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
