@@ -7026,6 +7026,12 @@ git-tree-sha1 = "2193c60212d6eeac0e561cb78fc2d22324644f6e"
 uuid = "35fa313e-aa48-52ea-bc82-ddb91c7db87b"
 version = "0.1.0"
 
+[[MathOptFormat]]
+deps = ["DataStructures", "GZip", "HTTP", "JSON", "JSONSchema", "MathOptInterface"]
+git-tree-sha1 = "ea0a2de12570fe2ed7f2ad1892f635e29d2d1ed1"
+uuid = "f4570300-c277-12e8-125c-4912f86ce65d"
+version = "0.2.0"
+
 [[MathOptInterface]]
 deps = ["BenchmarkTools", "LinearAlgebra", "OrderedCollections", "SparseArrays", "Test", "Unicode"]
 git-tree-sha1 = "5e6e36e2f01efbc62b3f8bf68c8cf82035e2c6a6"
