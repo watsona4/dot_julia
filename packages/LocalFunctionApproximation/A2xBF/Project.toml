@@ -1,0 +1,18 @@
+name = "LocalFunctionApproximation"
+uuid = "db97f5ab-fc25-52dd-a8f9-02a257c35074"
+version = "1.1.0"
+
+[compat]
+GridInterpolations = "≥ 0.1.1"
+julia = "≥ 1.0.0"
+
+[deps]
+Distances = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
+GridInterpolations = "bb4c363b-b914-514b-8517-4eb369bc008a"
+NearestNeighbors = "b8a86587-4115-5ab1-83bc-aa920d37bbce"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

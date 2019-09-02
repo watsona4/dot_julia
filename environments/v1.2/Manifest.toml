@@ -6560,6 +6560,12 @@ git-tree-sha1 = "bacf76e9c9a19a19c48d2e274c088d0875e34479"
 uuid = "085fde7c-5f94-55e4-8448-8bbb5db6dde9"
 version = "1.0.0"
 
+[[LocalFunctionApproximation]]
+deps = ["Distances", "GridInterpolations", "NearestNeighbors"]
+git-tree-sha1 = "0a6fc6de62ca396ed528a816ad26cdba640221e5"
+uuid = "db97f5ab-fc25-52dd-a8f9-02a257c35074"
+version = "1.1.0"
+
 [[Loess]]
 deps = ["Distances", "Random", "Statistics", "Test"]
 git-tree-sha1 = "0ee46caf683a422b595be4dfaed6cda28f541e25"
