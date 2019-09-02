@@ -1,0 +1,11 @@
+    VV  M   
+ k kVV tMya  ; ID4
+ k iVV lMct  ; ID5
+
+ E   V  E   
+ E i V tEct  ; ID6
+
+     L  L   
+ k klL tLca  ; ID1
+ k klL lLca  ; ID2
+ k i L cLyt  ; ID3

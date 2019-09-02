@@ -5930,6 +5930,12 @@ git-tree-sha1 = "09d9c045d14d223a31b94e9c39a0564a9c41b47f"
 uuid = "3943505e-88e3-5b18-a3d9-e2be89fdab48"
 version = "0.1.0"
 
+[[Kpax3]]
+deps = ["Clustering", "DelimitedFiles", "Distances", "FileIO", "JLD2", "KernelDensity", "Pkg", "Printf", "Random", "RecipesBase", "SpecialFunctions", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "47ae32203670b0042da6969b834cc5668c408225"
+uuid = "ad72c4b6-2990-538c-bd38-e122d63d24d9"
+version = "0.5.0"
+
 [[KrigingEstimators]]
 deps = ["Combinatorics", "LinearAlgebra", "Reexport", "Statistics", "Variography"]
 git-tree-sha1 = "9dc8dd8f25ca0dc41f689085bbd03c944f506aa0"
