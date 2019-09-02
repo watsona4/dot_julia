@@ -1,0 +1,27 @@
+name = "MicrobiomePlots"
+uuid = "bed85cf4-5cc8-5ac4-9eb3-09fbf92b2ce2"
+keywords = ["microbiology", "microbiome", "biology"]
+license = "MIT"
+desc = "Plotting functions for the microbiome"
+authors = ["kescobo <kevbonham@gmail.com"]
+version = "0.0.1"
+
+[deps]
+Colors = "5ae59095-9a9b-59fe-a467-6f913c188581"
+Microbiome = "3bd8f0ae-a0f2-5238-a5af-e1b399a4940c"
+RecipesBase = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
+StatPlots = "60ddc479-9b66-56df-82fc-76a74619b69c"
+
+[compat]
+julia = "0.7, 1.0"
+Microbiome = "0.3, 0.4"
+
+[extras]
+Coverage = "a2441757-f6aa-5fb2-8edb-039e3f45d037"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[targets]
+coverage = ["Coverage"]
+test = ["Test", "Plots", "Random"]

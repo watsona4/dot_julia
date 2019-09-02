@@ -1,0 +1,9 @@
+.DS_Store
+scratch*
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+docs/build/
+docs/site/
+Manifest.toml
+build/
