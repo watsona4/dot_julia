@@ -1,0 +1,45 @@
+IMAGINE
+[general]
+header version=5.1
+app version=0.9, build (Apr 20 2007, 12:24:54)
+date and time=2007-05-09T14:46:30
+byte order=l
+
+[misc params]
+stimulus file content=
+comment=
+ai data file=G:/2007_05_09/vno_baseline.ai
+image data file=G:/2007_05_09/vno_baseline.stacks\stack_%1_
+piezo=start position: 0 um;stop position: 0 um;output scan rate: 10000
+
+[ai]
+nscans=-1
+channel list=0 1 2 3
+label list=piezo$stimuli$camera frame TTL$heartbeat
+scan rate=10000
+min sample=-2048
+max sample=2047
+min input=-10
+max input=10
+
+[camera]
+original image depth=14
+saved image depth=14
+image width=6
+image height=5
+number of frames requested=2
+nStacks=2
+idle time between stacks=3 s
+pre amp gain=3.1
+EM gain=0
+exposure time=0.05 s
+vertical shift speed=1.9176 us
+vertical clock vol amp=0
+readout rate=35 MHz
+pixel order=x y z
+frame index offset=0
+frames per stack=1
+pixel data type=uint16
+camera=DV8285_BV
+um per pixel=-1
+binning=hbin:1;vbin:1;hstart:1;hend:1004;vstart:1;vend:1002

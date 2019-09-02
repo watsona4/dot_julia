@@ -5189,6 +5189,12 @@ git-tree-sha1 = "1aae59fc0e34e47dfb111113bb6e9a65d7bafe81"
 uuid = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
 version = "0.18.0"
 
+[[ImagineFormat]]
+deps = ["AxisArrays", "FileIO", "FixedPointNumbers", "ImageMetadata", "Random", "SharedArrays", "Unitful"]
+git-tree-sha1 = "74eb4aca606a5a547f3e1ab5aaf607861de85a97"
+uuid = "4bab44a2-5ff2-5a6b-8e10-825fb9ac126a"
+version = "1.0.3"
+
 [[ImplicitEquations]]
 deps = ["IntervalArithmetic", "RecipesBase", "Test", "Unicode"]
 git-tree-sha1 = "0ebac95ae16ae691d00ec122adf4e098ec6aad92"

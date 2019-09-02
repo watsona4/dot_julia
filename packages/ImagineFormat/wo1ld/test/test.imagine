@@ -1,0 +1,55 @@
+IMAGINE
+[general]
+header version=5.1
+app version=0.9, build (Sep  4 2007, 14:11:42)
+date and time=2009-12-29T13:16:39
+byte order=l
+rig=ocpi-1
+
+[misc params]
+stimulus file content=STIMSEQ\nheader size=9 lines\nversion=3.0\napp version=3.0\ndatetime=2009-12-29T11:20:22\npost seq valve=0\nunit=stack\nunit offset=0\ncomment=\n0 	0 	Flush (leading)\n1 	5 	K+\n0 	10 	Flush (inter-stim)\n5 	20 	A7864\n0 	25 	Flush (inter-stim)\n14 	35 	Q3910\n0 	40 	Flush (inter-stim)\n8 	50 	E4105\n0 	55 	Flush (inter-stim)\n3 	65 	A6940\n0 	70 	Flush (inter-stim)\n10 	80 	P3865\n0 	85 	Flush (inter-stim)\n11 	95 	P8200\n0 	100 	Flush (inter-stim)\n4 	110 	A7010\n0 	115 	Flush (inter-stim)\n6 	125 	E0893\n0 	130 	Flush (inter-stim)\n13 	140 	Q3383\n0 	145 	Flush (inter-stim)\n12 	155 	Q1570\n0 	160 	Flush (inter-stim)\n9 	170 	P3817\n0 	175 	Flush (inter-stim)\n2 	185 	Ringers\n0 	190 	Flush (inter-stim)\n7 	200 	E1050\n0 	205 	Flush (inter-stim)\n13 	215 	Q3383\n0 	220 	Flush (inter-stim)\n9 	230 	P3817\n0 	235 	Flush (inter-stim)\n10 	245 	P3865\n0 	250 	Flush (inter-stim)\n12 	260 	Q1570\n0 	265 	Flush (inter-stim)\n1 	275 	K+\n0 	280 	Flush (inter-stim)\n14 	290 	Q3910\n0 	295 	Flush (inter-stim)\n11 	305 	P8200\n0 	310 	Flush (inter-stim)\n3 	320 	A6940\n0 	325 	Flush (inter-stim)\n6 	335 	E0893\n0 	340 	Flush (inter-stim)\n5 	350 	A7864\n0 	355 	Flush (inter-stim)\n2 	365 	Ringers\n0 	370 	Flush (inter-stim)\n8 	380 	E4105\n0 	385 	Flush (inter-stim)\n4 	395 	A7010\n0 	400 	Flush (inter-stim)\n7 	410 	E1050\n0 	415 	Flush (inter-stim)\n11 	425 	P8200\n0 	430 	Flush (inter-stim)\n5 	440 	A7864\n0 	445 	Flush (inter-stim)\n10 	455 	P3865\n0 	460 	Flush (inter-stim)\n9 	470 	P3817\n0 	475 	Flush (inter-stim)\n8 	485 	E4105\n0 	490 	Flush (inter-stim)\n4 	500 	A7010\n0 	505 	Flush (inter-stim)\n13 	515 	Q3383\n0 	520 	Flush (inter-stim)\n6 	530 	E0893\n0 	535 	Flush (inter-stim)\n12 	545 	Q1570\n0 	550 	Flush (inter-stim)\n2 	560 	Ringers\n0 	565 	Flush (inter-stim)\n7 	575 	E1050\n0 	580 	Flush (inter-stim)\n3 	590 	A6940\n0 	595 	Flush (inter-stim)\n1 	605 	K+\n0 	610 	Flush (inter-stim)\n14 	620 	Q3910\n0 	625 	Flush (inter-stim)\n7 	635 	E1050\n0 	640 	Flush (inter-stim)\n14 	650 	Q3910\n0 	655 	Flush (inter-stim)\n4 	665 	A7010\n0 	670 	Flush (inter-stim)\n2 	680 	Ringers\n0 	685 	Flush (inter-stim)\n10 	695 	P3865\n0 	700 	Flush (inter-stim)\n3 	710 	A6940\n0 	715 	Flush (inter-stim)\n1 	725 	K+\n0 	730 	Flush (inter-stim)\n8 	740 	E4105\n0 	745 	Flush (inter-stim)\n11 	755 	P8200\n0 	760 	Flush (inter-stim)\n13 	770 	Q3383\n0 	775 	Flush (inter-stim)\n5 	785 	A7864\n0 	790 	Flush (inter-stim)\n12 	800 	Q1570\n0 	805 	Flush (inter-stim)\n6 	815 	E0893\n0 	820 	Flush (inter-stim)\n9 	830 	P3817\n0 	835 	Flush (inter-stim)\n5 	845 	A7864\n0 	850 	Flush (inter-stim)\n2 	860 	Ringers\n0 	865 	Flush (inter-stim)\n10 	875 	P3865\n0 	880 	Flush (inter-stim)\n6 	890 	E0893\n0 	895 	Flush (inter-stim)\n14 	905 	Q3910\n0 	910 	Flush (inter-stim)\n12 	920 	Q1570\n0 	925 	Flush (inter-stim)\n3 	935 	A6940\n0 	940 	Flush (inter-stim)\n4 	950 	A7010\n0 	955 	Flush (inter-stim)\n13 	965 	Q3383\n0 	970 	Flush (inter-stim)\n8 	980 	E4105\n0 	985 	Flush (inter-stim)\n7 	995 	E1050\n0 	1000 	Flush (inter-stim)\n11 	1010 	P8200\n0 	1015 	Flush (inter-stim)\n9 	1025 	P3817\n0 	1030 	Flush (inter-stim)\n1 	1040 	K+\n0 	1045 	Flush (post-seq)\n
+comment=
+ai data file=F:/VNO/2009_12_29/vno_2009_12_29_2.ai
+di data file=F:/VNO/2009_12_29/vno_2009_12_29_2.di
+image data file=F:/VNO/2009_12_29/vno_2009_12_29_2.stacks\stack_%1_
+command file=F:/VNO/2009_12_29/vno_2009_12_29_2.stacks\stack_%1_.json
+piezo=start position: 0 um;stop position: 200 um;output scan rate: 10000
+
+[ai]
+nscans=-1
+channel list=0 1 2 3
+label list=piezo$stimuli$camera frame TTL$heartbeat
+scan rate=10000
+min sample=-2048
+max sample=2047
+min input=-10
+max input=10
+
+[di]
+di nscans=-1
+di channel list=7 -1 -1 -1 -1 -1 -1 -1
+di label list=camera1 frame monitor$unused$unused$unused$unused$unused$unused$unused
+di scan rate=10000
+
+[camera]
+original image depth=14
+saved image depth=14
+image width=5
+image height=7
+number of frames requested=12
+nStacks=4
+idle time between stacks=3 s
+pre amp gain=3.1
+EM gain=25
+exposure time=0.05 s
+vertical shift speed=1.9176 us
+vertical clock vol amp=0
+readout rate=NA
+pixel order=x y z
+frame index offset=0
+frames per stack=3
+pixel data type=uint16
+camera=DV8285_BV
+um per pixel=0.71
+binning=hbin:1;vbin:1;hstart:1;hend:1004;vstart:1;vend:1002
+bidirectional=0

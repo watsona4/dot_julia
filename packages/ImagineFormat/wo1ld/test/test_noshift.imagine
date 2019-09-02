@@ -1,0 +1,48 @@
+IMAGINE
+[general]
+header version=7
+app version=2.0, build (Mar 29 2017, 10:59:20)
+date and time=2017-04-03T10:53:37
+byte order=l
+rig=ocpi-2
+
+[misc params]
+stimulus file content=
+comment=
+ai data file=D:/Cody/PSFs/04_03_2017/beads_green.ai
+image data file=D:/Cody/PSFs/04_03_2017/beads_green.cam
+piezo=start position: 0 um;stop position: 100 um;output scan rate: 10000
+
+[ai]
+nscans=-1
+channel list=0 1 2
+label list=piezo$stimuli$camera frame TTL
+scan rate=10000
+min sample=-32768
+max sample=32767
+min input=-10
+max input=10
+
+[camera]
+original image depth=14
+saved image depth=14
+image width=2060
+image height=2048
+number of frames requested=303
+nStacks=3
+idle time between stacks=0.7 s
+pre amp gain=
+gain=0
+exposure time=0.03 s
+vertical shift speed=
+vertical clock vol amp=-1
+readout rate=
+pixel order=x y z
+frame index offset=0
+frames per stack=101
+pixel data type=uint16
+camera=edge.main
+um per pixel=-1
+binning=hbin:1;vbin:1;hstart:1;hend:2060;vstart:1;vend:2048
+angle from horizontal (deg)=-1
+bidirectional=0
