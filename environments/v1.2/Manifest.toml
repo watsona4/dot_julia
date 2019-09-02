@@ -5147,6 +5147,12 @@ git-tree-sha1 = "90b92b7c94f8d5e57914e29371470edf62708e61"
 uuid = "2e361c58-64d7-11e9-3ab3-89c4c0b8f7db"
 version = "0.1.0"
 
+[[ImageQualityIndexes]]
+deps = ["ColorVectorSpace", "ImageCore", "ImageDistances", "ImageFiltering", "MappedArrays", "OffsetArrays", "Statistics"]
+git-tree-sha1 = "f6a2f42210340ba3680d94241aa7401b03078842"
+uuid = "2996bd0c-7a13-11e9-2da2-2f5ce47296a9"
+version = "0.1.2"
+
 [[ImageShow]]
 deps = ["Base64", "ColorTypes", "Colors", "FileIO", "FixedPointNumbers", "ImageCore", "OffsetArrays", "Requires"]
 git-tree-sha1 = "c23323afc82b6b553e6b2244d531e50858ea392c"
