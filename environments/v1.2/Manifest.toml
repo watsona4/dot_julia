@@ -6344,6 +6344,12 @@ git-tree-sha1 = "994c271aaa69d7c1c11db104600a4a6dbf5ebbeb"
 uuid = "5cf4117a-c29c-5f6c-be10-22558df91208"
 version = "0.3.1"
 
+[[LibSerialPort]]
+deps = ["BinDeps", "Libdl", "Test"]
+git-tree-sha1 = "86fb73f5e60418f038b2fc7f83c9cd0b18bc2e47"
+uuid = "a05a14c7-6e3b-5ba9-90a2-45558833e1df"
+version = "0.1.0"
+
 [[Libdl]]
 uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 
