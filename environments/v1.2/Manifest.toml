@@ -5984,6 +5984,12 @@ git-tree-sha1 = "3873a0a02ff888207bd7205bb62970ab631513ba"
 uuid = "87e52247-8a1b-5e01-9430-8fbcac83a23a"
 version = "0.2.0"
 
+[[Kwant]]
+deps = ["PyCall", "PyPlot"]
+git-tree-sha1 = "bb19de749769079f6b9edfe20fcf47cf3608c894"
+uuid = "ed3f9b50-51cd-11e9-3ece-75fc8af922bb"
+version = "0.1.0"
+
 [[LCMCore]]
 deps = ["Dates", "FastIOBuffers", "FileWatching", "Libdl", "StaticArrays", "UnsafeArrays"]
 git-tree-sha1 = "2030bf616c051559ed01ef605755169bdf9f1362"

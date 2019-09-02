@@ -1,0 +1,11 @@
+name = "Kwant"
+uuid = "ed3f9b50-51cd-11e9-3ece-75fc8af922bb"
+authors = ["William R Sweeney <wrsweeney2@gmail.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[deps]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
