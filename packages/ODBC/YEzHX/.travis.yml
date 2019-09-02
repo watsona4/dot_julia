@@ -1,0 +1,47 @@
+dist: trusty
+language: julia
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - unixodbc
+      - unixodbc-dev
+      - libmyodbc
+      - libsqliteodbc
+      - odbc-postgresql
+
+os:
+  - linux
+
+julia:
+  - 1.0
+  - nightly
+
+env:
+  - ODBC_TEST_DRIVERS="mysql, postgresql"
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - julia: nightly
+
+services:
+  - mysql
+  - postgresql
+
+before_install:
+  - cp ./test/setup/.odbcinst.ini $HOME
+  - odbcinst -i -s -h -f ./test/setup/mysqltest.odbc.ini
+  - odbcinst -i -s -h -f ./test/setup/postgresqltest.odbc.ini
+  - odbcinst -i -s -h -f ./test/setup/mssqltest.odbc.ini
+  - echo -e "\n[odbc]\nlocal-infile=1\n" >> $HOME/.my.cnf
+
+notifications:
+  email: false
+
+after_success:
+  - julia -e 'using Pkg; cd(Pkg.dir("ODBC")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
+  - julia -e 'using Pkg; Pkg.add("Documenter")'
+  - julia -e 'using Pkg; cd(Pkg.dir("ODBC")); include(joinpath("docs", "make.jl"))'
