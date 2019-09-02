@@ -8322,6 +8322,12 @@ git-tree-sha1 = "c62b3f15184a24960131cf7e1b63dfbc6beb8040"
 uuid = "12d937ae-5f68-53be-93c9-3a6f997a20a8"
 version = "1.0.0"
 
+[[PETScBinaryIO]]
+deps = ["SparseArrays", "Test"]
+git-tree-sha1 = "e422fcf5155fc3dc6a09f399d7c4a809f8992d7c"
+uuid = "7d8a6817-b67b-57e2-acac-4a73d125cd6b"
+version = "1.0.0"
+
 [[PGFPlotsX]]
 deps = ["ArgCheck", "Crayons", "DataStructures", "Dates", "DefaultApplication", "DocStringExtensions", "MacroTools", "Missings", "Parameters", "Requires", "StatsBase", "Unicode"]
 git-tree-sha1 = "169528d1574e4695db9b5e8304ddfeb4bb717a3f"

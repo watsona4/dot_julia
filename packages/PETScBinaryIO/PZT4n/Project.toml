@@ -1,0 +1,16 @@
+name = "PETScBinaryIO"
+uuid = "7d8a6817-b67b-57e2-acac-4a73d125cd6b"
+authors = ["Tristan Konolige <tristan.konolige@gmail.com>"]
+version = "1.0.0"
+
+[deps]
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compay]
+julia = "^1.0.0"
+
+[targets]
+test = ["Test"]
