@@ -1,0 +1,19 @@
+name = "MetaArrays"
+uuid = "36b8f3f0-b776-11e8-061f-1f20094e1fc8"
+authors = ["David Little <david.frank.little@gmail.com>"]
+version = "0.2.7"
+
+[deps]
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+AxisArrays = "39de3d68-74b9-583c-8d2d-e117c070f3a9"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+
+[targets]
+test = ["Test", "StaticArrays", "AxisArrays", "Unitful"]

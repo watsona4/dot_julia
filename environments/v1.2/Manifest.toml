@@ -7216,6 +7216,12 @@ git-tree-sha1 = "4a61ec51d3f1548f779ae46ff43638797a96de92"
 uuid = "e6723b4c-ebff-59f1-b4b7-d97aa5274f73"
 version = "0.4.1"
 
+[[MetaArrays]]
+deps = ["Requires"]
+git-tree-sha1 = "416d7390ba7d02921608bc689e93c75e105590b4"
+uuid = "36b8f3f0-b776-11e8-061f-1f20094e1fc8"
+version = "0.2.7"
+
 [[MetaGraphs]]
 deps = ["JLD2", "LightGraphs", "Random"]
 git-tree-sha1 = "43ebbe06b22d213e4a8750424f9c7d1311bee2a6"
