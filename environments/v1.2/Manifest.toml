@@ -7488,6 +7488,12 @@ git-tree-sha1 = "8cb77773147b4308e4de6540433e14e7c444379f"
 uuid = "1ec41992-ff65-5c91-ac43-2df89e9693a4"
 version = "0.7.2"
 
+[[MotifSequenceGenerator]]
+deps = ["Combinatorics", "Random", "StatsBase", "Test"]
+git-tree-sha1 = "281bd40b8971264621ad7e95fb6b6ccfb74894ba"
+uuid = "7d228ccb-0fc9-53c8-a429-8c9b5b572bc3"
+version = "0.2.0"
+
 [[MsgPack]]
 deps = ["Compat", "Random", "Test"]
 git-tree-sha1 = "c44b3470fa98705f9c12cb44ec9504de3af027ad"
