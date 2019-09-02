@@ -7440,6 +7440,12 @@ git-tree-sha1 = "9c042fb769b68e501fa60a2293d97f24c31b9239"
 uuid = "0987c9cc-fe09-11e8-30f0-b96dd679fdca"
 version = "0.4.0"
 
+[[MonteCarloObservable]]
+deps = ["BinningAnalysis", "EllipsisNotation", "HDF5", "JLD", "Lazy", "Reexport", "Statistics"]
+git-tree-sha1 = "ac36c680e6f9cd318b2ab171d580d75fa45f5c8a"
+uuid = "8a675f2c-1eea-59ef-99a5-5eebc71d1519"
+version = "0.3.0"
+
 [[MortarContact2D]]
 deps = ["FEMBase", "LinearAlgebra", "SparseArrays", "Statistics", "Test"]
 git-tree-sha1 = "7ab9145a90cdb71b785a62a60b5b619838580a9f"

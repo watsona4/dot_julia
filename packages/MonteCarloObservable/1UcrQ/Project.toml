@@ -1,0 +1,24 @@
+name = "MonteCarloObservable"
+uuid = "8a675f2c-1eea-59ef-99a5-5eebc71d1519"
+license = "MIT"
+authors = ["Carsten Bauer <crstnbr@gmail.com>"]
+version = "0.3.0"
+
+[deps]
+BinningAnalysis = "b7192094-8e58-5052-a244-180a858778ee"
+EllipsisNotation = "da5c29d0-fa7d-589e-88eb-ea29b0a81949"
+HDF5 = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
+JLD = "4138dd39-2aa7-5051-a626-17a0bb65d9c8"
+Lazy = "50d2b5c4-7a5e-59d5-8109-a42b560f39c0"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[compat]
+julia = "≥ 1.0.0"
+
+[extras]
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Statistics", "Test"]

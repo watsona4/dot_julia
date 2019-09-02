@@ -1,0 +1,48 @@
+site_name:        MonteCarloObservable.jl
+repo_url:         https://github.com/crstnbr/MonteCarloObservable.jl
+edit_uri:         edit/master/docs/src/
+site_description: Observable for Markov chain Monte Carlo simulations
+site_author:      Carsten Bauer
+
+# theme: material
+
+theme:
+  name: material
+  language: 'en'
+  palette:
+    primary: 'red'
+    accent: 'red'
+  # font:
+  #   text: 'Helvetica'
+  #   code: 'Ubuntu Mono'
+
+extra_css:
+  - assets/Documenter.css
+
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - assets/mathjaxhelper.js
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+  - mdx_math
+  - codehilite
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.details
+
+docs_dir: 'build'
+
+pages:
+  - Introduction: index.md
+  - Getting started: manual/gettingstarted.md
+  # - Type of the mean: manual/meantype.md
+  - Error estimation: manual/errorestimation.md
+  - Memory / disk storage: manual/memdisk.md
+  - Methods:
+    - General: methods/general.md
+    - Statistics: methods/statistics.md
+    - IO: methods/io.md
+    - Plotting: methods/plotting.md
