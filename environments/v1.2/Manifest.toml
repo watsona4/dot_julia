@@ -6968,6 +6968,12 @@ git-tree-sha1 = "923441c5ac942b60bd3a842d5377d96646bcbf46"
 uuid = "dbb5928d-eab1-5f90-85c2-b9b0edb7c900"
 version = "0.2.1"
 
+[[Maracas]]
+deps = ["Distributed", "Test"]
+git-tree-sha1 = "ba1f6ccaab7d8a213556e9d40ed29f416f7a0429"
+uuid = "329a7628-3119-536a-a060-c6b2f8e35265"
+version = "1.1.0"
+
 [[Markdown]]
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
