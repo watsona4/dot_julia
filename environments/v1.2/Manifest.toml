@@ -8714,6 +8714,12 @@ git-tree-sha1 = "9e674a3adb55f0d3033c4e503348cd3e797a72fe"
 uuid = "e0fc9d43-7ff6-5671-9fff-748a5437251c"
 version = "1.2.0"
 
+[[PkgSkeleton]]
+deps = ["ArgCheck", "Dates", "DocStringExtensions", "LibGit2", "Pkg"]
+git-tree-sha1 = "552f516c9a015495c8f6c07210a85806113183fd"
+uuid = "d254efa0-af53-535e-b7f1-03c1c9fbcbe7"
+version = "0.1.0"
+
 [[PlotThemes]]
 deps = ["PlotUtils", "Requires", "Test"]
 git-tree-sha1 = "f3afd2d58e1f6ac9be2cea46e4a9083ccc1d990b"
