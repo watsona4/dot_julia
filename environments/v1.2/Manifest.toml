@@ -6596,6 +6596,12 @@ git-tree-sha1 = "f65562dd9433997c0c6431bd28316c865a5115e3"
 uuid = "0810563c-c8a8-53be-b185-e51c33dc41ea"
 version = "1.1.0"
 
+[[LogarithmicNumbers]]
+deps = ["Random", "Requires"]
+git-tree-sha1 = "1c9d774ab71167892a2c15b445f6d9d3b3cbea8c"
+uuid = "aa2f6b4e-9042-5d33-9679-40d3a6b85899"
+version = "0.3.0"
+
 [[Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
