@@ -5403,6 +5403,12 @@ git-tree-sha1 = "e615575665790109039bf72da2aff56cd2972606"
 uuid = "54eb57ff-b09b-5185-b2f4-7a93509e494f"
 version = "0.3.1"
 
+[[InteractiveFixedEffectModels]]
+deps = ["CategoricalArrays", "DataFrames", "FixedEffectModels", "FixedEffects", "LeastSquaresOptim", "LinearAlgebra", "Printf", "Reexport", "Statistics", "StatsBase", "StatsModels", "Test"]
+git-tree-sha1 = "2e160adb85f29b954dc6f17fcd4718b49d3ec48e"
+uuid = "80307280-efb2-5c5d-af8b-a9c15821677b"
+version = "0.3.3"
+
 [[InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
@@ -5697,6 +5703,12 @@ deps = ["LearnBase", "LinearAlgebra", "Statistics", "Test"]
 git-tree-sha1 = "16e2a9be7294ce4c73bee4e34c655614149dd879"
 uuid = "4e8a8231-0ba9-591b-8620-81c6740d7791"
 version = "0.4.0"
+
+[[LeastSquaresOptim]]
+deps = ["DiffEqDiffTools", "ForwardDiff", "LinearAlgebra", "Optim", "Printf", "SparseArrays", "Statistics", "SuiteSparse"]
+git-tree-sha1 = "66900e44a5aa3bad89df13d2bca2d745832a84c7"
+uuid = "0fc2ff8b-aaa3-5acd-a817-1944a5e08891"
+version = "0.7.3"
 
 [[LegacyStrings]]
 deps = ["Compat"]
