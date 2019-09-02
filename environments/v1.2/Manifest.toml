@@ -7691,6 +7691,12 @@ git-tree-sha1 = "8eedfa85d4b3b641b4e5153c175b11bddb12f775"
 uuid = "a4795742-8479-5a88-8948-cc11e1c8c1a6"
 version = "0.8.3"
 
+[[NLPModelsIpopt]]
+deps = ["Ipopt", "NLPModels", "SolverTools", "Test"]
+git-tree-sha1 = "5fa915409bcad2ca679d2579955493040b315750"
+uuid = "f4238b75-b362-5c4c-b852-0801c9a21d71"
+version = "0.1.0"
+
 [[NLSolversBase]]
 deps = ["Calculus", "DiffEqDiffTools", "DiffResults", "Distributed", "ForwardDiff"]
 git-tree-sha1 = "c430bd3f2dfcffc30688cf4a9cb61535e8d85f65"
