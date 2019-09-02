@@ -5431,6 +5431,12 @@ git-tree-sha1 = "377c467498cdbdd2b4d7700b68f17d1c1df91be9"
 uuid = "dd871ef8-c280-11e9-0edd-21d59c0cc143"
 version = "0.1.0"
 
+[[InterpolatedRejectionSampling]]
+deps = ["Interpolations", "Random", "StatsBase", "Test"]
+git-tree-sha1 = "412b250c1eb756212d79e00ed5019b2f096cb629"
+uuid = "9608d442-472c-11e9-3e14-5b72dbacd115"
+version = "1.2.0"
+
 [[Interpolations]]
 deps = ["AxisAlgorithms", "LinearAlgebra", "OffsetArrays", "Random", "Ratios", "SharedArrays", "SparseArrays", "StaticArrays", "WoodburyMatrices"]
 git-tree-sha1 = "e1bac96b5ef3ea23b50e801b4a988ec21861a47f"
