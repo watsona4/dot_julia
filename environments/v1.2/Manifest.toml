@@ -4633,6 +4633,12 @@ git-tree-sha1 = "9409e40f53532c45f2478c33531aa7a65ec4e2de"
 uuid = "86223c79-3864-5bf0-83f7-82e725a168b6"
 version = "0.10.3"
 
+[[Grassmann]]
+deps = ["AbstractLattices", "AbstractTensors", "Combinatorics", "ComputedFieldTypes", "DirectSum", "Leibniz", "LinearAlgebra", "Reduce", "Requires", "StaticArrays"]
+git-tree-sha1 = "3f7089641fc542fa91b7a763ecc4b7d38094b284"
+uuid = "4df31cd9-4c27-5bea-88d0-e6a7146666d8"
+version = "0.2.0"
+
 [[Gumbo]]
 deps = ["AbstractTrees", "BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "b16b6c5127e8c6be3084e6658c5fb5dd1f97d7fd"
