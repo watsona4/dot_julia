@@ -7494,6 +7494,12 @@ git-tree-sha1 = "281bd40b8971264621ad7e95fb6b6ccfb74894ba"
 uuid = "7d228ccb-0fc9-53c8-a429-8c9b5b572bc3"
 version = "0.2.0"
 
+[[MotionCaptureJointCalibration]]
+deps = ["JuMP", "LinearAlgebra", "MathProgBase", "Parameters", "Random", "Requires", "RigidBodyDynamics", "StaticArrays"]
+git-tree-sha1 = "a4bc0ad02c25a442357189b60168a0173c9bbf76"
+uuid = "d0551c8d-3c54-58b6-a75a-e266c30cc699"
+version = "0.3.0"
+
 [[MsgPack]]
 deps = ["Compat", "Random", "Test"]
 git-tree-sha1 = "c44b3470fa98705f9c12cb44ec9504de3af027ad"

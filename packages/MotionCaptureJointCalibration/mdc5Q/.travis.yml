@@ -1,0 +1,30 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+dist: trusty
+sudo: required # for ZMQ
+os:
+  - linux
+  # - osx
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+branches:
+  only:
+    - master
+    - /^v[0-9]+\.[0-9]+\.[0-9]+$/ # version tags
+notifications:
+  email: false
+git:
+  depth: 99999999
+matrix:
+  allow_failures:
+    - julia: nightly
+addons:
+  apt_packages:
+    - gfortran
+    - libzmq3
+after_success:
+  - if [[ $TRAVIS_JULIA_VERSION = 1.1 ]]; then
+      julia --project -e 'using Pkg; pkg"add Coverage"; using Coverage; Codecov.submit(Codecov.process_folder())';
+    fi
