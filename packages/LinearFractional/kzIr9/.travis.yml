@@ -1,0 +1,28 @@
+language: julia
+
+julia:
+  - 0.7
+  - 1.0
+
+os:
+  - linux
+  - osx
+
+matrix:
+ allow_failures:
+ - julia: nightly
+
+notifications:
+  email: false
+
+before_script:
+  - export PATH=$HOME/.local/bin:$PATH
+
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia --check-bounds=yes -e 'using Pkg; Pkg.clone(pwd()); Pkg.test("LinearFractional"; coverage=true)'
+
+# To enable after we get coveralls.io approved and add docs
+# after_success:
+#   - julia -e 'using Pkg; cd(Pkg.dir("LinearFractional")); Pkg.add("Documenter"); Pkg.add("Query"); Pkg.add("CSV"); include(joinpath("docs", "make.jl"))'
+#   - julia -e 'using Pkg; cd(Pkg.dir("LinearFractional")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
