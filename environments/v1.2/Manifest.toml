@@ -6459,6 +6459,12 @@ version = "0.1.0"
 deps = ["Libdl"]
 uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 
+[[LinearCovarianceModels]]
+deps = ["Distributions", "DynamicPolynomials", "HomotopyContinuation", "LinearAlgebra", "PrettyTables"]
+git-tree-sha1 = "9495bad5672cb86b30e25a79f1e3fd4e1f29644c"
+uuid = "4af8ee2a-afa9-11e9-10dc-fb1b37f8f4b5"
+version = "0.1.1"
+
 [[LinearFractionalTransformations]]
 deps = ["Test"]
 git-tree-sha1 = "da73dcfe3f6d342ab0d979b5c099ceaed0a714bd"
