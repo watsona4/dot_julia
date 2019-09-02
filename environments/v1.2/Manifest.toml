@@ -4597,6 +4597,12 @@ git-tree-sha1 = "7a9224bbc25bf12af8c2e55dac8ac86a75c1d238"
 uuid = "3c71623a-a715-5176-9801-629b201a4880"
 version = "0.2.1"
 
+[[GraphIO]]
+deps = ["DelimitedFiles", "LightGraphs", "Requires", "SimpleTraits", "Test"]
+git-tree-sha1 = "1c37404a98f15c2a171bba26b8bf089a59752eff"
+uuid = "aa1b3936-2fda-51b9-ab35-c553d3a640a2"
+version = "0.4.0"
+
 [[GraphPlot]]
 deps = ["ArnoldiMethod", "ColorTypes", "Colors", "Compose", "DelimitedFiles", "LightGraphs", "LinearAlgebra", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "f4435ce0055d4da938f3bab0c0e523826735c96a"
