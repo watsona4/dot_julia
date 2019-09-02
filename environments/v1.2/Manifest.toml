@@ -6362,6 +6362,12 @@ git-tree-sha1 = "39c9838f9c2a86b893d02b7eb880df519eb51ca6"
 uuid = "f19c2e90-9d16-5f2d-a2a7-af3fb29e4907"
 version = "0.1.1"
 
+[[LibSymspg]]
+deps = ["BinaryProvider", "Libdl", "Test"]
+git-tree-sha1 = "61ce102b699d66e0c9afa333d08659ac189b8b18"
+uuid = "2098c8a6-82c4-11e9-1f54-e72760d085ce"
+version = "0.3.1"
+
 [[Libdl]]
 uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 

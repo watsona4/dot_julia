@@ -1,0 +1,26 @@
+language: julia
+
+os:
+  - linux
+
+julia:
+  - 1.0
+  - 1.1
+
+# Uncomment the following lines to allow failures on nightly julia
+# (tests will run but not make your overall status red)
+matrix:
+  allow_failures:
+  - julia: nightly
+
+notifications:
+  email: false
+
+env:
+  matrix:
+    - TARGET=x86_64-linux-gnu
+    - TARGET=i686-linux-gnu
+    - TARGET=x86_64-apple-darwin14
+    # - TARGET=x86_64-unknown-freebsd
+    - TARGET=x86_64-w64-mingw32
+    - TARGET=i686-w64-mingw32
