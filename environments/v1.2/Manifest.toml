@@ -8531,6 +8531,12 @@ git-tree-sha1 = "51abfd505fbdd8d0dc8f4e17389a2538f11ef1be"
 uuid = "3532a73c-0c3e-5edc-89e3-d771336b0a2d"
 version = "0.1.0"
 
+[[PassiveTracerFlows]]
+deps = ["FFTW", "FourierFlows", "JLD2", "LinearAlgebra", "PyPlot", "Reexport"]
+git-tree-sha1 = "38f8f9160f9ac39a91330a611723d540256baeea"
+uuid = "dc26d6a1-c8d5-50f2-8a17-f57a5c578a00"
+version = "0.1.0"
+
 [[PenaltyFunctions]]
 deps = ["InteractiveUtils", "LearnBase", "LinearAlgebra", "RecipesBase", "Reexport", "Test"]
 git-tree-sha1 = "b0baaa5218ca0ffd6a8ae37ef0b58e0df688ac8b"
