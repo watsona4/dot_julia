@@ -6181,6 +6181,12 @@ git-tree-sha1 = "7cd8af9c1c8591b7501e82ae5d6f39fcb826aae9"
 uuid = "a5e1c1ea-c99a-51d3-a14d-a9a37257b02d"
 version = "1.2.0"
 
+[[LatinSquares]]
+deps = ["Cbc", "JuMP", "MathProgBase", "Test"]
+git-tree-sha1 = "5f2953184c19ec3493cc2bd467080f5ed4ff314f"
+uuid = "c3c424ec-ae8f-5049-b7bf-f9296ef684c8"
+version = "0.2.0"
+
 [[Lazy]]
 deps = ["Compat", "MacroTools", "Test"]
 git-tree-sha1 = "aec38c7e7f255a678af22651c74100e3cd39ea20"
