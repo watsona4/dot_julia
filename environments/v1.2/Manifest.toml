@@ -5924,6 +5924,12 @@ git-tree-sha1 = "53533b51d4b6964eca3065b0834e9f61ed2f7515"
 uuid = "bcebb21b-c2e3-54f8-a781-646b90f6d2cc"
 version = "0.2.3"
 
+[[KongYiji]]
+deps = ["DataStructures", "DelimitedFiles", "FileIO", "JLD2", "Pkg", "ProgressMeter", "Random", "Test"]
+git-tree-sha1 = "09d9c045d14d223a31b94e9c39a0564a9c41b47f"
+uuid = "3943505e-88e3-5b18-a3d9-e2be89fdab48"
+version = "0.1.0"
+
 [[KrigingEstimators]]
 deps = ["Combinatorics", "LinearAlgebra", "Reexport", "Statistics", "Variography"]
 git-tree-sha1 = "9dc8dd8f25ca0dc41f689085bbd03c944f506aa0"

@@ -1,0 +1,9 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+data/ctb.*
+data/hmm.jld2
+data/*.log
+dev/
+
