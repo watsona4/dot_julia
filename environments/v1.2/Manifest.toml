@@ -6151,6 +6151,12 @@ git-tree-sha1 = "097c2c99d8bde09af9aef3895a6718a0d6671a1b"
 uuid = "86ea995a-82c2-5be3-91a2-54cab4e8463b"
 version = "0.1.0"
 
+[[LasIO]]
+deps = ["ColorTypes", "Dates", "FileIO", "FixedPointNumbers", "GeometryTypes", "Mmap", "Test"]
+git-tree-sha1 = "66b8d69b9d9afec58d01940f45146c3612377409"
+uuid = "570499db-eae3-5eb6-bdd5-a5326f375e68"
+version = "0.2.1"
+
 [[Lasso]]
 deps = ["DSP", "Distributions", "GLM", "LinearAlgebra", "MLBase", "Random", "Reexport", "SparseArrays", "StatsBase"]
 git-tree-sha1 = "d16e4026612333e691001984b593ac42e0ee07e9"
