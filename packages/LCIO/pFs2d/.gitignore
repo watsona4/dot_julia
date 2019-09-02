@@ -1,0 +1,13 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*~
+*.slcio
+examples/
+deps/deps.jl
+deps/usr
+deps/builds
+deps/src
+deps/downloads
+deps/lib
+

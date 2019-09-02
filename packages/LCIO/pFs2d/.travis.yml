@@ -1,0 +1,15 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+matrix:
+  include:
+  - os: linux
+    julia: 1.0.0
+    dist: trusty
+# - os: osx
+#   julia: 1.0.0
+
+notifications:
+  email: false
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia -e 'using Pkg; Pkg.add("Test"); Pkg.add("Libdl"); Pkg.develop(PackageSpec(url=pwd())); Pkg.build("LCIO"); Pkg.test("LCIO"; coverage=true)'

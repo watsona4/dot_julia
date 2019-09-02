@@ -1,0 +1,19 @@
+name = "LCIO"
+uuid = "94167541-0a4e-5fbf-aeea-474b87c587e3"
+version = "1.2.1"
+author = ["Jan Strube <jan.strube@gmail.com>"]
+
+[deps]
+BinaryProvider = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+
+[compat]
+CxxWrap = "0.8.2"
+julia = "≥ 1.0.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
