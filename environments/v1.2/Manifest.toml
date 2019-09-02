@@ -4925,6 +4925,12 @@ git-tree-sha1 = "4f1d5c27553f2db3599db56385e0a303e0049da9"
 uuid = "f213a82b-91d6-5c5d-acf7-10f1c761b327"
 version = "1.1.1"
 
+[[Hose]]
+deps = ["Test"]
+git-tree-sha1 = "b15f1c652ab4a36751c9bee375ff4ff75345dc4b"
+uuid = "25fe7709-2684-556e-993c-fe1845b19d72"
+version = "0.1.1"
+
 [[HttpCommon]]
 deps = ["Dates", "Nullables", "Test", "URIParser"]
 git-tree-sha1 = "46313284237aa6ca67a6bce6d6fbd323d19cff59"
