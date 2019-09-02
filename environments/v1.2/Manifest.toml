@@ -6270,6 +6270,12 @@ git-tree-sha1 = "d4b9bde2694c552fe579cc4462733f1ce08733fe"
 uuid = "1b4a561d-cfcb-5daf-8433-43fcf8b4bea3"
 version = "0.4.1"
 
+[[LegendrePolynomials]]
+deps = ["HyperDualNumbers", "OffsetArrays"]
+git-tree-sha1 = "4019b6d3d557f9195d1deea7cef755df2c24f076"
+uuid = "3db4a2ba-fc88-11e8-3e01-49c72059a882"
+version = "0.1.0"
+
 [[Leibniz]]
 deps = ["AbstractLattices", "AbstractTensors", "DirectSum", "LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "e9c2016500178abed325592026f307e50ac492d8"
