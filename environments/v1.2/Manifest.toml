@@ -8732,6 +8732,12 @@ git-tree-sha1 = "39b2f03a8c9260928fe0f4c462c7281ea72a2a0c"
 uuid = "6f897bc9-7a02-494e-b4ae-05ae7ec60539"
 version = "0.2.0"
 
+[[PlanarConvexHulls]]
+deps = ["DocStringExtensions", "LinearAlgebra", "StaticArrays"]
+git-tree-sha1 = "c8ef5fe6838f601278eff548837b6114b0b34f0d"
+uuid = "145d500b-351c-58b3-a0aa-f5d7e249d989"
+version = "0.3.0"
+
 [[PlotThemes]]
 deps = ["PlotUtils", "Requires", "Test"]
 git-tree-sha1 = "f3afd2d58e1f6ac9be2cea46e4a9083ccc1d990b"

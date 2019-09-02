@@ -1,0 +1,21 @@
+name = "PlanarConvexHulls"
+uuid = "145d500b-351c-58b3-a0aa-f5d7e249d989"
+authors = ["Twan Koolen <koolen.twan@gmail.com>"]
+version = "0.3.0"
+
+[deps]
+DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[compat]
+julia = "1.1"
+
+[extras]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "Statistics", "Pkg", "BenchmarkTools"]
