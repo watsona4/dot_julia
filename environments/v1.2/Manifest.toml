@@ -7002,6 +7002,12 @@ git-tree-sha1 = "6704403032d0f37127ee5745b089be71bb034b80"
 uuid = "bbc22021-04b3-5587-aeab-b7019f0e8a6b"
 version = "0.1.2"
 
+[[Markovify]]
+deps = ["Test"]
+git-tree-sha1 = "a0be12d9ad9c26169447f261ce3d8a631bec0787"
+uuid = "b1af39ce-6e51-5722-b548-1afc01310642"
+version = "0.1.1"
+
 [[Match]]
 deps = ["Test"]
 git-tree-sha1 = "8d8253da9e8d38d642cec03d41786a5201479210"
