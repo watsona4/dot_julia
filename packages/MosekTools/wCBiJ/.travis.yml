@@ -1,0 +1,18 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+julia:
+  - 0.7
+  - 1.0
+  - 1.1
+notifications:
+  email: false
+git:
+  depth: 99999999
+before-install:
+  - sudo apt-get install curl
+script:
+  - julia -e 'import Pkg; Pkg.add(Pkg.PackageSpec(url=pwd()));'
+  - julia -e 'import Pkg; Pkg.test("MosekTools")'
+
