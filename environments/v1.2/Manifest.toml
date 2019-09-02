@@ -7815,6 +7815,12 @@ git-tree-sha1 = "78c33ab43ef2aac9127d53edcb7a92e7fa63c126"
 uuid = "73a701b4-84e1-5df0-88ff-1968ee2ee8dc"
 version = "5.0.0"
 
+[[NarrativeTest]]
+deps = ["Markdown", "Pkg"]
+git-tree-sha1 = "5735674527e09ff400f30e94c3d9df061d9ee06b"
+uuid = "9563631e-acd4-5dd8-bebb-4cf36518960d"
+version = "0.2.0"
+
 [[NearestNeighbors]]
 deps = ["Distances", "LinearAlgebra", "Mmap", "StaticArrays", "Test"]
 git-tree-sha1 = "f47c5d97cf9a8caefa47e9fa9d99d8fda1a65154"
