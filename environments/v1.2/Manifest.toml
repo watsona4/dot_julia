@@ -8025,6 +8025,12 @@ git-tree-sha1 = "a9254608dde4ae0d9a40192e08585451a8fd6ad9"
 uuid = "c030b06c-0b6d-57c2-b091-7029874bd033"
 version = "2.4.0"
 
+[[ODEInterface]]
+deps = ["Dates", "Libdl", "LinearAlgebra", "Markdown", "Unicode"]
+git-tree-sha1 = "f3812af72564b582760cc0281c932f41306e168d"
+uuid = "54ca160b-1b9f-5127-a996-1867f4bc2a2c"
+version = "0.4.6"
+
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"

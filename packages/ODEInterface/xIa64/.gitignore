@@ -1,0 +1,8 @@
+*.mod
+*.o
+*.so
+*.dylib
+*.dll
+*.swp
+*.zip
+/Manifest.toml
