@@ -7929,6 +7929,12 @@ git-tree-sha1 = "17b408174bfe499831a88c06ee6b57587d220034"
 uuid = "cd27a545-1e2a-5997-b51f-f9caa06aeab2"
 version = "1.0.0"
 
+[[NonlinearEigenproblems]]
+deps = ["ArnoldiMethod", "Distributed", "FFTW", "InteractiveUtils", "IterativeSolvers", "LinearAlgebra", "LinearMaps", "Polynomials", "Printf", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "SuiteSparse"]
+git-tree-sha1 = "db61dee614d04f66a3d4345cdcfa98950c7f18a3"
+uuid = "067cfa3b-fa88-53b2-a873-5b23b3a16e31"
+version = "0.2.8"
+
 [[NoveltyColors]]
 deps = ["JSON", "Test"]
 git-tree-sha1 = "5fc0da12654b2675eb9cdd711cd4f85f93dd3f6a"

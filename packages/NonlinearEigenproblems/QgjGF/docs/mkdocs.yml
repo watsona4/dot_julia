@@ -1,0 +1,30 @@
+site_name:        NEP-PACK
+repo_url:         https://github.com/USER_NAME/PACKAGE_NAME.jl
+site_description: Nonlinear eigenvalue problems in Julia
+site_author:      NEP-PACK team
+repo_url: https://github.com/nep-pack/NonlinearEigenproblems.jl
+theme: readthedocs
+
+extra_css:
+  - assets/Documenter.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - assets/mathjaxhelper.js
+
+docs_dir: 'build'
+
+pages:
+  - Introduction: index.md
+  - NEP Methods: methods.md
+  - NEP Types: types.md
+  - LinSolver: linsolvers.md
+  - NEP transformations: transformations.md
+  - NEP Gallery: gallery.md
+  - Developer info: development.md
+  - Tutorial 1 (BEM): bemtutorial.md
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
