@@ -8304,6 +8304,12 @@ git-tree-sha1 = "fc4205405f792d5e3a0eac7a49ae40e55ec6e04b"
 uuid = "c9310f65-a42c-5928-aca3-d34f64192029"
 version = "1.0.2"
 
+[[PDFIO]]
+deps = ["AbstractTrees", "AdobeGlyphList", "BinDeps", "Dates", "DelimitedFiles", "LabelNumerals", "Libdl", "LinearAlgebra", "Pkg", "Printf", "Rectangle", "RomanNumerals"]
+git-tree-sha1 = "4310aa85e8d445a669850321172876aaea366c2c"
+uuid = "4d0d745f-9d9a-592e-8d18-1ad8a0f42b92"
+version = "0.1.7"
+
 [[PDMats]]
 deps = ["Arpack", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "9d6a9b3e19634612fb1edcafc4b1d75242b24bde"
@@ -8717,6 +8723,12 @@ version = "0.3.3"
 git-tree-sha1 = "7bdce29bc9b2f5660a6e5e64d64d91ec941f6aa2"
 uuid = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
 version = "0.7.0"
+
+[[Rectangle]]
+deps = ["LinearAlgebra", "Test"]
+git-tree-sha1 = "214fc1d04d60774ff34d7bb0e1098971524d6edd"
+uuid = "9a9db56c-8f71-5460-add5-cb450131785e"
+version = "0.1.1"
 
 [[RecurrenceAnalysis]]
 deps = ["DelayEmbeddings", "DelimitedFiles", "Distances", "LinearAlgebra", "Random", "SparseArrays", "StaticArrays", "Statistics", "UnicodePlots"]
