@@ -1,0 +1,12 @@
+name = "MiniLogging"
+uuid = "f59402ec-0262-5707-a561-770af94bc5a6"
+keywords = ["logging", "log"]
+license = "MIT"
+desc = "Mini hierarchical logging system like Python logging"
+version = "0.2"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

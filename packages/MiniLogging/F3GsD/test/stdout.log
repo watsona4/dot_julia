@@ -1,0 +1,6 @@
+RootLogger(WARN:30)
+RootLogger(WARN:30)
+RootLogger(INFO:20)
+Logger("a.b", NOTSET:0)
+ErrorException("has error")
+Logger("a.b.c", NOTSET:0)

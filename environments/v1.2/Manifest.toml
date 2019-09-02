@@ -7291,6 +7291,12 @@ git-tree-sha1 = "894c3a3cace71225ced43e7a980a6863b15124b1"
 uuid = "e4e893b0-ee5e-52ea-8111-44b3bdec128c"
 version = "0.9.1"
 
+[[MiniLogging]]
+deps = ["Test"]
+git-tree-sha1 = "4f2f5ca0663afa0172db23bbdd99e683dd17fb0e"
+uuid = "f59402ec-0262-5707-a561-770af94bc5a6"
+version = "0.2.0"
+
 [[Missings]]
 deps = ["SparseArrays", "Test"]
 git-tree-sha1 = "f0719736664b4358aa9ec173077d4285775f8007"

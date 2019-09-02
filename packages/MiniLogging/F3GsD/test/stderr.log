@@ -1,0 +1,4 @@
+:WARN:Main:Hello world
+:INFO:a.b:Hello world
+:DEBUG:a.b.c:Hello world
+:trace:a.b:Hello world
