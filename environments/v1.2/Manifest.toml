@@ -7602,6 +7602,11 @@ git-tree-sha1 = "6a3d884ec6c0ffd87524ab672b907afb6ea15388"
 uuid = "4cefb923-2b6f-58c4-9e65-6821f26b7b51"
 version = "0.2.0"
 
+[[MurmurHash3]]
+git-tree-sha1 = "d56d38a175bf2c6b5beae8a25220e76bc520bbae"
+uuid = "b10b62ed-fbae-5ea5-b934-abaf0477b71d"
+version = "1.0.1"
+
 [[Mustache]]
 deps = ["Printf", "Tables"]
 git-tree-sha1 = "f39de3a12232eb47bd0629b3a661054287780276"
