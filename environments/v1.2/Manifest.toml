@@ -8073,6 +8073,12 @@ git-tree-sha1 = "785b93c7b39906ddb6fdca0a3126066f93c33737"
 uuid = "d0dd6a25-fac6-55c0-abf7-829e0c774d20"
 version = "0.1.1"
 
+[[OOESAlgorithm]]
+deps = ["Distributed", "GLPK", "GLPKMathProgInterface", "JuMP", "MathOptInterface", "MathProgBase", "Pkg", "SparseArrays"]
+git-tree-sha1 = "e3910c6bd5d790b9b0a8ab98ac4f9b98172e547a"
+uuid = "b729bf19-12cd-5270-a5a7-361c22ea64b8"
+version = "0.1.3"
+
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"
