@@ -6759,6 +6759,12 @@ git-tree-sha1 = "87508e5d79edd092f8272eefbf11147765f5a91a"
 uuid = "f57c4921-e30c-5f49-b073-3f2f2ada663e"
 version = "1.4.3"
 
+[[MINLPTests]]
+deps = ["JuMP"]
+git-tree-sha1 = "1c23462192a6d7abc8437c3d3eb1a0bd1d0830cd"
+uuid = "ee0a3090-8ee9-5cdb-b8cb-8eeba3165522"
+version = "0.2.0"
+
 [[MLBase]]
 deps = ["IterTools", "Random", "Reexport", "StatsBase", "Test"]
 git-tree-sha1 = "f63a8d37429568b8c4384d76c4a96fc2897d6ddf"
