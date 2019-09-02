@@ -8381,6 +8381,12 @@ git-tree-sha1 = "4572e44519c30f6422e142d1f59aed48f4ffb029"
 uuid = "e4faabce-9ead-11e9-39d9-4379958e3056"
 version = "0.3.1"
 
+[[PSFWrite]]
+deps = ["Dates"]
+git-tree-sha1 = "1338a0e3fff64109ee04bb54768673be6b35fc3d"
+uuid = "1a094a50-539a-5eba-b3bf-75406d1a4751"
+version = "0.3.1"
+
 [[PackageCompiler]]
 deps = ["Libdl", "Pkg", "REPL", "Serialization", "UUIDs", "WinRPM"]
 git-tree-sha1 = "0b5dccd6520dd7072d1d2a7fb22501a98f42e691"
