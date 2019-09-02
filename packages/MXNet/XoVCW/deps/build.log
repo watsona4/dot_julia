@@ -1,0 +1,37 @@
+HEAD is now at 75a9e187d [backport 1.5.x]Fix Cached_op with static_shape=true (#15298) (#15380)
+M	3rdparty/mshadow
+‘../../cblas.h’ -> ‘include/cblas.h’
+cp: cannot create regular file ‘include/cblas.h’: Permission denied
+[ Info: Did not find a CUDA installation, using CPU-only version of MXNet.
+┌ Warning: special characters "#{}()[]<>|&*?~;" should now be quoted in commands
+│   caller = #shell_parse#353(::String, ::typeof(Base.shell_parse), ::String, ::Bool) at shell.jl:100
+└ @ Base ./shell.jl:100
+[ Info: USE_JULIA_BLAS -> true
+[ Info: Attempting to create directory /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/src
+[ Info: Directory /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/src already exists
+[ Info: Attempting to create directory /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/usr/lib
+[ Info: Directory /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/usr/lib already exists
+[ Info: Attempting to create directory /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/src/mxnet
+[ Info: Directory /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/src/mxnet already exists
+[ Info: Changing directory to /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/src/mxnet
+[ Info: Changing directory to /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/src/mxnet
+[ Info: Changing directory to /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/src/mxnet
+[ Info: Changing directory to /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/src/mxnet
+[ Info: Changing directory to /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/src/mxnet
+ERROR: LoadError: failed process: Process(`cp -v ../../cblas.h include/cblas.h`, ProcessExited(1)) [1]
+
+Stacktrace:
+ [1] pipeline_error at ./process.jl:813 [inlined]
+ [2] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:728
+ [3] run(::Cmd) at ./process.jl:726
+ [4] run(::BinDeps.SynchronousStepCollection) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521 (repeats 2 times)
+ [5] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:944
+ [6] satisfy!(::BinDeps.LibraryDependency) at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+ [7] top-level scope at /home/ec2-user/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+ [8] top-level scope at /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/build.jl:284
+ [9] include at ./boot.jl:328 [inlined]
+ [10] include_relative(::Module, ::String) at ./loading.jl:1094
+ [11] include(::Module, ::String) at ./Base.jl:31
+ [12] include(::String) at ./client.jl:431
+ [13] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/MXNet/XoVCW/deps/build.jl:112
