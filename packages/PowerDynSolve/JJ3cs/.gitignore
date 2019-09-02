@@ -1,0 +1,17 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+Manifest.toml
+
+# Ipython Notebooks are in a separate branch
+.ipynb_checkpoints/*
+*.ipynb
+
+# vim swap files
+*.swp
+
+# output pictures
+*.png
+*.jpg
+*.html
+*.tex

@@ -1,0 +1,27 @@
+stages:
+  - test
+  - deploy
+
+before_script:
+  - cat /etc/os-release
+  - julia -e "using InteractiveUtils; versioninfo();"
+  - julia -e "using Pkg; Pkg.add(PackageSpec(url=\"https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/JuliaEnergy/PowerDynBase.jl.git\"))"
+  - julia -e "using Pkg; Pkg.develop(PackageSpec(url=pwd()))"
+
+test:julia-1.0:
+  stage: test
+  image: registry.gitlab.com/juliaenergy/docker-julia-extended:1.0
+  tags: [julia]
+  script:
+    - julia -e "using Pkg; Pkg.test(\"PowerDynSolve\")" # no coverage for now as it's still private and I would have to pay
+
+docs:
+  stage: deploy
+  image: registry.gitlab.com/juliaenergy/docker-julia-extended:1.0
+  tags: [julia]
+  only: [master]
+  before_script: [] # empty
+  script:
+    # trigger the docs generation of DPSA.jl using the gitlab API
+    # Tim put another page inbetween to hide the trigger token
+    - curl https://elena-international.com/update-dpsa-docs.php

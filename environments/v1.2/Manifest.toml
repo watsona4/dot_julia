@@ -8940,6 +8940,12 @@ git-tree-sha1 = "7fd52b72d85262fb206cffd40e607c20e9c78ceb"
 uuid = "95be4243-a2fd-5eef-a7d1-2e97978993e7"
 version = "1.0.0"
 
+[[PowerDynSolve]]
+deps = ["DiffEqBase", "Lazy", "LinearAlgebra", "NLsolve", "OrdinaryDiffEq", "Parameters", "PowerDynBase", "PowerDynOperationPoint", "RecipesBase"]
+git-tree-sha1 = "0c2023680c6393546a32b1cadad39604c01235ae"
+uuid = "b2d36aa5-a2b1-5d23-8bd9-f353e61de00d"
+version = "1.0.0"
+
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
 git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
