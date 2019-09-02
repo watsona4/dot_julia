@@ -6317,6 +6317,12 @@ git-tree-sha1 = "fde352ec13479e2f90e57939da2440fb78c5e388"
 uuid = "522f3ed2-3f36-55e3-b6df-e94fee9b0c07"
 version = "0.5.0"
 
+[[LibFTD2XX]]
+deps = ["BinaryProvider", "Compat", "Libdl", "Test"]
+git-tree-sha1 = "827371242063d604aac9eae13e6076f3f7965c12"
+uuid = "85e77ee8-8498-5435-b1ed-98efe5aa7d59"
+version = "0.1.1"
+
 [[LibGit2]]
 uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
 
