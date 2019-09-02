@@ -7446,6 +7446,12 @@ git-tree-sha1 = "ac36c680e6f9cd318b2ab171d580d75fa45f5c8a"
 uuid = "8a675f2c-1eea-59ef-99a5-5eebc71d1519"
 version = "0.3.0"
 
+[[MortalityTables]]
+deps = ["DataStructures", "Test", "XMLDict"]
+git-tree-sha1 = "34552ba8534119ec31d122bf72fb0d088f59ed79"
+uuid = "4780e19d-04b9-53dc-86c2-9e9aa59b5a12"
+version = "0.1.0"
+
 [[MortarContact2D]]
 deps = ["FEMBase", "LinearAlgebra", "SparseArrays", "Statistics", "Test"]
 git-tree-sha1 = "7ab9145a90cdb71b785a62a60b5b619838580a9f"
