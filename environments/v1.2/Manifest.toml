@@ -5503,6 +5503,12 @@ git-tree-sha1 = "2cd0e12ae1703e59173c62f71aa154929f87a95c"
 uuid = "6a8e3230-34bb-5a86-b9da-9f7447a06da5"
 version = "0.2.2"
 
+[[InverseLaplace]]
+deps = ["AbstractFFTs", "FFTW", "SpecialFunctions", "Test"]
+git-tree-sha1 = "ce3fe640d266b7234133848ebe699a99f104c1df"
+uuid = "e24f45a5-4790-5a38-8b2c-33d770a4e70f"
+version = "0.2.2"
+
 [[InvertedIndices]]
 deps = ["Test"]
 git-tree-sha1 = "15732c475062348b0165684ffe28e85ea8396afc"
