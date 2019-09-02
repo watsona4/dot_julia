@@ -8209,6 +8209,12 @@ git-tree-sha1 = "c16f70d1888223659b649bf95a4c5310ec62abe2"
 uuid = "a8b11937-1041-50f2-9818-136bb7a8fb06"
 version = "0.5.1"
 
+[[OpenIDConnect]]
+deps = ["Base64", "HTTP", "JSON", "JWTs", "MbedTLS", "Random", "Test"]
+git-tree-sha1 = "8c30fce132653b80ac6a70012ec0eca3ea940867"
+uuid = "195a77af-17c0-520f-ac58-3336c7ea8576"
+version = "0.1.0"
+
 [[Optim]]
 deps = ["Calculus", "DiffEqDiffTools", "FillArrays", "ForwardDiff", "LineSearches", "LinearAlgebra", "NLSolversBase", "NaNMath", "Parameters", "PositiveFactorizations", "Printf", "Random", "SparseArrays", "StatsBase"]
 git-tree-sha1 = "ca8f8917df469d607f8cf116784e58c9c084d0b4"
