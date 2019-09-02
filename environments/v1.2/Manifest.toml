@@ -7388,6 +7388,11 @@ git-tree-sha1 = "c24aa28ad0b5bcd97707385513bce790d90e062e"
 uuid = "e4207f9d-5a5d-5278-bd5d-cae8f79430d9"
 version = "0.1.0"
 
+[[ModularIndices]]
+git-tree-sha1 = "962946e5a1cba7db11c8063413490c33eea3c0ad"
+uuid = "96e4cb12-aa16-11e9-3f16-05acf5cf8c1c"
+version = "0.1.0"
+
 [[ModuleInterfaceTools]]
 git-tree-sha1 = "137fe5b646de73455486043ba766490722f0546c"
 uuid = "5cb8414e-7aab-5a03-a681-351269c074bf"
