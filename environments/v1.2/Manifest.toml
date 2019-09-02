@@ -7703,6 +7703,12 @@ git-tree-sha1 = "0d6b454861e4d11ddbc8b943e9228b383568304a"
 uuid = "792afdf1-32c1-5681-94e0-d7bf7a5df49e"
 version = "0.3.0"
 
+[[NLPModelsKnitro]]
+deps = ["KNITRO", "NLPModels", "SolverTools"]
+git-tree-sha1 = "6ee5e767d63c26f47def973af201a9ceee8baa33"
+uuid = "bec4dd0d-7755-52d5-9a02-22f0ffc7efcb"
+version = "0.1.0"
+
 [[NLSolversBase]]
 deps = ["Calculus", "DiffEqDiffTools", "DiffResults", "Distributed", "ForwardDiff"]
 git-tree-sha1 = "c430bd3f2dfcffc30688cf4a9cb61535e8d85f65"
