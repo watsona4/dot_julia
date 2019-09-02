@@ -1,0 +1,10 @@
+ERROR: LoadError: Unable to locate KNITRO installation, please check your enviroment variable KNITRODIR.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/ec2-user/.julia/packages/KNITRO/jIIje/deps/build.jl:43
+ [3] include at ./boot.jl:328 [inlined]
+ [4] include_relative(::Module, ::String) at ./loading.jl:1094
+ [5] include(::Module, ::String) at ./Base.jl:31
+ [6] include(::String) at ./client.jl:431
+ [7] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/KNITRO/jIIje/deps/build.jl:42

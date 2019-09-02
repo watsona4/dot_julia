@@ -5822,6 +5822,12 @@ git-tree-sha1 = "79723bc870a7fe977e8d02fb48d47ded4a594cb5"
 uuid = "82bedeac-9837-5b62-883a-b5b3b7c811c5"
 version = "0.2.2"
 
+[[KNITRO]]
+deps = ["Libdl", "MathOptInterface", "MathProgBase", "SparseArrays"]
+git-tree-sha1 = "2c3bcc0d84346bb201296495407dbb8c5ca33b8c"
+uuid = "67920dd8-b58e-52a8-8622-53c4cffbe346"
+version = "0.7.2"
+
 [[KernelDensity]]
 deps = ["Distributions", "FFTW", "Interpolations", "Optim", "StatsBase", "Test"]
 git-tree-sha1 = "c1048817fe5711f699abc8fabd47b1ac6ba4db04"
