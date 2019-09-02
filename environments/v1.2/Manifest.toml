@@ -6294,6 +6294,12 @@ git-tree-sha1 = "4d1f4bcefdbb4f2a8a2302098676b2047f9cc0f0"
 uuid = "496038af-b016-571c-b31e-8262695ac102"
 version = "0.1.1"
 
+[[LevelDB]]
+deps = ["BinDeps", "Libdl"]
+git-tree-sha1 = "0ae258e21a9517cbd3ecc3b9f5b2f9dff88a5811"
+uuid = "6248df61-47b1-58fa-9b7c-c0f1183480ca"
+version = "2.1.0"
+
 [[LibCURL]]
 deps = ["BinaryProvider", "Libdl"]
 git-tree-sha1 = "fd5fc15f2a04608fe1435a769dbbfc7959ff1daa"

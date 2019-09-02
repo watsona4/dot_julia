@@ -1,0 +1,17 @@
+name = "LevelDB"
+uuid = "6248df61-47b1-58fa-9b7c-c0f1183480ca"
+authors = ["jerryzhenleicai@users.noreply.github.com", "Guido Kraemer <gdkrmr@users.noreply.github.com>"]
+version = "2.1.0"
+
+[deps]
+BinDeps = "9e28174c-4ba2-5203-b857-d8d62c4213ee"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

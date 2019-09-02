@@ -1,0 +1,5 @@
+level.db
+deps/
+!deps/build.jl
+/Manifest.toml
+/logs/manifest_usage.toml
