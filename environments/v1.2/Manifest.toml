@@ -6896,6 +6896,12 @@ git-tree-sha1 = "94845d049e37d1311f278a0c1be74ff23bcf3dd5"
 uuid = "18c5d748-a4d3-11e9-30ca-051f275622c1"
 version = "0.1.2"
 
+[[MUMPS]]
+deps = ["LinearAlgebra", "MPI", "SparseArrays"]
+git-tree-sha1 = "75577f47d7b430e00a6eadb7cbdd1e4d5772500e"
+uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
+version = "1.0.0"
+
 [[MacroTools]]
 deps = ["CSTParser", "Compat", "DataStructures", "Test", "Tokenize"]
 git-tree-sha1 = "d6e9dedb8c92c3465575442da456aec15a89ff76"

@@ -1,0 +1,31 @@
+{
+  "description": "A Julia interface to the MUMPS",
+  "title": "MUMPS.jl",
+  "upload_type": "software",
+  "publication_date": "2019-02-07",
+  "creators": [
+    {
+      "affiliation": "École Polytechnique/GERAD - Montréal",
+      "name": "Dominique Orban"
+    }
+  ],
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/JuliaSmoothOptimizers/MUMPS.jl/releases/latest",
+      "relation": "isSupplementTo"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Abel Soares Siqueira",
+      "type": "Researcher"
+    },
+    {
+      "name": "Lars Ruthotto",
+      "type": "Other"
+    }
+  ],
+  "license": "MPL-2.0"
+}
