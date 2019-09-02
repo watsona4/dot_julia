@@ -7020,6 +7020,12 @@ git-tree-sha1 = "8d8253da9e8d38d642cec03d41786a5201479210"
 uuid = "7eb4fadd-790c-5f42-8a69-bfa0b872bfbf"
 version = "1.0.2"
 
+[[Materials]]
+deps = ["DelimitedFiles", "Einsum", "FEMBase", "ForwardDiff", "LinearAlgebra", "NLsolve", "Tensors", "Test"]
+git-tree-sha1 = "2193c60212d6eeac0e561cb78fc2d22324644f6e"
+uuid = "35fa313e-aa48-52ea-bc82-ddb91c7db87b"
+version = "0.1.0"
+
 [[MathOptInterface]]
 deps = ["BenchmarkTools", "LinearAlgebra", "OrderedCollections", "SparseArrays", "Test", "Unicode"]
 git-tree-sha1 = "5e6e36e2f01efbc62b3f8bf68c8cf82035e2c6a6"
@@ -8579,6 +8585,12 @@ deps = ["Dates", "HTTP", "JSON", "Printf", "Random", "RecipesBase", "Statistics"
 git-tree-sha1 = "ab2b14f510cd2a068974c9dc654ad8e743582dc1"
 uuid = "a110ec8f-48c8-5d59-8f7e-f91bc4cc0c3d"
 version = "0.6.1"
+
+[[Tensors]]
+deps = ["ForwardDiff", "LinearAlgebra", "SIMD", "Statistics"]
+git-tree-sha1 = "98f1aec8df52bbaaa937018c419b423c6ed2aa88"
+uuid = "48a634ad-e948-5137-8d70-aa71f2a747f4"
+version = "1.1.1"
 
 [[TerminalMenus]]
 deps = ["Compat", "REPL", "Test"]
