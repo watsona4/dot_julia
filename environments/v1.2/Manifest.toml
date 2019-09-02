@@ -4979,6 +4979,12 @@ git-tree-sha1 = "5fc73172fb953f0bda4572f65ac9ef8988ba1df3"
 uuid = "50ceba7f-c3ee-5a84-a6e8-3ad40456ec97"
 version = "4.0.0"
 
+[[HyperbolicPlane]]
+deps = ["AbstractLattices", "LinearFractionalTransformations", "Plots", "SimpleDrawing", "Test"]
+git-tree-sha1 = "c4b2860534dd0d6bc121606642975acb6fdbd98e"
+uuid = "0111da9b-5c18-507b-82d1-0701aba3485a"
+version = "0.2.3"
+
 [[HypothesisTests]]
 deps = ["Combinatorics", "Distributions", "LinearAlgebra", "Random", "Rmath", "Roots", "Statistics", "StatsBase", "Test"]
 git-tree-sha1 = "0fe2b78bd7cadcaed2071aab7ed12b40d220c392"
@@ -5516,6 +5522,12 @@ version = "7.0.1"
 [[LinearAlgebra]]
 deps = ["Libdl"]
 uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
+[[LinearFractionalTransformations]]
+deps = ["Test"]
+git-tree-sha1 = "da73dcfe3f6d342ab0d979b5c099ceaed0a714bd"
+uuid = "8bac944d-a3a1-5789-a62e-204935847c3c"
+version = "0.0.1"
 
 [[LinearMaps]]
 deps = ["LinearAlgebra", "SparseArrays"]
