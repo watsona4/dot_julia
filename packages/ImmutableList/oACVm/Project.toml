@@ -1,0 +1,10 @@
+name = "ImmutableList"
+uuid = "4a558cac-c1ed-11e9-20da-3584bcd8709a"
+authors = ["John Tinnerholm <johti17@liu.se>", "Martin Sjölund <martin.sjolund@liu.se>"]
+version = "0.1.1"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "1.1"
