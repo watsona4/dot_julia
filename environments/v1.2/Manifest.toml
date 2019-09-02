@@ -8161,6 +8161,12 @@ git-tree-sha1 = "fca92a04d6700d023063bf149e5a317e48d5a7d6"
 uuid = "5fb14364-9ced-5910-84b2-373655c76a03"
 version = "0.5.2"
 
+[[Omega]]
+deps = ["Callbacks", "Cassette", "DataStructures", "Distributions", "DocStringExtensions", "DynamicHMC", "Flux", "ForwardDiff", "Lens", "LinearAlgebra", "LogDensityProblems", "NLopt", "ProgressMeter", "Random", "Spec", "Statistics", "TransformVariables", "UnicodePlots", "Zygote"]
+git-tree-sha1 = "97a0e913fbc19d4754fa0bfbdb310d1fbc36c33d"
+uuid = "1af16e33-887a-59b3-8344-18f1671b3ade"
+version = "0.1.1"
+
 [[OnlineStats]]
 deps = ["DataStructures", "Dates", "LearnBase", "LinearAlgebra", "LossFunctions", "OnlineStatsBase", "PenaltyFunctions", "Random", "RecipesBase", "Reexport", "Statistics", "StatsBase", "SweepOperator", "Test"]
 git-tree-sha1 = "a783fe25075b9d09d6dd2ba67dafd374d835acfa"
