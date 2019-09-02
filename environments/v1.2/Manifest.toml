@@ -6872,6 +6872,12 @@ git-tree-sha1 = "4e9a51bb1e5bef6f4525ce19b60cb706f6cb7d4f"
 uuid = "e7922434-ae4b-11e9-05c5-9780451d2c66"
 version = "0.1.0"
 
+[[MPIFiles]]
+deps = ["AxisArrays", "Dates", "DelimitedFiles", "FFTW", "FileIO", "Graphics", "HDF5", "ImageAxes", "ImageMetadata", "Interpolations", "LinearAlgebra", "Mmap", "Random", "Reexport", "RegularizedLeastSquares", "Statistics", "Test", "UUIDs", "Unitful"]
+git-tree-sha1 = "e8305df5e797dafc17a6100867917d170a4f8e87"
+uuid = "371237a9-e6c1-5201-9adb-3d8cfa78fa9f"
+version = "0.6.3"
+
 [[MacroTools]]
 deps = ["CSTParser", "Compat", "DataStructures", "Test", "Tokenize"]
 git-tree-sha1 = "d6e9dedb8c92c3465575442da456aec15a89ff76"
@@ -7803,6 +7809,12 @@ deps = ["Base64", "DataStructures", "Dates", "Distributed", "GitHub", "HTTP", "J
 git-tree-sha1 = "e7f59bec82a47801360f80caa1bf3c5ff058c157"
 uuid = "4418983a-e44d-11e8-3aec-9789530b3b3e"
 version = "0.1.0"
+
+[[RegularizedLeastSquares]]
+deps = ["Documenter", "FFTW", "IterativeSolvers", "LinearAlgebra", "LinearOperators", "ProgressMeter", "Random", "SparseArrays", "Wavelets"]
+git-tree-sha1 = "c9c36803900ed368080e30b18b033347575158c2"
+uuid = "1e9c538a-f78c-5de5-8ffb-0b6dbe892d23"
+version = "0.3.0"
 
 [[Reinforce]]
 deps = ["Distributions", "LearnBase", "LearningStrategies", "Random", "RecipesBase", "Reexport", "StatsBase", "Test"]

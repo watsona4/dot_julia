@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Low Level Interface · MPI Files</title><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="assets/documenter.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link href="assets/documenter.css" rel="stylesheet" type="text/css"/></head><body><nav class="toc"><a href="index.html"><img class="logo" src="assets/logo.png" alt="MPI Files logo"/></a><h1>MPI Files</h1><select id="version-selector" onChange="window.location.href=this.value" style="visibility: hidden"></select><form class="search" id="search-form" action="search.html"><input id="search-query" name="q" type="text" placeholder="Search docs"/></form><ul><li><a class="toctext" href="index.html">Home</a></li><li><a class="toctext" href="gettingStarted.html">Getting Started</a></li><li class="current"><a class="toctext" href="lowlevel.html">Low Level Interface</a><ul class="internal"></ul></li><li><a class="toctext" href="conversion.html">Conversion</a></li><li><a class="toctext" href="measurements.html">Measurements</a></li><li><a class="toctext" href="systemmatrix.html">System Matrix</a></li><li><a class="toctext" href="frequencyFilter.html">Frequency Filter</a></li><li><a class="toctext" href="images.html">Reconstructions</a></li></ul></nav><article id="docs"><header><nav><ul><li><a href="lowlevel.html">Low Level Interface</a></li></ul><a class="edit-page" href="https://github.com/MagneticParticleImaging/MPIFiles.jl/blob/master/docs/src/lowlevel.md"><span class="fa"></span> Edit on GitHub</a></nav><hr/><div id="topbar"><span>Low Level Interface</span><a class="fa fa-bars" href="#"></a></div></header><h1><a class="nav-anchor" id="Low-Level-Interface-1" href="#Low-Level-Interface-1">Low Level Interface</a></h1><p>The low level interface of MPIFiles.jl consists of a collection of methods that need to be implemented for each file format. It consists of the following methods</p><pre><code class="language-julia"># general
+version, uuid
+
+# study parameters
+studyName, studyNumber, studyUuid, studyDescription
+
+# experiment parameters
+experimentName, experimentNumber, experimentUuid, experimentDescription,
+experimentSubject, experimentIsSimulation, experimentIsCalibration,
+experimentHasMeasurement, experimentHasReconstruction
+
+# tracer parameters
+tracerName, tracerBatch, tracerVolume, tracerConcentration, tracerSolute,
+tracerInjectionTime, tracerVendor
+
+# scanner parameters
+scannerFacility, scannerOperator, scannerManufacturer, scannerName, scannerTopology
+
+# acquisition parameters
+acqStartTime, acqNumFrames, acqNumAverages, acqGradient, acqOffsetField,
+acqNumPeriodsPerFrame, acqSize
+
+# drive-field parameters
+dfNumChannels, dfStrength, dfPhase, dfBaseFrequency, dfCustomWaveform, dfDivider,
+dfWaveform, dfCycle
+
+# receiver parameters
+rxNumChannels, rxBandwidth, rxNumSamplingPoints, rxTransferFunction, rxUnit,
+rxDataConversionFactor, rxInductionFactor
+
+# measurements
+measData, measDataTDPeriods, measIsFourierTransformed, measIsTFCorrected,
+measIsBGCorrected, measIsTransposed, measIsFramePermutation, measIsFrequencySelection,
+measIsBGFrame, measIsSpectralLeakageCorrected, measFramePermutation
+
+# calibrations
+calibSNR, calibFov, calibFovCenter, calibSize, calibOrder, calibPositions,
+calibOffsetField, calibDeltaSampleSize, calibMethod, calibIsMeanderingGrid
+
+# reconstruction results
+recoData, recoFov, recoFovCenter, recoSize, recoOrder, recoPositions
+
+# additional functions that should be implemented by an MPIFile
+filepath, systemMatrixWithBG, systemMatrix, selectedChannels</code></pre><p>The interface is structured in a similar way as the parameters within the <a href="https://github.com/MagneticParticleImaging/MDF">MDF</a>. Basically, there is a direct mapping between the MDF parameters and the MPIFiles interface. For instance the parameter <code>acqNumAvarages</code> maps to the MDF parameter <code>/acquisition/numAverages</code>. Also the dimensionality of the parameters described in the <a href="https://github.com/MagneticParticleImaging/MDF">MDF</a> is preserved. Thus, the MDF specification can be used as a documentation of the low level interface of MPIFiles.</p><div class="admonition note"><div class="admonition-title">Note</div><div class="admonition-text"><p>Note that the dimensions in the MDF documentation are flipped compared to the dimensions in Julia. This is because Julia stores the data in column major order, while HDF5 considers row major order</p></div></div><footer><hr/><a class="previous" href="gettingStarted.html"><span class="direction">Previous</span><span class="title">Getting Started</span></a><a class="next" href="conversion.html"><span class="direction">Next</span><span class="title">Conversion</span></a></footer></article></body></html>
