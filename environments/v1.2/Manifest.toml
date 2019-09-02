@@ -6449,6 +6449,12 @@ git-tree-sha1 = "54eb90e8dbe745d617c78dee1d6ae95c7f6f5779"
 uuid = "d3d80556-e9d4-5f37-9878-2ab0fcc64255"
 version = "7.0.1"
 
+[[LinearAdjoints]]
+deps = ["Calculus", "LinearAlgebra", "MetaProgTools", "SparseArrays", "Test"]
+git-tree-sha1 = "5bbcf91dab2dc4f30a252ca19f129eb763c57760"
+uuid = "3201237a-9847-11e9-0d2a-6d530c977506"
+version = "0.1.0"
+
 [[LinearAlgebra]]
 deps = ["Libdl"]
 uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
