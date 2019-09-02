@@ -5242,6 +5242,12 @@ git-tree-sha1 = "5d1169c51c47d601a3e8372d79142b9069993497"
 uuid = "904591bb-b899-562f-9e6f-b8df64c7d480"
 version = "0.7.5"
 
+[[IndentWrappers]]
+deps = ["Test"]
+git-tree-sha1 = "3ac4d3b59c40f350c13156e33e4a9165f32c24cd"
+uuid = "6d4a1be2-e6b5-52a1-bf76-533525bce15e"
+version = "0.1.0"
+
 [[IndexableBitVectors]]
 deps = ["Random", "Test"]
 git-tree-sha1 = "b7f5e42dc867b8a8654a5f899064632dac05bc82"

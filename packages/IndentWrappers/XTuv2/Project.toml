@@ -1,0 +1,12 @@
+name = "IndentWrappers"
+uuid = "6d4a1be2-e6b5-52a1-bf76-533525bce15e"
+authors = ["Tamas K. Papp <tkpapp@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
