@@ -5870,6 +5870,12 @@ git-tree-sha1 = "574b8ee047879ee249bf9d290c4af83722ce8ea7"
 uuid = "2472808a-b354-52ea-a80e-1658a3c6056d"
 version = "0.5.0"
 
+[[KernelDensityEstimatePlotting]]
+deps = ["Cairo", "Colors", "Compose", "DocStringExtensions", "Fontconfig", "Gadfly", "KernelDensityEstimate", "LinearAlgebra", "Statistics"]
+git-tree-sha1 = "9846ab27d93757b22118fb95151c98bcc756d948"
+uuid = "c43967c8-f634-5d24-8eab-2867546b366b"
+version = "0.1.1"
+
 [[Knet]]
 deps = ["AutoGrad", "CUDAapi", "FileIO", "JLD2", "Libdl", "LinearAlgebra", "Pkg", "Printf", "Random", "SpecialFunctions", "Statistics", "TimerOutputs"]
 git-tree-sha1 = "7a45f9ef563ef796433463cf6998c46d0a3de9c9"
