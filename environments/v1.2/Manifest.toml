@@ -5349,6 +5349,12 @@ git-tree-sha1 = "50b41d59e7164ab6fda65e71049fee9d890731ff"
 uuid = "505f98c9-085e-5b2c-8e89-488be7bf1f34"
 version = "0.3.0"
 
+[[InspectDR]]
+deps = ["Cairo", "Colors", "Graphics", "Gtk", "NumericIO", "Pkg", "Printf"]
+git-tree-sha1 = "4ebc2562f47be316d809666c0520a083fdb4ed6d"
+uuid = "d0351b0e-4b05-5898-87b3-e2a8edfddd1d"
+version = "0.3.6"
+
 [[Interact]]
 deps = ["CSSUtil", "InteractBase", "JSON", "Knockout", "Observables", "OrderedCollections", "Reexport", "WebIO", "Widgets"]
 git-tree-sha1 = "381c584142ac744bcc23af64bff3e3dc44d7f632"
@@ -6246,6 +6252,12 @@ deps = ["Compat"]
 git-tree-sha1 = "ae1a63457e14554df2159b0b028f48536125092d"
 uuid = "4d1e1d77-625e-5b40-9113-a560ec7a8ecd"
 version = "0.0.8"
+
+[[NumericIO]]
+deps = ["Printf", "Test"]
+git-tree-sha1 = "0cb5fb8157780c06a36b1c7ccaab4fcebed83259"
+uuid = "6c575b1c-77cb-5640-a5dc-a54116c90507"
+version = "0.3.1"
 
 [[ObjectStores]]
 deps = ["Authorization", "Logging", "Test"]

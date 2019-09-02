@@ -1,0 +1,22 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+addons:
+  apt:
+    packages:
+      - libgtk-3-dev
+# uncomment the following lines to override the default test script
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - if [[ `uname` = "Linux" ]]; then TESTCMD="xvfb-run julia"; else TESTCMD="julia"; fi
+  - $TESTCMD -e 'using Pkg; Pkg.build(); Pkg.test(coverage=true)'
