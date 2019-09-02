@@ -5361,6 +5361,12 @@ git-tree-sha1 = "c4db55194f6bfd32d83a4aa0affa88e511ece48a"
 uuid = "43edad99-fa64-5e4f-9937-1c09a410b73f"
 version = "0.3.3"
 
+[[IntArrays]]
+deps = ["Mmap", "Random", "Test"]
+git-tree-sha1 = "dee0d841f11db7d54d87c12804d28a40db4e0749"
+uuid = "45d23951-e9a5-545c-8049-e4c4887f5525"
+version = "0.2.0"
+
 [[Interact]]
 deps = ["CSSUtil", "InteractBase", "JSON", "Knockout", "Observables", "OrderedCollections", "Reexport", "WebIO", "Widgets"]
 git-tree-sha1 = "381c584142ac744bcc23af64bff3e3dc44d7f632"
