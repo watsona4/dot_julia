@@ -6368,6 +6368,12 @@ git-tree-sha1 = "61ce102b699d66e0c9afa333d08659ac189b8b18"
 uuid = "2098c8a6-82c4-11e9-1f54-e72760d085ce"
 version = "0.3.1"
 
+[[LibYAML]]
+deps = ["BinaryProvider", "Libdl", "Test"]
+git-tree-sha1 = "19e43171d465f44a9c04309e0088e5b5b66d66e7"
+uuid = "893b89ae-d513-59bf-bb22-7f8468641907"
+version = "0.1.1"
+
 [[Libdl]]
 uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 
