@@ -6507,6 +6507,11 @@ git-tree-sha1 = "3cae15eaf6a162c475ec2a624e20f1502b028991"
 uuid = "5e7a79f3-ee03-5374-bd42-db9a52b6e959"
 version = "0.2.1"
 
+[[LinkedLists]]
+git-tree-sha1 = "3f4f687f69bc7cd1e34115618b79ef4753d4d340"
+uuid = "70f5e60a-1556-5f34-a19e-a48b3e4aaee9"
+version = "0.1.1"
+
 [[Literate]]
 deps = ["Base64", "JSON", "REPL"]
 git-tree-sha1 = "04913ce466978fad4eb666c9f5fafc718fcc4366"
