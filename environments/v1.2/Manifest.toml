@@ -8846,6 +8846,11 @@ git-tree-sha1 = "04123e891d4a7fb1a2831f09cb07e26233fdff9c"
 uuid = "67491407-f73d-577b-9b50-8179a7c68029"
 version = "0.4.5"
 
+[[Polyline]]
+git-tree-sha1 = "3616cd83205cf412855fdb7506f421886bce4557"
+uuid = "737ade88-6689-11e9-2266-a1567ed38d42"
+version = "0.1.0"
+
 [[Polynomials]]
 deps = ["LinearAlgebra", "SparseArrays", "Test"]
 git-tree-sha1 = "62142bd65d3f8aeb2226ec64dd8493349147df94"

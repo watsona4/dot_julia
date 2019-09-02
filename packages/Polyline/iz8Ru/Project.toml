@@ -1,0 +1,13 @@
+name = "Polyline"
+uuid = "737ade88-6689-11e9-2266-a1567ed38d42"
+authors = ["Nikola Stoyanov <nstoyanov.92@gmail.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
