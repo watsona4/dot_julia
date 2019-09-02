@@ -6777,6 +6777,12 @@ git-tree-sha1 = "73a7b45d4d97d96b848c2c4a1bbca4f9aaca06de"
 uuid = "7035ae7a-3787-11e9-139a-5545ed3dc201"
 version = "0.7.0"
 
+[[MIRTio]]
+deps = ["HDF5", "Test"]
+git-tree-sha1 = "a65662af1561d45b359ca5024c3298a2d5812a4b"
+uuid = "274281c4-ae57-11e9-2014-65d3d5d9358c"
+version = "0.1.0"
+
 [[MLBase]]
 deps = ["IterTools", "Random", "Reexport", "StatsBase", "Test"]
 git-tree-sha1 = "f63a8d37429568b8c4384d76c4a96fc2897d6ddf"
