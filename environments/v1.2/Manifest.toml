@@ -5278,6 +5278,12 @@ git-tree-sha1 = "b6e249be10a3381b2c72ac82f2d13d70067cb2bd"
 uuid = "9b13fd28-a010-5f03-acff-a1bbcff69959"
 version = "0.5.0"
 
+[[IndirectImports]]
+deps = ["MacroTools", "Pkg", "UUIDs"]
+git-tree-sha1 = "97a1e37583b027af042dc23817d3818a83f6b5d2"
+uuid = "6b361b89-ad51-55af-b263-01d4c5e5a711"
+version = "0.1.2"
+
 [[InfiniteArrays]]
 deps = ["DSP", "FillArrays", "LazyArrays", "LinearAlgebra", "SparseArrays", "Statistics", "Test"]
 git-tree-sha1 = "cc2cb4bfb7893bba4f15974944d85f8a90812423"

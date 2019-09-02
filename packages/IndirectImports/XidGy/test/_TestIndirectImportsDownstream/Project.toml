@@ -1,0 +1,8 @@
+name = "_TestIndirectImportsDownstream"
+uuid = "63e77324-6b0a-11e9-11e4-8be33209e5fa"
+
+[deps]
+IndirectImports = "6b361b89-ad51-55af-b263-01d4c5e5a711"
+
+[extras]
+_TestIndirectImportsUpstream = "20db8cd4-68a4-11e9-2de0-29cd367489cf"
