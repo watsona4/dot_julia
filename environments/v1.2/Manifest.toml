@@ -6605,6 +6605,11 @@ version = "0.3.0"
 [[Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
+[[LoggingExtras]]
+git-tree-sha1 = "5c47830453708ffd09bf83a15e14924daa6570f7"
+uuid = "e6f89c97-d47a-5376-807f-9c37f3926c36"
+version = "0.3.0"
+
 [[LombScargle]]
 deps = ["FFTW", "LinearAlgebra", "Measurements", "Random", "SpecialFunctions", "Statistics", "Test"]
 git-tree-sha1 = "90cf1a43a4b694fe6f7191f9e94db1a34b6dc667"
