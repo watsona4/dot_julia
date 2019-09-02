@@ -6413,6 +6413,12 @@ git-tree-sha1 = "0aa484c34ab15576b14df04ab29fb628b7ce46c1"
 uuid = "2f5eb75a-258c-59e0-affc-f41c55f75335"
 version = "0.3.0"
 
+[[LightGraphsMatching]]
+deps = ["BlossomV", "Hungarian", "JuMP", "LightGraphs", "LinearAlgebra", "MathProgBase", "SparseArrays", "Test"]
+git-tree-sha1 = "345043a6895a903ef2d3d142f293077bba6b5b16"
+uuid = "160ba089-64bf-5ba7-9e14-98ab1d9bcb0a"
+version = "0.1.0"
+
 [[LightXML]]
 deps = ["BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "aeec7a341652d47bc773475a42952fa78eccd7cc"
