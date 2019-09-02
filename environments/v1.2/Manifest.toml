@@ -6419,6 +6419,12 @@ git-tree-sha1 = "345043a6895a903ef2d3d142f293077bba6b5b16"
 uuid = "160ba089-64bf-5ba7-9e14-98ab1d9bcb0a"
 version = "0.1.0"
 
+[[LightQuery]]
+deps = ["CSV", "Compat", "IterTools", "MacroTools", "Markdown", "Tables"]
+git-tree-sha1 = "75d830d61cb779fb2c5b4cbfd893fa4b331ae024"
+uuid = "a6f99520-0501-547d-81af-dc7bed1e4d5a"
+version = "0.3.1"
+
 [[LightXML]]
 deps = ["BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "aeec7a341652d47bc773475a42952fa78eccd7cc"
