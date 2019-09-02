@@ -8928,6 +8928,12 @@ git-tree-sha1 = "738bfbcdb06562387dfb7a576f1a0d50438cfde6"
 uuid = "73af2aaf-3f58-5b29-82a9-435ecf827f5b"
 version = "0.1.5"
 
+[[PowerDynBase]]
+deps = ["Lazy", "LinearAlgebra", "MacroTools", "Markdown", "Parameters"]
+git-tree-sha1 = "e0c97973629fc225850138d09741725eebae152b"
+uuid = "7ffb48b1-f436-5a59-a310-b4407da33972"
+version = "1.0.0"
+
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
 git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
