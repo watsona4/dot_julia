@@ -8555,6 +8555,12 @@ git-tree-sha1 = "3414bff762e020e6ffd220af17e17435e78673c7"
 uuid = "cd433a01-47d1-575d-afb7-6db927ee8d8f"
 version = "0.1.2"
 
+[[Peaks]]
+deps = ["Test", "UnsafeArrays"]
+git-tree-sha1 = "4c25451f297df179c0525bfdb775d2836828bfb6"
+uuid = "18e31ff7-3703-566c-8e60-38913d67486b"
+version = "0.1.0"
+
 [[PenaltyFunctions]]
 deps = ["InteractiveUtils", "LearnBase", "LinearAlgebra", "RecipesBase", "Reexport", "Test"]
 git-tree-sha1 = "b0baaa5218ca0ffd6a8ae37ef0b58e0df688ac8b"
