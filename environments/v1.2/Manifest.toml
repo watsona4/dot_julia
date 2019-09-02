@@ -4937,6 +4937,12 @@ git-tree-sha1 = "46313284237aa6ca67a6bce6d6fbd323d19cff59"
 uuid = "77172c1b-203f-54ac-aa54-3f1198fe9f90"
 version = "0.5.0"
 
+[[Humanize]]
+deps = ["Dates", "Printf", "Test"]
+git-tree-sha1 = "f7f2a0a920ad015da58d016587aaf4af4fa6ad5e"
+uuid = "7ec9b9c5-1998-51e1-b7fc-fc3590c18259"
+version = "1.0.0"
+
 [[HyperDualMatrixTools]]
 deps = ["HyperDualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "62d4275e6691d73ea14eaef75b8583296151da45"
