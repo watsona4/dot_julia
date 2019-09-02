@@ -1,0 +1,10 @@
+name = "LibPSF"
+uuid = "5cf4117a-c29c-5f6c-be10-22558df91208"
+version = "0.3.1"
+
+[deps]
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "1"
