@@ -6980,6 +6980,12 @@ git-tree-sha1 = "35beaff32005d60504202febab4ca907529e1d75"
 uuid = "bbe32c30-8a1d-11e9-18de-655e918680e9"
 version = "0.1.0"
 
+[[MarkableIntegers]]
+deps = ["Test"]
+git-tree-sha1 = "1c5f318660c49c9dd04a26eade53efc2203a0fb7"
+uuid = "0913cafa-90c8-523e-aa68-da9dd2ac225d"
+version = "0.0.1"
+
 [[Markdown]]
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
