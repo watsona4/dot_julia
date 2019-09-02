@@ -1,0 +1,10 @@
+name = "NonPromoting"
+uuid = "68e19440-e831-11e8-1586-bfd570a744c2"
+authors = ["Erik Schnetter <schnetter@gmail.com>"]
+version = "1.0.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
