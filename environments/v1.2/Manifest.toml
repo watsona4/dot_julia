@@ -5033,6 +5033,12 @@ git-tree-sha1 = "626f2178eac36d78f782ee17f45493fba1c16860"
 uuid = "ade8a587-c525-5308-a3d4-dc5d47143b63"
 version = "0.1.0"
 
+[[IOLogging]]
+deps = ["Dates", "Logging", "Test"]
+git-tree-sha1 = "8891fbf4a644d2d4644c5e9ef594364bc4b1d247"
+uuid = "9ee9e592-2d2d-57f4-9c4b-95048a1bc2c4"
+version = "0.2.0"
+
 [[IRTools]]
 deps = ["InteractiveUtils", "MacroTools", "Test"]
 git-tree-sha1 = "e23faa71b8f54c3fdc99b230b9c2906cafdddca5"

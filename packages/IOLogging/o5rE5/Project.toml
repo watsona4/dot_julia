@@ -1,0 +1,17 @@
+name = "IOLogging"
+uuid = "2f89813c-aa1d-11e8-3d93-2f1a3b18d50a"
+authors = ["Sukera <11753998+Seelengrab@users.noreply.github.com>"]
+version = "0.2.0"
+
+[compat]
+julia = ">=1.0.2"
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+
+[extras]
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "Logging"]
