@@ -6566,6 +6566,12 @@ git-tree-sha1 = "0a6fc6de62ca396ed528a816ad26cdba640221e5"
 uuid = "db97f5ab-fc25-52dd-a8f9-02a257c35074"
 version = "1.1.0"
 
+[[LocallyWeightedRegression]]
+deps = ["Distances", "GeoStatsBase", "GeoStatsDevTools", "LinearAlgebra", "NearestNeighbors", "Random", "Reexport", "StaticArrays", "Variography"]
+git-tree-sha1 = "acc3c4798962a9a2f94d07e3dff03bde8114710e"
+uuid = "68d949f0-74a3-5070-a3ac-aa8145b4bcaa"
+version = "0.3.1"
+
 [[Loess]]
 deps = ["Distances", "Random", "Statistics", "Test"]
 git-tree-sha1 = "0ee46caf683a422b595be4dfaed6cda28f541e25"
