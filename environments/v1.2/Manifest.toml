@@ -8609,6 +8609,12 @@ git-tree-sha1 = "be5fd190a8553dfe603c52178879b4128cd54cb0"
 uuid = "4f36922e-b395-5139-af69-051d0331eef0"
 version = "0.0.1"
 
+[[PhotoOrganizer]]
+deps = ["Dates"]
+git-tree-sha1 = "22e817d6190666a107a65aa64fd0a1cb3fdf998f"
+uuid = "5e3a6505-df5b-52db-bcdc-6b03808ffcbb"
+version = "0.1.0"
+
 [[PiGPIO]]
 deps = ["Sockets"]
 git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
