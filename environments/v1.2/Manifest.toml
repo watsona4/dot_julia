@@ -6038,6 +6038,12 @@ git-tree-sha1 = "f17068e3f13a83da68c05f36c47a696b22129cff"
 uuid = "b1bec4e5-fd48-53fe-b0cb-9723c09d164b"
 version = "0.3.1"
 
+[[LLLplus]]
+deps = ["BenchmarkTools", "DelimitedFiles", "LinearAlgebra", "Printf", "Random", "Test"]
+git-tree-sha1 = "06430ca472835240e275ec2f8f614f31a91e810c"
+uuid = "142c1900-a1c3-58ae-a66d-b187f9ca6423"
+version = "1.2.2"
+
 [[LLVM]]
 deps = ["CEnum", "Libdl", "Printf", "Unicode"]
 git-tree-sha1 = "52cfea426bd248a427aace7d88eb5d45b84ea297"
