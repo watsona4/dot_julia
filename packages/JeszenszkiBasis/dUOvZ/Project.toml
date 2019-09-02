@@ -1,0 +1,10 @@
+name = "JeszenszkiBasis"
+uuid = "628ca6e2-a638-11e8-0402-9d70179aa996"
+authors = ["Dmitri Iouchtchenko <diouchtc@uwaterloo.ca>"]
+version = "0.1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

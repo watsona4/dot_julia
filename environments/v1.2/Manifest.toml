@@ -5668,6 +5668,12 @@ git-tree-sha1 = "192aa4f92bc1b19c5e400504f26ad03c4553b265"
 uuid = "494afd89-becb-516b-aafa-70d2670c0337"
 version = "0.7.1"
 
+[[JeszenszkiBasis]]
+deps = ["Test"]
+git-tree-sha1 = "fbe3cd0380189cce905775ec1ac7655104c7785c"
+uuid = "4eec09b6-37c8-513a-a01b-84ce271f0312"
+version = "0.1.0"
+
 [[JuLIP]]
 deps = ["AlgebraicMultigrid", "Calculus", "CommonSubexpressions", "DelimitedFiles", "Dierckx", "ForwardDiff", "FunctionWrappers", "JSON", "LineSearches", "LinearAlgebra", "MacroTools", "NeighbourLists", "Optim", "Printf", "Reexport", "SparseArrays", "StaticArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "2a9bcb7006a0159194d54c9c54c2b933b77ea41d"
