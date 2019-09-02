@@ -1,0 +1,7 @@
+.DS_Store
+*.o
+*.so.2
+*.so
+*.log
+svm-train
+svrmodels
