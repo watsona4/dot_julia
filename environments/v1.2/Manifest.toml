@@ -7152,6 +7152,12 @@ git-tree-sha1 = "19e2a5f4e40f1e8947110872e76644515d292159"
 uuid = "08b01624-6c0b-11e9-1b9f-6d80c967c393"
 version = "0.1.0"
 
+[[Memcache]]
+deps = ["Serialization", "Sockets", "Test"]
+git-tree-sha1 = "68cd01c87ec71bfb1bfa11e8160ce7a480cdf5bf"
+uuid = "2542163d-3f63-581c-abc1-15efe995b982"
+version = "0.3.0"
+
 [[Memento]]
 deps = ["Dates", "Distributed", "JSON", "Serialization", "Sockets", "Syslogs", "Test", "TimeZones", "UUIDs"]
 git-tree-sha1 = "090463b13da88689e5eae6468a6f531a21392175"
