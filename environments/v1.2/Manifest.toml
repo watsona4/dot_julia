@@ -7637,6 +7637,12 @@ git-tree-sha1 = "9881dd75c83eba704798dfd7185770c29ac720f8"
 uuid = "0db19996-df87-5ea3-a455-e3a50d440464"
 version = "2.1.0"
 
+[[NBodySimulator]]
+deps = ["Dates", "DiffEqBase", "DiffEqCallbacks", "FileIO", "LinearAlgebra", "OrdinaryDiffEq", "Printf", "Random", "RecipesBase", "RecursiveArrayTools", "Reexport", "StaticArrays", "Test"]
+git-tree-sha1 = "2a877c70f88196a5d558a3ec0bbee7b77d75f855"
+uuid = "0e6f8da7-a7fc-5c8b-a220-74e902c310f9"
+version = "0.1.0"
+
 [[NCDatasets]]
 deps = ["BinDeps", "Compat", "CondaBinDeps", "DataStructures", "Dates", "Libdl", "Missings", "Printf", "Random"]
 git-tree-sha1 = "7c92182f5d9094d8b46cf27648342954a630f8ec"
