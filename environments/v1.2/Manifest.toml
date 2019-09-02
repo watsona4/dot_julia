@@ -6938,6 +6938,12 @@ git-tree-sha1 = "f3d925225edf84525593b3f286340f37362f4745"
 uuid = "dbd62bd0-c9f5-5087-a2e1-f5c4bb0cec90"
 version = "0.1.0"
 
+[[MakieThemes]]
+deps = ["AbstractPlotting", "Colors", "Test"]
+git-tree-sha1 = "b5919aeb51d7c3a69abd192c79bcebaed3a61c13"
+uuid = "e296ed71-da82-5faf-88ab-0034a9761098"
+version = "0.0.2"
+
 [[MappedArrays]]
 deps = ["Test"]
 git-tree-sha1 = "923441c5ac942b60bd3a842d5377d96646bcbf46"
