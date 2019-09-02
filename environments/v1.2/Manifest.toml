@@ -6512,6 +6512,12 @@ git-tree-sha1 = "3f4f687f69bc7cd1e34115618b79ef4753d4d340"
 uuid = "70f5e60a-1556-5f34-a19e-a48b3e4aaee9"
 version = "0.1.1"
 
+[[LispSyntax]]
+deps = ["ParserCombinator"]
+git-tree-sha1 = "cc581d106c0f24ab4d9ac425aa5a4ba9aeca889d"
+uuid = "51c06dcf-91d3-5c9e-a52e-02df4e7cbcf5"
+version = "0.2.0"
+
 [[Literate]]
 deps = ["Base64", "JSON", "REPL"]
 git-tree-sha1 = "04913ce466978fad4eb666c9f5fafc718fcc4366"
@@ -7187,6 +7193,12 @@ deps = ["Libdl", "LinearAlgebra", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "140777e634428407903907a39f2187edf983550b"
 uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
 version = "0.4.2"
+
+[[ParserCombinator]]
+deps = ["AutoHashEquals", "Nullables", "Printf", "Test"]
+git-tree-sha1 = "370b7fcf9ee754bf47b86389caded06a140fffcc"
+uuid = "fae87a5f-d1ad-5cf0-8f61-c941e1580b46"
+version = "2.0.0"
 
 [[Parsers]]
 deps = ["Dates", "Test"]
