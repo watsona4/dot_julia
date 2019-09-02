@@ -1,0 +1,28 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+
+language: julia
+
+# Linux builds are ubuntu so gcl is used by default and 
+# everything fails miserably
+os:
+  - osx
+
+julia:
+  - 0.7
+  - 1.0.0
+
+notifications:
+  email: false
+
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx"   ]]; then brew update                    ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx"   ]]; then brew tap brewsci/science       ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx"   ]]; then brew install maxima            ; fi
+
+after_success:
+  # push coverage results to Coveralls
+  - julia -e 'using Pkg; cd(Pkg.dir("Maxima")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
+  # push coverage results to Codecov
+  - julia -e 'using Pkg; cd(Pkg.dir("Maxima")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+  - julia -e 'using Pkg; Pkg.add("Documenter")'
+  - julia -e 'using Pkg; cd(Pkg.dir("Maxima")); include(joinpath("docs", "make.jl"))'
