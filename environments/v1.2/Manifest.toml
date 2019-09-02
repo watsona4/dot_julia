@@ -8621,6 +8621,12 @@ git-tree-sha1 = "f3a8a5ab47f22f4d4ff03811096bf08fd02fbac4"
 uuid = "aea672f4-3940-5932-aa44-993d1c3ff149"
 version = "0.3.3"
 
+[[PhyloNetworks]]
+deps = ["BioSequences", "BioSymbols", "CSV", "Combinatorics", "DataFrames", "DataStructures", "Dates", "Distributed", "GLM", "LinearAlgebra", "NLopt", "Pkg", "Printf", "Random", "SpecialFunctions", "StaticArrays", "Statistics", "StatsBase", "StatsFuns", "StatsModels", "Test"]
+git-tree-sha1 = "24bbdb7a042d434edb5541fdc3c2941d1c866bab"
+uuid = "33ad39ac-ed31-50eb-9b15-43d0656eaa72"
+version = "0.9.1"
+
 [[PiGPIO]]
 deps = ["Sockets"]
 git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
