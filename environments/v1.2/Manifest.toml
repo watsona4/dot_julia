@@ -7947,6 +7947,12 @@ git-tree-sha1 = "a22d44545037637f68a9e2128d6a2e299a0d158d"
 uuid = "11b9c370-7f32-11e9-2601-596d25f02000"
 version = "0.1.0"
 
+[[NormalizeQuantiles]]
+deps = ["Distributed", "Random", "SharedArrays", "Statistics"]
+git-tree-sha1 = "fad543e7ef99af63cd0044d905a6b197e145a967"
+uuid = "d366530f-4af1-5ff1-9928-73bf22b88830"
+version = "0.5.4"
+
 [[NoveltyColors]]
 deps = ["JSON", "Test"]
 git-tree-sha1 = "5fc0da12654b2675eb9cdd711cd4f85f93dd3f6a"
