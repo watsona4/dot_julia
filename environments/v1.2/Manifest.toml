@@ -8650,6 +8650,12 @@ git-tree-sha1 = "f15e25a6fa064e0805ef7819d91d79e0ff0bedf4"
 uuid = "5ad8b20f-a522-5ce9-bfc9-ddf1d5bda6ab"
 version = "0.2.0"
 
+[[PiCraft]]
+deps = ["Dates", "GZip", "Sockets", "Test"]
+git-tree-sha1 = "f21dd4cf0d68c80714143e00b1bd886a6fdce686"
+uuid = "6cc4b21d-cec8-58d5-a373-5cd579ce5971"
+version = "0.2.0"
+
 [[PiGPIO]]
 deps = ["Sockets"]
 git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
