@@ -7799,6 +7799,12 @@ git-tree-sha1 = "4ff563d3f97c65405e51982b81e47f4a23651697"
 uuid = "51fcb6bd-ecd8-522c-95bc-4099d1d03463"
 version = "0.2.0"
 
+[[NamedDims]]
+deps = ["LinearAlgebra", "Pkg", "Requires", "Statistics"]
+git-tree-sha1 = "fdf7f20b2b6afd07489aadfc9b49e302287f9d37"
+uuid = "356022a1-0364-5f58-8944-0da4b18d706f"
+version = "0.2.4"
+
 [[NearestNeighbors]]
 deps = ["Distances", "LinearAlgebra", "Mmap", "StaticArrays", "Test"]
 git-tree-sha1 = "f47c5d97cf9a8caefa47e9fa9d99d8fda1a65154"
