@@ -1,0 +1,13 @@
+name = "ImportMacros"
+uuid = "92a963f6-6b1d-11e9-1d6c-8d25856e017b"
+version = "1.0.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Pkg", "Test"]
