@@ -1,0 +1,9 @@
+Distributions
+DataFrames
+StatsBase
+DataArrays
+Sundials
+PiecewiseDeterministicMarkovProcesses
+JSON
+ProgressMeter
+julia 1.0

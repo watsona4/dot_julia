@@ -8674,6 +8674,12 @@ git-tree-sha1 = "1ffd82728498b5071cde851bbb7abd780d4445f3"
 uuid = "fa939f87-e72e-5be4-a000-7fc836dbe307"
 version = "1.1.0"
 
+[[PiecewiseDeterministicMarkovProcesses]]
+deps = ["Dates", "Distributions", "LSODA", "LinearAlgebra", "Parameters", "Pkg", "Profile", "Random", "SparseArrays", "StatsBase", "Sundials", "Test"]
+git-tree-sha1 = "56ac0cfc9ff2ac243db41d0160a2b2e998b2bff7"
+uuid = "86206cdf-4603-54e0-bd58-22a2dcbf57aa"
+version = "0.0.1"
+
 [[Pkg]]
 deps = ["Dates", "LibGit2", "Markdown", "Printf", "REPL", "Random", "SHA", "UUIDs"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
