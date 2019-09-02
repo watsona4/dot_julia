@@ -6657,6 +6657,12 @@ git-tree-sha1 = "4079dfefba2cf541e0770e6426f7756ee90efbe8"
 uuid = "898213cb-b102-5a47-900c-97e73b919f73"
 version = "0.2.3"
 
+[[LowRankModels]]
+deps = ["Arpack", "DataFrames", "LinearAlgebra", "NMF", "Optim", "Printf", "Random", "ScikitLearnBase", "SharedArrays", "SparseArrays", "Statistics", "StatsBase"]
+git-tree-sha1 = "703d3f42be01129ec70d84c509cdffb56c0d6f28"
+uuid = "15d4e49f-4837-5ea3-a885-5b28bfa376dc"
+version = "1.0.1"
+
 [[LoweredCodeUtils]]
 deps = ["JuliaInterpreter"]
 git-tree-sha1 = "ea065f38cccb556b4eabe43b3b3b91e1c67cbffd"
@@ -7030,6 +7036,12 @@ deps = ["DiffEqDiffTools", "Distances", "ForwardDiff", "LineSearches", "LinearAl
 git-tree-sha1 = "c9578878f56f425a2160f5b436c7f79a154d154c"
 uuid = "2774e3e8-f4cf-5e23-947b-6d7e65073b56"
 version = "4.1.0"
+
+[[NMF]]
+deps = ["LinearAlgebra", "Printf", "Random", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "7292dbfbc5501f9a2ae3cd748551c5e500de5f0f"
+uuid = "6ef6ca0d-6ad7-5ff6-b225-e928bfa0a386"
+version = "0.4.0"
 
 [[NNlib]]
 deps = ["Libdl", "LinearAlgebra", "Requires", "Statistics", "TimerOutputs"]
