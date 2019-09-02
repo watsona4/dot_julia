@@ -7887,6 +7887,12 @@ git-tree-sha1 = "48e14b6fb96d28149a75b4e211bad4e5345ae12c"
 uuid = "22e9dc34-2a0d-11e9-0de0-8588d035468b"
 version = "0.1.0"
 
+[[NetworkInference]]
+deps = ["DelimitedFiles", "Distributed", "Distributions", "InformationMeasures", "Pkg", "SharedArrays", "Test"]
+git-tree-sha1 = "bc63f91bc035351871388c70d5f10b59822d2c55"
+uuid = "6b44d3db-2bc5-5ac3-b70f-26aa69b1b11b"
+version = "0.1.0"
+
 [[NetworkLayout]]
 deps = ["DelimitedFiles", "GeometryTypes", "LinearAlgebra", "SparseArrays", "Test"]
 git-tree-sha1 = "adde9ad01842a4f62c3724b8707bed90293f0f3f"
