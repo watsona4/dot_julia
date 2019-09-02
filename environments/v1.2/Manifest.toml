@@ -7781,6 +7781,12 @@ git-tree-sha1 = "83d2a38342b7cd14e28439a16629fd57b425a080"
 uuid = "49c96f43-aa6d-5a04-a506-44c7070ebe78"
 version = "0.12.1"
 
+[[NaiveBayes]]
+deps = ["Distributions", "HDF5", "Interpolations", "KernelDensity", "LinearAlgebra", "Random", "StatsBase", "Test"]
+git-tree-sha1 = "296d27a455ae074d3cb27f7edeff8e6532865f87"
+uuid = "9bbee03b-0db5-5f46-924f-b5c9c21b8c60"
+version = "0.4.0"
+
 [[NamedArrays]]
 deps = ["Combinatorics", "DataStructures", "DelimitedFiles", "InvertedIndices", "LinearAlgebra", "Random", "Requires", "SparseArrays", "Statistics"]
 git-tree-sha1 = "2681361e30e0ee97aad617f1a6a728e53179bd15"

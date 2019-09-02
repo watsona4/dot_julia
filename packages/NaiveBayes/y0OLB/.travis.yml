@@ -1,0 +1,22 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.7 
+  - 1.0
+notifications:
+  email: false
+addons:
+  apt:
+    packages:
+    - hdf5-tools
+  homebrew:
+    packages:
+    - hdf5
+before_install:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+script:
+  - julia --check-bounds=yes -e 'using Pkg; Pkg.clone(pwd()); Pkg.build("NaiveBayes"); Pkg.test("NaiveBayes", coverage=true)'
+after_success:
+  - julia -e 'using Pkg; cd(Pkg.dir("NaiveBayes")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
