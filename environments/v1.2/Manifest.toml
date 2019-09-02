@@ -5633,6 +5633,11 @@ git-tree-sha1 = "dcd276d63f3347d3f4704bd5330c25e84ba95043"
 uuid = "10dff2fc-5484-5881-a0e0-c90441020f8a"
 version = "0.1.0"
 
+[[JSObjectLiteral]]
+git-tree-sha1 = "d66ca7cdb8a08e8fcdb75f10d6eb3220cd3215ba"
+uuid = "a7b85b94-2b9e-11e9-2e5f-79ec22955f58"
+version = "0.1.0"
+
 [[JavaCall]]
 deps = ["DataStructures", "Dates", "Libdl", "Test", "WinReg"]
 git-tree-sha1 = "192aa4f92bc1b19c5e400504f26ad03c4553b265"
