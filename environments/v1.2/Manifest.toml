@@ -5413,6 +5413,12 @@ version = "0.3.3"
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 
+[[InterestRates]]
+deps = ["BusinessDays", "Dates"]
+git-tree-sha1 = "c5ca6d38b9b39dc15a1487cbb153a4acf12715af"
+uuid = "09453d48-b9e1-5bf0-a018-8d5c65f8cb56"
+version = "0.3.4"
+
 [[InternedStrings]]
 deps = ["Random", "Test"]
 git-tree-sha1 = "eb05b5625bc5d821b8075a77e4c421933e20c76b"
