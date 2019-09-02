@@ -6854,6 +6854,12 @@ git-tree-sha1 = "67f9a88611bc79f992aa705d9bbc833a2547dec7"
 uuid = "d8e11817-5142-5d16-987a-aa16d5891078"
 version = "0.3.1"
 
+[[MMTF]]
+deps = ["CodecZlib", "MsgPack", "Test"]
+git-tree-sha1 = "3e641f99cdbf697b210cf3112105916f60dea858"
+uuid = "259c3a9c-12c3-507f-b21f-68ecc40fcda4"
+version = "0.1.0"
+
 [[MPI]]
 deps = ["BinDeps", "Compat", "Distributed", "Libdl", "LinearAlgebra", "Printf", "Random", "Statistics", "Test"]
 git-tree-sha1 = "b932f8e7115a60208692d474c45d5d6fcea10659"
