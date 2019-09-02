@@ -4753,6 +4753,12 @@ git-tree-sha1 = "e1a9ae71f4d5e297f427eb925c1f6915e34dfc2d"
 uuid = "81524022-8764-5038-b61c-08cb1f58760f"
 version = "0.2.2"
 
+[[HMMBase]]
+deps = ["Distributions", "LinearAlgebra", "StaticArrays", "StatsFuns"]
+git-tree-sha1 = "0204ea2805939ac2e533ec3307ba483ca2c5b130"
+uuid = "b2b3ca75-8444-5ffa-85e6-af70e2b64fe7"
+version = "0.0.14"
+
 [[HSARuntime]]
 deps = ["CEnum", "Libdl", "Setfield"]
 git-tree-sha1 = "ea40d80684b6f986599f19b1840abc00af4a399b"
