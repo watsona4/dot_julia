@@ -1,0 +1,4 @@
+[![Build Status](https://travis-ci.org/JuliaFEM/MortarContact2DAD.jl.svg?branch=master)](https://travis-ci.org/JuliaFEM/MortarContact2DAD.jl)[![Coverage Status](https://coveralls.io/repos/github/JuliaFEM/MortarContact2DAD.jl/badge.svg?branch=master)](https://coveralls.io/github/JuliaFEM/MortarContact2DAD.jl?branch=master)[![](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliafem.github.io/MortarContact2DAD.jl/stable)[![](https://img.shields.io/badge/docs-latest-blue.svg)](https://juliafem.github.io/MortarContact2DAD.jl/latest)[![Issues](https://img.shields.io/github/issues/JuliaFEM/MortarContact2DAD.jl.svg)](https://github.com/JuliaFEM/MortarContact2DAD.jl/issues)
+
+This package extends JuliaFEM functionalities for plane contact mechanics using
+mortar methods and automatic differentiation.

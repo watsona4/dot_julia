@@ -5739,6 +5739,12 @@ git-tree-sha1 = "13aeb7fac06b5dcc64a1cf10b345c64b72b5fc3a"
 uuid = "2c06ca41-a429-545c-b8f0-5ca7dd64ba19"
 version = "0.4.3"
 
+[[JuliaFEM]]
+deps = ["AbaqusReader", "Arpack", "AsterReader", "FEMBase", "FEMBasis", "FEMBeam", "FEMQuad", "ForwardDiff", "HDF5", "HeatTransfer", "LightXML", "LinearAlgebra", "Logging", "MortarContact2D", "MortarContact2DAD", "Pkg", "REPL", "Reexport", "SparseArrays", "Statistics", "Test", "TimerOutputs"]
+git-tree-sha1 = "0c6bd4961c7d5d7f7ab605dc432c5b042fe71127"
+uuid = "f80590ac-b429-510a-8a99-e7c46989f22d"
+version = "0.5.0"
+
 [[JuliaFormatter]]
 deps = ["CSTParser", "Test", "Tokenize"]
 git-tree-sha1 = "7a6577ea3603239d106b6d2e3d3dc179f9a6f48d"
@@ -6316,6 +6322,18 @@ deps = ["Distributed", "Distributions", "GenericLinearAlgebra", "Lazy", "LinearA
 git-tree-sha1 = "9c042fb769b68e501fa60a2293d97f24c31b9239"
 uuid = "0987c9cc-fe09-11e8-30f0-b96dd679fdca"
 version = "0.4.0"
+
+[[MortarContact2D]]
+deps = ["FEMBase", "LinearAlgebra", "SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "7ab9145a90cdb71b785a62a60b5b619838580a9f"
+uuid = "048d6160-1a0b-53cd-a5b3-316946cc8d80"
+version = "0.3.0"
+
+[[MortarContact2DAD]]
+deps = ["FEMBase", "ForwardDiff", "LinearAlgebra", "SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "eb2eabdfb19a3adafe33b66e8d3c2d45b94e9ed0"
+uuid = "c1673bdb-6aff-560b-99da-c78ea6da9af3"
+version = "0.2.0"
 
 [[MsgPack]]
 deps = ["Compat", "Random", "Test"]

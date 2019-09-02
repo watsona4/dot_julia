@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Xdmf xmlns:xi="http://www.w3.org/2001/XInclude" Version="2.1">
+  <Domain>
+    <Grid CollectionType="Temporal" GridType="Collection" Name="Collection">
+      <Geometry Type="None"/>
+      <Topology Dimensions="0" Type="NoTopology"/>
+      <Grid Name="Grid">
+        <Time Value="123"/>
+        <Geometry Type="XYZ">
+          <DataItem DataType="Float" Dimensions="12" Format="XML" Precision="4">
+          	0.0 0.0 0.0
+          	1.0 0.0 0.0
+          	0.0 1.0 0.0
+          	0.0 0.0 1.0
+          </DataItem>
+        </Geometry>
+        <Topology Dimensions="1" Type="Mixed">
+          <DataItem DataType="Int" Dimensions="5" Format="XML" Precision="4">
+          	6 0 1 2 3
+          </DataItem>
+        </Topology>
+        <Attribute Center="Cell" Name="Temperature field" Type="Scalar">
+          <DataItem DataType="Int" Dimensions="1" Format="XML" Precision="4">56</DataItem>
+        </Attribute>
+        <Attribute Center="Node" Name="Density" Type="Vector">
+          <DataItem DataType="Float" Dimensions="12" Format="XML" Precision="4">
+            1.0 2.0 3.0
+          	4.0 5.0 6.0
+          	7.0 8.0 9.0
+          	10.0 11.0 12.0
+          </DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>
