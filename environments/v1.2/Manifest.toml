@@ -5674,6 +5674,12 @@ git-tree-sha1 = "fbe3cd0380189cce905775ec1ac7655104c7785c"
 uuid = "4eec09b6-37c8-513a-a01b-84ce271f0312"
 version = "0.1.0"
 
+[[Jfire]]
+deps = ["Dates"]
+git-tree-sha1 = "1881cc0dd26db3f619c53c2fef0963d11224092f"
+uuid = "3f49405f-012b-5ae6-ad9b-9087b1131e69"
+version = "0.1.0"
+
 [[JuLIP]]
 deps = ["AlgebraicMultigrid", "Calculus", "CommonSubexpressions", "DelimitedFiles", "Dierckx", "ForwardDiff", "FunctionWrappers", "JSON", "LineSearches", "LinearAlgebra", "MacroTools", "NeighbourLists", "Optim", "Printf", "Reexport", "SparseArrays", "StaticArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "2a9bcb7006a0159194d54c9c54c2b933b77ea41d"
