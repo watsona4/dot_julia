@@ -1,0 +1,16 @@
+name = "LazyWAVFiles"
+uuid = "82ba68a1-f779-4cc2-8f94-53af9af8d852"
+authors = ["Fredrik Bagge Carlson <baggepinnen@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+WAV = "8149f6b0-98f6-5db9-b78f-408fbbb8ef88"
+
+[compat]
+julia = "1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
