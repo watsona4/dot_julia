@@ -1,0 +1,9 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+docs/build/
+docs/site/
+*.csv
+deps/*
+!deps/build.jl
+examples/electricdss-tst-master/*

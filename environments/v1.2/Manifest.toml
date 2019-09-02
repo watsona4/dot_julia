@@ -8203,6 +8203,12 @@ git-tree-sha1 = "4e67bbe5f88ac62eb01237e6d0e3befff8b3dcf4"
 uuid = "08131aa3-fb12-5dee-8b74-c09406e224a2"
 version = "0.8.0"
 
+[[OpenDSSDirect]]
+deps = ["Distributed", "DocStringExtensions", "Libdl", "LinearAlgebra", "REPL", "SparseArrays", "Test"]
+git-tree-sha1 = "c16f70d1888223659b649bf95a4c5310ec62abe2"
+uuid = "a8b11937-1041-50f2-9818-136bb7a8fb06"
+version = "0.5.1"
+
 [[Optim]]
 deps = ["Calculus", "DiffEqDiffTools", "FillArrays", "ForwardDiff", "LineSearches", "LinearAlgebra", "NLSolversBase", "NaNMath", "Parameters", "PositiveFactorizations", "Printf", "Random", "SparseArrays", "StatsBase"]
 git-tree-sha1 = "ca8f8917df469d607f8cf116784e58c9c084d0b4"
