@@ -7518,6 +7518,12 @@ git-tree-sha1 = "41e6e7c4b448afeaddaac7f496b414854f83b848"
 uuid = "46d2c3a1-f734-5fdb-9937-b9b9aeba4221"
 version = "0.2.1"
 
+[[MultiDimEquations]]
+deps = ["CSV", "DataFrames", "IndexedTables"]
+git-tree-sha1 = "d76bb9d861348d5b7242531d1417045526b72c16"
+uuid = "a3219271-55cc-59b6-9a1f-6f3111928ce1"
+version = "1.0.0"
+
 [[MultiJuMP]]
 deps = ["Combinatorics", "JuMP", "LaTeXStrings", "LinearAlgebra", "MathProgBase", "RecipesBase", "Test"]
 git-tree-sha1 = "61e02863f22590ba6a843bc568ae271f8c1b5e47"
