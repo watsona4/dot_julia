@@ -5159,6 +5159,12 @@ git-tree-sha1 = "4652144c19884dc1fa5232b0c6af1577d4bacaa3"
 uuid = "e8712464-036d-575c-85ac-952ae31322ab"
 version = "0.8.0"
 
+[[ImageSegmentation]]
+deps = ["Clustering", "DataStructures", "Distances", "ImageFiltering", "Images", "LightGraphs", "LinearAlgebra", "RegionTrees", "SimpleWeightedGraphs", "StaticArrays", "Statistics"]
+git-tree-sha1 = "0daf7d5f0e913f60e16f15e5b9960374285d3038"
+uuid = "80713f31-8817-5129-9cf8-209ff8fb23e1"
+version = "1.2.0"
+
 [[ImageShow]]
 deps = ["Base64", "ColorTypes", "Colors", "FileIO", "FixedPointNumbers", "ImageCore", "OffsetArrays", "Requires"]
 git-tree-sha1 = "c23323afc82b6b553e6b2244d531e50858ea392c"
