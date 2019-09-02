@@ -4669,6 +4669,12 @@ git-tree-sha1 = "e227058e2a48604eff990f304709a89fb62cd8f5"
 uuid = "e54cec92-43bc-5b69-a0ba-12a83b9121d9"
 version = "0.2.1"
 
+[[GrowableArrays]]
+deps = ["EllipsisNotation", "Test"]
+git-tree-sha1 = "de267e3d7bb6719b8e92bcc1bc60baaa30263ef3"
+uuid = "7ebbc34c-24a4-5a3f-b49a-24be4b3feaef"
+version = "0.1.0"
+
 [[Gumbo]]
 deps = ["AbstractTrees", "BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "b16b6c5127e8c6be3084e6658c5fb5dd1f97d7fd"
