@@ -1,0 +1,12 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+julia:
+  - 0.7
+notifications:
+  email: false
+
+# push coverage results to Codecov
+after_success:
+  - julia -e 'cd(Pkg.dir("StructIO")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
