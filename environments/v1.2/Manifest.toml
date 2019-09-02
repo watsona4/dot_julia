@@ -4872,6 +4872,11 @@ git-tree-sha1 = "acfcaf1aa47d038f593f301ed3bdebc0129035bc"
 uuid = "7c893195-952b-5c83-bb6e-be12f22eed51"
 version = "0.1.4"
 
+[[HighLevelTypes]]
+git-tree-sha1 = "b6d30b8a0661f6e65bb70c9c81fd094ffc0d4ce8"
+uuid = "66835562-f1c4-5586-a145-e564a3963a4b"
+version = "0.0.2"
+
 [[Highlights]]
 deps = ["DocStringExtensions", "InteractiveUtils", "REPL", "Test"]
 git-tree-sha1 = "286ff83d696dd92748e603a3219618d9e407e872"
