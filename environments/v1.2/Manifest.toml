@@ -6356,6 +6356,12 @@ git-tree-sha1 = "29b6c5956c5dcc60ddc8606866cbc678c078952e"
 uuid = "b13ce0c6-77b0-50c6-a2db-140568b8d1a5"
 version = "2.0.0"
 
+[[LibSpatialIndex]]
+deps = ["BinaryProvider", "Libdl", "Test"]
+git-tree-sha1 = "39c9838f9c2a86b893d02b7eb880df519eb51ca6"
+uuid = "f19c2e90-9d16-5f2d-a2a7-af3fb29e4907"
+version = "0.1.1"
+
 [[Libdl]]
 uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 
