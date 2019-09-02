@@ -6437,6 +6437,12 @@ git-tree-sha1 = "81c8523528cee4c1171cb817759ab4441b5e389d"
 uuid = "93acb638-a083-5915-8dce-d129bc6a3f59"
 version = "0.2.0"
 
+[[LimitedLDLFactorizations]]
+deps = ["LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "df081c06fdb364ab734f957b9f6cf158110c752e"
+uuid = "f5a24dde-3ab7-510b-b81b-6a72c6098d3b"
+version = "0.2.0"
+
 [[LineSearches]]
 deps = ["LinearAlgebra", "NLSolversBase", "NaNMath", "Parameters", "Printf", "Test"]
 git-tree-sha1 = "54eb90e8dbe745d617c78dee1d6ae95c7f6f5779"

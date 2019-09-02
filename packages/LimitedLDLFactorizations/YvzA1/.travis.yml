@@ -1,0 +1,35 @@
+language: julia
+
+os:
+  - linux
+  - osx
+
+julia:
+  - 0.7
+  - 1.0
+  - nightly
+
+matrix:
+  allow_failures:
+    - julia: nightly
+
+sudo: required
+
+git:
+  depth: 9999
+
+notifications:
+  email: false
+
+branches:
+  only:
+    - master
+
+before_install:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+
+script:
+  - julia --check-bounds=yes -e 'using Pkg; Pkg.clone(pwd()); Pkg.build("LimitedLDLFactorizations"); Pkg.test("LimitedLDLFactorizations"; coverage=true)'
+
+after_success:
+  - julia -e 'cd(Pkg.dir("LimitedLDLFactorizations")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
