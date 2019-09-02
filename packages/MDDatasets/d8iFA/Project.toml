@@ -1,0 +1,15 @@
+name = "MDDatasets"
+uuid = "176e4ad4-9107-502a-977c-53a5728fe704"
+version = "0.3.1"
+
+[deps]
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "1"

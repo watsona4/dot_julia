@@ -6747,6 +6747,12 @@ git-tree-sha1 = "83dcc8a472081067a41fcef9eba1ce2889b3e681"
 uuid = "1ba2fcf6-b438-57ac-94bf-052622d64a91"
 version = "1.1.2"
 
+[[MDDatasets]]
+deps = ["Statistics"]
+git-tree-sha1 = "744aeb4d42424f66e51bace5ef88006f3c349f3a"
+uuid = "176e4ad4-9107-502a-977c-53a5728fe704"
+version = "0.3.1"
+
 [[MLBase]]
 deps = ["IterTools", "Random", "Reexport", "StatsBase", "Test"]
 git-tree-sha1 = "f63a8d37429568b8c4384d76c4a96fc2897d6ddf"
