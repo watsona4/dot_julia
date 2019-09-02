@@ -5075,6 +5075,18 @@ git-tree-sha1 = "8109bb9a28deca29a5b938ebfa7d0a75319d8776"
 uuid = "2803e5a7-5153-5ecf-9a86-9b4c37f5f5ac"
 version = "0.6.0"
 
+[[ImageBinarization]]
+deps = ["ColorTypes", "ColorVectorSpace", "FixedPointNumbers", "HistogramThresholding", "ImageContrastAdjustment", "ImageCore", "LinearAlgebra", "Polynomials", "Statistics"]
+git-tree-sha1 = "8a16c22364ad9992ae2b947c759feba6ed11cf83"
+uuid = "cbc4b850-ae4b-5111-9e64-df94c024a13d"
+version = "0.1.1"
+
+[[ImageContrastAdjustment]]
+deps = ["ColorTypes", "ColorVectorSpace", "FixedPointNumbers", "ImageCore"]
+git-tree-sha1 = "faa92ee1a89e30550617168afe5b00be09d84734"
+uuid = "f332f351-ec65-5f6a-b3d1-319c6670881a"
+version = "0.1.2"
+
 [[ImageCore]]
 deps = ["ColorTypes", "Colors", "FFTW", "FixedPointNumbers", "Graphics", "MappedArrays", "OffsetArrays", "PaddedViews", "Reexport"]
 git-tree-sha1 = "2fb7a0d80ab6bf0c5a8b0a189bca60311c73a605"
