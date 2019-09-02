@@ -7607,6 +7607,12 @@ git-tree-sha1 = "d56d38a175bf2c6b5beae8a25220e76bc520bbae"
 uuid = "b10b62ed-fbae-5ea5-b934-abaf0477b71d"
 version = "1.0.1"
 
+[[MusicManipulations]]
+deps = ["DefaultApplication", "MIDI", "MotifSequenceGenerator", "Reexport", "Requires", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "77607c646650380203f980132043c00781c675fc"
+uuid = "274955c0-c284-5bf7-b122-5ecd51c559de"
+version = "0.8.3"
+
 [[Mustache]]
 deps = ["Printf", "Tables"]
 git-tree-sha1 = "f39de3a12232eb47bd0629b3a661054287780276"
