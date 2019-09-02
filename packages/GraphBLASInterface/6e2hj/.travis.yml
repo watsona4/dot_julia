@@ -1,0 +1,12 @@
+language: julia
+
+os:
+  - linux
+
+julia:
+  - nightly
+  - 1.0
+
+after_success:
+    - julia -e 'using Pkg; ps=Pkg.PackageSpec(name="Documenter", version="0.22"); Pkg.add(ps); Pkg.pin(ps)'
+    - julia -e 'using Pkg; cd(Pkg.dir("GraphBLASInterface")); include(joinpath("docs", "make.jl"))'

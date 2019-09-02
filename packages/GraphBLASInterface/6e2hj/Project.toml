@@ -1,0 +1,10 @@
+name = "GraphBLASInterface"
+uuid = "5f047416-9681-11e9-0804-033d9936201f"
+authors = ["Abhinav Mehndiratta <abhinavmehndiratta@gmail.com>"]
+version = "0.2.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "1"

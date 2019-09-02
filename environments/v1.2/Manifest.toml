@@ -4585,6 +4585,12 @@ git-tree-sha1 = "c65060f95f38eb5606c172fab19d1418e8f97536"
 uuid = "f5c4805d-b585-58fe-b08a-e9c59614aa64"
 version = "0.4.3"
 
+[[GraphBLASInterface]]
+deps = ["Test"]
+git-tree-sha1 = "6947b14a5488947abce9daac4a35c42e62addcd4"
+uuid = "5f047416-9681-11e9-0804-033d9936201f"
+version = "0.2.0"
+
 [[GraphPlot]]
 deps = ["ArnoldiMethod", "ColorTypes", "Colors", "Compose", "DelimitedFiles", "LightGraphs", "LinearAlgebra", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "f4435ce0055d4da938f3bab0c0e523826735c96a"
