@@ -8001,6 +8001,12 @@ git-tree-sha1 = "4017c932561962d9c35e22bb9d28184fc8c2dc85"
 uuid = "00e1d38a-71a9-5665-8612-32ae585a75a3"
 version = "1.0.0"
 
+[[OAuth]]
+deps = ["Base64", "HTTP", "MbedTLS", "Random", "Test"]
+git-tree-sha1 = "1b2498c707f68a0ac51e30197a00dfd65c7b1183"
+uuid = "22d8b318-f366-56fb-a292-a93f7d76c017"
+version = "0.7.1"
+
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"
