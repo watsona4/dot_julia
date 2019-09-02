@@ -1,0 +1,19 @@
+name = "H3"
+uuid = "f62fece2-b996-571a-b4c9-e662aba1c617"
+authors = ["WooKyoung Noh <wookay.noh@gmail.com>"]
+version = "0.1.1"
+
+[deps]
+BinaryProvider = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+CEnum = "fa961155-64e5-5f13-b03f-caf6b980ea82"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+
+[extras]
+Jive = "ba5e3d4b-8524-549f-bc71-e76ad9e9deed"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "Jive"]
+
+[compat]
+julia = "1"

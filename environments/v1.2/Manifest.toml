@@ -4717,6 +4717,12 @@ git-tree-sha1 = "67055d4be2f47c47f662402c695297b2e5000f82"
 uuid = "4896a6fa-884d-11e9-35a0-9763e69c01ff"
 version = "0.1.0"
 
+[[H3]]
+deps = ["BinaryProvider", "CEnum", "Libdl"]
+git-tree-sha1 = "3abb51799ee646ca49b3d067b9ce4163d6d09b21"
+uuid = "f62fece2-b996-571a-b4c9-e662aba1c617"
+version = "0.1.1"
+
 [[HCubature]]
 deps = ["Combinatorics", "DataStructures", "LinearAlgebra", "QuadGK", "StaticArrays"]
 git-tree-sha1 = "fc4adde0a029bf69c0da3f7c25ca24b5e0e389ed"
