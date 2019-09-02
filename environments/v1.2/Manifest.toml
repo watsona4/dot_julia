@@ -5224,6 +5224,12 @@ git-tree-sha1 = "bbbef2426c253f3de0b7ec9a4802f9d3604421a0"
 uuid = "f7bf1975-0170-51b9-8c5f-a992d46b9575"
 version = "0.3.0"
 
+[[InPlace]]
+deps = ["Test"]
+git-tree-sha1 = "16dd0f4b0f0b40ec10af1b790480becbc0bcfd5a"
+uuid = "12a7aed9-f4ee-5e21-a57e-4f63a8148421"
+version = "0.2.0"
+
 [[IncrementalInference]]
 deps = ["ApproxManifoldProducts", "Dates", "Distributed", "DistributedFactorGraphs", "Distributions", "DocStringExtensions", "FileIO", "FunctionalStateMachine", "Graphs", "JLD2", "JSON2", "KernelDensityEstimate", "LinearAlgebra", "Logging", "NLsolve", "Optim", "ProgressMeter", "Random", "Reexport", "Requires", "SparseArrays", "Statistics", "StatsBase", "SuiteSparse"]
 git-tree-sha1 = "5d1169c51c47d601a3e8372d79142b9069993497"

@@ -1,0 +1,7 @@
+name = "InPlace"
+uuid = "12a7aed9-f4ee-5e21-a57e-4f63a8148421"
+authors = ["Timo Kluck <tkluck@infty.nl>"]
+version = "0.2.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
