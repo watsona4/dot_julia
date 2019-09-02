@@ -6914,6 +6914,12 @@ git-tree-sha1 = "d6e9dedb8c92c3465575442da456aec15a89ff76"
 uuid = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
 version = "0.5.1"
 
+[[MagneticReadHead]]
+deps = ["Cassette", "CodeTracking", "InteractiveUtils", "MacroTools", "OrderedCollections", "Revise"]
+git-tree-sha1 = "ec481eb678bd7f5d4642996c9b5def19137de7a3"
+uuid = "63dd013e-5414-5e51-b21a-a24e12ed54cf"
+version = "0.3.0"
+
 [[MappedArrays]]
 deps = ["Test"]
 git-tree-sha1 = "923441c5ac942b60bd3a842d5377d96646bcbf46"
