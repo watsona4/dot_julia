@@ -6705,6 +6705,12 @@ git-tree-sha1 = "83e759f62ad879fff5198e378a68029b440640f7"
 uuid = "58716550-704d-11e9-05c2-8f708e47025f"
 version = "0.1.2"
 
+[[MCMCBenchmarks]]
+deps = ["AdvancedHMC", "BenchmarkTools", "CSV", "CmdStan", "DataFrames", "Dates", "Distributed", "Distributions", "DynamicHMC", "FillArrays", "ForwardDiff", "LinearAlgebra", "LogDensityProblems", "MCMCChains", "MCMCDiagnostics", "Parameters", "Pkg", "Random", "Reexport", "Revise", "SpecialFunctions", "Statistics", "StatsPlots", "TransformVariables", "Turing"]
+git-tree-sha1 = "c6f44a64f96ba3b2cb14c2d99e648759ab9f4722"
+uuid = "72ce6e51-3f7f-5ebd-8e88-b86aa3e31c30"
+version = "0.5.0"
+
 [[MCMCChains]]
 deps = ["AxisArrays", "DataFrames", "Distributions", "KernelDensity", "LinearAlgebra", "Plots", "Random", "RecipesBase", "Serialization", "Showoff", "SpecialFunctions", "Statistics", "StatsBase"]
 git-tree-sha1 = "69859d2c2f8747433817fcd313b79ca78ec527f0"
