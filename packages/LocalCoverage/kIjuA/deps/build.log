@@ -1,0 +1,2 @@
+┌ Warning: Could not find `genhtml`, you need to install it to generate HTML reports.
+└ @ Main ~/.julia/packages/LocalCoverage/kIjuA/deps/build.jl:15

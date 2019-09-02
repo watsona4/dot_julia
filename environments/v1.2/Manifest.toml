@@ -6542,6 +6542,12 @@ git-tree-sha1 = "cb7d253514ed8c7c92fe9288fce474ea8132ef43"
 uuid = "16fef848-5104-11e9-1b77-fb7a48bbb589"
 version = "0.1.0"
 
+[[LocalCoverage]]
+deps = ["Coverage", "DocStringExtensions", "Pkg", "Test"]
+git-tree-sha1 = "22d9584f5c35abd0e105f288e479f56b4700d0d8"
+uuid = "5f6e1e16-694c-5876-87ef-16b5274f298e"
+version = "0.1.0"
+
 [[Loess]]
 deps = ["Distances", "Random", "Statistics", "Test"]
 git-tree-sha1 = "0ee46caf683a422b595be4dfaed6cda28f541e25"
