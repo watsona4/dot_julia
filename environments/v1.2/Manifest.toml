@@ -8567,6 +8567,12 @@ git-tree-sha1 = "b0baaa5218ca0ffd6a8ae37ef0b58e0df688ac8b"
 uuid = "06bb1623-fdd5-5ca2-a01c-88eae3ea319e"
 version = "0.1.2"
 
+[[PeriodicTable]]
+deps = ["Compat", "Unitful"]
+git-tree-sha1 = "fe7c0cfc395c735db8df9ca59ae0c3c177cb05b0"
+uuid = "7b2266bf-644c-5ea3-82d8-af4bbd25a884"
+version = "0.1.2"
+
 [[Permutations]]
 deps = ["Combinatorics", "LinearAlgebra", "Random", "Test"]
 git-tree-sha1 = "6b51b8689ed5bf3b99643bd8eadb962ace80ea86"
