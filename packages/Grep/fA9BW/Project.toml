@@ -1,0 +1,8 @@
+name = "Grep"
+uuid = "8385b588-a281-11e8-1e14-5f920b86414f"
+authors = ["Glen Hertz <glen.hertz@gmail.com>"]
+version = "0.2.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
