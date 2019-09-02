@@ -8221,6 +8221,12 @@ git-tree-sha1 = "db9902af85af2b55e5e00aa305a091e97d8e3eed"
 uuid = "281f80d8-6e88-11e9-078b-b90be1742701"
 version = "0.1.1"
 
+[[OpenStreetMapX]]
+deps = ["DataStructures", "HTTP", "JSON", "LibExpat", "LightGraphs", "Serialization", "SparseArrays", "Statistics"]
+git-tree-sha1 = "d27bd41208eceb2f71dc77e8592d491728dc8173"
+uuid = "86cd37e6-c0ff-550b-95fe-21d72c8d4fc9"
+version = "0.1.11"
+
 [[Optim]]
 deps = ["Calculus", "DiffEqDiffTools", "FillArrays", "ForwardDiff", "LineSearches", "LinearAlgebra", "NLSolversBase", "NaNMath", "Parameters", "PositiveFactorizations", "Printf", "Random", "SparseArrays", "StatsBase"]
 git-tree-sha1 = "ca8f8917df469d607f8cf116784e58c9c084d0b4"
