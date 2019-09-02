@@ -1,0 +1,23 @@
+name = "ODEInterfaceDiffEq"
+uuid = "09606e27-ecf5-54fc-bb29-004bd9f985bf"
+authors = ["Chris Rackauckas <accounts@chrisrackauckas.com>"]
+version = "v3.3.1"
+
+[deps]
+Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+DiffEqBase = "2b5f629d-d688-5b77-993f-72d75c75574e"
+FunctionWrappers = "069b7b12-0de2-55c6-9aab-29f3d0a68a2e"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+ODEInterface = "54ca160b-1b9f-5127-a996-1867f4bc2a2c"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+
+[compat]
+julia = "1"
+
+[extras]
+DiffEqProblemLibrary = "a077e3f3-b75c-5d7f-a0c6-6bc4c8ec64a9"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test","DiffEqProblemLibrary"]
