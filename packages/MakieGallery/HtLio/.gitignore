@@ -1,0 +1,17 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+precompile.jl
+build
+src/glbackend/.cache
+test/testimages/*
+*.png
+*.jpg
+Manifest.toml
+docs/Manifest.toml
+prec
+tmax
+prec.zip
+tmax.zip
+.DS_Store
+

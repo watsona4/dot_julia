@@ -6932,6 +6932,12 @@ git-tree-sha1 = "82c3e000788930bd3e7e957c2149cbaa7b59960d"
 uuid = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 version = "0.9.5"
 
+[[MakieGallery]]
+deps = ["AbstractPlotting", "BinaryProvider", "ColorTypes", "Colors", "Documenter", "FFMPEG", "FileIO", "FixedPointNumbers", "Highlights", "ImageFiltering", "ImageTransformations", "LinearAlgebra", "Markdown", "ModernGL", "Observables", "OrdinaryDiffEq", "ParameterizedFunctions", "RDatasets", "Random", "Statistics", "Test"]
+git-tree-sha1 = "f3d925225edf84525593b3f286340f37362f4745"
+uuid = "dbd62bd0-c9f5-5087-a2e1-f5c4bb0cec90"
+version = "0.1.0"
+
 [[MappedArrays]]
 deps = ["Test"]
 git-tree-sha1 = "923441c5ac942b60bd3a842d5377d96646bcbf46"

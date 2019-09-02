@@ -1,0 +1,7 @@
+/media/*
+/testresults/*
+/test_recordings/
+/prec/
+*.zip
+/tmax/
+tested_different
