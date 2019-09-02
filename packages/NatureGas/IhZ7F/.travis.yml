@@ -1,0 +1,10 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+notifications:
+  email: false
+git:
+  depth: 9999999

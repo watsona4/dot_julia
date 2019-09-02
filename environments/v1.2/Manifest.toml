@@ -7827,6 +7827,12 @@ git-tree-sha1 = "2d3fc3c786b51b10872b7b067192682a247bda76"
 uuid = "872cf16e-200e-11e9-2cdf-8bb39cfbec41"
 version = "0.3.0"
 
+[[NatureGas]]
+deps = ["Roots", "Test"]
+git-tree-sha1 = "28462d28ee55ed3378aa682be12c6fe09da06254"
+uuid = "e0f4c8e6-5ce5-555a-ba92-69b8d3d44885"
+version = "0.0.6"
+
 [[NearestNeighbors]]
 deps = ["Distances", "LinearAlgebra", "Mmap", "StaticArrays", "Test"]
 git-tree-sha1 = "f47c5d97cf9a8caefa47e9fa9d99d8fda1a65154"
