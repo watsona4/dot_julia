@@ -1,0 +1,10 @@
+name = "SurfaceTopology"
+uuid = "1db0cb78-5717-11e9-0361-01e0964942ce"
+authors = ["akels <akels14@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+GeometryTypes = "4d00f742-c7ba-57c2-abde-4428a4b178cb"
+
+[compat]
+julia = "1"

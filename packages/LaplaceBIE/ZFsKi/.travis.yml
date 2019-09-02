@@ -1,0 +1,25 @@
+language: julia
+sudo: required
+os:
+  - linux
+julia:
+  - 1.1
+addons:
+    apt:
+        packages:
+            - xvfb
+            - xauth
+            - libgtk-3-dev
+
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.1
+      os: linux
+      script:
+        - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+        - if [[ `uname` = "Linux" ]]; then TESTCMD="xvfb-run julia"; else TESTCMD="julia"; fi
+        - $TESTCMD --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd()));
+                                               Pkg.instantiate(); Pkg.build("Cairo")'
+        - $TESTCMD --project=docs/ docs/make.jl
+      after_success: skip

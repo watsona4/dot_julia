@@ -1,0 +1,5 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+DropletFramework = "79283098-a376-5080-b63a-6e180324c3d0"
+GeometryTypes = "4d00f742-c7ba-57c2-abde-4428a4b178cb"
+Literate = "98b081ad-f1c9-55d3-8b20-4c87d4299306"

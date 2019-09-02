@@ -1,0 +1,10 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+GeometryTypes = "4d00f742-c7ba-57c2-abde-4428a4b178cb"
+Jacobi = "83f21c0b-4282-5fbc-9e3f-f6da3d2e584c"
+LaplaceBIE = "25f206ee-5729-11e9-3bb3-7baf6634b443"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Literate = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
+QuadGK = "1fd47b50-473d-5c70-9696-f719f8f3bcdc"
+SurfaceTopology = "1db0cb78-5717-11e9-0361-01e0964942ce"
+Winston = "bd07be1c-e76f-5ff0-9c0b-f51ef45303c6"

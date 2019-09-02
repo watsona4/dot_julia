@@ -6133,6 +6133,12 @@ git-tree-sha1 = "fc6ee05e35074a66dc12a716065a25d9deece6fb"
 uuid = "8ef0a80b-9436-5d2c-a485-80b904378c43"
 version = "0.4.2"
 
+[[LaplaceBIE]]
+deps = ["FastGaussQuadrature", "GeometryTypes", "LinearAlgebra", "SurfaceTopology"]
+git-tree-sha1 = "7899075fa3575fa2d962ac17d14e72061d2ab5cc"
+uuid = "25f206ee-5729-11e9-3bb3-7baf6634b443"
+version = "0.1.0"
+
 [[Lasso]]
 deps = ["DSP", "Distributions", "GLM", "LinearAlgebra", "MLBase", "Random", "Reexport", "SparseArrays", "StatsBase"]
 git-tree-sha1 = "d16e4026612333e691001984b593ac42e0ee07e9"
@@ -7832,6 +7838,12 @@ deps = ["Compat"]
 git-tree-sha1 = "a39342763981e766a72938b59032dc02a2d74da5"
 uuid = "fd094767-a336-5f1f-9728-57cf17d0bbfb"
 version = "0.1.1"
+
+[[SurfaceTopology]]
+deps = ["GeometryTypes"]
+git-tree-sha1 = "74840bce8734609e4b921aefdceed22e18460b52"
+uuid = "1db0cb78-5717-11e9-0361-01e0964942ce"
+version = "0.1.0"
 
 [[Swagger]]
 deps = ["Dates", "HTTP", "JSON", "MbedTLS"]
