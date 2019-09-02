@@ -6699,6 +6699,12 @@ git-tree-sha1 = "89ab46e322f9216728961119f7131038f5e4d22b"
 uuid = "10e44e05-a98a-55b3-a45b-ba969058deb6"
 version = "0.7.3"
 
+[[MCHammer]]
+deps = ["CSV", "Compose", "DataFrames", "Distributions", "Gadfly", "IterableTables", "LinearAlgebra", "Random", "Statistics", "StatsBase", "TimeSeries"]
+git-tree-sha1 = "83e759f62ad879fff5198e378a68029b440640f7"
+uuid = "58716550-704d-11e9-05c2-8f708e47025f"
+version = "0.1.2"
+
 [[MCMCChains]]
 deps = ["AxisArrays", "DataFrames", "Distributions", "KernelDensity", "LinearAlgebra", "Plots", "Random", "RecipesBase", "Serialization", "Showoff", "SpecialFunctions", "Statistics", "StatsBase"]
 git-tree-sha1 = "69859d2c2f8747433817fcd313b79ca78ec527f0"
