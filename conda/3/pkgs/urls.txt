@@ -109,3 +109,4 @@ https://conda.anaconda.org/conda-forge/linux-64/pyrsistent-0.15.4-py37h516909a_0
 https://conda.anaconda.org/conda-forge/linux-64/pickleshare-0.7.5-py37_1000.tar.bz2
 https://conda.anaconda.org/conda-forge/noarch/prometheus_client-0.7.1-py_0.tar.bz2
 https://conda.anaconda.org/conda-forge/noarch/jupyter_client-5.3.1-py_0.tar.bz2
+https://conda.anaconda.org/plotly/linux-64/plotly-orca-1.2.1-1.tar.bz2

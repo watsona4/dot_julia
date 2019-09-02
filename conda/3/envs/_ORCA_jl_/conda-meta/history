@@ -1,0 +1,8 @@
+==> 2019-09-02 16:46:38 <==
+# cmd: /home/ec2-user/.julia/conda/3/bin/conda create -y -p /home/ec2-user/.julia/conda/3/envs/_ORCA_jl_
+# conda version: 4.7.11
+==> 2019-09-02 16:49:03 <==
+# cmd: /home/ec2-user/.julia/conda/3/bin/conda install -y plotly-orca
+# conda version: 4.7.11
++plotly::plotly-orca-1.2.1-1
+# update specs: ['plotly-orca']

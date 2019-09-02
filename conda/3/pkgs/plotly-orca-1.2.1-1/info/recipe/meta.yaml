@@ -1,0 +1,22 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/circleci/project/recipe, last modified Mon Feb  4 15:32:32 2019
+# ------------------------------------------------
+
+package:
+    name: plotly-orca
+    version: 1.2.1
+source:
+    path: /home/circleci/project
+build:
+    binary_relocation: false
+    number: '1'
+    string: '1'
+requirements:
+    build:
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - nodejs 8.12.0 he6710b0_0
+extra:
+    copy_test_source_files: true
+    final: true

@@ -1,0 +1,7 @@
+node_modules/
+deps/build.log
+deps/condarc-julia.yml
+deps/conda-meta
+deps/bin
+deps/lib
+paths.jl

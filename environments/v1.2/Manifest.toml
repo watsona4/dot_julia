@@ -8084,6 +8084,12 @@ git-tree-sha1 = "3dc50b08d69a015d4cb91f0dcff0ed2f4973b1e1"
 uuid = "90c472d1-064c-5c63-af2e-229f1fdb5f26"
 version = "0.3.0"
 
+[[ORCA]]
+deps = ["Conda", "HTTP", "JSON", "PlotlyBase", "Test"]
+git-tree-sha1 = "0718acdf588e57865efc041023827c885a6d36cd"
+uuid = "47be7bcc-f1a6-5447-8b36-7eeeff7534fd"
+version = "0.2.1"
+
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"

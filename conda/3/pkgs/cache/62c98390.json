@@ -1,4 +1,4 @@
-{"_url": "https://conda.anaconda.org/conda-forge/noarch", "_etag": "W/\"996df793f1a5c6baa647e10410829846\"", "_mod": "Mon, 02 Sep 2019 00:48:04 GMT", "_cache_control": "public, max-age=1200", 
+{"_url": "https://conda.anaconda.org/conda-forge/noarch", "_etag": "W/\"f0d599c209677ea3bfef2196553aea58\"", "_mod": "Mon, 02 Sep 2019 16:29:45 GMT", "_cache_control": "public, max-age=1200", 
   "info": {
     "subdir": "noarch"
   },
@@ -2000,8 +2000,8 @@
       "timestamp": 1524266967040,
       "version": "0.2.5"
     },
-    "asteval-0.9.14-pyh24bf2e0_0.tar.bz2": {
-      "build": "pyh24bf2e0_0",
+    "asteval-0.9.15-pyh5ca1d4c_0.tar.bz2": {
+      "build": "pyh5ca1d4c_0",
       "build_number": 0,
       "depends": [
         "numpy",
@@ -2010,14 +2010,14 @@
         "six"
       ],
       "license": "BSD",
-      "md5": "d097e7d9d37fad7fc363d526eff280d1",
+      "md5": "9d368cec3cdb24b99195e1f75c766fd9",
       "name": "asteval",
       "noarch": "python",
-      "sha256": "49dcb6b4d385f00e42af202e9591cc68cea12e1fea87bdd3ad0ab4bfd39a8d49",
-      "size": 18673,
+      "sha256": "5fea492a3092a252a79fb7f8ec6a7ef96e5471b9f5af745a14fe973124cc64a0",
+      "size": 18776,
       "subdir": "noarch",
-      "timestamp": 1558718754826,
-      "version": "0.9.14"
+      "timestamp": 1567425711749,
+      "version": "0.9.15"
     },
     "astor-0.7.1-py_0.tar.bz2": {
       "build": "py_0",
@@ -14253,24 +14253,24 @@
       "subdir": "noarch",
       "version": "1.4.0"
     },
-    "dpdata-0.1.4-py_0.tar.bz2": {
+    "dpdata-0.1.5-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
         "monty",
-        "numpy >=1.17.0,<2.0a0",
+        "numpy >=1.17.1,<2.0a0",
         "python >=3.5"
       ],
       "license": "LGPL-3.0",
       "license_family": "LGPL",
-      "md5": "7e7b1a4b97ce33fa909f48eac194377f",
+      "md5": "9a96d3471b60c2f8b930307ba17626ef",
       "name": "dpdata",
       "noarch": "python",
-      "sha256": "79d659264c0854eb5b71609143f0e60ff5716347152530e8f1e577b2eaf7c297",
-      "size": 30181,
+      "sha256": "500469e04ec9df55580a74cb3183d9e9298cd1268c112b872191dfabea4848cf",
+      "size": 30549,
       "subdir": "noarch",
-      "timestamp": 1565528833872,
-      "version": "0.1.4"
+      "timestamp": 1567438017886,
+      "version": "0.1.5"
     },
     "dpgen-0.3.0-py_0.tar.bz2": {
       "build": "py_0",
@@ -16303,7 +16303,7 @@
       "timestamp": 1559985804883,
       "version": "1.3.1"
     },
-    "ezdxf-0.9-py_0.tar.bz2": {
+    "ezdxf-0.10-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
@@ -16312,14 +16312,14 @@
       ],
       "license": "MIT",
       "license_family": "MIT",
-      "md5": "727c5b77a41ae864cbca0f843c25131f",
+      "md5": "b93f870df594121dac939dfb537a2469",
       "name": "ezdxf",
       "noarch": "python",
-      "sha256": "cf1ec33f0f90149e8e79dfba028cac2ae1f64b2d6dc2c6be8ffe32c73a608a95",
-      "size": 263403,
+      "sha256": "c226fbe7d5090bc4a3e07094c258db5daaab7a7485fb9bf15bb5b47b4988dfce",
+      "size": 302856,
       "subdir": "noarch",
-      "timestamp": 1551197851724,
-      "version": "0.9"
+      "timestamp": 1567414588375,
+      "version": "0.10"
     },
     "ezodf-0.3.2-py_2.tar.bz2": {
       "build": "py_2",
@@ -18067,6 +18067,28 @@
       "timestamp": 1564766686027,
       "version": "0.9.3"
     },
+    "flasgger-0.9.3-py_1.tar.bz2": {
+      "build": "py_1",
+      "build_number": 1,
+      "depends": [
+        "flask >=0.10",
+        "jsonschema >=2.5.1,<3.0.0a0",
+        "mistune",
+        "python",
+        "pyyaml >=3.0",
+        "six >=1.10.0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "5ee23f829c04889a823f4087e4ce9f6a",
+      "name": "flasgger",
+      "noarch": "python",
+      "sha256": "9564fbb362d0b90373a4604010b88e393dbd44beb31958e6c8301ea94ef0043b",
+      "size": 3138871,
+      "subdir": "noarch",
+      "timestamp": 1567424088187,
+      "version": "0.9.3"
+    },
     "flask-0.11.1-py_1.tar.bz2": {
       "arch": null,
       "build": "py_1",
@@ -18904,6 +18926,25 @@
       "size": 7678,
       "subdir": "noarch",
       "timestamp": 1532410053107,
+      "version": "0.4.0"
+    },
+    "flask-redis-0.4.0-py_0.tar.bz2": {
+      "build": "py_0",
+      "build_number": 0,
+      "depends": [
+        "flask >=0.8",
+        "python",
+        "redis-py >=2.7.6"
+      ],
+      "license": "Blue Oak Model 1.0.0",
+      "license_family": "OTHER",
+      "md5": "53027c0a1d3b6a2a4418bed7035098ea",
+      "name": "flask-redis",
+      "noarch": "python",
+      "sha256": "576bdca56e53b3f27646e97d6f05a846b3bb71a3ecbb0b3d181e9eef0a907f45",
+      "size": 10560,
+      "subdir": "noarch",
+      "timestamp": 1567423590564,
       "version": "0.4.0"
     },
     "flask-rest-api-0.16.1-py_0.tar.bz2": {
@@ -29693,7 +29734,7 @@
       "timestamp": 1562105643495,
       "version": "1.1.4"
     },
-    "libpysal-4.0.1-py_0.tar.bz2": {
+    "libpysal-4.1.1-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
@@ -29703,14 +29744,14 @@
         "scipy >=0.11"
       ],
       "license": "BSD-3-Clause",
-      "md5": "e346a0eba7d40349103827fba79cc13b",
+      "md5": "98c1760b74fbb5c9a81b88be9de00597",
       "name": "libpysal",
       "noarch": "python",
-      "sha256": "db02bfd32f86d0682bcd26a22001b6c00a07ef5304ea9600b214c4ba9b97a786",
-      "size": 21763719,
+      "sha256": "215262756ddc1f1cbd26be4d9eff891f6aad05eb708ae7f44a86f6572f23b0d6",
+      "size": 21907984,
       "subdir": "noarch",
-      "timestamp": 1540821599759,
-      "version": "4.0.1"
+      "timestamp": 1567440567238,
+      "version": "4.1.1"
     },
     "librdmacm-cos6-x86_64-1.0.21-h1341992_0.tar.bz2": {
       "build": "h1341992_0",
@@ -31369,7 +31410,7 @@
       "timestamp": 1563185519782,
       "version": "2.0.1"
     },
-    "marshmallow-sqlalchemy-0.17.1-py_0.tar.bz2": {
+    "marshmallow-sqlalchemy-0.17.2-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
@@ -31379,14 +31420,14 @@
       ],
       "license": "MIT",
       "license_family": "MIT",
-      "md5": "424cb1197be4debbc1186f4df9162a61",
+      "md5": "f881a0afba1b161289f5df760cb73da4",
       "name": "marshmallow-sqlalchemy",
       "noarch": "python",
-      "sha256": "f388af4b88c5d891baaf15aeacc97f258f5cb8caa9b733cb7fd4ef3cc59ef5c3",
-      "size": 14252,
+      "sha256": "ec72a5cb456ccf20452178a6df74eec288cdf0faa504ecaca4e0cc3d158fdfb1",
+      "size": 14289,
       "subdir": "noarch",
-      "timestamp": 1567284729181,
-      "version": "0.17.1"
+      "timestamp": 1567400943474,
+      "version": "0.17.2"
     },
     "marstime-0.5.6-py_0.tar.bz2": {
       "build": "py_0",
@@ -41589,6 +41630,66 @@
       "timestamp": 1566156707190,
       "version": "19.8.18"
     },
+    "pycp2k-0.2.2-py_0.tar.bz2": {
+      "build": "py_0",
+      "build_number": 0,
+      "depends": [
+        "ase",
+        "future",
+        "numpy",
+        "python"
+      ],
+      "license": "LGPL-3.0",
+      "license_family": "LGPL",
+      "md5": "ee7b3b7ebf44498699b732962931eda3",
+      "name": "pycp2k",
+      "noarch": "python",
+      "sha256": "bdf4faf525de7729a3a60f0ed462ec6ef9e2ca0f08697d464934cc826822e47c",
+      "size": 313834,
+      "subdir": "noarch",
+      "timestamp": 1567419894161,
+      "version": "0.2.2"
+    },
+    "pycp2k-0.2.2-py_1.tar.bz2": {
+      "build": "py_1",
+      "build_number": 1,
+      "depends": [
+        "ase",
+        "future",
+        "numpy",
+        "python"
+      ],
+      "license": "LGPL-3.0",
+      "license_family": "LGPL",
+      "md5": "318ac8baa49505b2e8fb45c8f3d74c4d",
+      "name": "pycp2k",
+      "noarch": "python",
+      "sha256": "6c4f9cf42397b935931740d3c948ba35fba9c775dc5936b78d9b43becfdaedd4",
+      "size": 311701,
+      "subdir": "noarch",
+      "timestamp": 1567428543107,
+      "version": "0.2.2"
+    },
+    "pycp2k-0.2.2-py_2.tar.bz2": {
+      "build": "py_2",
+      "build_number": 2,
+      "depends": [
+        "ase",
+        "future",
+        "numpy",
+        "python"
+      ],
+      "license": "LGPL-3.0",
+      "license_family": "LGPL",
+      "md5": "d53139a19a92f30ffd984f3789188fb8",
+      "name": "pycp2k",
+      "noarch": "python",
+      "sha256": "1a2ed2a1802680a93739db70b49e4ee01f9ec416dac523c2bd72fa29d486b667",
+      "size": 315276,
+      "subdir": "noarch",
+      "timestamp": 1567435877833,
+      "version": "0.2.2"
+    },
     "pycparser-2.19-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
@@ -49168,6 +49269,45 @@
       "timestamp": 1530534861641,
       "version": "0.5.5"
     },
+    "pythonqwt-0.5.5-pyh60721f3_4.tar.bz2": {
+      "build": "pyh60721f3_4",
+      "build_number": 4,
+      "depends": [
+        "numpy",
+        "pyqt 5.*",
+        "pyqt >=5.9.2,<5.10.0a0",
+        "python"
+      ],
+      "license": "LGPL-2.1",
+      "license_family": "LGPL",
+      "md5": "9ff2738021e9c1a6321b89c1c629374d",
+      "name": "pythonqwt",
+      "noarch": "python",
+      "sha256": "7af9fb7283b1bd91fb7993272358486d086a10b2320da82d126f6b659f5aaec8",
+      "size": 129870,
+      "subdir": "noarch",
+      "timestamp": 1567434620739,
+      "version": "0.5.5"
+    },
+    "pythonqwt-0.5.5-pyh7dde376_4.tar.bz2": {
+      "build": "pyh7dde376_4",
+      "build_number": 4,
+      "depends": [
+        "numpy",
+        "pyqt 4.*",
+        "python"
+      ],
+      "license": "LGPL-2.1",
+      "license_family": "LGPL",
+      "md5": "ebd1bf037b4020a47a0aebafdb65a8d6",
+      "name": "pythonqwt",
+      "noarch": "python",
+      "sha256": "6c9756ee112509471d0b4e4063a1b88205ee577125384dfa9559c12024b8a546",
+      "size": 129995,
+      "subdir": "noarch",
+      "timestamp": 1567434610675,
+      "version": "0.5.5"
+    },
     "pythonqwt-0.5.5-pyh8a2030e_0.tar.bz2": {
       "arch": null,
       "build": "pyh8a2030e_0",
@@ -50083,7 +50223,7 @@
       "timestamp": 1547466827319,
       "version": "6.1"
     },
-    "qsymm-1.1.2-py_0.tar.bz2": {
+    "qsymm-1.2.1-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
@@ -50095,14 +50235,14 @@
       ],
       "license": "BSD 3-Clause",
       "license_family": "BSD",
-      "md5": "480f595ef1142addf8b89226d966259e",
+      "md5": "592b5e3821be52050da3d051267dac16",
       "name": "qsymm",
       "noarch": "python",
-      "sha256": "ec3615c462ab377e22b0079e7f2adad902bb10991f5848520b682ae2ce44a2cc",
-      "size": 58829,
+      "sha256": "9ba18cb30ed115416f9a7662c1acb102f5a4d4f3f06a3191cfcdbb31f94223f7",
+      "size": 66073,
       "subdir": "noarch",
-      "timestamp": 1550435945022,
-      "version": "1.1.2"
+      "timestamp": 1567429236852,
+      "version": "1.2.1"
     },
     "qt.py-1.2.1-py_0.tar.bz2": {
       "build": "py_0",
@@ -50158,11 +50298,12 @@
       "timestamp": 1564070936766,
       "version": "0.6.0"
     },
-    "qtconsole-4.5.4-py_0.tar.bz2": {
+    "qtconsole-4.5.5-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
         "ipykernel >=4.1",
+        "ipython_genutils",
         "jupyter_client >=4.1",
         "jupyter_core",
         "pygments",
@@ -50171,14 +50312,14 @@
         "traitlets"
       ],
       "license": "BSD 3-Clause",
-      "md5": "8f2008ed68d872b02ebff1de8911ba13",
+      "md5": "c1170b74a0a157f8b2e7d391b14ff8b0",
       "name": "qtconsole",
       "noarch": "python",
-      "sha256": "4e5e24125230717d7abf8f108adeacd68e8b3cc36624eac95b6a1db21c39530e",
-      "size": 91322,
+      "sha256": "79955b53447d437d5f8facf145afb422add32519c204693213448dcf48b69981",
+      "size": 91668,
       "subdir": "noarch",
-      "timestamp": 1566483355015,
-      "version": "4.5.4"
+      "timestamp": 1567435298865,
+      "version": "4.5.5"
     },
     "qtpy-1.9.0-py_0.tar.bz2": {
       "build": "py_0",
@@ -107643,6 +107784,42 @@
       "timestamp": 1563601817031,
       "version": "1.1_7"
     },
+    "r-sinaplot-1.1.0-r35h6115d3f_0.tar.bz2": {
+      "build": "r35h6115d3f_0",
+      "build_number": 0,
+      "depends": [
+        "r-base >=3.5,<3.6.0a0",
+        "r-plyr >=1.8.4"
+      ],
+      "license": "GPL (>= 2)",
+      "license_family": "GPL3",
+      "md5": "a8fa680955e74b2785205b2547443f9f",
+      "name": "r-sinaplot",
+      "noarch": "generic",
+      "sha256": "1395a266db2dec3df5589b4e897122f2d2d5629080b90a359b1898bc09d42bf4",
+      "size": 1215987,
+      "subdir": "noarch",
+      "timestamp": 1567426098233,
+      "version": "1.1.0"
+    },
+    "r-sinaplot-1.1.0-r36h6115d3f_0.tar.bz2": {
+      "build": "r36h6115d3f_0",
+      "build_number": 0,
+      "depends": [
+        "r-base >=3.6,<3.7.0a0",
+        "r-plyr >=1.8.4"
+      ],
+      "license": "GPL (>= 2)",
+      "license_family": "GPL3",
+      "md5": "fcd0ca820981d3fd157611519a1370ae",
+      "name": "r-sinaplot",
+      "noarch": "generic",
+      "sha256": "8e5ef57ad37a7172a950bde346054644fcb4977e460018d74eb33958e1d07dca",
+      "size": 1219027,
+      "subdir": "noarch",
+      "timestamp": 1567426084309,
+      "version": "1.1.0"
+    },
     "r-sizer-0.1_5-r351h6115d3f_1000.tar.bz2": {
       "build": "r351h6115d3f_1000",
       "build_number": 1000,
@@ -121336,6 +121513,78 @@
       "timestamp": 1567246973233,
       "version": "1.1.10"
     },
+    "rb-coffee-script-2.4.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-coffee-script-source >=0",
+        "rb-execjs >=0",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "77aa9d843ac16b29f8f81c4a3dfe9aab",
+      "name": "rb-coffee-script",
+      "noarch": "generic",
+      "sha256": "c4591dab72df6858f9bd0c6a9e16f95c8491f399257d3f0d30920bdce9c45238",
+      "size": 10366,
+      "subdir": "noarch",
+      "timestamp": 1567410864269,
+      "version": "2.4.1"
+    },
+    "rb-coffee-script-2.4.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-coffee-script-source >=0",
+        "rb-execjs >=0",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "dfcffc4ba4d510ad75a7148a09bb7dfa",
+      "name": "rb-coffee-script",
+      "noarch": "generic",
+      "sha256": "ef4cc1083b6c5afa797e768616f25e2d04e13a9e696809f4d2331e24b24e4d6b",
+      "size": 10361,
+      "subdir": "noarch",
+      "timestamp": 1567410864316,
+      "version": "2.4.1"
+    },
+    "rb-coffee-script-source-1.11.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "9ae1ce5c23dcf01a94c763ec3cfcc964",
+      "name": "rb-coffee-script-source",
+      "noarch": "generic",
+      "sha256": "4ac6b7f55bb26880ac9a9323d69bcbb11f4401f6b50d9de047ff7079de3d112e",
+      "size": 120086,
+      "subdir": "noarch",
+      "timestamp": 1567406540055,
+      "version": "1.11.1"
+    },
+    "rb-coffee-script-source-1.11.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "5829ec9a7e324c2d92792e50fe16ec48",
+      "name": "rb-coffee-script-source",
+      "noarch": "generic",
+      "sha256": "94cd58e3203f3de00b4e1d05c9e7433cb395106e6f1509be8db94eb77f3fc665",
+      "size": 120052,
+      "subdir": "noarch",
+      "timestamp": 1567406560557,
+      "version": "1.11.1"
+    },
     "rb-colorator-1.1.0-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
       "build_number": 0,
@@ -121658,6 +121907,40 @@
       "timestamp": 1567327876967,
       "version": "0.9.1"
     },
+    "rb-execjs-2.7.0-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "303a329f21aa7b558175d37c3c326769",
+      "name": "rb-execjs",
+      "noarch": "generic",
+      "sha256": "de74952a01625932f4ccb6540f4b19870374a45a576134d6ae40a54c2522a098",
+      "size": 33911,
+      "subdir": "noarch",
+      "timestamp": 1567406390513,
+      "version": "2.7.0"
+    },
+    "rb-execjs-2.7.0-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "e1ae8f08e1fe182cdec3544dd96f2fb4",
+      "name": "rb-execjs",
+      "noarch": "generic",
+      "sha256": "0b462d488fbae89ffd3b655d7a8bb9cae08f92f51598bab9d8447f56370304ec",
+      "size": 33892,
+      "subdir": "noarch",
+      "timestamp": 1567406399793,
+      "version": "2.7.0"
+    },
     "rb-faraday-0.15.4-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
       "build_number": 0,
@@ -121912,6 +122195,24 @@
       "timestamp": 1567047440242,
       "version": "0.9.5"
     },
+    "rb-i18n-0.9.5-hc42de5b_1.tar.bz2": {
+      "build": "hc42de5b_1",
+      "build_number": 1,
+      "depends": [
+        "rb-concurrent-ruby >=1.0,<2",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "56c2cfa90487e6a6b1b8ca570a8d6606",
+      "name": "rb-i18n",
+      "noarch": "generic",
+      "sha256": "a8131ccf1109ed1969db1b2846b1bb12d2d66890db45a847e5555cdf96c2c7b9",
+      "size": 121419,
+      "subdir": "noarch",
+      "timestamp": 1567402634866,
+      "version": "0.9.5"
+    },
     "rb-i18n-0.9.5-hd4c1694_0.tar.bz2": {
       "build": "hd4c1694_0",
       "build_number": 0,
@@ -121928,6 +122229,24 @@
       "size": 157243,
       "subdir": "noarch",
       "timestamp": 1567047420289,
+      "version": "0.9.5"
+    },
+    "rb-i18n-0.9.5-hd4c1694_1.tar.bz2": {
+      "build": "hd4c1694_1",
+      "build_number": 1,
+      "depends": [
+        "rb-concurrent-ruby >=1.0,<2",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "b4016584b87a83c8b2890f590396b0f4",
+      "name": "rb-i18n",
+      "noarch": "generic",
+      "sha256": "c900858d3cbaa073013a0828a5370f380ec897c0760d7f085eb233db873398e2",
+      "size": 121332,
+      "subdir": "noarch",
+      "timestamp": 1567402597022,
       "version": "0.9.5"
     },
     "rb-i18n-1.6.0-hc42de5b_0.tar.bz2": {
@@ -122122,6 +122441,158 @@
       "timestamp": 1567327991552,
       "version": "0.7.0"
     },
+    "rb-jekyll-coffeescript-1.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-coffee-script >=2.2,<3",
+        "rb-coffee-script-source >=1.11.1,<1.12",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "9802f55928f78c20a6c0ad26e73fa39f",
+      "name": "rb-jekyll-coffeescript",
+      "noarch": "generic",
+      "sha256": "7c247269e1ad57c346eaa481c01824c8b69d348337a02cd0319c99c3bfd823db",
+      "size": 7328,
+      "subdir": "noarch",
+      "timestamp": 1567435806270,
+      "version": "1.1.1"
+    },
+    "rb-jekyll-coffeescript-1.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-coffee-script >=2.2,<3",
+        "rb-coffee-script-source >=1.11.1,<1.12",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "b52c38ddd30fcb95e1f8dcce6a2c6216",
+      "name": "rb-jekyll-coffeescript",
+      "noarch": "generic",
+      "sha256": "f5667a3ae6217bd479fe29c5918a18c9db9874405afe34bbc002d61a44f40cc4",
+      "size": 7301,
+      "subdir": "noarch",
+      "timestamp": 1567435788886,
+      "version": "1.1.1"
+    },
+    "rb-jekyll-commonmark-1.3.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-commonmarker >=0.14,<1",
+        "rb-jekyll >=3.0,<4.0",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "2512df90a5ef127ce82e7f1455c7be44",
+      "name": "rb-jekyll-commonmark",
+      "noarch": "generic",
+      "sha256": "2027ddbd387c16e70077c1b8932a803801c45a6fd3f54887f1aeed51bc1d9cbb",
+      "size": 18458,
+      "subdir": "noarch",
+      "timestamp": 1567431497667,
+      "version": "1.3.1"
+    },
+    "rb-jekyll-commonmark-1.3.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-commonmarker >=0.14,<1",
+        "rb-jekyll >=3.0,<4.0",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "07af36103f8337b1b44bb8b3edebce8a",
+      "name": "rb-jekyll-commonmark",
+      "noarch": "generic",
+      "sha256": "5a2729a6470654df8c3ab8041d575931f1dcd8156177bcba5ee7aa3c073be1f0",
+      "size": 18440,
+      "subdir": "noarch",
+      "timestamp": 1567431511699,
+      "version": "1.3.1"
+    },
+    "rb-jekyll-commonmark-ghpages-0.1.6-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-commonmarker >=0.17.6,<0.18",
+        "rb-jekyll-commonmark >=1.2,<2",
+        "rb-rouge >=2,<4",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "a9a67699a8936999f6ea36b9d965b87e",
+      "name": "rb-jekyll-commonmark-ghpages",
+      "noarch": "generic",
+      "sha256": "d2e8664fae0d11ef5836f7c34a2ab57db986e5de419c4afc3ef7ec6909dfe4ab",
+      "size": 15451,
+      "subdir": "noarch",
+      "timestamp": 1567439751265,
+      "version": "0.1.6"
+    },
+    "rb-jekyll-commonmark-ghpages-0.1.6-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-commonmarker >=0.17.6,<0.18",
+        "rb-jekyll-commonmark >=1.2,<2",
+        "rb-rouge >=2,<4",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "2453c8c2a9250556e123b7a79ea55a5a",
+      "name": "rb-jekyll-commonmark-ghpages",
+      "noarch": "generic",
+      "sha256": "2421c0ad62dfd0d150a4833135a22c1f94e14da3c5a22563286987b376f90802",
+      "size": 15428,
+      "subdir": "noarch",
+      "timestamp": 1567439736423,
+      "version": "0.1.6"
+    },
+    "rb-jekyll-compose-0.11.0-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.7,<5",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "927cbed2095310ebdf46f66386f264f4",
+      "name": "rb-jekyll-compose",
+      "noarch": "generic",
+      "sha256": "8b827cc899547c7153c027bcf175c793433d67df8215ed316c298f77048301d7",
+      "size": 14927,
+      "subdir": "noarch",
+      "timestamp": 1567408615695,
+      "version": "0.11.0"
+    },
+    "rb-jekyll-compose-0.11.0-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.7,<5",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "c4eb2f5bfd39123b8e8ebbbc6bca0614",
+      "name": "rb-jekyll-compose",
+      "noarch": "generic",
+      "sha256": "2a343f3037b97dc548d2ccee5fc5ec55e8e1fbe39e230363e1a3a7740772f2bb",
+      "size": 14931,
+      "subdir": "noarch",
+      "timestamp": 1567408622327,
+      "version": "0.11.0"
+    },
     "rb-jekyll-default-layout-0.1.4-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
       "build_number": 0,
@@ -122304,43 +122775,43 @@
       "timestamp": 1567362964247,
       "version": "2.12.1"
     },
-    "rb-jekyll-mentions-1.4.1-hc42de5b_0.tar.bz2": {
+    "rb-jekyll-mentions-1.5.1-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
       "build_number": 0,
       "depends": [
         "rb-html-pipeline >=2.3,<3",
-        "rb-jekyll >=3.0,<4",
+        "rb-jekyll >=3.7,<5",
         "ruby >=2.6.3,<2.7.0a0"
       ],
       "license": "MIT",
       "license_family": "MIT",
-      "md5": "eae91e153d9ee766b385667c8492ffa3",
+      "md5": "0707de9c5d6623f53c5d8709e31a779e",
       "name": "rb-jekyll-mentions",
       "noarch": "generic",
-      "sha256": "4dd43a2c7ec9f4102fb22a977f19380a5519ce83b9905eec490d4cba70f28e9e",
-      "size": 9565,
+      "sha256": "9a0a4d4b7c889a19304d25045f3f4654385fb230cd3d7f9afda7804c9b57abc3",
+      "size": 9618,
       "subdir": "noarch",
-      "timestamp": 1567326250699,
-      "version": "1.4.1"
+      "timestamp": 1567385460910,
+      "version": "1.5.1"
     },
-    "rb-jekyll-mentions-1.4.1-hd4c1694_0.tar.bz2": {
+    "rb-jekyll-mentions-1.5.1-hd4c1694_0.tar.bz2": {
       "build": "hd4c1694_0",
       "build_number": 0,
       "depends": [
         "rb-html-pipeline >=2.3,<3",
-        "rb-jekyll >=3.0,<4",
+        "rb-jekyll >=3.7,<5",
         "ruby >=2.5.5,<2.6.0a0"
       ],
       "license": "MIT",
       "license_family": "MIT",
-      "md5": "fe3289e445df21445f30ae75de7a5e61",
+      "md5": "28e60d2583dcb5cea645ea65f09ca57d",
       "name": "rb-jekyll-mentions",
       "noarch": "generic",
-      "sha256": "fea5079ee7a9d584855aa5baa15805bffcf7744b28d24693765949e24789f71d",
-      "size": 9558,
+      "sha256": "25d7babbb665682d23a7cc374821163c20f3eef0bee154ec36b5faf0c628b347",
+      "size": 9597,
       "subdir": "noarch",
-      "timestamp": 1567326242042,
-      "version": "1.4.1"
+      "timestamp": 1567385430939,
+      "version": "1.5.1"
     },
     "rb-jekyll-optional-front-matter-0.3.0-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
@@ -122836,6 +123307,24 @@
       "timestamp": 1567101036640,
       "version": "2.2.1"
     },
+    "rb-jekyll-watch-2.2.1-hc42de5b_1.tar.bz2": {
+      "build": "hc42de5b_1",
+      "build_number": 1,
+      "depends": [
+        "rb-listen >=3.0,<4",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "9db51f7d107ebf78c0c17cbbbf8977d2",
+      "name": "rb-jekyll-watch",
+      "noarch": "generic",
+      "sha256": "736d3a1d5e379e2a1e03911ebeef2e39f19934823c295fbabd0c98ca0cc30ce9",
+      "size": 10557,
+      "subdir": "noarch",
+      "timestamp": 1567385207581,
+      "version": "2.2.1"
+    },
     "rb-jekyll-watch-2.2.1-hd4c1694_0.tar.bz2": {
       "build": "hd4c1694_0",
       "build_number": 0,
@@ -122852,6 +123341,24 @@
       "size": 13242,
       "subdir": "noarch",
       "timestamp": 1567101027385,
+      "version": "2.2.1"
+    },
+    "rb-jekyll-watch-2.2.1-hd4c1694_1.tar.bz2": {
+      "build": "hd4c1694_1",
+      "build_number": 1,
+      "depends": [
+        "rb-listen >=3.0,<4",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "d1855827aab9b2b142fead50d49f12a5",
+      "name": "rb-jekyll-watch",
+      "noarch": "generic",
+      "sha256": "f386404901b13e093ab9b8fd74cd0265bbfb9b240fc3d095fe5f6b78676af95f",
+      "size": 10545,
+      "subdir": "noarch",
+      "timestamp": 1567385223525,
       "version": "2.2.1"
     },
     "rb-jemoji-0.11.1-hc42de5b_0.tar.bz2": {
@@ -123120,6 +123627,26 @@
       "timestamp": 1567088216932,
       "version": "3.1.5"
     },
+    "rb-listen-3.1.5-hc42de5b_1.tar.bz2": {
+      "build": "hc42de5b_1",
+      "build_number": 1,
+      "depends": [
+        "rb-rb-fsevent >=0.9.4,<1",
+        "rb-rb-inotify >=0.9.7,<1",
+        "rb-ruby_dep >=1.2,<2",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "e5e233ffe561a7b45356857073e7a15a",
+      "name": "rb-listen",
+      "noarch": "generic",
+      "sha256": "5fce3de7f2cbf585b2ccf707987b1cafe57329ca271a7034e07a634633cd5fd2",
+      "size": 54835,
+      "subdir": "noarch",
+      "timestamp": 1567385215430,
+      "version": "3.1.5"
+    },
     "rb-listen-3.1.5-hd4c1694_0.tar.bz2": {
       "build": "hd4c1694_0",
       "build_number": 0,
@@ -123138,6 +123665,26 @@
       "size": 79771,
       "subdir": "noarch",
       "timestamp": 1567088213365,
+      "version": "3.1.5"
+    },
+    "rb-listen-3.1.5-hd4c1694_1.tar.bz2": {
+      "build": "hd4c1694_1",
+      "build_number": 1,
+      "depends": [
+        "rb-rb-fsevent >=0.9.4,<1",
+        "rb-rb-inotify >=0.9.7,<1",
+        "rb-ruby_dep >=1.2,<2",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "6168a35b133ab278a91b4f3dce383174",
+      "name": "rb-listen",
+      "noarch": "generic",
+      "sha256": "4aeadb4bfbf29dd608e6135cf2568b45686bd9e7141944ae4677b80d65a5671e",
+      "size": 54772,
+      "subdir": "noarch",
+      "timestamp": 1567385237889,
       "version": "3.1.5"
     },
     "rb-mercenary-0.3.6-hc42de5b_0.tar.bz2": {
@@ -123649,6 +124196,23 @@
       "timestamp": 1567064987087,
       "version": "0.10.3"
     },
+    "rb-rb-fsevent-0.10.3-hc42de5b_1.tar.bz2": {
+      "build": "hc42de5b_1",
+      "build_number": 1,
+      "depends": [
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "1a47cdcf7ee968492d1460ee65e6cb33",
+      "name": "rb-rb-fsevent",
+      "noarch": "generic",
+      "sha256": "8632578863afbc47ed8a7c876cb455d5e44ad160d0a0867e14aabcf259d865ae",
+      "size": 101288,
+      "subdir": "noarch",
+      "timestamp": 1567385236603,
+      "version": "0.10.3"
+    },
     "rb-rb-fsevent-0.10.3-hd4c1694_0.tar.bz2": {
       "build": "hd4c1694_0",
       "build_number": 0,
@@ -123664,6 +124228,23 @@
       "size": 104202,
       "subdir": "noarch",
       "timestamp": 1567064986178,
+      "version": "0.10.3"
+    },
+    "rb-rb-fsevent-0.10.3-hd4c1694_1.tar.bz2": {
+      "build": "hd4c1694_1",
+      "build_number": 1,
+      "depends": [
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "d3919a9516952a51c0ae916471cd5940",
+      "name": "rb-rb-fsevent",
+      "noarch": "generic",
+      "sha256": "43eb1d37fe177edad31d895140e9b0c496c3a15520f1311234646b60060f5010",
+      "size": 101304,
+      "subdir": "noarch",
+      "timestamp": 1567385254421,
       "version": "0.10.3"
     },
     "rb-rb-inotify-0.10.0-hc42de5b_0.tar.bz2": {
@@ -123684,6 +124265,24 @@
       "timestamp": 1567086951477,
       "version": "0.10.0"
     },
+    "rb-rb-inotify-0.10.0-hc42de5b_1.tar.bz2": {
+      "build": "hc42de5b_1",
+      "build_number": 1,
+      "depends": [
+        "rb-ffi >=1.0,<2",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "646f52514c5fbaf14b8aa7d0d56ab04f",
+      "name": "rb-rb-inotify",
+      "noarch": "generic",
+      "sha256": "e3eff8781732e60f13c7caf4afcfc1f236200fa790cf2191cd0ccd4c9fbea61b",
+      "size": 30308,
+      "subdir": "noarch",
+      "timestamp": 1567385285946,
+      "version": "0.10.0"
+    },
     "rb-rb-inotify-0.10.0-hd4c1694_0.tar.bz2": {
       "build": "hd4c1694_0",
       "build_number": 0,
@@ -123700,6 +124299,24 @@
       "size": 38393,
       "subdir": "noarch",
       "timestamp": 1567086946446,
+      "version": "0.10.0"
+    },
+    "rb-rb-inotify-0.10.0-hd4c1694_1.tar.bz2": {
+      "build": "hd4c1694_1",
+      "build_number": 1,
+      "depends": [
+        "rb-ffi >=1.0,<2",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "12ccf87344ae1f4a7079b75b5c216026",
+      "name": "rb-rb-inotify",
+      "noarch": "generic",
+      "sha256": "1a91a48c1b76ccdce0f59279ce0a05270cbb15216657ae526b55f148b8f2dc19",
+      "size": 30276,
+      "subdir": "noarch",
+      "timestamp": 1567385275752,
       "version": "0.10.0"
     },
     "rb-rouge-3.9.0-hc42de5b_0.tar.bz2": {
@@ -123770,6 +124387,42 @@
       "timestamp": 1567368384196,
       "version": "3.9.0"
     },
+    "rb-ruby-enum-0.7.2-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-i18n >=0",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "844e32cff0aa0506284cc0ae0a7c37c1",
+      "name": "rb-ruby-enum",
+      "noarch": "generic",
+      "sha256": "450f2b8d80553c5234e6c8bac74f5e16d67ee845565370964a0a0757d6d8c3de",
+      "size": 46272,
+      "subdir": "noarch",
+      "timestamp": 1567395229400,
+      "version": "0.7.2"
+    },
+    "rb-ruby-enum-0.7.2-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-i18n >=0",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "e22329b17856a8656caaeee7abb6d346",
+      "name": "rb-ruby-enum",
+      "noarch": "generic",
+      "sha256": "0d318cc4587e18d4535905b14a394d5cede2bffa4f8a222813d9832e34423c5f",
+      "size": 46234,
+      "subdir": "noarch",
+      "timestamp": 1567395245503,
+      "version": "0.7.2"
+    },
     "rb-ruby_dep-1.5.0-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
       "build_number": 0,
@@ -123787,6 +124440,23 @@
       "timestamp": 1567065303798,
       "version": "1.5.0"
     },
+    "rb-ruby_dep-1.5.0-hc42de5b_1.tar.bz2": {
+      "build": "hc42de5b_1",
+      "build_number": 1,
+      "depends": [
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "f79ad0e989fb2536308cbc705c086949",
+      "name": "rb-ruby_dep",
+      "noarch": "generic",
+      "sha256": "e7fb50825a748cd559be2dd50f17497c596d81f1a2001786da00b3db49e5c87f",
+      "size": 22016,
+      "subdir": "noarch",
+      "timestamp": 1567385309221,
+      "version": "1.5.0"
+    },
     "rb-ruby_dep-1.5.0-hd4c1694_0.tar.bz2": {
       "build": "hd4c1694_0",
       "build_number": 0,
@@ -123802,6 +124472,23 @@
       "size": 28183,
       "subdir": "noarch",
       "timestamp": 1567065305971,
+      "version": "1.5.0"
+    },
+    "rb-ruby_dep-1.5.0-hd4c1694_1.tar.bz2": {
+      "build": "hd4c1694_1",
+      "build_number": 1,
+      "depends": [
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "c6adf9ef1a25cb0de16be317281651c1",
+      "name": "rb-ruby_dep",
+      "noarch": "generic",
+      "sha256": "c5cbb2f0e790552a7ad3d53b6fb67e03a66b2d556da5e3a4ce53a22afdc84470",
+      "size": 22026,
+      "subdir": "noarch",
+      "timestamp": 1567385299213,
       "version": "1.5.0"
     },
     "rb-rubyzip-1.2.3-hc42de5b_0.tar.bz2": {
@@ -123945,46 +124632,6 @@
       "subdir": "noarch",
       "timestamp": 1567089383689,
       "version": "4.0.0"
-    },
-    "rb-sassc-2.2.0-h16e5e93_0.tar.bz2": {
-      "build": "h16e5e93_0",
-      "build_number": 0,
-      "depends": [
-        "libgcc-ng >=7.3.0",
-        "libstdcxx-ng >=7.3.0",
-        "rb-ffi >=1.9,<2",
-        "ruby >=2.6.3,<2.7.0a0"
-      ],
-      "license": "MIT",
-      "license_family": "MIT",
-      "md5": "795772c0dd811cad17a9885781abcf74",
-      "name": "rb-sassc",
-      "noarch": "generic",
-      "sha256": "ea5e1a16b9e670c7a066e99feb6f9f39bb1f1f2285c4742df2afb233c8a018e7",
-      "size": 2169143,
-      "subdir": "noarch",
-      "timestamp": 1567105221381,
-      "version": "2.2.0"
-    },
-    "rb-sassc-2.2.0-had2f1a9_0.tar.bz2": {
-      "build": "had2f1a9_0",
-      "build_number": 0,
-      "depends": [
-        "libgcc-ng >=7.3.0",
-        "libstdcxx-ng >=7.3.0",
-        "rb-ffi >=1.9,<2",
-        "ruby >=2.5.5,<2.6.0a0"
-      ],
-      "license": "MIT",
-      "license_family": "MIT",
-      "md5": "d494597cd4a733143e0010cd1a50b411",
-      "name": "rb-sassc",
-      "noarch": "generic",
-      "sha256": "fb26f33317506bf92f743abd55c8f1b732dd81344b78133743b326f986259c1e",
-      "size": 2167640,
-      "subdir": "noarch",
-      "timestamp": 1567105210966,
-      "version": "2.2.0"
     },
     "rb-sawyer-0.8.2-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
@@ -126855,6 +127502,23 @@
       "timestamp": 1553083371518,
       "version": "0.13.2"
     },
+    "scramp-1.1.0-py_0.tar.bz2": {
+      "build": "py_0",
+      "build_number": 0,
+      "depends": [
+        "python >3.5"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "89d6c247f2dfaee434265cb0034d4c97",
+      "name": "scramp",
+      "noarch": "python",
+      "sha256": "0ecc358919da500490758e44872771e7762789d1cfd026a8f619fd5128a70848",
+      "size": 8626,
+      "subdir": "noarch",
+      "timestamp": 1567438609550,
+      "version": "1.1.0"
+    },
     "scri-2019.8.9.16.54.31-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
@@ -128956,6 +129620,48 @@
       "subdir": "noarch",
       "timestamp": 1555306715683,
       "version": "0.19.6"
+    },
+    "sos-python-0.18.2-py_0.tar.bz2": {
+      "build": "py_0",
+      "build_number": 0,
+      "depends": [
+        "python >=3.6",
+        "sos >=0.19.8",
+        "sos-notebook >=0.19.4"
+      ],
+      "license": "BSD-3-Clause",
+      "license_family": "BSD",
+      "md5": "8f02660053f8a35ac4cf6e679549f0ae",
+      "name": "sos-python",
+      "noarch": "python",
+      "sha256": "026cde5d2a08794b1f7ade21a6dc60f93f2feeda27e24ab6444d02e9b433521c",
+      "size": 9307,
+      "subdir": "noarch",
+      "timestamp": 1567433179044,
+      "version": "0.18.2"
+    },
+    "sos-r-0.19.1-py_0.tar.bz2": {
+      "build": "py_0",
+      "build_number": 0,
+      "depends": [
+        "feather-format",
+        "numpy",
+        "pandas",
+        "python >=3.6",
+        "r-feather",
+        "r-irkernel",
+        "sos-notebook >=0.19.4"
+      ],
+      "license": "BSD-3-Clause",
+      "license_family": "BSD",
+      "md5": "b9d5f236914e89957ed057bb52f31de5",
+      "name": "sos-r",
+      "noarch": "python",
+      "sha256": "df8c2aaeb64e565e428066fdb59106dd4598247b1cc6ebfd1a45f11c0d5195c1",
+      "size": 11317,
+      "subdir": "noarch",
+      "timestamp": 1567433417136,
+      "version": "0.19.1"
     },
     "sound_field_analysis-0.3-py_1.tar.bz2": {
       "arch": null,
@@ -134259,6 +134965,26 @@
       "subdir": "noarch",
       "timestamp": 1553511817525,
       "version": "0.8.5"
+    },
+    "umami-0.1-py_0.tar.bz2": {
+      "build": "py_0",
+      "build_number": 0,
+      "depends": [
+        "landlab >=1.10",
+        "numpy",
+        "python >=3.6",
+        "scipy"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "f68b7dc9ce3483ce77bf1bdd8d7da2d0",
+      "name": "umami",
+      "noarch": "python",
+      "sha256": "a1325b083b808ac51d4cfe684e72706b10589bd711110123b309bab8378daca0",
+      "size": 18818,
+      "subdir": "noarch",
+      "timestamp": 1567416870956,
+      "version": "0.1"
     },
     "uncertainpy-1.2.0-py_0.tar.bz2": {
       "build": "py_0",

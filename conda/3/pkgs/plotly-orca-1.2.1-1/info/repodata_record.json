@@ -1,0 +1,19 @@
+{
+  "arch": "x86_64",
+  "build": "1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/plotly/linux-64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "plotly-orca-1.2.1-1.tar.bz2",
+  "md5": "0e65f2af98fe1b30bed344f7b67f46fa",
+  "name": "plotly-orca",
+  "platform": "linux",
+  "size": 45527232,
+  "subdir": "linux-64",
+  "timestamp": 1549294446412,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/plotly/linux-64/plotly-orca-1.2.1-1.tar.bz2",
+  "version": "1.2.1"
+}
