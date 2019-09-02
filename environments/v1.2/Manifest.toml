@@ -7268,6 +7268,12 @@ git-tree-sha1 = "deeacd311fa9216115db184e27f03100e6a4a001"
 uuid = "5d8a72c5-1e5a-5861-b6ae-c8e9564f9d17"
 version = "0.4.0"
 
+[[MicrostructureNoise]]
+deps = ["Dates", "DelimitedFiles", "Distributions", "LinearAlgebra", "Random", "SpecialFunctions", "Statistics", "Test"]
+git-tree-sha1 = "4890976f5f0390f5306712cec8e74797b0a50ed4"
+uuid = "47737169-82b5-5dea-8d33-5707f53e1c0c"
+version = "0.10.0"
+
 [[Millboard]]
 git-tree-sha1 = "c6d4a61d1b74ba35b1efe5cb025bf852145521e1"
 uuid = "39ec1447-df44-5f4c-beaa-866f30b4d3b2"
