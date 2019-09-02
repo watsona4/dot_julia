@@ -8639,6 +8639,11 @@ git-tree-sha1 = "1947ff02da3eaf375d0eca23a174bf7e74de3ec9"
 uuid = "3725be50-bbbd-5592-92c3-2f0e82159c3e"
 version = "0.5.2"
 
+[[PhysicalCommunications]]
+git-tree-sha1 = "e15ba568ac49d1ebc98578ed3bdd093a25ee7f2d"
+uuid = "afadef72-ae1a-11e9-3795-e55b3621c13e"
+version = "0.1.1"
+
 [[PiGPIO]]
 deps = ["Sockets"]
 git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
