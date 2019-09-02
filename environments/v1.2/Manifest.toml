@@ -4991,6 +4991,12 @@ git-tree-sha1 = "6b21e381c84e083d40a6681917ea400b51a9eca5"
 uuid = "34004b35-14d8-5ef3-9330-4cdb6864b03a"
 version = "0.1.0"
 
+[[Hyperopt]]
+deps = ["Distributed", "Juno", "LatinHypercubeSampling", "Lazy", "LinearAlgebra", "MacroTools", "Parameters", "Random", "RecipesBase", "Statistics", "Test"]
+git-tree-sha1 = "bc4c05539a276d8db4f6537eaad6f598865a3ad0"
+uuid = "93e5fe13-2215-51db-baaf-2e9a34fb2712"
+version = "0.2.2"
+
 [[HypothesisTests]]
 deps = ["Combinatorics", "Distributions", "LinearAlgebra", "Random", "Rmath", "Roots", "Statistics", "StatsBase", "Test"]
 git-tree-sha1 = "0fe2b78bd7cadcaed2071aab7ed12b40d220c392"
@@ -5422,6 +5428,12 @@ deps = ["DSP", "Distributions", "GLM", "LinearAlgebra", "MLBase", "Random", "Ree
 git-tree-sha1 = "d16e4026612333e691001984b593ac42e0ee07e9"
 uuid = "b4fcebef-c861-5a0f-a7e2-ba9dc32b180a"
 version = "0.4.0"
+
+[[LatinHypercubeSampling]]
+deps = ["Random", "StatsBase", "Test"]
+git-tree-sha1 = "7cd8af9c1c8591b7501e82ae5d6f39fcb826aae9"
+uuid = "a5e1c1ea-c99a-51d3-a14d-a9a37257b02d"
+version = "1.2.0"
 
 [[Lazy]]
 deps = ["Compat", "MacroTools", "Test"]
