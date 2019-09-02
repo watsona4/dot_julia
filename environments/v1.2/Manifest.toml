@@ -8316,6 +8316,12 @@ git-tree-sha1 = "9d6a9b3e19634612fb1edcafc4b1d75242b24bde"
 uuid = "90014a1f-27ba-587c-ab20-58faa44d9150"
 version = "0.9.9"
 
+[[PEG]]
+deps = ["Test"]
+git-tree-sha1 = "c62b3f15184a24960131cf7e1b63dfbc6beb8040"
+uuid = "12d937ae-5f68-53be-93c9-3a6f997a20a8"
+version = "1.0.0"
+
 [[PGFPlotsX]]
 deps = ["ArgCheck", "Crayons", "DataStructures", "Dates", "DefaultApplication", "DocStringExtensions", "MacroTools", "Missings", "Parameters", "Requires", "StatsBase", "Unicode"]
 git-tree-sha1 = "169528d1574e4695db9b5e8304ddfeb4bb717a3f"
