@@ -6944,6 +6944,12 @@ git-tree-sha1 = "b5919aeb51d7c3a69abd192c79bcebaed3a61c13"
 uuid = "e296ed71-da82-5faf-88ab-0034a9761098"
 version = "0.0.2"
 
+[[Mangal]]
+deps = ["Dates", "EcologicalNetworks", "GeoInterface", "HTTP", "JSON"]
+git-tree-sha1 = "cc831fdf4bb8a59f639c7622f2a0d8a3f2e9bcf6"
+uuid = "b8b640a6-63d9-51e6-b784-5033db27bef2"
+version = "0.1.0"
+
 [[MappedArrays]]
 deps = ["Test"]
 git-tree-sha1 = "923441c5ac942b60bd3a842d5377d96646bcbf46"

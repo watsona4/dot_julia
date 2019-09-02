@@ -1,0 +1,12 @@
+language: julia
+
+os:
+  - linux
+
+julia:
+  - 1.1
+
+after_success:
+  - julia -e 'using Pkg; cd(Pkg.dir("Mangal")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder()); Codecov.submit(Codecov.process_folder())'
+  - julia -e 'using Pkg; Pkg.add("Documenter");'
+  - julia -e 'using Pkg; cd(Pkg.dir("Mangal")); include(joinpath("docs", "make.jl"))'

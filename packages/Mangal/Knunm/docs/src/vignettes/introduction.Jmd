@@ -1,0 +1,54 @@
+# Introduction to `Mangal.jl`
+
+The goal of this vignette is to explain the core design principles of the
+**Mangal** package. Other vignettes present more realistic use-cases.
+
+```julia
+using Mangal
+```
+
+## Database status
+
+| Object          |                    Total number |
+| --------------- | -------------------------------:|
+| Datasets        |        `j count(MangalDataset)` |
+| Networks        |        `j count(MangalNetwork)` |
+| Interactions    |    `j count(MangalInteraction)` |
+| Nodes           |           `j count(MangalNode)` |
+| Reference taxon | `j count(MangalReferenceTaxon)` |
+
+## Types
+
+The package exposes resources from the <mangal.io> database in a series of
+types, whose fields are all documented in the manual. Every object in the
+`mangal.io` hierarchy is represented by its type:
+
+| object       | type                   | definition                                           |
+| ------------ | ---------------------- | ---------------------------------------------------- |
+| dataset      | `MangalDataset`        | description of a dataset, and references             |
+| network      | `MangalNetwork`        | finer description of a network, including positions  |
+| interactions | `MangalInteraction`    | taxonomic entities involved and metadata             |
+| node         | `MangalNode`           | description of the node in the original dataset      |
+| backbone     | `MangalReferenceTaxon` | actual taxonomic entity reconciled against backbones |
+| reference    | `MangalReference`      | bibliographic information                            |
+| attribute    | `MangalAttribute`      | key/value (used *e.g.* for interaction strength)     |
+
+## A note on speed
+
+The package is designed to facilitate the user experience: as objects are nested
+within one another, we will retrieve the full hierarchy instead of just pointing
+you to the `id` of the parent/childrens. For example, this means than querying a
+`MangalInteraction` will return not only the interaction itself, but also the
+`MangalNode` for each species involved and their `MangalReferenceTaxon`. This
+results in a larger number of queries, *i.e.* you initially wait longer to get
+your data.
+
+One clear advantage is that the data that are returned are complete, and so can
+be used directly. Note also that the package uses a caching mechanism to speed
+up this process; in short, a `MangalNode` or `MangalReferenceTaxon` are only
+queried one, and then read from cache when they are next part of an interaction.
+
+## Queries
+
+*Almost* all functions in the package accept query arguments, which are simply
+given as a series of pairs.
