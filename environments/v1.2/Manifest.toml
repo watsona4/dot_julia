@@ -7881,6 +7881,12 @@ git-tree-sha1 = "f57e8e907faab4f55f9f164313a633509ac83e2c"
 uuid = "49dea1ee-f6fa-5aa6-9a11-8816cee7d4b9"
 version = "0.4.0"
 
+[[NetworkDynamics]]
+deps = ["BenchmarkTools", "DataStructures", "DifferentialEquations", "ForwardDiff", "LightGraphs", "LinearAlgebra", "NLsolve", "Parameters", "Plots", "ProfileView", "Reexport", "Revise", "SparseArrays", "Test"]
+git-tree-sha1 = "48e14b6fb96d28149a75b4e211bad4e5345ae12c"
+uuid = "22e9dc34-2a0d-11e9-0de0-8588d035468b"
+version = "0.1.0"
+
 [[NetworkLayout]]
 deps = ["DelimitedFiles", "GeometryTypes", "LinearAlgebra", "SparseArrays", "Test"]
 git-tree-sha1 = "adde9ad01842a4f62c3724b8707bed90293f0f3f"
@@ -8232,6 +8238,12 @@ uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 [[Profile]]
 deps = ["Printf"]
 uuid = "9abbd945-dff8-562f-b5e8-e1ebf5ef1b79"
+
+[[ProfileView]]
+deps = ["Cairo", "Colors", "FileIO", "Graphics", "Gtk", "GtkReactive", "InteractiveUtils", "IntervalSets", "Profile", "UUIDs"]
+git-tree-sha1 = "956eb8b83eb9bbaee6307c55052288751838ee73"
+uuid = "c46f51b8-102a-5cf2-8d2c-8597cb0e0da7"
+version = "0.4.1"
 
 [[ProgressMeter]]
 deps = ["Distributed", "Printf"]

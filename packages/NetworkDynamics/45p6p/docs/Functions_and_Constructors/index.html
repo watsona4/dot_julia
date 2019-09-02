@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Functions · NetworkDynamics</title><link rel="canonical" href="https://FHell.github.io/NetworkDynamics.jl/Functions_and_Constructors/index.html"/><link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="../assets/documenter.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link href="../assets/documenter.css" rel="stylesheet" type="text/css"/></head><body><nav class="toc"><h1>NetworkDynamics</h1><select id="version-selector" onChange="window.location.href=this.value" style="visibility: hidden"></select><form class="search" id="search-form" action="../search/"><input id="search-query" name="q" type="text" placeholder="Search docs"/></form><ul><li><a class="toctext" href="../">General</a></li><li class="current"><a class="toctext" href>Functions</a><ul class="internal"><li><a class="toctext" href="#Constructor-1">Constructor</a></li></ul></li><li><a class="toctext" href="../StaticEdges/">Static edges</a></li><li><a class="toctext" href="../DynamicEdges/">Dynamic edges</a></li></ul></nav><article id="docs"><header><nav><ul><li><a href>Functions</a></li></ul><a class="edit-page" href="https://github.com//blob/master/docs_src/src/Functions_and_Constructors.md"><span class="fa"></span> Edit on GitHub</a></nav><hr/><div id="topbar"><span>Functions</span><a class="fa fa-bars" href="#"></a></div></header><h1><a class="nav-anchor" id="Functions-1" href="#Functions-1">Functions</a></h1><p>The Dynamics for the whole Network is constructed from functions for the single vertices and edges. There are several types:</p><pre><code class="language-none">ODEVertex(vertexfunction!, dimension, mass_matrix, sym)
+StaticEdge(edgefunction!, dimension)
+ODEEdge(edgefunction!, dimension, mass_matrix, sym)</code></pre><h3><a class="nav-anchor" id="ODEVertex-1" href="#ODEVertex-1">ODEVertex</a></h3><p>The arguments mean the following: <strong>vertexfunction!</strong> is catching the dynamics of a single vertex depending on the vertex value itself as well as in- and outgoing currents (or edges). An example for such a function would be:</p><pre><code class="language-julia">function vertexfunction!(dv, v, e_s, e_d, p, t)
+  dv .= 0
+  for e in e_s
+    dv .-= e
+  end
+  for e in e_d
+    dv .+= e
+  end
+end</code></pre><p>The e<em>s and e</em>d are arrays containing the edges that have the decribed vertex as source and destination. Other arguments coincide with the usual ODE function arguments. The vertexfunction given to ODEVertex always needs to have the shown argument structure. Note the importance of the broadcast structure of the equations (the dot before every operator), this is necessary due to the use of views in the internal functions, it further provides a boost to the performance of the solver.</p><p><strong>dimension</strong> is the number of Variables on the Vertex.</p><p><strong>mass_matrix</strong> is the mass matrix M, i.e.</p><pre><code class="language-none">M*dv = vertexfunction!</code></pre><p>sym are the symbols of the Vertex. If one had for example a vertex with a frequency and some angle, one would construct sym via:</p><pre><code class="language-none">sym = [:omega, :phi]</code></pre><p>This makes it easier to later fish out the interesting variables one wants to look at.</p><p>One may also call ODEVertex via:</p><pre><code class="language-none">ODEVertex(vertexfunction!, dimension)</code></pre><p>The function then defaults to using the identity as mass matrix and [:v for i in 1:dimension] as symbols.</p><h3><a class="nav-anchor" id="StaticEdge-1" href="#StaticEdge-1">StaticEdge</a></h3><p>Static here means, that the edge value described by <strong>edgefunction!</strong> solely depends on the vertex values the edge connects. One very simple and natural example is a diffusive system:</p><pre><code class="language-">edgefunction! = (e, v_s, v_d, p, t) -&gt; e .= v_s .- v_d</code></pre><p>v<em>s and v</em>d are the vertex values of the edges source and destination. There is no derivative of the edge value involved, hence we call these problems static.</p><p><strong>dimension</strong>: see ODEVertex</p><h3><a class="nav-anchor" id="ODEEdge-1" href="#ODEEdge-1">ODEEdge</a></h3><p>For Problems where <strong>edgefunction</strong> also contains the differential of an edge value , we use the ODEEdge function. Another simple and natural example for such a system is one that quickly diffuses to the static case:</p><pre><code class="language-">edgefunction! = (de, e, v_s, v_d, p, t) -&gt; de .= 1000 * (v_s .- v_d .- e)</code></pre><p><strong>dimension</strong>: see ODEVertex</p><p><strong>mass_matrix</strong>: see ODEVertex</p><p><strong>sym</strong>: see ODEVertex</p><p>Also, one can construct an ODEEdge by only giving the first two arguments:</p><pre><code class="language-none">ODEEdge(edgefunction!, dimension)</code></pre><p>Then the function defaults to using the identity as mass matrix as well as using [:e for in 1:dimension] as sym.</p><h2><a class="nav-anchor" id="Constructor-1" href="#Constructor-1">Constructor</a></h2><p>The central constructor of this package is network_dynamics(), this function demands an array of VertexFunction and EdgeFunction as well as a graph (see LightGraphs), and returns an ODEFunction which one can easily solve via the tools given in DifferentialEquations.jl. One calls it via:</p><pre><code class="language-none">network_dynamics(Array{VertexFunction}, Array{EdgeFunction}, graph)</code></pre><p>VertexFunction and EdgeFunction are the Unions of all the Vertex and Edge Functions we specified in the previous section. Let&#39;s look at an example. First we define our graph as well as the differential systems connected to its vertices and edges:</p><pre><code class="language-julia">
+using LightGraphs
+
+g = barabasi_albert(10,5) # The graph is a random graph with 10 vertices and 25 Edges.
+
+function vertexfunction!(dv, v, e_s, e_d, p, t)
+  dv .= 0
+  for e in e_s
+    dv .-= e
+  end
+  for e in e_d
+    dv .+= e
+  end
+end
+
+function edgefunction! = (de, e, v_s, v_d, p, t) -&gt; de .= 1000 .*(v_s .- v_d .- e)
+
+vertex = ODEVertex(vertexfunction!, 1)
+vertexarr = [vertex for v in vertices(g)]
+
+edge = ODEEdge(edgefunction!, 1)
+edgearr = [edge for e in edges(g)]
+
+nd = network_dynamics(vertexarr, edgearr, g)</code></pre><p>Now we have an ODEFunction nd that we can solve with well-known tools from DifferentialEquations. To solve the defined system, we further need an array with initial values x0 as well as a time span tspan in which we solve the problem:</p><pre><code class="language-julia">
+using DifferentialEquations
+
+x0 = rand(10 + 25) #10 for the vertices and 25 for the edges
+tspan = (0.,2.)
+
+prob = ODEProblem(nd,x0,tspan)
+sol = solve(prob)
+
+using Plots
+plot(sol, legend = false, vars = 1:10) # vars gives us x[1:10] in the plot</code></pre><p>The Plot shows the classic diffusive behaviour.</p><h3><a class="nav-anchor" id="Mass-Matrix-1" href="#Mass-Matrix-1">Mass Matrix</a></h3><p>One thing one has to know when working with <strong>mass matrices</strong> is best described via an example, let&#39;s consider the same problem as before with solely changed edge and vertex:</p><pre><code class="language-julia">vertex = ODEVertex(vertexfunction!, 2, [2 1; -1 1], nothing)
+edge = ODEEdge(edgefunction!, 2)</code></pre><p>We now have two dimensional vertex and edge variables, we additionally added a mass matrix for every vertex. The Constructor builds one big mass matrix from all the given ones. If one now wants to solve the problem, one has to specify the solving algorithm for the solver as the default solver can&#39;t handle mass matrices. The DAE solvers are fit for these kind of problems. One has to be especially aware of putting the variable autodiff inside the algorithm to false, hence one has to write the solver like this:</p><pre><code class="language-julia">sol = solve(prob, Rodas4(autodiff = false)) # Rodas4 is just an exemplary DAE solving algorithm, there are many more.#</code></pre><p>With that, everything works just fine. One has to put autodiff to false, because the structure of the lastly given equations is not of the standard form that the DAE solvers can handle just like that.</p><footer><hr/><a class="previous" href="../"><span class="direction">Previous</span><span class="title">General</span></a><a class="next" href="../StaticEdges/"><span class="direction">Next</span><span class="title">Static edges</span></a></footer></article></body></html>
