@@ -1,0 +1,17 @@
+language: julia
+
+julia:
+  - 1.0
+
+os:
+  - linux
+
+notifications:
+  email: false
+
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia -e 'import Pkg; Pkg.clone(pwd()); Pkg.build("LocalDiskObjectStores"); Pkg.test("LocalDiskObjectStores"; coverage=true)';
+
+after_success:
+    - julia -e 'cd(Pkg.dir("LocalDiskObjectStores")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())';

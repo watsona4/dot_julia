@@ -1,0 +1,15 @@
+name = "LocalDiskObjectStores"
+uuid = "d8614c18-d27c-11e8-1f4d-079e53ef5bfc"
+authors = ["Jock Lawrie <jock.lawrie@gmail.com>"]
+version = "0.3.0"
+
+[deps]
+ObjectStores = "03c2b57b-fb4c-5576-ac09-ef0ca0563633"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+
+[extras]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Dates", "Test"]
