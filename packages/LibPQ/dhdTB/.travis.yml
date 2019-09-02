@@ -1,0 +1,46 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+julia:
+  - 1.0
+env:
+  matrix:
+    - POSTGRESQL_VERSION=12
+    - POSTGRESQL_VERSION=11
+    - POSTGRESQL_VERSION=10
+    - POSTGRESQL_VERSION=9.6
+    - POSTGRESQL_VERSION=9.5
+    - POSTGRESQL_VERSION=9.4
+  global:
+    - PGHOST=localhost
+    - PGPORT=5440
+before_install:
+  - docker run --name libpqjl-postgresql -p $PGPORT:5432 -d postgres:$POSTGRESQL_VERSION-alpine
+matrix:
+  allow_failures:
+    - julia: nightly
+  fast_finish: true
+  include:
+    - julia: 1.1
+    - julia: 1.2
+    - julia: nightly
+    - os: osx
+      env:
+        - PGPORT=5432 LIBPQJL_DATABASE_USER=travis
+      before_install:
+        - brew services start postgresql
+    - stage: "Documentation"
+      julia: 1.0
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.instantiate(); Pkg.build()'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip
+notifications:
+  email: false
+# before_script:
+#   - psql -U postgres -tc 'SHOW server_version'
+#   - psql -U postgres -c '\conninfo'
+after_success:
+  - julia -e 'using Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
