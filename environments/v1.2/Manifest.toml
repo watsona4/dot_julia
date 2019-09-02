@@ -6765,6 +6765,12 @@ git-tree-sha1 = "1c23462192a6d7abc8437c3d3eb1a0bd1d0830cd"
 uuid = "ee0a3090-8ee9-5cdb-b8cb-8eeba3165522"
 version = "0.2.0"
 
+[[MINPACK]]
+deps = ["Distances", "LinearAlgebra", "Printf"]
+git-tree-sha1 = "cd4878dae41b1d0d63adef75b417fdd3b4ed0dfb"
+uuid = "4854310b-de5a-5eb6-a2a5-c1dee2bd17f9"
+version = "1.1.1"
+
 [[MLBase]]
 deps = ["IterTools", "Random", "Reexport", "StatsBase", "Test"]
 git-tree-sha1 = "f63a8d37429568b8c4384d76c4a96fc2897d6ddf"
