@@ -8269,6 +8269,12 @@ git-tree-sha1 = "823e1d59e0f59162a39cc07e9016903eaaca6770"
 uuid = "3304b86d-eb5b-5d22-9ed4-3b0a60539cfe"
 version = "0.1.0"
 
+[[Oracle]]
+deps = ["Dates", "Libdl", "Missings", "Test"]
+git-tree-sha1 = "8d9756e11e0154094865270d8b75383ca02b3782"
+uuid = "7240a794-28ba-5199-b477-df5fe5cf6155"
+version = "0.0.6"
+
 [[OrderedCollections]]
 deps = ["Random", "Serialization", "Test"]
 git-tree-sha1 = "c4c13474d23c60d20a67b217f1d7f22a40edf8f1"
