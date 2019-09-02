@@ -5894,6 +5894,12 @@ git-tree-sha1 = "f1cc1d791095013d38e30db36abd3038b2617647"
 uuid = "ddd84059-9b64-5d1b-85eb-da48df743e32"
 version = "1.0.0"
 
+[[KeywordDispatch]]
+deps = ["Test"]
+git-tree-sha1 = "5a1bdc6eac81c33253e7ebf496c389397d3cc3de"
+uuid = "5888135b-5456-5c80-a1b6-c91ef8180460"
+version = "0.3.0"
+
 [[Knet]]
 deps = ["AutoGrad", "CUDAapi", "FileIO", "JLD2", "Libdl", "LinearAlgebra", "Pkg", "Printf", "Random", "SpecialFunctions", "Statistics", "TimerOutputs"]
 git-tree-sha1 = "7a45f9ef563ef796433463cf6998c46d0a3de9c9"
