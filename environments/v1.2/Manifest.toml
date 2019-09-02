@@ -7170,6 +7170,11 @@ git-tree-sha1 = "d9683969337ad20dc957122038bd2c0ead4b5209"
 uuid = "c03570c3-d221-55d1-a50c-7939bbd78826"
 version = "0.3.0"
 
+[[MemoryArena]]
+git-tree-sha1 = "2ad3bcdae86b0a5c04a0e945f67ea270beedabe2"
+uuid = "5f8afd5a-bb66-5d20-9595-63d13a19fd2b"
+version = "0.1.0"
+
 [[MerkleTrees]]
 deps = ["SHA"]
 git-tree-sha1 = "2d24c0988d8908bf9e352aa0f5bf8cf61722c2c0"
