@@ -1,0 +1,68 @@
+# polymake helper functions returning various information for julia
+
+
+# list completions for property names for a given perl::Object
+# (does not show any user_methods!)
+function complete_property($$) {
+   my ($po,$prefix) = @_;
+   return new Array<String>(Core::Shell::Helper::try_property_completion($po->type,$prefix));
+}
+
+# all loaded applications
+function list_applications() {
+   return new Array<String>(map { $_->name }Polymake::Core::Application::list_loaded());
+}
+
+# polymake shell startup applications
+function startup_applications() {
+   return new Array<String>(@User::start_applications)
+}
+
+# list all big objects in given application
+function list_big_objects($) {
+   my ($app) = @_;
+   return new Array<String>(uniq(map {$_->full_name} grep {!defined($_->generic) } @{User::application($app)->object_types}));
+}
+
+# map some perl based types without typeinfo to c++ types
+function classify_perl_pv($) {
+   my ($pv) = @_;
+   return "pm::perl::Object"
+      if instanceof Polymake::Core::Object($pv);
+   return "pm::perl::ObjectType"
+      if instanceof Polymake::Core::ObjectType($pv);
+   return "pm::Array<pm::perl::Object>"
+      if instanceof Polymake::Core::BigObjectArray($pv);
+   # a plain perl string is also done here
+   return "std::string"
+      if is_string($pv);
+   # ref will return some string representation of the perl object type
+   return ref($pv);
+}
+
+function is_boolean_wrapper($) {
+   my($c) = @_;
+   return is_boolean($c);
+}
+
+function jupyter_visual_threejs(Visual::Object+) {
+   my $string = "";
+   local $ThreeJS::is_used_in_jupyter=1;
+   open my $handle, ">", \$string;
+   threejs(@_,File=>$handle);
+   close $handle;
+   state $id = 0;
+   $string =~ s/OUTPUTID/$id/gm;
+   $id++;
+   return $string;
+}
+
+function jupyter_visual_svg(Visual::Object+) {
+   die "polymake svg.rules disabled: perl module SVG probably missing"
+      unless application("common")->configured->{"svg.rules"} > 0;
+   my $string = "";
+   open my $handle, ">", \$string;
+   svg(@_,File=>$handle);
+   close $handle;
+   return $string;
+}
