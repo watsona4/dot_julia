@@ -6627,6 +6627,12 @@ git-tree-sha1 = "bad18226122f11c7527001fd8b6cc3fd21671519"
 uuid = "100d92e6-c477-5236-9e74-205fcab5fd63"
 version = "0.1.0"
 
+[[LorentzVectors]]
+deps = ["LinearAlgebra", "Random"]
+git-tree-sha1 = "c479c9d097a35e331ef23df62febbaa23de8af27"
+uuid = "3f54b04b-17fc-5cd4-9758-90c048d965e3"
+version = "0.4.0"
+
 [[LossFunctions]]
 deps = ["InteractiveUtils", "LearnBase", "Markdown", "Random", "RecipesBase", "SparseArrays", "Statistics", "StatsBase", "Test"]
 git-tree-sha1 = "08d87fec43e7d335811dfae5b55dbfc5690e915b"
