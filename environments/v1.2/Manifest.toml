@@ -4723,6 +4723,12 @@ git-tree-sha1 = "3abb51799ee646ca49b3d067b9ce4163d6d09b21"
 uuid = "f62fece2-b996-571a-b4c9-e662aba1c617"
 version = "0.1.1"
 
+[[H5SectionsArrays]]
+deps = ["HDF5"]
+git-tree-sha1 = "d116b4f5d320947af2a091aeb830fd3fef0c9671"
+uuid = "affaf649-2f8e-5dd6-a1c5-c612f82136ef"
+version = "0.7.0"
+
 [[HCubature]]
 deps = ["Combinatorics", "DataStructures", "LinearAlgebra", "QuadGK", "StaticArrays"]
 git-tree-sha1 = "fc4adde0a029bf69c0da3f7c25ca24b5e0e389ed"
