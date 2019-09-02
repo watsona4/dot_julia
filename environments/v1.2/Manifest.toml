@@ -5573,6 +5573,12 @@ git-tree-sha1 = "3ba90ff93e1d5b9b2103588051c2d349fae54dac"
 uuid = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
 version = "0.1.2"
 
+[[JLSO]]
+deps = ["BSON", "CodecZlib", "Memento", "Pkg", "Serialization"]
+git-tree-sha1 = "b0b1eca81fd9f6de148cfd7a404927d92b4c5d87"
+uuid = "9da8a3cd-07a3-59c0-a743-3fdc52c30d11"
+version = "1.1.0"
+
 [[JSExpr]]
 deps = ["JSON", "MacroTools", "Observables", "Test", "WebIO"]
 git-tree-sha1 = "013bc2143a2e84ea489365cf30db3407deb540c2"
