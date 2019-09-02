@@ -8798,6 +8798,12 @@ git-tree-sha1 = "f2aa8a7b5bc0ccec57a1237a97b6f59fc8d9ef57"
 uuid = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 version = "0.26.2"
 
+[[PlyIO]]
+deps = ["Compat"]
+git-tree-sha1 = "897e1b83bae6c23c5cb5dc5e69d6fd8cc321d0a0"
+uuid = "42171d58-473b-503a-8d5f-782019eb09ec"
+version = "1.0.0"
+
 [[PoissonRandom]]
 deps = ["Random", "Statistics", "Test"]
 git-tree-sha1 = "44d018211a56626288b5d3f8c6497d28c26dc850"
