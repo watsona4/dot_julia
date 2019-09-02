@@ -1,0 +1,31 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+dist: xenial
+os:
+  - linux
+  # - osx
+julia:
+  - 1.0
+  - nightly
+addons:
+  apt:
+    packages:
+      - python3-pip
+matrix:
+  include:
+    - language: python
+      env:
+        - TOXENV=black
+      os: linux
+      python: "3.6"
+      before_script:
+        - pip --version
+        - pip install --quiet tox
+      script:
+        - cd jlm && tox
+      after_success: []
+  allow_failures:
+    - julia: nightly
+  fast_finish: true
+notifications:
+  email: false

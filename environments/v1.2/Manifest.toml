@@ -5763,6 +5763,12 @@ git-tree-sha1 = "5ac2f3b46bccb3b7548de2412db6a77d4f1cb857"
 uuid = "e742bb3c-81eb-5c15-8577-c54658a6ac7f"
 version = "0.2.0"
 
+[[JuliaManager]]
+deps = ["PackageCompiler", "Test"]
+git-tree-sha1 = "f01d05e73bc6c3b202c53dfa7d7413e64a079667"
+uuid = "0cdbb3b1-e653-5045-b8d5-b31a04c2a6c9"
+version = "0.1.1"
+
 [[Juno]]
 deps = ["Base64", "Logging", "Media", "Profile", "Test"]
 git-tree-sha1 = "30d94657a422d09cb97b6f86f04f750fa9c50df8"
