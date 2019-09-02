@@ -6169,6 +6169,12 @@ git-tree-sha1 = "1719a379478ef457b54f33bbcff6775d375b37f1"
 uuid = "21d151f5-1f6d-55ec-8524-1c9aee35b0a4"
 version = "1.0.1"
 
+[[Latexify]]
+deps = ["InteractiveUtils", "LaTeXStrings", "MacroTools", "Markdown", "Printf", "Requires", "Test"]
+git-tree-sha1 = "5ea2cc735d06ef3abbac12dcc8403cf1f4999bf7"
+uuid = "23fbe1c1-3f47-55db-b15f-69d7ec21a316"
+version = "0.8.2"
+
 [[LatinHypercubeSampling]]
 deps = ["Random", "StatsBase", "Test"]
 git-tree-sha1 = "7cd8af9c1c8591b7501e82ae5d6f39fcb826aae9"
