@@ -6431,6 +6431,12 @@ git-tree-sha1 = "aeec7a341652d47bc773475a42952fa78eccd7cc"
 uuid = "9c8b4983-aa76-5018-a973-4c85ecc9e179"
 version = "0.8.0"
 
+[[LikelihoodProfiler]]
+deps = ["LinearAlgebra", "NLopt", "Parameters", "Random", "RecipesBase", "Test"]
+git-tree-sha1 = "81c8523528cee4c1171cb817759ab4441b5e389d"
+uuid = "93acb638-a083-5915-8dce-d129bc6a3f59"
+version = "0.2.0"
+
 [[LineSearches]]
 deps = ["LinearAlgebra", "NLSolversBase", "NaNMath", "Parameters", "Printf", "Test"]
 git-tree-sha1 = "54eb90e8dbe745d617c78dee1d6ae95c7f6f5779"
