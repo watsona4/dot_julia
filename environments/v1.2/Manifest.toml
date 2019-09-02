@@ -5308,6 +5308,12 @@ git-tree-sha1 = "087ad2b31892c028b7a56e0a502b13d91faa4b96"
 uuid = "f4508453-b816-52ab-a864-26fc7f6211fc"
 version = "0.2.0"
 
+[[InformationMeasures]]
+deps = ["Discretizers", "Test"]
+git-tree-sha1 = "c7470db68b42299fd245647c9906d36f1528f871"
+uuid = "96684042-fbdc-5399-9b8e-d34e539a126c"
+version = "0.3.0"
+
 [[InfrastructureModels]]
 deps = ["JuMP", "Memento"]
 git-tree-sha1 = "6f8198d3088666e7638a58914dc3f3be8504b0cf"
