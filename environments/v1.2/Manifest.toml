@@ -6783,6 +6783,12 @@ git-tree-sha1 = "a65662af1561d45b359ca5024c3298a2d5812a4b"
 uuid = "274281c4-ae57-11e9-2014-65d3d5d9358c"
 version = "0.1.0"
 
+[[MIToS]]
+deps = ["ArgParse", "AutoHashEquals", "Clustering", "CodecZlib", "DataStructures", "Dates", "DelimitedFiles", "Distributed", "FastaIO", "Formatting", "HTTP", "LightXML", "LinearAlgebra", "NamedArrays", "PairwiseListMatrices", "Pkg", "ProgressMeter", "Random", "RecipesBase", "Requires", "Serialization", "StaticArrays", "Statistics", "StatsBase", "TranscodingStreams"]
+git-tree-sha1 = "5e16c04bb7855f9b98b6d21202a3c11d89722bfd"
+uuid = "51bafb47-8a16-5ded-8b04-24ef4eede0b5"
+version = "2.4.0"
+
 [[MLBase]]
 deps = ["IterTools", "Random", "Reexport", "StatsBase", "Test"]
 git-tree-sha1 = "f63a8d37429568b8c4384d76c4a96fc2897d6ddf"
@@ -7353,6 +7359,12 @@ deps = ["HTTP", "JSON", "Test"]
 git-tree-sha1 = "da02b5cdabdf3a850dad6a92167ef9e45fe144bf"
 uuid = "7c165e09-dada-5b64-9fdc-39b801c58527"
 version = "0.3.1"
+
+[[PairwiseListMatrices]]
+deps = ["DelimitedFiles", "LinearAlgebra", "NamedArrays", "Pkg", "RecipesBase", "Statistics", "Test"]
+git-tree-sha1 = "2ead40f9c4cd83103b78f0afdd19e2b066eb6bc1"
+uuid = "f9da4da7-9382-5435-b973-175f5d8dfb32"
+version = "0.7.0"
 
 [[ParallelProcessingTools]]
 deps = ["Distributed"]
