@@ -1,0 +1,72 @@
+language: julia
+
+os:
+  - linux
+  - osx
+
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+
+matrix:
+  allow_failures:
+  - julia: nightly
+
+notifications:
+  email:
+    recipients:
+      - nslindquist@csbsju.edu
+    on_success: never
+    on_failure: always
+
+
+cache:
+  directories:
+    - $HOME/.julia/packages/MPI/
+    - $HOME/Library/Caches/Homebrew
+    - /usr/local/Homebrew
+
+# homebrew caching comes from https://stackoverflow.com/questions/39930171/cache-brew-builds-with-travis-ci
+before_cache:
+  - brew cleanup
+  - rm -rf /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/homebrew-cask
+
+#MPI.jl needs mpi binaries plus compilers avalible
+addons:
+  apt:
+    packages:
+      - gfortran
+      - mpich
+      - libmpich-dev
+
+before_script:
+  - |
+    if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      if [ -d /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask ]; then
+        rm -rf /usr/local/Homebrew/Library/Taps/caskroom/homebrew-cask
+      fi
+      find -type d -name .git -exec bash -c "cd '{}'/.. && git clean -fxd" ";"
+      brew cleanup
+      brew update --merge
+      brew upgrade cmake
+      brew cask uninstall oclint # Prevent conflict with gcc
+      brew install mpich
+    fi
+
+before_install:
+  - export CC=mpicc
+  - export FC=mpif90
+
+
+# generate documentation
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.1
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd()));
+                                               Pkg.instantiate()'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip

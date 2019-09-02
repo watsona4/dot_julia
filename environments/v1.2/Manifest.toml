@@ -5769,6 +5769,12 @@ git-tree-sha1 = "f01d05e73bc6c3b202c53dfa7d7413e64a079667"
 uuid = "0cdbb3b1-e653-5045-b8d5-b31a04c2a6c9"
 version = "0.1.1"
 
+[[JuliaPetra]]
+deps = ["LinearAlgebra", "MPI", "Serialization", "SparseArrays"]
+git-tree-sha1 = "e29ad2bdeb252ff7ed3f11e0984bcf1790ec2e30"
+uuid = "0a7d185b-be57-59df-ac21-86d8a1799c2e"
+version = "0.2.0"
+
 [[Juno]]
 deps = ["Base64", "Logging", "Media", "Profile", "Test"]
 git-tree-sha1 = "30d94657a422d09cb97b6f86f04f750fa9c50df8"
@@ -6153,10 +6159,10 @@ uuid = "d8e11817-5142-5d16-987a-aa16d5891078"
 version = "0.3.1"
 
 [[MPI]]
-deps = ["Distributed", "Libdl", "Random", "Requires", "Serialization", "Sockets"]
-git-tree-sha1 = "1493102ae15bdbb2f98a5c27fb659528865ec1ba"
+deps = ["BinDeps", "Compat", "Distributed", "Libdl", "LinearAlgebra", "Printf", "Random", "Statistics", "Test"]
+git-tree-sha1 = "b932f8e7115a60208692d474c45d5d6fcea10659"
 uuid = "da04e1cc-30fd-572f-bb4f-1f8673147195"
-version = "0.10.0"
+version = "0.7.2"
 
 [[MacroTools]]
 deps = ["CSTParser", "Compat", "DataStructures", "Test", "Tokenize"]
