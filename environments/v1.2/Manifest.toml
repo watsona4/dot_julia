@@ -8328,6 +8328,12 @@ git-tree-sha1 = "e422fcf5155fc3dc6a09f399d7c4a809f8992d7c"
 uuid = "7d8a6817-b67b-57e2-acac-4a73d125cd6b"
 version = "1.0.0"
 
+[[PGFPlots]]
+deps = ["ColorBrewer", "ColorSchemes", "Colors", "Contour", "DataFrames", "DelimitedFiles", "Discretizers", "Distributed", "ImageMagick", "Images", "IndirectArrays", "Printf", "StatsBase", "TikzPictures"]
+git-tree-sha1 = "7933e00a1fbfcdd1498553bf7e6c3aeb4026ebd6"
+uuid = "3b7a836e-365b-5785-a47d-02c71176b4aa"
+version = "3.1.3"
+
 [[PGFPlotsX]]
 deps = ["ArgCheck", "Crayons", "DataStructures", "Dates", "DefaultApplication", "DocStringExtensions", "MacroTools", "Missings", "Parameters", "Requires", "StatsBase", "Unicode"]
 git-tree-sha1 = "169528d1574e4695db9b5e8304ddfeb4bb717a3f"

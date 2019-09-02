@@ -1,0 +1,25 @@
+language: julia
+sudo: required
+dist: trusty
+julia:
+  - 1.1
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y pdf2svg
+  - sudo apt-get install -y texlive-latex-base
+  - sudo apt-get install -y texlive-binaries
+  - sudo apt-get install -y texlive-pictures
+  - sudo apt-get install -y texlive-latex-extra
+
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia --project --check-bounds=yes -e 'using UUIDs; write("Project.toml", replace(read("Project.toml", String), r"uuid = .*?\n" =>"uuid = \"$(uuid4())\"\n"));
+                                           import Pkg; Pkg.build(); Pkg.add("Test"); Pkg.test(; coverage=true)'
+
+after_success:
+  - julia --project -e 'import Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
