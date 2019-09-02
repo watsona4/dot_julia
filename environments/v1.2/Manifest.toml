@@ -7810,6 +7810,11 @@ git-tree-sha1 = "ddf1cb06a043a321214f58b79b132c0e5c3fa919"
 uuid = "d9ec5142-1e00-5aa0-9d6a-321866360f50"
 version = "0.10.0"
 
+[[NamedTuples]]
+git-tree-sha1 = "78c33ab43ef2aac9127d53edcb7a92e7fa63c126"
+uuid = "73a701b4-84e1-5df0-88ff-1968ee2ee8dc"
+version = "5.0.0"
+
 [[NearestNeighbors]]
 deps = ["Distances", "LinearAlgebra", "Mmap", "StaticArrays", "Test"]
 git-tree-sha1 = "f47c5d97cf9a8caefa47e9fa9d99d8fda1a65154"
