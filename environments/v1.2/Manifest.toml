@@ -5579,6 +5579,12 @@ git-tree-sha1 = "b0b1eca81fd9f6de148cfd7a404927d92b4c5d87"
 uuid = "9da8a3cd-07a3-59c0-a743-3fdc52c30d11"
 version = "1.1.0"
 
+[[JSCall]]
+deps = ["JSExpr", "JSON", "WebIO"]
+git-tree-sha1 = "337a86a7c30b6608f4697a4dcd4162c968fa08f6"
+uuid = "7408c33d-3899-58ec-b6f6-b7e67cfb9908"
+version = "0.2.0"
+
 [[JSExpr]]
 deps = ["JSON", "MacroTools", "Observables", "Test", "WebIO"]
 git-tree-sha1 = "013bc2143a2e84ea489365cf30db3407deb540c2"
