@@ -8173,6 +8173,12 @@ git-tree-sha1 = "163c1a6d44884bcfe2d43e5536b78575c1e1bed9"
 uuid = "085fdc97-bbf0-5359-b689-34bac5cd65e1"
 version = "0.5.0"
 
+[[Omniscape]]
+deps = ["Circuitscape", "DelimitedFiles", "Distributed", "SharedArrays"]
+git-tree-sha1 = "f919aa9ae11ad2d7d9fa82ec11276a8c4fc9ae35"
+uuid = "a38d70fc-99f5-11e9-1e3d-cbca093024c3"
+version = "0.1.0"
+
 [[OnlineStats]]
 deps = ["DataStructures", "Dates", "LearnBase", "LinearAlgebra", "LossFunctions", "OnlineStatsBase", "PenaltyFunctions", "Random", "RecipesBase", "Reexport", "Statistics", "StatsBase", "SweepOperator", "Test"]
 git-tree-sha1 = "a783fe25075b9d09d6dd2ba67dafd374d835acfa"
