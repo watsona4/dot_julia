@@ -6139,6 +6139,12 @@ git-tree-sha1 = "7899075fa3575fa2d962ac17d14e72061d2ab5cc"
 uuid = "25f206ee-5729-11e9-3bb3-7baf6634b443"
 version = "0.1.0"
 
+[[Laplacians]]
+deps = ["Arpack", "DataStructures", "DelimitedFiles", "LinearAlgebra", "Plots", "Printf", "Random", "RandomV06", "SparseArrays", "Statistics", "SuiteSparse", "Test"]
+git-tree-sha1 = "f20e07bd4576210e2f3af69e845aeaaa3786305f"
+uuid = "6f8e5838-0efe-5de0-80a3-5fb4f8dbb1de"
+version = "1.1.1"
+
 [[Lasso]]
 deps = ["DSP", "Distributions", "GLM", "LinearAlgebra", "MLBase", "Random", "Reexport", "SparseArrays", "StatsBase"]
 git-tree-sha1 = "d16e4026612333e691001984b593ac42e0ee07e9"
@@ -7239,6 +7245,12 @@ deps = ["Random", "Requires"]
 git-tree-sha1 = "1417be19c15706c1584d01e32662eb640a4cc908"
 uuid = "e6cf234a-135c-5ec9-84dd-332b85af5143"
 version = "1.3.0"
+
+[[RandomV06]]
+deps = ["Random", "Test"]
+git-tree-sha1 = "ee7a6e4864f25e4c4ea66f75e358dab48d551cd1"
+uuid = "3639840a-3b65-599e-a5e5-6439523e890e"
+version = "0.0.2"
 
 [[RangeArrays]]
 deps = ["Compat"]
