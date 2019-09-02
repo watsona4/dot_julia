@@ -7584,6 +7584,12 @@ git-tree-sha1 = "ddc00a66d775fab6ba10ecd9cf87a4cda2782036"
 uuid = "102ac46a-7ee4-5c85-9060-abc95bfdeaa3"
 version = "0.3.2"
 
+[[MultivariateSeries]]
+deps = ["DynamicPolynomials", "LinearAlgebra", "MultivariatePolynomials"]
+git-tree-sha1 = "5776b1cb912a5ebfb4f09ccc3c8841a312f0538a"
+uuid = "08acae6c-c1bf-11e9-0c27-6b1945f8789b"
+version = "0.1.0"
+
 [[MultivariateStats]]
 deps = ["Arpack", "LinearAlgebra", "Printf", "Random", "SparseArrays", "Statistics", "StatsBase", "Test"]
 git-tree-sha1 = "cf1c990020bc4a52ff34ba2ee058b7cb677141f2"
