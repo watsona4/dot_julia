@@ -1,0 +1,24 @@
+language: julia
+os:
+    - linux
+    - osx
+julia:
+    - 0.7
+    - 1.0
+    - 1.1
+notifications:
+    email: false
+sudo: false
+addons:
+    apt_packages:
+        - gfortran
+        - liblapack-dev
+        - libgmp-dev
+        - libglpk-dev
+# script:
+#     - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#     - julia -e 'Pkg.clone(pwd())'
+#     - julia -e 'Pkg.update()'
+#     - julia -e 'Pkg.test("JuMPeR", coverage=true)'
+after_success:
+    - julia -e 'using Pkg; cd(Pkg.dir("JuMPeR")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
