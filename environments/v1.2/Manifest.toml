@@ -5686,6 +5686,12 @@ git-tree-sha1 = "dc6e047f2c5bd7b34cc3988232dda8e94b53bfc8"
 uuid = "ba5e3d4b-8524-549f-bc71-e76ad9e9deed"
 version = "0.1.14"
 
+[[Joseki]]
+deps = ["Dates", "HTTP", "JSON", "Sockets", "Test"]
+git-tree-sha1 = "c97887cf3d9b6e29ebb10902f0c8a77de226fd56"
+uuid = "b588beb9-536a-5a7d-a241-c127386fde06"
+version = "0.2.1"
+
 [[JuLIP]]
 deps = ["AlgebraicMultigrid", "Calculus", "CommonSubexpressions", "DelimitedFiles", "Dierckx", "ForwardDiff", "FunctionWrappers", "JSON", "LineSearches", "LinearAlgebra", "MacroTools", "NeighbourLists", "Optim", "Printf", "Reexport", "SparseArrays", "StaticArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "2a9bcb7006a0159194d54c9c54c2b933b77ea41d"
