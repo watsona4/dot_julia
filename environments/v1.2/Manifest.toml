@@ -5153,6 +5153,12 @@ git-tree-sha1 = "f6a2f42210340ba3680d94241aa7401b03078842"
 uuid = "2996bd0c-7a13-11e9-2da2-2f5ce47296a9"
 version = "0.1.2"
 
+[[ImageQuilting]]
+deps = ["CpuId", "FFTW", "ImageFiltering", "ImageMorphology", "LightGraphs", "LightGraphsFlows", "Primes", "ProgressMeter", "Random", "RecipesBase", "Requires", "SparseArrays", "Statistics", "StatsBase"]
+git-tree-sha1 = "4652144c19884dc1fa5232b0c6af1577d4bacaa3"
+uuid = "e8712464-036d-575c-85ac-952ae31322ab"
+version = "0.8.0"
+
 [[ImageShow]]
 deps = ["Base64", "ColorTypes", "Colors", "FileIO", "FixedPointNumbers", "ImageCore", "OffsetArrays", "Requires"]
 git-tree-sha1 = "c23323afc82b6b553e6b2244d531e50858ea392c"
@@ -5608,6 +5614,12 @@ deps = ["ArnoldiMethod", "DataStructures", "Distributed", "Inflate", "LinearAlge
 git-tree-sha1 = "a0d4bcea4b9c056da143a5ded3c2b7f7740c2d41"
 uuid = "093fc24a-ae57-5d10-9952-331d41423f4d"
 version = "1.3.0"
+
+[[LightGraphsFlows]]
+deps = ["LightGraphs", "LinearAlgebra", "Markdown", "MathProgBase", "SimpleTraits", "SparseArrays", "Test"]
+git-tree-sha1 = "0aa484c34ab15576b14df04ab29fb628b7ce46c1"
+uuid = "2f5eb75a-258c-59e0-affc-f41c55f75335"
+version = "0.3.0"
 
 [[LightXML]]
 deps = ["BinaryProvider", "Libdl", "Test"]

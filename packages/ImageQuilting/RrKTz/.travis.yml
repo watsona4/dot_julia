@@ -1,0 +1,26 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.1
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+  fast_finish: true
+notifications:
+  email: false
+after_success:
+  - julia -e 'using Pkg; Pkg.add("Coverage")'
+  - julia -e 'using Coverage; Codecov.submit(process_folder())'
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.1
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.instantiate()'
+        - julia --project=docs/ -e 'using Pkg; Pkg.add(PackageSpec(path=pwd()))'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip
