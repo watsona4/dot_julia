@@ -8525,6 +8525,12 @@ git-tree-sha1 = "717e14ba07d5c3ea3f3cce1560d8df440b449e05"
 uuid = "c070f950-bb2a-11e8-1d15-1b6f26bd9de9"
 version = "0.1.0"
 
+[[ParticleScattering]]
+deps = ["CSV", "DataFrames", "IterativeSolvers", "JLD", "LineSearches", "LinearAlgebra", "LinearMaps", "Optim", "Printf", "PyCall", "PyPlot", "SparseArrays", "SpecialFunctions", "Statistics"]
+git-tree-sha1 = "51abfd505fbdd8d0dc8f4e17389a2538f11ef1be"
+uuid = "3532a73c-0c3e-5edc-89e3-d771336b0a2d"
+version = "0.1.0"
+
 [[PenaltyFunctions]]
 deps = ["InteractiveUtils", "LearnBase", "LinearAlgebra", "RecipesBase", "Reexport", "Test"]
 git-tree-sha1 = "b0baaa5218ca0ffd6a8ae37ef0b58e0df688ac8b"
