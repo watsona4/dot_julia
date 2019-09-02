@@ -6204,6 +6204,12 @@ git-tree-sha1 = "6087ad3521d6278ebe5c27ae55e7bbb15ca312cb"
 uuid = "6f188dcb-512c-564b-bc01-e0f76e72f166"
 version = "1.0.0"
 
+[[LazIO]]
+deps = ["BinaryProvider", "FileIO", "LasIO", "Libdl", "Parameters", "Test"]
+git-tree-sha1 = "93ad59139405014afcc1c5ebbcdb5fac7140f5ff"
+uuid = "c3605908-9f0f-11e8-0a72-0d361c15a277"
+version = "0.1.0"
+
 [[Lazy]]
 deps = ["Compat", "MacroTools", "Test"]
 git-tree-sha1 = "aec38c7e7f255a678af22651c74100e3cd39ea20"
