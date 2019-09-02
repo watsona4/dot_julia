@@ -1,0 +1,226 @@
+__precompile__()
+
+module Suppressor
+using Compat
+
+export @suppress, @suppress_out, @suppress_err
+export @capture_out, @capture_err
+export @color_output
+
+haslogging() = isdefined(Base, :CoreLogging)
+
+"""
+    @suppress expr
+
+Suppress the `stdout` and `stderr` streams for the given expression.
+"""
+macro suppress(block)
+    quote
+        if ccall(:jl_generating_output, Cint, ()) == 0
+            original_stdout = stdout
+            out_rd, out_wr = redirect_stdout()
+            out_reader = @async read(out_rd, String)
+
+            original_stderr = stderr
+            err_rd, err_wr = redirect_stderr()
+            err_reader = @async read(err_rd, String)
+
+            # approach adapted from https://github.com/JuliaLang/IJulia.jl/pull/667/files
+            if haslogging()
+                logstate = Base.CoreLogging._global_logstate
+                logger = logstate.logger
+                if logger.stream == original_stderr
+                    new_logstate = Base.CoreLogging.LogState(typeof(logger)(err_wr, logger.min_level))
+                    Core.eval(Base.CoreLogging, Expr(:(=), :(_global_logstate), new_logstate))
+                end
+            end
+        end
+
+        try
+            $(esc(block))
+        finally
+            if ccall(:jl_generating_output, Cint, ()) == 0
+                redirect_stdout(original_stdout)
+                close(out_wr)
+
+                redirect_stderr(original_stderr)
+                close(err_wr)
+
+                if haslogging()
+                    if logger.stream == stderr
+                        Core.eval(Base.CoreLogging, Expr(:(=), :(_global_logstate), logstate))
+                    end
+                end
+            end
+        end
+    end
+end
+
+"""
+    @suppress_out expr
+
+Suppress the `stdout` stream for the given expression.
+"""
+macro suppress_out(block)
+    quote
+        if ccall(:jl_generating_output, Cint, ()) == 0
+            original_stdout = stdout
+            out_rd, out_wr = redirect_stdout()
+            out_reader = @async read(out_rd, String)
+        end
+
+        try
+            $(esc(block))
+        finally
+            if ccall(:jl_generating_output, Cint, ()) == 0
+                redirect_stdout(original_stdout)
+                close(out_wr)
+            end
+        end
+    end
+end
+
+"""
+    @suppress_err expr
+
+Suppress the `stderr` stream for the given expression.
+"""
+macro suppress_err(block)
+    quote
+        if ccall(:jl_generating_output, Cint, ()) == 0
+            original_stderr = stderr
+            err_rd, err_wr = redirect_stderr()
+            err_reader = @async read(err_rd, String)
+
+            # approach adapted from https://github.com/JuliaLang/IJulia.jl/pull/667/files
+            if haslogging()
+                logstate = Base.CoreLogging._global_logstate
+                logger = logstate.logger
+                if logger.stream == original_stderr
+                    new_logstate = Base.CoreLogging.LogState(typeof(logger)(err_wr, logger.min_level))
+                    Core.eval(Base.CoreLogging, Expr(:(=), :(_global_logstate), new_logstate))
+                end
+            end
+        end
+
+        try
+            $(esc(block))
+        finally
+            if ccall(:jl_generating_output, Cint, ()) == 0
+                redirect_stderr(original_stderr)
+                close(err_wr)
+
+                if haslogging()
+                    if logger.stream == stderr
+                        Core.eval(Base.CoreLogging, Expr(:(=), :(_global_logstate), logstate))
+                    end
+                end
+            end
+        end
+    end
+end
+
+
+"""
+    @capture_out expr
+
+Capture the `stdout` stream for the given expression.
+"""
+macro capture_out(block)
+    quote
+        if ccall(:jl_generating_output, Cint, ()) == 0
+            original_stdout = stdout
+            out_rd, out_wr = redirect_stdout()
+            out_reader = @async read(out_rd, String)
+        end
+
+        try
+            $(esc(block))
+        finally
+            if ccall(:jl_generating_output, Cint, ()) == 0
+                redirect_stdout(original_stdout)
+                close(out_wr)
+            end
+        end
+
+        if ccall(:jl_generating_output, Cint, ()) == 0
+            fetch(out_reader)
+        else
+            ""
+        end
+    end
+end
+
+"""
+    @capture_err expr
+
+Capture the `stderr` stream for the given expression.
+"""
+macro capture_err(block)
+    quote
+        if ccall(:jl_generating_output, Cint, ()) == 0
+            original_stderr = stderr
+            err_rd, err_wr = redirect_stderr()
+            err_reader = @async read(err_rd, String)
+
+            if haslogging()
+                # approach adapted from https://github.com/JuliaLang/IJulia.jl/pull/667/files
+                logstate = Base.CoreLogging._global_logstate
+                logger = logstate.logger
+                if logger.stream == original_stderr
+                    new_logstate = Base.CoreLogging.LogState(typeof(logger)(err_wr, logger.min_level))
+                    Core.eval(Base.CoreLogging, Expr(:(=), :(_global_logstate), new_logstate))
+                end
+            end
+        end
+
+        try
+            $(esc(block))
+        finally
+            if ccall(:jl_generating_output, Cint, ()) == 0
+                redirect_stderr(original_stderr)
+                close(err_wr)
+
+                if haslogging()
+                    if logger.stream == stderr
+                        Core.eval(Base.CoreLogging, Expr(:(=), :(_global_logstate), logstate))
+                    end
+                end
+            end
+        end
+
+        if ccall(:jl_generating_output, Cint, ()) == 0
+            fetch(err_reader)
+        else
+            ""
+        end
+    end
+end
+
+"""
+    @color_output enabled::Bool expr
+
+Enable or disable color printing for the given expression. Often useful in
+combination with the `@capture_*` macros:
+
+## Example
+
+@color_output false begin
+    output = @capture_err begin
+        @warn "should get captured, not printed"
+    end
+end
+@test output == "WARNING: should get captured, not printed\n"
+"""
+macro color_output(enabled::Bool, block)
+    quote
+        prev_color = Base.have_color
+        Core.eval(Base, :(have_color = $$enabled))
+        retval = $(esc(block))
+        Core.eval(Base, Expr(:(=), :have_color, prev_color))
+
+        retval
+    end
+end
+
+end    # module

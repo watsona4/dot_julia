@@ -5355,6 +5355,12 @@ git-tree-sha1 = "4ebc2562f47be316d809666c0520a083fdb4ed6d"
 uuid = "d0351b0e-4b05-5898-87b3-e2a8edfddd1d"
 version = "0.3.6"
 
+[[InstantiateFromURL]]
+deps = ["BinaryProvider", "Dates", "HTTP", "Markdown", "Pkg", "Suppressor", "Test"]
+git-tree-sha1 = "c4db55194f6bfd32d83a4aa0affa88e511ece48a"
+uuid = "43edad99-fa64-5e4f-9937-1c09a410b73f"
+version = "0.3.3"
+
 [[Interact]]
 deps = ["CSSUtil", "InteractBase", "JSON", "Knockout", "Observables", "OrderedCollections", "Reexport", "WebIO", "Widgets"]
 git-tree-sha1 = "381c584142ac744bcc23af64bff3e3dc44d7f632"
@@ -7229,6 +7235,12 @@ deps = ["BinaryProvider", "DataStructures", "DiffEqBase", "Libdl", "LinearAlgebr
 git-tree-sha1 = "c068455576ce91cdbb9474967912b547cacbf50f"
 uuid = "c3572dad-4567-51f8-b174-8c6c989267f4"
 version = "3.6.2"
+
+[[Suppressor]]
+deps = ["Compat"]
+git-tree-sha1 = "a39342763981e766a72938b59032dc02a2d74da5"
+uuid = "fd094767-a336-5f1f-9728-57cf17d0bbfb"
+version = "0.1.1"
 
 [[SweepOperator]]
 deps = ["LinearAlgebra", "Test"]
