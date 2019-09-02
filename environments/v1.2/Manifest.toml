@@ -7500,6 +7500,12 @@ git-tree-sha1 = "a4bc0ad02c25a442357189b60168a0173c9bbf76"
 uuid = "d0551c8d-3c54-58b6-a75a-e266c30cc699"
 version = "0.3.0"
 
+[[Mozi]]
+deps = ["Arpack", "DSP", "FFTW", "HCubature", "LinearAlgebra", "Logging", "Mmap", "Serialization", "SparseArrays", "Test"]
+git-tree-sha1 = "68817cd845d091106ac57176c25d4fd1f56c2405"
+uuid = "938b0b66-b18d-59c3-b436-87bb841ccf42"
+version = "0.0.2"
+
 [[MsgPack]]
 deps = ["Compat", "Random", "Test"]
 git-tree-sha1 = "c44b3470fa98705f9c12cb44ec9504de3af027ad"
