@@ -5816,6 +5816,12 @@ git-tree-sha1 = "cdc8ce82826d10fa69631c7d0303cce10ae25f57"
 uuid = "2f2169dc-6776-11e9-1952-6179d4a35fe3"
 version = "0.1.2"
 
+[[Jute]]
+deps = ["ArgParse", "DataStructures", "Pkg", "Test"]
+git-tree-sha1 = "79723bc870a7fe977e8d02fb48d47ded4a594cb5"
+uuid = "82bedeac-9837-5b62-883a-b5b3b7c811c5"
+version = "0.2.2"
+
 [[KernelDensity]]
 deps = ["Distributions", "FFTW", "Interpolations", "Optim", "StatsBase", "Test"]
 git-tree-sha1 = "c1048817fe5711f699abc8fabd47b1ac6ba4db04"
