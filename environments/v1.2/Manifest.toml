@@ -6187,6 +6187,18 @@ git-tree-sha1 = "5f2953184c19ec3493cc2bd467080f5ed4ff314f"
 uuid = "c3c424ec-ae8f-5049-b7bf-f9296ef684c8"
 version = "0.2.0"
 
+[[LatticeSites]]
+deps = ["Lattices", "Random", "StaticArrays"]
+git-tree-sha1 = "8a261ee237dbd5fae2e10192cfd8b1d465c6d7eb"
+uuid = "5c077215-83a5-5958-bb3f-c7068ae3c6fe"
+version = "0.2.3"
+
+[[Lattices]]
+deps = ["Reexport"]
+git-tree-sha1 = "8adf3de74ff0c9bf0585009e0955855d011e66e6"
+uuid = "c21dee59-005f-55b6-acfd-94526b082a96"
+version = "0.2.1"
+
 [[Lazy]]
 deps = ["Compat", "MacroTools", "Test"]
 git-tree-sha1 = "aec38c7e7f255a678af22651c74100e3cd39ea20"
