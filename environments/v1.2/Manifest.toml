@@ -6771,6 +6771,12 @@ git-tree-sha1 = "cd4878dae41b1d0d63adef75b417fdd3b4ed0dfb"
 uuid = "4854310b-de5a-5eb6-a2a5-c1dee2bd17f9"
 version = "1.1.1"
 
+[[MIRT]]
+deps = ["BenchmarkTools", "Colors", "DSP", "Distributed", "Distributions", "Elliptic", "FFTViews", "FFTW", "FileIO", "ImageFiltering", "ImageTransformations", "LaTeXStrings", "LinearAlgebra", "LinearMaps", "MosaicViews", "NFFT", "Plots", "Printf", "REPL", "Random", "SharedArrays", "SparseArrays", "Test", "Wavelets"]
+git-tree-sha1 = "73a7b45d4d97d96b848c2c4a1bbca4f9aaca06de"
+uuid = "7035ae7a-3787-11e9-139a-5545ed3dc201"
+version = "0.7.0"
+
 [[MLBase]]
 deps = ["IterTools", "Random", "Reexport", "StatsBase", "Test"]
 git-tree-sha1 = "f63a8d37429568b8c4384d76c4a96fc2897d6ddf"
@@ -7001,6 +7007,12 @@ git-tree-sha1 = "eb2eabdfb19a3adafe33b66e8d3c2d45b94e9ed0"
 uuid = "c1673bdb-6aff-560b-99da-c78ea6da9af3"
 version = "0.2.0"
 
+[[MosaicViews]]
+deps = ["ImageCore", "PaddedViews", "Test"]
+git-tree-sha1 = "20e0f243b1c840ed0830e7f936289e9240d25311"
+uuid = "e94cdb99-869f-56ef-bcf0-1ae2bcbe0389"
+version = "0.1.0"
+
 [[MsgPack]]
 deps = ["Compat", "Random", "Test"]
 git-tree-sha1 = "c44b3470fa98705f9c12cb44ec9504de3af027ad"
@@ -7072,6 +7084,12 @@ deps = ["BinDeps", "Compat", "CondaBinDeps", "DataStructures", "Dates", "Libdl",
 git-tree-sha1 = "7c92182f5d9094d8b46cf27648342954a630f8ec"
 uuid = "85f8d34a-cbdd-5861-8df4-14fed0d494ab"
 version = "0.9.2"
+
+[[NFFT]]
+deps = ["Distributed", "FFTW", "LinearAlgebra", "Random", "SparseArrays", "SpecialFunctions", "Test"]
+git-tree-sha1 = "5678da0cbb2428a4b01403b5e555945191525bb0"
+uuid = "efe261a4-0d2b-5849-be55-fc731d526b0d"
+version = "0.4.0"
 
 [[NLPModels]]
 deps = ["FastClosures", "ForwardDiff", "LinearAlgebra", "LinearOperators", "Printf", "SparseArrays", "Test"]
