@@ -6990,6 +6990,12 @@ version = "0.0.1"
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 
+[[MarketData]]
+deps = ["HTTP", "Reexport", "Test", "TimeSeries"]
+git-tree-sha1 = "ee1bde9351cc4f42387b33bd3996a7081e24e4e6"
+uuid = "945b72a4-3b13-509d-9b46-1525bb5c06de"
+version = "0.11.0"
+
 [[Match]]
 deps = ["Test"]
 git-tree-sha1 = "8d8253da9e8d38d642cec03d41786a5201479210"
