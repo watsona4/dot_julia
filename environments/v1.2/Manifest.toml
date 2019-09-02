@@ -8686,6 +8686,12 @@ git-tree-sha1 = "3f5b77a7e48bcf24b35cf58fd4f97652802a3e10"
 uuid = "b98c9c47-44ae-5843-9183-064241ee97a0"
 version = "1.1.0"
 
+[[Pitchjx]]
+deps = ["DataFrames", "Dates", "EzXML", "HTTP", "ProfileView"]
+git-tree-sha1 = "dd08ac39e04254433ac680a49c3553f2f42170ee"
+uuid = "aacb0929-27c6-5080-af7c-e887e16e4e49"
+version = "0.0.4"
+
 [[Pkg]]
 deps = ["Dates", "LibGit2", "Markdown", "Printf", "REPL", "Random", "SHA", "UUIDs"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
