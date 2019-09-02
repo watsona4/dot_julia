@@ -7572,6 +7572,12 @@ git-tree-sha1 = "e9a498ae819e5ee9425b44b727ae20d3cff1f74c"
 uuid = "54e48022-12d0-513b-b20d-e273c072c6db"
 version = "0.1.7"
 
+[[MultivariateMoments]]
+deps = ["LinearAlgebra", "MultivariatePolynomials", "RowEchelon", "SemialgebraicSets"]
+git-tree-sha1 = "470520d85d92f67686a496f2092d63cf276dabe3"
+uuid = "f4abf1af-0426-5881-a0da-e2f168889b5e"
+version = "0.2.2"
+
 [[MultivariatePolynomials]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "ddc00a66d775fab6ba10ecd9cf87a4cda2782036"
@@ -8405,6 +8411,12 @@ git-tree-sha1 = "293ba0ab32218b9ffd596040224228def84f8da0"
 uuid = "d5f540fe-1c90-5db3-b776-2e2f362d9394"
 version = "0.2.0"
 
+[[RowEchelon]]
+deps = ["Compat"]
+git-tree-sha1 = "4022bb8393f4024e163eecf30d019a3dae9f5a6e"
+uuid = "af85af4c-bcd5-5d23-b03a-a909639aa875"
+version = "0.1.1"
+
 [[RunLengthArrays]]
 git-tree-sha1 = "0fb6ef475a8671fee5e17a5ce9cd785f4f4c6982"
 uuid = "11ec6118-8d4c-11e9-02bb-6986bd51d19a"
@@ -8478,6 +8490,12 @@ deps = ["BitConverter"]
 git-tree-sha1 = "626e6e5c739e9ad323daf69e672c3c3680f2ba35"
 uuid = "bfa37bea-997f-11e9-0e02-2d50932a0e04"
 version = "0.1.0"
+
+[[SemialgebraicSets]]
+deps = ["LinearAlgebra", "MultivariatePolynomials", "Random"]
+git-tree-sha1 = "8cc4a0ee2a4d616bfb5116b43f7e032b0dccddc9"
+uuid = "8e049039-38e8-557d-ae3a-bc521ccf6204"
+version = "0.2.0"
 
 [[SemidefiniteModels]]
 deps = ["Compat", "GZip", "MathProgBase"]
