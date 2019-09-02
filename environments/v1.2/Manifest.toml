@@ -8662,6 +8662,12 @@ git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
 uuid = "bb151fc1-c6dc-5496-8ed6-07f94907e623"
 version = "0.1.0"
 
+[[PicoSAT]]
+deps = ["Test"]
+git-tree-sha1 = "07b5a21ae117b9e5434421e8414ce2a0e7a79485"
+uuid = "ff2beb65-d7cd-5ff1-a187-74671133a339"
+version = "0.3.2"
+
 [[Pidfile]]
 deps = ["FileWatching", "Test"]
 git-tree-sha1 = "1ffd82728498b5071cde851bbb7abd780d4445f3"
