@@ -8043,6 +8043,12 @@ git-tree-sha1 = "ed4aaa8fa70b9f3b535ad8b93df027dd89dc3ef8"
 uuid = "53eb397e-dec1-5dcf-8dc9-2db916067267"
 version = "0.4.0"
 
+[[OMETIFF]]
+deps = ["AxisArrays", "Colors", "EzXML", "FileIO", "FixedPointNumbers", "ImageMetadata", "Images", "JSON", "Unitful"]
+git-tree-sha1 = "c0bb14a0ea4bd00ad1c4b373418aa8ec9e965ec2"
+uuid = "2d0ec36b-e807-5756-994b-45af29551fcf"
+version = "0.3.0"
+
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"
