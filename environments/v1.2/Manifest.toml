@@ -8126,6 +8126,12 @@ git-tree-sha1 = "9c6277b9c7fbd367a96a890e7e4182a4a577f138"
 uuid = "d848d694-35fd-11e9-1c91-9995598ac29e"
 version = "0.1.0"
 
+[[Oceananigans]]
+deps = ["Distributed", "FFTW", "GPUifyLoops", "JLD", "NetCDF", "Pkg", "Printf", "Random", "Statistics", "Test"]
+git-tree-sha1 = "c12c67d3ec7ac13cc585a95363950d4286f8dd25"
+uuid = "9e8cae18-63c1-5223-a75c-80ca9d6e9a09"
+version = "0.5.1"
+
 [[OffsetArrays]]
 git-tree-sha1 = "1af2f79c7eaac3e019a0de41ef63335ff26a0a57"
 uuid = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
