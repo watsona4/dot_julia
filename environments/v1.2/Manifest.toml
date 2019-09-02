@@ -7596,6 +7596,12 @@ git-tree-sha1 = "cf1c990020bc4a52ff34ba2ee058b7cb677141f2"
 uuid = "6f286f6a-111f-5878-ab1e-185364afe411"
 version = "0.6.0"
 
+[[Munkres]]
+deps = ["LinearAlgebra", "Test"]
+git-tree-sha1 = "6a3d884ec6c0ffd87524ab672b907afb6ea15388"
+uuid = "4cefb923-2b6f-58c4-9e65-6821f26b7b51"
+version = "0.2.0"
+
 [[Mustache]]
 deps = ["Printf", "Tables"]
 git-tree-sha1 = "f39de3a12232eb47bd0629b3a661054287780276"
