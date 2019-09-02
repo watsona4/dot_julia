@@ -8179,6 +8179,12 @@ git-tree-sha1 = "f919aa9ae11ad2d7d9fa82ec11276a8c4fc9ae35"
 uuid = "a38d70fc-99f5-11e9-1e3d-cbca093024c3"
 version = "0.1.0"
 
+[[OnlinePackage]]
+deps = ["Base64", "HTTP", "JSON", "LibGit2"]
+git-tree-sha1 = "3911363ac26e15583cc049007ec70881900c49ab"
+uuid = "dec300e5-7e5b-577b-bc13-c7c11ad250bc"
+version = "0.1.3"
+
 [[OnlineStats]]
 deps = ["DataStructures", "Dates", "LearnBase", "LinearAlgebra", "LossFunctions", "OnlineStatsBase", "PenaltyFunctions", "Random", "RecipesBase", "Reexport", "Statistics", "StatsBase", "SweepOperator", "Test"]
 git-tree-sha1 = "a783fe25075b9d09d6dd2ba67dafd374d835acfa"
