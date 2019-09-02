@@ -1,0 +1,14 @@
+name = "PkgMirrors"
+uuid = "e0fc9d43-7ff6-5671-9fff-748a5437251c"
+author = ["Sunoru <s@sunoru.com>"]
+repo = "https://github.com/sunoru/PkgMirrors.jl.git"
+version = "1.2.0"
+
+[deps]
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

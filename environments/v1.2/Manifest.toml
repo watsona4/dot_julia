@@ -8708,6 +8708,12 @@ git-tree-sha1 = "0af826be249c6751a3e783c07b8cd3034f508943"
 uuid = "fc669557-7ec9-5e45-bca9-462afbc28879"
 version = "0.2.0"
 
+[[PkgMirrors]]
+deps = ["Pkg", "Test"]
+git-tree-sha1 = "9e674a3adb55f0d3033c4e503348cd3e797a72fe"
+uuid = "e0fc9d43-7ff6-5671-9fff-748a5437251c"
+version = "1.2.0"
+
 [[PlotThemes]]
 deps = ["PlotUtils", "Requires", "Test"]
 git-tree-sha1 = "f3afd2d58e1f6ac9be2cea46e4a9083ccc1d990b"
