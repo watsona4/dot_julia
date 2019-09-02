@@ -8726,6 +8726,12 @@ git-tree-sha1 = "dbb1672f1ee3a7e440fb39fcf5a2dc37c3d22c55"
 uuid = "14b8a8f1-9102-5b29-a752-f990bacb7fe1"
 version = "0.6.2"
 
+[[PkgUtils]]
+deps = ["LightGraphs", "MetaGraphs", "Pkg", "SnoopCompile", "Statistics"]
+git-tree-sha1 = "39b2f03a8c9260928fe0f4c462c7281ea72a2a0c"
+uuid = "6f897bc9-7a02-494e-b4ae-05ae7ec60539"
+version = "0.2.0"
+
 [[PlotThemes]]
 deps = ["PlotUtils", "Requires", "Test"]
 git-tree-sha1 = "f3afd2d58e1f6ac9be2cea46e4a9083ccc1d990b"
@@ -9378,6 +9384,12 @@ deps = ["BinaryProvider", "Libdl", "Random", "Test"]
 git-tree-sha1 = "25620a91907972a05863941d6028791c2613888e"
 uuid = "59d4ed8c-697a-5b28-a4c7-fe95c22820f9"
 version = "0.3.0"
+
+[[SnoopCompile]]
+deps = ["Pkg", "Serialization"]
+git-tree-sha1 = "75967e2e875f2790c3e0a804f4416d0f15e115de"
+uuid = "aa65fe97-06da-5843-b5b1-d5d13cad87d2"
+version = "0.4.1"
 
 [[Sobol]]
 deps = ["Random"]
