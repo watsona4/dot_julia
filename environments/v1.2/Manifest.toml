@@ -5798,6 +5798,12 @@ git-tree-sha1 = "5c5239dc913723f5e1357f584fd55caee808016d"
 uuid = "5cadff95-7770-533d-a838-a1bf817ee6e0"
 version = "0.2.2"
 
+[[Juniper]]
+deps = ["Distributed", "JSON", "JuMP", "LinearAlgebra", "MathProgBase", "Random", "Statistics"]
+git-tree-sha1 = "0cfb191211a1f7b076baa022cf550a5e7af30e06"
+uuid = "2ddba703-00a4-53a7-87a5-e8b9971dde84"
+version = "0.3.0"
+
 [[Juno]]
 deps = ["Base64", "Logging", "Media", "Profile", "Test"]
 git-tree-sha1 = "30d94657a422d09cb97b6f86f04f750fa9c50df8"
