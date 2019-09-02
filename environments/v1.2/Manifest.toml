@@ -7995,6 +7995,12 @@ git-tree-sha1 = "71a5bf35469ec57e1bfdeec7dbb5757e51949bbb"
 uuid = "e7bfaba1-d571-5449-8927-abc22e82249b"
 version = "0.2.0"
 
+[[NumericalMethodsforEngineers]]
+deps = ["BandedMatrices", "Calculus", "Compat", "DataFrames", "Documenter", "IterativeSolvers", "LinearAlgebra", "Plots", "QuadGK", "SparseArrays", "Symata", "Test"]
+git-tree-sha1 = "4017c932561962d9c35e22bb9d28184fc8c2dc85"
+uuid = "00e1d38a-71a9-5665-8612-32ae585a75a3"
+version = "1.0.0"
+
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "c5535f89b1e510ef03d4bfb4b46313d2e10cc9f6"
@@ -9127,6 +9133,12 @@ deps = ["LinearAlgebra", "PyCall", "RecipesBase", "SpecialFunctions"]
 git-tree-sha1 = "0bca6c3dc6543d8049ba3e693311201a393c687e"
 uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 version = "1.0.5"
+
+[[Symata]]
+deps = ["Combinatorics", "Compat", "DataStructures", "Dates", "Formatting", "InteractiveUtils", "MacroTools", "Markdown", "Memoize", "Polynomials", "Primes", "PyCall", "QuadGK", "REPL", "Roots", "SpecialFunctions", "Statistics", "Test"]
+git-tree-sha1 = "4ebfe07f9680036c7ff2dcd0d5df05fc65ffbfd6"
+uuid = "a906b1d5-d016-55c4-aab3-8a20cba0db2a"
+version = "0.4.5"
 
 [[SymbolServer]]
 deps = ["LibGit2", "Pkg", "SHA", "Serialization"]
