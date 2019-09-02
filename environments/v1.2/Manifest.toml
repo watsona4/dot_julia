@@ -5948,6 +5948,12 @@ git-tree-sha1 = "9dc8dd8f25ca0dc41f689085bbd03c944f506aa0"
 uuid = "d293930c-a38c-56c5-8ebb-12008647b47a"
 version = "0.2.3"
 
+[[KronLinInv]]
+deps = ["Distributed", "LinearAlgebra"]
+git-tree-sha1 = "f48352714b08c2b74bcae37f0590aa019a9180eb"
+uuid = "cc83e5c8-98fc-11e9-313e-e750fdcd15c8"
+version = "0.2.0"
+
 [[Krylov]]
 deps = ["LinearAlgebra", "LinearOperators", "Printf", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "df669d62794bdc55d57c4cc7c462ab737def89ad"
