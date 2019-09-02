@@ -4955,6 +4955,12 @@ git-tree-sha1 = "077cc3bf7c659f88fd5a0576f215ea278871215e"
 uuid = "f9e53bcf-9449-548a-a5fe-a83e43094f75"
 version = "1.0.1"
 
+[[Hwloc]]
+deps = ["BinaryProvider", "Libdl"]
+git-tree-sha1 = "bb23d264d76b82d1da80733cbb01bad8a11ae489"
+uuid = "0e44f5e4-bd66-52a0-8798-143a42290a1d"
+version = "1.0.3"
+
 [[HyperDualMatrixTools]]
 deps = ["HyperDualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "62d4275e6691d73ea14eaef75b8583296151da45"

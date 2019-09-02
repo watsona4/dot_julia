@@ -1,0 +1,11 @@
+*.dylib
+*.jl.*.cov
+*.jl.cov
+*.jl.mem
+*.o
+deps.jl
+deps/builds
+deps/downloads
+deps/src/hwloc-*
+deps/usr
+deps/build.log

@@ -1,0 +1,14 @@
+name = "Hwloc"
+uuid = "0e44f5e4-bd66-52a0-8798-143a42290a1d"
+authors = ["Erik Schnetter <schnetter@gmail.com>"]
+version = "1.0.3"
+
+[deps]
+BinaryProvider = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
