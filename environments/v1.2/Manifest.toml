@@ -4681,6 +4681,12 @@ git-tree-sha1 = "0e6579d03df44cdc9630dddf7aadadb07c0c348b"
 uuid = "4610876b-9b01-57c8-9ad9-06315f1a66a5"
 version = "0.3.0"
 
+[[Gtk]]
+deps = ["BinDeps", "Cairo", "Compat", "Dates", "Graphics", "Homebrew", "Libdl", "Reexport", "Serialization", "Test", "WinRPM"]
+git-tree-sha1 = "b4c6c9848a711cf4a400fb74b54c67073471b713"
+uuid = "4c0ca9eb-093a-5379-98c5-f87ac0bbbf44"
+version = "0.17.0"
+
 [[Gumbo]]
 deps = ["AbstractTrees", "BinaryProvider", "Libdl", "Test"]
 git-tree-sha1 = "b16b6c5127e8c6be3084e6658c5fb5dd1f97d7fd"
