@@ -5538,6 +5538,12 @@ git-tree-sha1 = "18d6084924b2ac78deb65229cbcaa04d56ecb075"
 uuid = "1c8ee90f-4401-5389-894e-7a04a3dc0f4d"
 version = "0.11.0"
 
+[[IterativeRefinement]]
+deps = ["DoubleFloats", "LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "0db009fc565788a3f12e4e54255ea5167a4bc08b"
+uuid = "bcb6b82e-7479-5933-8c8e-2e0b909ee6a3"
+version = "0.1.0"
+
 [[IterativeSolvers]]
 deps = ["LinearAlgebra", "Printf", "Random", "RecipesBase", "SparseArrays", "Test"]
 git-tree-sha1 = "5687f68018b4f14c0da54d402bb23eecaec17f37"
