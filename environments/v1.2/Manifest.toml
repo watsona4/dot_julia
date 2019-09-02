@@ -5638,6 +5638,12 @@ git-tree-sha1 = "d66ca7cdb8a08e8fcdb75f10d6eb3220cd3215ba"
 uuid = "a7b85b94-2b9e-11e9-2e5f-79ec22955f58"
 version = "0.1.0"
 
+[[JWAS]]
+deps = ["CSV", "DataFrames", "DelimitedFiles", "Distributions", "LinearAlgebra", "Printf", "ProgressMeter", "Random", "SparseArrays", "Test"]
+git-tree-sha1 = "3a829b157eba09d27b46b657dff8af1fdd6252c2"
+uuid = "c9a035f4-d403-5e6b-8649-6be755bc4798"
+version = "0.5.5"
+
 [[JavaCall]]
 deps = ["DataStructures", "Dates", "Libdl", "Test", "WinReg"]
 git-tree-sha1 = "192aa4f92bc1b19c5e400504f26ad03c4553b265"
