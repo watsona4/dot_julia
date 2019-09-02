@@ -1,0 +1,318 @@
+<style type="text/css" media="screen">
+  #grid {
+      position:absolute;
+      z-index:0;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      margin: auto;
+      padding:0px;
+  }
+  #actors{
+      position:absolute;
+      z-index:1;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      margin: auto;
+      /* border:1px solid black; */
+      padding:0px;
+  }
+  #world {
+      display:table-cell;
+      position:relative;
+      width:100%;
+      height:100%;
+      background-color:#C5ECBF;
+      vertical-align: middle;
+      /* border-right:1px solid #0c5400; */
+      /* border-bottom:1px solid #0c5400; */
+  }
+  #main-window {
+      display:table;
+      position:absolute;
+      width:100%;
+      height:100%;
+      display:table;
+      background-color:#C5ECBF;
+  }
+  .tablerow {
+      display:table-row
+  }
+  #menu-h {
+      display:table-cell;
+      position:relative;
+      width:100%;
+      padding:10px;
+      vertical-align:middle;
+  }
+  #menu-h img:hover {
+      cursor:pointer
+  }
+  #actors img:hover {
+      cursor:pointer
+  }
+  body {
+      width:100%;
+      height:100%;
+      font-family:Verdana;
+  }
+  html {
+      width:100%;
+      height:100%;
+  }
+  .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 25px;
+      background: #d3d3d3;
+      outline: none;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+  }
+
+  .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      background: #0c5400;
+      cursor: pointer;
+  }
+  .btn {
+      border: 1px solid grey;
+      padding: 1px;
+  }
+  .btn-drag {
+      border: 1px solid grey;
+      padding: 1px;
+  }
+  .btn-drop {
+      padding: 1px;
+      border: 1px solid grey;
+  }
+</style>
+<div id="main-window">
+  <div class="tablerow">
+    <div id="menu-h" style="border-bottom:1px solid #0c5400">
+      <img src="save.png" width="25" height="25" class="btn" onclick="world.save()">
+      <img src="load.png" width="25" height="25" class="btn" onclick="world.load()">
+      &nbsp;
+      <img src="bugnorth.png" ondragstart="world.drag_create_new(1)" width="25" height="25" class="btn-drag">
+      <img src="object_tree.png" ondragstart="world.drag_create_new(2)" width="25" height="25" class="btn-drag">
+      <img src="object_mushroom.png" ondragstart="world.drag_create_new(3)" width="25" height="25" class="btn-drag">
+      <img src="object_leaf.png" ondragstart="world.drag_create_new(4)" width="25" height="25" class="btn-drag">
+      <img src="trashcanbig.png" style="display:inline;float:right" ondragover="world.allowDrop(event)" ondrop="world.deleteActor(event)" width="25" height="25" class="btn-drop">
+    </div>
+  </div>
+  <div class="tablerow">
+    <div id="world" ref="worlddiv">
+      <div id="actors" ref="actorsdiv" ondrop="world.drop(event)" ondragover="world.allowDrop(event)">
+        <img v-for="img in imgs" :src="img.path" :style="'position:absolute;top:'+top(img.y)+'px;left:'+left(img.x)+'px;z-index:'+img.layer+';text-align:center;transform:rotate('+deg(img.direction)+')'" :height="size()" :width="size()" dragable="true" ondragstart="world.drag(event)" :actor_id="img.id"/>
+      </div>
+      <canvas id="grid" ondrop="world.drop(event)" ondragover="world.allowDrop(event)"></canvas>
+    </div>
+  </div>
+  <div class="tablerow">
+    <div id="menu-h" style="border-top:1px solid #0c5400">
+      Speed:
+      <input type="range" min="1" max="100" value="100" class="slider" id="speed" oninput="slider.changespeed(event)">
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  var slider = new Vue({
+      el: '#speed',
+      methods: {
+          changespeed : function(event){
+              Blink.msg("change_speed",this.$el.value)
+          }
+      }
+  })
+  var world = new Vue({
+      el: '#world',
+      data: {
+          imgs: [
+          ],
+          current_drag : 0,
+          create_new_type:0,
+      },
+      methods: {
+          deg : function(direction){
+              if (direction == 1){
+                  return "0deg"
+              }else if (direction == 2) {
+                  return "90deg"
+              }else if (direction == 3){
+                  return "180deg"
+              }else{
+                  return "270deg"
+              }
+          },
+          drag_create_new : function (type){
+              this.create_new_type = type
+              this.current_drag = 0
+          },
+          place : function(id,x,y,direction,img,layer) {
+              this.imgs.push({id:id,path:img,x:x,y:y,direction:direction,layer:layer})
+          },
+          update_actor : function (id,x,y,direction){
+              var i
+              for (i = 0; i < this.imgs.length; i++) {
+                  if (this.imgs[i].id == id){
+                      this.imgs[i].x = x
+                      this.imgs[i].y = y
+                      this.imgs[i].direction = direction
+                      return
+                  }
+              }
+              throw "Actor with id "+id+" not found!"
+          },
+          remove_actor : function (id){
+              var i
+              for (i = 0; i < this.imgs.length; i++) {
+                  if (this.imgs[i].id == id){
+                      this.imgs.splice(i, 1)
+                      return
+                  }
+              }
+              throw "Actor with id "+id+" not found!"
+          },
+          left : function (loc) {
+              if (grid) {
+                  return grid.cellSize()*(loc-1)
+              }else {
+                  return 0
+              }
+          },
+          top : function (loc) {
+              if (grid) {
+                  return grid._height()-grid.cellSize()*(loc)
+              }else {
+                  return 0
+              }
+          },
+          row : function (glob) {
+              return grid.rows - Math.floor(glob/grid.cellSize())
+          },
+          col : function (glob) {
+              return Math.floor(glob/grid.cellSize())+1
+          },
+          size : function () {
+              if (grid) {
+                  return grid.cellSize()
+              }else {
+                  return 0
+              }
+          },
+          allowDrop: function (ev)  {
+              ev.preventDefault();
+          },
+          drag : function (ev) {
+              this.current_drag = ev.target.getAttribute("actor_id")
+              this.create_new_type=0
+          },
+          save : function () {
+              Blink.msg("save",{})
+          },
+          load : function () {
+              Blink.msg("load",{})
+          },
+          deleteActor : function (ev) {
+              if (this.current_drag != 0){
+                  Blink.msg("delete_actor",{id : this.current_drag})
+              }
+          },
+          drop : function (ev) {
+              ev.preventDefault();
+              var domRect = world.$refs.actorsdiv.getBoundingClientRect()
+              var row = this.row(ev.clientY-domRect.top)
+              var col = this.col(ev.clientX-domRect.left)
+              console.log(this.current_new_type)
+              if (this.current_drag != 0){
+                  Blink.msg("drop_actor",{id : this.current_drag, x:col,y:row})
+              }else if (this.create_new_type != 0) {
+                  Blink.msg("create_actor",{type : this.create_new_type, x:col,y:row})
+              }
+              this.current_drag=0
+              this.create_new_type=0
+          }
+      }
+  })
+  var grid = new Vue({
+      el: '#grid',
+      data : {
+          rows : 10,
+          cols : 10,
+      },
+      computed: {
+          ctx : function() {
+              return this.$el.getContext("2d")
+          },
+      },
+      watch : {
+          rows : function () {this.draw()},
+          cols : function () {this.draw()}
+      },
+      methods :{
+          width : function() {
+              return parseFloat(world.$refs.worlddiv.clientWidth)
+          },
+          height : function() {
+              return parseFloat(world.$refs.worlddiv.clientHeight)
+          },
+          _width : function() {
+              return this.cellSize()*this.cols
+          },
+          _height : function() {
+              return this.cellSize()*this.rows
+          },
+          cellSize : function (){
+              ac = this.width()/this.cols
+              ar = this.height()/this.rows
+              return Math.min(ac,ar)
+          },
+          setSize : function () {
+              this.$el.width = this._width()
+              this.$el.height = this._height()
+              world.$refs.actorsdiv.style.height = this.$el.height+"px"
+              world.$refs.actorsdiv.style.width = this.$el.width+"px"
+          },
+          drawLine : function (fx,fy,tx,ty) {
+              this.ctx.translate(0.5, 0.5)
+              this.ctx.strokeStyle="#0c5400"
+              this.ctx.beginPath()
+              this.ctx.moveTo(Math.round(fx),Math.round(fy))
+              this.ctx.lineTo(Math.round(tx),Math.round(ty))
+              this.ctx.stroke()
+              this.ctx.translate(-0.5, -0.5)
+          },
+          clear : function (){
+              this.ctx.clearRect(0,0,100000,100000)
+              this.setSize()
+          },
+          draw : function () {
+              this.clear()
+              this.setSize()
+              s = this.cellSize()
+              c = this.cols
+              r = this.rows
+              for (i = 1; i < this.cols; i++) {
+                  var x = i*(s)
+                  this.drawLine(x,0,x,s*this.rows)
+              }
+              for (i = 1; i < this.rows; i++) {
+                  var y = i*(s)
+                  this.drawLine(0,y,s*this.cols,y)
+              }
+              world.$forceUpdate()
+          }
+      }
+  })
+  window.addEventListener('resize',grid.draw);
+</script>
+
+
+

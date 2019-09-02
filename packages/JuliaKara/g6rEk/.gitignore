@@ -1,0 +1,8 @@
+/**/*~
+/**/.juliahistory
+/#.gitignore#
+/*.org
+/src/test.jl
+docs/build/
+docs/site/
+.DS_Store

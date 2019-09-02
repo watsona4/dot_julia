@@ -5757,6 +5757,12 @@ git-tree-sha1 = "fd92b23285fb16884bbe54d4516615c6bf550adb"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
 version = "0.6.1"
 
+[[JuliaKara]]
+deps = ["Blink", "LightXML", "Test"]
+git-tree-sha1 = "5ac2f3b46bccb3b7548de2412db6a77d4f1cb857"
+uuid = "e742bb3c-81eb-5c15-8577-c54658a6ac7f"
+version = "0.2.0"
+
 [[Juno]]
 deps = ["Base64", "Logging", "Media", "Profile", "Test"]
 git-tree-sha1 = "30d94657a422d09cb97b6f86f04f750fa9c50df8"

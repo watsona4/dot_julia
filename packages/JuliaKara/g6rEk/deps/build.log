@@ -1,0 +1,72 @@
+ERROR: could not load library "/home/ec2-user/julia-1.2.0/lib/julia/sys.so"
+/home/ec2-user/julia-1.2.0/lib/julia/sys.so: failed to map segment from shared object
+ERROR: LoadError: IOError: write: broken pipe (EPIPE)
+Stacktrace:
+ [1] try_yieldto(::typeof(Base.ensure_rescheduled), ::Base.RefValue{Task}) at ./task.jl:517
+ [2] wait() at ./task.jl:592
+ [3] uv_write(::Base.PipeEndpoint, ::Ptr{UInt8}, ::UInt64) at ./stream.jl:883
+ [4] unsafe_write(::Base.PipeEndpoint, ::Ptr{UInt8}, ::UInt64) at ./stream.jl:931
+ [5] macro expansion at ./gcutils.jl:87 [inlined]
+ [6] write(::Base.PipeEndpoint, ::String) at ./strings/io.jl:177
+ [7] create_expr_cache(::String, ::String, ::Array{Pair{Base.PkgId,UInt64},1}, ::Base.UUID) at ./loading.jl:1185
+ [8] compilecache(::Base.PkgId, ::String) at ./loading.jl:1244
+ [9] _require(::Base.PkgId) at ./loading.jl:1013
+ [10] require(::Base.PkgId) at ./loading.jl:911
+ [11] require(::Module, ::Symbol) at ./loading.jl:906
+ [12] include at ./boot.jl:328 [inlined]
+ [13] include_relative(::Module, ::String) at ./loading.jl:1094
+ [14] include(::Module, ::String) at ./Base.jl:31
+ [15] top-level scope at none:2
+ [16] eval at ./boot.jl:330 [inlined]
+ [17] eval(::Expr) at ./client.jl:432
+ [18] top-level scope at ./none:3
+in expression starting at /home/ec2-user/.julia/packages/WebIO/2mZPb/src/WebIO.jl:5
+ERROR: LoadError: Failed to precompile WebIO [0f1e0344-ec1d-5b48-a673-e5cf874b6c29] to /home/ec2-user/.julia/compiled/v1.2/WebIO/v9IED.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1253
+ [3] _require(::Base.PkgId) at ./loading.jl:1013
+ [4] require(::Base.PkgId) at ./loading.jl:911
+ [5] require(::Module, ::Symbol) at ./loading.jl:906
+ [6] include at ./boot.jl:328 [inlined]
+ [7] include_relative(::Module, ::String) at ./loading.jl:1094
+ [8] include(::Module, ::String) at ./Base.jl:31
+ [9] top-level scope at none:2
+ [10] eval at ./boot.jl:330 [inlined]
+ [11] eval(::Expr) at ./client.jl:432
+ [12] top-level scope at ./none:3
+in expression starting at /home/ec2-user/.julia/packages/JSExpr/SzJLT/src/JSExpr.jl:5
+ERROR: LoadError: LoadError: Failed to precompile JSExpr [97c1335a-c9c5-57fe-bc5d-ec35cebe8660] to /home/ec2-user/.julia/compiled/v1.2/JSExpr/uKlm7.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1253
+ [3] _require(::Base.PkgId) at ./loading.jl:1013
+ [4] require(::Base.PkgId) at ./loading.jl:911
+ [5] require(::Module, ::Symbol) at ./loading.jl:906
+ [6] include at ./boot.jl:328 [inlined]
+ [7] include_relative(::Module, ::String) at ./loading.jl:1094
+ [8] include at ./Base.jl:31 [inlined]
+ [9] include(::String) at /home/ec2-user/.julia/packages/Blink/AO8uN/src/Blink.jl:3
+ [10] top-level scope at /home/ec2-user/.julia/packages/Blink/AO8uN/src/Blink.jl:11
+ [11] include at ./boot.jl:328 [inlined]
+ [12] include_relative(::Module, ::String) at ./loading.jl:1094
+ [13] include(::Module, ::String) at ./Base.jl:31
+ [14] top-level scope at none:2
+ [15] eval at ./boot.jl:330 [inlined]
+ [16] eval(::Expr) at ./client.jl:432
+ [17] top-level scope at ./none:3
+in expression starting at /home/ec2-user/.julia/packages/Blink/AO8uN/src/rpc/rpc.jl:1
+in expression starting at /home/ec2-user/.julia/packages/Blink/AO8uN/src/Blink.jl:11
+ERROR: LoadError: Failed to precompile Blink [ad839575-38b3-5650-b840-f874b8c74a25] to /home/ec2-user/.julia/compiled/v1.2/Blink/wSmkt.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1253
+ [3] _require(::Base.PkgId) at ./loading.jl:1013
+ [4] require(::Base.PkgId) at ./loading.jl:911
+ [5] require(::Module, ::Symbol) at ./loading.jl:906
+ [6] include at ./boot.jl:328 [inlined]
+ [7] include_relative(::Module, ::String) at ./loading.jl:1094
+ [8] include(::Module, ::String) at ./Base.jl:31
+ [9] include(::String) at ./client.jl:431
+ [10] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/JuliaKara/g6rEk/deps/build.jl:1
