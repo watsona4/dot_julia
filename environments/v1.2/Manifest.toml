@@ -8591,6 +8591,12 @@ git-tree-sha1 = "5eaf3e1e6ee2f5694c39d63669b96cc000c7f163"
 uuid = "86800b63-3017-5277-aca5-15d7d6a5f2b2"
 version = "0.1.1"
 
+[[Petri]]
+deps = ["MacroTools", "ModelingToolkit"]
+git-tree-sha1 = "8a20fc798775d5346a3e3270aedc3e4a8bf28227"
+uuid = "4259d249-1051-49fa-8328-3f8ab9391c33"
+version = "0.1.0"
+
 [[PiGPIO]]
 deps = ["Sockets"]
 git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
