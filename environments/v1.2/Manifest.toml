@@ -8155,6 +8155,12 @@ git-tree-sha1 = "ae9457322f771519cccfc862a0e4a43516233dc5"
 uuid = "796d8c31-69d0-5366-9081-a3bf997f4f0d"
 version = "0.2.0"
 
+[[OhMyREPL]]
+deps = ["Crayons", "Markdown", "Pkg", "Printf", "REPL", "TerminalRegressionTests", "Tokenize", "VT100"]
+git-tree-sha1 = "fca92a04d6700d023063bf149e5a317e48d5a7d6"
+uuid = "5fb14364-9ced-5910-84b2-373655c76a03"
+version = "0.5.2"
+
 [[OnlineStats]]
 deps = ["DataStructures", "Dates", "LearnBase", "LinearAlgebra", "LossFunctions", "OnlineStatsBase", "PenaltyFunctions", "Random", "RecipesBase", "Reexport", "Statistics", "StatsBase", "SweepOperator", "Test"]
 git-tree-sha1 = "a783fe25075b9d09d6dd2ba67dafd374d835acfa"
@@ -9369,6 +9375,12 @@ git-tree-sha1 = "9ae6ed0c94eee4d898e049820942af21daf15efc"
 uuid = "dc548174-15c3-5faf-af27-7997cfbde655"
 version = "0.1.0"
 
+[[TerminalRegressionTests]]
+deps = ["REPL", "VT100"]
+git-tree-sha1 = "68da39365c2f0bbc8fd126513559b787c7f7ed10"
+uuid = "98bfdc55-cc95-5876-a49a-74609291cbe0"
+version = "0.1.2"
+
 [[Test]]
 deps = ["Distributed", "InteractiveUtils", "Logging", "Random"]
 uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
@@ -9628,6 +9640,12 @@ deps = ["Compat"]
 git-tree-sha1 = "460f4f7bab69dd47512ac8ec4b2c14b28c6cb4a0"
 uuid = "c4a57d5a-5b31-53a6-b365-19f8c011fbd6"
 version = "0.3.0"
+
+[[VT100]]
+deps = ["ColorTypes", "FixedPointNumbers", "REPL", "Test"]
+git-tree-sha1 = "b15606f470e02061183738dd8d6d3ad5e115ed76"
+uuid = "7774df62-37c0-5c21-b34d-f6d7f98f54bc"
+version = "0.3.2"
 
 [[ValueHistories]]
 deps = ["DataStructures", "Random", "RecipesBase", "Test"]
