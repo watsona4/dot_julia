@@ -6753,6 +6753,12 @@ git-tree-sha1 = "744aeb4d42424f66e51bace5ef88006f3c349f3a"
 uuid = "176e4ad4-9107-502a-977c-53a5728fe704"
 version = "0.3.1"
 
+[[MIDI]]
+deps = ["Test"]
+git-tree-sha1 = "87508e5d79edd092f8272eefbf11147765f5a91a"
+uuid = "f57c4921-e30c-5f49-b073-3f2f2ada663e"
+version = "1.4.3"
+
 [[MLBase]]
 deps = ["IterTools", "Random", "Reexport", "StatsBase", "Test"]
 git-tree-sha1 = "f63a8d37429568b8c4384d76c4a96fc2897d6ddf"
