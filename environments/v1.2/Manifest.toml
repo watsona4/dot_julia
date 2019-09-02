@@ -6920,6 +6920,12 @@ git-tree-sha1 = "ec481eb678bd7f5d4642996c9b5def19137de7a3"
 uuid = "63dd013e-5414-5e51-b21a-a24e12ed54cf"
 version = "0.3.0"
 
+[[Makeitso]]
+deps = ["FileIO", "JLD2", "Test"]
+git-tree-sha1 = "7bdeef3974a62d73d4903101cbc2437760de3006"
+uuid = "5616b7aa-48d8-5ba3-83fe-06b58d5edc20"
+version = "0.1.0"
+
 [[MappedArrays]]
 deps = ["Test"]
 git-tree-sha1 = "923441c5ac942b60bd3a842d5377d96646bcbf46"
