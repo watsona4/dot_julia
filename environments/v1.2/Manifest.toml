@@ -6645,6 +6645,12 @@ git-tree-sha1 = "6013558b426faf858e787d26d8638d22cb8d8a2e"
 uuid = "15a4fa57-098d-5a77-b233-4f9ba1cdf842"
 version = "0.1.0"
 
+[[LowLevelParticleFilters]]
+deps = ["Distributions", "Lazy", "LinearAlgebra", "PDMats", "Parameters", "Plots", "Printf", "Random", "StaticArrays", "Statistics", "StatsBase", "Yeppp"]
+git-tree-sha1 = "b33a2d6f706a96c93c532c869775239eff5c39fb"
+uuid = "d9d29d28-c116-5dba-9239-57a5fe23875b"
+version = "0.2.0"
+
 [[LowRankApprox]]
 deps = ["FFTW", "FillArrays", "LinearAlgebra", "Nullables", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "4079dfefba2cf541e0770e6426f7756ee90efbe8"
