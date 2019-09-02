@@ -6950,6 +6950,12 @@ git-tree-sha1 = "cc831fdf4bb8a59f639c7622f2a0d8a3f2e9bcf6"
 uuid = "b8b640a6-63d9-51e6-b784-5033db27bef2"
 version = "0.1.0"
 
+[[ManifoldLearning]]
+deps = ["Combinatorics", "LightGraphs", "LinearAlgebra", "MultivariateStats", "SimpleWeightedGraphs", "SparseArrays", "Statistics", "StatsBase"]
+git-tree-sha1 = "a8ab424c40330e2a09a80ee180c94e715e0007d3"
+uuid = "06eb3307-b2af-5a2a-abea-d33192699d32"
+version = "0.4.0"
+
 [[MappedArrays]]
 deps = ["Test"]
 git-tree-sha1 = "923441c5ac942b60bd3a842d5377d96646bcbf46"
