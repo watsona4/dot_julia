@@ -8615,6 +8615,12 @@ git-tree-sha1 = "22e817d6190666a107a65aa64fd0a1cb3fdf998f"
 uuid = "5e3a6505-df5b-52db-bcdc-6b03808ffcbb"
 version = "0.1.0"
 
+[[Phylo]]
+deps = ["Compat", "DataFrames", "DataStructures", "Distributions", "IterableTables", "Missings", "RecipesBase", "Requires", "Tokenize"]
+git-tree-sha1 = "f3a8a5ab47f22f4d4ff03811096bf08fd02fbac4"
+uuid = "aea672f4-3940-5932-aa44-993d1c3ff149"
+version = "0.3.3"
+
 [[PiGPIO]]
 deps = ["Sockets"]
 git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
