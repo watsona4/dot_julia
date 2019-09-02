@@ -4943,6 +4943,12 @@ git-tree-sha1 = "f7f2a0a920ad015da58d016587aaf4af4fa6ad5e"
 uuid = "7ec9b9c5-1998-51e1-b7fc-fc3590c18259"
 version = "1.0.0"
 
+[[Hungarian]]
+deps = ["DelimitedFiles", "LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "ce3e681b362088b1d7adf8eb64170dfa4b820b24"
+uuid = "e91730f6-4275-51fb-a7a0-7064cfbd3b39"
+version = "0.4.0"
+
 [[HyperDualMatrixTools]]
 deps = ["HyperDualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "62d4275e6691d73ea14eaef75b8583296151da45"
