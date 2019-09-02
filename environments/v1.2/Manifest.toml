@@ -7428,6 +7428,12 @@ git-tree-sha1 = "c028ec2dfad92d9a3718ccc94800fe0d634b9985"
 uuid = "4fe8b98c-fc19-5c23-8ec2-168ff83495f2"
 version = "0.2.1"
 
+[[MonteCarloIntegration]]
+deps = ["Distributions", "Random"]
+git-tree-sha1 = "949c9e22e12261a25b5b595aa8a946897841193f"
+uuid = "4886b29c-78c9-11e9-0a6e-41e1f4161f7b"
+version = "0.0.1"
+
 [[MonteCarloMeasurements]]
 deps = ["Distributed", "Distributions", "GenericLinearAlgebra", "Lazy", "LinearAlgebra", "MacroTools", "Random", "RecipesBase", "Requires", "StaticArrays", "Statistics", "StatsBase", "Test"]
 git-tree-sha1 = "9c042fb769b68e501fa60a2293d97f24c31b9239"
