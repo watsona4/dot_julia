@@ -7086,6 +7086,12 @@ git-tree-sha1 = "129eb6db1d65b654018b05866bbbe980dd564913"
 uuid = "4f449596-a032-5618-b826-5a251cb6dc11"
 version = "1.0.0"
 
+[[MatrixOptim]]
+deps = ["CPLEX", "GLPKMathProgInterface", "Gurobi", "JuMP", "LinearAlgebra", "MathProgBase", "PrettyTables", "Random", "SparseArrays"]
+git-tree-sha1 = "3ceca8afad7091ece14055ba2444fa11e73ddd57"
+uuid = "cccf0e64-bc08-11e9-3692-c1021c9b9532"
+version = "0.1.0"
+
 [[MbedTLS]]
 deps = ["BinaryProvider", "Dates", "Libdl", "Random", "Sockets"]
 git-tree-sha1 = "85f5947b53c8cfd53ccfa3f4abae31faa22c2181"
