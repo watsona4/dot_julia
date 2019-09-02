@@ -5912,6 +5912,12 @@ git-tree-sha1 = "7a45f9ef563ef796433463cf6998c46d0a3de9c9"
 uuid = "1902f260-5fb4-5aff-8c31-6271790ab950"
 version = "1.2.3"
 
+[[KnetLayers]]
+deps = ["Knet", "Statistics", "Test"]
+git-tree-sha1 = "ef44069dad6f06036004e5376e86f579fc5b7655"
+uuid = "e09e3f5a-3c2e-516c-a806-60ae64389a85"
+version = "0.1.0"
+
 [[Knockout]]
 deps = ["JSExpr", "JSON", "Observables", "Test", "WebIO"]
 git-tree-sha1 = "53533b51d4b6964eca3065b0834e9f61ed2f7515"
