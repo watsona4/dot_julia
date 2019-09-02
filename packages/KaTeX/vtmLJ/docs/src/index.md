@@ -1,0 +1,3 @@
+# KaTeX
+
+*Documentation goes here.*

@@ -5828,6 +5828,12 @@ git-tree-sha1 = "2c3bcc0d84346bb201296495407dbb8c5ca33b8c"
 uuid = "67920dd8-b58e-52a8-8622-53c4cffbe346"
 version = "0.7.2"
 
+[[KaTeX]]
+deps = ["AssetRegistry", "BinaryProvider", "JSExpr", "Observables", "WebIO"]
+git-tree-sha1 = "9a5a60707be783b46c5fef5d9311ddbb3f664410"
+uuid = "07258bb1-70fb-50ed-9200-988f9681c4d2"
+version = "0.2.0"
+
 [[KernelDensity]]
 deps = ["Distributions", "FFTW", "Interpolations", "Optim", "StatsBase", "Test"]
 git-tree-sha1 = "c1048817fe5711f699abc8fabd47b1ac6ba4db04"
