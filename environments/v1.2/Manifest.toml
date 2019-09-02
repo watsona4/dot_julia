@@ -8447,6 +8447,12 @@ git-tree-sha1 = "78a1c05f2d1a5ac6c178590594195031a222aaba"
 uuid = "ccf9b6e2-7ea7-596a-9d65-09863b18e8cc"
 version = "0.1.1"
 
+[[ParallelDataTransfer]]
+deps = ["Distributed", "Random", "Test"]
+git-tree-sha1 = "75e75900c8b0d8dfb69cbe082832b1dc9f8aacfe"
+uuid = "2dcacdae-9679-587a-88bb-8b444fb7085b"
+version = "0.5.0"
+
 [[ParallelProcessingTools]]
 deps = ["Distributed"]
 git-tree-sha1 = "f2d84e92177cbffd911a228f55606b46745941d2"
