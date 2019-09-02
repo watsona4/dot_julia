@@ -8543,6 +8543,12 @@ git-tree-sha1 = "8fdd4f35f5a49c2f69c6b5ed1289300d9808ef84"
 uuid = "1a7fcfa4-7553-5727-a5d0-072824df3c21"
 version = "0.1.0"
 
+[[Pathogen]]
+deps = ["DataFrames", "Distances", "Distributed", "Distributions", "LinearAlgebra", "Logging", "OnlineStats", "ProgressMeter", "RecipesBase", "Statistics", "StatsBase"]
+git-tree-sha1 = "dfba9b271f0323401ae59fcc6d90034f0b940080"
+uuid = "c8189ad9-0349-5cbb-98f2-579781f27e5c"
+version = "0.3.1"
+
 [[PenaltyFunctions]]
 deps = ["InteractiveUtils", "LearnBase", "LinearAlgebra", "RecipesBase", "Reexport", "Test"]
 git-tree-sha1 = "b0baaa5218ca0ffd6a8ae37ef0b58e0df688ac8b"
