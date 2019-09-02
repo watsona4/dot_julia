@@ -1,0 +1,10 @@
+name = "OpenTrick"
+uuid = "88dfaa86-bcb0-11e8-243b-bdf2ce08c367"
+authors = ["zhangli <zhangli@joypace.com>"]
+version = "0.2.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
