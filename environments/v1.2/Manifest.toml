@@ -5117,6 +5117,12 @@ git-tree-sha1 = "e7be8c871a1e38cd29d1e978f7bff3feb7079025"
 uuid = "6a3955dd-da59-5b1f-98d4-e7296123deb5"
 version = "0.6.5"
 
+[[ImageInTerminal]]
+deps = ["ColorTypes", "Crayons", "ImageCore", "ImageTransformations"]
+git-tree-sha1 = "f35c6a782e532394609099d54fe8ec64ef21fb6d"
+uuid = "d8c32880-2388-543b-8c61-d9f865259254"
+version = "0.4.0"
+
 [[ImageMagick]]
 deps = ["BinaryProvider", "ColorTypes", "FileIO", "FixedPointNumbers", "ImageCore", "InteractiveUtils", "Libdl", "Pkg", "Random"]
 git-tree-sha1 = "6e1efa8bd5123e18a082c5580c7b8d4a287e1af4"
