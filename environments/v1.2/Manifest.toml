@@ -7953,6 +7953,12 @@ git-tree-sha1 = "fad543e7ef99af63cd0044d905a6b197e145a967"
 uuid = "d366530f-4af1-5ff1-9928-73bf22b88830"
 version = "0.5.4"
 
+[[Notifier]]
+deps = ["Dates", "Homebrew", "Pkg", "Test"]
+git-tree-sha1 = "ad733284c119dfae7b09971259b5db64aab0c514"
+uuid = "bce5aa3b-8e88-58e5-b7b9-01e2bcd06fb8"
+version = "0.3.0"
+
 [[NoveltyColors]]
 deps = ["JSON", "Test"]
 git-tree-sha1 = "5fc0da12654b2675eb9cdd711cd4f85f93dd3f6a"

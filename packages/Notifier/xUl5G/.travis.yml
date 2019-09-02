@@ -1,0 +1,29 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.7
+  - 1.0
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+dist: trusty
+sudo: false
+addons:
+    apt:
+        packages:
+        - libnotify-bin
+        - alsa-utils
+        - espeak
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia -e 'using Pkg; Pkg.clone(pwd()); Pkg.build("Notifier"); Pkg.test("Notifier"; coverage=true)'
+after_success:
+  # push coverage results to Coveralls
+  - julia -e 'using Pkg, Notifier; cd(joinpath(dirname(pathof(Notifier)), "..")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
+  # push coverage results to Codecov
+  - julia -e 'using Pkg, Notifier; cd(joinpath(dirname(pathof(Notifier)), "..")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
