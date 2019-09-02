@@ -4824,6 +4824,12 @@ git-tree-sha1 = "e393aac872ca6548392e4a803ec1c4642cefdca9"
 uuid = "af1cbc52-b994-11e9-036a-87a15c7b4bde"
 version = "0.1.0"
 
+[[HeaderREPLs]]
+deps = ["REPL", "Test"]
+git-tree-sha1 = "02a6f6a18aed92f9838212b40ca8eadcc90da25e"
+uuid = "54d51984-71c9-52bd-8df9-6718e63e4153"
+version = "0.3.0"
+
 [[Healpix]]
 deps = ["FITSIO", "Printf", "RecipesBase", "Test"]
 git-tree-sha1 = "dd4094f9f174a7d9bee6d913236aa11b8a37e721"
