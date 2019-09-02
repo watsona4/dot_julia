@@ -8863,6 +8863,12 @@ git-tree-sha1 = "b7ca40b96953b7475060e18fb334c2bc5f2d0878"
 uuid = "c74db56a-226d-5e98-8bb0-a6049094aeea"
 version = "0.4.1"
 
+[[PolynomialFactors]]
+deps = ["AbstractAlgebra", "Combinatorics", "LinearAlgebra", "Primes", "Test"]
+git-tree-sha1 = "6b1676f6c937f31bfd868bcd31215e1d6a180c79"
+uuid = "ec145902-31c2-532e-934a-7c64254c4b82"
+version = "0.3.0"
+
 [[Polynomials]]
 deps = ["LinearAlgebra", "SparseArrays", "Test"]
 git-tree-sha1 = "62142bd65d3f8aeb2226ec64dd8493349147df94"
