@@ -6401,6 +6401,12 @@ git-tree-sha1 = "a0d4bcea4b9c056da143a5ded3c2b7f7740c2d41"
 uuid = "093fc24a-ae57-5d10-9952-331d41423f4d"
 version = "1.3.0"
 
+[[LightGraphsExtras]]
+deps = ["GLPKMathProgInterface", "JuMP", "LightGraphs", "LightGraphsFlows", "MathProgBase", "MatrixDepot", "Test"]
+git-tree-sha1 = "68ece398c08fef6f52bda03a33305bfc0913458e"
+uuid = "89bd72ed-8c37-5969-8989-5c5e0cf73e51"
+version = "0.3.0"
+
 [[LightGraphsFlows]]
 deps = ["LightGraphs", "LinearAlgebra", "Markdown", "MathProgBase", "SimpleTraits", "SparseArrays", "Test"]
 git-tree-sha1 = "0aa484c34ab15576b14df04ab29fb628b7ce46c1"
@@ -6620,6 +6626,12 @@ deps = ["Espresso", "LinearAlgebra", "MultivariatePolynomials", "SparseArrays", 
 git-tree-sha1 = "d7c716ed9bab5d07c2de14891df27caab7cc505f"
 uuid = "d14a8603-c872-5ed3-9ece-53e0e82e39da"
 version = "0.6.4"
+
+[[MatrixDepot]]
+deps = ["DelimitedFiles", "GZip", "LinearAlgebra", "Printf", "SparseArrays", "SuiteSparse", "Test"]
+git-tree-sha1 = "369073afffc9706f438c3ac441dc0a0e9f50676e"
+uuid = "b51810bb-c9f3-55da-ae3c-350fc1fbce05"
+version = "0.7.0"
 
 [[MatrixFactorizations]]
 deps = ["LinearAlgebra", "Random", "Test"]
