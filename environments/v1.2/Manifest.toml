@@ -5781,6 +5781,12 @@ git-tree-sha1 = "0b29e353029aac1732db2780fa9df9c11381a66a"
 uuid = "ea4eb333-db47-5fdf-b6ce-79c8b2b3edd3"
 version = "0.2.2"
 
+[[JuliaWebAPI]]
+deps = ["Base64", "Distributed", "HTTP", "JSON", "Logging", "Random", "Serialization", "Sockets", "Test", "ZMQ"]
+git-tree-sha1 = "38f6f3d9d6329c762979c6c9d26cf63b26548bfd"
+uuid = "480116ec-64ea-5dec-baca-db6b11e96e37"
+version = "0.6.0"
+
 [[Juno]]
 deps = ["Base64", "Logging", "Media", "Profile", "Test"]
 git-tree-sha1 = "30d94657a422d09cb97b6f86f04f750fa9c50df8"
