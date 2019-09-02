@@ -6228,6 +6228,12 @@ git-tree-sha1 = "c02f54c69bf8d7ef39906608d1fc5011d1670e9c"
 uuid = "fc18253b-5e1b-504c-a4a2-9ece4944c004"
 version = "0.1.1"
 
+[[LazySets]]
+deps = ["Distributed", "GLPKMathProgInterface", "InteractiveUtils", "IntervalArithmetic", "LinearAlgebra", "MathProgBase", "Pkg", "Random", "RecipesBase", "Requires", "SharedArrays", "SparseArrays"]
+git-tree-sha1 = "95d90fa8bc36779611964f67d473c9744c8506fd"
+uuid = "b4f0291d-fe17-52bc-9479-3d1a343d9043"
+version = "1.13.0"
+
 [[LeapSeconds]]
 deps = ["Dates", "Test"]
 git-tree-sha1 = "9bdb39dac01948ff24df817fd628422144b4e353"
