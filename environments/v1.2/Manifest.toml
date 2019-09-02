@@ -5230,6 +5230,12 @@ git-tree-sha1 = "16dd0f4b0f0b40ec10af1b790480becbc0bcfd5a"
 uuid = "12a7aed9-f4ee-5e21-a57e-4f63a8148421"
 version = "0.2.0"
 
+[[IncompleteLU]]
+deps = ["LinearAlgebra", "Profile", "Random", "SparseArrays", "Test"]
+git-tree-sha1 = "9d269f1afce521912701bde539209b0d73bb9b94"
+uuid = "40713840-3770-5561-ab4c-a76e7d0d7895"
+version = "0.1.1"
+
 [[IncrementalInference]]
 deps = ["ApproxManifoldProducts", "Dates", "Distributed", "DistributedFactorGraphs", "Distributions", "DocStringExtensions", "FileIO", "FunctionalStateMachine", "Graphs", "JLD2", "JSON2", "KernelDensityEstimate", "LinearAlgebra", "Logging", "NLsolve", "Optim", "ProgressMeter", "Random", "Reexport", "Requires", "SparseArrays", "Statistics", "StatsBase", "SuiteSparse"]
 git-tree-sha1 = "5d1169c51c47d601a3e8372d79142b9069993497"
