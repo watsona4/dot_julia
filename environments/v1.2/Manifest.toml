@@ -5397,6 +5397,12 @@ git-tree-sha1 = "1b122de32713a06bec16b4f8d3eb87d58f5c0109"
 uuid = "81850811-659e-51ab-a7c2-5dd848ff4aa4"
 version = "0.3.2"
 
+[[InteractiveCodeSearch]]
+deps = ["InteractiveUtils", "LinearAlgebra", "Markdown", "Pkg", "REPL", "SparseArrays", "Test"]
+git-tree-sha1 = "e615575665790109039bf72da2aff56cd2972606"
+uuid = "54eb57ff-b09b-5185-b2f4-7a93509e494f"
+version = "0.3.1"
+
 [[InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
