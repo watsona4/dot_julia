@@ -1,0 +1,25 @@
+language: julia
+sudo: required
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+env:
+  global:
+    - DATADEPS_ALWAYS_ACCEPT=true  
+addons:
+  apt:
+    packages:
+    - hdf5-tools
+  homebrew:
+    packages:
+    - hdf5
+script:
+    - julia -e 'using Pkg; Pkg.test("NIRX")'

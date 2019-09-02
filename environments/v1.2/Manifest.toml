@@ -7667,6 +7667,12 @@ git-tree-sha1 = "e7ab104f645af6a8d8bd1b917610c96467eb7bf4"
 uuid = "66b72792-1abf-55ab-8064-6e9051317175"
 version = "0.4.0"
 
+[[NIRX]]
+deps = ["CSV", "DataDeps", "DelimitedFiles", "HDF5", "Profile", "Test"]
+git-tree-sha1 = "bea1160e79f4957d6032d0e157668fb1c2fcca98"
+uuid = "f8c78b77-5d66-5574-88fe-980e6170bf40"
+version = "0.1.3"
+
 [[NIfTI]]
 deps = ["Base64", "GZip", "Mmap", "Test"]
 git-tree-sha1 = "2151282446bb161941bff1b330a3212fb132e6b1"
