@@ -1,0 +1,20 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.7
+  - 1.0
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+# script: # use the default script which is equivalent to the following
+#    - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#    - julia -e 'Pkg.init(); Pkg.clone(pwd()); Pkg.build("PathDistribution"); Pkg.test("PathDistribution", coverage=true)'
+after_success:
+    - echo $TRAVIS_JULIA_VERSION
+    - julia -e 'using Pkg; cd(Pkg.dir("PathDistribution")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
