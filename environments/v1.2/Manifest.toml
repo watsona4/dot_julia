@@ -6813,6 +6813,12 @@ git-tree-sha1 = "dfb0d4ac254d538948d93dda580764327d16cdb0"
 uuid = "cc2ba9b6-d476-5e6d-8eaf-a92d5412d41d"
 version = "0.5.0"
 
+[[MLDatasets]]
+deps = ["BinDeps", "ColorTypes", "DataDeps", "FixedPointNumbers", "GZip", "Libdl", "Requires", "Test"]
+git-tree-sha1 = "5fe74bc675e99f550b4d1f3e2b66503202d3b983"
+uuid = "eb30cadb-4394-5ae3-aed4-317e484a6458"
+version = "0.3.0"
+
 [[MLJ]]
 deps = ["CSV", "CategoricalArrays", "Dates", "Distributed", "Distributions", "LinearAlgebra", "MLJBase", "MLJModels", "Pkg", "ProgressMeter", "Random", "RecipesBase", "RemoteFiles", "Statistics", "StatsBase", "Tables"]
 git-tree-sha1 = "b03ffb1421ec00b1acdf7f3ddbf4f1a1c38a5b2d"
