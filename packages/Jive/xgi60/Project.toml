@@ -1,0 +1,15 @@
+name = "Jive"
+uuid = "ba5e3d4b-8524-549f-bc71-e76ad9e9deed"
+keywords = ["distributed", "test"]
+license = "MIT"
+desc = "some useful steps in tests"
+authors = ["WooKyoung Noh <wookay.noh@gmail.com>"]
+version = "0.1.14"
+
+[deps]
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+FileWatching = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
+
+[compat]
+julia = "1.0.2"
