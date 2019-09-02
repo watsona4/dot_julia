@@ -7727,6 +7727,12 @@ git-tree-sha1 = "b46237debcacd4fed7bbeb31200667a75b90384f"
 uuid = "76087f3c-5699-56af-9a33-bf431cd00edd"
 version = "0.5.1"
 
+[[NLreg]]
+deps = ["Distributions", "LinearAlgebra", "StatsBase", "Tables", "Zygote"]
+git-tree-sha1 = "2f7a0211439a2918aac0a50e42786a50a10dc3fd"
+uuid = "6aa54777-d00a-57a2-a775-234c624c12d3"
+version = "0.2.0"
+
 [[NLsolve]]
 deps = ["DiffEqDiffTools", "Distances", "ForwardDiff", "LineSearches", "LinearAlgebra", "NLSolversBase", "Printf", "Reexport"]
 git-tree-sha1 = "c9578878f56f425a2160f5b436c7f79a154d154c"
