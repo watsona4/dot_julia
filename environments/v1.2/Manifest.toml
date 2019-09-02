@@ -5105,6 +5105,12 @@ git-tree-sha1 = "c40feeb5a9d6ac582683a2d850da0a2cc7078777"
 uuid = "4381153b-2b60-58ae-a1ba-fd683676385f"
 version = "0.2.2"
 
+[[ImageFeatures]]
+deps = ["ColorTypes", "Distributions", "FixedPointNumbers", "Images", "Random", "SparseArrays"]
+git-tree-sha1 = "c890d40d6d240e15e923a81d7f01d703ba35b175"
+uuid = "92ff4b2b-8094-53d3-b29d-97f740f06cef"
+version = "0.3.0"
+
 [[ImageFiltering]]
 deps = ["CatIndices", "ColorVectorSpace", "Colors", "ComputationalResources", "DataStructures", "FFTViews", "FFTW", "FixedPointNumbers", "ImageCore", "LinearAlgebra", "MappedArrays", "OffsetArrays", "Requires", "StaticArrays", "Statistics", "TiledIteration"]
 git-tree-sha1 = "e7be8c871a1e38cd29d1e978f7bff3feb7079025"
