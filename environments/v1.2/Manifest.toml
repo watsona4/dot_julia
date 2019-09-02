@@ -8149,6 +8149,12 @@ git-tree-sha1 = "1af2f79c7eaac3e019a0de41ef63335ff26a0a57"
 uuid = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
 version = "0.11.1"
 
+[[Ogg]]
+deps = ["BinaryProvider", "FileIO", "Libdl"]
+git-tree-sha1 = "ae9457322f771519cccfc862a0e4a43516233dc5"
+uuid = "796d8c31-69d0-5366-9081-a3bf997f4f0d"
+version = "0.2.0"
+
 [[OnlineStats]]
 deps = ["DataStructures", "Dates", "LearnBase", "LinearAlgebra", "LossFunctions", "OnlineStatsBase", "PenaltyFunctions", "Random", "RecipesBase", "Reexport", "Statistics", "StatsBase", "SweepOperator", "Test"]
 git-tree-sha1 = "a783fe25075b9d09d6dd2ba67dafd374d835acfa"

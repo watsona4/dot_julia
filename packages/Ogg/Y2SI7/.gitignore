@@ -1,0 +1,6 @@
+.DS_Store
+deps/deps.jl
+
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
