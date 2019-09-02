@@ -7757,6 +7757,12 @@ git-tree-sha1 = "0c667371391fc6bb31f7f12f96a56a17098b3de8"
 uuid = "872c559c-99b0-510c-b3b7-b6c96a88d5cd"
 version = "0.6.0"
 
+[[NODAL]]
+deps = ["Distributed", "Printf", "Random", "Statistics", "Test"]
+git-tree-sha1 = "77cdf5a3790dfb566143b7503ca0a20fa330a697"
+uuid = "44063525-382a-5b84-b7ca-976d099b8647"
+version = "0.4.0"
+
 [[NPZ]]
 deps = ["Compat", "ZipFile"]
 git-tree-sha1 = "a9837d6dc62c8a159f8e788d51c81ccee248db0e"
