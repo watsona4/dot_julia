@@ -8120,6 +8120,12 @@ git-tree-sha1 = "db3c910716c50e4fd141cd4bf908f4c6b7085cfa"
 uuid = "cfe838f4-859f-11e9-2ea1-df7d4e7c3537"
 version = "0.1.2"
 
+[[OceanTurb]]
+deps = ["LinearAlgebra", "OffsetArrays", "Plots", "StaticArrays", "Statistics", "Test"]
+git-tree-sha1 = "9c6277b9c7fbd367a96a890e7e4182a4a577f138"
+uuid = "d848d694-35fd-11e9-1c91-9995598ac29e"
+version = "0.1.0"
+
 [[OffsetArrays]]
 git-tree-sha1 = "1af2f79c7eaac3e019a0de41ef63335ff26a0a57"
 uuid = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"

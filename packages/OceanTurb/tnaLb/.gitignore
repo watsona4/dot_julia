@@ -1,0 +1,6 @@
+*.swp
+docs/build
+*.DS_Store
+examples/.ipynb_checkpoints/
+
+*.mem
