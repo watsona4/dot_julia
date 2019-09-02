@@ -7175,6 +7175,12 @@ git-tree-sha1 = "2ad3bcdae86b0a5c04a0e945f67ea270beedabe2"
 uuid = "5f8afd5a-bb66-5d20-9595-63d13a19fd2b"
 version = "0.1.0"
 
+[[MemoryBasedCF]]
+deps = ["SparseArrays", "Test"]
+git-tree-sha1 = "29a19ad14635d2d7a041f4a60d3a203d23c6ef8f"
+uuid = "f39d504a-8e86-5d7d-9b06-c60674885a6f"
+version = "0.1.1"
+
 [[MerkleTrees]]
 deps = ["SHA"]
 git-tree-sha1 = "2d24c0988d8908bf9e352aa0f5bf8cf61722c2c0"
