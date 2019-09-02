@@ -5650,6 +5650,12 @@ git-tree-sha1 = "0c8cd0ccad818d6aa6a41d492e8afb41454383a1"
 uuid = "d850fbd6-035d-5a70-a269-1ca2e636ac6c"
 version = "0.1.1"
 
+[[Jackknife]]
+deps = ["Statistics", "Test"]
+git-tree-sha1 = "6bd323cb089c551386417ffbcb833527f2d6e3cd"
+uuid = "133c4774-c510-5f25-b650-129312f89f69"
+version = "0.4.0"
+
 [[JavaCall]]
 deps = ["DataStructures", "Dates", "Libdl", "Test", "WinReg"]
 git-tree-sha1 = "192aa4f92bc1b19c5e400504f26ad03c4553b265"
