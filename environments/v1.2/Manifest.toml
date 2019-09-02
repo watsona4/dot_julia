@@ -8934,6 +8934,12 @@ git-tree-sha1 = "e0c97973629fc225850138d09741725eebae152b"
 uuid = "7ffb48b1-f436-5a59-a310-b4407da33972"
 version = "1.0.0"
 
+[[PowerDynOperationPoint]]
+deps = ["NLsolve", "PowerDynBase"]
+git-tree-sha1 = "7fd52b72d85262fb206cffd40e607c20e9c78ceb"
+uuid = "95be4243-a2fd-5eef-a7d1-2e97978993e7"
+version = "1.0.0"
+
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
 git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
