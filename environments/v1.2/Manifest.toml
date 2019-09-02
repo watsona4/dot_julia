@@ -5467,6 +5467,12 @@ git-tree-sha1 = "e00fb571f1ffa16c74656eabb1cfa9d711fd381e"
 uuid = "5c1f47dc-42dd-5697-8aaa-4d102d140ba9"
 version = "0.2.1"
 
+[[IntervalOptimisation]]
+deps = ["DataStructures", "ForwardDiff", "IntervalArithmetic", "IntervalConstraintProgramming", "IntervalRootFinding"]
+git-tree-sha1 = "754a277792181c49d55bbe3e10569f936f471051"
+uuid = "c7c68f13-a4a2-5b9a-b424-07d005f8d9d2"
+version = "0.4.0"
+
 [[IntervalRootFinding]]
 deps = ["ForwardDiff", "IntervalArithmetic", "LinearAlgebra", "Polynomials", "StaticArrays", "Test"]
 git-tree-sha1 = "ae84fdca524b195d144d8cb7eaee692206938f02"
