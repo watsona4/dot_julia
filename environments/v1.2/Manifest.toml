@@ -5449,6 +5449,24 @@ git-tree-sha1 = "f97d8d63c3f849b0f545062de4634bc9f100d8ec"
 uuid = "d1acc4aa-44c8-5952-acd4-ba5d80a2a253"
 version = "0.16.1"
 
+[[IntervalConstraintProgramming]]
+deps = ["IntervalArithmetic", "IntervalContractors", "IntervalRootFinding", "MacroTools", "ModelingToolkit"]
+git-tree-sha1 = "e4f594e4c3929b0b102f8e2585c9b54e06ef9d61"
+uuid = "138f1668-1576-5ad7-91b9-7425abbf3153"
+version = "0.12.0"
+
+[[IntervalContractors]]
+deps = ["IntervalArithmetic"]
+git-tree-sha1 = "19b5ae689304c02e4d7ebec86041299f45bbb96f"
+uuid = "15111844-de3b-5229-b4ba-526f2f385dc9"
+version = "0.4.1"
+
+[[IntervalRootFinding]]
+deps = ["ForwardDiff", "IntervalArithmetic", "LinearAlgebra", "Polynomials", "StaticArrays", "Test"]
+git-tree-sha1 = "ae84fdca524b195d144d8cb7eaee692206938f02"
+uuid = "d2bf35a9-74e0-55ec-b149-d360ff49b807"
+version = "0.4.0"
+
 [[IntervalSets]]
 deps = ["Dates", "Statistics"]
 git-tree-sha1 = "4214b48a62eb8f2c292b2ee34a508c256c0cdbc9"
