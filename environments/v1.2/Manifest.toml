@@ -5003,6 +5003,12 @@ git-tree-sha1 = "29f32822891b759df3839a7d751528ca310cca4a"
 uuid = "47d2ed2b-36de-50cf-bf87-49c2cf4b8b91"
 version = "0.0.3"
 
+[[Hyperspecialize]]
+deps = ["InteractiveUtils", "Test"]
+git-tree-sha1 = "e850f72f6675fc414fe240baf2bdb77cf21d2f9b"
+uuid = "1711496e-389e-5c2f-a773-3b6147c29b08"
+version = "0.2.0"
+
 [[HypothesisTests]]
 deps = ["Combinatorics", "Distributions", "LinearAlgebra", "Random", "Rmath", "Roots", "Statistics", "StatsBase", "Test"]
 git-tree-sha1 = "0fe2b78bd7cadcaed2071aab7ed12b40d220c392"
