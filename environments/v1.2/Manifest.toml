@@ -5936,6 +5936,12 @@ git-tree-sha1 = "47ae32203670b0042da6969b834cc5668c408225"
 uuid = "ad72c4b6-2990-538c-bd38-e122d63d24d9"
 version = "0.5.0"
 
+[[Kriging]]
+deps = ["DocumentFunction", "LinearAlgebra", "NearestNeighbors"]
+git-tree-sha1 = "b295b78bd711ffbd5326810ac7ab1c39d43fb752"
+uuid = "6133562b-a8e8-5ea3-954b-37642b766dad"
+version = "0.4.0"
+
 [[KrigingEstimators]]
 deps = ["Combinatorics", "LinearAlgebra", "Reexport", "Statistics", "Variography"]
 git-tree-sha1 = "9dc8dd8f25ca0dc41f689085bbd03c944f506aa0"
