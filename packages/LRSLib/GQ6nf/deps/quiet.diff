@@ -1,0 +1,13 @@
+diff --git a/makefile b/makefile
+index ad40b45..a7d62d9 100644
+--- a/makefile
++++ b/makefile
+@@ -45,7 +45,7 @@ CFLAGS=-O3
+ 
+ # Add -DLRS_QUIET to CPPFLAGS to get no error  messages, warnings etc.
+ # These flags should *not* include the arithmetic selecting define.
+-CPPFLAGS= -DTIMES -DSIGNALS
++CPPFLAGS= -DTIMES -DSIGNALS -DLRS_QUIET
+ 
+ # set to something more useful if your system has a ranlib command
+ RANLIB ?= /bin/true

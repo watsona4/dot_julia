@@ -6062,6 +6062,12 @@ git-tree-sha1 = "32970fc313980ca073375c80cc0c3c5edfa57406"
 uuid = "26dcc766-85df-5edc-b560-6076d5dbac63"
 version = "0.1.2"
 
+[[LRSLib]]
+deps = ["BinDeps", "Homebrew", "JuMP", "Libdl", "MathProgBase", "Polyhedra", "Test"]
+git-tree-sha1 = "2c55ca1c1a96196d7b1abdcb1d738d6f002751f6"
+uuid = "262c1cb6-76e2-5873-868b-19ece3183cc5"
+version = "0.3.0"
+
 [[LRUCache]]
 git-tree-sha1 = "6505b43dbdb449462a52e8e45feb0706f8b36dab"
 uuid = "8ac3fa9e-de4c-5943-b1dc-09c6b5f20637"

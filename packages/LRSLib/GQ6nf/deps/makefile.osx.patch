@@ -1,0 +1,36 @@
+--- makefile.orig	2016-11-28 17:22:42.000000000 +0900
++++ makefile	2016-11-28 17:30:38.000000000 +0900
+@@ -69,11 +69,11 @@
+
+ # rule to build gmp arithmetic using object files.
+ %-GMP.o: %.c lrsgmp.h
+-	$(CC) -c $(CFLAGS) $(CPPFLAGS) -DGMP -o $@ $<
++	$(CC) -c $(CFLAGS) $(CPPFLAGS) -DGMP -I${INCLUDEDIR} -o $@ $<
+
+ # rule to build gmp arithmetic and relocatable object files.
+ %-GMP-SHR.o: %.c lrsgmp.h
+-	$(CC) -c -fPIC $(CFLAGS) $(CPPFLAGS) -DGMP -o $@ $<
++	$(CC) -c -fPIC $(CFLAGS) $(CPPFLAGS) -DGMP -I${INCLUDEDIR} -o $@ $<
+
+ # Cancel built in rules
+ %: %.c
+@@ -98,7 +98,7 @@
+ 	$(RANLIB) $@
+
+ $(SHLIB): lrslib-GMP-SHR.o lrsgmp-GMP-SHR.o
+-	$(CC) -shared -Wl,-soname=$(SONAME) $(SHLIBFLAGS) -o $@ $^ -lgmp
++	$(CC) -shared -Wl,-install_name,$(SONAME) $(SHLIBFLAGS) -o $@ $^ -L${LIBDIR} -lgmp
+
+ $(SHLINK): $(SHLIB)
+ 	ln -sf $< $@
+@@ -163,8 +163,8 @@
+ 		 gcc  -g -O3 -DTIMES -DSIGNALS  -DGMP -I${INCLUDEDIR} lrsnash.c lrslib.c lrsgmp.c -L${LIBDIR}  -lgmp -o lrsnash
+
+ lrsnash:	lrsnash.c nashdemo.c lrsnashlib.c lrslib.c lrsnashlib.h lrslib.h lrsgmp.c lrsgmp.h
+-		gcc -O3  -o lrsnash lrsnash.c lrsnashlib.c lrslib.c lrsgmp.c -lgmp -DGMP
+-		gcc -O3  -o nashdemo nashdemo.c lrsnashlib.c lrslib.c lrsgmp.c -lgmp -DGMP
++		gcc -O3  -o lrsnash lrsnash.c lrsnashlib.c lrslib.c lrsgmp.c -L${LIBDIR} -lgmp -DGMP -I${INCLUDEDIR} -Wno-return-type
++		gcc -O3  -o nashdemo nashdemo.c lrsnashlib.c lrslib.c lrsgmp.c -L${LIBDIR} -lgmp -DGMP -I${INCLUDEDIR} -Wno-return-type
+ 		gcc -O3 -o 2nash 2nash.c
+ clean:
+ 		rm -f $(BINARIES) $(LIBRARIES) lrsnash nashdemo plrs1 mplrs1 plrsmp plrs mplrs  *.o *.exe
