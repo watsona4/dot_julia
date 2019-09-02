@@ -1,0 +1,25 @@
+name = "PhaseSpaceIO"
+uuid = "de004529-e20a-5d30-89d8-7739140c50e5"
+version = "0.2.0"
+
+[deps]
+ArgCheck = "dce04be8-c92d-5529-be00-80e4d2c0e197"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+Setfield = "efcf1570-3423-57d1-acb7-fd33fddbac46"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+
+[compat]
+julia = "≥ 1.1.0"
+
+[extras]
+CoordinateTransformations = "150eb455-5306-5404-9cee-2592286d6298"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Rotations = "6038ab10-8711-5258-84ad-4b1120ba62dc"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["StaticArrays", "Test", "Random", "CoordinateTransformations", "Rotations"]

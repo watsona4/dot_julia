@@ -1,0 +1,222 @@
+{
+    "VarianClinaciX_6MV_20x20_w3": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_20x20_w3.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_20x20_w3.IAEAheader"
+    },
+    "VarianClinaciX_6MV_20x20_w1": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_20x20_w1.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_20x20_w1.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_20x20": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_20x20.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_20x20.IAEAheader"
+    },
+    "CyberKnife_IRIS_7.5mm": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/CyberKnife_IRIS/CyberKnife_IRIS_7.5mm.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/CyberKnife_IRIS_7.5mm.IAEAheader"
+    },
+    "ELEKTA_PRECISE_10mv_part1": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_10MV/ELEKTA_PRECISE_10mv_part1.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_10mv_part1.IAEAheader"
+    },
+    "CyberKnife_IRIS_60mm_part2": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/CyberKnife_IRIS/CyberKnife_IRIS_60mm_part2.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/CyberKnife_IRIS_60mm_part2.IAEAheader"
+    },
+    "Varian_TrueBeam6MV_03": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_TrueBeam_6MV/Varian_TrueBeam6MV_03.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/Varian_TrueBeam6MV_03.IAEAheader"
+    },
+    "Varian_Clinac_600C_6MV_10x10": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_600C_6MV/Varian_Clinac_600C_6MV_10x10.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/Varian_Clinac_600C_6MV_10x10.IAEAheader"
+    },
+    "ELEKTA_PRECISE_6mv_part3": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_6MV/ELEKTA_PRECISE_6mv_part3.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_6mv_part3.IAEAheader"
+    },
+    "ELEKTA_PRECISE_10mv_part2": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_10MV/ELEKTA_PRECISE_10mv_part2.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_10mv_part2.IAEAheader"
+    },
+    "VarianClinaciX_6MV_20x20_aboveMLC_w1": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_20x20_aboveMLC_w1.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_20x20_aboveMLC_w1.IAEAheader"
+    },
+    "VarianClinaciX_6MV_2x2": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_2x2.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_2x2.IAEAheader"
+    },
+    "ELEKTA_PRECISE_6mv_part4": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_6MV/ELEKTA_PRECISE_6mv_part4.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_6mv_part4.IAEAheader"
+    },
+    "CyberKnife_IRIS_5mm": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/CyberKnife_IRIS/CyberKnife_IRIS_5mm.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/CyberKnife_IRIS_5mm.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_1.8x1.8": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_1.8x1.8.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_1.8x1.8.IAEAheader"
+    },
+    "CyberKnife_IRIS_15mm": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/CyberKnife_IRIS/CyberKnife_IRIS_15mm.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/CyberKnife_IRIS_15mm.IAEAheader"
+    },
+    "ELEKTA_PRECISE_25mv_part2_a": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_25MV/ELEKTA_PRECISE_25mv_part2_a.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_25mv_part2_a.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_10x10": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_10x10.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_10x10.IAEAheader"
+    },
+    "Varian_TrueBeam6MV_01": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_TrueBeam_6MV/Varian_TrueBeam6MV_01.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/Varian_TrueBeam6MV_01.IAEAheader"
+    },
+    "VarianClinaciX_6MV_10x10_w1": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_10x10_w1.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_10x10_w1.IAEAheader"
+    },
+    "CyberKnife_IRIS_60mm_part1": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/CyberKnife_IRIS/CyberKnife_IRIS_60mm_part1.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/CyberKnife_IRIS_60mm_part1.IAEAheader"
+    },
+    "ELEKTA_PRECISE_25mv_part1_a": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_25MV/ELEKTA_PRECISE_25mv_part1_a.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_25mv_part1_a.IAEAheader"
+    },
+    "ELEKTA_PRECISE_10mv_part3": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_10MV/ELEKTA_PRECISE_10mv_part3.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_10mv_part3.IAEAheader"
+    },
+    "ELEKTA_PRECISE_25mv_part2_b": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_25MV/ELEKTA_PRECISE_25mv_part2_b.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_25mv_part2_b.IAEAheader"
+    },
+    "ELEKTA_PRECISE_25mv_part4_b": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_25MV/ELEKTA_PRECISE_25mv_part4_b.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_25mv_part4_b.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_1x1": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_1x1.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_1x1.IAEAheader"
+    },
+    "ELEKTA_PRECISE_6mv_part2": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_6MV/ELEKTA_PRECISE_6mv_part2.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_6mv_part2.IAEAheader"
+    },
+    "CyberKnife_IRIS_60mm_part4": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/CyberKnife_IRIS/CyberKnife_IRIS_60mm_part4.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/CyberKnife_IRIS_60mm_part4.IAEAheader"
+    },
+    "Varian_TrueBeam6MV_04": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_TrueBeam_6MV/Varian_TrueBeam6MV_04.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/Varian_TrueBeam6MV_04.IAEAheader"
+    },
+    "VarianClinaciX_6MV_4x4": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_4x4.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_4x4.IAEAheader"
+    },
+    "Varian_TrueBeam6MV_05": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_TrueBeam_6MV/Varian_TrueBeam6MV_05.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/Varian_TrueBeam6MV_05.IAEAheader"
+    },
+    "VarianClinaciX_6MV_10x10_w3": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_10x10_w3.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_10x10_w3.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_2x2": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_2x2.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_2x2.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_1.2x1.2": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_1.2x1.2.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_1.2x1.2.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_1.5x1.5": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_1.5x1.5.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_1.5x1.5.IAEAheader"
+    },
+    "ELEKTA_PRECISE_25mv_part4_a": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_25MV/ELEKTA_PRECISE_25mv_part4_a.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_25mv_part4_a.IAEAheader"
+    },
+    "ELEKTA_PRECISE_25mv_part3_b": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_25MV/ELEKTA_PRECISE_25mv_part3_b.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_25mv_part3_b.IAEAheader"
+    },
+    "VarianClinaciX_6MV_1x1": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_1x1.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_1x1.IAEAheader"
+    },
+    "VarianClinaciX_6MV_05x05": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_05x05.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_05x05.IAEAheader"
+    },
+    "ELEKTA_PRECISE_25mv_part3_a": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_25MV/ELEKTA_PRECISE_25mv_part3_a.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_25mv_part3_a.IAEAheader"
+    },
+    "CyberKnife_IRIS_10mm": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/CyberKnife_IRIS/CyberKnife_IRIS_10mm.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/CyberKnife_IRIS_10mm.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_2.5x2.5": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_2.5x2.5.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_2.5x2.5.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_15x15": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_15x15.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_15x15.IAEAheader"
+    },
+    "ELEKTA_PRECISE_6mv_part1": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_6MV/ELEKTA_PRECISE_6mv_part1.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_6mv_part1.IAEAheader"
+    },
+    "VarianClinaciX_6MV_20x20_aboveMLC_w2": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_20x20_aboveMLC_w2.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_20x20_aboveMLC_w2.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_3x3": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_3x3.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_3x3.IAEAheader"
+    },
+    "VarianClinaciX_6MV_10x10_w2": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_10x10_w2.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_10x10_w2.IAEAheader"
+    },
+    "Varian_TrueBeam6MV_06": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_TrueBeam_6MV/Varian_TrueBeam6MV_06.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/Varian_TrueBeam6MV_06.IAEAheader"
+    },
+    "ELEKTA_PRECISE_10mv_part4": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_10MV/ELEKTA_PRECISE_10mv_part4.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_10mv_part4.IAEAheader"
+    },
+    "Varian_TrueBeam6MV_02": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_TrueBeam_6MV/Varian_TrueBeam6MV_02.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/Varian_TrueBeam6MV_02.IAEAheader"
+    },
+    "CyberKnife_IRIS_60mm_part3": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/CyberKnife_IRIS/CyberKnife_IRIS_60mm_part3.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/CyberKnife_IRIS_60mm_part3.IAEAheader"
+    },
+    "Varian_Clinac_600C_6MV_1x1": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_600C_6MV/Varian_Clinac_600C_6MV_1x1.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/Varian_Clinac_600C_6MV_1x1.IAEAheader"
+    },
+    "ELEKTA_PRECISE_25mv_part1_b": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/ELEKTA_Precise_25MV/ELEKTA_PRECISE_25mv_part1_b.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/ELEKTA_PRECISE_25mv_part1_b.IAEAheader"
+    },
+    "SIEMENS_PRIMUS_6mv_5x5": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/SIEMENS_Primus_6MV/SIEMENS_PRIMUS_6mv_5x5.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/SIEMENS_PRIMUS_6mv_5x5.IAEAheader"
+    },
+    "VarianClinaciX_6MV_20x20_w2": {
+        "phsp": "https://www-nds.iaea.org/phsp/photon/Varian_Clinac_iX_6MV/VarianClinaciX_6MV_20x20_w2.IAEAphsp",
+        "header": "https://www-nds.iaea.org/phsp/photon1/VarianClinaciX_6MV_20x20_w2.IAEAheader"
+    }
+}

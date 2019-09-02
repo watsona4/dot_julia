@@ -8597,6 +8597,12 @@ git-tree-sha1 = "8a20fc798775d5346a3e3270aedc3e4a8bf28227"
 uuid = "4259d249-1051-49fa-8328-3f8ab9391c33"
 version = "0.1.0"
 
+[[PhaseSpaceIO]]
+deps = ["ArgCheck", "DataStructures", "JSON", "Random", "Requires", "Setfield", "StatsBase"]
+git-tree-sha1 = "ad08f95fc90bc7035aa291df7dc10f801956aa07"
+uuid = "de004529-e20a-5d30-89d8-7739140c50e5"
+version = "0.2.0"
+
 [[PiGPIO]]
 deps = ["Sockets"]
 git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
