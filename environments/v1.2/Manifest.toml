@@ -4901,6 +4901,12 @@ git-tree-sha1 = "84ea46aae2af254b84762d2d7d379a0f1b553483"
 uuid = "515b7ef8-bac0-55e1-a220-237e90591ccc"
 version = "0.0.3"
 
+[[HistogramThresholding]]
+deps = ["LinearAlgebra"]
+git-tree-sha1 = "2b09a07e72cb2543f96abd88553c53b7346c5562"
+uuid = "2c695a8d-9458-5d45-9878-1b8a99cf7853"
+version = "0.2.2"
+
 [[Homebrew]]
 deps = ["BinDeps", "InteractiveUtils", "JSON", "Libdl", "Test", "Unicode"]
 git-tree-sha1 = "f01fb2f34675f9839d55ba7238bab63ebd2e531e"
