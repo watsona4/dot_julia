@@ -8483,6 +8483,12 @@ git-tree-sha1 = "140777e634428407903907a39f2187edf983550b"
 uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
 version = "0.4.2"
 
+[[Parquet]]
+deps = ["CodecZlib", "MemPool", "ProtoBuf", "Snappy", "Thrift"]
+git-tree-sha1 = "1d4535df2be334e15248a5dbc9ae4f182787b848"
+uuid = "626c502c-15b0-58ad-a749-f091afb673ae"
+version = "0.3.0"
+
 [[ParserCombinator]]
 deps = ["AutoHashEquals", "Nullables", "Printf", "Test"]
 git-tree-sha1 = "370b7fcf9ee754bf47b86389caded06a140fffcc"
@@ -9186,6 +9192,12 @@ version = "0.4.1"
 deps = ["DelimitedFiles", "Printf", "StaticArrays", "Statistics", "Test"]
 git-tree-sha1 = "30d1fc4bf2dde3b90edf76c8e0f275e24290918a"
 uuid = "fc659fc5-75a3-5475-a2ea-3da92c065361"
+version = "0.3.0"
+
+[[Snappy]]
+deps = ["BinaryProvider", "Libdl", "Random", "Test"]
+git-tree-sha1 = "25620a91907972a05863941d6028791c2613888e"
+uuid = "59d4ed8c-697a-5b28-a4c7-fe95c22820f9"
 version = "0.3.0"
 
 [[Sobol]]
