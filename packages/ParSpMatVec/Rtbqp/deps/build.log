@@ -1,0 +1,65 @@
+Driving: gfortran -v -O3 -fPIC -cpp -fopenmp -fdefault-integer-8 -shared /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/src/A_mul_B.f90 /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/src/Ac_mul_B.f90 -o /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=gfortran
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --enable-libmpx --enable-libsanitizer --enable-gnu-indirect-function --enable-libcilkrts --enable-libatomic --enable-libquadmath --enable-libitm --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 7.3.1 20180303 (Red Hat 7.3.1-5) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-O3' '-fPIC' '-cpp' '-fopenmp' '-fdefault-integer-8' '-shared' '-o' '/home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/7/f951 /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/src/A_mul_B.f90 -cpp=/tmp/ccl9wuyh.f90 -quiet -v -D_REENTRANT /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/src/A_mul_B.f90 -quiet -dumpbase A_mul_B.f90 -mtune=generic -march=x86-64 -auxbase A_mul_B -O3 -version -fPIC -fopenmp -fdefault-integer-8 -fintrinsic-modules-path /usr/lib/gcc/x86_64-redhat-linux/7/finclude -o /tmp/cclHPXlF.s
+GNU Fortran (GCC) version 7.3.1 20180303 (Red Hat 7.3.1-5) (x86_64-redhat-linux)
+	compiled by GNU C version 7.3.1 20180303 (Red Hat 7.3.1-5), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125916
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/7/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/7/../../../../x86_64-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-redhat-linux/7/finclude
+ /usr/lib/gcc/x86_64-redhat-linux/7/include
+ /usr/local/include
+ /usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 7.3.1 20180303 (Red Hat 7.3.1-5) (x86_64-redhat-linux)
+	compiled by GNU C version 7.3.1 20180303 (Red Hat 7.3.1-5), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125916
+COLLECT_GCC_OPTIONS='-v' '-O3' '-fPIC' '-cpp' '-fopenmp' '-fdefault-integer-8' '-shared' '-o' '/home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o /tmp/ccV5Cd0a.o /tmp/cclHPXlF.s
+GNU assembler version 2.29.1 (x86_64-redhat-linux) using BFD version version 2.29.1-27.amzn2.0.2
+COLLECT_GCC_OPTIONS='-v' '-O3' '-fPIC' '-cpp' '-fopenmp' '-fdefault-integer-8' '-shared' '-o' '/home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/7/f951 /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/src/Ac_mul_B.f90 -cpp=/tmp/ccl9wuyh.f90 -quiet -v -D_REENTRANT /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/src/Ac_mul_B.f90 -quiet -dumpbase Ac_mul_B.f90 -mtune=generic -march=x86-64 -auxbase Ac_mul_B -O3 -version -fPIC -fopenmp -fdefault-integer-8 -fintrinsic-modules-path /usr/lib/gcc/x86_64-redhat-linux/7/finclude -o /tmp/cclHPXlF.s
+GNU Fortran (GCC) version 7.3.1 20180303 (Red Hat 7.3.1-5) (x86_64-redhat-linux)
+	compiled by GNU C version 7.3.1 20180303 (Red Hat 7.3.1-5), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125916
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/7/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/7/../../../../x86_64-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-redhat-linux/7/finclude
+ /usr/lib/gcc/x86_64-redhat-linux/7/include
+ /usr/local/include
+ /usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 7.3.1 20180303 (Red Hat 7.3.1-5) (x86_64-redhat-linux)
+	compiled by GNU C version 7.3.1 20180303 (Red Hat 7.3.1-5), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125916
+COLLECT_GCC_OPTIONS='-v' '-O3' '-fPIC' '-cpp' '-fopenmp' '-fdefault-integer-8' '-shared' '-o' '/home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o /tmp/ccbsuzNO.o /tmp/cclHPXlF.s
+GNU assembler version 2.29.1 (x86_64-redhat-linux) using BFD version version 2.29.1-27.amzn2.0.2
+Reading specs from /usr/lib/gcc/x86_64-redhat-linux/7/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-O3' '-fPIC' '-cpp' '-fopenmp' '-fdefault-integer-8' '-shared' '-o' '/home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/7/:/usr/libexec/gcc/x86_64-redhat-linux/7/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/7/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/7/:/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/7/../../../:/lib/:/usr/lib/
+Reading specs from /usr/lib/gcc/x86_64-redhat-linux/7/libgomp.spec
+COLLECT_GCC_OPTIONS='-v' '-O3' '-fPIC' '-cpp' '-fopenmp' '-fdefault-integer-8' '-shared' '-o' '/home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8cGXOs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -shared -o /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/7/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/7 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../.. /tmp/ccV5Cd0a.o /tmp/ccbsuzNO.o -lgfortran -lm -lgomp -lgcc_s -lquadmath -lm -lgcc_s -lpthread -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/7/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-O3' '-fPIC' '-cpp' '-fopenmp' '-fdefault-integer-8' '-shared' '-o' '/home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+************************Trying to build ParSpMatVec ******************************
+=== Building ParSpMatVec ===
+depsdir  = /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps
+builddir = /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/builds
+srcdir   = /home/ec2-user/.julia/packages/ParSpMatVec/Rtbqp/deps/src
+useIntel = false
+fortran version
+Done compiling.

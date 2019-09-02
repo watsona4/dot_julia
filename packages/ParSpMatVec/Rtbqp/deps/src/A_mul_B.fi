@@ -1,0 +1,83 @@
+
+! y = beta*y  +  alpha * A*x
+
+   
+if ( beta == 0.d0 ) then
+   y = 0.d0
+else
+   y = beta * y
+end if
+
+if (alpha == 0.d0) then
+   return
+end if
+
+
+if ( nvec >= nthreads ) then
+   
+   !$OMP parallel do default(none), num_threads(nthreads),  &
+   !$OMP&         private(ivec, i,xi, j1,j2, j, jaj),  &
+   !$OMP&         shared(nvec, n, A,jA,iA, x,y, alpha)
+   do ivec = 1, nvec
+
+      do i = 1, n
+         xi = alpha * x(i,ivec)
+
+         j1 = iA(i)
+         j2 = iA(i+1) - 1
+         do j = j1, j2
+            jaj = jA(j)
+            y(jaj,ivec) = y(jaj,ivec) + xi*A(j)
+         end do  ! j
+
+      end do  ! i
+
+   end do  ! ivec
+   !$OMP end parallel do
+
+
+else
+
+   allocate(yt(m*nthreads))
+
+   do ivec = 1, nvec
+
+      !$OMP parallel default(none), num_threads(nthreads),  &
+      !$OMP&         private(mythread, i,xi, j1,j2, j, jaj, mm, jm),  &
+      !$OMP&         shared(ivec, m,n, A,jA,iA, x,y, yt, alpha, nthreads)
+
+      mythread = OMP_GET_THREAD_NUM()
+      mm = m * mythread
+      yt(mm+1 : mm+m) = 0.d0
+
+      !$OMP do
+      do i = 1, n
+         xi = alpha * x(i,ivec)
+
+         j1 = iA(i)
+         j2 = iA(i+1) - 1
+         do j = j1, j2
+            jaj = jA(j)
+            yt(mm + jaj) = yt(mm + jaj) + xi*A(j)
+         end do  ! j
+
+      end do  ! i
+      !$OMP end do
+
+
+      do j = 0, nthreads-1
+         jm = j*m
+         !$OMP do
+         do i = 1, m
+            y(i,ivec) = y(i,ivec) + yt(i+jm) 
+         end do
+         !$OMP end do
+      end do  ! j
+
+      !$OMP end parallel
+
+   end do  ! ivec
+
+   deallocate(yt)
+
+end if
