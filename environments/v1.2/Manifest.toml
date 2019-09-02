@@ -7358,6 +7358,18 @@ git-tree-sha1 = "c69a55a0679ceb3aa12e77dae3617fb106a410ae"
 uuid = "5e1d693a-52d4-54aa-90a0-6f94c7384aed"
 version = "0.1.1"
 
+[[Modia]]
+deps = ["DataStructures", "Dates", "Distributed", "JSON", "LinearAlgebra", "Markdown", "ModiaMath", "Printf", "SharedArrays", "SparseArrays", "StaticArrays", "Test", "Unitful"]
+git-tree-sha1 = "be0ae2699e7f62f11197dfe847f5f0996b0cba47"
+uuid = "cb905087-75eb-5f27-8515-1ce0ec8e839e"
+version = "0.3.0"
+
+[[ModiaMath]]
+deps = ["DataFrames", "DataStructures", "LinearAlgebra", "Printf", "Requires", "StaticArrays", "Sundials", "Test", "Unitful"]
+git-tree-sha1 = "902971a4f44a19f06b7d190266ab746e6f93728d"
+uuid = "67ccffd1-116d-535b-ad39-76a8fd0cbf71"
+version = "0.5.2"
+
 [[ModuleInterfaceTools]]
 git-tree-sha1 = "137fe5b646de73455486043ba766490722f0546c"
 uuid = "5cb8414e-7aab-5a03-a681-351269c074bf"
