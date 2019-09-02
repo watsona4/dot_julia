@@ -6866,6 +6866,12 @@ git-tree-sha1 = "b932f8e7115a60208692d474c45d5d6fcea10659"
 uuid = "da04e1cc-30fd-572f-bb4f-1f8673147195"
 version = "0.7.2"
 
+[[MPIClusterManagers]]
+deps = ["Distributed", "MPI", "Serialization", "Sockets"]
+git-tree-sha1 = "4e9a51bb1e5bef6f4525ce19b60cb706f6cb7d4f"
+uuid = "e7922434-ae4b-11e9-05c5-9780451d2c66"
+version = "0.1.0"
+
 [[MacroTools]]
 deps = ["CSTParser", "Compat", "DataStructures", "Test", "Tokenize"]
 git-tree-sha1 = "d6e9dedb8c92c3465575442da456aec15a89ff76"
