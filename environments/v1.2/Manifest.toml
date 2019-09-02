@@ -7661,6 +7661,12 @@ git-tree-sha1 = "5678da0cbb2428a4b01403b5e555945191525bb0"
 uuid = "efe261a4-0d2b-5849-be55-fc731d526b0d"
 version = "0.4.0"
 
+[[NIDAQ]]
+deps = ["LinearAlgebra", "Test"]
+git-tree-sha1 = "e7ab104f645af6a8d8bd1b917610c96467eb7bf4"
+uuid = "66b72792-1abf-55ab-8064-6e9051317175"
+version = "0.4.0"
+
 [[NIfTI]]
 deps = ["Base64", "GZip", "Mmap", "Test"]
 git-tree-sha1 = "2151282446bb161941bff1b330a3212fb132e6b1"
