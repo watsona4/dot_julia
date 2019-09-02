@@ -6103,6 +6103,12 @@ git-tree-sha1 = "03f5757e29f13d76a93416c0b913c19bf8f9baac"
 uuid = "2e475f56-4567-5c41-94ff-3f69a29378f9"
 version = "0.1.0"
 
+[[LabelledArrays]]
+deps = ["LinearAlgebra", "StaticArrays"]
+git-tree-sha1 = "db1a78a5787f9938938ec8dede4b53ca51b7cdc0"
+uuid = "2ee39098-c373-598a-b85f-a56591580800"
+version = "0.7.1"
+
 [[LambertW]]
 deps = ["Test"]
 git-tree-sha1 = "ec5a59b498330ac1e5b1c505c46dc53dcefdf90e"
