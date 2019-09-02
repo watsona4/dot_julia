@@ -6554,6 +6554,12 @@ git-tree-sha1 = "9e1bf3c4c866171542ae4b866bbc8633317d37bf"
 uuid = "2cd9c1d6-d267-5370-983e-0bc605925cae"
 version = "0.3.0"
 
+[[LocalFilters]]
+deps = ["Compat"]
+git-tree-sha1 = "bacf76e9c9a19a19c48d2e274c088d0875e34479"
+uuid = "085fde7c-5f94-55e4-8448-8bbb5db6dde9"
+version = "1.0.0"
+
 [[Loess]]
 deps = ["Distances", "Random", "Statistics", "Test"]
 git-tree-sha1 = "0ee46caf683a422b595be4dfaed6cda28f541e25"
