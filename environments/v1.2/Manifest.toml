@@ -5141,6 +5141,12 @@ git-tree-sha1 = "2ea6e55a36166321ca735b8eaf74936180e2ad5d"
 uuid = "787d08f9-d448-5407-9aad-5290dd7ab264"
 version = "0.2.4"
 
+[[ImageNoise]]
+deps = ["Distributions"]
+git-tree-sha1 = "90b92b7c94f8d5e57914e29371470edf62708e61"
+uuid = "2e361c58-64d7-11e9-3ab3-89c4c0b8f7db"
+version = "0.1.0"
+
 [[ImageShow]]
 deps = ["Base64", "ColorTypes", "Colors", "FileIO", "FixedPointNumbers", "ImageCore", "OffsetArrays", "Requires"]
 git-tree-sha1 = "c23323afc82b6b553e6b2244d531e50858ea392c"

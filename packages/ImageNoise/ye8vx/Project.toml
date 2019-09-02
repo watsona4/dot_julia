@@ -1,0 +1,17 @@
+name = "ImageNoise"
+uuid = "2e361c58-64d7-11e9-3ab3-89c4c0b8f7db"
+authors = ["Johnny Chen <johnnychen94@hotmail.com>"]
+version = "0.1.0"
+
+[deps]
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+
+[compat]
+julia = ">= 1.0"
+Distributions = ">= 0.19"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
