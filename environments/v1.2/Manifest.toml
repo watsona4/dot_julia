@@ -4949,6 +4949,12 @@ git-tree-sha1 = "ce3e681b362088b1d7adf8eb64170dfa4b820b24"
 uuid = "e91730f6-4275-51fb-a7a0-7064cfbd3b39"
 version = "0.4.0"
 
+[[HurdleDMR]]
+deps = ["DataFrames", "Distributed", "GLM", "LambertW", "Lasso", "LinearAlgebra", "Random", "SharedArrays", "SparseArrays", "StatsBase", "StatsModels", "Test"]
+git-tree-sha1 = "077cc3bf7c659f88fd5a0576f215ea278871215e"
+uuid = "f9e53bcf-9449-548a-a5fe-a83e43094f75"
+version = "1.0.1"
+
 [[HyperDualMatrixTools]]
 deps = ["HyperDualNumbers", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "62d4275e6691d73ea14eaef75b8583296151da45"
@@ -5386,6 +5392,12 @@ deps = ["JSON", "Test"]
 git-tree-sha1 = "fc6ee05e35074a66dc12a716065a25d9deece6fb"
 uuid = "8ef0a80b-9436-5d2c-a485-80b904378c43"
 version = "0.4.2"
+
+[[Lasso]]
+deps = ["DSP", "Distributions", "GLM", "LinearAlgebra", "MLBase", "Random", "Reexport", "SparseArrays", "StatsBase"]
+git-tree-sha1 = "d16e4026612333e691001984b593ac42e0ee07e9"
+uuid = "b4fcebef-c861-5a0f-a7e2-ba9dc32b180a"
+version = "0.4.0"
 
 [[Lazy]]
 deps = ["Compat", "MacroTools", "Test"]
