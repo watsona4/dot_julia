@@ -1,0 +1,26 @@
+name = "NCEI"
+uuid = "1f554e9c-ddc6-5d78-a4ef-ff7defcf835d"
+keywords = ["API", "Interface", "NOAA", "Weather", "Climate", "Data", "NCEI"]
+license = "ISC"
+authors = ["José Bayoán Santiago Calderón <naoyabpr@gmail.com>"]
+description = "Interface for the National Centers for Environmental Information (NCEI) API"
+doi = "10.5281/zenodo.1210025"
+repository = "https://github.com/Nosferican/NCEI.jl.git"
+version = "1.1.1"
+
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+LazyJSON = "fc18253b-5e1b-504c-a4a2-9ece4944c004"
+Parameters = "d96e819e-fc66-5662-9728-84c9c7592b0a"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

@@ -1,0 +1,27 @@
+{
+    "description": "An Interface for the National Centers for Environmental Information (NCEI) API for the Julia Language.",
+    "license": "ISC",
+    "title": "NCEI.jl: Interface for the National Centers for Environmental Information (NCEI) API",
+    "version": "v1.0.0",
+    "upload_type": "software",
+    "publication_date": "2018-03-30",
+    "creators": [
+        {
+            "affiliation": "Claremont Graduate University",
+            "name": "Santiago Calderón, José Bayoán"
+        }
+    ],
+    "access_right": "open",
+    "related_identifiers": [
+        {
+            "scheme": "url",
+            "identifier": "https://github.com/Nosferican/NCEI.jl/tree/v1.0.3",
+            "relation": "isSupplementTo"
+        },
+        {
+            "scheme": "doi",
+            "identifier": "10.5281/zenodo.1210010",
+            "relation": "isPartOf"
+        }
+    ]
+}
