@@ -6530,6 +6530,12 @@ git-tree-sha1 = "6a6cd78d68bde13f5f4761817c91576cbde032f9"
 uuid = "a7ef59f1-ab8a-5612-8cbe-0c3d3c126043"
 version = "0.1.1"
 
+[[LittleEndianBase128]]
+deps = ["Test"]
+git-tree-sha1 = "2cad132b52c86e0ccfc75116362ab57f0047893a"
+uuid = "1724a1d5-ab78-548d-94b3-135c294f96cf"
+version = "0.3.0"
+
 [[LiveServer]]
 deps = ["Crayons", "Documenter", "FileWatching", "HTTP", "Sockets", "Test"]
 git-tree-sha1 = "cb7d253514ed8c7c92fe9288fce474ea8132ef43"
