@@ -6323,6 +6323,12 @@ git-tree-sha1 = "827371242063d604aac9eae13e6076f3f7965c12"
 uuid = "85e77ee8-8498-5435-b1ed-98efe5aa7d59"
 version = "0.1.1"
 
+[[LibGEOS]]
+deps = ["BinaryProvider", "CEnum", "GeoInterface", "Libdl", "Test"]
+git-tree-sha1 = "fff5435b708ffca08ebaaaa8dfcaebfd7329f351"
+uuid = "a90b1aa1-3769-5649-ba7e-abc5a9d163eb"
+version = "0.5.0"
+
 [[LibGit2]]
 uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
 
