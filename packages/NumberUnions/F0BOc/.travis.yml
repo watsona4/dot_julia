@@ -1,0 +1,26 @@
+language: julia
+
+## https://docs.travis-ci.com/user/languages/julia
+## If you leave the julia: key out of your .travis.yml, Travis CI will use the most recent release.
+julia:
+  - 0.6
+  - nightly
+os:
+  - linux
+  - osx
+
+## uncomment the following lines to allow travis some improper handling of nightly     
+#matrix:
+#  allow_failures:
+#    - julia: nightly  ## getting too many warnings
+notifications:
+  email: false
+
+## uncomment the following lines to override the default test script
+#script:
+#  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#  - julia --check-bounds=yes -e 'Pkg.clone(pwd()); Pkg.build("NumberUnionTypes"); Pkg.test("NumberUnionTypes"; coverage=true)'
+
+# after_success:
+#   - julia -e 'Pkg.add("Documenter")'
+#   - julia -e 'cd(Pkg.dir("NumberUnionTypes")); include(joinpath("docs", "make.jl"))'

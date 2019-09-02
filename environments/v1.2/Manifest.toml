@@ -7977,6 +7977,12 @@ git-tree-sha1 = "91f55b15eaefd76f91f97db03283bc851cc02dc6"
 uuid = "978898f6-561e-11e9-3f66-13949d9e5c8a"
 version = "0.1.0"
 
+[[NumberUnions]]
+deps = ["Test"]
+git-tree-sha1 = "96959c46faad418198de691adcc35484ba008d56"
+uuid = "fe510250-cf29-5fab-a5fd-ac0daf8093a4"
+version = "0.0.1"
+
 [[NumericIO]]
 deps = ["Printf", "Test"]
 git-tree-sha1 = "0cb5fb8157780c06a36b1c7ccaab4fcebed83259"
