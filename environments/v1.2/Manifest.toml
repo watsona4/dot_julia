@@ -7321,6 +7321,12 @@ git-tree-sha1 = "ffbb5977a358cbd50288caa60954596ca32a3b34"
 uuid = "291d046c-3347-11e9-1e74-c3d251d406c6"
 version = "0.3.2"
 
+[[Mixers]]
+deps = ["MacroTools"]
+git-tree-sha1 = "a2d042e82dfa72efbb4e028b9ab68223ea399094"
+uuid = "2a8e4939-dab8-5edc-8f64-72a8776f13de"
+version = "0.1.0"
+
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 
