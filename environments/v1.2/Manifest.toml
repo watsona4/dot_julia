@@ -8633,6 +8633,12 @@ git-tree-sha1 = "e2b489d43a7c8193729072006e1cf15c73d9b2ae"
 uuid = "c0d5b6db-e3fc-52bc-a87d-1d050989ed3b"
 version = "0.2.1"
 
+[[PhysOcean]]
+deps = ["AbstractTrees", "Compat", "Dates", "DelimitedFiles", "Glob", "Gumbo", "HTTP", "Missings", "NCDatasets", "Printf", "Statistics"]
+git-tree-sha1 = "1947ff02da3eaf375d0eca23a174bf7e74de3ec9"
+uuid = "3725be50-bbbd-5592-92c3-2f0e82159c3e"
+version = "0.5.2"
+
 [[PiGPIO]]
 deps = ["Sockets"]
 git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
