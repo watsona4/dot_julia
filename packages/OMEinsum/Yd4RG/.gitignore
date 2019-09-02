@@ -1,0 +1,9 @@
+*.jl.*.cov
+*.jl.cov
+*.jl.mem
+*.json
+.DS_Store
+/docs/build/
+/docs/site/
+local/
+*.swp
