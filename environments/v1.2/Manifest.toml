@@ -4741,6 +4741,12 @@ git-tree-sha1 = "9f7e7eebd3cd46e541928ef6f1d5b992abd8d384"
 uuid = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
 version = "0.12.3"
 
+[[HDF5Logger]]
+deps = ["HDF5"]
+git-tree-sha1 = "5682158c5200c4568df03a58f17d2416c1c84486"
+uuid = "a770b2f2-aca6-5e76-943a-580dc53aa03d"
+version = "1.0.0"
+
 [[HSARuntime]]
 deps = ["CEnum", "Libdl", "Setfield"]
 git-tree-sha1 = "ea40d80684b6f986599f19b1840abc00af4a399b"
