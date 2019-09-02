@@ -6097,6 +6097,12 @@ git-tree-sha1 = "8cbd80230cfdde937d5e317a47792d1753309f57"
 uuid = "9927f19a-46ce-5bdd-a20a-f46a78b61e3d"
 version = "1.0.0"
 
+[[LabelNumerals]]
+deps = ["RomanNumerals", "Test"]
+git-tree-sha1 = "03f5757e29f13d76a93416c0b913c19bf8f9baac"
+uuid = "2e475f56-4567-5c41-94ff-3f69a29378f9"
+version = "0.1.0"
+
 [[LambertW]]
 deps = ["Test"]
 git-tree-sha1 = "ec5a59b498330ac1e5b1c505c46dc53dcefdf90e"
@@ -7376,6 +7382,12 @@ deps = ["Compat", "Distributed", "FileIO", "JLD2"]
 git-tree-sha1 = "1db4d58e4d23e40d1d24760624ec38f4d52a0fbe"
 uuid = "27aeedcb-f738-516b-a0b8-3211cf1146e5"
 version = "0.5.0"
+
+[[RomanNumerals]]
+deps = ["Compat", "Primes"]
+git-tree-sha1 = "06e621d4a9eda8d09eab8aade41e85cb93cadae9"
+uuid = "37834d88-8936-577c-80c9-1066ecf66832"
+version = "0.3.1"
 
 [[Roots]]
 deps = ["Printf"]
