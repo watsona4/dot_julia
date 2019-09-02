@@ -7274,6 +7274,12 @@ git-tree-sha1 = "4890976f5f0390f5306712cec8e74797b0a50ed4"
 uuid = "47737169-82b5-5dea-8d33-5707f53e1c0c"
 version = "0.10.0"
 
+[[Miletus]]
+deps = ["BusinessDays", "Dates", "ForwardDiff", "LinearAlgebra", "Optim", "Random", "Reexport", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns"]
+git-tree-sha1 = "7a62066457eb15f5c7e0b752d683c304f7c3b82c"
+uuid = "3ae66bd7-4256-56cd-8b87-f856965b5ccf"
+version = "1.0.0"
+
 [[Millboard]]
 git-tree-sha1 = "c6d4a61d1b74ba35b1efe5cb025bf852145521e1"
 uuid = "39ec1447-df44-5f4c-beaa-866f30b4d3b2"
