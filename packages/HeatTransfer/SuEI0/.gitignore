@@ -1,0 +1,6 @@
+docs/build/
+docs/site/
+docs/src/tests
+*.cov
+*.pyc
+*.swp
