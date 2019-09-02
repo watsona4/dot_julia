@@ -7192,6 +7192,12 @@ git-tree-sha1 = "2d24c0988d8908bf9e352aa0f5bf8cf61722c2c0"
 uuid = "06dfef30-8e85-11e9-0a8e-cb6ed32fdbef"
 version = "0.1.0"
 
+[[Merly]]
+deps = ["HTTP", "JSON", "Pkg", "Sockets", "Test"]
+git-tree-sha1 = "0c12292949ae45c346c25e0a0a1b3dcad279dbdc"
+uuid = "5b70daea-9db9-5a46-aedf-2142e553ecc5"
+version = "0.2.0"
+
 [[MeshIO]]
 deps = ["ColorTypes", "FileIO", "GeometryTypes", "Printf", "Test"]
 git-tree-sha1 = "3e01e12c4c626578a9d47fac0d15c9fe8dad5139"
