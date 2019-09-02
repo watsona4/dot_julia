@@ -8828,6 +8828,12 @@ git-tree-sha1 = "cffc8194fb1a01a504a92f8c718b230a89839328"
 uuid = "89210da2-f0be-5ef8-ba65-10393cce509d"
 version = "0.3.0"
 
+[[PolyChaos]]
+deps = ["AdaptiveRejectionSampling", "Combinatorics", "Distributions", "FFTW", "GaussQuadrature", "LinearAlgebra", "QuadGK", "SparseArrays", "SpecialFunctions", "Statistics", "Test"]
+git-tree-sha1 = "3d006e9cd6a5926bf341471ecd60202aa75f40e0"
+uuid = "8d666b04-775d-5f6e-b778-5ac7c70f65a3"
+version = "0.1.3"
+
 [[Polyhedra]]
 deps = ["GeometryTypes", "JuMP", "LinearAlgebra", "MathProgBase", "RecipesBase", "SparseArrays", "StaticArrays", "Test"]
 git-tree-sha1 = "04123e891d4a7fb1a2831f09cb07e26233fdff9c"
