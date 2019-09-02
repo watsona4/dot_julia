@@ -1,0 +1,6 @@
+*~
+*.swp
+*.swo
+*.mem
+*.cov
+.ipynb_checkpoints

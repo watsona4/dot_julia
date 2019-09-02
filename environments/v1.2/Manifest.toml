@@ -5876,6 +5876,12 @@ git-tree-sha1 = "9846ab27d93757b22118fb95151c98bcc756d948"
 uuid = "c43967c8-f634-5d24-8eab-2867546b366b"
 version = "0.1.1"
 
+[[KernelEstimator]]
+deps = ["Distributions", "HCubature", "Optim", "Random", "SpecialFunctions", "StatsBase", "Test"]
+git-tree-sha1 = "2a6a492264a3d2d6955d0efaf8042fa36aebf77e"
+uuid = "857edff2-01a9-55ba-8bc9-13e46c0ddbb2"
+version = "0.3.3"
+
 [[Knet]]
 deps = ["AutoGrad", "CUDAapi", "FileIO", "JLD2", "Libdl", "LinearAlgebra", "Pkg", "Printf", "Random", "SpecialFunctions", "Statistics", "TimerOutputs"]
 git-tree-sha1 = "7a45f9ef563ef796433463cf6998c46d0a3de9c9"
