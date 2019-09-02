@@ -7146,6 +7146,12 @@ git-tree-sha1 = "d52799152697059353a8eac1000d32ba8d92aa25"
 uuid = "f9f48841-c794-520a-933b-121f7ba6ed94"
 version = "0.2.0"
 
+[[MemberFunctions]]
+deps = ["MacroTools", "Test"]
+git-tree-sha1 = "19e2a5f4e40f1e8947110872e76644515d292159"
+uuid = "08b01624-6c0b-11e9-1b9f-6d80c967c393"
+version = "0.1.0"
+
 [[Memento]]
 deps = ["Dates", "Distributed", "JSON", "Serialization", "Sockets", "Syslogs", "Test", "TimeZones", "UUIDs"]
 git-tree-sha1 = "090463b13da88689e5eae6468a6f531a21392175"
