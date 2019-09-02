@@ -6890,6 +6890,12 @@ git-tree-sha1 = "4b1543734b1b180c6c8b00c00e0a9aa0182568c3"
 uuid = "bdf86e05-2d2b-5731-a332-f3fe1f9e047f"
 version = "0.2.0"
 
+[[MRphy]]
+deps = ["LinearAlgebra", "Unitful", "UnitfulMR"]
+git-tree-sha1 = "94845d049e37d1311f278a0c1be74ff23bcf3dd5"
+uuid = "18c5d748-a4d3-11e9-30ca-051f275622c1"
+version = "0.1.2"
+
 [[MacroTools]]
 deps = ["CSTParser", "Compat", "DataStructures", "Test", "Tokenize"]
 git-tree-sha1 = "d6e9dedb8c92c3465575442da456aec15a89ff76"
@@ -8701,6 +8707,12 @@ deps = ["Unitful", "UnitfulAngles"]
 git-tree-sha1 = "69927c150d1347d438cb9440ac1044f7d11ea9c9"
 uuid = "6112ee07-acf9-5e0f-b108-d242c714bf9f"
 version = "0.3.0"
+
+[[UnitfulMR]]
+deps = ["Unitful"]
+git-tree-sha1 = "88b9a4594f4962801400f005466725edec59c286"
+uuid = "84966e9a-a839-11e9-29d5-57fe5a7e36c2"
+version = "0.1.1"
 
 [[Unmarshal]]
 deps = ["JSON", "LinearAlgebra", "Missings", "Nullables", "Test"]

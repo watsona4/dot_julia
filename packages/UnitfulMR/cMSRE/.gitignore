@@ -1,0 +1,22 @@
+*
+
+# except
+!.gitignore
+!*.jl
+!*.h
+!*.c
+!*.cpp
+!*.txt
+!*.md
+!*.toml
+!*.yml
+!LICENSE
+
+# even if in sub-dirs
+!*/
+
+# but never in these folders
+*back/
+*arch/
+*.vscode/
+
