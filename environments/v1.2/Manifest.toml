@@ -7110,6 +7110,12 @@ git-tree-sha1 = "85f5947b53c8cfd53ccfa3f4abae31faa22c2181"
 uuid = "739be429-bea8-5141-9913-cc70e7f3736d"
 version = "0.7.0"
 
+[[MeCab]]
+deps = ["BinDeps", "Libdl", "Test"]
+git-tree-sha1 = "005939d54a6cb1eed64ebe130c2b5813c0c9476f"
+uuid = "28a8edfd-32bd-5648-83f9-9b597c29a4fc"
+version = "0.2.0"
+
 [[Measurements]]
 deps = ["Calculus", "LinearAlgebra", "RecipesBase", "Requires"]
 git-tree-sha1 = "f65e8d655774a16e15938339a43ec47bcfc84cf2"
