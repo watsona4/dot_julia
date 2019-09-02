@@ -1,0 +1,8 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*.swp
+
+docs/build/
+docs/site/
+tmp*

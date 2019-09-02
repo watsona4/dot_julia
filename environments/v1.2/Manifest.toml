@@ -5266,6 +5266,12 @@ git-tree-sha1 = "0cf3ac621cd74b1d03af0cc4275f680b2070a5cc"
 uuid = "313cdc1a-70c2-5d6a-ae34-0150d3930a38"
 version = "1.1.0"
 
+[[Indicators]]
+deps = ["Random", "Statistics", "Temporal", "Test"]
+git-tree-sha1 = "97089d5f56335a77b25f10a34bb0fe6bfd3daf06"
+uuid = "70c4c096-89a6-5ec6-8236-da8aa3bd86fd"
+version = "0.6.0"
+
 [[IndirectArrays]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "b6e249be10a3381b2c72ac82f2d13d70067cb2bd"
@@ -7249,6 +7255,12 @@ deps = ["DataAPI", "DataValueInterfaces", "IteratorInterfaceExtensions", "Linear
 git-tree-sha1 = "aaed7b3b00248ff6a794375ad6adf30f30ca5591"
 uuid = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
 version = "0.2.11"
+
+[[Temporal]]
+deps = ["Dates", "HTTP", "JSON", "Printf", "Random", "RecipesBase", "Statistics", "Test"]
+git-tree-sha1 = "ab2b14f510cd2a068974c9dc654ad8e743582dc1"
+uuid = "a110ec8f-48c8-5d59-8f7e-f91bc4cc0c3d"
+version = "0.6.1"
 
 [[TerminalMenus]]
 deps = ["Compat", "REPL", "Test"]
