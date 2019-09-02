@@ -4883,6 +4883,12 @@ git-tree-sha1 = "286ff83d696dd92748e603a3219618d9e407e872"
 uuid = "eafb193a-b7ab-5a9e-9068-77385905fa72"
 version = "0.3.1"
 
+[[Hilbert]]
+deps = ["FFTW", "Test"]
+git-tree-sha1 = "fb7869aaecd505b9d415079ce280f75a4e2da939"
+uuid = "5befdd30-5572-5129-8422-0c92d957d47a"
+version = "0.1.0"
+
 [[Homebrew]]
 deps = ["BinDeps", "InteractiveUtils", "JSON", "Libdl", "Test", "Unicode"]
 git-tree-sha1 = "f01fb2f34675f9839d55ba7238bab63ebd2e531e"
