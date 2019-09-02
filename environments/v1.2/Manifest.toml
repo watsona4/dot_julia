@@ -6801,6 +6801,12 @@ git-tree-sha1 = "f63a8d37429568b8c4384d76c4a96fc2897d6ddf"
 uuid = "f0e99cf1-93fa-52ec-9ecc-5026115318e0"
 version = "0.8.0"
 
+[[MLDataPattern]]
+deps = ["LearnBase", "MLLabelUtils", "Random", "SparseArrays", "StatsBase", "Test"]
+git-tree-sha1 = "e62221819c86de1affc5026cc099214ba51e125e"
+uuid = "9920b226-0b2a-5f5f-9153-9aa70a013f8b"
+version = "0.5.0"
+
 [[MLJ]]
 deps = ["CSV", "CategoricalArrays", "Dates", "Distributed", "Distributions", "LinearAlgebra", "MLJBase", "MLJModels", "Pkg", "ProgressMeter", "Random", "RecipesBase", "RemoteFiles", "Statistics", "StatsBase", "Tables"]
 git-tree-sha1 = "b03ffb1421ec00b1acdf7f3ddbf4f1a1c38a5b2d"
@@ -6818,6 +6824,12 @@ deps = ["CategoricalArrays", "Distances", "Distributions", "LIBSVM", "LinearAlge
 git-tree-sha1 = "84b9b1c951a9adf2c96c58a6214743a997e7f734"
 uuid = "d491faf4-2d78-11e9-2867-c94bc002c0b7"
 version = "0.2.3"
+
+[[MLLabelUtils]]
+deps = ["LearnBase", "MappedArrays", "StatsBase", "Test"]
+git-tree-sha1 = "396eecfa05bf6e7628fc5fc3820545fce6620623"
+uuid = "66a33bbf-0c2b-5fc8-a008-9da813334f0a"
+version = "0.5.1"
 
 [[MLStyle]]
 git-tree-sha1 = "67f9a88611bc79f992aa705d9bbc833a2547dec7"
