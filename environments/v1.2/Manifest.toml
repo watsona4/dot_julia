@@ -7548,6 +7548,12 @@ git-tree-sha1 = "4220ceea71186db2bb45cb817984c99e563f3662"
 uuid = "f9640e96-87f6-5992-9c3b-0743c6a49ffa"
 version = "1.4.0"
 
+[[MultipleTesting]]
+deps = ["Distributions", "Random", "SpecialFunctions", "StatsBase", "Test"]
+git-tree-sha1 = "d6c79f17fbcdf492ca969ab1d3c3c402fd25d323"
+uuid = "f8716d33-7c4a-5097-896f-ce0ecbd3ef6b"
+version = "0.4.1"
+
 [[MultivariatePolynomials]]
 deps = ["LinearAlgebra"]
 git-tree-sha1 = "ddc00a66d775fab6ba10ecd9cf87a4cda2782036"
