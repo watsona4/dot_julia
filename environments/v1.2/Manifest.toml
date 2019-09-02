@@ -8471,6 +8471,12 @@ git-tree-sha1 = "70bdbfb2bceabb15345c0b54be4544813b3444e4"
 uuid = "d96e819e-fc66-5662-9728-84c9c7592b0a"
 version = "0.10.3"
 
+[[Parametron]]
+deps = ["DocStringExtensions", "FunctionWrappers", "LinearAlgebra", "MacroTools", "MathOptInterface", "Random", "Test"]
+git-tree-sha1 = "c283893f6759e5448f5f5a5cc20b172f8a96196b"
+uuid = "41fac6d6-0ffa-5bcc-b863-17dd4947be41"
+version = "0.8.0"
+
 [[Pardiso]]
 deps = ["Libdl", "LinearAlgebra", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "140777e634428407903907a39f2187edf983550b"
