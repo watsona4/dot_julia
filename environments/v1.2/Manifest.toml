@@ -5721,6 +5721,12 @@ git-tree-sha1 = "040121ea29b64894655ad3a8ecd6d498b8a29b44"
 uuid = "707a9f91-dad3-556f-9594-9b9a3b777385"
 version = "0.6.0"
 
+[[JuliaBerry]]
+deps = ["PiGPIO"]
+git-tree-sha1 = "7cfa221ecf6333b652d24c7216e1a986c8c65972"
+uuid = "c0b9960a-c887-5387-b23a-5cf61873b836"
+version = "0.1.0"
+
 [[JuliaDB]]
 deps = ["Dagger", "DataValues", "Distributed", "Glob", "IndexedTables", "MemPool", "Nullables", "OnlineStats", "OnlineStatsBase", "PooledArrays", "Printf", "RecipesBase", "Serialization", "Statistics", "StatsBase", "Test", "TextParse", "WeakRefStrings"]
 git-tree-sha1 = "958bda10d25cca244e5d506785188079c77f2ac8"
@@ -6675,6 +6681,12 @@ deps = ["DataFrames", "SparseArrays", "Statistics", "Test"]
 git-tree-sha1 = "5eaf3e1e6ee2f5694c39d63669b96cc000c7f163"
 uuid = "86800b63-3017-5277-aca5-15d7d6a5f2b2"
 version = "0.1.1"
+
+[[PiGPIO]]
+deps = ["Sockets"]
+git-tree-sha1 = "9ced5282050c5ff2838f7bb500746c55d05e185c"
+uuid = "bb151fc1-c6dc-5496-8ed6-07f94907e623"
+version = "0.1.0"
 
 [[Pidfile]]
 deps = ["FileWatching", "Test"]
