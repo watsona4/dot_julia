@@ -4818,6 +4818,18 @@ git-tree-sha1 = "a789c7a1ed4546ff8086e3fd05f3f1818bf8c390"
 uuid = "705708ad-e62c-5f47-9095-732127600058"
 version = "0.1.2"
 
+[[Harlequin]]
+deps = ["Healpix", "JSON", "LinearAlgebra", "Logging", "Printf", "RecipesBase", "Requires", "RunLengthArrays", "StaticArrays", "Statistics", "Test"]
+git-tree-sha1 = "e393aac872ca6548392e4a803ec1c4642cefdca9"
+uuid = "af1cbc52-b994-11e9-036a-87a15c7b4bde"
+version = "0.1.0"
+
+[[Healpix]]
+deps = ["FITSIO", "Printf", "RecipesBase", "Test"]
+git-tree-sha1 = "dd4094f9f174a7d9bee6d913236aa11b8a37e721"
+uuid = "9f4e344d-96bc-545a-84a3-ae6b9e1b672b"
+version = "2.2.0"
+
 [[Hexagons]]
 deps = ["Test"]
 git-tree-sha1 = "de4a6f9e7c4710ced6838ca906f81905f7385fd6"
@@ -6499,6 +6511,11 @@ deps = ["Test"]
 git-tree-sha1 = "293ba0ab32218b9ffd596040224228def84f8da0"
 uuid = "d5f540fe-1c90-5db3-b776-2e2f362d9394"
 version = "0.2.0"
+
+[[RunLengthArrays]]
+git-tree-sha1 = "0fb6ef475a8671fee5e17a5ce9cd785f4f4c6982"
+uuid = "11ec6118-8d4c-11e9-02bb-6986bd51d19a"
+version = "0.1.0"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
