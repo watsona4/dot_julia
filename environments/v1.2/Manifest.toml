@@ -6145,6 +6145,12 @@ git-tree-sha1 = "f20e07bd4576210e2f3af69e845aeaaa3786305f"
 uuid = "6f8e5838-0efe-5de0-80a3-5fb4f8dbb1de"
 version = "1.1.1"
 
+[[LargeMovieReviewDataset]]
+deps = ["DataDeps"]
+git-tree-sha1 = "097c2c99d8bde09af9aef3895a6718a0d6671a1b"
+uuid = "86ea995a-82c2-5be3-91a2-54cab4e8463b"
+version = "0.1.0"
+
 [[Lasso]]
 deps = ["DSP", "Distributions", "GLM", "LinearAlgebra", "MLBase", "Random", "Reexport", "SparseArrays", "StatsBase"]
 git-tree-sha1 = "d16e4026612333e691001984b593ac42e0ee07e9"
