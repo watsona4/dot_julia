@@ -1,0 +1,28 @@
+name = "LinearDynamicsModels"
+uuid = "93c30095-2a61-55f3-920e-6649674b8a9e"
+authors = ["Ed Schmerling <ednerd@gmail.com>"]
+version = "1.0.1"
+
+[deps]
+DifferentialDynamicsModels = "cb52cc87-d0c7-5933-bad1-08679d8b4c67"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[compat]
+DifferentialDynamicsModels = "≥ 1.0.0"
+ForwardDiff = "≥ 0.8.0"
+MacroTools = "≥ 0.4.2"
+Requires = "≥ 0.5.2"
+StaticArrays = "≥ 0.8.2"
+SymPy = "≥ 1.0.0"
+julia = "≥ 0.7.0"
+
+[extras]
+SymPy = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["SymPy", "Test"]

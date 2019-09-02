@@ -1,0 +1,19 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+env:
+  global:
+    - PYTHON=conda
+after_success:
+  - julia --project -e 'import Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
