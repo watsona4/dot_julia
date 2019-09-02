@@ -1,0 +1,1 @@
+`/usr/local/bin/patchelf --replace-needed libpcre2-8.so.0 '$ORIGIN/libpcre2-8.so.0' lib/libpcre2-posix.so.2.0.0`

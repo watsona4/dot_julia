@@ -1,0 +1,20 @@
+authors = ["ScottPJones <scottjones@alum.mit.edu>"]
+desc = "Wrapper for PCRE2 Perl Compatible Regular Expression library"
+keywords = ["Strings", "PCRE", "Regex"]
+license = "MIT"
+name = "PCRE2"
+uuid = "c9310f65-a42c-5928-aca3-d34f64192029"
+version = "1.0.2"
+
+[deps]
+Libdl          = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+BinaryProvider = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "^1.0.0"

@@ -8298,6 +8298,12 @@ git-tree-sha1 = "bf83bde66b89f76349b64c3017f102309e6e9380"
 uuid = "f5f7c340-0bb3-5c69-969a-41884d311d1b"
 version = "0.5.2"
 
+[[PCRE2]]
+deps = ["BinaryProvider", "Libdl"]
+git-tree-sha1 = "fc4205405f792d5e3a0eac7a49ae40e55ec6e04b"
+uuid = "c9310f65-a42c-5928-aca3-d34f64192029"
+version = "1.0.2"
+
 [[PDMats]]
 deps = ["Arpack", "LinearAlgebra", "SparseArrays", "SuiteSparse", "Test"]
 git-tree-sha1 = "9d6a9b3e19634612fb1edcafc4b1d75242b24bde"
