@@ -1,0 +1,11 @@
+site_name:           SDWBA.jl
+repo_url:            https://github.com/ElOceanografo/SDWBA.jl
+site_description:    Stochastic distorted-wave Born approximations for acoustic backscatter in Julia
+site_author:         Sam Urmy
+theme:               readthedocs
+docs_dir:            docs
+
+pages:
+   - 'Introduction' : 'index.md'
+   - 'Function Reference' : 'API.md'
+   - 'Included scatterers' : 'Models.md'
