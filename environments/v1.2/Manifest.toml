@@ -9600,6 +9600,12 @@ git-tree-sha1 = "9dde360267e7f5e0c292bbe14b7d034f7e617031"
 uuid = "0d4725de-cd7c-5e44-8a85-a48caeef9fa5"
 version = "0.3.3"
 
+[[RealNeuralNetworks]]
+deps = ["BigArrays", "CSV", "DataFrames", "DataStructures", "Distributed", "ImageFiltering", "JSON", "LightGraphs", "LinearAlgebra", "LsqFit", "MetaGraphs", "NearestNeighbors", "OffsetArrays", "ProgressMeter", "Query", "Serialization", "SparseArrays", "Statistics"]
+git-tree-sha1 = "3322739df15420207d67584fd477b251f5747d88"
+uuid = "4491297b-8966-5840-8cb9-b189d60f3398"
+version = "1.0.1"
+
 [[RecipesBase]]
 git-tree-sha1 = "7bdce29bc9b2f5660a6e5e64d64d91ec941f6aa2"
 uuid = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
