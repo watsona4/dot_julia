@@ -11189,6 +11189,12 @@ git-tree-sha1 = "17f4d1102fd07237eb5ed837801911fc87fae73c"
 uuid = "299745a8-1dd2-5813-967e-1153b019bdef"
 version = "0.3.0"
 
+[[StrICU]]
+deps = ["BinDeps", "Libdl", "ModuleInterfaceTools", "StrBase", "WinRPM"]
+git-tree-sha1 = "cc9d14b55e86ae800a1ab94492ab9fce75a6cbfc"
+uuid = "124badd8-7747-5df6-9c35-5cbf8cd52816"
+version = "1.0.0"
+
 [[StrLiterals]]
 deps = ["ModuleInterfaceTools"]
 git-tree-sha1 = "d1221f9f63ff7b3948ec2496b6c123d5ed454972"
