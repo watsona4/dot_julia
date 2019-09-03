@@ -10647,6 +10647,12 @@ git-tree-sha1 = "d4e78224ee56c9a23479ec5e0bc33cd8e90d11bb"
 uuid = "82cb661a-3f19-5665-9e27-df437c7e54c8"
 version = "0.1.1"
 
+[[SlurmWorkloadFileGenerator]]
+deps = ["Parameters"]
+git-tree-sha1 = "b15156e287a37aaa7f1ccb75de52793b6297a1ef"
+uuid = "da235a08-baf4-11e9-2387-6f19a530ddff"
+version = "0.1.0"
+
 [[Snappy]]
 deps = ["BinaryProvider", "Libdl", "Random", "Test"]
 git-tree-sha1 = "25620a91907972a05863941d6028791c2613888e"
