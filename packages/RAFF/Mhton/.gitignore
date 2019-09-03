@@ -1,0 +1,13 @@
+*~
+\#*
+.\#*
+
+# Ignore profiling files
+*.cov
+*.mem
+
+# Test files automatically generated
+test/*.dat
+
+# Ignore build subfolder from docs
+docs/build/*

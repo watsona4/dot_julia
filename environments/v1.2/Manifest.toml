@@ -9350,6 +9350,12 @@ git-tree-sha1 = "4e3b990d3bb0a6f04a298787caa2599cdff6e04f"
 uuid = "144146ce-868b-5e43-9e5b-0e94f26a569f"
 version = "0.1.0"
 
+[[RAFF]]
+deps = ["DelimitedFiles", "Distributed", "ForwardDiff", "LinearAlgebra", "Logging", "Printf", "Random", "SharedArrays", "Statistics", "Test"]
+git-tree-sha1 = "8a73503d00d0d33f3a57a6a3e601a56d8e36ffcd"
+uuid = "4aa82a78-ed18-41f9-aee6-9d73ba3a0b42"
+version = "0.6.3"
+
 [[RCall]]
 deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "Libdl", "Missings", "REPL", "Random", "Requires", "StatsModels", "WinReg"]
 git-tree-sha1 = "828332205a09377da6a8ebd1e615b11a22f8def6"
