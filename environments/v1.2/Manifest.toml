@@ -10244,6 +10244,12 @@ git-tree-sha1 = "d2d315205eede65e481c72ff372524f838fa5897"
 uuid = "6e93f119-a087-51f0-a155-b73ce4943121"
 version = "0.1.4"
 
+[[ScientificTypes]]
+deps = ["InteractiveUtils", "Requires"]
+git-tree-sha1 = "1225027637793cffe619485cbc1fda92ba3a96ed"
+uuid = "321657f4-b219-11e9-178b-2701a2544e81"
+version = "0.1.3"
+
 [[ScikitLearn]]
 deps = ["Compat", "Conda", "DataFrames", "DecisionTree", "Distributed", "GaussianMixtures", "GaussianProcesses", "IterTools", "LinearAlgebra", "MacroTools", "NBInclude", "Parameters", "Printf", "PyCall", "PyPlot", "RData", "RDatasets", "Random", "ScikitLearnBase", "SparseArrays", "StatsBase"]
 git-tree-sha1 = "4990323c72c63ac1d6e43730454399ada3d8a194"
