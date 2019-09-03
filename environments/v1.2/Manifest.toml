@@ -9425,6 +9425,12 @@ git-tree-sha1 = "1c4d137ed38cd2af7cbd9bb51e1a1221b198c688"
 uuid = "97cc5700-e6cb-5ca1-8fb2-7f6b45264ecd"
 version = "1.4.0"
 
+[[ROCAnalysis]]
+deps = ["DataFrames", "LinearAlgebra", "Random", "Requires", "SpecialFunctions", "Test"]
+git-tree-sha1 = "fed3f005bb6d4a39f848b7f713cf83c820d7bea4"
+uuid = "f535d66d-59bb-5153-8d2b-ef0a426c6aff"
+version = "0.3.0"
+
 [[Random]]
 deps = ["Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
