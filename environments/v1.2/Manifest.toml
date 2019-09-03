@@ -10629,6 +10629,12 @@ git-tree-sha1 = "4c622c61c4430621f476bade701f071f32db006e"
 uuid = "e094c991-5a90-5477-8896-c1e4c9552a1a"
 version = "0.4.2"
 
+[[SingularSpectrumAnalysis]]
+deps = ["LinearAlgebra", "Random", "RecipesBase", "Requires", "Statistics"]
+git-tree-sha1 = "c483290abad95210a0dec3a25bc8c77f9fcbf050"
+uuid = "77f5812f-bd1f-5f6e-9b72-07b28d8bbbc3"
+version = "0.2.1"
+
 [[SkyCoords]]
 deps = ["DelimitedFiles", "Printf", "StaticArrays", "Statistics", "Test"]
 git-tree-sha1 = "30d1fc4bf2dde3b90edf76c8e0f275e24290918a"
