@@ -10722,6 +10722,12 @@ git-tree-sha1 = "42cd2fa6cf46a356397cb9287c54288c4c3ed019"
 uuid = "041a2d23-8c6e-5597-be73-bf96b5e0dfd4"
 version = "1.1.0"
 
+[[SortedVectors]]
+deps = ["ArgCheck", "DocStringExtensions", "Lazy", "Parameters", "Test"]
+git-tree-sha1 = "96679be28f3ee1944c9854f29d77fb3ed0365711"
+uuid = "9404b2b5-64ac-5ade-85a3-77c836ef30b4"
+version = "0.2.1"
+
 [[SortingAlgorithms]]
 deps = ["DataStructures", "Random", "Test"]
 git-tree-sha1 = "03f5898c9959f8115e30bc7226ada7d0df554ddd"
