@@ -8982,6 +8982,12 @@ git-tree-sha1 = "a7e5c313e182c7e6e5effb41991c70803e68ed79"
 uuid = "6a9148d9-5e9a-5935-86c8-72740ba3a7c7"
 version = "0.0.2"
 
+[[Preconditioners]]
+deps = ["AlgebraicMultigrid", "Compat", "LimitedLDLFactorizations", "LinearAlgebra", "Random", "SparseArrays", "Test"]
+git-tree-sha1 = "2751950437bed8837bdd3d3a97385f181e32c226"
+uuid = "af69fa37-3177-5a40-98ee-561f696e4fcd"
+version = "0.2.2"
+
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
 git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
