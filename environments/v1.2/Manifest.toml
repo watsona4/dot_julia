@@ -11141,6 +11141,12 @@ git-tree-sha1 = "0dfad44c3d1e96b139fbefe9c34ad428b2ea5c15"
 uuid = "b15139f2-feda-5ba7-9a2a-3fc816fb5551"
 version = "0.2.3"
 
+[[StochasticPrograms]]
+deps = ["Distributed", "Distributions", "JuMP", "LinearAlgebra", "MacroTools", "MathProgBase", "Printf", "SparseArrays"]
+git-tree-sha1 = "b3475b0b41a4f896c25cb4bbbf2208c6415909e0"
+uuid = "8b8459f2-c380-502b-8633-9aed2d6c2b35"
+version = "0.2.0"
+
 [[StrAPI]]
 deps = ["ModuleInterfaceTools", "Unicode"]
 git-tree-sha1 = "4b70830583e9dd88f1220f8139ee967084428c21"
