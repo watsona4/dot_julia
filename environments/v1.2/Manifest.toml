@@ -10857,6 +10857,12 @@ git-tree-sha1 = "43432f667f23008c08999c70faa2f3c82624e4a2"
 uuid = "8e0d2ad3-56b8-53f3-8036-54b674872bef"
 version = "0.1.5"
 
+[[SpinnakerGUI]]
+deps = ["CImGui", "CSyntax", "Dates", "FixedPointNumbers", "Pkg", "Printf", "Random", "Spinnaker", "VideoIO"]
+git-tree-sha1 = "7baad10554fd292bef19b3f87cd530fcf7421beb"
+uuid = "bc11bc94-475e-4eaf-ad55-de9f2e280376"
+version = "0.1.3"
+
 [[SplitApplyCombine]]
 deps = ["Indexing", "Test"]
 git-tree-sha1 = "72eb364378c17e0f3dcde342b2953ad2bd55b5a1"
