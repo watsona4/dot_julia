@@ -11135,6 +11135,12 @@ git-tree-sha1 = "e288a36e42eb122b070de59190a0632065b19ebe"
 uuid = "789caeaf-c7a9-5a7d-9973-96adeb23e2a0"
 version = "6.8.0"
 
+[[StochasticIntegrals]]
+deps = ["DataFrames", "Dates", "Distributions", "FixedPointAcceleration", "LinearAlgebra", "MultivariateFunctions", "Pkg", "Random", "Sobol", "Statistics", "Test"]
+git-tree-sha1 = "0dfad44c3d1e96b139fbefe9c34ad428b2ea5c15"
+uuid = "b15139f2-feda-5ba7-9a2a-3fc816fb5551"
+version = "0.2.3"
+
 [[StrAPI]]
 deps = ["ModuleInterfaceTools", "Unicode"]
 git-tree-sha1 = "4b70830583e9dd88f1220f8139ee967084428c21"
