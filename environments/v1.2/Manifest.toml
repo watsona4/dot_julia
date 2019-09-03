@@ -11153,6 +11153,12 @@ git-tree-sha1 = "f23b5fb377b305a66f53363a0761303f82d238f0"
 uuid = "048039a2-5e1a-11e9-0eb6-5da22298fca4"
 version = "0.3.3"
 
+[[StorageGraphs]]
+deps = ["BSON", "Distributed", "GraphPlot", "JLD", "LightGraphs", "Serialization", "SharedArrays"]
+git-tree-sha1 = "116b4fb60cd0dd190630a0ed24c090fcc2782a88"
+uuid = "fa9e2bbc-20aa-512b-a47b-5a4d8687aaeb"
+version = "0.3.1"
+
 [[StrAPI]]
 deps = ["ModuleInterfaceTools", "Unicode"]
 git-tree-sha1 = "4b70830583e9dd88f1220f8139ee967084428c21"
