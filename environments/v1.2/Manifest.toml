@@ -10118,6 +10118,12 @@ git-tree-sha1 = "d9adabd079828c167a96f6ac1bfce1ab0a758751"
 uuid = "c35d69d1-b747-5018-a192-25bc5e63c83d"
 version = "0.3.1"
 
+[[SNAPDatasets]]
+deps = ["LightGraphs", "Test"]
+git-tree-sha1 = "4df9b4298f93608554a6f3131fd7a1ce662734eb"
+uuid = "fc66bc1b-447b-53fc-8f09-bc9cfb0b0c10"
+version = "0.1.0"
+
 [[SQLite]]
 deps = ["BinaryProvider", "DataFrames", "Dates", "Libdl", "Random", "Serialization", "Tables", "Test", "WeakRefStrings"]
 git-tree-sha1 = "70383f412eaa203ffbdd53a1bc5af089c2f8828e"
