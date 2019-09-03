@@ -9308,6 +9308,12 @@ git-tree-sha1 = "407859870969b7a01476a4b4f5174347680f9853"
 uuid = "2aef5ad7-51ca-5a8f-8e88-e75cf067b44b"
 version = "0.9.0"
 
+[[QuerySQLite]]
+deps = ["DataValues", "IteratorInterfaceExtensions", "MacroTools", "QueryOperators", "SQLite", "TableShowUtils", "TableTraits"]
+git-tree-sha1 = "592206efe68c022c8e8abefae1e91aad7118ae64"
+uuid = "57f923c0-76be-11e9-095d-c942eaffc94b"
+version = "0.2.0"
+
 [[RCall]]
 deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "Libdl", "Missings", "REPL", "Random", "Requires", "StatsModels", "WinReg"]
 git-tree-sha1 = "828332205a09377da6a8ebd1e615b11a22f8def6"

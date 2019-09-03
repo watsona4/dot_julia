@@ -1,0 +1,30 @@
+name = "QuerySQLite"
+uuid = "57f923c0-76be-11e9-095d-c942eaffc94b"
+version = "0.2.0"
+
+[deps]
+IteratorInterfaceExtensions = "82899510-4779-5014-852e-03e436cf321d"
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+QueryOperators = "2aef5ad7-51ca-5a8f-8e88-e75cf067b44b"
+SQLite = "0aa819cd-b072-5ff4-a722-6bc24af294d9"
+TableTraits = "3783bdb8-4a98-5b6b-af9a-565f29a5fe9c"
+DataValues = "e7dc6d0d-1eca-5fa6-8ad6-5aecde8b7ea5"
+TableShowUtils = "5e66a065-1f0a-5976-b372-e0b8c017ca10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Query = "1a8c2f83-1ff3-5112-b086-8aa67b057ba1"
+QueryTables = "30ad73d7-305e-5999-88c2-a7d9e8945169"
+
+[targets]
+test = ["Test", "Query", "QueryTables"]
+
+[compat]
+julia = "1"
+IteratorInterfaceExtensions = "0.1.1, 1"
+MacroTools = "0.5"
+QueryOperators = "0.9"
+SQLite = "0.8.1"
+TableTraits = "0.4.1, 1"
+DataValues = "0.4.11"
+TableShowUtils = "0.2.5"
