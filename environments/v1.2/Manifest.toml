@@ -10533,6 +10533,12 @@ git-tree-sha1 = "975d04f70989475f429ce2e5d72025a045e9e738"
 uuid = "aa4a32ff-dd5d-5357-90e3-e7a9512f0501"
 version = "0.1.5"
 
+[[SimpleIntegrals]]
+deps = ["ArgCheck"]
+git-tree-sha1 = "c41bb3abf754e75ddde0fb0f7545fea47bf4f2e8"
+uuid = "c106d4f1-74b1-53cf-8919-47dd3f5c79fb"
+version = "0.1.0"
+
 [[SimplePartitions]]
 deps = ["AbstractLattices", "DataStructures", "Permutations", "Test"]
 git-tree-sha1 = "2952f80c5834ae5363a5f5942084186b9fb66586"
