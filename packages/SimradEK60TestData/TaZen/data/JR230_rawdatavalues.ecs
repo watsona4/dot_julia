@@ -1,0 +1,84 @@
+﻿#========================================================================================#
+#               ECHOVIEW CALIBRATION SUPPLEMENT (.ECS) FILE (SimradEK60Raw)              #
+#                                04/05/2018 11:31:37.4280                                #
+#========================================================================================#
+#       +----------+   +-----------+   +----------+   +-----------+   +----------+       #
+#       | Default  |-->| Data File |-->| Fileset  |-->| SourceCal |-->| LocalCal |       #
+#       | Settings |   | Settings  |   | Settings |   | Settings  |   | Settings |       #
+#       +----------+   +-----------+   +----------+   +-----------+   +----------+       #
+# - Settings to the right override those to their left.                                  #
+# - See the Help file page "About calibration".                                          #
+#========================================================================================#
+
+Version 1.00
+
+
+#========================================================================================#
+#                                    FILESET SETTINGS                                    #
+#========================================================================================#
+
+# SoundSpeed = # (meters per second) [1400.00..1700.00]
+# TvgRangeCorrection = # an enumeration tag or an integer [0..9]
+# TvgRangeCorrectionOffset = # (samples) [-10000.00..10000.00]
+
+
+#========================================================================================#
+#                                   SOURCECAL SETTINGS                                   #
+#========================================================================================#
+
+SourceCal T1
+    # AbsorptionCoefficient = 0.0097203 # (decibels per meter) [0.0000000..100.0000000]
+    # EK60SaCorrection = -0.6300 # (decibels) [-99.9900..99.9900]
+    # Ek60TransducerGain = 24.0700 # (decibels) [1.0000..99.0000]
+    # Frequency = 38.00 # (kilohertz) [0.01..10000.00]
+    # MajorAxis3dbBeamAngle = 7.10 # (degrees) [0.00..359.99]
+    # MajorAxisAngleOffset = 0.00 # (degrees) [-9.99..9.99]
+    # MajorAxisAngleSensitivity = 22.000000 # [0.100000..100.000000]
+    # MinorAxis3dbBeamAngle = 7.00 # (degrees) [0.00..359.99]
+    # MinorAxisAngleOffset = 0.00 # (degrees) [-9.99..9.99]
+    # MinorAxisAngleSensitivity = 22.000000 # [0.100000..100.000000]
+    # SoundSpeed = 1446.00 # (meters per second) [1400.00..1700.00]
+    # TransmittedPower = 2000.00000 # (watts) [1.00000..30000.00000]
+    # TransmittedPulseLength = 1.024 # (milliseconds) [0.001..50.000]
+    # TvgRangeCorrection = SimradEx60 # an enumeration tag or an integer [0..9]
+    # TwoWayBeamAngle = -20.700001 # (decibels re 1 steradian) [-99.000000..-1.000000]
+
+SourceCal T2
+    # AbsorptionCoefficient = 0.0248458 # (decibels per meter) [0.0000000..100.0000000]
+    # EK60SaCorrection = -0.3900 # (decibels) [-99.9900..99.9900]
+    # Ek60TransducerGain = 21.3800 # (decibels) [1.0000..99.0000]
+    # Frequency = 120.00 # (kilohertz) [0.01..10000.00]
+    # MajorAxis3dbBeamAngle = 7.48 # (degrees) [0.00..359.99]
+    # MajorAxisAngleOffset = -0.07 # (degrees) [-9.99..9.99]
+    # MajorAxisAngleSensitivity = 21.000000 # [0.100000..100.000000]
+    # MinorAxis3dbBeamAngle = 7.48 # (degrees) [0.00..359.99]
+    # MinorAxisAngleOffset = -0.12 # (degrees) [-9.99..9.99]
+    # MinorAxisAngleSensitivity = 21.000000 # [0.100000..100.000000]
+    # SoundSpeed = 1446.00 # (meters per second) [1400.00..1700.00]
+    # TransmittedPower = 500.00000 # (watts) [1.00000..30000.00000]
+    # TransmittedPulseLength = 1.024 # (milliseconds) [0.001..50.000]
+    # TvgRangeCorrection = SimradEx60 # an enumeration tag or an integer [0..9]
+    # TwoWayBeamAngle = -20.700001 # (decibels re 1 steradian) [-99.000000..-1.000000]
+
+SourceCal T3
+    # AbsorptionCoefficient = 0.0387017 # (decibels per meter) [0.0000000..100.0000000]
+    # EK60SaCorrection = -0.3100 # (decibels) [-99.9900..99.9900]
+    # Ek60TransducerGain = 22.0300 # (decibels) [1.0000..99.0000]
+    # Frequency = 200.00 # (kilohertz) [0.01..10000.00]
+    # MajorAxis3dbBeamAngle = 6.43 # (degrees) [0.00..359.99]
+    # MajorAxisAngleOffset = -0.24 # (degrees) [-9.99..9.99]
+    # MajorAxisAngleSensitivity = 23.000000 # [0.100000..100.000000]
+    # MinorAxis3dbBeamAngle = 6.44 # (degrees) [0.00..359.99]
+    # MinorAxisAngleOffset = 0.17 # (degrees) [-9.99..9.99]
+    # MinorAxisAngleSensitivity = 23.000000 # [0.100000..100.000000]
+    # SoundSpeed = 1446.00 # (meters per second) [1400.00..1700.00]
+    # TransmittedPower = 300.00000 # (watts) [1.00000..30000.00000]
+    # TransmittedPulseLength = 1.024 # (milliseconds) [0.001..50.000]
+    # TvgRangeCorrection = SimradEx60 # an enumeration tag or an integer [0..9]
+    # TwoWayBeamAngle = -19.600000 # (decibels re 1 steradian) [-99.000000..-1.000000]
+
+
+#========================================================================================#
+#                                    LOCALCAL SETTINGS                                   #
+#========================================================================================#
+

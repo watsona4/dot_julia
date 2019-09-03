@@ -1,0 +1,13 @@
+JR230-D20091215-T121917.raw.SHAPES.evr is an Echoview EVR file being the results of a running a schools analysis on JR230-D20091215-T121917.raw using Echoview.
+
+The algorithm was run against 120 kHz calibrated data. No noise removal or other pre-processing was undertaken.
+
+The settings were:
+
+Minimum total school length (m): 40.00
+Minimum total schoo height (m): 10.00
+Minimum candidate length (m): 5.00
+Minimum candidate height (m): 2.00
+Maximum vertical linking distance (m): 5.00
+Maximum horizontal linking distance (m): 20.00
+Distance mode: GPS distance

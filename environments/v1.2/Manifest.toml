@@ -10605,6 +10605,12 @@ git-tree-sha1 = "f20c0feaa4f47720be441d894c2fa4d970823d6c"
 uuid = "8e323af8-d215-5c39-b262-30cfc2fa9c48"
 version = "0.1.0"
 
+[[SimradEK60TestData]]
+deps = ["Test"]
+git-tree-sha1 = "e80f1b5d7cf4a806c4d787caf7c0f997dc88b578"
+uuid = "6560e86b-c63b-5eb7-baae-f1872a4305ea"
+version = "0.1.0"
+
 [[SimradRaw]]
 deps = ["Test"]
 git-tree-sha1 = "5c7d852f7fa30d111d90f1d90b3353947769b826"
