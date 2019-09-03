@@ -9043,6 +9043,12 @@ version = "0.2.0"
 deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
+[[PriorityChannels]]
+deps = ["DataStructures", "Dates", "Distributed", "Random", "Test"]
+git-tree-sha1 = "5b27cbb0b1a7207907d924c994f78f67c6d6dc79"
+uuid = "a2669504-c0c1-59c8-a2df-73186d0f9ddc"
+version = "0.1.0"
+
 [[Profile]]
 deps = ["Printf"]
 uuid = "9abbd945-dff8-562f-b5e8-e1ebf5ef1b79"
