@@ -9724,6 +9724,11 @@ git-tree-sha1 = "f06f68e3f34111641784a2cbbd34776b3e046e82"
 uuid = "d519eb52-b820-54da-95a6-98e1306fdade"
 version = "0.2.1"
 
+[[RegularExpressions]]
+git-tree-sha1 = "003a40a14ee78d24ad0e8ab45342df86a705ee4c"
+uuid = "27faeba3-bc54-5829-b163-df8cb949fe88"
+version = "0.0.2"
+
 [[RegularizedLeastSquares]]
 deps = ["Documenter", "FFTW", "IterativeSolvers", "LinearAlgebra", "LinearOperators", "ProgressMeter", "Random", "SparseArrays", "Wavelets"]
 git-tree-sha1 = "c9c36803900ed368080e30b18b033347575158c2"
