@@ -10431,6 +10431,12 @@ git-tree-sha1 = "b1aa84666a23a31cebcdcb848e62428968789287"
 uuid = "1277b4bf-5013-50f5-be3d-901d8477a67a"
 version = "0.5.0"
 
+[[Shoco]]
+deps = ["BinaryProvider", "Libdl", "Test"]
+git-tree-sha1 = "098d805bdddf79832422add04bcdb19cdc306cc2"
+uuid = "f786175c-7be2-5c6f-a66a-14694b1fea27"
+version = "0.3.0"
+
 [[Showoff]]
 deps = ["Dates"]
 git-tree-sha1 = "e032c9df551fb23c9f98ae1064de074111b7bc39"

@@ -1,0 +1,8 @@
+name = "Shoco"
+uuid = "f786175c-7be2-5c6f-a66a-14694b1fea27"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
