@@ -10977,6 +10977,12 @@ git-tree-sha1 = "245c50f8a6534bb16ada031e064363f8298b61b9"
 uuid = "60ddc479-9b66-56df-82fc-76a74619b69c"
 version = "0.9.2"
 
+[[StatProfilerHTML]]
+deps = ["Compat", "Profile", "Test"]
+git-tree-sha1 = "428206c3b35d1c43631dbe0c89d44eb6c1c8ab00"
+uuid = "a8a75453-ed82-57c9-9e16-4cd1196ecbf5"
+version = "0.4.0"
+
 [[StateSpaceReconstruction]]
 deps = ["Conda", "Distances", "Distributions", "LinearAlgebra", "NearestNeighbors", "PyCall", "Reexport", "Simplices", "StaticArrays", "Statistics", "Test"]
 git-tree-sha1 = "211298d65326fd109bb00c92ce0adca0f4c09435"
