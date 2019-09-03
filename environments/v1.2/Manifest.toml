@@ -10130,6 +10130,12 @@ git-tree-sha1 = "6c8773c9e5a7a9ce0c0663161da2d5172ed7c17a"
 uuid = "ad3d3fd0-b5f2-51ee-b274-8cdbe62317e2"
 version = "1.0.0"
 
+[[SPICE]]
+deps = ["BinaryProvider", "Libdl", "LinearAlgebra"]
+git-tree-sha1 = "759bb9a9d35df36de6247bd4f989eb3580abebc0"
+uuid = "5bab7191-041a-5c2e-a744-024b9c3a5062"
+version = "0.1.1"
+
 [[SQLite]]
 deps = ["BinaryProvider", "DataFrames", "Dates", "Libdl", "Random", "Serialization", "Tables", "Test", "WeakRefStrings"]
 git-tree-sha1 = "70383f412eaa203ffbdd53a1bc5af089c2f8828e"
