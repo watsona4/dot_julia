@@ -1,0 +1,21 @@
+name = "SeDuMi"
+uuid = "a895aaad-f784-5544-9392-bb281339c1b2"
+repo = "https://github.com/JuliaOpt/SeDuMi.jl.git"
+version = "0.2.0"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MATLAB = "10e44e05-a98a-55b3-a45b-ba969058deb6"
+MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[compat]
+MATLAB = "≥ 0.7.3"
+MathOptInterface = "0.9"
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
