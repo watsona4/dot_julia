@@ -10804,6 +10804,12 @@ git-tree-sha1 = "7bc6fc5c363aae476ec2c8bc527aef104b90c779"
 uuid = "d4ead438-fe20-5cc5-a293-4fd39a41b74c"
 version = "0.1.2"
 
+[[SpatialJackknife]]
+deps = ["LinearAlgebra", "Statistics", "Test"]
+git-tree-sha1 = "2a1bb38bf9dc40f7143b026842d6a21182f4821e"
+uuid = "e2fa44a5-09d5-5fa2-a080-aa0766578c8a"
+version = "1.0.1"
+
 [[Spec]]
 deps = ["Cassette", "Pkg", "Random", "Test"]
 git-tree-sha1 = "01317d4b40fe250c4cd07323584070c3d2d82811"
