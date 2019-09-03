@@ -9617,6 +9617,12 @@ git-tree-sha1 = "7bdce29bc9b2f5660a6e5e64d64d91ec941f6aa2"
 uuid = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
 version = "0.7.0"
 
+[[Recombinase]]
+deps = ["ColorTypes", "IndexedTables", "IterTools", "KernelDensity", "Loess", "Observables", "OffsetArrays", "OnlineStatsBase", "OrderedCollections", "Statistics", "StatsBase", "StructArrays", "Tables", "Widgets"]
+git-tree-sha1 = "a638d72446a9283560cbcd335cedcd8b805ea965"
+uuid = "ba7d4641-94f4-5bcf-8684-37ba860b1597"
+version = "0.1.0"
+
 [[Rectangle]]
 deps = ["LinearAlgebra", "Test"]
 git-tree-sha1 = "214fc1d04d60774ff34d7bb0e1098971524d6edd"
