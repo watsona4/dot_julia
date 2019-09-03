@@ -1,0 +1,11 @@
+v 0.1.x
+✔ read script application credentials from config file
+✔ script application authorization & access_token retrieval
+✔ user info requests
+☐ subreddit info requests
+☐ comment posting and editing
+☐ private messaging
+☐ wiki
+☐ moderation
+☐ flair
+☐ code examples

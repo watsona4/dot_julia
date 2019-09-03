@@ -9653,6 +9653,12 @@ git-tree-sha1 = "6761a5d1f9646affb2a369ff932841fff77934a3"
 uuid = "f2c3362d-daeb-58d1-803e-2bc74f2840b4"
 version = "0.1.0"
 
+[[Reddit]]
+deps = ["Base64", "ConfParser", "HTTP", "JSON", "Revise", "Test", "TimeSeries"]
+git-tree-sha1 = "c14bd4f00cac7dedd07e3b738d60a3bb0d7ddcda"
+uuid = "27c6c700-beb4-11e9-0d5d-570238037c5a"
+version = "0.1.1"
+
 [[Reduce]]
 deps = ["AbstractTensors", "DirectSum", "ForceImport", "Leibniz", "LinearAlgebra", "REPL", "SyntaxTree"]
 git-tree-sha1 = "65f6dc4f80fc3808a796469b733f0c46118af4fb"
