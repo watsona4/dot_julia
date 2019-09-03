@@ -1,0 +1,12 @@
+name = "RemoteSemaphores"
+uuid = "bcdc7952-6eb0-55db-bf57-82111c48552b"
+
+[deps]
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+
+[extras]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Dates", "Test"]

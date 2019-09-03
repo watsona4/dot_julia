@@ -9795,6 +9795,12 @@ git-tree-sha1 = "fa573e218ee48b93b9c9f5f7b54f2162124b0451"
 uuid = "cbe49d4c-5af1-5b60-bb70-0a60aa018e1b"
 version = "0.3.1"
 
+[[RemoteSemaphores]]
+deps = ["Dates", "Distributed", "Test"]
+git-tree-sha1 = "5666b8b2ce833fb6502db9ddba352f9e915f44b2"
+uuid = "bcdc7952-6eb0-55db-bf57-82111c48552b"
+version = "0.2.0"
+
 [[Reproject]]
 deps = ["FITSIO", "Interpolations", "SkyCoords", "WCS"]
 git-tree-sha1 = "c7fcca6b75420ad9e2032f3d65ee56e03f0ce08e"
