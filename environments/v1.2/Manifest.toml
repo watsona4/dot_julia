@@ -10274,6 +10274,12 @@ git-tree-sha1 = "82c1909e298f069b652c70c132c9ae8b33f47c4d"
 uuid = "a895aaad-f784-5544-9392-bb281339c1b2"
 version = "0.2.0"
 
+[[Seaborn]]
+deps = ["Pandas", "PyCall", "PyPlot", "Reexport", "Test"]
+git-tree-sha1 = "f87c928ac416cde559d6043a62022cdc20a2d2e0"
+uuid = "d2ef9438-c967-53ab-8060-373fdd9e13eb"
+version = "0.4.1"
+
 [[Secp256k1]]
 deps = ["BitConverter"]
 git-tree-sha1 = "626e6e5c739e9ad323daf69e672c3c3680f2ba35"
