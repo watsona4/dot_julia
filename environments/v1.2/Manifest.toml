@@ -10461,6 +10461,12 @@ git-tree-sha1 = "d263a08ec505853a5ff1c1ebde2070419e3f28e9"
 uuid = "73760f76-fbc4-59ce-8f25-708e95d2df96"
 version = "0.4.0"
 
+[[SimJulia]]
+deps = ["DataStructures", "Dates", "ResumableFunctions"]
+git-tree-sha1 = "34f529eeaf728b97b8d99a236f8fba5b7f03a928"
+uuid = "428bdadb-6287-5aa5-874b-9969638295fd"
+version = "0.8.0"
+
 [[SimilaritySearch]]
 deps = ["Dates", "JSON", "LinearAlgebra", "Random", "Statistics", "Test"]
 git-tree-sha1 = "072b730909dd4b288a6f67c10fa12fc90dab0e63"
