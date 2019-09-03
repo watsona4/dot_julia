@@ -10893,6 +10893,12 @@ git-tree-sha1 = "dda780c40d9fe45964fe3c6965c19420943f9a2b"
 uuid = "d0ee94f6-a23d-54aa-bbe9-7f572d6da7f5"
 version = "0.1.1"
 
+[[StanDataFrames]]
+deps = ["CmdStan", "DataFrames", "Documenter", "Statistics", "Test"]
+git-tree-sha1 = "f9966e0295c1099d65ab8ef8ea0a0e2abc656811"
+uuid = "80e77ffc-c35e-544b-8e57-5accc6d0de25"
+version = "4.0.1"
+
 [[StanDump]]
 deps = ["ArgCheck", "DocStringExtensions"]
 git-tree-sha1 = "bfaebe19ada44a52a6c797d48473f1bb22fd0853"
