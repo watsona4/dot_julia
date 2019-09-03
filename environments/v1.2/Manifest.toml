@@ -10822,6 +10822,12 @@ git-tree-sha1 = "0b45dc2e45ed77f445617b99ff2adf0f5b0f23ea"
 uuid = "276daf66-3868-5448-9aa4-cd146d93841b"
 version = "0.7.2"
 
+[[Spectra]]
+deps = ["Conda", "Dierckx", "Distributions", "LinearAlgebra", "LsqFit", "Polynomials", "PyCall", "PyPlot", "Random", "SparseArrays", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "0aa59e5567f96cd222b348517da4a2c1f1c7ba1d"
+uuid = "391af1a9-06f1-59d3-8d21-0be089654739"
+version = "0.4.2"
+
 [[SplitApplyCombine]]
 deps = ["Indexing", "Test"]
 git-tree-sha1 = "72eb364378c17e0f3dcde342b2953ad2bd55b5a1"
