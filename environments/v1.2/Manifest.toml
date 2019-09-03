@@ -9431,6 +9431,12 @@ git-tree-sha1 = "fed3f005bb6d4a39f848b7f713cf83c820d7bea4"
 uuid = "f535d66d-59bb-5153-8d2b-ef0a426c6aff"
 version = "0.3.0"
 
+[[RRRMC]]
+deps = ["DataStructures", "ExtractMacro", "Future", "LinearAlgebra", "Random", "SpecialFunctions", "Statistics", "Test"]
+git-tree-sha1 = "b00b3c8f79605797c8430cfa4e349a42bc62d61a"
+uuid = "ff70551f-00bc-5e1a-85c4-e17d0b71e9c9"
+version = "2.0.0"
+
 [[Random]]
 deps = ["Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
