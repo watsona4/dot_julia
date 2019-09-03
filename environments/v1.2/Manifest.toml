@@ -9859,6 +9859,12 @@ git-tree-sha1 = "b073e5565568f1735da33ffc58fbf23c594cc4ee"
 uuid = "08a2b407-ddc3-586a-afd6-c784ad1fffe2"
 version = "3.0.0"
 
+[[ResumableFunctions]]
+deps = ["MacroTools"]
+git-tree-sha1 = "db34af1019eee0086445b1a0452bf1b33776dbc8"
+uuid = "c5292f4c-5179-55e1-98c5-05642aab7184"
+version = "0.5.1"
+
 [[Retry]]
 deps = ["Test"]
 git-tree-sha1 = "56bfdfca33e70883e96fd398548ebd4d405b41fe"
