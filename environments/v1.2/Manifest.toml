@@ -9771,6 +9771,12 @@ git-tree-sha1 = "2bc32df41377af9a071ac65a67b8e2dae642a1d8"
 uuid = "79e443b6-e52e-5c29-b616-02b77327f8c3"
 version = "0.2.0"
 
+[[ReinforcementLearningEnvironments]]
+deps = ["Distributions", "GR", "LinearAlgebra", "POMDPModels", "POMDPs", "Random", "Reexport", "Requires", "SparseArrays", "StatsBase"]
+git-tree-sha1 = "7e8fbf993d8daf5f78d37756e78778943c83bb78"
+uuid = "25e41dd2-4622-11e9-1641-f1adca772921"
+version = "0.1.1"
+
 [[Rematch]]
 deps = ["Compat", "MacroTools"]
 git-tree-sha1 = "3abde2b1c5d0f942b40700bebdc6c8cfa60c8b37"
