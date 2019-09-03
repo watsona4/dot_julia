@@ -10995,6 +10995,12 @@ git-tree-sha1 = "547bc2c9944046c871b6ae18ac0bca5bcf0642c6"
 uuid = "b8b3a5fb-3772-5a86-9e24-bf4afc28128a"
 version = "0.3.0"
 
+[[StateSpaceModels]]
+deps = ["Dates", "Distributions", "LinearAlgebra", "Optim", "Printf", "StaticArrays"]
+git-tree-sha1 = "ab617c75987bc14f94e059b832fe2b6711e3e4d3"
+uuid = "99342f36-827c-5390-97c9-d7f9ee765c78"
+version = "0.2.3"
+
 [[StateSpaceReconstruction]]
 deps = ["Conda", "Distances", "Distributions", "LinearAlgebra", "NearestNeighbors", "PyCall", "Reexport", "Simplices", "StaticArrays", "Statistics", "Test"]
 git-tree-sha1 = "211298d65326fd109bb00c92ce0adca0f4c09435"
