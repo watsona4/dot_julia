@@ -9582,6 +9582,12 @@ git-tree-sha1 = "182df6a9c0dd0f78ee4ab51a16259deda26cd850"
 uuid = "d71aba96-b539-5138-91ee-935c3ee1374c"
 version = "0.4.1"
 
+[[ReadWriteDlm2]]
+deps = ["Dates", "DelimitedFiles", "Random", "Test"]
+git-tree-sha1 = "f593c5c9e73659f0aace578fd9b5a410079a2928"
+uuid = "670cb119-9e6b-5dfa-81ab-9d3c314fe86c"
+version = "0.7.1"
+
 [[ReadableNumbers]]
 deps = ["Test"]
 git-tree-sha1 = "716e4d431a70c5b2a878a7b29dd22706be8eed2c"
