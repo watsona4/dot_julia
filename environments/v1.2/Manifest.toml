@@ -10080,6 +10080,12 @@ git-tree-sha1 = "a0837dad9ad9e518be9f8c3f5d0f90b7c780e99c"
 uuid = "a56d74ad-8193-5df7-a216-96cccc48f97a"
 version = "1.1.1"
 
+[[SGP4]]
+deps = ["Dates", "PyCall", "Test"]
+git-tree-sha1 = "2e1b1f5f27f3d5406d706a83a42d03983d155bf9"
+uuid = "60da9cfa-42fa-5d4e-b2f8-76785adb806a"
+version = "1.0.0"
+
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
 

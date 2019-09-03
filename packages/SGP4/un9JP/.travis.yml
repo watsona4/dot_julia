@@ -1,0 +1,13 @@
+language: julia
+os:
+    - osx
+    - linux
+julia:
+    - 0.7
+notifications:
+    email: false
+env:
+    - PYTHON=""
+script:
+    - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+    - julia -e 'Pkg.clone(pwd()); Pkg.build("SGP4"); Pkg.test("SGP4"; coverage=true)';
