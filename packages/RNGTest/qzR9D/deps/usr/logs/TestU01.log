@@ -1,0 +1,914 @@
+`/bin/bash -c 'save_history() {
+    if [[ "false" == "true" ]]; then
+        echo " ---> $BASH_COMMAND" >&2
+    fi
+     history -s "$BASH_COMMAND"
+    history -a
+}
+
+save_env() {
+    set +x
+    set > /meta/.env
+    # Ignore read-only variables
+    for l in BASHOPTS BASH_VERSINFO UID EUID PPID SHELLOPTS; do
+        grep -v "^$l=" /meta/.env > /meta/.env2
+        mv /meta/.env2 /meta/.env
+    done
+    echo "cd $(pwd)" >> /meta/.env
+}
+
+# If /meta is mounted, then we want to save history and environment
+if [[ -d /meta ]]; then
+    trap save_history DEBUG
+    trap save_env INT TERM EXIT ERR
+fi
+
+# Stop if we hit any errors.
+set -e
+
+cd $WORKSPACE/srcdir
+cd TestU01-1.2.3/
+update_configure_scripts
+if [ $target = "x86_64-w64-mingw32" ] || [ $target = "i686-w64-mingw32" ]; then
+  lt_cv_deplibs_check_method=pass_all ./configure --prefix=$prefix --host=$target LDFLAGS="-L/opt/$target/$target/lib/ -lws2_32"
+else
+  ./configure --prefix=$prefix --host=$target
+fi
+make tcode.o EXEEXT="" CC=/opt/x86_64-linux-gnu/bin/gcc
+make tcode EXEEXT="" CC=/opt/x86_64-linux-gnu/bin/gcc LDFLAGS=""
+make -j${nproc} EXEEXT=""
+make install EXEEXT=""
+
+# Compile TestU01extractors shim
+cd $WORKSPACE/srcdir/TestU01extractors/
+make install SHLIB_EXT=$dlext
+
+
+'`
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 44176    0 44176    0     0   111k      0 --:--:-- --:--:-- --:--:--  111k
+'/tmp/config.guess' -> './config.guess'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 35753    0 35753    0     0  59887      0 --:--:-- --:--:-- --:--:-- 59787
+'/tmp/config.sub' -> './config.sub'
+configure: WARNING: If you wanted to set the --build type, don't use --host.
+    If a cross compiler is detected then cross compile mode will be used.
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for x86_64-linux-gnu-strip... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-strip
+checking build system type... x86_64-pc-linux-musl
+checking host system type... x86_64-pc-linux-gnu
+checking for x86_64-linux-gnu-gcc... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc accepts -g... yes
+checking for /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc... gcc3
+checking how to run the C preprocessor... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -E
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld
+checking if the linker (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld) is GNU ld... yes
+checking for /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld option to reload object files... -r
+checking for BSD-compatible nm... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-nm
+checking how to recognise dependent libraries... pass_all
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking whether we are using the GNU C++ compiler... yes
+checking whether /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ accepts -g... yes
+checking dependency style of /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++... gcc3
+checking how to run the C++ preprocessor... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ -E
+checking for x86_64-linux-gnu-g77... no
+checking for x86_64-linux-gnu-xlf... no
+checking for x86_64-linux-gnu-f77... no
+checking for x86_64-linux-gnu-frt... no
+checking for x86_64-linux-gnu-pgf77... no
+checking for x86_64-linux-gnu-cf77... no
+checking for x86_64-linux-gnu-fort77... no
+checking for x86_64-linux-gnu-fl32... no
+checking for x86_64-linux-gnu-af77... no
+checking for x86_64-linux-gnu-xlf90... no
+checking for x86_64-linux-gnu-f90... no
+checking for x86_64-linux-gnu-pgf90... no
+checking for x86_64-linux-gnu-pghpf... no
+checking for x86_64-linux-gnu-epcf90... no
+checking for x86_64-linux-gnu-gfortran... x86_64-linux-gnu-gfortran
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether x86_64-linux-gnu-gfortran accepts -g... yes
+checking the maximum length of command line arguments... 32768
+checking command to parse /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-nm output from /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc object... ok
+checking for objdir... .libs
+checking for x86_64-linux-gnu-ar... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ar
+checking for x86_64-linux-gnu-ranlib... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ranlib
+checking for x86_64-linux-gnu-strip... (cached) /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-strip
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc option to produce PIC... -fPIC
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc PIC flag -fPIC works... yes
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc static flag -static works... yes
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc supports -c -o file.o... yes
+checking whether the /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc linker (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++... /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld -m elf_x86_64
+checking if the linker (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld -m elf_x86_64) is GNU ld... yes
+checking whether the /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ linker (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld -m elf_x86_64) supports shared libraries... yes
+checking for /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ option to produce PIC... -fPIC
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ PIC flag -fPIC works... yes
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ static flag -static works... yes
+checking if /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ supports -c -o file.o... yes
+checking whether the /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-g++ linker (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for x86_64-linux-gnu-gfortran option to produce PIC... -fPIC
+checking if x86_64-linux-gnu-gfortran PIC flag -fPIC works... yes
+checking if x86_64-linux-gnu-gfortran static flag -static works... yes
+checking if x86_64-linux-gnu-gfortran supports -c -o file.o... yes
+checking whether the x86_64-linux-gnu-gfortran linker (/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for math... no
+checking for cos in -lm... yes
+checking for ANSI C header files... (cached) yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking for unistd.h... (cached) yes
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking gmp.h usability... no
+checking gmp.h presence... no
+checking for gmp.h... no
+checking for stdint.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking whether byte ordering is bigendian... no
+checking for long long... yes
+checking for uint32_t... yes
+checking for uint8_t... yes
+checking for random... yes
+checking for erf... yes
+checking for lgamma... yes
+checking for log1p... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating mylib/Makefile
+config.status: creating probdist/Makefile
+config.status: creating testu01/Makefile
+config.status: creating examples/Makefile
+config.status: creating doc/Makefile
+config.status: creating param/Makefile
+config.status: creating include/config.h
+config.status: creating include/gdefconf.h
+config.status: executing depfiles commands
+/opt/x86_64-linux-gnu/bin/gcc -DHAVE_CONFIG_H -I. -I./include -I.    -g -O2 -MT tcode.o -MD -MP -MF .deps/tcode.Tpo -c -o tcode.o `test -f './mylib/tcode.c' || echo './'`./mylib/tcode.c
+mv -f .deps/tcode.Tpo .deps/tcode.Po
+/bin/bash ./libtool --tag=CC   --mode=link /opt/x86_64-linux-gnu/bin/gcc  -g -O2   -o tcode tcode.o  -lm 
+mkdir .libs
+/opt/x86_64-linux-gnu/bin/gcc -g -O2 -o tcode tcode.o  -lm  
+Making all in .
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3'
+Making all in include
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/include'
+make  all-am
+make[2]: Entering directory '/workspace/srcdir/TestU01-1.2.3/include'
+../tcode ../mylib/gdef.tex gdef.h
+../tcode ../mylib/addstr.tex addstr.h
+../tcode ../mylib/bitset.tex bitset.h
+../tcode ../mylib/chrono.tex chrono.h
+../tcode ../mylib/mystr.tex mystr.h
+../tcode ../mylib/num.tex num.h
+../tcode ../mylib/num2.tex num2.h
+../tcode ../mylib/tables.tex tables.h
+../tcode ../mylib/util.tex util.h
+../tcode ../probdist/fmass.tex fmass.h
+../tcode ../probdist/fdist.tex fdist.h
+../tcode ../probdist/fbar.tex fbar.h
+../tcode ../probdist/finv.tex finv.h
+../tcode ../probdist/gofs.tex gofs.h
+../tcode ../probdist/gofw.tex gofw.h
+../tcode ../probdist/statcoll.tex statcoll.h
+../tcode ../probdist/wdist.tex wdist.h
+../tcode ../testu01/unif01.tex unif01.h
+../tcode ../testu01/ulcg.tex ulcg.h
+../tcode ../testu01/umrg.tex umrg.h
+../tcode ../testu01/ucarry.tex ucarry.h
+../tcode ../testu01/utaus.tex utaus.h
+../tcode ../testu01/ugfsr.tex ugfsr.h
+../tcode ../testu01/uinv.tex uinv.h
+../tcode ../testu01/uquad.tex uquad.h
+../tcode ../testu01/ucubic.tex ucubic.h
+../tcode ../testu01/ulec.tex ulec.h
+../tcode ../testu01/utezuka.tex utezuka.h
+../tcode ../testu01/umarsa.tex umarsa.h
+../tcode ../testu01/uweyl.tex uweyl.h
+../tcode ../testu01/uknuth.tex uknuth.h
+../tcode ../testu01/uwu.tex uwu.h
+../tcode ../testu01/unumrec.tex unumrec.h
+../tcode ../testu01/uvaria.tex uvaria.h
+../tcode ../testu01/usoft.tex usoft.h
+../tcode ../testu01/ugranger.tex ugranger.h
+../tcode ../testu01/ucrypto.tex ucrypto.h
+../tcode ../testu01/ufile.tex ufile.h
+../tcode ../testu01/udeng.tex udeng.h
+../tcode ../testu01/utouzin.tex utouzin.h
+../tcode ../testu01/uautomata.tex uautomata.h
+../tcode ../testu01/uxorshift.tex uxorshift.h
+../tcode ../testu01/ubrent.tex ubrent.h
+../tcode ../testu01/rijndael-alg-fst.tex rijndael-alg-fst.h
+../tcode ../testu01/tu01_sha1.tex tu01_sha1.h
+../tcode ../testu01/scatter.tex scatter.h
+../tcode ../testu01/swrite.tex swrite.h
+../tcode ../testu01/sres.tex sres.h
+../tcode ../testu01/smultin.tex smultin.h
+../tcode ../testu01/sknuth.tex sknuth.h
+../tcode ../testu01/smarsa.tex smarsa.h
+../tcode ../testu01/sstring.tex sstring.h
+../tcode ../testu01/svaria.tex svaria.h
+../tcode ../testu01/snpair.tex snpair.h
+../tcode ../testu01/swalk.tex swalk.h
+../tcode ../testu01/sentrop.tex sentrop.h
+../tcode ../testu01/sspectral.tex sspectral.h
+../tcode ../testu01/scomp.tex scomp.h
+../tcode ../testu01/sspacings.tex sspacings.h
+../tcode ../testu01/vectorsF2.tex vectorsF2.h
+../tcode ../testu01/bbattery.tex bbattery.h
+../tcode ../testu01/ffam.tex ffam.h
+../tcode ../testu01/fcong.tex fcong.h
+../tcode ../testu01/ffsr.tex ffsr.h
+../tcode ../testu01/ftab.tex ftab.h
+../tcode ../testu01/fres.tex fres.h
+../tcode ../testu01/fcho.tex fcho.h
+../tcode ../testu01/fmultin.tex fmultin.h
+../tcode ../testu01/fmarsa.tex fmarsa.h
+../tcode ../testu01/fknuth.tex fknuth.h
+../tcode ../testu01/fwalk.tex fwalk.h
+../tcode ../testu01/fstring.tex fstring.h
+../tcode ../testu01/fspectral.tex fspectral.h
+../tcode ../testu01/fvaria.tex fvaria.h
+../tcode ../testu01/fnpair.tex fnpair.h
+make[2]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/include'
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/include'
+Making all in mylib
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/mylib'
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT gdef.lo -MD -MP -MF .deps/gdef.Tpo -c -o gdef.lo gdef.c
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT addstr.lo -MD -MP -MF .deps/addstr.Tpo -c -o addstr.lo addstr.c
+mkdir .libs
+mkdir .libs
+mkdir: can't create directory '.libs': File exists
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT addstr.lo -MD -MP -MF .deps/addstr.Tpo -c addstr.c  -fPIC -DPIC -o .libs/addstr.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT gdef.lo -MD -MP -MF .deps/gdef.Tpo -c gdef.c  -fPIC -DPIC -o .libs/gdef.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT gdef.lo -MD -MP -MF .deps/gdef.Tpo -c gdef.c -o gdef.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT addstr.lo -MD -MP -MF .deps/addstr.Tpo -c addstr.c -o addstr.o >/dev/null 2>&1
+mv -f .deps/gdef.Tpo .deps/gdef.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT bitset.lo -MD -MP -MF .deps/bitset.Tpo -c -o bitset.lo bitset.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT bitset.lo -MD -MP -MF .deps/bitset.Tpo -c bitset.c  -fPIC -DPIC -o .libs/bitset.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT bitset.lo -MD -MP -MF .deps/bitset.Tpo -c bitset.c -o bitset.o >/dev/null 2>&1
+mv -f .deps/addstr.Tpo .deps/addstr.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT chrono.lo -MD -MP -MF .deps/chrono.Tpo -c -o chrono.lo chrono.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT chrono.lo -MD -MP -MF .deps/chrono.Tpo -c chrono.c  -fPIC -DPIC -o .libs/chrono.o
+mv -f .deps/bitset.Tpo .deps/bitset.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT mystr.lo -MD -MP -MF .deps/mystr.Tpo -c -o mystr.lo mystr.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT mystr.lo -MD -MP -MF .deps/mystr.Tpo -c mystr.c  -fPIC -DPIC -o .libs/mystr.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT chrono.lo -MD -MP -MF .deps/chrono.Tpo -c chrono.c -o chrono.o >/dev/null 2>&1
+mv -f .deps/chrono.Tpo .deps/chrono.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT num.lo -MD -MP -MF .deps/num.Tpo -c -o num.lo num.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT mystr.lo -MD -MP -MF .deps/mystr.Tpo -c mystr.c -o mystr.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT num.lo -MD -MP -MF .deps/num.Tpo -c num.c  -fPIC -DPIC -o .libs/num.o
+mv -f .deps/mystr.Tpo .deps/mystr.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT num2.lo -MD -MP -MF .deps/num2.Tpo -c -o num2.lo num2.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT num2.lo -MD -MP -MF .deps/num2.Tpo -c num2.c  -fPIC -DPIC -o .libs/num2.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT num.lo -MD -MP -MF .deps/num.Tpo -c num.c -o num.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT num2.lo -MD -MP -MF .deps/num2.Tpo -c num2.c -o num2.o >/dev/null 2>&1
+mv -f .deps/num.Tpo .deps/num.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT tables.lo -MD -MP -MF .deps/tables.Tpo -c -o tables.lo tables.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT tables.lo -MD -MP -MF .deps/tables.Tpo -c tables.c  -fPIC -DPIC -o .libs/tables.o
+mv -f .deps/num2.Tpo .deps/num2.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT util.lo -MD -MP -MF .deps/util.Tpo -c -o util.lo util.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT util.lo -MD -MP -MF .deps/util.Tpo -c util.c  -fPIC -DPIC -o .libs/util.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT util.lo -MD -MP -MF .deps/util.Tpo -c util.c -o util.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT tables.lo -MD -MP -MF .deps/tables.Tpo -c tables.c -o tables.o >/dev/null 2>&1
+mv -f .deps/util.Tpo .deps/util.Plo
+mv -f .deps/tables.Tpo .deps/tables.Plo
+/bin/bash ../libtool --tag=CC   --mode=link /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc  -g -O2 -no-undefined -version-info 0:1:0  -o libmylib.la -rpath /workspace/destdir/lib gdef.lo addstr.lo bitset.lo chrono.lo mystr.lo num.lo num2.lo tables.lo util.lo -lm -lm 
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -shared  .libs/gdef.o .libs/addstr.o .libs/bitset.o .libs/chrono.o .libs/mystr.o .libs/num.o .libs/num2.o .libs/tables.o .libs/util.o  -lm  -Wl,-soname -Wl,libmylib.so.0 -o .libs/libmylib.so.0.0.1
+(cd .libs && rm -f libmylib.so.0 && ln -s libmylib.so.0.0.1 libmylib.so.0)
+(cd .libs && rm -f libmylib.so && ln -s libmylib.so.0.0.1 libmylib.so)
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ar cru .libs/libmylib.a  gdef.o addstr.o bitset.o chrono.o mystr.o num.o num2.o tables.o util.o
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ranlib .libs/libmylib.a
+creating libmylib.la
+(cd .libs && rm -f libmylib.la && ln -s ../libmylib.la libmylib.la)
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/mylib'
+Making all in probdist
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/probdist'
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fmass.lo -MD -MP -MF .deps/fmass.Tpo -c -o fmass.lo fmass.c
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fdist.lo -MD -MP -MF .deps/fdist.Tpo -c -o fdist.lo fdist.c
+mkdir .libs
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fmass.lo -MD -MP -MF .deps/fmass.Tpo -c fmass.c  -fPIC -DPIC -o .libs/fmass.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fdist.lo -MD -MP -MF .deps/fdist.Tpo -c fdist.c  -fPIC -DPIC -o .libs/fdist.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fmass.lo -MD -MP -MF .deps/fmass.Tpo -c fmass.c -o fmass.o >/dev/null 2>&1
+mv -f .deps/fmass.Tpo .deps/fmass.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fbar.lo -MD -MP -MF .deps/fbar.Tpo -c -o fbar.lo fbar.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fbar.lo -MD -MP -MF .deps/fbar.Tpo -c fbar.c  -fPIC -DPIC -o .libs/fbar.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fbar.lo -MD -MP -MF .deps/fbar.Tpo -c fbar.c -o fbar.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fdist.lo -MD -MP -MF .deps/fdist.Tpo -c fdist.c -o fdist.o >/dev/null 2>&1
+mv -f .deps/fbar.Tpo .deps/fbar.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT finv.lo -MD -MP -MF .deps/finv.Tpo -c -o finv.lo finv.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT finv.lo -MD -MP -MF .deps/finv.Tpo -c finv.c  -fPIC -DPIC -o .libs/finv.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT finv.lo -MD -MP -MF .deps/finv.Tpo -c finv.c -o finv.o >/dev/null 2>&1
+mv -f .deps/finv.Tpo .deps/finv.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT gofs.lo -MD -MP -MF .deps/gofs.Tpo -c -o gofs.lo gofs.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT gofs.lo -MD -MP -MF .deps/gofs.Tpo -c gofs.c  -fPIC -DPIC -o .libs/gofs.o
+mv -f .deps/fdist.Tpo .deps/fdist.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT gofw.lo -MD -MP -MF .deps/gofw.Tpo -c -o gofw.lo gofw.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT gofw.lo -MD -MP -MF .deps/gofw.Tpo -c gofw.c  -fPIC -DPIC -o .libs/gofw.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT gofs.lo -MD -MP -MF .deps/gofs.Tpo -c gofs.c -o gofs.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT gofw.lo -MD -MP -MF .deps/gofw.Tpo -c gofw.c -o gofw.o >/dev/null 2>&1
+mv -f .deps/gofs.Tpo .deps/gofs.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT statcoll.lo -MD -MP -MF .deps/statcoll.Tpo -c -o statcoll.lo statcoll.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT statcoll.lo -MD -MP -MF .deps/statcoll.Tpo -c statcoll.c  -fPIC -DPIC -o .libs/statcoll.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT statcoll.lo -MD -MP -MF .deps/statcoll.Tpo -c statcoll.c -o statcoll.o >/dev/null 2>&1
+mv -f .deps/gofw.Tpo .deps/gofw.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT wdist.lo -MD -MP -MF .deps/wdist.Tpo -c -o wdist.lo wdist.c
+mv -f .deps/statcoll.Tpo .deps/statcoll.Plo
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT wdist.lo -MD -MP -MF .deps/wdist.Tpo -c wdist.c  -fPIC -DPIC -o .libs/wdist.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT wdist.lo -MD -MP -MF .deps/wdist.Tpo -c wdist.c -o wdist.o >/dev/null 2>&1
+mv -f .deps/wdist.Tpo .deps/wdist.Plo
+/bin/bash ../libtool --tag=CC   --mode=link /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc  -g -O2 -no-undefined -version-info 0:1:0  -o libprobdist.la -rpath /workspace/destdir/lib fmass.lo fdist.lo fbar.lo finv.lo gofs.lo gofw.lo statcoll.lo wdist.lo ../mylib/libmylib.la -lm 
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -shared  .libs/fmass.o .libs/fdist.o .libs/fbar.o .libs/finv.o .libs/gofs.o .libs/gofw.o .libs/statcoll.o .libs/wdist.o  -Wl,--rpath -Wl,/workspace/srcdir/TestU01-1.2.3/mylib/.libs -Wl,--rpath -Wl,/workspace/destdir/lib ../mylib/.libs/libmylib.so -lm  -Wl,-soname -Wl,libprobdist.so.0 -o .libs/libprobdist.so.0.0.1
+(cd .libs && rm -f libprobdist.so.0 && ln -s libprobdist.so.0.0.1 libprobdist.so.0)
+(cd .libs && rm -f libprobdist.so && ln -s libprobdist.so.0.0.1 libprobdist.so)
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ar cru .libs/libprobdist.a  fmass.o fdist.o fbar.o finv.o gofs.o gofw.o statcoll.o wdist.o
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ranlib .libs/libprobdist.a
+creating libprobdist.la
+(cd .libs && rm -f libprobdist.la && ln -s ../libprobdist.la libprobdist.la)
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/probdist'
+Making all in testu01
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/testu01'
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT unif01.lo -MD -MP -MF .deps/unif01.Tpo -c -o unif01.lo unif01.c
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ulcg.lo -MD -MP -MF .deps/ulcg.Tpo -c -o ulcg.lo ulcg.c
+mkdir .libs
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT unif01.lo -MD -MP -MF .deps/unif01.Tpo -c unif01.c  -fPIC -DPIC -o .libs/unif01.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ulcg.lo -MD -MP -MF .deps/ulcg.Tpo -c ulcg.c  -fPIC -DPIC -o .libs/ulcg.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT unif01.lo -MD -MP -MF .deps/unif01.Tpo -c unif01.c -o unif01.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ulcg.lo -MD -MP -MF .deps/ulcg.Tpo -c ulcg.c -o ulcg.o >/dev/null 2>&1
+mv -f .deps/unif01.Tpo .deps/unif01.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT umrg.lo -MD -MP -MF .deps/umrg.Tpo -c -o umrg.lo umrg.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT umrg.lo -MD -MP -MF .deps/umrg.Tpo -c umrg.c  -fPIC -DPIC -o .libs/umrg.o
+mv -f .deps/ulcg.Tpo .deps/ulcg.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ucarry.lo -MD -MP -MF .deps/ucarry.Tpo -c -o ucarry.lo ucarry.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ucarry.lo -MD -MP -MF .deps/ucarry.Tpo -c ucarry.c  -fPIC -DPIC -o .libs/ucarry.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT umrg.lo -MD -MP -MF .deps/umrg.Tpo -c umrg.c -o umrg.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ucarry.lo -MD -MP -MF .deps/ucarry.Tpo -c ucarry.c -o ucarry.o >/dev/null 2>&1
+mv -f .deps/umrg.Tpo .deps/umrg.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT utaus.lo -MD -MP -MF .deps/utaus.Tpo -c -o utaus.lo utaus.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT utaus.lo -MD -MP -MF .deps/utaus.Tpo -c utaus.c  -fPIC -DPIC -o .libs/utaus.o
+mv -f .deps/ucarry.Tpo .deps/ucarry.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ugfsr.lo -MD -MP -MF .deps/ugfsr.Tpo -c -o ugfsr.lo ugfsr.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ugfsr.lo -MD -MP -MF .deps/ugfsr.Tpo -c ugfsr.c  -fPIC -DPIC -o .libs/ugfsr.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT utaus.lo -MD -MP -MF .deps/utaus.Tpo -c utaus.c -o utaus.o >/dev/null 2>&1
+mv -f .deps/utaus.Tpo .deps/utaus.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uinv.lo -MD -MP -MF .deps/uinv.Tpo -c -o uinv.lo uinv.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uinv.lo -MD -MP -MF .deps/uinv.Tpo -c uinv.c  -fPIC -DPIC -o .libs/uinv.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ugfsr.lo -MD -MP -MF .deps/ugfsr.Tpo -c ugfsr.c -o ugfsr.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uinv.lo -MD -MP -MF .deps/uinv.Tpo -c uinv.c -o uinv.o >/dev/null 2>&1
+mv -f .deps/ugfsr.Tpo .deps/ugfsr.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uquad.lo -MD -MP -MF .deps/uquad.Tpo -c -o uquad.lo uquad.c
+mv -f .deps/uinv.Tpo .deps/uinv.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ucubic.lo -MD -MP -MF .deps/ucubic.Tpo -c -o ucubic.lo ucubic.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uquad.lo -MD -MP -MF .deps/uquad.Tpo -c uquad.c  -fPIC -DPIC -o .libs/uquad.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ucubic.lo -MD -MP -MF .deps/ucubic.Tpo -c ucubic.c  -fPIC -DPIC -o .libs/ucubic.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uquad.lo -MD -MP -MF .deps/uquad.Tpo -c uquad.c -o uquad.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ucubic.lo -MD -MP -MF .deps/ucubic.Tpo -c ucubic.c -o ucubic.o >/dev/null 2>&1
+mv -f .deps/uquad.Tpo .deps/uquad.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ulec.lo -MD -MP -MF .deps/ulec.Tpo -c -o ulec.lo ulec.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ulec.lo -MD -MP -MF .deps/ulec.Tpo -c ulec.c  -fPIC -DPIC -o .libs/ulec.o
+mv -f .deps/ucubic.Tpo .deps/ucubic.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT utezuka.lo -MD -MP -MF .deps/utezuka.Tpo -c -o utezuka.lo utezuka.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT utezuka.lo -MD -MP -MF .deps/utezuka.Tpo -c utezuka.c  -fPIC -DPIC -o .libs/utezuka.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT utezuka.lo -MD -MP -MF .deps/utezuka.Tpo -c utezuka.c -o utezuka.o >/dev/null 2>&1
+mv -f .deps/utezuka.Tpo .deps/utezuka.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT umarsa.lo -MD -MP -MF .deps/umarsa.Tpo -c -o umarsa.lo umarsa.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT umarsa.lo -MD -MP -MF .deps/umarsa.Tpo -c umarsa.c  -fPIC -DPIC -o .libs/umarsa.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ulec.lo -MD -MP -MF .deps/ulec.Tpo -c ulec.c -o ulec.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT umarsa.lo -MD -MP -MF .deps/umarsa.Tpo -c umarsa.c -o umarsa.o >/dev/null 2>&1
+mv -f .deps/ulec.Tpo .deps/ulec.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uweyl.lo -MD -MP -MF .deps/uweyl.Tpo -c -o uweyl.lo uweyl.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uweyl.lo -MD -MP -MF .deps/uweyl.Tpo -c uweyl.c  -fPIC -DPIC -o .libs/uweyl.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uweyl.lo -MD -MP -MF .deps/uweyl.Tpo -c uweyl.c -o uweyl.o >/dev/null 2>&1
+mv -f .deps/uweyl.Tpo .deps/uweyl.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uknuth.lo -MD -MP -MF .deps/uknuth.Tpo -c -o uknuth.lo uknuth.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uknuth.lo -MD -MP -MF .deps/uknuth.Tpo -c uknuth.c  -fPIC -DPIC -o .libs/uknuth.o
+mv -f .deps/umarsa.Tpo .deps/umarsa.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uwu.lo -MD -MP -MF .deps/uwu.Tpo -c -o uwu.lo uwu.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uwu.lo -MD -MP -MF .deps/uwu.Tpo -c uwu.c  -fPIC -DPIC -o .libs/uwu.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uwu.lo -MD -MP -MF .deps/uwu.Tpo -c uwu.c -o uwu.o >/dev/null 2>&1
+mv -f .deps/uwu.Tpo .deps/uwu.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT unumrec.lo -MD -MP -MF .deps/unumrec.Tpo -c -o unumrec.lo unumrec.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uknuth.lo -MD -MP -MF .deps/uknuth.Tpo -c uknuth.c -o uknuth.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT unumrec.lo -MD -MP -MF .deps/unumrec.Tpo -c unumrec.c  -fPIC -DPIC -o .libs/unumrec.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT unumrec.lo -MD -MP -MF .deps/unumrec.Tpo -c unumrec.c -o unumrec.o >/dev/null 2>&1
+mv -f .deps/unumrec.Tpo .deps/unumrec.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uvaria.lo -MD -MP -MF .deps/uvaria.Tpo -c -o uvaria.lo uvaria.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uvaria.lo -MD -MP -MF .deps/uvaria.Tpo -c uvaria.c  -fPIC -DPIC -o .libs/uvaria.o
+mv -f .deps/uknuth.Tpo .deps/uknuth.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT usoft.lo -MD -MP -MF .deps/usoft.Tpo -c -o usoft.lo usoft.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT usoft.lo -MD -MP -MF .deps/usoft.Tpo -c usoft.c  -fPIC -DPIC -o .libs/usoft.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uvaria.lo -MD -MP -MF .deps/uvaria.Tpo -c uvaria.c -o uvaria.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT usoft.lo -MD -MP -MF .deps/usoft.Tpo -c usoft.c -o usoft.o >/dev/null 2>&1
+mv -f .deps/uvaria.Tpo .deps/uvaria.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ugranger.lo -MD -MP -MF .deps/ugranger.Tpo -c -o ugranger.lo ugranger.c
+mv -f .deps/usoft.Tpo .deps/usoft.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ucrypto.lo -MD -MP -MF .deps/ucrypto.Tpo -c -o ucrypto.lo ucrypto.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ugranger.lo -MD -MP -MF .deps/ugranger.Tpo -c ugranger.c  -fPIC -DPIC -o .libs/ugranger.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ucrypto.lo -MD -MP -MF .deps/ucrypto.Tpo -c ucrypto.c  -fPIC -DPIC -o .libs/ucrypto.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ugranger.lo -MD -MP -MF .deps/ugranger.Tpo -c ugranger.c -o ugranger.o >/dev/null 2>&1
+mv -f .deps/ugranger.Tpo .deps/ugranger.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ufile.lo -MD -MP -MF .deps/ufile.Tpo -c -o ufile.lo ufile.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ufile.lo -MD -MP -MF .deps/ufile.Tpo -c ufile.c  -fPIC -DPIC -o .libs/ufile.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ufile.lo -MD -MP -MF .deps/ufile.Tpo -c ufile.c -o ufile.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ucrypto.lo -MD -MP -MF .deps/ucrypto.Tpo -c ucrypto.c -o ucrypto.o >/dev/null 2>&1
+mv -f .deps/ufile.Tpo .deps/ufile.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT udeng.lo -MD -MP -MF .deps/udeng.Tpo -c -o udeng.lo udeng.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT udeng.lo -MD -MP -MF .deps/udeng.Tpo -c udeng.c  -fPIC -DPIC -o .libs/udeng.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT udeng.lo -MD -MP -MF .deps/udeng.Tpo -c udeng.c -o udeng.o >/dev/null 2>&1
+mv -f .deps/ucrypto.Tpo .deps/ucrypto.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT utouzin.lo -MD -MP -MF .deps/utouzin.Tpo -c -o utouzin.lo utouzin.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT utouzin.lo -MD -MP -MF .deps/utouzin.Tpo -c utouzin.c  -fPIC -DPIC -o .libs/utouzin.o
+mv -f .deps/udeng.Tpo .deps/udeng.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uautomata.lo -MD -MP -MF .deps/uautomata.Tpo -c -o uautomata.lo uautomata.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uautomata.lo -MD -MP -MF .deps/uautomata.Tpo -c uautomata.c  -fPIC -DPIC -o .libs/uautomata.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uautomata.lo -MD -MP -MF .deps/uautomata.Tpo -c uautomata.c -o uautomata.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT utouzin.lo -MD -MP -MF .deps/utouzin.Tpo -c utouzin.c -o utouzin.o >/dev/null 2>&1
+mv -f .deps/uautomata.Tpo .deps/uautomata.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT uxorshift.lo -MD -MP -MF .deps/uxorshift.Tpo -c -o uxorshift.lo uxorshift.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uxorshift.lo -MD -MP -MF .deps/uxorshift.Tpo -c uxorshift.c  -fPIC -DPIC -o .libs/uxorshift.o
+mv -f .deps/utouzin.Tpo .deps/utouzin.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ubrent.lo -MD -MP -MF .deps/ubrent.Tpo -c -o ubrent.lo ubrent.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ubrent.lo -MD -MP -MF .deps/ubrent.Tpo -c ubrent.c  -fPIC -DPIC -o .libs/ubrent.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT uxorshift.lo -MD -MP -MF .deps/uxorshift.Tpo -c uxorshift.c -o uxorshift.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ubrent.lo -MD -MP -MF .deps/ubrent.Tpo -c ubrent.c -o ubrent.o >/dev/null 2>&1
+mv -f .deps/uxorshift.Tpo .deps/uxorshift.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT rijndael-alg-fst.lo -MD -MP -MF .deps/rijndael-alg-fst.Tpo -c -o rijndael-alg-fst.lo rijndael-alg-fst.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT rijndael-alg-fst.lo -MD -MP -MF .deps/rijndael-alg-fst.Tpo -c rijndael-alg-fst.c  -fPIC -DPIC -o .libs/rijndael-alg-fst.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT rijndael-alg-fst.lo -MD -MP -MF .deps/rijndael-alg-fst.Tpo -c rijndael-alg-fst.c -o rijndael-alg-fst.o >/dev/null 2>&1
+mv -f .deps/ubrent.Tpo .deps/ubrent.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT tu01_sha1.lo -MD -MP -MF .deps/tu01_sha1.Tpo -c -o tu01_sha1.lo tu01_sha1.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT tu01_sha1.lo -MD -MP -MF .deps/tu01_sha1.Tpo -c tu01_sha1.c  -fPIC -DPIC -o .libs/tu01_sha1.o
+mv -f .deps/rijndael-alg-fst.Tpo .deps/rijndael-alg-fst.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT scatter.lo -MD -MP -MF .deps/scatter.Tpo -c -o scatter.lo scatter.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT scatter.lo -MD -MP -MF .deps/scatter.Tpo -c scatter.c  -fPIC -DPIC -o .libs/scatter.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT tu01_sha1.lo -MD -MP -MF .deps/tu01_sha1.Tpo -c tu01_sha1.c -o tu01_sha1.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT scatter.lo -MD -MP -MF .deps/scatter.Tpo -c scatter.c -o scatter.o >/dev/null 2>&1
+mv -f .deps/tu01_sha1.Tpo .deps/tu01_sha1.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT swrite.lo -MD -MP -MF .deps/swrite.Tpo -c -o swrite.lo swrite.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT swrite.lo -MD -MP -MF .deps/swrite.Tpo -c swrite.c  -fPIC -DPIC -o .libs/swrite.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT swrite.lo -MD -MP -MF .deps/swrite.Tpo -c swrite.c -o swrite.o >/dev/null 2>&1
+mv -f .deps/scatter.Tpo .deps/scatter.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sres.lo -MD -MP -MF .deps/sres.Tpo -c -o sres.lo sres.c
+mv -f .deps/swrite.Tpo .deps/swrite.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT smultin.lo -MD -MP -MF .deps/smultin.Tpo -c -o smultin.lo smultin.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sres.lo -MD -MP -MF .deps/sres.Tpo -c sres.c  -fPIC -DPIC -o .libs/sres.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT smultin.lo -MD -MP -MF .deps/smultin.Tpo -c smultin.c  -fPIC -DPIC -o .libs/smultin.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sres.lo -MD -MP -MF .deps/sres.Tpo -c sres.c -o sres.o >/dev/null 2>&1
+mv -f .deps/sres.Tpo .deps/sres.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sknuth.lo -MD -MP -MF .deps/sknuth.Tpo -c -o sknuth.lo sknuth.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sknuth.lo -MD -MP -MF .deps/sknuth.Tpo -c sknuth.c  -fPIC -DPIC -o .libs/sknuth.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sknuth.lo -MD -MP -MF .deps/sknuth.Tpo -c sknuth.c -o sknuth.o >/dev/null 2>&1
+mv -f .deps/sknuth.Tpo .deps/sknuth.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT smarsa.lo -MD -MP -MF .deps/smarsa.Tpo -c -o smarsa.lo smarsa.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT smarsa.lo -MD -MP -MF .deps/smarsa.Tpo -c smarsa.c  -fPIC -DPIC -o .libs/smarsa.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT smultin.lo -MD -MP -MF .deps/smultin.Tpo -c smultin.c -o smultin.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT smarsa.lo -MD -MP -MF .deps/smarsa.Tpo -c smarsa.c -o smarsa.o >/dev/null 2>&1
+mv -f .deps/smarsa.Tpo .deps/smarsa.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sstring.lo -MD -MP -MF .deps/sstring.Tpo -c -o sstring.lo sstring.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sstring.lo -MD -MP -MF .deps/sstring.Tpo -c sstring.c  -fPIC -DPIC -o .libs/sstring.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sstring.lo -MD -MP -MF .deps/sstring.Tpo -c sstring.c -o sstring.o >/dev/null 2>&1
+mv -f .deps/smultin.Tpo .deps/smultin.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT svaria.lo -MD -MP -MF .deps/svaria.Tpo -c -o svaria.lo svaria.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT svaria.lo -MD -MP -MF .deps/svaria.Tpo -c svaria.c  -fPIC -DPIC -o .libs/svaria.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT svaria.lo -MD -MP -MF .deps/svaria.Tpo -c svaria.c -o svaria.o >/dev/null 2>&1
+mv -f .deps/sstring.Tpo .deps/sstring.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT snpair.lo -MD -MP -MF .deps/snpair.Tpo -c -o snpair.lo snpair.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT snpair.lo -MD -MP -MF .deps/snpair.Tpo -c snpair.c  -fPIC -DPIC -o .libs/snpair.o
+mv -f .deps/svaria.Tpo .deps/svaria.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT swalk.lo -MD -MP -MF .deps/swalk.Tpo -c -o swalk.lo swalk.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT swalk.lo -MD -MP -MF .deps/swalk.Tpo -c swalk.c  -fPIC -DPIC -o .libs/swalk.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT snpair.lo -MD -MP -MF .deps/snpair.Tpo -c snpair.c -o snpair.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT swalk.lo -MD -MP -MF .deps/swalk.Tpo -c swalk.c -o swalk.o >/dev/null 2>&1
+mv -f .deps/swalk.Tpo .deps/swalk.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sentrop.lo -MD -MP -MF .deps/sentrop.Tpo -c -o sentrop.lo sentrop.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sentrop.lo -MD -MP -MF .deps/sentrop.Tpo -c sentrop.c  -fPIC -DPIC -o .libs/sentrop.o
+mv -f .deps/snpair.Tpo .deps/snpair.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sspectral.lo -MD -MP -MF .deps/sspectral.Tpo -c -o sspectral.lo sspectral.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sspectral.lo -MD -MP -MF .deps/sspectral.Tpo -c sspectral.c  -fPIC -DPIC -o .libs/sspectral.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sentrop.lo -MD -MP -MF .deps/sentrop.Tpo -c sentrop.c -o sentrop.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sspectral.lo -MD -MP -MF .deps/sspectral.Tpo -c sspectral.c -o sspectral.o >/dev/null 2>&1
+mv -f .deps/sspectral.Tpo .deps/sspectral.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT scomp.lo -MD -MP -MF .deps/scomp.Tpo -c -o scomp.lo scomp.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT scomp.lo -MD -MP -MF .deps/scomp.Tpo -c scomp.c  -fPIC -DPIC -o .libs/scomp.o
+mv -f .deps/sentrop.Tpo .deps/sentrop.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT sspacings.lo -MD -MP -MF .deps/sspacings.Tpo -c -o sspacings.lo sspacings.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sspacings.lo -MD -MP -MF .deps/sspacings.Tpo -c sspacings.c  -fPIC -DPIC -o .libs/sspacings.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT scomp.lo -MD -MP -MF .deps/scomp.Tpo -c scomp.c -o scomp.o >/dev/null 2>&1
+mv -f .deps/scomp.Tpo .deps/scomp.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT vectorsF2.lo -MD -MP -MF .deps/vectorsF2.Tpo -c -o vectorsF2.lo vectorsF2.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT vectorsF2.lo -MD -MP -MF .deps/vectorsF2.Tpo -c vectorsF2.c  -fPIC -DPIC -o .libs/vectorsF2.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT sspacings.lo -MD -MP -MF .deps/sspacings.Tpo -c sspacings.c -o sspacings.o >/dev/null 2>&1
+mv -f .deps/sspacings.Tpo .deps/sspacings.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT bbattery.lo -MD -MP -MF .deps/bbattery.Tpo -c -o bbattery.lo bbattery.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT bbattery.lo -MD -MP -MF .deps/bbattery.Tpo -c bbattery.c  -fPIC -DPIC -o .libs/bbattery.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT vectorsF2.lo -MD -MP -MF .deps/vectorsF2.Tpo -c vectorsF2.c -o vectorsF2.o >/dev/null 2>&1
+mv -f .deps/vectorsF2.Tpo .deps/vectorsF2.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ffam.lo -MD -MP -MF .deps/ffam.Tpo -c -o ffam.lo ffam.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ffam.lo -MD -MP -MF .deps/ffam.Tpo -c ffam.c  -fPIC -DPIC -o .libs/ffam.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ffam.lo -MD -MP -MF .deps/ffam.Tpo -c ffam.c -o ffam.o >/dev/null 2>&1
+mv -f .deps/ffam.Tpo .deps/ffam.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fcong.lo -MD -MP -MF .deps/fcong.Tpo -c -o fcong.lo fcong.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fcong.lo -MD -MP -MF .deps/fcong.Tpo -c fcong.c  -fPIC -DPIC -o .libs/fcong.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fcong.lo -MD -MP -MF .deps/fcong.Tpo -c fcong.c -o fcong.o >/dev/null 2>&1
+mv -f .deps/fcong.Tpo .deps/fcong.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ffsr.lo -MD -MP -MF .deps/ffsr.Tpo -c -o ffsr.lo ffsr.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ffsr.lo -MD -MP -MF .deps/ffsr.Tpo -c ffsr.c  -fPIC -DPIC -o .libs/ffsr.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ffsr.lo -MD -MP -MF .deps/ffsr.Tpo -c ffsr.c -o ffsr.o >/dev/null 2>&1
+mv -f .deps/ffsr.Tpo .deps/ffsr.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT ftab.lo -MD -MP -MF .deps/ftab.Tpo -c -o ftab.lo ftab.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ftab.lo -MD -MP -MF .deps/ftab.Tpo -c ftab.c  -fPIC -DPIC -o .libs/ftab.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT ftab.lo -MD -MP -MF .deps/ftab.Tpo -c ftab.c -o ftab.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT bbattery.lo -MD -MP -MF .deps/bbattery.Tpo -c bbattery.c -o bbattery.o >/dev/null 2>&1
+mv -f .deps/ftab.Tpo .deps/ftab.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fres.lo -MD -MP -MF .deps/fres.Tpo -c -o fres.lo fres.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fres.lo -MD -MP -MF .deps/fres.Tpo -c fres.c  -fPIC -DPIC -o .libs/fres.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fres.lo -MD -MP -MF .deps/fres.Tpo -c fres.c -o fres.o >/dev/null 2>&1
+mv -f .deps/fres.Tpo .deps/fres.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fcho.lo -MD -MP -MF .deps/fcho.Tpo -c -o fcho.lo fcho.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fcho.lo -MD -MP -MF .deps/fcho.Tpo -c fcho.c  -fPIC -DPIC -o .libs/fcho.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fcho.lo -MD -MP -MF .deps/fcho.Tpo -c fcho.c -o fcho.o >/dev/null 2>&1
+mv -f .deps/fcho.Tpo .deps/fcho.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fmultin.lo -MD -MP -MF .deps/fmultin.Tpo -c -o fmultin.lo fmultin.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fmultin.lo -MD -MP -MF .deps/fmultin.Tpo -c fmultin.c  -fPIC -DPIC -o .libs/fmultin.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fmultin.lo -MD -MP -MF .deps/fmultin.Tpo -c fmultin.c -o fmultin.o >/dev/null 2>&1
+mv -f .deps/fmultin.Tpo .deps/fmultin.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fmarsa.lo -MD -MP -MF .deps/fmarsa.Tpo -c -o fmarsa.lo fmarsa.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fmarsa.lo -MD -MP -MF .deps/fmarsa.Tpo -c fmarsa.c  -fPIC -DPIC -o .libs/fmarsa.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fmarsa.lo -MD -MP -MF .deps/fmarsa.Tpo -c fmarsa.c -o fmarsa.o >/dev/null 2>&1
+mv -f .deps/bbattery.Tpo .deps/bbattery.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fknuth.lo -MD -MP -MF .deps/fknuth.Tpo -c -o fknuth.lo fknuth.c
+mv -f .deps/fmarsa.Tpo .deps/fmarsa.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fwalk.lo -MD -MP -MF .deps/fwalk.Tpo -c -o fwalk.lo fwalk.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fknuth.lo -MD -MP -MF .deps/fknuth.Tpo -c fknuth.c  -fPIC -DPIC -o .libs/fknuth.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fwalk.lo -MD -MP -MF .deps/fwalk.Tpo -c fwalk.c  -fPIC -DPIC -o .libs/fwalk.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fknuth.lo -MD -MP -MF .deps/fknuth.Tpo -c fknuth.c -o fknuth.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fwalk.lo -MD -MP -MF .deps/fwalk.Tpo -c fwalk.c -o fwalk.o >/dev/null 2>&1
+mv -f .deps/fwalk.Tpo .deps/fwalk.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fstring.lo -MD -MP -MF .deps/fstring.Tpo -c -o fstring.lo fstring.c
+mv -f .deps/fknuth.Tpo .deps/fknuth.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fspectral.lo -MD -MP -MF .deps/fspectral.Tpo -c -o fspectral.lo fspectral.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fstring.lo -MD -MP -MF .deps/fstring.Tpo -c fstring.c  -fPIC -DPIC -o .libs/fstring.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fspectral.lo -MD -MP -MF .deps/fspectral.Tpo -c fspectral.c  -fPIC -DPIC -o .libs/fspectral.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fspectral.lo -MD -MP -MF .deps/fspectral.Tpo -c fspectral.c -o fspectral.o >/dev/null 2>&1
+mv -f .deps/fspectral.Tpo .deps/fspectral.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fvaria.lo -MD -MP -MF .deps/fvaria.Tpo -c -o fvaria.lo fvaria.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fvaria.lo -MD -MP -MF .deps/fvaria.Tpo -c fvaria.c  -fPIC -DPIC -o .libs/fvaria.o
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fstring.lo -MD -MP -MF .deps/fstring.Tpo -c fstring.c -o fstring.o >/dev/null 2>&1
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fvaria.lo -MD -MP -MF .deps/fvaria.Tpo -c fvaria.c -o fvaria.o >/dev/null 2>&1
+mv -f .deps/fstring.Tpo .deps/fstring.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include     -g -O2 -MT fnpair.lo -MD -MP -MF .deps/fnpair.Tpo -c -o fnpair.lo fnpair.c
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fnpair.lo -MD -MP -MF .deps/fnpair.Tpo -c fnpair.c  -fPIC -DPIC -o .libs/fnpair.o
+mv -f .deps/fvaria.Tpo .deps/fvaria.Plo
+ /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I../include -g -O2 -MT fnpair.lo -MD -MP -MF .deps/fnpair.Tpo -c fnpair.c -o fnpair.o >/dev/null 2>&1
+mv -f .deps/fnpair.Tpo .deps/fnpair.Plo
+/bin/bash ../libtool --tag=CC   --mode=link /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc  -g -O2 -no-undefined -version-info 0:1:0  -o libtestu01.la -rpath /workspace/destdir/lib unif01.lo ulcg.lo umrg.lo ucarry.lo utaus.lo ugfsr.lo uinv.lo uquad.lo ucubic.lo ulec.lo utezuka.lo umarsa.lo uweyl.lo uknuth.lo uwu.lo unumrec.lo uvaria.lo usoft.lo ugranger.lo ucrypto.lo ufile.lo udeng.lo utouzin.lo uautomata.lo uxorshift.lo ubrent.lo rijndael-alg-fst.lo tu01_sha1.lo scatter.lo swrite.lo sres.lo smultin.lo sknuth.lo smarsa.lo sstring.lo svaria.lo snpair.lo swalk.lo sentrop.lo sspectral.lo scomp.lo sspacings.lo vectorsF2.lo bbattery.lo ffam.lo fcong.lo ffsr.lo ftab.lo fres.lo fcho.lo fmultin.lo fmarsa.lo fknuth.lo fwalk.lo fstring.lo fspectral.lo fvaria.lo fnpair.lo ../probdist/libprobdist.la ../mylib/libmylib.la -lm 
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -shared  .libs/unif01.o .libs/ulcg.o .libs/umrg.o .libs/ucarry.o .libs/utaus.o .libs/ugfsr.o .libs/uinv.o .libs/uquad.o .libs/ucubic.o .libs/ulec.o .libs/utezuka.o .libs/umarsa.o .libs/uweyl.o .libs/uknuth.o .libs/uwu.o .libs/unumrec.o .libs/uvaria.o .libs/usoft.o .libs/ugranger.o .libs/ucrypto.o .libs/ufile.o .libs/udeng.o .libs/utouzin.o .libs/uautomata.o .libs/uxorshift.o .libs/ubrent.o .libs/rijndael-alg-fst.o .libs/tu01_sha1.o .libs/scatter.o .libs/swrite.o .libs/sres.o .libs/smultin.o .libs/sknuth.o .libs/smarsa.o .libs/sstring.o .libs/svaria.o .libs/snpair.o .libs/swalk.o .libs/sentrop.o .libs/sspectral.o .libs/scomp.o .libs/sspacings.o .libs/vectorsF2.o .libs/bbattery.o .libs/ffam.o .libs/fcong.o .libs/ffsr.o .libs/ftab.o .libs/fres.o .libs/fcho.o .libs/fmultin.o .libs/fmarsa.o .libs/fknuth.o .libs/fwalk.o .libs/fstring.o .libs/fspectral.o .libs/fvaria.o .libs/fnpair.o  -Wl,--rpath -Wl,/workspace/srcdir/TestU01-1.2.3/probdist/.libs -Wl,--rpath -Wl,/workspace/srcdir/TestU01-1.2.3/mylib/.libs -Wl,--rpath -Wl,/workspace/destdir/lib -L/workspace/srcdir/TestU01-1.2.3/mylib/.libs ../probdist/.libs/libprobdist.so ../mylib/.libs/libmylib.so -lm  -Wl,-soname -Wl,libtestu01.so.0 -o .libs/libtestu01.so.0.0.1
+(cd .libs && rm -f libtestu01.so.0 && ln -s libtestu01.so.0.0.1 libtestu01.so.0)
+(cd .libs && rm -f libtestu01.so && ln -s libtestu01.so.0.0.1 libtestu01.so)
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ar cru .libs/libtestu01.a  unif01.o ulcg.o umrg.o ucarry.o utaus.o ugfsr.o uinv.o uquad.o ucubic.o ulec.o utezuka.o umarsa.o uweyl.o uknuth.o uwu.o unumrec.o uvaria.o usoft.o ugranger.o ucrypto.o ufile.o udeng.o utouzin.o uautomata.o uxorshift.o ubrent.o rijndael-alg-fst.o tu01_sha1.o scatter.o swrite.o sres.o smultin.o sknuth.o smarsa.o sstring.o svaria.o snpair.o swalk.o sentrop.o sspectral.o scomp.o sspacings.o vectorsF2.o bbattery.o ffam.o fcong.o ffsr.o ftab.o fres.o fcho.o fmultin.o fmarsa.o fknuth.o fwalk.o fstring.o fspectral.o fvaria.o fnpair.o
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ranlib .libs/libtestu01.a
+creating libtestu01.la
+(cd .libs && rm -f libtestu01.la && ln -s ../libtestu01.la libtestu01.la)
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/testu01'
+Making all in examples
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/examples'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/examples'
+Making all in doc
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/doc'
+Making all in param
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/param'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/param'
+Making install in .
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3'
+make[2]: Entering directory '/workspace/srcdir/TestU01-1.2.3'
+test -z "/workspace/destdir/bin" || ./install-sh -c -d "/workspace/destdir/bin"
+  /bin/bash ./libtool --mode=install /usr/bin/install -c 'tcode' '/workspace/destdir/bin/tcode'
+/usr/bin/install -c tcode /workspace/destdir/bin/tcode
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspace/srcdir/TestU01-1.2.3'
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3'
+Making install in include
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/include'
+make[2]: Entering directory '/workspace/srcdir/TestU01-1.2.3/include'
+make[2]: Nothing to be done for 'install-exec-am'.
+test -z "/workspace/destdir/include" || .././install-sh -c -d "/workspace/destdir/include"
+ /usr/bin/install -c -m 644 'gdef.h' '/workspace/destdir/include/gdef.h'
+ /usr/bin/install -c -m 644 'addstr.h' '/workspace/destdir/include/addstr.h'
+ /usr/bin/install -c -m 644 'bitset.h' '/workspace/destdir/include/bitset.h'
+ /usr/bin/install -c -m 644 'chrono.h' '/workspace/destdir/include/chrono.h'
+ /usr/bin/install -c -m 644 'mystr.h' '/workspace/destdir/include/mystr.h'
+ /usr/bin/install -c -m 644 'num.h' '/workspace/destdir/include/num.h'
+ /usr/bin/install -c -m 644 'num2.h' '/workspace/destdir/include/num2.h'
+ /usr/bin/install -c -m 644 'tables.h' '/workspace/destdir/include/tables.h'
+ /usr/bin/install -c -m 644 'util.h' '/workspace/destdir/include/util.h'
+ /usr/bin/install -c -m 644 'fmass.h' '/workspace/destdir/include/fmass.h'
+ /usr/bin/install -c -m 644 'fdist.h' '/workspace/destdir/include/fdist.h'
+ /usr/bin/install -c -m 644 'fbar.h' '/workspace/destdir/include/fbar.h'
+ /usr/bin/install -c -m 644 'finv.h' '/workspace/destdir/include/finv.h'
+ /usr/bin/install -c -m 644 'gofs.h' '/workspace/destdir/include/gofs.h'
+ /usr/bin/install -c -m 644 'gofw.h' '/workspace/destdir/include/gofw.h'
+ /usr/bin/install -c -m 644 'statcoll.h' '/workspace/destdir/include/statcoll.h'
+ /usr/bin/install -c -m 644 'wdist.h' '/workspace/destdir/include/wdist.h'
+ /usr/bin/install -c -m 644 'unif01.h' '/workspace/destdir/include/unif01.h'
+ /usr/bin/install -c -m 644 'ulcg.h' '/workspace/destdir/include/ulcg.h'
+ /usr/bin/install -c -m 644 'umrg.h' '/workspace/destdir/include/umrg.h'
+ /usr/bin/install -c -m 644 'ucarry.h' '/workspace/destdir/include/ucarry.h'
+ /usr/bin/install -c -m 644 'utaus.h' '/workspace/destdir/include/utaus.h'
+ /usr/bin/install -c -m 644 'ugfsr.h' '/workspace/destdir/include/ugfsr.h'
+ /usr/bin/install -c -m 644 'uinv.h' '/workspace/destdir/include/uinv.h'
+ /usr/bin/install -c -m 644 'uquad.h' '/workspace/destdir/include/uquad.h'
+ /usr/bin/install -c -m 644 'ucubic.h' '/workspace/destdir/include/ucubic.h'
+ /usr/bin/install -c -m 644 'ulec.h' '/workspace/destdir/include/ulec.h'
+ /usr/bin/install -c -m 644 'utezuka.h' '/workspace/destdir/include/utezuka.h'
+ /usr/bin/install -c -m 644 'umarsa.h' '/workspace/destdir/include/umarsa.h'
+ /usr/bin/install -c -m 644 'uweyl.h' '/workspace/destdir/include/uweyl.h'
+ /usr/bin/install -c -m 644 'uknuth.h' '/workspace/destdir/include/uknuth.h'
+ /usr/bin/install -c -m 644 'uwu.h' '/workspace/destdir/include/uwu.h'
+ /usr/bin/install -c -m 644 'unumrec.h' '/workspace/destdir/include/unumrec.h'
+ /usr/bin/install -c -m 644 'uvaria.h' '/workspace/destdir/include/uvaria.h'
+ /usr/bin/install -c -m 644 'usoft.h' '/workspace/destdir/include/usoft.h'
+ /usr/bin/install -c -m 644 'ugranger.h' '/workspace/destdir/include/ugranger.h'
+ /usr/bin/install -c -m 644 'ucrypto.h' '/workspace/destdir/include/ucrypto.h'
+ /usr/bin/install -c -m 644 'ufile.h' '/workspace/destdir/include/ufile.h'
+ /usr/bin/install -c -m 644 'udeng.h' '/workspace/destdir/include/udeng.h'
+ /usr/bin/install -c -m 644 'utouzin.h' '/workspace/destdir/include/utouzin.h'
+ /usr/bin/install -c -m 644 'uautomata.h' '/workspace/destdir/include/uautomata.h'
+ /usr/bin/install -c -m 644 'uxorshift.h' '/workspace/destdir/include/uxorshift.h'
+ /usr/bin/install -c -m 644 'ubrent.h' '/workspace/destdir/include/ubrent.h'
+ /usr/bin/install -c -m 644 'rijndael-alg-fst.h' '/workspace/destdir/include/rijndael-alg-fst.h'
+ /usr/bin/install -c -m 644 'tu01_sha1.h' '/workspace/destdir/include/tu01_sha1.h'
+ /usr/bin/install -c -m 644 'scatter.h' '/workspace/destdir/include/scatter.h'
+ /usr/bin/install -c -m 644 'swrite.h' '/workspace/destdir/include/swrite.h'
+ /usr/bin/install -c -m 644 'sres.h' '/workspace/destdir/include/sres.h'
+ /usr/bin/install -c -m 644 'smultin.h' '/workspace/destdir/include/smultin.h'
+ /usr/bin/install -c -m 644 'sknuth.h' '/workspace/destdir/include/sknuth.h'
+ /usr/bin/install -c -m 644 'smarsa.h' '/workspace/destdir/include/smarsa.h'
+ /usr/bin/install -c -m 644 'sstring.h' '/workspace/destdir/include/sstring.h'
+ /usr/bin/install -c -m 644 'svaria.h' '/workspace/destdir/include/svaria.h'
+ /usr/bin/install -c -m 644 'snpair.h' '/workspace/destdir/include/snpair.h'
+ /usr/bin/install -c -m 644 'swalk.h' '/workspace/destdir/include/swalk.h'
+ /usr/bin/install -c -m 644 'sentrop.h' '/workspace/destdir/include/sentrop.h'
+ /usr/bin/install -c -m 644 'sspectral.h' '/workspace/destdir/include/sspectral.h'
+ /usr/bin/install -c -m 644 'scomp.h' '/workspace/destdir/include/scomp.h'
+ /usr/bin/install -c -m 644 'sspacings.h' '/workspace/destdir/include/sspacings.h'
+ /usr/bin/install -c -m 644 'vectorsF2.h' '/workspace/destdir/include/vectorsF2.h'
+ /usr/bin/install -c -m 644 'bbattery.h' '/workspace/destdir/include/bbattery.h'
+ /usr/bin/install -c -m 644 'ffam.h' '/workspace/destdir/include/ffam.h'
+ /usr/bin/install -c -m 644 'fcong.h' '/workspace/destdir/include/fcong.h'
+ /usr/bin/install -c -m 644 'ffsr.h' '/workspace/destdir/include/ffsr.h'
+ /usr/bin/install -c -m 644 'ftab.h' '/workspace/destdir/include/ftab.h'
+ /usr/bin/install -c -m 644 'fres.h' '/workspace/destdir/include/fres.h'
+ /usr/bin/install -c -m 644 'fcho.h' '/workspace/destdir/include/fcho.h'
+ /usr/bin/install -c -m 644 'fmultin.h' '/workspace/destdir/include/fmultin.h'
+ /usr/bin/install -c -m 644 'fmarsa.h' '/workspace/destdir/include/fmarsa.h'
+ /usr/bin/install -c -m 644 'fknuth.h' '/workspace/destdir/include/fknuth.h'
+ /usr/bin/install -c -m 644 'fwalk.h' '/workspace/destdir/include/fwalk.h'
+ /usr/bin/install -c -m 644 'fstring.h' '/workspace/destdir/include/fstring.h'
+ /usr/bin/install -c -m 644 'fspectral.h' '/workspace/destdir/include/fspectral.h'
+ /usr/bin/install -c -m 644 'fvaria.h' '/workspace/destdir/include/fvaria.h'
+ /usr/bin/install -c -m 644 'fnpair.h' '/workspace/destdir/include/fnpair.h'
+ /usr/bin/install -c -m 644 'gdefconf.h' '/workspace/destdir/include/gdefconf.h'
+make[2]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/include'
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/include'
+Making install in mylib
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/mylib'
+make[2]: Entering directory '/workspace/srcdir/TestU01-1.2.3/mylib'
+test -z "/workspace/destdir/lib" || .././install-sh -c -d "/workspace/destdir/lib"
+ /bin/bash ../libtool --mode=install /usr/bin/install -c  'libmylib.la' '/workspace/destdir/lib/libmylib.la'
+/usr/bin/install -c .libs/libmylib.so.0.0.1 /workspace/destdir/lib/libmylib.so.0.0.1
+(cd /workspace/destdir/lib && { ln -s -f libmylib.so.0.0.1 libmylib.so.0 || { rm -f libmylib.so.0 && ln -s libmylib.so.0.0.1 libmylib.so.0; }; })
+(cd /workspace/destdir/lib && { ln -s -f libmylib.so.0.0.1 libmylib.so || { rm -f libmylib.so && ln -s libmylib.so.0.0.1 libmylib.so; }; })
+/usr/bin/install -c .libs/libmylib.lai /workspace/destdir/lib/libmylib.la
+/usr/bin/install -c .libs/libmylib.a /workspace/destdir/lib/libmylib.a
+chmod 644 /workspace/destdir/lib/libmylib.a
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ranlib /workspace/destdir/lib/libmylib.a
+PATH="$PATH:/sbin" ldconfig -n /workspace/destdir/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /workspace/destdir/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,--rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+test -z "/workspace/destdir/share/TestU01/doc" || .././install-sh -c -d "/workspace/destdir/share/TestU01/doc"
+ /usr/bin/install -c -m 644 'guidemylib.pdf' '/workspace/destdir/share/TestU01/doc/guidemylib.pdf'
+make[2]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/mylib'
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/mylib'
+Making install in probdist
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/probdist'
+make[2]: Entering directory '/workspace/srcdir/TestU01-1.2.3/probdist'
+test -z "/workspace/destdir/lib" || .././install-sh -c -d "/workspace/destdir/lib"
+ /bin/bash ../libtool --mode=install /usr/bin/install -c  'libprobdist.la' '/workspace/destdir/lib/libprobdist.la'
+libtool: install: warning: relinking `libprobdist.la'
+(cd /workspace/srcdir/TestU01-1.2.3/probdist; /bin/bash ../libtool  --tag=CC --mode=relink /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -g -O2 -no-undefined -version-info 0:1:0 -o libprobdist.la -rpath /workspace/destdir/lib fmass.lo fdist.lo fbar.lo finv.lo gofs.lo gofw.lo statcoll.lo wdist.lo ../mylib/libmylib.la -lm )  
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -shared  .libs/fmass.o .libs/fdist.o .libs/fbar.o .libs/finv.o .libs/gofs.o .libs/gofw.o .libs/statcoll.o .libs/wdist.o  -Wl,--rpath -Wl,/workspace/destdir/lib -L/workspace/destdir/lib -lmylib -lm  -Wl,-soname -Wl,libprobdist.so.0 -o .libs/libprobdist.so.0.0.1
+/usr/bin/install -c .libs/libprobdist.so.0.0.1T /workspace/destdir/lib/libprobdist.so.0.0.1
+(cd /workspace/destdir/lib && { ln -s -f libprobdist.so.0.0.1 libprobdist.so.0 || { rm -f libprobdist.so.0 && ln -s libprobdist.so.0.0.1 libprobdist.so.0; }; })
+(cd /workspace/destdir/lib && { ln -s -f libprobdist.so.0.0.1 libprobdist.so || { rm -f libprobdist.so && ln -s libprobdist.so.0.0.1 libprobdist.so; }; })
+/usr/bin/install -c .libs/libprobdist.lai /workspace/destdir/lib/libprobdist.la
+/usr/bin/install -c .libs/libprobdist.a /workspace/destdir/lib/libprobdist.a
+chmod 644 /workspace/destdir/lib/libprobdist.a
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ranlib /workspace/destdir/lib/libprobdist.a
+PATH="$PATH:/sbin" ldconfig -n /workspace/destdir/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /workspace/destdir/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,--rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+test -z "/workspace/destdir/share/TestU01/doc" || .././install-sh -c -d "/workspace/destdir/share/TestU01/doc"
+ /usr/bin/install -c -m 644 'guideprobdist.pdf' '/workspace/destdir/share/TestU01/doc/guideprobdist.pdf'
+make[2]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/probdist'
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/probdist'
+Making install in testu01
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/testu01'
+make[2]: Entering directory '/workspace/srcdir/TestU01-1.2.3/testu01'
+test -z "/workspace/destdir/lib" || .././install-sh -c -d "/workspace/destdir/lib"
+ /bin/bash ../libtool --mode=install /usr/bin/install -c  'libtestu01.la' '/workspace/destdir/lib/libtestu01.la'
+libtool: install: warning: relinking `libtestu01.la'
+(cd /workspace/srcdir/TestU01-1.2.3/testu01; /bin/bash ../libtool  --tag=CC --mode=relink /opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -g -O2 -no-undefined -version-info 0:1:0 -o libtestu01.la -rpath /workspace/destdir/lib unif01.lo ulcg.lo umrg.lo ucarry.lo utaus.lo ugfsr.lo uinv.lo uquad.lo ucubic.lo ulec.lo utezuka.lo umarsa.lo uweyl.lo uknuth.lo uwu.lo unumrec.lo uvaria.lo usoft.lo ugranger.lo ucrypto.lo ufile.lo udeng.lo utouzin.lo uautomata.lo uxorshift.lo ubrent.lo rijndael-alg-fst.lo tu01_sha1.lo scatter.lo swrite.lo sres.lo smultin.lo sknuth.lo smarsa.lo sstring.lo svaria.lo snpair.lo swalk.lo sentrop.lo sspectral.lo scomp.lo sspacings.lo vectorsF2.lo bbattery.lo ffam.lo fcong.lo ffsr.lo ftab.lo fres.lo fcho.lo fmultin.lo fmarsa.lo fknuth.lo fwalk.lo fstring.lo fspectral.lo fvaria.lo fnpair.lo ../probdist/libprobdist.la ../mylib/libmylib.la -lm )  
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc -shared  .libs/unif01.o .libs/ulcg.o .libs/umrg.o .libs/ucarry.o .libs/utaus.o .libs/ugfsr.o .libs/uinv.o .libs/uquad.o .libs/ucubic.o .libs/ulec.o .libs/utezuka.o .libs/umarsa.o .libs/uweyl.o .libs/uknuth.o .libs/uwu.o .libs/unumrec.o .libs/uvaria.o .libs/usoft.o .libs/ugranger.o .libs/ucrypto.o .libs/ufile.o .libs/udeng.o .libs/utouzin.o .libs/uautomata.o .libs/uxorshift.o .libs/ubrent.o .libs/rijndael-alg-fst.o .libs/tu01_sha1.o .libs/scatter.o .libs/swrite.o .libs/sres.o .libs/smultin.o .libs/sknuth.o .libs/smarsa.o .libs/sstring.o .libs/svaria.o .libs/snpair.o .libs/swalk.o .libs/sentrop.o .libs/sspectral.o .libs/scomp.o .libs/sspacings.o .libs/vectorsF2.o .libs/bbattery.o .libs/ffam.o .libs/fcong.o .libs/ffsr.o .libs/ftab.o .libs/fres.o .libs/fcho.o .libs/fmultin.o .libs/fmarsa.o .libs/fknuth.o .libs/fwalk.o .libs/fstring.o .libs/fspectral.o .libs/fvaria.o .libs/fnpair.o  -Wl,--rpath -Wl,/workspace/destdir/lib -L/workspace/srcdir/TestU01-1.2.3/mylib/.libs -L/workspace/destdir/lib -lprobdist -lmylib -lm  -Wl,-soname -Wl,libtestu01.so.0 -o .libs/libtestu01.so.0.0.1
+/usr/bin/install -c .libs/libtestu01.so.0.0.1T /workspace/destdir/lib/libtestu01.so.0.0.1
+(cd /workspace/destdir/lib && { ln -s -f libtestu01.so.0.0.1 libtestu01.so.0 || { rm -f libtestu01.so.0 && ln -s libtestu01.so.0.0.1 libtestu01.so.0; }; })
+(cd /workspace/destdir/lib && { ln -s -f libtestu01.so.0.0.1 libtestu01.so || { rm -f libtestu01.so && ln -s libtestu01.so.0.0.1 libtestu01.so; }; })
+/usr/bin/install -c .libs/libtestu01.lai /workspace/destdir/lib/libtestu01.la
+/usr/bin/install -c .libs/libtestu01.a /workspace/destdir/lib/libtestu01.a
+chmod 644 /workspace/destdir/lib/libtestu01.a
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-ranlib /workspace/destdir/lib/libtestu01.a
+PATH="$PATH:/sbin" ldconfig -n /workspace/destdir/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /workspace/destdir/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,--rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+test -z "/workspace/destdir/share/TestU01/doc" || .././install-sh -c -d "/workspace/destdir/share/TestU01/doc"
+ /usr/bin/install -c -m 644 'guideshorttestu01.pdf' '/workspace/destdir/share/TestU01/doc/guideshorttestu01.pdf'
+ /usr/bin/install -c -m 644 'guidelongtestu01.pdf' '/workspace/destdir/share/TestU01/doc/guidelongtestu01.pdf'
+test -z "/workspace/destdir/include" || .././install-sh -c -d "/workspace/destdir/include"
+ /usr/bin/install -c -m 644 'TestU01.h' '/workspace/destdir/include/TestU01.h'
+make[2]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/testu01'
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/testu01'
+Making install in examples
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/examples'
+make[2]: Entering directory '/workspace/srcdir/TestU01-1.2.3/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+test -z "/workspace/destdir/share/TestU01/examples" || .././install-sh -c -d "/workspace/destdir/share/TestU01/examples"
+ /usr/bin/install -c -m 644 'bat1.res' '/workspace/destdir/share/TestU01/examples/bat1.res'
+ /usr/bin/install -c -m 644 'bat2.res' '/workspace/destdir/share/TestU01/examples/bat2.res'
+ /usr/bin/install -c -m 644 'birth1.res' '/workspace/destdir/share/TestU01/examples/birth1.res'
+ /usr/bin/install -c -m 644 'ex3.res' '/workspace/destdir/share/TestU01/examples/ex3.res'
+ /usr/bin/install -c -m 644 'excel.dat' '/workspace/destdir/share/TestU01/examples/excel.dat'
+ /usr/bin/install -c -m 644 'vax.bin' '/workspace/destdir/share/TestU01/examples/vax.bin'
+ /usr/bin/install -c -m 644 'my16807.h' '/workspace/destdir/share/TestU01/examples/my16807.h'
+ /usr/bin/install -c -m 644 'bat1.c' '/workspace/destdir/share/TestU01/examples/bat1.c'
+ /usr/bin/install -c -m 644 'bat2.c' '/workspace/destdir/share/TestU01/examples/bat2.c'
+ /usr/bin/install -c -m 644 'bat3.c' '/workspace/destdir/share/TestU01/examples/bat3.c'
+ /usr/bin/install -c -m 644 'birth1.c' '/workspace/destdir/share/TestU01/examples/birth1.c'
+ /usr/bin/install -c -m 644 'birth2.c' '/workspace/destdir/share/TestU01/examples/birth2.c'
+ /usr/bin/install -c -m 644 'ex1.c' '/workspace/destdir/share/TestU01/examples/ex1.c'
+ /usr/bin/install -c -m 644 'ex3.c' '/workspace/destdir/share/TestU01/examples/ex3.c'
+ /usr/bin/install -c -m 644 'ex4.c' '/workspace/destdir/share/TestU01/examples/ex4.c'
+ /usr/bin/install -c -m 644 'ex7.c' '/workspace/destdir/share/TestU01/examples/ex7.c'
+ /usr/bin/install -c -m 644 'fcoll.c' '/workspace/destdir/share/TestU01/examples/fcoll.c'
+ /usr/bin/install -c -m 644 'fbirth.c' '/workspace/destdir/share/TestU01/examples/fbirth.c'
+ /usr/bin/install -c -m 644 'scat.c' '/workspace/destdir/share/TestU01/examples/scat.c'
+ /usr/bin/install -c -m 644 'scat2.c' '/workspace/destdir/share/TestU01/examples/scat2.c'
+ /usr/bin/install -c -m 644 'my16807.c' '/workspace/destdir/share/TestU01/examples/my16807.c'
+ /usr/bin/install -c -m 644 'mrg32k3a.c' '/workspace/destdir/share/TestU01/examples/mrg32k3a.c'
+ /usr/bin/install -c -m 644 'xorshift.c' '/workspace/destdir/share/TestU01/examples/xorshift.c'
+ /usr/bin/install -c -m 644 'fbirth.res1.tex' '/workspace/destdir/share/TestU01/examples/fbirth.res1.tex'
+ /usr/bin/install -c -m 644 'fbirth.res2.tex' '/workspace/destdir/share/TestU01/examples/fbirth.res2.tex'
+ /usr/bin/install -c -m 644 'fcoll.res1.tex' '/workspace/destdir/share/TestU01/examples/fcoll.res1.tex'
+ /usr/bin/install -c -m 644 'fcoll.res2.tex' '/workspace/destdir/share/TestU01/examples/fcoll.res2.tex'
+make[2]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/examples'
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/examples'
+Making install in doc
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/doc'
+make[2]: Entering directory '/workspace/srcdir/TestU01-1.2.3/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/doc'
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/doc'
+Making install in param
+make[1]: Entering directory '/workspace/srcdir/TestU01-1.2.3/param'
+make[2]: Entering directory '/workspace/srcdir/TestU01-1.2.3/param'
+make[2]: Nothing to be done for 'install-exec-am'.
+test -z "/workspace/destdir/share/TestU01/param" || .././install-sh -c -d "/workspace/destdir/share/TestU01/param"
+ /usr/bin/install -c -m 644 'CombCubLCG.par' '/workspace/destdir/share/TestU01/param/CombCubLCG.par'
+ /usr/bin/install -c -m 644 'InvExpl.par' '/workspace/destdir/share/TestU01/param/InvExpl.par'
+ /usr/bin/install -c -m 644 'InvImpl2b.par' '/workspace/destdir/share/TestU01/param/InvImpl2b.par'
+ /usr/bin/install -c -m 644 'LCGWu2.par' '/workspace/destdir/share/TestU01/param/LCGWu2.par'
+ /usr/bin/install -c -m 644 'CombCubic2.par' '/workspace/destdir/share/TestU01/param/CombCubic2.par'
+ /usr/bin/install -c -m 644 'InvExpl2a.par' '/workspace/destdir/share/TestU01/param/InvExpl2a.par'
+ /usr/bin/install -c -m 644 'LCGBad2.par' '/workspace/destdir/share/TestU01/param/LCGBad2.par'
+ /usr/bin/install -c -m 644 'LFSR1.par' '/workspace/destdir/share/TestU01/param/LFSR1.par'
+ /usr/bin/install -c -m 644 'TausLCG2.par' '/workspace/destdir/share/TestU01/param/TausLCG2.par'
+ /usr/bin/install -c -m 644 'CombL2.par' '/workspace/destdir/share/TestU01/param/CombL2.par'
+ /usr/bin/install -c -m 644 'InvExpl2b.par' '/workspace/destdir/share/TestU01/param/InvExpl2b.par'
+ /usr/bin/install -c -m 644 'LCGGood.par' '/workspace/destdir/share/TestU01/param/LCGGood.par'
+ /usr/bin/install -c -m 644 'LFSR2.par' '/workspace/destdir/share/TestU01/param/LFSR2.par'
+ /usr/bin/install -c -m 644 'MRG3.par' '/workspace/destdir/share/TestU01/param/MRG3.par'
+ /usr/bin/install -c -m 644 'CombWH2.par' '/workspace/destdir/share/TestU01/param/CombWH2.par'
+ /usr/bin/install -c -m 644 'InvImpl.par' '/workspace/destdir/share/TestU01/param/InvImpl.par'
+ /usr/bin/install -c -m 644 'LCGGranger.par' '/workspace/destdir/share/TestU01/param/LCGGranger.par'
+ /usr/bin/install -c -m 644 'LFSR3.par' '/workspace/destdir/share/TestU01/param/LFSR3.par'
+ /usr/bin/install -c -m 644 'Cubic1.par' '/workspace/destdir/share/TestU01/param/Cubic1.par'
+ /usr/bin/install -c -m 644 'InvImpl2a.par' '/workspace/destdir/share/TestU01/param/InvImpl2a.par'
+ /usr/bin/install -c -m 644 'LCGPow2.par' '/workspace/destdir/share/TestU01/param/LCGPow2.par'
+ /usr/bin/install -c -m 644 'MRG2.par' '/workspace/destdir/share/TestU01/param/MRG2.par'
+make[2]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/param'
+make[1]: Leaving directory '/workspace/srcdir/TestU01-1.2.3/param'
+/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu-gcc    -O2 -shared -fPIC -I /workspace/destdir/include extractors.c -o /workspace/destdir/lib/libtestu01extractors.so -L /workspace/destdir/lib  -lmylib -lprobdist -ltestu01

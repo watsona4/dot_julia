@@ -1,0 +1,1 @@
+`/usr/local/bin/patchelf --set-rpath '$ORIGIN:$ORIGIN' lib/libtestu01extractors.so`
