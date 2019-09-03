@@ -9195,6 +9195,12 @@ git-tree-sha1 = "13dea0d33ca6188a699d9bc185d471a87a601c7b"
 uuid = "25f12f5a-a783-5f9a-af99-e55629686113"
 version = "0.3.0"
 
+[[QHull]]
+deps = ["Polyhedra", "PyCall", "RecipesBase", "StaticArrays", "Test"]
+git-tree-sha1 = "79a9560efe5df8e46af793ef108843df13ab815c"
+uuid = "a8468747-bd6f-53ef-9e5c-744dbc5c59e7"
+version = "0.0.1"
+
 [[QuadGK]]
 deps = ["DataStructures", "LinearAlgebra"]
 git-tree-sha1 = "438630b843c210b375b2a246329200c113acc61b"
