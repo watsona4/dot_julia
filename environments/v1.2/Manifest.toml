@@ -10039,6 +10039,12 @@ git-tree-sha1 = "4022bb8393f4024e163eecf30d019a3dae9f5a6e"
 uuid = "af85af4c-bcd5-5d23-b03a-a909639aa875"
 version = "0.1.1"
 
+[[Rsvg]]
+deps = ["BinDeps", "Cairo", "Compat", "Homebrew", "Libdl", "WinRPM"]
+git-tree-sha1 = "939b26bbd7c1c58cdf26d9637b29d1e54d812a87"
+uuid = "c4c386cf-5103-5370-be45-f3a111cca3b8"
+version = "0.2.3"
+
 [[RunLengthArrays]]
 git-tree-sha1 = "0fb6ef475a8671fee5e17a5ce9cd785f4f4c6982"
 uuid = "11ec6118-8d4c-11e9-02bb-6986bd51d19a"
