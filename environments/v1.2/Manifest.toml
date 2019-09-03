@@ -9165,6 +9165,12 @@ git-tree-sha1 = "cd91832ad101d9816ab6b7ab33943c8982b588c8"
 uuid = "de320387-30cd-5f83-91a8-a6e0ae8b8444"
 version = "0.1.0"
 
+[[PyDSTool]]
+deps = ["Conda", "DataStructures", "DiffEqBase", "LinearAlgebra", "PyCall", "RecipesBase", "Test"]
+git-tree-sha1 = "f51a9ec3bb621b5703621ba857b843ac572a2140"
+uuid = "7186c646-c682-5568-b8f7-a702076b479d"
+version = "0.5.0"
+
 [[PyPlot]]
 deps = ["Colors", "LaTeXStrings", "PyCall", "Sockets", "Test", "VersionParsing"]
 git-tree-sha1 = "3ea391c3211f799df20396d256cee5c8bd755605"
