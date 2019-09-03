@@ -10142,6 +10142,12 @@ git-tree-sha1 = "70383f412eaa203ffbdd53a1bc5af089c2f8828e"
 uuid = "0aa819cd-b072-5ff4-a722-6bc24af294d9"
 version = "0.8.1"
 
+[[SRCWA]]
+deps = ["LinearAlgebra", "SpecialFunctions"]
+git-tree-sha1 = "f52eb7a48e25cb0603c78ba6610302b219b47570"
+uuid = "ff5ff224-83ac-11e9-2c32-7d811a837d73"
+version = "0.2.0"
+
 [[SafeTestsets]]
 deps = ["Test"]
 git-tree-sha1 = "36ebc5622c82eb9324005cc75e7e2cc51181d181"
