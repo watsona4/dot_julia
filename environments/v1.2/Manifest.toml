@@ -10379,6 +10379,12 @@ version = "0.2.1"
 [[Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
 
+[[SeriesAccelerators]]
+deps = ["Test"]
+git-tree-sha1 = "56fbf54f71a7813f9fd965a6671d80291b86cd97"
+uuid = "9dd7a2f8-ab8d-577c-ac83-a3992ff7c30e"
+version = "0.2.0"
+
 [[SetRounding]]
 deps = ["Test"]
 git-tree-sha1 = "faca28c7937138d560ede5bfef2076d0cdf3584b"
