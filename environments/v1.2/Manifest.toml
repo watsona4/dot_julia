@@ -9189,6 +9189,12 @@ git-tree-sha1 = "bdd19e6df448f46d994c7db6c6e7d0dae8b587e8"
 uuid = "bfc457fd-c171-5ab7-bd9e-d5dbfc242d63"
 version = "0.1.3"
 
+[[QDates]]
+deps = ["Dates", "Test"]
+git-tree-sha1 = "13dea0d33ca6188a699d9bc185d471a87a601c7b"
+uuid = "25f12f5a-a783-5f9a-af99-e55629686113"
+version = "0.3.0"
+
 [[QuadGK]]
 deps = ["DataStructures", "LinearAlgebra"]
 git-tree-sha1 = "438630b843c210b375b2a246329200c113acc61b"
