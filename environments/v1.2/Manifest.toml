@@ -10575,6 +10575,12 @@ git-tree-sha1 = "05bbf4484b975782e5e54bb0750f21f7f2f66171"
 uuid = "699a6c99-e7fa-54fc-8d76-47d257e15c1d"
 version = "0.9.0"
 
+[[SimpleTropical]]
+deps = ["Test"]
+git-tree-sha1 = "82ebee5275c6dc88eae296c800541fd8ada0fc30"
+uuid = "4bb1df8b-5095-5c78-a48e-41b8fd09eb95"
+version = "0.1.1"
+
 [[SimpleWeightedGraphs]]
 deps = ["LightGraphs", "LinearAlgebra", "Markdown", "SparseArrays", "Test"]
 git-tree-sha1 = "8e8a0c6b2193b0b96484a4bba6335d105108fcbc"
