@@ -9541,6 +9541,12 @@ git-tree-sha1 = "cdbbe0f350581296f3a2e3e7a91b214121934407"
 uuid = "c84ed2f1-dad5-54f0-aa8e-dbefe2724439"
 version = "0.3.1"
 
+[[RawArray]]
+deps = ["LittleEndianBase128", "Test"]
+git-tree-sha1 = "513b5dfc70665fb4c4a3882fda6c9a0954f9b2c1"
+uuid = "d3d335b2-f152-507c-820e-958e337efb65"
+version = "0.1.0"
+
 [[Reactive]]
 deps = ["DataStructures", "Distributed", "Test"]
 git-tree-sha1 = "5862d915387ebb954016f50a88e34f79a9e5fcd2"
