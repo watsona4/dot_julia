@@ -9338,6 +9338,12 @@ git-tree-sha1 = "6f64c4f42b82679c5edfd9acee377c908440df42"
 uuid = "8af83fb2-a731-493c-9049-9e19dbce6165"
 version = "0.1.0"
 
+[[QuickTypes]]
+deps = ["Compat", "MacroTools"]
+git-tree-sha1 = "29a9cf6d38a33efec557bf8d0418ad3d9b83266a"
+uuid = "ae2dfa86-617c-530c-b392-ef20fdad97bb"
+version = "1.2.0"
+
 [[RCall]]
 deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "Libdl", "Missings", "REPL", "Random", "Requires", "StatsModels", "WinReg"]
 git-tree-sha1 = "828332205a09377da6a8ebd1e615b11a22f8def6"
