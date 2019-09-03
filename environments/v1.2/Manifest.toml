@@ -9401,6 +9401,12 @@ git-tree-sha1 = "09d122ed607bc6d9ef1500b3d9781745ce247bd3"
 uuid = "3fc713dc-8771-5a7b-b2d9-79d2995ff451"
 version = "0.0.3"
 
+[[REPLTetris]]
+deps = ["Compat", "Crayons", "Test"]
+git-tree-sha1 = "a8f2b7d22f846774d9705cc33fbf2ffea1f681a8"
+uuid = "6af34c43-eb40-584a-ba44-023879b5265e"
+version = "0.0.2"
+
 [[RLEVectors]]
 deps = ["DataFrames", "OrderedCollections", "RCall", "Statistics", "StatsBase"]
 git-tree-sha1 = "60a4db8966cdcd52936bfd1f42e5375237ebcbbb"
