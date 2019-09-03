@@ -9106,6 +9106,12 @@ git-tree-sha1 = "9633267ed8dab1bbde4ba5b2381ede484d5e0f85"
 uuid = "437b6fc4-8e8e-11e9-3fa1-ad391e66c018"
 version = "0.1.0"
 
+[[ProxSDP]]
+deps = ["Arpack", "Compat", "LinearAlgebra", "MathOptInterface", "Printf", "TimerOutputs"]
+git-tree-sha1 = "5e413d8afe4ef5ccc35595d521579131593cfa96"
+uuid = "65e78d25-6039-50a4-9445-38022e3d2eb3"
+version = "0.2.0"
+
 [[ProximalOperators]]
 deps = ["IterativeSolvers", "LinearAlgebra", "OSQP", "SparseArrays", "SuiteSparse", "TSVD"]
 git-tree-sha1 = "30d91695a36c5b69a8634015a8d57da904637b1a"
@@ -10105,9 +10111,9 @@ version = "0.9.2"
 
 [[TimerOutputs]]
 deps = ["Crayons", "Printf", "Test", "Unicode"]
-git-tree-sha1 = "b80671c06f8f8bae08c55d67b5ce292c5ae2660c"
+git-tree-sha1 = "89a9bd610d6bfd62a7c2b85112762b99b979fe5f"
 uuid = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
-version = "0.5.0"
+version = "0.4.0"
 
 [[TimeseriesSurrogates]]
 deps = ["AbstractFFTs", "DSP", "Distributions", "InplaceOps", "Interpolations", "Plots", "Requires", "StatsBase", "Test", "UncertainData", "Wavelets"]
