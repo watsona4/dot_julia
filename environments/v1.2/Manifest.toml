@@ -11397,6 +11397,12 @@ git-tree-sha1 = "74840bce8734609e4b921aefdceed22e18460b52"
 uuid = "1db0cb78-5717-11e9-0361-01e0964942ce"
 version = "0.1.0"
 
+[[SurrealNumbers]]
+deps = ["Printf", "Test"]
+git-tree-sha1 = "52347054ca36bd0db4a3fa08c85f87462c2a3842"
+uuid = "58abba7c-3f8b-5571-af36-87c463197a71"
+version = "0.1.1"
+
 [[Swagger]]
 deps = ["Dates", "HTTP", "JSON", "MbedTLS"]
 git-tree-sha1 = "a10bdc6919751ff88b3cd0f840e28d6e0b0f6671"
