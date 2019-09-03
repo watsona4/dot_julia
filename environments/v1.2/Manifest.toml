@@ -11409,6 +11409,12 @@ git-tree-sha1 = "85505f827a3191833228f01b8c0771e6926ca7f9"
 uuid = "dc3f66f6-feed-11e8-2006-85573fddfdbc"
 version = "0.3.1"
 
+[[Surrogates]]
+deps = ["DataFrames", "DifferentialEquations", "Distributions", "Flux", "GLM", "LIBSVM", "LatinHypercubeSampling", "LinearAlgebra", "Sobol", "XGBoost"]
+git-tree-sha1 = "2eb8a7b294a76a11872eddeaaa147e83d8a862b8"
+uuid = "6fc51010-71bc-11e9-0e15-a3fcc6593c49"
+version = "0.1.0"
+
 [[Swagger]]
 deps = ["Dates", "HTTP", "JSON", "MbedTLS"]
 git-tree-sha1 = "a10bdc6919751ff88b3cd0f840e28d6e0b0f6671"
@@ -11982,6 +11988,12 @@ deps = ["Base64", "CodecZlib", "LightXML", "Random", "TranscodingStreams"]
 git-tree-sha1 = "1a2b0723c5db05c511e2f06093079a2833081674"
 uuid = "64499a7a-5c06-52f2-abe2-ccb03c286192"
 version = "1.2.0"
+
+[[XGBoost]]
+deps = ["BinaryProvider", "Libdl", "Printf", "Random", "SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "b40110a09a66798cec67fb18a7e774521960601f"
+uuid = "009559a3-9522-5dbb-924b-0b6ed2b22bb9"
+version = "0.4.1"
 
 [[XLSX]]
 deps = ["Dates", "EzXML", "Printf", "ZipFile"]
