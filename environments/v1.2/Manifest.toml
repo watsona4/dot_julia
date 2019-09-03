@@ -10100,6 +10100,12 @@ git-tree-sha1 = "512b75d09aab52e93192e68de612fc472f001979"
 uuid = "3e6341c9-01f6-5312-b33f-f8894a2e817a"
 version = "0.5.2"
 
+[[SMCExamples]]
+deps = ["Compat", "RNGPool", "SequentialMonteCarlo", "StaticArrays"]
+git-tree-sha1 = "d1bc8bdae1ee01cf6a5de1873d07796f50b1b9e9"
+uuid = "251f48c7-f5a4-5bc8-b6b6-ff4797c45649"
+version = "0.6.0"
+
 [[SQLite]]
 deps = ["BinaryProvider", "DataFrames", "Dates", "Libdl", "Random", "Serialization", "Tables", "Test", "WeakRefStrings"]
 git-tree-sha1 = "70383f412eaa203ffbdd53a1bc5af089c2f8828e"
@@ -10177,6 +10183,12 @@ deps = ["Compat", "MathOptInterface"]
 git-tree-sha1 = "8566a20d38a1e75dae7b20a9ee86949e33a1adf8"
 uuid = "f0680fed-b2cd-5302-98f9-f4da282d86b5"
 version = "0.5.1"
+
+[[SequentialMonteCarlo]]
+deps = ["Compat", "NonUniformRandomVariateGeneration", "RNGPool"]
+git-tree-sha1 = "beb99a8b9ef00e428fc6ea2767360a1072beaa3b"
+uuid = "8c675823-c5d5-50f8-acb2-29aff48dfc1d"
+version = "0.6.0"
 
 [[Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
