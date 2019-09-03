@@ -1,0 +1,15 @@
+name = "ReinforcementLearningEnvironmentAtari"
+uuid = "670ccb06-b0ca-11e8-1121-e1e0a16a7999"
+authors = ["Johanni Brea <jbrea@users.noreply.github.com>", "Jun Tian <find_my_way@foxmail.com>"]
+version = "0.1.0"
+
+[deps]
+ArcadeLearningEnvironment = "b7f77d8d-088d-5e02-8ac0-89aab2acc977"
+GR = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
+ReinforcementLearningBase = "e575027e-6cd6-5018-9292-cdc6200d2b44"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
