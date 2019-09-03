@@ -9783,6 +9783,12 @@ git-tree-sha1 = "3abde2b1c5d0f942b40700bebdc6c8cfa60c8b37"
 uuid = "bfecab0d-fd4d-5014-a23f-56c5fae6447a"
 version = "0.2.0"
 
+[[Remez]]
+deps = ["Compat", "Test"]
+git-tree-sha1 = "3cb4d723d5def927a22e72392b222467cea9c6ab"
+uuid = "2e7db186-766a-50e7-8928-5c30181fb135"
+version = "0.1.0"
+
 [[RemoteFiles]]
 deps = ["Dates", "FileIO", "HTTP"]
 git-tree-sha1 = "fa573e218ee48b93b9c9f5f7b54f2162124b0451"
