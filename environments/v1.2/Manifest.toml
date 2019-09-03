@@ -9266,6 +9266,12 @@ git-tree-sha1 = "3e3912108ad460b87496a0e96de0863938d4538c"
 uuid = "3c0b384b-479c-5684-b2ef-9d7a46dd931e"
 version = "0.4.6"
 
+[[QuantumLattices]]
+deps = ["DataStructures", "Documenter", "Formatting", "LinearAlgebra", "MacroTools", "NearestNeighbors", "Printf", "Random", "Reexport", "StaticArrays", "Test"]
+git-tree-sha1 = "f57e05782fd8d5f5f146fc76c494f2a1a63b9ce2"
+uuid = "78ae1a1f-1d5d-5174-b61c-66e31b2346dc"
+version = "0.0.1"
+
 [[QuartzImageIO]]
 deps = ["ColorTypes", "ColorVectorSpace", "FileIO", "FixedPointNumbers", "ImageCore", "Libdl"]
 git-tree-sha1 = "813432448a8f06a1316943c3456dcf043afacd96"
