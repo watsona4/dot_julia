@@ -1,0 +1,20 @@
+language:
+  - julia
+
+os:
+  - linux
+
+julia:
+  - 1.0
+  - 0.7
+
+cache:
+  directories:
+    - /home/travis/.julia
+
+before_install:
+  - julia -e '(VERSION >= v"1.0" && using Pkg); Pkg.rm("SecretSanta"); Pkg.rm("SecretSanta")'
+  - julia -e '(VERSION >= v"1.0" && using Pkg); Pkg.update()'
+
+after_success:
+  - julia -e '(VERSION >= v"1.0" && using Pkg); Pkg.add("Coverage"); cd(Pkg.dir("SecretSanta")); using Coverage; Codecov.submit(process_folder())'

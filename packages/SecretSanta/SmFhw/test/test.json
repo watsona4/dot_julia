@@ -1,0 +1,66 @@
+{
+    "email": {
+        "smtp_server": "smtp.example.com",
+        "smtp_port": 465,
+        "username": "user@example.com",
+        "password": "123456",
+        "subject": "Your Secret Santa recipient is {recipient}!",
+        "message": "Hello, {sender}! Your Secret Santa recipient is {recipient} ({recipient_email}). The maximum spending limit is $100.00. Merry Christmas!"
+    },
+    "participants": [
+        {
+            "email": "olstnick@example.com",
+            "name": "Saint Nicholas",
+            "exclude": [
+                "lovedafather@example.com"
+            ]
+        },
+        {
+            "email": "lovedafather@example.com",
+            "name": "Arius",
+            "exclude": [
+                "olstnick@example.com",
+                "stalex@example.com"
+            ]
+        },
+        {
+            "email": "dagreatest1@example.com",
+            "name": "Constantine I",
+            "exclude": [
+                "mavm.augustus@example.com",
+                "maxdaza@example.com"
+            ]
+        },
+        {
+            "email": "stalex@example.com",
+            "name": "Saint Alexander I",
+            "exclude": [
+                "lovedafather@example.com"
+            ]
+        },
+        {
+            "email": "mavm.augustus@example.com",
+            "name": "Maxentius",
+            "exclude": [
+                "dagreatest1@example.com",
+                "dacian263@example.com"
+            ]
+        },
+        {
+            "email": "maxdaza@example.com",
+            "name": "Maximinus",
+            "exclude": [
+                "dagreatest1@example.com",
+                "dacian263@example.com"
+            ]
+        },
+        {
+            "email": "dacian263@example.com",
+            "name": "Licinius",
+            "exclude": [
+                "mavm.augustus@example.com",
+                "maxdaza@example.com"
+            ]
+        }
+    ]
+}

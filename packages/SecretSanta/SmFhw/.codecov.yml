@@ -1,0 +1,8 @@
+status:
+    project:
+      default:
+        enabled: yes
+        target: 80%
+        threshold: 5%
+      branches:
+        threshold: 5%
