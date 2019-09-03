@@ -9278,6 +9278,12 @@ git-tree-sha1 = "14f1f5ba43018b22a7e2f1c42f0467d5b435f004"
 uuid = "6e0679c1-51ea-5a7c-ac74-d61b76210b0c"
 version = "0.6.5"
 
+[[QuantumWalk]]
+deps = ["Arpack", "Expokit", "LightGraphs", "LinearAlgebra", "Optim", "SparseArrays", "Test"]
+git-tree-sha1 = "a848ec52c611fe5d1d9f39066d96c29f344d0d42"
+uuid = "715ab00d-497d-5f5e-92b0-16e551a8d81b"
+version = "0.2.1"
+
 [[QuartzImageIO]]
 deps = ["ColorTypes", "ColorVectorSpace", "FileIO", "FixedPointNumbers", "ImageCore", "Libdl"]
 git-tree-sha1 = "813432448a8f06a1316943c3456dcf043afacd96"
