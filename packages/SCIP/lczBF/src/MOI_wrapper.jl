@@ -1,0 +1,166 @@
+using MathOptInterface
+const MOI = MathOptInterface
+const MOIU = MOI.Utilities
+
+# indices
+const VI = MOI.VariableIndex
+const CI = MOI.ConstraintIndex
+# supported functions
+const SVF = MOI.SingleVariable
+const SAF = MOI.ScalarAffineFunction{Float64}
+const SQF = MOI.ScalarQuadraticFunction{Float64}
+const VECTOR = MOI.VectorOfVariables
+# supported sets
+const BOUNDS = Union{MOI.EqualTo{Float64}, MOI.GreaterThan{Float64},
+                     MOI.LessThan{Float64}, MOI.Interval{Float64}}
+const VAR_TYPES = Union{MOI.ZeroOne, MOI.Integer}
+const SOC = MOI.SecondOrderCone
+const SOS1 = MOI.SOS1{Float64}
+const SOS2 = MOI.SOS2{Float64}
+# other MOI types
+const AFF_TERM = MOI.ScalarAffineTerm{Float64}
+const QUAD_TERM = MOI.ScalarQuadraticTerm{Float64}
+
+const PtrMap = Dict{Ptr{Cvoid}, Union{VarRef, ConsRef}}
+const ConsTypeMap = Dict{Tuple{DataType, DataType}, Set{ConsRef}}
+
+mutable struct Optimizer <: MOI.AbstractOptimizer
+    mscip::ManagedSCIP
+    reference::PtrMap
+    constypes::ConsTypeMap
+    binbounds::Dict{VI,BOUNDS} # only for binary variables
+    params::Dict{String,Any}
+
+    function Optimizer(; kwargs...)
+        o = new(ManagedSCIP(), PtrMap(), ConsTypeMap(), Dict(), Dict())
+
+        # Set all parameters given as keyword arguments, replacing the
+        # delimiter, since "/" is used by all SCIP parameters, but is not
+        # allowed in Julia identifiers.
+        for (key, value) in kwargs
+            name = replace(String(key),"_" => "/")
+            MOI.set(o, Param(name), value)
+        end
+        return o
+    end
+end
+
+# Protect Optimizer from GC for ccall with Ptr{SCIP_} argument.
+Base.unsafe_convert(::Type{Ptr{SCIP_}}, o::Optimizer) = o.mscip.scip[]
+
+## convenience functions (not part of MOI)
+
+"Return pointer to SCIP variable."
+var(o::Optimizer, v::VI) = var(o.mscip, VarRef(v.value))
+
+"Return var/cons reference of SCIP variable/constraint."
+ref(o::Optimizer, ptr::Ptr{Cvoid}) = o.reference[ptr]
+
+"Return pointer to SCIP constraint."
+cons(o::Optimizer, c::CI{F,S}) where {F,S} = cons(o.mscip, ConsRef(c.value))
+
+"Extract bounds from sets."
+bounds(set::MOI.EqualTo{Float64}) = (set.value, set.value)
+bounds(set::MOI.GreaterThan{Float64}) = (set.lower, nothing)
+bounds(set::MOI.LessThan{Float64}) = (nothing, set.upper)
+bounds(set::MOI.Interval{Float64}) = (set.lower, set.upper)
+
+"Make set from bounds."
+from_bounds(::Type{MOI.EqualTo{Float64}}, lower, upper) = MOI.EqualTo{Float64}(lower)
+from_bounds(::Type{MOI.GreaterThan{Float64}}, lower, upper) = MOI.GreaterThan{Float64}(lower)
+from_bounds(::Type{MOI.LessThan{Float64}}, lower, upper) = MOI.LessThan{Float64}(upper)
+from_bounds(::Type{MOI.Interval{Float64}}, lower, upper) = MOI.Interval{Float64}(lower, upper)
+
+"Register pointer in mapping, return var/cons reference."
+function register!(o::Optimizer, ptr::Ptr{Cvoid}, ref::R) where R <: Union{VarRef, ConsRef}
+    @assert !haskey(o.reference, ptr)
+    o.reference[ptr] = ref
+    return ref
+end
+
+"Register constraint in mapping, return constraint reference."
+function register!(o::Optimizer, c::CI{F,S}) where {F,S}
+    cr = ConsRef(c.value)
+    if haskey(o.constypes, (F, S))
+        push!(o.constypes[F,S], cr)
+    else
+        o.constypes[F,S] = Set([cr])
+    end
+    return c
+end
+
+"Go back from solved stage to problem modification stage, invalidating results."
+function allow_modification(o::Optimizer)
+    if SCIPgetStage(o) != SCIP_STAGE_PROBLEM
+        @SC SCIPfreeTransform(o)
+    end
+    return nothing
+end
+
+## general queries and support
+
+MOI.get(::Optimizer, ::MOI.SolverName) = "SCIP"
+
+MOIU.supports_default_copy_to(model::Optimizer, copy_names::Bool) = !copy_names
+
+struct Param <: MOI.AbstractOptimizerAttribute
+    name::String
+end
+function MOI.set(o::Optimizer, param::Param, value)
+    o.params[param.name] = value
+    set_parameter(o.mscip, param.name, value)
+    return nothing
+end
+
+## model creation, query and modification
+
+function MOI.is_empty(o::Optimizer)
+    return length(o.mscip.vars) == 0 && length(o.mscip.conss) == 0
+end
+
+function MOI.empty!(o::Optimizer)
+    # free the underlying problem
+    finalize(o.mscip)
+    # create a new one
+    o.mscip = ManagedSCIP()
+    # clear auxiliary mapping structures
+    o.reference = PtrMap()
+    o.constypes = ConsTypeMap()
+    o.binbounds = Dict()
+    # reapply parameters
+    for pair in o.params
+        set_parameter(o.mscip, pair.first, pair.second)
+    end
+    return nothing
+end
+
+function MOI.copy_to(dest::Optimizer, src::MOI.ModelLike; kws...)
+    return MOIU.automatic_copy_to(dest, src; kws...)
+end
+
+MOI.get(o::Optimizer, ::MOI.Name) = SCIPgetProbName(o)
+MOI.set(o::Optimizer, ::MOI.Name, name::String) = @SC SCIPsetProbName(o, name)
+
+function MOI.get(o::Optimizer, ::MOI.NumberOfConstraints{F,S}) where {F,S}
+    return haskey(o.constypes, (F, S)) ? length(o.constypes[F, S]) : 0
+end
+
+function MOI.get(o::Optimizer, ::MOI.ListOfConstraints)
+    return collect(keys(o.constypes))
+end
+
+function MOI.optimize!(o::Optimizer)
+    @SC SCIPsolve(o)
+    return nothing
+end
+
+include(joinpath("MOI_wrapper", "variable.jl"))
+include(joinpath("MOI_wrapper", "linear_constraints.jl"))
+include(joinpath("MOI_wrapper", "quadratic_constraints.jl"))
+include(joinpath("MOI_wrapper", "soc_constraints.jl"))
+include(joinpath("MOI_wrapper", "sos_constraints.jl"))
+include(joinpath("MOI_wrapper", "abspower_constraints.jl"))
+include(joinpath("MOI_wrapper", "indicator_constraints.jl"))
+include(joinpath("MOI_wrapper", "nonlinear_constraints.jl"))
+include(joinpath("MOI_wrapper", "objective.jl"))
+include(joinpath("MOI_wrapper", "results.jl"))

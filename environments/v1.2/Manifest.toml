@@ -10056,6 +10056,12 @@ git-tree-sha1 = "9c3a8552a9f01bc4757f0b5923dcdb927286d7b6"
 uuid = "df8f2f22-cfef-5733-af3f-96770d497d85"
 version = "0.6.3"
 
+[[SCIP]]
+deps = ["CEnum", "Libdl", "MathOptInterface", "Test"]
+git-tree-sha1 = "255d444b44027befec293cc970e1f2bc8cf97672"
+uuid = "82193955-e24f-5292-bf16-6f2c5261a85f"
+version = "0.7.4"
+
 [[SCS]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "666c4016d27b34a559313b8ea0d56d85fc9f2dc4"
