@@ -1,0 +1,21 @@
+name = "QueryableBackend"
+uuid = "0898d9ac-042b-5d31-8dcc-959fb3365f19"
+version = "0.1.0"
+
+[deps]
+QueryOperators = "2aef5ad7-51ca-5a8f-8e88-e75cf067b44b"
+IteratorInterfaceExtensions = "82899510-4779-5014-852e-03e436cf321d"
+TableTraits = "3783bdb8-4a98-5b6b-af9a-565f29a5fe9c"
+
+[compat]
+julia = "1"
+QueryOperators = "0.8, 1"
+IteratorInterfaceExtensions = "1"
+TableTraits = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Query = "1a8c2f83-1ff3-5112-b086-8aa67b057ba1"
+
+[targets]
+test = ["Test", "Query"]

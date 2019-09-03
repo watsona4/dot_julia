@@ -9320,6 +9320,12 @@ git-tree-sha1 = "1e9def96f2da69ac868a4c220b8cfa09e239dae3"
 uuid = "30ad73d7-305e-5999-88c2-a7d9e8945169"
 version = "0.1.0"
 
+[[QueryableBackend]]
+deps = ["IteratorInterfaceExtensions", "QueryOperators", "TableTraits"]
+git-tree-sha1 = "8bcf12001c4588950e4931bb89861e6b10c5a29e"
+uuid = "0898d9ac-042b-5d31-8dcc-959fb3365f19"
+version = "0.1.0"
+
 [[RCall]]
 deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "Libdl", "Missings", "REPL", "Random", "Requires", "StatsModels", "WinReg"]
 git-tree-sha1 = "828332205a09377da6a8ebd1e615b11a22f8def6"
