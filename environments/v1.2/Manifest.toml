@@ -10106,6 +10106,12 @@ git-tree-sha1 = "d1bc8bdae1ee01cf6a5de1873d07796f50b1b9e9"
 uuid = "251f48c7-f5a4-5bc8-b6b6-ff4797c45649"
 version = "0.6.0"
 
+[[SMM]]
+deps = ["DataFrames", "DataFramesMeta", "Distributed", "Distributions", "Documenter", "FileIO", "GLM", "JLD2", "JSON", "LinearAlgebra", "Logging", "OrderedCollections", "PDMats", "Plots", "ProgressMeter", "Random", "Statistics", "StatsPlots", "Test"]
+git-tree-sha1 = "dd926be9e7a81a44fb6a4243132efba713a4b4d0"
+uuid = "bc769cb7-f249-5bba-802a-79f18cb247ec"
+version = "1.4.0"
+
 [[SQLite]]
 deps = ["BinaryProvider", "DataFrames", "Dates", "Libdl", "Random", "Serialization", "Tables", "Test", "WeakRefStrings"]
 git-tree-sha1 = "70383f412eaa203ffbdd53a1bc5af089c2f8828e"
