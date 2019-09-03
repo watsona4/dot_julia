@@ -11489,6 +11489,18 @@ repo-url = "https://github.com/wildart/TOML.jl.git"
 uuid = "191fdcea-f9f2-43e0-b922-d33f71e2abc3"
 version = "0.4.0"
 
+[[TSML]]
+deps = ["ArgParse", "CSV", "CodecBzip2", "DataFrames", "Dates", "DecisionTree", "FileIO", "GR", "HTTP", "Interact", "IterTools", "JSON2", "LinearAlgebra", "MLBase", "MLDataUtils", "Plots", "Random", "Reexport", "Serialization", "Statistics", "StatsBase"]
+git-tree-sha1 = "6942566387e45816c13f372a269944cf9c7a4d5b"
+uuid = "198dc43e-9e51-5cd7-9d40-d9794d335912"
+version = "2.3.7"
+
+[[TSMLextra]]
+deps = ["CSVFiles", "Conda", "DataFrames", "Dates", "Feather", "FeatherFiles", "FileIO", "HDF5", "JLD", "Parquet", "PyCall", "RCall", "Random", "Reexport", "TSML", "Test"]
+git-tree-sha1 = "ea69157c1628e5b965e63ff05270931fea445b47"
+uuid = "0c7047ce-818d-11e9-1109-0323cd70e08d"
+version = "0.1.4"
+
 [[TSVD]]
 deps = ["Adapt", "LinearAlgebra"]
 git-tree-sha1 = "4c6caaa3d6658009a22c8c8f1e9de9e2bd7eef25"
