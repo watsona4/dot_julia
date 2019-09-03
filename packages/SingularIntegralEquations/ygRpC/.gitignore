@@ -1,0 +1,8 @@
+examples/.ipynb_checkpoints/Manipulate SIEs-checkpoint.ipynb
+src/CUDA/**/*.ptx
+deps/**/*.o
+deps/**/*.dll
+deps/**/*.dylib
+deps/**/*.so
+deps/liblhelmfs.dylib
+.DS_Store

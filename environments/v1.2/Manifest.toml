@@ -9913,6 +9913,12 @@ git-tree-sha1 = "7fb12cb850071ea748baa4983e3cf1da23a413f6"
 uuid = "3f3442c8-4998-5f9a-b6f6-804928b92bc1"
 version = "0.1.2"
 
+[[RiemannHilbert]]
+deps = ["ApproxFun", "ApproxFunBase", "ApproxFunFourier", "ApproxFunOrthogonalPolynomials", "ApproxFunSingularities", "DomainSets", "DualNumbers", "FastTransforms", "FillArrays", "LinearAlgebra", "SingularIntegralEquations", "SparseArrays", "SpecialFunctions", "Test"]
+git-tree-sha1 = "5c579018e9b6c1ce76c4dbc75a24037688b3692e"
+uuid = "79305c5b-9889-52e9-bdbd-56f883c71fe0"
+version = "0.0.1"
+
 [[RigidBodyDynamics]]
 deps = ["DocStringExtensions", "LightXML", "LinearAlgebra", "LoopThrottle", "Random", "Reexport", "Rotations", "SparseArrays", "StaticArrays", "TypeSortedCollections", "UnsafeArrays"]
 git-tree-sha1 = "8280c2e617f1872ab13bb9d077b83fa32b9659d4"
@@ -10167,6 +10173,12 @@ deps = ["Conda", "Distributions", "LinearAlgebra", "Parameters", "Printf", "PyCa
 git-tree-sha1 = "60d985b3254bb3f35413d5b84f9a1d71ab778520"
 uuid = "d5428e67-3037-59ba-9ab1-57a04f0a3b6a"
 version = "0.4.1"
+
+[[SingularIntegralEquations]]
+deps = ["ApproxFun", "ApproxFunBase", "ApproxFunFourier", "ApproxFunOrthogonalPolynomials", "ApproxFunSingularities", "BandedMatrices", "BlockArrays", "BlockBandedMatrices", "DomainSets", "DualNumbers", "FastTransforms", "InfiniteArrays", "InteractiveUtils", "LinearAlgebra", "LowRankApprox", "RecipesBase", "SpecialFunctions", "Test"]
+git-tree-sha1 = "4c622c61c4430621f476bade701f071f32db006e"
+uuid = "e094c991-5a90-5477-8896-c1e4c9552a1a"
+version = "0.4.2"
 
 [[SkyCoords]]
 deps = ["DelimitedFiles", "Printf", "StaticArrays", "Statistics", "Test"]
