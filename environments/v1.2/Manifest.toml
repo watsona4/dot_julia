@@ -10716,6 +10716,12 @@ git-tree-sha1 = "3c047da6c1673a5b1b41df5999b33b011d15cb32"
 uuid = "b5612192-2639-5dc1-abfe-fbedd65fab29"
 version = "0.1.4"
 
+[[SortMerge]]
+deps = ["Printf", "Random", "SparseArrays", "StatsBase", "Test"]
+git-tree-sha1 = "42cd2fa6cf46a356397cb9287c54288c4c3ed019"
+uuid = "041a2d23-8c6e-5597-be73-bf96b5e0dfd4"
+version = "1.1.0"
+
 [[SortingAlgorithms]]
 deps = ["DataStructures", "Random", "Test"]
 git-tree-sha1 = "03f5898c9959f8115e30bc7226ada7d0df554ddd"
