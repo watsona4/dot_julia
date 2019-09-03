@@ -9547,6 +9547,11 @@ git-tree-sha1 = "513b5dfc70665fb4c4a3882fda6c9a0954f9b2c1"
 uuid = "d3d335b2-f152-507c-820e-958e337efb65"
 version = "0.1.0"
 
+[[RawFile]]
+git-tree-sha1 = "02b36706c287622dfa105ea2eb4dfa50a50819b4"
+uuid = "7a16de70-abc6-11e8-02b0-4fe68abe0eac"
+version = "1.0.0"
+
 [[Reactive]]
 deps = ["DataStructures", "Distributed", "Test"]
 git-tree-sha1 = "5862d915387ebb954016f50a88e34f79a9e5fcd2"
