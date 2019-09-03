@@ -9147,6 +9147,12 @@ git-tree-sha1 = "f157c6758aba95f179d28fcb6b3928d9e5e8c4d9"
 uuid = "36b54c61-190e-5a5f-82d5-6f0a962d7362"
 version = "0.2.0"
 
+[[Pushover]]
+deps = ["HTTP", "JSON", "Sockets", "Test"]
+git-tree-sha1 = "c0a730ec8c7e7a5f0ee444e888b2cac1b0fb6756"
+uuid = "1d40253f-d7d5-5bc2-be73-07f0f24a3532"
+version = "0.1.1"
+
 [[PyCall]]
 deps = ["Conda", "Dates", "Libdl", "LinearAlgebra", "MacroTools", "Pkg", "Serialization", "Statistics", "Test", "VersionParsing"]
 git-tree-sha1 = "6e5bac1b1faf3575731a6a5b76f638f2389561d3"
