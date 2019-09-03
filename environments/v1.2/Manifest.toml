@@ -10983,6 +10983,12 @@ git-tree-sha1 = "428206c3b35d1c43631dbe0c89d44eb6c1c8ab00"
 uuid = "a8a75453-ed82-57c9-9e16-4cd1196ecbf5"
 version = "0.4.0"
 
+[[StataCall]]
+deps = ["CSV", "DataFrames", "Dates", "FileIO", "StatFiles"]
+git-tree-sha1 = "3cb1df20390882962c7162b86b27e5d770ec4d51"
+uuid = "149ba50c-99c4-11e9-1e32-e960083e84dc"
+version = "0.1.0"
+
 [[StateSpaceReconstruction]]
 deps = ["Conda", "Distances", "Distributions", "LinearAlgebra", "NearestNeighbors", "PyCall", "Reexport", "Simplices", "StaticArrays", "Statistics", "Test"]
 git-tree-sha1 = "211298d65326fd109bb00c92ce0adca0f4c09435"
