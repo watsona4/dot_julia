@@ -9500,6 +9500,12 @@ git-tree-sha1 = "1417be19c15706c1584d01e32662eb640a4cc908"
 uuid = "e6cf234a-135c-5ec9-84dd-332b85af5143"
 version = "1.3.0"
 
+[[RandomQuantum]]
+deps = ["Cliffords", "LinearAlgebra", "QuantumInfo", "StatsBase", "Test"]
+git-tree-sha1 = "76ed38684c82b3bb94cd922913dcbf7e9ddd862f"
+uuid = "7779672a-5d86-5706-9bd0-ace5ecbc1638"
+version = "0.1.0"
+
 [[RandomV06]]
 deps = ["Random", "Test"]
 git-tree-sha1 = "ee7a6e4864f25e4c4ea66f75e358dab48d551cd1"
