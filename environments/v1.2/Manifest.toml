@@ -8993,6 +8993,12 @@ git-tree-sha1 = "c044de87ff6ba1b07fa490cb700971d3d325e6d7"
 uuid = "df4d2c64-811c-11e9-2782-c5e8d6893c98"
 version = "0.2.0"
 
+[[PredictMDExtra]]
+deps = ["BenchmarkTools", "Calculus", "CategoricalArrays", "Clustering", "Dates", "Distances", "Distributed", "GaussianProcesses", "IRTools", "MLDatasets", "MLJ", "MLJBase", "MLJModels", "Measurements", "MemPool", "MultivariateStats", "PGFPlots", "PhysicalConstants", "Pkg", "RemoteFiles", "Rmath", "ScikitLearnBase", "StaticArrays", "Tables", "Tau", "Unitful", "Zygote"]
+git-tree-sha1 = "abf00fdc297b1552ed3fbcecaa698b31a8545dc0"
+uuid = "d14d998a-9e6b-11e8-16d3-6f2879ea456d"
+version = "0.10.0"
+
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
 git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
@@ -9939,6 +9945,12 @@ deps = ["DataAPI", "DataValueInterfaces", "IteratorInterfaceExtensions", "Linear
 git-tree-sha1 = "aaed7b3b00248ff6a794375ad6adf30f30ca5591"
 uuid = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
 version = "0.2.11"
+
+[[Tau]]
+deps = ["Test"]
+git-tree-sha1 = "d31d780530ad6cf79bf8bff1f627801f17735691"
+uuid = "c544e3c2-d3e5-5802-ac44-44683f340e4a"
+version = "0.2.0"
 
 [[Temporal]]
 deps = ["Dates", "HTTP", "JSON", "Printf", "Random", "RecipesBase", "Statistics", "Test"]

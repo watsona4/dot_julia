@@ -1,0 +1,44 @@
+##### Beginning of file
+
+branches:
+    only:
+    - master
+    - staging
+    - trying
+    - /^release\/.*$/ # release branches
+    - /^v[0-9]+\.[0-9]+\.[0-9]+$/ # version tags
+
+env:
+    global:
+        - JULIA_DEBUG="all"
+    matrix:
+        - PREDICTMDEXTRA_IMPORT_ALL="true"
+        - PREDICTMDEXTRA_IMPORT_ALL="false"
+
+git:
+    depth: 99999999
+
+julia:
+    - "1.1"
+
+language: julia
+
+matrix:
+    allow_failures:
+        - julia: "nightly"
+    fast_finish: true
+
+notifications:
+    email:
+        on_success: never # default: change
+        on_failure: always # default: always
+
+os:
+    - linux
+    - osx
+
+############################################################################
+
+script: ./ci/travis/script.sh
+
+##### End of file
