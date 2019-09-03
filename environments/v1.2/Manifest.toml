@@ -9443,6 +9443,12 @@ git-tree-sha1 = "ff27dca3ac04faeb1d9d16b0f93ed5b22ab16058"
 uuid = "4e41d8b6-e438-5f9c-8b78-0c738ca8d379"
 version = "0.1.1"
 
+[[RadiationSpectra]]
+deps = ["DelimitedFiles", "Distributions", "Optim", "RecipesBase", "Statistics", "StatsBase"]
+git-tree-sha1 = "75e00a2162e70c65a8ed3687ecf3ede69a854c09"
+uuid = "4f207c7e-01da-51d7-a1a0-c8c06dd1d883"
+version = "0.2.0"
+
 [[Random]]
 deps = ["Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
