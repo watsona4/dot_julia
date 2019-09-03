@@ -10989,6 +10989,12 @@ git-tree-sha1 = "3cb1df20390882962c7162b86b27e5d770ec4d51"
 uuid = "149ba50c-99c4-11e9-1e32-e960083e84dc"
 version = "0.1.0"
 
+[[StataDTAFiles]]
+deps = ["ArgCheck", "Dates", "DocStringExtensions", "Parameters", "StrFs", "Tables", "Test"]
+git-tree-sha1 = "547bc2c9944046c871b6ae18ac0bca5bcf0642c6"
+uuid = "b8b3a5fb-3772-5a86-9e24-bf4afc28128a"
+version = "0.3.0"
+
 [[StateSpaceReconstruction]]
 deps = ["Conda", "Distances", "Distributions", "LinearAlgebra", "NearestNeighbors", "PyCall", "Reexport", "Simplices", "StaticArrays", "Statistics", "Test"]
 git-tree-sha1 = "211298d65326fd109bb00c92ce0adca0f4c09435"
@@ -11082,6 +11088,12 @@ deps = ["ModuleInterfaceTools", "Unicode"]
 git-tree-sha1 = "4b70830583e9dd88f1220f8139ee967084428c21"
 uuid = "69e7dfc3-c4d0-5e14-8d95-d6042a05b383"
 version = "1.0.0"
+
+[[StrFs]]
+deps = ["Parameters", "StaticArrays", "Test"]
+git-tree-sha1 = "17f4d1102fd07237eb5ed837801911fc87fae73c"
+uuid = "299745a8-1dd2-5813-967e-1153b019bdef"
+version = "0.3.0"
 
 [[StrTables]]
 deps = ["Dates"]

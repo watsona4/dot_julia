@@ -1,0 +1,18 @@
+name = "StataDTAFiles"
+uuid = "b8b3a5fb-3772-5a86-9e24-bf4afc28128a"
+authors = ["Tamas K. Papp <tkpapp@gmail.com>"]
+version = "0.1.1"
+
+[deps]
+ArgCheck = "dce04be8-c92d-5529-be00-80e4d2c0e197"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+Parameters = "d96e819e-fc66-5662-9728-84c9c7592b0a"
+StrFs = "299745a8-1dd2-5813-967e-1153b019bdef"
+Tables = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
