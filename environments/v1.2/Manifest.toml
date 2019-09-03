@@ -9570,6 +9570,12 @@ git-tree-sha1 = "5862d915387ebb954016f50a88e34f79a9e5fcd2"
 uuid = "a223df75-4e93-5b7c-acf9-bdd599c0f4de"
 version = "0.8.3"
 
+[[ReadOnlyArrays]]
+deps = ["SparseArrays", "Test"]
+git-tree-sha1 = "65f17072a35c2be7ac8941aeeae489013212e71f"
+uuid = "988b38a3-91fc-5605-94a2-ee2116b3bd83"
+version = "0.1.1"
+
 [[ReadStat]]
 deps = ["BinaryProvider", "DataValues", "Dates", "Libdl", "StringEncodings", "Test"]
 git-tree-sha1 = "182df6a9c0dd0f78ee4ab51a16259deda26cd850"
