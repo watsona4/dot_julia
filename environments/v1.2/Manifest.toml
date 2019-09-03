@@ -9482,6 +9482,12 @@ git-tree-sha1 = "1c55ad20a86c08257e25019625517431ba639eb9"
 uuid = "2547b907-48b9-5396-a2af-edc57bff161c"
 version = "1.0.0"
 
+[[RandomExtensions]]
+deps = ["Random", "SparseArrays", "Test"]
+git-tree-sha1 = "f1c648e3738975dc4193113e11b49a5869520e6b"
+uuid = "fb686558-2515-59ef-acaa-46db3789a887"
+version = "0.2.1"
+
 [[RandomNumbers]]
 deps = ["Random", "Requires"]
 git-tree-sha1 = "1417be19c15706c1584d01e32662eb640a4cc908"
