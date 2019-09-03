@@ -8999,6 +8999,12 @@ git-tree-sha1 = "abf00fdc297b1552ed3fbcecaa698b31a8545dc0"
 uuid = "d14d998a-9e6b-11e8-16d3-6f2879ea456d"
 version = "0.10.0"
 
+[[Presentation]]
+deps = ["Crayons", "Highlights", "JSON", "Markdown", "Pandoc", "REPL", "TerminalExtensions", "Test"]
+git-tree-sha1 = "4063d1e5bc51c92dce4f7deee14f06ae8a5ebe37"
+uuid = "8bd9f6a2-9625-11e9-045b-d30bc2bc79c3"
+version = "0.1.0"
+
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
 git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
@@ -9969,6 +9975,12 @@ deps = ["ForwardDiff", "LinearAlgebra", "SIMD", "Statistics"]
 git-tree-sha1 = "98f1aec8df52bbaaa937018c419b423c6ed2aa88"
 uuid = "48a634ad-e948-5137-8d70-aa71f2a747f4"
 version = "1.1.1"
+
+[[TerminalExtensions]]
+deps = ["Base64", "REPL", "Test"]
+git-tree-sha1 = "3a6bff97392a3351d666f53e24e9db2ea542a8b2"
+uuid = "d3a6a179-465e-5219-bd3e-0137f7fd17c7"
+version = "0.4.0"
 
 [[TerminalMenus]]
 deps = ["Compat", "REPL", "Test"]

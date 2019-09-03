@@ -1,0 +1,11 @@
+language: julia
+notifications:
+  email: false
+os:
+  - linux
+  - osx
+julia:
+  - 0.6
+  - nightly
+#script:
+#  - julia -e 'Pkg.init(); Pkg.clone(pwd()); Pkg.test("TerminalExtensions")'
