@@ -1,0 +1,17 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
+after_success:
+  - julia --project=coverage/ -e 'using Pkg; Pkg.instantiate()'
+  - julia --project=coverage/ coverage/coverage.jl
+  - julia --project=coverage/ coverage/coveralls.jl

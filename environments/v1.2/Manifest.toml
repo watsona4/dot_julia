@@ -11339,6 +11339,12 @@ git-tree-sha1 = "f9d1422124f54c40f40070ed2c356bb87761d402"
 uuid = "24f65c1e-0a10-5d3d-8a1f-a83399f3fced"
 version = "0.2.0"
 
+[[SugarBLAS]]
+deps = ["Test"]
+git-tree-sha1 = "f4100159d2f1964fae87eb9446c825bb5192a847"
+uuid = "0999239e-cb9f-5507-94be-17f19fa7f34d"
+version = "0.1.0"
+
 [[SuiteSparse]]
 deps = ["Libdl", "LinearAlgebra", "Serialization", "SparseArrays"]
 uuid = "4607b0f0-06f3-5cda-b6b1-a6196a1729e9"
