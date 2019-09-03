@@ -10220,6 +10220,12 @@ git-tree-sha1 = "dc0c63e6797aaaa21fa3f8ac03b2bde2c39c2a15"
 uuid = "03bc5d91-8e1a-555a-857b-eaff090ecb7c"
 version = "0.1.0"
 
+[[Sched]]
+deps = ["DataStructures", "Dates", "Test"]
+git-tree-sha1 = "098f29de3689fa8bd46aa92df409004199b532f0"
+uuid = "1fb05d12-6c47-528b-bee1-deadc63ff0b4"
+version = "0.1.1"
+
 [[SchumakerSpline]]
 deps = ["Dates", "Plots", "Test"]
 git-tree-sha1 = "de6126c4925640ed19c87f709bd91d21b24c3519"
