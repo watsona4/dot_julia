@@ -10740,6 +10740,12 @@ git-tree-sha1 = "3ee0df3ccf3677487ac966390313aa6c8529fe45"
 uuid = "562c1548-17b8-5b69-83cf-d8aebec229f5"
 version = "0.1.6"
 
+[[SortingNetworks]]
+deps = ["Test"]
+git-tree-sha1 = "4bff1618d36fec63efa89329ebf4fb686f2e7b16"
+uuid = "07e3d4f1-5dc2-5a3a-9c19-e1965b76eff9"
+version = "0.2.0"
+
 [[SparseArrays]]
 deps = ["LinearAlgebra", "Random"]
 uuid = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
