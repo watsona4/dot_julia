@@ -9689,6 +9689,12 @@ git-tree-sha1 = "7b1d07f411bc8ddb7977ec7f377b97b158514fe0"
 uuid = "189a3867-3050-52da-a836-e630ba90ab69"
 version = "0.2.0"
 
+[[ReferenceFrameRotations]]
+deps = ["Crayons", "LinearAlgebra", "Printf", "StaticArrays"]
+git-tree-sha1 = "984c98e4ff4c4b97871f61d840f67993e82bf93b"
+uuid = "74f56ac7-18b3-5285-802d-d4bd4f104033"
+version = "0.5.3"
+
 [[RegionTrees]]
 deps = ["IterTools", "LinearAlgebra", "StaticArrays"]
 git-tree-sha1 = "763ea91022b03c1ff18d5c80d61f676419fb7505"
