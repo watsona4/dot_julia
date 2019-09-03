@@ -1,0 +1,19 @@
+name = "PressureDrop"
+uuid = "b7afff70-4bfb-11e9-240b-a35f420ae9bd"
+author = ["jmnoynaert@gmail.com"]
+version = "1.0.1"
+
+[deps]
+Compose = "a81c6b42-2e10-5240-aca2-a61377ecd94b"
+Gadfly = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
+PrettyTables = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+
+[compat]
+julia = "1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

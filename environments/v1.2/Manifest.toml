@@ -9005,6 +9005,12 @@ git-tree-sha1 = "4063d1e5bc51c92dce4f7deee14f06ae8a5ebe37"
 uuid = "8bd9f6a2-9625-11e9-045b-d30bc2bc79c3"
 version = "0.1.0"
 
+[[PressureDrop]]
+deps = ["Compose", "Gadfly", "PrettyTables", "Requires"]
+git-tree-sha1 = "ee2baa6393e21824a897d567837b1c50cb56cff4"
+uuid = "b7afff70-4bfb-11e9-240b-a35f420ae9bd"
+version = "1.0.1"
+
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
 git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
