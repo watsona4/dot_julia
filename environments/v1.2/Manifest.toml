@@ -10768,6 +10768,12 @@ git-tree-sha1 = "c1ecded2bd37b1ce7db8e55a814c8aa63efa80fe"
 uuid = "47a9eef4-7e08-11e9-0b38-333d64bd3804"
 version = "0.9.0"
 
+[[SparseGrids]]
+deps = ["FastGaussQuadrature", "IterTools", "LinearAlgebra", "Test"]
+git-tree-sha1 = "a6f0f2121aa009a185c450602325ceff0b11de50"
+uuid = "bafbe729-afc6-5148-bb4f-226bf3d46895"
+version = "1.1.0"
+
 [[SpatialEcology]]
 deps = ["DataFrames", "DataFramesMeta", "EcoBase", "Random", "RandomBooleanMatrices", "RandomNumbers", "RecipesBase", "SparseArrays", "Statistics", "StatsBase", "Test"]
 git-tree-sha1 = "7e4ae3dd9cd98ac6127a28fc5bc46bdf5e28d86b"
