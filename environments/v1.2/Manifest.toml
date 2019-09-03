@@ -11367,6 +11367,12 @@ git-tree-sha1 = "1338d760b8a23844342ab72dd46804e0e8216806"
 uuid = "5f6e642e-680c-5a9c-a175-7c23ed4da89e"
 version = "0.1.2"
 
+[[SummationByPartsOperators]]
+deps = ["ArgCheck", "DiffEqBase", "DiffEqCallbacks", "FFTW", "LinearAlgebra", "Parameters", "PolynomialBases", "Reexport", "Requires", "SparseArrays", "StaticArrays", "Unrolled"]
+git-tree-sha1 = "67164ca2b28bfd7ffdaadfa0c66da75334707f38"
+uuid = "9f78cca6-572e-554e-b819-917d2f1cf240"
+version = "0.1.1"
+
 [[Sundials]]
 deps = ["BinaryProvider", "DataStructures", "DiffEqBase", "Libdl", "LinearAlgebra", "Logging", "Reexport", "SparseArrays", "SuiteSparse"]
 git-tree-sha1 = "c068455576ce91cdbb9474967912b547cacbf50f"
@@ -11796,6 +11802,12 @@ deps = ["JSON", "LinearAlgebra", "Missings", "Nullables", "Test"]
 git-tree-sha1 = "2b1f8a501a6c9932721e791f5586b7a48f4e0c2f"
 uuid = "cbff2730-442d-58d7-89d1-8e530c41eb02"
 version = "0.2.1"
+
+[[Unrolled]]
+deps = ["MacroTools", "Test"]
+git-tree-sha1 = "3c2a0b4fc6b48d777fb42fca38ba1d5f54f3e38d"
+uuid = "9602ed7d-8fef-5bc8-8597-8f21381861e8"
+version = "0.1.3"
 
 [[UnsafeArrays]]
 deps = ["Compat"]
