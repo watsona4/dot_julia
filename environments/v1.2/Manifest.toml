@@ -9865,6 +9865,12 @@ git-tree-sha1 = "db34af1019eee0086445b1a0452bf1b33776dbc8"
 uuid = "c5292f4c-5179-55e1-98c5-05642aab7184"
 version = "0.5.1"
 
+[[Retriever]]
+deps = ["PyCall"]
+git-tree-sha1 = "48b062174c6757e31fe263263282af4b107cec9b"
+uuid = "ed6da631-2423-57d3-8e4b-223f43b45c0c"
+version = "0.0.2"
+
 [[Retry]]
 deps = ["Test"]
 git-tree-sha1 = "56bfdfca33e70883e96fd398548ebd4d405b41fe"

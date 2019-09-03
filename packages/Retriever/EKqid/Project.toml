@@ -1,0 +1,19 @@
+name = "Retriever"
+uuid = "ed6da631-2423-57d3-8e4b-223f43b45c0c"
+
+authors = [
+    "ShivamNegi <shivamnegi2019@gmail.com>",
+    "Andrew Zhang <zhangcandrew@gmail.com>",
+    "henrykironde <henrykironde@gmail.com>",
+    "Ethan White <ethan@weecology.org>"
+]
+keywords = ["Data management", "Data packages", "GIS", "Data processing"]
+license = "MIT"
+desc = "Julia wrapper for the Data Retriever software."
+version = "0.0.2"
+
+[deps]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+
+[compat]
+julia = "1"
