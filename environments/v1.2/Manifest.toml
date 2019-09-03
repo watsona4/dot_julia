@@ -10003,6 +10003,12 @@ git-tree-sha1 = "f59b8fda8767ee10671d16c9e92865e9f70c9f2b"
 uuid = "16f6c422-f222-508b-b0da-15025777bca7"
 version = "0.3.0"
 
+[[RollingFunctions]]
+deps = ["LinearAlgebra", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "cdf9158377f81470b1b73c630d0853a3ec0c7445"
+uuid = "b0e4dd01-7b14-53d8-9b45-175a3e362653"
+version = "0.6.2"
+
 [[RomanNumerals]]
 deps = ["Compat", "Primes"]
 git-tree-sha1 = "06e621d4a9eda8d09eab8aade41e85cb93cadae9"
