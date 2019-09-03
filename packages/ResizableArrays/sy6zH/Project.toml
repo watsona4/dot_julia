@@ -1,0 +1,13 @@
+name = "ResizableArrays"
+uuid = "df514bf8-98b6-11e9-19f1-af1e340ea726"
+authors = ["Éric Thiébaut <eric.thiebaut@univ-lyon1.fr>"]
+version = "0.1.0"
+
+[compat]
+julia = "0.7, 1.0, 1.1, 1.2"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

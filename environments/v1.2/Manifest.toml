@@ -9842,6 +9842,11 @@ git-tree-sha1 = "8b4f6cf3c97530e1ba7177ad3bc2b134373da851"
 uuid = "ae5879a3-cd67-5da8-be7f-38c6eb64a37b"
 version = "0.6.0"
 
+[[ResizableArrays]]
+git-tree-sha1 = "fb25b77bc67fef92fb441495438edd114b3e0e57"
+uuid = "df514bf8-98b6-11e9-19f1-af1e340ea726"
+version = "0.1.0"
+
 [[Retry]]
 deps = ["Test"]
 git-tree-sha1 = "56bfdfca33e70883e96fd398548ebd4d405b41fe"
