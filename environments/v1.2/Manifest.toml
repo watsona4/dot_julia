@@ -9396,6 +9396,11 @@ version = "1.0.1"
 deps = ["InteractiveUtils", "Markdown", "Sockets"]
 uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 
+[[REPLCompletions]]
+git-tree-sha1 = "09d122ed607bc6d9ef1500b3d9781745ce247bd3"
+uuid = "3fc713dc-8771-5a7b-b2d9-79d2995ff451"
+version = "0.0.3"
+
 [[RLEVectors]]
 deps = ["DataFrames", "OrderedCollections", "RCall", "Statistics", "StatsBase"]
 git-tree-sha1 = "60a4db8966cdcd52936bfd1f42e5375237ebcbbb"
