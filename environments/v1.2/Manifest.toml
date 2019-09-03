@@ -9476,6 +9476,12 @@ git-tree-sha1 = "c13963a90c579b3bc241d858e4d063d778deeef5"
 uuid = "9ae346a0-3d16-5633-ad70-ddb60ab77eac"
 version = "0.1.1"
 
+[[RandomCorrelationMatrices]]
+deps = ["Distributions", "LinearAlgebra", "Printf", "Random", "Statistics", "Test"]
+git-tree-sha1 = "1c55ad20a86c08257e25019625517431ba639eb9"
+uuid = "2547b907-48b9-5396-a2af-edc57bff161c"
+version = "1.0.0"
+
 [[RandomNumbers]]
 deps = ["Random", "Requires"]
 git-tree-sha1 = "1417be19c15706c1584d01e32662eb640a4cc908"
