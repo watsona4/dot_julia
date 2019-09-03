@@ -9512,6 +9512,12 @@ git-tree-sha1 = "ee7a6e4864f25e4c4ea66f75e358dab48d551cd1"
 uuid = "3639840a-3b65-599e-a5e5-6439523e890e"
 version = "0.0.2"
 
+[[RandomizedLinAlg]]
+deps = ["LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "de93780c85c207586369522af7525aa3011b09c3"
+uuid = "0448d7d9-159c-5637-8537-fd72090fea46"
+version = "0.1.0"
+
 [[RangeArrays]]
 deps = ["Compat"]
 git-tree-sha1 = "d925adfd5b01cb46fde89dc9548d167b3b136f4a"
