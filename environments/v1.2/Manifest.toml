@@ -10184,6 +10184,12 @@ git-tree-sha1 = "de11179555c6363c5a61c4c94376db3498983734"
 uuid = "322a6be2-4ae8-5d68-aaf1-3e960788d1d9"
 version = "0.1.0"
 
+[[SatelliteToolbox]]
+deps = ["Crayons", "Dates", "DelimitedFiles", "Interpolations", "LinearAlgebra", "OptionalData", "Parameters", "PolynomialRoots", "Printf", "ReferenceFrameRotations", "RemoteFiles", "SparseArrays", "StaticArrays", "Statistics"]
+git-tree-sha1 = "c58e2f19e372db73cb2b048a81aa3f17a77f03b4"
+uuid = "6ac157d9-b43d-51bb-8fab-48bf53814f4a"
+version = "0.6.2"
+
 [[SauterSchwabQuadrature]]
 deps = ["CompScienceMeshes", "FastGaussQuadrature", "LinearAlgebra", "StaticArrays", "Test"]
 git-tree-sha1 = "04613230d106781615014703c3bee8bb62e934d0"
