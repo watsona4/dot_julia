@@ -9919,6 +9919,12 @@ git-tree-sha1 = "5c579018e9b6c1ce76c4dbc75a24037688b3692e"
 uuid = "79305c5b-9889-52e9-bdbd-56f883c71fe0"
 version = "0.0.1"
 
+[[RiemannTheta]]
+deps = ["Distances", "LinearAlgebra", "Random", "Roots", "SpecialFunctions", "StatsFuns", "Test"]
+git-tree-sha1 = "6c1feeafe75f76983c6f06f4807a8baa3913ffcc"
+uuid = "803aa692-84f0-5eed-9cc1-fbb46710dded"
+version = "0.1.0"
+
 [[RigidBodyDynamics]]
 deps = ["DocStringExtensions", "LightXML", "LinearAlgebra", "LoopThrottle", "Random", "Reexport", "Rotations", "SparseArrays", "StaticArrays", "TypeSortedCollections", "UnsafeArrays"]
 git-tree-sha1 = "8280c2e617f1872ab13bb9d077b83fa32b9659d4"
