@@ -9753,6 +9753,12 @@ git-tree-sha1 = "2b136c04f196f421635875687ae2b8b35517033f"
 uuid = "1d72914e-1fed-50e5-8d1f-642a1f6dcbc8"
 version = "0.2.0"
 
+[[ReinforcementLearningEnvironmentClassicControl]]
+deps = ["Compat", "Distributed", "GR", "ReinforcementLearningBase"]
+git-tree-sha1 = "7273ad9afefce8868e501d4a75858c1293ac3490"
+uuid = "2e05858d-61bb-58c4-9d37-747e7cb565b8"
+version = "0.2.0"
+
 [[Rematch]]
 deps = ["Compat", "MacroTools"]
 git-tree-sha1 = "3abde2b1c5d0f942b40700bebdc6c8cfa60c8b37"
