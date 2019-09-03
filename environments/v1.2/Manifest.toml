@@ -11213,6 +11213,12 @@ git-tree-sha1 = "5998faae8c6308acc25c25896562a1e66a3bb038"
 uuid = "9700d1a9-a7c8-5760-9816-a99fda30bb8f"
 version = "1.0.1"
 
+[[Strategems]]
+deps = ["Dates", "Indicators", "Pkg", "Random", "Temporal", "Test"]
+git-tree-sha1 = "ec2f648acfd5c3969bea4e685df64c98610e2e5e"
+uuid = "054b7d4e-9922-5ad3-8b46-7dbe695a681f"
+version = "0.2.0"
+
 [[Strided]]
 deps = ["LinearAlgebra", "TupleTools"]
 git-tree-sha1 = "1013add5a55fc7c48c19a54486869c7ff9240363"
