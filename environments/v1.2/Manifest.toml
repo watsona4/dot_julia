@@ -9907,6 +9907,12 @@ git-tree-sha1 = "44a36fadf916ce20ffb33fb33ff67c67404e55ac"
 uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
 version = "2.1.9"
 
+[[RiemannComplexNumbers]]
+deps = ["Test"]
+git-tree-sha1 = "7fb12cb850071ea748baa4983e3cf1da23a413f6"
+uuid = "3f3442c8-4998-5f9a-b6f6-804928b92bc1"
+version = "0.1.2"
+
 [[RigidBodyDynamics]]
 deps = ["DocStringExtensions", "LightXML", "LinearAlgebra", "LoopThrottle", "Random", "Reexport", "Rotations", "SparseArrays", "StaticArrays", "TypeSortedCollections", "UnsafeArrays"]
 git-tree-sha1 = "8280c2e617f1872ab13bb9d077b83fa32b9659d4"
