@@ -11297,6 +11297,12 @@ git-tree-sha1 = "af25e12c7e3d857285c0d30dae6fbedddca4ebbe"
 uuid = "34f15cae-5318-50c9-93d3-9feadd34e321"
 version = "0.1.0"
 
+[[StructuralInheritance]]
+deps = ["Test"]
+git-tree-sha1 = "e2e1a37657c7664bdda495a02a70a9d73956cde8"
+uuid = "eb3e9d2b-04dc-54b3-9584-49775b812a39"
+version = "0.2.4"
+
 [[SuiteSparse]]
 deps = ["Libdl", "LinearAlgebra", "Serialization", "SparseArrays"]
 uuid = "4607b0f0-06f3-5cda-b6b1-a6196a1729e9"
