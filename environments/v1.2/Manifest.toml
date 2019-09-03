@@ -11219,6 +11219,12 @@ git-tree-sha1 = "ec2f648acfd5c3969bea4e685df64c98610e2e5e"
 uuid = "054b7d4e-9922-5ad3-8b46-7dbe695a681f"
 version = "0.2.0"
 
+[[StratiGraphics]]
+deps = ["Distributions", "GeoStatsBase", "GeoStatsDevTools", "ImageFiltering", "Random", "RecipesBase"]
+git-tree-sha1 = "b006e31b905c7509ae7db8f753f5de8b620b6665"
+uuid = "135379e1-83be-5ae7-9e8e-29dade3dc6c7"
+version = "0.1.0"
+
 [[Strided]]
 deps = ["LinearAlgebra", "TupleTools"]
 git-tree-sha1 = "1013add5a55fc7c48c19a54486869c7ff9240363"
