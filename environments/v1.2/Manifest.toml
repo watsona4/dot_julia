@@ -11355,6 +11355,12 @@ git-tree-sha1 = "e0e93fc872f49b67d8b6ae18d613d9225da365a3"
 uuid = "c2e53296-7b14-11e9-1210-bddfa8111e1d"
 version = "0.3.2"
 
+[[SumOfSquares]]
+deps = ["Compat", "JuMP", "MultivariateMoments", "MultivariatePolynomials", "PolyJuMP", "Reexport", "SemialgebraicSets"]
+git-tree-sha1 = "1fc70861b9e54c8a005dd669b841821e26176b2f"
+uuid = "4b9e565b-77fc-50a5-a571-1244f986bda1"
+version = "0.2.1"
+
 [[Sundials]]
 deps = ["BinaryProvider", "DataStructures", "DiffEqBase", "Libdl", "LinearAlgebra", "Logging", "Reexport", "SparseArrays", "SuiteSparse"]
 git-tree-sha1 = "c068455576ce91cdbb9474967912b547cacbf50f"
