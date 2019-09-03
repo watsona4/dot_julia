@@ -1,0 +1,21 @@
+name = "SimpleCarModels"
+uuid = "83cf0ae4-8bfa-5275-b23c-08ca25417759"
+authors = ["Ed Schmerling <ednerd@gmail.com>"]
+version = "1.0.1"
+
+[deps]
+DifferentialDynamicsModels = "cb52cc87-d0c7-5933-bad1-08679d8b4c67"
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[compat]
+DifferentialDynamicsModels = "≥ 1.0.0"
+SpecialFunctions = "≥ 0.7.0"
+StaticArrays = "≥ 0.8.2"
+julia = "≥ 0.7.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
