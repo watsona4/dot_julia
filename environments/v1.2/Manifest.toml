@@ -10599,6 +10599,18 @@ git-tree-sha1 = "60d985b3254bb3f35413d5b84f9a1d71ab778520"
 uuid = "d5428e67-3037-59ba-9ab1-57a04f0a3b6a"
 version = "0.4.1"
 
+[[SimradEK60]]
+deps = ["SimradRaw", "Test"]
+git-tree-sha1 = "f20c0feaa4f47720be441d894c2fa4d970823d6c"
+uuid = "8e323af8-d215-5c39-b262-30cfc2fa9c48"
+version = "0.1.0"
+
+[[SimradRaw]]
+deps = ["Test"]
+git-tree-sha1 = "5c7d852f7fa30d111d90f1d90b3353947769b826"
+uuid = "83a1bcd9-a884-567d-b532-90bac4ae8d51"
+version = "0.1.0"
+
 [[SingularIntegralEquations]]
 deps = ["ApproxFun", "ApproxFunBase", "ApproxFunFourier", "ApproxFunOrthogonalPolynomials", "ApproxFunSingularities", "BandedMatrices", "BlockArrays", "BlockBandedMatrices", "DomainSets", "DualNumbers", "FastTransforms", "InfiniteArrays", "InteractiveUtils", "LinearAlgebra", "LowRankApprox", "RecipesBase", "SpecialFunctions", "Test"]
 git-tree-sha1 = "4c622c61c4430621f476bade701f071f32db006e"
