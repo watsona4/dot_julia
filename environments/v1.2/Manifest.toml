@@ -11361,6 +11361,12 @@ git-tree-sha1 = "1fc70861b9e54c8a005dd669b841821e26176b2f"
 uuid = "4b9e565b-77fc-50a5-a571-1244f986bda1"
 version = "0.2.1"
 
+[[SumProductNetworks]]
+deps = ["AxisArrays", "Distributions", "LinearAlgebra", "Printf", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns", "Test"]
+git-tree-sha1 = "1338d760b8a23844342ab72dd46804e0e8216806"
+uuid = "5f6e642e-680c-5a9c-a175-7c23ed4da89e"
+version = "0.1.2"
+
 [[Sundials]]
 deps = ["BinaryProvider", "DataStructures", "DiffEqBase", "Libdl", "LinearAlgebra", "Logging", "Reexport", "SparseArrays", "SuiteSparse"]
 git-tree-sha1 = "c068455576ce91cdbb9474967912b547cacbf50f"

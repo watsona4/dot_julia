@@ -1,0 +1,15 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+notifications:
+  email: false
+# uncomment the following lines to override the default test script
+#script:
+#  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#  - julia --check-bounds=yes -e 'Pkg.clone(pwd()); Pkg.build("SumProductNetworks"); Pkg.test("SumProductNetworks"; coverage=true)'
+after_success:
+  # push coverage results to Coveralls
+  - julia -e 'using Pkg; cd(Pkg.dir("SumProductNetworks")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(process_folder())'

@@ -1,0 +1,8 @@
+*.jl.cov
+*.jl.mem
+experiments
+*.data
+*.svg
+*.mat
+*.csv
+*.pdf
