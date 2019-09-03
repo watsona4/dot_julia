@@ -10839,6 +10839,12 @@ git-tree-sha1 = "c35eb0ffe21d0432803639ff952bdcddffab87d7"
 uuid = "0e9554e2-b38b-11e9-16d7-9d9abfec665a"
 version = "0.1.0"
 
+[[SpiceData]]
+deps = ["Printf", "Test"]
+git-tree-sha1 = "6f0c6ad521a1ad5e9435981c79cc43ec6bb38036"
+uuid = "8ca2a67e-f683-5b14-a319-732e1d1d8f2e"
+version = "0.3.1"
+
 [[SplitApplyCombine]]
 deps = ["Indexing", "Test"]
 git-tree-sha1 = "72eb364378c17e0f3dcde342b2953ad2bd55b5a1"
