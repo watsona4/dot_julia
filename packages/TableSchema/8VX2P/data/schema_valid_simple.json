@@ -1,0 +1,14 @@
+{
+    "fields": [
+        {
+            "name": "city",
+            "title": "City name",
+            "type": "string"
+        },
+        {
+            "name": "location",
+            "title": "Geocoordinate location",
+            "type": "geopoint"
+        }
+    ]
+}

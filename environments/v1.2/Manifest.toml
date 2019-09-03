@@ -11519,6 +11519,12 @@ git-tree-sha1 = "424ee42f873c37113b723cafed20731121c21978"
 uuid = "70df011a-6618-58d7-8e16-3cf9e384cb47"
 version = "0.4.0"
 
+[[TableSchema]]
+deps = ["Dates", "DelimitedFiles", "HTTP", "JSON", "Test"]
+git-tree-sha1 = "d9ab4cc1a245157d7273ac1b4b1c8536b45c6b71"
+uuid = "ffdd8e40-dc34-5919-9e87-c8f182d9ad02"
+version = "0.1.1"
+
 [[TableShowUtils]]
 deps = ["DataValues", "Dates", "JSON", "Markdown", "Test"]
 git-tree-sha1 = "14c54e1e96431fb87f0d2f5983f090f1b9d06457"
