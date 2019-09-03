@@ -1,0 +1,10 @@
+test/*.png
+
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+/docs/build/
+/docs/Manifest.toml
+
+.DS_Store

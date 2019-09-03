@@ -9212,6 +9212,12 @@ git-tree-sha1 = "e520f51945b23a74d760952b7e1eb821f02f1568"
 uuid = "297e508c-b2a7-11e8-1524-5dccae6124f6"
 version = "0.2.0"
 
+[[QRCode]]
+deps = ["Compat", "FileIO", "ImageMagick", "Images"]
+git-tree-sha1 = "4ea95ffa11cdb38bba2602990efc6cc7958f429f"
+uuid = "6cfbe66a-a49d-11e9-1842-750d329cfcbb"
+version = "0.1.0"
+
 [[QuadGK]]
 deps = ["DataStructures", "LinearAlgebra"]
 git-tree-sha1 = "438630b843c210b375b2a246329200c113acc61b"
