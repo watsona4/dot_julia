@@ -10304,6 +10304,12 @@ git-tree-sha1 = "a42f64081de23ca6a1cb4834a930f5197a1b9602"
 uuid = "b372bb87-02dd-52bb-bcf6-c30dd83fd342"
 version = "0.3.0"
 
+[[SeisNoise]]
+deps = ["DSP", "DataFrames", "Dates", "Distributed", "FFTW", "GLM", "Glob", "Interpolations", "JLD2", "LightXML", "LinearAlgebra", "Plots", "SeisIO", "Statistics", "Test"]
+git-tree-sha1 = "835167f158b55893c92746312da1afa9eb1a6ad3"
+uuid = "8cc7c3c0-6b5d-11e9-39fe-c9cd0236e08b"
+version = "0.2.0"
+
 [[SemialgebraicSets]]
 deps = ["LinearAlgebra", "MultivariatePolynomials", "Random"]
 git-tree-sha1 = "8cc4a0ee2a4d616bfb5116b43f7e032b0dccddc9"
