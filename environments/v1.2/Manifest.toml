@@ -10911,6 +10911,12 @@ git-tree-sha1 = "bfaebe19ada44a52a6c797d48473f1bb22fd0853"
 uuid = "9713c8f3-0168-54b5-986e-22c526958f39"
 version = "0.2.0"
 
+[[StanMCMCChain]]
+deps = ["CmdStan", "JLD", "MCMCChain", "Plots", "Reexport", "Statistics", "Test"]
+git-tree-sha1 = "89923f35770072260c53ff2cfa593dc31a6626cf"
+uuid = "8f1571ae-b3a1-52af-8ab1-32258739efdb"
+version = "4.1.0"
+
 [[StanRun]]
 deps = ["ArgCheck", "Distributed", "DocStringExtensions", "Parameters", "StanDump"]
 git-tree-sha1 = "da0cdcdc28d51a8b3215ca12fcd12ed3372228d3"
