@@ -10196,6 +10196,12 @@ git-tree-sha1 = "04613230d106781615014703c3bee8bb62e934d0"
 uuid = "535c7bfe-2023-5c1d-b712-654ef9d93a38"
 version = "2.1.0"
 
+[[ScHoLP]]
+deps = ["Arpack", "Combinatorics", "DataStructures", "DelimitedFiles", "Krylov", "LinearAlgebra", "LinearOperators", "Printf", "Random", "SparseArrays", "Statistics", "StatsBase", "Test"]
+git-tree-sha1 = "ea50e1081966690ed9cb357d211550eb9d1918c9"
+uuid = "c786d6c3-4fbc-59fc-968c-e848efb65d2d"
+version = "0.1.1"
+
 [[SchumakerSpline]]
 deps = ["Dates", "Plots", "Test"]
 git-tree-sha1 = "de6126c4925640ed19c87f709bd91d21b24c3519"
