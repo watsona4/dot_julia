@@ -10941,6 +10941,12 @@ git-tree-sha1 = "da0cdcdc28d51a8b3215ca12fcd12ed3372228d3"
 uuid = "d49c3b98-12bb-537a-8c40-37c13654c7f4"
 version = "0.2.1"
 
+[[StanSample]]
+deps = ["DataFrames", "DelimitedFiles", "Distributed", "DocStringExtensions", "MCMCChains", "NamedTupleTools", "Parameters", "Reexport", "StanBase", "StanDump", "StanRun", "StanSamples", "Unicode"]
+git-tree-sha1 = "e061f1df533aa3d38c32c5b6928bf48391eff477"
+uuid = "c1514b29-d3a0-5178-b312-660c88baa699"
+version = "0.0.1"
+
 [[StanSamples]]
 deps = ["ArgCheck", "DocStringExtensions", "ElasticArrays"]
 git-tree-sha1 = "569e6236a9d49ae46c525b542491f324eca7a616"
