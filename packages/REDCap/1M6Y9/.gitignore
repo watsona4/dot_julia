@@ -1,0 +1,11 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*.txt
+*.csv
+*.json
+*.xml
+*.pdf
+docs/site/
+docs/build/
+*.toml

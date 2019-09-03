@@ -9386,6 +9386,12 @@ git-tree-sha1 = "4b0168db198e3692d7af8dc872c355fceea8f99a"
 uuid = "42063a9e-4db3-11e9-2c9c-956b066f8181"
 version = "0.1.0"
 
+[[REDCap]]
+deps = ["CSV", "DataFrames", "DataStructures", "HTTP", "JSON", "LightXML", "Test"]
+git-tree-sha1 = "813754a43a895a710c681ce3710e62b2d65df7df"
+uuid = "ba918724-fbf9-5e4a-a61c-87e95654e718"
+version = "1.0.1"
+
 [[REPL]]
 deps = ["InteractiveUtils", "Markdown", "Sockets"]
 uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"

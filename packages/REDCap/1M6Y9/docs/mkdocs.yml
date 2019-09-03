@@ -1,0 +1,16 @@
+site_name: REDCap.jl
+site_author: Cory Cothrum
+repo_url: https://github.com/bcbi/REDCap.jl
+site_description: Documentation for REDCap.jl
+site_author: bcbi
+docs_dir: 'build'
+extra_css:
+  - assets/Documenter.css
+pages:
+  - Home: index.md
+  - Export: export.md
+  - Import: import.md
+  - Deletion: delete.md
+  - Utilities: utils.md
+  - Examples: examples.md
+theme: material
