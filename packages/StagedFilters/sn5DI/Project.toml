@@ -1,0 +1,21 @@
+name = "StagedFilters"
+uuid = "c9c6d8d2-eaa5-11e8-3089-811798346984"
+authors = ["miguel raz <miguelraz@ciencias.unam.mx>"]
+version = "0.1"
+
+[compat]
+julia = "1.1"
+
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+Debugger = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[extras]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "PyCall", "BenchmarkTools"]
