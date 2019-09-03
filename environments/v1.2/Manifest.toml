@@ -10352,6 +10352,12 @@ git-tree-sha1 = "67a6e0f9c1958b73aaf1b31df91220b95c9440f9"
 uuid = "0dbe55a1-025c-5c9b-ab45-55492d058cfb"
 version = "0.3.0"
 
+[[SeparatingAxisTheorem2D]]
+deps = ["CoordinateTransformations", "LinearAlgebra", "RecipesBase", "StaticArrays"]
+git-tree-sha1 = "435c69e85bc4847e8d6c6bba76b74d9487bb5512"
+uuid = "33f35c42-577e-5c66-8569-bbf1771cbf32"
+version = "1.0.1"
+
 [[SequentialMonteCarlo]]
 deps = ["Compat", "NonUniformRandomVariateGeneration", "RNGPool"]
 git-tree-sha1 = "beb99a8b9ef00e428fc6ea2767360a1072beaa3b"
