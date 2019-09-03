@@ -11403,6 +11403,12 @@ git-tree-sha1 = "52347054ca36bd0db4a3fa08c85f87462c2a3842"
 uuid = "58abba7c-3f8b-5571-af36-87c463197a71"
 version = "0.1.1"
 
+[[SurrogateModelOptim]]
+deps = ["BlackBoxOptim", "Distances", "Distributed", "LatinHypercubeSampling", "LinearAlgebra", "NearestNeighbors", "Parameters", "Printf", "ScatteredInterpolation", "StaticArrays", "Statistics", "StatsBase"]
+git-tree-sha1 = "85505f827a3191833228f01b8c0771e6926ca7f9"
+uuid = "dc3f66f6-feed-11e8-2006-85573fddfdbc"
+version = "0.3.1"
+
 [[Swagger]]
 deps = ["Dates", "HTTP", "JSON", "MbedTLS"]
 git-tree-sha1 = "a10bdc6919751ff88b3cd0f840e28d6e0b0f6671"
