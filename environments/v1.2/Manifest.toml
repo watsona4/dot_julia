@@ -10491,6 +10491,12 @@ git-tree-sha1 = "dab78d468cbff62d0b94aa89dcbdd62d87030cae"
 uuid = "05bca326-078c-5bf0-a5bf-ce7c7982d7fd"
 version = "0.4.0"
 
+[[SimpleDifferentialOperators]]
+deps = ["BandedMatrices", "BlockBandedMatrices", "LazyArrays", "LinearAlgebra", "Parameters", "SparseArrays"]
+git-tree-sha1 = "6fa87703d4bff23a469780363c3a32d49e25e034"
+uuid = "7ccca996-40d6-5c2f-be7f-4eb2934af9c4"
+version = "0.6.1"
+
 [[SimpleDrawing]]
 deps = ["LinearAlgebra", "Plots", "Test"]
 git-tree-sha1 = "7948f674a788281de55d3f27e0e5cda88fb9b9c4"
