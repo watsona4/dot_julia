@@ -10899,6 +10899,12 @@ git-tree-sha1 = "f9966e0295c1099d65ab8ef8ea0a0e2abc656811"
 uuid = "80e77ffc-c35e-544b-8e57-5accc6d0de25"
 version = "4.0.1"
 
+[[StanDiagnose]]
+deps = ["BinDeps", "CSV", "DataFrames", "DelimitedFiles", "Distributed", "DocStringExtensions", "Documenter", "MCMCChains", "NamedTupleTools", "Parameters", "Random", "Reexport", "StanBase", "StanDump", "StanRun", "StanSamples", "Statistics", "Test", "Unicode"]
+git-tree-sha1 = "72deed1beca583515531af33d776d3135d87aa34"
+uuid = "fb13fc95-9a72-5e81-90ef-432a29d7f4c2"
+version = "0.1.0"
+
 [[StanDump]]
 deps = ["ArgCheck", "DocStringExtensions"]
 git-tree-sha1 = "bfaebe19ada44a52a6c797d48473f1bb22fd0853"
