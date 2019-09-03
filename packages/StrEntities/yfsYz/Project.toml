@@ -1,0 +1,32 @@
+name = "StrEntities"
+desc = "Extension for StrLiterals, adds support for entities in formatted strings"
+authors = ["ScottPJones <scottjones@alum.mit.edu>"]
+keywords = ["Strings", "Literals", "Entities", "Unicode", "HTML", "LaTeX", "Emoji"]
+license = "MIT"
+uuid = "42b7a45b-8021-5b99-aff5-7432580bee1c"
+version = "1.0.0"
+
+[deps]
+ModuleInterfaceTools = "5cb8414e-7aab-5a03-a681-351269c074bf"
+StrTables            = "9700d1a9-a7c8-5760-9816-a99fda30bb8f" # ekt5t6nt8g0cqhjb
+LaTeX_Entities       = "9927f19a-46ce-5bdd-a20a-f46a78b61e3d" # ok2sdq4u5xwlc6b0
+Emoji_Entities       = "fd8f23de-bd2f-5c75-921c-0c9ab51355f5" # 4p6o3reehca95put
+HTML_Entities        = "7693890a-d069-55fe-a829-b4a6d304f0ee" # xp05kd5mamt92yhj
+Unicode_Entities     = "a8aa15d3-c567-5e9f-b6cc-4b0f97f09cf7" # c1luci97ry8fxdt7
+StrLiterals          = "68059f60-971f-57ff-a2d0-18e7de9ccc84"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "^1.0.0"
+ModuleInterfaceTools = "≥ 1.0.0"
+Emoji_Entities = "≥ 1.0.0"
+LaTeX_Entities = "≥ 1.0.0"
+StrLiterals = "≥ 1.0.0"
+HTML_Entities = "≥ 1.0.0"
+StrTables = "≥ 1.0.0"
+Unicode_Entities = "≥ 1.0.0"

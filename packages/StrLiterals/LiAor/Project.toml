@@ -1,0 +1,20 @@
+name = "StrLiterals"
+uuid = "68059f60-971f-57ff-a2d0-18e7de9ccc84"
+keywords = ["Strings", "Literals"]
+license = "MIT"
+desc = "Adds Swift-style string literal interpolation, extensible framework"
+authors = ["ScottPJones <scottjones@alum.mit.edu>"]
+version = "1.0.0"
+
+[deps]
+ModuleInterfaceTools = "5cb8414e-7aab-5a03-a681-351269c074bf"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
+
+[compat]
+julia = "^1.0.0"
+ModuleInterfaceTools = "≥ 1.0.0"
