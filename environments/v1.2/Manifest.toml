@@ -10746,6 +10746,12 @@ git-tree-sha1 = "4bff1618d36fec63efa89329ebf4fb686f2e7b16"
 uuid = "07e3d4f1-5dc2-5a3a-9c19-e1965b76eff9"
 version = "0.2.0"
 
+[[Soss]]
+deps = ["DataFrames", "DataStructures", "DataValueInterfaces", "Distributions", "DynamicHMC", "Flux", "ForwardDiff", "GR", "Graphs", "IterTools", "IteratorInterfaceExtensions", "LaTeXStrings", "Lazy", "LightGraphs", "LogDensityProblems", "LowLevelParticleFilters", "MCMCDiagnostics", "MLStyle", "MacroTools", "MetaGraphs", "MonteCarloMeasurements", "NLSolversBase", "NamedTupleTools", "Optim", "PDMats", "Parameters", "Plots", "PositiveFactorizations", "PyCall", "Rebugger", "Reexport", "Requires", "ResumableFunctions", "ReverseDiff", "Revise", "SimpleGraphs", "SimplePartitions", "SimplePosets", "Sobol", "StaticArrays", "Statistics", "StatsBase", "StatsFuns", "SymPy", "TableTraits", "TikzGraphs", "TikzPictures", "Tokenize", "Traceur", "TransformVariables", "Zygote"]
+git-tree-sha1 = "2eaa2dde2c6d29b6598af13a9554c3bf15fc240d"
+uuid = "8ce77f84-9b61-11e8-39ff-d17a774bf41c"
+version = "0.1.0"
+
 [[SparseArrays]]
 deps = ["LinearAlgebra", "Random"]
 uuid = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
