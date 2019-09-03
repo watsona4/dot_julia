@@ -9065,6 +9065,12 @@ git-tree-sha1 = "956eb8b83eb9bbaee6307c55052288751838ee73"
 uuid = "c46f51b8-102a-5cf2-8d2c-8597cb0e0da7"
 version = "0.4.1"
 
+[[ProgressBars]]
+deps = ["Printf", "Test"]
+git-tree-sha1 = "9338e75daba1643fa4d69e4e3b3f7f6fb2d76ab9"
+uuid = "49802e3a-d2f1-5c88-81d8-b72133a6f568"
+version = "0.2.0"
+
 [[ProgressMeter]]
 deps = ["Distributed", "Printf"]
 git-tree-sha1 = "0f08e0e74e5b160ca20d3962a2620038b75881c7"
