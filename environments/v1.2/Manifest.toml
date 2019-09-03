@@ -10515,6 +10515,12 @@ git-tree-sha1 = "9122903abd8be64a637f39f131a3b08de400edeb"
 uuid = "26dc7fb7-0d88-57af-8ff4-0a7e14249ddd"
 version = "0.0.1"
 
+[[SimpleGraphAlgorithms]]
+deps = ["Cbc", "JuMP", "LinearAlgebra", "Polynomials", "SimpleGraphs", "SimplePartitions", "Test"]
+git-tree-sha1 = "ba399e663e84c3c1664e2423d767ef5778f96b92"
+uuid = "41400c72-0c58-5c16-8579-4ecbce768449"
+version = "0.4.0"
+
 [[SimpleGraphs]]
 deps = ["AbstractLattices", "DataStructures", "IterTools", "LightXML", "LinearAlgebra", "Optim", "Polynomials", "Primes", "Random", "SimplePartitions", "SimpleRandom", "SparseArrays", "Statistics", "Test"]
 git-tree-sha1 = "fc3d2d51625cd87a88da54c0c6a433e8dc64eaa3"
