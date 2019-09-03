@@ -9101,6 +9101,11 @@ git-tree-sha1 = "cc57b8d2d37f51f9bdfb440ba933c75764e6e171"
 uuid = "3349acd9-ac6a-5e09-bcdb-63829b23a429"
 version = "0.7.0"
 
+[[ProtoStructs]]
+git-tree-sha1 = "9633267ed8dab1bbde4ba5b2381ede484d5e0f85"
+uuid = "437b6fc4-8e8e-11e9-3fa1-ad391e66c018"
+version = "0.1.0"
+
 [[ProximalOperators]]
 deps = ["IterativeSolvers", "LinearAlgebra", "OSQP", "SparseArrays", "SuiteSparse", "TSVD"]
 git-tree-sha1 = "30d91695a36c5b69a8634015a8d57da904637b1a"
