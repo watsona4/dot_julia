@@ -10617,6 +10617,12 @@ git-tree-sha1 = "5c7d852f7fa30d111d90f1d90b3353947769b826"
 uuid = "83a1bcd9-a884-567d-b532-90bac4ae8d51"
 version = "0.1.0"
 
+[[SingleFloats]]
+deps = ["LinearAlgebra", "Random"]
+git-tree-sha1 = "38e95e2f9cc87958dd9a2acc244376c806033e6c"
+uuid = "2b6d1eac-7baa-5078-8adc-e6a3e659f14f"
+version = "0.1.4"
+
 [[SingularIntegralEquations]]
 deps = ["ApproxFun", "ApproxFunBase", "ApproxFunFourier", "ApproxFunOrthogonalPolynomials", "ApproxFunSingularities", "BandedMatrices", "BlockArrays", "BlockBandedMatrices", "DomainSets", "DualNumbers", "FastTransforms", "InfiniteArrays", "InteractiveUtils", "LinearAlgebra", "LowRankApprox", "RecipesBase", "SpecialFunctions", "Test"]
 git-tree-sha1 = "4c622c61c4430621f476bade701f071f32db006e"
