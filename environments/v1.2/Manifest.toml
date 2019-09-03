@@ -8988,6 +8988,11 @@ git-tree-sha1 = "2751950437bed8837bdd3d3a97385f181e32c226"
 uuid = "af69fa37-3177-5a40-98ee-561f696e4fcd"
 version = "0.2.2"
 
+[[PredictMDAPI]]
+git-tree-sha1 = "c044de87ff6ba1b07fa490cb700971d3d325e6d7"
+uuid = "df4d2c64-811c-11e9-2782-c5e8d6893c98"
+version = "0.2.0"
+
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
 git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
