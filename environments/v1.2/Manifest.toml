@@ -11549,6 +11549,12 @@ git-tree-sha1 = "47d88381539854607b3f91a665136a997fef9c48"
 uuid = "40c74d1a-b44c-5b06-a7c1-6cbea58ea978"
 version = "0.4.0"
 
+[[TableWidgets]]
+deps = ["CSSUtil", "Compat", "DataStructures", "InteractBase", "InteractBulma", "IterTools", "MacroTools", "Observables", "Tables", "Test", "WebIO", "Widgets"]
+git-tree-sha1 = "22671a580945577c21044293fd4b6a5658648ac5"
+uuid = "b97313a1-7d5f-5481-80a2-59ff1cf30f79"
+version = "0.0.3"
+
 [[Tables]]
 deps = ["DataAPI", "DataValueInterfaces", "IteratorInterfaceExtensions", "LinearAlgebra", "TableTraits", "Test"]
 git-tree-sha1 = "aaed7b3b00248ff6a794375ad6adf30f30ca5591"
