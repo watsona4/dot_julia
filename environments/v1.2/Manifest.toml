@@ -9290,6 +9290,12 @@ git-tree-sha1 = "813432448a8f06a1316943c3456dcf043afacd96"
 uuid = "dca85d43-d64c-5e67-8c65-017450d5d020"
 version = "0.6.0"
 
+[[Quaternions]]
+deps = ["DualNumbers", "LinearAlgebra"]
+git-tree-sha1 = "1bf7b2a5e397dec14eef56702462406acbfece04"
+uuid = "94ee1d12-ae83-5a48-8b1c-48b8ff168ae0"
+version = "0.4.1"
+
 [[RCall]]
 deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "Libdl", "Missings", "REPL", "Random", "Requires", "StatsModels", "WinReg"]
 git-tree-sha1 = "828332205a09377da6a8ebd1e615b11a22f8def6"
