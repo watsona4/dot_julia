@@ -10653,6 +10653,12 @@ git-tree-sha1 = "b15156e287a37aaa7f1ccb75de52793b6297a1ef"
 uuid = "da235a08-baf4-11e9-2387-6f19a530ddff"
 version = "0.1.0"
 
+[[SmoothingSplines]]
+deps = ["LinearAlgebra", "Random", "Reexport", "StatsBase", "Test"]
+git-tree-sha1 = "9e47150ea38107ba762fb26bd5c2a000b27ecf94"
+uuid = "102930c3-cf33-599f-b3b1-9a29a5acab30"
+version = "0.2.1"
+
 [[Snappy]]
 deps = ["BinaryProvider", "Libdl", "Random", "Test"]
 git-tree-sha1 = "25620a91907972a05863941d6028791c2613888e"
