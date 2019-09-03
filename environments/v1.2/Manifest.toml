@@ -10704,6 +10704,12 @@ git-tree-sha1 = "bc0196211991b9a6c5423b37f894961e051ca53b"
 uuid = "00bf1f32-23ad-54cc-bf6e-3216db8a43a2"
 version = "0.2.0"
 
+[[SolverBenchmark]]
+deps = ["BenchmarkProfiles", "BenchmarkTools", "DataFrames", "GitHub", "JSON", "LaTeXTabulars", "LibGit2", "LinearAlgebra", "PkgBenchmark", "Plots", "PrettyTables", "Printf", "Random", "Test"]
+git-tree-sha1 = "eaf8574469e89c4d9d88e4ac0728e01fcaf6ed6d"
+uuid = "581a75fa-a23a-52d0-a590-d6201de2218a"
+version = "0.1.0"
+
 [[SolverTools]]
 deps = ["DataFrames", "LinearAlgebra", "LinearOperators", "Logging", "NLPModels", "Printf"]
 git-tree-sha1 = "3c047da6c1673a5b1b41df5999b33b011d15cb32"
