@@ -8971,10 +8971,10 @@ uuid = "bcd98974-b02a-5e2f-9ee0-a103f5c450dd"
 version = "0.3.2"
 
 [[PowerSystemsUnits]]
-deps = ["Compat", "Missings", "Unitful"]
-git-tree-sha1 = "7cd8c91af0de4b7ce4881e85dea4110327538ae6"
+deps = ["Dates", "Statistics", "Unitful"]
+git-tree-sha1 = "aa9d83c87359c6d913e27fd893aba69941b012fe"
 uuid = "c279aad7-7dc9-58d3-995b-109d3f5deb94"
-version = "0.1.0"
+version = "0.2.0"
 
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
@@ -10178,10 +10178,10 @@ uuid = "99c6138d-4661-531e-8606-19bf1ec96588"
 version = "0.1.0"
 
 [[Unitful]]
-deps = ["LinearAlgebra", "Random"]
-git-tree-sha1 = "75efb362655883381d03004ca53a3a95facb9a54"
+deps = ["LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "94736a38908c6b43d22e1abffc4f72ab19dabbc1"
 uuid = "1986cc42-f94f-5a68-af5c-568840ba703d"
-version = "0.16.0"
+version = "0.15.0"
 
 [[UnitfulAngles]]
 deps = ["Dates", "Test", "Unitful"]
