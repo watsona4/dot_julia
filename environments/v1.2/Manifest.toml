@@ -9242,6 +9242,12 @@ git-tree-sha1 = "63f16ae8a4c67adc6fe30b0aaf654686e174f25a"
 uuid = "fcd29c91-0bd7-5a09-975d-7ac3f643a60c"
 version = "0.16.1"
 
+[[Quante]]
+deps = ["BenchmarkTools", "Distributed", "LinearAlgebra", "SharedArrays", "SpecialFunctions", "Test"]
+git-tree-sha1 = "5f57a4cb393ad0f8f23209c353daacc2b52915f0"
+uuid = "62e6779b-560f-53ed-829f-06ad43eb5710"
+version = "0.1.0"
+
 [[QuantizedArrays]]
 deps = ["Clustering", "Distances", "InteractiveUtils", "LinearAlgebra", "StatsBase"]
 git-tree-sha1 = "5e35f1b274aacb1c6643afc2b8e6d0371b2c3945"
