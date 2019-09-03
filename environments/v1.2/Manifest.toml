@@ -10953,6 +10953,12 @@ git-tree-sha1 = "569e6236a9d49ae46c525b542491f324eca7a616"
 uuid = "52d0d7a9-b304-5f31-a727-b234d0b606ff"
 version = "0.1.0"
 
+[[StanVariational]]
+deps = ["DataFrames", "DelimitedFiles", "Distributed", "DocStringExtensions", "MCMCChains", "NamedTupleTools", "Parameters", "Reexport", "StanBase", "StanDump", "StanRun", "StanSamples", "Unicode"]
+git-tree-sha1 = "45f33528808e9e009f8c4007b585290f6f2dcc4f"
+uuid = "6ede68ce-8466-5085-8a79-4c4de3d9cf4a"
+version = "0.1.0"
+
 [[StatFiles]]
 deps = ["DataValues", "FileIO", "IterableTables", "IteratorInterfaceExtensions", "ReadStat", "TableShowUtils", "TableTraits", "TableTraitsUtils", "Test"]
 git-tree-sha1 = "28466ea10caec61c476a262172319d2edf248187"
