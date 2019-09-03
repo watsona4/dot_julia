@@ -9206,6 +9206,12 @@ git-tree-sha1 = "5e4e47145e9aec0a6362114cf130373f0bccdc0c"
 uuid = "c947b005-6f94-5690-8353-b90d48bfe02f"
 version = "0.3.1"
 
+[[QPDAS]]
+deps = ["LinearAlgebra", "Printf", "Random", "SparseArrays"]
+git-tree-sha1 = "e520f51945b23a74d760952b7e1eb821f02f1568"
+uuid = "297e508c-b2a7-11e8-1524-5dccae6124f6"
+version = "0.2.0"
+
 [[QuadGK]]
 deps = ["DataStructures", "LinearAlgebra"]
 git-tree-sha1 = "438630b843c210b375b2a246329200c113acc61b"
