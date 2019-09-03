@@ -9437,6 +9437,12 @@ git-tree-sha1 = "b00b3c8f79605797c8430cfa4e349a42bc62d61a"
 uuid = "ff70551f-00bc-5e1a-85c4-e17d0b71e9c9"
 version = "2.0.0"
 
+[[RSCG]]
+deps = ["LinearAlgebra", "Requires", "SparseArrays", "Test"]
+git-tree-sha1 = "ff27dca3ac04faeb1d9d16b0f93ed5b22ab16058"
+uuid = "4e41d8b6-e438-5f9c-8b78-0c738ca8d379"
+version = "0.1.1"
+
 [[Random]]
 deps = ["Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
