@@ -9606,6 +9606,12 @@ git-tree-sha1 = "3322739df15420207d67584fd477b251f5747d88"
 uuid = "4491297b-8966-5840-8cb9-b189d60f3398"
 version = "1.0.1"
 
+[[Rebugger]]
+deps = ["CodeTracking", "HeaderREPLs", "InteractiveUtils", "JuliaInterpreter", "REPL", "Revise", "UUIDs"]
+git-tree-sha1 = "1810b4692fafb29716e4b9fe0fcf4ede878e5c61"
+uuid = "ee283ea6-eecd-56e3-beb3-83eb4d3c31e9"
+version = "0.3.2"
+
 [[RecipesBase]]
 git-tree-sha1 = "7bdce29bc9b2f5660a6e5e64d64d91ec941f6aa2"
 uuid = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
