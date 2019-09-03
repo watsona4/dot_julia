@@ -10370,6 +10370,12 @@ git-tree-sha1 = "b7c458aff66e7b9d9bd3c987a535b909ad2d6cd9"
 uuid = "42699a24-3520-5f41-a549-6a478ed667c2"
 version = "0.2.0"
 
+[[SerialPorts]]
+deps = ["PyCall", "Test"]
+git-tree-sha1 = "48f32012e1c520084a2703c1f07c131076c818a1"
+uuid = "5d0f9de7-4c7f-54f5-bec2-484e8c04014e"
+version = "0.2.1"
+
 [[Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
 
