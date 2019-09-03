@@ -8952,6 +8952,12 @@ git-tree-sha1 = "dd2f3541ac322aa5c77f4cc1fc82b59e2df6a8b2"
 uuid = "cc46b21f-1b17-51c2-b642-af74c3d3a8be"
 version = "2.2.0"
 
+[[PowerModels]]
+deps = ["InfrastructureModels", "JSON", "JuMP", "LinearAlgebra", "Memento", "SparseArrays"]
+git-tree-sha1 = "ce2034b3474571552c4dd67df75084c626acad4e"
+uuid = "c36e90e8-916a-50a6-bd94-075b64ef4655"
+version = "0.9.8"
+
 [[PrettyPrinting]]
 deps = ["Markdown", "Pkg"]
 git-tree-sha1 = "d81528303e2715c32706d4519b2ddf0550805533"
