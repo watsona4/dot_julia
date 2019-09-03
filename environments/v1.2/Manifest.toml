@@ -8964,6 +8964,12 @@ git-tree-sha1 = "ad8ca8c0cf62fd7694563c7ff7417a4d8d4354c4"
 uuid = "6e471128-d39d-5672-b02b-a742bd1b77ed"
 version = "0.1.12"
 
+[[PowerSystems]]
+deps = ["AxisArrays", "CSV", "DataFrames", "Dates", "InteractiveUtils", "JSON", "LinearAlgebra", "Logging", "SparseArrays", "TimeSeries", "YAML"]
+git-tree-sha1 = "5f1b0deb8344ff8ddc379525a833651bd4db2b37"
+uuid = "bcd98974-b02a-5e2f-9ee0-a103f5c450dd"
+version = "0.3.2"
+
 [[PowerSystemsUnits]]
 deps = ["Compat", "Missings", "Unitful"]
 git-tree-sha1 = "7cd8c91af0de4b7ce4881e85dea4110327538ae6"
