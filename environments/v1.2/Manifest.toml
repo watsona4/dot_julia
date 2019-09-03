@@ -9380,6 +9380,12 @@ git-tree-sha1 = "4d93a52b94397bf0a9477d04e7a151a688672695"
 uuid = "ce6b1742-4840-55fa-b093-852dadbb1d8b"
 version = "0.6.1"
 
+[[RDates]]
+deps = ["Compat", "Dates", "ParserCombinator"]
+git-tree-sha1 = "4b0168db198e3692d7af8dc872c355fceea8f99a"
+uuid = "42063a9e-4db3-11e9-2c9c-956b066f8181"
+version = "0.1.0"
+
 [[REPL]]
 deps = ["InteractiveUtils", "Markdown", "Sockets"]
 uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
