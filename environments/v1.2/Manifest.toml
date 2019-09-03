@@ -10409,6 +10409,12 @@ git-tree-sha1 = "b473290218a0087e1f2a8c62c0acc646fb4053d2"
 uuid = "8e980c4a-a4fe-5da2-b3a7-4b4b0353a2f4"
 version = "0.5.0"
 
+[[ShapesOfVariables]]
+deps = ["ArraysOfArrays", "ElasticArrays", "FillArrays", "MacroTools", "TypedTables"]
+git-tree-sha1 = "5f07a25e62a3aa6c2239755ae7fb9f186f61d4bf"
+uuid = "b3480ff6-a2af-506e-a6b8-61d160ca6532"
+version = "0.2.0"
+
 [[SharedArrays]]
 deps = ["Distributed", "Mmap", "Random", "Serialization"]
 uuid = "1a1011a3-84de-559e-8e89-a11a2f7dc383"
