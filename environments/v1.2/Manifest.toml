@@ -11031,6 +11031,11 @@ git-tree-sha1 = "fe8eeadf66ef400975adb68c4f50aeb1897c4959"
 uuid = "b3cc710f-9c33-5bdb-a03d-a94903873e97"
 version = "0.2.2"
 
+[[StaticMaps]]
+git-tree-sha1 = "d10c835e4012a5cd5a7648317555228d2a2db477"
+uuid = "822ac802-650b-11e9-0ffa-69fdfb5ea484"
+version = "0.1.0"
+
 [[StaticPolynomials]]
 deps = ["LinearAlgebra", "MultivariatePolynomials", "StaticArrays"]
 git-tree-sha1 = "1288c8ab6b7a749ec29e441fcd851c46197cb2a3"
