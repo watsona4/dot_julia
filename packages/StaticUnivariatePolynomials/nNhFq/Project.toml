@@ -1,0 +1,14 @@
+name = "StaticUnivariatePolynomials"
+uuid = "6f584044-cad5-5b68-a429-1e244a824f76"
+authors = ["Twan Koolen <koolen.twan@gmail.com>"]
+version = "0.6.0"
+
+[compat]
+julia = "1"
+
+[extras]
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "ForwardDiff"]
