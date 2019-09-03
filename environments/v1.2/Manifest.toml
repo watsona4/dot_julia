@@ -9112,6 +9112,12 @@ git-tree-sha1 = "5e413d8afe4ef5ccc35595d521579131593cfa96"
 uuid = "65e78d25-6039-50a4-9445-38022e3d2eb3"
 version = "0.2.0"
 
+[[ProximalAlgorithms]]
+deps = ["LinearAlgebra", "Printf", "ProximalOperators"]
+git-tree-sha1 = "133ad5c228336cd97bdb2dc4fd4309d1cf8b80d2"
+uuid = "140ffc9f-1907-541a-a177-7475e0a401e9"
+version = "0.3.0"
+
 [[ProximalOperators]]
 deps = ["IterativeSolvers", "LinearAlgebra", "OSQP", "SparseArrays", "SuiteSparse", "TSVD"]
 git-tree-sha1 = "30d91695a36c5b69a8634015a8d57da904637b1a"
