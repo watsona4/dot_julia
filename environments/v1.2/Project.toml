@@ -1635,4 +1635,5 @@ ReinforcementLearningEnvironmentClassicControl = "2e05858d-61bb-58c4-9d37-747e7c
 ReinforcementLearningEnvironmentDiscrete = "1785f50a-c9a2-51c8-aad6-0dd19114bd56"
 ReinforcementLearningEnvironmentGym = "79e443b6-e52e-5c29-b616-02b77327f8c3"
 ReinforcementLearningEnvironments = "25e41dd2-4622-11e9-1641-f1adca772921"
+Rematch = "bfecab0d-fd4d-5014-a23f-56c5fae6447a"
 TOML = "191fdcea-f9f2-43e0-b922-d33f71e2abc3"
