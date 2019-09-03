@@ -10419,6 +10419,12 @@ version = "0.2.0"
 deps = ["Distributed", "Mmap", "Random", "Serialization"]
 uuid = "1a1011a3-84de-559e-8e89-a11a2f7dc383"
 
+[[Shell]]
+deps = ["Test"]
+git-tree-sha1 = "cd2bd4b6749d7a2a0a347eb2b1299e5b1bc902af"
+uuid = "89279098-3423-5141-994b-b871f91dcb82"
+version = "0.0.1"
+
 [[ShiftedArrays]]
 deps = ["OffsetArrays", "RecursiveArrayTools", "Test"]
 git-tree-sha1 = "b1aa84666a23a31cebcdcb848e62428968789287"
