@@ -10050,6 +10050,12 @@ git-tree-sha1 = "0fb6ef475a8671fee5e17a5ce9cd785f4f4c6982"
 uuid = "11ec6118-8d4c-11e9-02bb-6986bd51d19a"
 version = "0.1.0"
 
+[[SASLib]]
+deps = ["Compat", "InteractiveUtils", "Missings", "Printf", "Statistics", "StringEncodings", "TabularDisplay"]
+git-tree-sha1 = "9c3a8552a9f01bc4757f0b5923dcdb927286d7b6"
+uuid = "df8f2f22-cfef-5733-af3f-96770d497d85"
+version = "0.6.3"
+
 [[SCS]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
 git-tree-sha1 = "666c4016d27b34a559313b8ea0d56d85fc9f2dc4"
@@ -10628,6 +10634,12 @@ deps = ["DataAPI", "DataValueInterfaces", "IteratorInterfaceExtensions", "Linear
 git-tree-sha1 = "aaed7b3b00248ff6a794375ad6adf30f30ca5591"
 uuid = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
 version = "0.2.11"
+
+[[TabularDisplay]]
+deps = ["Compat", "Formatting"]
+git-tree-sha1 = "6c91a2b7b8e6735aedd4b0e7a0dafdce06c18547"
+uuid = "3eeacb1d-13c2-54cc-9b18-30c86af3cadb"
+version = "1.0.1"
 
 [[Tau]]
 deps = ["Test"]
