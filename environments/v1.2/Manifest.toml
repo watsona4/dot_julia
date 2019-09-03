@@ -10316,6 +10316,12 @@ git-tree-sha1 = "0c56a6f7edbc6afb911004fe79897a21ab2f0b54"
 uuid = "f5ac2a72-33c7-5caf-b863-f02fefdcf428"
 version = "0.2.0"
 
+[[Semaphores]]
+deps = ["Serialization", "Test"]
+git-tree-sha1 = "8bc49fca4f67c7f317de7b2a6e51088c66a2eb09"
+uuid = "f00cc363-093d-5001-bc14-bd3a87f4cb21"
+version = "0.1.0"
+
 [[SemialgebraicSets]]
 deps = ["LinearAlgebra", "MultivariatePolynomials", "Random"]
 git-tree-sha1 = "8cc4a0ee2a4d616bfb5116b43f7e032b0dccddc9"
