@@ -9889,6 +9889,12 @@ git-tree-sha1 = "929cd6332efae7a2d7aa80d9a257c600b4617d0d"
 uuid = "a39b5e78-89b5-562b-97d8-70689129df0c"
 version = "0.1.2"
 
+[[ReverseDiff]]
+deps = ["DiffResults", "DiffRules", "ForwardDiff", "FunctionWrappers", "LinearAlgebra", "NaNMath", "Random", "SpecialFunctions", "StaticArrays", "Statistics", "Test"]
+git-tree-sha1 = "d44e80d815a1a5abaf1ff1def21bb629cabaffec"
+uuid = "37e2e3b7-166d-5795-8a7a-e32c996b4267"
+version = "0.3.1"
+
 [[ReverseDiffSparse]]
 deps = ["Calculus", "Compat", "DataStructures", "ForwardDiff", "MathProgBase", "NaNMath"]
 git-tree-sha1 = "cbbc2c710abea5cfe71459ce4711d80a212aac5a"
