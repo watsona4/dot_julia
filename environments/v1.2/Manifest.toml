@@ -9089,6 +9089,12 @@ git-tree-sha1 = "548929157a99e72efc747fd396402c03ecdb7784"
 uuid = "01f381cc-face-5a0a-ade9-ef63dc65d628"
 version = "0.2.2"
 
+[[ProperOrthogonalDecomposition]]
+deps = ["DelimitedFiles", "LinearAlgebra", "Pkg", "Random", "Statistics", "Test"]
+git-tree-sha1 = "981b5b73cb5e1ca87f460e8222fd836a75d10c34"
+uuid = "78421dfc-ac16-5d69-8300-c22153e3d0b6"
+version = "0.1.0"
+
 [[ProtoBuf]]
 deps = ["Random", "Serialization", "Sockets", "Test"]
 git-tree-sha1 = "cc57b8d2d37f51f9bdfb440ba933c75764e6e171"
