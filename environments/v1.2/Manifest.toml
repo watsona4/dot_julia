@@ -11177,6 +11177,12 @@ git-tree-sha1 = "61f04266913897c6076423306ceaf6e492039df7"
 uuid = "42b7a45b-8021-5b99-aff5-7432580bee1c"
 version = "1.0.0"
 
+[[StrFormat]]
+deps = ["Format", "ModuleInterfaceTools", "StrLiterals"]
+git-tree-sha1 = "d30e7f59661ee11f8ce2f5c1fa765574990db007"
+uuid = "b5087856-efa9-5a6d-8e6f-97303a7af894"
+version = "1.0.0"
+
 [[StrFs]]
 deps = ["Parameters", "StaticArrays", "Test"]
 git-tree-sha1 = "17f4d1102fd07237eb5ed837801911fc87fae73c"
