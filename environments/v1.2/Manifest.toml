@@ -11543,6 +11543,12 @@ git-tree-sha1 = "fbc53f586630fa2a72190f7a792ba4106fd0776a"
 uuid = "382cd787-c1b6-5bf2-a167-d5b971a19bda"
 version = "1.0.0"
 
+[[TableView]]
+deps = ["Dates", "JSExpr", "JSON", "Observables", "Tables", "UUIDs", "WebIO"]
+git-tree-sha1 = "47d88381539854607b3f91a665136a997fef9c48"
+uuid = "40c74d1a-b44c-5b06-a7c1-6cbea58ea978"
+version = "0.4.0"
+
 [[Tables]]
 deps = ["DataAPI", "DataValueInterfaces", "IteratorInterfaceExtensions", "LinearAlgebra", "TableTraits", "Test"]
 git-tree-sha1 = "aaed7b3b00248ff6a794375ad6adf30f30ca5591"
