@@ -1,0 +1,18 @@
+name = "StanSamples"
+uuid = "52d0d7a9-b304-5f31-a727-b234d0b606ff"
+authors = ["Tamas K. Papp <tkpapp@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+ArgCheck = "dce04be8-c92d-5529-be00-80e4d2c0e197"
+DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+ElasticArrays = "fdbdab4c-e67f-52f5-8c3f-e7b388dad3d4"
+
+[compat]
+julia = "^1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

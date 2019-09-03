@@ -1,0 +1,3 @@
+# StanBase
+
+*Documentation goes here.*

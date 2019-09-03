@@ -1,0 +1,8 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+/test/testmodel/test
+/test/testmodel/test.data.R
+/test/testmodel/test.hpp
+/deps/deps.jl
+/docs/build

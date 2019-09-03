@@ -1,0 +1,17 @@
+name = "StanDump"
+uuid = "9713c8f3-0168-54b5-986e-22c526958f39"
+authors = ["Tamas K. Papp <tkpapp@gmail.com>"]
+version = "0.2.0"
+
+[compat]
+julia = "≥ 1.1"
+
+[deps]
+ArgCheck = "dce04be8-c92d-5529-be00-80e4d2c0e197"
+DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
