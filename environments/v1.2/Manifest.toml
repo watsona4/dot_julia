@@ -10095,6 +10095,11 @@ git-tree-sha1 = "603b6513b60a87574f77616ac4b0c9b206afaf58"
 uuid = "fdea26ae-647d-5447-a871-4b548cad5224"
 version = "2.8.0"
 
+[[SLEEF]]
+git-tree-sha1 = "512b75d09aab52e93192e68de612fc472f001979"
+uuid = "3e6341c9-01f6-5312-b33f-f8894a2e817a"
+version = "0.5.2"
+
 [[SQLite]]
 deps = ["BinaryProvider", "DataFrames", "Dates", "Libdl", "Random", "Serialization", "Tables", "Test", "WeakRefStrings"]
 git-tree-sha1 = "70383f412eaa203ffbdd53a1bc5af089c2f8828e"
