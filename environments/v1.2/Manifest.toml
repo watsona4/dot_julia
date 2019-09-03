@@ -10160,6 +10160,12 @@ git-tree-sha1 = "36ebc5622c82eb9324005cc75e7e2cc51181d181"
 uuid = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
 version = "0.0.1"
 
+[[SaferIntegers]]
+deps = ["MacroTools", "Random"]
+git-tree-sha1 = "6296e51150b2b5907eb14fd304e51e994d7e7c72"
+uuid = "88634af6-177f-5301-88b8-7819386cfa38"
+version = "2.5.0"
+
 [[SampledSignals]]
 deps = ["Compat", "DSP", "FFTW", "FixedPointNumbers", "InteractiveUtils", "IntervalSets", "LinearAlgebra", "Pkg", "Unitful"]
 git-tree-sha1 = "741c30f791c04625904e042b37876e1c8b18dd60"
