@@ -1,0 +1,5 @@
+┌ Warning: platform_key() is deprecated, use platform_key_abi() from now on
+│   caller = ip:0x0
+└ @ Core :-1
+[ Info: Found a valid dl path libstemmer.so while looking for libstemmer
+[ Info: /home/ec2-user/.julia/packages/StringAnalysis/6qSUY/deps/usr/lib/libstemmer.so matches our search criteria of libstemmer
