@@ -11475,6 +11475,12 @@ git-tree-sha1 = "46badfcc7c6e74535cc7d833a91f4ac4f805f86d"
 uuid = "cea106d9-e007-5e6c-ad93-58fe2094e9c4"
 version = "0.3.0"
 
+[[TCX]]
+deps = ["DataFrames", "Dates", "EzXML", "Geodesy", "Test"]
+git-tree-sha1 = "1ef496c2dfc5a27ee9a611da0819b68b39fbce81"
+uuid = "3b8c1752-506b-11e9-3f9b-8db86abc7c68"
+version = "0.1.1"
+
 [[TOML]]
 deps = ["Dates"]
 git-tree-sha1 = "70c12a7129b147aa9e43325c86f32f7fbb88245a"
