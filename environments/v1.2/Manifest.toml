@@ -11019,6 +11019,12 @@ git-tree-sha1 = "db23bbf50064c582b6f2b9b043c8e7e98ea8c0c6"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
 version = "0.11.0"
 
+[[StaticGraphs]]
+deps = ["JLD2", "LightGraphs", "SparseArrays", "Test"]
+git-tree-sha1 = "edc325ccf1a992ae6faf7961f8dd9e5f5b34a126"
+uuid = "4c8beaf5-199b-59a0-a7f2-21d17de635b6"
+version = "0.1.0"
+
 [[StaticLint]]
 deps = ["CSTParser", "Serialization", "SymbolServer"]
 git-tree-sha1 = "fe8eeadf66ef400975adb68c4f50aeb1897c4959"
