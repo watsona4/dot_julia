@@ -9765,6 +9765,12 @@ git-tree-sha1 = "be2f9fe51196ec8e260c8f6c0f5cb3edc79b9c89"
 uuid = "1785f50a-c9a2-51c8-aad6-0dd19114bd56"
 version = "0.2.2"
 
+[[ReinforcementLearningEnvironmentGym]]
+deps = ["PyCall", "ReinforcementLearningBase", "Test"]
+git-tree-sha1 = "2bc32df41377af9a071ac65a67b8e2dae642a1d8"
+uuid = "79e443b6-e52e-5c29-b616-02b77327f8c3"
+version = "0.2.0"
+
 [[Rematch]]
 deps = ["Compat", "MacroTools"]
 git-tree-sha1 = "3abde2b1c5d0f942b40700bebdc6c8cfa60c8b37"

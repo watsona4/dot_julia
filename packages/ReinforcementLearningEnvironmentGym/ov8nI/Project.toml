@@ -1,0 +1,14 @@
+name = "ReinforcementLearningEnvironmentGym"
+uuid = "1053412c-b184-11e8-2eb2-ef51b44fed15"
+authors = ["Johanni Brea <jbrea@users.noreply.github.com>", "Jun Tian <tianjun.cpp@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+ReinforcementLearningBase = "e575027e-6cd6-5018-9292-cdc6200d2b44"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
