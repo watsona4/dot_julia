@@ -10473,6 +10473,12 @@ git-tree-sha1 = "072b730909dd4b288a6f67c10fa12fc90dab0e63"
 uuid = "053f045d-5466-53fd-b400-a066f88fe02a"
 version = "0.3.7"
 
+[[SimpleANOVA]]
+deps = ["Distributions", "Requires", "Test"]
+git-tree-sha1 = "26931b393e798ced59f203b8fc61d7a688386396"
+uuid = "fff527a3-8410-504e-9ca3-60d5e79bb1e4"
+version = "0.3.0"
+
 [[SimpleDiffEq]]
 deps = ["DiffEqBase", "RecursiveArrayTools", "Reexport", "StaticArrays"]
 git-tree-sha1 = "dab78d468cbff62d0b94aa89dcbdd62d87030cae"
