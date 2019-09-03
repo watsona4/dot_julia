@@ -1,0 +1,6 @@
+v1.3
+    - Release for Julia 1.0
+    - Use Julia's Package manager for distribution
+    - Fix: properly return error messages to caller
+v0.0
+    - Initial release for Julia 0.4

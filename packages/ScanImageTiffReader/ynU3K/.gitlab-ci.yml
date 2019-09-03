@@ -1,0 +1,105 @@
+.test_template: &test_windows
+  only:
+    - master
+    - development
+  script:
+    - '>test\\.env echo TESTBASE=F:/Tests/ScanImageTiffReader'
+    - julia --version # Print out julia version for debugging
+    - julia -e "println(pwd());"
+    - julia -e "using Pkg; Pkg.add(\"Coverage\"); using Coverage;
+      Pkg.activate(pwd()); Pkg.build(); Pkg.test(; coverage = true);
+      cl, tl = get_summary(process_folder());
+      println(\"$(Int(round(cl/tl*100; digits=0)))% covered\")"
+
+.test_template: &test_nix
+  only:
+    - master
+    - development
+  script:
+    - 'echo TESTBASE=/data/ScanImageTiffReader >test/.env'
+    - julia --version # Print out julia version for debugging
+    - julia -e 'println(pwd());'
+    - julia -e 'using Pkg; Pkg.add("Coverage"); using Coverage;
+      Pkg.activate(pwd()); Pkg.build(); Pkg.test(; coverage = true);
+      cl, tl = get_summary(process_folder());
+      println("$(Int(round(cl/tl*100; digits=0)))% covered")'
+
+test-0.7-nix:
+  # image: julia:0.7
+  tags:
+  - nix
+  - spiegel-data
+  before_script:
+  - 'export PATH=/opt/julia-0.7.0/bin:$PATH'
+  <<: *test_nix
+  coverage: '/(\d+)% covered/'
+
+test-0.7-windows:
+  # image: julia:0.7
+  tags:
+  - windows
+  - spiegel-data
+  before_script:
+  - 'PATH=C:\Users\Alan\AppData\Local\Julia-1.0.1\bin;%PATH%'
+  <<: *test_windows
+
+test-0.1-nix:
+  # image: julia:0.7
+  tags:
+  - nix
+  - spiegel-data
+  before_script:
+  - 'export PATH=/opt/julia-1.0.1/bin:$PATH'
+  <<: *test_nix
+
+test-1.0-windows:
+  # image: julia:1.0
+  tags:
+  - windows
+  - spiegel-data
+  before_script:
+  - 'PATH=C:\Users\Alan\AppData\Local\Julia-1.0.1\bin;%PATH%'
+  <<: *test_windows
+
+# Maybe you would like to test your package against the development branch:
+# test:1.1-dev (not sure there is such an image in docker, so not tested yet):
+#  image: julia:v1.1-dev
+#  # ... allowing for failures, since we are testing against the development
+#  # branch:
+#  allow_failure: true
+#  <<: *test_definition
+
+# REMARK: Do not forget to enable the coverage feature for your project, if you
+# are using code coverage reporting above. This can be done by
+#
+# - Navigating to the `CI/CD Pipelines` settings of your project,
+# - Copying and pasting the default `Simplecov` regex example provided, i.e.,
+#   `\(\d+.\d+\%\) covered` in the `test coverage parsing` textfield.
+
+# Example documentation deployment
+pages:
+  stage: deploy
+  tags:
+  - nix
+  - spiegel-data
+  before_script:
+    - 'echo TESTBASE=/data/ScanImageTiffReader >test/.env'
+  script:
+    - julia -e 'using Pkg; Pkg.clone(pwd()); Pkg.build("ScanImageTiffReader");' # rebuild Julia (can be put somewhere else I'm sure
+    - julia -e 'using Pkg; import ScanImageTiffReader; Pkg.add("Documenter")' # install Documenter
+    - julia --color=yes docs/make.jl # make documentation
+    - mv docs/build public # move to the directory picked up by Gitlab pages
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
+
+# WARNING: This template is using the `julia` images from [Docker
+# Hub][3]. One can use custom Julia images and/or the official ones found
+# in the same place. However, care must be taken to correctly locate the binary
+# file (`/opt/julia/bin/julia` above), which is usually given on the image's
+# description page.
+#
+# [3]: https://hub.docker.com/_/julia/

@@ -1,0 +1,14 @@
+name = "ScanImageTiffReader"
+uuid = "2aa152d0-c912-11e8-1241-a988e280d624"
+authors = ["Nathan Clack <nathan@vidriotech.com>", "Alan Liddell <alan@vidriotech.com"]
+version = "1.3.0"
+
+[extras]
+Coverage = "a2441757-f6aa-5fb2-8edb-039e3f45d037"
+DotEnv = "4dc1fcf4-5e3b-5448-94ab-0c38ec0385c1"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Coverage", "DotEnv", "HTTP", "JSON", "Test"]

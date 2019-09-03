@@ -1,0 +1,6 @@
+# testing output
+.env
+*.cov
+
+# docs
+docs/build/
