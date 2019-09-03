@@ -10545,6 +10545,18 @@ git-tree-sha1 = "2952f80c5834ae5363a5f5942084186b9fb66586"
 uuid = "ec83eff0-a5b5-5643-ae32-5cbf6eedec9d"
 version = "0.2.0"
 
+[[SimplePosetAlgorithms]]
+deps = ["Cbc", "JuMP", "SimpleGraphAlgorithms", "SimpleGraphs", "SimplePosets", "Test"]
+git-tree-sha1 = "c9c37978992f822c0ac02bda355914f0b1399160"
+uuid = "0c1320c5-0940-5dc6-8c7d-d9650cdddf58"
+version = "0.3.0"
+
+[[SimplePosets]]
+deps = ["FlexLinearAlgebra", "LinearAlgebra", "Primes", "SimpleGraphs", "SimplePartitions", "Test"]
+git-tree-sha1 = "45453418625c3b4b331d2f0afec68cc4ca9fb164"
+uuid = "b2aef97b-4721-5af9-b440-0bad754dc5ba"
+version = "0.0.3"
+
 [[SimpleRandom]]
 deps = ["Distributions", "Random", "Test"]
 git-tree-sha1 = "8c182908ea6ec36f6d88505b79bdc8a35493262f"
