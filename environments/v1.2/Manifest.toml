@@ -9488,6 +9488,12 @@ git-tree-sha1 = "f1c648e3738975dc4193113e11b49a5869520e6b"
 uuid = "fb686558-2515-59ef-acaa-46db3789a887"
 version = "0.2.1"
 
+[[RandomMatrices]]
+deps = ["Combinatorics", "Distributions", "FastGaussQuadrature", "GSL", "LinearAlgebra", "Random", "Requires", "SpecialFunctions", "Test"]
+git-tree-sha1 = "56b173d9a83f49cef1296fbf16be5dc5422091f2"
+uuid = "2576dda1-a324-5b11-aa66-c48ed7e3c618"
+version = "0.5.0"
+
 [[RandomNumbers]]
 deps = ["Random", "Requires"]
 git-tree-sha1 = "1417be19c15706c1584d01e32662eb640a4cc908"
