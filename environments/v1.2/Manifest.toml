@@ -11321,6 +11321,12 @@ git-tree-sha1 = "4feb48138cd34e622449448be81acbee5c9d7238"
 uuid = "1e09ba94-8865-5af0-8cfd-6b3609c426e6"
 version = "0.1.0"
 
+[[SubpixelRegistration]]
+deps = ["ComputationalResources", "Distributed", "FFTW", "Test"]
+git-tree-sha1 = "c0d72de24b1dab86ccff5d77cccca0cea0ff0d65"
+uuid = "97a7e826-69e2-510e-8af8-254736c4b599"
+version = "0.1.0"
+
 [[SuiteSparse]]
 deps = ["Libdl", "LinearAlgebra", "Serialization", "SparseArrays"]
 uuid = "4607b0f0-06f3-5cda-b6b1-a6196a1729e9"
