@@ -10397,6 +10397,12 @@ git-tree-sha1 = "bef11bb6030131bafbcaaf8a3df16b7a72be8b9c"
 uuid = "efcf1570-3423-57d1-acb7-fd33fddbac46"
 version = "0.3.4"
 
+[[ShaderAbstractions]]
+deps = ["ColorTypes", "FixedPointNumbers", "GeometryBasics", "GeometryTypes", "Observables", "StaticArrays", "StructArrays", "Tables"]
+git-tree-sha1 = "69e1da4acc8d1c09404181d469f33275cb7f6291"
+uuid = "65257c39-d410-5151-9873-9b3e5be5013e"
+version = "0.1.0"
+
 [[Shapefile]]
 deps = ["GeoInterface", "Test"]
 git-tree-sha1 = "b473290218a0087e1f2a8c62c0acc646fb4053d2"
