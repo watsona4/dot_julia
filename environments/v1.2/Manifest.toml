@@ -10851,6 +10851,12 @@ git-tree-sha1 = "e7f4b389b6720e93d072541a5effac957c7c7885"
 uuid = "71c4a2d3-ecf8-5cd9-ab6a-09a504837b4f"
 version = "0.2.0"
 
+[[Spinnaker]]
+deps = ["FixedPointNumbers", "Libdl"]
+git-tree-sha1 = "43432f667f23008c08999c70faa2f3c82624e4a2"
+uuid = "8e0d2ad3-56b8-53f3-8036-54b674872bef"
+version = "0.1.5"
+
 [[SplitApplyCombine]]
 deps = ["Indexing", "Test"]
 git-tree-sha1 = "72eb364378c17e0f3dcde342b2953ad2bd55b5a1"
