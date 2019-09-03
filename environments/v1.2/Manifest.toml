@@ -10959,6 +10959,12 @@ git-tree-sha1 = "45f33528808e9e009f8c4007b585290f6f2dcc4f"
 uuid = "6ede68ce-8466-5085-8a79-4c4de3d9cf4a"
 version = "0.1.0"
 
+[[StandardizedMatrices]]
+deps = ["LinearAlgebra", "Statistics", "Test"]
+git-tree-sha1 = "e519e1ae8abea3c810fd33858ab4a9aa70261438"
+uuid = "56780e9a-f91f-500b-9a21-c8c66253dea0"
+version = "0.3.0"
+
 [[StatFiles]]
 deps = ["DataValues", "FileIO", "IterableTables", "IteratorInterfaceExtensions", "ReadStat", "TableShowUtils", "TableTraits", "TableTraitsUtils", "Test"]
 git-tree-sha1 = "28466ea10caec61c476a262172319d2edf248187"
