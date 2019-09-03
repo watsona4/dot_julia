@@ -9801,6 +9801,12 @@ git-tree-sha1 = "5666b8b2ce833fb6502db9ddba352f9e915f44b2"
 uuid = "bcdc7952-6eb0-55db-bf57-82111c48552b"
 version = "0.2.0"
 
+[[ReplMaker]]
+deps = ["REPL", "Test", "Unicode"]
+git-tree-sha1 = "e40e05e0dc94e12717fbc368a4977039ff472c83"
+uuid = "b873ce64-0db9-51f5-a568-4457d8e49576"
+version = "0.2.2"
+
 [[Reproject]]
 deps = ["FITSIO", "Interpolations", "SkyCoords", "WCS"]
 git-tree-sha1 = "c7fcca6b75420ad9e2032f3d65ee56e03f0ce08e"
