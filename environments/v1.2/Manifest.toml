@@ -9218,6 +9218,12 @@ git-tree-sha1 = "4ea95ffa11cdb38bba2602990efc6cc7958f429f"
 uuid = "6cfbe66a-a49d-11e9-1842-750d329cfcbb"
 version = "0.1.0"
 
+[[QSWalk]]
+deps = ["Expokit", "LinearAlgebra", "SparseArrays"]
+git-tree-sha1 = "2b407fb323544a8b8a89402ddd5f7aee6af42570"
+uuid = "2ef04bfc-99ca-5394-8b07-22b12ff94927"
+version = "1.1.0"
+
 [[QuadGK]]
 deps = ["DataStructures", "LinearAlgebra"]
 git-tree-sha1 = "438630b843c210b375b2a246329200c113acc61b"
