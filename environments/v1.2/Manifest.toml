@@ -9961,6 +9961,12 @@ git-tree-sha1 = "2734a0290570123123c02bd364e5220970fd0be6"
 uuid = "91fb55c2-4c03-5a59-ba21-f4ea956187b8"
 version = "0.4.0"
 
+[[RoMEPlotting]]
+deps = ["ApproxManifoldProducts", "Colors", "Compose", "DistributedFactorGraphs", "DocStringExtensions", "Gadfly", "Graphs", "IncrementalInference", "KernelDensityEstimate", "KernelDensityEstimatePlotting", "LinearAlgebra", "Reexport", "RoME", "Statistics", "StatsBase"]
+git-tree-sha1 = "2de8e30f803f97598401fffd3eb37b832b7b7ebf"
+uuid = "238d586b-a4bf-555c-9891-eda6fc5e55a2"
+version = "0.1.5"
+
 [[RobustPmap]]
 deps = ["Compat", "Distributed", "FileIO", "JLD2"]
 git-tree-sha1 = "1db4d58e4d23e40d1d24760624ec38f4d52a0fbe"

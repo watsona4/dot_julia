@@ -1,0 +1,31 @@
+language: julia
+
+os:
+  - linux
+  - osx
+
+julia:
+  - 1.0
+  - 1.1
+  - 1.2
+  - nightly
+
+notifications:
+  email: false
+
+matrix:
+  allow_failures:
+    - os: osx
+    - julia: nightly
+
+addons:
+  apt:
+    packages:
+      - hdf5-tools
+
+# script:
+#   - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#   - julia --check-bounds=yes -e 'using Pkg; Pkg.develop("Compose"); Pkg.clone(pwd()); Pkg.build("RoMEPlotting"); Pkg.test("RoMEPlotting"; coverage=true)'
+
+after_success:
+  - julia -e 'using Pkg; cd(Pkg.dir("RoMEPlotting")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
