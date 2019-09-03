@@ -10298,6 +10298,12 @@ git-tree-sha1 = "0437a5238219c2ff2191eb3c3398e42e733a85f1"
 uuid = "bb3d3a65-b032-5cdd-a073-dfed7b606c01"
 version = "0.0.1"
 
+[[SeisIO]]
+deps = ["Blosc", "Compat", "DSP", "Dates", "DelimitedFiles", "FFTW", "Glob", "HTTP", "LightXML", "LinearAlgebra", "Logging", "Polynomials", "Printf", "Random", "Sockets", "Statistics", "Test"]
+git-tree-sha1 = "a42f64081de23ca6a1cb4834a930f5197a1b9602"
+uuid = "b372bb87-02dd-52bb-bcf6-c30dd83fd342"
+version = "0.3.0"
+
 [[SemialgebraicSets]]
 deps = ["LinearAlgebra", "MultivariatePolynomials", "Random"]
 git-tree-sha1 = "8cc4a0ee2a4d616bfb5116b43f7e032b0dccddc9"

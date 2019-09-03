@@ -1,0 +1,27 @@
+language: julia
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+codecov: true
+coveralls: true
+os:
+- linux
+- osx
+julia:
+- 1.0
+- 1.1
+- nightly
+matrix:
+  allow_failures:
+  - julia: nightly
+after_success:
+- julia -e 'VERSION >= v"0.7.0-DEV.5183" && using Pkg; VERSION >= v"0.7.0-DEV.5183"
+  || cd(Pkg.dir("SeisIO")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder());
+  Codecov.submit(Coveralls.process_folder()); '
+before_install:
+- openssl aes-256-cbc -K $encrypted_d21b36055eee_key -iv $encrypted_d21b36055eee_iv
+  -in test/SampleFiles/samples.enc -out test/SampleFiles/samples.tar.gz -d
+- cd test/SampleFiles
+- tar zxvf samples.tar.gz
+- cd ../..
