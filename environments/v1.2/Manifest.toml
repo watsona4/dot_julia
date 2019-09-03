@@ -10322,6 +10322,12 @@ git-tree-sha1 = "8bc49fca4f67c7f317de7b2a6e51088c66a2eb09"
 uuid = "f00cc363-093d-5001-bc14-bd3a87f4cb21"
 version = "0.1.0"
 
+[[SemiDiscretizationMethod]]
+deps = ["Arpack", "Lazy", "LinearAlgebra", "QuadGK", "Reexport", "SparseArrays", "StaticArrays", "Test"]
+git-tree-sha1 = "e216c9987c42602e5ed50e34831bfc06db591482"
+uuid = "a6865705-0aff-55fc-a8e1-34d7b6815716"
+version = "0.3.3"
+
 [[SemialgebraicSets]]
 deps = ["LinearAlgebra", "MultivariatePolynomials", "Random"]
 git-tree-sha1 = "8cc4a0ee2a4d616bfb5116b43f7e032b0dccddc9"
