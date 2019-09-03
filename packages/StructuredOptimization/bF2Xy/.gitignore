@@ -1,0 +1,16 @@
+*.mat
+*.tvs
+*.csv
+*.cvs
+*.m~
+*.swp
+*.bmp
+*.jpg
+*.wav
+*.tex
+*.DS_Store
+
+demos/.ipynb_checkpoints/
+docs/build/
+docs/site/
+docs/Manifest.toml
