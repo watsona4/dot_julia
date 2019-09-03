@@ -9807,6 +9807,12 @@ git-tree-sha1 = "e40e05e0dc94e12717fbc368a4977039ff472c83"
 uuid = "b873ce64-0db9-51f5-a568-4457d8e49576"
 version = "0.2.2"
 
+[[ReplicateBE]]
+deps = ["DataFrames", "Distributions", "ForwardDiff", "LinearAlgebra", "Optim", "Random", "Statistics", "StatsBase", "StatsModels"]
+git-tree-sha1 = "f867a0d53a442ea046ff964e05a0bc0c4307dd66"
+uuid = "671d9d50-c343-11e9-1a9c-fdd992682823"
+version = "0.1.2"
+
 [[Reproject]]
 deps = ["FITSIO", "Interpolations", "SkyCoords", "WCS"]
 git-tree-sha1 = "c7fcca6b75420ad9e2032f3d65ee56e03f0ce08e"
