@@ -11147,6 +11147,12 @@ git-tree-sha1 = "b3475b0b41a4f896c25cb4bbbf2208c6415909e0"
 uuid = "8b8459f2-c380-502b-8633-9aed2d6c2b35"
 version = "0.2.0"
 
+[[StochasticSemiDiscretizationMethod]]
+deps = ["Arpack", "InteractiveUtils", "Lazy", "LinearAlgebra", "QuadGK", "Reexport", "SemiDiscretizationMethod", "SparseArrays", "StaticArrays", "Test"]
+git-tree-sha1 = "f23b5fb377b305a66f53363a0761303f82d238f0"
+uuid = "048039a2-5e1a-11e9-0eb6-5da22298fca4"
+version = "0.3.3"
+
 [[StrAPI]]
 deps = ["ModuleInterfaceTools", "Unicode"]
 git-tree-sha1 = "4b70830583e9dd88f1220f8139ee967084428c21"
