@@ -9718,6 +9718,12 @@ git-tree-sha1 = "e7f59bec82a47801360f80caa1bf3c5ff058c157"
 uuid = "4418983a-e44d-11e8-3aec-9789530b3b3e"
 version = "0.1.0"
 
+[[RegressionTables]]
+deps = ["Compat", "Distributions", "FixedEffectModels", "Formatting", "GLM", "Statistics", "StatsBase", "StatsModels"]
+git-tree-sha1 = "f06f68e3f34111641784a2cbbd34776b3e046e82"
+uuid = "d519eb52-b820-54da-95a6-98e1306fdade"
+version = "0.2.1"
+
 [[RegularizedLeastSquares]]
 deps = ["Documenter", "FFTW", "IterativeSolvers", "LinearAlgebra", "LinearOperators", "ProgressMeter", "Random", "SparseArrays", "Wavelets"]
 git-tree-sha1 = "c9c36803900ed368080e30b18b033347575158c2"
