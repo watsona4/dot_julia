@@ -10834,6 +10834,11 @@ git-tree-sha1 = "e7e0712ceeb75645a9bc20bd6a742be67b222573"
 uuid = "1f53f557-16c0-5f8f-980f-fb7167e19889"
 version = "0.1.0"
 
+[[SphericalHarmonicModes]]
+git-tree-sha1 = "c35eb0ffe21d0432803639ff952bdcddffab87d7"
+uuid = "0e9554e2-b38b-11e9-16d7-9d9abfec665a"
+version = "0.1.0"
+
 [[SplitApplyCombine]]
 deps = ["Indexing", "Test"]
 git-tree-sha1 = "72eb364378c17e0f3dcde342b2953ad2bd55b5a1"

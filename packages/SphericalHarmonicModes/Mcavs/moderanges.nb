@@ -1,0 +1,2825 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     98280,       2817]
+NotebookOptionsPosition[     88084,       2630]
+NotebookOutlinePosition[     88422,       2645]
+CellTagsIndexPosition[     88379,       2642]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Display in Julia-compatible format", "Chapter",
+ CellChangeTimes->{{3.775540742087628*^9, 
+  3.7755407584088707`*^9}},ExpressionUUID->"b082166b-edf2-4069-b228-\
+8ce01582afab"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"MakeBoxes", "[", 
+   RowBox[{
+    RowBox[{"Times", "[", 
+     RowBox[{
+      RowBox[{"Rational", "[", 
+       RowBox[{"n_", ",", "d_"}], "]"}], ",", "expr__"}], "]"}], ",", 
+    "StandardForm"}], "]"}], ":=", 
+  RowBox[{"RowBox", "[", 
+   RowBox[{"{", 
+    RowBox[{"\"\<div(\>\"", ",", 
+     RowBox[{"ToBoxes", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Times", "[", 
+         RowBox[{"n", ",", "expr"}], "]"}], "//", "Simplify"}], "//", 
+       "InputForm"}], "]"}], ",", "\"\<,\>\"", ",", "d", ",", "\"\<)\>\""}], 
+    "}"}], "]"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"MakeBoxes", "[", 
+    RowBox[{
+     RowBox[{"Times", "[", 
+      RowBox[{"t1_Plus", ",", "t2_Plus"}], "]"}], ",", "StandardForm"}], 
+    "]"}], ":=", 
+   RowBox[{"RowBox", "[", 
+    RowBox[{"{", 
+     RowBox[{"ToBoxes", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"t1", " ", "t2"}], " ", "//", "Simplify"}], "//", 
+       "InputForm"}], "]"}], "}"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.775542358337783*^9, 3.775542384819219*^9}, 
+   3.775542540104526*^9, {3.775542654518911*^9, 3.7755426569224453`*^9}, {
+   3.775547121318898*^9, 3.775547122574958*^9}, {3.775547189286334*^9, 
+   3.775547190383505*^9}, {3.775547308724821*^9, 3.775547351433235*^9}, {
+   3.775547387641252*^9, 3.775547422305625*^9}, {3.775547496322817*^9, 
+   3.7755475422099333`*^9}, {3.7755475751863747`*^9, 3.775547575410211*^9}, {
+   3.775621641808172*^9, 3.775621711376564*^9}, {3.77562176094567*^9, 
+   3.775621781667139*^9}, {3.775621870119309*^9, 3.775621912107634*^9}, {
+   3.7756384193422747`*^9, 
+   3.775638419641591*^9}},ExpressionUUID->"11b6faab-72fd-437f-866b-\
+dc1c9479e4db"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Length", " ", "of", " ", "the", " ", "st", " ", "iterator"}], 
+  "Section"]], "Input",
+ CellChangeTimes->{{3.7754625891162977`*^9, 
+  3.7754625916116753`*^9}},ExpressionUUID->"3350b4cd-01aa-4a0b-b67c-\
+6a37e90cf45c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"condst", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"Element", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"tmin", ",", "t", ",", "smin", ",", "smax"}], "}"}], ",", 
+      "Integers"}], "]"}], "&&", 
+    RowBox[{"smin", "\[GreaterEqual]", "0"}], "&&", 
+    RowBox[{"smax", "\[GreaterEqual]", "smin"}], "&&", 
+    RowBox[{"t", "\[LessEqual]", "smax"}], "&&", 
+    RowBox[{"t", "\[GreaterEqual]", 
+     RowBox[{"-", "smax"}]}], "&&", 
+    RowBox[{"t", "\[GreaterEqual]", "tmin"}], "&&", 
+    RowBox[{"t", "\[LessEqual]", "tmax"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.775542891219802*^9, 3.775542893760829*^9}, {
+  3.77554293593542*^9, 3.775542936040848*^9}, {3.7756564968251266`*^9, 
+  3.775656500510561*^9}},ExpressionUUID->"ac13d68a-c485-4408-83c0-\
+18c8e273ea4d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Nst", " ", "=", " ", 
+   RowBox[{"smax", "-", 
+    RowBox[{"Max", "[", 
+     RowBox[{
+      RowBox[{"Abs", "[", "t", "]"}], ",", "smin"}], "]"}], "+", "1"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.775617353483097*^9, 3.775617399734954*^9}, 
+   3.7756178443877277`*^9},ExpressionUUID->"5646e014-b463-44ae-8c6d-\
+14a57b4d76df"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Nstpiecewise", "=", 
+  RowBox[{
+   RowBox[{"Assuming", "[", 
+    RowBox[{"condst", ",", 
+     RowBox[{"PiecewiseExpand", "[", "Nst", "]"}]}], "]"}], "//", 
+   "Simplify"}]}]], "Input",
+ CellChangeTimes->{{3.7755704085526257`*^9, 3.775570422325506*^9}, 
+   3.775571251922958*^9, {3.775571527064761*^9, 3.77557153037638*^9}, {
+   3.775571679347138*^9, 3.77557167974238*^9}, {3.775571727313859*^9, 
+   3.7755717285290537`*^9}, {3.7756174127736883`*^9, 3.775617424586576*^9}, 
+   3.775617846998041*^9},ExpressionUUID->"8efd831f-d4d4-474d-a824-\
+84ae18ee2ba7"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\[Piecewise]", GridBox[{
+       {
+        RowBox[{"1", "+", "smax", "-", "smin"}], 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"smin", "+", "t"}], "\[GreaterEqual]", "0"}], "&&", 
+           RowBox[{"t", "<", "0"}]}], ")"}], "||", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"t", "\[GreaterEqual]", "0"}], "&&", 
+           RowBox[{"smin", "\[GreaterEqual]", "t"}]}], ")"}]}]},
+       {
+        RowBox[{"1", "+", "smax", "-", "t"}], 
+        RowBox[{
+         RowBox[{"smin", "<", "t"}], "&&", 
+         RowBox[{"t", "\[GreaterEqual]", "0"}]}]},
+       {
+        RowBox[{"1", "+", "smax", "+", "t"}], 
+        TagBox["True",
+         "PiecewiseDefault",
+         AutoDelete->True]}
+      },
+      AllowedDimensions->{2, Automatic},
+      Editable->True,
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.84]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}},
+      Selectable->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.35]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  "Piecewise",
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.7755704275175333`*^9, {3.775571239463689*^9, 3.775571253394291*^9}, 
+   3.775571530780702*^9, 3.775571682392788*^9, 3.775571728874426*^9, {
+   3.7756174156853323`*^9, 3.7756174262845297`*^9}, 3.775617849163906*^9, 
+   3.7756384255928802`*^9, 
+   3.775656503431691*^9},ExpressionUUID->"80abd998-e5cb-449a-bf1b-\
+7aa06ee22ae1"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"testmodes", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"tmin", "\[Rule]", 
+      RowBox[{"-", "2"}]}], ",", 
+     RowBox[{"tmax", "\[Rule]", 
+      RowBox[{"-", "2"}]}], ",", 
+     RowBox[{"smin", "\[Rule]", "2"}], ",", 
+     RowBox[{"smax", "\[Rule]", "2"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.775653298223728*^9, 3.7756533182762337`*^9}, {
+   3.775653503660898*^9, 3.775653508362059*^9}, {3.7756564084973288`*^9, 
+   3.775656413420353*^9}, 
+   3.775656465634131*^9},ExpressionUUID->"a9aa5065-4869-466d-bbd0-\
+6ca4a5811395"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Nstpiecewise", "/.", "testmodes"}], "//", "Simplify"}]], "Input",
+ CellChangeTimes->{{3.775624711783023*^9, 3.775624774781143*^9}, {
+   3.7756500443449697`*^9, 3.7756500691450768`*^9}, {3.775653309942565*^9, 
+   3.775653332871311*^9}, 3.7756535097167463`*^9, {3.77565643255177*^9, 
+   3.7756564535571613`*^9}},ExpressionUUID->"f475eff4-7ca6-4d76-adc7-\
+99659a30af14"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\[Piecewise]", GridBox[{
+       {"1", 
+        RowBox[{
+         RowBox[{"-", "2"}], "\[LessEqual]", "t", "\[LessEqual]", "2"}]},
+       {
+        RowBox[{"3", "-", "t"}], 
+        RowBox[{"t", ">", "2"}]},
+       {
+        RowBox[{"3", "+", "t"}], 
+        TagBox["True",
+         "PiecewiseDefault",
+         AutoDelete->True]}
+      },
+      AllowedDimensions->{2, Automatic},
+      Editable->True,
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.84]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}},
+      Selectable->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.35]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  "Piecewise",
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.7756247215144033`*^9, 3.775624734221341*^9}, 
+   3.77562477583777*^9, 3.7756384273691063`*^9, {3.77565005250289*^9, 
+   3.775650069491172*^9}, {3.775653320931583*^9, 3.775653333161025*^9}, 
+   3.775653511486123*^9, {3.775656415945105*^9, 3.775656474282505*^9}, 
+   3.775656506170849*^9},ExpressionUUID->"d757cad0-6402-4e57-badf-\
+775acd143463"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Sum in the different ranges. Choose the sum ranges accordingly\
+\>", "Subsection",
+ CellChangeTimes->{{3.775570235178527*^9, 3.775570261555258*^9}, {
+  3.775570448741456*^9, 3.77557045095146*^9}, {3.775571894674225*^9, 
+  3.7755718966274023`*^9}},ExpressionUUID->"673acb72-8b47-4ebf-9fde-\
+f4dec70d598b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lst1", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nstpiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"tmin", ",", 
+        RowBox[{"-", "smin"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{"tmax", ",", 
+        RowBox[{"-", "1"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.775571302324094*^9, 3.775571335512498*^9}, {
+  3.775571397019745*^9, 3.775571460441895*^9}, {3.775617432101233*^9, 
+  3.775617440950184*^9}, {3.775621610865663*^9, 3.7756216111920347`*^9}, {
+  3.7756218527675743`*^9, 3.7756218591132717`*^9}, {3.775624830329351*^9, 
+  3.775624830785635*^9}, {3.775636337269026*^9, 3.7756363376796703`*^9}, {
+  3.775636453347231*^9, 3.7756364631462584`*^9}, {3.7756567071953783`*^9, 
+  3.775656707665944*^9}},ExpressionUUID->"69aec332-0d20-41cb-9cb2-\
+0f1de7efa779"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", "smax", " ", "-", " ", "smin"}], ")"}], "*", 
+    
+    RowBox[{"(", 
+     RowBox[{"1", " ", "-", " ", 
+      RowBox[{"Max", "[", 
+       RowBox[{
+        RowBox[{"-", "smin"}], ",", " ", "tmin"}], "]"}], " ", "+", " ", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", " ", "tmax"}], "]"}]}], ")"}]}],
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  InputForm[(1 + $CellContext`smax - $CellContext`smin) (1 - 
+    Max[-$CellContext`smin, $CellContext`tmin] + Min[-1, $CellContext`tmax])],
+  
+  AutoDelete->True,
+  Editable->True]], "Output",
+ CellChangeTimes->{
+  3.7755713281985073`*^9, 3.7755714657331533`*^9, 3.775617443634457*^9, 
+   3.775621611665471*^9, 3.775621787754491*^9, 3.775621824841408*^9, 
+   3.7756218658448668`*^9, 3.77562483171239*^9, 3.775636341393072*^9, {
+   3.7756364544063787`*^9, 3.7756364647372217`*^9}, 3.7756384473642273`*^9, 
+   3.775653548091632*^9, 
+   3.775656713632332*^9},ExpressionUUID->"71c323d7-63d3-43f9-bb9d-\
+45f9d848edd1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lst2", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nstpiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"tmin", ",", "0"}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{"tmax", ",", "smin"}], "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.775624833144918*^9, 3.775624833768961*^9}, {
+  3.775636456238019*^9, 
+  3.775636465827655*^9}},ExpressionUUID->"12a57859-5b3d-4a28-b46a-\
+adb02c84d796"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", "smax", " ", "-", " ", "smin"}], ")"}], "*", 
+    
+    RowBox[{"(", 
+     RowBox[{"1", " ", "-", " ", 
+      RowBox[{"Max", "[", 
+       RowBox[{"0", ",", " ", "tmin"}], "]"}], " ", "+", " ", 
+      RowBox[{"Min", "[", 
+       RowBox[{"smin", ",", " ", "tmax"}], "]"}]}], ")"}]}],
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  InputForm[(1 + $CellContext`smax - $CellContext`smin) (1 - Max[
+    0, $CellContext`tmin] + Min[$CellContext`smin, $CellContext`tmax])],
+  AutoDelete->True,
+  Editable->True]], "Output",
+ CellChangeTimes->{
+  3.775621614003827*^9, 3.775621826864811*^9, 3.775624834117054*^9, {
+   3.7756364566066236`*^9, 3.7756364661320457`*^9}, 3.775638448350567*^9, 
+   3.775653548705636*^9},ExpressionUUID->"83a5733b-45de-40bf-bd82-\
+33012f470849"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lst3", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nstpiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "2", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"tmin", ",", 
+        RowBox[{"smin", "+", "1"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{"tmax", ",", "smax"}], "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.775571480037388*^9, 3.775571507820438*^9}, {
+   3.775571560903597*^9, 3.7755716247382717`*^9}, 3.775617433291395*^9, {
+   3.775624835322818*^9, 3.775624836358842*^9}, {3.7756364591095753`*^9, 
+   3.7756364680667048`*^9}, {3.775637247297632*^9, 
+   3.775637264145863*^9}},ExpressionUUID->"df7fb3ce-0e19-46dc-8186-\
+d809c2a54a39"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "1"}], " ", "+", " ", 
+       RowBox[{"Max", "[", 
+        RowBox[{
+         RowBox[{"1", " ", "+", " ", "smin"}], ",", " ", "tmin"}], "]"}], " ",
+        "-", " ", 
+       RowBox[{"Min", "[", 
+        RowBox[{"smax", ",", " ", "tmax"}], "]"}]}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], "*", 
+        RowBox[{"(", 
+         RowBox[{"1", " ", "+", " ", "smax"}], ")"}]}], " ", "+", " ", 
+       RowBox[{"Max", "[", 
+        RowBox[{
+         RowBox[{"1", " ", "+", " ", "smin"}], ",", " ", "tmin"}], "]"}], " ",
+        "+", " ", 
+       RowBox[{"Min", "[", 
+        RowBox[{"smax", ",", " ", "tmax"}], "]"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[(-1 + Max[1 + $CellContext`smin, $CellContext`tmin] - 
+     Min[$CellContext`smax, $CellContext`tmax]) ((-2) (1 + $CellContext`smax) + 
+     Max[1 + $CellContext`smin, $CellContext`tmin] + 
+     Min[$CellContext`smax, $CellContext`tmax])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{{3.7755715976393137`*^9, 3.7755716252378674`*^9}, 
+   3.77561744440954*^9, 3.775624836695363*^9, {3.775636459598547*^9, 
+   3.7756364684414463`*^9}, 3.775637266162166*^9, 3.775638449105651*^9, 
+   3.775653549568493*^9},ExpressionUUID->"918d84b9-e6e7-4af2-aeca-\
+61a7cfc82239"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lst4", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nstpiecewise", "[", 
+     RowBox[{"[", "2", "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"tmin", ",", 
+        RowBox[{"-", "smax"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{"tmax", ",", 
+        RowBox[{"-", "1"}], ",", 
+        RowBox[{
+         RowBox[{"-", "smin"}], "-", "1"}]}], "]"}]}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.775571782976273*^9, 3.775571852178811*^9}, 
+   3.775617434435432*^9, {3.775617704127118*^9, 3.7756177261115913`*^9}, {
+   3.7756248383528337`*^9, 3.7756248390630817`*^9}, {3.775636266449175*^9, 
+   3.775636273626479*^9}, {3.775636471415299*^9, 3.775636471783916*^9}, {
+   3.77565379411686*^9, 
+   3.775653809929833*^9}},ExpressionUUID->"95f51e44-aae2-41fd-84a1-\
+905d8b20fd7f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{
+           RowBox[{"-", "smax"}], ",", " ", "tmin"}], "]"}], " ", "-", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "-", " ", "smin"}], ",", " ", "tmax"}], 
+          "]"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", "+", " ", 
+         RowBox[{"2", "*", "smax"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{
+           RowBox[{"-", "smax"}], ",", " ", "tmin"}], "]"}], " ", "+", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "-", " ", "smin"}], ",", " ", "tmax"}], 
+          "]"}]}], ")"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[-(-1 + Max[-$CellContext`smax, $CellContext`tmin] - 
+     Min[-1, -1 - $CellContext`smin, $CellContext`tmax]) (2 + 
+     2 $CellContext`smax + Max[-$CellContext`smax, $CellContext`tmin] + 
+     Min[-1, -1 - $CellContext`smin, $CellContext`tmax])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{3.7755718592447853`*^9, 3.775617445986514*^9, 
+  3.775617728976513*^9, 3.775624839370961*^9, 3.775636275142373*^9, 
+  3.775636472352319*^9, 3.7756384510793943`*^9, 3.775653550267087*^9, 
+  3.7756538114507513`*^9},ExpressionUUID->"8880ee47-f534-4530-a1f0-\
+2c3810a2a064"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Max", "[", 
+          RowBox[{"tmin", ",", 
+           RowBox[{"-", "smin"}], ",", 
+           RowBox[{"-", "1"}]}], "]"}], ",", 
+         RowBox[{"Min", "[", 
+          RowBox[{"tmax", ",", 
+           RowBox[{"-", "1"}]}], "]"}]}], "}"}], ",", "Lst1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Max", "[", 
+          RowBox[{"tmin", ",", "0"}], "]"}], ",", 
+         RowBox[{"Min", "[", 
+          RowBox[{"tmax", ",", "smin"}], "]"}]}], "}"}], ",", "Lst2"}], "}"}],
+      ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Max", "[", 
+          RowBox[{"tmin", ",", 
+           RowBox[{"smin", "+", "1"}]}], "]"}], ",", 
+         RowBox[{"Min", "[", 
+          RowBox[{"tmax", ",", "smax"}], "]"}]}], "}"}], ",", "Lst3"}], "}"}],
+      ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Max", "[", 
+          RowBox[{"tmin", ",", 
+           RowBox[{"-", "smax"}]}], "]"}], ",", 
+         RowBox[{"Min", "[", 
+          RowBox[{"tmax", ",", 
+           RowBox[{"-", "1"}], ",", 
+           RowBox[{
+            RowBox[{"-", "smin"}], "-", "1"}]}], "]"}]}], "}"}], ",", 
+       "Lst4"}], "}"}]}], "}"}], "/.", "testmodes"}], "/.", 
+  RowBox[{"t", "\[Rule]", 
+   RowBox[{"-", "2"}]}]}]], "Input",
+ CellChangeTimes->{{3.7756248462348423`*^9, 3.775624866082334*^9}, {
+   3.775636477541463*^9, 3.775636486075395*^9}, {3.775637011909258*^9, 
+   3.775637078874449*^9}, 3.775637277595702*^9, {3.775653340622451*^9, 
+   3.77565334390187*^9}, {3.7756538214020157`*^9, 3.775653827292502*^9}, {
+   3.775656551264736*^9, 
+   3.7756565523309717`*^9}},ExpressionUUID->"1e7b77f1-d691-4c42-8fd3-\
+48a12cfe5b53"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", 
+       RowBox[{"-", "2"}]}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", "2"}]}], "}"}], ",", 
+     RowBox[{"-", "1"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", 
+       RowBox[{"-", "2"}]}], "}"}], ",", 
+     RowBox[{"-", "10"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "2"}], ",", 
+       RowBox[{"-", "3"}]}], "}"}], ",", "0"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.775624866578186*^9, 3.775636276537539*^9, 3.775636343948018*^9, 
+   3.7756364873283587`*^9, {3.77563702356602*^9, 3.775637081055168*^9}, 
+   3.775637278441388*^9, 3.775638452504442*^9, 3.775653344307228*^9, 
+   3.775653551566942*^9, 3.775653828722126*^9, 3.77565655341776*^9, 
+   3.775656715639265*^9},ExpressionUUID->"b4916e89-ee64-4661-88a0-\
+e4fee1dfa215"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Modeindex piecewise", "Subsection",
+ CellChangeTimes->{{3.7755703943883133`*^9, 3.775570396101321*^9}, {
+  3.775617500467519*^9, 
+  3.775617519053405*^9}},ExpressionUUID->"5baa61e0-f9c8-435c-8fa4-\
+49c44cac2fdc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mst1", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nstpiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"tmin", ",", 
+        RowBox[{"-", "smin"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"t", "-", "1"}], ",", 
+        RowBox[{"-", "1"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.775617520455338*^9, 3.775617554548644*^9}, {
+  3.77561759498101*^9, 3.775617597656835*^9}, {3.775636759487011*^9, 
+  3.775636790829273*^9}, {3.775637342661569*^9, 3.77563734667605*^9}, {
+  3.7756579142579*^9, 
+  3.775657914946307*^9}},ExpressionUUID->"0655cba4-b48f-4043-b21a-\
+c95bd9d78008"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", "smax", " ", "-", " ", "smin"}], ")"}], "*", 
+    
+    RowBox[{"(", 
+     RowBox[{"1", " ", "-", " ", 
+      RowBox[{"Max", "[", 
+       RowBox[{
+        RowBox[{"-", "smin"}], ",", " ", "tmin"}], "]"}], " ", "+", " ", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", " ", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", "t"}]}], "]"}]}], ")"}]}],
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  InputForm[(1 + $CellContext`smax - $CellContext`smin) (1 - 
+    Max[-$CellContext`smin, $CellContext`tmin] + 
+    Min[-1, -1 + $CellContext`t])],
+  AutoDelete->True,
+  Editable->True]], "Output",
+ CellChangeTimes->{
+  3.7756176007555437`*^9, {3.7756367775883303`*^9, 3.7756367926708717`*^9}, 
+   3.7756384553712673`*^9, 
+   3.775657918215103*^9},ExpressionUUID->"ff95dce7-5b92-4252-a2f5-\
+74a9d9d53ea3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mst2", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nstpiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"tmin", ",", "0"}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"t", "-", "1"}], ",", "smin"}], "]"}]}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.775636771461591*^9, 3.7756367722486677`*^9}, {
+  3.775637343407466*^9, 
+  3.77563734929045*^9}},ExpressionUUID->"86c9b2ce-e647-4f2f-adbd-\
+ed636838b7fc"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", "smax", " ", "-", " ", "smin"}], ")"}], "*", 
+    
+    RowBox[{"(", 
+     RowBox[{"1", " ", "-", " ", 
+      RowBox[{"Max", "[", 
+       RowBox[{"0", ",", " ", "tmin"}], "]"}], " ", "+", " ", 
+      RowBox[{"Min", "[", 
+       RowBox[{"smin", ",", " ", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", "t"}]}], "]"}]}], ")"}]}],
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  InputForm[(1 + $CellContext`smax - $CellContext`smin) (1 - Max[
+    0, $CellContext`tmin] + Min[$CellContext`smin, -1 + $CellContext`t])],
+  AutoDelete->True,
+  Editable->True]], "Output",
+ CellChangeTimes->{3.775636773683708*^9, 3.775636805165187*^9, 
+  3.775638516835726*^9, 
+  3.775657922280158*^9},ExpressionUUID->"f622ee50-6b2b-46c5-bf56-\
+6efef9157f3b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mst3", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nstpiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "2", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"tmin", ",", 
+        RowBox[{"smin", "+", "1"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"t", "-", "1"}], ",", "tmax", ",", "smax"}], "]"}]}], "}"}]}],
+    "]"}]}]], "Input",
+ CellChangeTimes->{{3.775617618183329*^9, 3.7756176185145407`*^9}, {
+   3.775636834695208*^9, 3.775636896280888*^9}, {3.775637286522264*^9, 
+   3.775637286947345*^9}, 
+   3.7756373499164*^9},ExpressionUUID->"25ee892d-b290-4ea0-87b4-78bb91c9cd72"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "1"}], " ", "+", " ", 
+       RowBox[{"Max", "[", 
+        RowBox[{
+         RowBox[{"1", " ", "+", " ", "smin"}], ",", " ", "tmin"}], "]"}], " ",
+        "-", " ", 
+       RowBox[{"Min", "[", 
+        RowBox[{"smax", ",", " ", 
+         RowBox[{
+          RowBox[{"-", "1"}], " ", "+", " ", "t"}], ",", " ", "tmax"}], 
+        "]"}]}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], "*", 
+        RowBox[{"(", 
+         RowBox[{"1", " ", "+", " ", "smax"}], ")"}]}], " ", "+", " ", 
+       RowBox[{"Max", "[", 
+        RowBox[{
+         RowBox[{"1", " ", "+", " ", "smin"}], ",", " ", "tmin"}], "]"}], " ",
+        "+", " ", 
+       RowBox[{"Min", "[", 
+        RowBox[{"smax", ",", " ", 
+         RowBox[{
+          RowBox[{"-", "1"}], " ", "+", " ", "t"}], ",", " ", "tmax"}], 
+        "]"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[(-1 + Max[1 + $CellContext`smin, $CellContext`tmin] - 
+     Min[$CellContext`smax, -1 + $CellContext`t, $CellContext`tmax]) ((-2) (
+       1 + $CellContext`smax) + Max[1 + $CellContext`smin, $CellContext`tmin] + 
+     Min[$CellContext`smax, -1 + $CellContext`t, $CellContext`tmax])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{
+  3.775617633832923*^9, {3.775636809010511*^9, 3.775636836509679*^9}, {
+   3.775636870267363*^9, 3.775636896622336*^9}, 3.7756372873811398`*^9, 
+   3.7756385187522783`*^9, 
+   3.775657940827125*^9},ExpressionUUID->"bbd5753e-5cc4-413c-a3a6-\
+2286b3539bf7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mst4", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nstpiecewise", "[", 
+     RowBox[{"[", "2", "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"tmin", ",", 
+        RowBox[{"-", "smax"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"t", "-", "1"}], ",", 
+        RowBox[{"-", "1"}], ",", 
+        RowBox[{
+         RowBox[{"-", "smin"}], "-", "1"}]}], "]"}]}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.775617651389683*^9, 3.7756176524866543`*^9}, {
+   3.775617762258319*^9, 3.775617764800912*^9}, {3.775636813777254*^9, 
+   3.7756368390732403`*^9}, 3.775637351512385*^9, {3.775657942477194*^9, 
+   3.775657950709399*^9}},ExpressionUUID->"0d054804-f5d7-4fd4-aefe-\
+0866b4e10b02"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{
+           RowBox[{"-", "smax"}], ",", " ", "tmin"}], "]"}], " ", "-", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "-", " ", "smin"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "t"}]}], "]"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", "+", " ", 
+         RowBox[{"2", "*", "smax"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{
+           RowBox[{"-", "smax"}], ",", " ", "tmin"}], "]"}], " ", "+", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "-", " ", "smin"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "t"}]}], "]"}]}], ")"}]}], 
+      ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[-(-1 + Max[-$CellContext`smax, $CellContext`tmin] - 
+     Min[-1, -1 - $CellContext`smin, -1 + $CellContext`t]) (2 + 
+     2 $CellContext`smax + Max[-$CellContext`smax, $CellContext`tmin] + 
+     Min[-1, -1 - $CellContext`smin, -1 + $CellContext`t])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{
+  3.775617767929927*^9, {3.7756368297153673`*^9, 3.7756368394775057`*^9}, 
+   3.77563852133386*^9, 
+   3.7756579521289062`*^9},ExpressionUUID->"95c0c6c3-fa20-40a5-b025-\
+e65d90dd68c1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{"tmin", ",", 
+          RowBox[{"-", "smin"}], ",", 
+          RowBox[{"-", "1"}]}], "]"}], ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{
+          RowBox[{"t", "-", "1"}], ",", 
+          RowBox[{"-", "1"}]}], "]"}]}], "}"}], ",", "Mst1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{"tmin", ",", "0"}], "]"}], ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{
+          RowBox[{"t", "-", "1"}], ",", "smin"}], "]"}]}], "}"}], ",", 
+      "Mst2"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{"tmin", ",", 
+          RowBox[{"smin", "+", "1"}]}], "]"}], ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{
+          RowBox[{"t", "-", "1"}], ",", "tmax", ",", "smax"}], "]"}]}], "}"}],
+       ",", "Mst3"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{"tmin", ",", 
+          RowBox[{"-", "smax"}], ",", 
+          RowBox[{"-", "1"}]}], "]"}], ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{
+          RowBox[{"t", "-", "1"}], ",", 
+          RowBox[{"-", "1"}]}], "]"}]}], "}"}], ",", "Mst4"}], "}"}]}], "}"}],
+   "/.", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"tmin", "\[Rule]", "0"}], ",", 
+    RowBox[{"tmax", "\[Rule]", "0"}], ",", 
+    RowBox[{"smin", "\[Rule]", "0"}], ",", 
+    RowBox[{"smax", "\[Rule]", "1"}], ",", 
+    RowBox[{"t", "\[Rule]", "0"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.7756368497512283`*^9, 3.7756368546716423`*^9}, {
+  3.7756370940207663`*^9, 3.775637144546855*^9}, {3.775637296342821*^9, 
+  3.7756373064281473`*^9}, {3.775637370516265*^9, 
+  3.775637384250951*^9}},ExpressionUUID->"199c8b9f-a04b-49bd-b0b4-\
+b4e529a4b780"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", "1"}]}], "}"}], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", "1"}]}], "}"}], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", 
+       RowBox[{"-", "1"}]}], "}"}], ",", 
+     RowBox[{"-", "2"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", "1"}]}], "}"}], ",", "0"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.775636855730541*^9, 3.7756368997229013`*^9}, 
+   3.775637110182537*^9, 3.775637145953566*^9, {3.775637297385881*^9, 
+   3.775637307577589*^9}, 
+   3.775638523344924*^9},ExpressionUUID->"d690dd9d-777d-44d0-a6a4-\
+c6d779fae4a3"]
+}, Open  ]],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Length", " ", "of", " ", "the", " ", "ts", " ", "iterator"}], 
+  "Section"]], "Input",
+ CellChangeTimes->{{3.775462581788967*^9, 3.775462582147457*^9}, {
+  3.7755427755228453`*^9, 3.775542779057209*^9}, {3.775654035508472*^9, 
+  3.775654038446347*^9}},ExpressionUUID->"8622ebe9-3ebf-43a7-844d-\
+573fb8e821eb"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"condts", "=", 
+   RowBox[{
+    RowBox[{"Element", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"tmin", ",", "t", ",", "smin", ",", "tmax", ",", "s"}], "}"}], 
+      ",", "Integers"}], "]"}], "&&", 
+    RowBox[{"smin", "\[GreaterEqual]", "0"}], "&&", 
+    RowBox[{"smax", "\[GreaterEqual]", "smin"}], "&&", 
+    RowBox[{"t", "\[LessEqual]", "smax"}], "&&", 
+    RowBox[{"t", "\[GreaterEqual]", 
+     RowBox[{"-", "smax"}]}], "&&", 
+    RowBox[{"tmax", "\[LessEqual]", "smax"}], "&&", 
+    RowBox[{"tmax", "\[GreaterEqual]", 
+     RowBox[{"-", "smax"}]}], "&&", 
+    RowBox[{"t", "\[GreaterEqual]", "tmin"}], "&&", 
+    RowBox[{"t", "\[LessEqual]", "tmax"}], "&&", 
+    RowBox[{"tmin", "\[LessEqual]", "tmax"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7755429243718224`*^9, 
+  3.7755429277772903`*^9}},ExpressionUUID->"06b8f2cf-c43e-43a3-ad07-\
+b78b8e238e53"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Nts", "=", 
+   RowBox[{
+    RowBox[{"Min", "[", 
+     RowBox[{"s", ",", "tmax"}], "]"}], "-", 
+    RowBox[{"Max", "[", 
+     RowBox[{
+      RowBox[{"-", "s"}], ",", "tmin"}], "]"}], "+", "1"}]}], ";"}]], "Input",\
+
+ CellChangeTimes->{{3.775617857579852*^9, 
+  3.775617864887546*^9}},ExpressionUUID->"f3233261-dac5-4cb4-b94c-\
+5a2aff713821"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ntspiecewise", "=", 
+  RowBox[{
+   RowBox[{"Assuming", "[", 
+    RowBox[{"condts", ",", 
+     RowBox[{"PiecewiseExpand", "[", "Nts", "]"}]}], "]"}], "//", 
+   "Simplify"}]}]], "Input",
+ CellChangeTimes->{{3.775569966950747*^9, 3.775569999082939*^9}, {
+  3.775572125275956*^9, 3.775572126534531*^9}, {3.775617874139826*^9, 
+  3.775617888895673*^9}, {3.775619804763852*^9, 
+  3.775619811032848*^9}},ExpressionUUID->"d094b766-5379-4e4f-8114-\
+ba789b935576"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\[Piecewise]", GridBox[{
+       {
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "s"}]}], 
+        RowBox[{
+         RowBox[{
+          RowBox[{"s", "+", "tmin"}], "\[LessEqual]", "0"}], "&&", 
+         RowBox[{"s", "\[LessEqual]", "tmax"}]}]},
+       {
+        RowBox[{"1", "+", "s", "+", "tmax"}], 
+        RowBox[{
+         RowBox[{
+          RowBox[{"s", "+", "tmin"}], "\[LessEqual]", "0"}], "&&", 
+         RowBox[{"s", ">", "tmax"}]}]},
+       {
+        RowBox[{"1", "+", "s", "-", "tmin"}], 
+        RowBox[{
+         RowBox[{
+          RowBox[{"s", "+", "tmin"}], ">", "0"}], "&&", 
+         RowBox[{"s", "\[LessEqual]", "tmax"}]}]},
+       {
+        RowBox[{"1", "+", "tmax", "-", "tmin"}], 
+        TagBox["True",
+         "PiecewiseDefault",
+         AutoDelete->True]}
+      },
+      AllowedDimensions->{2, Automatic},
+      Editable->True,
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.84]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}},
+      Selectable->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.35]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  "Piecewise",
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.7755699797073383`*^9, 3.7755700044312153`*^9}, 
+   3.775572058549876*^9, 3.77557212684451*^9, {3.775617881334206*^9, 
+   3.7756178892348137`*^9}, {3.775619806283224*^9, 3.775619811529572*^9}, 
+   3.775654046346273*^9},ExpressionUUID->"15cfe26f-3d50-4b55-8337-\
+0cfe18f77322"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"testmodes", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"tmin", "\[Rule]", "0"}], ",", 
+     RowBox[{"tmax", "\[Rule]", "0"}], ",", 
+     RowBox[{"smin", "\[Rule]", "2"}], ",", 
+     RowBox[{"smax", "\[Rule]", "2"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7756544512170467`*^9, 3.775654455463903*^9}, 
+   3.775654486563321*^9},ExpressionUUID->"579b759e-d884-49ac-a513-\
+b95cb272cdf3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Ntspiecewise", "/.", "testmodes"}], "//", "Simplify"}]], "Input",
+ CellChangeTimes->{{3.7756540629413157`*^9, 3.775654067246915*^9}, {
+  3.7756544622499847`*^9, 
+  3.7756544640934*^9}},ExpressionUUID->"c6cdf3ce-d660-4a3e-b58e-134680226c4b"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\[Piecewise]", GridBox[{
+       {"1", 
+        RowBox[{"s", ">", "0"}]},
+       {
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "s"}]}], 
+        TagBox["True",
+         "PiecewiseDefault",
+         AutoDelete->True]}
+      },
+      AllowedDimensions->{2, Automatic},
+      Editable->True,
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.84]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}},
+      Selectable->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.35]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  "Piecewise",
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.775654068231757*^9, {3.775654458026268*^9, 
+   3.775654488458866*^9}},ExpressionUUID->"8103d45b-b3b1-4635-a5aa-\
+aa81f3d31fdb"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Sum in the different ranges. Choose smin and smax accordingly\
+\>", "Subsection",
+ CellChangeTimes->{{3.775570235178527*^9, 
+  3.775570261555258*^9}},ExpressionUUID->"e6b9eaca-2819-4924-9a59-\
+55396ca9886c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lts1", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Ntspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", "smin", ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"-", "tmin"}], ",", "tmax", ",", "smax"}], "]"}]}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.775572051214932*^9, 3.775572082859429*^9}, {
+   3.775572178206471*^9, 3.7755722006421547`*^9}, 3.775617893160799*^9, {
+   3.775654099157866*^9, 3.775654132670746*^9}, {3.775659123946644*^9, 
+   3.7756591244282637`*^9}},ExpressionUUID->"de91e16b-daa4-4a66-8512-\
+38ff2ba0654c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "smin", "-", 
+     RowBox[{"Min", "[", 
+      RowBox[{"smax", ",", "tmax", ",", 
+       RowBox[{"-", "tmin"}]}], "]"}]}], ")"}]}], " ", 
+  RowBox[{"(", 
+   RowBox[{"1", "+", "smin", "+", 
+    RowBox[{"Min", "[", 
+     RowBox[{"smax", ",", "tmax", ",", 
+      RowBox[{"-", "tmin"}]}], "]"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.775654133075115*^9, 
+  3.775659126134585*^9},ExpressionUUID->"b62e20be-6db1-4711-b66a-\
+7a0a9006d0aa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lts2", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Ntspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "2", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{"Max", "[", 
+         RowBox[{
+          RowBox[{"tmax", "+", "1"}], ",", 
+          RowBox[{"-", "tmax"}]}], "]"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"-", "tmin"}], ",", "smax"}], "]"}]}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.775572213320374*^9, 3.775572266950963*^9}, 
+   3.775617893988123*^9, {3.77561944807668*^9, 3.775619448477008*^9}, {
+   3.775619545184187*^9, 3.775619552162174*^9}, {3.775654137857122*^9, 
+   3.7756541395699883`*^9}},ExpressionUUID->"fb751bcb-b19f-48d0-8517-\
+48351a84cf0d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{"-", "tmax"}], ",", " ", 
+           RowBox[{"1", " ", "+", " ", "tmax"}]}], "]"}], " ", "-", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{"smax", ",", " ", 
+           RowBox[{"-", "tmin"}]}], "]"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", "+", " ", 
+         RowBox[{"2", "*", "tmax"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{"-", "tmax"}], ",", " ", 
+           RowBox[{"1", " ", "+", " ", "tmax"}]}], "]"}], " ", "+", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{"smax", ",", " ", 
+           RowBox[{"-", "tmin"}]}], "]"}]}], ")"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[-(-1 + 
+     Max[$CellContext`smin, -$CellContext`tmax, 1 + $CellContext`tmax] - 
+     Min[$CellContext`smax, -$CellContext`tmin]) (2 + 2 $CellContext`tmax + 
+     Max[$CellContext`smin, -$CellContext`tmax, 1 + $CellContext`tmax] + 
+     Min[$CellContext`smax, -$CellContext`tmin])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{3.775619456250308*^9, 3.7756195527730713`*^9, 
+  3.775654141254798*^9},ExpressionUUID->"a74f87a6-9165-4abd-b975-\
+89568f667e4a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lts3", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Ntspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "3", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{
+         RowBox[{"-", "tmin"}], "+", "1"}], ",", "tmin"}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{"tmax", ",", "smax"}], "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.775619469443591*^9, 3.775619472359832*^9}, {
+  3.775619741112412*^9, 3.775619756480542*^9}, {3.775654144177438*^9, 
+  3.775654145154788*^9}},ExpressionUUID->"78ac9655-cdc6-4f5e-a005-\
+fa6ac7bbe570"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{"1", " ", "-", " ", "tmin"}], ",", " ", "tmin"}], "]"}], 
+         " ", "-", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{"smax", ",", " ", "tmax"}], "]"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", "-", " ", 
+         RowBox[{"2", "*", "tmin"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{"1", " ", "-", " ", "tmin"}], ",", " ", "tmin"}], "]"}], 
+         " ", "+", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{"smax", ",", " ", "tmax"}], "]"}]}], ")"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[-(-1 + 
+     Max[$CellContext`smin, 1 - $CellContext`tmin, $CellContext`tmin] - 
+     Min[$CellContext`smax, $CellContext`tmax]) (2 - 2 $CellContext`tmin + 
+     Max[$CellContext`smin, 1 - $CellContext`tmin, $CellContext`tmin] + 
+     Min[$CellContext`smax, $CellContext`tmax])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{3.775619758988509*^9, 3.7756541460924883`*^9, 
+  3.7756595549210167`*^9},ExpressionUUID->"5a5d11d6-1cec-4403-8051-\
+3366ee83029f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lts4", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Ntspiecewise", "[", 
+     RowBox[{"[", "2", "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "tmin"}], "+", "1"}], ",", 
+        RowBox[{"tmax", "+", "1"}], ",", "smin"}], "]"}], ",", "smax"}], 
+     "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7756197741572104`*^9, 3.775619788217005*^9}, {
+  3.775619881937476*^9, 3.775619893829117*^9}, {3.775654147260016*^9, 
+  3.7756541482567787`*^9}, {3.775654510643217*^9, 
+  3.775654511296023*^9}},ExpressionUUID->"6f737dbd-7d69-468c-9484-\
+13a39ed03f08"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", "tmax", " ", "-", " ", "tmin"}], ")"}], "*", 
+    
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", "smax", " ", "-", " ", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", " ", 
+        RowBox[{"1", " ", "+", " ", "tmax"}], ",", " ", 
+        RowBox[{"1", " ", "-", " ", "tmin"}]}], "]"}]}], ")"}]}],
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  InputForm[(1 + $CellContext`tmax - $CellContext`tmin) (
+    1 + $CellContext`smax - 
+    Max[$CellContext`smin, 1 + $CellContext`tmax, 1 - $CellContext`tmin])],
+  AutoDelete->True,
+  Editable->True]], "Output",
+ CellChangeTimes->{3.775619788667047*^9, 3.775619895789687*^9, 
+  3.775654148658555*^9, 3.7756545121081753`*^9, 
+  3.7756595559505672`*^9},ExpressionUUID->"f75c7650-155e-4e2c-851f-\
+86f9604a72f2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"smin", ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{
+          RowBox[{"-", "tmin"}], ",", "tmax"}], "]"}]}], "}"}], ",", "Lts1"}],
+      "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{"smin", ",", 
+          RowBox[{"Max", "[", 
+           RowBox[{
+            RowBox[{"tmax", "+", "1"}], ",", 
+            RowBox[{"-", "tmax"}]}], "]"}]}], "]"}], ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{
+          RowBox[{"-", "tmin"}], ",", "smax"}], "]"}]}], "}"}], ",", "Lts2"}],
+      "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{"smin", ",", 
+          RowBox[{
+           RowBox[{"-", "tmin"}], "+", "1"}], ",", "tmin"}], "]"}], ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{"tmax", ",", "smax"}], "]"}]}], "}"}], ",", "Lts3"}], "}"}], 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "tmin"}], "+", "1"}], ",", 
+          RowBox[{"tmax", "+", "1"}], ",", "smin"}], "]"}], ",", "smax"}], 
+       "}"}], ",", "Lts4"}], "}"}]}], "}"}], "/.", "testmodes"}]], "Input",
+ CellChangeTimes->{{3.775654173521298*^9, 3.775654247034725*^9}, {
+  3.7756544965664043`*^9, 
+  3.7756545188335247`*^9}},ExpressionUUID->"a2f179a5-1596-464f-a181-\
+bcb927be803b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0"}], "}"}], ",", 
+     RowBox[{"-", "3"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0"}], "}"}], ",", 
+     RowBox[{"-", "2"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0"}], "}"}], ",", 
+     RowBox[{"-", "2"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "2"}], "}"}], ",", "1"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.77565422229678*^9, 3.775654249521102*^9}, {
+  3.775654498593115*^9, 
+  3.775654520279948*^9}},ExpressionUUID->"c6cb9034-2a33-4003-8a25-\
+25e4cdca66af"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Modeindex piecewise", "Subsection",
+ CellChangeTimes->{{3.775659059532487*^9, 
+  3.775659062262142*^9}},ExpressionUUID->"dd002cd3-4c2a-46e7-b61c-\
+91eb26d2377e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mts1", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Ntspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", "smin", ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"-", "tmin"}], ",", "tmax", ",", 
+        RowBox[{"s", "-", "1"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7756590760900593`*^9, 3.775659107098528*^9}, {
+  3.775659162038857*^9, 
+  3.775659164478003*^9}},ExpressionUUID->"7f729b35-da63-460f-920a-\
+be93243df51d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "smin", "-", 
+     RowBox[{"Min", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "1"}], "+", "s"}], ",", "tmax", ",", 
+       RowBox[{"-", "tmin"}]}], "]"}]}], ")"}]}], " ", 
+  RowBox[{"(", 
+   RowBox[{"1", "+", "smin", "+", 
+    RowBox[{"Min", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "1"}], "+", "s"}], ",", "tmax", ",", 
+      RowBox[{"-", "tmin"}]}], "]"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{
+  3.775659165660138*^9},ExpressionUUID->"0458e815-2b16-4f74-b214-\
+137a2930b071"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mts2", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Ntspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "2", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{"Max", "[", 
+         RowBox[{
+          RowBox[{"tmax", "+", "1"}], ",", 
+          RowBox[{"-", "tmax"}]}], "]"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"-", "tmin"}], ",", 
+        RowBox[{"s", "-", "1"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.775659517249213*^9, 
+  3.775659521350263*^9}},ExpressionUUID->"c2fae568-eb7b-460f-af18-\
+d35531a903b6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{"-", "tmax"}], ",", " ", 
+           RowBox[{"1", " ", "+", " ", "tmax"}]}], "]"}], " ", "-", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "s"}], ",", " ", 
+           RowBox[{"-", "tmin"}]}], "]"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", "+", " ", 
+         RowBox[{"2", "*", "tmax"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{"-", "tmax"}], ",", " ", 
+           RowBox[{"1", " ", "+", " ", "tmax"}]}], "]"}], " ", "+", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "s"}], ",", " ", 
+           RowBox[{"-", "tmin"}]}], "]"}]}], ")"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[-(-1 + 
+     Max[$CellContext`smin, -$CellContext`tmax, 1 + $CellContext`tmax] - 
+     Min[-1 + $CellContext`s, -$CellContext`tmin]) (2 + 2 $CellContext`tmax + 
+     Max[$CellContext`smin, -$CellContext`tmax, 1 + $CellContext`tmax] + 
+     Min[-1 + $CellContext`s, -$CellContext`tmin])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{
+  3.7756595265691137`*^9},ExpressionUUID->"08249579-c834-4ecc-8e00-\
+e5db39432b8d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mts3", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Ntspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "3", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{
+         RowBox[{"-", "tmin"}], "+", "1"}], ",", "tmin"}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{"tmax", ",", 
+        RowBox[{"s", "-", "1"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7756595342782593`*^9, 
+  3.775659543298904*^9}},ExpressionUUID->"a549f476-25fd-44cd-b17e-\
+dd70e9fe8274"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{"1", " ", "-", " ", "tmin"}], ",", " ", "tmin"}], "]"}], 
+         " ", "-", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "s"}], ",", " ", "tmax"}], 
+          "]"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", "-", " ", 
+         RowBox[{"2", "*", "tmin"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{"1", " ", "-", " ", "tmin"}], ",", " ", "tmin"}], "]"}], 
+         " ", "+", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "s"}], ",", " ", "tmax"}], 
+          "]"}]}], ")"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[-(-1 + 
+     Max[$CellContext`smin, 1 - $CellContext`tmin, $CellContext`tmin] - 
+     Min[-1 + $CellContext`s, $CellContext`tmax]) (2 - 2 $CellContext`tmin + 
+     Max[$CellContext`smin, 1 - $CellContext`tmin, $CellContext`tmin] + 
+     Min[-1 + $CellContext`s, $CellContext`tmax])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{{3.7756595364065247`*^9, 
+  3.775659544597537*^9}},ExpressionUUID->"1f2da969-8f72-4a4d-99df-\
+680a4d756de0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mts4", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Ntspiecewise", "[", 
+     RowBox[{"[", "2", "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "tmin"}], "+", "1"}], ",", 
+        RowBox[{"tmax", "+", "1"}], ",", "smin"}], "]"}], ",", 
+      RowBox[{"s", "-", "1"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7756595471131487`*^9, 
+  3.7756595500263643`*^9}},ExpressionUUID->"c4cd5573-98df-4800-8cc5-\
+5ee3ed6e4002"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", "tmax", " ", "-", " ", "tmin"}], ")"}], "*", 
+    
+    RowBox[{"(", 
+     RowBox[{"s", " ", "-", " ", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", " ", 
+        RowBox[{"1", " ", "+", " ", "tmax"}], ",", " ", 
+        RowBox[{"1", " ", "-", " ", "tmin"}]}], "]"}]}], ")"}]}],
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  InputForm[(1 + $CellContext`tmax - $CellContext`tmin) ($CellContext`s - 
+    Max[$CellContext`smin, 1 + $CellContext`tmax, 1 - $CellContext`tmin])],
+  AutoDelete->True,
+  Editable->True]], "Output",
+ CellChangeTimes->{
+  3.775659551357685*^9},ExpressionUUID->"20a15bc9-a7d7-4947-9d3e-\
+fa70e526c94f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Length of the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["s", "\[Prime]"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "61405501-bc25-45d2-9a16-b2eca889c630"],
+ "s operator"
+}], "Section",
+ CellChangeTimes->{{3.775651770517202*^9, 
+  3.775651785303493*^9}},ExpressionUUID->"c64fa6f4-d030-425b-b5d8-\
+0c59542aa1e1"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"condsps", "=", 
+   RowBox[{
+    RowBox[{"Element", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "smin", ",", "smax", ",", "dsmax", ",", "spmin", ",", "spmax", ",", 
+        "s"}], "}"}], ",", "Integers"}], "]"}], "&&", 
+    RowBox[{"smin", "\[GreaterEqual]", "0"}], "&&", 
+    RowBox[{"smax", "\[GreaterEqual]", "smin"}], "&&", 
+    RowBox[{"s", "\[GreaterEqual]", "smin"}], "&&", 
+    RowBox[{"dsmax", "\[GreaterEqual]", "0"}], "&&", 
+    RowBox[{"spmin", "\[GreaterEqual]", "0"}], "&&", 
+    RowBox[{"spmax", "\[GreaterEqual]", "spmin"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7756518972321663`*^9, 
+  3.775651973023718*^9}},ExpressionUUID->"2a817ab8-fe45-494c-bab3-\
+7daf395e87c6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Nsps", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"Min", "[", 
+     RowBox[{
+      RowBox[{"s", "+", "dsmax"}], ",", "spmax"}], "]"}], "-", 
+    RowBox[{"Max", "[", 
+     RowBox[{
+      RowBox[{"s", "-", "dsmax"}], ",", "spmin"}], "]"}], "+", "1"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Nspspiecewise", " ", "=", " ", 
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{"PiecewiseExpand", "[", "Nsps", "]"}], ",", "condsps"}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.77565179889641*^9, 
+  3.775651894191086*^9}},ExpressionUUID->"a750be65-dd3e-4904-8b05-\
+8c0219d2aba4"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\[Piecewise]", GridBox[{
+       {
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "dsmax"}]}], 
+        RowBox[{
+         RowBox[{
+          RowBox[{"dsmax", "+", "spmin"}], "\[LessEqual]", "s"}], "&&", 
+         RowBox[{
+          RowBox[{"dsmax", "+", "s"}], "\[LessEqual]", "spmax"}]}]},
+       {
+        RowBox[{"1", "+", "dsmax", "-", "s", "+", "spmax"}], 
+        RowBox[{
+         RowBox[{
+          RowBox[{"dsmax", "+", "spmin"}], "\[LessEqual]", "s"}], "&&", 
+         RowBox[{
+          RowBox[{"dsmax", "+", "s"}], ">", "spmax"}]}]},
+       {
+        RowBox[{"1", "+", "dsmax", "+", "s", "-", "spmin"}], 
+        RowBox[{
+         RowBox[{
+          RowBox[{"dsmax", "+", "spmin"}], ">", "s"}], "&&", 
+         RowBox[{
+          RowBox[{"dsmax", "+", "s"}], "\[LessEqual]", "spmax"}]}]},
+       {
+        RowBox[{"1", "+", "spmax", "-", "spmin"}], 
+        TagBox["True",
+         "PiecewiseDefault",
+         AutoDelete->True]}
+      },
+      AllowedDimensions->{2, Automatic},
+      Editable->True,
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.84]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}},
+      Selectable->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.35]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  "Piecewise",
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.775651881764625*^9, 3.7756518946253366`*^9}, 
+   3.775651980982521*^9},ExpressionUUID->"bbee3399-7dcd-4e86-9c4d-\
+e1c7a0e862f1"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"testmodes", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"smin", "\[Rule]", "0"}], ",", 
+     RowBox[{"smax", "\[Rule]", "1"}], ",", 
+     RowBox[{"spmin", "\[Rule]", "1"}], ",", 
+     RowBox[{"spmax", "\[Rule]", "1"}], ",", 
+     RowBox[{"dsmax", "\[Rule]", "0"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.775652430805171*^9, 
+  3.775652439007844*^9}},ExpressionUUID->"292bcc3c-e63e-4e75-ba5a-\
+3a745714d1bf"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Nspspiecewise", "/.", "testmodes"}]], "Input",
+ CellChangeTimes->{{3.775652042120296*^9, 3.7756520482407007`*^9}, {
+  3.775652406428382*^9, 
+  3.77565244212075*^9}},ExpressionUUID->"0de25744-2ece-40dd-887b-\
+74d78f63af97"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\[Piecewise]", GridBox[{
+       {"1", 
+        RowBox[{
+         RowBox[{"1", "\[LessEqual]", "s"}], "&&", 
+         RowBox[{"s", "\[LessEqual]", "1"}]}]},
+       {
+        RowBox[{"2", "-", "s"}], 
+        RowBox[{
+         RowBox[{"1", "\[LessEqual]", "s"}], "&&", 
+         RowBox[{"s", ">", "1"}]}]},
+       {"s", 
+        RowBox[{
+         RowBox[{"1", ">", "s"}], "&&", 
+         RowBox[{"s", "\[LessEqual]", "1"}]}]},
+       {"1", 
+        TagBox["True",
+         "PiecewiseDefault",
+         AutoDelete->True]}
+      },
+      AllowedDimensions->{2, Automatic},
+      Editable->True,
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.84]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}},
+      Selectable->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.35]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  "Piecewise",
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.775652049370655*^9, 3.7756524087275963`*^9, 
+  3.775652442813232*^9},ExpressionUUID->"c4475c01-f891-46a9-b86b-\
+3e6a3617713b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Nspspiecewise", "/.", "testmodes"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "0", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7756524501672688`*^9, 
+  3.77565247612105*^9}},ExpressionUUID->"a358c901-853f-4a09-9f1b-\
+6b9441112f93"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{{3.775652459536027*^9, 
+  3.7756524786009398`*^9}},ExpressionUUID->"4f3e4e07-e1dd-4ee4-acf5-\
+b5f641afab9b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Sum the number of terms in the four ranges", "Subsection",
+ CellChangeTimes->{{3.775569508438258*^9, 
+  3.775569521951252*^9}},ExpressionUUID->"1d4f688f-7c36-43c4-a40e-\
+7dd1d6f4e757"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lsps1", " ", "=", " ", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nspspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{"spmin", "+", "dsmax"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{"smax", ",", 
+        RowBox[{"spmax", "-", "dsmax"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.7756408228089743`*^9, 3.775640885654612*^9}, 
+   3.775644957190186*^9},ExpressionUUID->"2276a0f3-4000-4f41-a59e-\
+fbc373d1440c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", 
+      RowBox[{"2", "*", "dsmax"}]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"1", " ", "-", " ", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", " ", 
+        RowBox[{"dsmax", " ", "+", " ", "spmin"}]}], "]"}], " ", "+", " ", 
+      RowBox[{"Min", "[", 
+       RowBox[{"smax", ",", " ", 
+        RowBox[{
+         RowBox[{"-", "dsmax"}], " ", "+", " ", "spmax"}]}], "]"}]}], ")"}]}],
+   
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  InputForm[(1 + 2 $CellContext`dsmax) (1 - 
+    Max[$CellContext`smin, $CellContext`dsmax + $CellContext`spmin] + 
+    Min[$CellContext`smax, -$CellContext`dsmax + $CellContext`spmax])],
+  AutoDelete->True,
+  Editable->True]], "Output",
+ CellChangeTimes->{3.7756408862959623`*^9, 3.775642060624236*^9, 
+  3.7756449643694983`*^9, 
+  3.77565198487304*^9},ExpressionUUID->"382514ae-a315-451c-86ed-8a17e4a9890e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lsps2", " ", "=", " ", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nspspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "2", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{"spmin", "+", "dsmax"}], ",", 
+        RowBox[{"spmax", "-", "dsmax", "+", "1"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{"smax", ",", 
+        RowBox[{"spmax", "+", "dsmax"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.7756408992078323`*^9, 3.77564092854095*^9}, {
+   3.775641801402598*^9, 3.7756418084395533`*^9}, 
+   3.775644958277205*^9},ExpressionUUID->"58884336-89c2-460e-8f8f-\
+fde2ed066c89"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "1"}], " ", "+", " ", 
+       RowBox[{"Max", "[", 
+        RowBox[{"smin", ",", " ", 
+         RowBox[{"1", " ", "-", " ", "dsmax", " ", "+", " ", "spmax"}], ",", 
+         " ", 
+         RowBox[{"dsmax", " ", "+", " ", "spmin"}]}], "]"}], " ", "-", " ", 
+       RowBox[{"Min", "[", 
+        RowBox[{"smax", ",", " ", 
+         RowBox[{"dsmax", " ", "+", " ", "spmax"}]}], "]"}]}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], "*", 
+        RowBox[{"(", 
+         RowBox[{"1", " ", "+", " ", "dsmax", " ", "+", " ", "spmax"}], 
+         ")"}]}], " ", "+", " ", 
+       RowBox[{"Max", "[", 
+        RowBox[{"smin", ",", " ", 
+         RowBox[{"1", " ", "-", " ", "dsmax", " ", "+", " ", "spmax"}], ",", 
+         " ", 
+         RowBox[{"dsmax", " ", "+", " ", "spmin"}]}], "]"}], " ", "+", " ", 
+       RowBox[{"Min", "[", 
+        RowBox[{"smax", ",", " ", 
+         RowBox[{"dsmax", " ", "+", " ", "spmax"}]}], "]"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[(-1 + 
+     Max[$CellContext`smin, 
+       1 - $CellContext`dsmax + $CellContext`spmax, $CellContext`dsmax + \
+$CellContext`spmin] - 
+     Min[$CellContext`smax, $CellContext`dsmax + $CellContext`spmax]) ((-2) (
+       1 + $CellContext`dsmax + $CellContext`spmax) + 
+     Max[$CellContext`smin, 
+       1 - $CellContext`dsmax + $CellContext`spmax, $CellContext`dsmax + \
+$CellContext`spmin] + 
+     Min[$CellContext`smax, $CellContext`dsmax + $CellContext`spmax])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{3.775640929513145*^9, 3.775641810560581*^9, 
+  3.775642059685277*^9, 
+  3.7756449656328163`*^9},ExpressionUUID->"8d75842d-b9b8-463e-beeb-\
+f12ab57e60f8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lsps3", " ", "=", " ", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nspspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "3", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{"spmin", "-", "dsmax"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{"smax", ",", 
+        RowBox[{"spmin", "+", "dsmax", "-", "1"}], ",", 
+        RowBox[{"spmax", "-", "dsmax"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.775640942815146*^9, 3.7756410045583467`*^9}, 
+   3.77564128264608*^9, {3.775641883638476*^9, 3.775641891240308*^9}, {
+   3.775642014143861*^9, 3.775642014481812*^9}, {3.7756424720139647`*^9, 
+   3.775642492872457*^9}, {3.7756447419862127`*^9, 3.7756447460535707`*^9}, 
+   3.775644959697891*^9, 3.7756455734963284`*^9, {3.775652191399507*^9, 
+   3.775652191480145*^9}},ExpressionUUID->"c845d810-ef28-4224-9782-\
+b631eb9b23f0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "dsmax"}], " ", "+", " ", "spmin"}]}], "]"}], " ", 
+         "-", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{"smax", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "dsmax"}], " ", "+", " ", "spmax"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "dsmax", " ", "+", " ", 
+            "spmin"}]}], "]"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", "+", " ", 
+         RowBox[{"2", "*", "dsmax"}], " ", "-", " ", 
+         RowBox[{"2", "*", "spmin"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "dsmax"}], " ", "+", " ", "spmin"}]}], "]"}], " ", 
+         "+", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{"smax", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "dsmax"}], " ", "+", " ", "spmax"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "dsmax", " ", "+", " ", 
+            "spmin"}]}], "]"}]}], ")"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[-(-1 + 
+     Max[$CellContext`smin, -$CellContext`dsmax + $CellContext`spmin] - 
+     Min[$CellContext`smax, -$CellContext`dsmax + $CellContext`spmax, -1 + \
+$CellContext`dsmax + $CellContext`spmin]) (2 + 2 $CellContext`dsmax - 
+     2 $CellContext`spmin + 
+     Max[$CellContext`smin, -$CellContext`dsmax + $CellContext`spmin] + 
+     Min[$CellContext`smax, -$CellContext`dsmax + $CellContext`spmax, -1 + \
+$CellContext`dsmax + $CellContext`spmin])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{3.77564101118396*^9, 3.775641284205038*^9, 
+  3.7756418928670883`*^9, 3.7756420155005703`*^9, 3.7756420585265923`*^9, 
+  3.7756424935928*^9, 3.7756447473590527`*^9, 3.7756449667916117`*^9, 
+  3.775645574508161*^9, 
+  3.775652205476715*^9},ExpressionUUID->"d24cbbfa-1f35-460f-b13c-\
+cd713ce1ca9e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lsps4", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nspspiecewise", "[", 
+     RowBox[{"[", "2", "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{"spmax", "-", "dsmax", "+", "1"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{"smax", ",", 
+        RowBox[{"spmin", "+", "dsmax", "-", "1"}]}], "]"}]}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7755691973178043`*^9, 3.775569207987158*^9}, {
+   3.775641019769216*^9, 3.775641031166041*^9}, {3.77564107921277*^9, 
+   3.775641134082376*^9}, 3.7756412858102903`*^9, {3.775642009487247*^9, 
+   3.775642009818078*^9}, {3.7756449015837917`*^9, 3.775644906791071*^9}, 
+   3.775644960498563*^9, {3.775652861153246*^9, 
+   3.775652878818758*^9}},ExpressionUUID->"a61e3298-75a5-41e8-96a4-\
+efa2fb5d92a9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", "spmax", " ", "-", " ", "spmin"}], ")"}], 
+    "*", 
+    RowBox[{"(", 
+     RowBox[{"1", " ", "-", " ", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", " ", 
+        RowBox[{"1", " ", "-", " ", "dsmax", " ", "+", " ", "spmax"}]}], 
+       "]"}], " ", "+", " ", 
+      RowBox[{"Min", "[", 
+       RowBox[{"smax", ",", " ", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", "dsmax", " ", "+", " ", 
+         "spmin"}]}], "]"}]}], ")"}]}],
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  InputForm[(1 + $CellContext`spmax - $CellContext`spmin) (1 - 
+    Max[$CellContext`smin, 1 - $CellContext`dsmax + $CellContext`spmax] + 
+    Min[$CellContext`smax, -1 + $CellContext`dsmax + $CellContext`spmin])],
+  AutoDelete->True,
+  Editable->True]], "Output",
+ CellChangeTimes->{3.7755692083484364`*^9, 3.77556948754139*^9, 
+  3.775641134628461*^9, 3.775641286425915*^9, 3.775642010359494*^9, 
+  3.775642057244916*^9, 3.77564490729939*^9, 3.775644967974184*^9, 
+  3.775652879709319*^9},ExpressionUUID->"a6ba026a-dd18-415c-9f5a-\
+fa3162150ff9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{"smin", ",", 
+          RowBox[{"spmin", "+", "dsmax"}]}], "]"}], ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{"smax", ",", 
+          RowBox[{"spmax", "-", "dsmax"}]}], "]"}]}], "}"}], ",", "Lsps1"}], 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{"smin", ",", 
+          RowBox[{"spmin", "+", "dsmax"}], ",", 
+          RowBox[{"spmax", "-", "dsmax", "+", "1"}]}], "]"}], ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{"smax", ",", 
+          RowBox[{"spmax", "+", "dsmax"}]}], "]"}]}], "}"}], ",", "Lsps2"}], 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{"smin", ",", 
+          RowBox[{"spmin", "-", "dsmax"}]}], "]"}], ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{"smax", ",", 
+          RowBox[{"spmin", "+", "dsmax", "-", "1"}], ",", 
+          RowBox[{"spmax", "-", "dsmax"}]}], "]"}]}], "}"}], ",", "Lsps3"}], 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Max", "[", 
+         RowBox[{"smin", ",", 
+          RowBox[{"spmax", "-", "dsmax", "+", "1"}]}], "]"}], ",", 
+        RowBox[{"Min", "[", 
+         RowBox[{"smax", ",", 
+          RowBox[{"spmin", "+", "dsmax", "-", "1"}]}], "]"}]}], "}"}], ",", 
+      "Lsps4"}], "}"}]}], "}"}], "/.", "testmodes"}]], "Input",
+ CellChangeTimes->{{3.775641150691934*^9, 3.7756411879671373`*^9}, {
+   3.775641247758481*^9, 3.7756413282572727`*^9}, {3.7756420379001923`*^9, 
+   3.775642051406172*^9}, {3.7756423428805227`*^9, 3.775642354550124*^9}, {
+   3.775642498547284*^9, 3.775642500359776*^9}, {3.775644775967812*^9, 
+   3.7756447782839518`*^9}, {3.775644974965027*^9, 3.775644975305808*^9}, {
+   3.775645600940794*^9, 3.77564560228629*^9}, {3.775652001021408*^9, 
+   3.7756520080393457`*^9}, 3.7756522143749313`*^9, {3.775652370320088*^9, 
+   3.7756523954170628`*^9}, {3.775652517308402*^9, 3.775652518044479*^9}, 
+   3.77565288922438*^9},ExpressionUUID->"b862f4a2-25a7-4696-acf2-\
+d93683b4d672"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "1"}], "}"}], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0"}], "}"}], ",", 
+     RowBox[{"-", "1"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7756411898108788`*^9, {3.77564131746833*^9, 3.775641329763052*^9}, 
+   3.775642053120726*^9, 3.7756423563382177`*^9, 3.7756425028100853`*^9, 
+   3.77564475183213*^9, 3.775644781888653*^9, 3.775644911351807*^9, 
+   3.775644976017712*^9, 3.775645579101781*^9, 3.775652008654978*^9, 
+   3.775652215732939*^9, {3.775652372203066*^9, 3.775652396115576*^9}, 
+   3.7756525184079313`*^9, 
+   3.775652892132098*^9},ExpressionUUID->"54b4b94d-c629-497c-b458-\
+4826d034a284"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Modeindex piecewise", "Subsection",
+ CellChangeTimes->{{3.775659851897949*^9, 
+  3.775659861342662*^9}},ExpressionUUID->"5723e807-bd58-4523-8961-\
+b8c4a5603375"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Msps1", " ", "=", " ", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nspspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{"spmin", "+", "dsmax"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"s", "-", "1"}], ",", 
+        RowBox[{"spmax", "-", "dsmax"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.775659868957252*^9, 
+  3.7756598745929127`*^9}},ExpressionUUID->"f85af3f5-689c-478a-83c7-\
+f09714845f66"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", 
+      RowBox[{"2", "*", "dsmax"}]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"1", " ", "-", " ", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", " ", 
+        RowBox[{"dsmax", " ", "+", " ", "spmin"}]}], "]"}], " ", "+", " ", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", "s"}], ",", " ", 
+        RowBox[{
+         RowBox[{"-", "dsmax"}], " ", "+", " ", "spmax"}]}], "]"}]}], ")"}]}],
+   
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  InputForm[(1 + 2 $CellContext`dsmax) (1 - 
+    Max[$CellContext`smin, $CellContext`dsmax + $CellContext`spmin] + 
+    Min[-1 + $CellContext`s, -$CellContext`dsmax + $CellContext`spmax])],
+  AutoDelete->True,
+  Editable->True]], "Output",
+ CellChangeTimes->{
+  3.775659875628808*^9},ExpressionUUID->"315a3472-7795-4973-b0c1-\
+fd84ab934df7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Msps2", " ", "=", " ", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nspspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "2", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{"spmin", "+", "dsmax"}], ",", 
+        RowBox[{"spmax", "-", "dsmax", "+", "1"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"s", "-", "1"}], ",", 
+        RowBox[{"spmax", "+", "dsmax"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.775659884030377*^9, 
+  3.775659889643627*^9}},ExpressionUUID->"93149a8d-1ee4-489a-8904-\
+a6f89b48bc8e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "1"}], " ", "+", " ", 
+       RowBox[{"Max", "[", 
+        RowBox[{"smin", ",", " ", 
+         RowBox[{"1", " ", "-", " ", "dsmax", " ", "+", " ", "spmax"}], ",", 
+         " ", 
+         RowBox[{"dsmax", " ", "+", " ", "spmin"}]}], "]"}], " ", "-", " ", 
+       RowBox[{"Min", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "1"}], " ", "+", " ", "s"}], ",", " ", 
+         RowBox[{"dsmax", " ", "+", " ", "spmax"}]}], "]"}]}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], "*", 
+        RowBox[{"(", 
+         RowBox[{"1", " ", "+", " ", "dsmax", " ", "+", " ", "spmax"}], 
+         ")"}]}], " ", "+", " ", 
+       RowBox[{"Max", "[", 
+        RowBox[{"smin", ",", " ", 
+         RowBox[{"1", " ", "-", " ", "dsmax", " ", "+", " ", "spmax"}], ",", 
+         " ", 
+         RowBox[{"dsmax", " ", "+", " ", "spmin"}]}], "]"}], " ", "+", " ", 
+       RowBox[{"Min", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "1"}], " ", "+", " ", "s"}], ",", " ", 
+         RowBox[{"dsmax", " ", "+", " ", "spmax"}]}], "]"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[(-1 + 
+     Max[$CellContext`smin, 
+       1 - $CellContext`dsmax + $CellContext`spmax, $CellContext`dsmax + \
+$CellContext`spmin] - 
+     Min[-1 + $CellContext`s, $CellContext`dsmax + $CellContext`spmax]) ((-2) \
+(1 + $CellContext`dsmax + $CellContext`spmax) + 
+     Max[$CellContext`smin, 
+       1 - $CellContext`dsmax + $CellContext`spmax, $CellContext`dsmax + \
+$CellContext`spmin] + 
+     Min[-1 + $CellContext`s, $CellContext`dsmax + $CellContext`spmax])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{
+  3.7756598925688334`*^9},ExpressionUUID->"e0998efc-c80f-4183-9b6c-\
+13b12441a574"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Msps3", " ", "=", " ", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nspspiecewise", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "3", ",", "1"}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{"spmin", "-", "dsmax"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"s", "-", "1"}], ",", 
+        RowBox[{"spmin", "+", "dsmax", "-", "1"}], ",", 
+        RowBox[{"spmax", "-", "dsmax"}]}], "]"}]}], "}"}]}], "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.775659902410513*^9, 
+  3.775659906047881*^9}},ExpressionUUID->"30e68604-b48f-44d4-ab4b-\
+a52423e62bb6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"div", "("}], 
+  InterpretationBox[
+   StyleBox[
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "dsmax"}], " ", "+", " ", "spmin"}]}], "]"}], " ", 
+         "-", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "s"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "dsmax"}], " ", "+", " ", "spmax"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "dsmax", " ", "+", " ", 
+            "spmin"}]}], "]"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"2", " ", "+", " ", 
+         RowBox[{"2", "*", "dsmax"}], " ", "-", " ", 
+         RowBox[{"2", "*", "spmin"}], " ", "+", " ", 
+         RowBox[{"Max", "[", 
+          RowBox[{"smin", ",", " ", 
+           RowBox[{
+            RowBox[{"-", "dsmax"}], " ", "+", " ", "spmin"}]}], "]"}], " ", 
+         "+", " ", 
+         RowBox[{"Min", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "s"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "dsmax"}], " ", "+", " ", "spmax"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "1"}], " ", "+", " ", "dsmax", " ", "+", " ", 
+            "spmin"}]}], "]"}]}], ")"}]}], ")"}]}],
+    ShowStringCharacters->True,
+    NumberMarks->True],
+   InputForm[-(-1 + 
+     Max[$CellContext`smin, -$CellContext`dsmax + $CellContext`spmin] - 
+     Min[-1 + $CellContext`s, -$CellContext`dsmax + $CellContext`spmax, -1 + \
+$CellContext`dsmax + $CellContext`spmin]) (2 + 2 $CellContext`dsmax - 
+     2 $CellContext`spmin + 
+     Max[$CellContext`smin, -$CellContext`dsmax + $CellContext`spmin] + 
+     Min[-1 + $CellContext`s, -$CellContext`dsmax + $CellContext`spmax, -1 + \
+$CellContext`dsmax + $CellContext`spmin])],
+   AutoDelete->True,
+   Editable->True], ",", "2", ")"}]], "Output",
+ CellChangeTimes->{
+  3.775659906516988*^9},ExpressionUUID->"f4152e54-d559-4a27-b0f8-\
+d1c15c0c722e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Msps4", "=", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"Nspspiecewise", "[", 
+     RowBox[{"[", "2", "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", 
+        RowBox[{"spmax", "-", "dsmax", "+", "1"}]}], "]"}], ",", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"s", "-", "1"}], ",", 
+        RowBox[{"spmin", "+", "dsmax", "-", "1"}]}], "]"}]}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7756599121728573`*^9, 
+  3.775659915675029*^9}},ExpressionUUID->"bee4e23d-05d7-415f-9732-\
+8b59e12b1c46"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", " ", "+", " ", "spmax", " ", "-", " ", "spmin"}], ")"}], 
+    "*", 
+    RowBox[{"(", 
+     RowBox[{"1", " ", "-", " ", 
+      RowBox[{"Max", "[", 
+       RowBox[{"smin", ",", " ", 
+        RowBox[{"1", " ", "-", " ", "dsmax", " ", "+", " ", "spmax"}]}], 
+       "]"}], " ", "+", " ", 
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", "s"}], ",", " ", 
+        RowBox[{
+         RowBox[{"-", "1"}], " ", "+", " ", "dsmax", " ", "+", " ", 
+         "spmin"}]}], "]"}]}], ")"}]}],
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  InputForm[(1 + $CellContext`spmax - $CellContext`spmin) (1 - 
+    Max[$CellContext`smin, 1 - $CellContext`dsmax + $CellContext`spmax] + 
+    Min[-1 + $CellContext`s, -1 + $CellContext`dsmax + $CellContext`spmin])],
+  AutoDelete->True,
+  Editable->True]], "Output",
+ CellChangeTimes->{
+  3.775659916582601*^9},ExpressionUUID->"3c326b49-5f5a-4081-835a-\
+3c5075a8ce7c"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1366, 719},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"11.2 for Linux x86 (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 181, 3, 69, "Chapter",ExpressionUUID->"b082166b-edf2-4069-b228-8ce01582afab"],
+Cell[764, 27, 1704, 43, 55, "Input",ExpressionUUID->"11b6faab-72fd-437f-866b-dc1c9479e4db"],
+Cell[2471, 72, 252, 6, 50, "Input",ExpressionUUID->"3350b4cd-01aa-4a0b-b67c-6a37e90cf45c"],
+Cell[2726, 80, 814, 19, 31, "Input",ExpressionUUID->"ac13d68a-c485-4408-83c0-18c8e273ea4d"],
+Cell[3543, 101, 365, 10, 31, "Input",ExpressionUUID->"5646e014-b463-44ae-8c6d-14a57b4d76df"],
+Cell[CellGroupData[{
+Cell[3933, 115, 579, 12, 31, "Input",ExpressionUUID->"8efd831f-d4d4-474d-a824-84ae18ee2ba7"],
+Cell[4515, 129, 2431, 67, 68, "Output",ExpressionUUID->"80abd998-e5cb-449a-bf1b-7aa06ee22ae1"]
+}, Open  ]],
+Cell[6961, 199, 581, 15, 31, "Input",ExpressionUUID->"a9aa5065-4869-466d-bbd0-6ca4a5811395"],
+Cell[CellGroupData[{
+Cell[7567, 218, 402, 7, 31, "Input",ExpressionUUID->"f475eff4-7ca6-4d76-adc7-99659a30af14"],
+Cell[7972, 227, 2022, 55, 68, "Output",ExpressionUUID->"d757cad0-6402-4e57-badf-775acd143463"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10031, 287, 314, 6, 55, "Subsection",ExpressionUUID->"673acb72-8b47-4ebf-9fde-f4dec70d598b"],
+Cell[CellGroupData[{
+Cell[10370, 297, 973, 22, 31, "Input",ExpressionUUID->"69aec332-0d20-41cb-9cb2-0f1de7efa779"],
+Cell[11346, 321, 1106, 29, 35, "Output",ExpressionUUID->"71c323d7-63d3-43f9-bb9d-45f9d848edd1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12489, 355, 579, 16, 31, "Input",ExpressionUUID->"12a57859-5b3d-4a28-b46a-adb02c84d796"],
+Cell[13071, 373, 880, 23, 35, "Output",ExpressionUUID->"83a5733b-45de-40bf-bd82-33012f470849"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13988, 401, 787, 19, 31, "Input",ExpressionUUID->"df7fb3ce-0e19-46dc-8186-d809c2a54a39"],
+Cell[14778, 422, 1494, 39, 35, "Output",ExpressionUUID->"918d84b9-e6e7-4af2-aeca-61a7cfc82239"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16309, 466, 886, 23, 31, "Input",ExpressionUUID->"95f51e44-aae2-41fd-84a1-905d8b20fd7f"],
+Cell[17198, 491, 1703, 44, 35, "Output",ExpressionUUID->"8880ee47-f534-4530-a1f0-2c3810a2a064"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18938, 540, 1927, 56, 55, "Input",ExpressionUUID->"1e7b77f1-d691-4c42-8fd3-48a12cfe5b53"],
+Cell[20868, 598, 1066, 33, 35, "Output",ExpressionUUID->"b4916e89-ee64-4661-88a0-e4fee1dfa215"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21983, 637, 218, 4, 55, "Subsection",ExpressionUUID->"5baa61e0-f9c8-435c-8fa4-49c44cac2fdc"],
+Cell[CellGroupData[{
+Cell[22226, 645, 793, 21, 31, "Input",ExpressionUUID->"0655cba4-b48f-4043-b21a-c95bd9d78008"],
+Cell[23022, 668, 958, 28, 35, "Output",ExpressionUUID->"ff95dce7-5b92-4252-a2f5-74a9d9d53ea3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24017, 701, 610, 18, 31, "Input",ExpressionUUID->"86c9b2ce-e647-4f2f-adbd-ed636838b7fc"],
+Cell[24630, 721, 866, 24, 35, "Output",ExpressionUUID->"f622ee50-6b2b-46c5-bf56-6efef9157f3b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25533, 750, 726, 19, 31, "Input",ExpressionUUID->"25ee892d-b290-4ea0-87b4-78bb91c9cd72"],
+Cell[26262, 771, 1698, 46, 35, "Output",ExpressionUUID->"bbd5753e-5cc4-413c-a3a6-2286b3539bf7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27997, 822, 811, 22, 31, "Input",ExpressionUUID->"0d054804-f5d7-4fd4-aefe-0866b4e10b02"],
+Cell[28811, 846, 1741, 47, 35, "Output",ExpressionUUID->"95c0c6c3-fa20-40a5-b025-e65d90dd68c1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30589, 898, 2014, 61, 55, "Input",ExpressionUUID->"199c8b9f-a04b-49bd-b0b4-b4e529a4b780"],
+Cell[32606, 961, 863, 28, 35, "Output",ExpressionUUID->"d690dd9d-777d-44d0-a6a4-c6d779fae4a3"]
+}, Open  ]],
+Cell[33484, 992, 345, 7, 50, "Input",ExpressionUUID->"8622ebe9-3ebf-43a7-844d-573fb8e821eb"],
+Cell[33832, 1001, 905, 22, 55, "Input",ExpressionUUID->"06b8f2cf-c43e-43a3-ad07-b78b8e238e53"],
+Cell[34740, 1025, 375, 12, 31, "Input",ExpressionUUID->"f3233261-dac5-4cb4-b94c-5a2aff713821"],
+Cell[CellGroupData[{
+Cell[35140, 1041, 478, 11, 31, "Input",ExpressionUUID->"d094b766-5379-4e4f-8114-ba789b935576"],
+Cell[35621, 1054, 2412, 67, 86, "Output",ExpressionUUID->"15cfe26f-3d50-4b55-8337-0cfe18f77322"]
+}, Open  ]],
+Cell[38048, 1124, 435, 11, 31, "Input",ExpressionUUID->"579b759e-d884-49ac-a513-b95cb272cdf3"],
+Cell[CellGroupData[{
+Cell[38508, 1139, 275, 5, 31, "Input",ExpressionUUID->"c6cdf3ce-d660-4a3e-b58e-134680226c4b"],
+Cell[38786, 1146, 1703, 50, 50, "Output",ExpressionUUID->"8103d45b-b3b1-4635-a5aa-aa81f3d31fdb"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40538, 1202, 217, 5, 55, "Subsection",ExpressionUUID->"e6b9eaca-2819-4924-9a59-55396ca9886c"],
+Cell[CellGroupData[{
+Cell[40780, 1211, 682, 17, 31, "Input",ExpressionUUID->"de91e16b-daa4-4a66-8512-38ff2ba0654c"],
+Cell[41465, 1230, 536, 16, 35, "Output",ExpressionUUID->"b62e20be-6db1-4711-b66a-7a0a9006d0aa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42038, 1251, 857, 23, 31, "Input",ExpressionUUID->"fb751bcb-b19f-48d0-8517-48351a84cf0d"],
+Cell[42898, 1276, 1525, 39, 35, "Output",ExpressionUUID->"a74f87a6-9165-4abd-b975-89568f667e4a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44460, 1320, 695, 18, 31, "Input",ExpressionUUID->"78ac9655-cdc6-4f5e-a005-fa6ac7bbe570"],
+Cell[45158, 1340, 1435, 37, 35, "Output",ExpressionUUID->"5a5d11d6-1cec-4403-8051-3366ee83029f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46630, 1382, 681, 18, 31, "Input",ExpressionUUID->"6f737dbd-7d69-468c-9484-13a39ed03f08"],
+Cell[47314, 1402, 882, 23, 35, "Output",ExpressionUUID->"f75c7650-155e-4e2c-851f-86f9604a72f2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48233, 1430, 1631, 50, 101, "Input",ExpressionUUID->"a2f179a5-1596-464f-a181-bcb927be803b"],
+Cell[49867, 1482, 738, 25, 35, "Output",ExpressionUUID->"c6cb9034-2a33-4003-8a25-25e4cdca66af"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50654, 1513, 167, 3, 55, "Subsection",ExpressionUUID->"dd002cd3-4c2a-46e7-b61c-91eb26d2377e"],
+Cell[CellGroupData[{
+Cell[50846, 1520, 582, 16, 31, "Input",ExpressionUUID->"7f729b35-da63-460f-920a-be93243df51d"],
+Cell[51431, 1538, 610, 20, 35, "Output",ExpressionUUID->"0458e815-2b16-4f74-b214-137a2930b071"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52078, 1563, 709, 21, 31, "Input",ExpressionUUID->"c2fae568-eb7b-460f-af18-d35531a903b6"],
+Cell[52790, 1586, 1619, 43, 35, "Output",ExpressionUUID->"08249579-c834-4ecc-8e00-e5db39432b8d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54446, 1634, 628, 18, 31, "Input",ExpressionUUID->"a549f476-25fd-44cd-b17e-dd70e9fe8274"],
+Cell[55077, 1654, 1573, 43, 35, "Output",ExpressionUUID->"1f2da969-8f72-4a4d-99df-680a4d756de0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[56687, 1702, 555, 16, 31, "Input",ExpressionUUID->"c4cd5573-98df-4800-8cc5-5ee3ed6e4002"],
+Cell[57245, 1720, 752, 21, 35, "Output",ExpressionUUID->"20a15bc9-a7d7-4947-9d3e-fa70e526c94f"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58046, 1747, 362, 11, 68, "Section",ExpressionUUID->"c64fa6f4-d030-425b-b5d8-0c59542aa1e1"],
+Cell[58411, 1760, 742, 18, 31, "Input",ExpressionUUID->"2a817ab8-fe45-494c-bab3-7daf395e87c6"],
+Cell[CellGroupData[{
+Cell[59178, 1782, 618, 18, 55, "Input",ExpressionUUID->"a750be65-dd3e-4904-8b05-8c0219d2aba4"],
+Cell[59799, 1802, 2424, 68, 86, "Output",ExpressionUUID->"bbee3399-7dcd-4e86-9c4d-e1c7a0e862f1"]
+}, Open  ]],
+Cell[62238, 1873, 468, 12, 31, "Input",ExpressionUUID->"292bcc3c-e63e-4e75-ba5a-3a745714d1bf"],
+Cell[CellGroupData[{
+Cell[62731, 1889, 246, 5, 31, "Input",ExpressionUUID->"0de25744-2ece-40dd-887b-74d78f63af97"],
+Cell[62980, 1896, 1992, 58, 86, "Output",ExpressionUUID->"c4475c01-f891-46a9-b86b-3e6a3617713b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65009, 1959, 312, 8, 31, "Input",ExpressionUUID->"a358c901-853f-4a09-9f1b-6b9441112f93"],
+Cell[65324, 1969, 201, 5, 35, "Output",ExpressionUUID->"4f3e4e07-e1dd-4ee4-acf5-b5f641afab9b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65562, 1979, 190, 3, 55, "Subsection",ExpressionUUID->"1d4f688f-7c36-43c4-a40e-7dd1d6f4e757"],
+Cell[CellGroupData[{
+Cell[65777, 1986, 640, 18, 31, "Input",ExpressionUUID->"2276a0f3-4000-4f41-a59e-fbc373d1440c"],
+Cell[66420, 2006, 973, 26, 35, "Output",ExpressionUUID->"382514ae-a315-451c-86ed-8a17e4a9890e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[67430, 2037, 748, 20, 31, "Input",ExpressionUUID->"58884336-89c2-460e-8f8f-fde2ed066c89"],
+Cell[68181, 2059, 1902, 49, 59, "Output",ExpressionUUID->"8d75842d-b9b8-463e-beeb-f12ab57e60f8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70120, 2113, 994, 23, 31, "Input",ExpressionUUID->"c845d810-ef28-4224-9782-b631eb9b23f0"],
+Cell[71117, 2138, 2260, 56, 59, "Output",ExpressionUUID->"d24cbbfa-1f35-460f-b13c-cd713ce1ca9e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73414, 2199, 886, 21, 31, "Input",ExpressionUUID->"a61e3298-75a5-41e8-96a4-efa2fb5d92a9"],
+Cell[74303, 2222, 1168, 29, 35, "Output",ExpressionUUID->"a6ba026a-dd18-415c-9f5a-fa3162150ff9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75508, 2256, 2334, 59, 101, "Input",ExpressionUUID->"b862f4a2-25a7-4696-acf2-d93683b4d672"],
+Cell[77845, 2317, 1010, 28, 35, "Output",ExpressionUUID->"54b4b94d-c629-497c-b458-4826d034a284"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[78904, 2351, 167, 3, 55, "Subsection",ExpressionUUID->"5723e807-bd58-4523-8961-b8c4a5603375"],
+Cell[CellGroupData[{
+Cell[79096, 2358, 643, 19, 31, "Input",ExpressionUUID->"f85af3f5-689c-478a-83c7-f09714845f66"],
+Cell[79742, 2379, 966, 28, 35, "Output",ExpressionUUID->"315a3472-7795-4973-b0c1-fd84ab934df7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[80745, 2412, 698, 20, 31, "Input",ExpressionUUID->"93149a8d-1ee4-489a-8904-a6f89b48bc8e"],
+Cell[81446, 2434, 1957, 52, 59, "Output",ExpressionUUID->"e0998efc-c80f-4183-9b6c-13b12441a574"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83440, 2491, 698, 20, 31, "Input",ExpressionUUID->"30e68604-b48f-44d4-ab4b-a52423e62bb6"],
+Cell[84141, 2513, 2184, 57, 59, "Output",ExpressionUUID->"f4152e54-d559-4a27-b0f8-d1c15c0c722e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[86362, 2575, 618, 18, 31, "Input",ExpressionUUID->"bee4e23d-05d7-415f-9732-8b59e12b1c46"],
+Cell[86983, 2595, 1049, 29, 35, "Output",ExpressionUUID->"3c326b49-5f5a-4081-835a-3c5075a8ce7c"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
