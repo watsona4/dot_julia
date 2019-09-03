@@ -10166,6 +10166,12 @@ git-tree-sha1 = "6296e51150b2b5907eb14fd304e51e994d7e7c72"
 uuid = "88634af6-177f-5301-88b8-7819386cfa38"
 version = "2.5.0"
 
+[[SalesForceBulkApi]]
+deps = ["CSV", "DataFrames", "Distributed", "HTTP", "JSON", "LightXML", "ProgressMeter", "Test"]
+git-tree-sha1 = "7f6301c12626206010516ec13be3fd79f82e1f17"
+uuid = "de68a502-6b26-11e9-2c24-19af4cbda7e6"
+version = "0.0.5"
+
 [[SampledSignals]]
 deps = ["Compat", "DSP", "FFTW", "FixedPointNumbers", "InteractiveUtils", "IntervalSets", "LinearAlgebra", "Pkg", "Unitful"]
 git-tree-sha1 = "741c30f791c04625904e042b37876e1c8b18dd60"
