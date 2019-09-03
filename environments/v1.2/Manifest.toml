@@ -10214,6 +10214,12 @@ git-tree-sha1 = "e9287d7e64d59a0b83ed3159d67a1982a7116144"
 uuid = "3f865c0f-6dca-5f4d-999b-29fe1e7e3c92"
 version = "0.3.5"
 
+[[SchattenNorms]]
+deps = ["Convex", "LinearAlgebra", "Random", "SCS", "SparseArrays", "Test"]
+git-tree-sha1 = "dc0c63e6797aaaa21fa3f8ac03b2bde2c39c2a15"
+uuid = "03bc5d91-8e1a-555a-857b-eaff090ecb7c"
+version = "0.1.0"
+
 [[SchumakerSpline]]
 deps = ["Dates", "Plots", "Test"]
 git-tree-sha1 = "de6126c4925640ed19c87f709bd91d21b24c3519"
