@@ -11261,6 +11261,12 @@ git-tree-sha1 = "558e2aa14f061ee6a8b49f55241a74f69b84a196"
 uuid = "69024149-9ee7-55f6-a4c4-859efe599b68"
 version = "0.3.1"
 
+[[Strs]]
+deps = ["ChrBase", "Emoji_Entities", "Format", "HTML_Entities", "InternedStrings", "LaTeX_Entities", "ModuleInterfaceTools", "MurmurHash3", "PCRE2", "StrAPI", "StrBase", "StrEntities", "StrFormat", "StrLiterals", "StrRegex", "StrTables", "Unicode_Entities"]
+git-tree-sha1 = "a7c42bba5d922ec63ce0fbaed24c372ac74fb603"
+uuid = "7bddbee9-b4ee-5d4f-bf0b-c84b4398bbf6"
+version = "1.0.1"
+
 [[StructArrays]]
 deps = ["PooledArrays", "Requires"]
 git-tree-sha1 = "8b4ea677c4dfbcb538695e853207a9f70f84be20"
