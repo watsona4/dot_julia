@@ -11333,6 +11333,12 @@ git-tree-sha1 = "13860d3bc5538677d35dce2fa17046764c84ab5f"
 uuid = "8365b1bb-bd83-58ee-a267-f2965fc81c73"
 version = "0.4.0"
 
+[[SuffixArrays]]
+deps = ["Test"]
+git-tree-sha1 = "f9d1422124f54c40f40070ed2c356bb87761d402"
+uuid = "24f65c1e-0a10-5d3d-8a1f-a83399f3fced"
+version = "0.2.0"
+
 [[SuiteSparse]]
 deps = ["Libdl", "LinearAlgebra", "Serialization", "SparseArrays"]
 uuid = "4607b0f0-06f3-5cda-b6b1-a6196a1729e9"
