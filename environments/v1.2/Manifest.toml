@@ -9997,6 +9997,12 @@ git-tree-sha1 = "1db4d58e4d23e40d1d24760624ec38f4d52a0fbe"
 uuid = "27aeedcb-f738-516b-a0b8-3211cf1146e5"
 version = "0.5.0"
 
+[[RobustShortestPath]]
+deps = ["LightGraphs"]
+git-tree-sha1 = "f59b8fda8767ee10671d16c9e92865e9f70c9f2b"
+uuid = "16f6c422-f222-508b-b0da-15025777bca7"
+version = "0.3.0"
+
 [[RomanNumerals]]
 deps = ["Compat", "Primes"]
 git-tree-sha1 = "06e621d4a9eda8d09eab8aade41e85cb93cadae9"
