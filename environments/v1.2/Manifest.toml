@@ -9326,6 +9326,12 @@ git-tree-sha1 = "8bcf12001c4588950e4931bb89861e6b10c5a29e"
 uuid = "0898d9ac-042b-5d31-8dcc-959fb3365f19"
 version = "0.1.0"
 
+[[Queryverse]]
+deps = ["CSVFiles", "DataFrames", "DataValues", "DataVoyager", "ExcelFiles", "FeatherFiles", "FileIO", "IterableTables", "ParquetFiles", "Query", "QueryTables", "Reexport", "StatFiles", "Test", "VegaLite"]
+git-tree-sha1 = "74943f22375be0f83ebb5e189b58a666b7086abc"
+uuid = "612083be-0b0f-5412-89c1-4e7c75506a58"
+version = "0.3.1"
+
 [[RCall]]
 deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "Libdl", "Missings", "REPL", "Random", "Requires", "StatsModels", "WinReg"]
 git-tree-sha1 = "828332205a09377da6a8ebd1e615b11a22f8def6"
@@ -9399,6 +9405,12 @@ deps = ["DataStructures", "Distributed", "Test"]
 git-tree-sha1 = "5862d915387ebb954016f50a88e34f79a9e5fcd2"
 uuid = "a223df75-4e93-5b7c-acf9-bdd599c0f4de"
 version = "0.8.3"
+
+[[ReadStat]]
+deps = ["BinaryProvider", "DataValues", "Dates", "Libdl", "StringEncodings", "Test"]
+git-tree-sha1 = "182df6a9c0dd0f78ee4ab51a16259deda26cd850"
+uuid = "d71aba96-b539-5138-91ee-935c3ee1374c"
+version = "0.4.1"
 
 [[ReadableNumbers]]
 deps = ["Test"]
@@ -9882,6 +9894,12 @@ deps = ["BinDeps", "Compat", "DelimitedFiles", "Documenter", "Homebrew", "Libdl"
 git-tree-sha1 = "3a267185792d4bafd58df1c84ed44c70c93bd634"
 uuid = "682df890-35be-576f-97d0-3d8c8b33a550"
 version = "3.5.0"
+
+[[StatFiles]]
+deps = ["DataValues", "FileIO", "IterableTables", "IteratorInterfaceExtensions", "ReadStat", "TableShowUtils", "TableTraits", "TableTraitsUtils", "Test"]
+git-tree-sha1 = "28466ea10caec61c476a262172319d2edf248187"
+uuid = "1463e38c-9381-5320-bcd4-4134955f093a"
+version = "0.8.0"
 
 [[StatPlots]]
 deps = ["Clustering", "DataStructures", "DataValues", "Distributions", "IterableTables", "KernelDensity", "Observables", "Plots", "RecipesBase", "Reexport", "StatsBase", "TableTraits", "TableTraitsUtils", "Test", "Widgets"]
