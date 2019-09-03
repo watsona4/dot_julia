@@ -11507,6 +11507,12 @@ git-tree-sha1 = "4c6caaa3d6658009a22c8c8f1e9de9e2bd7eef25"
 uuid = "9449cd9e-2762-5aa3-a617-5413e99d722e"
 version = "0.4.0"
 
+[[Taarruz]]
+deps = ["AutoGrad", "CodecZlib", "Images", "Knet", "Pkg"]
+git-tree-sha1 = "acf02c6921b8bd9271c87fdd8959c196cf07f1ce"
+uuid = "edc76f5a-727d-11e9-15f5-7184c9a7c95d"
+version = "0.1.0"
+
 [[TableShowUtils]]
 deps = ["DataValues", "Dates", "JSON", "Markdown", "Test"]
 git-tree-sha1 = "14c54e1e96431fb87f0d2f5983f090f1b9d06457"
