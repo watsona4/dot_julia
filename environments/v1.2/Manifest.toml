@@ -9967,6 +9967,12 @@ git-tree-sha1 = "2de8e30f803f97598401fffd3eb37b832b7b7ebf"
 uuid = "238d586b-a4bf-555c-9891-eda6fc5e55a2"
 version = "0.1.5"
 
+[[RobotDescriptions]]
+deps = ["Test"]
+git-tree-sha1 = "7df9c4320cb9b859fa88843b1c927234d96d7cbf"
+uuid = "498c179e-6d39-5d99-a5ec-710f95d458bc"
+version = "0.0.1"
+
 [[RobustPmap]]
 deps = ["Compat", "Distributed", "FileIO", "JLD2"]
 git-tree-sha1 = "1db4d58e4d23e40d1d24760624ec38f4d52a0fbe"

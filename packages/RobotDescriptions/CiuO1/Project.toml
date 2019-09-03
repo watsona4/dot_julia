@@ -1,0 +1,14 @@
+name = "RobotDescriptions"
+uuid = "bb5006f8-c8a6-11e8-2451-a5f71e54604b"
+authors = ["Phelipe Wesley <phelipewesleydeoliveira@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+MechanismGeometries = "931e9471-e8fb-5385-a477-07ad12718aca"
+RigidBodyDynamics = "366cf18f-59d5-5db9-a4de-86a9f6786172"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
