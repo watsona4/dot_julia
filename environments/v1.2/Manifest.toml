@@ -9813,6 +9813,12 @@ git-tree-sha1 = "f867a0d53a442ea046ff964e05a0bc0c4307dd66"
 uuid = "671d9d50-c343-11e9-1a9c-fdd992682823"
 version = "0.1.2"
 
+[[Reproducible]]
+deps = ["Markdown", "Random", "Test"]
+git-tree-sha1 = "2b1f232ff88cd0a0ea4e5d96ce9e56114d44521e"
+uuid = "74acc403-992c-5bc5-99bd-1528790dac51"
+version = "0.1.1"
+
 [[Reproject]]
 deps = ["FITSIO", "Interpolations", "SkyCoords", "WCS"]
 git-tree-sha1 = "c7fcca6b75420ad9e2032f3d65ee56e03f0ce08e"
