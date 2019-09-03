@@ -9356,6 +9356,12 @@ git-tree-sha1 = "8a73503d00d0d33f3a57a6a3e601a56d8e36ffcd"
 uuid = "4aa82a78-ed18-41f9-aee6-9d73ba3a0b42"
 version = "0.6.3"
 
+[[RBNF]]
+deps = ["DataStructures", "MLStyle", "PrettyPrint"]
+git-tree-sha1 = "e364ab0c0fc5041b1a6311ba18889709e1c5a50a"
+uuid = "83ef0002-5b9e-11e9-219b-65bac3c6d69c"
+version = "0.1.0"
+
 [[RCall]]
 deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "Libdl", "Missings", "REPL", "Random", "Requires", "StatsModels", "WinReg"]
 git-tree-sha1 = "828332205a09377da6a8ebd1e615b11a22f8def6"
