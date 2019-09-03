@@ -9136,6 +9136,12 @@ git-tree-sha1 = "7a1a1bf8e82f1c03ade925d6af70c742de15da95"
 uuid = "9b64898b-da2a-5774-a656-fd6fb605642c"
 version = "1.0.0"
 
+[[Pukeko]]
+deps = ["Printf"]
+git-tree-sha1 = "68bc5f55efe4c94aa69b205619130790e3dbd8d1"
+uuid = "8cf91db1-0219-5b69-b551-5a0ff3c32cce"
+version = "0.2.0"
+
 [[PyCall]]
 deps = ["Conda", "Dates", "Libdl", "LinearAlgebra", "MacroTools", "Pkg", "Serialization", "Statistics", "Test", "VersionParsing"]
 git-tree-sha1 = "6e5bac1b1faf3575731a6a5b76f638f2389561d3"
