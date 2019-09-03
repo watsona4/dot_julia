@@ -1,0 +1,5 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+examples/**/data/*
+docs/build

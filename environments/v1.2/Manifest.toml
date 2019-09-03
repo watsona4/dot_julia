@@ -9623,6 +9623,12 @@ git-tree-sha1 = "a638d72446a9283560cbcd335cedcd8b805ea965"
 uuid = "ba7d4641-94f4-5bcf-8684-37ba860b1597"
 version = "0.1.0"
 
+[[Recommendation]]
+deps = ["LinearAlgebra", "Random", "Statistics"]
+git-tree-sha1 = "d80bfc43cdd2f46c507ff3e7725bea9c2e29a642"
+uuid = "d27d45ae-66f1-5d53-80d2-11744f5c9556"
+version = "0.3.0"
+
 [[Rectangle]]
 deps = ["LinearAlgebra", "Test"]
 git-tree-sha1 = "214fc1d04d60774ff34d7bb0e1098971524d6edd"
