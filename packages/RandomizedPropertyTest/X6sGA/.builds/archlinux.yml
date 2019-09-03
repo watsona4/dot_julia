@@ -1,0 +1,17 @@
+# build manifest for sr.ht
+image: archlinux
+packages:
+ - gnupg
+ - julia
+sources:
+ - https://git.sr.ht/~quf/RandomizedPropertyTest.jl
+tasks:
+ - check-signature-if-on-master-branch: |
+    cd RandomizedPropertyTest.jl
+    gpg --import .builds/signing-keys.asc # Import keys
+    gpg --list-keys | grep '^    ' | sed 's/^ *//' | sed 's/$/:6:/' | gpg --import-ownertrust # Set trust to ultimate
+    if test $(git rev-parse HEAD) = $(git rev-parse master); then
+      git verify-commit HEAD # Every commit on master should be signed
+    fi
+ - run-tests: |
+    cd RandomizedPropertyTest.jl && julia --project=. -e 'import Pkg; Pkg.test()'
