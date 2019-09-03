@@ -9665,6 +9665,18 @@ git-tree-sha1 = "65f6dc4f80fc3808a796469b733f0c46118af4fb"
 uuid = "93e0c654-6965-5f22-aba9-9c1ae6b3c259"
 version = "1.2.0"
 
+[[ReduceAlgebra]]
+deps = ["Pkg", "Reduce", "ReduceLinAlg", "Test"]
+git-tree-sha1 = "e5ec8902281bd848765714a118480745a007d01d"
+uuid = "cc9b1b2d-f4cf-5aeb-b1c9-57f66198f3ff"
+version = "0.1.0"
+
+[[ReduceLinAlg]]
+deps = ["LinearAlgebra", "Reduce", "Test"]
+git-tree-sha1 = "c330a5e63007c5441eb82463e145d311317a9210"
+uuid = "bfcbc1eb-9170-5dc4-a833-47b2e27cecb4"
+version = "0.1.0"
+
 [[Reexport]]
 deps = ["Pkg"]
 git-tree-sha1 = "7b1d07f411bc8ddb7977ec7f377b97b158514fe0"
