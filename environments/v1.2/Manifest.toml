@@ -10780,6 +10780,12 @@ git-tree-sha1 = "0880fd9cc2a8be8321691809ee9f0fed505b15d2"
 uuid = "5cb6c4b0-9b79-11e8-24c9-f9621d252589"
 version = "0.2.2"
 
+[[SparseRegression]]
+deps = ["Compat", "LearnBase", "LearningStrategies", "LinearAlgebra", "LossFunctions", "PenaltyFunctions", "RecipesBase", "StatsBase", "SweepOperator", "Test"]
+git-tree-sha1 = "d53d15250582a4226e255a0690ede442c1d28846"
+uuid = "ca6142a6-a6a7-57f5-b674-4a8484b22e92"
+version = "0.1.0"
+
 [[SpatialEcology]]
 deps = ["DataFrames", "DataFramesMeta", "EcoBase", "Random", "RandomBooleanMatrices", "RandomNumbers", "RecipesBase", "SparseArrays", "Statistics", "StatsBase", "Test"]
 git-tree-sha1 = "7e4ae3dd9cd98ac6127a28fc5bc46bdf5e28d86b"

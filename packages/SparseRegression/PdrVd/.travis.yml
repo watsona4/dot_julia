@@ -1,0 +1,17 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 0.7
+  - nightly
+notifications:
+  email: false
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia -e 'import Pkg; Pkg.clone(pwd()); Pkg.build("SparseRegression"); Pkg.test("SparseRegression"; coverage=true)'
+after_success:
+  - julia -e 'import Pkg; Pkg.add("Documenter")'
+  - julia -e 'import Pkg; cd(Pkg.dir("SparseRegression")); include(joinpath("docs", "make.jl"))'
+  - julia -e 'import Pkg; cd(Pkg.dir("SparseRegression")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
