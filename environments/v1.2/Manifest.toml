@@ -11379,6 +11379,12 @@ git-tree-sha1 = "c068455576ce91cdbb9474967912b547cacbf50f"
 uuid = "c3572dad-4567-51f8-b174-8c6c989267f4"
 version = "3.6.2"
 
+[[SuperEnum]]
+deps = ["Test"]
+git-tree-sha1 = "51fe521b9b6dc2a2a06f7fd0f5893d6e08479550"
+uuid = "5c958174-e7d9-5990-9618-4567de4ba542"
+version = "0.1.4"
+
 [[Suppressor]]
 deps = ["Compat"]
 git-tree-sha1 = "a39342763981e766a72938b59032dc02a2d74da5"
