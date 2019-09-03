@@ -9332,6 +9332,12 @@ git-tree-sha1 = "74943f22375be0f83ebb5e189b58a666b7086abc"
 uuid = "612083be-0b0f-5412-89c1-4e7c75506a58"
 version = "0.3.1"
 
+[[QuickPOMDPs]]
+deps = ["BeliefUpdaters", "POMDPModelTools", "POMDPTesting", "POMDPs"]
+git-tree-sha1 = "6f64c4f42b82679c5edfd9acee377c908440df42"
+uuid = "8af83fb2-a731-493c-9049-9e19dbce6165"
+version = "0.1.0"
+
 [[RCall]]
 deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "Libdl", "Missings", "REPL", "Random", "Requires", "StatsModels", "WinReg"]
 git-tree-sha1 = "828332205a09377da6a8ebd1e615b11a22f8def6"
