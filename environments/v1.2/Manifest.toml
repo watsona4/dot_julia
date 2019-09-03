@@ -9124,6 +9124,12 @@ git-tree-sha1 = "30d91695a36c5b69a8634015a8d57da904637b1a"
 uuid = "a725b495-10eb-56fe-b38b-717eba820537"
 version = "0.10.2"
 
+[[Psychro]]
+deps = ["Test", "Unitful"]
+git-tree-sha1 = "6d150f40ba4948a9eb13403aec15a9ce28df09d0"
+uuid = "9516f557-4a54-5a79-b954-c272e753c77a"
+version = "0.2.1"
+
 [[PtFEM]]
 deps = ["Compat", "CustomUnitRanges", "DataFrames", "Documenter", "GR", "Interpolations", "LinearAlgebra", "OffsetArrays", "Plots", "Printf", "QuadGK", "SHA", "SparseArrays", "Statistics", "SuiteSparse", "Test"]
 git-tree-sha1 = "7a1a1bf8e82f1c03ade925d6af70c742de15da95"
