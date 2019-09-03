@@ -1,0 +1,44 @@
+language: julia
+julia:
+  - 0.7
+  - 1.0
+  - 1.1
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+sudo: required
+dist: xenial
+env:
+  global:
+    - PYTHON=python
+before_install:
+  - sudo apt-add-repository -y "deb http://packages.ros.org/ros/ubuntu xenial main"
+  - wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add -
+  - sudo apt-get update
+  - sudo apt-get -y install ros-kinetic-ros-base ros-kinetic-common-msgs
+  - sudo rosdep init
+  - rosdep update
+before_script:
+  - export PATH=/usr/bin:$PATH
+  - source /opt/ros/kinetic/setup.sh
+  - roscore &
+  - sleep 5
+  - python test/echonode.py &
+  - sleep 5
+after_success:
+  - julia --project -e 'import Pkg; Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'
+after_script:
+  - killall roscore
+  - killall python
+  - sleep 5
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.0
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.instantiate();
+                                    Pkg.add(PackageSpec(path=pwd()))'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip
