@@ -10527,6 +10527,12 @@ git-tree-sha1 = "fc3d2d51625cd87a88da54c0c6a433e8dc64eaa3"
 uuid = "55797a34-41de-5266-9ec1-32ac4eb504d3"
 version = "0.3.0"
 
+[[SimpleHypergraphs]]
+deps = ["LightGraphs", "Random", "Test"]
+git-tree-sha1 = "975d04f70989475f429ce2e5d72025a045e9e738"
+uuid = "aa4a32ff-dd5d-5357-90e3-e7a9512f0501"
+version = "0.1.5"
+
 [[SimplePartitions]]
 deps = ["AbstractLattices", "DataStructures", "Permutations", "Test"]
 git-tree-sha1 = "2952f80c5834ae5363a5f5942084186b9fb66586"
