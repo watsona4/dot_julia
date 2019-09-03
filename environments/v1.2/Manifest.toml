@@ -9677,6 +9677,12 @@ git-tree-sha1 = "c330a5e63007c5441eb82463e145d311317a9210"
 uuid = "bfcbc1eb-9170-5dc4-a833-47b2e27cecb4"
 version = "0.1.0"
 
+[[Reel]]
+deps = ["Test", "VideoIO"]
+git-tree-sha1 = "1ae80ad26923f5ddcc32415ad7e9dd8eca81e049"
+uuid = "71555da5-176e-5e73-a222-aebc6c6e4f2f"
+version = "1.1.1"
+
 [[Reexport]]
 deps = ["Pkg"]
 git-tree-sha1 = "7b1d07f411bc8ddb7977ec7f377b97b158514fe0"
@@ -10748,6 +10754,12 @@ deps = ["LightGraphs"]
 git-tree-sha1 = "08137053c117afb92f59497160ac2d12abec66d8"
 uuid = "19fa3120-7c27-5ec5-8db8-b0b0aa330d6f"
 version = "0.1.0"
+
+[[VideoIO]]
+deps = ["ColorTypes", "Dates", "FFMPEG", "Glob", "ImageCore", "ImageTransformations", "Libdl", "ProgressMeter", "Requires"]
+git-tree-sha1 = "8694d3ff6993816476822b65fb9b72d691a607d0"
+uuid = "d6d074c3-1acf-5d4c-9a43-ef38773959a2"
+version = "0.6.10"
 
 [[Vinyl]]
 deps = ["Debugger", "JuliaInterpreter", "MacroTools", "Test"]
