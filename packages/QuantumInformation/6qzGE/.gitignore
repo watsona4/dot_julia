@@ -1,0 +1,5 @@
+*.ipynb
+docs/build/
+docs/site/
+*.cov
+Manifest.toml

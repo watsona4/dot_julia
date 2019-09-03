@@ -1,0 +1,15 @@
+language: julia
+os:
+  - linux
+  - osx
+julia:
+  - 1.0
+  - 1.1
+  - 1.2
+matrix:
+  allow_failures:
+    - julia: 1.2
+notifications:
+  email: false
+after_success:
+  - julia -e 'import Pkg; Pkg.add("Coverage"); using Coverage; Coveralls.submit(process_folder())'

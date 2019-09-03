@@ -9260,6 +9260,12 @@ git-tree-sha1 = "37f809466c0c1e92667701236845773fd09a8f43"
 uuid = "bedefb8d-ef00-5401-aa81-ae9c3f6f84cc"
 version = "0.1.0"
 
+[[QuantumInformation]]
+deps = ["Convex", "Distributions", "DocStringExtensions", "LinearAlgebra", "Random", "SCS", "StatsBase", "TensorOperations"]
+git-tree-sha1 = "3e3912108ad460b87496a0e96de0863938d4538c"
+uuid = "3c0b384b-479c-5684-b2ef-9d7a46dd931e"
+version = "0.4.6"
+
 [[QuartzImageIO]]
 deps = ["ColorTypes", "ColorVectorSpace", "FileIO", "FixedPointNumbers", "ImageCore", "Libdl"]
 git-tree-sha1 = "813432448a8f06a1316943c3456dcf043afacd96"
@@ -9535,6 +9541,12 @@ version = "0.1.1"
 git-tree-sha1 = "0fb6ef475a8671fee5e17a5ce9cd785f4f4c6982"
 uuid = "11ec6118-8d4c-11e9-02bb-6986bd51d19a"
 version = "0.1.0"
+
+[[SCS]]
+deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
+git-tree-sha1 = "666c4016d27b34a559313b8ea0d56d85fc9f2dc4"
+uuid = "c946c3f1-0d1f-5ce8-9dea-7daa1f7e2d13"
+version = "0.6.0"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
