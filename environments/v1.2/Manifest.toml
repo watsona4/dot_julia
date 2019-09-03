@@ -10752,6 +10752,12 @@ git-tree-sha1 = "2eaa2dde2c6d29b6598af13a9554c3bf15fc240d"
 uuid = "8ce77f84-9b61-11e8-39ff-d17a774bf41c"
 version = "0.1.0"
 
+[[Spark]]
+deps = ["JavaCall", "Serialization", "Sockets", "Test"]
+git-tree-sha1 = "ee30b41a62b1ee318af5023fbe9acf6531115e52"
+uuid = "e3819d11-95af-5eea-9727-70c091663a01"
+version = "0.4.0"
+
 [[SparseArrays]]
 deps = ["LinearAlgebra", "Random"]
 uuid = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
