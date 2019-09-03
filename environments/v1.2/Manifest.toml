@@ -9465,6 +9465,11 @@ git-tree-sha1 = "efa7c17c4b9150a3f7083228d73fa77557ce0edc"
 uuid = "74087812-796a-5b5d-8853-05524746bad3"
 version = "1.2.0"
 
+[[RandomBasedArrays]]
+git-tree-sha1 = "38a5927dc60296ce08de9b42ff196611bca1bcba"
+uuid = "079b6ec6-a4f7-11e9-0358-1904ae85a441"
+version = "0.1.0"
+
 [[RandomBooleanMatrices]]
 deps = ["Random", "RandomNumbers", "SparseArrays", "StatsBase", "Test"]
 git-tree-sha1 = "c13963a90c579b3bc241d858e4d063d778deeef5"
