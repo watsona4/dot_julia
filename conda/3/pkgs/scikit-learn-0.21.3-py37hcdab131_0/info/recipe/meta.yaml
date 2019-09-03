@@ -1,0 +1,90 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Jul 30 01:45:08 2019
+# ------------------------------------------------
+
+package:
+    name: scikit-learn
+    version: 0.21.3
+source:
+    sha256: 260f66e9c643207fe8cfe0995242060fdb14137b5e69a8dd273ac463b7e9426b
+    url: https://github.com/scikit-learn/scikit-learn/archive/0.21.3.tar.gz
+build:
+    number: '0'
+    script:
+        - rm $PREFIX/include/cblas.h
+        - /home/conda/feedstock_root/build_artifacts/scikit-learn_1564451193480/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol/bin/python
+            -m pip install . --no-deps -vv
+    string: py37hcdab131_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_7
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_7
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_7
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - bzip2 1.0.8 h516909a_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py37_1
+        - cython 0.29.13 py37he1b5a44_0
+        - joblib 0.13.2 py_0
+        - libblas 3.8.0 6_h6e990d7_netlib
+        - libcblas 3.8.0 6_h6e990d7_netlib
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - liblapack 3.8.0 6_h6e990d7_netlib
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - numpy 1.14.6 py37he5ce36f_1201
+        - openssl 1.1.1c h516909a_0
+        - pip 19.2.1 py37_0
+        - python 3.7.3 h33d41f4_1
+        - readline 8.0 hf8c457e_0
+        - scipy 1.3.0 py37h921218d_1
+        - setuptools 41.0.1 py37_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.4 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - joblib >=0.11
+        - libcblas >=3.8.0,<4.0a0
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+        - numpy >=1.14.6,<2.0a0
+        - python >=3.7,<3.8.0a0
+        - scipy
+test:
+    commands:
+        - export OPENBLAS_NUM_THREADS=1
+        - pytest --verbose --pyargs sklearn
+    imports:
+        - sklearn
+    requires:
+        - cython >=0.28.5
+        - pytest >=3.3.0
+about:
+    home: http://scikit-learn.org/
+    license: BSD 3-Clause
+    license_file: COPYING
+    summary: A set of python modules for machine learning and data mining
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - amueller
+        - astaric
+        - jakirkham
+        - jnothman
+        - lesteve
+        - ocefpaf
+        - ogrisel
+        - rth

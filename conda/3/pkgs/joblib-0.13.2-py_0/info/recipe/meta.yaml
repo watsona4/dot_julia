@@ -1,0 +1,50 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Feb 13 20:33:51 2019
+# ------------------------------------------------
+
+package:
+    name: joblib
+    version: 0.13.2
+source:
+    sha256: 1a45a4d8d3728245a941946e0741cbfb7822c5a91cf5fbad3b3efbe2b27050ae
+    url: https://github.com/joblib/joblib/archive/0.13.2.tar.gz
+build:
+    noarch: python
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/joblib_1550090124059/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac/bin/python
+        -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    string: py_0
+requirements:
+    build:
+        - ca-certificates 2018.11.29 ha4d7672_0
+        - certifi 2018.11.29 py27_1000
+        - libffi 3.2.1 hf484d3e_1005
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.0.2p h14c3975_1002
+        - pip 19.0.2 py27_0
+        - python 2.7.15 h938d71a_1006
+        - readline 7.0 hf8c457e_1001
+        - setuptools 40.8.0 py27_0
+        - sqlite 3.26.0 h67949de_1000
+        - tk 8.6.9 h84994c4_1000
+        - wheel 0.33.0 py27_0
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - python
+test:
+    imports:
+        - joblib
+about:
+    home: http://packages.python.org/joblib/
+    license: BSD 3-Clause
+    license_file: LICENSE.txt
+    summary: Python function as pipeline jobs.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - ocefpaf

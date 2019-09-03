@@ -1,0 +1,13 @@
+prefix=/opt/anaconda1anaconda2anaconda3
+exec_prefix=/opt/anaconda1anaconda2anaconda3
+libdir=/opt/anaconda1anaconda2anaconda3/lib
+includedir=/opt/anaconda1anaconda2anaconda3/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library ICU integration
+Version: 2.4.0
+
+Requires: harfbuzz
+Requires.private: icu-uc
+Libs: -L${libdir} -lharfbuzz-icu
+Cflags: -I${includedir}/harfbuzz

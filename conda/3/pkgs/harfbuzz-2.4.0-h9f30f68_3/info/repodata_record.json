@@ -1,0 +1,29 @@
+{
+  "arch": "x86_64",
+  "build": "h9f30f68_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "cairo >=1.16.0,<1.17.0a0",
+    "freetype >=2.9.1,<3.0a0",
+    "glib >=2.58.3,<3.0a0",
+    "graphite2",
+    "icu >=64.2,<65.0a0",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "harfbuzz-2.4.0-h9f30f68_3.tar.bz2",
+  "license": "MIT",
+  "md5": "c2ab1218b36ce66f20133ebcec2c00fe",
+  "name": "harfbuzz",
+  "platform": "linux",
+  "sha256": "1b79a237d6ab2257bf3e3048e80a8b24b10e0b1cea7575d5564bd490b81998dd",
+  "size": 1541241,
+  "subdir": "linux-64",
+  "timestamp": 1566678845755,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/harfbuzz-2.4.0-h9f30f68_3.tar.bz2",
+  "version": "2.4.0"
+}

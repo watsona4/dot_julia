@@ -1,0 +1,44 @@
+From 42b0dddbe9c3c6bf64d86443c42386627a8e31a9 Mon Sep 17 00:00:00 2001
+From: Peter Williams <peter@newton.cx>
+Date: Wed, 5 Sep 2018 15:58:21 -0400
+Subject: [PATCH] Include pkg-config files in the Windows packages too
+
+With relocatable packages, pkg-config is definitely useful on Windows too.
+---
+ CMakeLists.txt | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 73044c9..fdd302a 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -820,7 +820,7 @@ endif()
+ # We use the same files like ./configure, so we have to set its vars.
+ # Only do this on Windows for Cygwin - the files don't make much sense outside
+ # of a UNIX look-alike.
+-if(NOT WIN32 OR CYGWIN OR MINGW)
++if(1)
+   set(prefix      ${CMAKE_INSTALL_PREFIX})
+   set(exec_prefix ${CMAKE_INSTALL_PREFIX})
+   set(libdir      ${CMAKE_INSTALL_FULL_LIBDIR})
+@@ -901,13 +901,13 @@ if(NOT SKIP_INSTALL_FILES AND NOT SKIP_INSTALL_ALL)
+   install(FILES libpng.3 libpngpf.3 DESTINATION ${PNG_MAN_DIR}/man3)
+   install(FILES png.5 DESTINATION ${PNG_MAN_DIR}/man5)
+   # Install pkg-config files
++  install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libpng.pc
++          DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
++  install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${PNGLIB_NAME}.pc
++          DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
+   if(NOT CMAKE_HOST_WIN32 OR CYGWIN OR MINGW)
+-    install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libpng.pc
+-            DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
+     install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/libpng-config
+             DESTINATION bin)
+-    install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${PNGLIB_NAME}.pc
+-            DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
+     install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/${PNGLIB_NAME}-config
+             DESTINATION bin)
+   endif()
+-- 
+2.17.1
+

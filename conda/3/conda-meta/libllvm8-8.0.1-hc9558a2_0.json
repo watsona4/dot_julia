@@ -1,0 +1,60 @@
+{
+  "build": "hc9558a2_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/libllvm8-8.0.1-hc9558a2_0",
+  "features": "",
+  "files": [
+    "lib/libLLVM-8.so",
+    "lib/libLTO.so.8",
+    "lib/libOptRemarks.so.8"
+  ],
+  "fn": "libllvm8-8.0.1-hc9558a2_0.tar.bz2",
+  "license": "NCSA",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/libllvm8-8.0.1-hc9558a2_0",
+    "type": 1
+  },
+  "md5": "bc743fdbfe8135350aa6d7a6de385626",
+  "name": "libllvm8",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/libllvm8-8.0.1-hc9558a2_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libLLVM-8.so",
+        "path_type": "hardlink",
+        "sha256": "3ba19e0ae97f51a1e7c77b069ab71729d2c445afec357c83ee7d5b42d21f141f",
+        "sha256_in_prefix": "3ba19e0ae97f51a1e7c77b069ab71729d2c445afec357c83ee7d5b42d21f141f",
+        "size_in_bytes": 81490856
+      },
+      {
+        "_path": "lib/libLTO.so.8",
+        "path_type": "hardlink",
+        "sha256": "cacb256dfe1849069a8997be2d0fefde42a1496d8b576828dae76e2acb34a50b",
+        "sha256_in_prefix": "cacb256dfe1849069a8997be2d0fefde42a1496d8b576828dae76e2acb34a50b",
+        "size_in_bytes": 223896
+      },
+      {
+        "_path": "lib/libOptRemarks.so.8",
+        "path_type": "hardlink",
+        "sha256": "0efed07c49fa60b9d6e989d43011042ab0369b6fd9c46784e55123939b1561c7",
+        "sha256_in_prefix": "0efed07c49fa60b9d6e989d43011042ab0369b6fd9c46784e55123939b1561c7",
+        "size_in_bytes": 15864
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "e8933989d7e81226b958ecf067c0c831b54df383ea445960662be1c848907066",
+  "size": 24358443,
+  "subdir": "linux-64",
+  "timestamp": 1566113594463,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libllvm8-8.0.1-hc9558a2_0.tar.bz2",
+  "version": "8.0.1"
+}

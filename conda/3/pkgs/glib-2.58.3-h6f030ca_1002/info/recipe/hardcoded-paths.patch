@@ -1,0 +1,54 @@
+commit 790d6a0335939f6ea5fedc30286d8604552e8b70
+Author: Peter Williams <peter@newton.cx>
+Date:   Mon Sep 3 22:23:15 2018 -0400
+
+    All-plat patch: hardcoded_paths
+
+diff --git a/gio/gdbusprivate.c b/gio/gdbusprivate.c
+index 288c31f..4bf4f8d 100644
+--- a/gio/gdbusprivate.c
++++ b/gio/gdbusprivate.c
+@@ -2098,7 +2098,7 @@ _g_dbus_get_machine_id (GError **error)
+   /* TODO: use PACKAGE_LOCALSTATEDIR ? */
+   ret = NULL;
+   first_error = NULL;
+-  if (!g_file_get_contents ("/var/lib/dbus/machine-id",
++  if (!g_file_get_contents ("@@CONDA_PREFIX@@/var/lib/dbus/machine-id",
+                             &ret,
+                             NULL,
+                             &first_error) &&
+@@ -2108,7 +2108,7 @@ _g_dbus_get_machine_id (GError **error)
+                             NULL))
+     {
+       g_propagate_prefixed_error (error, first_error,
+-                                  _("Unable to load /var/lib/dbus/machine-id or /etc/machine-id: "));
++                                  _("Unable to load @@CONDA_PREFIX@@ or /etc/machine-id: "));
+     }
+   else
+     {
+diff --git a/gio/xdgmime/xdgmime.c b/gio/xdgmime/xdgmime.c
+index 95adf7e..25a9d1a 100644
+--- a/gio/xdgmime/xdgmime.c
++++ b/gio/xdgmime/xdgmime.c
+@@ -253,7 +253,7 @@ xdg_run_command_on_dirs (XdgDirectoryFunc  func,
+ 
+   xdg_data_dirs = getenv ("XDG_DATA_DIRS");
+   if (xdg_data_dirs == NULL)
+-    xdg_data_dirs = "/usr/local/share/:/usr/share/";
++    xdg_data_dirs = "@@CONDA_PREFIX@@/share/:/usr/share/";
+ 
+   ptr = xdg_data_dirs;
+ 
+diff --git a/glib/gutils.c b/glib/gutils.c
+index 5813b22..9ab272c 100644
+--- a/glib/gutils.c
++++ b/glib/gutils.c
+@@ -2040,7 +2040,7 @@ g_get_system_data_dirs (void)
+ 
+ #ifndef G_OS_WIN32
+       if (!data_dirs || !data_dirs[0])
+-          data_dirs = "/usr/local/share/:/usr/share/";
++          data_dirs = "@@CONDA_PREFIX@@/share/:/usr/share/";
+ 
+       data_dir_vector = g_strsplit (data_dirs, G_SEARCHPATH_SEPARATOR_S, 0);
+ #else

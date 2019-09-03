@@ -1,0 +1,3 @@
+lib/libLLVM-8.so
+lib/libLTO.so.8
+lib/libOptRemarks.so.8

@@ -1,0 +1,21 @@
+build_number_decrement: '0'
+c_compiler: gcc
+channel_sources: conda-forge/label/gcc7,defaults
+channel_targets: conda-forge gcc7
+cpu_optimization_target: nocona
+cran_mirror: https://cran.r-project.org
+cxx_compiler: gxx
+docker_image: conda/c3i-linux-64
+fortran_compiler: gfortran
+ignore_build_only_deps: numpy
+lua: '5'
+numpy: '1.11'
+perl: 5.26.0
+pin_run_as_build:
+  python: {min_pin: x.x, max_pin: x.x}
+  r-base: {min_pin: x.x.x, max_pin: x.x.x}
+python: '3.6'
+r_base: '3.4'
+target_platform: linux-64
+zip_keys:
+- [c_compiler, channel_sources, channel_targets, docker_image, build_number_decrement]

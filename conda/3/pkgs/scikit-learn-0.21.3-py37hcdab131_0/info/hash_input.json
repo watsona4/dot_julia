@@ -1,0 +1,8 @@
+{
+  "cxx_compiler": "gxx",
+  "cxx_compiler_version": "7",
+  "c_compiler": "gcc",
+  "libcblas": "3.8 *netlib",
+  "numpy": "1.14",
+  "c_compiler_version": "7"
+}

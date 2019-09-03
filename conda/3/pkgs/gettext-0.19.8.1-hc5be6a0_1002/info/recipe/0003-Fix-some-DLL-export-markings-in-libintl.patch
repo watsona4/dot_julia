@@ -1,0 +1,74 @@
+From 865511d48d02b4b6c6cf187ff81c495b16a0fdf9 Mon Sep 17 00:00:00 2001
+From: Peter Williams <peter@newton.cx>
+Date: Mon, 3 Sep 2018 17:34:54 -0400
+Subject: [PATCH 3/9] Fix some DLL export markings in libintl.
+
+A few files had inconsistent labeling for DLL exporting, which I guess MSVC
+might be pickier about than it used to be. Tidy them up.
+---
+ gettext-runtime/gnulib-lib/relocatable.c |  2 +-
+ gettext-runtime/intl/libgnuintl.in.h     | 15 ++++++++++++---
+ 2 files changed, 13 insertions(+), 4 deletions(-)
+
+diff --git a/gettext-runtime/gnulib-lib/relocatable.c b/gettext-runtime/gnulib-lib/relocatable.c
+index 7a59595..3d8d69f 100644
+--- a/gettext-runtime/gnulib-lib/relocatable.c
++++ b/gettext-runtime/gnulib-lib/relocatable.c
+@@ -158,7 +158,7 @@ set_this_relocation_prefix (const char *orig_prefix_arg,
+    by the corresponding pathname with the current prefix instead.  Both
+    prefixes should be directory names without trailing slash (i.e. use ""
+    instead of "/").  */
+-void
++RELOCATABLE_DLL_EXPORTED void
+ set_relocation_prefix (const char *orig_prefix_arg, const char *curr_prefix_arg)
+ {
+   set_this_relocation_prefix (orig_prefix_arg, curr_prefix_arg);
+diff --git a/gettext-runtime/intl/libgnuintl.in.h b/gettext-runtime/intl/libgnuintl.in.h
+index dc1947f..2684e15 100644
+--- a/gettext-runtime/intl/libgnuintl.in.h
++++ b/gettext-runtime/intl/libgnuintl.in.h
+@@ -48,6 +48,15 @@
+ # undef gettext
+ #endif
+ 
++
++#if HAVE_VISIBILITY && BUILDING_DLL
++# define DLL_EXPORTED __attribute__((__visibility__("default")))
++#elif defined _MSC_VER && BUILDING_DLL
++# define DLL_EXPORTED __declspec(dllexport)
++#else
++# define DLL_EXPORTED
++#endif
++
+ #ifdef __cplusplus
+ extern "C" {
+ #endif
+@@ -432,14 +441,14 @@ extern int vswprintf (wchar_t *, size_t, const wchar_t *, va_list);
+ #ifndef GNULIB_defined_setlocale /* don't override gnulib */
+ #undef setlocale
+ #define setlocale libintl_setlocale
+-extern char *setlocale (int, const char *);
++extern DLL_EXPORTED char *setlocale (int, const char *);
+ #endif
+ 
+ #if @HAVE_NEWLOCALE@
+ 
+ #undef newlocale
+ #define newlocale libintl_newlocale
+-extern locale_t newlocale (int, const char *, locale_t);
++extern DLL_EXPORTED locale_t newlocale (int, const char *, locale_t);
+ 
+ #endif
+ 
+@@ -454,7 +463,7 @@ extern locale_t newlocale (int, const char *, locale_t);
+    prefixes should be directory names without trailing slash (i.e. use ""
+    instead of "/").  */
+ #define libintl_set_relocation_prefix libintl_set_relocation_prefix
+-extern void
++extern DLL_EXPORTED void
+        libintl_set_relocation_prefix (const char *orig_prefix,
+                                       const char *curr_prefix);
+ 
+-- 
+2.17.1
+

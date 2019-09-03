@@ -1,0 +1,16 @@
+{
+  "arch": "x86_64",
+  "build": "he1b5a44_1003",
+  "build_number": 1003,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "expat",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1561126120625,
+  "version": "2.2.5"
+}

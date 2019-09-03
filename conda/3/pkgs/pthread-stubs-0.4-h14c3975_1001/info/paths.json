@@ -1,0 +1,13 @@
+{
+  "paths": [
+    {
+      "_path": "lib/pkgconfig/pthread-stubs.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "515bcb39aeb82545ecae44ed64207c10e35d52457a440689609c35dc9788ba21",
+      "size_in_bytes": 267
+    }
+  ],
+  "paths_version": 1
+}

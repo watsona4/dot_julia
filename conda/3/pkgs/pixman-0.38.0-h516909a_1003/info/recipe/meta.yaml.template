@@ -1,0 +1,45 @@
+{% set version = "0.38.0" %}
+
+package:
+  name: pixman
+  version: {{ version }}
+
+source:
+  url: http://cairographics.org/releases/pixman-{{ version }}.tar.gz
+  sha256: a7592bef0156d7c27545487a52245669b00cf7e70054505381cff2136d890ca8
+  patches:
+    - no_test.patch  # [win]
+
+build:
+  number: 1003
+  run_exports:
+    # excellent: add new symbols sometimes, none removed.
+    #    https://abi-laboratory.pro/tracker/timeline/pixman/
+    - {{ pin_subpackage('pixman') }}
+
+requirements:
+  build:
+    - posix  # [win]
+    - pkg-config  # [not win]
+    - {{ compiler('c') }}
+    - make  # [unix]
+
+test:
+  commands:
+    - test -f ${PREFIX}/lib/libpixman-1.a  # [not win]
+
+about:
+  home: http://www.pixman.org/
+  license: MIT
+  license_file: COPYING
+  summary: 'A low-level software library for pixel manipulation.'
+  description: |
+    Pixman is a low-level software library for pixel manipulation, providing
+    features such as image compositing and trapezoid rasterization.
+  dev_url: https://cgit.freedesktop.org/pixman/
+
+extra:
+  recipe-maintainers:
+    - ccordoba12
+    - jakirkham
+    - ocefpaf

@@ -1,0 +1,5 @@
+{
+  "blas_impl": "openblas",
+  "blas_impl_lib": "libopenblas.so.0",
+  "blas_default_impl": "openblas"
+}

@@ -1,0 +1,12 @@
+diff --git a/scipy/linalg/tests/test_decomp.py b/scipy/linalg/tests/test_decomp.py
+index 128bb03b1..78bdcc8f0 100644
+--- a/scipy/linalg/tests/test_decomp.py
++++ b/scipy/linalg/tests/test_decomp.py
+@@ -1081,6 +1081,7 @@ class TestSVD_GESDD(object):
+                         sigma[i,i] = s[i]
+                     assert_array_almost_equal(dot(dot(u,sigma),vh),a)
+ 
++    @pytest.mark.skip(reason="Known segfault on ppc64le see gh-10256")
+     def test_crash_1580(self):
+         sizes = [(13, 23), (30, 50), (60, 100)]
+         np.random.seed(1234)

@@ -1,0 +1,14 @@
+{
+  "arch": "x86_64",
+  "build": "h14c3975_1000",
+  "build_number": 1000,
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "license": "BSD 3-Clause",
+  "name": "libuuid",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1535656940107,
+  "version": "2.32.1"
+}

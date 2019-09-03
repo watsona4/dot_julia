@@ -1,0 +1,81 @@
+# This file created by conda-build 3.18.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Fri Jul 19 13:06:58 2019
+# ------------------------------------------------
+
+package:
+    name: statsmodels
+    version: 0.10.1
+source:
+    sha256: 320659a80f916c2edf9dfbe83512d9004bb562b72eedb7d9374562038697fa10
+    url: https://pypi.io/packages/source/s/statsmodels/statsmodels-0.10.1.tar.gz
+build:
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/statsmodels_1563541719070/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/bin/python
+        -m pip install . --no-deps --ignore-installed -vvv
+    string: py37hc1659b7_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_7
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_7
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - bzip2 1.0.8 h516909a_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py37_1
+        - cython 0.29.12 py37he1b5a44_0
+        - libblas 3.8.0 10_openblas
+        - libcblas 3.8.0 10_openblas
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - liblapack 3.8.0 10_openblas
+        - libopenblas 0.3.6 h6e990d7_4
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - numpy 1.14.6 py37he5ce36f_1201
+        - openblas 0.3.6 h6e990d7_4
+        - openssl 1.1.1c h516909a_0
+        - pandas 0.25.0 py37hb3f55d8_0
+        - patsy 0.5.1 py_0
+        - pip 19.1.1 py37_0
+        - python 3.7.3 h33d41f4_1
+        - python-dateutil 2.8.0 py_0
+        - pytz 2019.1 py_0
+        - readline 8.0 hf8c457e_0
+        - scipy 1.3.0 py37h921218d_0
+        - setuptools 41.0.1 py37_0
+        - six 1.12.0 py37_1000
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.4 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - libgcc-ng >=7.3.0
+        - numpy >=1.14.6,<2.0a0
+        - pandas >=0.14
+        - patsy >=0.4.0
+        - python >=3.7,<3.8.0a0
+        - scipy >=0.14
+test:
+    imports:
+        - statsmodels
+about:
+    dev_url: https://github.com/statsmodels/statsmodels
+    doc_url: https://www.statsmodels.org/stable/
+    home: https://www.statsmodels.org
+    license: BSD 3-Clause
+    summary: Statistical computations and models for use with SciPy
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - croth1
+        - ocefpaf
+        - tomaugspurger

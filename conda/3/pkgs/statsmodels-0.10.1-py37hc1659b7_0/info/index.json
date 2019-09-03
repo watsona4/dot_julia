@@ -1,0 +1,19 @@
+{
+  "arch": "x86_64",
+  "build": "py37hc1659b7_0",
+  "build_number": 0,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "numpy >=1.14.6,<2.0a0",
+    "pandas >=0.14",
+    "patsy >=0.4.0",
+    "python >=3.7,<3.8.0a0",
+    "scipy >=0.14"
+  ],
+  "license": "BSD 3-Clause",
+  "name": "statsmodels",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1563542028522,
+  "version": "0.10.1"
+}

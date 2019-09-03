@@ -1,0 +1,15 @@
+prefix=/home/ec2-user/.julia/conda/3
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+appdefaultdir=/home/ec2-user/.julia/conda/3/share/X11/app-defaults
+datarootdir=${prefix}/share
+errordbdir=${datarootdir}/X11
+
+Name: Xt
+Description: X Toolkit Library
+Version: 1.1.5
+Requires: xproto x11
+Requires.private: ice sm
+Cflags: -I${includedir}
+Libs: -L${libdir} -lXt

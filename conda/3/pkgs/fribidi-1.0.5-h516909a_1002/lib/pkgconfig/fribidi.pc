@@ -1,0 +1,9 @@
+prefix=/opt/anaconda1anaconda2anaconda3
+libdir=${prefix}/lib64
+includedir=${prefix}/include
+
+Name: GNU FriBidi
+Description: Unicode Bidirectional Algorithm Library
+Version: 1.0.5
+Libs: -L${libdir} -lfribidi
+Cflags: -I${includedir}/fribidi

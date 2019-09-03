@@ -1,0 +1,16 @@
+{
+  "arch": "x86_64",
+  "build": "hed695b0_1002",
+  "build_number": 1002,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "license": "Tcl/Tk",
+  "license_family": "BSD",
+  "name": "tk",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1559570805406,
+  "version": "8.6.9"
+}

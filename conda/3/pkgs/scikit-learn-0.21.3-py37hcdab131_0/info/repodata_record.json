@@ -1,0 +1,29 @@
+{
+  "arch": "x86_64",
+  "build": "py37hcdab131_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "joblib >=0.11",
+    "libcblas >=3.8.0,<4.0a0",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "numpy >=1.14.6,<2.0a0",
+    "python >=3.7,<3.8.0a0",
+    "scipy"
+  ],
+  "features": "",
+  "fn": "scikit-learn-0.21.3-py37hcdab131_0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "md5": "e1a3fd478fada64f5212dea6e53ddad0",
+  "name": "scikit-learn",
+  "platform": "linux",
+  "sha256": "840e0908ab8cd43fd452457f1858c5f600a7f717903443525c362747deaca840",
+  "size": 7036430,
+  "subdir": "linux-64",
+  "timestamp": 1564451575239,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/scikit-learn-0.21.3-py37hcdab131_0.tar.bz2",
+  "version": "0.21.3"
+}

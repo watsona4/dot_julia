@@ -1,0 +1,14 @@
+{
+  "arch": "x86_64",
+  "build": "h14c3975_1001",
+  "build_number": 1001,
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "license": "IJG",
+  "name": "jpeg",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1536858543725,
+  "version": "9c"
+}

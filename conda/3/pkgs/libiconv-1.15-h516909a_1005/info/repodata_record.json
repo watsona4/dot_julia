@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "h516909a_1005",
+  "build_number": 1005,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "libiconv-1.15-h516909a_1005.tar.bz2",
+  "license": "GPL and LGPL",
+  "md5": "a0f4e2b99abb55e0b41230ea5ea1248d",
+  "name": "libiconv",
+  "platform": "linux",
+  "sha256": "8ce2aa5703fb905a49af3fee394652cd6dec28daaa6f9d8ad1fbea891d0884fa",
+  "size": 2114207,
+  "subdir": "linux-64",
+  "timestamp": 1553023341587,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libiconv-1.15-h516909a_1005.tar.bz2",
+  "version": "1.15"
+}

@@ -1,0 +1,19 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "numpy >=1.4.0",
+    "python",
+    "scipy",
+    "six"
+  ],
+  "license": "BSD-2-Clause, PSF2",
+  "license_family": "BSD",
+  "name": "patsy",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1540704051983,
+  "version": "0.5.1"
+}

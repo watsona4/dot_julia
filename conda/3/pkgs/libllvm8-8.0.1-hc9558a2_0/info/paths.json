@@ -1,0 +1,23 @@
+{
+  "paths": [
+    {
+      "_path": "lib/libLLVM-8.so",
+      "path_type": "hardlink",
+      "sha256": "3ba19e0ae97f51a1e7c77b069ab71729d2c445afec357c83ee7d5b42d21f141f",
+      "size_in_bytes": 81490856
+    },
+    {
+      "_path": "lib/libLTO.so.8",
+      "path_type": "hardlink",
+      "sha256": "cacb256dfe1849069a8997be2d0fefde42a1496d8b576828dae76e2acb34a50b",
+      "size_in_bytes": 223896
+    },
+    {
+      "_path": "lib/libOptRemarks.so.8",
+      "path_type": "hardlink",
+      "sha256": "0efed07c49fa60b9d6e989d43011042ab0369b6fd9c46784e55123939b1561c7",
+      "size_in_bytes": 15864
+    }
+  ],
+  "paths_version": 1
+}

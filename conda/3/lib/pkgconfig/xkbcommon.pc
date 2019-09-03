@@ -1,0 +1,9 @@
+prefix=/home/ec2-user/.julia/conda/3
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: xkbcommon
+Description: XKB API common to servers and clients
+Version: 0.8.4
+Libs: -L${libdir} -lxkbcommon
+Cflags: -I${includedir}

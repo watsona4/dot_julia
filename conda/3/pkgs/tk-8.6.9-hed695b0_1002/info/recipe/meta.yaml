@@ -1,0 +1,80 @@
+# This file created by conda-build 3.18.2
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Jun  3 14:01:08 2019
+# ------------------------------------------------
+
+package:
+    name: tk
+    version: 8.6.9
+source:
+    -   folder: tcl8.6.9
+        sha256: ad0cd2de2c87b9ba8086b43957a0de3eb2eb565c7159d5f53ccbba3feb915f4e
+        url: https://downloads.sourceforge.net/tcl/tcl8.6.9-src.tar.gz
+    -   folder: tk8.6.9
+        sha256: d3f9161e8ba0f107fe8d4df1f6d3a14c30cc3512dfc12a795daa367a27660dac
+        url: https://downloads.sourceforge.net/tcl/tk8.6.9-src.tar.gz
+build:
+    detect_binary_files_with_prefix: true
+    number: '1002'
+    run_exports:
+        - tk >=8.6.9,<8.7.0a0
+    string: hed695b0_1002
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_7
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_7
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - libx11-common-cos6-x86_64 1.6.4 h023ea50_0
+        - libx11-cos6-x86_64 1.6.4 h64a1553_0
+        - libx11-devel-cos6-x86_64 1.6.4 hb9851ce_0
+        - libxau-cos6-x86_64 1.0.6 h4888106_0
+        - libxcb-cos6-x86_64 1.12 h6fd0490_0
+        - make 4.2.1 h14c3975_2004
+        - xorg-x11-proto-devel-cos6-x86_64 7.7 h8d4a98b_0
+    host:
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - libgcc-ng >=7.3.0
+        - zlib >=1.2.11,<1.3.0a0
+test:
+    commands:
+        - test -f "${PREFIX}/bin/tclsh"
+        - test -f "${PREFIX}/bin/wish"
+        - test -f "${PREFIX}/bin/tclsh8.6"
+        - test -f "${PREFIX}/bin/wish8.6"
+        - test -f "${PREFIX}/include/tcl.h"
+        - test -f "${PREFIX}/include/tclDecls.h"
+        - test -f "${PREFIX}/include/tclPlatDecls.h"
+        - test -f "${PREFIX}/include/tclPlatDecls.h"
+        - test -f "${PREFIX}/include/tclTomMathDecls.h"
+        - test -f "${PREFIX}/include/tclTomMath.h"
+        - test -f "${PREFIX}/include/tk.h"
+        - test -f "${PREFIX}/include/tkDecls.h"
+        - test -f "${PREFIX}/include/tkPlatDecls.h"
+        - test -f "${PREFIX}/lib/libtcl8.6.so"
+        - test -f "${PREFIX}/lib/libtclstub8.6.a"
+        - test -f "${PREFIX}/lib/libtk8.6.so"
+        - test -f "${PREFIX}/lib/libtkstub8.6.a"
+        - tclsh hello.tcl
+        - tclsh8.6 hello.tcl
+    files:
+        - hello.tcl
+about:
+    home: http://www.tcl.tk/
+    license: Tcl/Tk
+    license_family: BSD
+    summary: A dynamic programming language with GUI support.  Bundles Tcl and Tk.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - jjhelmus
+        - mingwandroid
+        - msarahan
+        - ocefpaf
+        - pelson

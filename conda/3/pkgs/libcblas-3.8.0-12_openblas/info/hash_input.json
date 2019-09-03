@@ -1,0 +1,4 @@
+{
+  "blas_impl": "openblas",
+  "blas_default_impl": "openblas"
+}

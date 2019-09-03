@@ -1,0 +1,87 @@
+{% set version = "0.3.7" %}
+
+package:
+  name: openblas
+  version: {{ version }}
+
+source:
+  url: https://github.com/xianyi/OpenBLAS/archive/v{{ version }}.tar.gz
+  sha256: bde136122cef3dd6efe2de1c6f65c10955bbb0cc01a520c2342f5287c28f9379
+  patches:
+    - 0002-Fix-gfortran-detection-for-ctng-based-cross-compilers.patch  # [c_compiler == 'gcc']
+
+build:
+  number: 1
+  skip: true  # [win and vc<14]
+
+requirements:
+  build:
+    - {{ compiler("c") }}
+    - {{ compiler("fortran") }}
+    - perl
+    - make  # [not win]
+    - cmake  # [win]
+    - curl  # [win]
+    - jom  # [win]
+  host:
+  run:
+
+outputs:
+  - name: libopenblas
+    build:
+      skip: true  # [win and vc<14]
+      run_exports:
+        - {{ pin_subpackage("libopenblas") }}
+    requirements:
+      build:
+        - {{ compiler("c") }}
+        - {{ compiler("fortran") }}
+      run_constrained:
+        - {{ pin_subpackage("openblas", max_pin="x.x.x") }}
+    files:
+      - lib/libopenblasp*{{ SHLIB_EXT }}   # [not win]
+      - lib/libopenblas.so.*               # [linux]
+      - lib/libopenblas.*.dylib            # [osx]
+      - Library/bin/openblas.dll           # [win]
+    test:
+      commands:
+        - test -f ${PREFIX}/lib/libopenblasp-r{{ version }}{{ SHLIB_EXT }}  # [not win]
+        - python -c "import ctypes; ctypes.cdll['${PREFIX}/lib/libopenblasp-r{{ version }}{{ SHLIB_EXT }}']"  # [not win]
+        - if not exist %PREFIX%\\Library\\bin\\openblas.dll exit 1  # [win]
+
+  - name: openblas
+    build:
+      skip: true  # [win and vc<14]
+    files:
+      - include/*.h  # [not win]
+      - lib/libopenblas*.a  # [not win]
+      - lib/libopenblas${SHLIB_EXT}  # [not win]
+      - lib/pkgconfig/openblas.pc  # [not win]
+      - lib/cmake/openblas/*  # [not win]
+      - Library/include/openblas  # [win]
+      - Library/lib/openblas.lib  # [win]
+      - Library/lib/pkgconfig/openblas.pc  # [win]
+      - Library/share/cmake/OpenBLAS  # [win]
+    requirements:
+      run:
+        - {{ pin_subpackage("libopenblas", exact=True) }}
+    test:
+      commands:
+        - test -f ${PREFIX}/lib/libopenblas.a  # [not win]
+        - if not exist %PREFIX%\\Library\\lib\\openblas.lib exit 1  # [win]
+
+about:
+  home: http://www.openblas.net/
+  license: BSD-3-Clause
+  license_file:
+    - LICENSE
+    - lapack-netlib/LICENSE
+  summary: An optimized BLAS library based on GotoBLAS2 1.13 BSD version
+
+extra:
+  recipe-maintainers:
+    - gillins
+    - groutr
+    - jakirkham
+    - isuruf
+    - beckermr

@@ -1,0 +1,23 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "features": "",
+  "fn": "pyparsing-2.4.2-py_0.tar.bz2",
+  "license": "MIT",
+  "md5": "2cffb4efcd6689e2adcb3db0cf335e2f",
+  "name": "pyparsing",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "474d883559ef2a2233fd9e33e9715f3a55383281ef11cc0917861bd7b33d0220",
+  "size": 58253,
+  "subdir": "noarch",
+  "timestamp": 1564488731590,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pyparsing-2.4.2-py_0.tar.bz2",
+  "version": "2.4.2"
+}

@@ -1,0 +1,43 @@
+From 5df0ffc3fdb51548ca51c5e3db7381f32ce11e2c Mon Sep 17 00:00:00 2001
+From: Peter Williams <peter@newton.cx>
+Date: Mon, 3 Sep 2018 17:39:00 -0400
+Subject: [PATCH 7/9] Work around Unixisms in libgettextpo
+
+There's a complicated bit of shell magic here that relies on redirecting
+program output to file descriptor #5. That seems not to work on Windows. Just
+use a temporary file instead.
+---
+ gettext-tools/libgettextpo/Makefile.am | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/gettext-tools/libgettextpo/Makefile.am b/gettext-tools/libgettextpo/Makefile.am
+index e533682..1365f6f 100644
+--- a/gettext-tools/libgettextpo/Makefile.am
++++ b/gettext-tools/libgettextpo/Makefile.am
+@@ -153,7 +153,7 @@ config.h: $(BUILT_SOURCES)
+ 	  echo '#endif /* GTPO_CONFIG_H */'; \
+ 	} > config.h && \
+ 	if test -n "$(HAVE_GLOBAL_SYMBOL_PIPE)"; then \
+-	  { \
++	  { rm -f CONFIG_H_LISTING.txt; \
+ 	    for f in $(libgettextpo_la_AUXSOURCES) $(libgnu_la_SOURCES) $(libgnu_la_LIBADD); do \
+ 	      case $$f in \
+ 	        *.c | *.$(OBJEXT) | *.lo ) \
+@@ -161,12 +161,12 @@ config.h: $(BUILT_SOURCES)
+ 	          test -f $$sf || sf=$(srcdir)/$$sf; \
+ 	          of=`echo "$$f" | sed -e 's,^.*/,,' -e 's,\\.[^.]*$$,,'`.$(OBJEXT); \
+ 	          $(COMPILE) $(DEFS) -c $$sf || { rm -f config.h; exit 1; }; \
+-	          sh ./exported.sh $$of 1>&5; \
++	          sh ./exported.sh $$of >>CONFIG_H_LISTING.txt; \
+ 	          rm -f $$of `echo "$$of" | sed -e 's,\\.$(OBJEXT)$$,.lo,'`; \
+ 	          ;; \
+ 	      esac; \
+ 	    done; \
+-	  } 5>&1 \
++	  }; cat CONFIG_H_LISTING.txt \
+ 	    | sed -e 's,.* ,,' | LC_ALL=C sort | LC_ALL=C uniq \
+ 	    | sed -e 's,^obstack_free$$,__obstack_free,' \
+ 	    | sed -e 's,^\(.*\)$$,#define \1 libgettextpo_\1,' > config.h-t && \
+-- 
+2.17.1
+

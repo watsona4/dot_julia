@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "h14c3975_0",
+  "build_number": 0,
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "xorg-libxau",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1549908934708,
+  "version": "1.0.9"
+}

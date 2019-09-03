@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "h648cc4a_1002",
+  "build_number": 1002,
+  "depends": [
+    "jpeg >=9c,<10a",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "xz >=5.2.4,<5.3.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "license": "HPND",
+  "name": "libtiff",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1536912944126,
+  "version": "4.0.9"
+}

@@ -1,0 +1,473 @@
+From 92c7d8535e028cbe21ac7495033f1eb045947dab Mon Sep 17 00:00:00 2001
+From: Peter Williams <peter@newton.cx>
+Date: Mon, 3 Sep 2018 17:54:36 -0400
+Subject: [PATCH 8/9] Add missing 'extern "C"' protectors
+
+Various files are missing 'extern "C"' blocks around C declarations.
+
+The context here is that on Windows, some files are compiled as C++ code even
+though they're written as pretty much straight C. The motivation seems to be
+that MSVC doesn't fully support C99 or C11, specifically non-constant
+initializers. But C++ allows this, so the code will come out fine if compiled
+as C++. However, without proper 'extern "C"' protection, you get linkage
+errors.
+---
+ gettext-tools/gnulib-lib/exitfail.h            |  8 ++++++++
+ gettext-tools/gnulib-lib/fd-ostream.h          |  9 +++++----
+ gettext-tools/gnulib-lib/file-ostream.h        | 11 ++++++-----
+ gettext-tools/gnulib-lib/html-ostream.h        |  9 +++++----
+ gettext-tools/gnulib-lib/html-styled-ostream.h | 10 +++++-----
+ gettext-tools/gnulib-lib/ostream.h             | 10 +++++-----
+ gettext-tools/gnulib-lib/styled-ostream.h      |  8 ++++++++
+ gettext-tools/gnulib-lib/term-ostream.h        | 10 +++++-----
+ gettext-tools/gnulib-lib/term-styled-ostream.h | 10 +++++-----
+ gettext-tools/libgettextpo/exitfail.h          |  8 ++++++++
+ gettext-tools/src/lang-table.h                 | 16 ++++++++++++----
+ gettext-tools/src/plural-table.h               |  8 ++++++++
+ gettext-tools/src/po-gram-gen2.h               |  9 +++++++++
+ gettext-tools/src/read-po.h                    |  8 ++++++++
+ gettext-tools/src/read-properties.h            |  8 ++++++++
+ gettext-tools/src/read-stringtable.h           |  8 ++++++++
+ gettext-tools/src/write-properties.h           |  8 ++++++++
+ gettext-tools/src/write-stringtable.h          |  8 ++++++++
+ 18 files changed, 129 insertions(+), 37 deletions(-)
+
+diff --git a/gettext-tools/gnulib-lib/exitfail.h b/gettext-tools/gnulib-lib/exitfail.h
+index ef1e488..2cb9074 100644
+--- a/gettext-tools/gnulib-lib/exitfail.h
++++ b/gettext-tools/gnulib-lib/exitfail.h
+@@ -15,4 +15,12 @@
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ extern DLL_VARIABLE int volatile exit_failure;
++
++#ifdef __cplusplus
++}
++#endif
+diff --git a/gettext-tools/gnulib-lib/fd-ostream.h b/gettext-tools/gnulib-lib/fd-ostream.h
+index d698430..0c572fd 100644
+--- a/gettext-tools/gnulib-lib/fd-ostream.h
++++ b/gettext-tools/gnulib-lib/fd-ostream.h
+@@ -109,6 +109,11 @@ fd_ostream_free (fd_ostream_t first_arg)
+ 
+ #endif
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
++
+ extern const typeinfo_t fd_ostream_typeinfo;
+ #define fd_ostream_SUPERCLASSES &fd_ostream_typeinfo, ostream_SUPERCLASSES
+ #define fd_ostream_SUPERCLASSES_LENGTH (1 + ostream_SUPERCLASSES_LENGTH)
+@@ -118,10 +123,6 @@ extern const struct fd_ostream_implementation fd_ostream_vtable;
+ #line 30 "fd-ostream.oo.h"
+ 
+ 
+-#ifdef __cplusplus
+-extern "C" {
+-#endif
+-
+ 
+ /* Create an output stream referring to the file descriptor FD.
+    FILENAME is used only for error messages.
+diff --git a/gettext-tools/gnulib-lib/file-ostream.h b/gettext-tools/gnulib-lib/file-ostream.h
+index 918e8c9..fa794e7 100644
+--- a/gettext-tools/gnulib-lib/file-ostream.h
++++ b/gettext-tools/gnulib-lib/file-ostream.h
+@@ -109,6 +109,12 @@ file_ostream_free (file_ostream_t first_arg)
+ 
+ #endif
+ 
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
++
+ extern const typeinfo_t file_ostream_typeinfo;
+ #define file_ostream_SUPERCLASSES &file_ostream_typeinfo, ostream_SUPERCLASSES
+ #define file_ostream_SUPERCLASSES_LENGTH (1 + ostream_SUPERCLASSES_LENGTH)
+@@ -118,11 +124,6 @@ extern const struct file_ostream_implementation file_ostream_vtable;
+ #line 30 "file-ostream.oo.h"
+ 
+ 
+-#ifdef __cplusplus
+-extern "C" {
+-#endif
+-
+-
+ /* Create an output stream referring to FP.
+    Note that the resulting stream must be closed before FP can be closed.  */
+ extern file_ostream_t file_ostream_create (FILE *fp);
+diff --git a/gettext-tools/gnulib-lib/html-ostream.h b/gettext-tools/gnulib-lib/html-ostream.h
+index 7a2ecbf..3e13138 100644
+--- a/gettext-tools/gnulib-lib/html-ostream.h
++++ b/gettext-tools/gnulib-lib/html-ostream.h
+@@ -127,6 +127,11 @@ html_ostream_end_span (html_ostream_t first_arg, const char *classname)
+ 
+ #endif
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
++
+ extern const typeinfo_t html_ostream_typeinfo;
+ #define html_ostream_SUPERCLASSES &html_ostream_typeinfo, ostream_SUPERCLASSES
+ #define html_ostream_SUPERCLASSES_LENGTH (1 + ostream_SUPERCLASSES_LENGTH)
+@@ -136,10 +141,6 @@ extern const struct html_ostream_implementation html_ostream_vtable;
+ #line 37 "html-ostream.oo.h"
+ 
+ 
+-#ifdef __cplusplus
+-extern "C" {
+-#endif
+-
+ 
+ /* Create an output stream that takes input in the UTF-8 encoding and
+    writes it in HTML form on DESTINATION.
+diff --git a/gettext-tools/gnulib-lib/html-styled-ostream.h b/gettext-tools/gnulib-lib/html-styled-ostream.h
+index ae6544a..2365ef4 100644
+--- a/gettext-tools/gnulib-lib/html-styled-ostream.h
++++ b/gettext-tools/gnulib-lib/html-styled-ostream.h
+@@ -130,6 +130,11 @@ html_styled_ostream_end_use_class (html_styled_ostream_t first_arg, const char *
+ 
+ #endif
+ 
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ extern const typeinfo_t html_styled_ostream_typeinfo;
+ #define html_styled_ostream_SUPERCLASSES &html_styled_ostream_typeinfo, styled_ostream_SUPERCLASSES
+ #define html_styled_ostream_SUPERCLASSES_LENGTH (1 + styled_ostream_SUPERCLASSES_LENGTH)
+@@ -139,11 +144,6 @@ extern const struct html_styled_ostream_implementation html_styled_ostream_vtabl
+ #line 28 "html-styled-ostream.oo.h"
+ 
+ 
+-#ifdef __cplusplus
+-extern "C" {
+-#endif
+-
+-
+ /* Create an output stream that takes input in the UTF-8 encoding and
+    writes it in HTML form on DESTINATION, styled with the file CSS_FILENAME.
+    Note that the resulting stream must be closed before DESTINATION can be
+diff --git a/gettext-tools/gnulib-lib/ostream.h b/gettext-tools/gnulib-lib/ostream.h
+index 488b1de..6879c08 100644
+--- a/gettext-tools/gnulib-lib/ostream.h
++++ b/gettext-tools/gnulib-lib/ostream.h
+@@ -108,7 +108,11 @@ ostream_free (ostream_t first_arg)
+ 
+ #endif
+ 
+-extern const typeinfo_t ostream_typeinfo;
++#ifdef __cplusplus
++extern "C" {
++#endif
++
++extern DLL_VARIABLE const typeinfo_t ostream_typeinfo;
+ #define ostream_SUPERCLASSES &ostream_typeinfo, NULL
+ #define ostream_SUPERCLASSES_LENGTH (1 + 1)
+ 
+@@ -116,10 +120,6 @@ extern const struct ostream_implementation ostream_vtable;
+ 
+ #line 41 "ostream.oo.h"
+ 
+-#ifdef __cplusplus
+-extern "C" {
+-#endif
+-
+ /* Write a string's contents to a stream.  */
+ extern void ostream_write_str (ostream_t stream, const char *string);
+ 
+diff --git a/gettext-tools/gnulib-lib/styled-ostream.h b/gettext-tools/gnulib-lib/styled-ostream.h
+index 3a2dc6d..281992a 100644
+--- a/gettext-tools/gnulib-lib/styled-ostream.h
++++ b/gettext-tools/gnulib-lib/styled-ostream.h
+@@ -132,12 +132,20 @@ styled_ostream_end_use_class (styled_ostream_t first_arg, const char *classname)
+ 
+ #endif
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ extern DLL_VARIABLE const typeinfo_t styled_ostream_typeinfo;
+ #define styled_ostream_SUPERCLASSES &styled_ostream_typeinfo, ostream_SUPERCLASSES
+ #define styled_ostream_SUPERCLASSES_LENGTH (1 + ostream_SUPERCLASSES_LENGTH)
+ 
+ extern DLL_VARIABLE const struct styled_ostream_implementation styled_ostream_vtable;
+ 
++#ifdef __cplusplus
++}
++#endif
++
+ #line 42 "styled-ostream.oo.h"
+ 
+ 
+diff --git a/gettext-tools/gnulib-lib/term-ostream.h b/gettext-tools/gnulib-lib/term-ostream.h
+index f5ab2c6..54895e2 100644
+--- a/gettext-tools/gnulib-lib/term-ostream.h
++++ b/gettext-tools/gnulib-lib/term-ostream.h
+@@ -254,6 +254,11 @@ term_ostream_set_underline (term_ostream_t first_arg,
+ 
+ #endif
+ 
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ extern const typeinfo_t term_ostream_typeinfo;
+ #define term_ostream_SUPERCLASSES &term_ostream_typeinfo, ostream_SUPERCLASSES
+ #define term_ostream_SUPERCLASSES_LENGTH (1 + ostream_SUPERCLASSES_LENGTH)
+@@ -263,11 +268,6 @@ extern const struct term_ostream_implementation term_ostream_vtable;
+ #line 91 "term-ostream.oo.h"
+ 
+ 
+-#ifdef __cplusplus
+-extern "C" {
+-#endif
+-
+-
+ /* Create an output stream referring to the file descriptor FD.
+    FILENAME is used only for error messages.
+    The resulting stream will be line-buffered.
+diff --git a/gettext-tools/gnulib-lib/term-styled-ostream.h b/gettext-tools/gnulib-lib/term-styled-ostream.h
+index d108883..5c9b391 100644
+--- a/gettext-tools/gnulib-lib/term-styled-ostream.h
++++ b/gettext-tools/gnulib-lib/term-styled-ostream.h
+@@ -130,6 +130,11 @@ term_styled_ostream_end_use_class (term_styled_ostream_t first_arg, const char *
+ 
+ #endif
+ 
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ extern const typeinfo_t term_styled_ostream_typeinfo;
+ #define term_styled_ostream_SUPERCLASSES &term_styled_ostream_typeinfo, styled_ostream_SUPERCLASSES
+ #define term_styled_ostream_SUPERCLASSES_LENGTH (1 + styled_ostream_SUPERCLASSES_LENGTH)
+@@ -139,11 +144,6 @@ extern const struct term_styled_ostream_implementation term_styled_ostream_vtabl
+ #line 28 "term-styled-ostream.oo.h"
+ 
+ 
+-#ifdef __cplusplus
+-extern "C" {
+-#endif
+-
+-
+ /* Create an output stream referring to the file descriptor FD, styled with
+    the file CSS_FILENAME.
+    FILENAME is used only for error messages.
+diff --git a/gettext-tools/libgettextpo/exitfail.h b/gettext-tools/libgettextpo/exitfail.h
+index ef1e488..2cb9074 100644
+--- a/gettext-tools/libgettextpo/exitfail.h
++++ b/gettext-tools/libgettextpo/exitfail.h
+@@ -15,4 +15,12 @@
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ extern DLL_VARIABLE int volatile exit_failure;
++
++#ifdef __cplusplus
++}
++#endif
+diff --git a/gettext-tools/src/lang-table.h b/gettext-tools/src/lang-table.h
+index 464c4e1..f2fd6bc 100644
+--- a/gettext-tools/src/lang-table.h
++++ b/gettext-tools/src/lang-table.h
+@@ -20,16 +20,24 @@
+ 
+ #include <stddef.h>
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ struct language_table_entry
+ {
+   const char *code;
+   const char *english;
+ };
+ 
+-extern struct language_table_entry language_table[];
+-extern const size_t language_table_size;
++extern DLL_VARIABLE struct language_table_entry language_table[];
++extern DLL_VARIABLE const size_t language_table_size;
++
++extern DLL_VARIABLE struct language_table_entry language_variant_table[];
++extern DLL_VARIABLE const size_t language_variant_table_size;
+ 
+-extern struct language_table_entry language_variant_table[];
+-extern const size_t language_variant_table_size;
++#ifdef __cplusplus
++}
++#endif
+ 
+ #endif /* _LANG_TABLE_H */
+diff --git a/gettext-tools/src/plural-table.h b/gettext-tools/src/plural-table.h
+index ce8c52d..f9ff7a0 100644
+--- a/gettext-tools/src/plural-table.h
++++ b/gettext-tools/src/plural-table.h
+@@ -20,6 +20,10 @@
+ 
+ #include <stddef.h>
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ struct plural_table_entry
+ {
+   const char *lang;
+@@ -30,4 +34,8 @@ struct plural_table_entry
+ extern DLL_VARIABLE struct plural_table_entry plural_table[];
+ extern DLL_VARIABLE const size_t plural_table_size;
+ 
++#ifdef __cplusplus
++}
++#endif
++
+ #endif /* _PLURAL_TABLE_H */
+diff --git a/gettext-tools/src/po-gram-gen2.h b/gettext-tools/src/po-gram-gen2.h
+index 683ccbf..90d0996 100644
+--- a/gettext-tools/src/po-gram-gen2.h
++++ b/gettext-tools/src/po-gram-gen2.h
+@@ -32,6 +32,11 @@
+ 
+ #ifndef YY_YY_PO_GRAM_GEN_H_INCLUDED
+ # define YY_YY_PO_GRAM_GEN_H_INCLUDED
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ /* Debug traces.  */
+ #ifndef YYDEBUG
+ # define YYDEBUG 0
+@@ -105,4 +110,8 @@ extern DLL_VARIABLE YYSTYPE po_gram_lval;
+ 
+ int po_gram_parse (void);
+ 
++#ifdef __cplusplus
++}
++#endif
++
+ #endif /* !YY_YY_PO_GRAM_GEN_H_INCLUDED  */
+diff --git a/gettext-tools/src/read-po.h b/gettext-tools/src/read-po.h
+index 064e27a..f6b5e4c 100644
+--- a/gettext-tools/src/read-po.h
++++ b/gettext-tools/src/read-po.h
+@@ -20,7 +20,15 @@
+ 
+ #include "read-catalog-abstract.h"
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ /* Describes a .po / .pot file parser.  */
+ extern DLL_VARIABLE const struct catalog_input_format input_format_po;
+ 
++#ifdef __cplusplus
++}
++#endif
++
+ #endif /* _READ_PO_H */
+diff --git a/gettext-tools/src/read-properties.h b/gettext-tools/src/read-properties.h
+index 33d90ca..e76d86e 100644
+--- a/gettext-tools/src/read-properties.h
++++ b/gettext-tools/src/read-properties.h
+@@ -20,7 +20,15 @@
+ 
+ #include "read-catalog-abstract.h"
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ /* Describes a .properties file parser.  */
+ extern DLL_VARIABLE const struct catalog_input_format input_format_properties;
+ 
++#ifdef __cplusplus
++}
++#endif
++
+ #endif /* _READ_PROPERTIES_H */
+diff --git a/gettext-tools/src/read-stringtable.h b/gettext-tools/src/read-stringtable.h
+index 939a67f..dfb30f4 100644
+--- a/gettext-tools/src/read-stringtable.h
++++ b/gettext-tools/src/read-stringtable.h
+@@ -20,7 +20,15 @@
+ 
+ #include "read-catalog-abstract.h"
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ /* Describes a .strings file parser.  */
+ extern DLL_VARIABLE const struct catalog_input_format input_format_stringtable;
+ 
++#ifdef __cplusplus
++}
++#endif
++
+ #endif /* _READ_STRINGTABLE_H */
+diff --git a/gettext-tools/src/write-properties.h b/gettext-tools/src/write-properties.h
+index cf6f86c..73de3a2 100644
+--- a/gettext-tools/src/write-properties.h
++++ b/gettext-tools/src/write-properties.h
+@@ -20,7 +20,15 @@
+ 
+ #include "write-catalog.h"
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ /* Describes a PO file in Java .properties syntax.  */
+ extern DLL_VARIABLE const struct catalog_output_format output_format_properties;
+ 
++#ifdef __cplusplus
++}
++#endif
++
+ #endif /* _WRITE_PROPERTIES_H */
+diff --git a/gettext-tools/src/write-stringtable.h b/gettext-tools/src/write-stringtable.h
+index bf3de6c..6fd3dcf 100644
+--- a/gettext-tools/src/write-stringtable.h
++++ b/gettext-tools/src/write-stringtable.h
+@@ -20,7 +20,15 @@
+ 
+ #include "write-catalog.h"
+ 
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ /* Describes a PO file in .strings syntax.  */
+ extern DLL_VARIABLE const struct catalog_output_format output_format_stringtable;
+ 
++#ifdef __cplusplus
++}
++#endif
++
+ #endif /* _WRITE_STRINGTABLE_H */
+-- 
+2.17.1
+

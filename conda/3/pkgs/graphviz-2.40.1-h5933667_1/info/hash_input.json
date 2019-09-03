@@ -1,0 +1,14 @@
+{
+  "c_compiler_version": "7",
+  "c_compiler": "gcc",
+  "cairo": "1.16",
+  "pango": "1.42",
+  "libpng": "1.6.35",
+  "cxx_compiler": "gxx",
+  "cxx_compiler_version": "7",
+  "freetype": "2.9.1",
+  "zlib": "1.2",
+  "libtiff": "4.0.9",
+  "jpeg": "9",
+  "expat": "2.2"
+}

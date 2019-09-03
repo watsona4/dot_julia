@@ -1,0 +1,12 @@
+{
+  "c_compiler": "gcc",
+  "liblapack": "3.8.0 *netlib",
+  "fortran_compiler": "gfortran",
+  "fortran_compiler_version": "7",
+  "libcblas": "3.8 *netlib",
+  "cxx_compiler": "gxx",
+  "c_compiler_version": "7",
+  "libblas": "3.8 *netlib",
+  "cxx_compiler_version": "7",
+  "numpy": "1.14"
+}

@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index caa0e710..5d67b09e 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -279,6 +279,8 @@ endif()
+ 
+ if(BUILD_TESTING)
+   add_subdirectory(TESTING)
++  add_subdirectory(BLAS/TESTING)
++  add_subdirectory(LAPACKE/example)
+ endif()
+ 
+ # --------------------------------------------------

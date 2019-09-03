@@ -1,0 +1,73 @@
+{% set version = "8.41" %}
+
+package:
+  name: pcre
+  version: {{ version }}
+
+source:
+  url: ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-{{ version }}.tar.gz
+  sha256: 244838e1f1d14f7e2fa7681b857b3a8566b74215f28133f14a8f5e59241b682c
+
+build:
+  number: 1003
+  run_exports:
+    # mostly OK, but some scary symbol removal.  Let's try for trusting them.
+    #    https://abi-laboratory.pro/tracker/timeline/pcre/
+    - {{ pin_subpackage('pcre', max_pin='x') }}
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - cmake        # [win]
+    - pkg-config   # [not win]
+    - libtool      # [not win]
+
+test:
+  commands:
+    # CLI tests.
+    - pcre-config --version                             # [not win]
+    - pcregrep --help
+    - pcretest --help
+
+    # Verify headers.
+    - test -f "${PREFIX}/include/pcre.h"  # [not win]
+    - test -f "${PREFIX}/include/pcre_scanner.h"  # [not win]
+    - test -f "${PREFIX}/include/pcre_stringpiece.h"  # [not win]
+    - test -f "${PREFIX}/include/pcrecpp.h"  # [not win]
+    - test -f "${PREFIX}/include/pcrecpparg.h"  # [not win]
+    - test -f "${PREFIX}/include/pcreposix.h"  # [not win]
+    - if not exist %LIBRARY_INC%\pcre.h exit 1  # [win]
+    - if not exist %LIBRARY_INC%\pcre_scanner.h exit 1  # [win]
+    - if not exist %LIBRARY_INC%\pcre_stringpiece.h exit 1  # [win]
+    - if not exist %LIBRARY_INC%\pcrecpp.h exit 1  # [win]
+    - if not exist %LIBRARY_INC%\pcrecpparg.h exit 1  # [win]
+    - if not exist %LIBRARY_INC%\pcreposix.h exit 1  # [win]
+
+    # Verify libraries.
+    - test -f "${PREFIX}/lib/libpcre.a"  # [not win]
+    - test -f "${PREFIX}/lib/libpcre${SHLIB_EXT}"  # [not win]
+    - test -f "${PREFIX}/lib/libpcrecpp.a"  # [not win]
+    - test -f "${PREFIX}/lib/libpcrecpp${SHLIB_EXT}"  # [not win]
+    - test -f "${PREFIX}/lib/libpcreposix.a"  # [not win]
+    - test -f "${PREFIX}/lib/libpcreposix${SHLIB_EXT}"  # [not win]
+    - if not exist %LIBRARY_LIB%\pcre.lib exit 1  # [win]
+    - if not exist %LIBRARY_BIN%\pcre.dll exit 1  # [win]
+    - if not exist %LIBRARY_LIB%\pcreposix.lib exit 1  # [win]
+    - if not exist %LIBRARY_BIN%\pcreposix.dll exit 1  # [win]
+    - if not exist %LIBRARY_LIB%\pcrecpp.lib exit 1  # [win]
+    - if not exist %LIBRARY_BIN%\pcrecpp.dll exit 1  # [win]
+
+about:
+  home: http://www.pcre.org/
+  license: BSD 3-Clause
+  license_file: LICENCE
+  summary: Regular expression pattern matching using the same syntax and semantics as Perl 5.
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - scopatz
+    - sebastian-luna-valero
+    - saraedum
+    - ocefpaf

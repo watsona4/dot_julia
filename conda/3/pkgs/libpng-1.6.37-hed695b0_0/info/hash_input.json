@@ -1,0 +1,5 @@
+{
+  "zlib": "1.2",
+  "c_compiler": "gcc",
+  "c_compiler_version": "7"
+}

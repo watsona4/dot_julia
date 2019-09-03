@@ -1,0 +1,49 @@
+{% set version = "4.20" %}
+
+package:
+  name: nspr
+  version: {{ version }}
+
+source:
+  fn: nspr-{{ version }}.tgz
+  url: https://ftp.mozilla.org/pub/nspr/releases/v{{ version }}/src/nspr-{{ version }}.tar.gz
+  sha256: 2c8964913da89ffbaf464d49ce44d79e8804e1794ef9a8c52a7bff7224d1556e
+
+build:
+  number: 1000
+  skip: true  # [win]
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - make
+    - autoconf
+
+test:
+  commands:
+    - test -f ${PREFIX}/lib/libnspr4.a                   # [unix]
+    - test -f ${PREFIX}/lib/libnspr4${SHLIB_EXT}         # [unix]
+    - test -f ${PREFIX}/lib/libplc4.a                    # [unix]
+    - test -f ${PREFIX}/lib/libplc4${SHLIB_EXT}          # [unix]
+    - test -f ${PREFIX}/lib/libplds4.a                   # [unix]
+    - test -f ${PREFIX}/lib/libplds4${SHLIB_EXT}         # [unix]
+
+about:
+  home: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
+  license: MPL 2
+  license_file: nspr/LICENSE
+  summary: A platform-neutral API for system level and libc-like functions.
+  description: |
+    NetScape Portable Runtime (NSPR) provides platform independence for
+    non-GUI operating system facilities. These facilities include threads,
+    thread synchronization, normal file and network I/O, interval timing and
+    calendar time, basic memory management (malloc and free) and shared
+    library linking.
+  doc_url: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
+  dev_url: https://developer.mozilla.org/en-US/docs/MDN
+
+extra:
+  recipe-maintainers:
+    - marcelotrevisani
+    - jakirkham

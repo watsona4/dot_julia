@@ -1,0 +1,75 @@
+{% set version = "2.40.1" %}
+
+package:
+  name: graphviz
+  version: {{ version }}
+
+source:
+  url : https://graphviz.gitlab.io/pub/graphviz/stable/SOURCES/graphviz.tar.gz  # [unix]
+  md5: 4ea6fd64603536406166600bcc296fc8  # [unix]
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: True  # [unix]
+  skip: True  # [win]
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - pkg-config               # [osx]
+  host:
+    - cairo                    # [linux]
+    - expat                    # [linux]
+    - libpng                   # [unix]
+    - libtiff                  # [unix]
+    - libtool                  # [linux]
+    - freetype                 # [unix]
+    - jpeg                     # [unix]
+    - pango                    # [linux]
+    - zlib                     # [unix]
+    - libxcb                   # [linux]
+    - xorg-libxrender          # [linux]
+    - xorg-libxpm              # [linux]
+  run:
+    - cairo                    # [linux]
+    - expat                    # [linux]
+    - libpng                   # [unix]
+    - libtiff                  # [unix]
+    - libtool                  # [linux]
+    - freetype                 # [unix]
+    - jpeg                     # [unix]
+    - pango                    # [linux]
+    - zlib                     # [unix]
+    - libxcb                   # [linux]
+    - xorg-libxrender          # [linux]
+    - xorg-libxpm              # [linux]
+
+test:
+  commands:
+    - dot -V
+    - neato -?  # [unix]
+    - conda inspect linkages $PKG_NAME  # [not win]
+    - conda inspect objects $PKG_NAME  # [osx]
+  files:
+    - sample.dot
+
+about:
+  home: http://www.graphviz.org/
+  license: EPL v1.0
+  license_family: Other
+  license_file: COPYING
+  summary: Open Source graph visualization software.
+  description: |
+    Graphviz is an open source graph visualization software. Graph visualization
+    is a way of representing structural information as diagrams of abstract
+    graphs and networks.
+  doc_url: http://www.graphviz.org/Documentation.php
+  dev_url: https://github.com/ellson/graphviz
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - ccordoba12
+    - ocefpaf
+    - johanneskoester

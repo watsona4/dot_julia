@@ -1,0 +1,267 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /projects/66d93023-00f0-4c12-8a25-5d6d4e486740/projects/qt-feedstock/recipe, last modified Wed Aug  7 16:07:26 2019
+# ------------------------------------------------
+
+package:
+    name: qt
+    version: 5.12.1
+source:
+    -   md5: 6a37466c8c40e87d4a19c3f286ec2542
+        patches:
+            - patches/0001-qtscript-mark-cti_vm_throw-as-REFERENCED_FROM_ASM.patch
+            - patches/0001-qtwebengine-allow-any-xcblah-in-PATH.patch
+            - patches/0001-shobjidl-Fix-compile-guard-around-SHARDAPPIDINFOLINK.patch
+            - patches/0002-qtwebengine-find_sdk-respect-CONDA_BUILD_SYSROOT.patch
+            - patches/0004-qtwebengine-use-CONDA_PREFIX_include-for-system_libjpeg.patch
+            - patches/0005-qtwebengine-jpeg-codec-cannot-convert-bool-to-boolean.patch
+            - patches/0006-qtwebengine-run-gn-verbosely.patch
+            - patches/0008-qtwebengine-link-gn-to-librt.patch
+            - patches/0009-qtwebengine-Add-conda_prefix-to-features-gni-declare_args.patch
+            - patches/0010-osx-xctest-check.patch
+            - patches/0010-qtwebengine-Use-conda_prefix-for-system-zlib.patch
+            - patches/0011-osx-allow-any-xcrun-in-PATH.patch
+            - patches/0011-qtwebengine-Use-conda_prefix-for-ui-gl.patch
+            - patches/0012-qtwebengine-Ignore-glibc-2-17-min-version-check.patch
+            - patches/0013-qtwebengine-missing_EVIOCGPROP.diff
+            - patches/0014-qtwebengine-HAVE_SENDMMSG.diff
+            - patches/0015-qtbase-use-better-clang-optimize-size.patch
+            - patches/0016-qtbase-use-better-gcc-optimize-size.patch
+            - patches/0017-qtbase-never-enable-new-dtags.patch
+            - patches/0019-qtbase-link-xcb-shm.patch
+            - patches/0020-qtbase-Do-not-set-PKG_CONFIG_SYSROOT_DIR-when-sysroot-passe.patch
+        url: http://download.qt.io/official_releases/qt/5.12/5.12.1/single/qt-everywhere-src-5.12.1.tar.xz
+build:
+    detect_binary_files_with_prefix: true
+    merge_build_host: true
+    number: '0'
+    run_exports:
+        - qt >=5.12.1,<5.13.0a0
+    string: hbfa2a6e_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - alsa-lib-cos6-x86_64 1.1.0 h6d2b67b_0
+        - alsa-lib-devel-cos6-x86_64 1.1.0 hd867495_0
+        - atk-cos6-x86_64 1.30.0 he7c67e7_0
+        - atk-devel-cos6-x86_64 1.30.0 h9bddbf2_0
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_8
+        - bison 3.4 he1b5a44_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - cairo-cos6-x86_64 1.8.8 had002bf_0
+        - cairo-devel-cos6-x86_64 1.8.8 h8bd0bf0_0
+        - certifi 2019.6.16 py27_1
+        - cups-devel-cos6-x86_64 1.4.2 0
+        - cups-libs-cos6-x86_64 1.4.2 0
+        - flex 2.6.4 hf484d3e_1004
+        - fontconfig-cos6-x86_64 2.8.0 he5a27ec_0
+        - fontconfig-devel-cos6-x86_64 2.8.0 hdc0f659_0
+        - freetype-cos6-x86_64 2.3.11 hda26ef6_0
+        - freetype-devel-cos6-x86_64 2.3.11 h781713c_0
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_8
+        - gdk-pixbuf2-cos6-x86_64 2.24.1 h9eee21e_0
+        - gdk-pixbuf2-devel-cos6-x86_64 2.24.1 haf2bbbe_0
+        - glib2-cos6-x86_64 2.28.8 h1a821f5_0
+        - glib2-devel-cos6-x86_64 2.28.8 hda010f4_0
+        - gmp 6.1.2 hf484d3e_1000
+        - gperf 3.0.4 hf484d3e_1000
+        - gtk2-cos6-x86_64 2.24.23 h08a0018_0
+        - gtk2-devel-cos6-x86_64 2.24.23 h22b3bcd_0
+        - gtkmm24-cos6-x86_64 2.18.2 h76adaa3_0
+        - gtkmm24-devel-cos6-x86_64 2.18.2 ha7ccc1c_0
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_8
+        - libdrm-cos6-x86_64 2.4.65 hd39d64f_0
+        - libdrm-devel-cos6-x86_64 2.4.65 h5701c1a_0
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libselinux-cos6-x86_64 2.0.94 hc7b3062_0
+        - libselinux-devel-cos6-x86_64 2.0.94 h87dd427_0
+        - libsepol-cos6-x86_64 2.0.41 h6e2433f_0
+        - libsepol-devel-cos6-x86_64 2.0.41 h5bbff73_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - libthai-cos6-x86_64 0.1.12 hf1f4b97_0
+        - libx11-common-cos6-x86_64 1.6.4 h023ea50_0
+        - libx11-cos6-x86_64 1.6.4 h64a1553_0
+        - libx11-devel-cos6-x86_64 1.6.4 hb9851ce_0
+        - libxau-cos6-x86_64 1.0.6 h4888106_0
+        - libxau-devel-cos6-x86_64 1.0.6 hf5ff492_0
+        - libxcomposite-cos6-x86_64 0.4.3 h496ddd6_0
+        - libxcomposite-devel-cos6-x86_64 0.4.3 h7370af7_0
+        - libxcursor-cos6-x86_64 1.1.14 h4710796_0
+        - libxcursor-devel-cos6-x86_64 1.1.14 h84fcfe3_0
+        - libxdamage-cos6-x86_64 1.1.3 h8e310ee_0
+        - libxdamage-devel-cos6-x86_64 1.1.3 0
+        - libxext-cos6-x86_64 1.3.3 hc47956f_0
+        - libxext-devel-cos6-x86_64 1.3.3 hf6a4bb0_0
+        - libxfixes-cos6-x86_64 5.0.3 h3a64028_0
+        - libxfixes-devel-cos6-x86_64 5.0.3 0
+        - libxi-cos6-x86_64 1.7.8 h5354da0_0
+        - libxi-devel-cos6-x86_64 1.7.8 hda042b6_0
+        - libxrandr-cos6-x86_64 1.5.1 h9e6466e_0
+        - libxrandr-devel-cos6-x86_64 1.5.1 h5fb6d88_0
+        - libxrender-cos6-x86_64 0.9.10 h41db5cd_0
+        - libxrender-devel-cos6-x86_64 0.9.10 ha8151bf_0
+        - libxscrnsaver-cos6-x86_64 1.2.2 h54af3ee_0
+        - libxscrnsaver-devel-cos6-x86_64 1.2.2 h6740434_0
+        - libxtst-cos6-x86_64 1.2.3 hefb1821_0
+        - libxtst-devel-cos6-x86_64 1.2.3 heca503c_0
+        - libxxf86vm-cos6-x86_64 1.1.3 h3cd9653_0
+        - libxxf86vm-devel-cos6-x86_64 1.1.3 0
+        - m4 1.4.18 h14c3975_1001
+        - make 4.2.1 h14c3975_2004
+        - mesa-dri-drivers-cos6-x86_64 11.0.7 h6ae8bd2_0
+        - mesa-dri1-drivers-cos6-x86_64 7.11 hd08e721_0
+        - mesa-libegl-cos6-x86_64 11.0.7 1
+        - mesa-libegl-devel-cos6-x86_64 11.0.7 h2b7a4b1_0
+        - mesa-libgbm-cos6-x86_64 11.0.7 0
+        - mesa-libgl-cos6-x86_64 11.0.7 h045e36e_0
+        - mesa-libgl-devel-cos6-x86_64 11.0.7 h5a2c0ac_0
+        - ncurses 6.1 hf484d3e_1002
+        - ninja 1.9.0 h6bb024c_0
+        - openssl 1.1.1c h516909a_0
+        - pango-cos6-x86_64 1.28.1 h53c42d8_0
+        - pango-devel-cos6-x86_64 1.28.1 hf23b437_0
+        - pciutils-devel-cos6-x86_64 3.1.10 h99ed674_0
+        - pciutils-libs-cos6-x86_64 3.1.10 hb902eda_0
+        - perl 5.26.2 h516909a_1006
+        - pip 19.2.1 py27_0
+        - pixman-cos6-x86_64 0.32.8 h7062e45_0
+        - pixman-devel-cos6-x86_64 0.32.8 h92a7580_0
+        - pkg-config 0.29.2 h14c3975_1005
+        - pkgconfig-cos6-x86_64 0.23 h07b4811_0
+        - python 2.7.15 h5a48372_1009
+        - readline 8.0 hf8c457e_0
+        - ruby 2.4.5 h48a8d5d_1002
+        - setuptools 41.0.1 py27_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.4 py27_0
+        - xorg-x11-proto-devel-cos6-x86_64 7.7 h8d4a98b_0
+        - yaml 0.1.7 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    host:
+        - _libgcc_mutex 0.1 main
+        - clang 8.0.0 hc9558a2_3
+        - clang-tools 8.0.0 hc9558a2_3
+        - clangdev 8.0.0 3
+        - clangxx 8.0.0 3
+        - dbus 1.13.6 he372182_0
+        - expat 2.2.5 he1b5a44_1003
+        - fontconfig 2.13.1 h86ecdb6_1001
+        - freetype 2.9.1 he983fc9_1006
+        - gettext 0.19.8.1 hc5be6a0_1002
+        - glib 2.58.3 h6f030ca_1002
+        - gst-plugins-base 1.14.4 hdf3bae2_1001
+        - gstreamer 1.14.4 h66beb1c_1001
+        - icu 64.2 he1b5a44_0
+        - jpeg 9c h14c3975_1001
+        - libclang 8.0.0 hc9558a2_3
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libiconv 1.15 h516909a_1005
+        - libpng 1.6.35 h84994c4_1002
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - libuuid 2.32.1 h14c3975_1000
+        - libxcb 1.13 h14c3975_1002
+        - libxkbcommon 0.8.4 h516909a_0
+        - libxml2 2.9.9 hee79883_2
+        - llvmdev 8.0.0 hc9558a2_2
+        - ncurses 6.1 hf484d3e_1002
+        - nspr 4.20 hf484d3e_1000
+        - nss 3.45 he751ad9_0
+        - pcre 8.41 hf484d3e_1003
+        - pthread-stubs 0.4 h14c3975_1001
+        - readline 8.0 hf8c457e_0
+        - sqlite 3.29.0 hcee41ef_0
+        - xorg-libxau 1.0.9 h14c3975_0
+        - xorg-libxdmcp 1.1.3 h516909a_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - dbus >=1.13.6,<2.0a0
+        - expat >=2.2.5,<2.3.0a0
+        - fontconfig >=2.13.1,<3.0a0
+        - freetype >=2.9.1,<3.0a0
+        - glib >=2.58.3,<3.0a0
+        - gst-plugins-base >=1.14.4,<1.15.0a0
+        - gstreamer >=1.14.4,<1.15.0a0
+        - icu >=64.2,<65.0a0
+        - jpeg >=9c,<10a
+        - libclang >=8.0.0,<9.0a0
+        - libgcc-ng >=7.3.0
+        - libpng >=1.6.35,<1.7.0a0
+        - libstdcxx-ng >=7.3.0
+        - libxcb
+        - libxkbcommon >=0.8.4,<1.0a0
+        - libxml2 >=2.9.9,<2.10.0a0
+        - nspr >=4.20,<5.0a0
+        - nss >=3.45,<4.0a0
+        - openssl
+        - sqlite >=3.29.0,<4.0a0
+        - zlib >=1.2.11,<1.3.0a0
+test:
+    commands:
+        - test -f $PREFIX/lib/libQt5WebEngine.so
+        - test -f $PREFIX/plugins/sqldrivers/libqsqlite${SHLIB_EXT}
+    files:
+        - test/hello.pro
+        - test/main-qtwebengine.cpp
+        - test/main.cpp
+        - test/main.qml
+        - test/qml.qrc
+        - test/qrc_qml.cpp
+        - test/qtwebengine.pro
+        - xcodebuild
+        - xcrun
+    requires:
+        - alsa-lib-devel-cos6-x86_64
+        - gtk2-devel-cos6-x86_64
+        - gtkmm24-devel-cos6-x86_64
+        - gxx_linux-64 7.*
+        - libdrm-devel-cos6-x86_64
+        - libselinux-devel-cos6-x86_64
+        - libx11-devel-cos6-x86_64
+        - libxau-devel-cos6-x86_64
+        - libxcomposite-devel-cos6-x86_64
+        - libxcursor-devel-cos6-x86_64
+        - libxdamage-cos6-x86_64
+        - libxdamage-devel-cos6-x86_64
+        - libxext-devel-cos6-x86_64
+        - libxfixes-cos6-x86_64
+        - libxfixes-devel-cos6-x86_64
+        - libxi-devel-cos6-x86_64
+        - libxrandr-devel-cos6-x86_64
+        - libxrender-devel-cos6-x86_64
+        - libxscrnsaver-devel-cos6-x86_64
+        - libxtst-devel-cos6-x86_64
+        - libxxf86vm-cos6-x86_64
+        - mesa-dri-drivers-cos6-x86_64
+        - mesa-libegl-devel-cos6-x86_64
+        - mesa-libgl-devel-cos6-x86_64
+        - pciutils-devel-cos6-x86_64
+        - xorg-x11-proto-devel-cos6-x86_64
+about:
+    description: 'Qt helps you create connected devices, UIs & applications that run
+
+        anywhere on any device, on any operating system at any time.
+
+        '
+    dev_url: https://github.com/qtproject
+    doc_url: http://doc.qt.io/
+    home: http://qt-project.org
+    license: LGPL-3.0
+    license_file: LICENSE.LGPLv3
+    summary: Qt is a cross-platform application and UI framework.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - ccordoba12
+        - gillins
+        - mingwandroid
+        - msarahan
+        - ocefpaf
+        - stuarteberg

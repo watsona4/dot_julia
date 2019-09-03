@@ -1,0 +1,68 @@
+{% set version = "1.3.1" %}
+
+package:
+  name: scipy
+  version: {{ version }}
+
+source:
+  url: https://github.com/scipy/scipy/archive/v{{ version }}.tar.gz
+  sha256: 4ea68de2840cf7d35c58464412d21f6f154cab7fba610c11002603ee0b9e2372
+  patches:
+    - gh10591.patch
+    # https://github.com/scipy/scipy/issues/9777
+    # we build with numpy1.9, but test with numpy1.14, so that test still needs to be disabled
+    # - np114.patch 
+    # This crash occurs due to a bug in openblas < 0.3.6. When the pin is updated, this patch should be removed.
+    - 10256-skip_crash_1580.patch  # [ppc64le]
+    - relax_gmres_error_check.patch  # [aarch64]
+    - skip_problematic_boost_test.patch  # [aarch64 or ppc64le]
+    - skip_problematic_root_finding.patch  # [aarch64 or ppc64le]
+    - skip_TestIDCTIVFloat_aarch64.patch  # [aarch64]
+    - skip_white_tophat03.patch  # [aarch64 or ppc64le]
+
+
+build:
+  number: 2
+  skip: true  # [win or py2k]
+
+requirements:
+  build:
+    - {{ compiler('fortran') }}
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - libblas
+    - libcblas
+    - liblapack
+    - python
+    - setuptools
+    - cython
+    - numpy
+    - pip
+  run:
+    - python
+    - {{ pin_compatible('numpy') }}
+
+test:
+  requires:
+    - pytest
+    - mpmath
+
+about:
+  home: http://www.scipy.org/
+  license: BSD-3-Clause
+  license_file: LICENSE.txt
+  summary: Scientific Library for Python
+  description: |
+    SciPy is a Python-based ecosystem of open-source software for mathematics,
+    science, and engineering.
+  doc_url: http://www.scipy.org/docs.html
+  dev_url: https://github.com/scipy/scipy
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - msarahan
+    - rgommers
+    - ocefpaf
+    - beckermr

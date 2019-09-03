@@ -1,0 +1,23 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "features": "",
+  "fn": "joblib-0.13.2-py_0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "md5": "9ad8f3a7479a465c11bc3e2d57bc1c38",
+  "name": "joblib",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "d25b5c50d8b5975502c54586b6faec29a04bcdf2afdd543ba6d46217a549a4f2",
+  "size": 184310,
+  "subdir": "noarch",
+  "timestamp": 1550090168735,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/joblib-0.13.2-py_0.tar.bz2",
+  "version": "0.13.2"
+}

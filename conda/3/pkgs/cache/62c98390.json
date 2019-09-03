@@ -1,4 +1,4 @@
-{"_url": "https://conda.anaconda.org/conda-forge/noarch", "_etag": "W/\"f0d599c209677ea3bfef2196553aea58\"", "_mod": "Mon, 02 Sep 2019 16:29:45 GMT", "_cache_control": "public, max-age=1200", 
+{"_url": "https://conda.anaconda.org/conda-forge/noarch", "_etag": "W/\"d7a1203badffacb161579998355275ca\"", "_mod": "Tue, 03 Sep 2019 00:07:56 GMT", "_cache_control": "public, max-age=1200", 
   "info": {
     "subdir": "noarch"
   },
@@ -3903,6 +3903,25 @@
       "subdir": "noarch",
       "timestamp": 1552061406255,
       "version": "2.0.0"
+    },
+    "bash_kernel-0.7.2-py_0.tar.bz2": {
+      "build": "py_0",
+      "build_number": 0,
+      "depends": [
+        "ipykernel",
+        "pexpect",
+        "python >=3.0"
+      ],
+      "license": "BSD",
+      "license_family": "BSD",
+      "md5": "49c2a5d6fb31beb5af1057151234b6aa",
+      "name": "bash_kernel",
+      "noarch": "python",
+      "sha256": "523cb91ef73d34e9d65941d6e07a809bbafaa6f051f88ea207498b9707ac9949",
+      "size": 10422,
+      "subdir": "noarch",
+      "timestamp": 1567454154279,
+      "version": "0.7.2"
     },
     "bashplotlib-0.6.5-py_0.tar.bz2": {
       "build": "py_0",
@@ -16359,6 +16378,24 @@
       "subdir": "noarch",
       "version": "1.14.post1"
     },
+    "face-19.1.2-py_0.tar.bz2": {
+      "build": "py_0",
+      "build_number": 0,
+      "depends": [
+        "boltons",
+        "python"
+      ],
+      "license": "BSD-3-Clause",
+      "license_family": "BSD",
+      "md5": "4f4851116eb550a5988d530833871982",
+      "name": "face",
+      "noarch": "python",
+      "sha256": "918fa777ad8b79d16f9be3b6c4ed1c2b6c037642e1b0aa2aef5b5f84e5223e72",
+      "size": 34093,
+      "subdir": "noarch",
+      "timestamp": 1567456390799,
+      "version": "19.1.2"
+    },
     "factory_boy-2.11.1-py_0.tar.bz2": {
       "arch": null,
       "build": "py_0",
@@ -19317,28 +19354,26 @@
       "timestamp": 1550441577257,
       "version": "0.1.6"
     },
-    "fletcher-0.1.2-py_0.tar.bz2": {
-      "arch": null,
+    "fletcher-0.2.0-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
         "numba",
-        "pandas >=0.23",
-        "pyarrow >=0.9",
+        "pandas >=0.24",
+        "pyarrow >=0.11",
         "python",
         "six"
       ],
       "license": "MIT",
       "license_family": "MIT",
-      "md5": "242d608c11d350a99c04c9f590f64970",
+      "md5": "1eff1cb3870a73c82f32d4728c0c1220",
       "name": "fletcher",
       "noarch": "python",
-      "platform": null,
-      "sha256": "716640ea5e0cfe7e1a051bd25b149bed854f4cc312f5617837984038d8a00ab1",
-      "size": 16043,
+      "sha256": "89446dd9d24489e07b4ab7f0dbe1cf56aedd3356c6b4fbce45cba12c2797e6cb",
+      "size": 19545,
       "subdir": "noarch",
-      "timestamp": 1531344403956,
-      "version": "0.1.2"
+      "timestamp": 1567456380536,
+      "version": "0.2.0"
     },
     "flex-swagger-6.14.0-py_0.tar.bz2": {
       "build": "py_0",
@@ -22055,6 +22090,26 @@
       "subdir": "noarch",
       "timestamp": 1562866596361,
       "version": "1.8.0"
+    },
+    "glom-19.2.0-py_0.tar.bz2": {
+      "build": "py_0",
+      "build_number": 0,
+      "depends": [
+        "attrs",
+        "boltons",
+        "face",
+        "python"
+      ],
+      "license": "BSD-3-Clause",
+      "license_family": "BSD",
+      "md5": "556757b7c6bc24e1ea8affe8aa41e8a1",
+      "name": "glom",
+      "noarch": "python",
+      "sha256": "513ee650117d1116f009f0285c9d18ccdff93f51e3de16a7c9fbb2c8a26195c4",
+      "size": 43559,
+      "subdir": "noarch",
+      "timestamp": 1567461658301,
+      "version": "19.2.0"
     },
     "glue-geospatial-0.2-py_0.tar.bz2": {
       "build": "py_0",
@@ -26980,7 +27035,7 @@
       "timestamp": 1524632682981,
       "version": "0.3.3"
     },
-    "jax-0.1.43-pyh5ca1d4c_0.tar.bz2": {
+    "jax-0.1.44-pyh5ca1d4c_0.tar.bz2": {
       "build": "pyh5ca1d4c_0",
       "build_number": 0,
       "depends": [
@@ -26994,14 +27049,14 @@
       ],
       "license": "Apache-2.0",
       "license_family": "APACHE",
-      "md5": "a2ca13139889f6f94bcda48187134f87",
+      "md5": "83c83d42903afb0ec4cbe85c41820419",
       "name": "jax",
       "noarch": "python",
-      "sha256": "aa177061c9586e238310177a834e333a15a67fbeda03815a92ac3a4daebbeddb",
-      "size": 177630,
+      "sha256": "c2ccb302ea2e96dba5befc29746873e0bdfd31beb6a1d45c075d0962d55dee54",
+      "size": 179593,
       "subdir": "noarch",
-      "timestamp": 1566779052672,
-      "version": "0.1.43"
+      "timestamp": 1567441509366,
+      "version": "0.1.44"
     },
     "jaydebeapi-1.1.1-py_0.tar.bz2": {
       "arch": null,
@@ -28533,7 +28588,7 @@
       "timestamp": 1542908159028,
       "version": "0.20.0"
     },
-    "jupytext-1.2.1-0.tar.bz2": {
+    "jupytext-1.2.3-0.tar.bz2": {
       "build": "0",
       "build_number": 0,
       "depends": [
@@ -28542,14 +28597,14 @@
       ],
       "license": "MIT",
       "license_family": "MIT",
-      "md5": "52964294892c9202be94336de7f46256",
+      "md5": "297c416c600edac466e3f12e3d218d07",
       "name": "jupytext",
       "noarch": "python",
-      "sha256": "1f9d44108585994f54b37560b16185b92e719830f75d557e096ae04a34a73b89",
-      "size": 149007,
+      "sha256": "e26318bb6f5962ed51cbbd3d4b37f778cae718555ce0ed6a24280bd90f94b3e5",
+      "size": 149524,
       "subdir": "noarch",
-      "timestamp": 1563608018646,
-      "version": "1.2.1"
+      "timestamp": 1567461907079,
+      "version": "1.2.3"
     },
     "jwcrypto-0.6.0-py_0.tar.bz2": {
       "build": "py_0",
@@ -33277,7 +33332,7 @@
       "timestamp": 1529193393755,
       "version": "0.2.3.5"
     },
-    "mpas-analysis-1.2.4-py_0.tar.bz2": {
+    "mpas-analysis-1.2.5-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
@@ -33287,78 +33342,7 @@
         "cmocean",
         "dask",
         "geometric_features",
-        "lxml",
-        "matplotlib >=3.0.2",
-        "nco >=4.8.1",
-        "netcdf4",
-        "numpy",
-        "pillow",
-        "progressbar2",
-        "pyproj",
-        "python",
-        "requests",
-        "scipy",
-        "setuptools",
-        "shapely",
-        "xarray >=0.10.0"
-      ],
-      "license": "BSD 3-Clause",
-      "license_family": "BSD",
-      "md5": "e0bc0c05707375f5a1a34565ae6e6d35",
-      "name": "mpas-analysis",
-      "noarch": "python",
-      "sha256": "046a421188114a50c48f6eff8bfacc697ebaffdabc529af9a35c9f2fdaf1b054",
-      "size": 6445235,
-      "subdir": "noarch",
-      "timestamp": 1562928311491,
-      "version": "1.2.4"
-    },
-    "mpas-analysis-1.2.4-py_1.tar.bz2": {
-      "build": "py_1",
-      "build_number": 1,
-      "depends": [
-        "basemap",
-        "bottleneck",
-        "cartopy",
-        "cmocean",
-        "dask",
-        "geometric_features",
-        "lxml",
-        "matplotlib <=2.2.3|>=3.0.2",
-        "nco >=4.8.1",
-        "netcdf4",
-        "numpy",
-        "pillow",
-        "progressbar2",
-        "pyproj",
-        "python",
-        "requests",
-        "scipy",
-        "setuptools",
-        "shapely",
-        "xarray >=0.10.0"
-      ],
-      "license": "BSD 3-Clause",
-      "license_family": "BSD",
-      "md5": "c7bb1048944e4a3d238d346c8158800e",
-      "name": "mpas-analysis",
-      "noarch": "python",
-      "sha256": "cbe1d22a25afd501edbcf343dceedbdf1ae6a76330bb591cf0628448b801a7c4",
-      "size": 6533572,
-      "subdir": "noarch",
-      "timestamp": 1562964913959,
-      "version": "1.2.4"
-    },
-    "mpas-analysis-1.2.4-py_2.tar.bz2": {
-      "build": "py_2",
-      "build_number": 2,
-      "depends": [
-        "basemap",
-        "bottleneck",
-        "cartopy",
-        "cmocean",
-        "dask",
-        "geometric_features",
+        "gsw",
         "lxml",
         "matplotlib <3.0.0|>=3.0.2",
         "nco >=4.8.1",
@@ -33376,14 +33360,14 @@
       ],
       "license": "BSD 3-Clause",
       "license_family": "BSD",
-      "md5": "5c3e4c7e3623b89131533aaca59eea79",
+      "md5": "cb3df21a7571ca3886eee0a1ea694910",
       "name": "mpas-analysis",
       "noarch": "python",
-      "sha256": "c537d9d0bcc68fc88a90b0a0de320330a5a0d776efeb6e72632cdf24b7cf10f6",
-      "size": 6362322,
+      "sha256": "fff33124671944aa7c2106b5860d48431f3d3fada971c82a67c422b40701585e",
+      "size": 6535069,
       "subdir": "noarch",
-      "timestamp": 1563093269430,
-      "version": "1.2.4"
+      "timestamp": 1567448351627,
+      "version": "1.2.5"
     },
     "mpl-scatter-density-0.6-py_0.tar.bz2": {
       "build": "py_0",
@@ -38793,6 +38777,24 @@
       "subdir": "noarch",
       "version": "0.2.0"
     },
+    "pg8000-1.13.2-py_0.tar.bz2": {
+      "build": "py_0",
+      "build_number": 0,
+      "depends": [
+        "python >=3.5",
+        "scramp 1.1.0.*"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "5d62749ab1c15f63338c3f670c6e2629",
+      "name": "pg8000",
+      "noarch": "python",
+      "sha256": "56f53dc55078a77e121ab47496a9b08c7660a5b4cfcab74ee1823087cc8e2a47",
+      "size": 24709,
+      "subdir": "noarch",
+      "timestamp": 1567456868786,
+      "version": "1.13.2"
+    },
     "pgcli-2.1.1-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
@@ -41757,29 +41759,29 @@
       "timestamp": 1553574445989,
       "version": "1.0.1"
     },
-    "pycsw-2.4.0-py_0.tar.bz2": {
+    "pycsw-2.4.1-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
-        "geolinks",
-        "lxml",
-        "owslib",
-        "pyproj",
+        "geolinks >=0.2,<0.3",
+        "lxml >=4.4.0,<5",
+        "owslib >=0.18.0",
+        "pyproj >=2.2.1,<2.3",
         "python",
         "setuptools",
-        "shapely",
+        "shapely >=1.6.4,<1.7",
         "six",
-        "xmltodict"
+        "xmltodict >=0.12.0"
       ],
       "license": "MIT",
-      "md5": "98b09a0be674bc773c4c5066c4321925",
+      "md5": "8132d66e90b1b9ad08ac66f9b113f896",
       "name": "pycsw",
       "noarch": "python",
-      "sha256": "c3f4fa46fa2461886113e1ae96323d680f11b6c62f6189c57004a5742d9099aa",
-      "size": 290183,
+      "sha256": "f796798127ecaf912f910a2cce8d68c08c55d1c54ea95f949b9be0a1f0b4592a",
+      "size": 289073,
       "subdir": "noarch",
-      "timestamp": 1558120994400,
-      "version": "2.4.0"
+      "timestamp": 1567449228306,
+      "version": "2.4.1"
     },
     "pyct-0.4.6-py_0.tar.bz2": {
       "build": "py_0",
@@ -121585,6 +121587,40 @@
       "timestamp": 1567406560557,
       "version": "1.11.1"
     },
+    "rb-coffee-script-source-1.12.2-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "7e036a31b5dd9d320bc3698dd7d115e4",
+      "name": "rb-coffee-script-source",
+      "noarch": "generic",
+      "sha256": "04960492e41658a7c7590ee988baf34e6035b6e5d835f55b4089bacf075a9638",
+      "size": 122299,
+      "subdir": "noarch",
+      "timestamp": 1567454150940,
+      "version": "1.12.2"
+    },
+    "rb-coffee-script-source-1.12.2-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "f5f30417f32d3f311f4382034b53c035",
+      "name": "rb-coffee-script-source",
+      "noarch": "generic",
+      "sha256": "ddb658e73dd60598eba861d1513a0228448bbcc3fbb619c87872d8624fb48b41",
+      "size": 122198,
+      "subdir": "noarch",
+      "timestamp": 1567454120583,
+      "version": "1.12.2"
+    },
     "rb-colorator-1.1.0-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
       "build_number": 0,
@@ -123067,47 +123103,47 @@
       "timestamp": 1567104935211,
       "version": "2.0.0"
     },
-    "rb-jekyll-scholar-5.9.1-hc42de5b_0.tar.bz2": {
+    "rb-jekyll-scholar-6.2.0-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
       "build_number": 0,
       "depends": [
         "rb-bibtex-ruby >=4.0.13,<5",
         "rb-citeproc-ruby >=1.0,<2",
         "rb-csl-styles >=1.0,<2",
-        "rb-jekyll >=3.0,<4",
+        "rb-jekyll >=4.0,<5",
         "ruby >=2.6.3,<2.7.0a0"
       ],
       "license": "MIT",
       "license_family": "MIT",
-      "md5": "50bcf2698f208f5f6f16f75087f32ef7",
+      "md5": "1a037075279e6af1bb60004bab4969dd",
       "name": "rb-jekyll-scholar",
       "noarch": "generic",
-      "sha256": "444c015f219ef281cd0c37d9356760619b3c39af982769829a2a656be95ea8a3",
-      "size": 63216,
+      "sha256": "8ea4bb8b66ddb766d630b125009844232f72e0bd07b751889c2c2c5446875030",
+      "size": 72959,
       "subdir": "noarch",
-      "timestamp": 1567252982203,
-      "version": "5.9.1"
+      "timestamp": 1567468763265,
+      "version": "6.2.0"
     },
-    "rb-jekyll-scholar-5.9.1-hd4c1694_0.tar.bz2": {
+    "rb-jekyll-scholar-6.2.0-hd4c1694_0.tar.bz2": {
       "build": "hd4c1694_0",
       "build_number": 0,
       "depends": [
         "rb-bibtex-ruby >=4.0.13,<5",
         "rb-citeproc-ruby >=1.0,<2",
         "rb-csl-styles >=1.0,<2",
-        "rb-jekyll >=3.0,<4",
+        "rb-jekyll >=4.0,<5",
         "ruby >=2.5.5,<2.6.0a0"
       ],
       "license": "MIT",
       "license_family": "MIT",
-      "md5": "5b97880c8b2d035fc64bbedc229d13b5",
+      "md5": "f9fd05ecea08db035924a73ab3bc1824",
       "name": "rb-jekyll-scholar",
       "noarch": "generic",
-      "sha256": "740f0077cd159e6613f87ac7fd774ad50f7ef947fdb2b07413a90166e526ef66",
-      "size": 63159,
+      "sha256": "c2b2b2830cc2d74d8a09fbecc491079f60f9c98a3e950d2b78f8f8eff5655600",
+      "size": 72919,
       "subdir": "noarch",
-      "timestamp": 1567252980094,
-      "version": "5.9.1"
+      "timestamp": 1567468745058,
+      "version": "6.2.0"
     },
     "rb-jekyll-seo-tag-2.6.1-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
@@ -123216,6 +123252,548 @@
       "subdir": "noarch",
       "timestamp": 1567321999874,
       "version": "1.3.1"
+    },
+    "rb-jekyll-swiss-1.0.0-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.3,<4",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "c15ad189f1e989ad866852878cdd1000",
+      "name": "rb-jekyll-swiss",
+      "noarch": "generic",
+      "sha256": "c00275b8a49ff0f7e4151e84fb7f8201528e77a2b6d46aecb1416ca833121fe9",
+      "size": 29884,
+      "subdir": "noarch",
+      "timestamp": 1567454398434,
+      "version": "1.0.0"
+    },
+    "rb-jekyll-swiss-1.0.0-hc42de5b_1.tar.bz2": {
+      "build": "hc42de5b_1",
+      "build_number": 1,
+      "depends": [
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "3501117d8846023e18413103ce546167",
+      "name": "rb-jekyll-swiss",
+      "noarch": "generic",
+      "sha256": "b906825705303315fbc83ae94027aed5a4352c0583a18ec2863a78645f6ef7a1",
+      "size": 29875,
+      "subdir": "noarch",
+      "timestamp": 1567455289481,
+      "version": "1.0.0"
+    },
+    "rb-jekyll-swiss-1.0.0-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.3,<4",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "a5d05b3f86f7fb02f1d2c00f395d0f70",
+      "name": "rb-jekyll-swiss",
+      "noarch": "generic",
+      "sha256": "1e5193391b1f92f9ed4539cae4434b497b4724ab58a0f6c2a70aa0d337534294",
+      "size": 29867,
+      "subdir": "noarch",
+      "timestamp": 1567454420247,
+      "version": "1.0.0"
+    },
+    "rb-jekyll-swiss-1.0.0-hd4c1694_1.tar.bz2": {
+      "build": "hd4c1694_1",
+      "build_number": 1,
+      "depends": [
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "92845256fce612099b51f0a9dbc37d27",
+      "name": "rb-jekyll-swiss",
+      "noarch": "generic",
+      "sha256": "4380cef560c0be3f774f39e4ec7bce53b0e7ac5afb0e61ed0c6ef673c803f452",
+      "size": 29859,
+      "subdir": "noarch",
+      "timestamp": 1567455265130,
+      "version": "1.0.0"
+    },
+    "rb-jekyll-theme-architect-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "304de364769796a1cc374c765afb85c1",
+      "name": "rb-jekyll-theme-architect",
+      "noarch": "generic",
+      "sha256": "38fe42a72ce4ec9c00c3f46ae8ddc0905776dcab5a36ea78e129a09bbed7a5fa",
+      "size": 160408,
+      "subdir": "noarch",
+      "timestamp": 1567457722794,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-architect-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "07a3db8afe5e8d07fa777f42efb85fa6",
+      "name": "rb-jekyll-theme-architect",
+      "noarch": "generic",
+      "sha256": "f146753433d73e145a12359c5d1618655af98a4699c1c1488828bdefc77353c2",
+      "size": 160348,
+      "subdir": "noarch",
+      "timestamp": 1567457708158,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-cayman-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "8a474488bf222d8cb256adae3546dcea",
+      "name": "rb-jekyll-theme-cayman",
+      "noarch": "generic",
+      "sha256": "780103743c9b401fe5466373a8088e13d8ef4e66d3e5c68ae9bf98eaa05f3290",
+      "size": 27477,
+      "subdir": "noarch",
+      "timestamp": 1567455106228,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-cayman-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "53a3782711a792b7d302a57d48911366",
+      "name": "rb-jekyll-theme-cayman",
+      "noarch": "generic",
+      "sha256": "77246a88628ffa43b6a1ab8f8de23e6a790e0a9e7df8f01afe2f876c54d73c67",
+      "size": 27504,
+      "subdir": "noarch",
+      "timestamp": 1567455128855,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-dinky-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "fc29eb987e0e23b9e3351e5142a3307c",
+      "name": "rb-jekyll-theme-dinky",
+      "noarch": "generic",
+      "sha256": "8ca2cd30236ba4b75578d56e3bbdc14ded0beebfce3cb092fa76cb47a2e2b422",
+      "size": 26506,
+      "subdir": "noarch",
+      "timestamp": 1567454304915,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-dinky-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "45a3cfd4c667e232c9e6d3fd65519ec3",
+      "name": "rb-jekyll-theme-dinky",
+      "noarch": "generic",
+      "sha256": "c23485b5a47cc7c62a1d6d07d63401729cbfe9a9d07ec25a03a12cfe7b611390",
+      "size": 26464,
+      "subdir": "noarch",
+      "timestamp": 1567454299522,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-hacker-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "dbf544d25415d5ac23cc8c1dba9dd79d",
+      "name": "rb-jekyll-theme-hacker",
+      "noarch": "generic",
+      "sha256": "002c420581e68bdbe7478fc14a3e9309144e1d78fb54b14c816863b6c83b5940",
+      "size": 27930,
+      "subdir": "noarch",
+      "timestamp": 1567454483919,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-hacker-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "644d0a1ef9c36a16f8b77b5818f6faa5",
+      "name": "rb-jekyll-theme-hacker",
+      "noarch": "generic",
+      "sha256": "ed1e852cd8aade6e06abd040c34e91c2b5fd523197eb11a5d756c40e5ee6e726",
+      "size": 27912,
+      "subdir": "noarch",
+      "timestamp": 1567454467774,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-leap-day-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "eb07939c2f365ddf4839061cf42211af",
+      "name": "rb-jekyll-theme-leap-day",
+      "noarch": "generic",
+      "sha256": "69451cd78fc36e9b904c462cb07098fed533b9de57ebef4b79ac50c720c25ba7",
+      "size": 1228616,
+      "subdir": "noarch",
+      "timestamp": 1567455728643,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-leap-day-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "a12494de7982463cf10deae0e7d54505",
+      "name": "rb-jekyll-theme-leap-day",
+      "noarch": "generic",
+      "sha256": "078efe858670d5bb8e4f3fe6566636d6be20f6c709cd84117b14d3559953dc4e",
+      "size": 1217722,
+      "subdir": "noarch",
+      "timestamp": 1567455739824,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-merlot-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "0bb7681a6dc1b7fb4b8cdaa381bde985",
+      "name": "rb-jekyll-theme-merlot",
+      "noarch": "generic",
+      "sha256": "b0b9d507446b2307767741823f337897346a1537ef1dff21dc5d9eb208a4b7b7",
+      "size": 865596,
+      "subdir": "noarch",
+      "timestamp": 1567454805082,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-merlot-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "c3d82a456e1f30611f03c31b8531431b",
+      "name": "rb-jekyll-theme-merlot",
+      "noarch": "generic",
+      "sha256": "0be3b46d85a694825048efc9dfd9fd5735e7e875f19ff14e6b11b8766ea594fd",
+      "size": 866123,
+      "subdir": "noarch",
+      "timestamp": 1567454754251,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-midnight-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "7904def1122f01001b8a91663b14a6eb",
+      "name": "rb-jekyll-theme-midnight",
+      "noarch": "generic",
+      "sha256": "d7063df666793fa3ba111e8c05b339f8e9be826ee3ea61652b53bd0c9356ce06",
+      "size": 788966,
+      "subdir": "noarch",
+      "timestamp": 1567454618714,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-midnight-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "8ae55ca717c656c4897d2b2139d64280",
+      "name": "rb-jekyll-theme-midnight",
+      "noarch": "generic",
+      "sha256": "05489ee09426c4ba0a64e0dd728d08a271b7d54b69d544dea44a2e7af8d988f3",
+      "size": 865044,
+      "subdir": "noarch",
+      "timestamp": 1567454635754,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-minimal-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "132934ba27600cd96974249ab57ce61d",
+      "name": "rb-jekyll-theme-minimal",
+      "noarch": "generic",
+      "sha256": "a4637f2b5b6689a4e9ca62bde05ddb8f184a14f6104afb1544088ceff6cee21b",
+      "size": 653053,
+      "subdir": "noarch",
+      "timestamp": 1567456243932,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-minimal-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "309509545b0679d68a5d23f68fe11cb0",
+      "name": "rb-jekyll-theme-minimal",
+      "noarch": "generic",
+      "sha256": "192b89dd2af3deca6a52828fb1870f57365d3828c9ef132452058fe0a01dde58",
+      "size": 653133,
+      "subdir": "noarch",
+      "timestamp": 1567456246680,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-modernist-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "1fff9b390ee436a42d53616aa5cee8ec",
+      "name": "rb-jekyll-theme-modernist",
+      "noarch": "generic",
+      "sha256": "707456a09dce693623c64aaa0504e21f8b5f04d3d3b4046daeffc90b71c55dd5",
+      "size": 23790,
+      "subdir": "noarch",
+      "timestamp": 1567456074764,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-modernist-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "e5e909b32749bb513fe4927333c684e3",
+      "name": "rb-jekyll-theme-modernist",
+      "noarch": "generic",
+      "sha256": "1d66946ff428765c93b34d1683c446c69c36f40f21f09110f2dac22ac353ad9e",
+      "size": 23767,
+      "subdir": "noarch",
+      "timestamp": 1567456094341,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-primer-0.5.3-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-github-metadata >=2.9,<3",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "4431b3b3b11f9f201d43cb43db7267f5",
+      "name": "rb-jekyll-theme-primer",
+      "noarch": "generic",
+      "sha256": "ae5c2767948d070194965789df7d173888384c929e3c57f43a536333f446554c",
+      "size": 163475,
+      "subdir": "noarch",
+      "timestamp": 1567453475485,
+      "version": "0.5.3"
+    },
+    "rb-jekyll-theme-primer-0.5.3-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-github-metadata >=2.9,<3",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "MIT",
+      "license_family": "MIT",
+      "md5": "1832e79033f24b0685a9e82701879d35",
+      "name": "rb-jekyll-theme-primer",
+      "noarch": "generic",
+      "sha256": "4461e57454b68615998c1f95ea96f25edf8f09e3a5625c66129959781d435573",
+      "size": 163446,
+      "subdir": "noarch",
+      "timestamp": 1567453483532,
+      "version": "0.5.3"
+    },
+    "rb-jekyll-theme-slate-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "a98f2a6eed1d8277a6aa54f2d177ba64",
+      "name": "rb-jekyll-theme-slate",
+      "noarch": "generic",
+      "sha256": "7e713a7295ccadc6af66b6bf350f3900be9b0926df7951cdc3bc2991ac2e2765",
+      "size": 57546,
+      "subdir": "noarch",
+      "timestamp": 1567455410076,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-slate-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "950ba7f78ae60245ae67df444133b834",
+      "name": "rb-jekyll-theme-slate",
+      "noarch": "generic",
+      "sha256": "36744bd9f2d0b2b0047945048ba59f122b01dfa10ea61f9afa6ca30f6a63d157",
+      "size": 57505,
+      "subdir": "noarch",
+      "timestamp": 1567455401293,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-tactile-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "66b0cf45c1eb2e46f6d11cfd77601193",
+      "name": "rb-jekyll-theme-tactile",
+      "noarch": "generic",
+      "sha256": "6af2aa73c8823bd45f0beb25418837e4f1065882a23d8ad04d53da2962f65130",
+      "size": 92343,
+      "subdir": "noarch",
+      "timestamp": 1567455602397,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-tactile-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "fafd667efd9b084e9f442cd06539c559",
+      "name": "rb-jekyll-theme-tactile",
+      "noarch": "generic",
+      "sha256": "fe24d5aab46fa8edb9d1e8bfe3279bfeac6e12de52e6619609ec73128f7b2b8b",
+      "size": 92328,
+      "subdir": "noarch",
+      "timestamp": 1567455602318,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-time-machine-0.1.1-hc42de5b_0.tar.bz2": {
+      "build": "hc42de5b_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.6.3,<2.7.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "ba6a51b7f1e35a1f51142aa349d4c5a4",
+      "name": "rb-jekyll-theme-time-machine",
+      "noarch": "generic",
+      "sha256": "a8e0dd782c34e8736dbc8200c8528de5987161cb8b126cafadba507896b18c59",
+      "size": 46908,
+      "subdir": "noarch",
+      "timestamp": 1567455289761,
+      "version": "0.1.1"
+    },
+    "rb-jekyll-theme-time-machine-0.1.1-hd4c1694_0.tar.bz2": {
+      "build": "hd4c1694_0",
+      "build_number": 0,
+      "depends": [
+        "rb-jekyll >=3.5,<4.0",
+        "rb-jekyll-seo-tag >=2.0,<3",
+        "ruby >=2.5.5,<2.6.0a0"
+      ],
+      "license": "CC0-1.0",
+      "md5": "7d1447e389783bdc355dc760274f1d0c",
+      "name": "rb-jekyll-theme-time-machine",
+      "noarch": "generic",
+      "sha256": "37926317706fcfb0573f0e009a3cc390255f361d426bd8e6734037f11d9c8228",
+      "size": 46874,
+      "subdir": "noarch",
+      "timestamp": 1567455252088,
+      "version": "0.1.1"
     },
     "rb-jekyll-titles-from-headings-0.5.1-hc42de5b_0.tar.bz2": {
       "build": "hc42de5b_0",
@@ -128955,32 +129533,9 @@
       "timestamp": 1549031793998,
       "version": "0.3.2"
     },
-    "skyfield-1.11-py_0.tar.bz2": {
+    "skyfield-1.12-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
-      "depends": [
-        "astropy",
-        "beautifulsoup4",
-        "html5lib",
-        "lxml",
-        "numpy",
-        "python",
-        "pytz"
-      ],
-      "license": "MIT",
-      "license_family": "MIT",
-      "md5": "41bc3c07f3d06bfd8af58c57f05060ee",
-      "name": "skyfield",
-      "noarch": "python",
-      "sha256": "efebe50a124919f95c3dc1b125c1e26bf2de39812333d58bd0f72afd76766ea4",
-      "size": 213111,
-      "subdir": "noarch",
-      "timestamp": 1563828366069,
-      "version": "1.11"
-    },
-    "skyfield-1.11-py_1.tar.bz2": {
-      "build": "py_1",
-      "build_number": 1,
       "depends": [
         "astropy",
         "beautifulsoup4",
@@ -128994,14 +129549,14 @@
       ],
       "license": "MIT",
       "license_family": "MIT",
-      "md5": "0c8234db3a5861a608a976f17bb523f9",
+      "md5": "b8569caaa9a4cccb4c439f9efc27261e",
       "name": "skyfield",
       "noarch": "python",
-      "sha256": "121a530908481d2fcf33b71208f97b437e43a2588eb7c6cd39c9abb6a94a8c74",
-      "size": 212967,
+      "sha256": "656ec09848651c18dc411164c864ce3d87741fc501bf1ca200bfaffc0cea1b73",
+      "size": 213312,
       "subdir": "noarch",
-      "timestamp": 1566931836866,
-      "version": "1.11"
+      "timestamp": 1567459391448,
+      "version": "1.12"
     },
     "slackclient-1.3.1-py_0.tar.bz2": {
       "build": "py_0",
@@ -132383,11 +132938,12 @@
       "timestamp": 1547641654856,
       "version": "2.4.3"
     },
-    "swepy-1.6.1-py_0.tar.bz2": {
+    "swepy-1.7.0-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
         "affine",
+        "fsspec",
         "gdal",
         "matplotlib",
         "netcdf4",
@@ -132397,18 +132953,19 @@
         "python >=3.6",
         "requests",
         "scikit-image",
-        "tqdm"
+        "tqdm",
+        "xarray"
       ],
       "license": "LGPLv3",
       "license_family": "LGPL",
-      "md5": "2ce7aa7f98e4631c43ad44d3442ee45d",
+      "md5": "d2e0a4201732b61e17662809c8691bab",
       "name": "swepy",
       "noarch": "python",
-      "sha256": "ae5ee7c66744263782819b7efbec675be78a5860e3e3b3ee74856d100e1cbf80",
-      "size": 27965,
+      "sha256": "b550c173c87ce1b41b0b5bffaf20f4f693ca926dcee1203bc6823590cc501bd1",
+      "size": 28179,
       "subdir": "noarch",
-      "timestamp": 1566396992314,
-      "version": "1.6.1"
+      "timestamp": 1567447313009,
+      "version": "1.7.0"
     },
     "switch_model-2.0.5-py_0.tar.bz2": {
       "build": "py_0",
@@ -134966,7 +135523,7 @@
       "timestamp": 1553511817525,
       "version": "0.8.5"
     },
-    "umami-0.1-py_0.tar.bz2": {
+    "umami-0.1.1-py_0.tar.bz2": {
       "build": "py_0",
       "build_number": 0,
       "depends": [
@@ -134977,14 +135534,14 @@
       ],
       "license": "MIT",
       "license_family": "MIT",
-      "md5": "f68b7dc9ce3483ce77bf1bdd8d7da2d0",
+      "md5": "da4e16665682d28490529680db0cee3e",
       "name": "umami",
       "noarch": "python",
-      "sha256": "a1325b083b808ac51d4cfe684e72706b10589bd711110123b309bab8378daca0",
-      "size": 18818,
+      "sha256": "45276dfe69ce0eaffb5509e58d42f9f30b82d3ca70a86f0fd0f1e6c834d824f5",
+      "size": 18884,
       "subdir": "noarch",
-      "timestamp": 1567416870956,
-      "version": "0.1"
+      "timestamp": 1567451201692,
+      "version": "0.1.1"
     },
     "uncertainpy-1.2.0-py_0.tar.bz2": {
       "build": "py_0",

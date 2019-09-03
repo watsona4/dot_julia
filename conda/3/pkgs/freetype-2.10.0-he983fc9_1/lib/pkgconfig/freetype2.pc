@@ -1,0 +1,14 @@
+prefix=/opt/anaconda1anaconda2anaconda3
+exec_prefix=/opt/anaconda1anaconda2anaconda3
+libdir=/opt/anaconda1anaconda2anaconda3/lib
+includedir=/opt/anaconda1anaconda2anaconda3/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 23.0.17
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz -L/opt/anaconda1anaconda2anaconda3/lib -lpng16 -lm -lz -lm
+Cflags: -I${includedir}/freetype2

@@ -1,0 +1,88 @@
+{% set xorg_name = "libX11" %}
+{% set xorg_category = "lib" %}
+{% set name = "xorg-" ~ xorg_name %}
+{% set version = "1.6.8" %}
+{% set sha256 = "b289a845c189e251e0e884cc0f9269bbe97c238df3741e854ec4c17c21e473d5" %}
+{% set am_version = "1.15" %} # keep synchronized with build.sh
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.bz2
+  url: https://www.x.org/releases/individual/{{ xorg_category }}/{{ xorg_name }}-{{ version }}.tar.bz2
+  sha256: {{ sha256 }}
+  patches:
+    - macos-sed-workaround.patch  # avoid "sed: RE error: illegal byte sequence"
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+  always_include_files:
+    # Workaround for dummy X11 headers in OSX `tk` package
+    - include/X11/cursorfont.h
+    - include/X11/ImUtil.h
+    - include/X11/Xcms.h
+    - include/X11/XKBlib.h
+    - include/X11/XlibConf.h
+    - include/X11/Xlib.h
+    - include/X11/Xlibint.h
+    - include/X11/Xlib-xcb.h
+    - include/X11/Xlocale.h
+    - include/X11/Xregion.h
+    - include/X11/Xresource.h
+    - include/X11/Xutil.h
+
+requirements:
+  build:
+    - m2-autoconf                   # [win]
+    - m2-automake{{ am_version }}   # [win]
+    - m2-libtool                    # [win]
+    - m2w64-pkg-config              # [win]
+    - pkg-config                    # [not win]
+    - posix                         # [win]
+    - {{ compiler('c') }}           # [unix]
+    - {{ compiler('m2w64_c') }}     # [win]
+    - make                          # [unix]
+    - autoconf                      # [unix]
+    - automake                      # [unix]
+    - gettext                       # [unix]
+    - libtool                       # [unix]
+    - sed                           # [unix]
+  host:
+    - xorg-inputproto
+    - xorg-kbproto
+    - libxcb 1.*
+    - pthread-stubs
+    - xorg-util-macros
+    - xorg-xextproto
+    - xorg-xproto
+    - xorg-xtrans
+  run:
+    - xorg-kbproto
+    - libxcb 1.*
+    - xorg-xproto
+
+test:
+  commands:
+    {% set lib_idents = [ "X11", "X11-xcb" ] %}
+    {% for lib_ident in lib_idents %}
+    - test -f $PREFIX/lib/lib{{ lib_ident }}.dylib  # [osx]
+    - test -f $PREFIX/lib/lib{{ lib_ident }}.so  # [linux]
+    - if not exist %PREFIX%/Library/lib/lib{{ lib_ident }}.dll.a exit /b 1  # [win]
+    - if not exist %PREFIX%/Library/bin/msys-{{ lib_ident }}-*.dll exit /b 1  # [win]
+    {% endfor %}
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
+
+about:
+  home: https://www.x.org/
+  license: MIT
+  license_family: MIT
+  license_file: COPYING
+  summary: 'The main client library for X Windows version 11.'
+
+extra:
+  recipe-maintainers:
+    - pkgw

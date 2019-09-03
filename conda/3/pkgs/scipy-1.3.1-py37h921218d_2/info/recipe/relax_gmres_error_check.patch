@@ -1,0 +1,13 @@
+diff --git a/scipy/sparse/linalg/isolve/tests/test_iterative.py b/scipy/sparse/linalg/isolve/tests/test_iterative.py
+index 878c24fa0..68c99af93 100644
+--- a/scipy/sparse/linalg/isolve/tests/test_iterative.py
++++ b/scipy/sparse/linalg/isolve/tests/test_iterative.py
+@@ -478,7 +478,7 @@ def test_maxiter_worsening(solver):
+         best_error = min(best_error, error)
+ 
+         # Check with slack
+-        assert_(error <= 5*best_error)
++        assert_(error <= 8*best_error)
+ 
+ 
+ #------------------------------------------------------------------------------

@@ -1,0 +1,23 @@
+blas_impl:
+- openblas
+- mkl        # [x86 or x86_64]
+- blis       # [x86 or x86_64]
+blas_impl_lib:
+- libopenblas.so.0         # [linux]
+- libopenblas.0.dylib      # [osx]
+- openblas.dll             # [win]
+
+- libmkl_rt.so             # [linux64]
+- libmkl_rt.dylib          # [osx]
+- mkl_rt.dll               # [win64]
+
+- libblis.so.2             # [linux64]
+- libblis.2.dylib          # [osx]
+- libblis.2.dll            # [win64]
+blas_default_impl:
+- openblas   # [not win]
+- mkl        # [win]
+zip_keys:
+-
+  - blas_impl
+  - blas_impl_lib

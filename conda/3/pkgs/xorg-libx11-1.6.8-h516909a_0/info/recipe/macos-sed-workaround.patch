@@ -1,0 +1,13 @@
+diff --git a/nls/Makefile.in b/nls/Makefile.in
+index ad14460..7674f0b 100644
+--- a/nls/Makefile.in
++++ b/nls/Makefile.in
+@@ -433,7 +433,7 @@ PKG_CONFIG_PATH = @PKG_CONFIG_PATH@
+ RANLIB = @RANLIB@
+ RAWCPP = @RAWCPP@
+ RAWCPPFLAGS = @RAWCPPFLAGS@
+-SED = LC_CTYPE=C sed
++SED = LC_ALL=C sed
+ SET_MAKE = @SET_MAKE@
+ SHELL = @SHELL@
+ STRICT_CFLAGS = @STRICT_CFLAGS@

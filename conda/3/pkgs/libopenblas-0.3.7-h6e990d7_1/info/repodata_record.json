@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "h6e990d7_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "openblas >=0.3.7,<0.3.8.0a0"
+  ],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libgfortran-ng >=7,<8.0a0"
+  ],
+  "features": "",
+  "fn": "libopenblas-0.3.7-h6e990d7_1.tar.bz2",
+  "license": "BSD-3-Clause",
+  "md5": "5ea33033f419e5f6f57293117b045bf3",
+  "name": "libopenblas",
+  "platform": "linux",
+  "sha256": "f57153911a8321a1d1692158b071ab0cfe1849f72c9841628ecc229b5ad0e8ac",
+  "size": 8012245,
+  "subdir": "linux-64",
+  "timestamp": 1565991543741,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libopenblas-0.3.7-h6e990d7_1.tar.bz2",
+  "version": "0.3.7"
+}

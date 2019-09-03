@@ -1,0 +1,37 @@
+{
+  "paths": [
+    {
+      "_path": "include/X11/Xauth.h",
+      "path_type": "hardlink",
+      "sha256": "5c217ce77f5e1eb12dbf0353bcb7204b2f2a3d5ae586fdb17b3255a056190d02",
+      "size_in_bytes": 3817
+    },
+    {
+      "_path": "lib/libXau.so",
+      "path_type": "softlink",
+      "sha256": "9daf899d70b257d01aa7e4283ad27916409597679157cc4941896b4e7034ac79",
+      "size_in_bytes": 20520
+    },
+    {
+      "_path": "lib/libXau.so.6",
+      "path_type": "softlink",
+      "sha256": "9daf899d70b257d01aa7e4283ad27916409597679157cc4941896b4e7034ac79",
+      "size_in_bytes": 20520
+    },
+    {
+      "_path": "lib/libXau.so.6.0.0",
+      "path_type": "hardlink",
+      "sha256": "9daf899d70b257d01aa7e4283ad27916409597679157cc4941896b4e7034ac79",
+      "size_in_bytes": 20520
+    },
+    {
+      "_path": "lib/pkgconfig/xau.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "1ba6c5615cadda922c46cb91332a6cdf9ac782bf9d6b63ff20d6bf6bfa2fca79",
+      "size_in_bytes": 260
+    }
+  ],
+  "paths_version": 1
+}

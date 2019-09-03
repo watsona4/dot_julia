@@ -1,0 +1,53 @@
+{
+  "paths": [
+    {
+      "_path": "bin/cxpm",
+      "file_mode": "binary",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xorg-libxpm_1567083272470/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold",
+      "sha256": "d28c33a3d59aa990b02b067c487e5a6926a7115992376d846edc06e455891c0b",
+      "size_in_bytes": 39008
+    },
+    {
+      "_path": "bin/sxpm",
+      "file_mode": "binary",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xorg-libxpm_1567083272470/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold",
+      "sha256": "ffd4c9a1943f61ba2321bfcc34ab3760a080c779a6d686f4f0c3c03e850499ee",
+      "size_in_bytes": 34688
+    },
+    {
+      "_path": "include/X11/xpm.h",
+      "path_type": "hardlink",
+      "sha256": "f609a4b24419efcdbbd7c620b5b32cade2c5d538555ebe2699ecc19f51896c96",
+      "size_in_bytes": 16213
+    },
+    {
+      "_path": "lib/libXpm.so",
+      "path_type": "softlink",
+      "sha256": "ac80fc926ebc8fc2fa475097e0e2b9c77eba1812e1a66aa650dd08e25ccf7efe",
+      "size_in_bytes": 93520
+    },
+    {
+      "_path": "lib/libXpm.so.4",
+      "path_type": "softlink",
+      "sha256": "ac80fc926ebc8fc2fa475097e0e2b9c77eba1812e1a66aa650dd08e25ccf7efe",
+      "size_in_bytes": 93520
+    },
+    {
+      "_path": "lib/libXpm.so.4.11.0",
+      "path_type": "hardlink",
+      "sha256": "ac80fc926ebc8fc2fa475097e0e2b9c77eba1812e1a66aa650dd08e25ccf7efe",
+      "size_in_bytes": 93520
+    },
+    {
+      "_path": "lib/pkgconfig/xpm.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "bd5e6193212ad17272aa9a000812735896a7336aaceb296d83918f2a733a100e",
+      "size_in_bytes": 258
+    }
+  ],
+  "paths_version": 1
+}

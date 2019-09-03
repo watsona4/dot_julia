@@ -1,0 +1,19 @@
+{
+  "arch": "x86_64",
+  "build": "12_openblas",
+  "build_number": 12,
+  "constrains": [
+    "liblapack 3.8.0 12_openblas",
+    "liblapacke 3.8.0 12_openblas",
+    "blas * openblas"
+  ],
+  "depends": [
+    "libblas 3.8.0 12_openblas"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "libcblas",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1565665492811,
+  "version": "3.8.0"
+}

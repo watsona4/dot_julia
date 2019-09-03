@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0",
+    "setuptools",
+    "wheel"
+  ],
+  "features": "",
+  "fn": "pip-19.2.3-py37_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "b475ca5f9afba8ab1203a413caa8e9ad",
+  "name": "pip",
+  "platform": "linux",
+  "sha256": "6b3a9d462a3d41426e6806ac41eb377534cf46512a84afa6373911d99a2e21e0",
+  "size": 1967003,
+  "subdir": "linux-64",
+  "timestamp": 1566738621084,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/pip-19.2.3-py37_0.tar.bz2",
+  "version": "19.2.3"
+}

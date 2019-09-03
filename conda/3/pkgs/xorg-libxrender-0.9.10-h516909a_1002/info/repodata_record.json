@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "h516909a_1002",
+  "build_number": 1002,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "xorg-libx11 1.6.*",
+    "xorg-renderproto"
+  ],
+  "features": "",
+  "fn": "xorg-libxrender-0.9.10-h516909a_1002.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "bf3514891c6743ed808602fa9f4f1508",
+  "name": "xorg-libxrender",
+  "platform": "linux",
+  "sha256": "521bfeee313944bc24c8917f6c18e00fc1111f1d23f8f9a302b9576bfc10a8ad",
+  "size": 31863,
+  "subdir": "linux-64",
+  "timestamp": 1552822965125,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-libxrender-0.9.10-h516909a_1002.tar.bz2",
+  "version": "0.9.10"
+}

@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "hfb77d84_1002",
+  "build_number": 1002,
+  "depends": [
+    "fontconfig >=2.13.1,<3.0a0",
+    "freetype >=2.9.1,<3.0a0",
+    "glib >=2.58.3,<3.0a0",
+    "icu >=64.2,<65.0a0",
+    "libgcc-ng >=7.3.0",
+    "libpng >=1.6.35,<1.7.0a0",
+    "libxcb",
+    "pixman >=0.38.0,<0.39.0a0",
+    "xorg-libice",
+    "xorg-libsm",
+    "xorg-libx11",
+    "xorg-libxext",
+    "xorg-libxrender",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "license": "LGPL 2.1 or MPL 1.1",
+  "name": "cairo",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1563588311507,
+  "version": "1.16.0"
+}

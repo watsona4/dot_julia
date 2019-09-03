@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "h516909a_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "xorg-libice-1.0.10-h516909a_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "4dfda1ccfd0cc90c4fe6786acece9a30",
+  "name": "xorg-libice",
+  "platform": "linux",
+  "sha256": "f50039ecba88e6ab8aa84c34ab77054ab42e9d80432b169b6c0dad6df238cce2",
+  "size": 58830,
+  "subdir": "linux-64",
+  "timestamp": 1563155940938,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-libice-1.0.10-h516909a_0.tar.bz2",
+  "version": "1.0.10"
+}

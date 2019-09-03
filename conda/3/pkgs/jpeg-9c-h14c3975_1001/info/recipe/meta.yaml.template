@@ -1,0 +1,42 @@
+{% set version = "9c" %}
+
+package:
+  name: jpeg
+  version: {{ version }}
+
+source:
+  url: http://www.ijg.org/files/jpegsrc.v{{ version }}.tar.gz
+  sha256: 650250979303a649e21f87b5ccd02672af1ea6954b911342ea491f351ceb7122
+  patches:
+    - CMakeLists.txt.patch  # [win]
+
+build:
+  number: 1001
+  run_exports:
+    # compatible within major version numbers
+    # https://abi-laboratory.pro/tracker/timeline/libjpeg/
+    - {{ pin_subpackage('jpeg') }}
+
+requirements:
+  build:
+    - cmake  # [win]
+    - {{ compiler('c') }}
+
+test:
+  files:
+    - testorig.jpg
+  commands:
+    - djpeg -dct int -ppm -outfile testout.ppm testorig.jpg
+
+about:
+  home: http://www.ijg.org/
+  license: IJG
+  license_file: {{ RECIPE_DIR }}/LICENSE.txt
+  summary: read/write jpeg COM, EXIF, IPTC medata
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
+    - gillins
+    - jakirkham
+    - msarahan

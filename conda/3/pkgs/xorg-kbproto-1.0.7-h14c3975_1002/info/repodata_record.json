@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "h14c3975_1002",
+  "build_number": 1002,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "xorg-kbproto-1.0.7-h14c3975_1002.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "6dfe5dbe10d55266e4a5e89287eed578",
+  "name": "xorg-kbproto",
+  "platform": "linux",
+  "sha256": "e0ecf489734baf996703b2b274b0d130485476162ef5aae1d4e74851549a470e",
+  "size": 26360,
+  "subdir": "linux-64",
+  "timestamp": 1537020978945,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-kbproto-1.0.7-h14c3975_1002.tar.bz2",
+  "version": "1.0.7"
+}

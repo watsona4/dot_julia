@@ -1,0 +1,226 @@
+{% set version = "3.8.0" %}
+{% set build_num = "12" %}
+{% set version_major = version.split(".")[0] %}
+{% set blas_major = "2" %}
+
+# blas_major denotes major infrastructural change to how blas is managed
+package:
+  name: blas-split
+  version: "{{ version }}"
+
+source:
+  url: http://www.netlib.org/lapack/lapack-{{ version }}.tar.gz
+  sha256: deb22cc4a6120bff72621155a9917f485f96ef8319ac074a7afbc68aab88bcf6
+  patches:
+    # Test BLAS and LAPACKE in addition to LAPACK
+    - more_testing.diff
+
+build:
+  number: "{{ build_num }}"
+
+requirements:
+  build:
+    - {{ compiler("c") }}               # [unix]
+    - {{ compiler("fortran") }}         # [unix]
+    - {{ compiler("m2w64_c") }}         # [win]
+    - {{ compiler("m2w64_fortran") }}   # [win]
+    - cmake
+    - m2-make   # [win]
+    - make      # [not win]
+    - posix     # [win]
+
+outputs:
+  - name: libblas
+    script: build_pkg.sh     # [unix]
+    script: build_pkg.bat    # [win]
+    build:
+      string: "{{ build_num }}_{{ blas_impl }}"
+      run_exports:
+        - {{ pin_subpackage("libblas", max_pin="x") }}
+      track_features:
+       - blas_{{ blas_impl }}     # [blas_impl != blas_default_impl]
+    requirements:
+      host:
+        - libopenblas 0.3.7   # [blas_impl == 'openblas']
+        - mkl 2019.0       # [not win and blas_impl == 'mkl']
+        - mkl 2019.*       # [win and blas_impl == 'mkl']
+        - blis 0.6.0       # [blas_impl == 'blis']
+      run:
+        - {{ pin_compatible("libopenblas", max_pin="x.x.x", exact=win) }}     # [blas_impl == 'openblas']
+        - {{ pin_compatible("mkl", max_pin="x", exact=win) }}              # [blas_impl == 'mkl']
+        - {{ pin_compatible("blis", max_pin="x.x.x", exact=win) }}         # [blas_impl == 'blis']
+      run_constrained:
+        - {{ pin_subpackage("libcblas", exact=True) }}
+        - {{ pin_subpackage("liblapack", exact=True) }}    # [blas_impl != 'blis']
+        - {{ pin_subpackage("liblapacke", exact=True) }}   # [blas_impl != 'blis']
+        - blas * {{ blas_impl }}
+    files:
+      - lib/libblas.so                          # [linux]
+      - lib/libblas.so.{{ version_major }}      # [linux]
+      - lib/libblas.dylib                       # [osx]
+      - lib/libblas.{{ version_major }}.dylib   # [osx]
+      - Library/bin/libblas.dll                 # [win]
+    test:
+      commands:
+        # Following line is just to help conda-build's used variables detection
+        - echo hello  # [blas_impl_lib == 'blas']
+        - test -f $PREFIX/lib/libblas.so                          # [linux]
+        - test -f $PREFIX/lib/libblas.so.{{ version_major }}      # [linux]
+        - test -f $PREFIX/lib/libblas.dylib                       # [osx]
+        - test -f $PREFIX/lib/libblas.{{ version_major }}.dylib   # [osx]
+        - if not exist %LIBRARY_BIN%/libblas.dll exit 1           # [win]
+
+  - name: libcblas
+    script: build_pkg.sh     # [unix]
+    script: build_pkg.bat    # [win]
+    build:
+      string: "{{ build_num }}_{{ blas_impl }}"
+      run_exports:
+        - {{ pin_subpackage("libcblas", max_pin="x") }}
+      track_features:
+       - blas_{{ blas_impl }}     # [blas_impl != blas_default_impl]
+    requirements:
+      host:
+        - {{ pin_subpackage("libblas", exact=True) }}
+      run:
+        - {{ pin_subpackage("libblas", exact=True) }}
+      run_constrained:
+        - {{ pin_subpackage("liblapack", exact=True) }}    # [blas_impl != 'blis']
+        - {{ pin_subpackage("liblapacke", exact=True) }}   # [blas_impl != 'blis']
+        - blas * {{ blas_impl }}
+    files:
+      - lib/libcblas.so                          # [linux]
+      - lib/libcblas.so.{{ version_major }}      # [linux]
+      - lib/libcblas.dylib                       # [osx]
+      - lib/libcblas.{{ version_major }}.dylib   # [osx]
+      - Library/bin/libcblas.dll                 # [win]
+    test:
+      commands:
+        - test -f $PREFIX/lib/libcblas.so                          # [linux]
+        - test -f $PREFIX/lib/libcblas.so.{{ version_major }}      # [linux]
+        - test -f $PREFIX/lib/libcblas.dylib                       # [osx]
+        - test -f $PREFIX/lib/libcblas.{{ version_major }}.dylib   # [osx]
+        - if not exist %LIBRARY_BIN%/libcblas.dll exit 1           # [win]
+
+  {% if blas_impl != 'blis' %}
+  - name: liblapack
+    script: build_pkg.sh     # [unix]
+    script: build_pkg.bat    # [win]
+    build:
+      string: "{{ build_num }}_{{ blas_impl }}"
+      run_exports:
+        - {{ pin_subpackage("liblapack", max_pin="x.x") }}
+      track_features:
+       - blas_{{ blas_impl }}     # [blas_impl != blas_default_impl]
+    requirements:
+      host:
+        - {{ pin_subpackage("libblas", exact=True) }}
+      run:
+        - {{ pin_subpackage("libblas", exact=True) }}
+      run_constrained:
+        - {{ pin_subpackage("libcblas", exact=True) }}
+        - {{ pin_subpackage("liblapacke", exact=True) }}
+        - blas * {{ blas_impl }}
+    files:
+      - lib/liblapack.so                          # [linux]
+      - lib/liblapack.so.{{ version_major }}      # [linux]
+      - lib/liblapack.dylib                       # [osx]
+      - lib/liblapack.{{ version_major }}.dylib   # [osx]
+      - Library/bin/liblapack.dll                 # [win]
+    test:
+      commands:
+        - test -f $PREFIX/lib/liblapack.so                          # [linux]
+        - test -f $PREFIX/lib/liblapack.so.{{ version_major }}      # [linux]
+        - test -f $PREFIX/lib/liblapack.dylib                       # [osx]
+        - test -f $PREFIX/lib/liblapack.{{ version_major }}.dylib   # [osx]
+        - if not exist %LIBRARY_BIN%/liblapack.dll exit 1           # [win]
+
+  - name: liblapacke
+    script: build_pkg.sh     # [unix]
+    script: build_pkg.bat    # [win]
+    build:
+      string: "{{ build_num }}_{{ blas_impl }}"
+      run_exports:
+        - {{ pin_subpackage("liblapacke", max_pin="x.x") }}
+      track_features:
+       - blas_{{ blas_impl }}     # [blas_impl != blas_default_impl]
+    requirements:
+      host:
+        - {{ pin_subpackage("libblas", exact=True) }}
+        - {{ pin_subpackage("libcblas", exact=True) }}
+        - {{ pin_subpackage("liblapack", exact=True) }}
+      run:
+        - {{ pin_subpackage("libblas", exact=True) }}
+        - {{ pin_subpackage("libcblas", exact=True) }}
+        - {{ pin_subpackage("liblapack", exact=True) }}
+      run_constrained:
+        - blas * {{ blas_impl }}
+    files:
+      - lib/liblapacke.so                          # [linux]
+      - lib/liblapacke.so.{{ version_major }}      # [linux]
+      - lib/liblapacke.dylib                       # [osx]
+      - lib/liblapacke.{{ version_major }}.dylib   # [osx]
+      - Library/bin/liblapacke.dll                 # [win]
+    test:
+      commands:
+        - test -f $PREFIX/lib/liblapacke.so                          # [linux]
+        - test -f $PREFIX/lib/liblapacke.so.{{ version_major }}      # [linux]
+        - test -f $PREFIX/lib/liblapacke.dylib                       # [osx]
+        - test -f $PREFIX/lib/liblapacke.{{ version_major }}.dylib   # [osx]
+        - if not exist %LIBRARY_BIN%/liblapacke.dll exit 1           # [win]
+  {% endif %}
+
+  # For compatiblity
+  - name: blas
+    version: "{{ blas_major }}.{{ build_num }}"
+    script: test_blas.sh   # [unix]
+    script: test_blas.bat  # [win]
+    build:
+      string: "{{ blas_impl }}"
+      activate_in_script: True
+    requirements:
+      build:
+        - {{ compiler('c') }}                 # [unix]
+        - {{ compiler('fortran') }}           # [unix]
+        - {{ compiler('m2w64_c') }}           # [win]
+        - {{ compiler('m2w64_fortran') }}     # [win]
+        - cmake
+        - m2-make   # [win]
+        - posix     # [win]
+      host:
+      # Building with blis fails due to a conda-build bug
+      {% if blas_impl != 'blis' %}
+        - {{ pin_subpackage("liblapack", exact=True) }}
+        - {{ pin_subpackage("liblapacke", exact=True) }}
+        - {{ pin_subpackage("libcblas", exact=True) }}
+        - {{ pin_subpackage("libblas", exact=True) }}
+      {% endif %}
+      run:
+        - {{ pin_subpackage("liblapack", exact=True) }}      # [blas_impl != 'blis']
+        - {{ pin_subpackage("liblapacke", exact=True) }}     # [blas_impl != 'blis']
+        - liblapack  {{ version }} *netlib                   # [blas_impl == 'blis']
+        - liblapacke {{ version }} *netlib                   # [blas_impl == 'blis']
+        - {{ pin_subpackage("libcblas", exact=True) }}
+        - {{ pin_subpackage("libblas", exact=True) }}
+    test:
+      commands:
+        - test -f $PREFIX/lib/liblapacke.so                          # [linux]
+        - test -f $PREFIX/lib/liblapacke.so.{{ version_major }}      # [linux]
+        - test -f $PREFIX/lib/liblapacke.dylib                       # [osx]
+        - test -f $PREFIX/lib/liblapacke.{{ version_major }}.dylib   # [osx]
+        - if not exist %LIBRARY_BIN%/liblapacke.dll exit 1           # [win]
+
+about:
+  home: https://github.com/conda-forge/blas-feedstock
+  license: BSD-3-Clause
+  license_file:
+    - LICENSE.txt
+    - {{ blas_impl }}_license.txt  # [win]
+  summary: Metapackage to select the BLAS variant. Use conda's pinning mechanism in your environment to control which variant you want.
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - pelson
+    - isuruf
+    - ocefpaf

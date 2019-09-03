@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "hc9558a2_0",
+  "build_number": 0,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "license": "NCSA",
+  "name": "libllvm8",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1566113594463,
+  "version": "8.0.1"
+}

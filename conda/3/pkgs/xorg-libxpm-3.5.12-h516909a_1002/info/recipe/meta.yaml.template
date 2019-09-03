@@ -1,0 +1,75 @@
+{% set xorg_name = "libXpm" %}
+{% set xorg_category = "lib" %}
+{% set name = "xorg-" ~ xorg_name %}
+{% set version = "3.5.12" %}
+{% set sha256 = "fd6a6de3da48de8d1bb738ab6be4ad67f7cb0986c39bd3f7d51dd24f7854bdec" %}
+{% set am_version = "1.15" %} # keep synchronized with build.sh
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://www.x.org/releases/individual/{{ xorg_category }}/{{ xorg_name }}-{{ version }}.tar.bz2
+  sha256: {{ sha256 }}
+  patches:
+    - windows.patch  # [win]
+
+build:
+  number: 1002
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - m2-autoconf  # [win]
+    - m2-automake{{ am_version }}  # [win]
+    - m2-libtool  # [win]
+    - m2w64-pkg-config  # [win]
+    - pkg-config  # [not win]
+    - posix  # [win]
+    - m2-gettext  # [win]
+    - m2-libintl  # [win]
+    - m2-gettext  # [win]
+    - m2-libintl  # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+    - make  # [unix]
+  host:
+    - gettext  # [not win]
+    - pthread-stubs
+    - xorg-libx11 1.6.*
+    - xorg-libxext 1.3.*
+    - xorg-libxt 1.1.*
+    - xorg-util-macros
+    - xorg-xextproto
+    - xorg-xproto
+  run:
+    - gettext  # [not win]
+    - xorg-libx11 1.6.*
+    - xorg-libxext 1.3.*
+    - xorg-libxt 1.1.*
+    - xorg-xextproto
+    - xorg-xproto
+
+test:
+  commands:
+    {% set lib_idents = [ "Xpm" ] %}
+    {% for lib_ident in lib_idents %}
+    - test -f $PREFIX/lib/lib{{ lib_ident }}.dylib  # [osx]
+    - test -f $PREFIX/lib/lib{{ lib_ident }}.so  # [linux]
+    - if not exist %PREFIX%/Library/lib/lib{{ lib_ident }}.dll.a exit /b 1  # [win]
+    - if not exist %PREFIX%/Library/bin/msys-{{ lib_ident }}-*.dll exit /b 1  # [win]
+    {% endfor %}
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
+
+about:
+  home: https://www.x.org/
+  license: MIT
+  license_family: MIT
+  license_file: COPYING
+  summary: 'The X.org X11 pixmap library.'
+
+extra:
+  recipe-maintainers:
+    - pkgw

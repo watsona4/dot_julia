@@ -1,0 +1,17 @@
+{
+  "arch": "x86_64",
+  "build": "h516909a_1002",
+  "build_number": 1002,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "xorg-libx11 1.6.*",
+    "xorg-renderproto"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "xorg-libxrender",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1552822965125,
+  "version": "0.9.10"
+}

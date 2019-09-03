@@ -1,0 +1,78 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Thu Aug 22 17:43:25 2019
+# ------------------------------------------------
+
+package:
+    name: pandas
+    version: 0.25.1
+source:
+    sha256: cb2e197b7b0687becb026b84d3c242482f20cbb29a9981e43604eb67576da9f6
+    url: https://github.com/pandas-dev/pandas/releases/download/v0.25.1/pandas-0.25.1.tar.gz
+build:
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/pandas_1566495897116/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac/bin/python
+        -m pip install --no-deps --ignore-installed .
+    string: py37hb3f55d8_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_8
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_8
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_8
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - bzip2 1.0.8 h516909a_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py37_1
+        - cython 0.29.13 py37he1b5a44_0
+        - libblas 3.8.0 12_openblas
+        - libcblas 3.8.0 12_openblas
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - liblapack 3.8.0 12_openblas
+        - libopenblas 0.3.7 h6e990d7_1
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - numpy 1.14.6 py37he5ce36f_1201
+        - openssl 1.1.1c h516909a_0
+        - pip 19.2.2 py37_0
+        - python 3.7.3 h33d41f4_1
+        - readline 8.0 hf8c457e_0
+        - setuptools 41.2.0 py37_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.6 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+        - numpy >=1.14.6,<2.0a0
+        - python >=3.7,<3.8.0a0
+        - python-dateutil >=2.6.1
+        - pytz >=2017.2
+test:
+    imports:
+        - pandas
+about:
+    home: http://pandas.pydata.org
+    license: BSD 3-clause
+    license_file: LICENSE
+    summary: High-performance, easy-to-use data structures and data analysis tools.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - TomAugspurger
+        - WillAyd
+        - jorisvandenbossche
+        - jreback
+        - msarahan
+        - ocefpaf

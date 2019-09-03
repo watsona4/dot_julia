@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "hf484d3e_1003",
+  "build_number": 1003,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "license": "BSD 3-Clause",
+  "name": "pcre",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1538536484938,
+  "version": "8.41"
+}

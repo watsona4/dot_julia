@@ -1,0 +1,48 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Mar 20 19:32:51 2019
+# ------------------------------------------------
+
+package:
+    name: gettext
+    version: 0.19.8.1
+source:
+    sha256: 105556dbc5c3fbbc2aa0edb46d22d055748b6f5c7cd7a8d99f8e7eb84e938be4
+    url: ftp://ftp.gnu.org/pub/gnu/gettext/gettext-0.19.8.1.tar.xz
+build:
+    number: '1002'
+    run_exports:
+        - gettext >=0.19.8.1,<1.0a0
+    string: hc5be6a0_1002
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_6
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_6
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - make 4.2.1 h14c3975_2004
+    host:
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+    run:
+        - libffi >=3.2.1,<3.3.0a0
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libgettextlib$SHLIB_EXT
+        - test -f ${PREFIX}/lib/libgettextpo$SHLIB_EXT
+        - test -f ${PREFIX}/lib/libgettextsrc$SHLIB_EXT
+about:
+    home: https://www.gnu.org/software/gettext/
+    license: GPL-2.0
+    license_file: COPYING
+    summary: Internationalization package
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - ocefpaf
+        - scopatz

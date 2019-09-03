@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "h516909a_1002",
+  "build_number": 1002,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "fribidi-1.0.5-h516909a_1002.tar.bz2",
+  "license": "LGPL-2.1",
+  "md5": "26e496aac7f4d0c092532fd313bc5cf2",
+  "name": "fribidi",
+  "platform": "linux",
+  "sha256": "0f9fa3c5df19cfae608020dfb3fa56c38f9766d785b87e803ce2cac2df3b8064",
+  "size": 114333,
+  "subdir": "linux-64",
+  "timestamp": 1563286292986,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/fribidi-1.0.5-h516909a_1002.tar.bz2",
+  "version": "1.0.5"
+}

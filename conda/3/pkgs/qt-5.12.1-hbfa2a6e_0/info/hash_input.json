@@ -1,0 +1,21 @@
+{
+  "c_compiler": "gcc",
+  "sqlite": "3",
+  "CONDA_BUILD_SYSROOT": "/opt/MacOSX10.10.sdk",
+  "fontconfig": "2.13",
+  "icu": "64.2",
+  "gst_plugins_base": "1.14.4",
+  "glib": "2.58",
+  "expat": "2.2",
+  "cxx_compiler_version": "7",
+  "jpeg": "9",
+  "zlib": "1.2",
+  "dbus": "1",
+  "libxml2": "2.9",
+  "libpng": "1.6.35",
+  "openssl": "1.1.1a",
+  "cxx_compiler": "gxx",
+  "gstreamer": "1.14.4",
+  "c_compiler_version": "7",
+  "freetype": "2.9.1"
+}

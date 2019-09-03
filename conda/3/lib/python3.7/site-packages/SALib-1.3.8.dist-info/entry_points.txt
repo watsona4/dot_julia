@@ -1,0 +1,4 @@
+
+# Add here console scripts such as:
+[console_scripts]
+salib=SALib.scripts.salib:main

@@ -1,0 +1,7 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+.ipynb_checkpoints
+deps/build.log
+rjp
+examples/Manifest.toml

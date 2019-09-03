@@ -1,0 +1,37 @@
+{
+  "paths": [
+    {
+      "_path": "include/X11/Xdmcp.h",
+      "path_type": "hardlink",
+      "sha256": "7326c6b4504939ba0ad61fece04238460020996ef230b8bd9e6b14e4ad5ca426",
+      "size_in_bytes": 6371
+    },
+    {
+      "_path": "lib/libXdmcp.so",
+      "path_type": "softlink",
+      "sha256": "c428693f37975d1c76ee670449defea6c5cb1aece90aac6d64e70a5c37bd76d3",
+      "size_in_bytes": 30904
+    },
+    {
+      "_path": "lib/libXdmcp.so.6",
+      "path_type": "softlink",
+      "sha256": "c428693f37975d1c76ee670449defea6c5cb1aece90aac6d64e70a5c37bd76d3",
+      "size_in_bytes": 30904
+    },
+    {
+      "_path": "lib/libXdmcp.so.6.0.0",
+      "path_type": "hardlink",
+      "sha256": "c428693f37975d1c76ee670449defea6c5cb1aece90aac6d64e70a5c37bd76d3",
+      "size_in_bytes": 30904
+    },
+    {
+      "_path": "lib/pkgconfig/xdmcp.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "47af7070cc53afcf31c16fd4d4f012d61d38a122a3ea0dca02dbd72ae93da2dc",
+      "size_in_bytes": 268
+    }
+  ],
+  "paths_version": 1
+}

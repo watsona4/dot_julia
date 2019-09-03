@@ -1,0 +1,49 @@
+{
+  "paths": [
+    {
+      "_path": "include/pixman-1/pixman-version.h",
+      "path_type": "hardlink",
+      "sha256": "c3bc3ab67ff8e79c3f6b4e3c1570988fbe0c7c58d72459904abbd9a6dda66d75",
+      "size_in_bytes": 1739
+    },
+    {
+      "_path": "include/pixman-1/pixman.h",
+      "path_type": "hardlink",
+      "sha256": "5420e8da380f2e3174f66d5a8beddca53711df498738d42790cb5eb778cfeb71",
+      "size_in_bytes": 45455
+    },
+    {
+      "_path": "lib/libpixman-1.a",
+      "path_type": "hardlink",
+      "sha256": "80a694dbc027ba55829dd142767cc60018867b721fac8bb6557fe008818de608",
+      "size_in_bytes": 1151348
+    },
+    {
+      "_path": "lib/libpixman-1.so",
+      "path_type": "softlink",
+      "sha256": "b64c01a532ed115480370912353c5c8c958f63aa6ec12de206c176751a7611bc",
+      "size_in_bytes": 807544
+    },
+    {
+      "_path": "lib/libpixman-1.so.0",
+      "path_type": "softlink",
+      "sha256": "b64c01a532ed115480370912353c5c8c958f63aa6ec12de206c176751a7611bc",
+      "size_in_bytes": 807544
+    },
+    {
+      "_path": "lib/libpixman-1.so.0.38.0",
+      "path_type": "hardlink",
+      "sha256": "b64c01a532ed115480370912353c5c8c958f63aa6ec12de206c176751a7611bc",
+      "size_in_bytes": 807544
+    },
+    {
+      "_path": "lib/pkgconfig/pixman-1.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "f57fd1928250a97b29dd650315e0698e9a27e9a848a5659c02cf078348d39eac",
+      "size_in_bytes": 254
+    }
+  ],
+  "paths_version": 1
+}

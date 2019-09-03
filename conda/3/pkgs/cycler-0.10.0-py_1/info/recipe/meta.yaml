@@ -1,0 +1,52 @@
+# This file created by conda-build 3.10.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sun Jul  8 18:41:11 2018
+# ------------------------------------------------
+
+package:
+    name: cycler
+    version: 0.10.0
+source:
+    fn: cycler-v0.10.0.tar.gz
+    sha256: b6d217635e03024196225367b1a438996dbbf0271bec488f00584f0e7dc15cfa
+    url: https://github.com/matplotlib/cycler/archive/v0.10.0.tar.gz
+build:
+    noarch: python
+    number: '1'
+    script: python -m pip install --no-deps --ignore-installed .
+    string: py_1
+requirements:
+    host:
+        - ca-certificates 2018.4.16 0
+        - certifi 2018.4.16 py27_0
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - ncurses 5.9 10
+        - openssl 1.0.2o 0
+        - pip 9.0.3 py27_0
+        - python 2.7.15 0
+        - readline 7.0 0
+        - setuptools 39.2.0 py27_0
+        - six 1.11.0 py27_1
+        - sqlite 3.20.1 2
+        - tk 8.6.7 0
+        - wheel 0.31.1 py27_0
+        - zlib 1.2.11 h470a237_3
+    run:
+        - python
+        - six
+test:
+    imports:
+        - cycler
+about:
+    home: http://github.com/matplotlib/cycler
+    license: BSD 3-Clause
+    license_file: LICENSE
+    summary: Composable style cycles.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jankatins
+        - ocefpaf
+        - pelson
+        - tacaswell

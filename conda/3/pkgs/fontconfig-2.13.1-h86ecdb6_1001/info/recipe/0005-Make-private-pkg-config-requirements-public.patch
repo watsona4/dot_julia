@@ -1,0 +1,49 @@
+From b1117ead37598bbbb97cbb67e5ae62b7d44ba0cd Mon Sep 17 00:00:00 2001
+From: Peter Williams <peter@newton.cx>
+Date: Mon, 10 Sep 2018 21:56:07 -0400
+Subject: [PATCH 5/5] Make private pkg-config requirements public
+
+Not only do I not know how to get Windows DLLs to pull in their dependencies
+implicitly, we only produce a static library here in fontconfig. Some
+combination of these two factors means that if a consumer tries to link with
+fontconfig on Windows, they'll get unresolved symbols from libxml. If we make
+all of our "private" requirements public, they'll appear in the pkg-config
+deps explicitly and everything will be OK.
+---
+ configure.ac | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+index 436b6ce..e266c56 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -360,7 +360,7 @@ if test "$os_win32" != "yes"; then
+ 			])])
+ 	else
+ 		if test -z "${save_UUID_LIBS+x}" && test "x${UUID_LIBS}" != "x"; then
+-			PKGCONFIG_REQUIRES_PRIVATELY="$PKGCONFIG_REQUIRES_PRIVATELY uuid"
++			PKGCONFIG_REQUIRES="$PKGCONFIG_REQUIRES uuid"
+ 		fi
+ 	fi
+ else
+@@ -413,7 +413,7 @@ if test "$enable_libxml2" != "yes"; then
+ 		PKG_EXPAT_CFLAGS=$EXPAT_CFLAGS
+ 		PKG_EXPAT_LIBS=$EXPAT_LIBS
+ 	else
+-		PKGCONFIG_REQUIRES_PRIVATELY="$PKGCONFIG_REQUIRES_PRIVATELY expat"
++		PKGCONFIG_REQUIRES="$PKGCONFIG_REQUIRES expat"
+ 		PKG_EXPAT_CFLAGS=
+ 		PKG_EXPAT_LIBS=
+ 	fi
+@@ -459,7 +459,7 @@ AC_ARG_ENABLE(libxml2,
+ 
+ if test "$enable_libxml2" = "yes"; then
+     PKG_CHECK_MODULES([LIBXML2], [libxml-2.0 >= 2.6])
+-    PKGCONFIG_REQUIRES_PRIVATELY="$PKGCONFIG_REQUIRES_PRIVATELY libxml-2.0 >= 2.6"
++    PKGCONFIG_REQUIRES="$PKGCONFIG_REQUIRES libxml-2.0 >= 2.6"
+     AC_DEFINE_UNQUOTED(ENABLE_LIBXML2,1,[Use libxml2 instead of Expat])
+ 
+     AC_SUBST(LIBXML2_CFLAGS)
+-- 
+2.17.1
+

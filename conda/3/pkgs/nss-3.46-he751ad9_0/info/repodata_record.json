@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "he751ad9_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "nspr >=4.20,<5.0a0",
+    "sqlite >=3.29.0,<4.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "features": "",
+  "fn": "nss-3.46-he751ad9_0.tar.bz2",
+  "license": "MPL 2",
+  "md5": "73951e64510430acc03ef1e9af2ba724",
+  "name": "nss",
+  "platform": "linux",
+  "sha256": "e967cef9c37d8dba68b2dae1c7a20a218f5eca47bbcbc9cb550bfc3aa51ec753",
+  "size": 1941468,
+  "subdir": "linux-64",
+  "timestamp": 1567210273304,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/nss-3.46-he751ad9_0.tar.bz2",
+  "version": "3.46"
+}

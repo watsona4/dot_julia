@@ -1,0 +1,36 @@
+From 46ba4853753a4b173d4f74c6b89cf3c1fe0968ca Mon Sep 17 00:00:00 2001
+From: Peter Williams <peter@newton.cx>
+Date: Tue, 11 Sep 2018 12:50:30 -0400
+Subject: [PATCH 1/5] Disable test bz106632
+
+It fails on macOS and Windows.
+---
+ test/Makefile.am | 12 ------------
+ 1 file changed, 12 deletions(-)
+
+diff --git a/test/Makefile.am b/test/Makefile.am
+index 79bcede..56129d7 100644
+--- a/test/Makefile.am
++++ b/test/Makefile.am
+@@ -79,18 +79,6 @@ test_hash_CFLAGS = -I$(top_builddir) -I$(top_builddir)/src $(UUID_CFLAGS)
+ test_hash_LDADD = $(UUID_LIBS)
+ TESTS += test-hash
+ 
+-check_PROGRAMS += test-bz106632
+-test_bz106632_CFLAGS =					\
+-	-I$(top_builddir)				\
+-	-I$(top_builddir)/src				\
+-	-I$(top_srcdir)					\
+-	-I$(top_srcdir)/src				\
+-	-DFONTFILE='"$(abs_top_srcdir)/test/4x6.pcf"'	\
+-	-DHAVE_CONFIG_H					\
+-	$(NULL)
+-test_bz106632_LDADD = $(top_builddir)/src/libfontconfig.la
+-TESTS += test-bz106632
+-
+ EXTRA_DIST=run-test.sh run-test-conf.sh $(TESTDATA) out.expected-long-family-names out.expected-no-long-family-names
+ 
+ CLEANFILES=out out1 out2 fonts.conf out.expected
+-- 
+2.17.1
+

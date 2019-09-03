@@ -1,0 +1,57 @@
+# This file created by conda-build 3.18.9
+# ------------------------------------------------
+
+package:
+    name: libopenblas
+    version: 0.3.7
+source:
+    patches:
+        - 0002-Fix-gfortran-detection-for-ctng-based-cross-compilers.patch
+    sha256: bde136122cef3dd6efe2de1c6f65c10955bbb0cc01a520c2342f5287c28f9379
+    url: https://github.com/xianyi/OpenBLAS/archive/v0.3.7.tar.gz
+build:
+    number: 1
+    run_exports:
+        - libopenblas >=0.3.7,<1.0a0
+    string: h6e990d7_1
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_8
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_8
+        - gfortran_impl_linux-64 7.3.0 hdf63c60_1
+        - gfortran_linux-64 7.3.0 h553295d_8
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+        - libgfortran-ng >=7,<8.0a0
+    run_constrained:
+        - openblas >=0.3.7,<0.3.8.0a0
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libopenblasp-r0.3.7.so
+        - python -c "import ctypes; ctypes.cdll['${PREFIX}/lib/libopenblasp-r0.3.7.so']"
+about:
+    home: http://www.openblas.net/
+    license: BSD-3-Clause
+    license_file:
+        - LICENSE
+        - lapack-netlib/LICENSE
+    summary: An optimized BLAS library based on GotoBLAS2 1.13 BSD version
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - beckermr
+        - gillins
+        - groutr
+        - isuruf
+        - jakirkham

@@ -1,0 +1,124 @@
+From fc292d8c4d49d6e3b1cd9310615b9e4892a76411 Mon Sep 17 00:00:00 2001
+From: Peter Williams <peter@newton.cx>
+Date: Mon, 3 Sep 2018 21:56:27 -0400
+Subject: [PATCH 9/9] Use the C++ hack in a few more files.
+
+A few more gnulib files have the same "non-constant initializer" as some other
+ones that have workaround hacks in the `woe32dll` directory. Monkey see,
+monkey do.
+---
+ gettext-tools/gnulib-lib/Makefile.gnulib    | 20 ++++++++++++++++++++
+ gettext-tools/woe32dll/c++fd-ostream.cc     |  1 +
+ gettext-tools/woe32dll/c++file-ostream.cc   |  1 +
+ gettext-tools/woe32dll/c++html-ostream.cc   |  1 +
+ gettext-tools/woe32dll/c++styled-ostream.cc |  1 +
+ gettext-tools/woe32dll/c++term-ostream.cc   |  1 +
+ 6 files changed, 25 insertions(+)
+ create mode 100644 gettext-tools/woe32dll/c++fd-ostream.cc
+ create mode 100644 gettext-tools/woe32dll/c++file-ostream.cc
+ create mode 100644 gettext-tools/woe32dll/c++html-ostream.cc
+ create mode 100644 gettext-tools/woe32dll/c++styled-ostream.cc
+ create mode 100644 gettext-tools/woe32dll/c++term-ostream.cc
+
+diff --git a/gettext-tools/gnulib-lib/Makefile.gnulib b/gettext-tools/gnulib-lib/Makefile.gnulib
+index 438bf9d..1e64f6e 100644
+--- a/gettext-tools/gnulib-lib/Makefile.gnulib
++++ b/gettext-tools/gnulib-lib/Makefile.gnulib
+@@ -568,7 +568,11 @@ EXTRA_DIST += fd-hook.h
+ 
+ ## begin gnulib module fd-ostream
+ 
++if !WOE32DLL
+ libgettextlib_la_SOURCES += fd-ostream.c
++else
++libgettextlib_la_SOURCES += ../woe32dll/c++fd-ostream.cc
++endif
+ # This is a Makefile rule that generates multiple files at once; see the
+ # automake documentation, node "Multiple Outputs", for details.
+ fd-ostream.h : $(top_srcdir)/../build-aux/moopp fd-ostream.oo.h fd-ostream.oo.c ostream.oo.h
+@@ -603,7 +607,11 @@ libgettextlib_la_SOURCES += fd-safer-flag.c dup-safer-flag.c
+ 
+ ## begin gnulib module file-ostream
+ 
++if !WOE32DLL
+ libgettextlib_la_SOURCES += file-ostream.c
++else
++libgettextlib_la_SOURCES += ../woe32dll/c++file-ostream.cc
++endif
+ # This is a Makefile rule that generates multiple files at once; see the
+ # automake documentation, node "Multiple Outputs", for details.
+ file-ostream.h : $(top_srcdir)/../build-aux/moopp file-ostream.oo.h file-ostream.oo.c ostream.oo.h
+@@ -894,7 +902,11 @@ EXTRA_DIST += $(top_srcdir)/../build-aux/config.rpath
+ 
+ ## begin gnulib module html-ostream
+ 
++if !WOE32DLL
+ libgettextlib_la_SOURCES += html-ostream.c
++else
++libgettextlib_la_SOURCES += ../woe32dll/c++html-ostream.cc
++endif
+ # This is a Makefile rule that generates multiple files at once; see the
+ # automake documentation, node "Multiple Outputs", for details.
+ html-ostream.h : $(top_srcdir)/../build-aux/moopp html-ostream.oo.h html-ostream.oo.c ostream.oo.h
+@@ -3650,7 +3662,11 @@ EXTRA_libgettextlib_la_SOURCES += strtol.c strtoul.c
+ 
+ ## begin gnulib module styled-ostream
+ 
++if !WOE32DLL
+ libgettextlib_la_SOURCES += styled-ostream.c
++else
++libgettextlib_la_SOURCES += ../woe32dll/c++styled-ostream.cc
++endif
+ # This is a Makefile rule that generates multiple files at once; see the
+ # automake documentation, node "Multiple Outputs", for details.
+ styled-ostream.h : $(top_srcdir)/../build-aux/moopp styled-ostream.oo.h styled-ostream.oo.c ostream.oo.h
+@@ -3870,7 +3886,11 @@ EXTRA_DIST += tempname.h
+ 
+ ## begin gnulib module term-ostream
+ 
++if !WOE32DLL
+ libgettextlib_la_SOURCES += term-ostream.c
++else
++libgettextlib_la_SOURCES += ../woe32dll/c++term-ostream.cc
++endif
+ # This is a Makefile rule that generates multiple files at once; see the
+ # automake documentation, node "Multiple Outputs", for details.
+ term-ostream.h : $(top_srcdir)/../build-aux/moopp term-ostream.oo.h term-ostream.oo.c ostream.oo.h
+diff --git a/gettext-tools/woe32dll/c++fd-ostream.cc b/gettext-tools/woe32dll/c++fd-ostream.cc
+new file mode 100644
+index 0000000..489177e
+--- /dev/null
++++ b/gettext-tools/woe32dll/c++fd-ostream.cc
+@@ -0,0 +1 @@
++#include "../gnulib-lib/fd-ostream.c"
+diff --git a/gettext-tools/woe32dll/c++file-ostream.cc b/gettext-tools/woe32dll/c++file-ostream.cc
+new file mode 100644
+index 0000000..8c06826
+--- /dev/null
++++ b/gettext-tools/woe32dll/c++file-ostream.cc
+@@ -0,0 +1 @@
++#include "../gnulib-lib/file-ostream.c"
+diff --git a/gettext-tools/woe32dll/c++html-ostream.cc b/gettext-tools/woe32dll/c++html-ostream.cc
+new file mode 100644
+index 0000000..ece796c
+--- /dev/null
++++ b/gettext-tools/woe32dll/c++html-ostream.cc
+@@ -0,0 +1 @@
++#include "../gnulib-lib/html-ostream.c"
+diff --git a/gettext-tools/woe32dll/c++styled-ostream.cc b/gettext-tools/woe32dll/c++styled-ostream.cc
+new file mode 100644
+index 0000000..61495cc
+--- /dev/null
++++ b/gettext-tools/woe32dll/c++styled-ostream.cc
+@@ -0,0 +1 @@
++#include "../gnulib-lib/styled-ostream.c"
+diff --git a/gettext-tools/woe32dll/c++term-ostream.cc b/gettext-tools/woe32dll/c++term-ostream.cc
+new file mode 100644
+index 0000000..96fd47e
+--- /dev/null
++++ b/gettext-tools/woe32dll/c++term-ostream.cc
+@@ -0,0 +1 @@
++#include "../gnulib-lib/term-ostream.c"
+-- 
+2.17.1
+

@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "h14c3975_1002",
+  "build_number": 1002,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "xorg-renderproto-0.11.1-h14c3975_1002.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "fbcb7fa11dee1a5d3df4371cc55bb229",
+  "name": "xorg-renderproto",
+  "platform": "linux",
+  "sha256": "bbed3c5ab97fdde0a0a2d725be15cd9b5fc770086e0afecebc8c155873bfff73",
+  "size": 8694,
+  "subdir": "linux-64",
+  "timestamp": 1537020750520,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-renderproto-0.11.1-h14c3975_1002.tar.bz2",
+  "version": "0.11.1"
+}

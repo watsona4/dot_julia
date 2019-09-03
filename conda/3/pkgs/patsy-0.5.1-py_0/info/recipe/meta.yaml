@@ -1,0 +1,53 @@
+# This file created by conda-build 3.16.1
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sun Oct 28 05:18:31 2018
+# ------------------------------------------------
+
+package:
+    name: patsy
+    version: 0.5.1
+source:
+    sha256: f115cec4201e1465cd58b9866b0b0e7b941caafec129869057405bfe5b5e3991
+    url: https://pypi.io/packages/source/p/patsy/patsy-0.5.1.tar.gz
+build:
+    noarch: python
+    number: '0'
+    script: python -m pip install --no-deps --ignore-installed .
+    string: py_0
+requirements:
+    host:
+        - ca-certificates 2018.10.15 ha4d7672_0
+        - certifi 2018.10.15 py27_1000
+        - libffi 3.2.1 hfc679d8_5
+        - libgcc-ng 7.2.0 hdf63c60_3
+        - libstdcxx-ng 7.2.0 hdf63c60_3
+        - ncurses 6.1 hfc679d8_1
+        - openssl 1.0.2p h470a237_1
+        - pip 18.1 py27_1000
+        - python 2.7.15 h33da82c_4
+        - readline 7.0 haf1bffa_1
+        - setuptools 40.5.0 py27_0
+        - sqlite 3.25.2 hb1c47c0_0
+        - tk 8.6.8 ha92aebf_0
+        - wheel 0.32.2 py27_0
+        - zlib 1.2.11 h470a237_3
+    run:
+        - numpy >=1.4.0
+        - python
+        - scipy
+        - six
+test:
+    imports:
+        - patsy
+about:
+    home: https://github.com/pydata/patsy
+    license: BSD-2-Clause, PSF2
+    license_family: BSD
+    license_file: LICENSE.txt
+    summary: Describing statistical models in Python using symbolic formulas
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - bollwyvl
+        - croth1

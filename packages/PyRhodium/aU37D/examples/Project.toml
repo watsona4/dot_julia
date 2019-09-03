@@ -1,0 +1,5 @@
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+PyRhodium = "e525b322-f4d5-5e8a-9e4c-f31b6ef474ca"
+Roots = "f2b01f46-fcfa-551c-844a-d8ac1e96c665"

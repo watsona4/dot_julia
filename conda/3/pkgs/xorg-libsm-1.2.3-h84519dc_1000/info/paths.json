@@ -1,0 +1,49 @@
+{
+  "paths": [
+    {
+      "_path": "include/X11/SM/SM.h",
+      "path_type": "hardlink",
+      "sha256": "3580529fdcd97370008a713ff8c4e9e22d7ce179b04d1eabad9ab21085cb3373",
+      "size_in_bytes": 2927
+    },
+    {
+      "_path": "include/X11/SM/SMlib.h",
+      "path_type": "hardlink",
+      "sha256": "d2aea2243d0ec61de6dbde0a7b389d1d6918aa23adc50354d88f7580f8eac11a",
+      "size_in_bytes": 11268
+    },
+    {
+      "_path": "include/X11/SM/SMproto.h",
+      "path_type": "hardlink",
+      "sha256": "965cca37380cf71c0c4a2681c3c8b8e45a49a8807a1c82e7cf2a952cd63ec702",
+      "size_in_bytes": 4852
+    },
+    {
+      "_path": "lib/libSM.so",
+      "path_type": "softlink",
+      "sha256": "60c2b47810946055828495e7f6fff869d7f1964c0aa0926c2e448e25a896e461",
+      "size_in_bytes": 44448
+    },
+    {
+      "_path": "lib/libSM.so.6",
+      "path_type": "softlink",
+      "sha256": "60c2b47810946055828495e7f6fff869d7f1964c0aa0926c2e448e25a896e461",
+      "size_in_bytes": 44448
+    },
+    {
+      "_path": "lib/libSM.so.6.0.1",
+      "path_type": "hardlink",
+      "sha256": "60c2b47810946055828495e7f6fff869d7f1964c0aa0926c2e448e25a896e461",
+      "size_in_bytes": 44448
+    },
+    {
+      "_path": "lib/pkgconfig/sm.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "45fbdbb9f2a6edb19f952bec986aca3f6242eb4082d16255be86e24d7d89cb92",
+      "size_in_bytes": 270
+    }
+  ],
+  "paths_version": 1
+}

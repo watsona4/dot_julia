@@ -1,0 +1,60 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sat Jul 27 22:41:39 2019
+# ------------------------------------------------
+
+package:
+    name: pydot
+    version: 1.4.1
+source:
+    fn: pydot-1.4.1.tar.gz
+    sha256: d49c9d4dd1913beec2a997f831543c8cbd53e535b1a739e921642fe416235f01
+    url: https://pypi.io/packages/source/p/pydot/pydot-1.4.1.tar.gz
+build:
+    number: '1001'
+    script: /home/conda/feedstock_root/build_artifacts/pydot_1564267390798/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/bin/python
+        -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    string: py37_1001
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - bzip2 1.0.8 h516909a_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py37_1
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1c h516909a_0
+        - pip 19.2.1 py37_0
+        - pyparsing 2.4.1.1 py_0
+        - python 3.7.3 h33d41f4_1
+        - readline 8.0 hf8c457e_0
+        - setuptools 41.0.1 py37_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.4 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - graphviz
+        - pyparsing >=2.1.4
+        - python >=3.7,<3.8.0a0
+test:
+    imports:
+        - pydot
+about:
+    description: "This module provides with a full interface to create handle modify\
+        \ and\nprocess graphs in Graphviz\u2019s dot language.\n"
+    dev_url: https://github.com/erocarrera/pydot
+    doc_url: https://pypi.python.org/pypi/pydot
+    home: https://github.com/erocarrera/pydot
+    license: MIT
+    license_file: LICENSE
+    summary: Python interface to Graphviz's Dot
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - leycec
+        - nehaljwani

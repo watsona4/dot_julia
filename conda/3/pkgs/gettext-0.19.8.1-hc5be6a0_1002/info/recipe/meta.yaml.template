@@ -1,0 +1,65 @@
+{% set version = "0.19.8.1" %}
+{% set am_version = "1.15" %} #  keep synchronized with build.sh
+{% set posix = 'm2-' if win else '' %}
+{% set native = 'm2w64-' if win else '' %}
+
+package:
+  name: gettext
+  version: {{ version }}
+
+source:
+  url: ftp://ftp.gnu.org/pub/gnu/gettext/gettext-{{ version }}.tar.xz
+  sha256: 105556dbc5c3fbbc2aa0edb46d22d055748b6f5c7cd7a8d99f8e7eb84e938be4
+  patches:
+    - 0001-Mark-v-snprintf-as-available.patch                          # [win]
+    - 0002-Prevent-libtool-from-worrying-about-dependent-librar.patch  # [win]
+    - 0003-Fix-some-DLL-export-markings-in-libintl.patch               # [win]
+    - 0004-Fix-quoting-when-invoking-windres.patch                     # [win]
+    - 0005-CXXLD-is-not-a-thing.patch                                  # [win]
+    - 0006-Fix-an-inconsistent-noreturn-marking-in-gettext-tool.patch  # [win]
+    - 0007-Work-around-Unixisms-in-libgettextpo.patch                  # [win]
+    - 0008-Add-missing-extern-C-protectors.patch                       # [win]
+    - 0009-Use-the-C-hack-in-a-few-more-files.patch                    # [win]
+
+build:
+  number: 1002
+  run_exports:
+    # Seems pretty good: https://abi-laboratory.pro/tracker/timeline/gettext/
+    - {{ pin_subpackage('gettext') }}
+
+requirements:
+  build:
+    - posix                              # [win]
+    - {{posix}}autoconf                  # [win]
+    - {{posix}}automake{{ am_version }}  # [win]
+    - {{posix}}libtool                   # [win]
+    - {{posix}}patch                     # [win]
+    - {{native}}binutils                 # [win]
+    - {{native}}crt-git                  # [win]
+    - {{ compiler('c') }}                # [not win]
+    - make                               # [unix]
+    - vs2015_win-64                      # [win] -- no VS2008 since it's just a pain to work with
+  host:
+    - libffi
+    - libiconv  # [not linux]
+
+test:
+  commands:
+    {% set lib_idents = [ "gettextlib", "gettextpo", "gettextsrc" ] %}
+    {% set lib_idents = lib_idents + [ "intl" ] %}                         # [not linux]
+    {% for lib_ident in lib_idents %}
+    - test -f ${PREFIX}/lib/lib{{ lib_ident }}$SHLIB_EXT                   # [not win]
+    - if not exist %PREFIX%\Library\lib\{{ lib_ident }}.dll.lib exit /b 1  # [win]
+    - if not exist %PREFIX%\Library\bin\{{ lib_ident }}-*.dll exit /b 1    # [win]
+    {% endfor %}
+
+about:
+  home: https://www.gnu.org/software/gettext/
+  license: GPL-2.0
+  license_file: COPYING
+  summary: Internationalization package
+
+extra:
+  recipe-maintainers:
+    - scopatz
+    - ocefpaf

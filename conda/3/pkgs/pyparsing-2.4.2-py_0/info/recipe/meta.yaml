@@ -1,0 +1,63 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Jul 30 12:09:30 2019
+# ------------------------------------------------
+
+package:
+    name: pyparsing
+    version: 2.4.2
+source:
+    sha256: 6f98a7b9397e206d78cc01df10131398f1c8b8510a2f4d97d9abd82e1aacdd80
+    url: https://pypi.io/packages/source/p/pyparsing/pyparsing-2.4.2.tar.gz
+build:
+    noarch: python
+    number: '0'
+    script: /home/conda/feedstock_root/build_artifacts/pyparsing_1564488661683/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p/bin/python
+        -m pip install . --no-deps --ignore-installed -vvv
+    string: py_0
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py27_1
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1c h516909a_0
+        - pip 19.2.1 py27_0
+        - python 2.7.15 h5a48372_1009
+        - readline 8.0 hf8c457e_0
+        - setuptools 41.0.1 py27_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.4 py27_0
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - python
+test:
+    imports:
+        - pyparsing
+about:
+    description: 'The pyparsing module is an alternative approach to creating and
+        executing
+
+        simple grammars, vs. the traditional lex/yacc approach, or the use of
+
+        regular expressions. The pyparsing module provides a library of classes
+
+        that client code uses to construct the grammar directly in Python code.
+
+        '
+    dev_url: https://svn.code.sf.net/p/pyparsing/code/
+    doc_url: http://pyparsing.wikispaces.com/Documentation
+    home: http://pyparsing.wikispaces.com/
+    license: MIT
+    license_file: LICENSE
+    summary: Create and execute simple grammars
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - msarahan
+        - ocefpaf

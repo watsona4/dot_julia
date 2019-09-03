@@ -1,0 +1,20 @@
+{
+  "arch": "x86_64",
+  "build": "py37hcdab131_0",
+  "build_number": 0,
+  "depends": [
+    "joblib >=0.11",
+    "libcblas >=3.8.0,<4.0a0",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "numpy >=1.14.6,<2.0a0",
+    "python >=3.7,<3.8.0a0",
+    "scipy"
+  ],
+  "license": "BSD 3-Clause",
+  "name": "scikit-learn",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1564451575239,
+  "version": "0.21.3"
+}

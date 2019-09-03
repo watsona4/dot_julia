@@ -1,0 +1,7 @@
+{
+  "xz": "5.2",
+  "c_compiler": "gcc",
+  "zlib": "1.2",
+  "cxx_compiler": "gxx",
+  "jpeg": "9"
+}

@@ -1,0 +1,25 @@
+{
+  "arch": "x86_64",
+  "build": "py37_1001",
+  "build_number": 1001,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "graphviz",
+    "pyparsing >=2.1.4",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "features": "",
+  "fn": "pydot-1.4.1-py37_1001.tar.bz2",
+  "license": "MIT",
+  "md5": "059775cda776bc39e50895a6eef455ef",
+  "name": "pydot",
+  "platform": "linux",
+  "sha256": "bcf57d03e18ed518b87a9e569e13d0d4f8f8ed77ac3a14852a87bc6e58bb94c5",
+  "size": 40678,
+  "subdir": "linux-64",
+  "timestamp": 1564267452412,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/pydot-1.4.1-py37_1001.tar.bz2",
+  "version": "1.4.1"
+}

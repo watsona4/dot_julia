@@ -1,0 +1,59 @@
+# This file created by conda-build 3.18.7
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Jul 15 01:55:45 2019
+# ------------------------------------------------
+
+package:
+    name: xorg-libice
+    version: 1.0.10
+source:
+    fn: xorg-libICE-1.0.10.tar.bz2
+    patches:
+        - time.patch
+    sha256: 6f86dce12cf4bcaf5c37dddd8b1b64ed2ddf1ef7b218f22b9942595fb747c348
+    url: https://www.x.org/releases/individual/lib/libICE-1.0.10.tar.bz2
+build:
+    detect_binary_files_with_prefix: true
+    number: '0'
+    string: h516909a_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - autoconf 2.69 pl526h14c3975_9
+        - automake 1.16.1 pl526_1003
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_7
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_7
+        - gettext 0.19.8.1 hc5be6a0_1002
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - libtool 2.4.6 h14c3975_1002
+        - m4 1.4.18 h14c3975_1001
+        - make 4.2.1 h14c3975_2004
+        - perl 5.26.2 h516909a_1006
+        - pkg-config 0.29.2 h14c3975_1005
+    host:
+        - _libgcc_mutex 0.1 main
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - xorg-util-macros 1.19.2 h14c3975_1001
+        - xorg-xproto 7.0.31 h14c3975_1007
+        - xorg-xtrans 1.4.0 h516909a_0
+    run:
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - test -f $PREFIX/lib/libICE.so
+        - conda inspect linkages -p $PREFIX $PKG_NAME
+about:
+    home: https://www.x.org/
+    license: MIT
+    license_family: MIT
+    license_file: COPYING
+    summary: The X.org Inter-Client Exchange library.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - pkgw

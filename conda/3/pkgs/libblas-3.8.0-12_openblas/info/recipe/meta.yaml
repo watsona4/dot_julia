@@ -1,0 +1,49 @@
+# This file created by conda-build 3.18.9
+# ------------------------------------------------
+
+package:
+    name: libblas
+    version: 3.8.0
+source:
+    patches:
+        - more_testing.diff
+    sha256: deb22cc4a6120bff72621155a9917f485f96ef8319ac074a7afbc68aab88bcf6
+    url: http://www.netlib.org/lapack/lapack-3.8.0.tar.gz
+build:
+    number: 12
+    run_exports:
+        - libblas >=3.8.0,<4.0a0
+    string: 12_openblas
+requirements:
+    host:
+        - _libgcc_mutex 0.1 main
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - libopenblas 0.3.7 h6e990d7_0
+    run:
+        - libopenblas >=0.3.7,<0.3.8.0a0
+        - libopenblas >=0.3.7,<1.0a0
+    run_constrained:
+        - blas * openblas
+        - libcblas 3.8.0 12_openblas
+        - liblapack 3.8.0 12_openblas
+        - liblapacke 3.8.0 12_openblas
+test:
+    commands:
+        - test -f $PREFIX/lib/libblas.so
+        - test -f $PREFIX/lib/libblas.so.3
+about:
+    home: https://github.com/conda-forge/blas-feedstock
+    license: BSD-3-Clause
+    license_file:
+        - LICENSE.txt
+    summary: Metapackage to select the BLAS variant. Use conda's pinning mechanism
+        in your environment to control which variant you want.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - isuruf
+        - jakirkham
+        - ocefpaf
+        - pelson

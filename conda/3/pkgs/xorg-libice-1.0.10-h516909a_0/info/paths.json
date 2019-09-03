@@ -1,0 +1,67 @@
+{
+  "paths": [
+    {
+      "_path": "include/X11/ICE/ICE.h",
+      "path_type": "hardlink",
+      "sha256": "02c40f49cc04745ad83619036d8f8356f5933975c54c7a38d090bc21343d39fb",
+      "size_in_bytes": 2512
+    },
+    {
+      "_path": "include/X11/ICE/ICEconn.h",
+      "path_type": "hardlink",
+      "sha256": "1d6dd9e045cbe8abcfa0ee67dd563b05a89c287f6e7daa8206637b0d15c09727",
+      "size_in_bytes": 7413
+    },
+    {
+      "_path": "include/X11/ICE/ICElib.h",
+      "path_type": "hardlink",
+      "sha256": "23a5b0fd150903821238902d2f92eaab117e45745b0fbeebdfdca803a74b59fe",
+      "size_in_bytes": 9925
+    },
+    {
+      "_path": "include/X11/ICE/ICEmsg.h",
+      "path_type": "hardlink",
+      "sha256": "fce34a6d9cc9b7f78405051b78085c86e69d23c0945036ea42e38d4adc9274b1",
+      "size_in_bytes": 8206
+    },
+    {
+      "_path": "include/X11/ICE/ICEproto.h",
+      "path_type": "hardlink",
+      "sha256": "62ac0703108f067f3160f875fea16e7f231f3c52de69b569a2b0d1f888840be7",
+      "size_in_bytes": 4604
+    },
+    {
+      "_path": "include/X11/ICE/ICEutil.h",
+      "path_type": "hardlink",
+      "sha256": "3d85cac1f1787953813dc38f3be72ba099581d2cfefa9f335819777bd22b7d9d",
+      "size_in_bytes": 3154
+    },
+    {
+      "_path": "lib/libICE.so",
+      "path_type": "softlink",
+      "sha256": "aee0fb32051fcae1d47096e215fe04f9d2c7c8bd09b56bb4af6ffabe627106ea",
+      "size_in_bytes": 119600
+    },
+    {
+      "_path": "lib/libICE.so.6",
+      "path_type": "softlink",
+      "sha256": "aee0fb32051fcae1d47096e215fe04f9d2c7c8bd09b56bb4af6ffabe627106ea",
+      "size_in_bytes": 119600
+    },
+    {
+      "_path": "lib/libICE.so.6.3.0",
+      "path_type": "hardlink",
+      "sha256": "aee0fb32051fcae1d47096e215fe04f9d2c7c8bd09b56bb4af6ffabe627106ea",
+      "size_in_bytes": 119600
+    },
+    {
+      "_path": "lib/pkgconfig/ice.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "0cf16d48def7acd457347d1b802ae5a0f96a70419f4022b0111f62b801d599d2",
+      "size_in_bytes": 254
+    }
+  ],
+  "paths_version": 1
+}

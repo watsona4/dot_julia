@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "hf484d3e_1003",
+  "build_number": 1003,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "pcre-8.41-hf484d3e_1003.tar.bz2",
+  "license": "BSD 3-Clause",
+  "md5": "738ba678930cf08359ea0d6a454ab22a",
+  "name": "pcre",
+  "platform": "linux",
+  "sha256": "65d0d51917f553c0374e8e61d52aabf5f8b760702a3392163a4ba44b65617e89",
+  "size": 255471,
+  "subdir": "linux-64",
+  "timestamp": 1538536484938,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/pcre-8.41-hf484d3e_1003.tar.bz2",
+  "version": "8.41"
+}

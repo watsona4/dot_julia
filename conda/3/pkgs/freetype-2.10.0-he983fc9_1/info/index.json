@@ -1,0 +1,16 @@
+{
+  "arch": "x86_64",
+  "build": "he983fc9_1",
+  "build_number": 1,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libpng >=1.6.35,<1.7.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "license": "GPL-2.0 and FreeType",
+  "name": "freetype",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1565358759772,
+  "version": "2.10.0"
+}

@@ -1,0 +1,14 @@
+prefix=/home/ec2-user/.julia/conda/3
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/qt
+
+
+Name: Qt5 UiTools
+Description: Qt UiTools module
+Version: 5.12.1
+Libs: -L${libdir} -lQt5UiTools 
+Libs.private: -L/home/ec2-user/.julia/conda/3/lib -L/home/ec2-user/.julia/conda/3/x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64 -L/home/ec2-user/.julia/conda/3/lib -lQt5Widgets -lQt5Gui -lQt5Core -lpthread -lQt5Widgets -L/home/ec2-user/.julia/conda/3/lib -L/home/ec2-user/.julia/conda/3/x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64 -L/home/ec2-user/.julia/conda/3/lib -lQt5Gui -lQt5Core -lpthread /home/ec2-user/.julia/conda/3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libGL.so   
+Cflags: -DQT_UITOOLS_LIB -I${includedir}/QtUiTools -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets
+

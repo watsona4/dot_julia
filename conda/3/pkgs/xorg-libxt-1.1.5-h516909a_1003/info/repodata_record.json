@@ -1,0 +1,29 @@
+{
+  "arch": "x86_64",
+  "build": "h516909a_1003",
+  "build_number": 1003,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "xorg-kbproto",
+    "xorg-libice 1.0.*",
+    "xorg-libsm 1.2.*",
+    "xorg-libx11 1.6.*",
+    "xorg-xproto"
+  ],
+  "features": "",
+  "fn": "xorg-libxt-1.1.5-h516909a_1003.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "71d1b374a5f93682db50a2a0df3017a3",
+  "name": "xorg-libxt",
+  "platform": "linux",
+  "sha256": "bc42dd0de87f8c1c30d4a397103cf40284952fc55cdb5ca1771536d6c80ed55b",
+  "size": 375875,
+  "subdir": "linux-64",
+  "timestamp": 1560820107974,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-libxt-1.1.5-h516909a_1003.tar.bz2",
+  "version": "1.1.5"
+}

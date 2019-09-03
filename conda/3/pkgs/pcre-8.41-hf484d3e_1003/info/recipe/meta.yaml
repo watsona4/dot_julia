@@ -1,0 +1,66 @@
+# This file created by conda-build 3.15.1
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Oct  3 03:11:10 2018
+# ------------------------------------------------
+
+package:
+    name: pcre
+    version: '8.41'
+source:
+    sha256: 244838e1f1d14f7e2fa7681b857b3a8566b74215f28133f14a8f5e59241b682c
+    url: ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.41.tar.gz
+build:
+    number: '1003'
+    run_exports:
+        - pcre >=8.41,<9.0a0
+    string: hf484d3e_1003
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_3
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - libtool 2.4.6 h14c3975_1002
+        - pkg-config 0.29.2 h14c3975_1003
+    host:
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+test:
+    commands:
+        - pcre-config --version
+        - pcregrep --help
+        - pcretest --help
+        - test -f "${PREFIX}/include/pcre.h"
+        - test -f "${PREFIX}/include/pcre_scanner.h"
+        - test -f "${PREFIX}/include/pcre_stringpiece.h"
+        - test -f "${PREFIX}/include/pcrecpp.h"
+        - test -f "${PREFIX}/include/pcrecpparg.h"
+        - test -f "${PREFIX}/include/pcreposix.h"
+        - test -f "${PREFIX}/lib/libpcre.a"
+        - test -f "${PREFIX}/lib/libpcre${SHLIB_EXT}"
+        - test -f "${PREFIX}/lib/libpcrecpp.a"
+        - test -f "${PREFIX}/lib/libpcrecpp${SHLIB_EXT}"
+        - test -f "${PREFIX}/lib/libpcreposix.a"
+        - test -f "${PREFIX}/lib/libpcreposix${SHLIB_EXT}"
+about:
+    home: http://www.pcre.org/
+    license: BSD 3-Clause
+    license_file: LICENCE
+    summary: Regular expression pattern matching using the same syntax and semantics
+        as Perl 5.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - ocefpaf
+        - saraedum
+        - scopatz
+        - sebastian-luna-valero

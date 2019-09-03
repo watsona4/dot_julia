@@ -1,0 +1,57 @@
+# This file created by conda-build 3.15.1
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Oct  2 19:13:15 2018
+# ------------------------------------------------
+
+package:
+    name: libtool
+    version: 2.4.6
+source:
+    patches:
+        - 0001-link-as-needed.patch
+    sha256: e3bd4d5d3d025a36c21dd6af7ea818a2afcd4dfc1ea5a17b39d7854bcd0c06e3
+    url: http://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
+build:
+    number: '1002'
+    string: h14c3975_1002
+requirements:
+    build:
+        - autoconf 2.69 pl526hebd4dad_5
+        - automake 1.15.1 pl526h7747ae0_0
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - help2man 1.47.6 pl526h14c3975_0
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - m4 1.4.18 h14c3975_1001
+        - perl 5.26.2 h14c3975_1000
+    host:
+        - libgcc-ng 7.3.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - libtool --help
+about:
+    description: 'GNU libtool is a generic library support script. Libtool hides the
+
+        complexity of using shared libraries behind a consistent, portable
+
+        interface.
+
+        '
+    dev_url: http://git.savannah.gnu.org/cgit/libtool.git
+    doc_url: http://www.gnu.org/software/libtool/manual/
+    home: http://www.gnu.org/software/libtool/
+    license: GPL-3.0
+    summary: The GNU Portable Library Tool
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - mingwandroid
+        - msarahan
+        - ocefpaf

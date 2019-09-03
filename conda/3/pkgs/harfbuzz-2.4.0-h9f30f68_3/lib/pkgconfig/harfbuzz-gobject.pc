@@ -1,0 +1,12 @@
+prefix=/opt/anaconda1anaconda2anaconda3
+exec_prefix=/opt/anaconda1anaconda2anaconda3
+libdir=/opt/anaconda1anaconda2anaconda3/lib
+includedir=/opt/anaconda1anaconda2anaconda3/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library GObject integration
+Version: 2.4.0
+
+Requires: harfbuzz gobject-2.0 glib-2.0
+Libs: -L${libdir} -lharfbuzz-gobject
+Cflags: -I${includedir}/harfbuzz

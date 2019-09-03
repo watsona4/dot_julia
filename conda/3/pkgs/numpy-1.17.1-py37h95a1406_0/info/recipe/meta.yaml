@@ -1,0 +1,79 @@
+# This file created by conda-build 3.18.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Aug 27 03:51:03 2019
+# ------------------------------------------------
+
+package:
+    name: numpy
+    version: 1.17.1
+source:
+    sha256: 24d479ebc92f2d1c739622568f0e4d1382c6bf9778505146a370c8e2f5749839
+    url: https://github.com/numpy/numpy/releases/download/v1.17.1/numpy-1.17.1.tar.gz
+build:
+    number: '0'
+    string: py37h95a1406_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_8
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_8
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - bzip2 1.0.8 h516909a_0
+        - ca-certificates 2019.6.16 hecc5488_0
+        - certifi 2019.6.16 py37_1
+        - cython 0.29.13 py37he1b5a44_0
+        - libblas 3.8.0 7_h6e990d7_netlib
+        - libcblas 3.8.0 7_h6e990d7_netlib
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libgfortran-ng 7.3.0 hdf63c60_0
+        - liblapack 3.8.0 7_h6e990d7_netlib
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1c h516909a_0
+        - pip 19.2.3 py37_0
+        - python 3.7.3 h33d41f4_1
+        - readline 8.0 hf8c457e_0
+        - setuptools 41.2.0 py37_0
+        - sqlite 3.29.0 hcee41ef_0
+        - tk 8.6.9 hed695b0_1002
+        - wheel 0.33.6 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h516909a_1005
+    run:
+        - libblas >=3.8.0,<4.0a0
+        - libcblas >=3.8.0,<4.0a0
+        - libgcc-ng >=7.3.0
+        - liblapack >=3.8.0,<3.9.0a0
+        - python >=3.7,<3.8.0a0
+test:
+    commands:
+        - f2py -h
+        - pytest --timeout=300 -v --pyargs numpy
+    imports:
+        - numpy
+        - numpy.linalg.lapack_lite
+    requires:
+        - pytest
+        - pytest-timeout
+about:
+    dev_url: https://github.com/numpy/numpy
+    doc_url: https://docs.scipy.org/doc/numpy/reference/
+    home: http://numpy.scipy.org/
+    license: BSD 3-Clause
+    license_file: LICENSE.txt
+    summary: Array processing for numbers, strings, records, and objects.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - msarahan
+        - ocefpaf
+        - pelson
+        - rgommers

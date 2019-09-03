@@ -1,0 +1,44 @@
+# This file created by conda-build 3.18.9
+# ------------------------------------------------
+
+package:
+    name: liblapack
+    version: 3.8.0
+source:
+    patches:
+        - more_testing.diff
+    sha256: deb22cc4a6120bff72621155a9917f485f96ef8319ac074a7afbc68aab88bcf6
+    url: http://www.netlib.org/lapack/lapack-3.8.0.tar.gz
+build:
+    number: 12
+    run_exports:
+        - liblapack >=3.8.0,<3.9.0a0
+    string: 12_openblas
+requirements:
+    host:
+        - libblas 3.8.0 12_openblas
+    run:
+        - libblas 3.8.0 12_openblas
+    run_constrained:
+        - blas * openblas
+        - libcblas 3.8.0 12_openblas
+        - liblapacke 3.8.0 12_openblas
+test:
+    commands:
+        - test -f $PREFIX/lib/liblapack.so
+        - test -f $PREFIX/lib/liblapack.so.3
+about:
+    home: https://github.com/conda-forge/blas-feedstock
+    license: BSD-3-Clause
+    license_file:
+        - LICENSE.txt
+    summary: Metapackage to select the BLAS variant. Use conda's pinning mechanism
+        in your environment to control which variant you want.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - isuruf
+        - jakirkham
+        - ocefpaf
+        - pelson

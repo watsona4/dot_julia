@@ -1,0 +1,17 @@
+{
+  "paths": [
+    {
+      "_path": "lib/libclang.so",
+      "path_type": "softlink",
+      "sha256": "4169587e7fb75bb91a8ffbb57cbf8469f928fe027c80f5295df607000a17762c",
+      "size_in_bytes": 24898376
+    },
+    {
+      "_path": "lib/libclang.so.8",
+      "path_type": "hardlink",
+      "sha256": "4169587e7fb75bb91a8ffbb57cbf8469f928fe027c80f5295df607000a17762c",
+      "size_in_bytes": 24898376
+    }
+  ],
+  "paths_version": 1
+}

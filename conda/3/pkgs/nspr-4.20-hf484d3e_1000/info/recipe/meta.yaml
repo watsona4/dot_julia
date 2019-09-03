@@ -1,0 +1,68 @@
+# This file created by conda-build 3.14.4
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sun Sep 16 00:45:09 2018
+# ------------------------------------------------
+
+package:
+    name: nspr
+    version: '4.20'
+source:
+    fn: nspr-4.20.tgz
+    sha256: 2c8964913da89ffbaf464d49ce44d79e8804e1794ef9a8c52a7bff7224d1556e
+    url: https://ftp.mozilla.org/pub/nspr/releases/v4.20/src/nspr-4.20.tar.gz
+build:
+    number: '1000'
+    string: hf484d3e_1000
+requirements:
+    build:
+        - autoconf 2.69 pl526hebd4dad_5
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - gxx_impl_linux-64 7.3.0 hdf63c60_1
+        - gxx_linux-64 7.3.0 h553295d_3
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - m4 1.4.18 h4e445db_0
+        - make 4.2.1 h14c3975_2002
+        - perl 5.26.2 h14c3975_0
+    host:
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libnspr4.a
+        - test -f ${PREFIX}/lib/libnspr4${SHLIB_EXT}
+        - test -f ${PREFIX}/lib/libplc4.a
+        - test -f ${PREFIX}/lib/libplc4${SHLIB_EXT}
+        - test -f ${PREFIX}/lib/libplds4.a
+        - test -f ${PREFIX}/lib/libplds4${SHLIB_EXT}
+about:
+    description: 'NetScape Portable Runtime (NSPR) provides platform independence
+        for
+
+        non-GUI operating system facilities. These facilities include threads,
+
+        thread synchronization, normal file and network I/O, interval timing and
+
+        calendar time, basic memory management (malloc and free) and shared
+
+        library linking.
+
+        '
+    dev_url: https://developer.mozilla.org/en-US/docs/MDN
+    doc_url: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
+    home: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSPR
+    license: MPL 2
+    license_file: nspr/LICENSE
+    summary: A platform-neutral API for system level and libc-like functions.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - marcelotrevisani

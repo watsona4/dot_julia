@@ -1,0 +1,87 @@
+{% set name = "harfbuzz" %}
+{% set version = "2.4.0" %}
+{% set sha256 = "b470eff9dd5b596edf078596b46a1f83c179449f051a469430afc15869db336f" %}
+{% set posix = 'm2-' if win else '' %}
+{% set native = 'm2w64-' if win else '' %}
+
+# Note: in conda-forge.yml we currently disable the beta-testing of Azure
+# Pipelines. This is because the Windows image we use on Azure provides Visual
+# Studio 2017, whereas on AppVeyor we need VS2015. Since AppVeyor is what
+# actually gets deployed, it wins for now. If/when we're ready to switch over
+# to Azure for production, the VS version requirement should bump up to 2017.
+# (Or maybe at that point there will be a mechanism to use VS2015 in Azure
+# Pipelines.)
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  url: https://www.freedesktop.org/software/{{ name }}/release/{{ name }}-{{ version }}.tar.bz2
+  sha256: {{ sha256 }}
+  patches:
+    - 0002-Generate-.pc-files-when-using-the-CMake-build-system.patch  # [win]
+
+build:
+  number: 3
+
+requirements:
+  build:
+    - cmake           # [win]
+    - ninja           # [win]
+    - {{posix}}patch  # [win]
+    - automake    # [not win]
+    - make        # [not win]
+    - libtool     # [not win]
+    - {{native}}pkg-config
+    - pthread-stubs
+    - python >=2.7,<3
+    - {{ compiler('c') }}    # [not win]
+    - {{ compiler('cxx') }}  # [not win]
+    - vs2015_win-64          # [win] -- don't bother building on VS2008
+  host:
+    - cairo                         # [not win]
+    - glib
+    - freetype
+    - icu
+    - graphite2
+    - gobject-introspection         # [not win]
+  run:
+    - cairo                         # [not win]
+    - glib
+    - freetype
+    - icu
+    - graphite2
+
+test:
+  commands:
+    # Libraries/headers.
+    {% set libs = [
+        "libharfbuzz-icu",
+        "libharfbuzz"
+        ] %}
+    {% for lib in libs %}
+    - test -f $PREFIX/lib/{{ lib }}.dylib  # [osx]
+    - test -f $PREFIX/lib/{{ lib }}.so  # [linux]
+    {% endfor %}
+    - test -f $PREFIX/include/harfbuzz/hb-ft.h  # [not win]
+    # CLI tests.
+    - hb-view --version  # [linux]
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
+
+about:
+  home: http://www.freedesktop.org/wiki/Software/HarfBuzz/
+  license: MIT
+  license_file: COPYING
+  summary: 'An OpenType text shaping engine.'
+  description: |
+    HarfBuzz is a text shaping library. New Harbuzz targets various font
+    technologies while Old HarfBuzz targets only OpenType fonts.
+  doc_url: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+  dev_url: https://github.com/behdad/harfbuzz
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
+    - pkgw

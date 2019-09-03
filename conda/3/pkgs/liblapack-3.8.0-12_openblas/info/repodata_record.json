@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "12_openblas",
+  "build_number": 12,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "libcblas 3.8.0 12_openblas",
+    "liblapacke 3.8.0 12_openblas",
+    "blas * openblas"
+  ],
+  "depends": [
+    "libblas 3.8.0 12_openblas"
+  ],
+  "features": "",
+  "fn": "liblapack-3.8.0-12_openblas.tar.bz2",
+  "license": "BSD-3-Clause",
+  "md5": "8fc2af07243a0a7d882da3331bf445b2",
+  "name": "liblapack",
+  "platform": "linux",
+  "sha256": "8b280f028456e3acee052c14085f45a59ecdaca4cb17cdc2c881a47af5af9e4d",
+  "size": 10111,
+  "subdir": "linux-64",
+  "timestamp": 1565665535135,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/liblapack-3.8.0-12_openblas.tar.bz2",
+  "version": "3.8.0"
+}

@@ -1,0 +1,13 @@
+diff --git a/scipy/fftpack/tests/test_real_transforms.py b/scipy/fftpack/tests/test_real_transforms.py
+index c2fcc1332..e09ed4b12 100644
+--- a/scipy/fftpack/tests/test_real_transforms.py
++++ b/scipy/fftpack/tests/test_real_transforms.py
+@@ -447,7 +447,7 @@ class TestIDCTIVDouble(_TestIDCTBase):
+ 
+ class TestIDCTIVFloat(_TestIDCTBase):
+     def setup_method(self):
+-        self.rdt = np.float32
++        self.rdt = np.float64
+         self.dec = 5
+         self.type = 4
+ 

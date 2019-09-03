@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: mpldatacursor
+Version: 0.6.2
+Summary: Interactive data cursors for Matplotlib
+Home-page: https://github.com/joferkington/mpldatacursor/
+Author: Joe Kington
+Author-email: joferkington@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: matplotlib (>=0.9)
+Requires-Dist: numpy (>=1.1)
+
+UNKNOWN
+
+

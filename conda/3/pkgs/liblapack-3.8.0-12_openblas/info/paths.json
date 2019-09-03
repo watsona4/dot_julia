@@ -1,0 +1,17 @@
+{
+  "paths": [
+    {
+      "_path": "lib/liblapack.so",
+      "path_type": "softlink",
+      "sha256": "00f227e479ba481fb1de8ef02a16c5b6bf28e630182cb96ea202cb3ccfbb2a88",
+      "size_in_bytes": 29900736
+    },
+    {
+      "_path": "lib/liblapack.so.3",
+      "path_type": "softlink",
+      "sha256": "00f227e479ba481fb1de8ef02a16c5b6bf28e630182cb96ea202cb3ccfbb2a88",
+      "size_in_bytes": 29900736
+    }
+  ],
+  "paths_version": 1
+}

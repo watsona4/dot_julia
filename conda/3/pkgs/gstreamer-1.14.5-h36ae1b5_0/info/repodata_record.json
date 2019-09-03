@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "h36ae1b5_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "glib >=2.58.3,<3.0a0",
+    "libffi >=3.2.1,<3.3.0a0",
+    "libgcc-ng >=7.3.0",
+    "pcre >=8.41,<9.0a0",
+    "xz >=5.2.4,<5.3.0a0"
+  ],
+  "features": "",
+  "fn": "gstreamer-1.14.5-h36ae1b5_0.tar.bz2",
+  "md5": "62d136ee1d5f2a32021a0d9f4bffc2cd",
+  "name": "gstreamer",
+  "platform": "linux",
+  "sha256": "fe0c901a4fec949ba22f6891ca9fc0bb2253ccf9536f320e5652030706eaa836",
+  "size": 4710221,
+  "subdir": "linux-64",
+  "timestamp": 1559911746262,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/gstreamer-1.14.5-h36ae1b5_0.tar.bz2",
+  "version": "1.14.5"
+}

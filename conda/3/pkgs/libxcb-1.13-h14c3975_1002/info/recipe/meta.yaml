@@ -1,0 +1,90 @@
+# This file created by conda-build 3.15.1
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Sep 25 14:18:27 2018
+# ------------------------------------------------
+
+package:
+    name: libxcb
+    version: '1.13'
+source:
+    fn: libxcb-1.13.tar.bz2
+    sha256: 188c8752193c50ff2dbe89db4554c63df2e26a2e47b0fa415a70918b5b851daa
+    url: https://www.x.org/releases/individual/xcb/libxcb-1.13.tar.bz2
+build:
+    detect_binary_files_with_prefix: true
+    number: '1002'
+    string: h14c3975_1002
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - pkg-config 0.29.2 h14c3975_1003
+    host:
+        - bzip2 1.0.6 h14c3975_1002
+        - ca-certificates 2018.03.07 0
+        - libffi 3.2.1 hf484d3e_1005
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - ncurses 6.1 hf484d3e_1001
+        - openssl 1.0.2p h14c3975_1000
+        - pthread-stubs 0.4 h14c3975_1001
+        - python 3.7.0 hd21baee_1002
+        - readline 7.0 hf8c457e_1001
+        - sqlite 3.25.1 h67949de_1000
+        - tk 8.6.8 h84994c4_1000
+        - xcb-proto 1.13 py37h14c3975_1001
+        - xorg-libxau 1.0.8 h14c3975_1006
+        - xorg-libxdmcp 1.1.2 h14c3975_1007
+        - xorg-util-macros 1.19.2 h14c3975_1001
+        - xorg-xproto 7.0.31 h14c3975_1007
+        - xz 5.2.4 h14c3975_1001
+        - zlib 1.2.11 h14c3975_1003
+    run:
+        - libgcc-ng >=7.3.0
+        - pthread-stubs
+        - xorg-libxau
+        - xorg-libxdmcp
+test:
+    commands:
+        - test -f $PREFIX/lib/libxcb.so
+        - test -f $PREFIX/lib/libxcb-composite.so
+        - test -f $PREFIX/lib/libxcb-damage.so
+        - test -f $PREFIX/lib/libxcb-dpms.so
+        - test -f $PREFIX/lib/libxcb-dri2.so
+        - test -f $PREFIX/lib/libxcb-glx.so
+        - test -f $PREFIX/lib/libxcb-present.so
+        - test -f $PREFIX/lib/libxcb-randr.so
+        - test -f $PREFIX/lib/libxcb-record.so
+        - test -f $PREFIX/lib/libxcb-res.so
+        - test -f $PREFIX/lib/libxcb-screensaver.so
+        - test -f $PREFIX/lib/libxcb-shape.so
+        - test -f $PREFIX/lib/libxcb-shm.so
+        - test -f $PREFIX/lib/libxcb-sync.so
+        - test -f $PREFIX/lib/libxcb-xf86dri.so
+        - test -f $PREFIX/lib/libxcb-xfixes.so
+        - test -f $PREFIX/lib/libxcb-xinerama.so
+        - test -f $PREFIX/lib/libxcb-xkb.so
+        - test -f $PREFIX/lib/libxcb-xtest.so
+        - test -f $PREFIX/lib/libxcb-xv.so
+        - test -f $PREFIX/lib/libxcb-xvmc.so
+        - test -f $PREFIX/lib/libxcb-dri3.so
+        - test -f $PREFIX/lib/libxcb-render.so
+        - test -f $PREFIX/lib/libxcb-xinput.so
+        - conda inspect linkages -p $PREFIX $PKG_NAME
+about:
+    home: http://xcb.freedesktop.org/
+    license: MIT
+    license_family: MIT
+    license_file: COPYING
+    summary: This is the C-language Binding (XCB) package to the X Window System protocol
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - ccordoba12
+        - mingwandroid
+        - pkgw

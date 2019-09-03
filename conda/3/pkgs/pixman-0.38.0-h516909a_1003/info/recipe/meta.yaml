@@ -1,0 +1,51 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Apr  8 02:08:26 2019
+# ------------------------------------------------
+
+package:
+    name: pixman
+    version: 0.38.0
+source:
+    sha256: a7592bef0156d7c27545487a52245669b00cf7e70054505381cff2136d890ca8
+    url: http://cairographics.org/releases/pixman-0.38.0.tar.gz
+build:
+    number: '1003'
+    run_exports:
+        - pixman >=0.38.0,<1.0a0
+    string: h516909a_1003
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_6
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_6
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - make 4.2.1 h14c3975_2004
+        - pkg-config 0.29.2 h14c3975_1005
+    host:
+        - libgcc-ng 8.2.0 hdf63c60_1
+    run:
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libpixman-1.a
+about:
+    description: 'Pixman is a low-level software library for pixel manipulation, providing
+
+        features such as image compositing and trapezoid rasterization.
+
+        '
+    dev_url: https://cgit.freedesktop.org/pixman/
+    home: http://www.pixman.org/
+    license: MIT
+    license_file: COPYING
+    summary: A low-level software library for pixel manipulation.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - ccordoba12
+        - jakirkham
+        - ocefpaf

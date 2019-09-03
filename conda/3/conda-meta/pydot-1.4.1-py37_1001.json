@@ -1,0 +1,117 @@
+{
+  "build": "py37_1001",
+  "build_number": 1001,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "graphviz",
+    "pyparsing >=2.1.4",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/pydot-1.4.1-py37_1001",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/__pycache__/dot_parser.cpython-37.pyc",
+    "lib/python3.7/site-packages/__pycache__/pydot.cpython-37.pyc",
+    "lib/python3.7/site-packages/dot_parser.py",
+    "lib/python3.7/site-packages/pydot-1.4.1.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/pydot-1.4.1.dist-info/LICENSE",
+    "lib/python3.7/site-packages/pydot-1.4.1.dist-info/METADATA",
+    "lib/python3.7/site-packages/pydot-1.4.1.dist-info/RECORD",
+    "lib/python3.7/site-packages/pydot-1.4.1.dist-info/WHEEL",
+    "lib/python3.7/site-packages/pydot-1.4.1.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/pydot.py"
+  ],
+  "fn": "pydot-1.4.1-py37_1001.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/pydot-1.4.1-py37_1001",
+    "type": 1
+  },
+  "md5": "059775cda776bc39e50895a6eef455ef",
+  "name": "pydot",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/pydot-1.4.1-py37_1001.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.7/site-packages/__pycache__/dot_parser.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "add5f9ed210430beeb2e63e44a50e198751cbd09c1618c30b6d3fd418a8f2c37",
+        "sha256_in_prefix": "add5f9ed210430beeb2e63e44a50e198751cbd09c1618c30b6d3fd418a8f2c37",
+        "size_in_bytes": 11117
+      },
+      {
+        "_path": "lib/python3.7/site-packages/__pycache__/pydot.cpython-37.pyc",
+        "path_type": "hardlink",
+        "sha256": "633cb3dd2e5bef0e486fc994e0b20fbddf47605988dab1c497248ebcb90d8062",
+        "sha256_in_prefix": "633cb3dd2e5bef0e486fc994e0b20fbddf47605988dab1c497248ebcb90d8062",
+        "size_in_bytes": 45550
+      },
+      {
+        "_path": "lib/python3.7/site-packages/dot_parser.py",
+        "path_type": "hardlink",
+        "sha256": "0847c987666897880b900b83a00de93022ef626970ad434370687df73e5e349d",
+        "sha256_in_prefix": "0847c987666897880b900b83a00de93022ef626970ad434370687df73e5e349d",
+        "size_in_bytes": 14952
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pydot-1.4.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pydot-1.4.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7f3f76c36cb44ead459de9fb5e1b3bc2db925531ebe6d8106033b943abf00407",
+        "sha256_in_prefix": "7f3f76c36cb44ead459de9fb5e1b3bc2db925531ebe6d8106033b943abf00407",
+        "size_in_bytes": 1121
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pydot-1.4.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "4966165d8bef3c01bfc1aa65c822277f56e065f7b2d3e9f08a12ed2c3fc3a84a",
+        "sha256_in_prefix": "4966165d8bef3c01bfc1aa65c822277f56e065f7b2d3e9f08a12ed2c3fc3a84a",
+        "size_in_bytes": 2756
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pydot-1.4.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "c1dd43f4bfb4f4aab1977d1c1170abf8ba69980bc8319973b07bbeeb3d3007d8",
+        "sha256_in_prefix": "c1dd43f4bfb4f4aab1977d1c1170abf8ba69980bc8319973b07bbeeb3d3007d8",
+        "size_in_bytes": 684
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pydot-1.4.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "87f6959f9381d8811152331b8b6a6e72647fcf3589b64df4dd85ef861eb4349f",
+        "sha256_in_prefix": "87f6959f9381d8811152331b8b6a6e72647fcf3589b64df4dd85ef861eb4349f",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pydot-1.4.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "16b054fbece66db0dbd8b805c9a25ed54ab9bbe244e94dd6ffbc109d61cc0be1",
+        "sha256_in_prefix": "16b054fbece66db0dbd8b805c9a25ed54ab9bbe244e94dd6ffbc109d61cc0be1",
+        "size_in_bytes": 17
+      },
+      {
+        "_path": "lib/python3.7/site-packages/pydot.py",
+        "path_type": "hardlink",
+        "sha256": "5655bd83828b47f8429b670c4912ac4222944605cbd3e350d04aea8d9ff7e3ab",
+        "sha256_in_prefix": "5655bd83828b47f8429b670c4912ac4222944605cbd3e350d04aea8d9ff7e3ab",
+        "size_in_bytes": 54063
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "pydot",
+  "sha256": "bcf57d03e18ed518b87a9e569e13d0d4f8f8ed77ac3a14852a87bc6e58bb94c5",
+  "size": 40678,
+  "subdir": "linux-64",
+  "timestamp": 1564267452412,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/pydot-1.4.1-py37_1001.tar.bz2",
+  "version": "1.4.1"
+}

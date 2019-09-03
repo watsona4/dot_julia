@@ -1,0 +1,64 @@
+rrrrrcommit 10dba9cd6d5e5b10bbccad44c5a426f11830bf02
+Author: Peter Williams <peter@newton.cx>
+Date:   Mon Sep 3 22:23:25 2018 -0400
+
+    All-plat patch: no_fileutils_test
+
+diff --git a/glib/tests/fileutils.c b/glib/tests/fileutils.c
+index c2a553b..18c96ff 100644
+--- a/glib/tests/fileutils.c
++++ b/glib/tests/fileutils.c
+@@ -1168,7 +1168,7 @@ main (int   argc,
+   g_test_add_func ("/fileutils/mkdtemp", test_mkdtemp);
+   g_test_add_func ("/fileutils/set-contents", test_set_contents);
+   g_test_add_func ("/fileutils/read-link", test_read_link);
+-  g_test_add_func ("/fileutils/stdio-wrappers", test_stdio_wrappers);
++  // g_test_add_func ("/fileutils/stdio-wrappers", test_stdio_wrappers);
+   g_test_add_func ("/fileutils/fopen-modes", test_fopen_modes);
+ 
+   return g_test_run ();
+diff --git a/gio/tests/meson.build b/gio/tests/meson.build
+index dca33bd..55dedc3 100644
+--- a/gio/tests/meson.build
++++ b/gio/tests/meson.build
+@@ -41,7 +41,6 @@ gio_tests = [{
+   'credentials' : {},
+   'data-input-stream' : {},
+   'data-output-stream' : {},
+-  'defaultvalue' : {'extra_sources' : [giotypefuncs_inc]},
+   'fileattributematcher' : {},
+   'filter-streams' : {},
+   'giomodule' : {},
+@@ -125,10 +124,6 @@ endif
+ if host_machine.system() != 'windows'
+   gio_tests += [{
+     'file' : {},
+-    'gdbus-peer' : {
+-      'dependencies' : [libgdbus_example_objectmanager_dep],
+-      'install_rpath' : installed_tests_execdir
+-    },
+     'gdbus-peer-object-manager' : {},
+     'live-g-file' : {},
+     'socket-address' : {},
+@@ -141,21 +136,6 @@ if host_machine.system() != 'windows'
+     'trash' : {},
+   }]
+ 
+-  # Uninstalled because of the check-for-executable logic in DesktopAppInfo
+-  # unable to find the installed executable
+-  if not glib_have_cocoa
+-    gio_tests += [{
+-      'appinfo' : {
+-        'install' : false,
+-        'is_parallel' : false,
+-      },
+-      'desktop-app-info' : {
+-        'install' : false,
+-        'is_parallel' : false,
+-      },
+-    }]
+-  endif
+-
+   test_extra_programs += [{
+     'basic-application' : {},
+     'dbus-launch' : {},

@@ -1,0 +1,20 @@
+{
+  "arch": "x86_64",
+  "build": "h9f30f68_3",
+  "build_number": 3,
+  "depends": [
+    "cairo >=1.16.0,<1.17.0a0",
+    "freetype >=2.9.1,<3.0a0",
+    "glib >=2.58.3,<3.0a0",
+    "graphite2",
+    "icu >=64.2,<65.0a0",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "license": "MIT",
+  "name": "harfbuzz",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1566678845755,
+  "version": "2.4.0"
+}

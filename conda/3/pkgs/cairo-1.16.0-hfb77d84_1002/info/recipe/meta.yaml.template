@@ -1,0 +1,99 @@
+{% set version = "1.16.0" %}
+
+package:
+  name: cairo
+  version: {{ version }}
+
+source:
+  url: http://cairographics.org/releases/cairo-{{ version }}.tar.xz
+  sha256: 5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
+
+build:
+  number: 1002
+  run_exports:
+    - {{ pin_subpackage('cairo') }}
+
+requirements:
+  build:
+    - posix                 # [win]
+    - m2w64-xz              # [win]
+    - pkg-config            # [not win]
+    - libtool               # [not win]
+    - automake              # [not win]
+    - make                  # [not win]
+    - xz                    # [not win]
+    - {{ compiler('c') }}
+    - pthread-stubs         # [linux]
+    - xcb-proto             # [linux]
+    - xorg-renderproto      # [linux]
+    - xorg-xproto           # [linux]
+  host:
+    - freetype              # [not win]
+    - fontconfig            # [not win]
+    - glib                  # [not win]
+    - icu
+    - libpng
+    - libxcb                # [linux]
+    - pixman
+    - xorg-libice  # [linux]
+    - xorg-libsm  # [linux]
+    - xorg-libx11  # [linux]
+    - xorg-libxext  # [linux]
+    - xorg-libxrender  # [linux]
+    - zlib
+  run:
+    - freetype              # [not win]
+    - fontconfig            # [not win]
+    - glib                  # [not win]
+    - icu
+    - libpng
+    - libxcb                # [linux]
+    - pixman
+    - xorg-libice  # [linux]
+    - xorg-libsm  # [linux]
+    - xorg-libx11  # [linux]
+    - xorg-libxext  # [linux]
+    - xorg-libxrender  # [linux]
+    - zlib
+
+test:
+  commands:
+    # Check commands.
+    - cairo-trace --help  # [not win]
+
+    # Verify libraries.
+    {% set cairo_libs = [
+            "libcairo",
+            "libcairo-gobject",
+            "libcairo-script-interpreter",
+    ] %}
+    {% for each_cairo_lib in cairo_libs %}
+    - test -f $PREFIX/lib/{{ each_cairo_lib }}.a      # [not win]
+    - test -f $PREFIX/lib/{{ each_cairo_lib }}.dylib  # [osx]
+    - test -f $PREFIX/lib/{{ each_cairo_lib }}.so     # [linux]
+    {% endfor %}
+
+    # Check pkg-config files.
+    - test -f $PREFIX/lib/pkgconfig/cairo-quartz.pc   # [osx]
+    - test -f $PREFIX/lib/pkgconfig/cairo-xlib.pc     # [linux]
+
+    # check include files
+    - test -f $PREFIX/include/cairo/cairo.h           # [unix]
+
+    # check that cairo was built with fontconfig support
+    - grep -q "CAIRO_HAS_FC_FONT 1" $PREFIX/include/cairo/cairo-features.h  # [unix]
+
+about:
+  home: http://cairographics.org/
+  dev_url: https://gitlab.freedesktop.org/cairo/cairo
+  doc_url: https://www.cairographics.org/documentation/
+  license: LGPL 2.1 or MPL 1.1
+  license_file: COPYING
+  summary: 'Cairo is a 2D graphics library with support for multiple output devices.'
+
+extra:
+  recipe-maintainers:
+    - ccordoba12
+    - jakirkham
+    - ocefpaf
+    - pkgw

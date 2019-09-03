@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "h14c3975_1002",
+  "build_number": 1002,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "pthread-stubs",
+    "xorg-libxau",
+    "xorg-libxdmcp"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "libxcb",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1537885354501,
+  "version": "1.13"
+}

@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "h516909a_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "xorg-libxdmcp-1.1.3-h516909a_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "e95a160e60b2a327309a6d323a4d780e",
+  "name": "xorg-libxdmcp",
+  "platform": "linux",
+  "sha256": "6cd3f826a853bb26bf303b26560439b135ebc2a88c9806e70a8d6935cfeeea91",
+  "size": 18571,
+  "subdir": "linux-64",
+  "timestamp": 1552962164417,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-libxdmcp-1.1.3-h516909a_0.tar.bz2",
+  "version": "1.1.3"
+}

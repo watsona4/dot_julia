@@ -1,0 +1,44 @@
+# This file created by conda-build 3.14.4
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sat Sep 15 14:09:35 2018
+# ------------------------------------------------
+
+package:
+    name: xorg-renderproto
+    version: 0.11.1
+source:
+    fn: xorg-renderproto-0.11.1.tar.bz2
+    sha256: 06735a5b92b20759204e4751ecd6064a2ad8a6246bb65b3078b862a00def2537
+    url: https://www.x.org/releases/individual/proto/renderproto-0.11.1.tar.bz2
+build:
+    detect_binary_files_with_prefix: true
+    number: '1002'
+    string: h14c3975_1002
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_3
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_3
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - pkg-config 0.29.2 h14c3975_1003
+    host:
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - xorg-util-macros 1.19.2 h14c3975_1001
+    run:
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - conda inspect linkages -p $PREFIX $PKG_NAME
+about:
+    home: https://www.x.org/
+    license: MIT
+    license_family: MIT
+    license_file: COPYING
+    summary: C prototypes for the XRender extension to X11.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - pkgw

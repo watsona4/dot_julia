@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "h516909a_0",
+  "build_number": 0,
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "license": "MIT/X11 Derivative",
+  "license_family": "MIT",
+  "name": "libxkbcommon",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1560949611757,
+  "version": "0.8.4"
+}

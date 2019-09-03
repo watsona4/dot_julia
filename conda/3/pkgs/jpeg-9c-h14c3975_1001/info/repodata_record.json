@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "h14c3975_1001",
+  "build_number": 1001,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "jpeg-9c-h14c3975_1001.tar.bz2",
+  "license": "IJG",
+  "md5": "861fd0d02beba22de24ff9d27439b721",
+  "name": "jpeg",
+  "platform": "linux",
+  "sha256": "707ed22ef2008c79319b170ed09c59051c88c69e210062e5110596fd579d3d5d",
+  "size": 256746,
+  "subdir": "linux-64",
+  "timestamp": 1536858543725,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/jpeg-9c-h14c3975_1001.tar.bz2",
+  "version": "9c"
+}

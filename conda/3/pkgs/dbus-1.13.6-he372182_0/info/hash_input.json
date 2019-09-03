@@ -1,0 +1,6 @@
+{
+  "expat": "2.2",
+  "c_compiler": "gcc",
+  "glib": "2.58",
+  "c_compiler_version": "7"
+}

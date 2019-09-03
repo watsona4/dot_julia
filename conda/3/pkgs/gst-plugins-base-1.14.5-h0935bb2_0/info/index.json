@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "h0935bb2_0",
+  "build_number": 0,
+  "depends": [
+    "glib >=2.58.3,<3.0a0",
+    "gstreamer >=1.14.5,<2.0a0",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "xz >=5.2.4,<5.3.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "name": "gst-plugins-base",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1559912014254,
+  "version": "1.14.5"
+}

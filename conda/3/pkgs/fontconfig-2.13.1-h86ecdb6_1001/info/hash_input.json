@@ -1,0 +1,10 @@
+{
+  "freetype": "2.9.1",
+  "c_compiler": "gcc",
+  "libuuid": "2.32.1",
+  "icu": "64.2",
+  "libpng": "1.6.35",
+  "libxml2": "2.9",
+  "VERBOSE_AT": "V=1",
+  "c_compiler_version": "7"
+}

@@ -1,0 +1,109 @@
+From e5502889e8f4403c90ffa37113d64b40cd006982 Mon Sep 17 00:00:00 2001
+From: Peter Williams <peter@newton.cx>
+Date: Thu, 6 Sep 2018 00:10:44 -0400
+Subject: [PATCH 2/2] Generate .pc files when using the CMake build system
+
+Conda-forge wants them. Some rather manual hacking needed; this patch will
+need updating.
+---
+ CMakeLists.txt         | 30 ++++++++++++++++++++++++++++++
+ src/harfbuzz-icu.pc.in |  2 +-
+ 2 files changed, 31 insertions(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index f64f96d..5ef4915 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -265,6 +265,7 @@ if (HB_HAVE_FREETYPE)
+     message(FATAL_ERROR "HB_HAVE_FREETYPE was set, but we failed to find it. Maybe add a CMAKE_PREFIX_PATH= to your Freetype2 install prefix")
+   endif ()
+ 
++  list(APPEND private_pc_deps "freetype2 >= 12.0.6") # FIXME keep synched with configure.ac
+   list(APPEND THIRD_PARTY_LIBS ${FREETYPE_LIBRARIES})
+   include_directories(AFTER ${FREETYPE_INCLUDE_DIRS})
+   add_definitions(-DHAVE_FREETYPE=1)
+@@ -284,6 +285,7 @@ if (HB_HAVE_GRAPHITE2)
+ 
+   find_path(GRAPHITE2_INCLUDE_DIR graphite2/Font.h)
+   find_library(GRAPHITE2_LIBRARY graphite2)
++  list(APPEND private_pc_deps "graphite2") # FIXME keep synched with configure.ac
+ 
+   include_directories(${GRAPHITE2_INCLUDE_DIR})
+ 
+@@ -309,6 +311,7 @@ if (HB_HAVE_GLIB)
+   # https://github.com/WebKit/webkit/blob/master/Source/cmake/FindGLIB.cmake
+   find_package(PkgConfig)
+   pkg_check_modules(PC_GLIB QUIET glib-2.0)
++  list(APPEND private_pc_deps "glib-2.0 >= 2.19.1") # FIXME keep synched with configure.ac
+ 
+   find_library(GLIB_LIBRARIES NAMES glib-2.0 HINTS ${PC_GLIB_LIBDIR} ${PC_GLIB_LIBRARY_DIRS})
+   find_path(GLIBCONFIG_INCLUDE_DIR NAMES glibconfig.h HINTS ${PC_LIBDIR} ${PC_LIBRARY_DIRS} ${PC_GLIB_INCLUDEDIR} ${PC_GLIB_INCLUDE_DIRS} PATH_SUFFIXES glib-2.0/include)
+@@ -373,6 +376,7 @@ if (APPLE AND HB_HAVE_CORETEXT)
+     find_library(APPLICATION_SERVICES_FRAMEWORK ApplicationServices)
+     if (APPLICATION_SERVICES_FRAMEWORK)
+       list(APPEND THIRD_PARTY_LIBS ${APPLICATION_SERVICES_FRAMEWORK})
++      list(APPEND non_pc_libs ${APPLICATION_SERVICES_FRAMEWORK})
+     endif ()
+ 
+     mark_as_advanced(APPLICATION_SERVICES_FRAMEWORK)
+@@ -386,6 +390,7 @@ if (WIN32 AND HB_HAVE_UNISCRIBE)
+   list(APPEND project_headers ${PROJECT_SOURCE_DIR}/src/hb-uniscribe.h)
+ 
+   list(APPEND THIRD_PARTY_LIBS usp10 gdi32 rpcrt4)
++  list(APPEND non_pc_libs "-lusp10" "-lgdi32" "-lrpcrt4")
+ endif ()
+ 
+ if (WIN32 AND HB_HAVE_DIRECTWRITE)
+@@ -395,6 +400,7 @@ if (WIN32 AND HB_HAVE_DIRECTWRITE)
+   list(APPEND project_headers ${PROJECT_SOURCE_DIR}/src/hb-directwrite.h)
+ 
+   list(APPEND THIRD_PARTY_LIBS dwrite rpcrt4)
++  list(APPEND non_pc_libs "-ldwrite" "-lrpcrt4")
+ endif ()
+ 
+ if (HB_HAVE_GOBJECT)
+@@ -842,6 +848,30 @@ if (NOT SKIP_INSTALL_LIBRARIES AND NOT SKIP_INSTALL_ALL)
+   endif ()
+ endif ()
+ 
++# conda-forge: pkg-config file - FIXME: hardcoded deps
++if (NOT SKIP_INSTALL_LIBRARIES AND NOT SKIP_INSTALL_ALL)
++  string(REPLACE ";" " " private_pc_dep_str "${private_pc_deps}")
++  string(REPLACE ";" " " non_pc_lib_str "${non_pc_libs}")
++
++  foreach (pcin harfbuzz harfbuzz-icu)
++    file(READ ${PROJECT_SOURCE_DIR}/src/${pcin}.pc.in HBPC)
++    string(REPLACE "%prefix%" ${CMAKE_INSTALL_PREFIX} HBPC ${HBPC})
++    string(REPLACE "%exec_prefix%" "\${prefix}" HBPC ${HBPC})
++    string(REPLACE "%libdir%" "\${prefix}/${CMAKE_INSTALL_LIBDIR}" HBPC ${HBPC})
++    string(REPLACE "%includedir%" "\${prefix}/${CMAKE_INSTALL_INCLUDEDIR}" HBPC ${HBPC})
++    string(REPLACE "%VERSION%" "${HB_VERSION}" HBPC ${HBPC})
++    string(REPLACE "%libs_private%" "${non_pc_lib_str}" HBPC ${HBPC})
++    string(REPLACE "%requires_private%" "${private_pc_dep_str}" HBPC ${HBPC})
++    file(WRITE ${PROJECT_BINARY_DIR}/${pcin}.pc ${HBPC})
++
++    install(
++      FILES ${PROJECT_BINARY_DIR}/${pcin}.pc
++      DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig
++      COMPONENT pkgconfig
++    )
++  endforeach ()
++endif()
++
+ if (HB_BUILD_TESTS)
+   ## src/ executables
+   foreach (prog main test test-would-substitute test-size-params test-buffer-serialize hb-ot-tag test-unicode-ranges)
+diff --git a/src/harfbuzz-icu.pc.in b/src/harfbuzz-icu.pc.in
+index 949869a..3332a65 100644
+--- a/src/harfbuzz-icu.pc.in
++++ b/src/harfbuzz-icu.pc.in
+@@ -9,5 +9,5 @@ Version: %VERSION%
+ 
+ Requires: harfbuzz
+ Requires.private: icu-uc
+-Libs: -L${libdir} -lharfbuzz-icu
++Libs: -L${libdir} -lharfbuzz
+ Cflags: -I${includedir}/harfbuzz
+-- 
+2.17.2
+

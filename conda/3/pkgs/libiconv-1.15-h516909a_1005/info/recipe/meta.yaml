@@ -1,0 +1,49 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Mar 19 19:18:16 2019
+# ------------------------------------------------
+
+package:
+    name: libiconv
+    version: '1.15'
+source:
+    patches:
+        - glibc.patch
+    sha256: ccf536620a45458d26ba83887a983b96827001e92a13847b45e4925cc8913178
+    url: http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.15.tar.gz
+build:
+    number: '1005'
+    run_exports:
+        - libiconv >=1.15,<2.0a0
+    string: h516909a_1005
+requirements:
+    build:
+        - binutils_impl_linux-64 2.31.1 h6176602_1
+        - binutils_linux-64 2.31.1 h6176602_6
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_6
+        - libgcc-ng 7.3.0 hdf63c60_0
+        - libstdcxx-ng 7.3.0 hdf63c60_0
+        - make 4.2.1 h14c3975_2004
+    host:
+        - libgcc-ng 7.3.0 hdf63c60_0
+    run:
+        - libgcc-ng >=7.3.0
+test:
+    commands:
+        - iconv --help
+        - conda inspect linkages -p $PREFIX $PKG_NAME
+about:
+    home: https://www.gnu.org/software/libiconv/
+    license: GPL and LGPL
+    license_file: COPYING
+    summary: Provides iconv for systems which don't have one (or that cannot convert
+        from/to Unicode.)
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - jhamman
+        - ocefpaf
+        - scopatz

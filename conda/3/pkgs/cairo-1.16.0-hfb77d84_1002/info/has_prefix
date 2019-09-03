@@ -1,0 +1,16 @@
+/home/conda/feedstock_root/build_artifacts/cairo_1563587998202/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place binary lib/cairo/libcairo-trace.a
+/home/conda/feedstock_root/build_artifacts/cairo_1563587998202/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place binary lib/cairo/libcairo-trace.so
+/opt/anaconda1anaconda2anaconda3 text bin/cairo-trace
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-fc.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-ft.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-gobject.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-pdf.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-png.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-ps.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-script.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-svg.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-xcb-shm.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-xcb.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-xlib-xrender.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo-xlib.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/cairo.pc

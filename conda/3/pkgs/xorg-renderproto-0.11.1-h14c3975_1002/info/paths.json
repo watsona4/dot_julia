@@ -1,0 +1,25 @@
+{
+  "paths": [
+    {
+      "_path": "include/X11/extensions/render.h",
+      "path_type": "hardlink",
+      "sha256": "ef3f4aede97e1143656f9169868429d3b180fb8dfb0cbd4aa853e4f9a97a7a52",
+      "size_in_bytes": 7020
+    },
+    {
+      "_path": "include/X11/extensions/renderproto.h",
+      "path_type": "hardlink",
+      "sha256": "f34edcf5d8f289b810596ba7f646c4d07e14aa50590a11e1462993e5bccd732c",
+      "size_in_bytes": 14081
+    },
+    {
+      "_path": "lib/pkgconfig/renderproto.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "eca725ec1d03521bd036aefa72de2e16525e60b1d232d965acf26630ee04e4fb",
+      "size_in_bytes": 215
+    }
+  ],
+  "paths_version": 1
+}

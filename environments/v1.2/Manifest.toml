@@ -9177,6 +9177,12 @@ git-tree-sha1 = "3ea391c3211f799df20396d256cee5c8bd755605"
 uuid = "d330b81b-6aea-500a-939a-2ce795aea3ee"
 version = "2.8.1"
 
+[[PyRhodium]]
+deps = ["Conda", "DataFrames", "DataStructures", "Distributions", "IterableTables", "PyCall", "PyPlot", "Random"]
+git-tree-sha1 = "22ec372684d33a1b1e60ae5fb839b9c0aa455f5d"
+uuid = "e525b322-f4d5-5e8a-9e4c-f31b6ef474ca"
+version = "0.1.0"
+
 [[QDLDL]]
 deps = ["AMD", "LinearAlgebra", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "bdd19e6df448f46d994c7db6c6e7d0dae8b587e8"

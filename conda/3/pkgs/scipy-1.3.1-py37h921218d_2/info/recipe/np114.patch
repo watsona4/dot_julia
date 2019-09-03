@@ -1,0 +1,14 @@
+diff --git a/scipy/interpolate/tests/test_bsplines.py b/scipy/interpolate/tests/test_bsplines.py
+index 8b66610..f3db8c6 100755
+--- a/scipy/interpolate/tests/test_bsplines.py
++++ b/scipy/interpolate/tests/test_bsplines.py
+@@ -615,8 +615,7 @@ class TestInterop(object):
+         b = BSpline(*tck)
+         assert_allclose(y, b(x), atol=1e-15)
+ 
+-    @pytest.mark.xfail(NumpyVersion(np.__version__) < '1.14.0',
+-                       reason='requires NumPy >= 1.14.0')
++    @pytest.mark.xfail(reason='requires SciPy to be built with NumPy >= 1.14.0')
+     def test_splrep_errors(self):
+         # test that both "old" and "new" splrep raise for an n-D ``y`` array
+         # with n > 1

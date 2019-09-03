@@ -1,0 +1,101 @@
+{% set version = "2.13.1" %}
+{% set am_version = "1.15" %} # keep synchronized with build.sh
+{% set posix = 'm2-' if win else '' %}
+{% set native = 'm2w64-' if win else '' %}
+
+package:
+  name: fontconfig
+  version: {{ version }}
+
+source:
+  url: http://www.freedesktop.org/software/fontconfig/release/fontconfig-{{ version }}.tar.bz2
+  sha256: f655dd2a986d7aa97e052261b36aa67b0a64989496361eca8d604e6414006741
+  patches:
+    # This patch won't be submitted upstream. It's use here is to ensure the prefix used
+    # to refer to the `fonts.conf` file.
+    - fcf.patch       # [linux]
+    - 0001-Disable-test-bz106632.patch                                 # [win or osx]
+    - 0002-Disable-some-more-Windows-unfriendly-tests.patch            # [win]
+    - 0003-Import-MSVC-compatibility-files-from-ShiftMediaProje.patch  # [win]
+    - 0004-SMB-getopt.h-also-add-this.patch                            # [win]
+    - 0005-Make-private-pkg-config-requirements-public.patch           # [win]
+
+build:
+  number: 1001
+  binary_has_prefix_files:        # [unix]
+    - lib/libfontconfig.so.1.*    # [linux]
+    - lib/libfontconfig.*.dylib*  # [osx]
+  run_exports:
+    # remove symbols basically never (once, in 2006).
+    #    https://abi-laboratory.pro/tracker/timeline/fontconfig/
+    - {{ pin_subpackage('fontconfig') }}
+
+requirements:
+  build:
+    - {{posix}}autoconf
+    - {{posix}}automake{{ am_version }}  # [win]
+    - automake                           # [not win]
+    - gettext
+    - {{posix}}gperf
+    - {{posix}}libtool
+    - {{posix}}patch
+    - {{native}}binutils                 # [win]
+    - {{native}}pkg-config
+    - {{native}}xz
+    - posix                              # [win]
+    - {{ compiler('c') }}                # [not win]
+    - vs2015_win-64                      # [win] -- no VS2008 since it's too much of a hassle to support
+    - make
+  host:
+    - freetype
+    - icu
+    - libpng
+    - libxml2
+    - libiconv  # [not linux]
+    - libuuid   # [linux]
+  run:
+    - freetype
+    - icu
+    - libpng
+    - libxml2
+    - libiconv  # [not linux]
+    - libuuid   # [linux]
+
+test:
+  commands:
+    # Test CLI.
+    - fc-cache --help
+    - fc-cat --help
+    - fc-list --help
+    - fc-match --help
+    - fc-pattern --help
+    - fc-query --help
+    - fc-scan --help
+    - fc-validate --help
+
+    # Test for libraries.
+    {% set lib_idents = [ "fontconfig" ] %}
+    {% for lib_ident in lib_idents %}
+    - test -f $PREFIX/lib/lib{{ lib_ident }}.a  # [not win]
+    - test -f $PREFIX/lib/lib{{ lib_ident }}${SHLIB_EXT}  # [not win]
+    - if not exist %PREFIX%/Library/lib/{{ lib_ident }}.lib exit /b 1  # [win]
+    {% endfor %}
+
+about:
+  home: http://www.freedesktop.org/wiki/Software/fontconfig/
+  license: MIT
+  license_file: COPYING
+  summary: 'A library for configuring and customizing font access'
+  description: |
+    Fontconfig is a library designed to provide system-wide font configuration,
+    customization and application access.
+  doc_url: https://www.freedesktop.org/software/fontconfig/fontconfig-user.html
+  dev_url: https://cgit.freedesktop.org/fontconfig/
+
+extra:
+  recipe-maintainers:
+    - ccordoba12
+    - jakirkham
+    - mingwandroid
+    - ocefpaf
+    - pkgw

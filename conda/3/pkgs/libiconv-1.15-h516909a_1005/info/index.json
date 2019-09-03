@@ -1,0 +1,14 @@
+{
+  "arch": "x86_64",
+  "build": "h516909a_1005",
+  "build_number": 1005,
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "license": "GPL and LGPL",
+  "name": "libiconv",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1553023341587,
+  "version": "1.15"
+}

@@ -1,0 +1,9 @@
+/home/conda/feedstock_root/build_artifacts/graphviz_1563321795625/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl binary lib/libgvc.so.6.0.0
+/home/conda/feedstock_root/build_artifacts/graphviz_1563321795625/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl binary lib/libgvpr.so.2.0.0
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libcdt.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libcgraph.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libgvc.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libgvpr.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/liblab_gamut.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libpathplan.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libxdot.pc

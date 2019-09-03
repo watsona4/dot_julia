@@ -1,0 +1,10 @@
+{
+  "c_compiler_version": "7",
+  "cairo": "1.16",
+  "c_compiler": "gcc",
+  "cxx_compiler_version": "7",
+  "glib": "2.58",
+  "cxx_compiler": "gxx",
+  "freetype": "2.9.1",
+  "icu": "64.2"
+}

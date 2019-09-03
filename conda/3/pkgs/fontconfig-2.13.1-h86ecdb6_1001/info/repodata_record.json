@@ -1,0 +1,28 @@
+{
+  "arch": "x86_64",
+  "build": "h86ecdb6_1001",
+  "build_number": 1001,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "freetype >=2.9.1,<3.0a0",
+    "icu >=64.2,<65.0a0",
+    "libgcc-ng >=7.3.0",
+    "libpng >=1.6.35,<1.7.0a0",
+    "libuuid >=2.32.1,<3.0a0",
+    "libxml2 >=2.9.9,<2.10.0a0"
+  ],
+  "features": "",
+  "fn": "fontconfig-2.13.1-h86ecdb6_1001.tar.bz2",
+  "license": "MIT",
+  "md5": "51b20857a0d8b2434696f3515a1098d6",
+  "name": "fontconfig",
+  "platform": "linux",
+  "sha256": "47c4f09db470e6d387f5a5739059f70277d0b5ee5dbb2fe8bddea8e1ac47241a",
+  "size": 348321,
+  "subdir": "linux-64",
+  "timestamp": 1563555680112,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/fontconfig-2.13.1-h86ecdb6_1001.tar.bz2",
+  "version": "2.13.1"
+}

@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "h14c3975_1002",
+  "build_number": 1002,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "pthread-stubs",
+    "xorg-libxau",
+    "xorg-libxdmcp"
+  ],
+  "features": "",
+  "fn": "libxcb-1.13-h14c3975_1002.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "ca4eb860b5528d5c6de8d97021d9ef78",
+  "name": "libxcb",
+  "platform": "linux",
+  "sha256": "d97ebd364177e6b1d87ed33c82c442cb2e277c8d6b6a921be9bb1ec0032c8683",
+  "size": 405215,
+  "subdir": "linux-64",
+  "timestamp": 1537885354501,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libxcb-1.13-h14c3975_1002.tar.bz2",
+  "version": "1.13"
+}

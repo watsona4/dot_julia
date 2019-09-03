@@ -1,0 +1,52 @@
+{
+  "build": "hc9558a2_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libllvm8 8.0.1 hc9558a2_0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "extracted_package_dir": "/home/ec2-user/.julia/conda/3/pkgs/libclang-8.0.1-hc9558a2_0",
+  "features": "",
+  "files": [
+    "lib/libclang.so",
+    "lib/libclang.so.8"
+  ],
+  "fn": "libclang-8.0.1-hc9558a2_0.tar.bz2",
+  "license": "NCSA",
+  "link": {
+    "source": "/home/ec2-user/.julia/conda/3/pkgs/libclang-8.0.1-hc9558a2_0",
+    "type": 1
+  },
+  "md5": "a69708ecededa53dcab1211e3e915e0d",
+  "name": "libclang",
+  "package_tarball_full_path": "/home/ec2-user/.julia/conda/3/pkgs/libclang-8.0.1-hc9558a2_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libclang.so",
+        "path_type": "softlink",
+        "sha256": "4169587e7fb75bb91a8ffbb57cbf8469f928fe027c80f5295df607000a17762c",
+        "size_in_bytes": 24898376
+      },
+      {
+        "_path": "lib/libclang.so.8",
+        "path_type": "hardlink",
+        "sha256": "4169587e7fb75bb91a8ffbb57cbf8469f928fe027c80f5295df607000a17762c",
+        "sha256_in_prefix": "4169587e7fb75bb91a8ffbb57cbf8469f928fe027c80f5295df607000a17762c",
+        "size_in_bytes": 24898376
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "cc3dd8d784cc174f6feb689a9eea20382ec0d52ef527d91ca3b8c78a45706c3c",
+  "size": 7718652,
+  "subdir": "linux-64",
+  "timestamp": 1566202931514,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libclang-8.0.1-hc9558a2_0.tar.bz2",
+  "version": "8.0.1"
+}

@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "hf484d3e_1000",
+  "build_number": 1000,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "nspr-4.20-hf484d3e_1000.tar.bz2",
+  "license": "MPL 2",
+  "md5": "e4b0d95454df9f6568e53d1f5c9a09c2",
+  "name": "nspr",
+  "platform": "linux",
+  "sha256": "cdb77bbf866d8abc8e6c2b3df9ad164ea5de539af92f8e873639c1af691f08c7",
+  "size": 1594237,
+  "subdir": "linux-64",
+  "timestamp": 1537058898248,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/nspr-4.20-hf484d3e_1000.tar.bz2",
+  "version": "4.20"
+}

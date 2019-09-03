@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "hf484d3e_1000",
+  "build_number": 1000,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "features": "",
+  "fn": "graphite2-1.3.13-hf484d3e_1000.tar.bz2",
+  "license": "LGPLv2",
+  "md5": "160e65b3904ab30a4a6b0e418b09255f",
+  "name": "graphite2",
+  "platform": "linux",
+  "sha256": "b6a2484d17ac9f913c86e29e12370ade4e8450af3bed21391620ff5e9eccb4c6",
+  "size": 111221,
+  "subdir": "linux-64",
+  "timestamp": 1545518572760,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/graphite2-1.3.13-hf484d3e_1000.tar.bz2",
+  "version": "1.3.13"
+}

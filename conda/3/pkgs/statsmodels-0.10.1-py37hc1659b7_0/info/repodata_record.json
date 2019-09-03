@@ -1,0 +1,28 @@
+{
+  "arch": "x86_64",
+  "build": "py37hc1659b7_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "numpy >=1.14.6,<2.0a0",
+    "pandas >=0.14",
+    "patsy >=0.4.0",
+    "python >=3.7,<3.8.0a0",
+    "scipy >=0.14"
+  ],
+  "features": "",
+  "fn": "statsmodels-0.10.1-py37hc1659b7_0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "md5": "ea8f18d8e6b69d1344c1f02a2092c93c",
+  "name": "statsmodels",
+  "platform": "linux",
+  "sha256": "02190496c6f2859a08453a424794c3b72a8162007460a29993871a517afe0831",
+  "size": 9980255,
+  "subdir": "linux-64",
+  "timestamp": 1563542028522,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/statsmodels-0.10.1-py37hc1659b7_0.tar.bz2",
+  "version": "0.10.1"
+}
