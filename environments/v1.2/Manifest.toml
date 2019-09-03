@@ -9272,6 +9272,12 @@ git-tree-sha1 = "f57e05782fd8d5f5f146fc76c494f2a1a63b9ce2"
 uuid = "78ae1a1f-1d5d-5174-b61c-66e31b2346dc"
 version = "0.0.1"
 
+[[QuantumOptics]]
+deps = ["Arpack", "DiffEqCallbacks", "FFTW", "LinearAlgebra", "OrdinaryDiffEq", "Random", "RecursiveArrayTools", "SparseArrays", "StochasticDiffEq", "Test", "WignerSymbols"]
+git-tree-sha1 = "14f1f5ba43018b22a7e2f1c42f0467d5b435f004"
+uuid = "6e0679c1-51ea-5a7c-ac74-d61b76210b0c"
+version = "0.6.5"
+
 [[QuartzImageIO]]
 deps = ["ColorTypes", "ColorVectorSpace", "FileIO", "FixedPointNumbers", "ImageCore", "Libdl"]
 git-tree-sha1 = "813432448a8f06a1316943c3456dcf043afacd96"
@@ -10512,6 +10518,12 @@ deps = ["Colors", "Dates", "Observables", "OrderedCollections", "Test"]
 git-tree-sha1 = "c53befc70c6b91eaa2a9888c2f6ac2d92720a81b"
 uuid = "cc8bc4a8-27d6-5769-a93b-9d913e69aa62"
 version = "0.6.1"
+
+[[WignerSymbols]]
+deps = ["LinearAlgebra", "Primes", "Test"]
+git-tree-sha1 = "d241475d2626e78aed46d80d474781bb21601b31"
+uuid = "9f57e263-0b3d-5e2e-b1be-24f2bb48858b"
+version = "0.3.1"
 
 [[WiltonInts84]]
 deps = ["LinearAlgebra", "Test"]

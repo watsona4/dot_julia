@@ -1,0 +1,5 @@
+docs/build
+docs/source/examples/
+docs/source/tutorial/_tutorial.rst
+.ipynb_checkpoints
+*_files/
