@@ -9558,6 +9558,12 @@ git-tree-sha1 = "638a2f8a8c5a0f26cb1f789e0dee311e50a3551e"
 uuid = "f4cd0703-4c39-5e89-823d-694fbb07b12c"
 version = "1.0.0"
 
+[[ReactionNetworkImporters]]
+deps = ["CSVFiles", "DataFrames", "DataStructures", "DiffEqBase", "DiffEqBiological", "LinearAlgebra", "OrdinaryDiffEq", "Plots", "SparseArrays", "Sundials", "Test", "TimerOutputs"]
+git-tree-sha1 = "e64a79ed1db74dbfca03a6104647174ed69600f1"
+uuid = "b4db0fb7-de2a-5028-82bf-5021f5cfa881"
+version = "0.1.5"
+
 [[Reactive]]
 deps = ["DataStructures", "Distributed", "Test"]
 git-tree-sha1 = "5862d915387ebb954016f50a88e34f79a9e5fcd2"
