@@ -11327,6 +11327,12 @@ git-tree-sha1 = "c0d72de24b1dab86ccff5d77cccca0cea0ff0d65"
 uuid = "97a7e826-69e2-510e-8af8-254736c4b599"
 version = "0.1.0"
 
+[[SubstitutionModels]]
+deps = ["BioSymbols", "LinearAlgebra", "StaticArrays"]
+git-tree-sha1 = "13860d3bc5538677d35dce2fa17046764c84ab5f"
+uuid = "8365b1bb-bd83-58ee-a267-f2965fc81c73"
+version = "0.4.0"
+
 [[SuiteSparse]]
 deps = ["Libdl", "LinearAlgebra", "Serialization", "SparseArrays"]
 uuid = "4607b0f0-06f3-5cda-b6b1-a6196a1729e9"
