@@ -11757,6 +11757,12 @@ git-tree-sha1 = "8355cc559e85469cd4dbe927c375f61d3750e002"
 uuid = "b718987f-49a8-5099-9789-dcd902bef87d"
 version = "0.3.0"
 
+[[TheCannon]]
+deps = ["ForwardDiff", "LinearAlgebra", "Optim", "Statistics"]
+git-tree-sha1 = "fa576ca0604eccc1223afdf61b551a74a9dde175"
+uuid = "3c28d9fa-eaec-11e8-3371-6131c0bd32f6"
+version = "0.2.0"
+
 [[Thrift]]
 deps = ["BinaryProvider", "Distributed", "Libdl", "Logging", "Sockets", "Test"]
 git-tree-sha1 = "d12121e266b1deb7149ec6ef91aeda521e271446"
