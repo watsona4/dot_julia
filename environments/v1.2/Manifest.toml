@@ -12066,6 +12066,12 @@ git-tree-sha1 = "d2ef11e8178d7df132ac93ab2ae7846c1e1d7f59"
 uuid = "d406e672-ae96-11e9-2f05-a59ccbfcb275"
 version = "0.1.0"
 
+[[TuringPatterns]]
+deps = ["ColorTypes", "FileIO", "FixedPointNumbers", "Random", "Requires"]
+git-tree-sha1 = "e508127f7ef9a8c1d658c013b4c929edb470d6bb"
+uuid = "fde5428d-3bf0-5ade-b94a-d334303c4d77"
+version = "0.0.3"
+
 [[Twiddle]]
 git-tree-sha1 = "475f0c0e1633b51e81cf92099356fcb4029a9e19"
 uuid = "7200193e-83a8-5a55-b20d-5d36d44a0795"
