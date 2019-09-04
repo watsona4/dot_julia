@@ -12576,6 +12576,12 @@ git-tree-sha1 = "d241475d2626e78aed46d80d474781bb21601b31"
 uuid = "9f57e263-0b3d-5e2e-b1be-24f2bb48858b"
 version = "0.3.1"
 
+[[WikiText]]
+deps = ["DataDeps"]
+git-tree-sha1 = "b786632a9f3356c8577916dad40337e37825f786"
+uuid = "b61fe8a8-5644-50f8-8f27-7d732010995a"
+version = "0.1.0"
+
 [[WiltonInts84]]
 deps = ["LinearAlgebra", "Test"]
 git-tree-sha1 = "1f5474dac833eaf554c40e7e1da331eb90d1bc84"
