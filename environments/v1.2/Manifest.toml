@@ -11946,6 +11946,12 @@ git-tree-sha1 = "3961071b858c921e81468cf08d08bea81e20e051"
 uuid = "d94bfb22-46ad-56c3-87d0-f6c298cb800e"
 version = "0.1.0"
 
+[[TrafficAssignment]]
+deps = ["BinDeps", "Distributed", "Libdl", "LightGraphs", "LinearAlgebra", "Optim", "Printf", "SparseArrays", "Test"]
+git-tree-sha1 = "74cb234f1d37f22f817caf727ec62e031bfec772"
+uuid = "735ffce8-66c7-5b61-a90f-89c46d1a79d5"
+version = "0.5.0"
+
 [[Trajectories]]
 deps = ["RecipesBase", "Tables", "Test"]
 git-tree-sha1 = "12e44c9a3517570935b14f9e3969fe2134cafff2"
