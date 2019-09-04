@@ -12606,6 +12606,12 @@ git-tree-sha1 = "808380e0a0483e134081cc54150be4177959b5f4"
 uuid = "1b915085-20d7-51cf-bf83-8f477d6f5128"
 version = "0.3.1"
 
+[[Winston]]
+deps = ["Cairo", "Colors", "Compat", "Dates", "Graphics", "Gtk", "IniFile", "LinearAlgebra", "NaNMath", "Pkg", "Printf", "REPL", "Random", "Reexport", "SparseArrays", "StatsBase"]
+git-tree-sha1 = "0903a1b0f2ac9304d3ad47e63c0d15d76ff6c9ac"
+uuid = "bd07be1c-e76f-5ff0-9c0b-f51ef45303c6"
+version = "0.15.0"
+
 [[WoodburyMatrices]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "Test"]
 git-tree-sha1 = "21772c33b447757ec7d3e61fcdfb9ea5c47eedcf"
