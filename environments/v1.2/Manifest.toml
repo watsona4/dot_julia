@@ -12855,3 +12855,9 @@ deps = ["DelimitedFiles", "GLPK", "JuMP", "LinearAlgebra", "SparseArrays", "Test
 git-tree-sha1 = "d32c0e6d8a1285784abcab18b8b1ee8976a5223a"
 uuid = "077cf62c-ad2d-5edd-99ec-638372f8b004"
 version = "0.4.0"
+
+[[uCSV]]
+deps = ["DataFrames", "Dates", "Pkg", "Test"]
+git-tree-sha1 = "9c2826bb96f66870192af9a027153c8e7b8fc087"
+uuid = "e0b4c2ea-889f-54df-a5e0-fe74b3c892fd"
+version = "0.1.3"
