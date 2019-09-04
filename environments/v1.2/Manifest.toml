@@ -12072,6 +12072,12 @@ git-tree-sha1 = "e508127f7ef9a8c1d658c013b4c929edb470d6bb"
 uuid = "fde5428d-3bf0-5ade-b94a-d334303c4d77"
 version = "0.0.3"
 
+[[TwentyFour]]
+deps = ["Combinatorics", "Test"]
+git-tree-sha1 = "1899ea8469da9ff38c67f8ea13576bcba77efd21"
+uuid = "7a58b676-71cc-56e9-9a9e-f0a0a3b766b0"
+version = "0.0.2"
+
 [[Twiddle]]
 git-tree-sha1 = "475f0c0e1633b51e81cf92099356fcb4029a9e19"
 uuid = "7200193e-83a8-5a55-b20d-5d36d44a0795"
