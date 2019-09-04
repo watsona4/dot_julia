@@ -12105,6 +12105,11 @@ git-tree-sha1 = "a029218687847b3f0ef0944d7e60edcc0d938ba7"
 uuid = "687fb87b-adea-59d5-9be9-82253b54685d"
 version = "0.1.0"
 
+[[TypedDelegation]]
+git-tree-sha1 = "445e9a354746e274e308468ec2456a9cf130dcc0"
+uuid = "bc724e2e-2423-57c2-8f10-788c81380fc8"
+version = "0.5.0"
+
 [[TypedTables]]
 deps = ["SplitApplyCombine", "Tables", "Unicode"]
 git-tree-sha1 = "519533acaccc7d84e214426f69820489e1f46617"
