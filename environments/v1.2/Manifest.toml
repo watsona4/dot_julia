@@ -11721,6 +11721,12 @@ git-tree-sha1 = "e2aace5b4181521ae11fc048a4d8b27c83a0880c"
 uuid = "c5d3f3f7-f850-59f6-8a2e-ffc6dc1317ea"
 version = "0.1.0"
 
+[[TexTables]]
+deps = ["Compat", "DataFrames", "DataStructures", "Distributions", "Formatting", "GLM", "LinearAlgebra", "Parameters", "Random", "Statistics", "StatsBase", "StatsModels", "Test"]
+git-tree-sha1 = "bb81b5f1e0d7c178f0a500b04d1974767c76b5a4"
+uuid = "ebf5ac4f-3ec1-555f-9ac9-3d72ed88c471"
+version = "0.1.0"
+
 [[TextParse]]
 deps = ["CodecZlib", "DataStructures", "Dates", "DoubleFloats", "Mmap", "Nullables", "PooledArrays", "WeakRefStrings"]
 git-tree-sha1 = "26b43d6746b52cca13c4cdef90f89652273b413e"
