@@ -11639,6 +11639,12 @@ git-tree-sha1 = "fe05006100a59054e0b7e25dab4f0f42bf068a71"
 uuid = "2b1cd6f4-158b-5933-849b-48df756daf9e"
 version = "0.1.0"
 
+[[TensorBoardLogger]]
+deps = ["CRC32c", "ColorTypes", "FileIO", "ImageCore", "ProtoBuf", "StatsBase"]
+git-tree-sha1 = "24509c512a822412fc99ed41c275cc1aeca5c1d6"
+uuid = "899adc3e-224a-11e9-021f-63837185c80f"
+version = "0.1.2"
+
 [[TensorCast]]
 deps = ["LazyArrays", "LinearAlgebra", "MacroTools", "Random", "RecursiveArrayTools", "Requires"]
 git-tree-sha1 = "27fbe925924b7c0aa266b85d36a21444ca427ced"
