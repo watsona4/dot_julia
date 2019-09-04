@@ -1,0 +1,11 @@
+language: julia
+os: linux
+
+julia:
+        - 0.7
+
+notifications:
+    email: false
+
+script:
+    - julia -e 'import Pkg; Pkg.clone(pwd()); Pkg.test("Watershed")'

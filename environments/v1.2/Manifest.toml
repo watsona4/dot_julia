@@ -12498,6 +12498,12 @@ git-tree-sha1 = "edcdc194ce5bacc7ef8d3c1ccb15e0ff9b3c3c55"
 uuid = "7c60b362-08f4-5b14-8680-cd67a3e18348"
 version = "0.0.1"
 
+[[Watershed]]
+deps = ["DataStructures", "StatsBase", "Test"]
+git-tree-sha1 = "e4a7a5f5c266ab330c20b282cbdb76c8aad00e27"
+uuid = "adaf3d07-42b2-577a-8487-f34ffa1a67e4"
+version = "0.7.0"
+
 [[Wavelets]]
 deps = ["Compat", "DSP", "Reexport"]
 git-tree-sha1 = "4a53da1099523e7191ee5b95d6e5e32a88913b6d"
