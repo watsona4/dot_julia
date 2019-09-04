@@ -1,0 +1,33 @@
+language: julia
+
+os:
+  - linux
+
+julia:
+  - 0.6.0
+  - 0.6.4
+  - 0.7
+  - 1.0
+  - 1.1
+  - nightly
+
+matrix:
+  include:
+    - os: osx
+      julia: 1.0
+    - os: osx
+      julia: 1.1
+  allow_failures:
+    - julia: nightly
+
+notifications:
+  email:
+    mail:
+      recipients:
+        - nslindquist@csbsju.edu
+      on_success: never # default: change
+      on_failure: always # default: always
+
+after_success:
+  - julia -e 'Pkg.add("Documenter.jl")'
+  - julia -e 'cd(Pkg.dir("TypeStability")); include(joinpath("docs", "make.jl"))'

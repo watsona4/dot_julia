@@ -1,0 +1,16 @@
+name = "TypeStability"
+uuid = "73ec333a-e3df-5994-9c7a-5ef2077ce03e"
+author = ["Neil Lindquist <nslindquist@csbsju.edu>"]
+version = "1.0.0"
+
+[deps]
+Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
+
+[compat]
+Compat = "≥ 0.62.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

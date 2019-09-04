@@ -12094,6 +12094,12 @@ git-tree-sha1 = "d539b357e7695d80c75f5b066cec5d8c45886ab2"
 uuid = "94a5cd58-49a0-5741-bd07-fa4f4be8babf"
 version = "1.1.0"
 
+[[TypeStability]]
+deps = ["Compat"]
+git-tree-sha1 = "cdcf5915815b732f34e14937c7f327677e2daf0c"
+uuid = "73ec333a-e3df-5994-9c7a-5ef2077ce03e"
+version = "1.0.0"
+
 [[TypedTables]]
 deps = ["SplitApplyCombine", "Tables", "Unicode"]
 git-tree-sha1 = "519533acaccc7d84e214426f69820489e1f46617"
