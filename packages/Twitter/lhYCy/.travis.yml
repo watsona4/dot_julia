@@ -1,0 +1,21 @@
+language: julia
+os:
+- linux
+julia:
+- 0.7
+- 1.0
+- nightly
+matrix:
+  allow_failures:
+  - julia: nightly
+notifications:
+  email: false
+after_success:
+- julia -e 'using Pkg;cd(Pkg.dir("Twitter")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(process_folder());
+  Codecov.submit(process_folder())'
+env:
+  global:
+  - secure: C4k0b/3yhISWDPl5BuYg8oo4GNeeO/cvhnpe2ESLD7rek1eSgeYmbLz6D6HRu5V6lQjjoUEGpnMid5Drx51jsumov11Br2XiQf7JmUc9Bks0gXcUA7b7HGaZCaG3bUChrL7B/75CU2FCj+7gmZXNJtMTOqYdabsijICOqzqxptY=
+  - secure: UA7IyP6LuylTT8TxkwTj1HfqJji1snC0tKw1Mm7bX0svWNanA+1GxTLwPWcJ3zWY8Er747rvBwRcWCc7I/6tN6yI68GEjb8SNfzYTiHbAvv+Rk0Z6v2dM5gnyNED0vwJpYpfPMf6oh4SlGA7gbXLatkzlhxrL8q/dzffOkjQCXA=
+  - secure: RnDA1ysXfxeW6znDzzgeNFmZJ2arWDaItqAfGQpT/ni7NGOtzi/PXNI8kB263drcOOAvbp/YN3eMeJcnck9uogLTHtT4Cc+AXj5xLmIFLFgFa71qGL7fLWu7T87FMERS1s2RDPzEsM1moiZe9fMag7ZcnrlMLbNFHKQGcf/4Tek=
+  - secure: LwwqMFXuJLye2JYeYKGA+uyGs5dmju4dBjwuelKEkTGMbkF9nHeKC77j9Tw9nThWver1IPc38K7dHCUmkjE9Ca7Piva2vm6oqbuajByOGG1F5piT2chBzCNjW8vVD5Q8jH/noA9tZGqCjC4PXt8mgk3MtU6Gl1dzX6wMQrWyHyk=

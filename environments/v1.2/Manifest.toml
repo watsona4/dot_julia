@@ -12083,6 +12083,12 @@ git-tree-sha1 = "475f0c0e1633b51e81cf92099356fcb4029a9e19"
 uuid = "7200193e-83a8-5a55-b20d-5d36d44a0795"
 version = "1.1.1"
 
+[[Twitter]]
+deps = ["DataFrames", "JSON", "OAuth", "Test"]
+git-tree-sha1 = "ff9ebcb0a2f659f925aebf1bd4d36b019309d091"
+uuid = "92393bbf-ba23-5323-a3fa-fbe1e5f35af8"
+version = "0.5.0"
+
 [[TypeSortedCollections]]
 git-tree-sha1 = "d539b357e7695d80c75f5b066cec5d8c45886ab2"
 uuid = "94a5cd58-49a0-5741-bd07-fa4f4be8babf"
