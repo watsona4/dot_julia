@@ -1,0 +1,8 @@
+name = "Why"
+uuid = "3a072ee4-9d56-11e8-23ab-450d12b5728a"
+authors = ["Gaussia <torkel.loman@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
