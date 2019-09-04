@@ -12222,6 +12222,12 @@ git-tree-sha1 = "69927c150d1347d438cb9440ac1044f7d11ea9c9"
 uuid = "6112ee07-acf9-5e0f-b108-d242c714bf9f"
 version = "0.3.0"
 
+[[UnitfulAtomic]]
+deps = ["Test", "Unitful"]
+git-tree-sha1 = "ed91b3e3e041885c8c26b73e84abae6da6f8746f"
+uuid = "a7773ee8-282e-5fa2-be4e-bd808c38a91a"
+version = "0.2.0"
+
 [[UnitfulMR]]
 deps = ["Unitful"]
 git-tree-sha1 = "88b9a4594f4962801400f005466725edec59c286"
