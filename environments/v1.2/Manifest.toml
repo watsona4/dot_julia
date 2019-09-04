@@ -11877,6 +11877,11 @@ git-tree-sha1 = "66c216851a49d221784bd56293c6d63e7b9e6722"
 uuid = "c804724b-8c18-5caa-8579-6025a0767c70"
 version = "0.3.1"
 
+[[TinySegmenter]]
+git-tree-sha1 = "9c3d16986d5de0ea36f3bd201b658f7c07903567"
+uuid = "b1dd1ac2-3671-512a-91db-cff14b385d02"
+version = "1.0.0"
+
 [[Todo]]
 deps = ["Dates", "Test"]
 git-tree-sha1 = "f73f62d4b2ba21649d237722507f9b0ccc9d8b94"
