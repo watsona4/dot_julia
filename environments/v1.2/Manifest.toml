@@ -11597,6 +11597,18 @@ git-tree-sha1 = "d31d780530ad6cf79bf8bff1f627801f17735691"
 uuid = "c544e3c2-d3e5-5802-ac44-44683f340e4a"
 version = "0.2.0"
 
+[[TaylorIntegration]]
+deps = ["DiffEqBase", "Espresso", "LinearAlgebra", "Markdown", "Reexport", "Requires", "TaylorSeries"]
+git-tree-sha1 = "e7b170946d6ba481b4d74b9aa81edb670c0c23e3"
+uuid = "92b13dbe-c966-51a2-8445-caca9f8a7d42"
+version = "0.5.1"
+
+[[TaylorSeries]]
+deps = ["InteractiveUtils", "LinearAlgebra", "Markdown", "Requires", "SparseArrays"]
+git-tree-sha1 = "09426cb060ae6e615b4140d94e165f32d0b5ffca"
+uuid = "6aa5eb33-94cf-58f4-a9d0-e4b2c4fc25ea"
+version = "0.10.0"
+
 [[Temporal]]
 deps = ["Dates", "HTTP", "JSON", "Printf", "Random", "RecipesBase", "Statistics", "Test"]
 git-tree-sha1 = "ab2b14f510cd2a068974c9dc654ad8e743582dc1"
