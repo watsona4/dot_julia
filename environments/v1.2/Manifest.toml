@@ -11769,6 +11769,12 @@ git-tree-sha1 = "188ba9dea5a50b8ff803a6fb289bc7ffd5fc05a6"
 uuid = "42bdb5c4-78fb-11e9-2233-215979c148c4"
 version = "0.1.0"
 
+[[ThreePhasePowerModels]]
+deps = ["InfrastructureModels", "JuMP", "LinearAlgebra", "Memento", "PowerModels"]
+git-tree-sha1 = "9e38972b695363849e653d25ee32be40344c2103"
+uuid = "8503087a-994b-5095-bd6e-f54267f2dd19"
+version = "0.2.1"
+
 [[Thrift]]
 deps = ["BinaryProvider", "Distributed", "Libdl", "Logging", "Sockets", "Test"]
 git-tree-sha1 = "d12121e266b1deb7149ec6ef91aeda521e271446"
