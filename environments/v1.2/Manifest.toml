@@ -11573,6 +11573,12 @@ git-tree-sha1 = "7665a1faff6f20e26b690ca0ad7543a9251ca744"
 uuid = "3f90d43e-2ba6-5087-9e86-8e3765b17318"
 version = "0.2.0"
 
+[[TakagiFactorization]]
+deps = ["LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "7a2690e06da2a914c3939cb377ca53079b6619a2"
+uuid = "2a98de0d-ca3b-5770-8d1d-3c2c55f12676"
+version = "0.1.0"
+
 [[Tau]]
 deps = ["Test"]
 git-tree-sha1 = "d31d780530ad6cf79bf8bff1f627801f17735691"
