@@ -11805,6 +11805,12 @@ git-tree-sha1 = "01a44f70c9b1d592968538e5de528e079f2418b6"
 uuid = "37f6aa50-8035-52d0-81c2-5a1d08754b2d"
 version = "3.0.5"
 
+[[TikzQTrees]]
+deps = ["Test", "TikzPictures"]
+git-tree-sha1 = "5d7e9851f8e4394eb01e1ba5024b5f543f453086"
+uuid = "f52f3d38-10ca-5f0e-b577-4b5045d0977b"
+version = "0.1.1"
+
 [[TiledIteration]]
 deps = ["OffsetArrays", "Test"]
 git-tree-sha1 = "58f6f07d3b54a363ec283a8f5fc9fb4ecebde656"
