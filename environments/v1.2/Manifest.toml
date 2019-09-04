@@ -12048,6 +12048,12 @@ git-tree-sha1 = "b006524003142128cc6d36189dce337729aa0050"
 uuid = "9d95972d-f1c8-5527-a6e0-b4b365fa01f6"
 version = "1.1.0"
 
+[[Turf]]
+deps = ["GeoInterface", "GeoJSON", "Reexport", "Test"]
+git-tree-sha1 = "0e1f1cb28d5bc0cc8fa0d421156fb141b0094803"
+uuid = "e89237b0-9201-11e9-31b0-6361926203f7"
+version = "0.2.0"
+
 [[Turing]]
 deps = ["AdvancedHMC", "Bijectors", "BinaryProvider", "Distributions", "ForwardDiff", "Libtask", "LinearAlgebra", "MCMCChains", "MacroTools", "Markdown", "PDMats", "ProgressMeter", "Random", "Reexport", "Requires", "SpecialFunctions", "Statistics", "StatsFuns", "Tracker", "Zygote"]
 git-tree-sha1 = "a22861560139627f0e310ac7acec3f3fc6e4a98c"
