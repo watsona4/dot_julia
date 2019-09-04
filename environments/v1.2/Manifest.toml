@@ -12150,6 +12150,11 @@ version = "0.4.0"
 deps = ["Random", "SHA"]
 uuid = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 
+[[UnalignedVectors]]
+git-tree-sha1 = "a1582d7290164a29fbb57211eac3d47629efa2d9"
+uuid = "f306ff79-ba0f-5c52-9e7c-6e6505f53397"
+version = "0.0.2"
+
 [[UncertainData]]
 deps = ["Bootstrap", "Combinatorics", "Distributions", "DocumenterTools", "HypothesisTests", "Interpolations", "IntervalArithmetic", "KernelDensity", "Printf", "RecipesBase", "Reexport", "StaticArrays", "Statistics", "StatsBase", "Unitful"]
 git-tree-sha1 = "fd17fb97197004ebc03a66486118139d113c9e4a"
