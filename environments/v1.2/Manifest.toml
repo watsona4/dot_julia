@@ -11882,6 +11882,12 @@ git-tree-sha1 = "9c3d16986d5de0ea36f3bd201b658f7c07903567"
 uuid = "b1dd1ac2-3671-512a-91db-cff14b385d02"
 version = "1.0.0"
 
+[[ToStruct]]
+deps = ["Test"]
+git-tree-sha1 = "35dc5ce027158c0ad43f8adacb7c52f3dc2a9adf"
+uuid = "43ec2cc1-0e50-5406-a854-b7ff8fdb8dad"
+version = "0.2.1"
+
 [[Todo]]
 deps = ["Dates", "Test"]
 git-tree-sha1 = "f73f62d4b2ba21649d237722507f9b0ccc9d8b94"
