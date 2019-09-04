@@ -12348,6 +12348,12 @@ git-tree-sha1 = "2bf4fa7bb9f706bc3829c1a8fab33f01bc22b68d"
 uuid = "7f8bf45c-0ad5-53b5-97e6-33c1305e0aa4"
 version = "0.4.0"
 
+[[VariationalInequality]]
+deps = ["Ipopt", "JuMP", "LinearAlgebra", "Printf", "SparseArrays", "Test"]
+git-tree-sha1 = "151c7b53d4948de13e40db21467967ec593fa0f8"
+uuid = "f79a5470-17c6-525f-b62f-3ca7bd6eedf2"
+version = "0.2.0"
+
 [[Variography]]
 deps = ["Distances", "GeoStatsBase", "GeoStatsDevTools", "Optim", "Parameters", "Printf", "RecipesBase", "SpecialFunctions", "StaticArrays", "Statistics"]
 git-tree-sha1 = "fcb088fefaa47354b517004698b0db79a96ad592"
