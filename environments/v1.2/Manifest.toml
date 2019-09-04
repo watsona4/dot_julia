@@ -12552,6 +12552,12 @@ git-tree-sha1 = "d965d47944d3b896bb308ef830301f8ea4cfd989"
 uuid = "bbac0a1f-7c9d-5672-960b-c6ca726e5d5d"
 version = "0.3.1"
 
+[[Wells]]
+deps = ["MetaProgTools", "SpecialFunctions"]
+git-tree-sha1 = "ebfcef7f62bdf3ee3e2945c9e0d45ec1d1a58d20"
+uuid = "5231157d-7ae6-5dec-b9aa-3f65828037ac"
+version = "0.1.0"
+
 [[Widgets]]
 deps = ["Colors", "Dates", "Observables", "OrderedCollections", "Test"]
 git-tree-sha1 = "c53befc70c6b91eaa2a9888c2f6ac2d92720a81b"

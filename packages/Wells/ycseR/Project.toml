@@ -1,0 +1,16 @@
+name = "Wells"
+uuid = "5231157d-7ae6-5dec-b9aa-3f65828037ac"
+version = "0.1.0"
+
+[deps]
+MetaProgTools = "b1909ce5-9a67-5ea4-ba1b-9d85528f5779"
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+
+[compat]
+julia = "≥ 1.1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
