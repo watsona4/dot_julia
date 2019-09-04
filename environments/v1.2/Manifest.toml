@@ -12849,3 +12849,9 @@ version = "1.0.0"
 git-tree-sha1 = "e85db01830490222de33bb2b99ab88b23d305b0c"
 uuid = "c4c688b2-6cc8-11e9-1c12-6d20b663313d"
 version = "1.1.1"
+
+[[sparseQFCA]]
+deps = ["DelimitedFiles", "GLPK", "JuMP", "LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "d32c0e6d8a1285784abcab18b8b1ee8976a5223a"
+uuid = "077cf62c-ad2d-5edd-99ec-638372f8b004"
+version = "0.4.0"
