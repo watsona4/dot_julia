@@ -12252,6 +12252,12 @@ git-tree-sha1 = "74af8eee536066545978c0bc57627d0fe22a09fa"
 uuid = "7dc9378f-8956-57ef-a780-aa31cc70ff3d"
 version = "0.1.0"
 
+[[UnitlessFlatten]]
+deps = ["Flatten", "Test", "Unitful"]
+git-tree-sha1 = "74dc06941b69f8a5dac1cf137ff63b989c4feeb6"
+uuid = "03de777c-af7e-5070-b460-500ad0553889"
+version = "0.0.1"
+
 [[Unmarshal]]
 deps = ["JSON", "LinearAlgebra", "Missings", "Nullables", "Test"]
 git-tree-sha1 = "2b1f8a501a6c9932721e791f5586b7a48f4e0c2f"
