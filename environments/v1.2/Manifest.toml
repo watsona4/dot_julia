@@ -11739,6 +11739,12 @@ git-tree-sha1 = "26b43d6746b52cca13c4cdef90f89652273b413e"
 uuid = "e0df1984-e451-5cb5-8b61-797a481e67e3"
 version = "0.9.1"
 
+[[TextSearch]]
+deps = ["DataStructures", "GZip", "JSON", "KernelMethods", "LinearAlgebra", "SimilaritySearch", "StatsBase", "Test", "Unicode", "UnicodePlots"]
+git-tree-sha1 = "1e4aed5285268b5cb81ab6ca4a6e6925b3847780"
+uuid = "7f6f6c8a-3b03-11e9-223d-e7d88259bd6c"
+version = "0.2.14"
+
 [[TextWrap]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "8355cc559e85469cd4dbe927c375f61d3750e002"
