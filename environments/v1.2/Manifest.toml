@@ -11781,6 +11781,12 @@ git-tree-sha1 = "d12121e266b1deb7149ec6ef91aeda521e271446"
 uuid = "8d9c9c80-f77e-5080-9541-c6f69d204e22"
 version = "0.6.0"
 
+[[TickTock]]
+deps = ["Dates", "Pkg", "Test"]
+git-tree-sha1 = "9e6c0802f84e2643d3397a6f0e308883cb6faeae"
+uuid = "9ff05d80-102d-5586-aa04-3a8bd1a90d20"
+version = "1.0.0"
+
 [[TikzGraphs]]
 deps = ["LightGraphs", "Test", "TikzPictures"]
 git-tree-sha1 = "244e76babc8c358c8eb93617bcb6789f5cd8cb8b"
