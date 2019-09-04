@@ -12546,6 +12546,12 @@ git-tree-sha1 = "20d0802f6268c3c315df39ef1b2ea346b6321a6a"
 uuid = "379a43df-f81c-573e-83a6-069eb6c11a71"
 version = "0.1.3"
 
+[[WeightedOnlineStats]]
+deps = ["LinearAlgebra", "MultivariateStats", "OnlineStats", "OnlineStatsBase", "Statistics", "StatsBase"]
+git-tree-sha1 = "d965d47944d3b896bb308ef830301f8ea4cfd989"
+uuid = "bbac0a1f-7c9d-5672-960b-c6ca726e5d5d"
+version = "0.3.1"
+
 [[Widgets]]
 deps = ["Colors", "Dates", "Observables", "OrderedCollections", "Test"]
 git-tree-sha1 = "c53befc70c6b91eaa2a9888c2f6ac2d92720a81b"
