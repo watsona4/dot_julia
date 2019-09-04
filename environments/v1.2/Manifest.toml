@@ -11585,6 +11585,12 @@ git-tree-sha1 = "b1c3941b3b0c96afd52f9288d7f6157ac84c0682"
 uuid = "cd6db766-07eb-5897-84c0-92a6c9b887bd"
 version = "0.1.2"
 
+[[Taro]]
+deps = ["Dates", "JavaCall", "Tables", "Test"]
+git-tree-sha1 = "e2be0f81a50bbad6dda2eb5cf26ef89572c296ee"
+uuid = "61d0e4fa-4e73-5030-88a9-ae4c27b203dd"
+version = "0.7.0"
+
 [[Tau]]
 deps = ["Test"]
 git-tree-sha1 = "d31d780530ad6cf79bf8bff1f627801f17735691"
