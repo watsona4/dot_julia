@@ -11651,6 +11651,12 @@ git-tree-sha1 = "27fbe925924b7c0aa266b85d36a21444ca427ced"
 uuid = "02d47bb6-7ce6-556a-be16-bb1710789e2b"
 version = "0.1.5"
 
+[[TensorFlow]]
+deps = ["AutoHashEquals", "Compat", "Conda", "Distributed", "Distributions", "FileIO", "InteractiveUtils", "JLD2", "Juno", "Libdl", "LinearAlgebra", "MLDatasets", "MacroTools", "Pkg", "Printf", "ProtoBuf", "PyCall", "Random", "SpecialFunctions", "Statistics", "StatsFuns", "Test"]
+git-tree-sha1 = "1207512aa00da1598d2be28d36b195d5c336efce"
+uuid = "1d978283-2c37-5f34-9a8e-e9c0ece82495"
+version = "0.11.0"
+
 [[TensorOperations]]
 deps = ["LRUCache", "LinearAlgebra", "Strided", "TupleTools"]
 git-tree-sha1 = "15d31a5821ca106d567eb148df123ca57d8cf4c9"

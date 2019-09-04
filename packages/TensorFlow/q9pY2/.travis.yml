@@ -1,0 +1,25 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+dist: trusty
+sudo: true
+os:
+  - osx
+  - linux
+julia:
+  - 1.0
+env:
+    - CONDA_JL_VERSION="2" PYTHON=""
+    - CONDA_JL_VERSION="3" PYTHON=""
+notifications:
+  email: false
+script:
+    - julia -e 'using Pkg; Pkg.clone(pwd())'
+    - julia -e 'using Pkg; Pkg.build("TensorFlow")'
+    - julia -e 'using Pkg; Pkg.test("TensorFlow", coverage=true)'
+after_success:
+- julia -e 'using Pkg; cd(Pkg.dir("TensorFlow")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
+- julia -e 'using Pkg; Pkg.add("Documenter")'
+- julia -e 'using Pkg; cd(Pkg.dir("TensorFlow")); include(joinpath("docs", "make.jl"))'
+matrix:
+  allow_failures:
+    - env: CONDA_JL_VERSION="3" PYTHON=""
