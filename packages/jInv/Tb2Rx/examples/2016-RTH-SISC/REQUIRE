@@ -1,0 +1,10 @@
+julia 0.4
+jInv
+KrylovMethods
+MUMPS 0.1.0
+Multigrid
+DivSigGrad
+EikonalInv
+FWI
+MAT
+ArgParse

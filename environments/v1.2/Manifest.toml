@@ -12838,3 +12838,9 @@ deps = ["MacroTools"]
 git-tree-sha1 = "def5f96ac2895fd9b48435f6b97020979ee0a4c6"
 uuid = "700de1a5-db45-46bc-99cf-38207098b444"
 version = "0.1.0"
+
+[[jInv]]
+deps = ["Distributed", "KrylovMethods", "LinearAlgebra", "ParSpMatVec", "Pkg", "Printf", "SparseArrays", "Test"]
+git-tree-sha1 = "b13c33b5eb69dcc87ba634ae5c6c178ef5fcf447"
+uuid = "3dacf901-f8cd-5544-86ed-7a705f85c244"
+version = "1.0.0"
