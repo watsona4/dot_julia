@@ -12432,6 +12432,12 @@ git-tree-sha1 = "3da24423cd1aab6a01abc72968c43d12d1b18b6c"
 uuid = "103da179-b3e4-57c1-99a4-586354eb2c5a"
 version = "0.1.7"
 
+[[VisualDL]]
+deps = ["PyCall", "Test"]
+git-tree-sha1 = "c4695044dee8c546bd3957e6229e6517b9b2abe6"
+uuid = "98ad42d3-8ce6-553d-ae41-509bd26b5557"
+version = "0.1.1"
+
 [[WAV]]
 deps = ["Base64", "FileIO", "Libdl", "Logging"]
 git-tree-sha1 = "0306a9832c93aafda68c7f6b5159805136a9edb8"

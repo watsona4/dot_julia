@@ -1,0 +1,50 @@
+ERROR: LoadError: Python VisualDL not installed.
+Please run `pip install visualdl` and try again.
+
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/ec2-user/.julia/packages/VisualDL/5fhZ1/deps/build.jl:9
+ [3] include at ./boot.jl:328 [inlined]
+ [4] include_relative(::Module, ::String) at ./loading.jl:1094
+ [5] include(::Module, ::String) at ./Base.jl:31
+ [6] include(::String) at ./client.jl:431
+ [7] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/VisualDL/5fhZ1/deps/build.jl:4
+caused by [exception 1]
+PyError (PyImport_ImportModule
+
+The Python package visualdl could not be found by pyimport. Usually this means
+that you did not install visualdl in the Python version being used by PyCall.
+
+PyCall is currently configured to use the Python version at:
+
+/usr/bin/python3
+
+and you should use whatever mechanism you usually use (apt-get, pip, conda,
+etcetera) to install the Python package containing the visualdl module.
+
+One alternative is to re-configure PyCall to use a different Python
+version on your system: set ENV["PYTHON"] to the path/name of the python
+executable you want to use, run Pkg.build("PyCall"), and re-launch Julia.
+
+Another alternative is to configure PyCall to use a Julia-specific Python
+distribution via the Conda.jl package (which installs a private Anaconda
+Python distribution), which has the advantage that packages can be installed
+and kept up-to-date via Julia.  As explained in the PyCall documentation,
+set ENV["PYTHON"]="", run Pkg.build("PyCall"), and re-launch Julia. Then,
+To install the visualdl module, you can use `pyimport_conda("visualdl", PKG)`,
+where PKG is the Anaconda package the contains the module visualdl,
+or alternatively you can use the Conda package directly (via
+`using Conda` followed by `Conda.add` etcetera).
+
+) <class 'ModuleNotFoundError'>
+ModuleNotFoundError("No module named 'visualdl'")
+
+Stacktrace:
+ [1] pyimport(::String) at /home/ec2-user/.julia/packages/PyCall/ttONZ/src/PyCall.jl:544
+ [2] top-level scope at /home/ec2-user/.julia/packages/VisualDL/5fhZ1/deps/build.jl:5
+ [3] include at ./boot.jl:328 [inlined]
+ [4] include_relative(::Module, ::String) at ./loading.jl:1094
+ [5] include(::Module, ::String) at ./Base.jl:31
+ [6] include(::String) at ./client.jl:431
+ [7] top-level scope at none:5

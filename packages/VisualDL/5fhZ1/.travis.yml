@@ -1,0 +1,21 @@
+language: julia
+sudo: true
+os:
+    - linux
+julia:
+    - nightly
+addons:
+  apt:
+    packages:
+      - python3-pip
+before_install:
+    - sudo apt-get update
+    - sudo pip install --upgrade visualdl
+script:
+    - julia -e 'using Pkg; Pkg.build("VisualDL")'
+    - julia -e 'using Pkg; Pkg.test("VisualDL")'
+after_success:
+    - julia -e 'using Pkg; Pkg.add("Documenter")'
+    - julia -e 'include(joinpath("docs", "make.jl"))'
+notifications:
+    email: true

@@ -1,0 +1,7 @@
+authors = ["Jun Tian <tianjun.cpp@gmail.com>"]
+name = "VisualDL"
+uuid = "f783ed9c-74a5-11e8-02e3-bd37be2c9c8c"
+version = "0.1.0"
+
+[deps]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
