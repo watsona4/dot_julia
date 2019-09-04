@@ -12300,6 +12300,12 @@ git-tree-sha1 = "be2bed74dcb7372dbea714d4d6385c3e083c0da1"
 uuid = "9cd2e232-b78e-5341-8154-33bf4eafe965"
 version = "0.2.2"
 
+[[UpROOT]]
+deps = ["ArraysOfArrays", "PyCall", "Tables", "TypedTables"]
+git-tree-sha1 = "b03f3e217315003ad833914c6129dad11b3b5fda"
+uuid = "69ce31c6-c38d-56c2-aa87-409d3de9f997"
+version = "0.2.0"
+
 [[VT100]]
 deps = ["ColorTypes", "FixedPointNumbers", "REPL", "Test"]
 git-tree-sha1 = "b15606f470e02061183738dd8d6d3ad5e115ed76"
