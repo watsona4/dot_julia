@@ -12288,6 +12288,12 @@ git-tree-sha1 = "460f4f7bab69dd47512ac8ec4b2c14b28c6cb4a0"
 uuid = "c4a57d5a-5b31-53a6-b365-19f8c011fbd6"
 version = "0.3.0"
 
+[[UnsteadyFlowSolvers]]
+deps = ["DelimitedFiles", "Dierckx", "ForwardDiff", "LaTeXStrings", "NLsolve", "Pkg", "Plots", "PyPlot", "Revise", "Serialization", "Statistics", "Test"]
+git-tree-sha1 = "24752024f506df4a960db057b48cd8aae97ce9cd"
+uuid = "fe99531a-0285-52ab-9c44-55b4da1c0c9c"
+version = "0.7.5"
+
 [[VT100]]
 deps = ["ColorTypes", "FixedPointNumbers", "REPL", "Test"]
 git-tree-sha1 = "b15606f470e02061183738dd8d6d3ad5e115ed76"

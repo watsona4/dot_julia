@@ -1,0 +1,93 @@
+┌ Error: Error building `PyCall`: 
+│ ERROR: could not load library "/home/ec2-user/julia-1.2.0/lib/julia/sys.so"
+│ /home/ec2-user/julia-1.2.0/lib/julia/sys.so: failed to map segment from shared object
+│ ERROR: LoadError: LoadError: Failed to precompile Parsers [69de0a69-1ddd-5017-9359-2bf0b02dc9f0] to /home/ec2-user/.julia/compiled/v1.2/Parsers/833b9.ji.
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1253
+│  [3] _require(::Base.PkgId) at ./loading.jl:1013
+│  [4] require(::Base.PkgId) at ./loading.jl:911
+│  [5] require(::Module, ::Symbol) at ./loading.jl:906
+│  [6] include at ./boot.jl:328 [inlined]
+│  [7] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [8] include at ./Base.jl:31 [inlined]
+│  [9] include(::String) at /home/ec2-user/.julia/packages/JSON/d89fA/src/JSON.jl:3
+│  [10] top-level scope at /home/ec2-user/.julia/packages/JSON/d89fA/src/JSON.jl:11
+│  [11] include at ./boot.jl:328 [inlined]
+│  [12] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [13] include(::Module, ::String) at ./Base.jl:31
+│  [14] top-level scope at none:2
+│  [15] eval at ./boot.jl:330 [inlined]
+│  [16] eval(::Expr) at ./client.jl:432
+│  [17] top-level scope at ./none:3
+│ in expression starting at /home/ec2-user/.julia/packages/JSON/d89fA/src/Parser.jl:5
+│ in expression starting at /home/ec2-user/.julia/packages/JSON/d89fA/src/JSON.jl:11
+│ ERROR: LoadError: Failed to precompile JSON [682c06a0-de6a-54ab-a142-c8b1cf79cde6] to /home/ec2-user/.julia/compiled/v1.2/JSON/uf6oy.ji.
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1253
+│  [3] _require(::Base.PkgId) at ./loading.jl:1013
+│  [4] require(::Base.PkgId) at ./loading.jl:911
+│  [5] require(::Module, ::Symbol) at ./loading.jl:906
+│  [6] include at ./boot.jl:328 [inlined]
+│  [7] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [8] include(::Module, ::String) at ./Base.jl:31
+│  [9] top-level scope at none:2
+│  [10] eval at ./boot.jl:330 [inlined]
+│  [11] eval(::Expr) at ./client.jl:432
+│  [12] top-level scope at ./none:3
+│ in expression starting at /home/ec2-user/.julia/packages/Conda/kLXeC/src/Conda.jl:19
+│ ERROR: LoadError: Failed to precompile Conda [8f4d0f93-b110-5947-807f-2305c1781a2d] to /home/ec2-user/.julia/compiled/v1.2/Conda/WZE3U.ji.
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1253
+│  [3] _require(::Base.PkgId) at ./loading.jl:1013
+│  [4] require(::Base.PkgId) at ./loading.jl:911
+│  [5] require(::Module, ::Symbol) at ./loading.jl:906
+│  [6] include at ./boot.jl:328 [inlined]
+│  [7] include_relative(::Module, ::String) at ./loading.jl:1094
+│  [8] include(::Module, ::String) at ./Base.jl:31
+│  [9] include(::String) at ./client.jl:431
+│  [10] top-level scope at none:5
+│ in expression starting at /home/ec2-user/.julia/packages/PyCall/ttONZ/deps/build.jl:9
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.2/Pkg/src/backwards_compatible_isolation.jl:647
+  Updating registry at `~/.julia/registries/General`
+  Updating git-repo `https://github.com/JuliaRegistries/General.git`
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h Resolving package versions...
+  Updating `/tmp/jl_AlLHoG/Project.toml`
+ [no changes]
+  Updating `/tmp/jl_AlLHoG/Manifest.toml`
+  [9a962f9c] + DataAPI v1.0.1
+  [864edb3b] ↑ DataStructures v0.15.0 ⇒ v0.17.0
+  [53c48c17] ↑ FixedPointNumbers v0.5.3 ⇒ v0.6.1
+  [4d00f742] ↑ GeometryTypes v0.7.5 ⇒ v0.7.6
+  [682c06a0] ↑ JSON v0.20.0 ⇒ v0.21.0
+  [aa1ae85d] ↑ JuliaInterpreter v0.6.1 ⇒ v0.7.1
+  [d96e819e] ↑ Parameters v0.10.3 ⇒ v0.11.0
+  [69de0a69] + Parsers v0.3.7
+  [276daf66] ↑ SpecialFunctions v0.7.2 ⇒ v0.8.0
+  [2913bbd2] ↑ StatsBase v0.30.0 ⇒ v0.32.0
+  [2a0f44e3] ~ Base64  [`@stdlib/Base64`] ⇒ 
+  [ade2ca70] ~ Dates  [`@stdlib/Dates`] ⇒ 
+  [8ba89e20] ~ Distributed  [`@stdlib/Distributed`] ⇒ 
+  [7b1f6079] ~ FileWatching  [`@stdlib/FileWatching`] ⇒ 
+  [b77e0a4c] ~ InteractiveUtils  [`@stdlib/InteractiveUtils`] ⇒ 
+  [76f85450] ~ LibGit2  [`@stdlib/LibGit2`] ⇒ 
+  [8f399da3] ~ Libdl  [`@stdlib/Libdl`] ⇒ 
+  [37e2e46d] ~ LinearAlgebra  [`@stdlib/LinearAlgebra`] ⇒ 
+  [56ddb016] ~ Logging  [`@stdlib/Logging`] ⇒ 
+  [d6f4376e] ~ Markdown  [`@stdlib/Markdown`] ⇒ 
+  [a63ad114] ~ Mmap  [`@stdlib/Mmap`] ⇒ 
+  [de0858da] ~ Printf  [`@stdlib/Printf`] ⇒ 
+  [3fa0cd96] ~ REPL  [`@stdlib/REPL`] ⇒ 
+  [9a3f8284] ~ Random  [`@stdlib/Random`] ⇒ 
+  [ea8e919c] ~ SHA  [`@stdlib/SHA`] ⇒ 
+  [1a1011a3] ~ SharedArrays  [`@stdlib/SharedArrays`] ⇒ 
+  [6462fe0b] ~ Sockets  [`@stdlib/Sockets`] ⇒ 
+  [2f01184e] ~ SparseArrays  [`@stdlib/SparseArrays`] ⇒ 
+  [cf7118a7] ~ UUIDs  [`@stdlib/UUIDs`] ⇒ 
+  [4ec0a83e] ~ Unicode  [`@stdlib/Unicode`] ⇒ 
+  Building Conda ─→ `~/.julia/packages/Conda/kLXeC/deps/build.log`
+ Resolving package versions...
+  Building PyCall → `~/.julia/packages/PyCall/ttONZ/deps/build.log`
+ Resolving package versions...
