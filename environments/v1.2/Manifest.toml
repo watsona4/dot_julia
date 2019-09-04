@@ -11988,6 +11988,12 @@ git-tree-sha1 = "92ae24ba0e9e5b421fc9fd64f6aa26f046e48fd0"
 uuid = "84d833dd-6860-57f9-a1a7-6da5db126cff"
 version = "0.3.5"
 
+[[Transformers]]
+deps = ["Adapt", "ArgParse", "BSON", "BytePairEncoding", "DataDeps", "Dates", "DelimitedFiles", "Flux", "HTTP", "InternedStrings", "JSON", "LightXML", "LinearAlgebra", "MacroTools", "Markdown", "Pkg", "Random", "Requires", "Unicode", "WordTokenizers", "ZipFile"]
+git-tree-sha1 = "d0a7c50f29f82a3d3523a8c5c414dd8f7d428c95"
+uuid = "21ca0261-441d-5938-ace7-c90938fde4d4"
+version = "0.1.1"
+
 [[TreeView]]
 deps = ["CommonSubexpressions", "LightGraphs", "MacroTools", "Test", "TikzGraphs"]
 git-tree-sha1 = "37e555e1e0c85275d1de30d379610dea9d93cfe0"
