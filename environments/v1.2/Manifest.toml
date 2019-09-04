@@ -12867,3 +12867,9 @@ deps = ["Combinatorics", "JuMP", "MathProgBase", "Printf", "Suppressor"]
 git-tree-sha1 = "22395bcb9f1ff462e0b3580db887f1a6335e129f"
 uuid = "d80f1e47-7c1f-50ef-848d-735630893f00"
 version = "0.2.1"
+
+[[vOptSpecific]]
+deps = ["Compat", "DataStructures", "DelimitedFiles", "SparseArrays", "Test"]
+git-tree-sha1 = "f8be1fe1187ca56cd7a635141524a92387060987"
+uuid = "98dea707-09b6-5a61-a46f-43b0fb0fb92b"
+version = "1.0.0"

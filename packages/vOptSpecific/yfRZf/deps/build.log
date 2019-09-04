@@ -1,0 +1,5 @@
+gcc -O3 -shared -o ../libLAP.so 2phrpasf2.o
+>> Creating library
+gcc -fPIC -c combo.c
+gcc -shared -o ../libcombo.so combo.o
+/home/slp/.julia/dev/vOptSpecific/deps/LAP/home/slp/.julia/dev/vOptSpecific/deps/UMFLP
