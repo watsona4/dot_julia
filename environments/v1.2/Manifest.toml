@@ -12426,6 +12426,12 @@ git-tree-sha1 = "e35c4a2101b76edd5a857bccec3635bb221342f1"
 uuid = "83e47e11-4a7a-5bf8-892c-11f81bf9b223"
 version = "0.2.0"
 
+[[ViscousFlow]]
+deps = ["ColorTypes", "Compat", "DiffRules", "Distributed", "DocStringExtensions", "Documenter", "FFTW", "FastGaussQuadrature", "FileIO", "ForwardDiff", "IterativeSolvers", "LaTeXStrings", "LinearAlgebra", "LinearMaps", "PlotUtils", "PyCall", "RecipesBase", "Reexport", "Serialization", "SparseArrays", "SpecialFunctions", "StaticArrays"]
+git-tree-sha1 = "3da24423cd1aab6a01abc72968c43d12d1b18b6c"
+uuid = "103da179-b3e4-57c1-99a4-586354eb2c5a"
+version = "0.1.7"
+
 [[WAV]]
 deps = ["Base64", "FileIO", "Libdl", "Logging"]
 git-tree-sha1 = "0306a9832c93aafda68c7f6b5159805136a9edb8"
