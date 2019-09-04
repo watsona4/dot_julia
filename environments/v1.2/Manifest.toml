@@ -11579,6 +11579,12 @@ git-tree-sha1 = "7a2690e06da2a914c3939cb377ca53079b6619a2"
 uuid = "2a98de0d-ca3b-5770-8d1d-3c2c55f12676"
 version = "0.1.0"
 
+[[Tapestree]]
+deps = ["DelimitedFiles", "Optim", "ProgressMeter", "RCall", "Random"]
+git-tree-sha1 = "b1c3941b3b0c96afd52f9288d7f6157ac84c0682"
+uuid = "cd6db766-07eb-5897-84c0-92a6c9b887bd"
+version = "0.1.2"
+
 [[Tau]]
 deps = ["Test"]
 git-tree-sha1 = "d31d780530ad6cf79bf8bff1f627801f17735691"
