@@ -12522,6 +12522,12 @@ git-tree-sha1 = "a1698569cb25ddefb4bf538f39e77afdc7aa720e"
 uuid = "44d3d7a6-8a23-5bf8-98c5-b353f8df5ec9"
 version = "0.9.1"
 
+[[Web3]]
+deps = ["Test"]
+git-tree-sha1 = "8e827b9d6d3aed5aa1451050679cb12477473ecc"
+uuid = "0881af41-a624-557c-96ff-9a730c8d7287"
+version = "0.2.2"
+
 [[WebIO]]
 deps = ["AssetRegistry", "Base64", "Compat", "Distributed", "FunctionalCollections", "JSON", "Logging", "Observables", "Pkg", "Random", "Requires", "Sockets", "UUIDs", "WebSockets", "Widgets"]
 git-tree-sha1 = "ba53f245d0c4ef3ccf0f2c89546ecfcd1957797f"
