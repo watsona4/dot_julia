@@ -12306,6 +12306,12 @@ git-tree-sha1 = "b03f3e217315003ad833914c6129dad11b3b5fda"
 uuid = "69ce31c6-c38d-56c2-aa87-409d3de9f997"
 version = "0.2.0"
 
+[[VPTrees]]
+deps = ["DataStructures"]
+git-tree-sha1 = "ab0ec48499ebe9a8f5f5f87a4bbf685c7ea7d024"
+uuid = "6889b67b-453b-53df-8fa8-6efd51eae556"
+version = "0.1.1"
+
 [[VT100]]
 deps = ["ColorTypes", "FixedPointNumbers", "REPL", "Test"]
 git-tree-sha1 = "b15606f470e02061183738dd8d6d3ad5e115ed76"
