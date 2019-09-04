@@ -12170,6 +12170,11 @@ git-tree-sha1 = "63cbbd00217fc9aafedf055b60459c1ae7e01ecc"
 uuid = "1cfade01-22cf-5700-b092-accc4b62d6e1"
 version = "0.4.0"
 
+[[UnicodeGraphics]]
+git-tree-sha1 = "36d3beed7494c73474e59fcefaf9ff6e52cfb8c6"
+uuid = "ebadf6b4-db70-5817-83da-4a19ad584e34"
+version = "0.1.2"
+
 [[UnicodePlots]]
 deps = ["Dates", "Random", "SparseArrays", "StatsBase", "Test"]
 git-tree-sha1 = "b8e58d4390ccebfa4f3bf502a45e08066eec3bf9"
