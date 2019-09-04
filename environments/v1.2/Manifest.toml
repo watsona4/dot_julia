@@ -12006,6 +12006,12 @@ git-tree-sha1 = "9db5395417ab7000ac82058c3d9bca13fcb44733"
 uuid = "8c8f4381-2cdd-507c-846c-be2bcff6f45f"
 version = "0.3.1"
 
+[[Trebuchet]]
+deps = ["DiffEqBase", "JSExpr", "OrdinaryDiffEq", "WebIO"]
+git-tree-sha1 = "c1daf264ca0c050381be6258b5e311615ea5f250"
+uuid = "98b73d46-197d-11e9-11eb-69a6ff759d3a"
+version = "0.1.0"
+
 [[TreeView]]
 deps = ["CommonSubexpressions", "LightGraphs", "MacroTools", "Test", "TikzGraphs"]
 git-tree-sha1 = "37e555e1e0c85275d1de30d379610dea9d93cfe0"
