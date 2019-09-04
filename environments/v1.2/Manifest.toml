@@ -11621,6 +11621,12 @@ git-tree-sha1 = "ab130d71794c16bfdc2c8e78e92bad990044e181"
 uuid = "db5f7d96-a200-5343-9fc6-a259b42289b2"
 version = "0.3.0"
 
+[[Telegrambot]]
+deps = ["HTTP", "JSON", "Test", "UUIDs"]
+git-tree-sha1 = "d145744ea71e9e4ac99a2193c6b67058c781490a"
+uuid = "accb34f3-11fe-547f-b953-62fd05adad84"
+version = "0.1.4"
+
 [[Temporal]]
 deps = ["Dates", "HTTP", "JSON", "Printf", "Random", "RecipesBase", "Statistics", "Test"]
 git-tree-sha1 = "ab2b14f510cd2a068974c9dc654ad8e743582dc1"
