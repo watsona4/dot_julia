@@ -12324,6 +12324,12 @@ git-tree-sha1 = "3e913fa00b3943675ac8ddd4121adeb1754e99f9"
 uuid = "d621b6e3-7715-5857-9c6f-c67000ef6083"
 version = "0.11.0"
 
+[[ValkyrieRobot]]
+deps = ["Random", "RigidBodyDynamics", "StaticArrays"]
+git-tree-sha1 = "d002c3b43836989de57754f2803c8f91fad622de"
+uuid = "c74b26e8-f247-5d24-b013-c11a2bbd97c6"
+version = "0.2.0"
+
 [[ValueHistories]]
 deps = ["DataStructures", "Random", "RecipesBase", "Test"]
 git-tree-sha1 = "37f692be32132346b7e867ac7565a01b7a1592be"
