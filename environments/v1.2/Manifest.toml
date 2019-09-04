@@ -11917,6 +11917,12 @@ git-tree-sha1 = "512709480107b4fa9730c7a1d431d89b602fbb53"
 uuid = "028f657a-7ace-5159-a694-8cfd97933b0c"
 version = "0.1.2"
 
+[[TotalVariation]]
+deps = ["DSP", "LinearAlgebra", "Random", "SparseArrays", "Statistics", "Test"]
+git-tree-sha1 = "bc656ab47a567aa9de59e9e215d69dc1c91ae313"
+uuid = "00d00faa-c8f6-542a-bba9-9987f051d897"
+version = "0.0.2"
+
 [[Traceur]]
 deps = ["Cassette", "InteractiveUtils", "Logging", "MacroTools", "Test"]
 git-tree-sha1 = "c007db8fbec24668a7cdf4a878202abb648d568f"
