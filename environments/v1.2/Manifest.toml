@@ -12199,6 +12199,11 @@ git-tree-sha1 = "8830ae3d26179ed6fc177335b4c252158192c0e5"
 uuid = "99c6138d-4661-531e-8606-19bf1ec96588"
 version = "0.1.0"
 
+[[UniqueVectors]]
+git-tree-sha1 = "549f8c54f890c4854723e3796e46f7b4cc04e5e1"
+uuid = "2fbcfb34-fd0c-5fbb-b5d7-e826d8f5b0a9"
+version = "0.8.0"
+
 [[Unitful]]
 deps = ["LinearAlgebra", "Random", "Test"]
 git-tree-sha1 = "94736a38908c6b43d22e1abffc4f72ab19dabbc1"
