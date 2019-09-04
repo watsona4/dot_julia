@@ -12128,6 +12128,12 @@ git-tree-sha1 = "6167be6dbe5228912ed81649a7adbb7f9c0e0866"
 uuid = "9c2e70fb-c67a-5ec7-8d93-51b38135a8ac"
 version = "0.6.0"
 
+[[ULID]]
+deps = ["Dates", "Random", "Test"]
+git-tree-sha1 = "4cb429369e376fdbf0403196cb98abfede55a75e"
+uuid = "28ea79d9-6354-52a7-8af1-38e01db141d4"
+version = "0.3.0"
+
 [[URIParser]]
 deps = ["Test", "Unicode"]
 git-tree-sha1 = "6ddf8244220dfda2f17539fa8c9de20d6c575b69"
