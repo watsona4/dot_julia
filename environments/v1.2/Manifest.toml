@@ -12036,6 +12036,12 @@ git-tree-sha1 = "e7fb8d427ef566dbcd7cd7d41dbfb8ac6f0fde49"
 uuid = "e5719326-7e34-5a7d-b19a-3e86f2e9acf7"
 version = "1.0.7"
 
+[[TropicalSemiring]]
+deps = ["Test"]
+git-tree-sha1 = "d2a9509a5e4f7c3eca6222f3f005d15f0679c7fb"
+uuid = "8aa046c6-9529-5101-9c84-44ff67e49b72"
+version = "0.1.0"
+
 [[TupleTools]]
 deps = ["Random", "Test"]
 git-tree-sha1 = "b006524003142128cc6d36189dce337729aa0050"
