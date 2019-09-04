@@ -12642,6 +12642,12 @@ git-tree-sha1 = "59e0470bfe86d7340b687f9fa6b4740756af9603"
 uuid = "2ff30676-a39f-58b2-ad74-5d1012d57b9b"
 version = "0.2.0"
 
+[[WorldOceanAtlasTools]]
+deps = ["DataDeps", "Match", "NCDatasets", "NearestNeighbors", "OceanGrids", "StatsBase", "Unitful"]
+git-tree-sha1 = "2b1b44d7d6b16cab1d3c77f52db3cc02c79f63c9"
+uuid = "04f20302-f1b9-11e8-29d9-7d841cb0a64a"
+version = "0.3.0"
+
 [[WriteVTK]]
 deps = ["Base64", "CodecZlib", "LightXML", "Random", "TranscodingStreams"]
 git-tree-sha1 = "1a2b0723c5db05c511e2f06093079a2833081674"
