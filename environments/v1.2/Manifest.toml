@@ -11763,6 +11763,12 @@ git-tree-sha1 = "fa576ca0604eccc1223afdf61b551a74a9dde175"
 uuid = "3c28d9fa-eaec-11e8-3371-6131c0bd32f6"
 version = "0.2.0"
 
+[[Theta]]
+deps = ["GSL", "LinearAlgebra", "NLopt"]
+git-tree-sha1 = "188ba9dea5a50b8ff803a6fb289bc7ffd5fc05a6"
+uuid = "42bdb5c4-78fb-11e9-2233-215979c148c4"
+version = "0.1.0"
+
 [[Thrift]]
 deps = ["BinaryProvider", "Distributed", "Libdl", "Logging", "Sockets", "Test"]
 git-tree-sha1 = "d12121e266b1deb7149ec6ef91aeda521e271446"
