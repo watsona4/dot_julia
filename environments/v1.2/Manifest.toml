@@ -12695,6 +12695,12 @@ git-tree-sha1 = "bb1b4552c4698d3299d00f2a124d9978be17354d"
 uuid = "d310a076-6a08-52b6-ab78-79baa254182b"
 version = "0.0.1"
 
+[[XSim]]
+deps = ["CSV", "DataFrames", "Distributions", "JWAS", "LinearAlgebra", "Printf", "Test"]
+git-tree-sha1 = "8620092afa48327da67b528812b3d66adfa9db17"
+uuid = "3d41126b-a46a-5bdb-b7a1-7ea6cc35a8ef"
+version = "0.4.0"
+
 [[YAML]]
 deps = ["Codecs", "Compat"]
 git-tree-sha1 = "3bde77cee95cce0c0b9b18813d85e18e8ed4f415"
