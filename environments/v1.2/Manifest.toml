@@ -12000,6 +12000,12 @@ git-tree-sha1 = "1e60f3a74730b0a7e3d5c1426d7f37eec4dc2d90"
 uuid = "737fac7d-4440-55ef-927e-002196e95561"
 version = "0.3.2"
 
+[[TravelingSalesmanHeuristics]]
+deps = ["LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "9db5395417ab7000ac82058c3d9bca13fcb44733"
+uuid = "8c8f4381-2cdd-507c-846c-be2bcff6f45f"
+version = "0.3.1"
+
 [[TreeView]]
 deps = ["CommonSubexpressions", "LightGraphs", "MacroTools", "Test", "TikzGraphs"]
 git-tree-sha1 = "37e555e1e0c85275d1de30d379610dea9d93cfe0"
