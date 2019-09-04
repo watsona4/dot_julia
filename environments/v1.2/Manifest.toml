@@ -12672,6 +12672,12 @@ git-tree-sha1 = "b40110a09a66798cec67fb18a7e774521960601f"
 uuid = "009559a3-9522-5dbb-924b-0b6ed2b22bb9"
 version = "0.4.1"
 
+[[XGrad]]
+deps = ["Espresso", "LinearAlgebra", "Test"]
+git-tree-sha1 = "8fa109deb827b0decba041cee5deaed26a0b54c2"
+uuid = "c48004fe-d13f-5df9-98d5-0c1ab8e45fa0"
+version = "0.2.0"
+
 [[XLSX]]
 deps = ["Dates", "EzXML", "Printf", "ZipFile"]
 git-tree-sha1 = "aabc3b2867f7a36b08ee3618893e510b88c68e4d"

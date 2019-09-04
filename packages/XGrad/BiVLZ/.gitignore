@@ -1,0 +1,9 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*~
+\#*
+.juliahistory
+_*
+docs/build/
+docs/site/

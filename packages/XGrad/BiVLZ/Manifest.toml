@@ -1,0 +1,10 @@
+[[Espresso]]
+deps = ["LinearAlgebra"]
+git-tree-sha1 = "965d04a670d50810ab14d5a54794d7fd5602eda8"
+repo-rev = "master"
+repo-url = "https://github.com/dfdx/Espresso.jl.git"
+uuid = "6912e4f1-e036-58b0-9138-08d1e6358ea9"
+version = "0.5.0"
+
+[[LinearAlgebra]]
+uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
