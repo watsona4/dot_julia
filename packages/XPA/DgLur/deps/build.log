@@ -1,0 +1,29 @@
+if test "" != ""; then \
+    defs="-DXPA_DLL=\"\\\"\\\"\""; \
+    libs=""; \
+elif test "" != ""; then \
+    defs="-UXPA_DLL"; \
+    libs=""; \
+else \
+    defs="-UXPA_DLL"; \
+    libs="-lxpa"; \
+fi; \
+cc   $defs  -o "gencode" "gencode.c" $libs 
+gencode.c:14:10: fatal error: xpa.h: No such file or directory
+ #include <xpa.h>
+          ^~~~~~~
+compilation terminated.
+make: *** [gencode] Error 1
+ERROR: LoadError: failed process: Process(`make`, ProcessExited(2)) [2]
+
+Stacktrace:
+ [1] pipeline_error at ./process.jl:813 [inlined]
+ [2] #run#536(::Bool, ::typeof(run), ::Cmd) at ./process.jl:728
+ [3] run(::Cmd) at ./process.jl:726
+ [4] top-level scope at /home/ec2-user/.julia/packages/XPA/DgLur/deps/build.jl:1
+ [5] include at ./boot.jl:328 [inlined]
+ [6] include_relative(::Module, ::String) at ./loading.jl:1094
+ [7] include(::Module, ::String) at ./Base.jl:31
+ [8] include(::String) at ./client.jl:431
+ [9] top-level scope at none:5
+in expression starting at /home/ec2-user/.julia/packages/XPA/DgLur/deps/build.jl:1
