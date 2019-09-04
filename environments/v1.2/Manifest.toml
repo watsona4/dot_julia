@@ -12384,6 +12384,12 @@ git-tree-sha1 = "0f27d73647e61e039d43d6087d1eee4c5171dafa"
 uuid = "112f6efa-9a02-5b7d-90c0-432ed331239a"
 version = "0.7.0"
 
+[[VerTeX]]
+deps = ["Dates", "Markdown", "Pkg", "REPL", "Requires", "TerminalMenus", "Test", "UUIDs"]
+git-tree-sha1 = "5ab5e91dc8df378cf70552eff709b6471a445450"
+uuid = "cc48e778-429c-5593-b60f-2bcf41d5649c"
+version = "0.0.2"
+
 [[VersionParsing]]
 deps = ["Compat"]
 git-tree-sha1 = "c9d5aa108588b978bd859554660c8a5c4f2f7669"
