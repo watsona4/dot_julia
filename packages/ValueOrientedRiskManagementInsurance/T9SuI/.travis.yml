@@ -1,0 +1,8 @@
+language: julia
+julia:
+  - 1.0
+notifications:
+  email: true
+#script: # the default script does the following
+#  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#  - julia -e 'Pkg.init(); Pkg.clone(pwd()); Pkg.test("ValueOrientedRiskManagementInsurance")'

@@ -12336,6 +12336,12 @@ git-tree-sha1 = "37f692be32132346b7e867ac7565a01b7a1592be"
 uuid = "98cad3c8-aec3-5f06-8e41-884608649ab7"
 version = "0.5.1"
 
+[[ValueOrientedRiskManagementInsurance]]
+deps = ["DataArrays", "DataFrames", "Distributions", "LinearAlgebra", "Random", "Test"]
+git-tree-sha1 = "300863c2842cf6dd5d9da5987e1d9926c5fcae88"
+uuid = "4aceb6fc-b794-5e89-b0ac-b6eba507a4bd"
+version = "1.0.0"
+
 [[Variography]]
 deps = ["Distances", "GeoStatsBase", "GeoStatsDevTools", "Optim", "Parameters", "Printf", "RecipesBase", "SpecialFunctions", "StaticArrays", "Statistics"]
 git-tree-sha1 = "fcb088fefaa47354b517004698b0db79a96ad592"
