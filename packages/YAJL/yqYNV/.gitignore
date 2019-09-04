@@ -1,0 +1,8 @@
+.DS_Store
+*.cov
+*.mem
+/docs/build/
+/docs/site/
+/deps/build.log
+/deps/deps.jl
+/deps/usr

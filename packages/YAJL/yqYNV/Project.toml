@@ -1,0 +1,14 @@
+name = "YAJL"
+uuid = "bda616b3-ac6d-5293-8ee1-22b41414598d"
+authors = ["Chris de Graaf <chrisadegraaf@gmail.com>"]
+version = "0.2.0"
+
+[deps]
+BinaryProvider = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
