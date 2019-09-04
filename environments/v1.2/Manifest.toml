@@ -12264,6 +12264,12 @@ git-tree-sha1 = "4c9094fc03b9994ca88b058d89fb84973a0f9ed8"
 uuid = "4f6a8bda-f411-5b8a-a202-ad6453283b07"
 version = "0.1.0"
 
+[[UnivariateFunctions]]
+deps = ["Dates", "GLM", "Pkg", "Random", "SchumakerSpline", "Test"]
+git-tree-sha1 = "dbc74cb3840fee3b9f3c5a6551ace11887f82a95"
+uuid = "368b7869-440d-5a68-a3d1-bbc86b0a93b0"
+version = "0.1.2"
+
 [[Unmarshal]]
 deps = ["JSON", "LinearAlgebra", "Missings", "Nullables", "Test"]
 git-tree-sha1 = "2b1f8a501a6c9932721e791f5586b7a48f4e0c2f"
