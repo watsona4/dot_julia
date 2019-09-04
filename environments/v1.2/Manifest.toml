@@ -12402,6 +12402,12 @@ git-tree-sha1 = "08137053c117afb92f59497160ac2d12abec66d8"
 uuid = "19fa3120-7c27-5ec5-8db8-b0b0aa330d6f"
 version = "0.1.0"
 
+[[ViZDoom]]
+deps = ["BinaryProvider", "CxxWrap", "Libdl", "Test"]
+git-tree-sha1 = "283de527d65f7dc51ce19f316a3def8da318c190"
+uuid = "13bb3beb-38fe-5ca7-9a46-050a216300b1"
+version = "0.1.0"
+
 [[VideoIO]]
 deps = ["ColorTypes", "Dates", "FFMPEG", "Glob", "ImageCore", "ImageTransformations", "Libdl", "ProgressMeter", "Requires"]
 git-tree-sha1 = "8694d3ff6993816476822b65fb9b72d691a607d0"

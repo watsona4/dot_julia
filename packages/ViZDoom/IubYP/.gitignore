@@ -1,0 +1,10 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+
+Manifest.toml
+deps/usr/
+deps/build.log
+
+_vizdoom.ini

@@ -1,0 +1,43 @@
+## Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+os:
+  - linux
+  # - osx
+julia:
+  - 0.7
+  - 1.0
+  - nightly
+notifications:
+  email: false
+git:
+  depth: 99999999
+
+## uncomment the following lines to allow failures on nightly julia
+## (tests will run but not make your overall status red)
+matrix:
+  allow_failures:
+  - julia: nightly
+
+addons:
+  apt: # apt-get for linux
+    packages:
+    - cmake
+    - libboost-all-dev
+    - build-essential
+    - zlib1g-dev
+    - libsdl2-dev
+    - libjpeg-dev
+    - nasm
+    - tar
+    - libbz2-dev
+    - libgtk2.0-dev
+    - git
+    - libfluidsynth-dev
+    - libgme-dev
+    - libopenal-dev
+    - timidity
+    - libwildmidi-dev
+    - unzip
+
+script:
+  - julia -e 'using Pkg; Pkg.activate(pwd()); Pkg.instantiate(); Pkg.build("ViZDoom");'
