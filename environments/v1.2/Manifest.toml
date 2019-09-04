@@ -12861,3 +12861,9 @@ deps = ["DataFrames", "Dates", "Pkg", "Test"]
 git-tree-sha1 = "9c2826bb96f66870192af9a027153c8e7b8fc087"
 uuid = "e0b4c2ea-889f-54df-a5e0-fe74b3c892fd"
 version = "0.1.3"
+
+[[vOptGeneric]]
+deps = ["Combinatorics", "JuMP", "MathProgBase", "Printf", "Suppressor"]
+git-tree-sha1 = "22395bcb9f1ff462e0b3580db887f1a6335e129f"
+uuid = "d80f1e47-7c1f-50ef-848d-735630893f00"
+version = "0.2.1"
