@@ -1,0 +1,11 @@
+language: julia
+julia:
+- 1.0
+- nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+after_success:
+- julia -e 'using Pkg; cd(Pkg.dir("Unidecode"))'
+notifications:
+  email: false

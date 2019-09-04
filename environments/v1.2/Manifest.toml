@@ -12187,6 +12187,12 @@ git-tree-sha1 = "5534e2af2e18e4a7424975d6a14fb073cc1c07d8"
 uuid = "a8aa15d3-c567-5e9f-b6cc-4b0f97f09cf7"
 version = "1.0.1"
 
+[[Unidecode]]
+deps = ["REPL", "Test", "Unicode"]
+git-tree-sha1 = "a3adb0fb0d3bf0c0d4c67148a87de57d2aa96f8e"
+uuid = "967fb449-e509-55aa-8007-234b4096b967"
+version = "1.0.2"
+
 [[UnionFind]]
 deps = ["Printf", "Test"]
 git-tree-sha1 = "8830ae3d26179ed6fc177335b4c252158192c0e5"
