@@ -11787,6 +11787,12 @@ git-tree-sha1 = "9e6c0802f84e2643d3397a6f0e308883cb6faeae"
 uuid = "9ff05d80-102d-5586-aa04-3a8bd1a90d20"
 version = "1.0.0"
 
+[[TightBinding]]
+deps = ["LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "9bb1287eb0a06033f93ab3c94c0b1640296283c2"
+uuid = "db00978d-8b5b-52b5-bbe7-ff451c144724"
+version = "0.1.2"
+
 [[TikzGraphs]]
 deps = ["LightGraphs", "Test", "TikzPictures"]
 git-tree-sha1 = "244e76babc8c358c8eb93617bcb6789f5cd8cb8b"
