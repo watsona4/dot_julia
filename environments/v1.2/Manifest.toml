@@ -11745,6 +11745,12 @@ git-tree-sha1 = "1e4aed5285268b5cb81ab6ca4a6e6925b3847780"
 uuid = "7f6f6c8a-3b03-11e9-223d-e7d88259bd6c"
 version = "0.2.14"
 
+[[TextUnidecode]]
+deps = ["Test"]
+git-tree-sha1 = "e9c2338ad718c0156ad7bb3e4a234f99bab78ea3"
+uuid = "67e1f08c-fd37-5136-8feb-70434d6f9f3a"
+version = "1.0.5"
+
 [[TextWrap]]
 deps = ["Compat", "Test"]
 git-tree-sha1 = "8355cc559e85469cd4dbe927c375f61d3750e002"
