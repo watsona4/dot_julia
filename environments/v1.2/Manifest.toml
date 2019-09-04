@@ -12240,6 +12240,12 @@ git-tree-sha1 = "88b9a4594f4962801400f005466725edec59c286"
 uuid = "84966e9a-a839-11e9-29d5-57fe5a7e36c2"
 version = "0.1.1"
 
+[[UnitfulRecipes]]
+deps = ["RecipesBase", "Unitful"]
+git-tree-sha1 = "feae398953f098da6025bc4557c9dceb487529c4"
+uuid = "42071c24-d89e-48dd-8a24-8a12d9b8861f"
+version = "0.1.0"
+
 [[Unmarshal]]
 deps = ["JSON", "LinearAlgebra", "Missings", "Nullables", "Test"]
 git-tree-sha1 = "2b1f8a501a6c9932721e791f5586b7a48f4e0c2f"
