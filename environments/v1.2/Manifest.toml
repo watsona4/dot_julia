@@ -12122,6 +12122,12 @@ git-tree-sha1 = "519533acaccc7d84e214426f69820489e1f46617"
 uuid = "9d95f2ec-7b3d-5a63-8d20-e2491e220bb9"
 version = "1.2.0"
 
+[[UAParser]]
+deps = ["DataFrames", "Test", "YAML"]
+git-tree-sha1 = "6167be6dbe5228912ed81649a7adbb7f9c0e0866"
+uuid = "9c2e70fb-c67a-5ec7-8d93-51b38135a8ac"
+version = "0.6.0"
+
 [[URIParser]]
 deps = ["Test", "Unicode"]
 git-tree-sha1 = "6ddf8244220dfda2f17539fa8c9de20d6c575b69"
