@@ -11727,6 +11727,12 @@ git-tree-sha1 = "bb81b5f1e0d7c178f0a500b04d1974767c76b5a4"
 uuid = "ebf5ac4f-3ec1-555f-9ac9-3d72ed88c471"
 version = "0.1.0"
 
+[[TextAnalysis]]
+deps = ["BSON", "BinaryProvider", "DataFrames", "Flux", "JSON", "Languages", "Libdl", "LinearAlgebra", "Printf", "SparseArrays", "Test", "WordTokenizers"]
+git-tree-sha1 = "8dde7aed373e4ce211ddc46ad7de0b2710403ebf"
+uuid = "a2db99b7-8b79-58f8-94bf-bbc811eef33d"
+version = "0.6.0"
+
 [[TextParse]]
 deps = ["CodecZlib", "DataStructures", "Dates", "DoubleFloats", "Mmap", "Nullables", "PooledArrays", "WeakRefStrings"]
 git-tree-sha1 = "26b43d6746b52cca13c4cdef90f89652273b413e"
