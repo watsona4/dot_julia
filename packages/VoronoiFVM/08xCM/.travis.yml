@@ -1,0 +1,45 @@
+language: julia
+
+os:
+  - linux
+  - osx
+
+branches:
+  only:
+  - master
+
+addons:
+  apt:
+    update: true
+
+julia:
+  - 1.0
+  - 1.1
+#  - nightly
+
+# matrix:
+#   allow_failures:
+#   - julia: nightly
+
+# Pkg.add("PyCall"); Pkg.build("PyCall"); Pkg.add("PyPlot"); 
+before_install:
+    - julia -e 'ENV["PYTHON"]=""; using Pkg; Pkg.add("Conda"); using Conda; Conda.add_channel("anaconda"); Conda.update(); Conda.add("numpy"); Conda.add("matplotlib");'
+ 
+
+notifications:
+  email: true
+
+  
+after_success: skip
+
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.1
+      os: linux
+      script:
+        - julia --project=docs/ -e 'using Pkg;  Pkg.update(); Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate();'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip
+
+

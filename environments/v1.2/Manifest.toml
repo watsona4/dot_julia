@@ -12456,6 +12456,12 @@ git-tree-sha1 = "ecb1fddc8f749154904f70fe44846a6d51351bec"
 uuid = "72f80fcb-8c52-57d9-aff0-40c1a3526986"
 version = "0.3.1"
 
+[[VoronoiFVM]]
+deps = ["DiffResults", "DocStringExtensions", "ElasticArrays", "ExtendableSparse", "ForwardDiff", "IterativeSolvers", "LinearAlgebra", "Printf", "PyPlot", "SparseArrays", "Test"]
+git-tree-sha1 = "fb07f8ced3d5fdc3e5d43a92b2eeb5c8ba30b327"
+uuid = "82b139dc-5afc-11e9-35da-9b9bdfd336f3"
+version = "0.4.1"
+
 [[WAV]]
 deps = ["Base64", "FileIO", "Libdl", "Logging"]
 git-tree-sha1 = "0306a9832c93aafda68c7f6b5159805136a9edb8"

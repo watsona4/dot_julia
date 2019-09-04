@@ -1,0 +1,6 @@
+QUARRY
+startup.jl
+docs/build
+*~
+Manifest.toml
+
