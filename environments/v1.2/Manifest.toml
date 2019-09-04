@@ -12624,6 +12624,12 @@ git-tree-sha1 = "94d341dcb4a3844ab969b2c057f6a3423f930785"
 uuid = "c64b6f0f-98cd-51d1-af78-58ae84944834"
 version = "0.5.0"
 
+[[WordNet]]
+deps = ["DataDeps", "Test"]
+git-tree-sha1 = "a7a63f03bb14928edb05042ea555704890f8465e"
+uuid = "a945a9ba-879e-550e-aa45-2a4d52798e91"
+version = "0.2.2"
+
 [[WordTokenizers]]
 deps = ["HTML_Entities", "StrTables", "Unicode"]
 git-tree-sha1 = "983ca717c4ec786d0458ebcbe395a1a50b3a1897"
