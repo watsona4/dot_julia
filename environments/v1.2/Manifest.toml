@@ -12486,6 +12486,12 @@ git-tree-sha1 = "27f2a463b6e249c90731ca531f21ba3cfc835d76"
 uuid = "0818e8b4-bd9c-59ff-a62a-597382e55725"
 version = "0.6.0"
 
+[[WaterFlows]]
+deps = ["BlackBoxOptim", "CSV", "DataFrames", "Dates", "Distributions"]
+git-tree-sha1 = "65ddf952dd958ebfab513c5e4ff551714c14dd63"
+uuid = "26b386a0-5622-11e9-3ee7-f1bbe84c80da"
+version = "0.1.0"
+
 [[Wavelets]]
 deps = ["Compat", "DSP", "Reexport"]
 git-tree-sha1 = "4a53da1099523e7191ee5b95d6e5e32a88913b6d"
