@@ -12030,6 +12030,12 @@ git-tree-sha1 = "6c6951ef38556183da476eb3dbd5f8a8c30c4350"
 uuid = "56f361f5-126b-55db-87fb-1c71988fcde4"
 version = "0.2.0"
 
+[[TriangleMesh]]
+deps = ["BinDeps", "DelimitedFiles", "Libdl", "LinearAlgebra", "ProgressMeter", "Test"]
+git-tree-sha1 = "e7fb8d427ef566dbcd7cd7d41dbfb8ac6f0fde49"
+uuid = "e5719326-7e34-5a7d-b19a-3e86f2e9acf7"
+version = "1.0.7"
+
 [[TupleTools]]
 deps = ["Random", "Test"]
 git-tree-sha1 = "b006524003142128cc6d36189dce337729aa0050"

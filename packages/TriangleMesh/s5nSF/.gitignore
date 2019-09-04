@@ -1,0 +1,17 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+deps.jl
+
+# Libraries 
+*.o
+*.so
+*.so.*
+*.dll
+*.dylib
+
+startrc.jl
+
+docs/build/
+docs/site/
