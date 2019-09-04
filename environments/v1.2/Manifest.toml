@@ -12372,6 +12372,12 @@ git-tree-sha1 = "39e3690167cd006ad45f6f2ef68f2b83a5130b46"
 uuid = "0e69188a-a5d4-5622-b4e4-a72373136fc5"
 version = "0.1.0"
 
+[[VegaDatasets]]
+deps = ["DataStructures", "DataValues", "FilePaths", "IterableTables", "IteratorInterfaceExtensions", "JSON", "TableShowUtils", "TableTraits", "TableTraitsUtils", "TextParse"]
+git-tree-sha1 = "50b2b2ea477e85472f3b100f3bd6b750625cde20"
+uuid = "0ae4a718-28b7-58ec-9efb-cded64d6d5b4"
+version = "1.0.0"
+
 [[VegaLite]]
 deps = ["DataValues", "Dates", "FileIO", "FilePaths", "IterableTables", "IteratorInterfaceExtensions", "JSON", "JSONSchema", "MacroTools", "NodeJS", "REPL", "Random", "TableTraits", "URIParser"]
 git-tree-sha1 = "0f27d73647e61e039d43d6087d1eee4c5171dafa"
