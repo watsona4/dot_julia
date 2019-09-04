@@ -12024,6 +12024,12 @@ git-tree-sha1 = "8d0d7a3fe2f30d6a7f833a5f19f7c7a5b396eae6"
 uuid = "a2a6695c-b41b-5b7d-aed9-dbfdeacea5d7"
 version = "0.3.0"
 
+[[Triangle]]
+deps = ["BinDeps", "Libdl", "Test"]
+git-tree-sha1 = "6c6951ef38556183da476eb3dbd5f8a8c30c4350"
+uuid = "56f361f5-126b-55db-87fb-1c71988fcde4"
+version = "0.2.0"
+
 [[TupleTools]]
 deps = ["Random", "Test"]
 git-tree-sha1 = "b006524003142128cc6d36189dce337729aa0050"

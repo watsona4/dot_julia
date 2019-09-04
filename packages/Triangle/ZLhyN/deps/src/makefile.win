@@ -1,0 +1,23 @@
+# C compiler
+CC=cl.exe
+LINK=link.exe
+# C flags
+CFLAGS=/DCPU86 /DTRILIBRARY /DREDUCED /DCDT_ONLY /DNO_TIMER /GL
+# linking flags
+LDFLAGS=/LTCG /DLL
+# target lib
+TARGET_LIB=libtriangle.dll
+
+.PHONY: all
+all: libtriangle
+
+libtriangle : tricall.obj triangle.obj
+	$(LINK) $(LDFLAGS) /OUT:$(TARGET_LIB) tricall.obj triangle.obj
+
+triangle.obj : triangle.c
+	$(CC) $(CFLAGS) -c triangle.c
+tricall.obj : tricall.c
+	$(CC) $(CFLAGS) -c tricall.c
+
+clean:
+	-del $(TARGET_LIB) tricall.obj triangle.obj libtriangle.lib libtriangle.exp
