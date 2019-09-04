@@ -12492,6 +12492,12 @@ git-tree-sha1 = "65ddf952dd958ebfab513c5e4ff551714c14dd63"
 uuid = "26b386a0-5622-11e9-3ee7-f1bbe84c80da"
 version = "0.1.0"
 
+[[WaterModels]]
+deps = ["InfrastructureModels", "JSON", "JuMP", "MathProgBase", "Memento", "Random"]
+git-tree-sha1 = "edcdc194ce5bacc7ef8d3c1ccb15e0ff9b3c3c55"
+uuid = "7c60b362-08f4-5b14-8680-cd67a3e18348"
+version = "0.0.1"
+
 [[Wavelets]]
 deps = ["Compat", "DSP", "Reexport"]
 git-tree-sha1 = "4a53da1099523e7191ee5b95d6e5e32a88913b6d"
