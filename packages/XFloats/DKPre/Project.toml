@@ -1,0 +1,25 @@
+desc = "Precision-doubled floating point types nearly as performant as hardware floats."
+keywords = ["floating-point", "accuracy", "precision", "performance"]
+name = "XFloats"
+uuid =  "ad7b0a5e-d6ee-550c-835e-59a288c14bf3"
+repo = "https://github.com/JeffreySarnoff/XFloats.jl.git"
+author = "Jeffrey Sarnoff"
+license = "MIT"
+version = "0.1.0"
+
+[deps]
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "SpecialFunctions", "LinearAlgebra"]
+
+[compat]
+SpecialFunctions = "0"
+MacroTools = "0"
+julia = "1"

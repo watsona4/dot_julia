@@ -12660,6 +12660,12 @@ git-tree-sha1 = "525e84d9b5ae091cbf9ab3d1fcc9d0d05b16db94"
 uuid = "fbb19de7-1342-5f93-8193-71ff412e753d"
 version = "0.0.3"
 
+[[XFloats]]
+deps = ["LinearAlgebra", "MacroTools", "Random", "SpecialFunctions"]
+git-tree-sha1 = "95950768d6c8101494e8fe6204a0f521c4d1e2f7"
+uuid = "ad7b0a5e-d6ee-550c-835e-59a288c14bf3"
+version = "0.1.0"
+
 [[XGBoost]]
 deps = ["BinaryProvider", "Libdl", "Printf", "Random", "SparseArrays", "Statistics", "Test"]
 git-tree-sha1 = "b40110a09a66798cec67fb18a7e774521960601f"
