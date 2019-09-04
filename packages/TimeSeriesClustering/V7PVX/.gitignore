@@ -1,0 +1,10 @@
+*.pyc
+*.swp
+*core*
+*.asv
+*.swn
+*.swo
+*.eps
+*.png
+test.jl
+docs/build/

@@ -11829,6 +11829,12 @@ git-tree-sha1 = "abd4bd489ed0ed88532498d1aa1d2e41d7b05485"
 uuid = "9e3dc215-6440-5c97-bce1-76c03772f85e"
 version = "0.16.0"
 
+[[TimeSeriesClustering]]
+deps = ["CSV", "Clustering", "DataFrames", "Distances", "FileIO", "JuMP", "LinearAlgebra", "Reexport", "StatsBase"]
+git-tree-sha1 = "3d053d58b069065e86c263c16ff8120a6f05dc04"
+uuid = "61e8395a-c5b7-11e9-0bf6-872d3bc7175c"
+version = "0.5.2"
+
 [[TimeZones]]
 deps = ["Dates", "EzXML", "Mocking", "Printf", "Serialization", "Unicode"]
 git-tree-sha1 = "0271dc890dd1447da1568510937bd5b3a6b51b58"
