@@ -12713,6 +12713,12 @@ git-tree-sha1 = "199bc04e54570fecdbf9b3d2b89e81acdace22be"
 uuid = "1fd64df0-a4d2-11e9-360d-2f03868f4cf5"
 version = "0.1.0"
 
+[[Xtensor]]
+deps = ["BinDeps", "CxxWrap", "Libdl"]
+git-tree-sha1 = "7f5e4c0ab4b740bb4ad58e8c0579d34e9c2f5d8e"
+uuid = "65419b8a-9a19-58ae-bde3-3f7e1d1bf8ef"
+version = "0.8.2"
+
 [[YAML]]
 deps = ["Codecs", "Compat"]
 git-tree-sha1 = "3bde77cee95cce0c0b9b18813d85e18e8ed4f415"
