@@ -11567,6 +11567,12 @@ git-tree-sha1 = "6c91a2b7b8e6735aedd4b0e7a0dafdce06c18547"
 uuid = "3eeacb1d-13c2-54cc-9b18-30c86af3cadb"
 version = "1.0.1"
 
+[[Tachyons]]
+deps = ["Test", "WebIO"]
+git-tree-sha1 = "7665a1faff6f20e26b690ca0ad7543a9251ca744"
+uuid = "3f90d43e-2ba6-5087-9e86-8e3765b17318"
+version = "0.2.0"
+
 [[Tau]]
 deps = ["Test"]
 git-tree-sha1 = "d31d780530ad6cf79bf8bff1f627801f17735691"
