@@ -12654,6 +12654,12 @@ git-tree-sha1 = "1a2b0723c5db05c511e2f06093079a2833081674"
 uuid = "64499a7a-5c06-52f2-abe2-ccb03c286192"
 version = "1.2.0"
 
+[[Wynn]]
+deps = ["SymPy", "Test"]
+git-tree-sha1 = "525e84d9b5ae091cbf9ab3d1fcc9d0d05b16db94"
+uuid = "fbb19de7-1342-5f93-8193-71ff412e753d"
+version = "0.0.3"
+
 [[XGBoost]]
 deps = ["BinaryProvider", "Libdl", "Printf", "Random", "SparseArrays", "Statistics", "Test"]
 git-tree-sha1 = "b40110a09a66798cec67fb18a7e774521960601f"
