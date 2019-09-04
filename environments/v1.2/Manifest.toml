@@ -12444,6 +12444,18 @@ git-tree-sha1 = "c6731dfc1475cc20beb4d2d33aa3235a5761c4b5"
 uuid = "34922c18-7c2a-561c-bac1-01e79b2c4c92"
 version = "0.3.1"
 
+[[VoronoiCells]]
+deps = ["VoronoiDelaunay"]
+git-tree-sha1 = "7db4db17ddbf1a244ff7ad6d1e1c99fcf21ecc10"
+uuid = "e3e34ffb-84e9-5012-9490-92c94d0c60a4"
+version = "0.1.5"
+
+[[VoronoiDelaunay]]
+deps = ["Colors", "GeometricalPredicates", "Random", "Test"]
+git-tree-sha1 = "ecb1fddc8f749154904f70fe44846a6d51351bec"
+uuid = "72f80fcb-8c52-57d9-aff0-40c1a3526986"
+version = "0.3.1"
+
 [[WAV]]
 deps = ["Base64", "FileIO", "Libdl", "Logging"]
 git-tree-sha1 = "0306a9832c93aafda68c7f6b5159805136a9edb8"
