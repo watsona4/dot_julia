@@ -1,0 +1,10 @@
+language: julia
+julia:
+  - 1.0
+  - 0.7
+  - nightly
+matrix:
+  allow_failures:
+    - julia: nightly
+notifications:
+  email: false
