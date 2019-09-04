@@ -11675,6 +11675,12 @@ git-tree-sha1 = "15d31a5821ca106d567eb148df123ca57d8cf4c9"
 uuid = "6aa20fa7-93e2-5fca-9bc0-fbd0db3c71a2"
 version = "1.2.0"
 
+[[TensorToolbox]]
+deps = ["LinearAlgebra", "Test"]
+git-tree-sha1 = "acaa4d6c9018ac00ad3d60cba1609b42ad4625d2"
+uuid = "9c690861-8ade-587a-897e-15364bc6f718"
+version = "1.0.1"
+
 [[Tensors]]
 deps = ["ForwardDiff", "LinearAlgebra", "SIMD", "Statistics"]
 git-tree-sha1 = "98f1aec8df52bbaaa937018c419b423c6ed2aa88"
