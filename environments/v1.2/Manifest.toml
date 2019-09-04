@@ -12462,6 +12462,12 @@ git-tree-sha1 = "fb07f8ced3d5fdc3e5d43a92b2eeb5c8ba30b327"
 uuid = "82b139dc-5afc-11e9-35da-9b9bdfd336f3"
 version = "0.4.1"
 
+[[VulkanCore]]
+deps = ["CEnum"]
+git-tree-sha1 = "4a23c0433aadcea991885115588494f86af584dc"
+uuid = "16167f82-ea26-5cba-b1de-ed6fd5e30a11"
+version = "1.1.11"
+
 [[WAV]]
 deps = ["Base64", "FileIO", "Libdl", "Logging"]
 git-tree-sha1 = "0306a9832c93aafda68c7f6b5159805136a9edb8"
