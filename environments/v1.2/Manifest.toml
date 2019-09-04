@@ -11905,6 +11905,12 @@ git-tree-sha1 = "dfcdbbfb2d0370716c815cbd6f8a364efb6f42cf"
 uuid = "0796e94c-ce3b-5d07-9a54-7f471281c624"
 version = "0.5.6"
 
+[[TopicModelsVB]]
+deps = ["Distributions", "OpenCL"]
+git-tree-sha1 = "e61de7a38cab87e2dfa8494ee79d6f10b323dcb6"
+uuid = "dad468f8-6d63-5d40-b2c4-48631a3ed0cf"
+version = "0.0.1"
+
 [[TotalLeastSquares]]
 deps = ["FillArrays", "LinearAlgebra", "Printf", "SparseArrays"]
 git-tree-sha1 = "512709480107b4fa9730c7a1d431d89b602fbb53"
