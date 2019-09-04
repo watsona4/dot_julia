@@ -11663,6 +11663,12 @@ git-tree-sha1 = "ad769e16d79232be2aa43ddee350a668f55068f4"
 uuid = "07d1fe3e-3e46-537d-9eac-e9e13d0d4cec"
 version = "0.0.2"
 
+[[TensorNetworkAD]]
+deps = ["BackwardsLinalg", "IRTools", "IterTools", "LineSearches", "LinearAlgebra", "OMEinsum", "Optim", "ProgressMeter", "Random", "Test", "TupleTools", "Zygote"]
+git-tree-sha1 = "97037e3f0833d04c4b5ab91adcbefe941eae156e"
+uuid = "6b36f460-1d4e-5459-a8c4-3ab8f40f7d47"
+version = "0.1.0"
+
 [[TensorOperations]]
 deps = ["LRUCache", "LinearAlgebra", "Strided", "TupleTools"]
 git-tree-sha1 = "15d31a5821ca106d567eb148df123ca57d8cf4c9"
