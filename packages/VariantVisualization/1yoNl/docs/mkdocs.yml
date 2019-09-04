@@ -1,0 +1,35 @@
+site_name:        VariantVisualization.jl
+site_author:      George Tollefson
+repo_url:         https://github.com/compbiocore/VariantVisualization.jl
+site_description: Visualization of Variants
+site_author:      compbiocore
+site_url:         https://compbiocore.github.io/
+
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    primary: 'blue grey'
+    accent: 'indigo'
+  logo: cbc-logo.svg
+
+extra_css:
+  - dark_mode.css
+
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+  - codehilite
+
+docs_dir: 'build'
+
+pages:
+- Home: index.md
+- VIVA Manual:
+  - Installation and Setup: installation.md
+  - Filtering Your VCF File: filtering_vcf.md
+  - Making Plots: plotting.md
+  - Examples: examples.md
+- API: api.md

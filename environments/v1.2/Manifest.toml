@@ -12342,6 +12342,12 @@ git-tree-sha1 = "300863c2842cf6dd5d9da5987e1d9926c5fcae88"
 uuid = "4aceb6fc-b794-5e89-b0ac-b6eba507a4bd"
 version = "1.0.0"
 
+[[VariantVisualization]]
+deps = ["ArgParse", "DataFrames", "DelimitedFiles", "GeneticVariation", "ORCA", "PlotlyJS", "Test"]
+git-tree-sha1 = "2bf4fa7bb9f706bc3829c1a8fab33f01bc22b68d"
+uuid = "7f8bf45c-0ad5-53b5-97e6-33c1305e0aa4"
+version = "0.4.0"
+
 [[Variography]]
 deps = ["Distances", "GeoStatsBase", "GeoStatsDevTools", "Optim", "Parameters", "Printf", "RecipesBase", "SpecialFunctions", "StaticArrays", "Statistics"]
 git-tree-sha1 = "fcb088fefaa47354b517004698b0db79a96ad592"
