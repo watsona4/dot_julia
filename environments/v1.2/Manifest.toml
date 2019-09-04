@@ -11841,6 +11841,12 @@ git-tree-sha1 = "761e91145ee1433b0a8bc0363502c8bace3f21f1"
 uuid = "209c9289-0e93-5bc3-a9c6-3b517a31ee3c"
 version = "0.2.0"
 
+[[TimeToLive]]
+deps = ["Dates", "Test"]
+git-tree-sha1 = "43defcaf72b89b047f11b778cd83b71ac3e418b0"
+uuid = "37f0c46e-897f-50ef-b453-b26c3eed3d6c"
+version = "0.2.0"
+
 [[TimeZones]]
 deps = ["Dates", "EzXML", "Mocking", "Printf", "Serialization", "Unicode"]
 git-tree-sha1 = "0271dc890dd1447da1568510937bd5b3a6b51b58"
