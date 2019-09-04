@@ -12258,6 +12258,12 @@ git-tree-sha1 = "74dc06941b69f8a5dac1cf137ff63b989c4feeb6"
 uuid = "03de777c-af7e-5070-b460-500ad0553889"
 version = "0.0.1"
 
+[[UnivariateDensityEstimate]]
+deps = ["Conda", "Dates", "Distributions", "Gurobi", "IJulia", "JuMP", "LinearAlgebra", "Pkg", "Rmath", "StatsBase"]
+git-tree-sha1 = "4c9094fc03b9994ca88b058d89fb84973a0f9ed8"
+uuid = "4f6a8bda-f411-5b8a-a202-ad6453283b07"
+version = "0.1.0"
+
 [[Unmarshal]]
 deps = ["JSON", "LinearAlgebra", "Missings", "Nullables", "Test"]
 git-tree-sha1 = "2b1f8a501a6c9932721e791f5586b7a48f4e0c2f"

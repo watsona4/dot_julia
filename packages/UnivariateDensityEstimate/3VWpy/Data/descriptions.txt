@@ -1,0 +1,33 @@
+3D_spatial_network.txt
+
+https://archive.ics.uci.edu/ml/datasets/3D+Road+Network+%28North+Jutland%2C+Denmark%29#
+
+look at altitude histogram
+
+###
+
+The dataset:
+
+https://cran.r-project.org/web/packages/seismic/seismic.pdf
+
+is called "tweet".
+
+Tweet times in seconds (after taking the log-). 
+
+
+###
+
+ESL datasets:
+
+A<-read.table("http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/14cancer.xtrain")
+
+hist(correlation coefficients among genes)
+
+> dim(A)
+[1] 16063   144 [ 16K genes and 144 samples]
+> D<-as.matrix(A[sample(1:16063,1000,replace=FALSE),]);
+> F<-cor(t(D));
+> dd<-as.numeric(F[row(F)>col(F)]);
+> hist(dd,1000)
+
+###
