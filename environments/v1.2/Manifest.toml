@@ -12228,6 +12228,12 @@ git-tree-sha1 = "ed91b3e3e041885c8c26b73e84abae6da6f8746f"
 uuid = "a7773ee8-282e-5fa2-be4e-bd808c38a91a"
 version = "0.2.0"
 
+[[UnitfulIntegration]]
+deps = ["LinearAlgebra", "QuadGK", "Test", "Unitful"]
+git-tree-sha1 = "b3fab6d0b03bab5b16b0517111577efa52129580"
+uuid = "6043864f-155a-5464-b5be-64e090a46784"
+version = "0.1.0"
+
 [[UnitfulMR]]
 deps = ["Unitful"]
 git-tree-sha1 = "88b9a4594f4962801400f005466725edec59c286"
